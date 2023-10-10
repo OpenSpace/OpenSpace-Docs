@@ -92,6 +92,13 @@ But MyST also added a second method that has way more options. See their [docume
 :::
 
 
+## Videos
+Embedding videos does not work natively in Markdown and we need to fall back to raw HTML instead:
+
+<center><iframe width="740" height="530" id='tutorialPlayer' src="https://www.youtube.com/embed/YHl5L85hEUQ?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+
+
+
 ## Callouts
 MyST adds a bunch of different admonition styles, which are demonstrated here.
 
@@ -229,13 +236,46 @@ $$
 
 
 ## Cards
-:::{card} Card Title
+:::{card} Simple Card Title
 Some header information
 ^^^
 Some text that is displayed in a nice card
 +++
 Footer information
 :::
+
+
+More fullyfledged example from the MyST documentation:
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} {octicon}`markdown;1.5em;sd-mr-1` CommonMark-plus
+
+MyST extends the CommonMark syntax specification, to support technical authoring features such as tables and footnotes.
+
++++
+[Learn more »](https://example.org)
+:::
+
+:::{grid-item-card} {octicon}`plug;1.5em;sd-mr-1` Sphinx compatible
+
+Use the MyST role and directive syntax to harness the full capability of Sphinx, such as admonitions and figures, and all existing Sphinx extensions.
+
++++
+[Learn more »](https://example.org)
+:::
+
+:::{grid-item-card} {octicon}`tools;1.5em;sd-mr-1` Highly configurable
+
+MyST-parser can be configured at both the global and individual document level,
+to modify parsing behaviour and access extended syntax features.
+
++++
+[Learn more »](https://example.org)
+:::
+
+::::
+
 
 
 ## Tabs
@@ -344,8 +384,6 @@ Include some external file:
 
 :::{include} /.gitignore
 :::
-
-
 
 
 

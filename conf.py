@@ -75,6 +75,10 @@ html_context = {
 html_logo = "img/logo.png"
 html_favicon = "img/icon.png"
 
+html_css_files = [
+
+]
+
 # These folders are copied to the documentation's HTML output
 html_static_path = ["_static"]
 
