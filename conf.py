@@ -39,12 +39,12 @@ root_doc = "index"
 primary_domain = "lua"
 autosectionlabel_prefix_document = True
 pygments_style = "sphinx"
-highlight_language = "lua"
 
 myst_enable_extensions = {
   "colon_fence",
   "fieldlist"
 }
+myst_heading_anchors = 3
 
 
 

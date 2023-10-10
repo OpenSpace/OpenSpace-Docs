@@ -2,7 +2,7 @@
 This page serves as a reference to the features supported by the MyST + Sphinx + Read The Docs stack that is used to create this wiki page. This page is probably best viewed in source which you can find with the "Edit on GitHub" link in the top right. If you are using Visual Studio Code, the [MyST-Markdown plugin](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight) is recommended as it provides code snippets for the different directives that MyST adds to regular Markdown. In general, a block is surrounded by `:::` followed by the name of the directive inside `{ }`. Directives can have arguments, which are surrounded by `: :`.
 
 For example of this:
-```none
+```
 :::{directive} Parameter
 :argument:
 :second-argument: Foobar
@@ -161,7 +161,7 @@ local abc = function()
 end
 :::
 
-```
+```lua
 -- This is also true for standard Markdown code highlighting
 function(abc)
   return abc + abc
