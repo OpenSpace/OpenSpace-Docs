@@ -9,37 +9,43 @@ needs_sphinx = "4.0"
 project = "OpenSpace"
 author = "OpenSpace community"
 project_copyright = "2014-2023, OpenSpace community"
-version = "0.19.1"
-release = version
 
-# Installed extensions (synced with `requirements.txt`)
+# Update with every new release
+version = release = "0.19.1"
+
 extensions = [
+  "myst_parser",
   "notfound.extension",
   "sphinx_copybutton",
+  "sphinx_design",
+  "sphinx.ext.autosectionlabel",
   "sphinx.ext.duration",
-  "sphinxcontrib.luadomain"
+  "sphinxcontrib.luadomain",
+  "sphinxcontrib.mermaid"
 ]
 
 keep_warnings = True
 
 
+
 ###
 # Content
 ###
-source_suffix = ".rst"
 source_encoding = "utf-8-sig"
-
+exclude_patterns = [
+  "README.md"
+]
 root_doc = "index"
-
-rst_prolog = """
-"""
-rst_epilog = """
-"""
-
 primary_domain = "lua"
-
+autosectionlabel_prefix_document = True
 pygments_style = "sphinx"
 highlight_language = "lua"
+
+myst_enable_extensions = {
+  "colon_fence",
+  "fieldlist"
+}
+
 
 
 ###
@@ -69,9 +75,11 @@ html_context = {
 html_logo = "img/logo.png"
 html_favicon = "img/icon.png"
 
+html_css_files = [
+
+]
+
 # These folders are copied to the documentation's HTML output
 html_static_path = ["_static"]
 
 # html_extra_path = ["robots.txt"]
-
-
