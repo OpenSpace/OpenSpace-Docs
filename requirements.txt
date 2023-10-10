@@ -1,0 +1,13 @@
+# Sync with readthedocs:
+# https://github.com/readthedocs/readthedocs.org/blob/master/requirements/pip.txt
+# https://github.com/readthedocs/readthedocs.org/blob/master/requirements/docs.txt
+
+# Syntax highlighting
+pygments==2.15.1
+
+# Sphinx and theme
+sphinx==4.4.0
+sphinx_rtd_theme==1.1.1
+sphinx-copybutton==0.5.1
+sphinx-notfound-page==0.8.3
+sphinxcontrib-luadomain==1.1.2
