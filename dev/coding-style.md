@@ -117,7 +117,7 @@ This effectively makes these variables named iterators.  In a short loop, using 
 
 ### 17. The prefixes `is`, `has`, `should`, or `can` should be used for boolean variables and methods
 `isSet`, `isVisible`, `isFinished`, `isFound`, `isOpen`
-Using the `is` prefix solves a common problem of choosing bad boolean names like `status` or `flag`.  `isStatus` or `isFlag` simply doesn’t fit, and the programmer is forced to choose more meaningful names.  There are a few alternatives to the is prefix that fit better in some situations.  These are the `has`, `can`, and `should` prefixes:
+Using the `is` prefix solves a common problem of choosing bad boolean names like `status` or `flag`.  `isStatus` or `isFlag` simply doesn't fit, and the programmer is forced to choose more meaningful names.  There are a few alternatives to the is prefix that fit better in some situations.  These are the `has`, `can`, and `should` prefixes:
 ```cpp
 bool hasLicense();
 bool canEvaluate();
@@ -145,13 +145,13 @@ Include-files should be grouped based on their first directory entry (´modules�
 #include <fstream>
 #include <iomanip>
 ```
-In addition to showing the individual include files, it also gives a clue about the modules that are involved in the source file.  Include file paths must never be absolute.  A `cpp` file should always include it’s accompanying header file first and separate the other includes by an empty line.
+In addition to showing the individual include files, it also gives a clue about the modules that are involved in the source file.  Include file paths must never be absolute.  A `cpp` file should always include it's accompanying header file first and separate the other includes by an empty line.
 
 ### 20. The parts of a class must be sorted `public`, `protected` and `private`
 Not applicable sections should be left out.  The ordering is "most public first" so people who only wish to use the class can stop reading when they reach the protected/private sections.
 
 ### 21. Type conversions must always be done explicitly
-Don’t rely on implicit type conversion.
+Don't rely on implicit type conversion.
 ```cpp
 floatValue = static_cast<float>(intValue); // NOT: floatValue = intValue;
 ```

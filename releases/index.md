@@ -1,11 +1,9 @@
 # Version Overview
-OpenSpace versions are labeled by a version number of the form `MM.mm.rr`,  where `MM` is the major version number, `mm` is the minor version number, and `rr` is the release number (see [Semantic Versioning](https://semver.org)).  In some cases there may be an additional number at the end, `MM.mm.rr.bb`, where bb is the build number, but that will only be for development and testing, not for public release.
+OpenSpace versions are labeled by a version number of the form `MM.mm.rr`,  where `MM` is the major version number, `mm` is the minor version number, and `rr` is the release number (see [Semantic Versioning](https://semver.org)).
 
-As development proceeds, some versions get tagged with names.  This table indicates which version numbers go with which tags, and some notes about each:
-
-| Version |   _Date_   | _Description_ |
-| ------- | ---------- | ------------- |
-| [0.19.1](changelogs/0.19.1) | 2023-09-18 | This is a patch release for the twelfth beta release that includes a new eclipse profile |
+| _Version_ | _Date_ | _Description_ |
+| --------- | ------ | ------------- |
+| [0.19.1](changelogs/0.19.1)  | 2023-09-18 | This is a patch release for the twelfth beta release that includes a new eclipse profile |
 | [0.19.0](changelogs/0.19.0)  | 2023-06-27 | This is the twelfth beta release and the firest in 2023 |
 | [0.18.2](changelogs/0.18.2)  | 2022-12-24 | This is a second patch release for the eleventh beta release |
 | [0.18.1](changelogs/0.18.1)  | 2022-11-22 | This is a patch release for the eleventh beta release |
@@ -37,8 +35,10 @@ As development proceeds, some versions get tagged with names.  This table indica
 | 0.3.1                      | 2016-03-03 | New Horizons Show |
 | 0.3.0                      | 2015-07-16 | |
 | 0.2.1                      | 2015-07-15 | New Horizons Show |
-| 0.2.0                      | 2015-07-08 | This prerelease was published for a global, networked event in celebration of New Horizon’s closest approach to Pluto. |
+| 0.2.0                      | 2015-07-08 | This prerelease was published for a global, networked event in celebration of New Horizons closest approach to Pluto. |
 | 0.1.0                      | 2015-05-14 | This prerelease was published for the Pluto-Palooza event held at the AMNH in New York. |
+
+
 
 :::{toctree}
 :maxdepth: 1
