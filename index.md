@@ -32,7 +32,7 @@ dev/deploying-windows
 :hidden:
 :titlesonly:
 
-releases
+releases/index
 ```
 
 ```{toctree}
