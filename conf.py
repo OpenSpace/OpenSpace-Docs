@@ -1,4 +1,5 @@
 import sphinx_rtd_theme
+import os
 
 
 ###
@@ -11,7 +12,7 @@ author = "OpenSpace community"
 project_copyright = "2014-2023, OpenSpace community"
 
 # Update with every new release
-version = release = "0.19.1"
+version = release = os.getenv("READTHEDOCS_VERSION", "0.19.1")
 
 extensions = [
   "myst_parser",
@@ -20,6 +21,7 @@ extensions = [
   "sphinx_design",
   "sphinx.ext.autosectionlabel",
   "sphinx.ext.duration",
+  "sphinxcontrib.jquery",
   "sphinxcontrib.luadomain",
   "sphinxcontrib.mermaid"
 ]
@@ -75,6 +77,12 @@ html_context = {
 html_logo = "img/logo.png"
 html_favicon = "img/icon.png"
 
+# JavaScript files that are added into the generated documentation
+html_js_files = [
+
+]
+
+# CSS files that are added into the generated documentation
 html_css_files = [
 
 ]
