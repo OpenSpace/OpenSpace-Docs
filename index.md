@@ -9,6 +9,17 @@ Regarding any issues, whether it is building the application, creating new conte
 * {ref}`search`
 
 :::{toctree}
+:caption: General
+:name: sec-general
+:maxdepth: 2
+:hidden:
+:titlesonly:
+
+releases/index
+general/academics
+:::
+
+:::{toctree}
 :caption: Development
 :name: sec-dev
 :maxdepth: 2
@@ -23,16 +34,6 @@ dev/pull-requests
 dev/faq
 dev/cpp-musings
 dev/deploying-windows
-:::
-
-:::{toctree}
-:caption: Releases
-:name: sec-releases
-:maxdepth: 2
-:hidden:
-:titlesonly:
-
-releases/index
 :::
 
 :::{toctree}
