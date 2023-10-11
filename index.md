@@ -9,10 +9,10 @@ Regarding any issues, whether it is building the application, creating new conte
 * {ref}`search`
 
 ```{toctree}
-:maxdepth: 2
-:hidden:
 :caption: Development
 :name: sec-dev
+:maxdepth: 2
+:hidden:
 :titlesonly:
 
 dev/index
@@ -26,10 +26,20 @@ dev/deploying-windows
 ```
 
 ```{toctree}
-:maxdepth: 1
+:caption: Releases
+:name: sec-releases
+:maxdepth: 2
 :hidden:
+:titlesonly:
+
+releases
+```
+
+```{toctree}
 :caption: Support
 :name: sec-support
+:maxdepth: 1
+:hidden:
 :glob:
 
 support/*
