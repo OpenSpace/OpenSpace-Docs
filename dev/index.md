@@ -8,10 +8,12 @@ Lastly, the Coding Style that we employ inside of Ghoul, SGCT, and OpenSpace is 
 ```{toctree}
 :maxdepth: 1
 :name: toc-dev
-:glob:
+:caption: Development
 
-*
-compiling/*
-compiling/external/*
-
+compiling/index
+compiling/windows
+compiling/ubuntu
+compiling/macos
+compiling/freebsd
+compiling/fedora
 ```

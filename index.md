@@ -9,15 +9,20 @@ Regarding any issues, whether it is building the application, creating new conte
 * {ref}`search`
 
 ```{toctree}
-:maxdepth: 3
+:maxdepth: 2
 :hidden:
 :caption: Development
 :name: sec-dev
+:titlesonly:
 
 dev/index
 dev/coding-style
 dev/git
+dev/folder-layout
 dev/pull-requests
+dev/faq
+dev/cpp-musings
+dev/deploying-windows
 ```
 
 ```{toctree}
