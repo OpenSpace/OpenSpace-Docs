@@ -13,11 +13,11 @@ Regarding any issues, whether it is building the application, creating new conte
 :hidden:
 :caption: Development
 :name: sec-dev
-:glob:
 
-dev/*
-dev/compiling/*
-dev/compiling/external/*
+dev/index
+dev/coding-style
+dev/git
+dev/pull-requests
 ```
 
 ```{toctree}
