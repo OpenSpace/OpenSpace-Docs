@@ -9,12 +9,12 @@ For example of this:
 :::
 ```
 
-```{seealso}
+:::{seealso}
 Additional documentation:
  - [MyST](https://myst-parser.readthedocs.io/en/latest/index.html)
  - [Sphinx](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#code-examples)
  - [Sphinx Design](https://sphinx-design.readthedocs.io/en/furo-theme/)
-```
+:::
 
 ## Standard Markdown
 Standard Github-flavored Markdown is available as a basis. You can find more information about it [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). For completeness, here is a quick reference list:

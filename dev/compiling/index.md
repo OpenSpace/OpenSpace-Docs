@@ -97,7 +97,7 @@ CMake Error at ext/ghoul/CMakeLists.txt:304 (find_package):
 **A**: The Git clone was not done recursively and thus the Ghoul CMakeLists.txt file is missing.  Please reclone the repository using the `--recursive` flag
 
 ## Platform specific instructions
-```{toctree}
+:::{toctree}
 :maxdepth: 1
 :name: toc-dev-compiling
 
@@ -106,4 +106,4 @@ ubuntu
 macos
 freebsd
 fedora
-```
+:::

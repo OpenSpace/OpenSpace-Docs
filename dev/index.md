@@ -5,7 +5,7 @@ The [Folder layout](https://github.com/OpenSpace/OpenSpace/wiki/Folder-Layout) p
 
 Lastly, the Coding Style that we employ inside of Ghoul, SGCT, and OpenSpace is found [here](https://github.com/OpenSpace/OpenSpace/wiki/Coding-Style)
 
-```{toctree}
+:::{toctree}
 :maxdepth: 1
 :name: toc-dev
 :caption: Development
@@ -16,4 +16,4 @@ compiling/ubuntu
 compiling/macos
 compiling/freebsd
 compiling/fedora
-```
+:::

@@ -8,7 +8,7 @@ Regarding any issues, whether it is building the application, creating new conte
 * {ref}`modindex`
 * {ref}`search`
 
-```{toctree}
+:::{toctree}
 :caption: Development
 :name: sec-dev
 :maxdepth: 2
@@ -23,9 +23,9 @@ dev/pull-requests
 dev/faq
 dev/cpp-musings
 dev/deploying-windows
-```
+:::
 
-```{toctree}
+:::{toctree}
 :caption: Releases
 :name: sec-releases
 :maxdepth: 2
@@ -33,9 +33,9 @@ dev/deploying-windows
 :titlesonly:
 
 releases/index
-```
+:::
 
-```{toctree}
+:::{toctree}
 :caption: Support
 :name: sec-support
 :maxdepth: 1
@@ -43,5 +43,4 @@ releases/index
 :glob:
 
 support/*
-
-```
+:::
