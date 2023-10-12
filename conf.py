@@ -53,26 +53,15 @@ myst_heading_anchors = 3
 ###
 # HTML output
 ###
-html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-using_rtd_theme = True
-
+html_theme = "furo"
 html_theme_options = {
-  "logo_only": True,            # No title text
-  "collapse_navigation": False, # Collapse navigation tree
-  "display_version": False      # Hide documentation version name beneath the logo
+  "sidebar_hide_name": True,      # No project title in the sidebar
+  "source_repository": "https://github.com/OpenSpace/OpenSpace-Docs/",
+  "source_branch": "master",
+  "source_directory": "/",
 }
 html_title = f'OpenSpace documentation ({version})'
 html_short_title = "OpenSpace"
-
-# VCS options: https://docs.readthedocs.io/en/stable/guides/edit-source-links-sphinx.html
-html_context = {
-  "display_github": True,
-  "github_user": "OpenSpace",
-  "github_repo": "OpenSpace-Docs",
-  "github_version": "master",
-  "conf_py_path": "/"
-}
 
 html_logo = "img/logo.png"
 html_favicon = "img/icon.png"
