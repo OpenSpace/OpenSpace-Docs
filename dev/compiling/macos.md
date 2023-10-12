@@ -5,11 +5,11 @@ Quick summary:
 1. Install the [Development Tools](#development-tools)
    1. Git client (one of SourceTree, Git Kraken, or commandline)
    1. [CMake](#configure-with-cmake) to build Xcode configuration file
-   1. [Homebrew](#Homebrew) to install libraries and other tools
-   1. [Xcode](#Xcode) is the compiler and IDE on Mac
+   1. [Homebrew](#homebrew) to install libraries and other tools
+   1. [Xcode](#xcode) is the compiler and IDE on Mac
 1. Install or build the Libraries
-   1. [Boost](#boost), (only required if you are building with the module Kameleon, which is not enabled by default)
-1. [Build OpenSpace](#Build)
+   1. Boost, (only required if you are building with the module Kameleon, which is not enabled by default)
+1. [Build OpenSpace](#build)
 
 ## Development Tools
 ### Git Client

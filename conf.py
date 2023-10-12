@@ -19,7 +19,7 @@ extensions = [
   "notfound.extension",
   "sphinx_copybutton",
   "sphinx_design",
-  # "sphinx.ext.autosectionlabel",
+  "sphinx.ext.autosectionlabel",
   "sphinx.ext.duration",
   "sphinxcontrib.jquery",
   "sphinxcontrib.luadomain",
@@ -39,7 +39,7 @@ exclude_patterns = [
 ]
 root_doc = "index"
 primary_domain = "lua"
-# autosectionlabel_prefix_document = True
+autosectionlabel_prefix_document = True
 pygments_style = "sphinx"
 
 myst_enable_extensions = {

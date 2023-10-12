@@ -2,7 +2,7 @@
 This page began as the Few-Frills How-To for building on Windows 10, but now we are trying to fill it in with more details.  Please help give us feedback on what needs to be improved.
 
 Quick summary:
-1. [Development Tools](#tools)
+1. [Development Tools](#development-tools)
    1. Git client
    1. [CMake](#cmake)
    1. [Visual Studio](#visual-studio-2022)
@@ -31,7 +31,7 @@ OpenSpace depends on several other software components, which are loaded as git 
 Checkout OpenSpace **recursively** using SourceTree, SmartGit, or the command line.  The command line git command is:
     `git clone --recurse-submodules https://github.com/OpenSpace/OpenSpace`
 
-### Build OpenSpace
+### Building
 1. Open CMake and set "Where is the source code:" to the directory you just cloned from GitHub, for example `develop/OpenSpace`.
 1. Set "Where to build the binaries:" to the `build` subdirectory, for example: `develop/OpenSpace/build`
 1. Set CMake variables to enable or disable specific modules
@@ -55,7 +55,7 @@ Some of the optional modules have Boost as a dependency, which will need to be c
 1. Add the boost folder as the `BOOST_ROOT` environment variable
 
 ## Notes
-### CMake
+### CMake build folder
 - Create your build directory to store the configuration files anywhere outside the source files.  It's not required to be named `build` but that's common. You can keep it in the top level of your repository.
 - When in doubt File -> Delete Cache and start again.
 - To execute cmake from visual studio command line, cmake args must be passed with -D<cmake flag>:

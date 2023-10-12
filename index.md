@@ -28,6 +28,7 @@ general/academics
 
 dev/index
 dev/coding-style
+dev/concepts
 dev/git
 dev/folder-layout
 dev/pull-requests
