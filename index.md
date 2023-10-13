@@ -32,10 +32,22 @@ dev/concepts
 dev/git
 dev/folder-layout
 dev/pull-requests
-dev/faq
 dev/cpp-musings
 dev/deploying-windows
+dev/faq
 :::
+
+:::{toctree}
+:caption: Tutorials
+:name: sec-tutorials
+:maxdepth: 1
+:hidden:
+
+tutorials/users/index
+tutorials/installers/index
+tutorials/builders/index
+:::
+
 
 :::{toctree}
 :caption: Support
