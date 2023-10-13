@@ -40,8 +40,19 @@ Standard Github-flavored Markdown is available as a basis. You can find more inf
 :::{rubric} A heading that will not show up in the table of contents
 :::
 
+We can also write text in {sub}`subscript`, or {sup}`superscript` or other hings
+
+Defining abbreviations, which have an explanation that is visible via hovering over the text: {abbr}`LIFO (last-in, first-out)`
+
+Displaying a program that is available on the computer: {command}`rm`
+
+Showing a combination of keystrokes that should be pressed by a person to achieve something: {kbd}`C-x` {kbd}`C-f`
+
+Showing a sequence of menu items that someone has to go through in order to achieve something: {menuselection}`Start --> Programs`
+
 % This is a comment that won't be printed into the main document
 
+We can also provide images directly into the text: {octicon}`heart-fill;1em;sd-text-danger`. The list of all icons can be found [here](https://primer.style/design/foundations/icons).
 
 ## Tables
 :::{table} Table with caption
@@ -81,14 +92,42 @@ This is not part of the footnote.
 
 ## Images
 The normal Markdown way:
-![OpenSpace Logo](/img/logo.png)
+![OpenSpace Logo](https://source.unsplash.com/200x200/daily?cute+animals)
 
 But MyST also added a second method that has way more options. See their [documentation](https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html#block-level-images) for more information.
-:::{image} /img/logo.png
+:::{image} https://source.unsplash.com/200x200/daily?cute+animals
 :alt: OpenSpace Logo
 :class: bg-primary
 :width: 200px
 :align: center
+:::
+
+### Captions
+Or with captions underneath
+:::{figure} https://source.unsplash.com/200x200/daily?cute+animals
+We can also add captions to the images by using the `figure` environment
+:::
+
+### Dark and Light theme
+We can use different images for light and dark themes
+:::{image} https://source.unsplash.com/200x200/daily?cute+dogs
+:align: center
+:class: only-light
+:::
+
+:::{image} https://source.unsplash.com/200x200/daily?cute+cats
+:align: center
+:class: only-dark
+:::
+
+:::{figure} https://source.unsplash.com/200x200/daily?cute+cats
+:align: center
+:figclass: only-light
+:::
+
+:::{figure} https://source.unsplash.com/200x200/daily?cute+dogs
+:align: center
+:figclass: only-dark
 :::
 
 
@@ -102,31 +141,59 @@ Embedding videos does not work natively in Markdown and we need to fall back to 
 ## Callouts
 MyST adds a bunch of different admonition styles, which are demonstrated here.
 
+:::{attention}
+Attention
+:::
+
+:::{caution}
+Caution
+:::
+
+:::{danger}
+Danger
+:::
+
+:::{error}
+Error
+:::
+
+:::{hint}
+Hint
+:::
+
+:::{important}
+Important
+:::
+
+:::{note}
+Note
+:::
+
 :::{seealso}
 Some other information that would be good to checkout
 :::
 
-:::{note}
-Just a standard note.
-:::
-
 :::{tip}
-Some helpful tip.
-:::
-
-:::{danger}
-Something dangerous tip.
+tip
 :::
 
 :::{warning}
-A warning note.
+warning
 :::
 
-:::{admonition} Custom headers
-:class: warning
 
-Here's my admonition content
+## Sidebar
+:::{sidebar} Ch'ien / The Creative
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+    .. image:: https://source.unsplash.com/200x200/daily?cute+puppy
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sunt voluptatum tenetur libero nulla esse veritatis accusantium earum commodi hic voluptatem officia culpa optio atque. Quaerat sed quibusdam ratione nam.
 :::
+There is the option to provide information in a sidebar as well. We'll just add some more text here that makes it more obvious. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sunt voluptatum tenetur libero nulla esse veritatis accusantium earum commodi hic voluptatem officia culpa optio atque. Quaerat sed quibusdam ratione nam.
 
 
 ## Markups
@@ -142,18 +209,26 @@ Something has changed in this version
 Something has been deprecated but not removed
 :::
 
-Defining abbreviations, which have an explanation that is visible via hovering over the text: {abbr}`LIFO (last-in, first-out)`
-
-Displaying a program that is available on the computer: {command}`rm`
-
-Showing a combination of keystrokes that should be pressed by a person to achieve something: {kbd}`C-x` {kbd}`C-f`
-
-Showing a sequence of menu items that someone has to go through in order to achieve something: {menuselection}`Start --> Programs`
-
 
 ## Code Highlighting
 :::{code-block}
--- Lua is the default for code blocks
+-- There is no default language for code blocks
+local abc = function()
+  return [[
+    a
+  ]]
+end
+:::
+
+```
+-- This is also true for standard Markdown code highlighting
+function(abc)
+  return abc + abc
+end
+```
+
+:::{code-block} lua
+-- But we can manually specify which language it is
 local abc = function()
   return [[
     a
@@ -162,11 +237,12 @@ end
 :::
 
 ```lua
--- This is also true for standard Markdown code highlighting
+-- Also for blocks
 function(abc)
   return abc + abc
 end
 ```
+
 
 :::{code-block} cpp
 // It's possible to change the language for the syntax highlighting as well
@@ -276,6 +352,62 @@ to modify parsing behaviour and access extended syntax features.
 
 ::::
 
+
+## Carousels
+````{card-carousel} 2
+
+```{card} card 1
+```
+
+```{card} card 2
+```
+
+```{card} card 3
+```
+
+```{card} card 4
+```
+
+```{card} card 5
+```
+
+```{card} card 6
+```
+````
+
+## Dropdown
+### No Title
+```{dropdown}
+Dropdown content
+```
+
+### With title
+```{dropdown} Dropdown title
+Dropdown content
+```
+
+### Standard open
+```{dropdown} Open dropdown
+:open:
+
+Dropdown content
+```
+
+
+## Buttons
+```{button-link} https://example.com
+Button text
+```
+
+```{button-link} https://example.com
+:color: primary
+Button text
+```
+
+```{button-link} https://example.com
+:color: secondary
+:expand:
+```
 
 
 ## Tabs
