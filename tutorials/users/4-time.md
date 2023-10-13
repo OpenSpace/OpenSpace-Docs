@@ -11,7 +11,7 @@ This section will cover the various aspects of manipulating time in OpenSpace.
  - The rate at which the simulation progresses can be changed.
  - You can progress forward or backward in time at any speed.
  - Time can be paused.
- - See [Using the menus: Time](/docs/tutorials/users/menustime) for details on controlling the rate of time.
+ - See [Using the menus: Time](5-menus-time) for details on controlling the rate of time.
 
 ## Interpolate vs Instant Time Change
  - When changing the date, the rate of time change, or pausing time, the change will be interpolated so as not to 'jump' the camera.
@@ -28,4 +28,4 @@ This section will cover the various aspects of manipulating time in OpenSpace.
  - ALT / option + number keys will set decreasing negative rates of time.
 
 ## Video
- See the next tutorial [Using the menus: Time](/docs/tutorials/users/menustime) for a video detailing using the time menu.
+ See the next tutorial [Using the menus: Time](5-menus-time) for a video detailing using the time menu.

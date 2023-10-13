@@ -20,4 +20,5 @@ Here you will find general tutorials on the basics of using OpenSpace, including
 6-menus-dataset
 7-menus-globebrowsing
 8-customizing-bookmarks
+9-customizing-profiles
 :::

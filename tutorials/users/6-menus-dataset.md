@@ -16,7 +16,7 @@ This section will cover using the menus to turn on and off or manipulate dataset
  - For most datasets, you can change aspects of how they are visualized in OpenSpace. Examples include changing the color, opacity of items, the size of text, and the width or length of trails.
  - Changes can be made by clicking the item's title to open its submenu.
  - You can also click the wrench icon to pop out a panel for the item's properties.
- - Changes made are not saved between OpenSpace sessions. To learn how to save your changes, stay tuned for the [Customizing OpenSpace - Profiles](/docs/tutorials/users/customizingprofiles) tutorial.
+ - Changes made are not saved between OpenSpace sessions. To learn how to save your changes, stay tuned for the [Customizing OpenSpace - Profiles](9-customizing-profiles) tutorial.
 
 
 ## Video

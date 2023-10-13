@@ -37,7 +37,7 @@ This section will cover the available functionality when exploring worlds in the
  - Regional layers must appear lower in the menu than global layers in order to combine them.
 
 ## Lighting Conditions
- - By default, globes will have the '_Perform Shading_' setting enabled, and thus will be lit based on their rotation and position relative to the Sun. To light a different part of the globe, you will need to move time forward or backward. See [Using the Menus - Time](/docs/tutorials/users/menustime)
+ - By default, globes will have the '_Perform Shading_' setting enabled, and thus will be lit based on their rotation and position relative to the Sun. To light a different part of the globe, you will need to move time forward or backward. See [Using the Menus - Time](5-menus-time)
  - For times when you don't want to change the simulation time, you can disable the '_Perform Shading_' property of the globe.
  - If you want the globe to be brighter even when not shaded, try increasing the '_Multiplier_' setting of the innermost layer as described above.
 
