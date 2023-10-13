@@ -29,7 +29,7 @@ will return a 1 or 0 (for true or false), but that value isn't visible at the co
 
 At the bottom of the screen, the 0 or 1 value will be visible in an Info message.
 
-### Examples
+### Example
 The following examples work with the default solar system scene.
 
 `openspace.setPropertyValueSingle("Scene.MarsTrail.Renderable.Enabled", false)`

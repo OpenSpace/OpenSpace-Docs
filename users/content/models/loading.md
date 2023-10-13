@@ -1,5 +1,5 @@
 # How to load a model into OpenSpace
-To load a model into OpenSpace you will need to create a new asset file. To learn more about assets see [Assets](../assets/assets), and load the model with this piece of code:
+To load a model into OpenSpace you will need to create a new asset file. To learn more about assets see [Assets](../../assets/assets), and load the model with this piece of code:
 
 ```lua
   ...
@@ -13,7 +13,7 @@ To load a model into OpenSpace you will need to create a new asset file. To lear
   ...
 ```
 
-The first line in this example imports the asset for the Sun, this is to add it as a light source to the model in the end. Then you add the <code>Renderable</code> with the <code>"RenderableModel"</code> as Type. Lastly, you define the path to the model file as the <code>GeometryFile</code>, for more information regarding paths in assets see [Resources](../assets/resources). The line <code>modelPath .. "BoxAnimated.glb",</code> creates a path to your sync folder where the model is downloaded from our servers. If you want to add a local model file instead that is not located on our servers, then you could use the <code>localResource</code> function to create the path, like this (example with a local model file of New York City):
+The first line in this example imports the asset for the Sun, this is to add it as a light source to the model in the end. Then you add the <code>Renderable</code> with the <code>"RenderableModel"</code> as Type. Lastly, you define the path to the model file as the <code>GeometryFile</code>, for more information regarding paths in assets see [Resources](../../assets/resources). The line <code>modelPath .. "BoxAnimated.glb",</code> creates a path to your sync folder where the model is downloaded from our servers. If you want to add a local model file instead that is not located on our servers, then you could use the <code>localResource</code> function to create the path, like this (example with a local model file of New York City):
 
 ```lua
   GeometryFile = asset.localResource("nyc-model.obj"),
@@ -25,7 +25,7 @@ The <code>localResource</code> function here refers to a file that is located ne
   GeometryFile = "C:/Users/username/Documents/data/nyc-model.obj",
 ```
 
-Note that the slashes in the path need to be forward slashed (<code>/</code>) and not backward slashes (<code>\</code>). There are additional properties you can set for your model, such as scale and animation, to read more about these see [Model Scale](../models/model-scale), and [Animated Models](../models/model-animation).
+Note that the slashes in the path need to be forward slashed (<code>/</code>) and not backward slashes (<code>\</code>). There are additional properties you can set for your model, such as scale and animation, to read more about these see [Model Scale](scale), and [Animated Models](animation).
 
 ## Formats
 OpenSpace uses the [Assimp library](https://github.com/assimp/assimp) to load models; therefore, our supported formats are similar to their supported formats. For a complete list see [List of formats](#list-of-formats) further down this page.

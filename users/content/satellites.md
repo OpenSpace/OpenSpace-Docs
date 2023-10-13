@@ -1,8 +1,6 @@
 # Satellites
 This rendering code was created to visualize satellites in Earth's orbit.  The precise position of each satellite above the Earth is rendered according to the date & time.  The Two-Line Element set (TLE) file format is a standard for defining satellite orbital mechanics.  It contains all of the necessary Keplerian elements to define an orbital path.  When running the satellites module, OpenSpace reads all of the provided TLE files and generates a renderable for each entry.
 
-See the Users/Content/Satellites [page](../users/content/satellites.md) for basic instructions on how to select satellites to view, and start OpenSpace with this content.
-
 ## Automation
 OpenSpace features like regular expressions and keyboard bindings can be used to automate control of satellite layers.  Keyboard bindings can be added to an individual scene.  For example, in the `preInitialization` function of the file `default.scene`, the following `bindkey` command can be added:
 ```
@@ -17,7 +15,7 @@ When OpenSpace starts the satellites module, it tries to download `.tle` files t
 
 ## Adding new Satellite Data to OpenSpace
 OpenSpace can render satellites that have a periodic orbit that is defined in the TLE format. To add a new data TLE source, a new .asset file can be created by using other similar files as inspiration. Setting the `url` field mentioned above to the online source for the data will prompt OpenSpace to download the file each time it starts.
-For other types of solar system objects, such as asteroids, comets, or small solar system bodies, see some of the other [Ephemeris](../builders/ephemeris/index.md) wiki pages.
+For other types of solar system objects, such as asteroids, comets, or small solar system bodies, see some of the other [Ephemeris](ephemeris/index.md) wiki pages.
 
 ## Selectively Rendering Individual Satellites in a Group
 The satellite rendering software groups satellites together by category, and any change to that category (e.g. visibility, trail color, trail length) affects all of them simultaneously.
@@ -96,7 +94,3 @@ sarsat
 spire
 tdrss
 weather
-
-
-## Additional Features
-See the Components/Satellites [page](/docs/components/satellites) for more detailed information and advanced usage of satellites in OpenSpace.

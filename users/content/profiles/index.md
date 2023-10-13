@@ -8,6 +8,6 @@ Here is a list of profiles:
 :name: toc-users-content-profiles
 :caption: Profiles
 
-profiles/bastille-day
+bastille-day
 profile-syntax
 :::

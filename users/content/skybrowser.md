@@ -2,21 +2,17 @@
 
 The Sky Browser feature is a virtual telescope. It lets you see telescope images taken by famous telescopes, such as Hubble, Chandra and Spitzer, while also visualizing their locations in the sky. The Sky Browser is powered by [AAS WorldWide Telescope](http://worldwidetelescope.org/webclient/).
 
-### Browser
-
+## Browser
 The browser displays a part of the sky. By clicking images in the list, you can load them into the browser. It is possible to change the opacity and the ordering of the images by using the buttons in the browser's tab. You can add many browsers and select between them in the tab section.
 
-### Target
-
+## Target
 Each target belongs to a browser and is either in the shape of a crosshair or a crosshair and a rectangle. It shows where the browser is aiming and how large a portion of the sky it is viewing. The target can be moved around by dragging on the Sky Browser.
 
-### Image list
-
+## Image list
 The image list has two modes: Images Within View and All Images. The Images Within View mode display the images that are currently in the view of the target. It changes as you move around the target. The All Images displays all images in the collection in alphabetical order.
 
-### Tab buttons
-
-![Tab buttons](/assets/images/tabbuttons.png)
+## Tab buttons
+![Tab buttons](/assets/skybrowser/tabbuttons.png)
 
 From left to right:
 
@@ -29,8 +25,7 @@ From left to right:
 * Remove all images: Remove all images that had been added to the browser
 * Settings: Settings for this particular browser and general settings
 
-### Display Copies
-
+## Display Copies
 Sometimes it is necessary to show the browser outside of the graphical user interface, for example, if you are in a dome or are using a display wall. To display the sky browser there, you can simply add Display Copies. The Display Copies are rendered in the 3D environment in OpenSpace and will be visible even if the GUI is not shown. If you are in a dome environment, you can add many Display Copies at once in order to spread them out on the Azimuth.
 
 - Scale: Sets the height of the Display Copy
@@ -39,8 +34,7 @@ Sometimes it is necessary to show the browser outside of the graphical user inte
 - Position for first copy: The position for a new Display Copy. If more than one copy is added, they will be spread out evenly on the Azimuth.
 - Number of copies: How many new copies are added.
 
-### General Settings
-
+## General Settings
 - Show Title in GUI: Displays the title of the sky browser on the top bar of the browser
 - Allow Camera Rotation: Decides if the camera should rotate if the target is outside of the master node screen
 - Camera Rotation Speed: The speed of the camera rotation. A higher number means higher speed

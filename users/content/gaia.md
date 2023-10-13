@@ -1,6 +1,5 @@
 # Gaia
 This guide will explain how to render stars released by ESA's Gaia mission as their second data release (DR2) without having to create any subsets yourself.
-If you are interested in advanced usage of the Gaia data, see [this page](../../components/gaia).
 
 ## 1. Define which profile to run
 OpenSpace has several different profiles depending on what you want to show.  To change profile, open openspace.cfg in a text editor and make sure that `Profile = "gaia"` is the only `Profile` line that is not commented out.
@@ -54,8 +53,6 @@ layout: default
 parent: Components
 nav_order: 4
 ---
-
-This is a document that covers advanced visualization and selection of Gaia data. See [this page](../users/content/gaia) for basic instructions.
 
 ## Advanced Instructions for Defining What Dataset to Render
 In the data/assets/scene/milkyway/gaia/ folder, the user can change file contents to define what dataset to render.  By default the radial velocity dataset of 7.2 million stars will be downloaded and rendered on startup.  The size of the dataset is 335 MB and it will be stored in the sync folder within the OpenSpace directory.

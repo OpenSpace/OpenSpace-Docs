@@ -1,12 +1,12 @@
 # Customizing the joystick navigation
-This page goes in-depth into how to customize the joystick navigation to your own liking. If you want to learn more about the default joystick navigation in OpenSpace, see [Joystick Navigation](../users/navigation/joysticks).
+This page goes in-depth into how to customize the joystick navigation to your own liking. If you want to learn more about the default joystick navigation in OpenSpace, see [Joystick Navigation](getting-started-guide/navigation/joystick).
 
 To start, you will need an asset file to edit. If you are using a controller that matches one of the assets that OpenSpace already provides (Xbox, PS4, SpaceMouse, etc.) it is recommended that you start with a copy of that matching asset and place it in your `user\data\assets` folder. However, if the controller you will use does not match any provided asset, it is still recommended to start with one of the assets that are provided, such as the `space-mouse-compact` asset. The steps will be the same in both cases with the exception that the new controller will need some additional setup, see [Setup new joystick type](#setup-new-joystick-type) before moving on to the customization.
 
 ## Bind camera navigation to a joystick axis
 To bind a camera movement to an axis of the controller you will need the function `openspace.navigation.bindJoystickAxis` that takes eight arguments. Below is a list that describes each argument in detail. If you are customizing an already existing asset then you probably do not want to add a new camera movement binding, instead, you might want to alter the pre-existing ones. To customize a camera movement it is most likely only necessary to change a few of the input values in the pre-existing function call to the function `openspace.navigation.bindJoystickAxis`.
 
-1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](../users/navigation/joysticks)). It is important that this name matches the name that OpenSpace detects for the controller.
+1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](getting-started-guide/navigation/joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
 
 2. The index of which axis on the controller you want to bind the camera movement to. This is distinct for the type of controller you will use and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
 
@@ -71,11 +71,11 @@ Here is an example asset with the SpaceMouse:
 ## Bind a property to a joystick axis
 To control an OpenSpace property using an axis on a controller you will need the function `openspace.navigation.bindJoystickAxisProperty` that takes seven arguments. Below is a list that describes each argument in detail.
 
-1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](../users/navigation/joysticks)). It is important that this name matches the name that OpenSpace detects for the controller.
+1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](getting-started-guide/navigation/joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
 
 2. The index of which axis on the controller you want to bind the property to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
 
-3. The full identifier for the property you want to control with this axis on the controller. A tip to find this identifier is to first run OpenSpace normally and change the property with the normal GUI, then you can look at the Script Log and see the full name of the property you just changed, for more information about the Script Log see [The Script Log](../users/commandline#the-script-log).
+3. The full identifier for the property you want to control with this axis on the controller. A tip to find this identifier is to first run OpenSpace normally and change the property with the normal GUI, then you can look at the Script Log and see the full name of the property you just changed, for more information about the Script Log see [The Script Log](commandline.md#the-script-log).
 
 4. (Optional) The minimum value allowed to be set for this property using the axis. Defaults to `0.0`.
 
@@ -131,11 +131,11 @@ Here is an example asset with the Earth scale bound to the right trigger on an X
 ## Bind a script to a joystick button
 Binding a custom script to a controller button is done with the function `openspace.navigation.bindJoystickButton` that takes six arguments. Below is a list that describes each argument in detail.
 
-1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](../users/navigation/joysticks)). It is important that this name matches the name that OpenSpace detects for the controller.
+1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](getting-started-guide/navigation/joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
 
 2. The index of which button on the controller you want to bind the script to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.A` or `controller.DPan.Left`.
 
-3. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](../users/commandline#the-script-log).
+3. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](commandline.md#the-script-log).
 
 4. Description of the script that the button will execute when the button is activated.
 
@@ -214,17 +214,17 @@ Here is an example asset that switches focus when pressing the trigger buttons o
 # Setup new joystick type
 When connecting a new controller to OpenSpace the first step is to get a good mapping of what buttons and axes the controller has and what indices they are connected to. To get an overview of the joysticks and its axes and buttons you can use the connected joysticks list in OpenSpace. You can access this list by pressing the *F1* button on the keyboard and you will see the old GUI interface of OpenSpace pop up. In the window called **OpenSpace GUI**, press the empty checkbox next to **Joysticks Information**. This will open a new window and here all the connected controllers will be listed. In this list, you can search for your controller. The items in the list called *3Dconnexion KMJ Emulator* or *Summed contributions* can be ignored. Once you have found your controller you will see two numbered lists of axes and buttons with a slider and button respectively. See the image below:
 
-![](images/joysticks-list.png)
+![](/assets/joystick-customization/joysticks-list.png)
 
 Now we can begin to explore the controller. What we want to have in the end is a list of all the axes and buttons and which index in the OpenSpace list they correspond to. To start it can be good to have descriptive names for each button and axis you can find on the controller, or at least the ones that you are interested in.
 
 Now that we have a clear image of what the controller is capable of, we need to figure out how it is connected to OpenSpace. Let's start with the axes, we want to identify which index in the OpenSpace list corresponds to each axes on the controller. Choose one axis and move it around a little bit on the controller, you should see one or more sliders reacting to your movement in the list in OpenSpace. If you see several sliders reacting to your movement, try to isolate your movement to only one direction such as up/down or left/right. When you are certain of which index reacted to your input to the axis you can note that down and move on to the next axis. Below is an image to show how it can look like when one of the axes has been moved:
 
-![](images/joystick-axis.png)
+![](/assets/joystick-customization/joystick-axis.png)
 
 For the buttons, we will use the same strategy, push one button a few times and see which of the buttons in OpenSpace reacts, note down that number, and move on to the next. Now that we have a clear image of how each button and axis relate to the list in OpenSpace we could build a map in our asset. Below is an image to show how it can look like when one of the buttons is pressed:
 
-![](images/joystick-button.png)
+![](/assets/joystick-customization/joystick-button.png)
 
 In each joystick asset file that OpenSpace provides there will be a section at the top that looks similar to this:
 

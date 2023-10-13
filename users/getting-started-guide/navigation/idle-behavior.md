@@ -1,5 +1,5 @@
 # Idle Behavior
-The Idle Behavior is a new feature of the OrbitalNavigator as of OpenSpace 0.18.0. It can be used to trigger an automatic camera motion in relation to a scene graph node, such as an orbiting motion around the object. 
+The Idle Behavior is a new feature of the OrbitalNavigator as of OpenSpace 0.18.0. It can be used to trigger an automatic camera motion in relation to a scene graph node, such as an orbiting motion around the object.
 The settings for the Idle Behavior can be found in the settings menu under `NavigationHandler -> OrbitalNavigator -> IdleBehavior`. 
 
 An Idle Behavior can be triggered in three different ways:
@@ -23,5 +23,4 @@ The speed of the motion can be adjusted using the "Speed Factor" property in the
 
 
 ## Footnotes
-
-[^1]: Tip! The debugging module contains a helper function to add a rendering of the local coordinate system axes to an object. For Earth, the command would be: `openspace.debugging.addCartesianAxes("Earth");`
+Tip! The debugging module contains a helper function to add a rendering of the local coordinate system axes to an object. For Earth, the command would be: `openspace.debugging.addCartesianAxes("Earth");`

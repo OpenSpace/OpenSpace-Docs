@@ -37,7 +37,7 @@ NB:  The application version is used to future-proof this setup and currently no
 Each *BigBang* server has a local mapping of (identifier, version, application version) to a list of files and a list of other servers it can ask for values that it does not recognize.  This builds a graph of *BigBang* servers that collectively contain all of the file information for all supported identifiers.
 
 # Usage example
-![](data-servers.png)
+![](/assets/data-distribution/data-servers.png)
 In this example, there are three different OpenSpace clients that each have a separate *BigBang* node as their endpoint.  The three nodes in this example, `data.openspaceproject.com`, `data2.openspaceproject.com`, and `data3.openspaceproject.com` are configured asymmetrically.  `data` knows about `data2` and `data3`, `data2` knows about `data` and `data3`, but `data3` is only aware of `data2`.
 
 Each color in this image corresponds to a single request call to the endpoint and the different colors represent different usage scenarios:

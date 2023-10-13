@@ -1,3 +1,4 @@
+# Interface
 When you first launch the default scene in OpenSpace, you will be focused on Earth at the current time and date.
 
 In the top left corner of your window is your **Dashboard.** Hide with `Shift + Tab`.

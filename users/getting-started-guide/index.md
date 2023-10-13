@@ -1,5 +1,5 @@
 # Getting Started Guide
-The best-supported platform for running OpenSpace is a Windows 10 machine with at least 8GB RAM and a discrete graphics card (Nvidia cards work best, but AMD cards work with some issues). For minimum requirements by profile, see [Hardware Requirements](/docs/users/getting-started/hardware-requirements.html).
+The best-supported platform for running OpenSpace is a Windows 10 machine with at least 8GB RAM and a discrete graphics card (Nvidia cards work best, but AMD cards work with some issues). For minimum requirements by profile, see [Hardware Requirements](hardware-requirements).
 
 Once you get OpenSpace to build, or have installed it from a .zip file, it's time to run it. The OpenSpace executable can be found in the `bin/` directory (or in `bin/Release` or `bin/RelWithDebInfo` if compiled on windows).
 Here is a brief overview of what you need to know to get started.
@@ -16,7 +16,7 @@ Navigation in OpenSpace is based on the central object of the Scene, which is ca
 - Right mouse button - zoom in or out (by moving the mouse forward or backward)
 - CTRL+left mouse - pitch and yaw camera direction away from the origin
 
-More info on how to navigate in the software can be found under "Navigation" in the menu to the left on this page, or in the video tutorials under "User Tutorials". For basic navigation, see [this page](/docs/users/navigation/basic-navigation.html).
+More info on how to navigate in the software can be found under "Navigation" in the menu to the left on this page, or in the video tutorials under "User Tutorials". For basic navigation, see [this page](navigation/basic-navigation).
 
 ### Keyboard Commands
 The first section of [this wiki page](../commandline) explains how to use the console for entering commands. After starting a scene, the `documentation/KeyboardMapping.html` file will contain a list of all keyboard bindings that are valid for the current scene.

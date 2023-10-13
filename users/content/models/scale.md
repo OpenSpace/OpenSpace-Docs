@@ -45,7 +45,7 @@ OpenSpace expects the models to be in the unit Meter, however, there are many mo
 
 This will make OpenSpace interpret every unit in the model as Centimeters instead of Meters. If this scale would **not** be applied then every Centimeter in the model would be interpreted as Meters, and this would make the model look 100 times bigger than intended. So with the <code>ModelScale</code> the model is scaled down with the specified unit.
 
-![](images/down_scale.png)
+![](/assets/models/down_scale.png)
 
 ## Scale Up
 In some cases, it would be useful to instead scale the model up with a specified unit. For example, if the model was developed in a Meter unit software but every Meter was treated as a Foot by the modeler. In this case, OpenSpace would interpret the Meters as Meters instead of as Feet and the model would appear smaller than what the modeler intended. If the <code>ModelScale</code> is applied to this model in a similar manner as before, OpenSpace would scale it down, making the model even smaller. So in this case the <code>ModelScale</code> needs to be inverted, scaling the model up, to show the model in the size that the modeler intended and this can be done with the key <code>InvertModelScale</code>:
@@ -56,7 +56,7 @@ In some cases, it would be useful to instead scale the model up with a specified
   InvertModelScale = true,
 ```
 
-![](images/up_scale.png)
+![](/assets/models/up_scale.png)
 
 ## Scale with Numbers
 It is also possible to give the <code>ModelScale</code> key a numerical value instead of a unit name to scale the model by an arbitrary value. If the value is smaller than 1 then the model is scaled down and if the value is bigger than 1 the model is scaled up.
@@ -69,4 +69,4 @@ It is also possible to give the <code>ModelScale</code> key a numerical value in
 ## Summary
 In short, if the model was developed in a unit other than Meters then use the <code>ModelScale</code> key to scale the model down with that unit. However, if the model was developed in Meters but intended to be interpreted as another unit then the scale needs to be inverted with the key <code>InvertModelScale</code>. Unfortunately, the process of finding the correct model scale value is a matter of trial and error. However, since release 0.19.0 the numeric value of the <code>ModelScale</code> property is included in the GUI and can be changed at runtime with a slider. Note that this property is an <code>AdvancedUser</code> property and you might need to change your visibility settings to see it in the GUI.
 
-![](images/iss-scale-gui.png)
+![](/assets/models/iss-scale-gui.png)

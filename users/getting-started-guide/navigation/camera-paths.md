@@ -8,9 +8,9 @@ The navigation menu in OpenSpace now includes the possibility to fly to a target
 
 In addition to the fly-to button, the current focus node also has "refocus" button. This triggers a linear motion and rotation to center the object in view.
 
-![Refocus icon](/assets/images/icons/refocus_icon.png) - Refocus (linear motion to center the target in view)
+![Refocus icon](/assets/camera-paths/refocus_icon.png) - Refocus (linear motion to center the target in view)
 
-![Refocus icon](/assets/images/icons/flyto_icon.png) - Fly-to (fly using current default path type, see below)
+![Refocus icon](/assets/camera-paths/flyto_icon.png) - Fly-to (fly using current default path type, see below)
 
 When a path is playing, the Focus menu button changes to a button that can be used to cancel the path. The button also indicates which the current anchor node is. This will be the focus if a path is aborted.
 

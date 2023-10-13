@@ -19,7 +19,7 @@ If your asset file and resource are in the same folder you can include the resou
 asset.localResource("myVideo.mp4")
 ```
 
-![An asset and a file in the same folder](./images/asset_path.png)
+![An asset and a file in the same folder](/assets/resources/asset_path.png)
 
 Here is how the `video.asset` file above could load the video file `myVideo.mp4` in a video screen space renderable:
 

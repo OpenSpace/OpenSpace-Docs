@@ -55,7 +55,7 @@ You will also add a line to the `/etc/ld.so.conf.d/libc.conf` where the `lib` is
 
 Add the following line to the bottom of the file:
 
-```conf
+```bash
 /home/[user]/lib
 ```
 
@@ -151,7 +151,7 @@ To install `mod_mrf`, you need to create a new Apache module in `/etc/apache2/mo
 
 The contents of this file will consist of:
 
-```conf
+```apache
 LoadFile /home/[user]/modules/libahtse.so
 LoadModule mrf_module /home/[user]/modules/mod_mrf.so
 ```
@@ -174,7 +174,7 @@ To install `mod_convert`, you need to create a new Apache module in `/etc/apache
 
 The contents of this file will consist of:
 
-```conf
+```apache
 LoadFile /home/[user]/modules/libahtse.so
 LoadModule convert_module /home/[user]/modules/mod_convert.so
 ```
@@ -197,7 +197,7 @@ To install `mod_receive`, you need to create a new Apache module in `/etc/apache
 
 The contents of this file will consist of:
 
-```conf
+```apache
 LoadModule receive_module /home/[user]/modules/mod_receive.so
 ```
 
@@ -219,7 +219,7 @@ To install `mod_retile`, you need to create a new Apache module in `/etc/apache2
 
 The contents of this file will consist of:
 
-```conf
+```apache
 LoadModule retile_module /home/[user]/modules/mod_retile.so
 ```
 
@@ -241,7 +241,7 @@ To install `mod_sfim`, you need to create a new Apache module in `/etc/apache2/m
 
 The contents of this file will consist of:
 
-```conf
+```apache
 LoadModule sfim_module /home/[user]/modules/mod_sfim.so
 ```
 

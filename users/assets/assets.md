@@ -1,5 +1,4 @@
 # Assets
-
 In OpenSpace, Assets are modular components used to populate the scene and provide configurations. Assets can declare dependencies on other assets, which let them form a directed acyclic graph. Furthermore, assets can declare dependencies on external resources, that can be stored in the local filesystem or downloaded from the internet. An asset may represent a planet, a trail of a spacecraft, a volumetric dataset, a set of keybindings, or any other component that can be added and removed from an OpenSpace scene using the Lua API. Assets may also represent more abstract building blocks, such as invisible scene graph nodes used as reference coordinate frames, or Lua functions that can be reused by other assets.
 
 Assets are written in Lua and have access to all OpenSpace Lua scripting functions. One asset file corresponds to exactly one asset and has the suffix `.asset`.

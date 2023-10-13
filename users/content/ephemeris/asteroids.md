@@ -1,8 +1,6 @@
 # Asteroids
 This page covers the more advanced topics of asteroid/comet visualization. OpenSpace has a wide range of data for such objects, but the instructions here can be used to add newly-available data, or a custom-selected set of data.
 
-The simpler instructions for asteroids/comet data already supported by OpenSpace can be found [here](../../users/content/asteroids).
-
 # Adding New Asteroid or Comet Data to OpenSpace
 
 ## Download the New Data from the JPL Small-Body Database (SBDB)

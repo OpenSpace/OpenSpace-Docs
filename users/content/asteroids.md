@@ -11,8 +11,7 @@ Some of the asteroid categories contain a very high number of objects, which wil
 
 ## Additional Features
 See the following pages for more detailed information and advanced usage of this content:
-- [Builders/Ephemeris/Asteroids](../../builders/ephemeris/asteroids)
-- [Components/Satellites](../../components/satellites.md)
+- [Components/Satellites](satellites)
 
 ## Asteroid Content Categories
 All trajectory data were obtained from the [JPL Small-Body Database (SBDB)](https://ssd.jpl.nasa.gov/sbdb.cgi). The following categories are defined on this site and were used to group the orbital data.

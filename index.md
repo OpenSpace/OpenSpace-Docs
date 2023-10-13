@@ -31,6 +31,9 @@ users/content/index
 users/commandline
 users/kiosk
 users/joystick-customization
+users/touch-interface
+users/data-distribution
+users/assets/index
 users/faq
 :::
 
