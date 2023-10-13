@@ -40,7 +40,8 @@ exclude_patterns = [
 root_doc = "index"
 primary_domain = "lua"
 autosectionlabel_prefix_document = True
-pygments_style = "sphinx"
+pygments_style = "default"
+pygments_dark_style = "monokai"
 
 myst_enable_extensions = {
   "colon_fence",
@@ -53,26 +54,33 @@ myst_heading_anchors = 3
 ###
 # HTML output
 ###
-html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-using_rtd_theme = True
-
+html_theme = "furo"
 html_theme_options = {
-  "logo_only": True,            # No title text
-  "collapse_navigation": False, # Collapse navigation tree
-  "display_version": False      # Hide documentation version name beneath the logo
+  # No written project title in the sidebar
+  "sidebar_hide_name": True,
+
+  # Make the edit button in the top right appear
+  "source_repository": "https://github.com/OpenSpace/OpenSpace-Docs/",
+  "source_branch": "master",
+  "source_directory": "/",
+
+  # Set CSS Variables. The dark theme inherits all light variables
+  "light_css_variables": {
+    "font-stack--monospace": "Source Code Pro, monospace",
+  },
+
+  # Add custom items in the footer
+  "footer_icons": [
+    {
+        "name": "GitHub",
+        "url": "https://github.com/OpenSpace/OpenSpace",
+        "html": "",
+        "class": "fa-brands fa-solid fa-github fa-2x"
+    },
+],
 }
 html_title = f'OpenSpace documentation ({version})'
 html_short_title = "OpenSpace"
-
-# VCS options: https://docs.readthedocs.io/en/stable/guides/edit-source-links-sphinx.html
-html_context = {
-  "display_github": True,
-  "github_user": "OpenSpace",
-  "github_repo": "OpenSpace-Docs",
-  "github_version": "master",
-  "conf_py_path": "/"
-}
 
 html_logo = "img/logo.png"
 html_favicon = "img/icon.png"
@@ -84,7 +92,9 @@ html_js_files = [
 
 # CSS files that are added into the generated documentation
 html_css_files = [
-
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
 ]
 
 # These folders are copied to the documentation's HTML output
