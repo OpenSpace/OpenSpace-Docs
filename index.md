@@ -20,6 +20,24 @@ general/academics
 :::
 
 :::{toctree}
+:caption: Users
+:name: sec-users
+:maxdepth: 2
+:hidden:
+:titlesonly:
+
+users/getting-started-guide/index
+users/content/index
+users/commandline
+users/kiosk
+users/joystick-customization
+users/touch-interface
+users/data-distribution
+users/assets/index
+users/faq
+:::
+
+:::{toctree}
 :caption: Development
 :name: sec-dev
 :maxdepth: 2

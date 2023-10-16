@@ -3,8 +3,8 @@ OpenSpace versions are labeled by a version number of the form `MM.mm.rr`,  wher
 
 | _Version_ | _Date_ | _Description_ |
 | --------- | ------ | ------------- |
-| [0.19.1](changelogs/0.19.1)  | 2023-09-18 | This is a patch release for the twelfth beta release that includes a new eclipse profile |
-| [0.19.0](changelogs/0.19.0)  | 2023-06-27 | This is the twelfth beta release and the firest in 2023 |
+| [0.19.1](changelogs/0.19.1)  | 2023-09-18 | This is a patch release for the twelfth beta release, which includes a new eclipse profile |
+| [0.19.0](changelogs/0.19.0)  | 2023-06-27 | This is the twelfth beta release and the first in 2023 |
 | [0.18.2](changelogs/0.18.2)  | 2022-12-24 | This is a second patch release for the eleventh beta release |
 | [0.18.1](changelogs/0.18.1)  | 2022-11-22 | This is a patch release for the eleventh beta release |
 | [0.18.0](changelogs/0.18.0)  | 2022-05-06 | This is the eleventh beta release and the first in 2022 |
@@ -55,15 +55,5 @@ changelogs/0.17.1
 changelogs/0.17.0
 changelogs/0.16.1
 changelogs/0.16.0
-changelogs/0.15.2
-changelogs/0.15.1
-changelogs/0.15.0
-changelogs/0.14.1
-changelogs/0.14.0
-changelogs/0.13.0
-changelogs/0.12.0
-changelogs/0.11.1
-changelogs/0.11.0
-changelogs/0.10.0
 :::
 
