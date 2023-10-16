@@ -16,7 +16,7 @@ Additional documentation:
  - [Sphinx Design](https://sphinx-design.readthedocs.io/en/furo-theme/)
 :::
 
-## Standard Markdown
+## Markup
 Standard Github-flavored Markdown is available as a basis. You can find more information about it [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). For completeness, here is a quick reference list:
 
 | Element        | Markdown Syntax      | Description                                   |
@@ -37,24 +37,38 @@ Standard Github-flavored Markdown is available as a basis. You can find more inf
 | Code (Block)   | <pre>```<br>Code<br>```</pre> | Displays a block of code.            |
 | Table          | See source           | Creates a table.                              |
 
+### Heading without TOC entry
 :::{rubric} A heading that will not show up in the table of contents
 :::
 
+### Subscript/Superscript
 We can also write text in {sub}`subscript`, or {sup}`superscript` or other hings
 
+### Abbreviations
 Defining abbreviations, which have an explanation that is visible via hovering over the text: {abbr}`LIFO (last-in, first-out)`
 
+### Commands
 Displaying a program that is available on the computer: {command}`rm`
 
+### Keystrokes
 Showing a combination of keystrokes that should be pressed by a person to achieve something: {kbd}`C-x` {kbd}`C-f`
 
+### Menu Selection
 Showing a sequence of menu items that someone has to go through in order to achieve something: {menuselection}`Start --> Programs`
 
+### Inline comments
 % This is a comment that won't be printed into the main document
 
+### Icons embedding
 We can also provide images directly into the text: {octicon}`heart-fill;1em;sd-text-danger`. The list of all icons can be found [here](https://primer.style/design/foundations/icons).
 
 ## Tables
+### Markdown-style
+| foo | bar |
+| --- | --- |
+| baz | bim |
+
+### MyST style
 :::{table} Table with caption
 :widths: auto
 :align: center
@@ -64,6 +78,7 @@ We can also provide images directly into the text: {octicon}`heart-fill;1em;sd-t
 | baz | bim |
 :::
 
+### Multi-column table
 :::{hlist}
 :columns: 2
 
@@ -78,6 +93,7 @@ We can also provide images directly into the text: {octicon}`heart-fill;1em;sd-t
 ## Links
 A [link][1] that doesn't have the URL locally, but hidden away in the bottom of the file. The link here would be the same as [this](https://www.google.com) link. We can also add footnotes, either as a manually-numbered reference[^3], or an automatically-numbered reference[^myref]. Footnotes can also be a lot longer, too[^mylongdef]. The actual content behind the footnote can be placed anywhere in the source file, but will always be rendered at the bottom of the page.
 
+### Footnotes
 [^mylongdef]: This is the _**footnote definition**_.
 
     That continues for all indented lines
@@ -91,9 +107,11 @@ This is not part of the footnote.
 
 
 ## Images
+### Markdown
 The normal Markdown way:
 ![OpenSpace Logo](https://source.unsplash.com/200x200/daily?cute+animals)
 
+### Centering images
 But MyST also added a second method that has way more options. See their [documentation](https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html#block-level-images) for more information.
 :::{image} https://source.unsplash.com/200x200/daily?cute+animals
 :alt: OpenSpace Logo
@@ -211,6 +229,7 @@ Something has been deprecated but not removed
 
 
 ## Code Highlighting
+### Default language
 :::{code-block}
 -- There is no default language for code blocks
 local abc = function()
@@ -227,6 +246,7 @@ function(abc)
 end
 ```
 
+### Different language
 :::{code-block} lua
 -- But we can manually specify which language it is
 local abc = function()
@@ -256,6 +276,7 @@ std::vector<std::optional> foo() {
 std::string_view bar() { return "abc"; }
 ```
 
+### Line number and captions
 :::{code-block} cpp
 :linenos:
 :caption: Line numbers and captions
@@ -268,6 +289,7 @@ int foo() {
 }
 :::
 
+### Highlight lines
 :::{code-block} cpp
 :linenos:
 :emphasize-lines: 2, 4
@@ -282,6 +304,7 @@ int bar() {
 }
 :::
 
+### Function defintions
 It is also possible to define functions in place:
 
 :::{py:function} send_message(sender, priority)
@@ -448,6 +471,7 @@ openspace.globebrowsing.goToGeo(123.0, -40.0)
 
 ## Diagram
 See [MermaidJS](http://mermaid.js.org/#/) documentation for more information about the available diagram types
+
 :::{mermaid}
 sequenceDiagram
     Alice ->> Bob: Hello Bob, how are you?
@@ -512,10 +536,38 @@ Now we can refer back to the previous section {ref}`reference <some-label>` by i
 
 
 ## Include files
-Include some external file:
+### Verbatim include
 
+Include the `.gitignore` file:
 :::{include} /.gitignore
 :::
+
+### Include file with syntax highlighting
+#### Raw include
+```{literalinclude} example.json
+:language: json
+```
+
+#### With Caption
+```{literalinclude} example.json
+:language: json
+:caption: With a caption to [download](example.json)
+```
+
+#### Emphasize lines
+```{literalinclude} example.json
+:language: json
+:emphasize-lines: 5,6
+```
+
+#### Selected lines
+Only show selected lines
+
+```{literalinclude} example.json
+:language: json
+:lines: 1, 3, 7-9, 10
+```
+
 
 
 
