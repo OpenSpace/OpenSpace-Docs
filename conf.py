@@ -76,12 +76,14 @@ html_theme_options = {
         "html": "",
         "class": "fa-brands fa-solid fa-github fa-2x"
     }
-],
+  ],
+
+  "dark_logo": "logo.png",
+  "light_logo": "logo-inverted.png"
 }
 html_title = f'OpenSpace documentation ({version})'
 html_short_title = "OpenSpace"
 
-html_logo = "assets/logo.png"
 html_favicon = "assets/icon.png"
 
 # JavaScript files that are added into the generated documentation
