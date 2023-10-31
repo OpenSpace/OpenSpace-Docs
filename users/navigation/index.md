@@ -6,8 +6,9 @@ To get started with navigation, have a look at the following pages:
 :name: toc-users-navigation
 :caption: Navigation
 
-basic-navigation
 joystick
+joystick-customization
 camera-paths
 idle-behavior
+touch-interface
 :::

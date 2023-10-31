@@ -1,11 +1,3 @@
----
-title: Data Synchronization
-layout: default
-
-parent: Components
-nav_order: 1
----
-
 # Data Synchronization
 Assets can make use of a versioned mechanism for synchronizing data files that are larger than would be comfortable to place into a Git repository.  These are called HTTPSynchronization and are used in assets like so:
 ```lua

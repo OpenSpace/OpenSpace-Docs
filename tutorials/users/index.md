@@ -12,11 +12,6 @@ Here you will find general tutorials on the basics of using OpenSpace, including
 :maxdepth: 1
 :name: toc-tutorials-user
 
-1-download-and-install
-2-navigation-camera
-3-navigation-focus
-4-time
-5-menus-time
 6-menus-dataset
 7-menus-globebrowsing
 8-customizing-bookmarks

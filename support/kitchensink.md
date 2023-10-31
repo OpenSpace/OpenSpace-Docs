@@ -508,6 +508,17 @@ gitGraph:
   commit
 :::
 
+:::{mermaid}
+stateDiagram
+  [*] --> Still
+  Still --> [*]
+
+  Still --> Moving
+  Moving --> Still
+  Moving --> Crash
+  Crash --> [*]
+:::
+
 
 ## Glossary
 Defining glossary terms that can be used across the entire documentation page. Regardless where the glossary terms are defined, they will be usable on any page.

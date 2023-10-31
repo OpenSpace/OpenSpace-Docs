@@ -56,7 +56,6 @@ For now, the desired path type must be chosen using the `PathNavigator.DefaultPa
 * The system assumes that all objects that we fly to have a valid bounding sphere. If a target does not, it can lead to some weird behavior.
 
 ## Creating paths through Lua Scripting
-
 The Lua API now also includes functions to create camera paths to specific positions, and to provide more details when flying to a target.
 
 More info on this is coming to another wiki page, soon! (Emma Broman, 2022-04-13)

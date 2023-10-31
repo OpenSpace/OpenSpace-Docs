@@ -1,19 +1,26 @@
 # Academics
 
 ## Papers
-  - OpenSpace: A System for Astrographics, _Bock, Alexander and Axelsson, Emil and Costa, Jonathas and Payne, Gene and Acinapura, Micah and Trakinski, Vivian and Emmart, Carter and Silva, Claudio and Hansen, Charles and Ynnerman, Anders_, IEEE Transactions on Visualization and Computer Graphics, **2019**, [doi](https://doi.org/10.1109/TVCG.2019.2934259)
-  - OpenSpace: Bringing NASA Missions to the Public, _Bock, Alexander and Hansen, Charles and Ynnerman, Anders_, IEEE Computer Graphics and Applications, **2018**, [doi](https://doi.org/10.1109/MCG.2018.053491735)
-  - OpenSpace: Changing the Narrative of Public Dissemination in Astronomical Visualization from What to How, _Bock, Alexander and Axelsson, Emil and Emmart, Carter and Kuznetsova, Masha and Hansen, Charles and Ynnerman, Anders_, IEEE Computer Graphics and Applications, **2018**, [doi](https://doi.org/10.1109/MCG.2018.032421653)
-  - Globe Browsing: Contextualized Spatio-Temporal Planetary Surface Visualization, _Bladin, Karl and Axelsson, Emil and Broberg, Erik and Emmart, Carter and Ljung, Patric and Bock, Alexander and Ynnerman, Anders_, IEEE Transactions on Visualization and Computer Graphics, **2018**, [doi](https://doi.org/10.1109/TVCG.2017.2743958)
-  - OpenSpace: An open-source astrovisualization framework, _Bock, Alexander and Axelsson, Emil and Bladin, Karl and Costa, Jonathas and Payne, Gene and Territo, Matthew and Kilby, Joakim and Kuznetsova, Masha and Emmart, Carter and Ynnerman, Anders_, The Journal of Open Source Software, **2017**, [doi](https://doi.org/10.21105/joss.00281)
-  - Dynamic Scene Graph: Enabling Scaling, Positioning, and Navigation in the Universe, _Axelsson, Emil and Costa, Jonathas and Silva, Cláudio and Emmart, Carter and Bock, Alexander and Ynnerman, Anders_, Computer Graphics Forum, **2017**, [doi](http://dx.doi.org/10.1111/cgf.13202)
-  - OpenSpace: An Open-Source Framework for Data Visualization and Contextualization, _Bock, Alexander and Pembroke, Asher and Mays, M. Leila and Emmart, Carter and Ynnerman, Anders_, AGU Fall Meeting Abstracts, **2015**
-  - OpenSpace: Public dissemination of space mission profiles, _Bock, Alexander and Marcinkowski, Michal and Kilby, Joakim and Emmart, Carter and Ynnerman, Anders_, IEEE Scientific Visualization Conference (SciVis) Poster Session, **2015**, [doi](https://doi.org/10.1109/SciVis.2015.7429503)
-  - Visual verification of space weather ensemble simulations, _Bock, Alexander and Pembroke, Asher and Mays, M. Leila and Rastaetter, Lutz and Ynnerman, Anders and Ropinski, Timo_, Scientific Visualization Conference (SciVis), **2015**, [doi](https://doi.org/10.1109/SciVis.2015.7429487)
+  - ExoplanetExplorer: Contextual Visualization of Exoplanet Systems. _E. Broman, J. Faherty, L. Kreidberg, S. Zieba, C. Hansen, A. Ynnerman, and A. Bock_, IEEE Visualization, **2023**
+  - Moliverse: Contextually Embedding the Microcosm into the Universe. _M. Brossier, R. Skånberg, L. Besançon, M. Linares, T. Isenberg, A. Ynnerman, and A. Bock_, Computers & Graphics, **2022**, [doi](http://doi.org/10.1016/j.cag.2023.02.006)
+  - OpenSpace Sonification: Complementing Visualization of the Solar System with Sound. _E. Elmquist, M. Ejdbo, A. Bock, and N. Rönnberg_, International Community for Auditory Displays, **2021**, [doi](http://doi.org/10.21785/icad2021.018)
+  - Interactive Visualization of Atmospheric Effects for Celestial Bodies. _J. Costa, A. Bock, C. Emmart, C. Hansen, A. Ynnerman, and C. Silva_, IEEE Transactions on Visualization and Computer Graphics, **2019**, [doi](http://doi.org/10.1109/TVCG.2020.3030333)
+  - OpenSpace: A System for Astrographics, _A. Bock, E. Axelsson, J. Costa, G. Payne, M. Acinapura, V.Trakinski, C. Emmart, C. Silva, C. Hansen, and A. Ynnerman_, IEEE Transactions on Visualization and Computer Graphics, **2019**, [doi](https://doi.org/10.1109/TVCG.2019.2934259)
+  - OpenSpace: Bringing NASA Missions to the Public, _A. Bock, C. Hansen, and A. Ynnerman_, IEEE Computer Graphics and Applications, **2018**, [doi](https://doi.org/10.1109/MCG.2018.053491735)
+  - OpenSpace: Changing the Narrative of Public Dissemination in Astronomical Visualization from What to How, _A. Bock, E. Axelsson, C. Emmart, M. Kuznetsova, C. Hansen, and A. Ynnerman_, IEEE Computer Graphics and Applications, **2018**, [doi](https://doi.org/10.1109/MCG.2018.032421653)
+  - Globe Browsing: Contextualized Spatio-Temporal Planetary Surface Visualization, _K. Bladin, E. Axelsson, E. Broberg, C. Emmart, P. Ljung, A. Bock, and A. Ynnerman_, IEEE Transactions on Visualization and Computer Graphics, **2018**, [doi](https://doi.org/10.1109/TVCG.2017.2743958)
+  - OpenSpace: An open-source astrovisualization framework, _A. Bock, E. Axelsson, K. Bladin, J. Costa, G. Payne, M. Territo, J. Kilby, M. Kuznetsova, C. Emmart, and A. Ynnerman_, The Journal of Open Source Software, **2017**, [doi](https://doi.org/10.21105/joss.00281)
+  - Dynamic Scene Graph: Enabling Scaling, Positioning, and Navigation in the Universe, _E. Axelsson, J. Costa, C. Silva, C. Emmart, A. Bock, and A. Ynnerman_, Computer Graphics Forum, **2017**, [doi](http://dx.doi.org/10.1111/cgf.13202)
+  - OpenSpace: An Open-Source Framework for Data Visualization and Contextualization, _A. Bock, A. Pembroke, M.L. Mays, C. Emmart, and A. Ynnerman_, AGU Fall Meeting Abstracts, **2015**
+  - OpenSpace: Public dissemination of space mission profiles, _A. Bock, M. Marcinkowski, J. Kilby, C. Emmart, and A. Ynnerman_, IEEE Scientific Visualization Conference (SciVis) Poster Session, **2015**, [doi](https://doi.org/10.1109/SciVis.2015.7429503)
+  - Visual verification of space weather ensemble simulations, _A. Bock,  A. Pembroke, M.L. Mays, L. Rastaetter, A. Ynnerman, and T. Ropinski_, Scientific Visualization Conference (SciVis), **2015**, [doi](https://doi.org/10.1109/SciVis.2015.7429487)
 
 ## Theses
 | _Year_ | _Person(s)_ | _Location_ | _Title_ | _Thesis_ |
 | ------ | ----------- | ---------- | ------- | -------- |
+| 2023 | Anders Lundkvist & Erik Salsborn | CCMC | Enhancing Dungey Cycle Visualization in OpenSpace | |
+| 2023 | Andreas Engberg | AMNH | Investigating the Chemical Cartography of the Galaxy Through Visualization | | |
+| 2023 | Märta Nilsson & Robin Ridell | AMNH | Using Point Cloud Interpolation to Present a Cosmic View of Life | |
 | 2022 | Jacob Molin & Victor Lindquist | SCI | | |
 | 2022 | Anne Olthoff & Catja Johansson Nordqvist | NYU | Interactive visualization of climate change on Earth in the OpenSpace project |
 | 2022 | Måns Aronsson & Simon Karlsson Brefält | CCMC | Advanced Fieldline Rendering for Space Weather Visualization | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-189157) |

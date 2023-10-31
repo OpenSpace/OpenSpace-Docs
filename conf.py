@@ -11,7 +11,7 @@ author = "OpenSpace community"
 project_copyright = "2014-2023, OpenSpace community"
 
 # Update with every new release
-version = release = os.getenv("READTHEDOCS_VERSION", "0.19.1")
+version = release = os.getenv("READTHEDOCS_VERSION", "0.19.2")
 
 extensions = [
   "myst_parser",
