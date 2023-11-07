@@ -44,7 +44,8 @@ pygments_dark_style = "monokai"
 
 myst_enable_extensions = {
   "colon_fence",
-  "fieldlist"
+  "fieldlist",
+  "html_image"
 }
 myst_heading_anchors = 3
 
