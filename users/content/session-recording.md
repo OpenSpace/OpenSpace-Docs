@@ -20,9 +20,9 @@ nav_order: 5
 
 [This page]({{ site.url }}/docs/users/content/session-recording) covers the basics of the session recording feature.
 
-# Session Recording Advanced Features
+## Session Recording Advanced Features
 
-## Console Script Commands
+### Console Script Commands
 To start a recording, open the console with the **\`** key and enter:
 `openspace.sessionRecording.startRecording('filename.osrec');`
 To finish recording, open the console again and enter:
@@ -31,7 +31,7 @@ The GUI restricts the available playback files to those that reside in user/reco
 To see a full list of these commands, open a browser URL window and type the directory path to where OpenSpace is installed, and add the following path:
 /documentation/index.html#openspace.sessionRecording
 
-## Playback Using Advanced Time Options
+### Playback Using Advanced Time Options
 There are two ways to handle the simulation time when playing back a session.  The most common method is to allow OpenSpace to set the simulation time (the current time visible in the menu) to exactly what it was when recorded.
 
 1. To play back a session in this manner, use the syntax:
@@ -53,10 +53,10 @@ This function is available in the GUI with the "Force time change to match recor
 You can abort the playback by entering:
 `openspace.sessionRecording.stopPlayback();`
 
-## Known Issues
+### Known Issues
 Problems currently occur when playing back files that contain some types of time manipulation.  If playback gets in a strange state because of this, then the `openspace.sessionRecording.stopPlayback()` command can be used to end playback.  Camera positions are time.dependent, so things will look different if you don't play back in simulation mode and the time is set far in the past/future.
 
-## ASCII File Format
+### ASCII File Format
 When saving the recording in ASCII format instead of binary, the file becomes editable and will contain a series of rows like this:
 
 `camera 35.6259 0.125842 624861769.816 14150159.7269534 1447711.8646562 22214479.4404503 -0.2036835 -0.1934829 -0.7594912 -0.5867287 4.0000052e-07 F Earth`
@@ -77,18 +77,18 @@ Below is an explanation of the 14 columns in the example entry:
 12 - "F" - a value representing (T)rue or (F)alse for whether or not the camera is following the rotation of the focus node (e.g. rotating along with a planet to stay fixed at a spot on its surface)
 13 - "Earth" - the openspace identifier of the camera's focus node
 
-## Saving Screen Frames for Offline Movie Rendering
+### Saving Screen Frames for Offline Movie Rendering
 Session Recording can be used to generate individual screen frames which can be rendered into a movie file.
 When playing back using the GUI, check the "Output Frames" box, enter the desired saved framerate, then click Play. A .png image file will be saved for every frame in the user/screenshots/<date/time> directory.
 
-## File Conversion
+### File Conversion
 OpenSpace's TaskRunner executable can now be used to convert between ascii and binary recording formats. The typical format is binary, since it is much more space efficient. Using the conversion task to switch a binary recording to ascii makes it possible to debug or modify a recording in a readable form. It is also possible to split or combine recordings.
 The conversion task can be run by doing the following:
 1. Copy the file **data/tasks/sessionRecordConvertExample1.task** and rename it. Edit the contents to specify the `InputFilePath` to convert, and the desired `OutputFilePath`.
 2. Start **bin/TaskRunner** in a terminal. At the prompt, type the full name (with **.task** extension) of the task file copied & edited above.
 
-## File Extensions
+### File Extensions
 The extension of recording filenames is **.osrec** for binary format recordings and **.osrectxt** for ascii format. When starting a recording it is not necessary to add the file extension, as it will be added based on the recording mode. It is necessary to specify the full filename at playback, however.
 
-## Comment Lines
+### Comment Lines
 Comments can be added to ascii recordings to help with debugging, joining, or splicing. Any line that starts with `#` is ignored as a comment line.

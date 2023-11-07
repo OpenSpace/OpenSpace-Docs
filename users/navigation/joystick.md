@@ -1,4 +1,5 @@
 # Joystick navigation
+
 In addition to the normal navigation in OpenSpace, using the keyboard and mouse, it is also possible to navigate using a controller, such as an Xbox controller, PS4 controller, or a SpaceMouse. If you want to use any of these supported controllers you need to include their corresponding asset file in a profile. This can be done in the profile editor in the launcher by editing the profile to include one of the joystick assets, or you could drag and drop the asset onto the OpenSpace program while it is running. All of the joystick assets are located in the sub-folder `data/assets/util/joysticks` inside the OpenSpace folder. It is important to include the right asset file for the type of controller you are using. For example, the wireless Xbox asset will not work with a non-wireless Xbox controller and vice versa. If you are unsure about what type of controller you are using, you could instead try to include the `any-joystick` asset. This asset will try to auto-detect what type of controller is connected to the computer and add the corresponding asset file automatically. If you want to use a controller that does not have an already provided asset file in OpenSpace, you can create your own asset file for it, see [Joystick Customization](joystick-customization) for an in-depth guide.
 
 ## Xbox controller
@@ -83,13 +84,13 @@ The table below gives an overview of what each button or joystick on the SpaceMo
 
 The Left and Right buttons switch the roll mode to local or global respectively. The difference between these two is that the local roll mode rolls the camera around the center of the screen, while the global roll mode rolls the camera around the current focus.
 
-# Customizing the joystick navigation
+## Customizing the joystick navigation
 It is possible to customize the joystick navigation to your own liking. However, this will require some editing in the asset files, for an in-depth guide on how to do this see [Joystick Customization](joystick-customization). There you can also read more about how to define your own asset for a controller that OpenSpace does not yet provide an asset.
 
-# Issues and solutions
+## Issues and solutions
 Here is a list of some issues you can encounter related to the controllers and some tips on how to fix them.
 
-## Openspace does not react to the controller input
+### Openspace does not react to the controller input
 The first thing to check here is that the controller is connected correctly to the computer, that the correct asset file has been included in the profile, and that the right profile is run. If OpenSpace still does not react to the controller then it is possible that your controller has a different name than what OpenSpace expects. You can check the name of your controller when OpenSpace is running in any profile. Press the *F1* button on the keyboard and you will see the old GUI interface of OpenSpace pop up. In the window called **OpenSpace GUI**, press the empty checkbox next to **Joysticks Information**. This will open a new window and here all the connected controllers will be listed. In this list you can search for your controller and note down what name it has in the list, ignoring the number in the end. The items in the list called *3Dconnexion KMJ Emulator* or *Summed contributions* can be ignored. The next step is to change the name of the controller in the asset file. Start by opening the asset file corresponding to your controller in a text editor. You will need to change one line of code that specifies the controller name, you can see an example for the Xbox controller below (all other joystick assets look similar).
 
 ```lua
@@ -103,7 +104,7 @@ The first thing to check here is that the controller is connected correctly to t
     ...
 ```
 
-## Openspace keeps spinning even when the joysticks are not touched
+### Openspace keeps spinning even when the joysticks are not touched
 This issue is caused by the deadzone being too small for the joysticks or the triggers on the controller. To fix it you can increase the size of the deadzone by editing one or two lines in the asset file. Start by opening the asset file corresponding to your controller in a text editor. You will need to change one or two lines of code that specify the deadzone size for the joysticks and triggers respectively, you can see an example for the PS4 controller below (all other joystick assets look similar).
 
 ```lua
@@ -119,5 +120,5 @@ This issue is caused by the deadzone being too small for the joysticks or the tr
 
 Adjust these values until the spinning stops and the feel of the navigation is good. Every time you change the values you need to restart OpenSpace. If the value is too small then the spinning might still occur on some occasions, if the value is too large then OpenSpace reaction to the input might feel delayed.
 
-## Have an issue that is not included in this list?
+### Have an issue that is not included in this list?
 Have a look at our [GitHub](https://github.com/OpenSpace/OpenSpace) for more information and potential solutions, or open a [new issue](https://github.com/OpenSpace/OpenSpace/issues/new). You can also reach us on our [Slack](https://openspacesupport.slack.com).

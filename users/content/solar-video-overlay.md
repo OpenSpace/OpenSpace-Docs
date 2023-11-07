@@ -1,12 +1,5 @@
----
-title: Solar Video Overlay
-layout: default
+# Solar Video Overlay
 
-parent: Builders
-nav_order: 4
----
-
-# Description
 This page discusses how to overlay a plane containing a coronal video with the sun's position. The steps here could be used for any video plane positioning, with a variety of orientations and scales.
 
 ## Source of Corona Video

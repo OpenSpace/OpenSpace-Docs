@@ -211,7 +211,7 @@ Here is an example asset that switches focus when pressing the trigger buttons o
   end)
 ```
 
-# Setup new joystick type
+## Setup new joystick type
 When connecting a new controller to OpenSpace the first step is to get a good mapping of what buttons and axes the controller has and what indices they are connected to. To get an overview of the joysticks and its axes and buttons you can use the connected joysticks list in OpenSpace. You can access this list by pressing the *F1* button on the keyboard and you will see the old GUI interface of OpenSpace pop up. In the window called **OpenSpace GUI**, press the empty checkbox next to **Joysticks Information**. This will open a new window and here all the connected controllers will be listed. In this list, you can search for your controller. The items in the list called *3Dconnexion KMJ Emulator* or *Summed contributions* can be ignored. Once you have found your controller you will see two numbered lists of axes and buttons with a slider and button respectively. See the image below:
 
 ![](/assets/joystick-customization/joysticks-list.png)
@@ -293,5 +293,5 @@ local NameOfController = {
 
 Now that you have defined your map over your controller you can start customizing it and bind camera movements to the axes and scripts to the buttons, as the guide above describes.
 
-## Contribute your asset
+### Contribute your asset
 If you have created a new asset file for a controller that OpenSpace does not already provide, consider contributing it to the repository so other users can use it too. Contact us on our [Slack](https://openspacesupport.slack.com) and we can help you get it into the repository or onto our content [Hub](http://hub.openspaceproject.com/).
