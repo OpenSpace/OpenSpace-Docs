@@ -7,7 +7,7 @@ The visualizations are based on a thesis project done by Karin Reidarman in 2018
 ## Adding exoplanet systems to OpenSpace
 Exoplanet systems of interest must be added to OpenSpace individually. The reason for this is that it is impractical from a visualization standpoint to load all the systems in the database into OpenSpace on start-up, due to the large number of confirmed exoplanets.
 
-Exoplanet systems can be added and removed during runtime through the Exoplanets GUI panel, with the symbol:  <img src="/assets/images/users/content/baseline_hdr_strong_black_18dp.png" alt="Exoplanets GUI Symbol" width="20em" height="20em">
+Exoplanet systems can be added and removed during runtime through the Exoplanets GUI panel, with the symbol: ![Exoplanets GUI Symbol](exoplanet-gui-icon.png){w="1.5em" h="1.5em"}
 
 Added exoplanet systems, including scene graph nodes for individual planets, can be found in the Scene GUI under “Milky Way → Exoplanets → Exoplanet Systems”.
 

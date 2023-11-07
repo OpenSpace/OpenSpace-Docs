@@ -7,7 +7,10 @@ Since version 0.18.0 of OpenSpace there is a new feature that allows our users t
 4. Finally press the *Generate Horizons File* button
 5. At this point you should see the window shown in the image below
 
-<div style="text-align:center"><img src="images/gui.png"/></div>
+:::{figure} images/gui.png
+:alt: "Horizons GUI"
+:align: center
+:::
 
 # The Horizons Tool
 In the new window, there are a few places where you can input specifications for what Horizons data you want to access. Once you have entered all information you can press the *Save* button at the bottom of the window. At this point, OpenSpace will ask the Horizons service for the data you want and download it and store it on your computer. This wiki will go through every step of this process and explain what each field in the UI means. This process is very similar to how you would do it on the Horizons web page. Read more about that [here](horizons-web).
