@@ -43,6 +43,7 @@ pygments_style = "default"
 pygments_dark_style = "monokai"
 
 myst_enable_extensions = {
+  "attrs_inline",
   "colon_fence",
   "fieldlist"
 }
