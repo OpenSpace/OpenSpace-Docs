@@ -5,7 +5,7 @@
 :name: toc-users-content
 :caption: Content
 
-profiles/index
+profiles
 asteroids
 exoplanets
 skybrowser
