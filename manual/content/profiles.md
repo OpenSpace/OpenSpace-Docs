@@ -1,12 +1,4 @@
----
-title: Profile Syntax
-layout: default
-
-parent: Builders
-nav_order: 4
----
-
-# Overall
+# Profile Syntax
 A `.profiles` file is a JSON file with a predefined set of sections that can be used.  Extra keys are silently ignored.
 
 These files are not intended to be edited by hand. The profile editor GUI that launches with OpenSpace should be used to create or edit a profile. The editor provides complete control over every aspect of the file. However, this document can be a useful reference guide for an advanced user who wants to edit a profile manually or via some kind of script automation.
