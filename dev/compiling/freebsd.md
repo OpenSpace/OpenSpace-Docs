@@ -2,9 +2,9 @@
 
 ## Developer Tools
 Install the following tools:
- - Git 2.7+
- - GCC 11+ or Clang
- - CMake 3.12+
+  - Git 2.7+
+  - GCC 11+ or Clang
+  - CMake 3.12+
 
 ### Git
 You can install git as follows:
@@ -54,7 +54,7 @@ To avoid linking issues of minizip, remove next line
 
     use_pkgconfig(UNZIP minizip)
 
-in ext/ghoul/ext/assimp/CMakeLists.txt.
+in ext/ghoul/ext/assimp/CMakeLists.txt
 
 ### Background
-`use_pkgconfig` macro defined in `cmake-modules/FindPkgMacros.cmake` doesn't work for FreeBSD at now.  `FindPkgMacros.cmake` depends on `FindPkgConfig.cmake` that is contained in cmake distribution, and it doesn't work for FreeBSD because FreeBSD's pkgconfig dir is `${PREFIX}/libdata/pkgconfig` that is different with usual one.  This directory structure is not considered by FindPkgCOnfig.cmake. Thiis issue will be fixed if merge-request is accepted: [Merge request !1108 on gitlab at kitware](https://gitlab.kitware.com/cmake/cmake/merge_requests/1108)
+`use_pkgconfig` macro defined in `cmake-modules/FindPkgMacros.cmake` doesn't work for FreeBSD at now. `FindPkgMacros.cmake` depends on `FindPkgConfig.cmake` that is contained in cmake distribution, and it doesn't work for FreeBSD because FreeBSD's pkgconfig dir is `${PREFIX}/libdata/pkgconfig` that is different with usual one. This directory structure is not considered by FindPkgCOnfig.cmake. Thiis issue will be fixed if merge-request is accepted: [Merge request !1108 on gitlab at kitware](https://gitlab.kitware.com/cmake/cmake/merge_requests/1108)

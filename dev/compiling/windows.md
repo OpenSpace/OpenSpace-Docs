@@ -1,18 +1,17 @@
 # Windows
 
-
 ## Development Tools
 ### Git Client
 The source code for OpenSpace is distributed via GitHub, and so you will need a [Git](https://github.com/OpenSpace/OpenSpace/wiki/Git) client to obtain a copy of the source code. OpenSpace uses git submodules, so a client which can handle these gracefully is preferred. See [Git clients](../git) for a list of suggestions on which client to use
 
 ### Visual Studio 2022
-[Visual Studio 2022](http://www.visualstudio.com) is the standard Interactive Development Environment (IDE) for Windows. The "community" version is a free download for open-source projects. When you install it, be sure to select "Custom" configuration and select the C++ compiler -- it might not be included by default. You can also select a git client here ("Git GUI"). Installation could take a while (like an hour or so, depending on the machine). We are following the development of the C++ language quite closely, so there are more and more features that are no longer supported in Visual Studio 2019 or earlier versions.
+[Visual Studio 2022](http://www.visualstudio.com) is the standard Interactive Development Environment (IDE)d for Windows. The "community" version is a free download for open-source projects. When you install it, be sure to select "Custom" configuration and select the C++ compiler -- it might not be included by default. You can also select a git client here ("Git GUI"). Installation could take a while (like an hour or so, depending on the machine). We are following the development of the C++ language quite closely, so there are more and more features that are no longer supported in Visual Studio 2019 or earlier versions.
 
 ### CMake
 Download and run the [CMake installer](https://cmake.org/download/). If you are upgrading from version 3.4 or earlier, uninstall first. OpenSpace requires CMake version 3.25 or newer.
 
 
-## Build/Install Libraries
+## Dependencies
 ### Advice on directory structure
 Building OpenSpace will be easier if you follow a few guidelines about where you put the source code and where you build OpenSpace the the libraries it needs. OpenSpace depends on several other software components, which are loaded as git submodules when you do a recursive clone. These are all in the `ext/` subdirectory. One of these is a library called [Ghoul](https://github.com/OpenSpace/Ghoul), which has its own submodules, in `ext/Ghoul/ext/`.
 

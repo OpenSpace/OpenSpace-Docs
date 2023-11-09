@@ -3,15 +3,15 @@ This page outlines the steps and resources required to compile OpenSpace from sc
 
 
 ## 0. Hardware requirements
-  - Dedicated graphics card that supports OpenGL 3.3 or higher. Most new graphics cards have this capability, but sometimes you need to update your drivers. Nvidia graphics cards work best, but AMD cards will work (but currently have some known [issues](https://github.com/OpenSpace/OpenSpace/labels/GPU%3A%20AMD)).
+  - Dedicated graphics card that supports OpenGL 3.3 or higher. Most new graphics cards have this capability, but sometimes you need to update your drivers. Nvidia graphics cards work best, but AMD cards will work (but currently have some known [issues](https://github.com/OpenSpace/OpenSpace/labels/GPU%3A%20AMD))
   - A mouse makes navigation easier than using a trackpad, since you need left, right, and middle mouse buttons
   - Enough disk space (all numbers approximate):
     - 1 GB of disk space to clone the GitHub repository
     - A minimum of 15 GB of additional disk space to build OpenSpace (more might be required depending on number of configurations and modules)
-    - 10+ GB of disk space to hold the current OpenSpace dataset. Expect that to grow as time goes on.
+    - 10+ GB of disk space to hold the current OpenSpace dataset. Expect that to grow as time goes on
 
 
-## 1. Developer Tools
+## 1. Development Tools
 To compile OpenSpace on any platform you will need a Git client, CMake, and a C++ compiler that supports at least C++20.
 
 ### Git Client
@@ -21,13 +21,7 @@ See [Git](../git) for information about a Git client. Please ensure that, specif
 [CMake](http://www.cmake.org) is a multi-platform project-generation tool. OpenSpace uses CMake so that we can more easily configure and compile OpenSpace on various platforms. We require CMake version 3.25 or above. If you favor the commandline you can use the `cmake` command, but you might also like to know that you can use `ccmake`, which is CMake with an interactive curses interface.
 
 ### Compiler / IDE
-The platform specific pages found in the menu on the left contain more detailed information about the compilation platforms for each operating system.
-
-  - [Visual Studio 2022](http://www.visualstudio.com) is the standard and recommended Interactive Development Environment (IDE) for Windows
-  - [XCode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12) is the standard IDE on macOS
-  - On Linux you can install either gcc or clang compilers, using either `yum` or `apt-get`, and use any editor of your choice
-
-OpenSpace is written in C++20 and thus requires compiler versions that support a large portion of that standard. Thus we require the following versions of the compiler:
+The platform specific pages found in the menu on the left contain more detailed information about the compilation platforms for each operating system. OpenSpace is written in C++20 and thus requires compiler versions that support a large portion of that standard. Thus we require the following versions of the compiler:
   - Windows: MSVC 19.31 (Visual Studio 2022, from version 17.1)
   - macOS: AppleClang 13.1.6 (Xcode 13.4.1)
   - Linux: GCC 11 or Clang 14
