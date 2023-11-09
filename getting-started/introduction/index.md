@@ -1,7 +1,7 @@
-# Getting Started
+# Introduction
 The guide provides all information to a new user of OpenSpace to install the software and start it for the first time.
 
-The best-supported platform for running OpenSpace is a Windows 10 or Windows 11 machine with at least 8GB RAM and a discrete graphics card (NVidia cards work best, but AMD cards work with some issues). The [Hardware Requirements](../hardware-requirements) page contains minimum requirements for each profile.
+The best-supported platform for running OpenSpace is a Windows 10 or Windows 11 machine with at least 8GB RAM and a discrete graphics card (NVidia cards work best, but AMD cards work with some issues). The [Hardware Requirements](/users/hardware-requirements) page contains minimum requirements for each profile.
 
 ## Installation
 To install OpenSpace, you download the `.zip` file from the OpenSpace [homepage](https://openspaceproject.com) and unzip the file.
@@ -38,7 +38,7 @@ To get started, you click the "START" button in the _Launcher_ and OpenSpace wil
 The loading screen of _OpenSpace_
 :::
 
-The length of the loading depends on the hardware of your setup but should, in general, not take longer than 2-3 minutes the first time you start _OpenSpace_. If the loading screen does not appear, please see the [Handling Errors](../handling-errors/index) portion of the documentation. On Windows, you will see two firewall pop-up windows appear that both have to be accepted for OpenSpace to work. After a few minutes you should see the main window with Earth in view:
+The length of the loading depends on the hardware of your setup but should, in general, not take longer than 2-3 minutes the first time you start _OpenSpace_. If the loading screen does not appear, please see the [Handling Errors](/users/handling-errors) portion of the documentation. On Windows, you will see two firewall pop-up windows appear that both have to be accepted for OpenSpace to work. After a few minutes you should see the main window with Earth in view:
 
 :::{figure} openspace.png
 :align: center

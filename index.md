@@ -4,7 +4,7 @@ Welcome to the official documentation for [OpenSpace](https://openspaceproject.c
 
 In addition to the documentation provided here, you are very welcome on our [Slack channel](https://openspacesupport.slack.com) to which you can freely [sign-up](https://join.slack.com/t/openspacesupport/shared_invite/enQtMjUxNzUyMTQ1ODQxLTRmNDI1YTA4ODkzODUyODE0YjIzODU0NWU1NGY1NWIzZDUzMDgwM2VkYmE1ZGY3MmU2OWI5NzhlN2U3NWU2NTQ).
 
-On the left you can find a table of contents that allows you to access the individual topics of interest. The table also contains a search function to search through the available pages. If you are new to _OpenSpace_, we'd recommend you to start in the [Getting Started](users/getting-started/index) section.
+On the left you can find a table of contents that allows you to access the individual topics of interest. The table also contains a search function to search through the available pages. If you are new to _OpenSpace_, we'd recommend you to start in the [Getting Started](getting-started/introduction/index) section.
 
 The overall structure of the documentation is as follows:
 
@@ -43,22 +43,41 @@ general/academics
 :::
 
 :::{toctree}
+:caption: Getting Started
+:name: sec-gettingstarted
+:maxdepth: 2
+:hidden:
+:titlesonly:
+
+getting-started/introduction/index
+getting-started/profiles/index
+:::
+
+:::{toctree}
 :caption: Users
 :name: sec-users
 :maxdepth: 2
 :hidden:
 :titlesonly:
 
-users/getting-started/index
-users/navigation/index
-users/assets/index
-users/content/index
 users/commandline
 users/kiosk
-users/data-distribution
-users/handling-errors/index
+users/handling-errors
 users/hardware-requirements
 users/faq
+:::
+
+:::{toctree}
+:caption: Manual
+:name: sec-manual
+:maxdepth: 2
+:hidden:
+:titlesonly:
+
+manual/navigation/index
+manual/assets/index
+manual/content/index
+manual/data-distribution
 :::
 
 :::{toctree}
