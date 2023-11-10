@@ -75,7 +75,7 @@ To control an OpenSpace property using an axis on a controller you will need the
 
 2. The index of which axis on the controller you want to bind the property to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
 
-3. The full identifier for the property you want to control with this axis on the controller. A tip to find this identifier is to first run OpenSpace normally and change the property with the normal GUI, then you can look at the Script Log and see the full name of the property you just changed, for more information about the Script Log see [The Script Log](/users/console.md#the-script-log).
+3. The full identifier for the property you want to control with this axis on the controller. A tip to find this identifier is to first run OpenSpace normally and change the property with the normal GUI, then you can look at the Script Log and see the full name of the property you just changed, for more information about the Script Log see [The Script Log](/users/console/index.md#the-script-log).
 
 4. (Optional) The minimum value allowed to be set for this property using the axis. Defaults to `0.0`.
 
@@ -135,7 +135,7 @@ Binding a custom script to a controller button is done with the function `opensp
 
 2. The index of which button on the controller you want to bind the script to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.A` or `controller.DPan.Left`.
 
-3. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](/users/console.md#the-script-log).
+3. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](/users/console/index.md#the-script-log).
 
 4. Description of the script that the button will execute when the button is activated.
 

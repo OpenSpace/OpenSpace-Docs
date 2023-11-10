@@ -65,7 +65,7 @@ general/academics
 
 users/getting-started/index
 users/profiles/index
-users/console
+users/console/index
 users/kiosk
 users/handling-errors
 users/hardware-requirements
@@ -83,8 +83,9 @@ users/faq
 :titlesonly:
 
 manual/navigation/index
+manual/properties/index
+manual/scenegraph/index
 manual/assets/index
-manual/concepts/index
 manual/content/index
 manual/data-distribution/index
 :::
