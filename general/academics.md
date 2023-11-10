@@ -13,7 +13,7 @@
   - Dynamic Scene Graph: Enabling Scaling, Positioning, and Navigation in the Universe, _E. Axelsson, J. Costa, C. Silva, C. Emmart, A. Bock, and A. Ynnerman_, Computer Graphics Forum, **2017**, [doi](http://dx.doi.org/10.1111/cgf.13202)
   - OpenSpace: An Open-Source Framework for Data Visualization and Contextualization, _A. Bock, A. Pembroke, M.L. Mays, C. Emmart, and A. Ynnerman_, AGU Fall Meeting Abstracts, **2015**
   - OpenSpace: Public dissemination of space mission profiles, _A. Bock, M. Marcinkowski, J. Kilby, C. Emmart, and A. Ynnerman_, IEEE Scientific Visualization Conference (SciVis) Poster Session, **2015**, [doi](https://doi.org/10.1109/SciVis.2015.7429503)
-  - Visual verification of space weather ensemble simulations, _A. Bock,  A. Pembroke, M.L. Mays, L. Rastaetter, A. Ynnerman, and T. Ropinski_, Scientific Visualization Conference (SciVis), **2015**, [doi](https://doi.org/10.1109/SciVis.2015.7429487)
+  - Visual verification of space weather ensemble simulations, _A. Bock, A. Pembroke, M.L. Mays, L. Rastaetter, A. Ynnerman, and T. Ropinski_, Scientific Visualization Conference (SciVis), **2015**, [doi](https://doi.org/10.1109/SciVis.2015.7429487)
 
 ## Theses
 | _Year_ | _Person(s)_ | _Location_ | _Title_ | _Thesis_ |

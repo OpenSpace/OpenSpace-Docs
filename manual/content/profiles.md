@@ -1,10 +1,10 @@
 # Profile Syntax
-A `.profiles` file is a JSON file with a predefined set of sections that can be used.  Extra keys are silently ignored.
+A `.profiles` file is a JSON file with a predefined set of sections that can be used. Extra keys are silently ignored.
 
 These files are not intended to be edited by hand. The profile editor GUI that launches with OpenSpace should be used to create or edit a profile. The editor provides complete control over every aspect of the file. However, this document can be a useful reference guide for an advanced user who wants to edit a profile manually or via some kind of script automation.
 
 ## Sections
-The supported sections are: `version`, `'modules`, `meta`, `assets`, `properties`, `keybindings`, `time`, `delta_times`, `camera`, `mark_nodes`, and `additional_scripts`. These sections have to be keys of the root JSON object.  Each of the sections is described below.  _italic_ values are JSON types, `monospaced` values are valid key names, **optional** denotes keys that do not have to be present.
+The supported sections are: `version`, `'modules`, `meta`, `assets`, `properties`, `keybindings`, `time`, `delta_times`, `camera`, `mark_nodes`, and `additional_scripts`. These sections have to be keys of the root JSON object. Each of the sections is described below. _italic_ values are JSON types, `monospaced` values are valid key names, **optional** denotes keys that do not have to be present.
 
 ### Version
 Used to specify the version number of the profile's format.
@@ -29,7 +29,7 @@ Type: _array of strings_
 This section sets specific property values at the time the profile is loaded. Each entry specifies a property and the value to set it.
 Type: _object_
 Children:
- - `type` (_string_):  Denotes the Lua function that should be called to set the property. Must be either `setPropertyValue` or `setPropertyValueSingle`
+ - `type` (_string_): Denotes the Lua function that should be called to set the property. Must be either `setPropertyValue` or `setPropertyValueSingle`
  - `name` (_string_): The fully qualified identifier of the Property
  - `value` (_string_): The value that is to be set; this will be used as is for the Lua script, so if this is a string, it has to include escaped quote characters `\"`
 
@@ -55,7 +55,7 @@ Children:
 Used to set the camera position at startup. There are two types of camera position initializations: **setNavigationState** or **goToGeo**.
 Type: _object_
 Children:
-- `type` (_string_):  Determines the type of the camera specification. Must be `setNavigationState` or `goToGeo`. The choice of type determines the remaining types
+- `type` (_string_): Determines the type of the camera specification. Must be `setNavigationState` or `goToGeo`. The choice of type determines the remaining types
 
 #### setNavigationState
  - `anchor` (_string_): The name of the scene graph node used as the anchor for the camera
@@ -77,7 +77,7 @@ Used to mark interesting nodes at startup.
 Type: _array of strings_
 
 ### AdditionalScripts
-Additional Lua scripts that should be executed when the profile is loaded.  This should not be used to execute scripts that could be handled through one of the other sections.
+Additional Lua scripts that should be executed when the profile is loaded. This should not be used to execute scripts that could be handled through one of the other sections.
 Type: _array of strings_
 
 ### Meta

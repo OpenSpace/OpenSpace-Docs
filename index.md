@@ -94,10 +94,9 @@ manual/data-distribution
 :hidden:
 :titlesonly:
 
-dev/index
+dev/compiling/index
 dev/coding-style
 dev/concepts
-dev/git
 dev/folder-layout
 dev/pull-requests
 dev/cpp-musings

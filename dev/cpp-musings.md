@@ -1,7 +1,7 @@
 # C++ Musings
 
 ## Returning by const reference for large objects is better than hoping for copy elision
-If `T` is used over `const T&`, a copy has to be generated, even if the caller is only interested in a reference.  If `const T&` is used and the caller only wants a reference, no copy is needed.
+If `T` is used over `const T&`, a copy has to be generated, even if the caller is only interested in a reference. If `const T&` is used and the caller only wants a reference, no copy is needed.
 
 [Example](https://gcc.godbolt.org/z/fvKazz)
 
