@@ -3,10 +3,10 @@ In order to implement a Kepler Translation, you will need to obtain the followin
 
 Eccentricity, SemiMajorAxis, Inclination, AscendingNode, ArgumentOfPeriapsis, MeanAnomaly, Epoch, Period (values for this example were taken from here: [https://www.princeton.edu/~willman/planetary_systems/Sol/Pluto]( https://www.princeton.edu/~willman/planetary_systems/Sol/Pluto))
 
-You will create an asset file to draw a trail, the trail will use the KeplerTranstion to decide where its points are.  Once you have created the file, you will add the asset to OpenSpace.
+You will create an asset file to draw a trail, the trail will use the KeplerTranstion to decide where its points are. Once you have created the file, you will add the asset to OpenSpace.
 
 # Create an Asset File
-For this example, you will create a file and put it at **data/assets/keplertranslation.asset** in the OpenSpace directory structure.  This asset file will create a renderable trail displaying the orbit.
+For this example, you will create a file and put it at **data/assets/keplertranslation.asset** in the OpenSpace directory structure. This asset file will create a renderable trail displaying the orbit.
 
 ```lua
 --keplertranslationexample.asset
@@ -45,7 +45,7 @@ assetHelper.registerSceneGraphNodesAndExport(asset, { PlutoKeplerTrail })
 ```
 
 # Add the Asset to OpenSpace
-The final step is to simply add this asset to OpenSpace for rendering.  This can be done by either:
+The final step is to simply add this asset to OpenSpace for rendering. This can be done by either:
 1. Including the asset in a **.scene** file before starting OpenSpace:
 `asset.require('keplertranslationexample')`
 2. Typing in the \` console while OpenSpace is running:

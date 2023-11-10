@@ -22,20 +22,20 @@ Standard Github-flavored Markdown is available as a basis. You can find more inf
 | Element        | Markdown Syntax      | Description                                   |
 | -------------- | -------------------- | --------------------------------------------- |
 | Header 1       | `# Header 1`         | Largest header, equivalent to `<h1>` in HTML. |
-| Header 2       | `## Header 2`        | Second largest header.                        |
-| Header 3       | `### Header 3`       | Third largest header.                         |
-| Header 4       | `#### Header 4`      | Fourth largest header.                        |
-| Header 5       | `##### Header 5`     | Fifth largest header.                         |
-| Bold Text      | `**Bold**`           | Makes text bold.                              |
-| Italic Text    | `_Italic_` or `*Italic*` | Makes text italic.                        |
-| Link           | `[Text](URL)`        | Creates a hyperlink with the provided text.   |
-| Image          | `![Alt text](URL)`   | Embeds an image.                              |
-| Unordered List | `- Item`             | Creates a bulleted list.                      |
-| Ordered List   | `1. Item`            | Creates a numbered list.                      |
-| Blockquote     | `> Quote`            | Creates a blockquote.                         |
-| Code (Inline)  | `` `Code` ``         | Displays inline code.                         |
-| Code (Block)   | <pre>```<br>Code<br>```</pre> | Displays a block of code.            |
-| Table          | See source           | Creates a table.                              |
+| Header 2       | `## Header 2`        | Second largest header                         |
+| Header 3       | `### Header 3`       | Third largest header                          |
+| Header 4       | `#### Header 4`      | Fourth largest header                         |
+| Header 5       | `##### Header 5`     | Fifth largest header                          |
+| Bold Text      | `**Bold**`           | Makes text bold                               |
+| Italic Text    | `_Italic_` or `*Italic*` | Makes text italic                         |
+| Link           | `[Text](URL)`        | Creates a hyperlink with the provided text    |
+| Image          | `![Alt text](URL)`   | Embeds an image                               |
+| Unordered List | `- Item`             | Creates a bulleted list                       |
+| Ordered List   | `1. Item`            | Creates a numbered list                       |
+| Blockquote     | `> Quote`            | Creates a blockquote                          |
+| Code (Inline)  | `` `Code` ``         | Displays inline code                          |
+| Code (Block)   | <pre>```<br>Code<br>```</pre> | Displays a block of code             |
+| Table          | See source           | Creates a table                               |
 
 ### Heading without TOC entry
 :::{rubric} A heading that will not show up in the table of contents

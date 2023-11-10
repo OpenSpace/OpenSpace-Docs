@@ -96,12 +96,12 @@ If you do want to change the defaults: [here](https://stackoverflow.com/question
 
 ## Troubleshooting
 Make sure that you are using the correct version of gcc/g++
- - Double check `CMAKE_CXX_COMPILER` and `/usr/bin/c++ --version` to be sure.  It should be at least 8.0
+ - Double check `CMAKE_CXX_COMPILER` and `/usr/bin/c++ --version` to be sure. It should be at least 8.0
 
 Error: libstdc++.so.6: could not read symbols: Missing DSO from command line
  - Try using g++ instead of gcc.
 
-Error: GLSL 3.00 is not supported.  Supported versions are: 1.10, 1.20, 1.30, 1.00 ES, and 3.00 ES
+Error: GLSL 3.00 is not supported. Supported versions are: 1.10, 1.20, 1.30, 1.00 ES, and 3.00 ES
  - Enter the following line in the terminal before running, or add this to `~/.bashrc` or `~/.profile`:
  `export MESA_GL_VERSION_OVERRIDE=4.3`
 

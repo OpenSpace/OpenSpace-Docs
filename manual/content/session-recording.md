@@ -7,8 +7,8 @@ The top half of the menu has controls for starting a recording. Leave the "Text 
 Upon recording, the sub-menu disappears and the program can be used normally, with all actions & settings being recorded. Click the red "Stop recording" button when done, and a file of the specified name will be saved to user/recordings/ in the OpenSpace directory.
 
 ## Playback of a Recorded Session
-There are two ways to handle the simulation time when playing back a session.  The most common method is to allow OpenSpace to set the simulation time (the current time visible in the menu) to exactly what it was when recorded ("Force time change to recorded time" checkbox). If the "Loop playback" option is checked, then the recording will continually repeat itself until manually stopped. The drop-down menu contains a list of files in the user/recordings/ directory that can be played.
-Mouse camera control is disabled during playback.  The bottom menu (as well as log messages) will indicate when playback is finished.  You can abort the playback by clicking the 'Stop Recording' button, or entering: `openspace.sessionRecording.stopPlayback()` in the console. It is also possible to simply pause playback by clicking the menu button.
+There are two ways to handle the simulation time when playing back a session. The most common method is to allow OpenSpace to set the simulation time (the current time visible in the menu) to exactly what it was when recorded ("Force time change to recorded time" checkbox). If the "Loop playback" option is checked, then the recording will continually repeat itself until manually stopped. The drop-down menu contains a list of files in the user/recordings/ directory that can be played.
+Mouse camera control is disabled during playback. The bottom menu (as well as log messages) will indicate when playback is finished. You can abort the playback by clicking the 'Stop Recording' button, or entering: `openspace.sessionRecording.stopPlayback()` in the console. It is also possible to simply pause playback by clicking the menu button.
 
 ---
 title: Session Recording
@@ -32,7 +32,7 @@ To see a full list of these commands, open a browser URL window and type the dir
 /documentation/index.html#openspace.sessionRecording
 
 ### Playback Using Advanced Time Options
-There are two ways to handle the simulation time when playing back a session.  The most common method is to allow OpenSpace to set the simulation time (the current time visible in the menu) to exactly what it was when recorded.
+There are two ways to handle the simulation time when playing back a session. The most common method is to allow OpenSpace to set the simulation time (the current time visible in the menu) to exactly what it was when recorded.
 
 1. To play back a session in this manner, use the syntax:
 `openspace.sessionRecording.startPlayback('filename.osrec');`
@@ -40,21 +40,21 @@ This function is available in the GUI with the "Force time change to match recor
 
 Playback can also be performed without changing the current simulation time, in which case there are three different time options that can be used:
 
-2. Recorded Time - recorded actions will play back relative to the time that the recording started, or the time that the playback started.  For example, if a layer was turned on 3 seconds after starting recording, then in the playback it will turn on 3 seconds after playback started (regardless of what simulation time is).  Example:
+2. Recorded Time - recorded actions will play back relative to the time that the recording started, or the time that the playback started. For example, if a layer was turned on 3 seconds after starting recording, then in the playback it will turn on 3 seconds after playback started (regardless of what simulation time is). Example:
 `openspace.sessionRecording.startPlaybackRecordedTime('filename.osrec');`
 This function is available in the GUI with the "Force time change to match recording" box is *un*-checked.
 
-3. Application Time - recorded actions will play back relative to the time that the OpenSpace application started.  Consider the example of a session file that, at the time it was recorded, OpenSpace had been running for 10 minutes.  In a later session, a user starts OpenSpace and then starts playback of that file 1 minute later.  In this case, the playback will begin 9 minutes after that point (regardless of what simulation time is). Example:
+3. Application Time - recorded actions will play back relative to the time that the OpenSpace application started. Consider the example of a session file that, at the time it was recorded, OpenSpace had been running for 10 minutes. In a later session, a user starts OpenSpace and then starts playback of that file 1 minute later. In this case, the playback will begin 9 minutes after that point (regardless of what simulation time is). Example:
 `openspace.sessionRecording.startPlaybackApplicationTime('filename.osrec');`
 
-4. Simulation Time - recorded actions will be locked to the simulated time in OpenSpace, and will not play back unless the time is set to the specific date & time.  With this mode, it is necessary to manually set the simulation time to before what it was when recorded.  Playback will begin when the current simulation time reaches the recorded simulation time. Example:
+4. Simulation Time - recorded actions will be locked to the simulated time in OpenSpace, and will not play back unless the time is set to the specific date & time. With this mode, it is necessary to manually set the simulation time to before what it was when recorded. Playback will begin when the current simulation time reaches the recorded simulation time. Example:
 `openspace.sessionRecording.startPlaybackSimulationTime('filename.osrec');`
 
 You can abort the playback by entering:
 `openspace.sessionRecording.stopPlayback();`
 
 ### Known Issues
-Problems currently occur when playing back files that contain some types of time manipulation.  If playback gets in a strange state because of this, then the `openspace.sessionRecording.stopPlayback()` command can be used to end playback.  Camera positions are time.dependent, so things will look different if you don't play back in simulation mode and the time is set far in the past/future.
+Problems currently occur when playing back files that contain some types of time manipulation. If playback gets in a strange state because of this, then the `openspace.sessionRecording.stopPlayback()` command can be used to end playback. Camera positions are time.dependent, so things will look different if you don't play back in simulation mode and the time is set far in the past/future.
 
 ### ASCII File Format
 When saving the recording in ASCII format instead of binary, the file becomes editable and will contain a series of rows like this:
