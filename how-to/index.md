@@ -3,5 +3,8 @@ In this section, we highlight some of the content that can be built using the fe
 
 
 :::{toctree}
+:maxdepth: 1
+:titlesonly:
+
 html-controls-setup/index
 :::
