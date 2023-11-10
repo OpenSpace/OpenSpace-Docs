@@ -12,7 +12,7 @@ Each target belongs to a browser and is either in the shape of a crosshair or a 
 The image list has two modes: Images Within View and All Images. The Images Within View mode display the images that are currently in the view of the target. It changes as you move around the target. The All Images displays all images in the collection in alphabetical order.
 
 ## Tab buttons
-![Tab buttons](/assets/skybrowser/tabbuttons.png)
+![Tab buttons](tabbuttons.png)
 
 From left to right:
 

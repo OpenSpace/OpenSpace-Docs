@@ -85,7 +85,7 @@ html_theme_options = {
 html_title = f'OpenSpace documentation ({version})'
 html_short_title = "OpenSpace"
 
-html_favicon = "assets/icon.png"
+html_favicon = "_static/icon.png"
 
 # JavaScript files that are added into the generated documentation
 html_js_files = [

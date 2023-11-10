@@ -7,7 +7,7 @@
 profiles
 asteroids
 exoplanets
-skybrowser
+skybrowser/index
 gaia
 globebrowsing/index
 models/index
