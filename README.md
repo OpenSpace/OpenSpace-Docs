@@ -16,10 +16,9 @@ Before committing to the repository it can also be beneficial to run `./make.bat
 
 ## File Structure
 - Each major grouping in the documentation should have a separate folder in the repository that collects all of the files describing things belonging to that major category
-- `img`: This folder contains images that are of general use for the documentation. Images used in specific documentation pages should be located alongside their respective files instead
 - `support`: A folder containing additional meta files that are useful/necessary to write the documentation, but that are not documenting the software itself
 - `_static`: Files placed in this folder are automatically copied into the resulting documentation. In general, it is not necessary to manually place files in here as Sphinx is copying required files from other places automatically
 - `.readthedocs.yml`: A configuration file that sets up the build environment to build the documentation. Documentation for this file can be found [here](https://docs.readthedocs.io/en/stable/config-file/v2.html)
 - `conf.py`: A Python script that configures the actual Sphinx instance that builds the documentation page. Documentation for this file can be found [here](https://www.sphinx-doc.org/en/master/usage/configuration.html) and [here](https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html)
 - `requirements.txt`: A PIP requirements file that describes all of the Python package requirements that need to be installed
-- `make.bat` / `Makefile`: A batch script for Windows or bash script for Linux to build the documentation. The script needs a second parameter that describes the output type, by default we use `html` for our documentation or `linkcheck` to check whether links in the files are correct
+- `make.bat` / `Makefile`: A batch script for Windows or bash script for Linux to build the documentation. The script needs a second parameter that describes the output type, by default we use `html` for our documentation or `linkcheck` to check whether links in the files are correct. `clean` can be used to remove existing files to build the documentation from scratch, for example via `make.bat clean && make.bat html`.

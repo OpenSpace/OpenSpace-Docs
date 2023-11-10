@@ -10,7 +10,6 @@ Here you will find general tutorials on the basics of using OpenSpace, including
 ## Table of Contents
 :::{toctree}
 :maxdepth: 1
-:name: toc-tutorials-user
 
 6-menus-dataset
 7-menus-globebrowsing

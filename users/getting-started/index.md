@@ -113,10 +113,6 @@ You can toggle the visibility of the text information using {kbd}`Shift + TAB` a
 
 
 :::{toctree}
-:maxdepth: 1
-:name: toc-users-gettingstarted
-:caption: Getting Started
-
 navigation
 time
 :::

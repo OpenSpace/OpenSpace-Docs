@@ -4,7 +4,6 @@ Here is a list of all the profiles that are distributed with OpenSpace. Each lin
 
 :::{toctree}
 :maxdepth: 1
-:name: toc-gettingstarted-profiles
 :caption: Profiles
 
 apollo

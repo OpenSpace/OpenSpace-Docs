@@ -2,7 +2,6 @@
 
 :::{toctree}
 :maxdepth: 1
-:name: toc-users-content
 :caption: Content
 
 profiles
