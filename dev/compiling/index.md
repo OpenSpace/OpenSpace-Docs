@@ -38,9 +38,22 @@ Please ensure that, specifially on Windows, to enable automatic line-ending conv
 
 [Learning Git](http://pcottle.github.io/learnGitBranching) is a good, interactive webpage to learn the basics of using Git.
 
+You might find it easier to [use SSH](https://help.github.com/articles/generating-an-ssh-key/) instead of HTTPS, especially if you're using Two-Factor Authentication with GitHub
+
 
 ### CMake
-[CMake](http://www.cmake.org) is a multi-platform project-generation tool. OpenSpace uses CMake so that we can more easily configure and compile OpenSpace on various platforms. We require CMake version 3.25 or above. If you favor the commandline you can use the `cmake` command, but you might also like to know that you can use `ccmake`, which is CMake with an interactive curses interface.
+[CMake](http://www.cmake.org) is a multi-platform project-generation tool. OpenSpace uses CMake so that we can more easily configure and compile OpenSpace on various platforms. We require CMake version 3.25 or above.
+
+If you favor the commandline you can use the `cmake` command, but you might also like to know that you can use `ccmake`, which is CMake with an interactive curses interface.
+  - Press `c` to configure your CMake files. Some configurations will require you to run the configure multiple times before you can generate.
+  - Scroll up and down using the arrow keys, press Enter/Return to toggle or edit a value, again to confirm it.
+  - When you make changes, confgure with `c` again: you won't be able to generate the build files until you do.
+  - `t` will toggle advanced mode.
+  - `g` will generate the files.
+  - `e` to exit the errors/warning/help screen and take you back to the configuration so you can update it as necessary.
+  - `q` will quit without generating changes.
+  - When in doubt, `rm` in your CMake build directory and start again.
+
 
 ### Compiler / IDE
 The platform specific pages found in the menu on the left contain more detailed information about the compilation platforms for each operating system. OpenSpace is written in C++20 and thus requires compiler versions that support a large portion of that standard. Thus we require the following versions of the compiler:
@@ -60,20 +73,25 @@ On Linux and macOS, the [GDAL](http://www.gdal.org/) library also requires a man
 ## 3. Compiling
 Roughly speaking, the following steps are taken on any platform:
 
-1. Clone the Git repository including all submodules. If you use the commandline for this, a standard command would be: `git clone --recurse-submodules --branch master https://github.com/OpenSpace/OpenSpace`. This example specifies the `master` branch, but another branch name can be substituted (read [Branching Model](http://nvie.com/posts/a-successful-git-branching-model) for more information about Git branches).
-1. Start CMake and "Configure" using the `CMakeLists.txt` file in the OpenSpace directory
-1. Once you have the configuration set with no errors, use CMake to "generate" a project file
-1. Compile
+  1. Clone the Git repository including all submodules. If you use the commandline for this, a standard command would be: `git clone --recursive --branch master https://github.com/OpenSpace/OpenSpace`. This example specifies the `master` branch, but another branch name can be substituted (read [Branching Model](http://nvie.com/posts/a-successful-git-branching-model) for more information about Git branches).
+  1. Start CMake and drag in the `CMakeLists.txt` file from the OpenSpace folder
+  1. Under "Where to build the binaries:" add a `/build` to the end of the path. Out-of-source builds are not supported.
+  1. Press the "Configure" button and select the generator for your platform. In general, the option provided by default should be the correct one
+  1. Press the "Generate" button and wait for it to finish
+  1. Depending on the operating system, you can use the "Open Project" button to open the project in your IDE
+  1. Compile
 
-Follow one of the linked instruction pages for your specific platform:
-  - [Windows](windows)
-  - [macOS](macos)
-  - [Ubuntu](ubuntu)
-  - [FreeBSD](freebsd)
-  - [Fedora](fedora)
-
+If there are any elements of these instructions that are unclear, feel free to suggest a change against this [repository](https://github.com/OpenSpace/OpenSpace-Docs) or join us in the #compiling channel on the [OpenSpace Slack](https://openspacesupport.slack.com).
 
 ## 4. After compiling
+The OpenSpace executable will be build in the `bin` folder (or `bin/Debug`/`bin/RelWithDebInfo` on Windows) and can be started from there. If everything succeeded you should see the Launcher window appearing:
+
+:::{figure} launcher.png
+:align: center
+:width: 50%
+The first window showing OpenSpace
+:::
+
   - See the [Getting Started Guide: Using OpenSpace](/getting-started/introduction/index) page for how to get started with running and using OpenSpace
   - The [Coding Style](../coding-style) describe the general coding guidelines that are applicable to the Ghoul, SGCT, and OpenSpace repository
   - See the [OpenSpace Layout](../folder-layout) page for more information about the structure of OpenSpace directories

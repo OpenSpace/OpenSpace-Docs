@@ -20,7 +20,7 @@ When running OpenSpace there are several properties that you can change during r
 This is used to change dataset during runtime.
 
 ### Render Option
-There are 3 different render modes;  _Static_, _Color_ and _Motion_. _Static_ uses only the position of the stars and assume that they all have the same magnitude. _Color_ uses position, absolute magnitude (to calculate luminosity and apparent magnitude) and color. _Motion_ adds velocity to the mix. For a realistic rendering use _Color_. To be able to make the stars move use _Motion_.
+There are 3 different render modes; _Static_, _Color_ and _Motion_. _Static_ uses only the position of the stars and assume that they all have the same magnitude. _Color_ uses position, absolute magnitude (to calculate luminosity and apparent magnitude) and color. _Motion_ adds velocity to the mix. For a realistic rendering use _Color_. To be able to make the stars move use _Motion_.
 
 ### Shader Option
 Sets which technique to use for the rendering. This will change what other options that will are available in the menu. Generally, _Points_ are faster than _Billboards_, especially for big datasets, and _SSBOs_ are faster than _VBOs_. _SSBOs_ are not available for Mac users, unfortunately.
@@ -283,4 +283,4 @@ Defines how many nodes around the camera that should be fetched when streaming f
 Defines the max percentage of the existing RAM budget that will be used for storing star data. This _cannot_ be changed during runtime.
 
 * **MaxGpuMemoryPercent**
-Defines the max percentage of the dedicated GPU memory that will be used for streaming data. This _can_ be changed during runtime. If the screen goes black and the performance drops to below 5 fps then it could be that you are trying to reserve too much memory on the GPU, try to decrease this value!  A resulting value of < 4 GB should work fine for most GPUs.
+Defines the max percentage of the dedicated GPU memory that will be used for streaming data. This _can_ be changed during runtime. If the screen goes black and the performance drops to below 5 fps then it could be that you are trying to reserve too much memory on the GPU, try to decrease this value! A resulting value of < 4 GB should work fine for most GPUs.

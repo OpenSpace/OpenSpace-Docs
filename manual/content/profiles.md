@@ -29,7 +29,7 @@ Type: _array of strings_
 This section sets specific property values at the time the profile is loaded. Each entry specifies a property and the value to set it.
 Type: _object_
 Children:
- - `type` (_string_):  Denotes the Lua function that should be called to set the property. Must be either `setPropertyValue` or `setPropertyValueSingle`
+ - `type` (_string_): Denotes the Lua function that should be called to set the property. Must be either `setPropertyValue` or `setPropertyValueSingle`
  - `name` (_string_): The fully qualified identifier of the Property
  - `value` (_string_): The value that is to be set; this will be used as is for the Lua script, so if this is a string, it has to include escaped quote characters `\"`
 
@@ -55,7 +55,7 @@ Children:
 Used to set the camera position at startup. There are two types of camera position initializations: **setNavigationState** or **goToGeo**.
 Type: _object_
 Children:
-- `type` (_string_):  Determines the type of the camera specification. Must be `setNavigationState` or `goToGeo`. The choice of type determines the remaining types
+- `type` (_string_): Determines the type of the camera specification. Must be `setNavigationState` or `goToGeo`. The choice of type determines the remaining types
 
 #### setNavigationState
  - `anchor` (_string_): The name of the scene graph node used as the anchor for the camera
