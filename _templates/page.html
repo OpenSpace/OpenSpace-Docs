@@ -1,0 +1,21 @@
+{% extends "furo/page.html" %}
+{% block content %}
+{%- if meta is mapping and meta.get("required-reading") %}
+  <p class="required-reading">
+    Required reading for this page:
+    <ul>
+  {%- for item in meta.get("required-reading").split(" ") %}
+    {%- set components = item.split("=") %}
+    {%- set name = components[0] %}
+    {%- set url = components[1] %}
+    {%- if hasdoc(url) %}
+    <li><a href="{{ pathto(url) }}">{{ name }}</a></li>
+    {%- else %}
+    <li><a href="{{ url }}">{{ name }}</a></li>
+    {%- endif %}
+  {%- endfor %}
+  </ul>
+  </p>
+{%- endif %}
+{{ super() }}
+{% endblock %}

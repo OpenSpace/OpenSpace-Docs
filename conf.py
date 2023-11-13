@@ -100,6 +100,8 @@ html_css_files = [
 ]
 
 # These folders are copied to the documentation's HTML output
-html_static_path = ["_static"]
+html_static_path = [ "_static" ]
+
+templates_path = [ "_templates" ]
 
 # html_extra_path = ["robots.txt"]
