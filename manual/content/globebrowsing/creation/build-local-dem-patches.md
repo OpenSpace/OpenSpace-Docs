@@ -7,7 +7,7 @@
 * OpenSpace prerelease/ips-2016 or later
 
 ## Introduction
-Please begin by reading [Working With Layers]({{ site.url }}/docs/users/globebrowsing/working-with-layers), [Creating a Renderable Globe](creating-a-renderableglobe), and [Readable Datasets](readable-datasets) to get a hold of how to configure globe rendering in OpenSpace.
+Please begin by reading [Working With Layers](../working-with-layers), [Creating a Renderable Globe](creating-a-renderableglobe), and [Readable Datasets](readable-datasets) to get a hold of how to configure globe rendering in OpenSpace.
 
 The current requirements OpenSpace has on the datasets that can be loaded are that the geo-referenced coordinates are given in equirectangular longlat space (degrees), as opposed to meters or kilometers, and that the dataset has global coverage of the globe, ie covers the longlat space longitude \[-180,180\] and latitude \[-90,90\]. There is a solution to loading local patches that we will get in to soon. GDAL is also able to load JPEG2000 (by linking one of the suggested JPEG2000 libraries when building GDAL) but that functionality is not currently handled within OpenSpace, hence we unfortunately have to convert JPEG2000 files to geotiffs before loading them. This will lead to an increase in the file size of local patches.
 

@@ -3,9 +3,9 @@ As of version 0.19.0, OpenSpace includes support for drawing geometry features o
 
 Some examples of features are shown below (polygons, points with textures, and lines).
 
-![geojson examples]({{ site.url }}/assets/images/geojson/geojson_examples.jpg)
+![geojson examples](creation/geojson_examples.jpg)
 
-It is also possible to change the appearance of the resulting features based on some predefined available properties, either in the GeoJson file itself or in OpenSpace. See the builder page [Adding Geometry with GeoJson]({{ site.url }}/docs/builders/globebrowsing/adding-geojson-layers) for more details on available settings and properties.
+It is also possible to change the appearance of the resulting features based on some predefined available properties, either in the GeoJson file itself or in OpenSpace. See the builder page [Adding Geometry with GeoJson](creation/adding-geojson-layers) for more details on available settings and properties.
 
 ## Adding GeoJson features to a globe
 There are two ways of adding GeoJson features to a selected globe: either directly from a .geojson file or by specifying a table in an OpenSpace asset. Once added, all content in a GeoJson file will appear as a component under "GeoJson" in the scene menu, as part of the globe it was added to.
@@ -13,7 +13,7 @@ There are two ways of adding GeoJson features to a selected globe: either direct
 ### Using a GeoJson asset
 The preferred way to load a GeoJson file is to load it from an asset. This lets you add it to the correct globe already at startup. Adding GeoJson to a globe through an asset works very similarly to how a GlobeBrowsing Layer is added. Some example assets are available in the OpenSpace/data/assets/examples/geojson folder of your OpenSpace installation.
 
-Using an asset also lets you customize the visual properties of all the rendered features that do not have any properties specified in the GeoJson file. See page [Adding Geometry with GeoJson]({{ site.url }}/docs/builders/globebrowsing/adding-geojson-layers) for more details on how to create an asset for a GeoJson file.
+Using an asset also lets you customize the visual properties of all the rendered features that do not have any properties specified in the GeoJson file. See page [Adding Geometry with GeoJson](creation/adding-geojson-layers) for more details on how to create an asset for a GeoJson file.
 
 ### Add directly from a file, using drag and drop
 If the current focus node is a globe, you can also drag and drop a GeoJson file in the OpenSpace window to add it to the currently focused node. The file's features will then be added with default values for all properties not included in the file.

@@ -1,9 +1,9 @@
 # Adding Geometry with GeoJson
-As of version 0.19.0, OpenSpace includes support for drawing geometry features on a globe based on files in the [GeoJson](https://geojson.org/) file format. This page covers how to add and customize globe geometry features using GeoJson files. See the [User Page on GeoJson Support]({{ site.url }}/docs/users/globebrowsing/geojson-layers) for other user-facing details on the GeoJson support.
+As of version 0.19.0, OpenSpace includes support for drawing geometry features on a globe based on files in the [GeoJson](https://geojson.org/) file format. This page covers how to add and customize globe geometry features using GeoJson files. See the [User Page on GeoJson Support](../geojson-layers) for other user-facing details on the GeoJson support.
 
 Some examples of geometry features are shown below (polygons, points with textures, and lines).
 
-![geojson examples]({{ site.url }}/assets/images/geojson/geojson_examples.jpg)
+![geojson examples](geojson_examples.jpg)
 
 Each GeoJson file loads a *collection* of features, which will make up a group of rendered features in OpenSpace, that can be toggled on/off, et cetera. In OpenSpace, the contents of a file are loaded into one property owner that will show up under the globe in the user interface, under "GeoJson". Due to the similarity to [Globebrowsing Layers](../working-with-layers.md), we refer to these as "GeoJson Layers", or "Globe Geometry Layers". They are also known as "GeoJson Components".
 
@@ -80,7 +80,7 @@ For points, it is possible to change how the texture planes align against the gl
 | Globe Surface    | 3     | Align the plane flat along the globe surface |
 
 Here are examples of points aligned with the Camera Direction, Globe Normal and Globe Surface options, respectively. The points have been extruded with a line that intersects the globe surface
-![point alignment examples]({{ site.url }}/assets/images/geojson/points_transparent.png)
+![point alignment examples](points_transparent.png)
 
 ### Light sources
 Polygon geometry can be lit using an OpenSpace light source (for example the Sun, or the Camera). Per default, a camera-based light source is added for all features.

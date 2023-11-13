@@ -1,5 +1,5 @@
 # Working With Layers
-This page goes through how to work with layers on a high level. For more detail on how to create layers to be loaded or to add layers to globes see [Creating a Renderable Globe]({{ site.url }}/docs/builders/globebrowsing/creating-a-renderableglobe) and [Readable Datasets]({{ site.url }}/docs/builders/globebrowsing/readable-datasets).
+This page goes through how to work with layers on a high level. For more detail on how to create layers to be loaded or to add layers to globes see [Creating a Renderable Globe](creation/creating-a-renderableglobe) and [Readable Datasets](creation/readable-datasets).
 
 ## Layer Groups
 There are five layer groups that are used for different purposes:
@@ -42,4 +42,4 @@ Each layer has its own blend mode. It defines how the layer will be blended on t
 - **Color** -- Converts the underlying color from RGB to HDV and sets the V value from the grayscale representation of this layer, then converts it back to RGB.
 
 ## Add or Remove Layers
-Layers can be added by calling the function `openspace.globebrowsing.addLayer()` or removed by calling the function `openspace.globebrowsing.deleteLayer()`. See documentation for more info, also see [Creating a Renderable Globe]({{ site.url }}/docs/builders/globebrowsing/creating-a-renderableglobe) for information about how layers are defined as lua tables.
+Layers can be added by calling the function `openspace.globebrowsing.addLayer()` or removed by calling the function `openspace.globebrowsing.deleteLayer()`. See documentation for more info, also see [Creating a Renderable Globe](creation/creating-a-renderableglobe) for information about how layers are defined as lua tables.
