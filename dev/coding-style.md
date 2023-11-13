@@ -1,8 +1,8 @@
 # Coding Style
 
-This document provides the general coding guidelines for C++ code in the OpenSpace project. The guidelines are based on [these](http://geosoft.no/development/cppstyle.html), but were adapted and modified. Following this document ensures a common coding style for the project. Each developer using their own guidelines will quickly lead to fragmented code and decrease readability and maintainability. Please note rule #1; if, in a specific situation, the application of a rule would make the source code less readable it is advised to not follow the rule.
+This document provides the general coding guidelines for C++ code in the OpenSpace project. The guidelines are based on [these](http://geosoft.no/development/cppstyle.html) guides, but were adapted and modified. Following this document ensures a common coding style for the project. Each developer using their own guidelines will quickly lead to fragmented code and decrease readability and maintainability. Please note rule #1; if, in a specific situation, the application of a rule would make the source code less readable it is advised to not follow the rule.
 
-Sections [A](#general), [B](#naming), and [C](#structure) contain the coding style rules. Section [D](#best-practices) contains broader best practices for coding in general, and Section [E](#file-formatting) contains rules and examples on how to format the files in order to be consistent with the rest of the code base.
+Sections [General](#general), [Naming](#naming), and [Structure](#structure) contain the coding style rules. Section [Best Practices](#best-practices) contains broader best practices for coding in general, and Section [File Formatting](#file-formatting) contains rules and examples on how to format the files in order to be consistent with the rest of the code base.
 
 
 
@@ -14,41 +14,54 @@ The main goal of these guidelines is to improve readability and thereby the unde
 It is important to document the header so that other people do not need to dive into the code to understand the API.
 
 ### 3. File content must be kept within 90 columns
-90 columns on a moderate font size allows two source files to be opened side-by-side. Sticking to a fixed, manually enforced linebreak improves readability when unintentional line breaks are avoided when passing files between programmers. See examples below on how to handle lines that are longer than 90 characters
+90 columns on a moderate font size allows two files to be opened side-by-side. Sticking to a fixed, manually enforced linebreak improves readability where unintentional line breaks are avoided when passing files between programmers. See examples [below](#file-formatting) on how to handle lines that are longer than 90 characters.
 
 ### 4. All TABs must be 4 spaces
-TABs can be handled differently on different operating systems and make it hard to correctly format code. Most editors have settings that will automatically convert TABs to spaces
+TABs can be handled differently on different operating systems and make it hard to correctly format code. Most editors have settings that will automatically convert TABs to spaces.
 
 ### 5. Use the `auto` keyword sparingly
 The overuse of `auto` in the code can make the code much harder to understand. If the return type of a function is known, the `auto` keyword must not be used unless the type is very verbose. In general the use of `auto` to deduce the type must be avoided with the only exceptions being the shortening of iterator types (example 1), shortening of time-measuring types from the `std::chrono` library (example 2), storing lambda functions (example 3), structured bindings (example 4), and if the type is explicitly mentioned on the same line (or line continuation if the column width was exceeded) (example 5).
 
-- Example 1: `auto it = std::find(vector.begin(), vector.end(), value);`
-- Example 2: `auto start = std::chrono::high_resolution_clock::now();`
-- Example 3: `auto fn = [](int value) { return value * 2; };`
-- Example 4: `auto& [val, ue] = std::tuple<std::string, int>("abc", 2);`
-- Example 5: `auto type = std::make_unique<Struct>(val1, val2);`
+```cpp
+// Example 1
+auto it = std::find(vector.begin(), vector.end(), value);
+
+// Example 2
+auto start = std::chrono::high_resolution_clock::now();
+
+// Example 3
+auto fn = [](int value) { return value * 2; };
+
+// Example 4
+auto& [val, ue] = std::tuple<std::string, int>("abc", 2);
+
+// Example 5
+auto type = std::make_unique<Struct>(val1, val2);
+```
 
 ### 6. Use `//` for all comments, including multi-line comments
-Using `//` comments ensure that it is always possible to comment out entire sections of a file using /\* \*/ for debugging purposes etc. Please note that his rule does not apply to the Doxygen comments in the header, as we use the variant that starts with `/**`
+Using `//` comments ensure that it is always possible to comment out entire sections of a file using /\* \*/ for debugging purposes etc. Please note that his rule does not apply to the Doxygen comments in the header, as we use the variant that starts with `/**`.
 
 
 
 ## Naming
 ### 7. Negated boolean variable names should be avoided
 ```cpp
-bool isError; // NOT: isNoError
-bool isFound; // NOT: isNotFound
+bool hasError = ...; // NOT: hasNoError
+bool isFound = ...; // NOT: isNotFound
 ```
 The problem arises when such a name is used in conjunction with the logical negation operator as this results in a double negative. It is not immediately apparent what `isNotFound` means. Leaving the code as simple as possible enhances readability.
 
 ### 8. Enumerations must not be in upper case and should be strongly typed
-If there is no inherent mapping to integer types, the first value should be manually set to be equal to 0. If possible, prefer strongly typed enumerations for type safety. Setting the first value to 0 will force the values to be consecutive integers and therefore any switch statement will be very efficient. Strongly typed enumerations will prevent easy misuse in client code. If a strongly typed enumeration is not possible (due to mixing with outside code, each enumerated type should contain the enum name as a prefix.
+If there is no inherent mapping to integer types, the first value should be manually set to be equal to 0. If possible, prefer strongly typed enumerations for type safety. Strongly typed enumerations will prevent easy misuse in client code. If a strongly typed enumeration is not possible (due to mixing with outside code, each enumerated type should contain the enum name as a prefix.
 ```cpp
 enum Color {
     ColorRed = 0,
     ColorGreen,
     ...
 }
+
+// Prefer
 enum class Color {
     Red = 0,
     Green,
@@ -76,16 +89,16 @@ There are two types of words to consider. First are the common words listed in t
 class SomeClass {
 // ...
 private:
-  int _depth;
+  int _depth = 0;
 };
 ```
- > Apart from its name and its type, the scope of a variable is its most important feature. Indicating class scope by using underscores makes it easy to distinguish class variables from local variables. There are two side effects of the underscore naming convention; first, it simplifies searching for member variables as code completion will list all member variables if `_` is entered. Second, it nicely resolves the problem of finding reasonable variable names for setter methods and constructors:
+Besides its name and type, the scope of a variable is its most important feature. Indicating class scope by using underscores makes it easy to distinguish class variables from local variables. There are two side effects of the underscore naming convention; first, it simplifies searching for member variables as code completion will list all member variables if `_` is entered. Second, it nicely resolves the problem of finding reasonable variable names for setter methods and constructors:
 ```cpp
 void setDepth(int depth) {
   _depth = depth;
 }
 ```
- > An exception to this is simple `struct`s whose main purpose is to hold multiple values without much additional logic in which case the variable's prefix `_` can be omitted
+An exception to this is simple `struct`s whose main purpose is to hold multiple values without much additional logic in which case the variable's prefix `_` can be omitted.
 
 ### 13. The length of a variable name should correspond to the length of its scope
 Variables with a large scope should have long names, variables with a small scope can have short names. Obviously this is just a rule of thumb. Scratch variables used for temporary storage or indices are best kept short. A programmer reading such variables should be able to assume that its value is not used outside of a few lines of code.
@@ -155,7 +168,7 @@ Don't rely on implicit type conversion.
 ```cpp
 floatValue = static_cast<float>(intValue); // NOT: floatValue = intValue;
 ```
- Implementing this removes a lot of bugs that come from unexpected conversion. By making it very visible that a casting is intended, it becomes easier to spot buggy casts
+Implementing this removes a lot of bugs that come from unexpected conversion. By making it very visible that a casting is intended, it becomes easier to spot buggy casts
 
 ### 22. All definitions must reside in source or inline files
 ```cpp
@@ -171,7 +184,7 @@ The header files should declare an interface and the source file should implemen
 
 ### 23. Implicit test for `0` should only be used for boolean variables and pointer-types
 ```cpp
-bool isTrue;
+bool isTrue = ...;
 if (isTrue) // NOT: if (isTrue == true)
 int nLines;
 if (nLines != 0) // NOT: if (nLines)
@@ -187,10 +200,12 @@ Using an explicit test, the statement gives an immediate clue of the type being 
 bool isFinished = (elementNo < 0) || (elementNo > maxElement);
 bool isRepeatedEntry = elementNo == lastElement;
 if (isFinished || isRepeatedEntry) {
-... }
+    ...
+}
 // NOT:
-if ((elementNo < 0) || (elementNo > maxElement)||
-     elementNo == lastElement) {
+if ((elementNo < 0) || (elementNo > maxElement) ||
+     elementNo == lastElement)
+{
   ...
 }
 ```
@@ -205,15 +220,19 @@ if (!fileHandle) {
 if (!(fileHandle = open(fileName, "w"))) {
 ... }
 ```
- > This is an extension of the "one statement per line" rule that makes things easier to debug. Storing values in local variables is not a performance drawback as they will get optimized away. This rule also discourages assignments in `if` statements as allowed in newer C++:  `if (int i = value()) { ... }`
- > This rule is somewhat relaxed with C++ feature of having an instruction and evaluating the result in the same if statement. As long as this lowers the scope of the variable the following is allowed:  `if (int count = countThings();  count > 0) {`
+This is an extension of the "one statement per line" rule that makes things easier to debug. Storing values in local variables is not a performance drawback as they will get optimized away. This rule also discourages assignments in `if` statements as allowed in newer C++:  `if (int i = value()) { ... }`
+
+This rule is somewhat relaxed with C++ feature of having an instruction and evaluating the result in the same if statement. As long as this lowers the scope of the variable the following is allowed:  `if (int count = countThings();  count > 0) {`
 
 ### 26. The use of magic values in the code should be avoided
 Numbers other than `0`, `1`, or `-1` should be declared as named constants instead. The same holds true for string constants, refactoring is made easier if they are defined as a constant.
- > This rule also enforces the "code as documentation" guide as it avoids magic constants, but makes things more readable
+
+This rule also enforces the "code as documentation" guide as it avoids magic constants, but makes things more readable
 
 ### 27. `nullptr` must be used instead of `0` or `NULL` for declaring null pointer
 `NULL` is part of the standard C library, but is made obsolete in C++ and `0` has a double meaning as an integer and the null pointer. Use the C++ `nullptr` instead.
+
+
 
 ## Best Practices
 ### Standard library is your friend
@@ -275,6 +294,8 @@ ReturnType veryLongFunctionFame(
 VeryLongAndComplexReturnType
 veryLongFunctionFame(int parameter1);
 
+
+
 //
 // In a **source** file
 //
@@ -330,6 +351,17 @@ int result = function(
 // the arguments in a compact manner:
 LINFO(fmt::format(
     "Foobar {} and barfoo {}", nBars, nFoos
+));
+
+// The exception continues even if the
+// arguments don't fit on the same line.
+// In the case were the arguments are going
+// into the fmt::format function, they can
+// all be on the same line. But avoid any
+// complex function expressions in here
+LINFO(fmt::format(
+    "Foobarbazbarbazbar {} and barfoo {}",
+    nBars, nFoos
 ));
 
 //

@@ -66,7 +66,6 @@ general/academics
 users/getting-started/index
 users/profiles/index
 users/console/index
-users/kiosk
 users/handling-errors
 users/hardware-requirements
 users/faq
