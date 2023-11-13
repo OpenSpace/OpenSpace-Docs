@@ -1,8 +1,8 @@
-# Welcome to OpenSpace's documentation!
+# OpenSpace User's Guide
 
-Welcome to the official documentation for [OpenSpace](https://openspaceproject.com), which is an open-source interactive data visualization software designed to visualize the entire known universe and portray our ongoing efforts to investigate the cosmos covering all possible scales.
+Welcome to the official documentation for [OpenSpace](https://openspaceproject.com). OpenSpace is an open-source, interactive data visualization software designed to visualize the entire known universe and portray our ongoing efforts to investigate the cosmos covering all possible scales.
 
-In addition to the documentation provided here, you are very welcome on our [Slack channel](https://openspacesupport.slack.com) to which you can freely [sign-up](https://join.slack.com/t/openspacesupport/shared_invite/enQtMjUxNzUyMTQ1ODQxLTRmNDI1YTA4ODkzODUyODE0YjIzODU0NWU1NGY1NWIzZDUzMDgwM2VkYmE1ZGY3MmU2OWI5NzhlN2U3NWU2NTQ).
+In addition to the documentation provided here, you are welcome to [join](https://join.slack.com/t/openspacesupport/shared_invite/enQtMjUxNzUyMTQ1ODQxLTRmNDI1YTA4ODkzODUyODE0YjIzODU0NWU1NGY1NWIzZDUzMDgwM2VkYmE1ZGY3MmU2OWI5NzhlN2U3NWU2NTQ) our [Slack channel](https://openspacesupport.slack.com), where we host an active user community.
 
 On the left you can find a table of contents that allows you to access the individual topics of interest. The table also contains a search function to search through the available pages. If you are new to _OpenSpace_, we'd recommend you to start in the [Getting Started](getting-started/introduction/index) section.
 
