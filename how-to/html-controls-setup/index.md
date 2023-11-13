@@ -1,5 +1,5 @@
 # HTML Controls Setup Guide
-:::{div} sd-d-inline-block sd-bg-dark
+:::{sidebar}
 Many thanks to Dylan Salas from the [California Academy of Sciences](https://calacademy.org/) for providing this guide
 :::
 
