@@ -2,6 +2,7 @@
 ## How to add Asteroids/Comets to OpenSpace
 To show the asteroid datasets, start OpenSpace with the "asteroids" profile from the launcher. The asteroids profile is similar to the default, but with 16 separate asset files that contain asteroid or comet orbits.
 
+
 ## Running OpenSpace with Asteroids/Comets
 To start, double-click (or run from the terminal) `bin/Release/OpenSpace.exe`. The camera will be initially focused on Earth, so it is recommended to zoom out to a point where the solar system is visible. None of the asteroid/comet groups are visible by default. To enable one of these, expand the GUI's menus by selecting Scene -> Solar System -> Small Bodies. A list of all asteroid groups will be visible. Check one of the boxes to enable.
 
@@ -9,10 +10,12 @@ It is possible to modify the length of the orbital trail by adjusting the "Line 
 
 Some of the asteroid categories contain a very high number of objects, which will affect frame rate and program responsiveness. If performance slows too much, then un-click the offending category to prevent it from being rendered.
 
+
 ## Additional Features
 See the following pages for more detailed information and advanced usage of this content:
-- [Ephemeris/Asteroids](ephemeris/asteroids)
-- [Components/Satellites](satellites)
+  - [Ephemeris/Asteroids](ephemeris/asteroids)
+  - [Components/Satellites](satellites)
+
 
 ## Asteroid Content Categories
 All trajectory data were obtained from the [JPL Small-Body Database (SBDB)](https://ssd.jpl.nasa.gov/sbdb.cgi). The following categories are defined on this site and were used to group the orbital data.

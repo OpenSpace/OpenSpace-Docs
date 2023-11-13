@@ -7,6 +7,7 @@ Some examples of features are shown below (polygons, points with textures, and l
 
 It is also possible to change the appearance of the resulting features based on some predefined available properties, either in the GeoJson file itself or in OpenSpace. See the builder page [Adding Geometry with GeoJson](creation/adding-geojson-layers) for more details on available settings and properties.
 
+
 ## Adding GeoJson features to a globe
 There are two ways of adding GeoJson features to a selected globe: either directly from a .geojson file or by specifying a table in an OpenSpace asset. Once added, all content in a GeoJson file will appear as a component under "GeoJson" in the scene menu, as part of the globe it was added to.
 
@@ -18,13 +19,16 @@ Using an asset also lets you customize the visual properties of all the rendered
 ### Add directly from a file, using drag and drop
 If the current focus node is a globe, you can also drag and drop a GeoJson file in the OpenSpace window to add it to the currently focused node. The file's features will then be added with default values for all properties not included in the file.
 
+
 ## Automatic flying to a feature
 It is possible to fly to a GeoJson feature using the Scene menu. Each component, and the individual Features in a component, has a "Fly to feature" button that will trigger a camera path to that feature, framing it based on its latitude and longitude coordinates.
+
 
 ## Deleting a loaded GeoJson layer
 The more geojson layers are drawn, the worse the performance may be. In cases of bad performance, deleting, or simply disabling, some GeoJson layers may improve the situation. This can be done using the `openspace.globebrowsing.deleteGeoJson(globe, geoJsonIdentifier)` Lua command. The `geoJsonIdentifier` is the identifier of the geoJson object, and `globe` is the identifier of the globe the GeoJson feature belongsa to (e.g. "Earth").
 
 Note that after deleting a GeoJson component, the user interface has to be reloaded for the change to be reflected in the interface. The default keybinding for doing this is F5. 
+
 
 ## Known issues
 The GeoJson support implemented in 0.19.0 is a first iteration and may be subject to changes in the future. It also includes some known issues that we intend to fix down the line. Here is a summary of those issues:

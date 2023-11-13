@@ -1,18 +1,20 @@
 # Build Local DEM Patches to Load With OpenSpace
-
 ## Requirements
-* GDAL version 1.7 or later (libcurl and proj4 linked)
-* Kadkadu software (if a jpeg2000 library is not linked with GDAL, details below)
-* Fix_jp2 (applies to some HiRISE datasets, details below)
-* OpenSpace prerelease/ips-2016 or later
+  - GDAL version 1.7 or later (libcurl and proj4 linked)
+  - Kadkadu software (if a jpeg2000 library is not linked with GDAL, details below)
+  - Fix_jp2 (applies to some HiRISE datasets, details below)
+  - OpenSpace prerelease/ips-2016 or later
+
 
 ## Introduction
 Please begin by reading [Working With Layers](../working-with-layers), [Creating a Renderable Globe](creating-a-renderableglobe), and [Readable Datasets](readable-datasets) to get a hold of how to configure globe rendering in OpenSpace.
 
 The current requirements OpenSpace has on the datasets that can be loaded are that the geo-referenced coordinates are given in equirectangular longlat space (degrees), as opposed to meters or kilometers, and that the dataset has global coverage of the globe, ie covers the longlat space longitude \[-180,180\] and latitude \[-90,90\]. There is a solution to loading local patches that we will get in to soon. GDAL is also able to load JPEG2000 (by linking one of the suggested JPEG2000 libraries when building GDAL) but that functionality is not currently handled within OpenSpace, hence we unfortunately have to convert JPEG2000 files to geotiffs before loading them. This will lead to an increase in the file size of local patches.
 
+
 ## Installing GDAL
 GDAL can either be built from source or installed with binaries. To download the software, go to http://www.gdal.org/ and follow the instructions for installing. Important to notice is that to be able to use GDAL with the features needed in the following tutorial for local patches, GDAL needs to be linked with curl (for WMS reading) and with proj4 (for reprojection).
+
 
 ## Local Patches
 OpenSpace is not currently able to read local datasets which is why there is some preprocessing needed for these types of local patches. The essential idea is to define a so called virtual dataset which lets GDAL trick OpenSpace to think that a local patch dataset is actually a global dataset. There are some downsides to doing this. The main thing is that OpenSpace will not only load map data at places covered by the local patch. It will also load empty tiles into memory where there are no data. Due to another current restriction in OpenSpace which basically says that the georeferenced coordinates of a dataset needs to be in equidistant lat-long space there is often some more preprocessing needed to be able to load local datasets into OpenSpace.
@@ -76,7 +78,6 @@ Now when running gdalinfo on the JP2 file again we get better results:
 There is still some difference between the height map and the texture. This is mainly because a height map and a corresponding texture don't necessarily have the same pixel size and position.
 
 ### File Format Conversion
-
 When looking at the corner coordinates of the patch output when running gdalinfo on it,
 
     > gdalinfo PSP_001918_1735_RED_A_01_ORTHO.TIFF
@@ -189,6 +190,7 @@ The result is the following VRT for the texture dataset:
     </VRTRasterBand>
 </VRTDataset>
 ```
+
 
 ## Wrapping Up
 Now we are finally done creating the virtual datasets we need to be able to make OpenSpace read the local datasets correctly!  The files we still need are the two longlat geotiffs and the virtual dataset definition files. Since the VRTs use relative paths to find the image files they use, they should be kept in the same folder if they were built in the same directory.

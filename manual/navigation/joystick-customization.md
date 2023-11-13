@@ -3,14 +3,13 @@ This page goes in-depth into how to customize the joystick navigation to your ow
 
 To start, you will need an asset file to edit. If you are using a controller that matches one of the assets that OpenSpace already provides (Xbox, PS4, SpaceMouse, etc.) it is recommended that you start with a copy of that matching asset and place it in your `user\data\assets` folder. However, if the controller you will use does not match any provided asset, it is still recommended to start with one of the assets that are provided, such as the `space-mouse-compact` asset. The steps will be the same in both cases with the exception that the new controller will need some additional setup, see [Setup new joystick type](#setup-new-joystick-type) before moving on to the customization.
 
+
 ## Bind camera navigation to a joystick axis
 To bind a camera movement to an axis of the controller you will need the function `openspace.navigation.bindJoystickAxis` that takes eight arguments. Below is a list that describes each argument in detail. If you are customizing an already existing asset then you probably do not want to add a new camera movement binding, instead, you might want to alter the pre-existing ones. To customize a camera movement it is most likely only necessary to change a few of the input values in the pre-existing function call to the function `openspace.navigation.bindJoystickAxis`.
 
-1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
-
-2. The index of which axis on the controller you want to bind the camera movement to. This is distinct for the type of controller you will use and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
-
-3. The type of camera movement you want this axis to do. This defines how the camera will move in OpenSpace when you move the specified axis of the controller. Must be one of the identifiers in the following list:
+  1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
+  2. The index of which axis on the controller you want to bind the camera movement to. This is distinct for the type of controller you will use and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
+  3. The type of camera movement you want this axis to do. This defines how the camera will move in OpenSpace when you move the specified axis of the controller. Must be one of the identifiers in the following list:
 
 | Identifier   | Description                                                             |
 |--------------|-------------------------------------------------------------------------|
@@ -25,15 +24,11 @@ To bind a camera movement to an axis of the controller you will need the functio
 | "Pan X"      | Turn the camera left/right in relation to the view                      |
 | "Pan Y"      | Turn the camera up/down in relation to the view                         |
 
-4. (Optional) Whether or not this axis should be inverted. This is a common setting in video games. Defaults to `false`.
-
-5. (Optional) The type of joystick that this axis represents on the controller. The options are either `"JoystickLike"` or `"TriggerLike"`. A joystick is `"TriggerLike"` if it can only be pressed or pushed in one direction. A `"JoystickLike"` axis can be pushed in two directions, for example, left **and** right, or up **and** down. Defaults to `"JoystickLike"`.
-
-6. (Optional) Whether or not this axis is "sticky". In most cases, this should be set to `false`. An axis is "sticky" if, when you let go of it, the values it represents in the software do not go back to the default. Another sign is that the longer you push it, the value, and therefore the movement, gets more and more extreme over time and does not stop or slow down when you let go. Defaults to `false`.
-
-7. (Optional) Whether or not the movement for this axis should be reversed. In the case of a `"JoystickLike"` axis, this is the same as inverting the axis (which was argument number 4). However, in the case of a `"TriggerLike"` axis, this can reverse the camera movement for the trigger. For example, if the `"LocalRoll"` movement type is bound to a trigger, you can only roll OpenSpace clockwise when you press the trigger, since the trigger can only go in one direction. To make the camera roll counter-clockwise instead, you would need to reverse the movement with this argument. Defaults to `false`.
-
-8. (Optional) Sensitivity value for this axis. Can be used to fine-tune the sensitivity for all axes individually. Defaults to `1.0`. A value larger than `1.0` would lead to the axis becoming more sensitive and a value that is smaller than `1.0` would lead to the axis being less sensitive to input. There is also a global sensitivity property that can be adjusted in the GUI, under *Settings*, *Navigation Handler*, *Orbital Navigator* and then *Joystick Sensitivity* (identifier `NavigationHandler.OrbitalNavigator.JoystickSensitivity`). Note that this will affect all connected controllers and all of their axes.
+  4. (Optional) Whether or not this axis should be inverted. This is a common setting in video games. Defaults to `false`.
+  5. (Optional) The type of joystick that this axis represents on the controller. The options are either `"JoystickLike"` or `"TriggerLike"`. A joystick is `"TriggerLike"` if it can only be pressed or pushed in one direction. A `"JoystickLike"` axis can be pushed in two directions, for example, left **and** right, or up **and** down. Defaults to `"JoystickLike"`.
+  6. (Optional) Whether or not this axis is "sticky". In most cases, this should be set to `false`. An axis is "sticky" if, when you let go of it, the values it represents in the software do not go back to the default. Another sign is that the longer you push it, the value, and therefore the movement, gets more and more extreme over time and does not stop or slow down when you let go. Defaults to `false`.
+  7. (Optional) Whether or not the movement for this axis should be reversed. In the case of a `"JoystickLike"` axis, this is the same as inverting the axis (which was argument number 4). However, in the case of a `"TriggerLike"` axis, this can reverse the camera movement for the trigger. For example, if the `"LocalRoll"` movement type is bound to a trigger, you can only roll OpenSpace clockwise when you press the trigger, since the trigger can only go in one direction. To make the camera roll counter-clockwise instead, you would need to reverse the movement with this argument. Defaults to `false`.
+  8. (Optional) Sensitivity value for this axis. Can be used to fine-tune the sensitivity for all axes individually. Defaults to `1.0`. A value larger than `1.0` would lead to the axis becoming more sensitive and a value that is smaller than `1.0` would lead to the axis being less sensitive to input. There is also a global sensitivity property that can be adjusted in the GUI, under *Settings*, *Navigation Handler*, *Orbital Navigator* and then *Joystick Sensitivity* (identifier `NavigationHandler.OrbitalNavigator.JoystickSensitivity`). Note that this will affect all connected controllers and all of their axes.
 
 Here is an example asset with the SpaceMouse:
 ```lua
@@ -71,19 +66,13 @@ Here is an example asset with the SpaceMouse:
 ## Bind a property to a joystick axis
 To control an OpenSpace property using an axis on a controller you will need the function `openspace.navigation.bindJoystickAxisProperty` that takes seven arguments. Below is a list that describes each argument in detail.
 
-1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
-
-2. The index of which axis on the controller you want to bind the property to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
-
-3. The full identifier for the property you want to control with this axis on the controller. A tip to find this identifier is to first run OpenSpace normally and change the property with the normal GUI, then you can look at the Script Log and see the full name of the property you just changed, for more information about the Script Log see [The Script Log](/users/console/index.md#the-script-log).
-
-4. (Optional) The minimum value allowed to be set for this property using the axis. Defaults to `0.0`.
-
-5. (Optional) The maximum value allowed to be set for this property using the axis. Defaults to `100.0`.
-
-6. (Optional) Whether or not this axis should be inverted. This is a common setting in video games. Defaults to `false`.
-
-7. (Optional) Whether or not the property change should be forwarded to other connected nodes or sessions. This is similar to the `"isLocal"` parameter for actions. Defaults to `true`.
+  1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
+  1. The index of which axis on the controller you want to bind the property to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
+  1. The full identifier for the property you want to control with this axis on the controller. A tip to find this identifier is to first run OpenSpace normally and change the property with the normal GUI, then you can look at the Script Log and see the full name of the property you just changed, for more information about the Script Log see [The Script Log](/users/console/index.md#the-script-log).
+  1. (Optional) The minimum value allowed to be set for this property using the axis. Defaults to `0.0`.
+  1. (Optional) The maximum value allowed to be set for this property using the axis. Defaults to `100.0`.
+  1. (Optional) Whether or not this axis should be inverted. This is a common setting in video games. Defaults to `false`.
+  1. (Optional) Whether or not the property change should be forwarded to other connected nodes or sessions. This is similar to the `"isLocal"` parameter for actions. Defaults to `true`.
 
 Here is an example asset with the Earth scale bound to the right trigger on an Xbox controller:
 ```lua
@@ -128,18 +117,19 @@ Here is an example asset with the Earth scale bound to the right trigger on an X
   end)
 ```
 
+
 ## Bind a script to a joystick button
 Binding a custom script to a controller button is done with the function `openspace.navigation.bindJoystickButton` that takes six arguments. Below is a list that describes each argument in detail.
 
-1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
+  1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
 
-2. The index of which button on the controller you want to bind the script to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.A` or `controller.DPan.Left`.
+  2. The index of which button on the controller you want to bind the script to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.A` or `controller.DPan.Left`.
 
-3. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](/users/console/index.md#the-script-log).
+  3. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](/users/console/index.md#the-script-log).
 
-4. Description of the script that the button will execute when the button is activated.
+  4. Description of the script that the button will execute when the button is activated.
 
-5. (Optional) When the button should be interpreted as activated, defaults to `"Press"`. This must be one of the identifiers in the following list:
+  5. (Optional) When the button should be interpreted as activated, defaults to `"Press"`. This must be one of the identifiers in the following list:
 
 | Identifier | Description                                     |
 | ---------- | ----------------------------------------------- |
@@ -148,7 +138,7 @@ Binding a custom script to a controller button is done with the function `opensp
 | "Repeat"   | When the button is held pressed                 |
 | "Release"  | When the button was pressed and is not released |
 
-6. (Optional) Whether or not the script should be forwarded to other connected nodes or sessions. This is similar to the `"isLocal"` parameter for actions. Defaults to `true`.
+  6. (Optional) Whether or not the script should be forwarded to other connected nodes or sessions. This is similar to the `"isLocal"` parameter for actions. Defaults to `true`.
 
 Here is an example asset that switches focus when pressing the trigger buttons on an Xbox controller:
 ```lua
@@ -210,6 +200,7 @@ Here is an example asset that switches focus when pressing the trigger buttons o
     )
   end)
 ```
+
 
 ## Setup new joystick type
 When connecting a new controller to OpenSpace the first step is to get a good mapping of what buttons and axes the controller has and what indices they are connected to. To get an overview of the joysticks and its axes and buttons you can use the connected joysticks list in OpenSpace. You can access this list by pressing the *F1* button on the keyboard and you will see the old GUI interface of OpenSpace pop up. In the window called **OpenSpace GUI**, press the empty checkbox next to **Joysticks Information**. This will open a new window and here all the connected controllers will be listed. In this list, you can search for your controller. The items in the list called *3Dconnexion KMJ Emulator* or *Summed contributions* can be ignored. Once you have found your controller you will see two numbered lists of axes and buttons with a slider and button respectively. See the image below:

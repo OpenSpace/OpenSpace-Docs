@@ -27,8 +27,10 @@ The `localResource` function here refers to a file that is located next to the a
 
 Note that the slashes in the path need to be forward slashed (`/`) and not backward slashes (`\`). There are additional properties you can set for your model, such as scale and animation, to read more about these see [Model Scale](scale), and [Animated Models](animation).
 
+
 ## Formats
 OpenSpace uses the [Assimp library](https://github.com/assimp/assimp) to load models; therefore, our supported formats are similar to their supported formats. For a complete list see [List of formats](#list-of-formats) further down this page.
+
 
 ## Debugging your model
 If your model does not show up in OpenSpace and you are sure that you have done everything right in the loading, there is a tool that you could use for debugging. In the asset file, you can add an optional property for forcing invisible pieces of the model to render. This forces any part of the model that is invisible (has no texture or color) to render. This property is called `ForceRenderInvisible`. Here is an example where it is used for the Juno spacecraft:
@@ -48,6 +50,7 @@ If your model does not show up in OpenSpace and you are sure that you have done 
 Any part of the model that is invisible will now be rendered with a bright and colorful pink and green chessboard pattern. This pattern will also be forced if OpenSpace encountered any Error while loading the material or texture for the model, even without the property. This could make it easier to identify errors with your model.
 
 If this property is left out in the asset file and your model has invisible parts there will be an info message in the log making you aware that there might be something wrong with the model. However, just because a part of the model is invisible does not necessarily mean that something is wrong with the model. If you are aware that your model has invisible parts and want to suppress this info message you can set the property to false to keep the log cleaner.
+
 
 ## List of formats
 Here is a list of supported formats in OpenSpace:

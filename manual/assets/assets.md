@@ -3,32 +3,28 @@ In OpenSpace, Assets are modular components used to populate the scene and provi
 
 Assets are written in Lua and have access to all OpenSpace Lua scripting functions. One asset file corresponds to exactly one asset and has the suffix `.asset`.
 
-## Asset lifecycle
 
+## Asset lifecycle
 When OpenSpace loads, a _root-level asset_ will be loaded according to the `Asset` setting in `openspace.cfg`. Typically, the scene asset refers to several other assets, which in turn reference others. Additional root-level assets can be added while OpenSpace is running using the Lua command `openspace.asset.add(<path to asset>)`. Assets can be removed by calling `openspace.asset.remove(<path to asset>)`. Only root-level assets may be removed using this method, while assets that are dependencies of other root-level will be automatically deinitialized when the last referencing root-level asset is removed.
 
 An asset that is imported into OpenSpace goes through a sequence of states: _Loading_, _Synchronization_, _Initialization_ and _Deinitialization_.
 
 ### Loading
-
 When an asset is loaded, the asset file's Lua code is executed. The method `asset.require` may be used to declare dependencies on other assets, stating that they should be loaded first.
 
 The asset may register resource synchronizations using `asset.syncedResource` and provide functions to be executed upon asset initialization (`asset.onInitialize`) and deinitialization (`asset.onDeinitialize`). The loading step itself should not manipulate the OpenSpace scene in any way. Instead, it should register any such logic with the `asset.onInitialize` and `asset.onDeinitialize` methods. If an asset is loaded successfully it will transition to the `Synchronizing` state.
 
 ### Synchronization
-
 OpenSpace will asynchronously download resources from the internet based on specifications passed into `asset.syncedResource`. If the synchronization succeeds for the asset and all its dependencies, it will be marked as ready to transition to the Initialization phase. See the page [Resources](./resources) for examples using `syncedResource`.
 
 ### Initialization
-
 Once an asset's synchronization is done the asset can be initialized. This involves calling all functions passed into `asset.onInitialize`, in the order they were registered. OpenSpace guarantees that all required child assets are initialized before the parent asset starts initializing. Typically the initialization includes adding scene graph nodes to the scene, adding dashboard components, binding keyboard shortcuts, etc.
 
 ### Deinitialization
-
 When an asset is deinitialized, all functions passed to `asset.onDeinitialize` are executed in reversed order. Required child assets are guaranteed to be deinitialized after their parent asset. The deinitialization step typically removes scene graph nodes, removes dashboard items or unbinds keyboard shortcuts.
 
-## Simple Example
 
+## Simple Example
 The following asset file instructs OpenSpace to create a sphere with [NASA's Blue Marble texture](https://visibleearth.nasa.gov/view.php?id=74092) and add it to the scene:
 
 ```lua
@@ -93,12 +89,11 @@ end)
 
 More examples can be found in `${BASE}/data/assets/examples`.
 
-## Asset API Reference
 
+## Asset API Reference
 OpenSpace provides lua APIs for managing assets within a running OpenSpace instance, as well as defining the assets themselves and declaring resource synchronizations.
 
 ### Managing assets
-
 Assets can be added and removed at runtime using the Lua API in OpenSpace.
 
 `void      openspace.asset.add(string path)`
@@ -108,7 +103,6 @@ Adds the asset located at the path to the current scene as a root-level asset.
 Removes the asset located at the path from the scene. The asset will only be removed as a root-level asset; if it is also declared as a dependency of some other root-level asset, it will remain in the scene until that root-level asset is removed.
 
 ### Defining assets
-
 Asset files have access to a special `asset` object that represents the current asset. The `asset` object is only valid during the loading phase, and exposes the following methods:
 
 `table      asset.require(string path)`

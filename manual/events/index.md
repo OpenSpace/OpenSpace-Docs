@@ -1,12 +1,14 @@
 # Events
 Events are signals that are emitted by the OpenSpace engine in response to specific _events_ that happen.  The event system is build to be as low overhead as possible to provide a minimal impact on the overall rendering performance, however events should be considered to be relatively seldom activities.  Events are signalled to connected instances via the socket connection as a seperate `Topic` or they can trigger `Action`s in the main system.
 
+
 ## Action Trigger
 Using the `openspace.event.registerEventAction` and `openspace.event.unregisterEventAction` functions, an event can be set to trigger a specific action.  The syntax of both functions as as follows:
-```
+```lua
   openspace.event.registerEventAction(<<name of the event>>, <<identifier of the action>>, <<optional filter table>>)
 ```
 The name of the event must be one of the event types that exist in the system (see a list below), the second parameter is the identifier of the action that is triggered whenever the specific event is encountered.  Depending on the specific event, the Lua state in which this action is executed will contain an `args` table that contains additional information about the event.  Each event type's arguments are described below.  The last, optional, parameter is a table that is used to filter the events.  The filter table has to be a matching subset of the arguments passed into the action in order to pass the filter.  For example, if an event provides arguments `local args = { Foo = "abc", Bar = 1.0 }` to the action, a filter `{ Foo = "abc" }` will cause this event to pass through to the action as the existing value matches and since no value is provided for `Bar`, that value is ignored for the purpose of filtering.  However a filter `{ Foo = "abc", Bar = 2.0 }` will not allow this event is passing as only one of the provided values `Foo` matches the filter, but `Bar` does not, so the action would not be triggered in this second case.
+
 
 ## Event Types
 What follows is a complete list of all available event types that can be created within OpenSpace.  The name of the event used for the `registerEventAction` and `unregisterEventAction` is the section heading.

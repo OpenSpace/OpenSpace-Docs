@@ -1,9 +1,10 @@
 # Solar Video Overlay
-
 This page discusses how to overlay a plane containing a coronal video with the sun's position. The steps here could be used for any video plane positioning, with a variety of orientations and scales.
+
 
 ## Source of Corona Video
 This example uses a video obtained by the Solar Dynamics Observatory (SDO). A coronal video for August 21, 2017 was obtained from [this page](https://sdo.gsfc.nasa.gov/assets/img/dailymov/2017/08/21/), because it aligned with an eclipse on that date. The file 20170821_1024_0171.mp4 was selected for this example because of its corona quality.
+
 
 ## Create an Asset File for the Coronoa Video
 The following example asset file was placed in the data/assets/scene/solarsystem/sun directory. It requires the transforms.asset file, which is referenced in the first line.
@@ -12,7 +13,7 @@ Since the video plane is centered with the sun renderable globe, its translation
 
 Since the video is only valid for one day, the `StartTime` and `EndTime` values are set accordingly. In addition, the script scheduler is used to make the video plane visible only on August 21, 2017 (see the `onInitialize` section near the end of the file). These scripts make the video plane appear only during this day, regardless of which direction the time may be adjusted.
 
-```
+```lua
 local transforms = asset.require("./transforms")
 
 local Plane = {
@@ -73,8 +74,10 @@ asset.meta = {
 }
 ```
 
+
 ## Add the Downloaded Video File
 The mp4 video file can be placed in the same directory as the asset file, or a relative path can be added to the reference line if it is placed elsewhere.
+
 
 ## Create a Profile With The Corona Asset
 Use the profile editor in the OpenSpace launcher to create a new profile, click the Asset Edit button, search for the name of the asset that was created in the steps above, and check the box to add it to the profile.

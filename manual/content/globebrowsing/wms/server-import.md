@@ -36,6 +36,7 @@ Both the .wms and .webconf files are discussed in more detail below. Here is an 
 ```
 For clarification, `/srv/www/vhosts/openspace` and `/home/openspace/AHTSE/conf` have the same sub-directory structure, with a single file for each WMS data set. The filenames are the same, but with a `.wms` extension in the former, and a `.webconf` extension in the latter. There is also a third location with this sub-directory structure, which is where the actual data is stored. The reason for the separate `.wms` and `.webconf` directories is to keep configuration and data files out of the Apache **DocumentRoot** directory.
 
+
 ## Add a _.webconf_ File for the Data Set
 A webconf file is required for, and provides a basic summary of, each MRF data set. The file contains 6 lines that provide the total raster size, overview size, path to data & index files, and regular expression syntax. The necessary information can be found by using the **gdalinfo** software tool (usage : `gdalinfo <path to your mrf file>`). [This readme](https://github.com/lucianpls/mod_mrf/blob/master/README.md) provides more detailed information about this format, which follows the outline below:
 ```
@@ -108,15 +109,17 @@ The **\<Projection\>** is a coordinate system projection used to geo-locate the 
 
 **\<MaxConnections\>** specifies the maximum number of clients for this data.
 
+
 ## Add Set of MRF Data Files
 A single tiled WMS data set is provided in a set of 3 files, each with the same filename and the following file extensions:
-  * **.mrf** : containing the raster metadata
-  * **.idx** : containing the indeces for where tiles are located in the raster data
-  * **.p*g** : the raster data compressed in either JPEG (.pjg) or PNG (.ppg)
+  - **.mrf** : containing the raster metadata
+  - **.idx** : containing the indeces for where tiles are located in the raster data
+  - **.p*g** : the raster data compressed in either JPEG (.pjg) or PNG (.ppg)
 
 If a data location does not already exist on the server, create one here. This directory path should have a sub-directory tree that matches that of the Apache vhosts and webconf directory trees. Create a sub-directory for each data set (with the same name) in the data location, and place the 3 MRF files here.
 
 The Utah server uses `/data/AHTSE/` as its data path. To continue with the Mars MoleElevation example, this data set is located at `/data/AHTSE/Mars/MolaElevation`, and contains 3 **MolaElevation.*** files (with .mrf, .idx, .ppg extensions). The **DataFile** entry in the `/home/openspace/AHTSE/conf/Mars/MolaElevation.webconf` file is `/data/AHTSE/Mars/MolaElevation/MolaElevation.ppg`, and the **IndexFile** entry is `/data/AHTSE/Mars/MolaElevation/MolaElevation.idx`.
+
 
 ## Summary of Overall File Layout ##
 Since the AHTSE server as described here has a very distributed layout, a summary is included here for clarification.

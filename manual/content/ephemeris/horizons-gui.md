@@ -1,16 +1,17 @@
 # Horizons GUI
 Since version 0.18.0 of OpenSpace there is a new feature that allows our users to access Horizons data directly via OpenSpace, without needing to go to the [Horizons website](https://ssd.jpl.nasa.gov/horizons.cgi). This feature can be found in the OpenSpace launcher by pressing a series of buttons:
 
-1. Press the *Edit* button close to the profile selection
-2. Press the *Edit* button close to the asset selection
-3. In the top right corner of the new window press the *New Asset* button
-4. Finally press the *Generate Horizons File* button
-5. At this point you should see the window shown in the image below
+  1. Press the *Edit* button close to the profile selection
+  1. Press the *Edit* button close to the asset selection
+  1. In the top right corner of the new window press the *New Asset* button
+  1. Finally press the *Generate Horizons File* button
+  1. At this point you should see the window shown in the image below
 
-:::{figure} images/gui.png
+:::{figure} gui.png
 :alt: "Horizons GUI"
 :align: center
 :::
+
 
 ## The Horizons Tool
 In the new window, there are a few places where you can input specifications for what Horizons data you want to access. Once you have entered all information you can press the *Save* button at the bottom of the window. At this point, OpenSpace will ask the Horizons service for the data you want and download it and store it on your computer. This wiki will go through every step of this process and explain what each field in the UI means. This process is very similar to how you would do it on the Horizons web page. Read more about that [here](horizons-web).

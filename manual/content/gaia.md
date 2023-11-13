@@ -1,11 +1,12 @@
 # Gaia
 This guide will explain how to render stars released by ESA's Gaia mission as their second data release (DR2) without having to create any subsets yourself.
 
-## 1. Define which profile to run
+
+## Define which profile to run
 OpenSpace has several different profiles depending on what you want to show. To change profile, open openspace.cfg in a text editor and make sure that `Profile = "gaia"` is the only `Profile` line that is not commented out.
 
 To change anything in the scene go to data/profiles/gaia.profile. Any of the following Gaia content can be enabled/disabled by adding `--` in front of the corresponding line.
-```
+```lua
 asset.require('scene/milkyway/gaia/gaiastars')
 asset.require('scene/milkyway/gaia/apogee')
 asset.require('scene/milkyway/gaia/galah')
@@ -13,7 +14,8 @@ asset.require('scene/solarsystem/missions/gaia/gaia')
 asset.require('scene/solarsystem/missions/gaia/trail')
 ```
 
-## 2. Run OpenSpace
+
+## Run OpenSpace
 When running OpenSpace there are several properties that you can change during runtime. In the GUI menu, expand Milky Way > Gaia Stars. The most important menu items are the following:
 
 ### File Path
@@ -46,18 +48,15 @@ These determine the size and form of the stars when one of the _Points_ shader o
 ### Billboard Size & Close-up Boost Distance (for _Billboards_ Shader Option)
 These change the size when one of the _Billboards_ shader options is selected. A larger size will decrease the performance here as well.
 
-
-
-
-
 ## Advanced Instructions for Defining What Dataset to Render
-In the data/assets/scene/milkyway/gaia/ folder, the user can change file contents to define what dataset to render. By default the radial velocity dataset of 7.2 million stars will be downloaded and rendered on startup. The size of the dataset is 335 MB and it will be stored in the sync folder within the OpenSpace directory.
+In the `data/assets/scene/milkyway/gaia/` folder, the user can change file contents to define what dataset to render. By default the radial velocity dataset of 7.2 million stars will be downloaded and rendered on startup. The size of the dataset is 335 MB and it will be stored in the sync folder within the OpenSpace directory.
 
 An additional dataset of 618 million stars is available for download as well. It can be downloaded by using the _TaskRunner.exe_ with "gaia_download.task". The dataset consists of all stars with a parallax error below 0.5 and is about 28 GB in size.
 
 The same script will also download the full DR2 dataset with 24 binary values per star. This dataset is 151 GB in size and can be used to create new subsets. If that is not interesting at the moment then go to `OpenSpace/data/assets/scene/milkyway/gaia/gaia_dr2_download_stars.asset` and comment out the lines regarding "Gaia DR2 Full Raw".
 
 To change dataset use to "localStars" variable in gaiamission.asset to point to another directory. Loading from disk will be much faster if using an SSD hard drive so if that is available please consider moving the dataset from sync/http/gaia_stars_rv_octree/1/ to a directory named DR2_rv_Octree[10kSPN,20dist]/ on the SSD drive and change the "localStars" variable accordingly.
+
 
 ## How to create new subsets from Gaia DR2 and how to render them (or your own star data) in OpenSpace
 This guide will go through the different steps needed for creating new subsets from big star datasets such as Gaia DR2 and also how to render your own star dataset with the technique used for Gaia stars.
@@ -66,17 +65,17 @@ A pre-processed version of the full DR2 has also been uploaded. From this datase
 
 The basic steps in the OpenSpace pipeline are the following:
 
-0. (Possibly) Download datasets
-1. Get the data in a readable format
-2. Read the raw data and keep a number of interesting values per star
-3. Construct an octree structure, possibly by filtering away some stars
-4. Render the structured stars in OpenSpace
+  1. (Possibly) Download datasets
+  1. Get the data in a readable format
+  1. Read the raw data and keep a number of interesting values per star
+  1. Construct an octree structure, possibly by filtering away some stars
+  1. Render the structured stars in OpenSpace
 
 Steps 2-4 can either be done as separate tasks or on start-up with OpenSpace.
 
 First off, there is a difference if the dataset is stored in one file or in several files. If the dataset is stored in only one file then we assume that it can fit in RAM because even if the process is split into different steps we will keep the "single file format" and it will thus not be possible to stream from disk later. If the dataset is stored in several files it doesn't matter if it can fit in RAM or not, the steps will be the same nevertheless. However, when reading from a folder you NEED to do steps 2-4 as separate tasks!
 
-### 0. (Possibly) Download datasets
+### (Possibly) Download datasets
 This step is for everybody that wants to create new subsets from the full DR2 data without having to download the full 1.2 TB from the Gaia Archive. If that does not apply to you then please proceed to the next step.
 
 To download a processed version of the full DR2 start a _TaskRunner.exe_ with "gaia_download.task". This will download both the DR2 dataset (151 GB, 8 files) and a generated subset with 618 million stars (28 GB, ~50k files, generated by filtering away all stars with parallax errors above 0.5)
@@ -85,7 +84,7 @@ The DR2 dataset contains 24 values per star (positions (x3), velocities (x3), ma
 
 For how to generate a new subset skip to step 3.
 
-### 1. Get the data in a readable format
+### Get the data in a readable format
 As of June 2018 OpenSpace can read a single file in Speck, FITS, Binary and BinaryOctree formats. Binary files are produced by the _ReadFitsTask_ and _ReadSpeckTask_ (Step 2) while BinaryOctree files are produced by the _ConstructOctreeTask_ (Step 3).
 
 When reading a single Speck file the order of the star values are assumed to be:
@@ -154,7 +153,7 @@ Reading of multiple files is only available for FITS files right now and the nam
 If you want to read the full DR2 this means that you have to download the files from the Gaia archive, extract them (preferably with a console using 7-zip for example) and convert the CSV files to FITS (for example by using astropy). An already processed dataset is available for download as well, see Step 0.
 
 
-### 2. Read the raw data
+### Read the raw data
 If you want to read a single-file dataset on start-up then skip to step 4.
 
 To read either a single-file or multiple-files dataset as a separate process start the OpenSpace _TaskRunner.exe_ and type in "gaia_read.task".
@@ -194,7 +193,7 @@ It is also possible to specify how many threads to use when reading from a folde
 If reading the full DR2 dataset this task will take about 7h using 8 threads on a moderate computer. This only has to be done once for a dataset, however, as long as you don't want to add more values to filter by. The output of this task can be downloaded as explained in Step 0.
 
 
-### 3. Construct the octree
+### Construct the octree
 To create the octree run a _TaskRunner.exe_ with "gaia_octree.task".
 
 The task is specified in data/tasks/gaia/gaia_octree.task as
@@ -251,7 +250,7 @@ A small _MaxDist_ is preferable as it means a smaller depth of the octree which 
 A smaller value for _MaxStarsPerNode_ is better for data uploads to the GPU while a bigger value means fewer files to write to disk and faster traversals. There is no general rule for how to decide what to use. A bit of trial and error is required for most datasets. For bigger datasets generated from DR2 a recommended starting span would be 50k-150k SPN, and for smaller datasets (20 million stars and less) 1k - 30k SPN should work fine!
 
 
-### 4. Run in OpenSpace
+### Run in OpenSpace
 To render Gaia stars in OpenSpace first make sure that you start the program using the gaia profile. By default, this profile also includes the full digital Universe catalog, as well as the Sun, Earth, Moon, a model of the Gaia spacecraft and its trail.
 
 Which stars to render can be changed in data/assets/scene/milkyway/gaia/gaiamission.asset. By default, the official radial velocity dataset will be downloaded and rendered. That dataset consists of the 7.2 million stars that were released with any radial velocity in DR2. Its size is 335 MB and it is stored in ~3k files.
@@ -266,17 +265,22 @@ Most of the other values are optional and can be switched from the default value
 
 However, other properties that might be of interest on startup (apart from **Type**, **File** and **FileReaderOption**) are:
 
-* **PsfTexture**
-Sets the point spread texture used when rendering billboards. Not optional.
+  - **PsfTexture**
 
-* **ColorTexture**
-Colormap used as lookup table for the color of the stars. Not optional.
+    Sets the point spread texture used when rendering billboards. Not optional.
 
-* **AdditionalNodes**
-Defines how many nodes around the camera that should be fetched when streaming from disk. The first value defines how many upper layers of parents that should be found around the camera and the second value defines how many layers of descendants that will be fetched from the found parents. Higher values will decrease performance. A recommended start would be "{3.0, 2.0}".
+  - **ColorTexture**
 
-* **MaxCpuMemoryPercent**
-Defines the max percentage of the existing RAM budget that will be used for storing star data. This _cannot_ be changed during runtime.
+    Colormap used as lookup table for the color of the stars. Not optional.
 
-* **MaxGpuMemoryPercent**
-Defines the max percentage of the dedicated GPU memory that will be used for streaming data. This _can_ be changed during runtime. If the screen goes black and the performance drops to below 5 fps then it could be that you are trying to reserve too much memory on the GPU, try to decrease this value! A resulting value of < 4 GB should work fine for most GPUs.
+  - **AdditionalNodes**
+
+    Defines how many nodes around the camera that should be fetched when streaming from disk. The first value defines how many upper layers of parents that should be found around the camera and the second value defines how many layers of descendants that will be fetched from the found parents. Higher values will decrease performance. A recommended start would be "{3.0, 2.0}".
+
+  - **MaxCpuMemoryPercent**
+
+    Defines the max percentage of the existing RAM budget that will be used for storing star data. This _cannot_ be changed during runtime.
+
+  - **MaxGpuMemoryPercent**
+
+    Defines the max percentage of the dedicated GPU memory that will be used for streaming data. This _can_ be changed during runtime. If the screen goes black and the performance drops to below 5 fps then it could be that you are trying to reserve too much memory on the GPU, try to decrease this value! A resulting value of < 4 GB should work fine for most GPUs.

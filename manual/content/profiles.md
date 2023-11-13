@@ -3,6 +3,7 @@ A `.profiles` file is a JSON file with a predefined set of sections that can be 
 
 These files are not intended to be edited by hand. The profile editor GUI that launches with OpenSpace should be used to create or edit a profile. The editor provides complete control over every aspect of the file. However, this document can be a useful reference guide for an advanced user who wants to edit a profile manually or via some kind of script automation.
 
+
 ## Sections
 The supported sections are: `version`, `'modules`, `meta`, `assets`, `properties`, `keybindings`, `time`, `delta_times`, `camera`, `mark_nodes`, and `additional_scripts`. These sections have to be keys of the root JSON object. Each of the sections is described below. _italic_ values are JSON types, `monospaced` values are valid key names, **optional** denotes keys that do not have to be present.
 
@@ -95,6 +96,7 @@ Children:
 Array of time increments in units of simulation seconds per wall-clock seconds. These provide ways to speed up the simulation time.
 By default, these map to the number keys 1 through 0, then SHIFT+ 1 through 0, and finally CTRL+ 1 through 0. However, they can also be re-mapped to other keys.
 Type: _array of integers_
+
 
 ## Example
 The following file is the NewHorizons .scene file converted to .profile format:
