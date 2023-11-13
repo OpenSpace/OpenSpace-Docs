@@ -189,6 +189,16 @@ tip
 warning
 :::
 
+:::{admonition} Look ma! A custom title.
+It looks different though.
+:::
+
+:::{admonition} Another Custom Title
+:class: note
+
+Maaa! I made it look the same by setting the class.
+:::
+
 
 ## Sidebar
 :::{sidebar} Ch'ien / The Creative
