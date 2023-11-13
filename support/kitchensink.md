@@ -138,16 +138,6 @@ We can use different images for light and dark themes
 :class: only-dark
 :::
 
-:::{figure} https://source.unsplash.com/200x200/daily?cute+cats
-:align: center
-:figclass: only-light
-:::
-
-:::{figure} https://source.unsplash.com/200x200/daily?cute+dogs
-:align: center
-:figclass: only-dark
-:::
-
 
 ## Videos
 Embedding videos does not work natively in Markdown and we need to fall back to raw HTML instead:
