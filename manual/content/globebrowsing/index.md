@@ -16,8 +16,9 @@ This page goes through everything that should be known about the globe browsing 
 - [Build Local DEM Patches to Load With OpenSpace](creation/build-local-dem-patches) A tutorial describing how to preprocess local patches so that they can be read as layer datasets.
 
 :::{toctree}
-:maxdepth: 1
+:maxdepth: 2
 :caption: GlobeBrowsing
+:hidden:
 
 working-with-layers
 geojson-layers

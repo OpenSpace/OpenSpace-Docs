@@ -12,7 +12,7 @@ To import a model that has an animation the model is added as normal in an asset
 There are a few settings that you can set for your animation. If any of these settings is given to a model that does not have an animation there will be a warning message in the log.
 
 ### Start time
-The start time is the date and time when the animation should start playing in OpenSpace. This is a string that should be strictly formatted in this way: <code>"YYYY MM DD hh:mm:ss"</code>. Note that only numbers are allowed, for example <code>"2021 04 15 11:50:00"</code> is a valid date and time while <code>"2021 APR 15 11:50:00"</code> is not. The start time is required to enable the animation in OpenSpace.
+The start time is the date and time when the animation should start playing in OpenSpace. This is a string that should be strictly formatted in this way: `"YYYY MM DD hh:mm:ss"`. Note that only numbers are allowed, for example `"2021 04 15 11:50:00"` is a valid date and time while `"2021 APR 15 11:50:00"` is not. The start time is required to enable the animation in OpenSpace.
 
 ```lua
   GeometryFile = models .. "BoxAnimated.glb",
@@ -41,7 +41,7 @@ Different animation software handles animation in different time scales and with
 ```
 
 ### Modes
-The animation can be played in a few different ways using different modes. The default animation mode is <code>"Once"</code>, which is to play the animation once starting from the given start time. Other options are: <code>"LoopFromStart"</code>, <code>"LoopInfinitely"</code>, <code>"BounceFromStart"</code>, and <code>"BounceInfinitely"</code>.
+The animation can be played in a few different ways using different modes. The default animation mode is `"Once"`, which is to play the animation once starting from the given start time. Other options are: `"LoopFromStart"`, `"LoopInfinitely"`, `"BounceFromStart"`, and `"BounceInfinitely"`.
 
 - **Once**, the animation is played once starting from the given start time. When the animation is finished it will remain in its last state.
 ![](once.png)

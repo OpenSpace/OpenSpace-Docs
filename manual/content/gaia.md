@@ -46,13 +46,9 @@ These determine the size and form of the stars when one of the _Points_ shader o
 ### Billboard Size & Close-up Boost Distance (for _Billboards_ Shader Option)
 These change the size when one of the _Billboards_ shader options is selected. A larger size will decrease the performance here as well.
 
----
-title: Gaia
-layout: default
 
-parent: Components
-nav_order: 4
----
+
+
 
 ## Advanced Instructions for Defining What Dataset to Render
 In the data/assets/scene/milkyway/gaia/ folder, the user can change file contents to define what dataset to render. By default the radial velocity dataset of 7.2 million stars will be downloaded and rendered on startup. The size of the dataset is 335 MB and it will be stored in the sync folder within the OpenSpace directory.

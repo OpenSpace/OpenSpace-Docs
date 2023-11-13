@@ -13,25 +13,25 @@ To load a model into OpenSpace you will need to create a new asset file. To lear
   ...
 ```
 
-The first line in this example imports the asset for the Sun, this is to add it as a light source to the model in the end. Then you add the <code>Renderable</code> with the <code>"RenderableModel"</code> as Type. Lastly, you define the path to the model file as the <code>GeometryFile</code>, for more information regarding paths in assets see [Resources](../../assets/resources). The line <code>modelPath .. "BoxAnimated.glb",</code> creates a path to your sync folder where the model is downloaded from our servers. If you want to add a local model file instead that is not located on our servers, then you could use the <code>localResource</code> function to create the path, like this (example with a local model file of New York City):
+The first line in this example imports the asset for the Sun, this is to add it as a light source to the model in the end. Then you add the `Renderable` with the `"RenderableModel"` as Type. Lastly, you define the path to the model file as the `GeometryFile`, for more information regarding paths in assets see [Resources](../../assets/resources). The line `modelPath .. "BoxAnimated.glb",` creates a path to your sync folder where the model is downloaded from our servers. If you want to add a local model file instead that is not located on our servers, then you could use the `localResource` function to create the path, like this (example with a local model file of New York City):
 
 ```lua
   GeometryFile = asset.localResource("nyc-model.obj"),
 ```
 
-The <code>localResource</code> function here refers to a file that is located next to the asset file on the filesystem. If you want to reference a file on your computer that is not located directly next to the asset file, you can instead give the full path to that file like this:
+The `localResource` function here refers to a file that is located next to the asset file on the filesystem. If you want to reference a file on your computer that is not located directly next to the asset file, you can instead give the full path to that file like this:
 
 ```lua
   GeometryFile = "C:/Users/username/Documents/data/nyc-model.obj",
 ```
 
-Note that the slashes in the path need to be forward slashed (<code>/</code>) and not backward slashes (<code>\</code>). There are additional properties you can set for your model, such as scale and animation, to read more about these see [Model Scale](scale), and [Animated Models](animation).
+Note that the slashes in the path need to be forward slashed (`/`) and not backward slashes (`\`). There are additional properties you can set for your model, such as scale and animation, to read more about these see [Model Scale](scale), and [Animated Models](animation).
 
 ## Formats
 OpenSpace uses the [Assimp library](https://github.com/assimp/assimp) to load models; therefore, our supported formats are similar to their supported formats. For a complete list see [List of formats](#list-of-formats) further down this page.
 
 ## Debugging your model
-If your model does not show up in OpenSpace and you are sure that you have done everything right in the loading, there is a tool that you could use for debugging. In the asset file, you can add an optional property for forcing invisible pieces of the model to render. This forces any part of the model that is invisible (has no texture or color) to render. This property is called <code>ForceRenderInvisible</code>. Here is an example where it is used for the Juno spacecraft:
+If your model does not show up in OpenSpace and you are sure that you have done everything right in the loading, there is a tool that you could use for debugging. In the asset file, you can add an optional property for forcing invisible pieces of the model to render. This forces any part of the model that is invisible (has no texture or color) to render. This property is called `ForceRenderInvisible`. Here is an example where it is used for the Juno spacecraft:
 
 ```lua
   ...
@@ -49,7 +49,7 @@ Any part of the model that is invisible will now be rendered with a bright and c
 
 If this property is left out in the asset file and your model has invisible parts there will be an info message in the log making you aware that there might be something wrong with the model. However, just because a part of the model is invisible does not necessarily mean that something is wrong with the model. If you are aware that your model has invisible parts and want to suppress this info message you can set the property to false to keep the log cleaner.
 
-# List of formats
+## List of formats
 Here is a list of supported formats in OpenSpace:
 
 | Extension     | Name                                     | Comment                     |

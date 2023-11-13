@@ -11,6 +11,7 @@ Some of the asteroid categories contain a very high number of objects, which wil
 
 ## Additional Features
 See the following pages for more detailed information and advanced usage of this content:
+- [Ephemeris/Asteroids](ephemeris/asteroids)
 - [Components/Satellites](satellites)
 
 ## Asteroid Content Categories

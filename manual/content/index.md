@@ -6,7 +6,7 @@
 
 profiles
 asteroids
-exoplanets
+exoplanets/index
 skybrowser/index
 gaia
 globebrowsing/index

@@ -76,5 +76,5 @@ asset.meta = {
 ## Add the Downloaded Video File
 The mp4 video file can be placed in the same directory as the asset file, or a relative path can be added to the reference line if it is placed elsewhere.
 
-## Create a Profile With The Cornoa Asset
+## Create a Profile With The Corona Asset
 Use the profile editor in the OpenSpace launcher to create a new profile, click the Asset Edit button, search for the name of the asset that was created in the steps above, and check the box to add it to the profile.

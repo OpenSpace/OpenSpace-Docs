@@ -5,7 +5,7 @@ Eccentricity, SemiMajorAxis, Inclination, AscendingNode, ArgumentOfPeriapsis, Me
 
 You will create an asset file to draw a trail, the trail will use the KeplerTranstion to decide where its points are. Once you have created the file, you will add the asset to OpenSpace.
 
-# Create an Asset File
+## Create an Asset File
 For this example, you will create a file and put it at **data/assets/keplertranslation.asset** in the OpenSpace directory structure. This asset file will create a renderable trail displaying the orbit.
 
 ```lua
@@ -44,7 +44,7 @@ assetHelper.registerSceneGraphNodesAndExport(asset, { PlutoKeplerTrail })
 
 ```
 
-# Add the Asset to OpenSpace
+## Add the Asset to OpenSpace
 The final step is to simply add this asset to OpenSpace for rendering. This can be done by either:
 1. Including the asset in a **.scene** file before starting OpenSpace:
 `asset.require('keplertranslationexample')`

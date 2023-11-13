@@ -5,10 +5,18 @@ In addition to the normal navigation in OpenSpace, using the keyboard and mouse,
 ## Xbox controller
 The image below shows a map of the buttons and joysticks on an Xbox controller.
 
-:::{figure} xbox.png
+:::{image} xbox.png
 :alt: "Xbox Controller Schematic"
 :width: 80%
 :align: center
+:class: only-light
+:::
+
+:::{image} xbox_dark.png
+:alt: "Xbox Controller Schematic"
+:width: 80%
+:align: center
+:class: only-dark
 :::
 
 Navigation using an Xbox controller in OpenSpace is defined in the Xbox asset file (`xbox.asset`) or the Xbox wireless asset file (`xbox-wireless.asset`). The table below gives an overview of what each button or joystick on the Xbox controller does in OpenSpace. NA in the table specifies that this button or joystick has no functionality per default, read more about how to add or customize functionality in [Joystick Customization](joystick-customization).
@@ -39,10 +47,18 @@ Navigation using an Xbox controller in OpenSpace is defined in the Xbox asset fi
 ## PS4 controller
 The navigation using an Xbox or PS4 controller is very similar, the only difference is the layout of the controllers. Otherwise, the functionality is the same. The image below shows a map of the buttons and joysticks on a PS4 controller.
 
-:::{figure} ps4.png
+:::{image} ps4.png
 :alt: "PS4 Controller Schematic"
 :width: 80%
 :align: center
+:class: only-light
+:::
+
+:::{image} ps4_dark.png
+:alt: "PS4 Controller Schematic"
+:width: 80%
+:align: center
+:class: only-dark
 :::
 
 Navigation using a PS4 controller in OpenSpace is defined in the PS4 asset file (`ps4.asset`). The table below gives an overview of what each button or joystick on the PS4 controller does in OpenSpace. NA in the table specifies that this button or joystick has no functionality per default, read more about how to add or customize functionality in [Joystick Customization](joystick-customization).
@@ -75,9 +91,16 @@ Navigation using a PS4 controller in OpenSpace is defined in the PS4 asset file 
 ## SpaceMouse
 The SpaceMouse is a controller that has a joystick with 6 degrees of freedom that is sold by the company [3Dconnexion](https://3dconnexion.com/uk/spacemouse/). There are a few different versions of it and therefore there are a few different versions of the asset files that specify the navigation. The versions that are currently supported (since release 0.18.0) are the SpaceMouse Compact (`space-mouse-compact.asset`) and the SpaceMouse Enterprise (`space-mouse-enterprise.asset`). Both of these can be in wireless mode `space-mouse-compact-wireless.asset` and `space-mouse-enterprise-wireless.asset` respectively. The image below is a map of the different movements of the SpaceMouse and a translation of the terminology used by 3Dconnexion (3D) and the terminology used by OpenSpace (OS).
 
-:::{figure} spacemouse-map.png
+:::{image} spacemouse-map.png
 :alt: "Spacemouse Mapping Schematic"
 :align: center
+:class: only-light
+:::
+
+:::{image} spacemouse-map_dark.png
+:alt: "Spacemouse Mapping Schematic"
+:align: center
+:class: only-dark
 :::
 
 The table below gives an overview of what each button or joystick on the SpaceMouse does in OpenSpace. The `Left` and `Right` buttons are only supported for the Compact version of the SpaceMouse. However, if you are using the Enterprise version you can bind some of the buttons to a regular key on the keyboard and bind actions to them.

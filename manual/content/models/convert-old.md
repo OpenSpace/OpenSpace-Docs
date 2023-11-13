@@ -1,7 +1,7 @@
 # Breaking change in 0.17.0: Model Loading
 In release 0.17.0, the model loading in OpenSpace was updated to support models with multiple parts, materials, and textures. This update unfortunately means that previous asset files with models need to be updated.
 
-Previously a model was specified in an asset file as a <code>Geometry</code> with a <code>Type</code>, <code>GeometryFile</code>, and a <code>ColorTexture</code>. Now it is just specified with a <code>GeometryFile</code>, there is no need for a <code>ColorTexture</code> since this information will be read from the model. This may mean that the models that have previously been used might need to be exchanged or updated to properly work with the new model loading system, more on that later.
+Previously a model was specified in an asset file as a `Geometry` with a `Type`, `GeometryFile`, and a `ColorTexture`. Now it is just specified with a `GeometryFile`, there is no need for a `ColorTexture` since this information will be read from the model. This may mean that the models that have previously been used might need to be exchanged or updated to properly work with the new model loading system, more on that later.
 
 ## Examples
 How the Renderable for the Juno spacecraft was specified before:
@@ -77,11 +77,11 @@ It is possible to create your own material file and connect your model to the co
 
 2. Open your model file and material file in a text editor (such as Notepad, Notepad++, or Visual Studio Code).
 
-3. In the model file, at the top you need to link the material file you just created with <code>mtllib filename.mtl</code> replacing the filename with the name of the material file you created in step 1.
+3. In the model file, at the top you need to link the material file you just created with `mtllib filename.mtl` replacing the filename with the name of the material file you created in step 1.
 
-4. In the model file there should be a long list of data, go to the line where the data shifts to <code>f</code>. A tip is to use the search function that most text editors have with Ctrl + f and search for <code>f</code>. Right before the first line of <code>f</code> insert the line: <code>usemtl materialName</code>. This tells the model that this part of the model should have this material.
+4. In the model file there should be a long list of data, go to the line where the data shifts to `f`. A tip is to use the search function that most text editors have with Ctrl + f and search for `f`. Right before the first line of `f` insert the line: `usemtl materialName`. This tells the model that this part of the model should have this material.
 
-5. If there are several different lists of <code>f</code> you repeat step 4 until all lists of <code>f</code> has a material. You can use different materials (change materialName) if you would like the different parts of the model to have different materials or textures. 
+5. If there are several different lists of `f` you repeat step 4 until all lists of `f` has a material. You can use different materials (change materialName) if you would like the different parts of the model to have different materials or textures.
 
 6. Your model file should look something like this at this point (example with two materials):
 ```
@@ -113,9 +113,9 @@ It is possible to create your own material file and connect your model to the co
     ...
 ```
 
-7. Switch to the material file. Here is where you define your materials and the textures. Create a new material with <code>newmtl materialName</code>. Note that materialName should be the same as you specified in the model file in Step 4. Then connect the material to a texture using: <code>map_Kd textureName.png</code>. Note that the path to the texture should be given relative to the material file.
+7. Switch to the material file. Here is where you define your materials and the textures. Create a new material with `newmtl materialName`. Note that materialName should be the same as you specified in the model file in Step 4. Then connect the material to a texture using: `map_Kd textureName.png`. Note that the path to the texture should be given relative to the material file.
 
-8. If you specified several **different** materials in step 5 you will need to repeat step 7 for every new material. 
+8. If you specified several **different** materials in step 5 you will need to repeat step 7 for every new material.
 
 9. In the end your material file should look something like this (with two materials):
 ```

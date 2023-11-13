@@ -50,6 +50,7 @@ OpenSpace is an open-source project and relies on the contribution by a communit
 :titlesonly:
 
 general/releases/index
+general/links
 general/academics
 :::
 
@@ -86,6 +87,7 @@ manual/properties/index
 manual/scenegraph/index
 manual/assets/index
 manual/content/index
+manual/events/index
 manual/data-distribution/index
 :::
 

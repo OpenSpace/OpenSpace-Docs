@@ -95,6 +95,3 @@ The Build VRT process was the same as in Section 2.1 above, but the process of u
 ```
 gdal_translate -q -of MRF -ot Byte -scale -2757 8000 0 255 -co COMPRESS=PNG -co BLOCKSIZE=256 -co OPTIONS="V1:1" ${inputVrt} ${outputMrf}
 ```
-
-## 6.0 Additional Information / Examples
-[This google doc](https://docs.google.com/document/d/1In1OlcfIvDw5fZFDxmyR8OgQoc4ckmOLLQolTSFaZH8/edit?ts=590b97cd#heading=h.lys59mv78h3m) has more conversion examples in its Appendix.
