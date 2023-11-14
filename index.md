@@ -150,4 +150,5 @@ dev/faq
 :hidden:
 
 support/kitchensink
+support/field-list-example
 :::

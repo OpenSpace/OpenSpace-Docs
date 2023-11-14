@@ -1,0 +1,21 @@
+.readingbox {
+  max-width: 75%;
+}
+
+.requiredreading {
+  border-left-color: #808080 !important;
+  background-color: var(--color-code-background);
+}
+
+.admonition.note.requiredreading .admonition-title {
+  background-color: #308d7f;
+}
+
+.recommendedreading {
+  border-left-color: #808080 !important;
+  background-color: var(--color-code-background);
+}
+
+.admonition.note.recommendedreading .admonition-title {
+  background-color: #84559b;
+}
