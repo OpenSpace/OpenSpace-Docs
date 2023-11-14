@@ -13,7 +13,7 @@ Exoplanet systems can be added and removed during runtime through the Exoplanets
 
 ![Exoplanets GUI Symbol](exoplanet-gui-icon_dark.png){w="1.5em" h="1.5em" class="only-dark"}
 
-Added exoplanet systems, including scene graph nodes for individual planets, can be found in the Scene GUI under “Milky Way → Exoplanets → Exoplanet Systems”.
+Added exoplanet systems, including scene graph nodes for individual planets, can be found in the Scene GUI under {menuselection}`Milky Way --> Exoplanets --> Exoplanet Systems`.
 
 It is also possible to add exoplanet systems using the `openspace.exoplanets.addExoplanetSystem(name)` function in the OpenSpace scripting API, where the name of the system is the name of the host star. For example, `openspace.exoplanets.addExoplanetSystem("Kepler-11")` adds the Kepler-11 system, a system discovered in 2010 with a total of 6 confirmed orbiting the host star Kepler-11. Multiple systems can be added at once by specifying a list of host names as input, for example like `{"Kepler-11", "GJ 1061"}`. This function can be used to add exoplanets to OpenSpace before start-up.
 

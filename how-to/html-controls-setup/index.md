@@ -18,13 +18,13 @@ We typically have most of the controls in the head of the HTML document.
 :::{code-block} html
 <html>
     <head>
-        <title>Basic Openspace Controls</title>
+        <title>Basic OpenSpace Controls</title>
         <link rel="stylesheet" type="text/css" href="main2.css">
         <script type="text/javascript" src="openspace-api.js"></script>
         <script type="text/javascript">
 :::
 
-  - Starting with title: `<title>Basic Openspace Controls</title>`
+  - Starting with title: `<title>Basic OpenSpace Controls</title>`
   - Link to stylesheet: `<link rel="stylesheet" type="text/css" href="main2.css">`
   - Include OpenSpace JavaScript API code: `<script type="text/javascript" src="openspace-api.js"></script>`
   - And finally opening another script block in which we will define all our buttons and functions
@@ -64,7 +64,7 @@ var setFocus = (focus) => {
 }
 :::
 
-We can now start writing the buttons. As an example I’ll start with an object called `earthButtons` with two properties, "title" and "buttons".
+We can now start writing the buttons. As an example I'll start with an object called `earthButtons` with two properties, "title" and "buttons".
 
 :::{code-block} javascript
 var earthButtons = {
@@ -190,9 +190,9 @@ Here we are also creating an empty div with id=main in which the `mapButtons` fu
 This will of course also depend on the CSS, the file we are using is linked at the top of this document.
 
 ## How to get OpenSpace commands from the script log
-An easy way to generate the commands to assign to buttons is to first perform the sequence using the GUI then add the output of the script log to a button. The script log can be found in the OpenSpace directory under `Openspace-0.X.X/Logs/ScriptLog.txt`.
+An easy way to generate the commands to assign to buttons is to first perform the sequence using the GUI then add the output of the script log to a button. The script log can be found in the OpenSpace directory under `OpenSpace-0.X.X/Logs/ScriptLog.txt`.
 
-For example, to setup a scene showing the April 8th, 2024 eclipse in the Openspace GUI you might:
+For example, to setup a scene showing the April 8th, 2024 eclipse in the OpenSpace GUI you might:
   - Jump to Earth at a specific location
   - Set time to April 8th
   - Set the visible layer to Blue Marble
@@ -288,8 +288,8 @@ var api = window.openspaceApi('localhost', 4682);
   let intervalIds = [];
 
   //the button-updating function:
-  //takes in the button id to be updated and the Openspace Topic to subscribe to
-  //this was adapted from an example from the Openspace team
+  //takes in the button id to be updated and the OpenSpace Topic to subscribe to
+  //this was adapted from an example from the OpenSpace team
   function updateButtonStyle(buttonId, topic) {
     topic.iterator().next().then(function(it) {
     const enabled = it.value.Value;

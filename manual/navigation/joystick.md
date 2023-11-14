@@ -128,7 +128,7 @@ It is possible to customize the joystick navigation to your own liking. However,
 ## Issues and solutions
 Here is a list of some issues you can encounter related to the controllers and some tips on how to fix them.
 
-### Openspace does not react to the controller input
+### OpenSpace does not react to the controller input
 The first thing to check here is that the controller is connected correctly to the computer, that the correct asset file has been included in the profile, and that the right profile is run. If OpenSpace still does not react to the controller then it is possible that your controller has a different name than what OpenSpace expects. You can check the name of your controller when OpenSpace is running in any profile. Press the *F1* button on the keyboard and you will see the old GUI interface of OpenSpace pop up. In the window called **OpenSpace GUI**, press the empty checkbox next to **Joysticks Information**. This will open a new window and here all the connected controllers will be listed. In this list you can search for your controller and note down what name it has in the list, ignoring the number in the end. The items in the list called *3Dconnexion KMJ Emulator* or *Summed contributions* can be ignored. The next step is to change the name of the controller in the asset file. Start by opening the asset file corresponding to your controller in a text editor. You will need to change one line of code that specifies the controller name, you can see an example for the Xbox controller below (all other joystick assets look similar).
 
 ```lua
@@ -142,7 +142,7 @@ The first thing to check here is that the controller is connected correctly to t
     ...
 ```
 
-### Openspace keeps spinning even when the joysticks are not touched
+### OpenSpace keeps spinning even when the joysticks are not touched
 This issue is caused by the deadzone being too small for the joysticks or the triggers on the controller. To fix it you can increase the size of the deadzone by editing one or two lines in the asset file. Start by opening the asset file corresponding to your controller in a text editor. You will need to change one or two lines of code that specify the deadzone size for the joysticks and triggers respectively, you can see an example for the PS4 controller below (all other joystick assets look similar).
 
 ```lua

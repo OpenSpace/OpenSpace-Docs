@@ -36,7 +36,7 @@ Important tags are:
   - `<OpenSpaceTimeIdFormat>` - Format of the time placeholder `${OpenSpaceTimeId}` to be pasted in the URL
   - `<GDAL_WMS>` - The GDAL WMS is defined here
 
-The placeholder `${OpenSpaceTimeId}` is replaced with the current Openspace time quantized according to the value provided for `<OpenSpaceTimeResolution>`. Then a new dataset will be loaded and texture images will be updated on the fly.
+The placeholder `${OpenSpaceTimeId}` is replaced with the current OpenSpace time quantized according to the value provided for `<OpenSpaceTimeResolution>`. Then a new dataset will be loaded and texture images will be updated on the fly.
 
 ```xml
 <OpenSpaceTemporalGDALDataset>
