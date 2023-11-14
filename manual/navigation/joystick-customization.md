@@ -8,27 +8,27 @@ To start, you will need an asset file to edit. If you are using a controller tha
 To bind a camera movement to an axis of the controller you will need the function `openspace.navigation.bindJoystickAxis` that takes eight arguments. Below is a list that describes each argument in detail. If you are customizing an already existing asset then you probably do not want to add a new camera movement binding, instead, you might want to alter the pre-existing ones. To customize a camera movement it is most likely only necessary to change a few of the input values in the pre-existing function call to the function `openspace.navigation.bindJoystickAxis`.
 
   1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
-  2. The index of which axis on the controller you want to bind the camera movement to. This is distinct for the type of controller you will use and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
-  3. The type of camera movement you want this axis to do. This defines how the camera will move in OpenSpace when you move the specified axis of the controller. Must be one of the identifiers in the following list:
+  1. The index of which axis on the controller you want to bind the camera movement to. This is distinct for the type of controller you will use and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
+  1. The type of camera movement you want this axis to do. This defines how the camera will move in OpenSpace when you move the specified axis of the controller. Must be one of the identifiers in the following list:
 
-| Identifier   | Description                                                             |
-|--------------|-------------------------------------------------------------------------|
-| "None"       | Unbinds the axis, no camera movement is applied. Default value from the start. |
-| "Orbit X"    | Move the camera in the left/right direction in relation to the focus, while still keeping the same distance. The camera will move as if it was orbiting the focus. |
-| "Orbit Y"    | Move the camera in the up/down direction in relation to the focus, while still keeping the same distance. The camera will move as if it was orbiting the focus. |
-| "Zoom"       | Move the camera closer or further away from the focus                   |
-| "Zoom In"    | Move the camera closer to the focus                                     |
-| "Zoom Out"   | Move the camera further away from the focus                             |
-| "LocalRoll"  | Roll the camera (clockwise) in relation to the middle of the view       |
-| "GlobalRoll" | Roll the camera (clockwise) in relation to the focus                    |
-| "Pan X"      | Turn the camera left/right in relation to the view                      |
-| "Pan Y"      | Turn the camera up/down in relation to the view                         |
+     | Identifier   | Description                                                             |
+     |--------------|-------------------------------------------------------------------------|
+     | "None"       | Unbinds the axis, no camera movement is applied. Default value from the start. |
+     | "Orbit X"    | Move the camera in the left/right direction in relation to the focus, while still keeping the same distance. The camera will move as if it was orbiting the focus. |
+     | "Orbit Y"    | Move the camera in the up/down direction in relation to the focus, while still keeping the same distance. The camera will move as if it was orbiting the focus. |
+     | "Zoom"       | Move the camera closer or further away from the focus                   |
+     | "Zoom In"    | Move the camera closer to the focus                                     |
+     | "Zoom Out"   | Move the camera further away from the focus                             |
+     | "LocalRoll"  | Roll the camera (clockwise) in relation to the middle of the view       |
+     | "GlobalRoll" | Roll the camera (clockwise) in relation to the focus                    |
+     | "Pan X"      | Turn the camera left/right in relation to the view                      |
+     | "Pan Y"      | Turn the camera up/down in relation to the view                         |
 
-  4. (Optional) Whether or not this axis should be inverted. This is a common setting in video games. Defaults to `false`.
-  5. (Optional) The type of joystick that this axis represents on the controller. The options are either `"JoystickLike"` or `"TriggerLike"`. A joystick is `"TriggerLike"` if it can only be pressed or pushed in one direction. A `"JoystickLike"` axis can be pushed in two directions, for example, left **and** right, or up **and** down. Defaults to `"JoystickLike"`.
-  6. (Optional) Whether or not this axis is "sticky". In most cases, this should be set to `false`. An axis is "sticky" if, when you let go of it, the values it represents in the software do not go back to the default. Another sign is that the longer you push it, the value, and therefore the movement, gets more and more extreme over time and does not stop or slow down when you let go. Defaults to `false`.
-  7. (Optional) Whether or not the movement for this axis should be reversed. In the case of a `"JoystickLike"` axis, this is the same as inverting the axis (which was argument number 4). However, in the case of a `"TriggerLike"` axis, this can reverse the camera movement for the trigger. For example, if the `"LocalRoll"` movement type is bound to a trigger, you can only roll OpenSpace clockwise when you press the trigger, since the trigger can only go in one direction. To make the camera roll counter-clockwise instead, you would need to reverse the movement with this argument. Defaults to `false`.
-  8. (Optional) Sensitivity value for this axis. Can be used to fine-tune the sensitivity for all axes individually. Defaults to `1.0`. A value larger than `1.0` would lead to the axis becoming more sensitive and a value that is smaller than `1.0` would lead to the axis being less sensitive to input. There is also a global sensitivity property that can be adjusted in the GUI, under *Settings*, *Navigation Handler*, *Orbital Navigator* and then *Joystick Sensitivity* (identifier `NavigationHandler.OrbitalNavigator.JoystickSensitivity`). Note that this will affect all connected controllers and all of their axes.
+  1. (Optional) Whether or not this axis should be inverted. This is a common setting in video games. Defaults to `false`.
+  1. (Optional) The type of joystick that this axis represents on the controller. The options are either `"JoystickLike"` or `"TriggerLike"`. A joystick is `"TriggerLike"` if it can only be pressed or pushed in one direction. A `"JoystickLike"` axis can be pushed in two directions, for example, left **and** right, or up **and** down. Defaults to `"JoystickLike"`.
+  1. (Optional) Whether or not this axis is "sticky". In most cases, this should be set to `false`. An axis is "sticky" if, when you let go of it, the values it represents in the software do not go back to the default. Another sign is that the longer you push it, the value, and therefore the movement, gets more and more extreme over time and does not stop or slow down when you let go. Defaults to `false`.
+  1. (Optional) Whether or not the movement for this axis should be reversed. In the case of a `"JoystickLike"` axis, this is the same as inverting the axis (which was argument number 4). However, in the case of a `"TriggerLike"` axis, this can reverse the camera movement for the trigger. For example, if the `"LocalRoll"` movement type is bound to a trigger, you can only roll OpenSpace clockwise when you press the trigger, since the trigger can only go in one direction. To make the camera roll counter-clockwise instead, you would need to reverse the movement with this argument. Defaults to `false`.
+  1. (Optional) Sensitivity value for this axis. Can be used to fine-tune the sensitivity for all axes individually. Defaults to `1.0`. A value larger than `1.0` would lead to the axis becoming more sensitive and a value that is smaller than `1.0` would lead to the axis being less sensitive to input. There is also a global sensitivity property that can be adjusted in the GUI, under *Settings*, *Navigation Handler*, *Orbital Navigator* and then *Joystick Sensitivity* (identifier `NavigationHandler.OrbitalNavigator.JoystickSensitivity`). Note that this will affect all connected controllers and all of their axes.
 
 Here is an example asset with the SpaceMouse:
 ```lua
@@ -122,23 +122,17 @@ Here is an example asset with the Earth scale bound to the right trigger on an X
 Binding a custom script to a controller button is done with the function `openspace.navigation.bindJoystickButton` that takes six arguments. Below is a list that describes each argument in detail.
 
   1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
-
-  2. The index of which button on the controller you want to bind the script to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.A` or `controller.DPan.Left`.
-
-  3. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](/users/console/index.md#the-script-log).
-
-  4. Description of the script that the button will execute when the button is activated.
-
-  5. (Optional) When the button should be interpreted as activated, defaults to `"Press"`. This must be one of the identifiers in the following list:
-
-| Identifier | Description                                     |
-| ---------- | ----------------------------------------------- |
-| "Idle"     | When the button is **not** pressed              |
-| "Press"    | When the button is pressed                      |
-| "Repeat"   | When the button is held pressed                 |
-| "Release"  | When the button was pressed and is not released |
-
-  6. (Optional) Whether or not the script should be forwarded to other connected nodes or sessions. This is similar to the `"isLocal"` parameter for actions. Defaults to `true`.
+  1. The index of which button on the controller you want to bind the script to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.A` or `controller.DPan.Left`.
+  1. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](/users/console/index.md#the-script-log).
+  1. Description of the script that the button will execute when the button is activated.
+  1. (Optional) When the button should be interpreted as activated, defaults to `"Press"`. This must be one of the identifiers in the following list:
+     | Identifier | Description                                     |
+     | ---------- | ----------------------------------------------- |
+     | "Idle"     | When the button is **not** pressed              |
+     | "Press"    | When the button is pressed                      |
+     | "Repeat"   | When the button is held pressed                 |
+     | "Release"  | When the button was pressed and is not released |
+  1. (Optional) Whether or not the script should be forwarded to other connected nodes or sessions. This is similar to the `"isLocal"` parameter for actions. Defaults to `true`.
 
 Here is an example asset that switches focus when pressing the trigger buttons on an Xbox controller:
 ```lua

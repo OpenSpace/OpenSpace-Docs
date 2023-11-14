@@ -60,7 +60,5 @@ In this example, the renderable will not be enabled by default, but can of cours
 
 ## Add the Asset to OpenSpace
 The final step is to simply add this asset to OpenSpace for rendering. This can be done by either:
-1. Including the asset in a **.scene** file before starting OpenSpace:
-`asset.require('scene/solarsystem/sssb/pha')`
-2. Typing in the **\`** console while OpenSpace is running:
-`openspace.asset.add('scene/solarsystem/sssb/pha')`
+  1. Including the asset in a **.scene** file before starting OpenSpace: `asset.require('scene/solarsystem/sssb/pha')`
+  1. Typing in the **\`** console while OpenSpace is running: `openspace.asset.add('scene/solarsystem/sssb/pha')`

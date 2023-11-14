@@ -76,47 +76,41 @@ Both of these could be done with any modeling software (such as Blender, Maya or
 It is possible to create your own material file and connect your model to the correct textures by editing the files in a text editor. Depending on how complex and large your model is this could take some time and effort.
 
   1. Start by creating a new text file and rename its extension to .mtl instead of .txt (you might have to turn on visible file extensions in Windows for this).
-  2. Open your model file and material file in a text editor (such as Notepad, Notepad++, or Visual Studio Code).
-  3. In the model file, at the top you need to link the material file you just created with `mtllib filename.mtl` replacing the filename with the name of the material file you created in step 1.
-  4. In the model file there should be a long list of data, go to the line where the data shifts to `f`. A tip is to use the search function that most text editors have with Ctrl + f and search for `f`. Right before the first line of `f` insert the line: `usemtl materialName`. This tells the model that this part of the model should have this material.
-  5. If there are several different lists of `f` you repeat step 4 until all lists of `f` has a material. You can use different materials (change materialName) if you would like the different parts of the model to have different materials or textures.
-  6. Your model file should look something like this at this point (example with two materials):
-```
-    # Header ...
+  1. Open your model file and material file in a text editor (such as Notepad, Notepad++, or Visual Studio Code).
+  1. In the model file, at the top you need to link the material file you just created with `mtllib filename.mtl` replacing the filename with the name of the material file you created in step 1.
+  1. In the model file there should be a long list of data, go to the line where the data shifts to `f`. A tip is to use the search function that most text editors have with Ctrl + f and search for `f`. Right before the first line of `f` insert the line: `usemtl materialName`. This tells the model that this part of the model should have this material.
+  1. If there are several different lists of `f` you repeat step 4 until all lists of `f` has a material. You can use different materials (change materialName) if you would like the different parts of the model to have different materials or textures.
+  1. Your model file should look something like this at this point (example with two materials):
+     ```
+     # Header ..
+     mtllib 0.mtl
+     o 10_(ESP)_External_Stowage_Platform_1_z1_ext_01.000
+     v 2.529284 -0.517977 3.555833
+     v 2.559681 -0.517977 3.55583
+     ..
+     vn -0.6966 0.4229 0.5796
+     vn -0.8944 0.2626 -0.3619
+     s off
+     usemtl ISS_03_dull
+     f 246/1/1 247/2/1 248/3/1
+     f 246/1/1 249/4/1 247/2/
+     ..
+     vn -0.3987 -0.5324 0.7467
+     vn -0.7104 -0.4799 0.5148
+     s 1
+     usemtl white
+     f 1216/1216/491 1217/1217/492 1218/1218/493
+     f 1216/1216/491 1219/1219/494 1217/1217/49
+     ...
+     ```
+  1. Switch to the material file. Here is where you define your materials and the textures. Create a new material with `newmtl materialName`. Note that materialName should be the same as you specified in the model file in Step 4. Then connect the material to a texture using: `map_Kd textureName.png`. Note that the path to the texture should be given relative to the material file.
+  1. If you specified several **different** materials in step 5 you will need to repeat step 7 for every new material.
+  1. In the end your material file should look something like this (with two materials):
+     ```
+     newmtl ISS_03_dull
+         map_Kd 0.png
 
-    mtllib 0.mtl
-    o 10_(ESP)_External_Stowage_Platform_1_z1_ext_01.000
-    v 2.529284 -0.517977 3.555833
-    v 2.559681 -0.517977 3.555833
-
-    ...
-
-    vn -0.6966 0.4229 0.5796
-    vn -0.8944 0.2626 -0.3619
-    s off
-    usemtl ISS_03_dull
-    f 246/1/1 247/2/1 248/3/1
-    f 246/1/1 249/4/1 247/2/1
-
-    ...
-
-    vn -0.3987 -0.5324 0.7467
-    vn -0.7104 -0.4799 0.5148
-    s 1
-    usemtl white
-    f 1216/1216/491 1217/1217/492 1218/1218/493
-    f 1216/1216/491 1219/1219/494 1217/1217/492
-
-    ...
-```
-  7. Switch to the material file. Here is where you define your materials and the textures. Create a new material with `newmtl materialName`. Note that materialName should be the same as you specified in the model file in Step 4. Then connect the material to a texture using: `map_Kd textureName.png`. Note that the path to the texture should be given relative to the material file.
-  8. If you specified several **different** materials in step 5 you will need to repeat step 7 for every new material.
-  9. In the end your material file should look something like this (with two materials):
-```
-    newmtl ISS_03_dull
-        map_Kd 0.png
-
-    newmtl white
-        map_Kd white_20.png
-```
-  10. Make sure that your material file is in the same directory as the model file. Your model should now be textured in OpenSpace.
+     newmtl white
+         map_Kd white_20.png
+     ```
+  1. Make sure that your material file is in the same directory as the model file. Your model should now be textured in OpenSpace.

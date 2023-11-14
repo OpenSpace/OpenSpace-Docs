@@ -57,8 +57,9 @@ When playing back using the GUI, check the "Output Frames" box, enter the desire
 ### File Conversion
 OpenSpace's TaskRunner executable can now be used to convert between ascii and binary recording formats. The typical format is binary, since it is much more space efficient. Using the conversion task to switch a binary recording to ascii makes it possible to debug or modify a recording in a readable form. It is also possible to split or combine recordings.
 The conversion task can be run by doing the following:
-1. Copy the file **data/tasks/sessionRecordConvertExample1.task** and rename it. Edit the contents to specify the `InputFilePath` to convert, and the desired `OutputFilePath`.
-2. Start **bin/TaskRunner** in a terminal. At the prompt, type the full name (with **.task** extension) of the task file copied & edited above.
+
+  1. Copy the file **data/tasks/sessionRecordConvertExample1.task** and rename it. Edit the contents to specify the `InputFilePath` to convert, and the desired `OutputFilePath`.
+  1. Start **bin/TaskRunner** in a terminal. At the prompt, type the full name (with **.task** extension) of the task file copied & edited above.
 
 ### File Extensions
 The extension of recording filenames is **.osrec** for binary format recordings and **.osrectxt** for ascii format. When starting a recording it is not necessary to add the file extension, as it will be added based on the recording mode. It is necessary to specify the full filename at playback, however.
