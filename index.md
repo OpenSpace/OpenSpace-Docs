@@ -17,7 +17,7 @@ The overall structure of the documentation is as follows:
 
   - Manual
 
-    Pages that describe individual subsystems or components of OpenSpace in greater detail.
+    Pages that describe individual subsystems or components of OpenSpace in greater detail. If you want to learn more about concrete elements of OpenSpace, this is the place to be.
 
   - Tutorials
 
@@ -83,10 +83,10 @@ users/faq
 :titlesonly:
 
 manual/navigation/index
-manual/properties/index
-manual/scenegraph/index
 manual/assets/index
 manual/content/index
+manual/properties/index
+manual/scenegraph/index
 manual/events/index
 manual/data-distribution/index
 :::
@@ -128,11 +128,16 @@ how-to/index
 :titlesonly:
 
 dev/compiling/index
+dev/tools/index
+dev/dependencies/index
 dev/coding-style
+dev/deploying-windows
 dev/folder-layout
 dev/pull-requests
+dev/branches
 dev/cpp-musings
-dev/deploying-windows
+dev/skybrowser
+dev/webrtc/index
 dev/faq
 :::
 
