@@ -10,15 +10,15 @@ The AHTSE configuration file resides in the directory that contains the Apache w
 This text file has the header:
 ```
 <Location "/server-info">
-    SetHandler server-info
+  SetHandler server-info
 </Location>
 ```
 and is followed by a 5-line block for every WMS dataset to be served, which has the following format:
 ```
 <Directory /path/to/directory_tree/containing/wms_files>
-    Options -Indexes -FollowSymLinks -ExecCGI
-    MRF_RegExp .*/tile/.*
-    MRF_ConfigurationFile /path/to/directory/with/webconf/dataset_name.webconf
+  Options -Indexes -FollowSymLinks -ExecCGI
+  MRF_RegExp .*/tile/.*
+  MRF_ConfigurationFile /path/to/directory/with/webconf/dataset_name.webconf
 </Directory>
 ```
 There are really only two entries to change in this block, assuming that the tile service will use the default options from the second line, and the regular expression format for the URL in the third line. The path in the first line points to the directory tree that contains a `.wms` file for each data set. This directory tree has directories arranged in the same manner and same names as the directory tree of the source data (for example the base of this tree may have `Earth/`, `Mars/`, `Mercury/` directories, each with subdirectories for the tiled data sets for each of those planets. Usually, only a single `.wms` file exists in those locations to represent the data set.
@@ -29,9 +29,9 @@ The other directory that needs to be modified from the above example is the **MR
 Both the .wms and .webconf files are discussed in more detail below. Here is an example entry in the Utah server:
 ```
 <Directory /srv/www/vhosts/openspace/Mars/MolaElevation>
-        Options -Indexes -FollowSymLinks -ExecCGI
-        MRF_RegExp .*/tile/.*
-        MRF_ConfigurationFile /home/openspace/AHTSE/conf/Mars/MolaElevation.webconf
+  Options -Indexes -FollowSymLinks -ExecCGI
+  MRF_RegExp .*/tile/.*
+  MRF_ConfigurationFile /home/openspace/AHTSE/conf/Mars/MolaElevation.webconf
 </Directory>
 ```
 For clarification, `/srv/www/vhosts/openspace` and `/home/openspace/AHTSE/conf` have the same sub-directory structure, with a single file for each WMS data set. The filenames are the same, but with a `.wms` extension in the former, and a `.webconf` extension in the latter. There is also a third location with this sub-directory structure, which is where the actual data is stored. The reason for the separate `.wms` and `.webconf` directories is to keep configuration and data files out of the Apache **DocumentRoot** directory.
@@ -67,17 +67,17 @@ A single .wms file contains detailed information about the MRF data set. The fol
 ```
 <GDAL_WMS>
   <Service name="TMS">
-  <ServerUrl>http://openspace.sci.utah.edu/Mars/MolaElevation/tile/${z}/${y}/${x}</ServerUrl>
+    <ServerUrl>http://openspace.sci.utah.edu/Mars/MolaElevation/tile/${z}/${y}/${x}</ServerUrl>
   </Service>
   <DataWindow>
-  <UpperLeftX>-180.0</UpperLeftX>
-  <UpperLeftY>90.0</UpperLeftY>
-  <LowerRightX>180.0</LowerRightX>
-  <LowerRightY>-90.0</LowerRightY>
-  <SizeX>46080</SizeX>
-  <SizeY>23040</SizeY>
-  <TileLevel>6</TileLevel>
-  <YOrigin>top</YOrigin>
+    <UpperLeftX>-180.0</UpperLeftX>
+    <UpperLeftY>90.0</UpperLeftY>
+    <LowerRightX>180.0</LowerRightX>
+    <LowerRightY>-90.0</LowerRightY>
+    <SizeX>46080</SizeX>
+    <SizeY>23040</SizeY>
+    <TileLevel>6</TileLevel>
+    <YOrigin>top</YOrigin>
   </DataWindow>
   <Projection>GEOGCS["GCS_Mars_2000_Sphere",DATUM["D_Mars_2000_Sphere",SPHEROID["Mars_2000_Sphere_IAU_IAG",3396190.0,0.0]],PRIMEM["Reference_Meridian",0.0],UNIT["Degree",0.0174532925199433]]</Projection>
   <BlockSizeX>360</BlockSizeX>

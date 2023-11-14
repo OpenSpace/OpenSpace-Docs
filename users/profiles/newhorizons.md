@@ -12,5 +12,5 @@ This profile shows the acquisition of NASA New Horizons' images of the Plutonian
   - {kbd}`F7` Toggles the image projections
   - {kbd}`F8` Remove the already projected images from the surface
   - {kbd}`F9` Jump to the start time and remove all image projections
-  - {kbd}`Keypad 8` and {kbd}`Keypad 2` Increase and decrease the height exaggeration on Pluto to show the terrain structure
-  - {kbd}`Keypad 9` and {kbd}`Keypad 3` Increase and decrease the height exaggeration on Charon to show the terrain structure
+  - {kbd}`Keypad8` and {kbd}`Keypad2` Increase and decrease the height exaggeration on Pluto to show the terrain structure
+  - {kbd}`Keypad9` and {kbd}`Keypad3` Increase and decrease the height exaggeration on Charon to show the terrain structure

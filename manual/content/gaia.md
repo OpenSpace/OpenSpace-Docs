@@ -16,7 +16,7 @@ asset.require('scene/solarsystem/missions/gaia/trail')
 
 
 ## Run OpenSpace
-When running OpenSpace there are several properties that you can change during runtime. In the GUI menu, expand Milky Way > Gaia Stars. The most important menu items are the following:
+When running OpenSpace there are several properties that you can change during runtime. In the GUI menu, expand {menuselection}`Milky Way --> Gaia Stars`. The most important menu items are the following:
 
 ### File Path
 This is used to change dataset during runtime.
@@ -55,7 +55,7 @@ An additional dataset of 618 million stars is available for download as well. It
 
 The same script will also download the full DR2 dataset with 24 binary values per star. This dataset is 151 GB in size and can be used to create new subsets. If that is not interesting at the moment then go to `OpenSpace/data/assets/scene/milkyway/gaia/gaia_dr2_download_stars.asset` and comment out the lines regarding "Gaia DR2 Full Raw".
 
-To change dataset use to "localStars" variable in gaiamission.asset to point to another directory. Loading from disk will be much faster if using an SSD hard drive so if that is available please consider moving the dataset from sync/http/gaia_stars_rv_octree/1/ to a directory named DR2_rv_Octree[10kSPN,20dist]/ on the SSD drive and change the "localStars" variable accordingly.
+To change dataset use to "localStars" variable in gaiamission.asset to point to another directory. Loading from disk will be much faster if using an SSD hard drive so if that is available please consider moving the dataset from `sync/http/gaia_stars_rv_octree/1/` to a directory named `DR2_rv_Octree[10kSPN,20dist]/` on the SSD drive and change the "localStars" variable accordingly.
 
 
 ## How to create new subsets from Gaia DR2 and how to render them (or your own star data) in OpenSpace
@@ -88,66 +88,72 @@ As of June 2018 OpenSpace can read a single file in Speck, FITS, Binary and Bina
 
 When reading a single Speck file the order of the star values are assumed to be:
 
-    0 x
-    1 y
-    2 z
-    3 color
-    4 - not used
-    5 absmag
-    6 - not used
-    7 - not used
-    8 - not used
-    9 - not used
-    10 - not used
-    11 - not used
-    12 - not used
-    13 vx
-    14 vy
-    15 vz
-    16 speed
+```
+0 x
+1 y
+2 z
+3 color
+4 - not used
+5 absmag
+6 - not used
+7 - not used
+8 - not used
+9 - not used
+10 - not used
+11 - not used
+12 - not used
+13 vx
+14 vy
+15 vz
+16 speed
+```
 
 When reading a single FITS file the order is assumed to be:
 
-    "Position_X",
-    "Position_Y",
-    "Position_Z",
-    "Velocity_X",
-    "Velocity_Y",
-    "Velocity_Z",
-    "Gaia_Parallax",
-    "Gaia_G_Mag",
-    "Tycho_B_Mag",
-    "Tycho_V_Mag",
-    "Gaia_Parallax_Err",
-    "Gaia_Proper_Motion_RA",
-    "Gaia_Proper_Motion_RA_Err",
-    "Gaia_Proper_Motion_Dec",
-    "Gaia_Proper_Motion_Dec_Err",
-    "Tycho_B_Mag_Err",
-    "Tycho_V_Mag_Err"
+```
+"Position_X",
+"Position_Y",
+"Position_Z",
+"Velocity_X",
+"Velocity_Y",
+"Velocity_Z",
+"Gaia_Parallax",
+"Gaia_G_Mag",
+"Tycho_B_Mag",
+"Tycho_V_Mag",
+"Gaia_Parallax_Err",
+"Gaia_Proper_Motion_RA",
+"Gaia_Proper_Motion_RA_Err",
+"Gaia_Proper_Motion_Dec",
+"Gaia_Proper_Motion_Dec_Err",
+"Tycho_B_Mag_Err",
+"Tycho_V_Mag_Err"
+```
 
 If you want to use other values or different names then it is possible to change it in `OpenSpace/modules/fitsfilereader/src/fitsfilereader.cpp` in _readFitsFile()_ or _readSpeckFile()_. After any code changes, you have to recompile OpenSpace.
 
 Reading of multiple files is only available for FITS files right now and the names of the columns follow the Gaia DR2 standard. That means that we expect the following naming convention for the columns:
 
-    "ra"
-    "ra_error"
-    "dec"
-    "dec_error"
-    "parallax"
-    "parallax_error"
-    "pmra"
-    "pmra_error"
-    "pmdec"
-    "pmdec_error"
-    "phot_g_mean_mag"
-    "phot_bp_mean_mag"
-    "phot_rp_mean_mag"
-    "bp_rp"
-    "bp_g"
-    "g_rp"
-    "radial_velocity"
-    "radial_velocity_error"
+```
+"ra"
+"ra_error"
+"dec"
+"dec_error"
+"parallax"
+"parallax_error"
+"pmra"
+"pmra_error"
+"pmdec"
+"pmdec_error"
+"phot_g_mean_mag"
+"phot_bp_mean_mag"
+"phot_rp_mean_mag"
+"bp_rp"
+"bp_g"
+"g_rp"
+"radial_velocity"
+"radial_velocity_error"
+```
 
 If you want to read the full DR2 this means that you have to download the files from the Gaia archive, extract them (preferably with a console using 7-zip for example) and convert the CSV files to FITS (for example by using astropy). An already processed dataset is available for download as well, see Step 0.
 
@@ -160,29 +166,29 @@ To read either a single-file or multiple-files dataset as a separate process sta
 The task is specified in `OpenSpace/data/tasks/gaia_read.task` as
 
 ```lua
-    local dataFolder = "E:/path/to/dataDir"
-    return {
-        {
-            Type = "ReadFitsTask",
-            InFileOrFolderPath = dataFolder .. "/Gaia_DR2/gaia_source/fits/",
-            OutFileOrFolderPath = dataFolder .. "/Gaia_DR2_full_24columns/",
-            SingleFileProcess = false,
-            ThreadsToUse = 8,
-        },
-    }
+local dataFolder = "E:/path/to/dataDir"
+return {
+  {
+    Type = "ReadFitsTask",
+    InFileOrFolderPath = dataFolder .. "/Gaia_DR2/gaia_source/fits/",
+    OutFileOrFolderPath = dataFolder .. "/Gaia_DR2_full_24columns/",
+    SingleFileProcess = false,
+    ThreadsToUse = 8
+  },
+}
 ```
 
 for **FITS files** or
 
 ```lua
-    local dataFolder = "E:/path/to/dataDir"
-    return {
-        {
-            Type = "ReadSpeckTask",
-            InFilePath = dataFolder .. "/GaiaUMS.speck",
-            OutFilePath = dataFolder .. "/GaiaUMS.bin",
-        },
+  local dataFolder = "E:/path/to/dataDir"
+  return {
+    {
+      Type = "ReadSpeckTask",
+      InFilePath = dataFolder .. "/GaiaUMS.speck",
+      OutFilePath = dataFolder .. "/GaiaUMS.bin"
     }
+  }
 ```
 for reading **speck files**.
 
@@ -201,42 +207,42 @@ To create the octree run a _TaskRunner.exe_ with "gaia_octree.task".
 The task is specified in data/tasks/gaia/gaia_octree.task as
 
 ```lua
-    local dataFolder = "E:/path/to/dataDir"
-    return {
-        {
-            Type = "ConstructOctreeTask",
-            InFileOrFolderPath = dataFolder .. "/Gaia_DR2_full_24columns/",
-            OutFileOrFolderPath = dataFolder .. "/DR2_full_Octree_test_50,50/",
-            MaxDist = 500,
-            MaxStarsPerNode = 50000,
-            SingleFileInput = false,
-            -- Specify filter thresholds
-            --FilterPosX = {0.0, 0.0},
-            --FilterPosY = {0.0, 0.0},
-            --FilterPosZ = {0.0, 0.0},
-            FilterGMag = {20.0, 20.0},
-            FilterBpRp = {0.0, 0.0},
-            --FilterVelX = {0.0, 0.0},
-            --FilterVelY = {0.0, 0.0},
-            --FilterVelZ = {0.0, 0.0},
-            --FilterBpMag = {20.0, 20.0},
-            --FilterRpMag = {20.0, 20.0},
-            --FilterBpG = {0.0, 0.0},
-            --FilterGRp = {0.0, 0.0},
-            --FilterRa = {0.0, 0.0},
-            --FilterRaError = {0.0, 0.0},
-            --FilterDec = {0.0, 0.0},
-            --FilterDecError = {0.0, 0.0},
-            FilterParallax = {0.01, 0.0},
-            FilterParallaxError = {0.00001, 0.5},
-            --FilterPmra = {0.0, 0.0},
-            --FilterPmraError = {0.0, 0.0},
-            --FilterPmdec = {0.0, 0.0},
-            --FilterPmdecError = {0.0, 0.0},
-            --FilterRv = {0.0, 0.0},
-            --FilterRvError = {0.0, 0.0},
-        }
-    }
+local dataFolder = "E:/path/to/dataDir"
+return {
+  {
+    Type = "ConstructOctreeTask",
+    InFileOrFolderPath = dataFolder .. "/Gaia_DR2_full_24columns/",
+    OutFileOrFolderPath = dataFolder .. "/DR2_full_Octree_test_50,50/",
+    MaxDist = 500,
+    MaxStarsPerNode = 50000,
+    SingleFileInput = false,
+    -- Specify filter thresholds
+    --FilterPosX = {0.0, 0.0},
+    --FilterPosY = {0.0, 0.0},
+    --FilterPosZ = {0.0, 0.0},
+    FilterGMag = {20.0, 20.0},
+    FilterBpRp = {0.0, 0.0},
+    --FilterVelX = {0.0, 0.0},
+    --FilterVelY = {0.0, 0.0},
+    --FilterVelZ = {0.0, 0.0},
+    --FilterBpMag = {20.0, 20.0},
+    --FilterRpMag = {20.0, 20.0},
+    --FilterBpG = {0.0, 0.0},
+    --FilterGRp = {0.0, 0.0},
+    --FilterRa = {0.0, 0.0},
+    --FilterRaError = {0.0, 0.0},
+    --FilterDec = {0.0, 0.0},
+    --FilterDecError = {0.0, 0.0},
+    FilterParallax = {0.01, 0.0},
+    FilterParallaxError = {0.00001, 0.5},
+    --FilterPmra = {0.0, 0.0},
+    --FilterPmraError = {0.0, 0.0},
+    --FilterPmdec = {0.0, 0.0},
+    --FilterPmdecError = {0.0, 0.0},
+    --FilterRv = {0.0, 0.0},
+    --FilterRvError = {0.0, 0.0},
+  }
+}
 ```
 
 This will create an octree from the dataset. If the example above would be used it would read the full DR2 dataset with 24 values per star, filter away all stars that does not have either G magnitude, Bp-Rp color, a parallax value over 0.01 or a parallax error value below 0.5. The resulting dataset is the 618 million dataset that is available for download (with "gaia_download.task").

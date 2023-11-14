@@ -62,7 +62,7 @@ The **gdal\_translate** software tool is used to convert the source raster file.
 `gdal_translate -of GTiff -a_ullr -180 90 180 -90 -a_srs <SRS_Coordinates> main_COL_v007.png main_COL_v007.tif`
 First, note that the text <SRS_Coordinates> is a substitute for the following string:
 ```
- GEOGCS["Mars 2000",DATUM["D_Mars_2000",SPHEROID["Mars_2000_IAU_IAG",3396190.0,169.89444722361179]],PRIMEM["Greenwich",0],UNIT["Decimal_Degree",0.0174532925199433]]
+GEOGCS["Mars 2000",DATUM["D_Mars_2000",SPHEROID["Mars_2000_IAU_IAG",3396190.0,169.89444722361179]],PRIMEM["Greenwich",0],UNIT["Decimal_Degree",0.0174532925199433]]
 ```
 which can be given directly in the **gdal\_translate** command, or can be put into a text file in which case the **-a\_srs** argument is that filename.
 The **-of** specifies the GeoTIFF output format using the **GTiff** tag, and **-a\_ullr** lists the longitude & latitude of the upper-left corner and lower-right corner of the raster mapping on the globe in degrees. The final arguments are the input raster file and output GeoTIFF file.

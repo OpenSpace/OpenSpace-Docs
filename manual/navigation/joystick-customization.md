@@ -32,40 +32,39 @@ To bind a camera movement to an axis of the controller you will need the functio
 
 Here is an example asset with the SpaceMouse:
 ```lua
-  local SpaceMouse = {
-    -- Axes
-    Push = {
-      LeftRight = 0,
-      BackForth = 1,
-      UpDown = 2
-    },
-    Twist = 5,
-    Tilt = {
-      LeftRight = 4,
-      BackForth = 3
-    },
+local SpaceMouse = {
+  -- Axes
+  Push = {
+    LeftRight = 0,
+    BackForth = 1,
+    UpDown = 2
+  },
+  Twist = 5,
+  Tilt = {
+    LeftRight = 4,
+    BackForth = 3
+  },
 
-    -- Buttons
-    LeftButton = 0,
-    RightButton = 1
-  }
+  -- Buttons
+  LeftButton = 0,
+  RightButton = 1
+}
 
-  asset.onInitialize(function()
-    local controller = SpaceMouse;
-    local name = "SpaceNavigator";
+asset.onInitialize(function()
+  local controller = SpaceMouse;
+  local name = "SpaceNavigator";
 
-    openspace.navigation.bindJoystickAxis(name, controller.Push.LeftRight, "Orbit X", false, "JoystickLike", true, false, 40.0)
-    openspace.navigation.bindJoystickAxis(name, controller.Push.BackForth, "Orbit Y", false, "JoystickLike", true, false, 40.0)
-    openspace.navigation.bindJoystickAxis(name, controller.Twist, "Pan X", true, "JoystickLike", true, false, 40.0)
-    openspace.navigation.bindJoystickAxis(name, controller.Tilt.BackForth, "Pan Y", false, "JoystickLike", true, false, 35.0)
-    openspace.navigation.bindJoystickAxis(name, controller.Push.UpDown, "Zoom", false, "JoystickLike", true, false, 40.0)
-    openspace.navigation.bindJoystickAxis(name, controller.Tilt.LeftRight, "LocalRoll", false, "JoystickLike", true, false, 35.0)
-  end)
+  openspace.navigation.bindJoystickAxis(name, controller.Push.LeftRight, "Orbit X", false, "JoystickLike", true, false, 40.0)
+  openspace.navigation.bindJoystickAxis(name, controller.Push.BackForth, "Orbit Y", false, "JoystickLike", true, false, 40.0)
+  openspace.navigation.bindJoystickAxis(name, controller.Twist, "Pan X", true, "JoystickLike", true, false, 40.0)
+  openspace.navigation.bindJoystickAxis(name, controller.Tilt.BackForth, "Pan Y", false, "JoystickLike", true, false, 35.0)
+  openspace.navigation.bindJoystickAxis(name, controller.Push.UpDown, "Zoom", false, "JoystickLike", true, false, 40.0)
+  openspace.navigation.bindJoystickAxis(name, controller.Tilt.LeftRight, "LocalRoll", false, "JoystickLike", true, false, 35.0)
+end)
 ```
 
 ## Bind a property to a joystick axis
 To control an OpenSpace property using an axis on a controller you will need the function `openspace.navigation.bindJoystickAxisProperty` that takes seven arguments. Below is a list that describes each argument in detail.
-
   1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
   1. The index of which axis on the controller you want to bind the property to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
   1. The full identifier for the property you want to control with this axis on the controller. A tip to find this identifier is to first run OpenSpace normally and change the property with the normal GUI, then you can look at the Script Log and see the full name of the property you just changed, for more information about the Script Log see [The Script Log](/users/console/index.md#the-script-log).
@@ -76,45 +75,45 @@ To control an OpenSpace property using an axis on a controller you will need the
 
 Here is an example asset with the Earth scale bound to the right trigger on an Xbox controller:
 ```lua
-  local XBoxController = {
-    -- Axes
-    LeftThumbStick = {
-      LeftRight = 0,
-      UpDown = 1
-    },
-    RightThumbStick = {
-      LeftRight = 2,
-      UpDown = 3
-    },
-    LeftTrigger = 4,
-    RightTrigger = 5,
+local XBoxController = {
+  -- Axes
+  LeftThumbStick = {
+    LeftRight = 0,
+    UpDown = 1
+  },
+  RightThumbStick = {
+    LeftRight = 2,
+    UpDown = 3
+  },
+  LeftTrigger = 4,
+  RightTrigger = 5,
 
-    -- Buttons
-    A = 0,
-    B = 1,
-    X = 2,
-    Y = 3,
-    LB = 4,
-    RB = 5,
-    Back = 6,
-    Start = 7,
-    LeftStickButton = 8,
-    RightStickButton = 9,
-    DPad = {
-      Up = 10,
-      Right = 11,
-      Down = 12,
-      Left = 13
-    }
+  -- Buttons
+  A = 0,
+  B = 1,
+  X = 2,
+  Y = 3,
+  LB = 4,
+  RB = 5,
+  Back = 6,
+  Start = 7,
+  LeftStickButton = 8,
+  RightStickButton = 9,
+  DPad = {
+    Up = 10,
+    Right = 11,
+    Down = 12,
+    Left = 13
   }
+}
 
-  asset.onInitialize(function()
-    local controller = XBoxController;
-    local name = "Xbox Controller";
+asset.onInitialize(function()
+  local controller = XBoxController;
+  local name = "Xbox Controller";
 
-    -- Bind Right trigger to Earth Scale
-    openspace.navigation.bindJoystickAxisProperty(name, controller.RightTrigger, "Scene.Earth.Scale.Scale", 0.1, 100, false, true);
-  end)
+  -- Bind Right trigger to Earth Scale
+  openspace.navigation.bindJoystickAxisProperty(name, controller.RightTrigger, "Scene.Earth.Scale.Scale", 0.1, 100, false, true);
+end)
 ```
 
 
@@ -135,63 +134,63 @@ Binding a custom script to a controller button is done with the function `opensp
 
 Here is an example asset that switches focus when pressing the trigger buttons on an Xbox controller:
 ```lua
-  local XBoxController = {
-    -- Axes
-    LeftThumbStick = {
-      LeftRight = 0,
-      UpDown = 1
-    },
-    RightThumbStick = {
-      LeftRight = 2,
-      UpDown = 3
-    },
-    LeftTrigger = 4,
-    RightTrigger = 5,
+local XBoxController = {
+  -- Axes
+  LeftThumbStick = {
+    LeftRight = 0,
+    UpDown = 1
+  },
+  RightThumbStick = {
+    LeftRight = 2,
+    UpDown = 3
+  },
+  LeftTrigger = 4,
+  RightTrigger = 5,
 
-    -- Buttons
-    A = 0,
-    B = 1,
-    X = 2,
-    Y = 3,
-    LB = 4,
-    RB = 5,
-    Back = 6,
-    Start = 7,
-    LeftStickButton = 8,
-    RightStickButton = 9,
-    DPad = {
-      Up = 10,
-      Right = 11,
-      Down = 12,
-      Left = 13
-    }
+  -- Buttons
+  A = 0,
+  B = 1,
+  X = 2,
+  Y = 3,
+  LB = 4,
+  RB = 5,
+  Back = 6,
+  Start = 7,
+  LeftStickButton = 8,
+  RightStickButton = 9,
+  DPad = {
+    Up = 10,
+    Right = 11,
+    Down = 12,
+    Left = 13
   }
+}
 
-  asset.onInitialize(function()
-    local controller = XBoxController;
-    local name = "Xbox Controller";
+asset.onInitialize(function()
+  local controller = XBoxController;
+  local name = "Xbox Controller";
 
-    -- Switch focus in the interesting nodes list
-    -- Previous
-    openspace.navigation.bindJoystickButton(
-      name,
-      controller.LB,
-      "openspace.navigation.targetPreviousInterestingAnchor(); openspace.navigation.retargetAnchor();",
-      "Switch target to the previous interesting node",
-      "Press",
-      true
-    )
+  -- Switch focus in the interesting nodes list
+  -- Previous
+  openspace.navigation.bindJoystickButton(
+    name,
+    controller.LB,
+    "openspace.navigation.targetPreviousInterestingAnchor(); openspace.navigation.retargetAnchor();",
+    "Switch target to the previous interesting node",
+    "Press",
+    true
+  )
 
-    -- Next
-    openspace.navigation.bindJoystickButton(
-      name,
-      controller.RB,
-      "openspace.navigation.targetNextInterestingAnchor(); openspace.navigation.retargetAnchor();",
-      "Switch target to the next interesting node",
-      "Press",
-      true
-    )
-  end)
+  -- Next
+  openspace.navigation.bindJoystickButton(
+    name,
+    controller.RB,
+    "openspace.navigation.targetNextInterestingAnchor(); openspace.navigation.retargetAnchor();",
+    "Switch target to the next interesting node",
+    "Press",
+    true
+  )
+end)
 ```
 
 

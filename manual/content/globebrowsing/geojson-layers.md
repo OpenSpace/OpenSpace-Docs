@@ -12,7 +12,7 @@ It is also possible to change the appearance of the resulting features based on 
 There are two ways of adding GeoJson features to a selected globe: either directly from a .geojson file or by specifying a table in an OpenSpace asset. Once added, all content in a GeoJson file will appear as a component under "GeoJson" in the scene menu, as part of the globe it was added to.
 
 ### Using a GeoJson asset
-The preferred way to load a GeoJson file is to load it from an asset. This lets you add it to the correct globe already at startup. Adding GeoJson to a globe through an asset works very similarly to how a GlobeBrowsing Layer is added. Some example assets are available in the OpenSpace/data/assets/examples/geojson folder of your OpenSpace installation.
+The preferred way to load a GeoJson file is to load it from an asset. This lets you add it to the correct globe already at startup. Adding GeoJson to a globe through an asset works very similarly to how a GlobeBrowsing Layer is added. Some example assets are available in the `data/assets/examples/geojson` folder of your OpenSpace installation.
 
 Using an asset also lets you customize the visual properties of all the rendered features that do not have any properties specified in the GeoJson file. See page [Adding Geometry with GeoJson](creation/adding-geojson-layers) for more details on how to create an asset for a GeoJson file.
 

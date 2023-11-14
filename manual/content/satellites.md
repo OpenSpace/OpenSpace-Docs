@@ -5,9 +5,11 @@ This rendering code was created to visualize satellites in Earth's orbit. The pr
 ## Automation
 OpenSpace features like regular expressions and keyboard bindings can be used to automate control of satellite layers. Keyboard bindings can be added to an individual scene. For example, in the `preInitialization` function of the file `default.scene`, the following `bindkey` command can be added:
 ```lua
-    openspace.bindKey("p", "openspace.setPropertyValue(
-                    'stations_*.renderable.Enabled', false)",
-                    "Disable stations visibility")
+openspace.bindKey(
+  "p",
+  "openspace.setPropertyValue('stations_*.renderable.Enabled', false)",
+  "Disable stations visibility"
+)
 ```
 The **\*** wildcard will apply the command to all renderables that meet the `stations_*` criteria in this case. Regular expression syntax can also be used. When running OpenSpace, press _p_ to make all station satellites invisible. Specific commands can also be entered in the terminal at runtime, without pre-configuring a scene file. Press **\`** to get a terminal at the top of the window, and type: `openspace.setPropertyValue('stations_*.renderable.Enabled', true)`, and then all satellites from the `stations.txt` TLE file will become visible again.
 

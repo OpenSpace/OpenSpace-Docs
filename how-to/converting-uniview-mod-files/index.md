@@ -8,20 +8,20 @@ As an example on the Tesla in space module
         local kernel = asset.localResource("tesla.bsp")
         local model = asset.localResource("tesla.obj")
         local texture = asset.localResource("white.jpg")
-       ```
+        ```
   1. Converting
      ```
      coord
      {
-       name		tesla
-       parent	SolarSystem
+       name tesla
+       parent SolarSystem
 
-       unit		1000000.0
-       unitname	1000 Km
-       entrydist		10
+       unit 1000000.0
+       unitname 1000 Km
+       entrydist 10
        positionfile modules/tesla/teslapos.conf
-       orbitfile 	modules/tesla/teslaorbit.conf
-       positionhook	tesla
+       orbitfile modules/tesla/teslaorbit.conf
+       positionhook tesla
      }
      ```
      1. `teslapos.conf` mentions the spice information which is converted into
@@ -70,12 +70,12 @@ As an example on the Tesla in space module
          ```
          coord
          {
-         	name	teslasmC
-         	parent	tesla
+          name teslasmC
+          parent tesla
 
-         	unit			1.0
-         	unitname		1 m
-         	entrydist		500
+          unit 1.0
+          unitname 1 m
+          entrydist 500
 
          }
          ```
@@ -100,17 +100,17 @@ As an example on the Tesla in space module
          into
          ```lua
          local TeslaModel = {
-             Name = "Tesla",
-             Parent = TeslaPosition.Name,
-             Renderable = {
-                 Type = "RenderableModel",
-                 Geometry = {
-                     Type = "MultiModelGeometry",
-                     GeometryFile = model
-                 },
-                 ColorTexture = texture
+           Name = "Tesla",
+           Parent = TeslaPosition.Name,
+           Renderable = {
+             Type = "RenderableModel",
+             Geometry = {
+               Type = "MultiModelGeometry",
+               GeometryFile = model
              },
-             GuiPath = "/Solar System/Tesla"
+             ColorTexture = texture
+           },
+           GuiPath = "/Solar System/Tesla"
          }
          ```
          Unfortunately, we don't support multiple textures or MTL files yet (or at least I don't know how to use the latter), so we have to use a pure white texture.

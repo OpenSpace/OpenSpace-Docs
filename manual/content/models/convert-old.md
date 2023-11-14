@@ -7,60 +7,60 @@ Previously a model was specified in an asset file as a `Geometry` with a `Type`,
 ## Examples
 How the Renderable for the Juno spacecraft was specified before:
 ```lua
-  ...
-  Renderable = {
-    Type = "RenderableModel",
-    Geometry = {
-      Type = "MultiModelGeometry",
-      GeometryFile = model .. "/Juno.obj",
-      ColorTexture =  textures .. "/gray.png"
-    },
-    ModelTransform = RotationMatrix,
-    LightSources = assetHelper.getDefaultLightSources(sunTransforms.SolarSystemBarycenter.Identifier)
+...
+Renderable = {
+  Type = "RenderableModel",
+  Geometry = {
+    Type = "MultiModelGeometry",
+    GeometryFile = model .. "/Juno.obj",
+    ColorTexture =  textures .. "/gray.png"
   },
-  ...
+  ModelTransform = RotationMatrix,
+  LightSources = assetHelper.getDefaultLightSources(sunTransforms.SolarSystemBarycenter.Identifier)
+},
+...
 ```
 
 How the Renderable for the Juno spacecraft is specified now:
 ```lua
-  ...
-  local sun = asset.require('scene/solarsystem/sun/sun')
+...
+local sun = asset.require('scene/solarsystem/sun/sun')
 
-  Renderable = {
-    Type = "RenderableModel",
-    GeometryFile = model .. "Juno.obj",
-    ModelTransform = RotationMatrix,
-    LightSources = { sun.LightSource }
-  },
-  ...
+Renderable = {
+  Type = "RenderableModel",
+  GeometryFile = model .. "Juno.obj",
+  ModelTransform = RotationMatrix,
+  LightSources = { sun.LightSource }
+},
+...
 ```
 
 
 ## RenderableModelProjection
 This breaking change is also applied to the RenderableModelProjection. For example, in the Rosetta profile the model for 67P Churymov-Gerasimenkou was previously specified as:
 ```lua
-  ...
-  Renderable = {
-    Type = "RenderableModelProjection",
-    Geometry = {
-      Type = "MultiModelGeometry",
-      GeometryFile = models .. "/67P_rotated_5_130.obj",
-      ColorTexture = textures .. "/gray.jpg"
-    },
-    Projection ...
+...
+Renderable = {
+  Type = "RenderableModelProjection",
+  Geometry = {
+    Type = "MultiModelGeometry",
+    GeometryFile = models .. "/67P_rotated_5_130.obj",
+    ColorTexture = textures .. "/gray.jpg"
   },
-  ...
+  Projection ...
+},
+...
 ```
 
 Now it is specified as:
 ```lua
-  ...
-  Renderable = {
-    Type = "RenderableModelProjection",
-    GeometryFile = models .. "67P_rotated_5_130.obj",
-    Projection ...
-  },
-  ...
+...
+Renderable = {
+  Type = "RenderableModelProjection",
+  GeometryFile = models .. "67P_rotated_5_130.obj",
+  Projection ...
+},
+...
 ```
 
 

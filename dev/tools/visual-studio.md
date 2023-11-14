@@ -14,11 +14,11 @@ Sometimes numbers break, for example `float x = std::sqrt(-1.0)` would store a a
 Doing this somewhere early in the program:
 ```cpp
 #include <float.h>
-    _clearfp();
-    _controlfp(
-        _controlfp(0, 0) & ~(_EM_ZERODIVIDE | _EM_OVERFLOW),
-        _MCW_EM
-    );
+_clearfp();
+_controlfp(
+    _controlfp(0, 0) & ~(_EM_ZERODIVIDE | _EM_OVERFLOW),
+    _MCW_EM
+);
 ```
 
 Will cause exceptions to be thrown everytime an overflow or a division by 0 occurs anywhere in the code.

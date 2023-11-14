@@ -236,12 +236,12 @@ Create a new site config in `/etc/apache2/sites-available` in a format that is `
 Copy and paste the following configuration into the file:
 ```
 <VirtualHost *:80>
-    ServerName [domain]
-    DocumentRoot /var/www/openspace
-    <Directory />
-        Options +Indexes
-        Require all granted
-    </Directory>
+  ServerName [domain]
+  DocumentRoot /var/www/openspace
+  <Directory />
+    Options +Indexes
+    Require all granted
+  </Directory>
 </VirtualHost>
 ```
 

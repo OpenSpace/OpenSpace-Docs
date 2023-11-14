@@ -39,29 +39,29 @@ The placeholder `${OpenSpaceTimeId}` is replaced with the current OpenSpace time
 
 ```xml
 <OpenSpaceTemporalGDALDataset>
-    <OpenSpaceTimeStart>2015-11-24</OpenSpaceTimeStart>
-    <OpenSpaceTimeEnd></OpenSpaceTimeEnd>
-    <OpenSpaceTimeResolution>1d</OpenSpaceTimeResolution>
-    <OpenSpaceTimeIdFormat>YYYY-MM-DD</OpenSpaceTimeIdFormat>
-    <GDAL_WMS>
-        <Service name="TMS">
-            <ServerUrl>http://map1.vis.earthdata.nasa.gov/wmts-geo/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/${OpenSpaceTimeId}/EPSG4326_250m/${z}/${y}/${x}.jpg</ServerUrl>
-        </Service>
-        <DataWindow>
-            <UpperLeftX>-180.0</UpperLeftX>
-            <UpperLeftY>90</UpperLeftY>
-            <LowerRightX>396.0</LowerRightX>
-            <LowerRightY>-198</LowerRightY>
-            <TileLevel>8</TileLevel>
-            <TileCountX>2</TileCountX>
-            <TileCountY>1</TileCountY>
-            <YOrigin>top</YOrigin>
-        </DataWindow>
-        <Projection>EPSG:4326</Projection>
-        <BlockSizeX>512</BlockSizeX>
-        <BlockSizeY>512</BlockSizeY>
-        <BandsCount>3</BandsCount>
-    </GDAL_WMS>
+  <OpenSpaceTimeStart>2015-11-24</OpenSpaceTimeStart>
+  <OpenSpaceTimeEnd></OpenSpaceTimeEnd>
+  <OpenSpaceTimeResolution>1d</OpenSpaceTimeResolution>
+  <OpenSpaceTimeIdFormat>YYYY-MM-DD</OpenSpaceTimeIdFormat>
+  <GDAL_WMS>
+    <Service name="TMS">
+      <ServerUrl>http://map1.vis.earthdata.nasa.gov/wmts-geo/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/${OpenSpaceTimeId}/EPSG4326_250m/${z}/${y}/${x}.jpg</ServerUrl>
+    </Service>
+    <DataWindow>
+      <UpperLeftX>-180.0</UpperLeftX>
+      <UpperLeftY>90</UpperLeftY>
+      <LowerRightX>396.0</LowerRightX>
+      <LowerRightY>-198</LowerRightY>
+      <TileLevel>8</TileLevel>
+      <TileCountX>2</TileCountX>
+      <TileCountY>1</TileCountY>
+      <YOrigin>top</YOrigin>
+    </DataWindow>
+    <Projection>EPSG:4326</Projection>
+    <BlockSizeX>512</BlockSizeX>
+    <BlockSizeY>512</BlockSizeY>
+    <BandsCount>3</BandsCount>
+  </GDAL_WMS>
 </OpenSpaceTemporalGDALDataset>
 ```
 This specific dataset is from NASA GIBS and has daily global coverage from 2015-11-24.
@@ -69,11 +69,11 @@ This specific dataset is from NASA GIBS and has daily global coverage from 2015-
 Temporal datasets can also be used with local files. Here is a simple example:
 ```xml
 <OpenSpaceTemporalGDALDataset>
-    <OpenSpaceTimeStart>2015-11-24</OpenSpaceTimeStart>
-    <OpenSpaceTimeEnd></OpenSpaceTimeEnd>
-    <OpenSpaceTimeResolution>1d</OpenSpaceTimeResolution>
-    <OpenSpaceTimeIdFormat>YYYY-MM-DD</OpenSpaceTimeIdFormat>
-    <FilePath>"path/to/file${OpenSpaceTimeId}.jpg"</FilePath>
+  <OpenSpaceTimeStart>2015-11-24</OpenSpaceTimeStart>
+  <OpenSpaceTimeEnd></OpenSpaceTimeEnd>
+  <OpenSpaceTimeResolution>1d</OpenSpaceTimeResolution>
+  <OpenSpaceTimeIdFormat>YYYY-MM-DD</OpenSpaceTimeIdFormat>
+  <FilePath>"path/to/file${OpenSpaceTimeId}.jpg"</FilePath>
 </OpenSpaceTemporalGDALDataset>
 ```
 where `path/to` is a folder containing files such as `file2015-11-24.jpg` where the date is interchangeable.

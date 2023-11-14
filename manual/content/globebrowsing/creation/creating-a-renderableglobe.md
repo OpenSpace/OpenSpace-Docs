@@ -5,23 +5,23 @@ The Lua table below shows a definition of a simple RenderableGlobe as a Renderab
 
 ```lua
 Renderable = {
-    Type = "RenderableGlobe",
-    Radii = {6378137.0, 6378137.0, 6378137.0}, -- Earth triaxial ellipsoid
-    SegmentsPerPatch = 128, -- Number of segments in both s, and t directions of each patch
-    Layers = {
-        ColorLayers = {
-            {
-                Name = "SimpleTexture", -- Unique name
-                Type = "DefaultTileLayer", -- Defaults to DefaultTileLayer if not set
-                FilePath = "path/to/texture.jpg",
-                Enabled = true, -- Defaults to false if not set
-            },
-        },
-        NightLayers = { },
-        WaterMasks = { },
-        Overlays = { },
-        HeightLayers = { },
+  Type = "RenderableGlobe",
+  Radii = {6378137.0, 6378137.0, 6378137.0}, -- Earth triaxial ellipsoid
+  SegmentsPerPatch = 128, -- Number of segments in both s, and t directions of each patch
+  Layers = {
+    ColorLayers = {
+      {
+        Name = "SimpleTexture", -- Unique name
+        Type = "DefaultTileLayer", -- Defaults to DefaultTileLayer if not set
+        FilePath = "path/to/texture.jpg",
+        Enabled = true, -- Defaults to false if not set
+      },
     },
+    NightLayers = { },
+    WaterMasks = { },
+    Overlays = { },
+    HeightLayers = { },
+  },
 }
 ```
 
@@ -30,10 +30,10 @@ Renderable = {
 Let's look closer in to what properties can be set for each layer. In the above example, we created a simple layer and put it in the **ColorLayers** layer group. A layer is defined by a Lua table such as the mentioned example:
 ```lua
 {
-    Name = "SimpleTexture", -- Unique name
-    Type = "DefaultTileLayer", -- Defaults to DefaultTileLayer if not set
-    FilePath = "path/to/texture.jpg",
-    Enabled = true, -- Defaults to false if not set
+Name = "SimpleTexture", -- Unique name
+Type = "DefaultTileLayer", -- Defaults to DefaultTileLayer if not set
+FilePath = "path/to/texture.jpg",
+Enabled = true, -- Defaults to false if not set
 },
 ```
 These layers can be put in to any of the layer groups, they will be interpreted differently for the rendering. Depending on the **Type** of the layer, some properties are different. First, let's look at the properties that are used for all layer types.
@@ -46,10 +46,10 @@ These layers can be put in to any of the layer groups, they will be interpreted 
   - **Settings** (optional) -- A **lua table** specifying the render settings for the layer using settings for **Opacity**, **Gamma**, **Multiplier**, and **Offset**. As an example:
 ```lua
 Settings = {
-    Opacity = 1.0,
-    Gamma = 1.5,
-    Multiplier = 15.0,
-    Offset = 0.0
+  Opacity = 1.0,
+  Gamma = 1.5,
+  Multiplier = 15.0,
+  Offset = 0.0
 },
 ```
   - **Fallback** (optional) -- A fallback layer which will be used in case the reading of the actual layer definition failed for some reason. In case OpenSpace was not compiled with GDAL for example, all georeferenced map types will fail to read, then a simple non georeferenced image can be used as fallback.
@@ -88,15 +88,16 @@ Settings = {
 The functions `openspace.globebrowsing.createGibsGdalXml()` and `openspace.globebrowsing.createTemporalGibsGdalXml()` can be used to create a GDAL wms configuration for GIBS datasets: [https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+API+for+Developers#GIBSAPIforDevelopers-Script-levelAccessviaGDAL](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+API+for+Developers#GIBSAPIforDevelopers-Script-levelAccessviaGDAL). This can then be used to create GIBS layers without the use of wms files. An example of one such layer is:
 ```lua
 {
-    Type = "TemporalTileLayer",
-    Name = "GHRSST_L4_G1SST_Sea_Surface_Temperature",
-    FilePath = openspace.globebrowsing.createTemporalGibsGdalXml(
-        "GHRSST_L4_G1SST_Sea_Surface_Temperature",
-        "2010-06-21",
-        "Yesterday",
-        "1d",
-        "1km",
-        "png")
+  Type = "TemporalTileLayer",
+  Name = "GHRSST_L4_G1SST_Sea_Surface_Temperature",
+  FilePath = openspace.globebrowsing.createTemporalGibsGdalXml(
+    "GHRSST_L4_G1SST_Sea_Surface_Temperature",
+    "2010-06-21",
+    "Yesterday",
+    "1d",
+    "1km",
+    "png"
+  )
 }
 ```
 See script documentation for more info.
@@ -107,46 +108,46 @@ Here is an example showing the use of many of the features mentioned above to cr
 
 ```lua
 {
-    Name = "ESRI VIIRS Combo",
-    Type = "ByLevelTileLayer",
-    LevelTileProviders = {
-        {
-            MaxLevel = 3,
-            TileProvider = {
-                Name = "Temporal VIIRS SNPP",
-                Type = "TemporalTileLayer",
-                FilePath = openspace.globebrowsing.createTemporalGibsGdalXml(
-                    "VIIRS_SNPP_CorrectedReflectance_TrueColor",
-                    "2015-11-24",
-                    "Yesterday",
-                    "1d",
-                    "250m",
-                    "jpg"
-                ),
-                PadTiles = false,
-            }
-        },
-        {
-            MaxLevel = 22,
-            TileProvider = {
-                Name = "ESRI Imagery World 2D",
-                FilePath = "map_service_configs/ESRI/ESRI_Imagery_World_2D.wms",
-                PadTiles = false,
-            }
-        },
+  Name = "ESRI VIIRS Combo",
+  Type = "ByLevelTileLayer",
+  LevelTileProviders = {
+    {
+      MaxLevel = 3,
+      TileProvider = {
+        Name = "Temporal VIIRS SNPP",
+        Type = "TemporalTileLayer",
+        FilePath = openspace.globebrowsing.createTemporalGibsGdalXml(
+          "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+          "2015-11-24",
+          "Yesterday",
+          "1d",
+          "250m",
+          "jpg"
+        ),
+        PadTiles = false
+      }
     },
-    Enabled = true,
-    PadTiles = false, -- Faster reading but visible tile edges
-    Fallback = { -- Simple texture in case the default fails
-        Name = "Blue Marble",
-        FilePath = "textures/earth_bluemarble.jpg",
-        Enabled = true,
+    {
+      MaxLevel = 22,
+      TileProvider = {
+        Name = "ESRI Imagery World 2D",
+        FilePath = "map_service_configs/ESRI/ESRI_Imagery_World_2D.wms",
+        PadTiles = false
+      }
     },
-    Settings = { -- Just to show how settings can be set. These are default values
-        Opacity = 1.0,
-        Gamma = 1.0,
-        Multiplier = 1.0,
-        Offset = 0.0,
-    },
+  },
+  Enabled = true,
+  PadTiles = false, -- Faster reading but visible tile edges
+  Fallback = { -- Simple texture in case the default fails
+    Name = "Blue Marble",
+    FilePath = "textures/earth_bluemarble.jpg",
+    Enabled = true
+  },
+  Settings = { -- Just to show how settings can be set. These are default values
+    Opacity = 1.0,
+    Gamma = 1.0,
+    Multiplier = 1.0,
+    Offset = 0.0
+  },
 }
 ```

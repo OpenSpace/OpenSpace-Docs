@@ -111,10 +111,12 @@ Along the bottom row are your **Menus** (also known as Graphical User Interface,
  - Session Recording
  - Slides
 
-You can toggle the visibility of the text information using {kbd}`Shift + TAB` and toggle the visibility of the menu with {kbd}`TAB`.
+You can toggle the visibility of the text information using {kbd}`Shift+TAB` and toggle the visibility of the menu with {kbd}`TAB`.
 
 
 :::{toctree}
+:maxdepth: 1
+
 navigation
 time
 :::

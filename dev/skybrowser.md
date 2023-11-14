@@ -14,13 +14,13 @@ Since we need to communicate with the WWT app, we use the standard web Window AP
 index.html
 ```html
 <iframe
-	id="wwtResearch"
-	name="wwt"
-	src="http://wwtapp.openspaceproject.com/1/?origin=http://wwt.openspaceproject.com"
-	allow="accelerometer; clipboard-write; gyroscope"
-	allowfullscreen
-	frameborder="0"
-	align="middle"
+  id="wwtResearch"
+  name="wwt"
+  src="http://wwtapp.openspaceproject.com/1/?origin=http://wwt.openspaceproject.com"
+  allow="accelerometer; clipboard-write; gyroscope"
+  allowfullscreen
+  frameborder="0"
+  align="middle"
 >
 ```
 

@@ -80,10 +80,10 @@ There are two built-in mechanisms of resource synchronizations in OpenSpace: The
 
 ```lua
 local path = asset.syncedResource({
-    Type = "HttpSynchronization",
-    Name = "Foo"
-    Identifier = "foo",
-    Version = 1
+  Type = "HttpSynchronization",
+  Name = "Foo"
+  Identifier = "foo",
+  Version = 1
 })
 ```
 
@@ -91,11 +91,11 @@ The UrlSynchronization can be used to fetch arbitrary data from the web.
 
 ```lua
 local path = asset.syncedResource({
-    Type = "UrlSynchronization",
-    Name = "Bar",
-    Identifier = "bar",
-    Url = "http://example.com/data.zip",
-    Override = true
+  Type = "UrlSynchronization",
+  Name = "Bar",
+  Identifier = "bar",
+  Url = "http://example.com/data.zip",
+  Override = true
 })
 ```
 

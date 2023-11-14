@@ -15,12 +15,12 @@ Homebrew is billed as "the missing package manager" for macOS. Homewbrew install
 
 Once you have installed homebrew you can use it to install other useful utilities and libraries. Specifically, to build OpenSpace you will need to do the following:
 ```bash
-  brew install glew boost freeimage mpv vulkan-headers vulkan-loader brotli gdal
+brew install glew boost freeimage mpv vulkan-headers vulkan-loader brotli gdal
 ```
 
 Similarly if you are using MacPorts, the corresponding command is:
 ```bash
-  port install glew boost freeimage mpv vulkan-headers vulkan-loader brotli gdal +curl
+port install glew boost freeimage mpv vulkan-headers vulkan-loader brotli gdal +curl
 ```
 
 Please make use that the correct GDAL version is installed, as OpenSpace uses some recent features. We require a version that is newer than `2.4`.

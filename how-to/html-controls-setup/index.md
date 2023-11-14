@@ -18,11 +18,11 @@ We typically have most of the controls in the head of the HTML document.
 
 ```html
 <html>
-    <head>
-        <title>Basic OpenSpace Controls</title>
-        <link rel="stylesheet" type="text/css" href="main2.css">
-        <script type="text/javascript" src="openspace-api.js"></script>
-        <script type="text/javascript">
+  <head>
+    <title>Basic OpenSpace Controls</title>
+    <link rel="stylesheet" type="text/css" href="main2.css">
+    <script type="text/javascript" src="openspace-api.js"></script>
+    <script type="text/javascript">
 ```
 
   - Starting with title: `<title>Basic OpenSpace Controls</title>`
@@ -69,10 +69,10 @@ We can now start writing the buttons. As an example I'll start with an object ca
 
 ```js
 var earthButtons = {
-    title: "Example buttons for Earth",
-    buttons: {
+  title: "Example buttons for Earth",
+  buttons: {
 
-    }
+  }
 };
 ```
 
@@ -80,21 +80,21 @@ We can define as many of these sections as needed to organize the buttons. The a
 
 ```js
 var earthButtons = {
-	title: "Example buttons for Earth",
-	buttons: {
-		'Turn off the Earth Model': () => {openspace.setPropertyValueSingle('Scene.Earth.Renderable.Enabled', false)},
-	},
+  title: "Example buttons for Earth",
+  buttons: {
+    'Turn off the Earth Model': () => {openspace.setPropertyValueSingle('Scene.Earth.Renderable.Enabled', false)},
+  },
 };
 ```
 
 We can also add a button which uses one of the helper functions defined earlier:
 ```js
 var earthButtons = {
-	title: "Example buttons for Earth",
-	buttons: {
-		'Turn off the Earth Model': () => {openspace.setPropertyValueSingle('Scene.Earth.Renderable.Enabled', false)},
-		'Focus on The Moon': () => {setFocus('Moon')},
-	},
+  title: "Example buttons for Earth",
+  buttons: {
+    'Turn off the Earth Model': () => {openspace.setPropertyValueSingle('Scene.Earth.Renderable.Enabled', false)},
+    'Focus on The Moon': () => {setFocus('Moon')},
+  },
 };
 ```
 
@@ -107,15 +107,15 @@ function mapButtons(openspace) {
   buttonGroups.map((action, id) => {
     var cardHTML = "<div class='card'><h2>" + action.title + "</h2>";
     if (action.description) {
-    action.description.split('\n').map(item => {
-      cardHTML += "<p>" + item + "</p>";
-    });
+      action.description.split('\n').map(item => {
+        cardHTML += "<p>" + item + "</p>";
+      });
     }
     if (action.buttons) {
-    Object.keys(action.buttons).map(button => {
-      const fn = action.buttons[button];
-      cardHTML += '<button data-id="' + button + '" onClick="(' + fn + ')(event)">' + button + '</button>';
-    });
+      Object.keys(action.buttons).map(button => {
+        const fn = action.buttons[button];
+        cardHTML += '<button data-id="' + button + '" onClick="(' + fn + ')(event)">' + button + '</button>';
+      });
     }
     cardHTML += "</div>";
     document.getElementById('main').innerHTML += cardHTML;
@@ -167,19 +167,19 @@ We can then close out the document and define more elements to enter an IP addre
 </script>
 </head>
 <body>
-    <!-- HTML Containers -->
-    <div id="container" class="disconnected">
-      <div id="connection-status" class="connection-status">
-        Connect to OpenSpace:
-        <input id='ipaddress' type=text placeholder="Enter ip address" />
-        <button onClick="connectToOpenSpace();">Connect</button>
-      </div>
-      <div id="main">
-      </div>
-      <script type="text/javascript">
-        connectToOpenSpace('localhost');
-      </script>
+  <!-- HTML Containers -->
+  <div id="container" class="disconnected">
+    <div id="connection-status" class="connection-status">
+      Connect to OpenSpace:
+      <input id='ipaddress' type=text placeholder="Enter ip address" />
+      <button onClick="connectToOpenSpace();">Connect</button>
     </div>
+    <div id="main">
+    </div>
+    <script type="text/javascript">
+      connectToOpenSpace('localhost');
+    </script>
+  </div>
   <body>
 </html>
 ```
@@ -211,11 +211,11 @@ return openspace.time.interpolateDeltaTime(60)
 We then add these commands to a button to easily return to this scene. First, taking everything after "return" and replacing the double quotes with single quotes, then adding the commands to an arrow function:
 ```js
 'Setup Eclipse Scene': () => {
-	openspace.globebrowsing.goToGeo('Earth','33.1','-106.9','6000000')
-	openspace.time.setTime('2024-04-08T17:30:13.184')
-	openspace.setPropertyValueSingle('Scene.Earth.Renderable.Layers.ColorLayers.ESRI_VIIRS_Combo.Enabled', false)
-	openspace.setPropertyValueSingle('Scene.Earth.Renderable.Layers.ColorLayers.Blue_Marble.Enabled', true)
-	openspace.time.interpolateDeltaTime(60)
+  openspace.globebrowsing.goToGeo('Earth','33.1','-106.9','6000000')
+  openspace.time.setTime('2024-04-08T17:30:13.184')
+  openspace.setPropertyValueSingle('Scene.Earth.Renderable.Layers.ColorLayers.ESRI_VIIRS_Combo.Enabled', false)
+  openspace.setPropertyValueSingle('Scene.Earth.Renderable.Layers.ColorLayers.Blue_Marble.Enabled', true)
+  openspace.time.interpolateDeltaTime(60)
 },
 ```
 
@@ -225,12 +225,12 @@ We also use various built in methods available in JavaScript to build buttons wi
 ### Fade to a location on a globe
 ```js
 'Jump to Globe': () => {
-	openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',0,2)
-	setTimeout(() => {
-		openspace.time.interpolateDeltaTime(1,1.000000E+00)
-		openspace.globebrowsing.goToGeo('Earth',37.7,-122.5, 3000000)
-		openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',1,2)
-	}, 2001)
+  openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',0,2)
+  setTimeout(() => {
+    openspace.time.interpolateDeltaTime(1,1.000000E+00)
+    openspace.globebrowsing.goToGeo('Earth',37.7,-122.5, 3000000)
+    openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',1,2)
+  }, 2001)
 },
 ```
 
@@ -239,28 +239,28 @@ To get the nav state first run `openspace.navigation.saveNavState('C:/path/to/na
 
 ```js
 'Jump To Nav State': () => {
-	openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',0,2)
-	setTimeout(() => {
-		openspace.time.interpolateDeltaTime(1,1.000000E+00)
-		openspace.navigation.setNavigationState({Anchor:'Jupiter',Pitch:-0.0014499759046284187, Position:[-3189986816.909851,346218424.33447266,861250117.1674805],ReferenceFrame:'Root',Up:[0.21129035032949686,0.8779118851872826,0.4296825685369957],Yaw:-2.16690017729807e-05})
-		openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',1,2)
-	}, 2001)
+  openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',0,2)
+  setTimeout(() => {
+    openspace.time.interpolateDeltaTime(1,1.000000E+00)
+    openspace.navigation.setNavigationState({Anchor:'Jupiter',Pitch:-0.0014499759046284187, Position:[-3189986816.909851,346218424.33447266,861250117.1674805],ReferenceFrame:'Root',Up:[0.21129035032949686,0.8779118851872826,0.4296825685369957],Yaw:-2.16690017729807e-05})
+    openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',1,2)
+  }, 2001)
 },
 ```
 
 ### Toggle button
 ```js
 'Jupiter Trail Toggle': async () => {
-	var togglevar = await openspace.getPropertyValue('Scene.JupiterTrail.Renderable.Enabled');
-	if (togglevar[1] > 0.1) {
-		openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Opacity', 0.0, 2)
-		setTimeout(() => {
-			openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Enabled', false)
-		}, 3000)
-		} else {
-		openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Opacity', 1.0, 2)
-		openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Enabled', true)
-	}
+  var togglevar = await openspace.getPropertyValue('Scene.JupiterTrail.Renderable.Enabled');
+  if (togglevar[1] > 0.1) {
+    openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Opacity', 0.0, 2)
+    setTimeout(() => {
+      openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Enabled', false)
+    }, 3000)
+    } else {
+    openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Opacity', 1.0, 2)
+    openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Enabled', true)
+  }
 },
 ```
 

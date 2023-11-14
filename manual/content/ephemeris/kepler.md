@@ -15,29 +15,29 @@ local assetHelper = asset.require('util/asset_helper')
 local sunTransforms = asset.require('scene/solarsystem/sun/transforms')
 
 local PlutoKeplerTrail = {
-    Identifier = "PlutoKeplerTrail",
-    Parent = sunTransforms.SolarSystemBarycenter.Identifier,
-    Renderable = {
-        Type = "RenderableTrailOrbit",
-        Translation = {
-            Type = "KeplerTranslation",
-            Eccentricity = 0.24883,
-            SemiMajorAxis = 5906438091.0,
-            Inclination = 17.14001,
-            AscendingNode = 110.30,
-            ArgumentOfPeriapsis = 113.76,
-            MeanAnomaly = 0.003973966,
-            Epoch = "2000 01 01 00:00:00",
-            Period = 7821583948.8,
-        },
-        Color = { 0.00, 0.62, 1.00 },
-        Period = 7821583948.8,
-        Resolution = 86000
+  Identifier = "PlutoKeplerTrail",
+  Parent = sunTransforms.SolarSystemBarycenter.Identifier,
+  Renderable = {
+    Type = "RenderableTrailOrbit",
+    Translation = {
+      Type = "KeplerTranslation",
+      Eccentricity = 0.24883,
+      SemiMajorAxis = 5906438091.0,
+      Inclination = 17.14001,
+      AscendingNode = 110.30,
+      ArgumentOfPeriapsis = 113.76,
+      MeanAnomaly = 0.003973966,
+      Epoch = "2000 01 01 00:00:00",
+      Period = 7821583948.8,
     },
-    GUI = {
-        Name = "Pluto Kepler Trail",
-        Path = "/Solar System/Dwarf Planets/Pluto"
-    }
+    Color = { 0.00, 0.62, 1.00 },
+    Period = 7821583948.8,
+    Resolution = 86000
+  },
+  GUI = {
+    Name = "Pluto Kepler Trail",
+    Path = "/Solar System/Dwarf Planets/Pluto"
+  }
 }
 
 assetHelper.registerSceneGraphNodesAndExport(asset, { PlutoKeplerTrail })

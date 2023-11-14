@@ -16,7 +16,7 @@ Follow these steps to host a OpenSpace session with GStreamer:
        - Add the viewer(s) IP-address(es) to *ModuleConfigurations > Server > AllowAddresses*
        - Make sure that *ModuleConfiguration > Server > Interfaces > Type = "WebSocket" > DefaultAccess* is set to _Allow_
      - Enable developer mode for the front-end GUI
-	     -	Go to *data/assets/customization/gui.asset* and change the _webguiDevelopmentMode_ flag to _true_.
+       - Go to *data/assets/customization/gui.asset* and change the _webguiDevelopmentMode_ flag to _true_.
        - (Optional) Go to *data/assets/util/webgui.asset* to see how the ports and routes are setup.
   1. In **OpenSpace-WebGuiFrontend**.
      - For _Environment.js_ make sure the `wsAddress` is the same as the host IP (not `localhost`).

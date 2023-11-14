@@ -11,14 +11,14 @@ Three main things are needed:
 
 On Windows, a batch file runs both OpenSpace and the touch server at the same time, in order to get the startup timing right. Here is the currently used batch file used in the Windows version:
 ```bat
-     START C:\path\to\OpenSpace.exe
-     ping -n 5 127.0.0.1 >nul
-     START C:\path\to\tuioServer\touchServer_x64.exe
-     @echo off
-     echo set WshShell = CreateObject("WScript.Shell") > Activate.vbs
-     echo WshShell.AppActivate("OpenSpace") >> Activate.vbs
-     wscript Activate.vbs
-     del Activate.vbs
+START C:\path\to\OpenSpace.exe
+ping -n 5 127.0.0.1 >nul
+START C:\path\to\tuioServer\touchServer_x64.exe
+@echo off
+echo set WshShell = CreateObject("WScript.Shell") > Activate.vbs
+echo WshShell.AppActivate("OpenSpace") >> Activate.vbs
+wscript Activate.vbs
+del Activate.vbs
 ```
 
 ## USAGE

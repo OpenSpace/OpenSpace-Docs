@@ -16,7 +16,7 @@ The camera is always focus on an object called the _Focus_. All navigation is al
 Try out the navigation by rotating around Earth, and trying to find your home town. When you are in the right approximate location, zoom in, and when you are close to Earth use the Yaw/Pitch motion to bring the camera up to see the horizon.
 
 ### Friction
-By default, all camera movements have friction enabled that slows the camera to a stop after you let go of the mouse button. However, friction can be toggled independently for _Rotation_, _Zoom_, or _Roll/Yaw/Pitch_ by clicking the words in the upper right on-screen to toggle the type of friction you want to change. The easier way to toggle the friction is to use the {kbd}`F` (Rotation), {kbd}`Shift+F` (Zoom), or {kbd}`Ctrl+F` (Zoom/Yaw/Pitch) keyboard shortcuts.
+By default, all camera movements have friction enabled that slows the camera to a stop after you let go of the mouse button. However, friction can be toggled independently for _Rotation_, _Zoom_, or _Roll/Yaw/Pitch_ by clicking the words in the upper right on-screen to toggle the type of friction you want to change. The easier way to toggle the friction is to use the {kbd}`F` (Rotation), {kbd}`Shift+F` (Zoom), or {kbd}`Ctrl+F` (Roll/Yaw/Pitch) keyboard shortcuts.
 
 ### Video Controls
 This video shows how using the mouse lets you control the camera:
@@ -37,7 +37,7 @@ In order to fly to another place, you must change the _Focus_ object that the ca
 
 :::{figure} focus-menu.png
 :align: center
-:width: 50%
+:width: 30%
 The focus menu at the bottom of the screen used to change the current _Focus_
 :::
 

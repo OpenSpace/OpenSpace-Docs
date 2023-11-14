@@ -12,7 +12,7 @@ The default behavior is a simple orbiting motion, but it can easily be changed i
 As of version 0.18.0, three different types of orbiting motions have been provided:
 
 | Behavior      | Description  |
-|:-------------:| ------------ |
+|:------------- | ------------ |
 | `Orbit` |  Simply orbit around the current anchor node, using a rightwards rotation |
 | `OrbitAtConstantLatitude`  |  Orbit the anchor so that the camera is always located over a constant latitude band. In practice, this means orbiting around the Z-vector of the object's local coordinate system (which corresponds to "North" for Earth)  |
 | `OrbitAroundUp`  |  Orbit around the Y-vector of the object. This often corresponds to the up-vector for models, etc. |

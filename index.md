@@ -8,24 +8,31 @@ On the left you can find a table of contents that allows you to access the indiv
 The overall structure of the documentation is as follows:
 
   - General
+
     Information about the different versions of OpenSpace, such as changelogs between versions or academic publications that came out of the project. If you find a publication missing, feel free to add it in a Pull Request on [GitHub](https://github.com/OpenSpace/OpenSpace-Docs) or let us know in the [Slack channel](https://openspacesupport.slack.com).
 
   - Users
+
     A collection of pages that are applicable to general users of OpenSpace, including information about how to use the software or how to get started.
 
   - Manual
+
     Pages that describe individual subsystems or components of OpenSpace in greater detail. If you want to learn more about concrete elements of OpenSpace, this is the place to be.
 
   - Tutorials
+
     Informational tutorials that run the users through the initial steps of setting up OpenSpace. The tutorials are provided with both text and video.
 
   - How-To
+
     Practical hands-on guides that show a variety of things that can be achieved with OpenSpace. These are meant to give you the tools to create your own content and also get inspiration about what is possilbe with the software through examples.
 
   - Development
+
     Information that is predominantly aimed at developers that want to contribute to the C++ source code of OpenSpace and/or compile the software from source found on [GitHub](https://github.com/OpenSpace/OpenSpace).
 
   - Support
+
     A collection of pages that do not contain any information about OpenSpace itself, but that are helpful for writing the documentation itself.
 
 

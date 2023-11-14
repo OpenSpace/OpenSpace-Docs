@@ -2,10 +2,10 @@
 Assets can make use of a versioned mechanism for synchronizing data files that are larger than would be comfortable to place into a Git repository. These are called HTTPSynchronization and are used in assets like so:
 ```lua
 local syncedDirectory = asset.syncedResource({
-    Name = "General SPK Kernels",
-    Type = "HttpSynchronization",
-    Identifier = "general_spk",
-    Version = 1
+  Name = "General SPK Kernels",
+  Type = "HttpSynchronization",
+  Identifier = "general_spk",
+  Version = 1
 })
 ```
 This command will download all files that correspond to the `general_spk` identifier for the file version `1` and provide the folder where the files were downloaded as a return value, `synchedDirectory` in this case. This document describes how the identifier and version number are resolved through a network of servers that run custom NodeJS software called *BigBang*.
@@ -14,13 +14,13 @@ This command will download all files that correspond to the `general_spk` identi
 ## Data endpoint usage
 OpenSpace uses one of the *BigBang* servers as an endpoint,  the setting of which is done in the `openspace.cfg` file:
 ```lua
-    Sync = {
-        SynchronizationRoot = "${SYNC}",
-        HttpSynchronizationRepositories = {
-            "http://data.openspaceproject.com/request"
-            -- "http://openspace.sci.utah.edu/request"
-        }
-    },
+Sync = {
+  SynchronizationRoot = "${SYNC}",
+  HttpSynchronizationRepositories = {
+    "http://data.openspaceproject.com/request"
+    -- "http://openspace.sci.utah.edu/request"
+  }
+},
 ```
 When requesting `general_spk` in file version `1`, OpenSpace will perform a web request to the provided repository and the request contains all information necessary to resolve the request. In this case, the complete URL would be: http://data.openspaceproject.com/request?identifier=general_spk&file_version=1&application_version1. This URL will contain a list of files that are associated with this identifier and version, and OpenSpace will download all files contained in this file.
 
