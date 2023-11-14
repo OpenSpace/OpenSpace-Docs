@@ -1,5 +1,4 @@
 # Academics
-
 ## Papers
   - ExoplanetExplorer: Contextual Visualization of Exoplanet Systems. _E. Broman, J. Faherty, L. Kreidberg, S. Zieba, C. Hansen, A. Ynnerman, and A. Bock_, IEEE Visualization, **2023**
   - Moliverse: Contextually Embedding the Microcosm into the Universe. _M. Brossier, R. Skånberg, L. Besançon, M. Linares, T. Isenberg, A. Ynnerman, and A. Bock_, Computers & Graphics, **2022**, [doi](http://doi.org/10.1016/j.cag.2023.02.006)
@@ -56,6 +55,7 @@
 | 2014 | Hans-Christian Helltegen | CCMC | Visualizing Space Weather: Acquiring and Rendering Data of Earth's Magnetosphere | [link](http://liu.diva-portal.org/smash/get/diva2:1375792/FULLTEXT01.pdf) |
 | 2014 | Victor Sand | CCMC | Dynamic Visualization of Space Weather Data | [link](http://liu.diva-portal.org/smash/get/diva2:763094/FULLTEXT01.pdf) |
 | 2013 | Martin Törnros | CCMC | Interactive Visualization of Space Weather Data | [link](http://liu.diva-portal.org/smash/get/diva2:667227/FULLTEXT01.pdf) |
+
 
 ## Contact
 For questions or inquiries about thesis works please reach out over e-mail to [exjobb@openspaceproject.com](mailto:exjobb@openspaceproject.com).

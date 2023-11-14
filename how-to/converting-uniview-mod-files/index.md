@@ -3,13 +3,12 @@
 As an example on the Tesla in space module
   1. Starting with tesla.mod file
   1. Creating tesla.asset
-
-      1. Specifying local files we later need.  By specifying with `localResource`, we put them in the same folder as the asset file and don't need to put them on a server anywhere
-         ```lua
-         local kernel = asset.localResource("tesla.bsp")
-         local model = asset.localResource("tesla.obj")
-         local texture = asset.localResource("white.jpg")
-        ```
+     1. Specifying local files we later need. By specifying with `localResource`, we put them in the same folder as the asset file and don't need to put them on a server anywhere
+        ```lua
+        local kernel = asset.localResource("tesla.bsp")
+        local model = asset.localResource("tesla.obj")
+        local texture = asset.localResource("white.jpg")
+       ```
   1. Converting
      ```
      coord
@@ -25,50 +24,48 @@ As an example on the Tesla in space module
        positionhook	tesla
      }
      ```
+     1. `teslapos.conf` mentions the spice information which is converted into
+     1. `teslaOrbit.conf` contains information about the orbit
+     1. First we create a coordinate system for the Tesla (this can be merged with the model as well)
+     1. Then a *Trail object. In this case, because we have a start and end time, we use a `RenderableTrailTrajectory` rather than `RenderableTrailOrbit`
+        ```lua
+        local TeslaPosition = {
+          -- Name is arbitrary
+          Name = "Tesla Position",
+          -- Parent uses the asset.require to retrieve the name from another asset file
+          Parent = transforms.SolarSystemBarycenter.Name,
+          -- Values for this come from the original file
+          Transform = {
+            Translation = {
+              Type = "SpiceTranslation",
+              Target = "-143205",
+              Observer = "SUN",
+              Kernels = kernel
+            }
+          },
+          -- GuiPath is an arbitrary string that is only used in the user interface to build a tree
+          GuiPath = "/Solar System/Tesla"
+        }
 
-      1. `teslapos.conf` mentions the spice information which is converted into
-      1. `teslaOrbit.conf` contains information about the orbit
-      1. First we create a coordinate system for the Tesla (this can be merged with the model as well)
-      1. Then a *Trail object.  In this case, because we have a start and end time, we use a `RenderableTrailTrajectory` rather than `RenderableTrailOrbit`
-         ```lua
-         local TeslaPosition = {
-           -- Name is arbitrary
-           Name = "Tesla Position",
-           -- Parent uses the asset.require to retrieve the name from another asset file
-           Parent = transforms.SolarSystemBarycenter.Name,
-           -- Values for this come from the original file
-           Transform = {
-             Translation = {
-               Type = "SpiceTranslation",
-               Target = "-143205",
-               Observer = "SUN",
-               Kernels = kernel
-             }
-           },
-           -- GuiPath is an arbitrary string that is only used in the user interface to build a tree
-           GuiPath = "/Solar System/Tesla"
-         }
-
-         local TeslaTrail = {
-           Name = "Tesla Trail",
-           Parent = transforms.SolarSystemBarycenter.Name,
-           Renderable = {
-             Type = "RenderableTrailTrajectory",
-             Translation = {
-               Type = "SpiceTranslation",
-               Target = "-143205",
-               Observer = "SUN",
-               Kernels = kernel
-             },
-             Color = { 1.0, 0.6, 0.2 },
-             StartTime = "2018 02 07 02:46:00",
-             EndTime = "2030 01 01 23:59:59",
-             SampleInterval = 60 * 60 * 24 -- One sample every day
-           },
-           GuiPath = "/Solar System/Tesla"
-         }
-         ```
-
+        local TeslaTrail = {
+          Name = "Tesla Trail",
+          Parent = transforms.SolarSystemBarycenter.Name,
+          Renderable = {
+            Type = "RenderableTrailTrajectory",
+            Translation = {
+              Type = "SpiceTranslation",
+              Target = "-143205",
+              Observer = "SUN",
+              Kernels = kernel
+            },
+            Color = { 1.0, 0.6, 0.2 },
+            StartTime = "2018 02 07 02:46:00",
+            EndTime = "2030 01 01 23:59:59",
+            SampleInterval = 60 * 60 * 24 -- One sample every day
+          },
+          GuiPath = "/Solar System/Tesla"
+        }
+        ```
       1. Ignoring (not sure why it is needed for Uniview
          ```
          coord

@@ -1,15 +1,17 @@
 # Links
 Links for the OpenSpace software, documentation, data, everything.
 
+
 ## OpenSpace Links
 | Name        | URL          | Description |
 |:-------------|:------------------|:------|
 | OpenSpace | [https://www.openspaceproject.com](https://www.openspaceproject.com) | OpenSpace homepage  |
 | OpenSpace Asset Hub | [http://hub.openspaceproject.com](http://hub.openspaceproject.com) | OpenSpace Asset Hub  |
-| OpenSpace Server Status | [http://status.openspaceproject.com](http://status.openspaceproject.com) | Status page for OpenSpace servers. Used to determine if the OpenSpace data and map servers are currently functioning.  |
+| OpenSpace Server Status | [http://status.openspaceproject.com](http://status.openspaceproject.com) | Status page for OpenSpace servers. Used to determine if the OpenSpace data and map servers are currently functioning  |
 | YouTube Channel | [https://www.youtube.com/c/openspacesoftware](https://www.youtube.com/c/openspacesoftware)   | Videos from our team and partners  |
 | Reddit Community | [https://www.reddit.com/r/OpenSpaceProject/](https://www.reddit.com/r/OpenSpaceProject/) | A place for the world to share ideas, questions and intersting things related to OpenSpace |
 | Slack Workspace | [https://openspacesupport.slack.com/](https://openspacesupport.slack.com/) | A place to interact and get help from the OpenSpace team and global community. |
+
 
 ## Documentation Links
 | Name        | URL          | Description |
@@ -17,8 +19,8 @@ Links for the OpenSpace software, documentation, data, everything.
 | SGCT | [https://sgct.github.io/configuration-files.html](https://sgct.github.io/configuration-files.html) | Documentation for setting up custom windows  |
 | Digital Universe | [https://www.haydenplanetarium.org/downloads/universe/DU-Data-Profiles.pdf](https://www.haydenplanetarium.org/downloads/universe/DU-Data-Profiles.pdf) | Documentation regarding the Digital Universe data set from AMNH |
 
-## Data Links
 
+## Data Links
 ### Map Data
 | Name        | URL          | Description |
 |:-------------|:------------------|:------|
@@ -31,9 +33,8 @@ Links for the OpenSpace software, documentation, data, everything.
 | Name        | URL          | Description |
 |:-------------|:------------------|:------|
 | JPL Horizons Bodies | [https://ssd.jpl.nasa.gov/sbdb_query.cgi](https://ssd.jpl.nasa.gov/sbdb_query.cgi) | Source of asteroid belt data in OpenSpace. Can be used to obtain differnt/sub data sets. [Example/More info](/manual/content/ephemeris/sbdb)|
-| Celestrak | [https://celestrak.com/](https://celestrak.com/) | Source of earth satellite/debris data in OpenSpace. Can be used to obtain trails for individual satellites.  |
+| Celestrak | [https://celestrak.com/](https://celestrak.com/) | Source of earth satellite/debris data in OpenSpace. Can be used to obtain trails for individual satellites  |
 | NASA GMAT | [https://software.nasa.gov/software/GSC-17177-1](https://software.nasa.gov/software/GSC-17177-1) | NASA General Mission Analysis Tool. Used for planning missions. [Example here.](https://www.reddit.com/r/OpenSpaceProject/comments/lq058v/newbie_question_plotting_a_highfidelity/) (to be replaced with wiki page about asset) |
-
 
 ### Trajectory Data
 | Name        | URL          | Description |

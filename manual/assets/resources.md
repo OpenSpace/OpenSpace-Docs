@@ -1,7 +1,6 @@
 # Resources
 ## What are resources?
 Resources are files that can be loaded as data into OpenSpace. A resource can for example consist of a movie, images, maps, positional data, etc. You can use two types of resources in OpenSpace:
-
   1. **Local resources**: Files that you have stored locally on your computer. For example, a movie in your `Documents` folder.
   1. **Synchronized resources**: Files that are stored on a server and downloaded when they are loaded into OpenSpace. For example, a map on our BigBang server.
 
@@ -50,7 +49,6 @@ To load a file that is located somewhere else than where your asset file is, you
 ```
 
 To find the absolute path, you can copy the text in the search field in the file explorer and then add the filename. You can also right-click on the file and click `Properties`, which opens a window where the path should be displayed.
-
   1. The path must only contain forward slashes `/`, not backwards slashes `\`. If your path contains backward slashes, just change them to forward slashes.
   1. The path must be surrounded by quotation marks.
 

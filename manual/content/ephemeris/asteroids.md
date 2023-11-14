@@ -22,12 +22,12 @@ object.Renderable.TrailFade = 10
 assetHelper.registerSceneGraphNodesAndExport(asset, { object })
 
 asset.meta = {
-    Name = "<Name of object(s)>",
-    Version = "1.0",
-    Description = [[ <Your description for object(s)> ]],
-    Author = "JPL Small-Body Database hosted by California Institute of Technology",
-    URL = "https://ssd.jpl.nasa.gov/sbdb_query.cgi",
-    License = "JPL-authored documents are sponsored by NASA under Contract NAS7-030010. All documents available from this server may be protected under the U.S. and Foreign Copyright Laws."
+  Name = "<Name of object(s)>",
+  Version = "1.0",
+  Description = [[ <Your description for object(s)> ]],
+  Author = "JPL Small-Body Database hosted by California Institute of Technology",
+  URL = "https://ssd.jpl.nasa.gov/sbdb_query.cgi",
+  License = "JPL-authored documents are sponsored by NASA under Contract NAS7-030010. All documents available from this server may be protected under the U.S. and Foreign Copyright Laws."
 }
 ```
 This example contains default rendering settings (color, segment quality, fade, etc). Sections below discuss how to modify these settings.
@@ -44,7 +44,6 @@ Start OpenSpace, and open the Scene menu. The added data can be found by expandi
 Expanding a particular asteroid/comet object in the menu shows additional controls under the *Renderable* category. A few of the options:
 
 ### Reducing the Total Number of Rendered Objects in a Group
-
 Some groupings contain thousands of objects which can slow the rendering. The *Upper Limit* option can be used to reduce the number of objects while retaining the overall shape of the group. For example, the main asteroid belt contains almost a million asteroids. Setting *Upper Limit* to 10,000 will make OpenSpace render every 100th object in the main belt file, providing an even sampling (rendering only the first 10,000 objects could skew the visualization because some data files are sorted).
 
 ### Rendering a Subset of the Objects in a Group
@@ -53,7 +52,7 @@ A contiguous subset of a group can be rendered by changing the *Starting Index o
 
 ## Trail Rendering Settings
 ### Changing Trail Color and Opacity
-Change the red, green, and blue slider values under *Renderable --> Appearances --> Color* to modify the trail color. Reduce the *Renderable --> Opacity* slider value to make the trails more transparent.
+Change the red, green, and blue slider values under *Renderable --> Appearances --> Color* to modify the trail color. Reduce the {menuselection}`Renderable --> Opacity` slider value to make the trails more transparent.
 
 ### Changing Trail Length
-Under *Renderable --> Appearances*, the *Line fade* parameter can be adjusted to change how much of the total orbital trail is displayed. Setting this to the maximum will display the entire elliptical orbit. The results will differ with this adjustment because the amount of trail fade is proportional to the total orbital path, and some asteroids/comets have much longer paths than others.
+Under {menuselection}`Renderable --> Appearances`, the *Line fade* parameter can be adjusted to change how much of the total orbital trail is displayed. Setting this to the maximum will display the entire elliptical orbit. The results will differ with this adjustment because the amount of trail fade is proportional to the total orbital path, and some asteroids/comets have much longer paths than others.

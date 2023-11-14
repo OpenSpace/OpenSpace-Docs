@@ -18,7 +18,6 @@ The image list has two modes: Images Within View and All Images. The Images With
 ![Tab buttons](tabbuttons.png)
 
 From left to right:
-
   - Look at target: Rotates the camera so that the target is placed in the center of the view
   - Move target to center of view: Animates the target so that it is placed in the center of the view
   - Zoom in: Makes the vertical field of view of the target 10 degrees smaller
@@ -30,7 +29,6 @@ From left to right:
 
 ## Display Copies
 Sometimes it is necessary to show the browser outside of the graphical user interface, for example, if you are in a dome or are using a display wall. To display the sky browser there, you can simply add Display Copies. The Display Copies are rendered in the 3D environment in OpenSpace and will be visible even if the GUI is not shown. If you are in a dome environment, you can add many Display Copies at once in order to spread them out on the Azimuth.
-
   - Scale: Sets the height of the Display Copy
   - Face Camera: Rotates the Display Copy to face the camera
   - Use Radius Azimuth Elevation: Uses spherical coordinates instead of Cartesian

@@ -84,7 +84,6 @@ asset.onInitialize(function ()
   -- Do something with the result from the imported asset
   openspace.printDebug("Imported " .. sphereAsset.ExampleSphere.GUI.Name .. " into the scene")
 end)
-
 ```
 
 More examples can be found in `${BASE}/data/assets/examples`.
@@ -96,30 +95,37 @@ OpenSpace provides lua APIs for managing assets within a running OpenSpace insta
 ### Managing assets
 Assets can be added and removed at runtime using the Lua API in OpenSpace.
 
-`void      openspace.asset.add(string path)`
-Adds the asset located at the path to the current scene as a root-level asset.
+  - `void openspace.asset.add(string path)`
 
-`void      openspace.asset.remove(string path)`
-Removes the asset located at the path from the scene. The asset will only be removed as a root-level asset; if it is also declared as a dependency of some other root-level asset, it will remain in the scene until that root-level asset is removed.
+    Adds the asset located at the path to the current scene as a root-level asset.
+
+  - `void openspace.asset.remove(string path)`
+
+    Removes the asset located at the path from the scene. The asset will only be removed as a root-level asset; if it is also declared as a dependency of some other root-level asset, it will remain in the scene until that root-level asset is removed.
 
 ### Defining assets
 Asset files have access to a special `asset` object that represents the current asset. The `asset` object is only valid during the loading phase, and exposes the following methods:
 
-`table      asset.require(string path)`
-Declares a dependency on another asset. Paths are specified without the `.asset` suffix. Paths starting with `/` or a drive letter are treated as absolute paths. Paths beginning with `./` or `../` are treated as relative to the current asset file. Paths starting with a directory name or file name are relative to the asset root directory, which is typically `${BASE}/data/assets` (configurable in `openspace.cfg`).
-The method returns a table of the exports provided by the required asset, such as scene graph node specifications or Lua functions.
+  - `table asset.require(string path)`
 
-`void      asset.onInitialize(void() initializationFunction)`
-Registers a lua function to be executed when the asset is initialized. This method may be called several times to register several callbacks. The functions will be called in the same order as they were registered.
+    Declares a dependency on another asset. Paths are specified without the `.asset` suffix. Paths starting with `/` or a drive letter are treated as absolute paths. Paths beginning with `./` or `../` are treated as relative to the current asset file. Paths starting with a directory name or file name are relative to the asset root directory, which is typically `${BASE}/data/assets` (configurable in `openspace.cfg`). The method returns a table of the exports provided by the required asset, such as scene graph node specifications or Lua functions.
 
-`void      asset.onDeinitialize(void() deinitializationFunction)`
-Registers a lua function to be executed when the asset is deinitialized. This method may be called several times to register several callbacks. The functions will be called in the reverse order as they were registered.
+  - `void asset.onInitialize(void() initializationFunction)`
 
-`string    asset.syncedResource(table syncSpecification)`
-Declares a data resource to be synchronized before the asset can be initialized. This includes downloading data from the official OpenSpace server (data.openspaceproject.com), but can also be used to make arbitrary HTTP requests. The data is downloaded to the sync folder (typically `${BASE}/sync` but can be changed in `openspace.cfg`). The method returns the absolute path to the folder of the downloaded resource. Valid inputs are tables representing `ResourceSynchronization`s documented in more detail on the [Resources](./resources) page.
+    Registers a lua function to be executed when the asset is initialized. This method may be called several times to register several callbacks. The functions will be called in the same order as they were registered.
 
-`string    asset.localResource(string relativePath)`
-Declares a data resource already located on disk. The input to the function is a path relative to the asset file and the function returns the absolute path to that resource.
+  - `void asset.onDeinitialize(void() deinitializationFunction)`
 
-`void      asset.export(string key, any value)`
-Export any data structure to other assets that require this asset. For example, assets that adds scene graph nodes upon initialization can export the identifiers of the scene graph nodes, so that other assets can reference these scene graph nodes. Furthermore, functions can be exported, allowing assets to behave more like software modules.
+    Registers a lua function to be executed when the asset is deinitialized. This method may be called several times to register several callbacks. The functions will be called in the reverse order as they were registered.
+
+  - `string asset.syncedResource(table syncSpecification)`
+
+    Declares a data resource to be synchronized before the asset can be initialized. This includes downloading data from the official OpenSpace server (data.openspaceproject.com), but can also be used to make arbitrary HTTP requests. The data is downloaded to the sync folder (typically `${BASE}/sync` but can be changed in `openspace.cfg`). The method returns the absolute path to the folder of the downloaded resource. Valid inputs are tables representing `ResourceSynchronization`s documented in more detail on the [Resources](./resources) page.
+
+  - `string asset.localResource(string relativePath)`
+
+    Declares a data resource already located on disk. The input to the function is a path relative to the asset file and the function returns the absolute path to that resource.
+
+  - `void asset.export(string key, any value)`
+
+    Export any data structure to other assets that require this asset. For example, assets that adds scene graph nodes upon initialization can export the identifiers of the scene graph nodes, so that other assets can reference these scene graph nodes. Furthermore, functions can be exported, allowing assets to behave more like software modules.

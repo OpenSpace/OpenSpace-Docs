@@ -3,14 +3,11 @@ The Session Recording feature provides a way to record all views, renderables, a
 
 
 ## Recording a Session
-Clicking the camera icon at the bottom menu bar will display the Session Recording menu. If using Linux (which currently does not support the on-screen menu), a separate browser can be used to show the menu (http://localhost:4680/) or console commands can be used (see the advanced wiki page which is linked at the bottom of this page).
-The top half of the menu has controls for starting a recording. Leave the "Text file format" option unchecked unless advanced features are being used (see section below if interested). Enter a filename (without extension) for the recording, and press the Record button when ready to start. The file will be saved in user/recordings/ directory.
-Upon recording, the sub-menu disappears and the program can be used normally, with all actions & settings being recorded. Click the red "Stop recording" button when done, and a file of the specified name will be saved to user/recordings/ in the OpenSpace directory.
+Clicking the camera icon at the bottom menu bar will display the Session Recording menu. If using Linux (which currently does not support the on-screen menu), a separate browser can be used to show the menu (http://localhost:4680/) or console commands can be used (see the advanced wiki page which is linked at the bottom of this page). The top half of the menu has controls for starting a recording. Leave the "Text file format" option unchecked unless advanced features are being used (see section below if interested). Enter a filename (without extension) for the recording, and press the Record button when ready to start. The file will be saved in `user/recordings/` directory. Upon recording, the sub-menu disappears and the program can be used normally, with all actions & settings being recorded. Click the red "Stop recording" button when done, and a file of the specified name will be saved to user/recordings/ in the OpenSpace directory.
 
 
 ## Playback of a Recorded Session
-There are two ways to handle the simulation time when playing back a session. The most common method is to allow OpenSpace to set the simulation time (the current time visible in the menu) to exactly what it was when recorded ("Force time change to recorded time" checkbox). If the "Loop playback" option is checked, then the recording will continually repeat itself until manually stopped. The drop-down menu contains a list of files in the user/recordings/ directory that can be played.
-Mouse camera control is disabled during playback. The bottom menu (as well as log messages) will indicate when playback is finished. You can abort the playback by clicking the 'Stop Recording' button, or entering: `openspace.sessionRecording.stopPlayback()` in the console. It is also possible to simply pause playback by clicking the menu button.
+There are two ways to handle the simulation time when playing back a session. The most common method is to allow OpenSpace to set the simulation time (the current time visible in the menu) to exactly what it was when recorded ("Force time change to recorded time" checkbox). If the "Loop playback" option is checked, then the recording will continually repeat itself until manually stopped. The drop-down menu contains a list of files in the user/recordings/ directory that can be played. Mouse camera control is disabled during playback. The bottom menu (as well as log messages) will indicate when playback is finished. You can abort the playback by clicking the 'Stop Recording' button, or entering: `openspace.sessionRecording.stopPlayback()` in the console. It is also possible to simply pause playback by clicking the menu button.
 
 
 ## Session Recording Advanced Features
@@ -20,7 +17,6 @@ To start a recording, open the console with the **\`** key and enter: `openspace
 
 ### Playback Using Advanced Time Options
 There are two ways to handle the simulation time when playing back a session. The most common method is to allow OpenSpace to set the simulation time (the current time visible in the menu) to exactly what it was when recorded.
-
   1. To play back a session in this manner, use the syntax: `openspace.sessionRecording.startPlayback('filename.osrec');` This function is available in the GUI with the "Force time change to match recording" box checked. Playback can also be performed without changing the current simulation time, in which case there are three different time options that can be used:
   1. Recorded Time - recorded actions will play back relative to the time that the recording started, or the time that the playback started. For example, if a layer was turned on 3 seconds after starting recording, then in the playback it will turn on 3 seconds after playback started (regardless of what simulation time is). Example: `openspace.sessionRecording.startPlaybackRecordedTime('filename.osrec');` This function is available in the GUI with the "Force time change to match recording" box is *un*-checked.
   1. Application Time - recorded actions will play back relative to the time that the OpenSpace application started. Consider the example of a session file that, at the time it was recorded, OpenSpace had been running for 10 minutes. In a later session, a user starts OpenSpace and then starts playback of that file 1 minute later. In this case, the playback will begin 9 minutes after that point (regardless of what simulation time is). Example: `openspace.sessionRecording.startPlaybackApplicationTime('filename.osrec');`
@@ -57,7 +53,6 @@ When playing back using the GUI, check the "Output Frames" box, enter the desire
 ### File Conversion
 OpenSpace's TaskRunner executable can now be used to convert between ascii and binary recording formats. The typical format is binary, since it is much more space efficient. Using the conversion task to switch a binary recording to ascii makes it possible to debug or modify a recording in a readable form. It is also possible to split or combine recordings.
 The conversion task can be run by doing the following:
-
   1. Copy the file **data/tasks/sessionRecordConvertExample1.task** and rename it. Edit the contents to specify the `InputFilePath` to convert, and the desired `OutputFilePath`.
   1. Start **bin/TaskRunner** in a terminal. At the prompt, type the full name (with **.task** extension) of the task file copied & edited above.
 

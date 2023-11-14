@@ -3,9 +3,9 @@ This profile shows the Coronal mass ejection (CME) that occurred on Bastille Day
 
 Cutplanes are sequences of images extracted from a volume that has integrated particle flux values interpolated into the voxels of the volume. The profile also consists of magnetogram textures of the sun, a fieldline sequence of the sun, a volume rendering of the density of the CME and what we've called flux nodes. Flux nodes are points along the magnetic fields where the flux values are calculated. The data for this profile is provided by Predictive Science Inc. (PSI) and are the results of simulations. At PSI they call the flux nodes, "Stream nodes"
 
-## Keybinds
-The following keybinds are specific to this profile.
 
+## Keybinds
+The following keybinds are specific to this profile:
   - {kbd}`M` and {kbd}`N`: toggle a descriptive legend for the flux values
   - {kbd}`O`: toggle the flux nodes on and off
   - {kbd}`U`: toggle the fieldlines of the sun on and off
@@ -15,8 +15,7 @@ The following keybinds are specific to this profile.
   - {kbd}`E`: toggle the EUV texture of the sun on and off
   - {kbd}`I`: use the next magnetogram texture in a list of magnetograms of the Sun
 
-To better show the CME event a few different time loops have been implemented with different start and end times and differences in how fast time is sped up.
-
+To better show the CME event a few different time loops have been implemented with different start and end times and differences in how fast time is sped up:
   - {kbd}`CTRL+1` for a short loop. 10:03 - 10:16, at 2 min/ second. Recommended for close-up view of the Sun
   - {kbd}`CTRL+2` for the "standard" loop. 10:03 - 11:00, at 4 min/ second. A generally good loop showing most of the event at a good pace
   - {kbd}`CTRL+3` for a fast loop. 10:03 - 11.48, at 15 min/ second. In case something particular will be showcased over and over

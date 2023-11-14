@@ -26,7 +26,7 @@ You can install all of the necessary dependencies through `apt`:
 
 
 ## Compile OpenSpace
-```
+```bash
 openSpaceHome="$HOME/source/OpenSpace"
 
 git clone --recursive https://github.com/OpenSpace/OpenSpace "$openSpaceHome"

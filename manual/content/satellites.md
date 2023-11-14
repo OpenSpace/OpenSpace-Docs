@@ -26,7 +26,7 @@ The satellite rendering software groups satellites together by category, and any
 There is an advanced method for limiting the satellites rendered within a group. By selecting Scene -> Solar System -> Planets -> Earth -> Satellites, the different satellite groups can be seen. Underneath a satellite group, expand the Renderable category to see slider controls for "Starting Index of Render" and "Size of Render Block". The Starting Index selects which satellite to start rendering (the previous satellites will be hidden), and the Size controls how many are rendered starting from the index. The size can be set to 1 or more satellites. When the Starting Index is set to a non-zero value, an info message containing the name & description of that satellite will be added to the OpenSpace log.html file.
 
 
-## Satelllite Data from Celestrak
+## Satellite Data from Celestrak
 The satellite data included in OpenSpace comes from service [Celestrak](https://celestrak.com/), and in particular their current data page: [https://celestrak.com/NORAD/elements/](https://celestrak.com/NORAD/elements/). On this page, you will find overall categories in **BOLD** and their sub cateories listed below them. Listed below are the OpenSpace assets files that correspond. Should you wish to include an entire category, there are asset files to include named *satellites_communications*, *satellites_debris*, etc. The OpenSpace category of **Misc** corresponds to the first Celestrak category 'Special-Interest Satellites'.
 
 
@@ -47,60 +47,60 @@ Satellites in the default scene can be activated with the 's' hotkey, or the 'To
 As mentioned above, satellites are grouped by categories and sub-categories that are created by CelesTrak.com. Below is a current listing of the ones included in OpenSpace:
 
 ### Communications
-amateur
-experimental
-geostationary
-globalstar
-gorizont
-intelsat
-iridium
-iridium_next
-molniya
-orbcomm
-other_comm
-raduga
-ses
+  - amateur
+  - experimental
+  - geostationary
+  - globalstar
+  - gorizont
+  - intelsat
+  - iridium
+  - iridium_next
+  - molniya
+  - orbcomm
+  - other_comm
+  - raduga
+  - ses
 
 ### Debris
-debris_asat
-debris_breezem
-debris_fengyun
-debris_iridium33
-debris_kosmos2251
+  - debris_asat
+  - debris_breezem
+  - debris_fengyun
+  - debris_iridium33
+  - debris_kosmos2251
 
 ### Misc
-brightest
-cubesats
-iss
-military
-other
-radar
-spacestations
-tle-new
+  - brightest
+  - cubesats
+  - iss
+  - military
+  - other
+  - radar
+  - spacestations
+  - tle-new
 
 ### Navigation
-beidou
-galileo
-glosnass
-gps
-musson
-nnss
-sbas
+  - beidou
+  - galileo
+  - glosnass
+  - gps
+  - musson
+  - nnss
+  - sbas
 
 ### Science
-education
-engineering
-geodetic
-spaceearth
+  - education
+  - engineering
+  - geodetic
+  - spaceearth
 
 ### Weather
-argos
-dmc
-earth_resources
-goes
-noaa
-planet
-sarsat
-spire
-tdrss
-weather
+  - argos
+  - dmc
+  - earth_resources
+  - goes
+  - noaa
+  - planet
+  - sarsat
+  - spire
+  - tdrss
+  - weather

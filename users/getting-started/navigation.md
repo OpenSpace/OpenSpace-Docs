@@ -1,6 +1,7 @@
 # Navigation
 Here we will learn how to control the virtual camera to navigate around objects and fly to other places in the universe using a mouse and keyboard. A mouse with three buttons is recommended, but not necessary.
 
+
 ## Controlling the Camera
 The camera is always focus on an object called the _Focus_. All navigation is always relative to the _Focus_ and remembering this will make the camera controls a lot more intuitive.
 
@@ -49,6 +50,7 @@ The amount of time taken to change the focus can be adjusted in the settings und
 
 Since focusing on an item will always focus on its center, focusing on many items will appear to target the Sun instead. This is because items like "HII Regions" or "Jupiter Trail" are datasets centered on the sun. For these types of items, there is no point in focusing on them, instead target "Orion Nebula" or 'Jupiter.'
 :::
+
 
 ## Leaving the Solar System
 As you have just learned, most of the datasets are based around the Sun. To leave the Solar System, you just have to zoom away from your current target. And you will soon be flying among the stars.

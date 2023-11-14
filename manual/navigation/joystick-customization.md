@@ -119,8 +119,7 @@ Here is an example asset with the Earth scale bound to the right trigger on an X
 
 
 ## Bind a script to a joystick button
-Binding a custom script to a controller button is done with the function `openspace.navigation.bindJoystickButton` that takes six arguments. Below is a list that describes each argument in detail.
-
+Binding a custom script to a controller button is done with the function `openspace.navigation.bindJoystickButton` that takes six arguments. Below is a list that describes each argument in detail:
   1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation](joystick)). It is important that this name matches the name that OpenSpace detects for the controller.
   1. The index of which button on the controller you want to bind the script to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.A` or `controller.DPan.Left`.
   1. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](/users/console/index.md#the-script-log).
@@ -249,7 +248,6 @@ local XBoxController = {
 ```
 
 This is the map of the controller that tells OpenSpace how each axis and button relate to the indices in the list that OpenSpace sees. Now with all the information you now have about your controller, you can make your own map. Start with a name for your controller, in the example above it is called `XBoxController`. Then you can start with the axes, in the example above there are four joysticks that each have one to two axes. There are the two joysticks that can move both left/right, and up/down, then there are the two triggers that only have one axis each. To add an axis to the list you add its name (no spaces or special characters) and set that equal to the index it corresponded to in the OpenSpace list. So it would look like:
-
 ```lua
 local NameOfController = {
   -- Axes

@@ -8,9 +8,9 @@ See [this wiki](server-install) for how to install & configure a AHTSE server, a
 
 ## Basic Description of the MRF Data Format
 A single tiled WMS data set in MRF format consists of a set of 3 files, each with the same filename but with the following file extensions:
-  - **.mrf** : contains the raster metadata.
-  - **.idx** : contains the indeces for where the tiles are located in the raster data file.
-  - **.p\*g** : the raster data compressed in either JPEG (.pjg) or PNG (.ppg).
+  - `.mrf`: contains the raster metadata.
+  - `.idx`: contains the indeces for where the tiles are located in the raster data file.
+  - `.p\*g`: the raster data compressed in either JPEG (.pjg) or PNG (.ppg).
 
 Once these files are created, the data set is ready to be imported into the AHTSE server.
 
@@ -32,7 +32,7 @@ Note that the previously-used method for this was the `gdalbuildvrt` tool, where
 
 ### _gdal\_translate_ step
 This step creates a raster image using either PNG or JPEG compression, and a .mrf file for the data set. [This page](http://www.gdal.org/gdal_translate.html) provides a usage description for the **gdal\_translate** software tool. This is the usage for PNG:
-```
+```bash
 gdal_translate -of MRF -co COMPRESS=PNG -co BLOCKSIZE=512 -r bilinear dataset.vrt dataset.mrf
 ```
 Here, the **-of** specifies MRF output format, and **-co BLOCKSIZE=** specifies the blocksize in pixels, where values of 256, 360, or 512 are common. Sometimes the dimensions of the original image have a common multiple that can be used for the blocksize value. The flag **-r** specifies resampling algorithm to be used. The input .vrt file from the previous step is provided, followed by the output filename.
@@ -97,6 +97,6 @@ The files contained multiple bands, as shown in their `gdalinfo` output. Some ha
 This is a summary of the conversion process performed on the Venus MagellanDEM map, which is a companion to the MagellanMosaic imagery. Only the details that differ from the above sections are written here.
 
 The Build VRT process was the same as in Section 2.1 above, but the process of using `gdal_translate` to generate an .mrf file (Section 2.2) did have a few differences. The **-ot Byte** option mentioned in Section 4.0 was used in order to create an 8-bit grayscale for elevation. This made it easy to see the results in a viewer, although the original 16-bit resolution was lost in this step. The **-co OPTIONS="V1:1"** option mentioned in Section 2.2 was also used. The blocksize was important. Originally a blocksize of 360 was used, but the resulting geometry of the map was incorrect. On the second attempt, a blocksize of 256 was used because the 8192x4096 resolution of the map was evenly divisible by this. In order to get the grayscale range correct, the **-scale** option was used to match the data range (obtained from `gdalinfo -hist`) to the desired 0 - 255 8-bit range. The resulting translation command was:
-```
+```bash
 gdal_translate -q -of MRF -ot Byte -scale -2757 8000 0 255 -co COMPRESS=PNG -co BLOCKSIZE=256 -co OPTIONS="V1:1" ${inputVrt} ${outputMrf}
 ```

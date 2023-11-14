@@ -1,4 +1,4 @@
-# OpenSpace Streaming Structure and Good-To-Knows
+# Streaming Structure and Good-To-Knows
 
 By Hanna Timander and Nisse Bergman, June 2022
 
@@ -6,7 +6,6 @@ Feel free to add and/or remove stuff here that gains or loses relevance.
 
 ## OpenSpace Front-end
 These are the most important files that are new for this thesis in the frontend repo:
-
   - `src/utils/WebRTCStreaming.jsx`
     This file takes care of all WebRTC related functionality within the GUI.
   - `src/views/StreamingGui.jsx`
@@ -20,7 +19,6 @@ These are the most important files that are new for this thesis in the frontend 
 
 ## OpenSpace Application
 These are the most important files that are new for this thesis in the OpenSpace repo.
-
   - `gstreamerWebRTC.h`
     This file contains all necessary functions needed for the GStreamer functionality. As is, a few of these functions are called in the _main.cpp_ OpenSpace file as part of the SGCT/render engine callbacks. All code in _main.cpp_ that we've added have the `#if SGCT_HAS_GSTREAMER `wrapper around it, so it should be easy to find.
   - `remote_gstreamer_output.json`
@@ -39,7 +37,6 @@ When adding/removing plugin dll's to GStreamer, they often have dependent dll's 
 
 ### GStreamer Pipeline
 The proposed GStreamer pipeline looks like this, and can be found in `gstreamerWebRTC.h`. The documentation for each element is linked to the GStreamer web page below:
-
   - [appsrc](https://gstreamer.freedesktop.org/documentation/app/appsrc.html)
     ```
     stream-type=0 do-timestamp=1

@@ -1,6 +1,5 @@
 # How to load a model into OpenSpace
 To load a model into OpenSpace you will need to create a new asset file. To learn more about assets see [Assets](../../assets/assets), and load the model with this piece of code:
-
 ```lua
   ...
   local sun = asset.require('scene/solarsystem/sun/sun')
@@ -14,13 +13,11 @@ To load a model into OpenSpace you will need to create a new asset file. To lear
 ```
 
 The first line in this example imports the asset for the Sun, this is to add it as a light source to the model in the end. Then you add the `Renderable` with the `"RenderableModel"` as Type. Lastly, you define the path to the model file as the `GeometryFile`, for more information regarding paths in assets see [Resources](../../assets/resources). The line `modelPath .. "BoxAnimated.glb",` creates a path to your sync folder where the model is downloaded from our servers. If you want to add a local model file instead that is not located on our servers, then you could use the `localResource` function to create the path, like this (example with a local model file of New York City):
-
 ```lua
   GeometryFile = asset.localResource("nyc-model.obj"),
 ```
 
 The `localResource` function here refers to a file that is located next to the asset file on the filesystem. If you want to reference a file on your computer that is not located directly next to the asset file, you can instead give the full path to that file like this:
-
 ```lua
   GeometryFile = "C:/Users/username/Documents/data/nyc-model.obj",
 ```
@@ -34,7 +31,6 @@ OpenSpace uses the [Assimp library](https://github.com/assimp/assimp) to load mo
 
 ## Debugging your model
 If your model does not show up in OpenSpace and you are sure that you have done everything right in the loading, there is a tool that you could use for debugging. In the asset file, you can add an optional property for forcing invisible pieces of the model to render. This forces any part of the model that is invisible (has no texture or color) to render. This property is called `ForceRenderInvisible`. Here is an example where it is used for the Juno spacecraft:
-
 ```lua
   ...
   Renderable = {

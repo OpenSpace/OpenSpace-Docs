@@ -16,6 +16,7 @@ Additional documentation:
  - [Sphinx Design](https://sphinx-design.readthedocs.io/en/furo-theme/)
 :::
 
+
 ## Markup
 Standard Github-flavored Markdown is available as a basis. You can find more information about it [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). For completeness, here is a quick reference list:
 
@@ -61,6 +62,7 @@ Showing a sequence of menu items that someone has to go through in order to achi
 
 ### Icons embedding
 We can also provide images directly into the text: {octicon}`heart-fill;1em;sd-text-danger`. The list of all icons can be found [here](https://primer.style/design/foundations/icons).
+
 
 ## Tables
 ### Markdown-style
@@ -143,7 +145,6 @@ We can use different images for light and dark themes
 Embedding videos does not work natively in Markdown and we need to fall back to raw HTML instead:
 
 <center><iframe width="740" height="530" id='tutorialPlayer' src="https://www.youtube.com/embed/YHl5L85hEUQ?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
-
 
 
 ## Callouts
@@ -398,6 +399,7 @@ to modify parsing behaviour and access extended syntax features.
 ```
 ````
 
+
 ## Dropdown
 ### No Title
 ```{dropdown}
@@ -578,8 +580,6 @@ Only show selected lines
 :language: json
 :lines: 1, 3, 7-9, 10
 ```
-
-
 
 
 [1]: https://www.google.com "a title"

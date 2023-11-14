@@ -34,7 +34,8 @@ First, we download the **heightmap DTEEC_001918_1735_001984_1735_U01.IMG** toget
 ### Fix Incorrect Metadata (applies only to HiRISE DTMs)
 Unfortunately, many of the HiRISE DTMs downloaded from the site provided above have some errors in their metadata which essentially defines the longlat position and size of the patch on a globe. To see this problem, run the command `gdalinfo` on both the height map (IMG) and the texture (JP2). When looking at the output we can see that there is a slight miss match in the corner coordinates of each patch. If there is no miss match, this step is unnecessary.
 
-    > gdalinfo DTEEC_001918_1735_001984_1735_U01.IMG
+```
+    gdalinfo DTEEC_001918_1735_001984_1735_U01.IMG
     ...
     Corner Coordinates:
     Upper Left  (   -3094.483, -378027.655) ( 76d58'56.67"W,  6d22'40.21"S)
@@ -43,10 +44,12 @@ Unfortunately, many of the HiRISE DTMs downloaded from the site provided above h
     Lower Right (    3347.383, -388919.547) ( 76d52'23.91"W,  6d33'41.75"S)
     Center      (     126.450, -383473.601) ( 76d55'40.29"W,  6d28'10.98"S)
     ...
+```
 
 and
 
-    > gdalinfo PSP_001918_1735_RED_A_01_ORTHO.JP2
+```
+    gdalinfo PSP_001918_1735_RED_A_01_ORTHO.JP2
     ...
     Corner Coordinates:
     Upper Left  (   -3093.092, -378029.046) ( 76d58'55.86"W, 11d22'39.28"S)
@@ -55,17 +58,21 @@ and
     Lower Right (    3348.774, -388920.432) ( 76d52'24.61"W, 11d33'40.76"S)
     Center      (     127.841, -383474.739) ( 76d55'40.24"W, 11d28'10.02"S)
     ...
+```
 
 This is a known issue, however, not properly addressed on the HiRISE website. Information about the problem and a solution can be found here: https://isis.astrogeology.usgs.gov/IsisSupport/index.php?topic=3440.0,
 And here: https://trac.osgeo.org/gdal/ticket/2706.
 The problem basically has to do with an incorrect radius set as part of the metadata in the JP2 (JPEG2000) files. We need to download the small program "fix_jp2", either an executable (ftp://pdsimage2.wr.usgs.gov/pub/pigpen/c_FORTRAN_code/) or the C++ code to compile it yourself (see the link to the trac ticket above), and run it with the JP2 file of interest as argument:
 
-    >fix_jp2 PSP_001918_1735_RED_A_01_ORTHO.JP2
+```
+    fix_jp2 PSP_001918_1735_RED_A_01_ORTHO.JP2
     Success, file updated
+```
 
 Now when running gdalinfo on the JP2 file again we get better results:
 
-    > gdalinfo PSP_001918_1735_RED_A_01_ORTHO.JP2
+```
+    gdalinfo PSP_001918_1735_RED_A_01_ORTHO.JP2
     ...
     Corner Coordinates:
     Upper Left  (   -3093.092, -378029.046) ( 76d58'56.57"W,  6d22'39.28"S)
@@ -74,27 +81,30 @@ Now when running gdalinfo on the JP2 file again we get better results:
     Lower Right (    3348.774, -388920.432) ( 76d52'23.84"W,  6d33'40.76"S)
     Center      (     127.841, -383474.739) ( 76d55'40.21"W,  6d28'10.02"S)
     ...
+```
 
 There is still some difference between the height map and the texture. This is mainly because a height map and a corresponding texture don't necessarily have the same pixel size and position.
 
 ### File Format Conversion
 When looking at the corner coordinates of the patch output when running gdalinfo on it,
 
-    > gdalinfo PSP_001918_1735_RED_A_01_ORTHO.TIFF
+```
+    gdalinfo PSP_001918_1735_RED_A_01_ORTHO.TIFF
+```
 
 we notice that each corner (for example the upper left corner) has two coordinates defined in two spaces. The first one is the georeferenced space and the second one is in longlat space. The georeferenced space can be given in many different units including meters, kilometers and degrees. The HiRISE patches have the georeferenced coordinates given in meters and this is not what we want since OpenSpace does conversion between pixel space and longlat space assuming the georeferenced coordinates are given in longlat space (which is the case for almost all global WMS datasets).
 
 We run the command gdalwarp to do a reprojection from the georeferenced space in meters to a georeferenced space in longlat. The program takes the arguments **-t_srs** where a target projection should be specified (we specify it using a so called proj4 string which tells GDAL to set the target georeferenced space to longlat). Run the program on both the height map **DTEEC_001918_1735_001984_1735_U01.IMG** and the texture **PSP_001918_1735_RED_A_01_ORTHO.TIFF**:
 
-
-    >gdalwarp -t_srs "+proj=longlat" DTEEC_001918_1735_001984_1735_U01.IMG DTEEC_001918_1735_001984_1735_U01_longlat.TIFF
-
-    >gdalwarp -t_srs "+proj=longlat" PSP_001918_1735_RED_A_01_ORTHO.TIFF PSP_001918_1735_RED_A_01_ORTHO_lonlat.TIFF
+```
+    gdalwarp -t_srs "+proj=longlat" DTEEC_001918_1735_001984_1735_U01.IMG DTEEC_001918_1735_001984_1735_U01_longlat.TIFF
+    gdalwarp -t_srs "+proj=longlat" PSP_001918_1735_RED_A_01_ORTHO.TIFF PSP_001918_1735_RED_A_01_ORTHO_lonlat.TIFF
+```
 
 Now we get two new files with georeferenced coordinates given in longlat space. We can check this by running gdalinfo on both of the new files:
 
-
-    >gdalinfo.exe DTEEC_001918_1735_001984_1735_U01_longlat.TIFF
+```
+    gdalinfo.exe DTEEC_001918_1735_001984_1735_U01_longlat.TIFF
     ...
     Corner Coordinates:
     Upper Left  ( -76.9824075,  -6.3778369) ( 76d58'56.67"W,  6d22'40.21"S)
@@ -103,10 +113,12 @@ Now we get two new files with georeferenced coordinates given in longlat space. 
     Lower Right ( -76.8733093,  -6.5615920) ( 76d52'23.91"W,  6d33'41.73"S)
     Center      ( -76.9278584,  -6.4697145) ( 76d55'40.29"W,  6d28'10.97"S)
     ...
+```
 
 and
 
-    >gdalinfo PSP_001918_1735_RED_A_01_ORTHO_longlat.TIFF
+```
+    gdalinfo PSP_001918_1735_RED_A_01_ORTHO_longlat.TIFF
     ...
     Corner Coordinates:
     Upper Left  ( -76.9823817,  -6.3775787) ( 76d58'56.57"W,  6d22'39.28"S)
@@ -115,6 +127,7 @@ and
     Lower Right ( -76.8732883,  -6.5613214) ( 76d52'23.84"W,  6d33'40.76"S)
     Center      ( -76.9278350,  -6.4694501) ( 76d55'40.21"W,  6d28'10.02"S)
     ...
+```
 
 By looking at the corner coordinates we can now see that the georeferenced coordinates (left) match up with the longlat coordinates (right).
 
@@ -124,13 +137,16 @@ As mentioned earlier the datasets need to be global (longitude \[-180,180\] and 
 #### Building Virtual Datasets
 We can build a VRT (virtual dataset) by running the command gdalbuildvrt on the two latest files we have obtained. We need some specific arguments to get the results we want, using **-te** we can specify the georeferenced extent of the VRT file. **-addalpha** adds an alpha channel to the output VRT where there are no data. This is necessary for the texture dataset since we don't want the patch to hide underlying textures where there is no data. **-r** sets the resampling algorithm to use when reading the dataset. The default value is *nearest* which can cause significant *stair stepping* artifacts when used with height data, it can therefore be benefitial to change it to *bilinear* or any of the other algorithms listed [here](https://gdal.org/programs/gdalbuildvrt.html#cmdoption-gdalbuildvrt-r).
 
-    >gdalbuildvrt Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_Heightmap.vrt -te -180 -90 180 90 DTEEC_001918_1735_001984_1735_U01_longlat.TIFF
+```
+    gdalbuildvrt Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_Heightmap.vrt -te -180 -90 180 90 DTEEC_001918_1735_001984_1735_U01_longlat.TIFF
 
-    >gdalbuildvrt Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_Texture.vrt -te -180 -90 180 90 -addalpha PSP_001918_1735_RED_A_01_ORTHO_longlat.TIFF
+    gdalbuildvrt Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_Texture.vrt -te -180 -90 180 90 -addalpha PSP_001918_1735_RED_A_01_ORTHO_longlat.TIFF
+```
 
-Now if we again run the command gdalinfo on our new VRT datasets we can see that they cover the whole longlat space (with some negligible precision errors):
+Now if we again run the command `gdalinfo` on our new VRT datasets we can see that they cover the whole longlat space (with some negligible precision errors):
 
-    >gdalinfo Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_Heightmap.vrt
+```
+    gdalinfo Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_Heightmap.vrt
     ...
     Corner Coordinates:
     Upper Left  (-180.0000000,  90.0000000) (180d 0' 0.00"W, 90d 0' 0.00"N)
@@ -139,10 +155,12 @@ Now if we again run the command gdalinfo on our new VRT datasets we can see that
     Lower Right ( 180.0000024, -90.0000012) (180d 0' 0.01"E, 90d 0' 0.00"S)
     Center      (   0.0000012,  -0.0000006) (  0d 0' 0.00"E,  0d 0' 0.00"S)
     ...
+```
 
 and
 
-    >gdalinfo.exe Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_texture.vrt
+```
+    gdalinfo.exe Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_texture.vrt
     ...
     Corner Coordinates:
     Upper Left  (-180.0000000,  90.0000000) (180d 0' 0.00"W, 90d 0' 0.00"N)
@@ -151,6 +169,7 @@ and
     Lower Right ( 180.0000013, -89.9999985) (180d 0' 0.00"E, 89d59'59.99"S)
     Center      (   0.0000007,   0.0000007) (  0d 0' 0.00"E,  0d 0' 0.00"N)
     ...
+```
 
 ### Changing Configurations for Alpha Channel
 The **-addalpha** argument we used for the texture only made sure that alpha is set to 0 where there are no data. The patch however is often slightly tilted and also not necessarily rectangular so there might be some parts of the image file that have data even though it is not used in the patch, see image below:

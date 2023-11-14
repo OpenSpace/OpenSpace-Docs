@@ -12,17 +12,18 @@ For reference, these are the files being explained in this guide:
   - Style sheet for the page: {download}`main2.css`
   - HTML page: {download}`openspace_control_template.html`
 
+
 ## Setting up the HTML document
 We typically have most of the controls in the head of the HTML document.
 
-:::{code-block} html
+```html
 <html>
     <head>
         <title>Basic OpenSpace Controls</title>
         <link rel="stylesheet" type="text/css" href="main2.css">
         <script type="text/javascript" src="openspace-api.js"></script>
         <script type="text/javascript">
-:::
+```
 
   - Starting with title: `<title>Basic OpenSpace Controls</title>`
   - Link to stylesheet: `<link rel="stylesheet" type="text/css" href="main2.css">`
@@ -31,7 +32,7 @@ We typically have most of the controls in the head of the HTML document.
 
 Then we usually start by defining a few useful functions we may use later:
 
-:::{code-block} javascript
+```js
 //variable for js libarary
 var openspace = null;
 //helper function for nicely fading groups of trails
@@ -62,32 +63,32 @@ var setFocus = (focus) => {
   openspace.setPropertyValue('NavigationHandler.OrbitalNavigator.Anchor', focus);
   openspace.setPropertyValue('NavigationHandler.OrbitalNavigator.RetargetAnchor', null);
 }
-:::
+```
 
 We can now start writing the buttons. As an example I'll start with an object called `earthButtons` with two properties, "title" and "buttons".
 
-:::{code-block} javascript
+```js
 var earthButtons = {
     title: "Example buttons for Earth",
     buttons: {
 
     }
 };
-:::
+```
 
 We can define as many of these sections as needed to organize the buttons. The actual buttons will then be key value pairs where the string to be displayed on the button is the key and a corresponding arrow function to be executed on click is the value. As a simple example a button to turn off the model of the earth would be as follows:
 
-:::{code-block} javascript
+```js
 var earthButtons = {
 	title: "Example buttons for Earth",
 	buttons: {
 		'Turn off the Earth Model': () => {openspace.setPropertyValueSingle('Scene.Earth.Renderable.Enabled', false)},
 	},
 };
-:::
+```
 
 We can also add a button which uses one of the helper functions defined earlier:
-:::{code-block} javascript
+```js
 var earthButtons = {
 	title: "Example buttons for Earth",
 	buttons: {
@@ -95,11 +96,11 @@ var earthButtons = {
 		'Focus on The Moon': () => {setFocus('Moon')},
 	},
 };
-:::
+```
 
 To get these buttons displayed on the page we first define a new array with all the names of each section, in this case we only have the earthButtons section. We will then define a function to map the JavaScript to HTML:
 
-:::{code-block} javascript
+```js
 var buttonGroups = [earthButtons];
 //helper function to map the buttons to html
 function mapButtons(openspace) {
@@ -120,13 +121,13 @@ function mapButtons(openspace) {
     document.getElementById('main').innerHTML += cardHTML;
   });
 }
-:::
+```
 
 In this code the `mapButtons` function generates an HTML card for each section provided in the `buttonGroups` array. Each card will contain a title (taken from the title property), buttons, and an optional description (not shown in this example). The function iterates over the key value pairs in each section and generates an HTML button for each one using the key as a label and calling the corresponding function on click. Each button will also be given a `data-id` equal to the button label which will be useful for styling individual buttons.
 
 Next, we will also need a function to connect to OpenSpace:
 
-:::{code-block} javascript
+```js
 //helper function to connect to openspace
 var connectToOpenSpace = () => {
   //setup the api params
@@ -158,11 +159,11 @@ var connectToOpenSpace = () => {
   //connect
   api.connect();
 };
-:::
+```
 
 We can then close out the document and define more elements to enter an IP address when disconnected.
 
-:::{code-block} html
+```html
 </script>
 </head>
 <body>
@@ -181,7 +182,7 @@ We can then close out the document and define more elements to enter an IP addre
     </div>
   <body>
 </html>
-:::
+```
 
 Here we are also creating an empty div with id=main in which the `mapButtons` function will populate the generated buttons. Once opened in a browser (and with OpenSpace running on the same machine) it should look something like this:
 
@@ -199,16 +200,16 @@ For example, to setup a scene showing the April 8th, 2024 eclipse in the OpenSpa
   - Speed up time to view the path of the eclipse
 
 The ScriptLog would then contain:
-:::{code-block} lua
+```lua
 return openspace.globebrowsing.goToGeo("Earth","33.1","-106.9","6000000")
 return openspace.time.setTime("2024-04-08T17:30:13.184")
 openspace.setPropertyValueSingle("Scene.Earth.Renderable.Layers.ColorLayers.ESRI_VIIRS_Combo.Enabled", false)
 openspace.setPropertyValueSingle("Scene.Earth.Renderable.Layers.ColorLayers.Blue_Marble.Enabled", true)
 return openspace.time.interpolateDeltaTime(60)
-:::
+```
 
 We then add these commands to a button to easily return to this scene. First, taking everything after "return" and replacing the double quotes with single quotes, then adding the commands to an arrow function:
-:::{code-block} javascript
+```js
 'Setup Eclipse Scene': () => {
 	openspace.globebrowsing.goToGeo('Earth','33.1','-106.9','6000000')
 	openspace.time.setTime('2024-04-08T17:30:13.184')
@@ -216,13 +217,13 @@ We then add these commands to a button to easily return to this scene. First, ta
 	openspace.setPropertyValueSingle('Scene.Earth.Renderable.Layers.ColorLayers.Blue_Marble.Enabled', true)
 	openspace.time.interpolateDeltaTime(60)
 },
-:::
+```
 
 ## Other buttons
 We also use various built in methods available in JavaScript to build buttons with slightly more complex functionality. These allow for adding toggles, delays, and logic to our control pages for easier and faster control of OpenSpace. Some examples of these are listed below. Note that the fading examples also make use of the `RenderEngine.BlackoutFactor` to fade the rendering to black before the transition occurs.
 
 ### Fade to a location on a globe
-:::{code-block} javascript
+```js
 'Jump to Globe': () => {
 	openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',0,2)
 	setTimeout(() => {
@@ -231,12 +232,12 @@ We also use various built in methods available in JavaScript to build buttons wi
 		openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',1,2)
 	}, 2001)
 },
-:::
+```
 
 ### Fade to a navigation state
 To get the nav state first run `openspace.navigation.saveNavState('C:/path/to/nav/state')` in the OpenSpace [console](/users/console/index). Then to add the output to JavaScript code replace all square brackets `[`, `]` with curly brackets `{`, `}` and all equal signs (`=`) with colons (`;`).
 
-:::{code-block} javascript
+```js
 'Jump To Nav State': () => {
 	openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',0,2)
 	setTimeout(() => {
@@ -245,10 +246,10 @@ To get the nav state first run `openspace.navigation.saveNavState('C:/path/to/na
 		openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',1,2)
 	}, 2001)
 },
-:::
+```
 
 ### Toggle button
-:::{code-block} javascript
+```js
 'Jupiter Trail Toggle': async () => {
 	var togglevar = await openspace.getPropertyValue('Scene.JupiterTrail.Renderable.Enabled');
 	if (togglevar[1] > 0.1) {
@@ -261,14 +262,14 @@ To get the nav state first run `openspace.navigation.saveNavState('C:/path/to/na
 		openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Enabled', true)
 	}
 },
-:::
+```
 
 ## Conditional formatting
 Since we have access to the OpenSpace API, we can subscribe to various properties and use their status to conditionally format different buttons. We find this most useful for toggles, and overall styling to reflect if the webpage is connected to OpenSpace.
 
 To achieve this we add a new block of JavaScript code toward the end of our document. In this script block we define several arrays and functions which will setup the subscription topics and update the button styling based on the returned value:
 
-:::{code-block} javascript
+```js
 var api = window.openspaceApi('localhost', 4682);
   let intervalIds = [];
   api.onConnect(function () {
@@ -335,7 +336,7 @@ var api = window.openspaceApi('localhost', 4682);
   });
 
   api.connect();
-:::
+```
 
 With all these additions the control page now looks like this:
 

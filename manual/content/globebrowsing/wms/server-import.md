@@ -66,24 +66,24 @@ Line 6: SkippedLevels can be used to serve the top level (lowest resolution) of 
 A single .wms file contains detailed information about the MRF data set. The following is the **MolaElevation.wms** file from the Mars data set:
 ```
 <GDAL_WMS>
-        <Service name="TMS">
-                <ServerUrl>http://openspace.sci.utah.edu/Mars/MolaElevation/tile/${z}/${y}/${x}</ServerUrl>
-        </Service>
-        <DataWindow>
-        <UpperLeftX>-180.0</UpperLeftX>
-                <UpperLeftY>90.0</UpperLeftY>
-                <LowerRightX>180.0</LowerRightX>
-                <LowerRightY>-90.0</LowerRightY>
-        <SizeX>46080</SizeX>
-        <SizeY>23040</SizeY>
-                <TileLevel>6</TileLevel>
-                <YOrigin>top</YOrigin>
-        </DataWindow>
-        <Projection>GEOGCS["GCS_Mars_2000_Sphere",DATUM["D_Mars_2000_Sphere",SPHEROID["Mars_2000_Sphere_IAU_IAG",3396190.0,0.0]],PRIMEM["Reference_Meridian",0.0],UNIT["Degree",0.0174532925199433]]</Projection>
-        <BlockSizeX>360</BlockSizeX>
-        <BlockSizeY>360</BlockSizeY>
-        <BandsCount>1</BandsCount>
-        <MaxConnections>10</MaxConnections>
+  <Service name="TMS">
+  <ServerUrl>http://openspace.sci.utah.edu/Mars/MolaElevation/tile/${z}/${y}/${x}</ServerUrl>
+  </Service>
+  <DataWindow>
+  <UpperLeftX>-180.0</UpperLeftX>
+  <UpperLeftY>90.0</UpperLeftY>
+  <LowerRightX>180.0</LowerRightX>
+  <LowerRightY>-90.0</LowerRightY>
+  <SizeX>46080</SizeX>
+  <SizeY>23040</SizeY>
+  <TileLevel>6</TileLevel>
+  <YOrigin>top</YOrigin>
+  </DataWindow>
+  <Projection>GEOGCS["GCS_Mars_2000_Sphere",DATUM["D_Mars_2000_Sphere",SPHEROID["Mars_2000_Sphere_IAU_IAG",3396190.0,0.0]],PRIMEM["Reference_Meridian",0.0],UNIT["Degree",0.0174532925199433]]</Projection>
+  <BlockSizeX>360</BlockSizeX>
+  <BlockSizeY>360</BlockSizeY>
+  <BandsCount>1</BandsCount>
+  <MaxConnections>10</MaxConnections>
 </GDAL_WMS>
 ```
 This wiki assumes that the data set to be imported has already been converted to MRF format. However, a `.wms` file for the set is not necessarily provided. The example above can be copy/pasted with the filename matching that of the 3 MRF files (except their extensions).
@@ -112,9 +112,9 @@ The **\<Projection\>** is a coordinate system projection used to geo-locate the 
 
 ## Add Set of MRF Data Files
 A single tiled WMS data set is provided in a set of 3 files, each with the same filename and the following file extensions:
-  - **.mrf** : containing the raster metadata
-  - **.idx** : containing the indeces for where tiles are located in the raster data
-  - **.p*g** : the raster data compressed in either JPEG (.pjg) or PNG (.ppg)
+  - `.mrf`: containing the raster metadata
+  - `.idx`: containing the indeces for where tiles are located in the raster data
+  - `.p*g`: the raster data compressed in either JPEG (.pjg) or PNG (.ppg)
 
 If a data location does not already exist on the server, create one here. This directory path should have a sub-directory tree that matches that of the Apache vhosts and webconf directory trees. Create a sub-directory for each data set (with the same name) in the data location, and place the 3 MRF files here.
 

@@ -1,6 +1,7 @@
 # New Horizons
 This profile shows the acquisition of NASA New Horizons' images of the Plutonian system in July 2015. The profile starts at around 10:00 GMT on July 14, about 10 minutes before a new image campaign starts. By selecting Pluto as the Focus and moving time faster, you can see the imprint of the instrument's field-of-view on the planetary surface and see the images being projected. A timer on the top left of the screen shows when the next image is being taken.
 
+
 ## Keyboard Shortcuts
   - {kbd}`A` Focus the camera on the New Horizons spacecraft
   - {kbd}`S` Focus the camera on Pluto

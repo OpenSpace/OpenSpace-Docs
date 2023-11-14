@@ -3,6 +3,7 @@ The guide provides all information to a new user of OpenSpace to install the sof
 
 The best-supported platform for running OpenSpace is a Windows 10 or Windows 11 machine with at least 8GB RAM and a discrete graphics card (NVidia cards work best, but AMD cards work with some issues). The [Hardware Requirements](/users/hardware-requirements) page contains minimum requirements for each profile.
 
+
 ## Installation
 To install OpenSpace, you download the `.zip` file from the OpenSpace [homepage](https://openspaceproject.com) and unzip the file.
 
@@ -87,6 +88,7 @@ If you try to launch OpenSpace and you get an error that the application is not 
 For users running on a Retina display, you may want to apply the "Open in Low Resolution Mode" setting on the OpenSpace.app to get better performance.
 :::
 ::::
+
 
 ## Interface
 When you first launch _OpenSpace_, you will be focused on Earth at the yesterdays date. In the top left corner of your window is your **Dashboard.**. By default, this displays:

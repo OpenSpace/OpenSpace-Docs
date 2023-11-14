@@ -42,8 +42,8 @@ Short description of the different available path types (as of version 0.18.0):
 | Path type      | Description |
 | ----------- | ----------- |
 | AvoidCollision (default) | Does some simple collision avoidance with close scene graph nodes, but otherwise goes reasonably straightly to the target. Linear interpolation (SLERP) of the rotation. That is, does not try to look at the targeted objects. Works well when flying between objects in the scene, as long as the objects are centered in view at the start and end. |
-| ZoomOutOverview   | First moves the camera out to a point where both targets are in view, before approaching the desired targets. Provides a better sense of how far away the objects are in relation to each other. Tries to look at either of the targets for as long as possible. However, no collision detection is done. |
-| Linear   | Just a linear path from the start to end point |
+| ZoomOutOverview | First moves the camera out to a point where both targets are in view, before approaching the desired targets. Provides a better sense of how far away the objects are in relation to each other. Tries to look at either of the targets for as long as possible. However, no collision detection is done. |
+| Linear | Just a linear path from the start to end point |
 | AvoidCollisionWithLookAt | *Temporary* type that is useful when moving to objects on the same surface, but sometimes leads to fast undesired rotations when traveling between objects. Avoids collision, and looks at the targets as much as possible. |
 
 For now, the desired path type must be chosen using the `PathNavigator.DefaultPathType` property. Down the line, the system should be able to determine what type to use based on the current situation. Please note that the path types will likely change in future releases of the software.

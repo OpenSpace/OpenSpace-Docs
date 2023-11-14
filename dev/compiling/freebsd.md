@@ -11,7 +11,7 @@ Install the following tools if they are not already available on your system:
 You can install gcc11 by executing: `sudo pkg install gcc11-devel`
 
 You will need to set environment variables as follows (for sh, bash, zsh):
-```
+```bash
 CC=gcc11; export CC
 CXX=g++11; export CXX
 CPP=c++11; export CPP

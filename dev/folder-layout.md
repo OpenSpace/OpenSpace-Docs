@@ -1,6 +1,7 @@
 # Folder Layout
 This page describes the layout of the source code inside the OpenSpace repository.
 
+
 ## Source Code
 The codebase is separated into source files (`*.cpp`), which are in located the `src` directory, and header files (`*.h`), which are located in the `include/openspace` directory. The internal directory structure of those two locations should always be the same. Potential inline header files (`*.inl`) should be stored in the same directory as the corresponding header file.
 

@@ -1,6 +1,5 @@
 # Horizons GUI
 Since version 0.18.0 of OpenSpace there is a new feature that allows our users to access Horizons data directly via OpenSpace, without needing to go to the [Horizons website](https://ssd.jpl.nasa.gov/horizons.cgi). This feature can be found in the OpenSpace launcher by pressing a series of buttons:
-
   1. Press the *Edit* button close to the profile selection
   1. Press the *Edit* button close to the asset selection
   1. In the top right corner of the new window press the *New Asset* button

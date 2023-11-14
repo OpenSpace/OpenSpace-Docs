@@ -14,12 +14,12 @@ Xcode includes git, but the Xcode IDE cannot deal with recursive submodules. Onc
 Homebrew is billed as "the missing package manager" for macOS. Homewbrew installs the stuff you need that Apple didn't. It's easy to install and uninstall packages with Homebrew. See [http://brew.sh](http://brew.sh) for instructions and to download and install Homebrew.
 
 Once you have installed homebrew you can use it to install other useful utilities and libraries. Specifically, to build OpenSpace you will need to do the following:
-```
+```bash
   brew install glew boost freeimage mpv vulkan-headers vulkan-loader brotli gdal
 ```
 
 Similarly if you are using MacPorts, the corresponding command is:
-```
+```bash
   port install glew boost freeimage mpv vulkan-headers vulkan-loader brotli gdal +curl
 ```
 

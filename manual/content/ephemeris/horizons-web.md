@@ -25,12 +25,10 @@ Click *edit* and pick the time range you want. Note that these depend on the tar
 Click *edit* on **Table Settings**.
 
 For the **Vector Table** format, the settings should be:
-
   - Select Output Quantities = 1. Position components {x, y, z} only
   - (None of the options for the __Statistical Uncertainties__ should be checked)
 
 For the optional settings at the bottom, use the following:
-
   - Reference frame = ICRF
   - Reference plane = ecliptic x-y plane derived from reference frame (standard obliquity, inertial)
   - Vector correction = geometric states
@@ -46,7 +44,6 @@ For the **Observer Table** format, only the following checkboxes should be selec
 33. Galactic longitude & latitude
 ```
 For the optional settings at the bottom, use the following:
-
   - date/time format = calendar date/time
   - time digits = HH:MM:SS
   - angle format = decimal degrees
@@ -144,5 +141,4 @@ In this example, the position and trail use the sun's barycenter (from `sunTrans
 ## Add the Asset to OpenSpace
 The final step is to simply add this asset to OpenSpace for rendering. This can be done by either:
   1. Including the asset in a `.profile` file before starting OpenSpace. The easiest way to do this is to use the profile editor in the launcher when starting OpenSpace.
-  1. Typing in the \` console while OpenSpace is running:
-`openspace.asset.add("scene/solarsystem/interstellar/oumuamua")`
+  1. Typing in the \` console while OpenSpace is running: `openspace.asset.add("scene/solarsystem/interstellar/oumuamua")`

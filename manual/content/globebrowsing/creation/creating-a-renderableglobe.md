@@ -54,9 +54,9 @@ Settings = {
 ```
   - **Fallback** (optional) -- A fallback layer which will be used in case the reading of the actual layer definition failed for some reason. In case OpenSpace was not compiled with GDAL for example, all georeferenced map types will fail to read, then a simple non georeferenced image can be used as fallback.
   - **Adjustment** (optional) -- A **Lua table** defining a layer adjustment.
-    * **Type** -- A **string** defining the type of the layer adjustment. Can be any of **None**, **ChromaKey**, and **TransferFunction (to be implemented)**. Defaults to **None**.
-    * **ChromaKeyColor** -- If the type is set to **ChromaKey**, this **Lua table** of three components defines the color of the chroma key.
-    * **ChromaKeyTolerance** -- If the type is set to **ChromaKey**, this **float** value determines the tolerance of the chroma keying.
+    - **Type** -- A **string** defining the type of the layer adjustment. Can be any of **None**, **ChromaKey**, and **TransferFunction (to be implemented)**. Defaults to **None**.
+    - **ChromaKeyColor** -- If the type is set to **ChromaKey**, this **Lua table** of three components defines the color of the chroma key.
+    - **ChromaKeyTolerance** -- If the type is set to **ChromaKey**, this **float** value determines the tolerance of the chroma keying.
   - **BlendMode** (optional) -- A **string** defining the blend mode of this layer. Can be any of **Normal**, **Multiply**, **Add**, **Subtract**, and **Color**. Defaults to **Normal**.
   - **PadTiles** (optional) -- A **boolean** value used to determine if tiles should be padded or not. If false, tile edges may be more visible but tiles will generally load faster. If padding is enabled, extra pixels will be read along the edges of each tile which might lead to cache misses and extra read requests. Should be set to false if high spatial accuracy is not required but temporal resolution is more desirable, for example for temporal datasets. Defaults to true.
 

@@ -6,7 +6,6 @@ As described in [Creating a Renderable Globe](creating-a-renderableglobe), a lay
 
 ## Web Map Services
 The main source of map datasets we can use within OpenSpace is provided through web map services which let the user download parts of the datasets from remote servers. There are different variations of web map services used by different providers. The main types are:
-
   - **WMS** -- Very general and lets the user download any part of a map, heavy for the server
   - **TMS** -- Tiled service, faster than WMS
   - **TiledWMS** -- Tiled service (different interface), faster than WMS

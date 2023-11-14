@@ -26,7 +26,7 @@ local Plane = {
     },
     Rotation = {
       Type = "StaticRotation",
-      Rotation = { 1.57, 0.0, 0.45}
+      Rotation = { 1.57, 0.0, 0.45 }
     },
     Scale = {
       Type = "StaticScale",
@@ -37,14 +37,14 @@ local Plane = {
     Type = "RenderableVideoPlane",
     MirrorBackside = true,
     Size = 3E7,
-    Video = asset.localResource("20170821_1024_0171.mp4"),
+    Video = asset.localResource("20170821_1024_0171.mp4")
   },
   GUI = {
     Name = "Sun Corona",
     Path = "/Solar System/Sun"
   },
   StartTime = "2017 AUG 21 00:00:00",
-  EndTime = "2017 AUG 21 23:59:59",
+  EndTime = "2017 AUG 21 23:59:59"
 }
 
 asset.onInitialize(function()

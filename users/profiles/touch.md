@@ -1,8 +1,10 @@
 # Touch
 This profile provides five demonstration experiences for a Windows touch table: Explore the galaxies, explore the solar system, explore Jupiter and its moons, explore weather events on Earth, and explore interesting sites on Mars. These experiences were created by students as examples. OpenSpace users can create their own experiences with the content they would like to show.
 
+
 ## Story Selection
 When the kiosk version of OpenSpace starts, the user is presented with a story selection menu interface. Select the left/right arrows to browse between the "Solar System", "Jupiter & its Moons", "Earth Weather & Events", "Mars Sights", and "Galaxy Exploration". Press "Tap Here to Explore" to select a story.
+
 
 ## Using the Menu Bar
 ### Menu Interface Elements Common to All Stories
@@ -40,6 +42,7 @@ This story has a "Select Sight" button that will pop up a list of interesting lo
 
 #### Galaxies
 There are a number of individual buttons available that will toggle the visibility of specific galaxy layers.
+
 
 ## Info Buttons
 In addition to the main Info button for the story in the menu bar at the bottom, labels with an (i)nfo icon sometimes appear. Pressing the (i) will toggle the visibility of an info description for the corresponding object.

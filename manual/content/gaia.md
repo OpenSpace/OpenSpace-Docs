@@ -64,7 +64,6 @@ This guide will go through the different steps needed for creating new subsets f
 A pre-processed version of the full DR2 has also been uploaded. From this dataset, endless new subsets can be created. Step 0 describes how to download that dataset.
 
 The basic steps in the OpenSpace pipeline are the following:
-
   1. (Possibly) Download datasets
   1. Get the data in a readable format
   1. Read the raw data and keep a number of interesting values per star
@@ -160,6 +159,7 @@ To read either a single-file or multiple-files dataset as a separate process sta
 
 The task is specified in `OpenSpace/data/tasks/gaia_read.task` as
 
+```lua
     local dataFolder = "E:/path/to/dataDir"
     return {
         {
@@ -170,9 +170,11 @@ The task is specified in `OpenSpace/data/tasks/gaia_read.task` as
             ThreadsToUse = 8,
         },
     }
+```
 
 for **FITS files** or
 
+```lua
     local dataFolder = "E:/path/to/dataDir"
     return {
         {
@@ -181,7 +183,7 @@ for **FITS files** or
             OutFilePath = dataFolder .. "/GaiaUMS.bin",
         },
     }
-
+```
 for reading **speck files**.
 
 The task will take a path to the file or folder which should be read. If `SingleFileProcess` is true then it must point to a file, if it is false then it must point to a folder.
@@ -198,6 +200,7 @@ To create the octree run a _TaskRunner.exe_ with "gaia_octree.task".
 
 The task is specified in data/tasks/gaia/gaia_octree.task as
 
+```lua
     local dataFolder = "E:/path/to/dataDir"
     return {
         {
@@ -234,6 +237,7 @@ The task is specified in data/tasks/gaia/gaia_octree.task as
             --FilterRvError = {0.0, 0.0},
         }
     }
+```
 
 This will create an octree from the dataset. If the example above would be used it would read the full DR2 dataset with 24 values per star, filter away all stars that does not have either G magnitude, Bp-Rp color, a parallax value over 0.01 or a parallax error value below 0.5. The resulting dataset is the 618 million dataset that is available for download (with "gaia_download.task").
 
@@ -249,11 +253,10 @@ A small _MaxDist_ is preferable as it means a smaller depth of the octree which 
 
 A smaller value for _MaxStarsPerNode_ is better for data uploads to the GPU while a bigger value means fewer files to write to disk and faster traversals. There is no general rule for how to decide what to use. A bit of trial and error is required for most datasets. For bigger datasets generated from DR2 a recommended starting span would be 50k-150k SPN, and for smaller datasets (20 million stars and less) 1k - 30k SPN should work fine!
 
-
 ### Run in OpenSpace
 To render Gaia stars in OpenSpace first make sure that you start the program using the gaia profile. By default, this profile also includes the full digital Universe catalog, as well as the Sun, Earth, Moon, a model of the Gaia spacecraft and its trail.
 
-Which stars to render can be changed in data/assets/scene/milkyway/gaia/gaiamission.asset. By default, the official radial velocity dataset will be downloaded and rendered. That dataset consists of the 7.2 million stars that were released with any radial velocity in DR2. Its size is 335 MB and it is stored in ~3k files.
+Which stars to render can be changed in `data/assets/scene/milkyway/gaia/gaiamission.asset`. By default, the official radial velocity dataset will be downloaded and rendered. That dataset consists of the 7.2 million stars that were released with any radial velocity in DR2. Its size is 335 MB and it is stored in ~3k files.
 
 If you instead want to render your own dataset or a newly created subset change the _localStars_ variable to point to the path to the data folder. It is preferably to store the stars on an SSD if possible. Then point the **File** variable (in **RenderableGaiaStars**) to either the single file or the folder with the dataset.
 
@@ -264,23 +267,8 @@ _BinaryOctree_ on the other hand reads the single file output from the _Construc
 Most of the other values are optional and can be switched from the default values during runtime. For full documentation please see documentation/Documentation.html#gaiamission_renderablegaiastars.
 
 However, other properties that might be of interest on startup (apart from **Type**, **File** and **FileReaderOption**) are:
-
-  - **PsfTexture**
-
-    Sets the point spread texture used when rendering billboards. Not optional.
-
-  - **ColorTexture**
-
-    Colormap used as lookup table for the color of the stars. Not optional.
-
-  - **AdditionalNodes**
-
-    Defines how many nodes around the camera that should be fetched when streaming from disk. The first value defines how many upper layers of parents that should be found around the camera and the second value defines how many layers of descendants that will be fetched from the found parents. Higher values will decrease performance. A recommended start would be "{3.0, 2.0}".
-
-  - **MaxCpuMemoryPercent**
-
-    Defines the max percentage of the existing RAM budget that will be used for storing star data. This _cannot_ be changed during runtime.
-
-  - **MaxGpuMemoryPercent**
-
-    Defines the max percentage of the dedicated GPU memory that will be used for streaming data. This _can_ be changed during runtime. If the screen goes black and the performance drops to below 5 fps then it could be that you are trying to reserve too much memory on the GPU, try to decrease this value! A resulting value of < 4 GB should work fine for most GPUs.
+  - **PsfTexture**: Sets the point spread texture used when rendering billboards. Not optional.
+  - **ColorTexture**: Colormap used as lookup table for the color of the stars. Not optional.
+  - **AdditionalNodes**: Defines how many nodes around the camera that should be fetched when streaming from disk. The first value defines how many upper layers of parents that should be found around the camera and the second value defines how many layers of descendants that will be fetched from the found parents. Higher values will decrease performance. A recommended start would be "{3.0, 2.0}".
+  - **MaxCpuMemoryPercent**: Defines the max percentage of the existing RAM budget that will be used for storing star data. This _cannot_ be changed during runtime.
+  - **MaxGpuMemoryPercent**: Defines the max percentage of the dedicated GPU memory that will be used for streaming data. This _can_ be changed during runtime. If the screen goes black and the performance drops to below 5 fps then it could be that you are trying to reserve too much memory on the GPU, try to decrease this value! A resulting value of < 4 GB should work fine for most GPUs.

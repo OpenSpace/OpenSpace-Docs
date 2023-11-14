@@ -66,7 +66,6 @@ Now it is specified as:
 
 ## Models
 As you may have noticed there is no need to specify the ColorTexture as before. Instead, this information will be read from the model itself, which may mean that your old models need to be updated or exchanged. This depends very much on what kind of model you are using but in general, there are two different ways to update the old model:
-
   - Embed the material or texture in the model.
   - Define a material file (.mtl) and link it to your model.
 
@@ -74,7 +73,6 @@ Both of these could be done with any modeling software (such as Blender, Maya or
 
 ### Create your own material file for your model
 It is possible to create your own material file and connect your model to the correct textures by editing the files in a text editor. Depending on how complex and large your model is this could take some time and effort.
-
   1. Start by creating a new text file and rename its extension to .mtl instead of .txt (you might have to turn on visible file extensions in Windows for this).
   1. Open your model file and material file in a text editor (such as Notepad, Notepad++, or Visual Studio Code).
   1. In the model file, at the top you need to link the material file you just created with `mtllib filename.mtl` replacing the filename with the name of the material file you created in step 1.

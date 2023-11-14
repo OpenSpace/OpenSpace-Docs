@@ -4,6 +4,7 @@ The exoplanets module includes the possibility of adding visualizations of confi
 
 The visualizations are based on a thesis project done by Karin Reidarman in 2018.
 
+
 ## Adding exoplanet systems to OpenSpace
 Exoplanet systems of interest must be added to OpenSpace individually. The reason for this is that it is impractical from a visualization standpoint to load all the systems in the database into OpenSpace on start-up, due to the large number of confirmed exoplanets.
 
@@ -16,6 +17,7 @@ Exoplanet systems can be added and removed during runtime through the Exoplanets
 Added exoplanet systems, including scene graph nodes for individual planets, can be found in the Scene GUI under {menuselection}`Milky Way --> Exoplanets --> Exoplanet Systems`.
 
 It is also possible to add exoplanet systems using the `openspace.exoplanets.addExoplanetSystem(name)` function in the OpenSpace scripting API, where the name of the system is the name of the host star. For example, `openspace.exoplanets.addExoplanetSystem("Kepler-11")` adds the Kepler-11 system, a system discovered in 2010 with a total of 6 confirmed orbiting the host star Kepler-11. Multiple systems can be added at once by specifying a list of host names as input, for example like `{"Kepler-11", "GJ 1061"}`. This function can be used to add exoplanets to OpenSpace before start-up.
+
 
 ## About the visualizations
 The focus of the visualization lies on the composition of the exoplanet systems and the orbital properties of the planets, such as their eccentricity, semi-major axis and orbital period. The upper and lower uncertainty of the semi-major axis are also visualized by a band around the planet's orbit. The wider the band is, the more uncertain is the data on the semi-major axis of the orbit.

@@ -1,6 +1,7 @@
 # OSIRIS-REx
 This profile demonstrates the entire lifetime of the NASA OSIRIS-REx (Origins, Spectral Interpretation, Resource Identification, Security, Regolith Explorer) spacecraft on its way to the 101955 Bennu asteroid and its subsequent journey back to Earth. The profile starts at Earth before the spacecraft's launch and has information throughout the entire mission until the sample's 2023 landing back in Utah. Models of OSIRIS-REx and Bennu are available, as well as a preliminary instrument timing and some of the imaging campaign, which uses the same projection technique as employed in the New Horizons and Rosetta profiles.
 
+
 ## Keyboard Shortcuts
   - {kbd}`A` Focus the camera on OSIRIS-REx
   - {kbd}`S` Focus the camera on Bennu
