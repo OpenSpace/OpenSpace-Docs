@@ -96,10 +96,14 @@ html_js_files = [
 html_css_files = [
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
-  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
+
+  "required-reading.css"
 ]
 
 # These folders are copied to the documentation's HTML output
-html_static_path = ["_static"]
+html_static_path = [ "_static" ]
+
+templates_path = [ "_templates" ]
 
 # html_extra_path = ["robots.txt"]
