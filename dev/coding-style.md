@@ -233,6 +233,115 @@ This rule also enforces the "code as documentation" guide as it avoids magic con
 `NULL` is part of the standard C library, but is made obsolete in C++ and `0` has a double meaning as an integer and the null pointer. Use the C++ `nullptr` instead.
 
 
+## Doxygen Comments
+We use Doxygen to document classes, enums, functions, etc. in the source code. A list of available commands for Doxygen can be found [here](https://www.doxygen.nl/manual/commands.html). Like the coding style, a common documentation structuring helps to read the documentation at a quick glance. Particularly useful are the [`\p`](https://www.doxygen.nl/manual/commands.html#cmdp), [`\param`](https://www.doxygen.nl/manual/commands.html#cmdparam), [`\throw`](https://www.doxygen.nl/manual/commands.html#cmdthrow), [`\return`](https://www.doxygen.nl/manual/commands.html#cmdreturn), [`\pre`](https://www.doxygen.nl/manual/commands.html#cmdpre), [`\post`](https://www.doxygen.nl/manual/commands.html#cmdpost), and [`\see`](https://www.doxygen.nl/manual/commands.html#cmdsee) commands.
+
+Syntax highlighting in Doxygen can be done using Markdown-style annotations.
+
+### 1. Overall structure for Doxygen comments:
+Nonapplicable things of course can be left out, and if that happens, we leave out the empty line at the end.
+
+  1. Description text
+  1. Empty line
+  1. Template parameter, parameter, and return value description. If a description has multiple lines, the next line is aligned with the *parameter name* (for parameters) or the first word (for return values)
+  1. Empty line
+  1. Exception, precondition, and postcondition statements. If an explanation has multiple lines, the next line is aligned with the *exception type* (for exceptions) or the first word (for pre- and postconditions)
+  1. Empty line
+  1. Additional reading in the form for `\see` statements
+
+
+### 2. Use `\` for commands instead of `@`
+For Doxygen, both `\param` as well as `@param` are allowed (the same for all other commands), but we use the version of commands that start with `\`
+
+### 3. Use singular version of commands
+Use `\return` instead of `\returns`, `\throw` instead of `\throws`, etc.
+
+### 4. Member variables and enum members are documented with `///`, everything else with `/**  */`
+This makes it very easy to quickly identify where the break between functions and members is in a header file. The only exception is for functions that do a simple overload declaration to save on space:
+```cpp
+/**
+ * Converts the \p timeString representing a date to a double precision
+ * value representing the ephemeris time; that is the number of TDB
+ * seconds past the J2000 epoch.
+ *
+ * \param time A string representing the time to be converted
+ * \return The converted time; the number of TDB seconds past the J2000 epoch,
+ * representing the passed \p timeString
+ *
+ * \pre \p timeString must not be empty
+ */
+static double convertTime(const std::string& time);
+
+/// \overload static double convertTime(const std::string& time)
+static double convertTime(const char* time);
+```
+
+Member variables should also be documented on the previous line, not the same one. So prefer:
+```cpp
+/// This is a member variable
+int memberVariable = 0;
+```
+over
+```cpp
+int memberVariable = 0; ///< This is a member variable
+```
+
+### 5. The description text ends with a `.`, everything else does not have a period at end
+Parameter and return value descriptions inparticular are shown more *list-like* and thus don't need a `.` at the end
+
+### 6. No separate `\brief` section
+The first sentence of the description is automatically turned into a brief description. This means that the first sentence should be a good short explanation of the documented entity, but also it means that it doesn't have to be specified in a special way, meaning it can be a flowing text
+
+### 7. Capitalization
+The first word of a parameter, return value, exception, precondition, or postcondition description should either start with a capital letter or with a parameter name or a code literal.
+
+Example:
+```cpp
+/**
+ * \param action The action which is checked for each button
+ * \return `true` if there is at least one joystick whose \p button is in the
+ *         \p action state
+ *
+ * \pre \p button must be 0 or positive
+ */
+```
+
+### 8. No documentation for namespaces
+`namespace`s don't need to be documented in the code
+
+### Example
+```cpp
+/**
+ * Returns the \p position of a \p target body relative to an \p observer in a
+ * specific \p referenceFrame, optionally corrected for \p lightTime (planetary
+ * aberration) and stellar aberration (\p aberrationCorrection).
+ *
+ * \param target The target body name or the target body's NAIF ID
+ * \param observer The observing body name or the observing body's NAIF ID
+ * \param referenceFrame The reference frame of the output position vector
+ * \param aberrationCorrection The aberration correction used for the position
+ *        calculation
+ * \param ephemerisTime The time at which the position is to be queried
+ * \param lightTime If the \p aberrationCorrection is different from
+ *        AbberationCorrection::Type::None, this variable will contain the light time
+ *        between the observer and the target.
+ * \return The position of the \p target relative to the \p observer in the specified
+ *         \p referenceFrame
+ *
+ * \throw SpiceException If the \p target or \p observer do not name a valid
+ *        NAIF object, \p referenceFrame does not name a valid reference frame or if
+ *        there is not sufficient data available to compute the position or neither
+ *        the target nor the observer have coverage.
+ * \pre \p target must not be empty.
+ * \pre \p observer must not be empty.
+ * \pre \p referenceFrame must not be empty.
+ * \post If an exception is thrown, \p lightTime will not be modified.
+ *
+ * \sa http://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/cspice/spkpos_c.html
+ * \sa http://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/naif_ids.html
+ */
+```
+
 
 ## Best Practices
 ### Standard library is your friend
