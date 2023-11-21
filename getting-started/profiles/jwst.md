@@ -1,1 +1,0 @@
-# James Webb Space Telescope

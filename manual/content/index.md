@@ -2,13 +2,12 @@
 
 :::{toctree}
 :maxdepth: 1
-:name: toc-users-content
 :caption: Content
 
 profiles
 asteroids
-exoplanets
-skybrowser
+exoplanets/index
+skybrowser/index
 gaia
 globebrowsing/index
 models/index

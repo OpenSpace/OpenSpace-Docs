@@ -43,7 +43,6 @@ OpenSpace versions are labeled by a version number of the form `MM.mm.rr`,  wher
 
 :::{toctree}
 :maxdepth: 1
-:name: toc-changelogs
 :hidden:
 
 changelogs/0.19.2

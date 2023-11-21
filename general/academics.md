@@ -1,5 +1,4 @@
 # Academics
-
 ## Papers
   - ExoplanetExplorer: Contextual Visualization of Exoplanet Systems. _E. Broman, J. Faherty, L. Kreidberg, S. Zieba, C. Hansen, A. Ynnerman, and A. Bock_, IEEE Visualization, **2023**
   - Moliverse: Contextually Embedding the Microcosm into the Universe. _M. Brossier, R. Skånberg, L. Besançon, M. Linares, T. Isenberg, A. Ynnerman, and A. Bock_, Computers & Graphics, **2022**, [doi](http://doi.org/10.1016/j.cag.2023.02.006)
@@ -13,7 +12,7 @@
   - Dynamic Scene Graph: Enabling Scaling, Positioning, and Navigation in the Universe, _E. Axelsson, J. Costa, C. Silva, C. Emmart, A. Bock, and A. Ynnerman_, Computer Graphics Forum, **2017**, [doi](http://dx.doi.org/10.1111/cgf.13202)
   - OpenSpace: An Open-Source Framework for Data Visualization and Contextualization, _A. Bock, A. Pembroke, M.L. Mays, C. Emmart, and A. Ynnerman_, AGU Fall Meeting Abstracts, **2015**
   - OpenSpace: Public dissemination of space mission profiles, _A. Bock, M. Marcinkowski, J. Kilby, C. Emmart, and A. Ynnerman_, IEEE Scientific Visualization Conference (SciVis) Poster Session, **2015**, [doi](https://doi.org/10.1109/SciVis.2015.7429503)
-  - Visual verification of space weather ensemble simulations, _A. Bock,  A. Pembroke, M.L. Mays, L. Rastaetter, A. Ynnerman, and T. Ropinski_, Scientific Visualization Conference (SciVis), **2015**, [doi](https://doi.org/10.1109/SciVis.2015.7429487)
+  - Visual verification of space weather ensemble simulations, _A. Bock, A. Pembroke, M.L. Mays, L. Rastaetter, A. Ynnerman, and T. Ropinski_, Scientific Visualization Conference (SciVis), **2015**, [doi](https://doi.org/10.1109/SciVis.2015.7429487)
 
 ## Theses
 | _Year_ | _Person(s)_ | _Location_ | _Title_ | _Thesis_ |
@@ -25,7 +24,7 @@
 | 2022 | Anne Olthoff & Catja Johansson Nordqvist | NYU | Interactive visualization of climate change on Earth in the OpenSpace project |
 | 2022 | Måns Aronsson & Simon Karlsson Brefält | CCMC | Advanced Fieldline Rendering for Space Weather Visualization | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-189157) |
 | 2022 | Emma Segolsson & Linn Storesund | AMNH | A Cosmic View of Life on Earth: Visualizing the relationship between species DNA in a threedimensional space | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-190669) |
-| 2022 | Philip Ngo | CCMC | | |
+| 2022 | Philip Ngo | CCMC | Topological Analysis Tool for Earth's Magnetosphere | |
 | 2022 | Christoffer Paulusson | CCMC | Real-time Field Line Rendering for Temporal and Heliophysical Datasets | [link](http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-184908) |
 | 2022 | Nisse Bergman & Hanna Timander Björknert | LiU | Designing a Streaming Pipeline for the Public Dissemination of Astronomy Data | [link](http://liu.diva-portal.org/smash/record.jsf?pid=diva2:1686604) |
 | 2021 | Adrian Andersson & Joel Paulsson | LiU | Interactive Visualization of Air Traffic in OpenSpace | [link](http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-178124) |
@@ -56,6 +55,7 @@
 | 2014 | Hans-Christian Helltegen | CCMC | Visualizing Space Weather: Acquiring and Rendering Data of Earth's Magnetosphere | [link](http://liu.diva-portal.org/smash/get/diva2:1375792/FULLTEXT01.pdf) |
 | 2014 | Victor Sand | CCMC | Dynamic Visualization of Space Weather Data | [link](http://liu.diva-portal.org/smash/get/diva2:763094/FULLTEXT01.pdf) |
 | 2013 | Martin Törnros | CCMC | Interactive Visualization of Space Weather Data | [link](http://liu.diva-portal.org/smash/get/diva2:667227/FULLTEXT01.pdf) |
+
 
 ## Contact
 For questions or inquiries about thesis works please reach out over e-mail to [exjobb@openspaceproject.com](mailto:exjobb@openspaceproject.com).
