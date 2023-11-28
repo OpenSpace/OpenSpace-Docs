@@ -25,7 +25,7 @@ The overall structure of the documentation is as follows:
 
   - How-To
 
-    Practical hands-on guides that show a variety of things that can be achieved with OpenSpace. These are meant to give you the tools to create your own content and also get inspiration about what is possilbe with the software through examples.
+    Practical hands-on guides that show a variety of things that can be achieved with OpenSpace. These are meant to give you the tools to create your own content and also get inspiration about what is possible with the software through examples.
 
   - Development
 
