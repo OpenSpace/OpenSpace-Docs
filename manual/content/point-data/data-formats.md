@@ -1,4 +1,4 @@
-# Data Formats
+# File Formats
 
 Below are descriptions of some data formats that are relevant to point clouds and point datasets.
 
@@ -38,7 +38,7 @@ where the lines starting with `datavar` specify data parameters in the file and 
 - Finally, at the end is an optional comment that may be used to provide more information about the object. Everything after the `#` is parsed into this comment.
 
 ## Labels (.label)
-Label files are similar to SPECK files, but used specifically to provide positions and text for labels that can be placed in 3D space, using for example a `RenderablePointCloud`. See more details on how to add labels for a point cloud on the [point cloud page](./point-data.md#labels).
+Label files are similar to SPECK files, but used specifically to provide positions and text for labels that can be placed in 3D space, using for example a `RenderablePointCloud`. See more details on how to add labels for a point cloud on the [Labels page](./labels.md).
 
 The number of labels and their positions may match the points in the dataset, but they also may not. The number of labels can be more or fewer than the number of points, and the position can be different compared to that of the points if desired. It is also possible to not have any point at all, just labels.
 

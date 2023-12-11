@@ -3,6 +3,8 @@ A commonly used type of dataset is those containing a set of 3D positions. These
 
 In OpenSpace, such datasets are referred to as *point clouds* and include a set of features like: coloring, adjusting the point size, fading in and out based on the camera distance, and attaching text labels to the positions. Coloring includes color mapping based on data columns, and there is also support for handling missing values.
 
+This page describes how to load a point dataset and the options for controlling the visual of the points. It is also possible to add text labels to the points. See the separate [Labels page](./labels.md) for more details on labels.
+
 :::{figure} sdss.png
 :align: center
 *One example of a point cloud dataset is the Sloan Digital Sky Survey in the Default profile.*
@@ -121,12 +123,14 @@ By default, all the variables in the dataset are loaded as possible options for 
         -- if the parameter option is changed
         ValueRange = { 5.0, 10.0 }
     }
-    }
   },
   ...
 ```
 
-@TODO: add image from UI
+:::{figure} colormap_ui_annotated.png
+:align: center
+*The chosen set of parameters will be available in the user interface. Here we see the chosen parameter (A), which can be changed through a drop-down menu, and the currently selected value range (B). The value range (B) will automatically update when a parameter (A) is chosen, but it is also possible to set it explicitly. There is also a button for setting the range to the min and max value in the dataset (C).*
+:::
 
 #### Missing values (NaN) and Values outside the range
 
@@ -145,45 +149,51 @@ We refer to our example assets for more details on how to customize these color 
 
 ## Adding a Texture
 
-
-
-@TODO Add example image with texture, with and without color mapping
-
-## Controlling the Point Size
-
-## Fading
-
-## Labels
-
-To help identify what entity a point represents, labels can be added to the points. For now, this is done using a separate [label file format](./data-formats.md#labels-label), but in the future it will be possible to generate these directly from a CSV file that is used to create a point dataset.
-
-To add labels to your point cloud, add a `LabelsComponent` to the table in the asset:
+A sprite texture (i.e. an image) can be used to decide the shape of the points. To add a texture, simply provide a path to the image you want to use in the asset file:
 
 ```lua
   ...
   Renderable = {
     Type = "RenderablePointCloud",
     File = asset.resource("path/to/dataset.csv"),
-    -- Add a component for drawing labels
-    Labels = {
-      -- Load the file with the label texts and positions
-      File = asset.resource("path/to/labelsfile.label"),
-      -- Labels are disabled per default
-      Enabled = true,
-      -- This parameter can be used to control the size of the labels
-      Size = 7.5,
-      -- The labels can also be given a speicific color
-      Color = { 0.0, 1.0, 0.0 },
-      -- Note that the unit has to specified for the labels as well as
-      -- for the data file
-      Unit = "pc"
-    },
-    -- Here we use the same unit for the points in the .csv files as for
-    -- the ones in the .label file
-    Unit = "pc"
+    -- Add a texture to the points (a variety of image formats are supported, not only .png)
+    Texture = asset.resource("path/to/texture.png")
   },
   ...
 ```
+
+The points will look the best with textures that have a transparent background. Below is an example of a point cloud with a star shape. Also, if you want to apply a color to your point using a color map or fixed color, we recommend using texture in white or bright grayscale.
+
+:::{figure} texture_star.png
+:align: center
+:width: 90%
+:::
+
+### Textures and Colors
+Textures also work with color maps. In that case, the color of the texture is multiplied by that of the color. The same goes if a fixed color is applied to the points. See example below. Note that here we have also disabled the additive blending by setting the `UseAdditiveBlending` property to `false`, so that the color of overlapping points is not added and blended (which is the default behavior).
+
+:::{figure} textures.png
+:align: center
+:::
+
+:::{admonition} A note about filepaths
+:class: note
+`asset.resource` can be used to specify a relative or full path to a datafile. However, it is also possible to use the `openspace.absPath` script to use some of the path tokens that are provided with OpenSpace. For example, the cat texture above is a test image that exists in the "OpenSpace/data" folder. To use this in your asset and avoid having to specify a path that is based on your file location, you can use the provided file token to the data folder to get the absolute path to the location of the file: `openspace.absPath("${DATA}/test3.jpg")`.
+
+The list of available path tokens and their corresponding locations are found in the openspace.cfg file.
+:::
+
+## Controlling the Point Size
+
+@TODO
+
+## Fading
+
+A point cloud can also be set up so that it fades in and out based on the distance to the camera. The distance is computed based on the origin of the dataset.
+
+To configure the fading for the point cloud, specify the distance over which the fading should occur in the asset file:
+
+@TODO
 
 ## Specializations of RenderablePointCloud
 

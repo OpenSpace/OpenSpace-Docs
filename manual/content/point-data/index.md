@@ -5,5 +5,6 @@
 :caption: Point Data
 
 point-data
+labels
 data-formats
 :::
