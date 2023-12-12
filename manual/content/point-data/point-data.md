@@ -76,7 +76,7 @@ The points can be colored either using a fixed color or by a color map ([see sep
   ...
 ```
 
-If a color map is added, it will be enabled by default. But it can also be disabled either in the asset or during runtime.
+If a color map is added, it will be enabled by default. But it can also be disabled either in the asset or during runtime. If both a `FixedColor` and `ColorMapping` is specified, the color mapping will be used (as long as it is enabled).
 
 ### Color Mapping
 Alternatively, each point can be colored using a selected data variable and a color map. This is done by adding a `ColorMapping` table in the asset, as shown above. With that setup, the point cloud dataset can be interactively colored by any data value in the dataset, which is useful when exploring or creating a new visualization. However, it is also possible to prepare a set of parameters and data ranges to choose from (see below).
@@ -183,11 +183,11 @@ The list of available path tokens and their corresponding locations are found in
 
 ## Controlling the Point Size
 
-At the core, the size of the points is computed based on one parameter: a logarithmic exponent that decides the absolute size of the point. The exponential component exists to allow creating point clouds over very different scales and distances and should be set to match the scale of the dataset. It is used to compute the actual world scale size of the points, at their position in the 3D scene. For example, an exponent of 3 will lead to points with a size in the order of 1000 meters, while an exponent of 10 will lead to points with a size of about 10^10 = 100'000'000 meters.
+At the core, the size of the points is computed based on one parameter: a logarithmic exponent that decides the absolute size of the point. The exponential component exists to allow creating point clouds over very different scales and distances and should be set to match the scale of the dataset. It is used to compute the actual world scale size of the points, at their position in the 3D scene. For example, an exponent of 3 will lead to points with a size in the order of 1000 meters, while an exponent of 10 will lead to points with a size of about 10^10 = 100'000'000 meters. **@TODO: Fix!! This is actually e^exponent**
 
 If not included in the asset, a default exponent is computed based on the positional information in the dataset. However, this should be seen as a starting point and you will likely want to modify it so that the scale of the points looks good based on the density, number of points and the spread of your particular dataset, as well as the use case for which it is to be shown.
 
-Secondly, a multiplicative factor that can be used to increase or decrease the *visual* size of the points also exists. This factor can be seen as a tool to quickly increase or decrease the appeared size of all points equally. This factor is applied at the last step of the rendering and is applied independently from any other scaling, for example those methods explained below.
+Secondly, a multiplicative factor that can be used to increase or decrease the *visual* size of the points also exists. This factor can be seen as a tool to quickly increase or decrease the appeared size of all points equally. This factor is applied at the last step, after the exponential scaling and any pixel size effects.
 
 To update the scaling in the points, add a `SizeSettings` table to your asset specification. See example:
 
@@ -207,7 +207,7 @@ To update the scaling in the points, add a `SizeSettings` table to your asset sp
 ```
 
 :::{note}
-Since the exponent affects the physical, world-scale, size of the points, this means that points that are closer to the camera will appear larger than those that are further away, and increasing the exponent also enhances this effect. In contrast, increasing the multiplicative factor will increase the visual size of the points equally for all points. This is because it is applied in the last step of the rendering.
+Since the exponent affects the physical, world-scale, size of the points, this means that points that are closer to the camera will appear larger than those that are further away, and increasing the exponent also enhances this effect. In contrast, increasing the multiplicative factor will increase the visual size of the points equally for all points. This is because it is applied in the very last step, after the exponential scaling and any pixel size effects.
 :::
 
 ### Limit by Size in Pixels
@@ -223,7 +223,7 @@ In addition to the world-size scale, it is also possible to limit the screen-spa
 *Example of the point size scaling in action. The green points (left) use regular, world scale, sizing and the blue points (right) have a limited size in pixels. Note how the green points (left) appear larger up close and smaller at a large distance, while the blue points (right) are scaled to have the same size in pixels at both distances.*
 :::
 
-To limit the pixel size, add the `EnablePixelSizeControl` and `BillboardMaxPixelSize` settings in the `SizeSettings` table:
+To limit the pixel size, add the `EnablePixelSizeControl` and `MaxPixelSize` settings in the `SizeSettings` table:
 
 ```lua
   ...
@@ -232,14 +232,14 @@ To limit the pixel size, add the `EnablePixelSizeControl` and `BillboardMaxPixel
     File = asset.resource("path/to/dataset.csv"),
     SizeSettings = {
       -- Limit the size of the points to a max size, in pixels
-      BillboardMaxPixelSize = 4.7,
+      MaxPixelSize = 4.7,
       EnablePixelSizeControl = true
     }
   },
   ...
 ```
 
-At the core, the size of the points is still determined by the exponential scaling. That is, as long as the camera is far enough away so that the points do not exceed the specified pixel size, the size will still be determined by the provided scale exponent. Also, the multiplicative `ScaleFactor` is applied after the pixel size scaling. That is, if you specify a `BillboardMaxPixelSize` of 5 and a `ScaleFactor` of 2, the max size of the points will be 2 * 5 = 10 pixels.
+At the core, the size of the points is still determined by the exponential scaling. That is, as long as the camera is far enough away so that the points do not exceed the specified pixel size, the size will still be determined by the provided scale exponent. Also, the multiplicative `ScaleFactor` is applied after the pixel size scaling. That is, if you specify a `MaxPixelSize` of 5 and a `ScaleFactor` of 2, the max size of the points will be 2 * 5 = 10 pixels.
 
 :::{note}
 Note that the pixel-based scaling currently only works for planar display systems. In other setups, it might lead to discontinuities between views and incorrect scaling at the edges.
@@ -247,7 +247,9 @@ Note that the pixel-based scaling currently only works for planar display system
 
 ### Scale Based on Data
 
-@TODO
+It is also possible to do some simple scaling based on data parameters. The size of the points is then scaled based on the value in the data column
+
+@TODO: Choice
 
 ### Summary of Size Multiplication
 
