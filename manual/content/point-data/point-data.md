@@ -11,7 +11,7 @@ This page describes how to load a point dataset and the options for controlling 
 :::
 
 ## Loading Point Datasets
-In the simplest case, a point cloud is created by just loading a [CSV](./data-formats.md#csv) or [SPECK](./data-formats.md#speck-speck) file using a renderable of the type `RenderablePointCloud`. The example below shows a minimal asset to load a point cloud from a CSV file.
+In the simplest case, a point cloud is created by just loading a [CSV](./data-formats.md#csv) or [SPECK](./data-formats.md#speck-speck) file using a renderable of the type `RenderablePointCloud`. The example below shows a minimal scene graph node specification for an asset to load a point cloud from a CSV file, with default values for all the visual properties.
 
 ```lua
 local Node = {
@@ -27,9 +27,7 @@ local Node = {
   }
 }
 
--- Additional functions required for the asset, such as onInitialize and onDeinitialize
--- are excluded here, to focus on the aspects specific to the point clouds. See Asset wiki
--- page for general information about the structure on an asset
+-- asset.onInitialize and asset.onDeinitialize... See page about Assets for details
 ...
 ```
 
@@ -185,7 +183,59 @@ The list of available path tokens and their corresponding locations are found in
 
 ## Controlling the Point Size
 
+At the core, the size of the points is computed based on one parameter: a logarithmic exponent that decides the absolute size of the point. The exponential component exists to allow creating point clouds over very different scales and distances and should be set to match the scale of the dataset. It is used to compute the actual world scale size of the points, at their position in the 3D scene. For example, an exponent of 3 will lead to points with a size in the order of 1000 meters, while an exponent of 10 will lead to points with a size of about 10^10 = 100'000'000 meters.
+
+If not included in the asset, a default exponent is computed based on the positional information in the dataset. However, this should be seen as a starting point and you will likely want to modify it so that the scale of the points looks good based on the density, number of points and the spread of your particular dataset, as well as the use case for which it is to be shown.
+
+Secondly, a multiplicative factor that can be used to increase or decrease the *visual* size of the points also exists. This factor can be seen as a tool to quickly increase or decrease the appeared size of all points equally. This factor is applied at the last step of the rendering and is applied independently from any other scaling, for example those methods explained below.
+
+To update the scaling in the points, add a `SizeSettings` table to your asset specification. See example:
+
+```lua
+  ...
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("path/to/dataset.csv"),
+    SizeSettings = {
+      -- Control the world-scale size of the points, here in the order of 10^15
+      ScaleExponent = 15.0,
+      -- Visually make all the points twice as large
+      ScaleFactor = 2.0
+    }
+  },
+  ...
+```
+
+:::{note}
+Since the exponent affects the physical, world-scale, size of the points, this means that points that are closer to the camera will appear larger than those that are further away, and increasing the exponent also enhances this effect. In contrast, increasing the multiplicative factor will increase the visual size of the points equally for all points. This is because it is applied in the last step of the rendering.
+:::
+
+
+### Limit by Size in Pixels
 @TODO
+
+An example is shown in the images below.
+
+:::{figure} pointsize_close.png
+:align: center
+:::
+:::{figure} pointsize_far.png
+:align: center
+*Example of the point size scaling in action. The green points (left) use regular, world scale, sizing and the blue points (right) have a limited size in pixels. Note how the green points (left) appear larger up close and smaller at a large distance, while the blue points (right) are scaled to have the same size in pixels at both distances.*
+:::
+
+:::{note}
+Note that the pixel-based scaling currently only works for planar display systems. In other setups, it might lead to discontinuities between views and incorrect scaling at the edges.
+:::
+
+### Scale Based on Data
+
+@TODO
+
+### Summary of Size Multiplication
+
+@TODO
+
 
 ## Fading
 
