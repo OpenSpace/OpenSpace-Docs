@@ -210,19 +210,36 @@ To update the scaling in the points, add a `SizeSettings` table to your asset sp
 Since the exponent affects the physical, world-scale, size of the points, this means that points that are closer to the camera will appear larger than those that are further away, and increasing the exponent also enhances this effect. In contrast, increasing the multiplicative factor will increase the visual size of the points equally for all points. This is because it is applied in the last step of the rendering.
 :::
 
-
 ### Limit by Size in Pixels
-@TODO
-
-An example is shown in the images below.
+In addition to the world-size scale, it is also possible to limit the screen-space size of the points to a maximum size in pixels. This prevents the points from growing larger than the specified pixel size when the camera is approaching the dataset. An example is shown in the images below.
 
 :::{figure} pointsize_close.png
 :align: center
+:width: 90%
 :::
 :::{figure} pointsize_far.png
 :align: center
+:width: 90%
 *Example of the point size scaling in action. The green points (left) use regular, world scale, sizing and the blue points (right) have a limited size in pixels. Note how the green points (left) appear larger up close and smaller at a large distance, while the blue points (right) are scaled to have the same size in pixels at both distances.*
 :::
+
+To limit the pixel size, add the `EnablePixelSizeControl` and `BillboardMaxPixelSize` settings in the `SizeSettings` table:
+
+```lua
+  ...
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("path/to/dataset.csv"),
+    SizeSettings = {
+      -- Limit the size of the points to a max size, in pixels
+      BillboardMaxPixelSize = 4.7,
+      EnablePixelSizeControl = true
+    }
+  },
+  ...
+```
+
+At the core, the size of the points is still determined by the exponential scaling. That is, as long as the camera is far enough away so that the points do not exceed the specified pixel size, the size will still be determined by the provided scale exponent. Also, the multiplicative `ScaleFactor` is applied after the pixel size scaling. That is, if you specify a `BillboardMaxPixelSize` of 5 and a `ScaleFactor` of 2, the max size of the points will be 2 * 5 = 10 pixels.
 
 :::{note}
 Note that the pixel-based scaling currently only works for planar display systems. In other setups, it might lead to discontinuities between views and incorrect scaling at the edges.
