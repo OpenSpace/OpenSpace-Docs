@@ -33,6 +33,12 @@ local Node = {
 
 However, you will most likely want to update the size and coloring of the points, for example using a color map or by adding a sprite texture to use for rendering the points. See upcoming sections for details on how to configure the rendering and visuals of the points.
 
+:::{admonition} Data caching
+Per default, the first time any dataset is loaded it will be cached in a version that is faster to load at the next startup. This may lead to changes in the dataset not being registered unless you first remove the cached version of the file from the OpenSpace/cache folder.
+
+We recommend keeping caching on as it greatly speeds up the loading of the assets. However, if you want to temporarily disable caching you can use the setting `UseCaching = false` in the renderable. That way, a fresh load will be done for the dataset every time the renderable is created.
+:::
+
 ### Units
 
 Per default, the X, Y and Z positions of the points are interpreted in meters, but it is also possible to specify a specific unit to match the one in the dataset.
@@ -52,7 +58,32 @@ For example, if the positions in the data file are to be interpreted in parsec, 
 
 ### Data Mapping
 
-@TODO
+There are cases where we need control of certain parameters in the data loading. One example is that for CSV files, we might want to specify what data columns to use for the X, Y and Z components of the position, rather than renaming the columns. Or, we might want to specify other details about the data loading, such as columns that are not relevant and can be excluded. This is done by providing a `DataMapping` table in the asset when loading the dataset:
+
+```lua
+  ...
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("path/to/dataset.csv"),
+    DataMapping = {
+      -- Using the DataMapping, we can specify the X, Y and Z values of the point
+      -- positions to be set by any value in the dataset, without changing the dataset
+      -- used for the rendering
+      X = "a column for X",
+      Y = "a column for Y",
+      Z = "a column for Z",
+      -- It is also possible to specify a numeric value that corresponds to missing
+      -- values in the dataset. These will be interpreted as NaN values
+      MissingDataValue = -9999,
+      -- And some columns that we do not want to include in the loading
+      ExcludeColumns = { "IdontWantThisColumn", "this is not relevant either" }
+    }
+  },
+  ...
+```
+:::{note}
+Note that updating the data mapping leads to another version of the data file being loaded and cached on disk.
+:::
 
 ## Coloring
 The points can be colored either using a fixed color or by a color map ([see separate page](./data-formats.md#color-maps-cmap) for details about color map data formats). These are set by adding a `Coloring` component to the Renderable specification:
@@ -241,7 +272,7 @@ To limit the pixel size, add the `EnablePixelSizeControl` and `MaxPixelSize` set
 At the core, the size of the points is still determined by the exponential scaling. That is, as long as the camera is far enough away so that the points do not exceed the specified pixel size, the size will still be determined by the provided scale exponent. Also, the multiplicative `ScaleFactor` is applied after the pixel size scaling. That is, if you specify a `MaxPixelSize` of 5 and a `ScaleFactor` of 2, the max size of the points will be 2 * 5 = 10 pixels.
 
 :::{note}
-Note that the pixel-based scaling currently only works for planar display systems. In other setups, it might lead to discontinuities between views and incorrect scaling at the edges.
+The pixel-based scaling currently only works for planar display systems. In other setups, it might lead to discontinuities between views and incorrect scaling at the edges.
 :::
 
 ### Scale Based on Data
@@ -267,9 +298,9 @@ Similarly to the color mapping, the size mapping is added by specifying a list o
 The size mapping is currently a bit of an experimental feature. For now, the point size if directly multiplied with the data value is directly multiplied by the data value of the chosen `SizeMapping` column. This is not always suitable though, depending on the range of the data values. The behavior may be subject to change in the future.
 :::
 
-### Summary of Size Multiplication
+### Summary of Final Size Computation
 
-In summary, the order of which the settings that affect the size of the points are the following:
+In summary, the order of which the settings affect the size of the points is the following:
 
 1. 10 ^ `ScaleExponent` * Scale From Data => world scale size
 2. Limit pixel size scale => prevent the points from growing larger than a certain screen space size
@@ -281,11 +312,33 @@ A point cloud can also be set up so that it fades in and out based on the distan
 
 To configure the fading for the point cloud, specify the distance over which the fading should occur in the asset file:
 
-@TODO
+```lua
+  ...
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("path/to/dataset.csv"),
+    Fading = {
+      -- Control at what distance the points fade in. The points will be *invisible*
+      -- when the camera is closer than the first value, and fully visible when the
+      -- camera is further away then the last value. In-between they will linearly
+      -- fade in or out
+      FadeInDistances = { 100, 1000 },
+      -- Optionally, invert the fading. If invert is set to true, the fading is
+      -- inverted so that the points are *visible* when the camera is closer than
+      -- the first distance and invisble when further away than the second
+      Invert = false
+    }
+  },
+  ...
+```
+
+:::{note}
+The fading distances are specified in the same unit that is used to render the points. So if a `Unit` is set, the
+distances should match that unit.
+:::
 
 <!-- ## Facing the Camera
-
-@TODO Move this to a special page for spherical/non-planer displays? -->
+@TODO Talk about the render option here, or move this to a special page for spherical/non-planer displays? -->
 
 ## Specializations of RenderablePointCloud
 
