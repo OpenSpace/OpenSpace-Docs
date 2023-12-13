@@ -213,7 +213,7 @@ The list of available path tokens and their corresponding locations are found in
 
 ## Controlling the Point Size
 
-At the core, the size of the points is computed based on one parameter: a logarithmic exponent that decides the absolute size of the point. The exponential component exists to allow creating point clouds over very different scales and distances and should be set to match the scale of the dataset. It is used to compute the actual world scale size of the points, at their position in the 3D scene. For example, an exponent of 3 will lead to points with a size in the order of 1000 meters, while an exponent of 10 will lead to points with a size of about 10^10 = 100'000'000 meters. **@TODO: Fix!! This is actually e^exponent**
+At the core, the size of the points is computed based on one parameter: a logarithmic exponent that decides the absolute size of the point. The exponential component exists to allow creating point clouds over very different scales and distances and should be set to match the scale of the dataset. It is used to compute the actual world scale size of the points, at their position in the 3D scene. For example, an exponent of 3 will lead to points with a size in the order of 1000 meters, while an exponent of 10 will lead to points with a size of about 10^10 = 100'000'000 meters.
 
 If not included in the asset, a default exponent is computed based on the positional information in the dataset. However, this should be seen as a starting point and you will likely want to modify it so that the scale of the points looks good based on the density, number of points and the spread of your particular dataset, as well as the use case for which it is to be shown.
 
