@@ -81,7 +81,7 @@ If a color map is added, it will be enabled by default. But it can also be disab
 ### Color Mapping
 Alternatively, each point can be colored using a selected data variable and a color map. This is done by adding a `ColorMapping` table in the asset, as shown above. With that setup, the point cloud dataset can be interactively colored by any data value in the dataset, which is useful when exploring or creating a new visualization. However, it is also possible to prepare a set of parameters and data ranges to choose from (see below).
 
-The coloring is performed based on a _color map_, a choice of data _parameter_ and a _value range_. Points with values within the range will be colored based on the normalized value of their datapoint, where the minimum value corresponds to the first color in the color map and the max value corresponds to the last color.
+The coloring is performed based on a _color map_, a choice of data _parameter_ and a _value range_. Points with values within the range will be colored based on the normalized value of their datapoint, where the minimum value corresponds to the first color in the color map and the max value corresponds to the last color. Any color in between will be determined in a nearest-neighbor fashion.
 
 :::{admonition} Default behavior
 :class: note
@@ -89,7 +89,6 @@ By default, values outside the range will be clamped to either the first or last
 
 The data parameter used for coloring at startup will be the last one that is loaded.
 :::
-
 
 #### Predefine color parameters and value ranges
 
@@ -113,7 +112,7 @@ By default, all the variables in the dataset are loaded as possible options for 
           { Key = "name of another parameter" }
         },
 
-        -- Per default, the chosen parameter is set to the last one in the list above.
+        -- Per default, the chosen parameter is set to the first one in the list above.
         -- However, you can also set the default parameter in the asset
         Parameter = "name of parameter",
         -- It is also possible to set a value range that is different compared to the
@@ -174,9 +173,9 @@ Textures also work with color maps. In that case, the color of the texture is mu
 :align: center
 :::
 
-:::{admonition} A note about filepaths
+:::{admonition} A note about file paths
 :class: note
-`asset.resource` can be used to specify a relative or full path to a datafile. However, it is also possible to use the `openspace.absPath` script to use some of the path tokens that are provided with OpenSpace. For example, the cat texture above is a test image that exists in the "OpenSpace/data" folder. To use this in your asset and avoid having to specify a path that is based on your file location, you can use the provided file token to the data folder to get the absolute path to the location of the file: `openspace.absPath("${DATA}/test3.jpg")`.
+`asset.resource` can be used to specify a relative or full path to a data file. However, it is also possible to use the `openspace.absPath` script to use some of the path tokens that are provided with OpenSpace. For example, the cat texture above is a test image that exists in the "OpenSpace/data" folder. To use this in your asset and avoid having to specify a path that is based on your file location, you can use the provided file token to the data folder to get the absolute path to the location of the file: `openspace.absPath("${DATA}/test3.jpg")`.
 
 The list of available path tokens and their corresponding locations are found in the openspace.cfg file.
 :::
@@ -247,14 +246,34 @@ Note that the pixel-based scaling currently only works for planar display system
 
 ### Scale Based on Data
 
-It is also possible to do some simple scaling based on data parameters. The size of the points is then scaled based on the value in the data column
+It is also possible to do some simple scaling based on data parameters. The size of the points is then scaled based on the value in the data column.
 
-@TODO: Choice
+Similarly to the color mapping, the size mapping is added by specifying a list of options that can be used for setting the size of the points:
+
+```lua
+  ...
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("path/to/dataset.csv"),
+    SizeSettings = {
+      -- The options for the columns that the points can be scaled by. The first
+      -- alternative is chosen per default
+      SizeMapping = { "one parameter", "another parameter" },
+    }
+  },
+  ...
+```
+:::{attention}
+The size mapping is currently a bit of an experimental feature. For now, the point size if directly multiplied with the data value is directly multiplied by the data value of the chosen `SizeMapping` column. This is not always suitable though, depending on the range of the data values. The behavior may be subject to change in the future.
+:::
 
 ### Summary of Size Multiplication
 
-@TODO
+In summary, the order of which the settings that affect the size of the points are the following:
 
+1. 10 ^ `ScaleExponent` * Scale From Data => world scale size
+2. Limit pixel size scale => prevent the points from growing larger than a certain screen space size
+3. Finally, multiply with `ScaleFactor` to increase or decrease the size, onscreen
 
 ## Fading
 
@@ -263,6 +282,10 @@ A point cloud can also be set up so that it fades in and out based on the distan
 To configure the fading for the point cloud, specify the distance over which the fading should occur in the asset file:
 
 @TODO
+
+<!-- ## Facing the Camera
+
+@TODO Move this to a special page for spherical/non-planer displays? -->
 
 ## Specializations of RenderablePointCloud
 

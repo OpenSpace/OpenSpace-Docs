@@ -54,8 +54,8 @@ The format of a .label file looks like this:
 ```
 
 Like SPECK files, the first three values correspond to the 3D position (X, Y, Z). After that is a `text` key, which signals that the text that follows is the one to use for the label.
-
-It is also possible to add an identifier for each label, that can be utilized to .... **@TODO Explain mapping to alterative files for labels text**
+<!--
+It is also possible to add an identifier for each label, that can be utilized to .... **@TODO Explain mapping to alternative files for labels text**
 ```
 # A .label file with an identifier per label
 
@@ -63,8 +63,37 @@ It is also possible to add an identifier for each label, that can be utilized to
 346.3 -417.3 149.9 id Label2 text The label - Point 2
 41.1 -544.2 50.8 id Label3 text And Point 3
 ...
-```
+``` -->
 
 ## Color Maps (.cmap)
 
-@TODO
+For color maps, we use a specific format that is similar to that of the .label and .speck files, but every line defines a color rather than a position.
+
+The file starts with an integer number specifying the number of colors in the color map, followed by one line per color. The colors are given by four values, for the Red, Green, Blue and Alpha. Below is an example of a color map with three colors.
+
+```
+# An optional comment
+# That can be multiple lines
+
+3
+0.0 1.0 0.0 1.0  # Color 1 (green)
+0.2 0.6 1.0 1.0  # Color 2 (blue)
+1.0 1.0 0.0 1.0  # Color 3 (yellow)
+```
+Anything that is added after the expected value per line (such as the comments marked with `#` above) will be ignored. The colors are interpreted increasingly, so that the first color will be mapped to the first value in the value range and the last color to the second value.
+
+It is also possible to specify colors to use for missing data values (NaN) as well as values below or above the value range that the color mapping is done based on.
+This is done by marking lines with `nan`, `belowRange`, or `aboveRange`, before specifying to color to use for that case. These colors should not be counted as one of the colors in the color map, i.e. not towards the number on the first line in the file.
+
+```
+# A color map with specific colors for NaN values and values outside the
+# specified range
+
+2
+belowRange 1.0 1.0 0.0 1.0  # (yellow)
+0.0 1.0 0.0 1.0  # Color 1 (green)
+0.0 0.2 1.0 1.0  # Color 2 (blue)
+aboveRange 1.0 0.0 1.0 1.0  # (magenta)
+nan 0.3 0.3 0.3 0.5  # (transparent gray)
+```
+Note that the exact position of the lines with the `nan`, `belowRange`, or `aboveRange` keys in the file does not matter.
