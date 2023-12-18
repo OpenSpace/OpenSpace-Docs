@@ -2,7 +2,7 @@
 
 Text labels can be added to the points to help identify what entity each point represents. For now, this is done using a separate [label file format](./data-formats.md#labels-label), but in the future it will be possible to generate these directly from a CSV file that is used to create a point dataset.
 
-To add labels to your point cloud, add a Labels Component (`Labels`) to the table in the asset. Like the data points, the positions in the labels file can also be interpreted using a unit.
+To add labels to your point cloud, add a Labels Component (`Labels`) to the table in the asset:
 
 ```lua
   ...
@@ -39,11 +39,11 @@ Similiarly to the data loading for the points, a specific unit can be used when 
       Enabled = true,
       -- Note that the unit has to specified for the labels as well as
       -- for the data file
-      Unit = "pc"
+      Unit = "pc" -- short for "parsec"
     },
     -- Here we use the same unit for the points in the .csv files as for
     -- the ones in the .label file
-    Unit = "pc"
+    Unit = "pc" -- short for "parsec"
   },
   ...
 ```

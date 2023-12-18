@@ -41,20 +41,19 @@ We recommend keeping caching on as it greatly speeds up the loading of the asset
 
 ### Units
 
-Per default, the X, Y and Z positions of the points are interpreted in meters, but it is also possible to specify a specific unit to match the one in the dataset.
-See `RenderablePointCloud` documentation for a list of supported units.
-
-For example, if the positions in the data file are to be interpreted in parsec, add `Unit = "pc"` to the Renderable specification, like so:
+Per default, the X, Y and Z positions of the points are interpreted in meters, but it is also possible to specify a specific unit to match the one in the dataset. For example, if the positions in the data file are to be interpreted in parsec, add `Unit = "pc"` to the Renderable specification, like so:
 
 ```lua
   ...
   Renderable = {
     Type = "RenderablePointCloud",
     File = asset.resource("path/to/dataset.csv"),
-    Unit = "pc"
+    Unit = "pc" -- short for "parsec"
   },
   ...
 ```
+
+Other options are for example `"Mpc"` for Megaparsec, or `Km` for kilometers. See `RenderablePointCloud` documentation for a list of supported units.
 
 ### Data Mapping
 
@@ -190,7 +189,7 @@ A sprite texture (i.e. an image) can be used to decide the shape of the points. 
   ...
 ```
 
-The points will look the best with textures that have a transparent background. Below is an example of a point cloud with a star shape. Also, if you want to apply a color to your point using a color map or fixed color, we recommend using texture in white or bright grayscale.
+The points will look the best with textures that have a transparent background, i.e. with an alpha value of zero. Below is an example of a point cloud with a filled star shape. However, shapes that are transparent in the center (for example, a ring), or have more than one color would work as well. Note however that if you want to apply a color to your point using a color map or fixed color, we recommend using texture in white or bright grayscale.
 
 :::{figure} texture_star.png
 :align: center
@@ -308,7 +307,7 @@ In summary, the order of which the settings affect the size of the points is the
 
 ## Fading
 
-A point cloud can also be set up so that it fades in and out based on the distance to the camera. The distance is computed based on the origin of the dataset.
+A point cloud can also be set up so that it fades in and out based on the distance to the camera. The distance is computed based on the origin of the dataset. This can be useful when you want to reduce the visual overload of points when multiple datasets are shown, or when you want to show different datasets depending on the distance. For example, in the Default scene, we use is to make different datasets about the Universe appear and disappear depending on your distance to our Solar System.
 
 To configure the fading for the point cloud, specify the distance over which the fading should occur in the asset file:
 
