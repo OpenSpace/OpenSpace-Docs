@@ -65,16 +65,15 @@ There are cases where we need control of certain parameters in the data loading.
     Type = "RenderablePointCloud",
     File = asset.resource("path/to/dataset.csv"),
     DataMapping = {
-      -- Using the DataMapping, we can specify the X, Y and Z values of the point
-      -- positions to be set by any value in the dataset, without changing the dataset
-      -- used for the rendering
-      X = "a column for X",
-      Y = "a column for Y",
-      Z = "a column for Z",
+      -- Using the DataMapping, we can specify the name of the columns to use for the X,
+      -- Y and Z values of the point, without changing the dataset used for the rendering
+      X = "column name for X",
+      Y = "column name for Y",
+      Z = "column name for Z",
       -- It is also possible to specify a numeric value that corresponds to missing
       -- values in the dataset. These will be interpreted as NaN values
       MissingDataValue = -9999,
-      -- And some columns that we do not want to include in the loading
+      -- And the names of some columns that we do not want to include in the loading
       ExcludeColumns = { "IdontWantThisColumn", "this is not relevant either" }
     }
   },
@@ -132,7 +131,8 @@ By default, all the variables in the dataset are loaded as possible options for 
       ColorMapping = {
         File = asset.resource("path/to/colormap.cmap"),
         -- Add a few parameter options, that will be the available options in the drop down
-        -- menu in the user interface
+        -- menu in the user interface. The "name of parameter" is the name of the corresponding
+        -- column in the dataset
         ParameterOptions = {
           -- Add a parameter with a predefined value range that should be used
           -- when this option is chosen
