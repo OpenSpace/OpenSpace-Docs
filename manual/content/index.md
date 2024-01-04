@@ -11,6 +11,7 @@ skybrowser/index
 gaia
 globebrowsing/index
 models/index
+point-data/index
 solar-video-overlay
 session-recording
 satellites
