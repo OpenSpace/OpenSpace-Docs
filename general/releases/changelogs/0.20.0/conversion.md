@@ -13,86 +13,30 @@ Note that the previously existing `RenderablePoints` renderable has been removed
 :::
 
 ### How-to Update an Asset with a `RenderableBillboardsCloud`
+Below is a code snippet showing an example of parts of an asset with a `RenderableBillboardsCloud`, before and after the update.
+The highlighted lines show the fields whose format or name has changed. See comments in the "After" example below for details.
 
-Before: (highlighted lines show the fields whose format or name has changed)
-:::{code-block} lua
-:linenos:
+::::{tab-set}
+:::{tab-item} Before
+```{literalinclude} files/pointcloud_before.lua
+:language: lua
 :emphasize-lines: 4, 11-14, 16, 18-20
-
-local TullyGalaxies = {
-  Identifier = "TullyGalaxies",
-  Renderable = {
-    Type = "RenderableBillboardsCloud",
-    Labels = { ... },
-    File = speck .. "tully.speck",
-    Texture = textures .. "point3A.png",
-    Unit = "Mpc",
-    Opacity = 0.99,
-    -- Things related to coloring
-    Color = { 1.0, 0.4, 0.2 },
-    ColorMap = speck .. "lss.cmap",
-    ColorOption = { "prox5Mpc" },
-    ColorRange = { { 1.0, 30.0 } },
-    -- Fading
-    FadeInDistances = { 0.001, 1.0 }, -- Fade in value in the same unit as "Unit"
-    -- Things related to the size of the points
-    ScaleFactor = 504.0,
-    BillboardMinMaxSize = { 0.0, 7.0 }, -- in pixels
-    EnablePixelSizeControl = true
-  },
-  ...
-}
+```
 :::
 
-After:
-:::{code-block} lua
-:linenos:
+:::{tab-item} After
+```{literalinclude} files/pointcloud_after.lua
+:language: lua
 :emphasize-lines: 4, 11-25, 27-30, 32-36
-
-local TullyGalaxies = {
-  Identifier = "TullyGalaxies",
-  Renderable = {
-    Type = "RenderablePointCloud",
-    Labels = { ... },
-    File = speck .. "tully.speck",
-    Texture = textures .. "point3A.png",
-    Unit = "Mpc",
-    Opacity = 0.99,
-    -- Things related to color have been combined into one group
-    Coloring = {
-      FixedColor = { 1.0, 0.4, 0.2 },
-      -- Everything related to color mapping is also one component, which can be
-      -- disabled to instead just use the FixedColor. If color mapping is not used
-      -- at all in your asset, just skip this
-      ColorMapping = {
-        Enabled = true, -- Not required
-        File = speck .. "lss.cmap",
-        -- Combine each entry in ColorOption and ColorRange (line 13 and 14 above) into
-        -- one "ParameterOption" per entry
-        ParameterOptions = {
-          { Key = "prox5Mpc", Range = { 1.0, 30.0 } }
-        }
-      }
-    },
-    -- Fading is moved into a separate component, which can also be disabled
-    Fading = {
-      Enabled = true, -- Not required
-      FadeInDistances = { 0.001, 1.0 }, -- Fade in value in the same unit as "Unit"
-    }
-    -- Things related to the size of the points have been combined into one group
-    SizeSettings = {
-      ScaleExponent = 21.9, -- OBS! Recomputed based on previous ScaleFactor! See note
-      MaxPixelSize = 7.0, -- in pixels
-      EnablePixelSizeControl = true
-    }
-  },
-  ...
-}
+```
 :::
+::::
+
+@TODO: Summarise updated properties... (so scripts etc can be updated)
 
 :::{admonition} Compute `ScaleExponent` from `ScaleFactor`
 :class: note
-The scaling of the points has been made more intuitive by changing the previous `ScaleFactor` property slightly, to make it more apparent that it affects an exponential scaling. See [details on the point data page](/manual/content/point-data/point-data.html#controlling-the-point-size), but in general, with the new `ScaleExponent` the value is used as the exponent for `10^exponent` to compute the world-scale size of the points.
+The scaling of the points has been made more intuitive by changing the previous `ScaleFactor` property slightly, to make it more apparent that it affects an exponential scaling. See [details on the point data page](/manual/content/point-data/point-data.md#controlling-the-point-size), but in general, with the new `ScaleExponent` the value is used as the exponent for `10^exponent` to compute the world-scale size of the points.
 
 The new `ScaleExponent` property can be computed from the previous `ScaleFactor` as:
 :::{math}
