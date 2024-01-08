@@ -1,0 +1,9 @@
+# Some comment about the color map. This is the one used for the Tully dataset,
+# for example
+6                # The number of colors
+0.5 0.5 0.5 1.0  # gray (Was used for values outside range on the lower end)
+0.0 0.8 0.8 1.0  # aqua
+0.0 1.0 0.0 1.0  # green
+0.0 1.0 0.0 1.0  # green
+1.0 1.0 0.0 1.0  # yellow
+1.0 0.5 0.0 1.0  # orange (Was used for values outside range on the upper end)
