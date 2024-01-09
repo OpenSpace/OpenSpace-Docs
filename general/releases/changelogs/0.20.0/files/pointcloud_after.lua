@@ -30,9 +30,9 @@ local TullyGalaxies = {
     }
     -- Things related to the size of the points have been combined into one group
     SizeSettings = {
-      ScaleExponent = 21.9, -- OBS! Recomputed based on previous ScaleFactor! See note
-      MaxPixelSize = 7.0, -- in pixels
-      EnablePixelSizeControl = true
+      ScaleExponent = 21.9, -- OBS! Recomputed based on previous ScaleFactor! See next section
+      MaxSize = 0.3, -- No longer in pixels! Use a value that looks good to you
+      EnableMaxSizeControl = true
     }
   },
   ...

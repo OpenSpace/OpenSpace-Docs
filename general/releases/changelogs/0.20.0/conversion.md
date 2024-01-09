@@ -32,24 +32,21 @@ The highlighted lines show the fields whose format or name has changed. See comm
 :::
 ::::
 
-:::{admonition} Compute `ScaleExponent` from `ScaleFactor`
-:class: note
+:::{tip}
+Note that the `Texture` field is no longer required. If a texture is excluded, the points will be drawn as circles.
+:::
+
+#### Compute `ScaleExponent` from `ScaleFactor`
 The scaling of the points has been made more intuitive by changing the previous `ScaleFactor` property slightly, to make it more apparent that it affects an exponential scaling. See [details on the point data page](/manual/content/point-data/point-data.md#controlling-the-point-size), but in general, with the new `ScaleExponent` the value is used as the exponent for `10^exponent` to compute the world-scale size of the points.
 
 The new `ScaleExponent` property can be computed from the previous `ScaleFactor` as:
 :::{math}
 ScaleExponent = \log_{10}(e^{ScaleFactor / 10})
 :::
-:::
-
-:::{tip}
-Note that the `Texture` field is no longer required. If a texture is excluded, the points will be drawn as circles.
-:::
-
 
 ### Update Color Map Data Format
 
-Previously, the first and last color entry in a .cmap file was implicitly interpreted as the color to use for values that are lower or higher than the specified range. However, this was in no way clear, and has been made more explicit in the update by using specific keyworkds for these colors. Here is an example of a color map before and after this change:
+Previously, the first and last color entry in a .cmap file was implicitly interpreted as the color to use for values that are lower or higher than the specified range. However, this was not very clear and has been made more explicit in the update by using specific keywords for these colors. Here is an example of a color map before and after this change:
 
 ::::{tab-set}
 :::{tab-item} Before
@@ -77,16 +74,29 @@ Note that with the 0.20.0 release, we do provide an asset with a number of commo
 
 ### Summary of Updated Properties
 
-With just a few exceptions, the new `RenderablePointCloud` works very similarly to the previous `RenderableBillboardsCloud`. The behavior of the properites has not changed significantly, but the structuring of then has, and hence the name or URI that a property is accessed by may have to be updated.
+With just a few exceptions, the new `RenderablePointCloud` works very similarly to the previous `RenderableBillboardsCloud`. The behavior of the properties has not changed significantly, but the structuring of them has, and hence the name or URI that a property is accessed by may have to be updated.
 
-Following is a table that summarize the updated property names/URI:s, that can hopefully be useful if you have Lua scripts or actions that require updating due to the use properties that have been updated or removed.
+Following is a table that summarizes the updated property names/URI:s, which can hopefully be useful if you have Lua scripts or actions that require updating due to the use properties that have been updated or removed.
 
-| RenderableBillboardsCloud (Before) | RenderablePointCloud (After) | Type |
-| --- | --- | --- |
-| `Color` | `ColorMapping.Color` | Color (Vec3) |
-| `ColorMap ` | `ColorMapping.ColorMap` | String |
-@TODO: Finish list
+| RenderableBillboardsCloud (Before) | RenderablePointCloud (After) | Type | Comment |
+| --- | --- | --- | --- |
+| `Color` | `Coloring.FixedColor` | Color (Vec3) | |
+| `ColorMap` | `Coloring.ColorMapping.ColorMap` | String | |
+| `UseColorMap` | `Coloring.ColorMapping.Enabled` | Boolean | |
+| `ColorOption` | `Coloring.ColorMapping.Parameter` | Integer | |
+| `OptionColorRange` | `Coloring.ColorMapping.ValueRange` | Vec2 | |
+| `SetRangeFromData` | `Coloring.ColorMapping.SetRangeFromData` | `nil` (Trigger Property)  | |
+| `UseLinearFiltering` | (Removed) |  | |
+| `SizeOption` | `Sizing.SizeMapping.Parameter` | Integer | |
+| `FadeInDistances` | `Fading.FadeInDistances` | Vec2 | Should now be set based on the origin of the dataset, rather than the world-space origin |
+| `DisableFadeIn` | `Fading.Enabled` | Boolean | Inverted compared to the prevoius value |
+| `EnablePixelSizeControl` | `Sizing.EnableMaxSizeControl` | Boolean |  |
+| `BillboardMinMaxSize` | `Sizing.MaxSize` | Float | No longer a pixel value, so the value has to be updated |
+| `CorrectionSizeEndDistance` | (Removed) |  | |
+| `CorrectionSizeFactor` | (Removed) |  | |
+| `ScaleFactor` | `Sizing.ScaleExponent` | Float | Can be computed based on the previous value, as described in the [section above](./conversion.md#compute-scaleexponent-from-scalefactor) |
 
-
-Note that the full property URI would be something like:
+Note that the full property URI would be something like
 `Scene.<IdentifierOfNode>.Renderable.<NameOfPropertyFromTableAbove>`.
+
+Some new features are that the data file can be loaded using a CSV file, and that the fading direction can be inverted. See [the content page on point data](/manual/content/point-data/point-data) for more details.
