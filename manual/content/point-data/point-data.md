@@ -83,6 +83,23 @@ There are cases where we need control of certain parameters in the data loading.
 Note that updating the data mapping leads to another version of the data file being loaded and cached on disk.
 :::
 
+### Labels
+Labels can either be added using an explicit labels file, as explained on [this page](./labels.md), or directly from a column in a CSV file. To add labels from a column in the file, specify the name of that column in the data mapping:
+
+```lua
+  ...
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("path/to/dataset.csv"),
+    DataMapping = {
+      Name = "column name for Labels column"
+    }
+  },
+  ...
+```
+
+it is also possible to control the size and color of the labels by adding a `Labels` group in the asset. See [Labels page](./labels.md) for more details. Note that no `File` property is required in the `Labels` group when loading labels directly from the CSV file.
+
 ## Coloring
 The points can be colored either using a fixed color or by a color map ([see separate page](./data-formats.md#color-maps-cmap) for details about color map data formats). These are set by adding a `Coloring` component to the Renderable specification:
 
