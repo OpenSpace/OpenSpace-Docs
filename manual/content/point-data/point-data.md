@@ -233,7 +233,7 @@ At the core, the size of the points is computed based on one parameter: a logari
 
 If not included in the asset, a default exponent is computed based on the positional information in the dataset. However, this should be seen as a starting point and you will likely want to modify it so that the scale of the points looks good based on the density, number of points and the spread of your particular dataset, as well as the use case for which it is to be shown.
 
-Secondly, a multiplicative factor that can be used to increase or decrease the *visual* size of the points also exists. This factor can be seen as a tool to quickly increase or decrease the appeared size of all points equally. This factor is applied at the last step, after the exponential scaling and any pixel size effects.
+Secondly, a multiplicative factor that can be used to increase or decrease the *visual* size of the points also exists. This factor can be seen as a tool to quickly increase or decrease the appeared size of all points equally. This factor is applied at the last step, after the exponential scaling and any max size effects.
 
 To update the scaling in the points, add a `SizeSettings` table to your asset specification. See example:
 
@@ -253,11 +253,11 @@ To update the scaling in the points, add a `SizeSettings` table to your asset sp
 ```
 
 :::{note}
-Since the exponent affects the physical, world-scale, size of the points, this means that points that are closer to the camera will appear larger than those that are further away, and increasing the exponent also enhances this effect. In contrast, increasing the multiplicative factor will increase the visual size of the points equally for all points. This is because it is applied in the very last step, after the exponential scaling and any pixel size effects.
+Since the exponent affects the physical, world-scale, size of the points, this means that points that are closer to the camera will appear larger than those that are further away, and increasing the exponent also enhances this effect. In contrast, increasing the multiplicative factor will increase the visual size of the points equally for all points. This is because it is applied in the very last step, after the exponential scaling and any max size effects.
 :::
 
-### Limit by Size in Pixels
-In addition to the world-size scale, it is also possible to limit the screen-space size of the points to a maximum size in pixels. This prevents the points from growing larger than the specified pixel size when the camera is approaching the dataset. An example is shown in the images below.
+### Limit to a Max Size
+In addition to the world-size scale, it is also possible to limit the maximum size the points are allowed to take up of the view. This prevents the points from growing larger than a specified size when the camera is approaching the dataset. An example is shown in the images below.
 
 :::{figure} pointsize_close.png
 :align: center
@@ -266,10 +266,10 @@ In addition to the world-size scale, it is also possible to limit the screen-spa
 :::{figure} pointsize_far.png
 :align: center
 :width: 90%
-*Example of the point size scaling in action. The green points (left) use regular, world scale, sizing and the blue points (right) have a limited size in pixels. Note how the green points (left) appear larger up close and smaller at a large distance, while the blue points (right) are scaled to have the same size in pixels at both distances.*
+*Example of the point size scaling in action. The green points (left) use regular sizing and the blue points (right) have a limited max size. Note how the green points (left) appear larger up close and smaller at a large distance, while the blue points (right) are scaled to have the same size at both distances.*
 :::
 
-To limit the pixel size, add the `EnablePixelSizeControl` and `MaxPixelSize` settings in the `SizeSettings` table:
+To limit the maximum size of the points, add the `EnableMaxSizeControl` and `MaxSize` settings in the `SizeSettings` table:
 
 ```lua
   ...
@@ -277,18 +277,20 @@ To limit the pixel size, add the `EnablePixelSizeControl` and `MaxPixelSize` set
     Type = "RenderablePointCloud",
     File = asset.resource("path/to/dataset.csv"),
     SizeSettings = {
-      -- Limit the size of the points to a max size, in pixels
-      MaxPixelSize = 4.7,
-      EnablePixelSizeControl = true
+      -- Limit the size of the points to a max size
+      MaxSize = 1.0, -- A value that looks good to you
+      EnableMaxSizeControl = true
     }
   },
   ...
 ```
 
-At the core, the size of the points is still determined by the exponential scaling. That is, as long as the camera is far enough away so that the points do not exceed the specified pixel size, the size will still be determined by the provided scale exponent. Also, the multiplicative `ScaleFactor` is applied after the pixel size scaling. That is, if you specify a `MaxPixelSize` of 5 and a `ScaleFactor` of 2, the max size of the points will be 2 * 5 = 10 pixels.
+The larger the `MaxSize` is, the larger the points are allowed to become when the camera is approaching them. Exactly what the value means is not that important, but if you are interested, see note at the end of this section for an explanation of the meaning behind the value.
 
-:::{note}
-The pixel-based scaling currently only works for planar display systems. In other setups, it might lead to discontinuities between views and incorrect scaling at the edges.
+At the core, the size of the points is still determined by the exponential scaling. That is, as long as the camera is far enough away so that the points do not exceed the specified max size, the size will still be determined by the provided scale exponent. Also, the multiplicative `ScaleFactor` is applied after the max size scaling. That is, if you specify a `MaxSize` and a `ScaleFactor` of 2, the max size of the points will be twice as large as with a `ScaleFactor` of 1.
+
+:::{dropdown} The `MaxSize` value
+When computing the maximum allowed size of the points, the `MaxSize` value is interpreted as __an angle (in degrees)__ that the point is allowed to take up of the view, from the perspective of the camera. In simplified terms, a value of 1 implies that the point is allowed to take up a maximum of 1 degree of the camera's field of view.
 :::
 
 ### Scale Based on Data
@@ -316,15 +318,15 @@ The size mapping is currently a bit of an experimental feature. For now, the poi
 
 ### Summary of Final Size Computation
 
-In summary, the order of which the settings affect the size of the points is the following:
+In summary, the order in which the settings affect the size of the points is the following:
 
 1. 10 ^ `ScaleExponent` * Scale From Data => world scale size
-2. Limit pixel size scale => prevent the points from growing larger than a certain screen space size
+2. Limit world scale size to max size => prevent the points from growing larger than a certain size in view
 3. Finally, multiply with `ScaleFactor` to increase or decrease the size, onscreen
 
 ## Fading
 
-A point cloud can also be set up so that it fades in and out based on the distance to the camera. The distance is computed based on the origin of the dataset. This can be useful when you want to reduce the visual overload of points when multiple datasets are shown, or when you want to show different datasets depending on the distance. For example, in the Default scene, we use is to make different datasets about the Universe appear and disappear depending on your distance to our Solar System.
+A point cloud can also be set up so that it fades in and out based on the distance to the camera. The distance is computed based on the origin of the dataset. This can be useful when you want to reduce the visual overload of points when multiple datasets are shown, or when you want to show different datasets depending on the distance. For example, in the Default scene, we use it to make different datasets about the Universe appear and disappear depending on your distance to our Solar System.
 
 To configure the fading for the point cloud, specify the distance over which the fading should occur in the asset file:
 
