@@ -191,6 +191,34 @@ We refer to our example assets for more details on how to customize these color 
 
 \* Note that these colors can also be set in the color map file itself. See [the page on color map files](./data-formats.md#color-maps-cmap) for more details.
 
+### Blending
+Per default, the colors of points that overlap are blended additively, resulting in a brighter color in the overlapping areas. This behavior is not always desired, as it might result in distorted colors in the overlaps. To disable the blending, set `UseAdditiveBlending` to `false` under `Coloring` in the asset:
+
+```lua
+ ...
+  Renderable = {
+    ...
+    Coloring = {
+      -- Disable additive blending, so that points will be rendered with their actual color.
+      -- Overlapping points will be sorted by depth
+      UseAdditiveBlending = false
+    }
+  },
+  ...
+```
+
+This means that the point will be rendered without any blending and the point that is closest to the camera will be rendered on top.
+
+:::{figure} blending.png
+:align: center
+:width: 80%
+*Example of points with (right) and without (left) additive blending enabled. Note how the points to the right appear brighter in the overlapping areas, while the left set of points preserve their actual color. In the overlaps, the point that is closer to the camera will be the visible one.*
+:::
+
+:::{attention}
+Note disabling the blending does not work very well together with transparency. We therefore recommend using an opacity of 1 for the renderable whenever blending is disabled.
+:::
+
 ## Adding a Texture
 
 A sprite texture (i.e. an image) can be used to decide the shape of the points. To add a texture, simply provide a path to the image you want to use in the asset file:
@@ -214,7 +242,7 @@ The points will look the best with textures that have a transparent background, 
 :::
 
 ### Textures and Colors
-Textures also work with color maps. In that case, the color of the texture is multiplied by that of the color. The same goes if a fixed color is applied to the points. See example below. Note that here we have also disabled the additive blending by setting the `UseAdditiveBlending` property to `false`, so that the color of overlapping points is not added and blended (which is the default behavior).
+Textures also work with color maps. In that case, the color of the texture is multiplied by that of the color. The same goes if a fixed color is applied to the points. See example below. Note that here we have also disabled the additive blending by setting the `UseAdditiveBlending` property to `false`, so that the color of overlapping points is not added and blended.
 
 :::{figure} textures.png
 :align: center
