@@ -349,7 +349,7 @@ The size mapping is currently a bit of an experimental feature. For now, the poi
 In summary, the order in which the settings affect the size of the points is the following:
 
 1. 10 ^ `ScaleExponent` * Scale From Data => world scale size
-2. Limit world scale size to max size => prevent the points from growing larger than a certain size in view
+2. Limit point size to max size => prevent the points from growing larger than a certain size in view
 3. Finally, multiply with `ScaleFactor` to increase or decrease the size, onscreen
 
 ## Fading
