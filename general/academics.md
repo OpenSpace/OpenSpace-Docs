@@ -35,6 +35,7 @@
 | 2020 | Emma Broman & Ingela Rossing | NYU | A System for Procedural Camera Movements for Navigation in Astrographics | [link](http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-182410) |
 | 2019 | Sovanny Huy & Axel Kollberg | CCMC | Today's Space Weather in the Planetarium | [link](http://liu.diva-portal.org/smash/record.jsf?pid=diva2:1429856) |
 | 2019 | Jonathan Fransson & Elon Olsson | SCI | Visualization of Space Debris using Orbital Representation and Volume Rendering | [link](http://liu.diva-portal.org/smash/get/diva2:1371832/FULLTEXT01.pdf) |
+| 2019 | Matthew Territo | SCI | Flight Controller | |
 | 2018 | Matthias Berg & Jonathan Grangien | CCMC | Implementing an Interactive Simulation Data Pipeline for Space Weather Visualization | [link](http://liu.diva-portal.org/smash/get/diva2:1375791/FULLTEXT01.pdf) |
 | 2018 | Lovisa Hassler & Agnes Heppich | AMNH | Interactive 3D Visualization of the NASA Deep Space Network activity | [link](http://liu.diva-portal.org/smash/get/diva2:1322083/FULLTEXT01.pdf) |
 | 2018 | Karin Reidarman | NYU | Exoplanets: Interactive Visualization of Data and Discovery Method | [link](https://liu.diva-portal.org/smash/get/diva2:1315169/FULLTEXT01.pdf) |
