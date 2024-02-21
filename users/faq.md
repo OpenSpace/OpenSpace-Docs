@@ -17,8 +17,9 @@ Go into the `openspace.cfg` file and set {menuselection}`ModuleConfigurations --
 
 ## Related to running OpenSpace on MacOS, Linux and unsupported hardware 
 1. Why do you only provide Intel Mac packages? Why not packages for Apple Silicon Macs?
+When starting an x86 or x64 application on MacOS, it automatically runs through the Rosetta 2 translation layer, so that the ARM chip in the machine can execute the instructions.  That part is not really a big deal and it would come with some performance loss that could be acceptable.  However, we are using OpenGL as our graphics pipeline, which Apple has deprecated on their platforms for a number of years now.  The way they still support it on M1 is a separate conversion layer that transforms the OpenGL calls into Metal 3 (the Apple-specific graphics API) before it gets executed by the GPU cores on the M1/M2 chip.  Apple decided for some very strange reason to not support double precision floating point operations (https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf Section 2.1) which we use everywhere in OpenSpace to get enough precision for the whole universe. So as soon as we run any OpenGL that uses double precision, it no longer uses the GPU cores built into the chip, but reverts to software-based rendering, which kills the performance entirely.
 
-OpenSpace uses the OpenGL cross-platform library. Unfortunately, Apple does not yet support the latest versions of OpenGL on M1/M2/M3 Macs. Asahi Linux has successfully ported OpenGL to Apple Silicon Macs, so those with Apple Silicon Macs could, if they're feeling adventurous, [install Asahi Fedora remix](https://asahilinux.org/fedora/) and run OpenSpace on their Apple Silicon Macs.
+Asahi Linux has successfully ported OpenGL to Apple Silicon Macs, so those with Apple Silicon Macs could, if they're feeling adventurous, [install Asahi Fedora remix](https://asahilinux.org/fedora/) and run OpenSpace on their Apple Silicon Macs.
 
 2. Does OpenSpace run on Linux?
 
