@@ -7,7 +7,6 @@ When you first start up OpenSpace, you get a screen where you can choose a _Prof
 You can choose to display a different resolution, and render at a different resolution. The `single.json` _Window Options_ configuration file is an example that has a display resolution of 1280x720 (the `"size"` parameter) but renders PNGs at 2560x1440 (the `"res"` parameter). These configuration files are located in the `config` directory --- you can write your own for your desired resolution.
 
 3. How can I get rid of the text and GUI elements in my planetarium display?
-
 There are several ways to do this. For example, you could
   1. press {kbd}`TAB` and {kbd}`SHIFT+TAB` to toggle visibility of the GUI and text elements respectively
   1. create or use a _Window Options_ configuration file which renders the GUI and the data visualization separately on different windows, for example the `single_fisheye_gui.json` configuration file
