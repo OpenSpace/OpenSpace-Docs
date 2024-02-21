@@ -13,7 +13,7 @@ There are several ways to do this. For example, you could
   1. create a [HTML control page](/how-to/html-controls-setup) and use that to control the navigation, hiding the GUI
 
 4. How do I ensure that all the data sets I need are loaded before playing back a recorded path? Can I play back without an internet connection?
-Go into the openspace.cfg file and set ModuleConfigurations->GlobeBrowsing->MRFCacheEnabled to true. Run OpenSpace again it will cache the globebrowsing data for planet/moon locations you visit. Then later, it should use the cached data for those same locations. There is also an Offline profile that you can select from the launcher, and see if that has the content you want.
+Go into the `openspace.cfg` file and set {menuselection}`ModuleConfigurations --> GlobeBrowsing --> MRFCacheEnabled` to `true`. Run OpenSpace again it will cache the globe browsing data for planet/moon locations you visit. Then later, it should use the cached data for those same locations. There is also an `offline` profile that you can select from the launcher, and see if that has the content you want.
 
 ## Related to running OpenSpace on MacOS, Linux and unsupported hardware 
 1. Why do you only provide Intel Mac packages? Why not packages for Apple Silicon Macs?
