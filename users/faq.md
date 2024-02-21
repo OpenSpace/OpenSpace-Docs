@@ -29,5 +29,5 @@ Yes. The executable will run, but as integrated Intel cards are generally less p
 
 Futhermore, AMD cards work in principle, but might have some non-fatal rendering glitches.
 
-####4. What keyboard shortcuts does OpenSpace support?
+#### 4. What keyboard shortcuts does OpenSpace support?
 You can view the keyboard bindings included in the current _Profile_ by clicking on the left-most {menuselection}`Kebab button (three vertical dots)` in the GUI and choosing the {menuselection}`Show Keybindings` menu item. You can also add more keyboard shortcuts or keybindings by editing the _Profile_ on startup. The full list of properties for which you can add keybindings can be found in the _index.html_ file under the _documentation_ directory of your installation.
