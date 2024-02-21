@@ -11,12 +11,11 @@ You can choose to display a different resolution, and render at a different reso
 3. How can I get rid of the text and GUI elements in my planetarium display?
 
 There are several ways to do this. For example, you could
-(a) press TAB and SHIFT+TAB to toggle visibility of the GUI and text elements respectively, or
-(b) create or use a Window options configuration file which renders the GUI and the data visualization separately on different windows, for example the single_fisheye_gui.json configuration file or
-(c) create a [html control page](https://docs.openspaceproject.com/en/latest/how-to/html-controls-setup/index.html) and use that to control the navigation, hiding the GUI.
+  1. press {kbd}`TAB` and {kbd}`SHIFT+TAB` to toggle visibility of the GUI and text elements respectively
+  1. create or use a _Window Options_ configuration file which renders the GUI and the data visualization separately on different windows, for example the `single_fisheye_gui.json` configuration file
+  1. create a [HTML control page](/how-to/html-controls-setup) and use that to control the navigation, hiding the GUI
 
 4. How do I ensure that all the data sets I need are loaded before playing back a recorded path? Can I play back without an internet connection?
-
 Go into the openspace.cfg file and set ModuleConfigurations->GlobeBrowsing->MRFCacheEnabled to true. Run OpenSpace again it will cache the globebrowsing data for planet/moon locations you visit. Then later, it should use the cached data for those same locations. There is also an Offline profile that you can select from the launcher, and see if that has the content you want.
 
 ## Related to running OpenSpace on MacOS, Linux and unsupported hardware 
