@@ -4,7 +4,7 @@
 When you first start up OpenSpace, you get a screen where you can choose a _Profile_ and choose _Window Options_. _Window Options_ is where you can choose to use a fisheye configuration. 
 
 2. How can I save screenshots in a resolution higher than my screen resolution? For example, my computer screen can only display 1920x1080, but I want to capture 4096x4096 pngs using the session recording function.
-You can choose to display a different resolution, and render at a different resolution. The single.json Window options configuration file is an example which has a display resolution of 1280x720 (the "size" parameter) but renders pngs at 2560x1440 (the "res" parameter). These configuration files are located in the 'config' directory - you can write your own for your desired resolution.
+You can choose to display a different resolution, and render at a different resolution. The `single.json` _Window Options_ configuration file is an example that has a display resolution of 1280x720 (the `"size"` parameter) but renders PNGs at 2560x1440 (the `"res"` parameter). These configuration files are located in the `config` directory --- you can write your own for your desired resolution.
 
 3. How can I get rid of the text and GUI elements in my planetarium display?
 
