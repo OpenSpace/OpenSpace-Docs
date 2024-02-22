@@ -1,6 +1,6 @@
 # FAQ
 ## Related to usage in Planetariums
-#### 1. How do I get a fulldome (fisheye) output from OpenSpace?
+### 1. How do I get a fulldome (fisheye) output from OpenSpace?
 When you first start up OpenSpace, you get a screen where you can choose a _Profile_ and choose _Window Options_. _Window Options_ is where you can choose to use a fisheye configuration. 
 
 #### 2. How can I save screenshots in a resolution higher than my screen resolution? For example, my computer screen can only display 1920x1080, but I want to capture 4096x4096 pngs using the session recording function.
