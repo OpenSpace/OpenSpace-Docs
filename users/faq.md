@@ -24,7 +24,7 @@ Asahi Linux has successfully ported OpenGL to Apple Silicon Macs, so those with 
 ### 2. Does OpenSpace run on Linux?
 Yes. Linux users can compile and run OpenSpace using the MIT licensed code on [GitHub](https://github.com/OpenSpace/OpenSpace). Also see the [Compile instructions](dev/compiling) on this page.
 
-#### 3. I don't have an NVidia graphics card. Can I still run the Windows executable on my Windows laptop which has integrated Intel graphics?
+### 3. I don't have an NVidia graphics card. Can I still run the Windows executable on my Windows laptop which has integrated Intel graphics?
 Yes. The executable will run, but as integrated Intel cards are generally less powerful than dedicated graphics cards, the frame rate would be very low.
 
 Futhermore, AMD cards work in principle, but might have some non-fatal rendering glitches.
