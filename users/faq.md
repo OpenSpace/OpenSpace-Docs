@@ -21,7 +21,7 @@ When starting an x86 or x64 application on MacOS, it automatically runs through 
 
 Asahi Linux has successfully ported OpenGL to Apple Silicon Macs, so those with Apple Silicon Macs could, if they're feeling adventurous, [install Asahi Fedora remix](https://asahilinux.org/fedora/) and try to compile and run OpenSpace on their Apple Silicon Macs.
 
-#### 2. Does OpenSpace run on Linux?
+### 2. Does OpenSpace run on Linux?
 Yes. Linux users can compile and run OpenSpace using the MIT licensed code on [GitHub](https://github.com/OpenSpace/OpenSpace). Also see the [Compile instructions](dev/compiling) on this page.
 
 #### 3. I don't have an NVidia graphics card. Can I still run the Windows executable on my Windows laptop which has integrated Intel graphics?
