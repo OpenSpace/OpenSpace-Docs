@@ -100,3 +100,38 @@ Note that the full property URI would be something like
 `Scene.<IdentifierOfNode>.Renderable.<NameOfPropertyFromTableAbove>`.
 
 Some new features are that the data file can be loaded using a CSV file, and that the fading direction can be inverted. See [the content page on point data](/manual/content/point-data/point-data) for more details.
+
+## Changes in the `openspace.navigation.saveNavigationState` function
+The format in which the navigation states are saved to a file on disk from this function has been changed. Prior to 0.20.0, this file was a Lua-file which was coded to return a table. As of 0.20.0, this fileformat is using JSON instead. This change affects both the `openspace.navigation.saveNavigationState` and the `openspace.navigation.loadNavigationState` functions.
+
+If you have a pre 0.20.0 navigation state file that you want to convert, this is best done in a text editor using the following steps:
+  1. Remove the leading `return` in the beginning of the file
+  1. Replace all `=` with `:`
+  1. All words "Position", "Anchor", "ReferenceFrame", "Aim", "Up", "Yaw", and "Pitch" should be surrounded by `"` and be written in lower case
+  1. For the "Position" and "Up" entries, prepend the first value with `"x":`, the second value with `"y":`, and the third value with `"z":`
+  1. (optional) Rename the file to have a `.navstate` extension
+
+For example a pre 0.20.0 navigation state would be:
+```lua
+return {Anchor="Earth",Position={11701166.502990872,3397820.0813846793,19951812.217589088},Up={-0.8195835910478171,-0.23799315924271663,0.5211928562814687}}
+```
+
+After step 1:
+```
+{Anchor="Earth",Position={11701166.502990872,3397820.0813846793,19951812.217589088},Up={-0.8195835910478171,-0.23799315924271663,0.5211928562814687}}
+```
+
+After step 2:
+```
+{Anchor:"Earth",Position:{11701166.502990872,3397820.0813846793,19951812.217589088},Up:{-0.8195835910478171,-0.23799315924271663,0.5211928562814687}}
+```
+
+After step 3:
+```
+{"anchor":"Earth","position":{11701166.502990872,3397820.0813846793,19951812.217589088},"up":{-0.8195835910478171,-0.23799315924271663,0.5211928562814687}}
+```
+
+After step 4:
+```
+{"anchor":"Earth","position":{"x":11701166.502990872,"y":3397820.0813846793,"z":19951812.217589088},"up":{"x":-0.8195835910478171,"y":-0.23799315924271663,"z":0.5211928562814687}}
+```
