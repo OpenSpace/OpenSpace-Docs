@@ -1,10 +1,8 @@
 # Details on Breaking Changes
-
 The sections on this page describe some major breaking changes in version 0.20.0, together with instructions on how to adapt to the changes.
 
 ## A New Renderable for Point Clouds
-
-`RenderableBillboardsCloud` has been removed and replaced with a new renderable type called `RenderablePointCloud`. This renderable includes some bug fixes as well as updates to the specifications in the asset related to color mapping, fading and point sizing. These are made more explicit, to make it easier to use and more understandable compared to its predecessor. The new Renderable also has support for CSV files, in addition to the previous SPECK file format. For full details on the renderable, check out the new [content pages for point data](/manual/content/point-data/index).
+The `RenderableBillboardsCloud` class has been removed and replaced with a new Renderable type called `RenderablePointCloud`. This renderable includes some bug fixes as well as updates to the specifications in the asset related to color mapping, fading, and point sizing. These are made more explicit, to make it easier to use, and more understandable compared to its predecessor. The new Renderable also has support for CSV files, in addition to the previous SPECK file format. For full details on the renderable, check out the new [content pages for point data](/manual/content/point-data/index).
 
 The following sections describe [how to convert an asset with a `RenderableBillboardsCloud` to the new format](./conversion.md#how-to-update-an-asset-with-a-renderablebillboardscloud), or how to [update a color map file](./conversion.md#update-color-map-data-format) (the .cmap data format has changed slightly). Finally, there is also a [summary of the updated property names](./conversion.md#summary-of-updated-properties), that can hopefully be useful if you have Lua scripts or actions that require updating due to the use properties that have been updated or removed.
 
@@ -45,8 +43,7 @@ ScaleExponent = \log_{10}(e^{ScaleFactor / 10})
 :::
 
 ### Update Color Map Data Format
-
-Previously, the first and last color entry in a .cmap file was implicitly interpreted as the color to use for values that are lower or higher than the specified range. However, this was not very clear and has been made more explicit in the update by using specific keywords for these colors. Here is an example of a color map before and after this change:
+Previously, the first and last color entry in a `.cmap` file was implicitly interpreted as the color to use for values that are lower or higher than the specified range. However, this was not very clear and has been made more explicit in the update by using specific keywords for these colors. Here is an example of a color map before and after this change:
 
 ::::{tab-set}
 :::{tab-item} Before
@@ -73,7 +70,6 @@ Note that with the 0.20.0 release, we do provide an asset with a number of commo
 :::
 
 ### Summary of Updated Properties
-
 With just a few exceptions, the new `RenderablePointCloud` works very similarly to the previous `RenderableBillboardsCloud`. The behavior of the properties has not changed significantly, but the structuring of them has, and hence the name or URI that a property is accessed by may have to be updated.
 
 Following is a table that summarizes the updated property names/URI:s, which can hopefully be useful if you have Lua scripts or actions that require updating due to the use properties that have been updated or removed.
@@ -96,7 +92,7 @@ Following is a table that summarizes the updated property names/URI:s, which can
 | `CorrectionSizeFactor` | (Removed) |  | |
 | `ScaleFactor` | `Sizing.ScaleExponent` | Float | Can be computed based on the previous value, as described in the [section above](./conversion.md#compute-scaleexponent-from-scalefactor) |
 
-Note that the full property URI would be something like
+Note that the full property URI would be of the form
 `Scene.<IdentifierOfNode>.Renderable.<NameOfPropertyFromTableAbove>`.
 
 Some new features are that the data file can be loaded using a CSV file, and that the fading direction can be inverted. See [the content page on point data](/manual/content/point-data/point-data) for more details.

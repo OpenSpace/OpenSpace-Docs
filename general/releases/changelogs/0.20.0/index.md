@@ -9,12 +9,10 @@ Download version 0.20.0 for Windows and Mac on the OpenSpace website [installati
 ## Content
   - ...
 
-
 ## Bug Fixes
   - ...
 
 ## Breaking Changes
-
 Below is a list of breaking changes in this release.
 
 - [A New Renderable for Point Clouds (`RenderableBillboardsCloud` -> `RenderablePointCloud`)](./conversion.md#a-new-renderable-for-point-clouds)
