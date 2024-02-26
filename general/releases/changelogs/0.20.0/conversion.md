@@ -47,21 +47,21 @@ Previously, the first and last color entry in a `.cmap` file was implicitly inte
 
 ::::{tab-set}
 :::{tab-item} Before
-```{literalinclude} files/before.cmap
+```{literalinclude} files/colormap_before.cmap
 :language: python
 :emphasize-lines: 3, 4, 9
 ```
 :::
 
 :::{tab-item} After
-```{literalinclude} files/after.cmap
+```{literalinclude} files/colormap_after.cmap
 :language: python
 :emphasize-lines: 3, 4, 9
 ```
 :::
 ::::
 
-Note that the `belowRange` and `aboveRange` colors do not have to be specified in this exact way or order. Using the keywords, the lines for these colors can be put anywhere in the file.
+Note that the `belowRange` and `aboveRange` colors do not have to be specified using this capitalization or order. As long as the keywords are spelled correctly, the lines for these colors can be put anywhere in the file.
 
 The color maps that we provide with our default assets have been updated and should work fine. However, any custom color maps need to be updated to comply with the new format.
 
@@ -90,7 +90,7 @@ Following is a table that summarizes the updated property names/URI:s, which can
 | `BillboardMinMaxSize` | `Sizing.MaxSize` | Float | No longer a pixel value, so the value has to be updated |
 | `CorrectionSizeEndDistance` | (Removed) |  | |
 | `CorrectionSizeFactor` | (Removed) |  | |
-| `ScaleFactor` | `Sizing.ScaleExponent` | Float | Can be computed based on the previous value, as described in the [section above](./conversion.md#compute-scaleexponent-from-scalefactor) |
+| `ScaleFactor` | `Sizing.ScaleExponent` | Float | Can be computed based on the previous value, as described in the [section above](compute-scaleexponent-from-scalefactor) |
 
 Note that the full property URI would be of the form
 `Scene.<IdentifierOfNode>.Renderable.<NameOfPropertyFromTableAbove>`.
