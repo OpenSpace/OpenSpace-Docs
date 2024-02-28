@@ -117,6 +117,7 @@ You can toggle the visibility of the text information using {kbd}`Shift+TAB` and
 :::{toctree}
 :maxdepth: 1
 
+system
 navigation
 time
 :::
