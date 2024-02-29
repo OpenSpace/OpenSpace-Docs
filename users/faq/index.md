@@ -1,7 +1,16 @@
 # FAQ
-## Related to usage in Planetariums
+## Windows
+### 1. Low framerate on a computer with a modern dedicated graphics card
+The most likely cause is that OpenSpace is using the _Integrated_ graphics card, rather than the _Dedicated_ one, the former of which is less powerful. If you are using an NVIDIA dedicated graphics card, you can change this by right clicking the Desktop and selecting "NVIDIA Control Panel" in the context menu. In the window that opens, select "Manage 3D settings" from the menu on the left and then search for the Dropdown menu called "Preferred graphics processor". It should say "Integrated graphics" right now, but double-click that setting and chose "High-Performance NVIDIA processor" instead.
+
+After changing this setting and restarting OpenSpace, it should run at a better framerate.
+
+![Windows context menu](context-menu.png)
+![NVIDIA control panel](control-panel.png)
+
+## Using in Planetariums
 ### 1. How do I get a fulldome (fisheye) output from OpenSpace?
-When you first start up OpenSpace, you get a screen where you can choose a _Profile_ and choose _Window Options_. _Window Options_ is where you can choose to use a fisheye configuration. 
+When you first start up OpenSpace, you get a screen where you can choose a _Profile_ and choose _Window Options_. _Window Options_ is where you can choose to use a fisheye configuration.
 
 ### 2. How can I save screenshots in a resolution higher than my screen resolution? For example, my computer screen can only display 1920x1080, but I want to capture 4096x4096 pngs using the session recording function.
 You can choose to display a different resolution, and render at a different resolution. The `single.json` _Window Options_ configuration file is an example that has a display resolution of 1280x720 (the `"size"` parameter) but renders PNGs at 2560x1440 (the `"res"` parameter). These configuration files are located in the `config` directory --- you can write your own for your desired resolution.
@@ -15,7 +24,7 @@ There are several ways to do this. For example, you could
 ### 4. How do I ensure that all the data sets I need are loaded before playing back a recorded path? Can I play back without an internet connection?
 Go into the `openspace.cfg` file and set {menuselection}`ModuleConfigurations --> GlobeBrowsing --> MRFCacheEnabled` to `true`. Run OpenSpace again it will cache the globe browsing data for planet/moon locations you visit. Then later, it should use the cached data for those same locations. There is also an `offline` profile that you can select from the launcher, and see if that has the content you want.
 
-## Related to running OpenSpace on MacOS, Linux and unsupported hardware 
+## Related to running OpenSpace on MacOS, Linux and unsupported hardware
 ### 1. Why do you only provide Intel Mac packages? Why not packages for Apple Silicon Macs?
 When starting an x86 or x64 application on MacOS, it automatically runs through the Rosetta 2 translation layer, so that the ARM chip in the machine can execute the instructions.  That part is not really a big deal and it would come with some performance loss that could be acceptable.  However, we are using OpenGL as our graphics pipeline, which Apple has deprecated on their platforms for a number of years now.  The way they still support it on M1 is a separate conversion layer that transforms the OpenGL calls into Metal 3 (the Apple-specific graphics API) before it gets executed by the GPU cores on the M1/M2 chip.  Apple decided for some very strange reason to not support double precision floating point operations (https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf Section 2.1) which we use everywhere in OpenSpace to get enough precision for the whole universe. So as soon as we run any OpenGL that uses double precision, it no longer uses the GPU cores built into the chip, but reverts to software-based rendering, which kills the performance entirely.
 

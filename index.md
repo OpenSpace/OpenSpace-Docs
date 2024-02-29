@@ -69,7 +69,7 @@ users/profiles/index
 users/console/index
 users/handling-errors
 users/hardware-requirements
-users/faq
+users/faq/index
 :::
 
 
