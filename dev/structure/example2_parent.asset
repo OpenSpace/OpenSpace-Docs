@@ -1,0 +1,30 @@
+-- We want to load the child asset first and store its result
+local example = asset.require("./example2_child")
+
+local Node = {
+  Identifier = "Grid",
+  -- To define the parent of this node, we access the 'Node' table exported by the child
+  -- asset and access its 'Identifier' key
+  Parent = example.Node.Identifier,
+  Transform = {
+    Rotation = {
+      Type = "StaticRotation",
+      -- Use a rotation by 90 degrees around the z axis
+      Rotation = { 0, 0, math.pi / 8 }
+    }
+  },
+  Renderable = {
+    -- We want to render a grid
+    Type = "RenderableGrid"
+  }
+}
+
+asset.onInitialize(function()
+  -- We initializing the asset, we want to add the node to the scene graph
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  -- When deinitializing, we remove the node from the scene graph
+  openspace.removeSceneGraphNode(Node)
+end)

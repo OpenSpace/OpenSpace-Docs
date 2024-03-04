@@ -131,6 +131,7 @@ dev/compiling/index
 dev/tools/index
 dev/dependencies/index
 dev/coding-style
+dev/structure/index
 dev/deploying-windows
 dev/folder-layout
 dev/pull-requests
