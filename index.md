@@ -139,7 +139,7 @@ dev/branches
 dev/cpp-musings
 dev/skybrowser
 dev/webrtc/index
-dev/faq
+dev/faq/index
 :::
 
 
