@@ -5,4 +5,5 @@
 :maxdepth: 1
 data-synchronization/index
 converting-uniview-modfiles/index
+assets/index
 :::
