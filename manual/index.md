@@ -11,5 +11,6 @@ properties/index
 scenegraph/index
 events/index
 data-distribution/index
+scripting/index
 
 ```

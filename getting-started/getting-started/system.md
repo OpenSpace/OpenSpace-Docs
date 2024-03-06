@@ -11,6 +11,6 @@ The System menu has the following items:
 
 - **Send Feedback** - opens a web form to send feedback.
 - **Show keybindings** - displays an onscreen keyboard with the currently configured keyboard short-cuts, the key bindings
-- **Toggle console** - shows or hides a one-line in-game [console](/getting-started/console/index) at the top of the window, which allows precise control of the details in the scene
+- **Toggle console** - shows or hides a one-line in-game [console](/manual/scripting/console/index) at the top of the window, which allows precise control of the details in the scene
 - **Toggle native GUI** - shows or hides an in-game GUI rendered as an overlay over the main window :::{figure} settings-menu.png
 - **Quit OpenSpace** - exit the software

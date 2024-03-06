@@ -19,7 +19,7 @@ You can choose to display a different resolution, and render at a different reso
 There are several ways to do this. For example, you could
 - press {kbd}`TAB` and {kbd}`SHIFT+TAB` to toggle visibility of the GUI and text elements respectively
 - create or use a _Window Options_ configuration file which renders the GUI and the data visualization separately on different windows, for example the `single_fisheye_gui.json` configuration file
-- create a [HTML control page](/customization/html-controls-setup/index) and use that to control the navigation, hiding the GUI
+- create a [HTML control page](/customization/custom-web-ui/html-controls-setup/index) and use that to control the navigation, hiding the GUI
 
 ### 4. How do I ensure that all the data sets I need are loaded before playing back a recorded path? Can I play back without an internet connection?
 Go into the `openspace.cfg` file and set {menuselection}`ModuleConfigurations --> GlobeBrowsing --> MRFCacheEnabled` to `true`. Run OpenSpace again it will cache the globe browsing data for planet/moon locations you visit. Then later, it should use the cached data for those same locations. There is also an `offline` profile that you can select from the launcher, and see if that has the content you want.
@@ -31,7 +31,7 @@ When starting an x86 or x64 application on MacOS, it automatically runs through 
 Asahi Linux has successfully ported OpenGL to Apple Silicon Macs, so those with Apple Silicon Macs could, if they're feeling adventurous, [install Asahi Fedora remix](https://asahilinux.org/fedora/) and try to compile and run OpenSpace on their Apple Silicon Macs.
 
 ### 2. Does OpenSpace run on Linux?
-Yes. Linux users can compile and run OpenSpace using the MIT licensed code on [GitHub](https://github.com/OpenSpace/OpenSpace). Also see the [Compile instructions](/contributing/compiling/index) on this page.
+Yes. Linux users can compile and run OpenSpace using the MIT licensed code on [GitHub](https://github.com/OpenSpace/OpenSpace). Also see the [Compile instructions](/contributing/development/compiling/index) on this page.
 
 ### 3. I don't have an NVidia graphics card. Can I still run the Windows executable on my Windows laptop which has integrated Intel graphics?
 Yes. The executable will run, but as integrated Intel cards are generally less powerful than dedicated graphics cards, the frame rate would be very low.

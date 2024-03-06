@@ -45,7 +45,7 @@ OpenSpace is an open-source project and relies on the contribution by a communit
 -->
 :::{toctree}
 :hidden:
-:maxdepth: 4
+:maxdepth: 3
 
 about/index
 getting-started/index
