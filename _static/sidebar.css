@@ -1,0 +1,46 @@
+/*********************************************************
+* Make chevron right be on the left side of the text and
+* toggle between right and down. 
+*********************************************************/
+
+/* Chevron right default is rotated down. Rotate to right */
+.toctree-checkbox ~ label {
+  transform: rotate(-90deg);
+}
+
+/* Chevron right (checked) default is rotated up. Rotate to down */
+.toctree-checkbox:checked ~ label {
+  transform: rotate(180deg);
+}
+
+/* Chevron right default is on the right side of menu text. Put on left side */
+.sidebar-tree label {
+  left: 0;
+}
+
+/* Place text to the right of chevron right */
+.sidebar-tree li.has-children > .reference {
+  padding-left: calc(var(--sidebar-expander-width));
+  padding-right: var(--sidebar-item-spacing-horizontal);
+}
+
+/*********************************************************
+* Make entire entry light up on hover, not just chevron
+*********************************************************/
+
+/* Chevron right default shows up when hovering. Remove */
+.sidebar-tree label:hover {
+  background: transparent;
+}
+
+/* Make entire menu entry light up upon hover */
+.sidebar-tree li:hover {
+  background: var(--color-sidebar-item-background--hover);
+}
+
+/* Don't make children light up upon hover */
+.sidebar-tree li.has-children:hover {
+  background: transparent;
+}
+
+
