@@ -1,4 +1,4 @@
-# Support
+# Community
 
 
 ```{toctree}

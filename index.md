@@ -3,7 +3,7 @@ Welcome to the official documentation for [OpenSpace](https://openspaceproject.c
 
 In addition to the documentation provided here, you are very welcome on our [Slack channel](https://openspacesupport.slack.com) to which you can freely [sign-up](https://join.slack.com/t/openspacesupport/shared_invite/enQtMjUxNzUyMTQ1ODQxLTRmNDI1YTA4ODkzODUyODE0YjIzODU0NWU1NGY1NWIzZDUzMDgwM2VkYmE1ZGY3MmU2OWI5NzhlN2U3NWU2NTQ).
 
-On the left you can find a table of contents that allows you to access the individual topics of interest. The table also contains a search function to search through the available pages. If you are new to _OpenSpace_, we'd recommend you to start in the [Getting Started](users/getting-started/index) section.
+On the left you can find a table of contents that allows you to access the individual topics of interest. The table also contains a search function to search through the available pages. If you are new to _OpenSpace_, we'd recommend you to start in the [Getting Started](getting-started/getting-started/index) section.
 
 The overall structure of the documentation is as follows:
 
@@ -47,13 +47,13 @@ OpenSpace is an open-source project and relies on the contribution by a communit
 :hidden:
 :maxdepth: 4
 
-general/index
-users/index
+about/index
+getting-started/index
 manual/index
 tutorials/index
-how-to/index
-development/index
-support/index
+contributing/index
+customization/index
+community/index
 
 :::
 

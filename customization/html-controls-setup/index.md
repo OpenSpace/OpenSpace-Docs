@@ -235,7 +235,7 @@ We also use various built in methods available in JavaScript to build buttons wi
 ```
 
 ### Fade to a navigation state
-To get the nav state first run `openspace.navigation.saveNavState('C:/path/to/nav/state')` in the OpenSpace [console](/users/console/index). Then to add the output to JavaScript code replace all square brackets `[`, `]` with curly brackets `{`, `}` and all equal signs (`=`) with colons (`;`).
+To get the nav state first run `openspace.navigation.saveNavState('C:/path/to/nav/state')` in the OpenSpace [console](/getting-started/console/index). Then to add the output to JavaScript code replace all square brackets `[`, `]` with curly brackets `{`, `}` and all equal signs (`=`) with colons (`;`).
 
 ```js
 'Jump To Nav State': () => {

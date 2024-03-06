@@ -1,4 +1,4 @@
-# Users
+# Getting started
 
 
 ```{toctree}

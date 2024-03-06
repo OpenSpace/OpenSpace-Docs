@@ -3,7 +3,7 @@ The touch module provides support for a touch-screen interface that uses the TUI
 
 ## INSTALL
 Three main things are needed:
-  1. **OpenSpace with built-in touch support:** The build and/or installation of OpenSpace is covered [here](/dev/compiling/index). The one important detail to add for touch is to enable `OPENSPACE_MODULE_TOUCH` in CMake. It will be necessary to build OpenSpace from source with this module enabled, rather than using a pre-built binary (which as of this writing most likely does not have the touch module built-in).
+  1. **OpenSpace with built-in touch support:** The build and/or installation of OpenSpace is covered [here](/contributing/compiling/index). The one important detail to add for touch is to enable `OPENSPACE_MODULE_TOUCH` in CMake. It will be necessary to build OpenSpace from source with this module enabled, rather than using a pre-built binary (which as of this writing most likely does not have the touch module built-in).
   1. **TUIO Server:** This is an executable separate from OpenSpace. It was built by Jonathan Bosson (the original developer for the touch interface). A few modifications were made to the "stock" build in order to get it to "hook" with the OpenSpace process. Unfortunately, the source code for this build was not kept, but was based on [this repository](https://github.com/vialab/Touch2Tuio/tree/master/TouchHook). Currently, the TUIO Server binary files work fine for our purposes and reside on the touch table (C:/OpenSpaceTouch/tuioServer). Gene Payne also has a copy.
   1. **Script to run both software components together:** The developer stated that:
 
