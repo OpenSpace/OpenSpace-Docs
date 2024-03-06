@@ -41,115 +41,19 @@ OpenSpace is an open-source project and relies on the contribution by a communit
 
 
 <!--
-  General
+  Sidebar
 -->
 :::{toctree}
-:caption: General
-:maxdepth: 2
 :hidden:
-:titlesonly:
+:maxdepth: 4
 
-general/releases/index
-general/links
-general/academics
-:::
-
-
-<!--
-  Users
--->
-:::{toctree}
-:caption: Users
-:maxdepth: 2
-:hidden:
-:titlesonly:
-
-users/getting-started/index
-users/profiles/index
-users/console/index
-users/handling-errors
-users/hardware-requirements
-users/faq/index
-:::
-
-
-<!--
-  Manual
--->
-:::{toctree}
-:caption: Manual
-:maxdepth: 2
-:hidden:
-:titlesonly:
-
-manual/navigation/index
-manual/assets/index
-manual/content/index
-manual/properties/index
-manual/scenegraph/index
-manual/events/index
-manual/data-distribution/index
-:::
-
-
-<!--
-  Tutorials
--->
-:::{toctree}
-:caption: Tutorials
-:maxdepth: 1
-:hidden:
-
-tutorials/users/index
-tutorials/installers/index
-tutorials/builders/index
-:::
-
-
-<!--
-  How-To
--->
-:::{toctree}
-:caption: How-Tos
-:maxdepth: 1
-:hidden:
-
+general/index
+users/index
+manual/index
+tutorials/index
 how-to/index
+development/index
+support/index
+
 :::
 
-
-<!--
-  Development
--->
-:::{toctree}
-:caption: Development
-:maxdepth: 2
-:hidden:
-:titlesonly:
-
-dev/compiling/index
-dev/tools/index
-dev/dependencies/index
-dev/coding-style
-dev/structure/index
-dev/deploying-windows
-dev/folder-layout
-dev/pull-requests
-dev/branches
-dev/cpp-musings
-dev/skybrowser
-dev/webrtc/index
-dev/faq/index
-:::
-
-
-<!--
-  Support
--->
-:::{toctree}
-:caption: Support
-:hidden:
-
-support/kitchensink
-support/field-list-example
-:::
