@@ -3,7 +3,10 @@
 
 :::{toctree}
 :maxdepth: 1
+
+assets
+resources
+models/index
 data-synchronization/index
-converting-uniview-modfiles/index
-assets/index
+converting-uniview-mod-files/index
 :::

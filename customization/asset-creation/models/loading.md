@@ -1,5 +1,5 @@
 # How to load a model into OpenSpace
-To load a model into OpenSpace you will need to create a new asset file. To learn more about assets see [Assets](../../../customization/asset-creation/assets/resources), and load the model with this piece of code:
+To load a model into OpenSpace you will need to create a new asset file. To learn more about assets see [Assets](../resources), and load the model with this piece of code:
 ```lua
 ...
 local sun = asset.require('scene/solarsystem/sun/sun')
@@ -12,7 +12,7 @@ Renderable = {
 ...
 ```
 
-The first line in this example imports the asset for the Sun, this is to add it as a light source to the model in the end. Then you add the `Renderable` with the `"RenderableModel"` as Type. Lastly, you define the path to the model file as the `GeometryFile`, for more information regarding paths in assets see [Resources](../../../customization/asset-creation/assets/resources). The line `modelPath .. "BoxAnimated.glb",` creates a path to your sync folder where the model is downloaded from our servers. If you want to add a local model file instead that is not located on our servers, then you could use the `localResource` function to create the path, like this (example with a local model file of New York City):
+The first line in this example imports the asset for the Sun, this is to add it as a light source to the model in the end. Then you add the `Renderable` with the `"RenderableModel"` as Type. Lastly, you define the path to the model file as the `GeometryFile`, for more information regarding paths in assets see [Resources](..//resources). The line `modelPath .. "BoxAnimated.glb",` creates a path to your sync folder where the model is downloaded from our servers. If you want to add a local model file instead that is not located on our servers, then you could use the `localResource` function to create the path, like this (example with a local model file of New York City):
 ```lua
 GeometryFile = asset.localResource("nyc-model.obj"),
 ```
