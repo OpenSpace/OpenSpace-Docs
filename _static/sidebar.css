@@ -689,7 +689,7 @@ footer {
 
 .wy-nav-content {
   background-color: var(--content-background-color);
-  max-width: 900px;
+  max-width: initial;
 }
 
 .wy-body-for-nav {
@@ -699,8 +699,7 @@ footer {
 @media only screen and (min-width: 769px) {
   .wy-body-for-nav {
       /* Center the page on wide displays for better readability */
-      max-width: 1200px;
-      margin: 0 auto;
+      max-width: initial;
   }
 }
 
@@ -1317,6 +1316,7 @@ p + .classref-constant {
   /* A 5 pixel margin is added on each side. The logo itself displays at 200×200 at 100% scaling. */
   width: 270px;
   height: 70px;
+  object-fit: cover;
 }
 
 .wy-side-nav-search {
