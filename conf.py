@@ -54,34 +54,13 @@ myst_heading_anchors = 3
 ###
 # HTML output
 ###
-html_theme = "furo"
+html_theme = "sphinx_rtd_theme"
 html_theme_options = {
-  # No written project title in the sidebar
-  "sidebar_hide_name": True,
-
-  # Make the edit button in the top right appear
-  "source_repository": "https://github.com/OpenSpace/OpenSpace-Docs/",
-  "source_branch": "master",
-  "source_directory": "/",
-
-  # Set CSS Variables. The dark theme inherits all light variables
-  "light_css_variables": {
-    "font-stack--monospace": "Source Code Pro Light, monospace"
-  },
-
-  # Add custom items in the footer
-  "footer_icons": [
-    {
-        "name": "GitHub",
-        "url": "https://github.com/OpenSpace/OpenSpace",
-        "html": "",
-        "class": "fa-brands fa-solid fa-github fa-2x"
-    }
-  ],
-
-  "dark_logo": "logo.png",
-  "light_logo": "logo-inverted.png"
+  "logo_only" : True, 
+  "prev_next_buttons_location" : "None"
 }
+
+html_logo = "_static/logo.png"
 html_title = f'OpenSpace documentation ({version})'
 html_short_title = "OpenSpace"
 
