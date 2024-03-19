@@ -68,7 +68,7 @@ html_favicon = "_static/icon.png"
 
 # JavaScript files that are added into the generated documentation
 html_js_files = [
-
+  "custom.js"
 ]
 
 # CSS files that are added into the generated documentation
