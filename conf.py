@@ -62,7 +62,11 @@ html_theme_options = {
   "collapse_navigation": False,
 }
 
-html_logo = "_static/logo.png"
+# Add a transparent image as the logo
+# Instead we add the logo later in the css
+# This enables different logos in dark and light mode
+html_logo = "_static/transparent.png"
+
 html_title = f'OpenSpace documentation ({version})'
 html_short_title = "OpenSpace"
 

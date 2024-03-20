@@ -8,7 +8,8 @@
   --body-color: #404040;
   --content-wrap-background-color: #efefef;
   --content-background-color: #fcfcfc;
-  --logo-opacity: 1.0;
+  --logo-opacity: 0.9;
+  --logo: url('logo-inverted.png');
 
   --navbar-background-color: #f8f9fb;
   --navbar-background-color-hover: #f1f2f3;
@@ -155,6 +156,7 @@
       --content-background-color: #2e3236;
       /* Decrease the logo opacity when using the dark theme to be less distracting */
       --logo-opacity: 0.85;
+      --logo: url("logo.png");
 
       --navbar-background-color: #25282b;
       --navbar-background-color-hover: #333639;
@@ -1349,7 +1351,9 @@ details.sd-dropdown:not([open]) > .sd-card-header {
   /* A 5 pixel margin is added on each side. The logo itself displays at 200×200 at 100% scaling. */
   width: 270px;
   height: 70px;
-  object-fit: cover;
+  background-size: cover;
+  background-image: var(--logo);
+  background-position-y: center;
 }
 
 .wy-side-nav-search {
