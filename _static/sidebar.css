@@ -10,26 +10,27 @@
   --content-background-color: #fcfcfc;
   --logo-opacity: 1.0;
 
-  --navbar-background-color: #2b2b2b;
-  --navbar-background-color-hover: #29355c;
-  --navbar-background-color-active: #212d51;
-  --navbar-current-background-color: #212d51;
-  --navbar-current-background-color-hover: #182343;
-  --navbar-current-background-color-active: #131e3b;
-  --navbar-category-active-color: rgba(255 115 129 / 10%);
-  --navbar-current-color: #f1f9ff;
-  --navbar-level-1-color: #c3e3ff;
-  --navbar-level-2-color: #b8d6f0;
-  --navbar-level-3-color: #a3c4e1;
-  --navbar-expand-base-color: #81a3c2;
-  --navbar-expand-hover-color: #c3e3ff;
-  --navbar-expand-active-color: #f1f9ff;
+  --navbar-background-color: #f8f9fb;
+  --navbar-background-color-hover: #f1f2f3;
+  --navbar-background-color-active: #bbdbe0; /* Pressing a menu item that isn't already selected */
+  --navbar-current-background-color: #e9f5f8;
+  --navbar-current-background-color-hover: #cde4e4;
+  --navbar-current-background-color-active: #c7d9db;
+  --navbar-category-active-color: #ff73811a;
+  --navbar-current-color: #404040;
+  --navbar-level-1-color: #4b4b4b;
+  --navbar-level-2-color: #5a5a5a;
+  --navbar-level-3-color: #6e6e6e;
+  --navbar-expand-base-color: #4b4b4b;
+  --navbar-expand-hover-color: #404040;
+  --navbar-expand-active-color: #ff73811a;
   --navbar-dimmed-color: #a3c4e1;
-  --navbar-heading-color: #ff7381;
-  --navbar-scrollbar-color: #d45a66;
-  --navbar-scrollbar-hover-color: #b14550;
-  --navbar-scrollbar-active-color: #72383e;
-  --navbar-scrollbar-background: #131e2b;
+  --navbar-heading-color: #313131;
+  --navbar-scrollbar-color: #878787;
+  --navbar-scrollbar-hover-color: #6b6b6b;
+  --navbar-scrollbar-active-color: #424242;
+  --navbar-scrollbar-background: #cfd0d1;
+  --navbar-border-color: #e1e4e5;
 
   --link-color: #2980b9;
   --link-color-hover: #3091d1;
@@ -153,11 +154,12 @@
       --navbar-expand-hover-color: #ccc;
       --navbar-expand-active-color: #ddd;
       --navbar-dimmed-color: #bbb;
-      --navbar-heading-color: #ee7381;
-      --navbar-scrollbar-color: #be5460;
-      --navbar-scrollbar-hover-color: #963e48;
-      --navbar-scrollbar-active-color: #5f3034;
+      --navbar-heading-color: #fefefe;
+      --navbar-scrollbar-color: #ddd;
+      --navbar-scrollbar-hover-color: #fefefe;
+      --navbar-scrollbar-active-color: #ddd;
       --navbar-scrollbar-background: #1c1e21;
+      --navbar-border-color: #555555;
 
       --link-color: #8cf;
       --link-color-hover: #9df;
@@ -254,30 +256,6 @@
       --btn-neutral-hover-background-color: #505050;
       --footer-color: #aaa;
   }
-}
-
-/* Make search bar square and fill out sidebar */
-
-.wy-side-nav-search {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.wy-side-nav-search input[type="text"] { 
-  background: transparent;
-  border: none;
-  border-top-width: medium;
-  border-top-style: none;
-  border-top-color: currentcolor;
-  border-bottom-width: medium;
-  border-bottom-style: none;
-  border-bottom-color: currentcolor;
-  border-bottom: 1px solid var(--search-input-background-color);
-  border-top: 1px solid var(--search-input-background-color);
-  box-sizing: border-box;
-  border-radius: 0;
-  box-shadow: none;
-  color: var(--search-input-background-color);
-  height: 40px;
 }
 
 /**
@@ -685,6 +663,7 @@ footer {
 
 .wy-nav-content-wrap {
   background-color: var(--content-wrap-background-color);
+  border-left: 0.5px solid var(--navbar-border-color);
 }
 
 .wy-nav-content {
@@ -751,10 +730,13 @@ footer {
 }
 
 /* Table display tweaks */
+.rst-content table.docutils caption, .rst-content table.field-list caption {
+  color: var(--body-color);
+}
 
 .rst-content table.docutils,
 .wy-table-bordered-all {
-  border: 4px solid var(--code-border-color);
+  border: 2px solid var(--code-border-color);
 }
 
 .wy-table-bordered-all td,
@@ -762,14 +744,15 @@ footer {
 .rst-content table.docutils td,
 .rst-content table.docutils thead th,
 .rst-content table.field-list thead th {
-  border-bottom: 2px solid var(--code-border-color);
-  border-left: 2px solid var(--code-border-color);
+  border-bottom: 1px solid var(--code-border-color);
+  border-left: 1px solid var(--code-border-color);
   padding: 4px 16px;
 }
 
 html.writer-html5 .rst-content table.docutils th {
-  border-bottom: 4px solid var(--code-border-color);
-  border-left: 2px solid var(--code-border-color);
+  border-bottom: 2px solid var(--code-border-color);
+  border-left: 1px solid var(--code-border-color);
+  border-right: 1px solid var(--code-border-color);
   padding: 8px 16px;
   vertical-align: middle;
 }
@@ -840,7 +823,7 @@ code,
 }
 
 .rst-content div[class^="highlight"] {
-  border: 3px solid var(--code-tabs-background-color);
+  border: 1px solid var(--code-tabs-background-color);
 }
 
 .rst-content div[class^="highlight"] div[class^="highlight"] {
@@ -1355,8 +1338,6 @@ p + .classref-constant {
 }
 
 .wy-side-nav-search input[type="text"] {
-  background-color: var(--input-background-color);
-  color: var(--body-color);
   /* Avoid reflowing when toggling the focus state */
   border: 2px solid transparent;
   box-shadow: none;
@@ -1365,8 +1346,32 @@ p + .classref-constant {
   font-size: 14px;
 }
 
+
+.wy-side-nav-search {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* Make search bar square and make it as wide as the sidebar */
+.wy-side-nav-search input[type="text"] { 
+  background: transparent;
+  /* Avoid reflowing when toggling the focus state */
+  border: 0.5px solid transparent;
+  box-shadow: none;
+  /* Make visual feedback instant */
+  transition: none;
+  font-size: 14px;
+  border-bottom: 1px solid var(--search-input-background-color);
+  border-top: 1px solid var(--search-input-background-color);
+  box-sizing: border-box;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--body-color);
+  height: 40px;
+}
+
 .wy-side-nav-search input[type="text"]:focus {
-  border: 2px solid var(--input-focus-border-color);
+  border: 0.5px solid var(--input-focus-border-color);
 }
 
 .wy-side-nav-search input[type="text"]::placeholder {
