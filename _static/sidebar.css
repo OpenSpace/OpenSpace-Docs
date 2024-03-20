@@ -47,6 +47,7 @@
   --input-background-color: #fcfcfc;
   --input-focus-border-color: #5f8cff;
 
+  --tab-color: #3d8cbf;
   --tabs-background-color: #e1e4e5;
   --tabs-selected-color: #a2a9ae;
   --code-tabs-background-color: #e3ecd1;
@@ -128,6 +129,21 @@
 
   --system-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --monospace-font-family: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace;
+
+  /* Sidebars that are floating on the right hand side in a document */ 
+  --sidebar-background-color: #f3f6f6;
+  --sidebar-border-color: #e1e4e5; 
+  --sidebar-title-background-color: #e1e4e5;
+
+  /* Refer to menu items in text (looks like a button) */ 
+  --menu-background-color: #e7f2fa; 
+  --menu-border-color: #7fbbe3; 
+
+  /* Dropdown menus */
+  --dropdown-border-color: #dddddd;
+
+  /* Function code headers */
+  --function-header-background-color: #e7f2fa;
 }
 
 /* Dark theme colors */
@@ -176,6 +192,7 @@
       --input-background-color: #333537;
       --input-focus-border-color: #5f8cff;
 
+      --tab-color: #7fbfee;
       --tabs-background-color: #434649;
       --tabs-selected-color: #a2a9ae;
       --code-tabs-background-color: #353c4c;
@@ -255,6 +272,21 @@
       --btn-neutral-background-color: #404040;
       --btn-neutral-hover-background-color: #505050;
       --footer-color: #aaa;
+
+      /* Sidebars that are floating on the right hand side in a document */ 
+      --sidebar-background-color: #474d53;
+      --sidebar-border-color: #626262; 
+      --sidebar-title-background-color: #283d44;
+
+      /* Refer to menu items in text (looks like a button) */ 
+      --menu-background-color: #515355; 
+      --menu-border-color: #6d6d6d; 
+
+      /* Dropdown menus */
+      --dropdown-border-color: #595959;
+
+      /* Function code headers */
+      --function-header-background-color: #202531;
   }
 }
 
@@ -390,14 +422,6 @@ a.btn:hover {
   text-decoration: none;
 }
 
-/* Style external links differently to make them easier to distinguish from internal links. */
-.reference.external {
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-image: var(--external-reference-icon);
-  padding-right: 13px;
-}
-
 /* Distinguish class reference page links from "user manual" page links with a class reference badge. */
 
 /* Remove text wrapping so that the badge is always on the same line as the anchor's text. */
@@ -413,6 +437,15 @@ a.btn:hover {
   width: 16px;
   padding: 0.125rem 0.375rem;
   margin-left: 0.25rem;
+}
+
+.rst-content .sidebar {
+  border: 1px solid var(--sidebar-border-color);
+  background-color: var(--sidebar-background-color);
+}
+
+.rst-content .sidebar .sidebar-title {
+  background-color: var(--sidebar-title-background-color);
 }
 
 /* Prevent the class reference badge from appearing twice in the instant search results (not testable locally). */
@@ -682,7 +715,24 @@ footer {
   }
 }
 
+/* Tabs inline in markdown */ 
+
+.sd-tab-set > input:checked + label {
+  color: var(--tab-color);
+  border-color: var(--tab-color);
+}
+
+.sd-tab-set > input:not(:checked) + label:hover {
+  color: var(--tab-color);
+  border-color: transparent;
+}
+
 /* Customize the look of tabbed panels, including code tabs. */
+
+.rst-content .guilabel, .rst-content .menuselection {
+  border: 1px solid var(--menu-border-color);
+  background-color: var(--menu-background-color);
+}
 
 .rst-content [role="tablist"] {
   border-bottom: none;
@@ -727,6 +777,11 @@ footer {
 .rst-content div[class^="highlight"] pre {
   font-variant-ligatures: none;
   padding: 18px 16px;
+}
+
+/* Function headers */ 
+html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt {
+  background-color: var(--function-header-background-color);
 }
 
 /* Table display tweaks */
@@ -1265,6 +1320,20 @@ p + .classref-constant {
 
 .classref-reftable-group .wy-table-responsive > table {
   width: 100%;
+}
+
+/* Dropdown menus */ 
+
+.sd-card {
+  border: 1.5px solid var(--dropdown-border-color);
+}
+
+.sd-card-header {
+  border-bottom: 1px solid var(--dropdown-border-color);
+}
+
+details.sd-dropdown:not([open]) > .sd-card-header {
+  border: 1.5px solid var(--dropdown-border-color);
 }
 
 /* Buttons */

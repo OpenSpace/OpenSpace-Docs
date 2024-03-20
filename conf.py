@@ -59,6 +59,7 @@ html_theme_options = {
   "logo_only" : True, 
   "prev_next_buttons_location" : "None",
   "display_version": False,
+  "collapse_navigation": False,
 }
 
 html_logo = "_static/logo.png"
