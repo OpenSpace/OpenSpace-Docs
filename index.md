@@ -43,17 +43,96 @@ OpenSpace is an open-source project and relies on the contribution by a communit
 <!--
   Sidebar
 -->
-:::{toctree}
-:hidden:
-:maxdepth: 3
 
-about/index
-getting-started/index
-manual/index
-tutorials/index
-contributing/index
-customization/index
-community/index
+
+:::{toctree}
+:caption: About
+:maxdepth: 1
+:hidden:
+:titlesonly:
+
+about/academics
+about/links
 
 :::
+
+:::{toctree}
+:caption: Getting started
+:maxdepth: 1
+:hidden:
+:titlesonly:
+
+getting-started/handling-errors
+getting-started/hardware-requirements
+
+:::
+
+:::{toctree}
+:caption: Manual
+:maxdepth: 1
+:hidden:
+:titlesonly:
+
+manual/navigation/index
+manual/assets/index
+manual/content/index
+manual/properties/index
+manual/scenegraph/index
+manual/events/index
+manual/data-distribution/index
+manual/scripting/index
+
+:::
+
+:::{toctree}
+:caption: Tutorials
+:maxdepth: 1
+:hidden:
+:titlesonly:
+
+tutorials/users/index
+tutorials/installers/index
+tutorials/builders/index
+
+:::
+
+:::{toctree}
+:caption: Contributing
+:maxdepth: 1
+:hidden:
+:titlesonly:
+
+contributing/development/index
+contributing/faq/index
+
+:::
+
+:::{toctree}
+:caption: Customization
+:maxdepth: 1
+:hidden:
+:titlesonly:
+
+customization/asset-creation/index
+customization/custom-web-ui/index
+
+:::
+
+:::{toctree}
+:caption: Community
+:maxdepth: 1
+:hidden:
+:titlesonly:
+
+community/kitchensink
+community/field-list-example
+
+:::
+
+
+
+
+
+
+
 

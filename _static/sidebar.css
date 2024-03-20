@@ -16,7 +16,7 @@
   --navbar-current-background-color: #e9f5f8;
   --navbar-current-background-color-hover: #cde4e4;
   --navbar-current-background-color-active: #c7d9db;
-  --navbar-category-active-color: #ff73811a;
+  --navbar-category-active-color: #c7d9db2a;
   --navbar-current-color: #404040;
   --navbar-level-1-color: #4b4b4b;
   --navbar-level-2-color: #5a5a5a;
@@ -25,7 +25,7 @@
   --navbar-expand-hover-color: #404040;
   --navbar-expand-active-color: #ff73811a;
   --navbar-dimmed-color: #a3c4e1;
-  --navbar-heading-color: #313131;
+  --navbar-heading-color: #515151;
   --navbar-scrollbar-color: #878787;
   --navbar-scrollbar-hover-color: #6b6b6b;
   --navbar-scrollbar-active-color: #424242;
@@ -43,7 +43,7 @@
   --table-row-odd-background-color: #f3f6f6;
   --code-background-color: #e9eae5;
   --code-border-color: #e1e4e5;
-  --code-literal-color: #c03e41;
+  --code-literal-color: #895aaa;
   --input-background-color: #fcfcfc;
   --input-focus-border-color: #5f8cff;
 
@@ -126,9 +126,10 @@
   --btn-neutral-background-color: #f3f6f6;
   --btn-neutral-hover-background-color: #e5ebeb;
   --footer-color: #808080;
-
-  --system-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --monospace-font-family: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace;
+  /* Regular font */
+  --system-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  /* Code font */ 
+  --monospace-font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace;;
 
   /* Sidebars that are floating on the right hand side in a document */ 
   --sidebar-background-color: #f3f6f6;
@@ -157,11 +158,11 @@
 
       --navbar-background-color: #25282b;
       --navbar-background-color-hover: #333639;
-      --navbar-background-color-active: #111417;
+      --navbar-background-color-active: #1114174b;
       --navbar-current-background-color: #333639;
       --navbar-current-background-color-hover: #44474a;
       --navbar-current-background-color-active: #222528;
-      --navbar-category-active-color: rgba(238 115 129 / 10%);
+      --navbar-category-active-color: #c7d9db2a;
       --navbar-current-color: #fefefe;
       --navbar-level-1-color: #ddd;
       --navbar-level-2-color: #ccc;
@@ -170,7 +171,7 @@
       --navbar-expand-hover-color: #ccc;
       --navbar-expand-active-color: #ddd;
       --navbar-dimmed-color: #bbb;
-      --navbar-heading-color: #fefefe;
+      --navbar-heading-color: var(--body-color);
       --navbar-scrollbar-color: #ddd;
       --navbar-scrollbar-hover-color: #fefefe;
       --navbar-scrollbar-active-color: #ddd;
@@ -293,26 +294,6 @@
 /**
  * Changes copied from Godot docs page
  */
-
- @font-face {
-  font-family: "JetBrains Mono";
-  src: url('fonts/JetBrainsMono-Regular.woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url('fonts/JetBrainsMono-Medium.woff2');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url('fonts/JetBrainsMono-Bold.woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
 
 body,
 h1,
@@ -1484,6 +1465,12 @@ details.sd-dropdown:not([open]) > .sd-card-header {
   letter-spacing: 0.75px;
 }
 
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+  font-weight: 550;
+  text-transform: none;
+  font-size: 100%;
+}
+
 /* Default styling of navigation items */
 
 .wy-menu-vertical li {
@@ -1564,7 +1551,7 @@ details.sd-dropdown:not([open]) > .sd-card-header {
 .wy-menu-vertical li.toctree-l1 > a,
 .wy-menu-vertical li.toctree-l1.current > a {
   border: none;
-  padding: .4045em 1.918em;
+  padding: .4045em 2.325em;
 }
 .wy-menu-vertical li.toctree-l1.current > a {
   border-bottom: 2px solid var(--navbar-current-background-color);
