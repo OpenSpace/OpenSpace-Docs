@@ -1,5 +1,6 @@
 
 # All asset components
+{% for category in assetCategories %}
 
 :::{toctree}
 :caption: {{ category.name }}
@@ -10,3 +11,4 @@
 {% endfor %}
 
 :::
+{% endfor %}

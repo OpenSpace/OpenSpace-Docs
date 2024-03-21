@@ -2,9 +2,9 @@
 # {{ data.name }}
 
 {{ data.description }}
-## Members
 
 {% if members|length > 0 %}
+## Members
 :::{list-table}
 :widths: 3 16 1 4 1
 :header-rows: 1
