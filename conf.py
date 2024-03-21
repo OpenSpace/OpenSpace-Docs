@@ -57,9 +57,14 @@ myst_heading_anchors = 3
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
   "logo_only" : True, 
-  "prev_next_buttons_location" : "None",
   "display_version": False,
   "collapse_navigation": False,
+}
+
+html_context = {
+  "display_github": True,  # Integrate GitHub
+  "github_user": "OpenSpace",  # Username
+  "github_repo": "OpenSpace-Docs",  # Repo name
 }
 
 # Add a transparent image as the logo

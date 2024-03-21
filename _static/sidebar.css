@@ -1340,6 +1340,12 @@ details.sd-dropdown:not([open]) > .sd-card-header {
   opacity: var(--logo-opacity);
 }
 
+/* Edit on GitHub link in upper right corner */
+.fa {
+  font-family: var(--system-font-family);
+  font-weight: initial;
+}
+
 .wy-side-nav-search > a {
   padding: 0;
   margin-bottom: 0.404em;
@@ -1556,9 +1562,6 @@ details.sd-dropdown:not([open]) > .sd-card-header {
 .wy-menu-vertical li.toctree-l1.current > a {
   border: none;
   padding: .4045em 2.325em;
-}
-.wy-menu-vertical li.toctree-l1.current > a {
-  border-bottom: 2px solid var(--navbar-current-background-color);
 }
 
 /* Override styling for children of the current item. */
