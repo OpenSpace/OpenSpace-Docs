@@ -1,0 +1,24 @@
+
+# {{ data.name }}
+
+{{ data.description }}
+## Members
+
+{% if members|length > 0 %}
+:::{list-table}
+:widths: 3 16 1 4 1
+:header-rows: 1
+*   - Name
+    - Documentation
+    - Type
+    - Description
+    - Optional
+{% for member in members %}
+*   - `{{ member.name }}`
+    - {{ member.documentation }}
+    - `{{ member.type }}`
+    - {{ member.description }}
+    - {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
+    {% endfor %}
+:::
+{% endif %}

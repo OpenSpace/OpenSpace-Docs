@@ -118,6 +118,16 @@ customization/custom-web-ui/index
 
 :::
 
+
+:::{toctree}
+:caption: Generated from engine
+:maxdepth: 1
+
+generated/index
+
+:::
+
+
 :::{toctree}
 :caption: Community
 :maxdepth: 1
@@ -128,7 +138,6 @@ community/kitchensink
 community/field-list-example
 
 :::
-
 
 
 
