@@ -5,6 +5,8 @@
 
 {% if members|length > 0 %}
 ## Members
+
+### Overview
 :::{list-table}
 :widths: 3 16 1 4 1
 :header-rows: 1
@@ -17,8 +19,45 @@
 *   - `{{ member.name }}`
     - {{ member.documentation }}
     - `{{ member.type }}`
-    - {{ member.description }}
+    - {{ member.description }} {% if member.members|length > 0 %} [Members](#{{ data.name }}{{ member.name }}-target) {% endif %}
     - {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
     {% endfor %}
 :::
+
+{% for member in members %}
+{% if member.members|length > 0 %}
+___
+({{ data.name }}{{ member.name }}-target)=
+### `{{ member.name }}`
+{% if member.optional == 0 %}
+:::{tip} 
+This member is not optional!
+:::
+{% endif %}
+{{ member.documentation }}
+
+{% if member.description != "" %}
+* Description: {{ member.description }} 
+{% endif %}
+* Optional: {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
+
+#### Members
+:::{list-table}
+:widths: 3 16 1 4 1
+:header-rows: 1
+*   - Name
+    - Documentation
+    - Type
+    - Description
+    - Optional
+{% for nestedMember in member.members %}
+*   - `{{ nestedMember.name }}`
+    - {{ nestedMember.documentation }}
+    - `{{ nestedMember.type }}`
+    - {{ nestedMember.description }}
+    - {{ "Yes" if nestedMember.optional == 1 else "{bdg-info}`No`" }}
+    {% endfor %}
+:::
+{% endif %}
+{% endfor %}
 {% endif %}
