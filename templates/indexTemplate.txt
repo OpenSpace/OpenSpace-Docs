@@ -1,13 +1,8 @@
-# All asset components
-{% for category in assetCategories %}
-
-## {{ category.name }}
+# Create assets
 :::{toctree}
 :maxdepth: 1
 
-{% for class in category.classes %}
-{{ class.name }}
-{% endfor %}
+{{ folderNameAssets }}/index
+{{ folderNameScripting }}/index
 
 :::
-{% endfor %}

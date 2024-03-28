@@ -1,0 +1,13 @@
+# All asset components
+{% for category in assetCategories %}
+
+## {{ category.name }}
+:::{toctree}
+:maxdepth: 1
+
+{% for class in category.classes %}
+{{ class.name }}
+{% endfor %}
+
+:::
+{% endfor %}

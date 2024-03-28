@@ -1,0 +1,38 @@
+# `{{ library.fullName }}`
+
+## Functions overview
+
+:::{list-table}
+:header-rows: 1
+:widths: 2 10
+:width: 100%
+*   - Name
+    - Documentation
+{% for function in library.functions %}
+*   - [`{{ function.name }}`](#{{ function.name }}-target)
+    - {{ function.help }}
+    {% endfor %}
+:::
+
+## Functions
+{% for function in library.functions %}
+({{ function.name }}-target)=
+### `{{ function.name }}`
+{{ function.help }}
+
+{% if function.arguments|length > 0 %}
+:::{card} Parameters
+{% for argument in function.arguments %}
+{% if argument.name == "" %}
+Unnamed parameter ´{{ argument.type }}´
+{% else %}
+* {{ argument.name }} `{{ argument.type }}`{% if argument.defaultValue != "" %} - Default value: `{{ argument.defaultValue }}`{% endif %}
+{% endif %}{% endfor %}
+:::
+{% endif %}
+Return type: {% if function.returnType == "" %}`void`{% else %} `{{ function.returnType }}` {% endif %}
+:::{code-block} lua
+{{ library.fullName }}.{{ function.name }}({% for argument in function.arguments %}{{ argument.name }}{{ ", " if not loop.last }}{% endfor %})
+:::
+{{ "___" if not loop.last else "" }}
+{% endfor %}

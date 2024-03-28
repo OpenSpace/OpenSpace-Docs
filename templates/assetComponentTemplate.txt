@@ -19,7 +19,7 @@
 *   - `{{ member.name }}`
     - {{ member.documentation }}
     - `{{ member.type }}`
-    - {{ member.description }} {% if member.members|length > 0 %} [Members](#{{ data.name }}{{ member.name }}-target) {% endif %}
+    - {{ member.description }} {% if member.members|length > 0 %} [Table parameters](#{{ data.name }}{{ member.name }}-target) {% endif %}
     - {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
     {% endfor %}
 :::
@@ -28,7 +28,7 @@
 {% if member.members|length > 0 %}
 ___
 ({{ data.name }}{{ member.name }}-target)=
-### `{{ member.name }}`
+### Table parameters for `{{ member.name }}`
 {% if member.optional == 0 %}
 :::{tip} 
 This member is not optional!
