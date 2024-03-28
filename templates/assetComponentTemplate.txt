@@ -1,3 +1,24 @@
+{% macro memberTable(inputMembers) -%}
+{% if inputMembers|length > 0 %}
+:::{list-table}
+:width: 100%
+:widths: 3 16 1 4 1
+:header-rows: 1
+*   - Name
+    - Documentation
+    - Type
+    - Description
+    - Optional
+{% for member in inputMembers %}
+*   - `{{ member.name }}`
+    - {{ member.documentation }}
+    - `{{ member.type }}`
+    - {{ member.description }} {% if member.members|length > 0 %} [Table parameters](#{{ data.name }}{{ member.name }}-target) {% endif %}
+    - {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
+    {% endfor %}
+:::
+{% endif %}
+{%- endmacro %}
 
 ({{ data.identifier }})=
 # {{ data.name }}
@@ -6,45 +27,14 @@ _Inherits [{{ baseClassName }}](#{{ baseClassIdentifier }})_
 {% endif %}
 {{ data.description }}
 
-{% if members|length > 0 %}
+{% if members|length > 0 or baseClassMembers|length > 0 %}
 ## Members
-:::{list-table}
-:width: 100%
-:widths: 3 16 1 4 1
-:header-rows: 1
-*   - Name
-    - Documentation
-    - Type
-    - Description
-    - Optional
-{% for member in members %}
-*   - `{{ member.name }}`
-    - {{ member.documentation }}
-    - `{{ member.type }}`
-    - {{ member.description }} {% if member.members|length > 0 %} [Table parameters](#{{ data.name }}{{ member.name }}-target) {% endif %}
-    - {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
-    {% endfor %}
-:::
+{% endif %}
+{{ memberTable(members) }}
 
 {% if baseClassMembers|length > 0 %}
 ### Inherited members from [{{ baseClassName }}](#{{ baseClassIdentifier }})
-:::{list-table}
-:width: 100%
-:widths: 3 16 1 4 1
-:header-rows: 1
-*   - Name
-    - Documentation
-    - Type
-    - Description
-    - Optional
-{% for member in baseClassMembers %}
-*   - `{{ member.name }}`
-    - {{ member.documentation }}
-    - `{{ member.type }}`
-    - {{ member.description }} {% if member.members|length > 0 %} [Table parameters](#{{ data.name }}{{ member.name }}-target) {% endif %}
-    - {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
-    {% endfor %}
-:::
+{{ memberTable(baseClassMembers) }}
 {% endif %}
 
 {% for member in members %}
@@ -60,22 +50,7 @@ ___
 * Optional: {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
 
 #### Members
-:::{list-table}
-:widths: 3 16 1 4 1
-:header-rows: 1
-*   - Name
-    - Documentation
-    - Type
-    - Description
-    - Optional
-{% for nestedMember in member.members %}
-*   - `{{ nestedMember.name }}`
-    - {{ nestedMember.documentation }}
-    - `{{ nestedMember.type }}`
-    - {{ nestedMember.description }}
-    - {{ "Yes" if nestedMember.optional == 1 else "{bdg-info}`No`" }}
-    {% endfor %}
-:::
+{{ memberTable(member.members) }}
+
 {% endif %}
 {% endfor %}
-{% endif %}
