@@ -24,10 +24,12 @@
 :::{card} Parameters
 {% for argument in function.arguments %}
 {% if argument.name == "" %}
-Unnamed parameter ´{{ argument.type }}´
+* Unnamed parameter ´{{ argument.type }}´
 {% else %}
-* {{ argument.name }} `{{ argument.type }}`{% if argument.defaultValue != "" %} - Default value: `{{ argument.defaultValue }}`{% endif %}
-{% endif %}{% endfor %}
+* {{ argument.name }} `{{ argument.type }}`{% if argument.defaultValue != "" %} - Default value: `{{ argument.defaultValue }}`{% endif %} 
+{% endif %}
+{% if argument.description %}
+    * {{ argument.description }}{% endif %}{% endfor %}
 :::
 {% endif %}
 Return type: {% if function.returnType == "" %}`void`{% else %} `{{ function.returnType }}` {% endif %}

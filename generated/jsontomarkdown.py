@@ -82,6 +82,31 @@ with open(folderNameAssets + '/index.md', 'w') as f:
 #                                 SCRIPTING API                                #
 ################################################################################
 
+# This function modifies the library so that the doxygen comments are added to the 
+# arguments
+def parseDoxygenComments(library):
+    for function in library["functions"]:
+        helpText = function["help"].split('\\\\param ')
+        description = helpText[0].strip()
+        function["help"] = description
+
+        # Collect the params
+        params = helpText[1:]
+        identifiers = []
+        argumentDescriptions = []
+
+        for param in params:
+            [identifier, ws, paramsDescription] = param.partition(" ")
+            paramsDescription = paramsDescription.replace("\\\"", "`")
+            identifiers.append(identifier)
+            argumentDescriptions.append(paramsDescription)
+
+        for argument in function["arguments"]:
+            if argument["name"] in identifiers:
+                index = identifiers.index(argument["name"])
+                argument["description"] = argumentDescriptions[index]
+    return library
+
 # Create target folder
 folderNameScripting = "scriptingApi"
 if not os.path.exists("./" + folderNameScripting):
@@ -93,11 +118,13 @@ f = open('scriptingApi.json')
 # Convert JSON String to Python Dictionary
 documentation_data = json.load(f)
 scriptingApi = documentation_data["data"]
+parseDoxygenComments(scriptingApi[0])
 
 # Create the pages for the scripting libraries
 scriptingApiTemplate = environment.get_template("scriptingApiTemplate.txt")
-for library in scriptingApi:
+for library in scriptingApi[:1]:
     # Go through all the functions in that library and print out a md file
+    library = parseDoxygenComments(library)
     outputLibrary = scriptingApiTemplate.render(library=library)
     with open(folderNameScripting + "/" + library["fullName"]+'.md', 'w') as f:
         f.write(outputLibrary)
