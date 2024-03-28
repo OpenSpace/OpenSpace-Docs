@@ -11,6 +11,18 @@ environment = Environment(loader=FileSystemLoader("../templates/"))
 #                              ASSET COMPONENTS                                #
 ################################################################################
 
+# Group members by optionality while preserving the alphabetical order
+def groupMembersByOptionality(members):
+    nonOptionalIndices = []
+    optionalIndices = []
+    for i, member in enumerate(members):
+        if member["optional"]:
+            optionalIndices.append(i)
+        else:
+            nonOptionalIndices.append(i)
+    indices = nonOptionalIndices + optionalIndices
+    return [members[i] for i in indices]
+
 # Create target folder
 folderNameAssets = "assetComponents"
 if not os.path.exists("./" + folderNameAssets):
@@ -38,20 +50,24 @@ for category in assetCategories:
     
     # Go through all the components in that category and print out a md file
     for assetComponent in category["classes"]:
-        members = []
-        # Add the base class members to each derived class
-        if not hasBaseClass:
-            members = assetComponent["members"]
-        # If the component is the base class, don't add the base class members on top of it
-        # (it would be duplicates)
-        elif hasBaseClass and assetComponent["name"] == baseClass["name"]:
-            members = baseClass["members"]
-        # For derived classes, add the base class members first
-        else:
-            members = baseClass["members"] + assetComponent["members"]
-        
+        isBaseClass = hasBaseClass and assetComponent["name"] == baseClass["name"]
+        baseClassName = baseClass["name"] if hasBaseClass and not isBaseClass else ""
+        baseClassIdentifier = baseClass["identifier"] if hasBaseClass and not isBaseClass else ""
+        baseClassMembers = []
 
-        outputAssetComponent = assetComponentTemplate.render(data=assetComponent, members=members)
+        # Add the base class members to each derived class
+        # If the component is the base class
+        if hasBaseClass and not isBaseClass:
+            baseClassMembers = groupMembersByOptionality(baseClass["members"])
+
+        groupedMembers = groupMembersByOptionality(assetComponent["members"])
+        outputAssetComponent = assetComponentTemplate.render(
+            data=assetComponent, 
+            baseClassName=baseClassName,
+            baseClassIdentifier=baseClassIdentifier,
+            baseClassMembers=baseClassMembers, 
+            members=groupedMembers
+            )
         with open(folderNameAssets + '/' + assetComponent["name"]+'.md', 'w') as f:
             f.write(outputAssetComponent)
 
