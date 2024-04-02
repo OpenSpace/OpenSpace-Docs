@@ -88,10 +88,12 @@ def parseDoxygenComments(library):
     for function in library["functions"]:
         [helpText, p, returnDescription] = function["help"].partition('\\\\return')
         helpText = helpText.split('\\\\param ')
+        # First substring will be the description
         description = helpText[0].strip()
+        # Add to the dictionary
         function["help"] = description
 
-        # Collect the params
+        # Collect the params, everything after the 1st
         params = helpText[1:]
         identifiers = []
         argumentDescriptions = []
@@ -101,7 +103,8 @@ def parseDoxygenComments(library):
             paramsDescription = paramsDescription.replace("\\\"", "`")
             identifiers.append(identifier)
             argumentDescriptions.append(paramsDescription)
-
+        
+        # Add to the dictionary
         for argument in function["arguments"]:
             if argument["name"] in identifiers:
                 index = identifiers.index(argument["name"])
