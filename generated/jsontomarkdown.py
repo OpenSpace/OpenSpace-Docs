@@ -100,7 +100,6 @@ def parseDoxygenComments(library):
 
         for param in params:
             [identifier, ws, paramsDescription] = param.partition(" ")
-            paramsDescription = paramsDescription.replace("\\\"", "`")
             identifiers.append(identifier)
             argumentDescriptions.append(paramsDescription)
         
