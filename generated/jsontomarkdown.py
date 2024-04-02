@@ -84,6 +84,7 @@ with open(folderNameAssets + '/index.md', 'w') as f:
 
 # This function modifies the library so that the doxygen comments are added to the 
 # arguments
+# Supported doxygen parameters: \param \return \code
 def parseDoxygenComments(library):
     for function in library["functions"]:
         [helpText, p, returnDescription] = function["help"].partition('\\\\return')
