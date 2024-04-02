@@ -877,6 +877,12 @@ code,
   font-family: var(--monospace-font-family);
 }
 
+.rst-content .code-block-caption {
+  font-size: 100%;
+  text-align: left;
+  padding-bottom: 0.3em;
+}
+
 /* Code tab display tweaks */
 
 .ui.tabular.menu .active.item,

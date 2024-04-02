@@ -34,7 +34,9 @@
 :::
 {% endif %}
 Return type: `{{ function.returnType|default('void', true) }}` {{ function.returnDescription|default('') }}
+
 :::{code-block} lua
+:caption: Signature
 {{ library.fullName }}.{{ function.name }}({% for argument in function.arguments %}{{ argument.name }}{{ ", " if not loop.last }}{% endfor %})
 :::
 {{ "___" if not loop.last else "" }}
