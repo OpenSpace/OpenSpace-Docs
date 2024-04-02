@@ -87,28 +87,32 @@ with open(folderNameAssets + '/index.md', 'w') as f:
 def parseDoxygenComments(library):
     for function in library["functions"]:
         [helpText, p, returnDescription] = function["help"].partition('\\\\return')
+        
+        # Parse code blocks
+        helpText = helpText.replace('\\\\code', '\n:::{code-block} lua\n')
+        helpText = helpText.replace('\\\\endcode', '\n:::')
+
+        # Split help text into parameters and return type
         helpText = helpText.split('\\\\param ')
         # First substring will be the description
         description = helpText[0].strip()
         # Add to the dictionary
         function["help"] = description
-
         # Collect the params, everything after the 1st
         params = helpText[1:]
         identifiers = []
         argumentDescriptions = []
-
         for param in params:
             [identifier, ws, paramsDescription] = param.partition(" ")
             identifiers.append(identifier)
             argumentDescriptions.append(paramsDescription)
         
-        # Add to the dictionary
+        # Add params to the dictionary
         for argument in function["arguments"]:
             if argument["name"] in identifiers:
                 index = identifiers.index(argument["name"])
                 argument["description"] = argumentDescriptions[index]
-
+        # Add return type to the dictionary, if there is one
         if returnDescription:
             function["returnDescription"] = returnDescription
         
