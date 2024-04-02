@@ -9,15 +9,16 @@
 *   - Name
     - Documentation
 {% for function in library.functions %}
+{% set shortText = function.help.split('.') %}
 *   - [`{{ function.name }}`](#{{ function.name }}-target)
-    - {{ function.help }}
-    {% endfor %}
+    - [{{ shortText[0]|default(shortText) }}]{{ '{#' }}{{ function.name }}{{ '-list}' }}
+{% endfor %}
 :::
 
 ## Functions
 {% for function in library.functions %}
 ({{ function.name }}-target)=
-### `{{ function.name }}`
+### [`{{ function.name }}`](#{{ function.name }}-list)
 {{ function.help }}
 
 {% if function.arguments|length > 0 %}
