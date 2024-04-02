@@ -86,7 +86,8 @@ with open(folderNameAssets + '/index.md', 'w') as f:
 # arguments
 def parseDoxygenComments(library):
     for function in library["functions"]:
-        helpText = function["help"].split('\\\\param ')
+        [helpText, p, returnDescription] = function["help"].partition('\\\\return')
+        helpText = helpText.split('\\\\param ')
         description = helpText[0].strip()
         function["help"] = description
 
@@ -105,6 +106,10 @@ def parseDoxygenComments(library):
             if argument["name"] in identifiers:
                 index = identifiers.index(argument["name"])
                 argument["description"] = argumentDescriptions[index]
+
+        if returnDescription:
+            function["returnDescription"] = returnDescription
+        
     return library
 
 # Create target folder
