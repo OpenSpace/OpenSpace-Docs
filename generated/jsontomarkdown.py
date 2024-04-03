@@ -1,9 +1,13 @@
-import argparse # reading the command line parameters
 import json # reading the input file
 import os # file path magic
 import re
 
 from jinja2 import Environment, FileSystemLoader # template magic
+
+def getFileLength(path):
+    with open(path, 'r') as fp:
+        length = len(fp.read()) 
+        return length
 
 # Find all .asset files in the root dir and subdirs
 def allAssetExamplePaths():
@@ -15,21 +19,25 @@ def allAssetExamplePaths():
             if file.endswith(".asset"):
                 filenames.append(os.path.join(path, file))
 
-    return filenames
+    return filenames    
 
 # Search through all example assets for the component name
 # Returns file content and line numbers for where the name occurs
 def findAssetExample(name):
-    filenames = allAssetExamplePaths()
+    assetFiles = allAssetExamplePaths()
+
+    # Sort by shortest asset file first                
+    # This will ensure the simplest asset is displayed
+    assetFiles.sort(key=getFileLength)
 
     # Find example for the asset component
     example = None
     lines = []
-    for assetExample in filenames:   
+    for assetFile in assetFiles:   
         # Only find one example
         if example:
             break      
-        with open(assetExample, 'r') as file:
+        with open(assetFile, 'r') as file:
             content = ""
             for l_no, line in enumerate(file, 1):
                 content += line
