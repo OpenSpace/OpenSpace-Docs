@@ -1,8 +1,47 @@
 import argparse # reading the command line parameters
 import json # reading the input file
 import os # file path magic
+import re
 
 from jinja2 import Environment, FileSystemLoader # template magic
+
+# Find all .asset files in the root dir and subdirs
+def allAssetExamplePaths():
+    root = "C:/Users/Ylva/Documents/OpenSpace/OpenSpace/data/assets/examples"
+    filenames = []
+
+    for path, subdirs, files in os.walk(root):
+        for file in files:
+            if file.endswith(".asset"):
+                filenames.append(os.path.join(path, file))
+
+    return filenames
+
+# Search through all example assets for the component name
+# Returns file content and line numbers for where the name occurs
+def findAssetExample(name):
+    filenames = allAssetExamplePaths()
+
+    # Find example for the asset component
+    example = None
+    lines = []
+    for assetExample in filenames:   
+        # Only find one example
+        if example:
+            break      
+        with open(assetExample, 'r') as file:
+            content = ""
+            for l_no, line in enumerate(file, 1):
+                content += line
+                # Search for the exact name or name with quotation marks
+                regex = r'\b' + name + r'\b|\b\"' + name + r'\"\b'
+                if re.search(regex, line):
+                    lines.append(l_no)
+            # If there were any matches, set the content as the example
+            if len(lines) > 0:
+                example = content
+
+    return [example, lines]
 
 # Load jinja templates folder
 environment = Environment(loader=FileSystemLoader("../templates/"))
@@ -59,14 +98,24 @@ for category in assetCategories:
         # If the component is the base class
         if hasBaseClass and not isBaseClass:
             baseClassMembers = groupMembersByOptionality(baseClass["members"])
-
+        
         groupedMembers = groupMembersByOptionality(assetComponent["members"])
+
+        # Find example for the asset component, if it is not a baseclass component
+        example = None
+        lines = []
+        if not isBaseClass:
+            [example, lines] = findAssetExample(assetComponent["name"])
+        
+        # Render component page with jinja
         outputAssetComponent = assetComponentTemplate.render(
             data=assetComponent, 
             baseClassName=baseClassName,
             baseClassIdentifier=baseClassIdentifier,
             baseClassMembers=baseClassMembers, 
-            members=groupedMembers
+            members=groupedMembers,
+            example=example,
+            lines=lines
             )
         with open(folderNameAssets + '/' + assetComponent["name"]+'.md', 'w') as f:
             f.write(outputAssetComponent)

@@ -54,3 +54,14 @@ ___
 
 {% endif %}
 {% endfor %}
+
+{% if example %}
+:::{dropdown} Asset example 
+:::{code-block}
+:emphasize-lines: {{ lines|join(', ') }} 
+{{ example }}
+:::
+:::
+{% endif %}
+
+
