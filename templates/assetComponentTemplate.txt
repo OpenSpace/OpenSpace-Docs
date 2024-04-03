@@ -56,7 +56,8 @@ ___
 {% endfor %}
 
 {% if example %}
-:::{dropdown} Asset example 
+### Asset Example
+:::{dropdown} 
 :::{code-block}
 :linenos:
 :emphasize-lines: {{ lines|join(', ') }} 
