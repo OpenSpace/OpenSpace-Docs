@@ -187,11 +187,10 @@ f = open('scriptingApi.json')
 # Convert JSON String to Python Dictionary
 documentation_data = json.load(f)
 scriptingApi = documentation_data["data"]
-parseDoxygenComments(scriptingApi[0])
 
 # Create the pages for the scripting libraries
 scriptingApiTemplate = environment.get_template("scriptingApiTemplate.txt")
-for library in scriptingApi[:1]:
+for library in scriptingApi:
     # Go through all the functions in that library and print out a md file
     library = parseDoxygenComments(library)
     outputLibrary = scriptingApiTemplate.render(library=library)

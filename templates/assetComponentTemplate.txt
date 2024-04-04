@@ -1,4 +1,4 @@
-{% macro memberTable(inputMembers) -%}
+{% macro memberTable(inputMembers, linkDescription=true) -%}
 {% if inputMembers|length > 0 %}
 :::{list-table}
 :width: 100%
@@ -13,17 +13,21 @@
 *   - `{{ member.name }}`
     - {{ member.documentation }}
     - `{{ member.type }}`
+    {% if linkDescription %}
     - {{ member.description }} {% if member.members|length > 0 %} [Table parameters](#{{ data.name }}{{ member.name }}-target) {% endif %}
+    {% else %}
+    - {{ member.description }}
+    {% endif %}
     - {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
     {% endfor %}
 :::
 {% endif %}
 {%- endmacro %}
 
-({{ data.identifier }})=
+({{ data.identifier }}-identifier)=
 # {{ data.name }}
 {% if baseClassName != "" %}
-_Inherits [{{ baseClassName }}](#{{ baseClassIdentifier }})_
+_Inherits [{{ baseClassName }}](#{{ baseClassIdentifier }}-identifier)_
 {% endif %}
 {{ data.description }}
 
@@ -33,7 +37,7 @@ _Inherits [{{ baseClassName }}](#{{ baseClassIdentifier }})_
 {{ memberTable(members) }}
 
 {% if baseClassMembers|length > 0 %}
-### Inherited members from [{{ baseClassName }}](#{{ baseClassIdentifier }})
+### Inherited members from [{{ baseClassName }}](#{{ baseClassIdentifier }}-identifier)
 {{ memberTable(baseClassMembers) }}
 {% endif %}
 
@@ -49,14 +53,13 @@ ___
 {% endif %}
 * Optional: {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
 
-#### Members
-{{ memberTable(member.members) }}
+{{ memberTable(member.members, false) }}
 
 {% endif %}
 {% endfor %}
 
 {% if example %}
-### Asset Example
+## Asset Example
 :::{dropdown} 
 :::{code-block}
 :linenos:

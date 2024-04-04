@@ -10,22 +10,22 @@
     - Documentation
 {% for function in library.functions %}
 {% set shortText = function.help.split('.') %}
-*   - [`{{ function.name }}`](#{{ function.name }}-target)
-    - [{{ shortText[0]|default(shortText) }}]{{ '{#' }}{{ function.name }}{{ '-list}' }}
+*   - [`{{ function.name }}`](#{{ library.name }}{{ function.name }}-target)
+    - [{{ shortText[0]|default(shortText) }}]{{ '{#' }}{{ library.name }}{{ function.name }}{{ '-list}' }}
 {% endfor %}
 :::
 
 ## Functions
 {% for function in library.functions %}
-({{ function.name }}-target)=
-### [`{{ function.name }}`](#{{ function.name }}-list)
+({{ library.name }}{{ function.name }}-target)=
+### [`{{ function.name }}`](#{{ library.name }}{{ function.name }}-list)
 {{ function.help }}
 
 {% if function.arguments|length > 0 %}
 :::{card} Parameters
 {% for argument in function.arguments %}
 {% if argument.name == "" %}
-* Unnamed parameter ´{{ argument.type }}´
+* Unnamed parameter of type {{ argument.type|default(unknown) }}
 {% else %}
 * {{ argument.name }} `{{ argument.type }}`{% if argument.defaultValue != "" %} - Default value: `{{ argument.defaultValue }}`{% endif %} 
 {% endif %}
