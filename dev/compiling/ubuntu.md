@@ -43,6 +43,13 @@ cmake \
 make -j
 ```
 
+### Re-compiling
+After a build, you'll need to clean up before building again.
+```bash
+openSpaceHome="$HOME/source/OpenSpace"
+cmake -E remove "$openSpaceHome/CMakeCache.txt"
+cmake -E remove_directory "$openSpaceHome/CMakeFiles"
+```
 
 ## Outdated Versions of Ubuntu
 Currently, pre-22.04 versions of Ubuntu use versions of `libmpv-dev` that are too old. An up-to-date debian package for mpv installation can be downloaded from [here](https://mpv.io/installation/), which would install an updated version of `libmpv-dev`.
