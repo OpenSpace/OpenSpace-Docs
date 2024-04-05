@@ -1,17 +1,26 @@
 import json # reading the input file
 import os # file path magic
-import re
+import re # regex
+from tqdm import tqdm # progress bar
 
 from jinja2 import Environment, FileSystemLoader # template magic
 
 def getFileLength(path):
-    with open(path, 'r') as fp:
-        length = len(fp.read()) 
-        return length
+    try:
+        # Read binary file as it is faster and we only want to know the length
+        with open(path, 'rb') as fp:
+            if fp.readable():
+                length = len(fp.read()) 
+                return length
+            else:
+                return None
+    except IOError:
+        input("Could not open file path ", path)
+        return None
+    
 
 # Find all .asset files in the root dir and subdirs
-def allAssetExamplePaths():
-    root = "C:/Users/Ylva/Documents/OpenSpace/OpenSpace/data/assets/examples"
+def allAssetsInPath(root):
     filenames = []
 
     for path, subdirs, files in os.walk(root):
@@ -21,35 +30,80 @@ def allAssetExamplePaths():
 
     return filenames    
 
-# Search through all example assets for the component name
-# Returns file content and line numbers for where the name occurs
-def findAssetExample(name):
-    assetFiles = allAssetExamplePaths()
+def getLinesAndContentFromFile(assetFile, name, regex):
+    example = None
+    lines = []
+    with open(assetFile, 'r', encoding='utf8') as file:
+        if not file.readable():
+            return [[], []]
+        content = ""
+        for l_no, line in enumerate(file, 1):
+            content += line
+            # Search for the exact name or name with quotation marks
+            if re.search(regex, line):
+                lines.append(l_no)
+        # If there were any matches, set the content as the example
+        if len(lines) > 0:
+            example = content
+    return [example, lines]
 
+def findShortestAssetInPath(path, name):
+    assetFiles = allAssetsInPath(path)
     # Sort by shortest asset file first                
     # This will ensure the simplest asset is displayed
     assetFiles.sort(key=getFileLength)
 
     # Find example for the asset component
-    example = None
-    lines = []
+    examples = []
+    allLines = []
     for assetFile in assetFiles:   
         # Only find one example
+        if len(examples) > 0:
+            break
+        # Search for Type = "<name>"
+        regex = r'Type = \"' + name + r'\"'
+        [example, lines] = getLinesAndContentFromFile(assetFile, name, regex)
         if example:
-            break      
-        with open(assetFile, 'r') as file:
-            content = ""
-            for l_no, line in enumerate(file, 1):
-                content += line
-                # Search for the exact name or name with quotation marks
-                regex = r'\b' + name + r'\b|\b\"' + name + r'\"\b'
-                if re.search(regex, line):
-                    lines.append(l_no)
-            # If there were any matches, set the content as the example
-            if len(lines) > 0:
-                example = content
+            allLines.append(lines)
+            examples.append(example)
 
-    return [example, lines]
+    return [examples, allLines]
+
+# Search through all example assets for the component name
+# Returns file content and line numbers for where the name occurs
+def findAssetExample(category, name):
+    assetsFolder = "C:/Users/Ylva/Documents/OpenSpace/OpenSpace/data/assets"
+    examplesFolder = assetsFolder + "/examples"
+    
+    # Search pass 1: look up folder “assets/<category>/<assetcomponentname>/”
+    # and see if it exists. If it does, add all files in that folder
+    assetDirectory = assetsFolder + "/" + (category + "/" + name).lower()
+    if os.path.exists(assetDirectory):
+        filenames = allAssetsInPath(assetDirectory)
+        examples = []
+        allLines = []
+        for filename in filenames:
+            # We search for the asset component <name> or "<name>"
+            regex = r'\b' + name + r'\b|\b\"' + name + r'\"\b'
+            [example, lines] = getLinesAndContentFromFile(filename, name, regex)
+            examples.append(example)
+            allLines.append(lines)
+        return [examples, allLines]
+
+    # Search pass 2: search through all assets in the **examples** folder and add the 
+    # shortest asset
+    [example, lines] = findShortestAssetInPath(examplesFolder, name)
+    if example:
+        return [example, lines]
+    
+    # Search pass 3: search through all assets in the **assets** folder and add the 
+    # shortest asset
+    [example, lines] = findShortestAssetInPath(assetsFolder, name)
+    if example:
+        return [example, lines]
+    
+    # If nothing found, return None
+    return [[], []]
 
 # Load jinja templates folder
 environment = Environment(loader=FileSystemLoader("../templates/"))
@@ -84,6 +138,9 @@ assetCategories = documentation_data["data"]
 
 # Create pages for the asset component pages
 assetComponentTemplate = environment.get_template("assetComponentTemplate.txt")
+
+# Missing asset files
+componentsMissingAssets = []
 for category in assetCategories:
     # Find base class to add its members to each derived class
     baseclassName = category["name"]
@@ -96,7 +153,7 @@ for category in assetCategories:
             break
     
     # Go through all the components in that category and print out a md file
-    for assetComponent in category["classes"]:
+    for assetComponent in tqdm(category["classes"], desc="Generating asset components for " + category["name"]):
         isBaseClass = hasBaseClass and assetComponent["name"] == baseClass["name"]
         baseClassName = baseClass["name"] if hasBaseClass and not isBaseClass else ""
         baseClassIdentifier = baseClass["identifier"] if hasBaseClass and not isBaseClass else ""
@@ -110,10 +167,12 @@ for category in assetCategories:
         groupedMembers = groupMembersByOptionality(assetComponent["members"])
 
         # Find example for the asset component, if it is not a baseclass component
-        example = None
+        examples = []
         lines = []
         if not isBaseClass:
-            [example, lines] = findAssetExample(assetComponent["name"])
+            [examples, lines] = findAssetExample(category["name"], assetComponent["name"])
+            if len(examples) == 0:
+                componentsMissingAssets.append(assetComponent["name"])
         
         # Render component page with jinja
         outputAssetComponent = assetComponentTemplate.render(
@@ -122,7 +181,7 @@ for category in assetCategories:
             baseClassIdentifier=baseClassIdentifier,
             baseClassMembers=baseClassMembers, 
             members=groupedMembers,
-            example=example,
+            examples=examples,
             lines=lines
             )
         with open(folderNameAssets + '/' + assetComponent["name"]+'.md', 'w') as f:
@@ -133,6 +192,14 @@ indexAssetComponentsTemplate = environment.get_template("indexAssetComponentsTem
 outputIndex = indexAssetComponentsTemplate.render(assetCategories=assetCategories)
 with open(folderNameAssets + '/index.md', 'w') as f:
     f.write(outputIndex)
+
+# Print out missing assets
+print('\n\n')
+line = "-" * 80 
+print(line)
+print(len(componentsMissingAssets), "asset components that are missing example files:")
+print(line)
+print('\n'.join(componentsMissingAssets))
 
 
 ################################################################################

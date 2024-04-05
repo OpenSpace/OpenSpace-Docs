@@ -58,15 +58,19 @@ ___
 {% endif %}
 {% endfor %}
 
-{% if example %}
-## Asset Example
+{% if examples|length > 0 %}
+## Asset Examples
+{% for example in examples %}
+
 :::{dropdown} 
 :::{code-block}
 :linenos:
-:emphasize-lines: {{ lines|join(', ') }} 
+:emphasize-lines: {{ lines[loop.index0]|join(', ') }} 
 {{ example }}
 :::
 :::
+
+{% endfor %}
 {% endif %}
 
 
