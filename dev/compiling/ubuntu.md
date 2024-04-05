@@ -47,6 +47,7 @@ make -j
 After a build, you'll need to clean up before building again.
 ```bash
 openSpaceHome="$HOME/source/OpenSpace"
+rm -r "$openSpaceHome/build"
 cmake -E remove "$openSpaceHome/CMakeCache.txt"
 cmake -E remove_directory "$openSpaceHome/CMakeFiles"
 ```
