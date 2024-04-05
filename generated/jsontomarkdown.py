@@ -139,8 +139,9 @@ assetCategories = documentation_data["data"]
 # Create pages for the asset component pages
 assetComponentTemplate = environment.get_template("assetComponentTemplate.txt")
 
-# Missing asset files
+# Missing and found asset files
 componentsMissingAssets = []
+noOfFoundAssets = 0
 for category in assetCategories:
     # Find base class to add its members to each derived class
     baseclassName = category["name"]
@@ -173,6 +174,8 @@ for category in assetCategories:
             [examples, lines] = findAssetExample(category["name"], assetComponent["name"])
             if len(examples) == 0:
                 componentsMissingAssets.append(assetComponent["name"])
+            else:
+                noOfFoundAssets += 1
         
         # Render component page with jinja
         outputAssetComponent = assetComponentTemplate.render(
@@ -194,10 +197,14 @@ with open(folderNameAssets + '/index.md', 'w') as f:
     f.write(outputIndex)
 
 # Print out missing assets
+total = noOfFoundAssets + len(componentsMissingAssets)
+percentFound = noOfFoundAssets / (total) * 100
 print('\n\n')
+print("Number of found asset examples (ignoring base classes):")
+print(noOfFoundAssets, "of", total, "or", "%.1f" % percentFound, "%\n")
 line = "-" * 80 
 print(line)
-print(len(componentsMissingAssets), "asset components that are missing example files:")
+print(len(componentsMissingAssets), "asset components are missing example files:")
 print(line)
 print('\n'.join(componentsMissingAssets))
 
