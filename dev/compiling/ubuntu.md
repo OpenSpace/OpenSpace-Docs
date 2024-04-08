@@ -22,8 +22,17 @@ There are specific CMake variables that need to be set. See the "Compile OpenSpa
 ## Dependencies
 You can install all of the necessary dependencies through `apt`:
 
-`sudo apt install glew-utils libpng-dev freeglut3-dev git libxrandr-dev libxinerama-dev xorg-dev libxcursor-dev libcurl4-openssl-dev libxi-dev libasound2-dev libgdal-dev libboost1.74-dev qt6-base-dev libmpv-dev libvulkan-dev`
+```bash
+sudo apt install glew-utils libpng-dev freeglut3-dev git libxrandr-dev libxinerama-dev xorg-dev libxcursor-dev libcurl4-openssl-dev libxi-dev libasound2-dev libgdal-dev libboost1.74-dev qt6-base-dev libmpv-dev libvulkan-dev
+```
 
+If you are on Ubuntu 22.04, you'll also need to install gcc 13 (requires ubuntu-toolchain-r/test ppa):
+
+```bash
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt install gcc-13 g++-13
+```
 
 ## Compile OpenSpace
 ```bash
@@ -36,13 +45,12 @@ cd "$openSpaceHome/build" || exit
 
 cmake \
 -DCMAKE_BUILD_TYPE:STRING="Release" \
--DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-11 \
--DCMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-11 \
+-DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13 \
+-DCMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13 \
 -DASSIMP_BUILD_MINIZIP=1 "$openSpaceHome"
 
 make -j
 ```
-
 
 ## Outdated Versions of Ubuntu
 Currently, pre-22.04 versions of Ubuntu use versions of `libmpv-dev` that are too old. An up-to-date debian package for mpv installation can be downloaded from [here](https://mpv.io/installation/), which would install an updated version of `libmpv-dev`.
@@ -76,7 +84,7 @@ If you do want to change the defaults you can find the information for it [here]
 
 ## Troubleshooting
 Make sure that you are using the correct version of gcc/g++
- - Double check `CMAKE_CXX_COMPILER` and `/usr/bin/c++ --version` to be sure. It should be at least 11.0
+ - Double check `CMAKE_CXX_COMPILER` and `/usr/bin/c++ --version` to be sure. It should be at least 13.0
 
 Error: libstdc++.so.6: could not read symbols: Missing DSO from command line
  - Try using g++ instead of gcc.
