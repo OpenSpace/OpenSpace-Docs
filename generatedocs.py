@@ -336,3 +336,4 @@ def generateMarkdownDocumentation(
     with open(os.path.join(outputFolder, "index.md"), 'w') as f:
         f.write(outputIndex)
 
+generateMarkdownDocumentation(jsonLocation="")

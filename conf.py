@@ -1,13 +1,11 @@
 import os
-import sys
-# Add the generate docs module to path so sphinx (autodoc) recognizes it
-sys.path.append(os.path.abspath("generatedocs"))
-# Import python module for generating documentation 
-import generatedocs
 
-# Generate markdown from engine .json files
-# jsonLocation arg specifies where the json files are located
-generatedocs.generateMarkdownDocumentation(jsonLocation="")
+# opening file_1.py and reading it with read() and executing if with exec()
+with open("generatedocs.py", encoding="utf8") as file:
+    try:
+      exec(file.read())
+    except Exception as e: 
+      print(e)
 
 ###
 # Global Settings
