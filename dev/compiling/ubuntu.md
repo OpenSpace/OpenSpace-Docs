@@ -6,7 +6,7 @@ OpenSpace requires the latest LTS version (22.04) as the Qt6 dependency is not a
 ## Development Tools
 Install the following tools if they are not already available on your system:
   - Git 2.7+
-  - GCC 11+
+  - GCC 13+
   - CMake 3.25+
 
 If it not provided through `apt`, you can install CMake version 3.25 through the following commands:
@@ -57,7 +57,7 @@ Currently, pre-22.04 versions of Ubuntu use versions of `libmpv-dev` that are to
 
 Similarly, `qt6-base-dev` is not available but can be installed through other means such as [aqtinstall](https://github.com/miurahr/aqtinstall)
 
-You can install gcc-11 using the following commands in case it is not supported:
+You can install gcc-13 using the following commands in case it is not supported:
 The final commands configure Ubuntu's "update-alternatives", which allows a user to select among multiple installations of gcc:
 ```
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get autoclean && sudo apt-get autoremove
@@ -68,15 +68,15 @@ reboot in case there are kernel changes
 sudo apt-get install build-essential software-properties-common
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
-sudo apt-get install gcc-11 g++-11
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 60 --slave /usr/bin/g++ g++ /usr/bin/g++-11
+sudo apt-get install gcc-13 g++-13
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 60 --slave /usr/bin/g++ g++ /usr/bin/g++-13
 sudo update-alternatives --config gcc
 ```
 
-If you don't want to install GCC 11 globally, you can overwrite the CMake options instead:
+If you don't want to install GCC 13 globally, you can overwrite the CMake options instead:
 ```
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-11
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-11
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13
 ```
 
 If you do want to change the defaults you can find the information for it [here](https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compiler-in-ubuntu)

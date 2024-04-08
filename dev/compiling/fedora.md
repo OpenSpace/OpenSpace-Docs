@@ -6,7 +6,7 @@ OpenSpace has been tested on Fedora 33. You also need a GPU that supports OpenGL
 ## Development Tools
 Install the following tools if they are not already available on your system:
   - Git 2.7+
-  - GCC 11+
+  - GCC 13+
   - CMake 3.25+
 
 
