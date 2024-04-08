@@ -53,6 +53,7 @@ OpenSpace is an open-source project and relies on the contribution by a communit
 
 about/academics
 about/links
+about/releases/index
 
 :::
 
@@ -64,6 +65,9 @@ about/links
 
 getting-started/handling-errors
 getting-started/hardware-requirements
+getting-started/profiles/index
+getting-started/getting-started/index
+getting-started/faq/index
 
 :::
 
@@ -74,12 +78,10 @@ getting-started/hardware-requirements
 :titlesonly:
 
 manual/navigation/index
-manual/assets/index
 manual/content/index
 manual/properties/index
 manual/scenegraph/index
 manual/events/index
-manual/data-distribution/index
 manual/scripting/index
 
 :::
@@ -102,9 +104,9 @@ tutorials/builders/index
 :hidden:
 :titlesonly:
 
+contributing/index
 contributing/development/index
 contributing/faq/index
-
 :::
 
 :::{toctree}

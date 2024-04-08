@@ -34,7 +34,8 @@ keep_warnings = True
 ###
 source_encoding = "utf-8-sig"
 exclude_patterns = [
-  "README.md"
+  "README.md",
+  ".venv"
 ]
 root_doc = "index"
 primary_domain = "lua"

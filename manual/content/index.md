@@ -10,7 +10,6 @@ exoplanets/index
 skybrowser/index
 gaia
 globebrowsing/index
-models/index
 solar-video-overlay
 session-recording
 satellites

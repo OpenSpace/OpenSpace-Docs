@@ -16,7 +16,6 @@ branches
 cpp-musings
 skybrowser
 webrtc/index
-faq/index
 
 ```
 
