@@ -1,3 +1,4 @@
+from git import Repo # git for downloading assets
 import json # reading the input file
 import os # file path magic
 import re # regex
@@ -5,6 +6,31 @@ from tqdm import tqdm # progress bar
 
 from jinja2 import Environment, FileSystemLoader # template magic
 
+# Clones asset directory from OpenSpace git repository
+# Uses the latest master
+# Returns absolute path to the asset folder
+def cloneAssetsFolderGit(folderName):
+    def printProgress(op_code, cur_count, max_count=None, message=''):
+        print(message)
+
+    print("Cloning assets examples...")
+    repo = Repo.init(folderName)
+
+    # Create a new remote if there isn't one already created
+    origin = repo.remotes[0] if len(repo.remotes) > 0 else None 
+    if not origin:
+        print("No remote origin found. Creating OpenSpace remote...")
+        origin = repo.create_remote("origin", "https://github.com/OpenSpace/OpenSpace")
+
+    print("Fetching OpenSpace... this might take a while")
+    origin.fetch(progress=printProgress)
+
+    dataAssetsPath = "data/assets" 
+    git = repo.git()
+    git.checkout("origin/master", "--", dataAssetsPath)
+    print("Done cloning assets folder from OpenSpace repository")
+    assetsFolderPath = os.path.abspath(os.path.join(folderName, dataAssetsPath))
+    return assetsFolderPath
 def getFileLength(path):
     try:
         # Read binary file as it is faster and we only want to know the length
@@ -71,8 +97,7 @@ def findShortestAssetInPath(path, name):
 
 # Search through all example assets for the component name
 # Returns file content and line numbers for where the name occurs
-def findAssetExample(category, name):
-    assetsFolder = "C:/Users/Ylva/Documents/OpenSpace/OpenSpace/data/assets"
+def findAssetExample(assetsFolder, category, name):
     examplesFolder = assetsFolder + "/examples"
     
     # Search pass 1: look up folder “assets/<category>/<assetcomponentname>/”
@@ -124,6 +149,10 @@ def groupMembersByOptionality(members):
     indices = nonOptionalIndices + optionalIndices
     return [members[i] for i in indices]
 
+# Download assets files from OpenSpace repository
+assetsFolderName = "assetExamples"
+assetsFolder = cloneAssetsFolderGit(assetsFolderName)
+
 # Create target folder
 folderNameAssets = "assetComponents"
 if not os.path.exists("./" + folderNameAssets):
@@ -171,7 +200,7 @@ for category in assetCategories:
         examples = []
         lines = []
         if not isBaseClass:
-            [examples, lines] = findAssetExample(category["name"], assetComponent["name"])
+            [examples, lines] = findAssetExample(assetsFolder, category["name"], assetComponent["name"])
             if len(examples) == 0:
                 componentsMissingAssets.append(assetComponent["name"])
             else:
