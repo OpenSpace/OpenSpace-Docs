@@ -84,7 +84,7 @@ If you do want to change the defaults you can find the information for it [here]
 
 ## Troubleshooting
 Make sure that you are using the correct version of gcc/g++
- - Double check `CMAKE_CXX_COMPILER` and `/usr/bin/c++ --version` to be sure. It should be at least 11.0
+ - Double check `CMAKE_CXX_COMPILER` and `/usr/bin/c++ --version` to be sure. It should be at least 13.0
 
 Error: libstdc++.so.6: could not read symbols: Missing DSO from command line
  - Try using g++ instead of gcc.
