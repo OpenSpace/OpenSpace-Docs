@@ -292,7 +292,7 @@ def generateMarkdownDocumentation(
     print(line)
     print(len(componentsMissingAssets), "asset components are missing example files:")
     print(line) 
-    print('\n'.join(componentsMissingAssets))
+    print('\n'.join(componentsMissingAssets).join("\n\n\n"))
 
 
     ################################################################################
@@ -336,5 +336,3 @@ def generateMarkdownDocumentation(
     with open(os.path.join(outputFolder, "index.md"), 'w') as f:
         f.write(outputIndex)
 
-
-generateMarkdownDocumentation()
