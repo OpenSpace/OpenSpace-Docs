@@ -5,6 +5,10 @@ import os # file paths
 import re # regex for searching for assets files
 from tqdm import tqdm # progress bar
 
+################################################################################
+#                      ASSET COMPONENTS HELPER FUNCTIONS                       #
+################################################################################
+
 # Clones asset directory from OpenSpace git repository
 # Uses the latest master
 # Returns absolute path to the asset folder
@@ -135,13 +139,6 @@ def findAssetExample(assetsFolder, category, name):
     # If nothing found, return None
     return [[], []]
 
-# Load jinja templates folder
-environment = Environment(loader=FileSystemLoader("../templates/"))
-
-################################################################################
-#                              ASSET COMPONENTS                                #
-################################################################################
-
 # Group members by optionality while preserving the alphabetical order
 def groupMembersByOptionality(members):
     nonOptionalIndices = []
@@ -154,101 +151,12 @@ def groupMembersByOptionality(members):
     indices = nonOptionalIndices + optionalIndices
     return [members[i] for i in indices]
 
-# Download assets files from OpenSpace repository
-assetsFolderName = "assetExamples"
-assetsFolder = cloneAssetsFolderGit(assetsFolderName)
-
-# Create target folder
-folderNameAssets = "assetComponents"
-if not os.path.exists("./" + folderNameAssets):
-    os.mkdir("./" + folderNameAssets)
-
-# Opening JSON file
-f = open('assetComponents.json')
-
-# Convert JSON String to Python Dictionary
-documentation_data = json.load(f)
-assetCategories = documentation_data["data"]
-
-# Create pages for the asset component pages
-assetComponentTemplate = environment.get_template("assetComponentTemplate.txt")
-
-# Missing and found asset files
-componentsMissingAssets = []
-noOfFoundAssets = 0
-for category in assetCategories:
-    # Find base class to add its members to each derived class
-    baseclassName = category["name"]
-    baseClass = None
-    hasBaseClass = False
-    for assetComponent in category["classes"]:
-        if assetComponent["name"] == baseclassName:
-            baseClass = assetComponent
-            hasBaseClass = True
-            break
-    
-    # Go through all the components in that category and print out a md file
-    for assetComponent in tqdm(category["classes"], desc="Generating asset components for " + category["name"]):
-        isBaseClass = hasBaseClass and assetComponent["name"] == baseClass["name"]
-        baseClassName = baseClass["name"] if hasBaseClass and not isBaseClass else ""
-        baseClassIdentifier = baseClass["identifier"] if hasBaseClass and not isBaseClass else ""
-        baseClassMembers = []
-
-        # Add the base class members to each derived class
-        # If the component is the base class
-        if hasBaseClass and not isBaseClass:
-            baseClassMembers = groupMembersByOptionality(baseClass["members"])
-        
-        groupedMembers = groupMembersByOptionality(assetComponent["members"])
-
-        # Find example for the asset component, if it is not a baseclass component
-        examples = []
-        lines = []
-        if not isBaseClass:
-            [examples, lines] = findAssetExample(assetsFolder, category["name"], assetComponent["name"])
-            if len(examples) == 0:
-                componentsMissingAssets.append(assetComponent["name"])
-            else:
-                noOfFoundAssets += 1
-        
-        # Render component page with jinja
-        outputAssetComponent = assetComponentTemplate.render(
-            data=assetComponent, 
-            baseClassName=baseClassName,
-            baseClassIdentifier=baseClassIdentifier,
-            baseClassMembers=baseClassMembers, 
-            members=groupedMembers,
-            examples=examples,
-            lines=lines
-            )
-        with open(folderNameAssets + '/' + assetComponent["name"]+'.md', 'w') as f:
-            f.write(outputAssetComponent)
-
-# Create index file
-indexAssetComponentsTemplate = environment.get_template("indexAssetComponentsTemplate.txt")
-outputIndex = indexAssetComponentsTemplate.render(assetCategories=assetCategories)
-with open(folderNameAssets + '/index.md', 'w') as f:
-    f.write(outputIndex)
-
-# Print out missing assets
-total = noOfFoundAssets + len(componentsMissingAssets)
-percentFound = noOfFoundAssets / (total) * 100
-print('\n\n')
-print("Number of found asset examples (ignoring base classes):")
-print(noOfFoundAssets, "of", total, "or", "%.1f" % percentFound, "%\n")
-line = "-" * 80 
-print(line)
-print(len(componentsMissingAssets), "asset components are missing example files:")
-print(line)
-print('\n'.join(componentsMissingAssets))
-
-
 ################################################################################
-#                                 SCRIPTING API                                #
+#                         SCRIPTING API HELPER FUNCTIONS                       #
 ################################################################################
 
-# This function modifies the library so that the doxygen comments are added to the 
-# arguments
+# This function modifies the scripting library so that the doxygen 
+# comments are added to the arguments
 # Supported doxygen parameters: \param \return \code
 def parseDoxygenComments(library):
     for function in library["functions"]:
@@ -284,39 +192,149 @@ def parseDoxygenComments(library):
         
     return library
 
-# Create target folder
-folderNameScripting = "scriptingApi"
-if not os.path.exists("./" + folderNameScripting):
-    os.mkdir("./" + folderNameScripting)
 
-# Opening JSON file
-f = open('scriptingApi.json')
+def generateMarkdownDocumentation(
+        jsonLocation="generated", 
+        outputFolder="generated", 
+        folderNameAssets="assetComponents", 
+        folderNameScripting="scriptingApi"
+        ):
 
-# Convert JSON String to Python Dictionary
-documentation_data = json.load(f)
-scriptingApi = documentation_data["data"]
+    # Load jinja templates folder
+    environment = Environment(loader=FileSystemLoader("templates"))
 
-# Create the pages for the scripting libraries
-scriptingApiTemplate = environment.get_template("scriptingApiTemplate.txt")
-for library in scriptingApi:
-    # Go through all the functions in that library and print out a md file
-    library = parseDoxygenComments(library)
-    outputLibrary = scriptingApiTemplate.render(library=library)
-    with open(os.path.join(folderNameScripting, library["fullName"]+'.md'), 'w') as f:
-        f.write(outputLibrary)
+    ################################################################################
+    #                           GENERATE ASSET COMPONENTS                          #
+    ################################################################################
+    assetsExamplesFolderName = "assetExamples"
+    # Download assets files from OpenSpace repository
+    assetsFolder = cloneAssetsFolderGit(os.path.join(outputFolder, assetsExamplesFolderName))
 
-# Create index file
-indexScriptingTemplate = environment.get_template("indexScriptingTemplate.txt")
-outputIndex = indexScriptingTemplate.render(libraries=scriptingApi)
-with open(os.path.join(folderNameScripting, "index.md"), 'w') as f:
-    f.write(outputIndex)
+    # Create target folder
+    assetsOutputPath = os.path.join(outputFolder, "assetComponents")
+    if not os.path.exists(assetsOutputPath):
+        os.mkdir(assetsOutputPath)
 
-################################################################################
-#                             CREATE INDEX FILE                                #
-################################################################################
+    # Open JSON file
+    f = open(os.path.join(jsonLocation, 'assetComponents.json'))
 
-indexTemplate = environment.get_template("indexTemplate.txt")
+    # Convert JSON String to Python Dictionary
+    documentation_data = json.load(f)
+    assetCategories = documentation_data["data"]
 
-outputIndex = indexTemplate.render(folderNameScripting=folderNameScripting, folderNameAssets=folderNameAssets)
-with open("index.md", 'w') as f:
-    f.write(outputIndex)
+    # Create pages for the asset component pages
+    assetComponentTemplate = environment.get_template("assetComponentTemplate.txt")
+
+    # Missing and found asset files
+    componentsMissingAssets = []
+    noOfFoundAssets = 0
+    for category in assetCategories:
+        # Find base class to add its members to each derived class
+        baseclassName = category["name"]
+        baseClass = None
+        hasBaseClass = False
+        for assetComponent in category["classes"]:
+            if assetComponent["name"] == baseclassName:
+                baseClass = assetComponent
+                hasBaseClass = True
+                break
+        
+        # Go through all the components in that category and print out a md file
+        for assetComponent in tqdm(category["classes"], desc="Generating asset components for " + category["name"]):
+            isBaseClass = hasBaseClass and assetComponent["name"] == baseClass["name"]
+            baseClassName = baseClass["name"] if hasBaseClass and not isBaseClass else ""
+            baseClassIdentifier = baseClass["identifier"] if hasBaseClass and not isBaseClass else ""
+            baseClassMembers = []
+
+            # Add the base class members to each derived class
+            # If the component is the base class
+            if hasBaseClass and not isBaseClass:
+                baseClassMembers = groupMembersByOptionality(baseClass["members"])
+            
+            groupedMembers = groupMembersByOptionality(assetComponent["members"])
+
+            # Find example for the asset component, if it is not a baseclass component
+            examples = []
+            lines = []
+            if not isBaseClass:
+                [examples, lines] = findAssetExample(assetsFolder, category["name"], assetComponent["name"])
+                if len(examples) == 0:
+                    componentsMissingAssets.append(assetComponent["name"])
+                else:
+                    noOfFoundAssets += 1
+            
+            # Render component page with jinja
+            outputAssetComponent = assetComponentTemplate.render(
+                data=assetComponent, 
+                baseClassName=baseClassName,
+                baseClassIdentifier=baseClassIdentifier,
+                baseClassMembers=baseClassMembers, 
+                members=groupedMembers,
+                examples=examples,
+                lines=lines
+                )
+            with open(os.path.join(assetsOutputPath, assetComponent["name"]+'.md'), 'w') as f:
+                f.write(outputAssetComponent)
+
+    # Create index file
+    indexAssetComponentsTemplate = environment.get_template("indexAssetComponentsTemplate.txt")
+    outputIndex = indexAssetComponentsTemplate.render(assetCategories=assetCategories)
+    with open(assetsOutputPath + '/index.md', 'w') as f:
+        f.write(outputIndex)
+
+    # Print out missing assets
+    total = noOfFoundAssets + len(componentsMissingAssets)
+    percentFound = noOfFoundAssets / (total) * 100
+    print('\n\n')
+    print("Number of found asset examples (ignoring base classes):")
+    print(noOfFoundAssets, "of", total, "or", "%.1f" % percentFound, "%\n")
+    line = "-" * 80 
+    print(line)
+    print(len(componentsMissingAssets), "asset components are missing example files:")
+    print(line) 
+    print('\n'.join(componentsMissingAssets))
+
+
+    ################################################################################
+    #                                 SCRIPTING API                                #
+    ################################################################################
+
+    # Create target folder
+    scriptingOutputPath = os.path.join(outputFolder, folderNameScripting)
+    if not os.path.exists(scriptingOutputPath):
+        os.mkdir(scriptingOutputPath)
+
+    # Opening JSON file
+    f = open(os.path.join(jsonLocation, 'scriptingApi.json'))
+
+    # Convert JSON String to Python Dictionary
+    documentation_data = json.load(f)
+    scriptingApi = documentation_data["data"]
+
+    # Create the pages for the scripting libraries
+    scriptingApiTemplate = environment.get_template("scriptingApiTemplate.txt")
+    for library in scriptingApi:
+        # Go through all the functions in that library and print out a md file
+        library = parseDoxygenComments(library)
+        outputLibrary = scriptingApiTemplate.render(library=library)
+        with open(os.path.join(scriptingOutputPath, library["fullName"]+'.md'), 'w') as f:
+            f.write(outputLibrary)
+
+    # Create index file
+    indexScriptingTemplate = environment.get_template("indexScriptingTemplate.txt")
+    outputIndex = indexScriptingTemplate.render(libraries=scriptingApi)
+    with open(os.path.join(scriptingOutputPath, "index.md"), 'w') as f:
+        f.write(outputIndex)
+
+    ################################################################################
+    #                             CREATE INDEX FILE                                #
+    ################################################################################
+
+    indexTemplate = environment.get_template("indexTemplate.txt")
+
+    outputIndex = indexTemplate.render(folderNameScripting=folderNameScripting, folderNameAssets=folderNameAssets)
+    with open(os.path.join(outputFolder, "index.md"), 'w') as f:
+        f.write(outputIndex)
+
+
+generateMarkdownDocumentation()
