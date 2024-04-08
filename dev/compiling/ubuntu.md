@@ -22,8 +22,17 @@ There are specific CMake variables that need to be set. See the "Compile OpenSpa
 ## Dependencies
 You can install all of the necessary dependencies through `apt`:
 
-`sudo apt install glew-utils libpng-dev freeglut3-dev git libxrandr-dev libxinerama-dev xorg-dev libxcursor-dev libcurl4-openssl-dev libxi-dev libasound2-dev libgdal-dev libboost1.74-dev qt6-base-dev libmpv-dev libvulkan-dev`
+```bash
+sudo apt install glew-utils libpng-dev freeglut3-dev git libxrandr-dev libxinerama-dev xorg-dev libxcursor-dev libcurl4-openssl-dev libxi-dev libasound2-dev libgdal-dev libboost1.74-dev qt6-base-dev libmpv-dev libvulkan-dev
+```
 
+If you are on Ubuntu 22.04, you'll also need to install gcc 13 (requires ubuntu-toolchain-r/test ppa):
+
+```bash
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt install gcc-13 g++-13
+```
 
 ## Compile OpenSpace
 ```bash
@@ -36,20 +45,11 @@ cd "$openSpaceHome/build" || exit
 
 cmake \
 -DCMAKE_BUILD_TYPE:STRING="Release" \
--DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-11 \
--DCMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-11 \
+-DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13 \
+-DCMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13 \
 -DASSIMP_BUILD_MINIZIP=1 "$openSpaceHome"
 
 make -j
-```
-
-### Re-compiling
-After a build, you'll need to clean up before building again.
-```bash
-openSpaceHome="$HOME/source/OpenSpace"
-rm -r "$openSpaceHome/build"
-cmake -E remove "$openSpaceHome/CMakeCache.txt"
-cmake -E remove_directory "$openSpaceHome/CMakeFiles"
 ```
 
 ## Outdated Versions of Ubuntu
