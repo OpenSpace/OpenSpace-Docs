@@ -1,10 +1,9 @@
 from git import Repo # git for downloading assets
-import json # reading the input file
-import os # file path magic
-import re # regex
-from tqdm import tqdm # progress bar
-
 from jinja2 import Environment, FileSystemLoader # template magic
+import json # reading the input file
+import os # file paths
+import re # regex for searching for assets files
+from tqdm import tqdm # progress bar
 
 # Clones asset directory from OpenSpace git repository
 # Uses the latest master
@@ -31,6 +30,8 @@ def cloneAssetsFolderGit(folderName):
     print("Done cloning assets folder from OpenSpace repository")
     assetsFolderPath = os.path.abspath(os.path.join(folderName, dataAssetsPath))
     return assetsFolderPath
+
+# Returns the number of lines in a file
 def getFileLength(path):
     try:
         # Read binary file as it is faster and we only want to know the length
@@ -43,7 +44,6 @@ def getFileLength(path):
     except IOError:
         input("Could not open file path ", path)
         return None
-    
 
 # Find all .asset files in the root dir and subdirs
 def allAssetsInPath(root):
@@ -56,6 +56,9 @@ def allAssetsInPath(root):
 
     return filenames    
 
+# Matches an asset component name with the words in a file
+# Returns the content of the file and the lines where the 
+# matches occured
 def getLinesAndContentFromFile(assetFile, name, regex):
     example = None
     lines = []
@@ -73,6 +76,8 @@ def getLinesAndContentFromFile(assetFile, name, regex):
             example = content
     return [example, lines]
 
+# Takes an asset component name and matches it to all files in a 
+# path, and return the shortest asset with matches.
 def findShortestAssetInPath(path, name):
     assetFiles = allAssetsInPath(path)
     # Sort by shortest asset file first                
@@ -102,7 +107,7 @@ def findAssetExample(assetsFolder, category, name):
     
     # Search pass 1: look up folder “assets/<category>/<assetcomponentname>/”
     # and see if it exists. If it does, add all files in that folder
-    assetDirectory = assetsFolder + "/" + (category + "/" + name).lower()
+    assetDirectory = os.path.join(assetsFolder, (os.path.join(category, name)).lower())
     if os.path.exists(assetDirectory):
         filenames = allAssetsInPath(assetDirectory)
         examples = []
@@ -297,13 +302,13 @@ for library in scriptingApi:
     # Go through all the functions in that library and print out a md file
     library = parseDoxygenComments(library)
     outputLibrary = scriptingApiTemplate.render(library=library)
-    with open(folderNameScripting + "/" + library["fullName"]+'.md', 'w') as f:
+    with open(os.path.join(folderNameScripting, library["fullName"]+'.md'), 'w') as f:
         f.write(outputLibrary)
 
 # Create index file
 indexScriptingTemplate = environment.get_template("indexScriptingTemplate.txt")
 outputIndex = indexScriptingTemplate.render(libraries=scriptingApi)
-with open(folderNameScripting + "/" + "index.md", 'w') as f:
+with open(os.path.join(folderNameScripting, "index.md"), 'w') as f:
     f.write(outputIndex)
 
 ################################################################################
