@@ -199,20 +199,11 @@ def parseDoxygenComments(library):
         
     return library
 
+################################################################################
+#                            CREATE ASSET COMPONENTS                           #
+################################################################################
 
-def generateMarkdownDocumentation(
-        jsonLocation="generated", 
-        outputFolder="generated", 
-        folderNameAssets="assetComponents", 
-        folderNameScripting="scriptingApi"
-    ):
-
-    # Load jinja templates folder
-    environment = Environment(loader=FileSystemLoader("templates"))
-
-    ################################################################################
-    #                           GENERATE ASSET COMPONENTS                          #
-    ################################################################################
+def generateAssetComponents(environment, outputFolder, folderNameAssets, jsonLocation):
     assetsExamplesFolderName = "assetExamples"
     # Download assets files from OpenSpace repository
     assetsFolder = cloneAssetsFolderGit(os.path.join(outputFolder, assetsExamplesFolderName))
@@ -304,10 +295,11 @@ def generateMarkdownDocumentation(
     print('\n'.join(componentsMissingAssets).join("\n\n\n"))
 
 
-    ################################################################################
-    #                                 SCRIPTING API                                #
-    ################################################################################
+################################################################################
+#                            CREATE SCRIPTING API                              #
+################################################################################
 
+def generateScriptingApi(environment, outputFolder, folderNameScripting, jsonLocation):
     # Create target folder
     scriptingOutputPath = os.path.join(outputFolder, folderNameScripting)
     if not os.path.exists(scriptingOutputPath):
@@ -335,9 +327,17 @@ def generateMarkdownDocumentation(
     with open(os.path.join(scriptingOutputPath, "index.md"), 'w') as f:
         f.write(outputIndex)
 
-    ################################################################################
-    #                             RENDERABLE OVERVIEW                              #
-    ################################################################################
+################################################################################
+#                         CREATE RENDERABLE OVERVIEW                           #
+################################################################################
+
+def generateRenderableOverview(environment, outputFolder, folderNameAssets, jsonLocation):
+    # Open JSON file
+    f = open(os.path.join(jsonLocation, 'assetComponents.json'))
+
+    # Convert JSON String to Python Dictionary
+    documentation_data = json.load(f)
+    assetCategories = documentation_data["data"]
 
     images = {}
     renderables = []
@@ -362,11 +362,12 @@ def generateMarkdownDocumentation(
                                                        )
     with open(os.path.join(outputFolder, "renderableOverview.md"), 'w') as f:
         f.write(outputOverview)
-    
-    ################################################################################
-    #                             CREATE INDEX FILE                                #
-    ################################################################################
 
+################################################################################
+#                             CREATE INDEX FILE                                #
+################################################################################
+
+def generateIndexFile(environment, outputFolder, folderNameScripting, folderNameAssets):
     indexTemplate = environment.get_template("indexTemplate.txt")
 
     outputIndex = indexTemplate.render(
@@ -377,6 +378,18 @@ def generateMarkdownDocumentation(
     with open(os.path.join(outputFolder, "index.md"), 'w') as f:
         f.write(outputIndex)
 
-generateMarkdownDocumentation(jsonLocation="")
+jsonLocation="generated", 
+outputFolder="generated", 
+folderNameAssets="assetComponents", 
+folderNameScripting="scriptingApi"
+
+# Load jinja templates folder
+environment = Environment(loader=FileSystemLoader("templates"))
+
+# Generate documentation
+generateAssetComponents(environment, outputFolder, folderNameAssets, jsonLocation)
+generateScriptingApi(environment, outputFolder, folderNameScripting, jsonLocation)
+generateRenderableOverview(environment, outputFolder, folderNameAssets, jsonLocation)
+generateIndexFile(environment, outputFolder, folderNameScripting, folderNameAssets)
 
 
