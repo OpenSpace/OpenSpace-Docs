@@ -2,8 +2,8 @@
 :::{toctree}
 :maxdepth: 1
 
+{{ renderableOverview }}
 {{ folderNameAssets }}/index
 {{ folderNameScripting }}/index
-{{ renderableOverview }}
 
 :::
