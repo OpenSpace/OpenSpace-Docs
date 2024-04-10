@@ -24,10 +24,10 @@
 {% endif %}
 {%- endmacro %}
 
-({{ data.identifier }}-identifier)=
+({{ data.identifier.lower() }}{% if data.identifier == data.name %}-identifier {% endif %})=
 # {{ data.name }}
 {% if baseClassName != "" %}
-_Inherits [{{ baseClassName }}](#{{ baseClassIdentifier }}-identifier)_
+_Inherits [{{ baseClassName }}](#{{ baseClassIdentifier }})_
 {% endif %}
 {{ data.description }}
 
@@ -37,7 +37,7 @@ _Inherits [{{ baseClassName }}](#{{ baseClassIdentifier }}-identifier)_
 {{ memberTable(members) }}
 
 {% if baseClassMembers|length > 0 %}
-### Inherited members from [{{ baseClassName }}](#{{ baseClassIdentifier }}-identifier)
+### Inherited members from [{{ baseClassName }}](#{{ baseClassIdentifier }})
 {{ memberTable(baseClassMembers) }}
 {% endif %}
 

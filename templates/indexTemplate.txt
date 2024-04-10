@@ -4,5 +4,6 @@
 
 {{ folderNameAssets }}/index
 {{ folderNameScripting }}/index
+{{ renderableOverview }}
 
 :::

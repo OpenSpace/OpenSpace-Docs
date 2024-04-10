@@ -151,6 +151,13 @@ def groupMembersByOptionality(members):
     indices = nonOptionalIndices + optionalIndices
     return [members[i] for i in indices]
 
+def findAssetScreenshot(name):
+    imageDirectory = "_static/images/renderables"
+    imgPath = imageDirectory + '/' + name + '.png'
+    if os.path.exists(imgPath):
+        return imgPath
+    return None
+
 ################################################################################
 #                         SCRIPTING API HELPER FUNCTIONS                       #
 ################################################################################
@@ -198,7 +205,7 @@ def generateMarkdownDocumentation(
         outputFolder="generated", 
         folderNameAssets="assetComponents", 
         folderNameScripting="scriptingApi"
-        ):
+    ):
 
     # Load jinja templates folder
     environment = Environment(loader=FileSystemLoader("templates"))
@@ -211,7 +218,7 @@ def generateMarkdownDocumentation(
     assetsFolder = cloneAssetsFolderGit(os.path.join(outputFolder, assetsExamplesFolderName))
 
     # Create target folder
-    assetsOutputPath = os.path.join(outputFolder, "assetComponents")
+    assetsOutputPath = os.path.join(outputFolder, folderNameAssets)
     if not os.path.exists(assetsOutputPath):
         os.mkdir(assetsOutputPath)
 
@@ -263,6 +270,8 @@ def generateMarkdownDocumentation(
                 else:
                     noOfFoundAssets += 1
             
+
+
             # Render component page with jinja
             outputAssetComponent = assetComponentTemplate.render(
                 data=assetComponent, 
@@ -327,13 +336,47 @@ def generateMarkdownDocumentation(
         f.write(outputIndex)
 
     ################################################################################
+    #                             RENDERABLE OVERVIEW                              #
+    ################################################################################
+
+    images = {}
+    renderables = []
+    for category in assetCategories:
+        if category["name"] == "Renderable" or category["name"] == "ScreenSpaceRenderable":
+            for assetComponent in category["classes"]:
+                if assetComponent["name"] == category["name"]:
+                    # Base class - ignore
+                    continue
+                                                      
+                # Find example image
+                image = findAssetScreenshot(assetComponent["name"])
+                if image:
+                    images[assetComponent["name"]] = image
+                renderables.append(assetComponent)
+
+    # Create overview file
+    renderableOverviewTemplate = environment.get_template("renderableOverviewTemplate.txt")
+    outputOverview = renderableOverviewTemplate.render(folderNameAssets=folderNameAssets,
+                                                       renderables=renderables, 
+                                                       images=images
+                                                       )
+    with open(os.path.join(outputFolder, "renderableOverview.md"), 'w') as f:
+        f.write(outputOverview)
+    
+    ################################################################################
     #                             CREATE INDEX FILE                                #
     ################################################################################
 
     indexTemplate = environment.get_template("indexTemplate.txt")
 
-    outputIndex = indexTemplate.render(folderNameScripting=folderNameScripting, folderNameAssets=folderNameAssets)
+    outputIndex = indexTemplate.render(
+        folderNameScripting=folderNameScripting, 
+        folderNameAssets=folderNameAssets,
+        renderableOverview="renderableOverview"    
+    )
     with open(os.path.join(outputFolder, "index.md"), 'w') as f:
         f.write(outputIndex)
 
 generateMarkdownDocumentation(jsonLocation="")
+
+

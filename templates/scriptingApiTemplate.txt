@@ -1,5 +1,4 @@
 # `{{ library.fullName }}`
-
 ## Functions overview
 
 :::{list-table}

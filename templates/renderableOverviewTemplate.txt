@@ -1,0 +1,14 @@
+# Renderable Overview
+::::{grid} 1 1 2 3
+:gutter: 1 1 1 2
+{% for renderable in renderables %}
+:::{grid-item-card} {{ renderable.name }}
+:link: {{ renderable.identifier.lower() }}{% if renderable.identifier == renderable.name %}-identifier{% endif %}
+:link-type: ref
+{% if images[renderable.name] %}:img-background: ../{{ images[renderable.name] }}{% endif %}
+
+:::
+{% endfor %}
+::::
+
+
