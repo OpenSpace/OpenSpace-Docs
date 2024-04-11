@@ -46,4 +46,4 @@ Links for the OpenSpace software, documentation, data, everything.
 ### Testing Servers
 | Name / URL   | Description |
 |:-------------|:------------|
-| [Utah Image Testing Server](http://155.98.19.197/vis/visualtests_Win64vsLinux.html) | A comparison of all testing images between Linux and Windows using recent build |
+| [Utah Image Testing Server](http://hansen-polaris.sci.utah.edu/vis/visualtests.html) | A comparison of all testing images between Linux and Windows using recent build |
