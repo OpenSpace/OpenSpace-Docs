@@ -1,4 +1,4 @@
-{% macro memberTable(inputMembers, linkDescription=true) -%}
+{% macro memberTable(inputMembers, parentName="", linkDescription=true) -%}
 {% if inputMembers|length > 0 %}
 :::{list-table}
 :width: 100%
@@ -13,8 +13,10 @@
 *   - `{{ member.name }}`
     - {{ member.documentation }}
     - `{{ member.type }}`
-    {% if linkDescription %}
-    - {{ member.description }} {% if member.members|length > 0 %} [Table parameters](#{{ data.name }}{{ member.name }}-target) {% endif %}
+    {% if member.reference %}
+    - [{{ member.reference.name}}](#{{ member.reference.identifier }})
+    {% elif linkDescription %}
+    - {{ member.description }} {% if member.members|length > 0 %} [Table parameters](#{{ data.name }}{{ parentName }}{{ member.name }}-target) {% endif %}
     {% else %}
     - {{ member.description }}
     {% endif %}
@@ -22,6 +24,23 @@
     {% endfor %}
 :::
 {% endif %}
+{%- endmacro %}
+
+{% macro tableParameters(member, nestingLevel = 0, parentName="") -%}
+{{ member.documentation }}
+
+{% if member.description %}
+* Description: {{ member.description }} 
+{% endif %}
+* Optional: {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
+
+{{ memberTable(member.members, member.name) }}
+
+{% for nestedMember in member.members if nestedMember.members %}
+({{ data.name }}{{ member.name }}{{ nestedMember.name }}-target)=
+#### Table parameters for `{{ nestedMember.name }}`
+{{ tableParameters(nestedMember, nestingLevel + 1, member.name) }}
+{% endfor %}
 {%- endmacro %}
 
 ({{ data.identifier.lower() }}{% if data.identifier == data.name %}-identifier {% endif %})=
@@ -43,18 +62,11 @@ _Inherits [{{ baseClassName }}](#{{ baseClassIdentifier }})_
 
 {% for member in members %}
 {% if member.members|length > 0 %}
-___
-({{ data.name }}{{ member.name }}-target)=
-### Table parameters for `{{ member.name }}`
-{{ member.documentation }}
 
-{% if member.description %}
-* Description: {{ member.description }} 
-{% endif %}
-* Optional: {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
-
-{{ memberTable(member.members, false) }}
-
+({{ data.name }}{{ parentName }}{{ member.name }}-target)=
+::::{dropdown} Table parameters for `{{ member.name }}`
+{{ tableParameters(member) }}
+::::
 {% endif %}
 {% endfor %}
 
