@@ -18,6 +18,7 @@ def cloneAssetsFolderGit(folderName):
 
     print("Cloning assets examples...")
     repo = Repo.init(folderName)
+    branchName = "origin/issue/2996"
 
     # Create a new remote if there isn't one already created
     origin = repo.remotes[0] if len(repo.remotes) > 0 else None 
@@ -25,12 +26,12 @@ def cloneAssetsFolderGit(folderName):
         print("No remote origin found. Creating OpenSpace remote...")
         origin = repo.create_remote("origin", "https://github.com/OpenSpace/OpenSpace")
 
-    print("Fetching OpenSpace... this might take a while")
+    print("Fetching OpenSpace on branch {}... this might take a while".format(branchName))
     origin.fetch(progress=printProgress)
 
     dataAssetsPath = "data/assets" 
     git = repo.git()
-    git.checkout("origin/master", "--", dataAssetsPath)
+    git.checkout(branchName, "--", dataAssetsPath)
     print("Done cloning assets folder from OpenSpace repository")
     assetsFolderPath = os.path.abspath(os.path.join(folderName, dataAssetsPath))
     return assetsFolderPath
