@@ -108,11 +108,11 @@ def findShortestAssetInPath(path, name):
 # Search through all example assets for the component name
 # Returns file content and line numbers for where the name occurs
 def findAssetExample(assetsFolder, category, name):
-    examplesFolder = assetsFolder + "/examples"
+    examplesFolder = os.path.join(assetsFolder, "examples")
     
     # Search pass 1: look up folder “assets/<category>/<assetcomponentname>/”
     # and see if it exists. If it does, add all files in that folder
-    assetDirectory = os.path.join(assetsFolder, (os.path.join(category, name)).lower())
+    assetDirectory = os.path.join(examplesFolder, (os.path.join(category, name)).lower())
     if os.path.exists(assetDirectory):
         filenames = allAssetsInPath(assetDirectory)
         examples = []
