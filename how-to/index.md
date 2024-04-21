@@ -4,6 +4,9 @@ In this section, we highlight some of the content that can be built using the fe
     This guide shows how the California Academy of Sciences is creating their button pages in a step-by-step instructions. This can be used to create minimal user interfaces that can be used by pilots of the software without providing them with _all_ of the bells and whistles of the software
   - [Converting Uniview mod files](converting-uniview-mod-files/index)
     This guide explains how to take existing Uniview mod files and convert them in to `.asset` files to be used in OpenSpace
+  - [Controlling OpenSpace remotely](remote-control/index)
+    This guide explains the configuration changes needed to remotely control OpenSpace from another device on the network
+
 
 
 :::{toctree}
@@ -13,4 +16,5 @@ In this section, we highlight some of the content that can be built using the fe
 
 html-controls-setup/index
 converting-uniview-mod-files/index
+remote-control/index
 :::
