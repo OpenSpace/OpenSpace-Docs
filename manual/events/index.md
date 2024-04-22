@@ -46,7 +46,7 @@ This event is created when a screenspace renderable has been removed from the sy
 
 `Renderable`: The identifier of the screenspace renderable that was removed
 
-### CameraTransition
+### CameraFocusTransition
 This event is created when the camera transitions between different interaction sphere distances. Right now, only movement relative to camera's focus node is considered. Each scene graph node has an interaction sphere radius that serves as the reference distance for all spheres.
 ```
 Diagram of events for a camera moving from right-to-left. Interaction sphere is 'O' in middle, and ')' are spherical boundaries. The approach factor, reach factor, and interaction sphere radius are all taken from the current focus node.
@@ -113,5 +113,50 @@ This event is created when something regarding a session recording playback chan
 
 `State`: The new state of the session recording; one of `Started`, `Paused`, `Resumed`, `Finished`
 
+### PointSpacecraft
+This event is created if a spacecraft is asked to point at a specific direction.
+
+`Ra`: The right ascension of the point at which the spacecraft will be pointed
+
+`Dec`: The declination of the point at which the spacecraft will be pointed
+
+`Duration`: The duration in seconds that the spacecraft will take to point at the specific position
+
+### RenderableEnabled
+This event is created when a scene graph node with an attached renderable is enabled for any reason.
+
+`Node`: The name of the scene graph node that was enabled
+
+### RenderableDisabled
+This event is created when a scene graph node with an attached renderable is disabled for any reason.
+
+`Node`: The name of the scene graph node that was disabled
+
+### CameraPathStarted
+This event is created when an automated camera path is triggered that will move the camera from the specified Origin to the Destination.
+
+`Origin`: The name of the scene graph node that is the origin of the camera path
+
+`Destination`: The name of the scene graph node that is the destination of the camera path
+
+### CameraPathFinished
+This event is created when an automated camera path thatmoved the camera from the specified Origin to the Destination is finished.
+
+`Origin`: The name of the scene graph node that is the origin of the camera path
+
+`Destination`: The name of the scene graph node that is the destination of the camera path
+
+### CameraMovedPosition
+This event is created if the camera is moved by the user for any reason. It will only be created if the camera was not moving. If the user continuously moves the camera, only the initial event is triggered.
+
+### ScheduledScriptExecuted
+This event is created when the script scheduler is asked to trigger as script at a specific simulation time.
+
+`Script`: The script that will be executed in the next frame
+
 ### Custom
 A custom event type that can be used in a pinch when no explicit event type is available. This should only be used in special circumstances and it should be transitioned to a specific event type, if it is deemed to be useful.
+
+`Subtype`: The type of the event as a string
+
+`Payload`: The payload for the event, also given as a string
