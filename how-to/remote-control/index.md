@@ -10,11 +10,11 @@ for example using Remote Desktop on Windows or VNC for Linux.
 Read on below for configuration changes needed, if you want to run a web server on the local machine and access it from a browser on a remote system. 
    
 2. Using the Web GUI - The main gui of the OpenSpace project as seen in the screenshots on the [Getting Started](/users/getting-started/index) page
-can be accessed via a browser at port 4680, for example if the computer's IP address is 10.0.0.3, then the gui can be access at `http://10.0.0.3:4680` - but some configuration changes are needed as noted below.
+can be accessed via a browser at port 4680, for example if the computer's IP address is 10.0.0.3, then the GUI can be accessed at: `http://10.0.0.3:4680` - but some configuration changes are needed as noted below.
 
 The web interface can be made accessible to other devices by modifying the settings. This can be done by editing the `openspace.cfg` file, which would then cause the changes made
 to apply to all users of the installation. In the `.cfg` file, both the ip addresses, of the remote client as well as of the machine running OpenSpace,
-need to be allowed, like
+need to be entered, (for example, if OpenSpace is running on a computer with IP address of 10.0.0.3 and the remote client's IP address is 10.0.0.7)
 ```
     Server = {
         AllowAddresses = { "127.0.0.1", "localhost", "10.0.0.3", "10.0.0.7" },
