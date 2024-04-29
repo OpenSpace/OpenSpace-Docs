@@ -218,8 +218,7 @@ def generateAssetComponents(environment, outputFolder, folderNameAssets, jsonLoc
     f = open(os.path.join(jsonLocation, 'assetComponents.json'))
 
     # Convert JSON String to Python Dictionary
-    documentation_data = json.load(f)
-    assetCategories = documentation_data["data"]
+    assetCategories = json.load(f)
 
     # Create pages for the asset component pages
     assetComponentTemplate = environment.get_template("assetComponentTemplate.txt")
@@ -310,8 +309,7 @@ def generateScriptingApi(environment, outputFolder, folderNameScripting, jsonLoc
     f = open(os.path.join(jsonLocation, 'scriptingApi.json'))
 
     # Convert JSON String to Python Dictionary
-    documentation_data = json.load(f)
-    scriptingApi = documentation_data["data"]
+    scriptingApi = json.load(f)
 
     # Create the pages for the scripting libraries
     scriptingApiTemplate = environment.get_template("scriptingApiTemplate.txt")
@@ -337,9 +335,8 @@ def generateRenderableOverview(environment, outputFolder, folderNameAssets, json
     f = open(os.path.join(jsonLocation, 'assetComponents.json'))
 
     # Convert JSON String to Python Dictionary
-    documentation_data = json.load(f)
-    assetCategories = documentation_data["data"]
-
+    assetCategories = json.load(f)
+    
     images = {}
     renderables = []
     for category in assetCategories:
