@@ -51,7 +51,7 @@ def getFileLength(path):
         return None
 
 # Find all .asset files in the root dir and subdirs
-def allAssetsInPath(root):
+def assetsInPathRecursive(root):
     filenames = []
 
     for path, subdirs, files in os.walk(root):
@@ -59,7 +59,13 @@ def allAssetsInPath(root):
             if file.endswith(".asset"):
                 filenames.append(os.path.join(path, file))
 
-    return filenames    
+    return filenames 
+
+# Find all .assets in directory - no subdirs
+def assetsInPath(path):    
+    filenames = [filename for filename in os.listdir(path) if filename.endswith(".asset")]
+    # Prepend the path to the filename
+    return list(map(lambda filename: os.path.join(path, filename), filenames))
 
 # Matches an asset component name with the words in a file
 # Returns the content of the file and the lines where the 
@@ -84,7 +90,7 @@ def getLinesAndContentFromFile(assetFile, name, regex):
 # Takes an asset component name and matches it to all files in a 
 # path, and return the shortest asset with matches.
 def findShortestAssetInPath(path, name):
-    assetFiles = allAssetsInPath(path)
+    assetFiles = assetsInPathRecursive(path)
     # Sort by shortest asset file first                
     # This will ensure the simplest asset is displayed
     assetFiles.sort(key=getFileLength)
@@ -111,10 +117,10 @@ def findAssetExample(assetsFolder, category, name):
     examplesFolder = os.path.join(assetsFolder, "examples")
     
     # Search pass 1: look up folder “assets/<category>/<assetcomponentname>/”
-    # and see if it exists. If it does, add all files in that folder
+    # and see if it exists. If it does, add all files in that folder (no subdirectories)
     assetDirectory = os.path.join(examplesFolder, (os.path.join(category, name)).lower())
     if os.path.exists(assetDirectory):
-        filenames = allAssetsInPath(assetDirectory)
+        filenames = assetsInPath(assetDirectory)
         examples = []
         allLines = []
         for filename in filenames:
