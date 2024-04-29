@@ -74,11 +74,12 @@ _Inherits [{{ baseClassName }}](#{{ baseClassIdentifier }})_
 ## Asset Examples
 {% for example in examples %}
 
-:::{dropdown} 
-:::{code-block}
+:::{dropdown} {{ example.header }}
+{{ example.description }}
+:::{code-block} lua
 :linenos:
-:emphasize-lines: {{ lines[loop.index0]|join(', ') }} 
-{{ example }}
+:emphasize-lines: {{ example.lines|join(", ") }}
+{{ example.content }}
 :::
 :::
 

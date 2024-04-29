@@ -69,23 +69,45 @@ def assetsInPath(path):
 
 # Matches an asset component name with the words in a file
 # Returns the content of the file and the lines where the 
-# matches occured
-def getLinesAndContentFromFile(assetFile, name, regex):
-    example = None
+# matches occured, as well as the header if specified
+def getLinesAndContentFromFile(assetFile, regex, lookForHeader = False):
     lines = []
+    isHeaderComment = True
+    header = ""
+    content = ""
+    description = ""
+    luaComment = "-- "
+    headerFinished = 0
     with open(assetFile, 'r', encoding='utf8') as file:
         if not file.readable():
-            return [[], []]
-        content = ""
+            return None
+        # Read file line by line
         for l_no, line in enumerate(file, 1):
-            content += line
-            # Search for the exact name or name with quotation marks
-            if re.search(regex, line):
-                lines.append(l_no)
-        # If there were any matches, set the content as the example
-        if len(lines) > 0:
-            example = content
-    return [example, lines]
+            # Check for header comment at top of file 
+            if not line.startswith(luaComment):
+                isHeaderComment = False
+            
+            # If we are in header comment, split into header 
+            # and description
+            if lookForHeader and isHeaderComment:
+                comment = line.split(luaComment)[1]
+                if l_no == 1:
+                    header = comment
+                else:
+                    description += comment
+                    headerFinished = l_no + 1
+            # Else, get the content of the example
+            else:
+                content += line
+                # Search for the regex pattern
+                if re.search(regex, line):
+                    # If the header has been removed we need to adjust the line number
+                    lines.append(l_no - headerFinished)
+    # If there were any matches to regex, set the content as the example
+    if len(lines) > 0:
+        return { "header" : header, "description": description, "content" : content, "lines" : lines }
+    else: 
+        return None
 
 # Takes an asset component name and matches it to all files in a 
 # path, and return the shortest asset with matches.
@@ -96,20 +118,16 @@ def findShortestAssetInPath(path, name):
     assetFiles.sort(key=getFileLength)
 
     # Find example for the asset component
-    examples = []
-    allLines = []
     for assetFile in assetFiles:   
-        # Only find one example
-        if len(examples) > 0:
-            break
         # Search for Type = "<name>"
         regex = r'Type = \"' + name + r'\"'
-        [example, lines] = getLinesAndContentFromFile(assetFile, name, regex)
+        example = getLinesAndContentFromFile(assetFile, regex)
+        # As soon as we have a match, we return it
+        # It will be the shortest assets since they are sorted on length
         if example:
-            allLines.append(lines)
-            examples.append(example)
-
-    return [examples, allLines]
+            return example
+    # If nothing found, return None
+    return None
 
 # Search through all example assets for the component name
 # Returns file content and line numbers for where the name occurs
@@ -122,29 +140,27 @@ def findAssetExample(assetsFolder, category, name):
     if os.path.exists(assetDirectory):
         filenames = assetsInPath(assetDirectory)
         examples = []
-        allLines = []
         for filename in filenames:
             # We search for the asset component <name> or "<name>"
             regex = r'\b' + name + r'\b|\b\"' + name + r'\"\b'
-            [example, lines] = getLinesAndContentFromFile(filename, name, regex)
+            example = getLinesAndContentFromFile(filename, regex, True)
             examples.append(example)
-            allLines.append(lines)
-        return [examples, allLines]
+        return examples
 
     # Search pass 2: search through all assets in the **examples** folder and add the 
     # shortest asset
-    [example, lines] = findShortestAssetInPath(examplesFolder, name)
+    example = findShortestAssetInPath(examplesFolder, name)
     if example:
-        return [example, lines]
+        return [example]
     
     # Search pass 3: search through all assets in the **assets** folder and add the 
     # shortest asset
-    [example, lines] = findShortestAssetInPath(assetsFolder, name)
+    example = findShortestAssetInPath(assetsFolder, name)
     if example:
-        return [example, lines]
+        return [example]
     
-    # If nothing found, return None
-    return [[], []]
+    # If nothing found, return empty array
+    return []
 
 # Group members by optionality while preserving the alphabetical order
 def groupMembersByOptionality(members):
@@ -259,9 +275,8 @@ def generateAssetComponents(environment, outputFolder, folderNameAssets, jsonLoc
 
             # Find example for the asset component, if it is not a baseclass component
             examples = []
-            lines = []
             if not isBaseClass:
-                [examples, lines] = findAssetExample(assetsFolder, category["name"], assetComponent["name"])
+                examples = findAssetExample(assetsFolder, category["name"], assetComponent["name"])
                 if len(examples) == 0:
                     componentsMissingAssets.append(assetComponent["name"])
                 else:
@@ -276,8 +291,7 @@ def generateAssetComponents(environment, outputFolder, folderNameAssets, jsonLoc
                 baseClassIdentifier=baseClassIdentifier,
                 baseClassMembers=baseClassMembers, 
                 members=groupedMembers,
-                examples=examples,
-                lines=lines
+                examples=examples
                 )
             with open(os.path.join(assetsOutputPath, assetComponent["name"]+'.md'), 'w') as f:
                 f.write(outputAssetComponent)
