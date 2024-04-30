@@ -18,7 +18,7 @@ def cloneAssetsFolderGit(folderName):
 
     print("Cloning assets examples...")
     repo = Repo.init(folderName)
-    branchName = "origin/issue/2996"
+    branchName = "origin/master"
 
     # Create a new remote if there isn't one already created
     origin = repo.remotes[0] if len(repo.remotes) > 0 else None 
