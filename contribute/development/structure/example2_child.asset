@@ -1,0 +1,39 @@
+local Node = {
+  -- Every scene graph node needs an identifier
+  Identifier = "ExampleNode",
+  -- Moving the scene graph node relative to its parent
+  Transform = {
+    Translation = {
+      Type = "StaticTranslation",
+      -- Moving the node by 10 meters along the x axis
+      Position = { 10, 0, 0 }
+    },
+    Rotation = {
+      Type = "StaticRotation",
+      -- Use a rotation by 180 degrees around the y axis
+      Rotation = { 0, math.pi / 4, 0 }
+    },
+    Scale = {
+      Type = "StaticScale",
+      -- Scale the node up by a factor of 2
+      Scale = 2.0
+    }
+  },
+  Renderable = {
+    -- Just render three lines, one for each axis
+    Type = "RenderableCartesianAxes"
+  }
+}
+
+asset.onInitialize(function()
+  -- We initializing the asset, we want to add the node to the scene graph
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  -- When deinitializing, we remove the node from the scene graph
+  openspace.removeSceneGraphNode(Node)
+end)
+
+-- Making the node available to others
+asset.export("Node", Node)

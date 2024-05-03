@@ -39,111 +39,119 @@ The overall structure of the documentation is as follows:
 ## Get involved
 OpenSpace is an open-source project and relies on the contribution by a community of volunteers. In particular, the documentation always needs feedback and help. If you come across errors in the documentation, find something that is unclear, or lack essential information, help us to make the documentation better by either letting us know in the `#documentation` channel of the [Slack channel](https://openspacesupport.slack.com) or by suggesting a change on the [GitHub](https://github.com/OpenSpace/OpenSpace-Docs) of the documentation.
 
+## Releases
+You can find a list of all releases of OpenSpace [here](about/releases/index.md).
+
 
 <!--
   Sidebar
 -->
 
-
-:::{toctree}
-:caption: About
-:maxdepth: 1
-:hidden:
-:titlesonly:
-
-about/academics
-about/links
-about/releases/index
-
-:::
-
 :::{toctree}
 :caption: Getting started
 :maxdepth: 1
 :hidden:
-:titlesonly:
 
 getting-started/handling-errors
 getting-started/hardware-requirements
-getting-started/profiles/index
 getting-started/getting-started/index
 getting-started/faq/index
 
 :::
 
 :::{toctree}
-:caption: Manual
+:caption: Using OpenSpace
 :maxdepth: 1
 :hidden:
-:titlesonly:
 
-manual/navigation/index
-manual/content/index
-manual/properties/index
-manual/scenegraph/index
-manual/events/index
-manual/scripting/index
+using-openspace/navigation/index
+using-openspace/properties/index
+using-openspace/scenegraph/index
+using-openspace/events/index
+using-openspace/scripting/index
+using-openspace/users/index
+using-openspace/installers/index
+using-openspace/builders/index
+:::
+
+:::{toctree}
+:caption: Profiles
+:maxdepth: 1
+:hidden:
+
+getting-started/profiles/index
 
 :::
 
 :::{toctree}
-:caption: Tutorials
+:caption: Content
 :maxdepth: 1
 :hidden:
-:titlesonly:
 
-tutorials/users/index
-tutorials/installers/index
-tutorials/builders/index
+content/index
 
 :::
 
 :::{toctree}
-:caption: Contributing
+:caption: Creating data assets
 :maxdepth: 1
 :hidden:
-:titlesonly:
 
-contributing/index
-contributing/development/index
-contributing/faq/index
+creating-data-assets/asset-creation/index
+creating-data-assets/custom-web-ui/index
+
 :::
 
 :::{toctree}
-:caption: Customization
+:caption: Reference
 :maxdepth: 1
 :hidden:
-:titlesonly:
 
-customization/asset-creation/index
-customization/custom-web-ui/index
+generated/renderableOverview
+generated/assetComponents/index
+generated/scriptingApi/index
 
 :::
-
 
 :::{toctree}
-:caption: Generated from engine
+:caption: Contribute
 :maxdepth: 1
+:hidden:
 
-generated/index
+contribute/development/index
+contribute/faq/index
+contribute/documentation/index
 
 :::
-
 
 :::{toctree}
 :caption: Community
 :maxdepth: 1
 :hidden:
-:titlesonly:
 
-community/kitchensink
-community/field-list-example
+community/index
 
 :::
 
+:::{toctree}
+:caption: Glossary
+:maxdepth: 1
+:hidden:
 
+glossary/glossary
 
+:::
 
+:::{toctree}
+:caption: About
+:maxdepth: 1
+:hidden:
+
+about/academics
+about/releases/index
+about/links
+
+:::
 
 
 

@@ -1,0 +1,224 @@
+<html>
+  <head>
+    <title>Control Template</title>
+    <link rel="stylesheet" type="text/css" href="main2.css">
+    <script type="text/javascript" src="openspace-api.js"></script>
+    <script type="text/javascript">
+      //variable for js libarary
+      var openspace = null;
+      //helper function for nicely fading groups of trails
+      var showTrails = (objects) => {
+        objects.map(async (object) => {
+          let isEnabled = false;
+          const returnValue = await openspace.getPropertyValue("Scene." + object + "Trail.Renderable.Enabled");
+          if (returnValue) {
+            isEnabled = returnValue[1];
+          }
+          if (!isEnabled) {
+            openspace.setPropertyValue("Scene." + object + "Trail.Renderable.Opacity", 0)
+            openspace.setPropertyValue("Scene." + object + "Trail.Renderable.Enabled", true)
+          }
+          openspace.setPropertyValue("Scene." + object + "Trail.Renderable.Opacity", 1, 1)
+        })
+      }
+      //helper function to fade out and then disable trails
+      async function hideAllTrails() {
+        const duration = 1;
+        openspace.setPropertyValue("Scene.*Trail.Renderable.Opacity", 0, 1)
+        setTimeout(() => {
+          openspace.setPropertyValue("Scene.*Trail.Renderable.Enabled", false)
+        }, duration * 1000)
+      }
+      //helper function to set the focus target
+      var setFocus = (focus) => {
+        openspace.setPropertyValue('NavigationHandler.OrbitalNavigator.Anchor', focus);
+        openspace.setPropertyValue('NavigationHandler.OrbitalNavigator.RetargetAnchor', null);
+      }
+
+var earthButtons = {
+	title: "Example buttons for Earth",
+	buttons: {
+		'Turn off the Earth Model': () => {openspace.setPropertyValueSingle('Scene.Earth.Renderable.Enabled', false)},
+		'Focus on The Moon': () => {setFocus('Moon')},
+		'Setup Eclipse Scene': () => {
+			openspace.globebrowsing.goToGeo('Earth','33.1','-106.9','6000000')
+			openspace.time.setTime('2024-04-08T17:30:13.184')
+			openspace.setPropertyValueSingle('Scene.Earth.Renderable.Layers.ColorLayers.ESRI_VIIRS_Combo.Enabled', false)
+			openspace.setPropertyValueSingle('Scene.Earth.Renderable.Layers.ColorLayers.Blue_Marble.Enabled', true)
+			openspace.time.interpolateDeltaTime(60)
+		},
+	},
+};
+var otherButtons = {
+	title: "Other Button Examples",
+	buttons: {
+		'Jump to Globe': () => {
+			openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',0,2)
+			setTimeout(() => {
+				openspace.time.interpolateDeltaTime(1,1.000000E+00)
+				openspace.globebrowsing.goToGeo('Earth',37.7,-122.5, 3000000)
+				openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',1,2)
+			}, 2001)
+		},
+		'Jump To Nav State': () => {
+			openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',0,2)
+			setTimeout(() => {
+				openspace.time.interpolateDeltaTime(1,1.000000E+00)
+				openspace.navigation.setNavigationState({Anchor:'Jupiter',Pitch:-0.0014499759046284187, Position:[-3189986816.909851,346218424.33447266,861250117.1674805],ReferenceFrame:'Root',Up:[0.21129035032949686,0.8779118851872826,0.4296825685369957],Yaw:-2.16690017729807e-05})
+
+				openspace.setPropertyValueSingle('RenderEngine.BlackoutFactor',1,2)
+			}, 2001)
+		},
+		'Jupiter Trail Toggle': async () => {
+			var togglevar = await openspace.getPropertyValue('Scene.JupiterTrail.Renderable.Enabled');
+			if (togglevar[1] > 0.1) {
+				openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Opacity', 0.0, 2)
+				setTimeout(() => {
+					openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Enabled', false)
+				}, 3000)
+				} else {
+				openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Opacity', 1.0, 2)
+				openspace.setPropertyValueSingle('Scene.JupiterTrail.Renderable.Enabled', true)
+			}
+		},
+	}
+};
+  var buttonGroups = [earthButtons, otherButtons];
+  //helper function to map the buttons to html
+  function mapButtons(openspace) {
+	buttonGroups.map((action, id) => {
+	  var cardHTML = "<div class='card'><h2>" + action.title + "</h2>";
+	  if (action.description) {
+		action.description.split('\n').map(item => {
+		  cardHTML += "<p>" + item + "</p>";
+		});
+	  }
+	  if (action.buttons) {
+		Object.keys(action.buttons).map(button => {
+		  const fn = action.buttons[button];
+		  cardHTML += '<button data-id="' + button + '" onClick="(' + fn + ')(event)">' + button + '</button>';
+		});
+	  }
+	  cardHTML += "</div>";
+	  document.getElementById('main').innerHTML += cardHTML;
+	});
+  }
+  //helper function to connect to opensapce
+  var connectToOpenSpace = () => {
+	//setup the api params
+	var host = document.getElementById('ipaddress').value;
+	var api = window.openspaceApi(host, 4682);
+	//notify users on disconnect
+	api.onDisconnect(() => {
+	  console.log("disconnected");
+	  document.getElementById('container').className = "disconnected";
+	  var disconnectedString = "Connect to OpenSpace: ";
+	  disconnectedString += '<input id="ipaddress" type=text placeholder="Enter ip address" /> ';
+	  disconnectedString += '<button onClick="connectToOpenSpace();">Connect</button>';
+	  document.getElementById('connection-status').innerHTML = disconnectedString;
+	  openspace = null;
+	});
+	//notify users and map buttons when connected
+	api.onConnect(async () => {
+	  try {
+		document.getElementById('container').className = "connected";
+		document.getElementById('connection-status').innerHTML = "Connected to OpenSpace";
+		openspace = await api.library();
+		console.log('connected');
+		mapButtons(openspace);
+	  } catch (e) {
+		console.log('OpenSpace library could not be loaded: Error: \n', e)
+		return;
+	  }
+	})
+	//connect
+	api.connect();
+  };
+</script>
+</head>
+<body>
+    <!-- HTML Containers -->
+    <div id="container" class="disconnected">
+      <div id="connection-status" class="connection-status">
+        Connect to OpenSpace:
+        <input id='ipaddress' type=text placeholder="Enter ip address" /> 
+        <button onClick="connectToOpenSpace();">Connect</button>
+      </div>
+      <div id="main">
+      </div>
+      <script type="text/javascript">
+        connectToOpenSpace('localhost');
+      </script>
+	  <script>
+		var api = window.openspaceApi('localhost', 4682);
+		  let intervalIds = [];
+		  api.onConnect(function () {
+
+			//declaring the toggles Object with key value pairs, the keys are the button names you want to be updated
+			//the values are the corresponding openspace properties to subscribe to 
+			var toggles = {
+			  'Turn off the Earth Model':'Scene.Earth.Renderable.Enabled',
+			  'Jupiter Trail Toggle':'Scene.JupiterTrail.Renderable.Enabled',
+
+			};
+
+			//create the pairs array - an array consisting of sub-arrays which contain the button-property pairs
+			//did this for easy indexing but might be able to use a Map instead?
+			let pairs = Object.entries(toggles);
+
+			//creating empty array for intervalIds generated by using setInterval so I can stop the loop onDisconnect
+			let intervalIds = [];
+
+			//the button-updating function:
+			//takes in the button id to be updated and the Openspace Topic to subscribe to
+			//this was adapted from an example from the Openspace team
+			function updateButtonStyle(buttonId, topic) {
+			  topic.iterator().next().then(function(it) {
+				const enabled = it.value.Value;
+				//const button = document.getElementById(buttonId);
+				const button = document.querySelectorAll(`[data-id=${CSS.escape(buttonId)}]`);
+
+				// Update the button's CSS style based on if the property is enabled
+				if (enabled === true || Math.round(enabled) > 0.2) { //adding an OR > to allow for opacity checks and rounding to account for error when = 0
+				  button.forEach(function(item) {
+						item.classList.add('ButtonGreen');
+						item.classList.remove('ButtonRed');
+					});
+				} else {
+				  button.forEach(function(item) {
+						item.classList.add('ButtonRed');
+						item.classList.remove('ButtonGreen');
+					});
+				}
+			  });
+			}
+
+			//An initial function call to set the starting colors, not really necessary since theyre updated every second anyway
+			pairs.forEach(function(item) {
+			  const topic = api.subscribeToProperty(item[1]);
+			  updateButtonStyle(item[0], topic);
+			});
+
+			//loooping through each element in the pairs array
+			//outside the setInterval I am declaring the button id for each and subscribing to the corresponding property 
+			pairs.forEach(function(item) {
+				const buttonId = item[0];
+				const topic = api.subscribeToProperty(item[1]);
+				const intervalId = setInterval(function() { //using setInterval to call the function once per second
+				  updateButtonStyle(buttonId, topic);
+				}, 1000);
+				intervalIds.push(intervalId);//pushing the intervalId to the array for stopping the loop later and avoiding errors
+			});
+
+		  });
+
+		  api.onDisconnect(function() {
+			console.log("Disconnected");
+			intervalIds.forEach(clearInterval); //clearing the Intervalids to stop the topic subscriptions
+			});
+
+		  api.connect();
+	</script>
+    </div>
+  <body>
+</html>

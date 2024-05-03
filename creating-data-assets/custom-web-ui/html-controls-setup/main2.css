@@ -1,0 +1,95 @@
+html {
+  background-color: #222;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input[type=text] {
+    padding:5px;
+    border:1px solid #ccc;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+.connection-status {
+  transition: all 0.5s;
+  height: 30px;
+  width: calc(100% - 1em);
+  padding: 0.5em;
+}
+
+div.disconnected .connection-status {
+  background-color: #800;
+  color: #fee;
+}
+
+div.connected .connection-status {
+  background-color: #61559A; /*#080*/
+  color: #efe;
+}
+
+.card {
+  background-color: #111;
+  margin: 1em;
+  padding: 0.5em;
+  color: #eee;
+}
+
+button {
+  transition: all 0.5s;
+  border-radius: 0.2em;
+  background-color: #61559A;/*#080*/
+  color: #efe;
+  border: none;
+  padding: 0.5em;
+  color: #fff;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+div.disconnected button {
+  background-color: #777;
+}
+
+div.disconnected button:hover {
+  background-color: #777;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+button:hover {
+	border-radius: 20px;
+	cursor:pointer;
+}  
+
+button:active {
+  background-color: #fef;
+}  
+.ButtonRed {
+  background-color: #500;
+  color: white;
+}
+
+.ButtonGreen {
+  background-color: FFBF00;
+  color: black;
+}
