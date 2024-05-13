@@ -527,13 +527,13 @@ Defining glossary terms that can be used across the entire documentation page. R
 
 :::{glossary}
 Some Term
-  The description what the term means
+  The description what the term means.
 
-Sphinx
-  Sphinx makes it easy to create intelligent and beautiful documentation.
+Another Term
+  And another description.
 
-MyST
-  Myst is an adventure video game designed by the Miller brothers, Robyn and Rand. It was developed by Cyan, Inc., published by Broderbund, and initially released in 1993 for the Macintosh.
+Yet Another Term
+  And yet another description.
 :::
 
 To use it in the text use it like this {term}`Sphinx`
