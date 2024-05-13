@@ -56,9 +56,9 @@ If you favor the commandline you can use the `cmake` command, but you might also
 
 ### Compiler / IDE
 The platform specific pages found in the menu on the left contain more detailed information about the compilation platforms for each operating system. OpenSpace is written in C++20 and thus requires compiler versions that support a large portion of that standard. Thus we require the following versions of the compiler:
-  - Windows: MSVC 19.31 (Visual Studio 2022, from version 17.1)
-  - macOS: AppleClang 13.1.6 (Xcode 13.4.1)
-  - Linux: GCC 11 or Clang 14
+  - Windows: MSVC 19.39 (Visual Studio 2022, from version 17.9)
+  - macOS: AppleClang 15.0.0 (Xcode 15.3)
+  - Linux: GCC 13 or Clang 17
 
 
 ## 2. Dependencies

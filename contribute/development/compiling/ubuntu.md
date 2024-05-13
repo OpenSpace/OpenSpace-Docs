@@ -6,7 +6,7 @@ OpenSpace requires the latest LTS version (22.04) as the Qt6 dependency is not a
 ## Development Tools
 Install the following tools if they are not already available on your system:
   - Git 2.7+
-  - GCC 11+
+  - GCC 13+
   - CMake 3.25+
 
 If it not provided through `apt`, you can install CMake version 3.25 through the following commands:
@@ -22,8 +22,17 @@ There are specific CMake variables that need to be set. See the "Compile OpenSpa
 ## Dependencies
 You can install all of the necessary dependencies through `apt`:
 
-`sudo apt install glew-utils libpng-dev freeglut3-dev git libxrandr-dev libxinerama-dev xorg-dev libxcursor-dev libcurl4-openssl-dev libxi-dev libasound2-dev libgdal-dev libboost1.74-dev qt6-base-dev libmpv-dev libvulkan-dev`
+```bash
+sudo apt install glew-utils libpng-dev freeglut3-dev git libxrandr-dev libxinerama-dev xorg-dev libxcursor-dev libcurl4-openssl-dev libxi-dev libasound2-dev libgdal-dev libboost1.74-dev qt6-base-dev libmpv-dev libvulkan-dev libasound2-dev
+```
 
+If you are on Ubuntu 22.04, you'll also need to install gcc 13 (requires ubuntu-toolchain-r/test ppa):
+
+```bash
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt install gcc-13 g++-13
+```
 
 ## Compile OpenSpace
 ```bash
@@ -36,20 +45,19 @@ cd "$openSpaceHome/build" || exit
 
 cmake \
 -DCMAKE_BUILD_TYPE:STRING="Release" \
--DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-11 \
--DCMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-11 \
+-DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13 \
+-DCMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13 \
 -DASSIMP_BUILD_MINIZIP=1 "$openSpaceHome"
 
 make -j
 ```
-
 
 ## Outdated Versions of Ubuntu
 Currently, pre-22.04 versions of Ubuntu use versions of `libmpv-dev` that are too old. An up-to-date debian package for mpv installation can be downloaded from [here](https://mpv.io/installation/), which would install an updated version of `libmpv-dev`.
 
 Similarly, `qt6-base-dev` is not available but can be installed through other means such as [aqtinstall](https://github.com/miurahr/aqtinstall)
 
-You can install gcc-11 using the following commands in case it is not supported:
+You can install gcc-13 using the following commands in case it is not supported:
 The final commands configure Ubuntu's "update-alternatives", which allows a user to select among multiple installations of gcc:
 ```
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get autoclean && sudo apt-get autoremove
@@ -60,15 +68,15 @@ reboot in case there are kernel changes
 sudo apt-get install build-essential software-properties-common
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
-sudo apt-get install gcc-11 g++-11
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 60 --slave /usr/bin/g++ g++ /usr/bin/g++-11
+sudo apt-get install gcc-13 g++-13
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 60 --slave /usr/bin/g++ g++ /usr/bin/g++-13
 sudo update-alternatives --config gcc
 ```
 
-If you don't want to install GCC 11 globally, you can overwrite the CMake options instead:
+If you don't want to install GCC 13 globally, you can overwrite the CMake options instead:
 ```
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-11
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-11
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13
 ```
 
 If you do want to change the defaults you can find the information for it [here](https://stackoverflow.com/questions/7832892/how-to-change-the-default-gcc-compiler-in-ubuntu)
@@ -76,7 +84,7 @@ If you do want to change the defaults you can find the information for it [here]
 
 ## Troubleshooting
 Make sure that you are using the correct version of gcc/g++
- - Double check `CMAKE_CXX_COMPILER` and `/usr/bin/c++ --version` to be sure. It should be at least 11.0
+ - Double check `CMAKE_CXX_COMPILER` and `/usr/bin/c++ --version` to be sure. It should be at least 13.0
 
 Error: libstdc++.so.6: could not read symbols: Missing DSO from command line
  - Try using g++ instead of gcc.
