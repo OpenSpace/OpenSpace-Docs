@@ -305,6 +305,7 @@ def generateAssetComponents(environment, outputFolder, folderNameAssets, jsonLoc
     # Print out missing assets
     total = noOfFoundAssets + len(componentsMissingAssets)
     percentFound = noOfFoundAssets / (total) * 100
+    componentsMissingAssets.sort()
     print('\n\n')
     print("Number of found asset examples (ignoring base classes):")
     print(noOfFoundAssets, "of", total, "or", "%.1f" % percentFound, "%\n")
@@ -312,8 +313,8 @@ def generateAssetComponents(environment, outputFolder, folderNameAssets, jsonLoc
     print(line)
     print(len(componentsMissingAssets), "asset components are missing example files:")
     print(line) 
-    print('\n'.join(componentsMissingAssets).join("\n\n\n"))
-
+    print('\n'.join(componentsMissingAssets))
+    print("\n\n\n")
 
 ################################################################################
 #                            CREATE SCRIPTING API                              #
