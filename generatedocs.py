@@ -381,21 +381,6 @@ def generateRenderableOverview(environment, outputFolder, folderNameAssets, json
     with open(os.path.join(outputFolder, "renderableOverview.md"), 'w') as f:
         f.write(outputOverview)
 
-################################################################################
-#                             CREATE INDEX FILE                                #
-################################################################################
-
-def generateIndexFile(environment, outputFolder, folderNameScripting, folderNameAssets):
-    indexTemplate = environment.get_template("indexTemplate.txt")
-
-    outputIndex = indexTemplate.render(
-        folderNameScripting=folderNameScripting, 
-        folderNameAssets=folderNameAssets,
-        renderableOverview="renderableOverview"    
-    )
-    with open(os.path.join(outputFolder, "index.md"), 'w') as f:
-        f.write(outputIndex)
-
 jsonLocation="json"
 outputFolder="generated"
 folderNameAssets="assetComponents"
@@ -408,6 +393,5 @@ environment = Environment(loader=FileSystemLoader("templates"))
 generateAssetComponents(environment, outputFolder, folderNameAssets, jsonLocation)
 generateScriptingApi(environment, outputFolder, folderNameScripting, jsonLocation)
 generateRenderableOverview(environment, outputFolder, folderNameAssets, jsonLocation)
-generateIndexFile(environment, outputFolder, folderNameScripting, folderNameAssets)
 
 

@@ -1,12 +1,10 @@
 # Glossary
 
-A glossary of common terms used throughout Jupyter Book.
+A glossary of common terms.
 
 :::{glossary}
 [CommonMark](https://commonmark.org/)
     A standard syntax of Markdown that is used across many communities and projects.
-    
-[MyST Markdown](https://myst-parser.readthedocs.io/en/latest/using/syntax.html)
 
 [MyST](https://myst-parser.readthedocs.io/en/latest/using/syntax.html)
     A flavour of Markdown that was designed for use with the {term}`Sphinx` project.
