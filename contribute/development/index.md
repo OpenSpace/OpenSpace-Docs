@@ -1,6 +1,4 @@
 # Development
-
-
 ```{toctree}
 :hidden:
 
@@ -18,5 +16,3 @@ skybrowser
 webrtc/index
 
 ```
-
-

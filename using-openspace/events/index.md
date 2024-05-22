@@ -114,9 +114,9 @@ This event is created when something regarding a session recording playback chan
 `State`: The new state of the session recording; one of `Started`, `Paused`, `Resumed`, `Finished`
 
 ### PointSpacecraft
-This event is created if a spacecraft is asked to point at a specific direction.
+This event is created when a spacecraft is asked to point in a specific direction.
 
-`Ra`: The right ascension of the point at which the spacecraft will be pointed
+`Ra`: The right ascension of the point at which the spacecraft will be pointed.
 
 `Dec`: The declination of the point at which the spacecraft will be pointed
 
@@ -140,7 +140,7 @@ This event is created when an automated camera path is triggered that will move 
 `Destination`: The name of the scene graph node that is the destination of the camera path
 
 ### CameraPathFinished
-This event is created when an automated camera path thatmoved the camera from the specified Origin to the Destination is finished.
+This event is created when an automated camera path that moved the camera from the specified Origin to the Destination is finished.
 
 `Origin`: The name of the scene graph node that is the origin of the camera path
 
@@ -150,7 +150,7 @@ This event is created when an automated camera path thatmoved the camera from th
 This event is created if the camera is moved by the user for any reason. It will only be created if the camera was not moving. If the user continuously moves the camera, only the initial event is triggered.
 
 ### ScheduledScriptExecuted
-This event is created when the script scheduler is asked to trigger as script at a specific simulation time.
+This event is created when the script scheduler is asked to trigger a script at a specific simulation time.
 
 `Script`: The script that will be executed in the next frame
 

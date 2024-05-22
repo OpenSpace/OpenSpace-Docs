@@ -85,5 +85,3 @@ _Inherits [{{ baseClassName }}](#{{ baseClassIdentifier }})_
 
 {% endfor %}
 {% endif %}
-
-

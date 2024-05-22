@@ -102,7 +102,7 @@ def getLinesAndContentFromFile(assetFile, regex, lookForHeader = False):
                     lines.append(l_no - headerFinished)
     # If there were any matches to regex, set the content as the example
     if len(lines) > 0:
-        return { "header" : header, "description": description, "content" : content, "lines" : lines }
+        return { "header": header, "description": description, "content": content, "lines": lines }
     else: 
         return None
 
@@ -376,13 +376,13 @@ def generateRenderableOverview(environment, outputFolder, folderNameAssets, json
                                                        renderables=renderables, 
                                                        images=images
                                                        )
-    with open(os.path.join(outputFolder, "renderableOverview.md"), 'w') as f:
+    with open(os.path.join(outputFolder, "renderableOverview.md"), "w") as f:
         f.write(outputOverview)
 
-jsonLocation="json"
-outputFolder="generated"
-folderNameAssets="assetComponents"
-folderNameScripting="scriptingApi"
+jsonLocation = "json"
+outputFolder = "generated"
+folderNameAssets = "assetComponents"
+folderNameScripting = "scriptingApi"
 
 # Load jinja templates folder
 environment = Environment(loader=FileSystemLoader("templates"))
@@ -391,5 +391,4 @@ environment = Environment(loader=FileSystemLoader("templates"))
 generateAssetComponents(environment, outputFolder, folderNameAssets, jsonLocation)
 generateScriptingApi(environment, outputFolder, folderNameScripting, jsonLocation)
 generateRenderableOverview(environment, outputFolder, folderNameAssets, jsonLocation)
-
 
