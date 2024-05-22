@@ -116,7 +116,7 @@ This event is created when something regarding a session recording playback chan
 ### PointSpacecraft
 This event is created if a spacecraft is asked to point at a specific direction.
 
-`Ra`: The right ascension of the point at which the spacecraft will be pointed
+`Ra`: The right ascension of the point at which the spacecraft will be pointed.
 
 `Dec`: The declination of the point at which the spacecraft will be pointed
 
