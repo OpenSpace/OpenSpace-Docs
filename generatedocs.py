@@ -373,10 +373,11 @@ def generateRenderableOverview(environment, outputFolder, folderNameAssets, json
 
     # Create overview file
     renderableOverviewTemplate = environment.get_template("renderableOverviewTemplate.txt")
-    outputOverview = renderableOverviewTemplate.render(folderNameAssets=folderNameAssets,
-                                                       renderables=renderables, 
-                                                       images=images
-                                                       )
+    outputOverview = renderableOverviewTemplate.render(
+        folderNameAssets=folderNameAssets,
+        renderables=renderables, 
+        images=images
+    )
     with open(os.path.join(outputFolder, "renderableOverview.md"), "w") as f:
         f.write(outputOverview)
 
