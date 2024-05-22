@@ -393,7 +393,7 @@ def generateIndexFile(environment, outputFolder, folderNameScripting, folderName
         folderNameAssets=folderNameAssets,
         renderableOverview="renderableOverview"    
     )
-    with open(os.path.join(outputFolder, "index.md"), 'w') as f:
+    with open(os.path.join(outputFolder, "index.md"), "w") as f:
         f.write(outputIndex)
 
 jsonLocation = "json"
