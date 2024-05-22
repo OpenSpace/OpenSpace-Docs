@@ -410,4 +410,3 @@ generateScriptingApi(environment, outputFolder, folderNameScripting, jsonLocatio
 generateRenderableOverview(environment, outputFolder, folderNameAssets, jsonLocation)
 generateIndexFile(environment, outputFolder, folderNameScripting, folderNameAssets)
 
-
