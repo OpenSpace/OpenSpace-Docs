@@ -1,6 +1,5 @@
 # Scripting
 
-
 ```{toctree}
 :hidden:
 
