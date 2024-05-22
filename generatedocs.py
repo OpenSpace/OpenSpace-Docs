@@ -378,7 +378,7 @@ def generateRenderableOverview(environment, outputFolder, folderNameAssets, json
                                                        renderables=renderables, 
                                                        images=images
                                                        )
-    with open(os.path.join(outputFolder, "renderableOverview.md"), 'w') as f:
+    with open(os.path.join(outputFolder, "renderableOverview.md"), "w") as f:
         f.write(outputOverview)
 
 ################################################################################
