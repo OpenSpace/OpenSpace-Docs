@@ -105,7 +105,7 @@ def getLinesAndContentFromFile(assetFile, regex, lookForHeader = False):
                     lines.append(l_no - headerFinished)
     # If there were any matches to regex, set the content as the example
     if len(lines) > 0:
-        return { "header" : header, "description": description, "content" : content, "lines" : lines }
+        return { "header": header, "description": description, "content": content, "lines": lines }
     else: 
         return None
 
