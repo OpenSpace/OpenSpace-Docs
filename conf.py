@@ -2,10 +2,10 @@ import os
 
 # opening file_1.py and reading it with read() and executing if with exec()
 with open("generatedocs.py", encoding="utf8") as file:
-    try:
-      exec(file.read())
-    except Exception as e: 
-      print(e)
+  try:
+    exec(file.read())
+  except Exception as e: 
+    print(e)
 
 ###
 # Global Settings
