@@ -140,7 +140,7 @@ This event is created when an automated camera path is triggered that will move 
 `Destination`: The name of the scene graph node that is the destination of the camera path
 
 ### CameraPathFinished
-This event is created when an automated camera path thatmoved the camera from the specified Origin to the Destination is finished.
+This event is created when an automated camera path that moved the camera from the specified Origin to the Destination is finished.
 
 `Origin`: The name of the scene graph node that is the origin of the camera path
 
