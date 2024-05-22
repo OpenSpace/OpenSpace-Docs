@@ -114,7 +114,7 @@ This event is created when something regarding a session recording playback chan
 `State`: The new state of the session recording; one of `Started`, `Paused`, `Resumed`, `Finished`
 
 ### PointSpacecraft
-This event is created if a spacecraft is asked to point at a specific direction.
+This event is created when a spacecraft is asked to point in a specific direction.
 
 `Ra`: The right ascension of the point at which the spacecraft will be pointed.
 
