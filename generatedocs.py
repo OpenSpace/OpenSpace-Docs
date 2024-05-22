@@ -118,13 +118,11 @@ def findShortestAssetInPath(path, name):
     # This will ensure the simplest asset is displayed
     assetFiles.sort(key=getFileLength)
 
-    # Find example for the asset component
+    # Find first example matching the asset component (files are sorted by length)
     for assetFile in assetFiles:   
         # Search for Type = "<name>"
         regex = r'Type = \"' + name + r'\"'
         example = getLinesAndContentFromFile(assetFile, regex)
-        # As soon as we have a match, we return it
-        # It will be the shortest assets since they are sorted on length
         if example:
             return example
     # If nothing found, return None
