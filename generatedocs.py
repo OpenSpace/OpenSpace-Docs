@@ -42,8 +42,7 @@ def getFileLength(path):
         # Read binary file as it is faster and we only want to know the length
         with open(path, 'rb') as fp:
             if fp.readable():
-                length = len(fp.read()) 
-                return length
+                return len(fp.read()) 
             else:
                 return None
     except IOError:
@@ -58,7 +57,6 @@ def assetsInPathRecursive(root):
         for file in files:
             if file.endswith(".asset"):
                 filenames.append(os.path.join(path, file))
-
     return filenames 
 
 # Find all .assets in directory - no subdirs
@@ -87,8 +85,7 @@ def getLinesAndContentFromFile(assetFile, regex, lookForHeader = False):
             if not line.startswith(luaComment):
                 isHeaderComment = False
             
-            # If we are in header comment, split into header 
-            # and description
+            # If we are in header comment, split into header and description
             if lookForHeader and isHeaderComment:
                 comment = line.split(luaComment)[1]
                 if l_no == 1:
