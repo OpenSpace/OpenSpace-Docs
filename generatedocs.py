@@ -103,6 +103,7 @@ def getLinesAndContentFromFile(assetFile, regex, lookForHeader = False):
                 if re.search(regex, line):
                     # If the header has been removed we need to adjust the line number
                     lines.append(l_no - headerFinished)
+
     # If there were any matches to regex, set the content as the example
     if len(lines) > 0:
         return { "header": header, "description": description, "content": content, "lines": lines }
