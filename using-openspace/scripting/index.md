@@ -6,5 +6,4 @@
 
 console/index
 
-
 ```
