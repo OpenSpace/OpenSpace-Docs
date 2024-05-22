@@ -396,10 +396,10 @@ def generateIndexFile(environment, outputFolder, folderNameScripting, folderName
     with open(os.path.join(outputFolder, "index.md"), 'w') as f:
         f.write(outputIndex)
 
-jsonLocation="json"
-outputFolder="generated"
-folderNameAssets="assetComponents"
-folderNameScripting="scriptingApi"
+jsonLocation = "json"
+outputFolder = "generated"
+folderNameAssets = "assetComponents"
+folderNameScripting = "scriptingApi"
 
 # Load jinja templates folder
 environment = Environment(loader=FileSystemLoader("templates"))
