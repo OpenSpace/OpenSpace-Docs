@@ -9,10 +9,12 @@ from tqdm import tqdm # progress bar
 #                      ASSET COMPONENTS HELPER FUNCTIONS                       #
 ################################################################################
 
-# Clones asset directory from OpenSpace git repository
-# Uses the latest master
-# Returns absolute path to the asset folder
 def clone_assets_folder_git(folder_name):
+  """
+  Clones asset directory from OpenSpace git repository
+  Uses the latest master
+  Returns absolute path to the asset folder
+  """
   def print_progress(op_code, cur_count, max_count=None, message=""):
     print(message)
 
@@ -36,8 +38,10 @@ def clone_assets_folder_git(folder_name):
   assets_folder_path = os.path.abspath(os.path.join(folder_name, data_assets_path))
   return assets_folder_path
 
-# Returns the number of lines in a file
 def get_file_length(path):
+  """
+  Returns the number of lines in a file
+  """
   try:
     # Read binary file as it is faster and we only want to know the length
     with open(path, "rb") as fp:
@@ -49,8 +53,10 @@ def get_file_length(path):
     print(f"Could not open file path {path}")
     return None
 
-# Find all .asset files in the root dir and subdirs
 def assets_in_path_recursive(root):
+  """
+  Find all .asset files in the root dir and subdirs
+  """
   filenames = []
 
   for path, subdirs, files in os.walk(root):
@@ -59,16 +65,20 @@ def assets_in_path_recursive(root):
         filenames.append(os.path.join(path, file))
   return filenames 
 
-# Find all .assets in directory - no subdirs
 def assets_in_path(path):    
+  """
+  Find all .assets in directory - no subdirs
+  """
   filenames = [filename for filename in os.listdir(path) if filename.endswith(".asset")]
   # Prepend the path to the filename
   return list(map(lambda filename: os.path.join(path, filename), filenames))
 
-# Matches an asset component name with the words in a file
-# Returns the content of the file and the lines where the 
-# matches occured, as well as the header if specified
 def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
+  """
+  Matches an asset component name with the words in a file
+  Returns the content of the file and the lines where the 
+  matches occured, as well as the header if specified
+  """
   lines = []
   is_header_comment = True
   header = ""
@@ -107,9 +117,11 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
   else: 
     return None
 
-# Takes an asset component name and matches it to all files in a 
-# path, and return the shortest asset with matches.
 def find_shortest_asset_in_path(path, name):
+  """
+  Takes an asset component name and matches it to all files in a 
+  path, and return the shortest asset with matches.
+  """
   asset_files = assets_in_path_recursive(path)
   # Sort by shortest asset file first                
   # This will ensure the simplest asset is displayed
@@ -125,9 +137,11 @@ def find_shortest_asset_in_path(path, name):
   # If nothing found, return None
   return None
 
-# Search through all example assets for the component name
-# Returns file content and line numbers for where the name occurs
 def find_asset_example(assets_folder, category, name):
+  """
+  Search through all example assets for the component name
+  Returns file content and line numbers for where the name occurs
+  """
   examples_folder = os.path.join(assets_folder, "examples")
     
   # Search pass 1: look up folder “assets/<category>/<assetcomponentname>/”
@@ -158,8 +172,10 @@ def find_asset_example(assets_folder, category, name):
   # If nothing found, return empty array
   return []
 
-# Group members by optionality while preserving the alphabetical order
 def group_members_by_optionality(members):
+  """
+  Group members by optionality while preserving the alphabetical order
+  """
   non_optional_indices = []
   optional_indices = []
   for i, member in enumerate(members):
@@ -170,8 +186,10 @@ def group_members_by_optionality(members):
   indices = non_optional_indices + optional_indices
   return [ members[i] for i in indices ]
 
-# Find a screenshot in the images folder with the exact same name as the component
 def find_asset_screenshot(name):
+  """
+  Find a screenshot in the images folder with the exact same name as the component
+  """
   image_directory = "_static/images/renderables"
   img_path = f"{image_directory}/{name}.png"
   return img_path if os.path.exists(img_path) else None
@@ -180,10 +198,12 @@ def find_asset_screenshot(name):
 #                         SCRIPTING API HELPER FUNCTIONS                       #
 ################################################################################
 
-# This function modifies the scripting library so that the doxygen 
-# comments are added to the arguments
-# Supported doxygen parameters: \param \return \code
 def parse_doxygen_comments(library):
+  """
+  This function modifies the scripting library so that the doxygen 
+  comments are added to the arguments
+  Supported doxygen parameters: \param \return \code
+  """
   for function in library["functions"]:
     [help_text, p, return_description] = function["help"].partition("\\\\return")
         
@@ -222,6 +242,10 @@ def parse_doxygen_comments(library):
 ################################################################################
 
 def generate_asset_components(environment, output_folder, folder_name_assets, json_location):
+  """
+  Generates the markdown files for the asset components, as well as an index file which
+  links to them
+  """
   assets_examples_folder_name = "assetExamples"
   # Download assets files from OpenSpace repository
   assets_folder = clone_assets_folder_git(os.path.join(output_folder, assets_examples_folder_name))
@@ -314,6 +338,10 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
 ################################################################################
 
 def generate_scripting_api(environment, output_folder, folder_name_scripting, json_location):
+  """
+  Creates the markdown files for the scripting libraries, as well as an index file
+  which links to them
+  """
   # Create target folder
   scripting_output_path = os.path.join(output_folder, folder_name_scripting)
   if not os.path.exists(scripting_output_path):
@@ -345,6 +373,10 @@ def generate_scripting_api(environment, output_folder, folder_name_scripting, js
 ################################################################################
 
 def generate_renderable_overview(environment, output_folder, folder_name_assets, json_location):
+  """
+  Creates a markdown file with a grid of pictures of the renderables and ScreenSpaceRenderables
+  in OpenSpace
+  """
   # Open JSON file
   f = open(os.path.join(json_location, "assetComponents.json"))
 
