@@ -22,21 +22,21 @@ Before committing to the repository it can also be beneficial to run `./make.bat
 
 ## Make commands
 
-- `make html` will build the documentation locally
+- `make html` will build the documentation locally.
 - `make clean` will clean out the build folder and remove everything built previously.
-- `make linkcheck` will check so that all links are correct
+- `make linkcheck` will check so that all links are correct.
 
 ## File Structure
-  - Each major grouping in the documentation should have a separate folder in the repository that collects all of the files describing things belonging to that major category
+  - Each major grouping in the documentation should have a separate folder in the repository that collects all of the files describing things belonging to that major category.
   - `generated`: The directory where all generated markdown files will be placed. These will be shown in the `Reference` section of the documentation.
   - `templates`: This is where the jinja templates are stored that are used to structure the markdown files. 
   - `_static`: Files placed in this folder are automatically copied into the resulting documentation. In general, it is not necessary to manually place files in here as Sphinx is copying required files from other places automatically
-  - `.readthedocs.yml`: A configuration file that sets up the build environment to build the documentation. Documentation for this file can be found [here](https://docs.readthedocs.io/en/stable/config-file/v2.html)
-  - `conf.py`: A Python script that configures the actual Sphinx instance that builds the documentation page. Documentation for this file can be found [here](https://www.sphinx-doc.org/en/master/usage/configuration.html) and [here](https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html)
-  - `requirements.txt`: A PIP requirements file that describes all of the Python package requirements that need to be installed
+  - `.readthedocs.yml`: A configuration file that sets up the build environment to build the documentation. Documentation for this file can be found [here](https://docs.readthedocs.io/en/stable/config-file/v2.html).
+  - `conf.py`: A Python script that configures the actual Sphinx instance that builds the documentation page. Documentation for this file can be found [here](https://www.sphinx-doc.org/en/master/usage/configuration.html) and [here](https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html).
+  - `requirements.txt`: A PIP requirements file that describes all of the Python package requirements that need to be installed.
   - `make.bat` / `Makefile`: A batch script for Windows or bash script for Linux to build the documentation. The script needs a second parameter that describes the output type, by default we use `html` for our documentation or `linkcheck` to check whether links in the files are correct. `clean` can be used to remove existing files to build the documentation from scratch, for example via `make.bat clean && make.bat html`.
 
 When adding images that require different files for light-mode and dark-mode, the file should be named normally for the light version and have the suffix `_dark` for the dark-mode version of the images. Example:
-  - `scenemenu.png`: Light-mode version
-  - `scenemenu_dark.png`: Dark-mode version
+  - `scenemenu.png`: Light-mode version.
+  - `scenemenu_dark.png`: Dark-mode version.
 If the same image can be used for both light and dark mode, the normal name would be used: `scenemenu.png`
