@@ -325,7 +325,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
   components_missing_assets.sort()
   print("\n\n")
   print("Number of found asset examples (ignoring base classes):")
-  print(f"{no_of_found_assets} of {total}, or {f"{percent_found:.1f}"}%\n")
+  print(f"{no_of_found_assets} of {total}, or {percent_found:.1f}%\n")
   line = "-" * 80 
   print(line)
   print(len(components_missing_assets), "asset components are missing example files:")
