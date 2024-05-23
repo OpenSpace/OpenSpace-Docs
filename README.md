@@ -27,7 +27,7 @@ Before committing to the repository it can also be beneficial to run `./make.bat
 - `make linkcheck` will check so that all links are correct.
 
 ## File Structure
-  - Each major grouping in the documentation should have a separate folder in the repository that collects all of the files describing things belonging to that major category.
+Each major grouping in the documentation should have a separate folder in the repository that collects all of the files describing things belonging to that major category.
   - `generated`: The directory where all generated markdown files will be placed. These will be shown in the `Reference` section of the documentation.
   - `templates`: This is where the jinja templates are stored that are used to structure the markdown files. 
   - `_static`: Files placed in this folder are automatically copied into the resulting documentation. In general, it is not necessary to manually place files in here as Sphinx is copying required files from other places automatically
@@ -39,4 +39,5 @@ Before committing to the repository it can also be beneficial to run `./make.bat
 When adding images that require different files for light-mode and dark-mode, the file should be named normally for the light version and have the suffix `_dark` for the dark-mode version of the images. Example:
   - `scenemenu.png`: Light-mode version.
   - `scenemenu_dark.png`: Dark-mode version.
+
 If the same image can be used for both light and dark mode, the normal name would be used: `scenemenu.png`
