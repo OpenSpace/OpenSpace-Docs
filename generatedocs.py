@@ -202,7 +202,7 @@ def parse_doxygen_comments(library):
   """
   This function modifies the scripting library so that the doxygen 
   comments are added to the arguments
-  Supported doxygen parameters: \param \return \code
+  Supported doxygen parameters: \\param \\return \\code
   """
   for function in library["functions"]:
     [help_text, p, return_description] = function["help"].partition("\\\\return")
@@ -325,7 +325,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
   components_missing_assets.sort()
   print("\n\n")
   print("Number of found asset examples (ignoring base classes):")
-  print(f"{no_of_found_assets} of {total}, or {"%.1f" % percent_found}%\n")
+  print(f"{no_of_found_assets} of {total}, or {f"{percent_found:.1f}"}%\n")
   line = "-" * 80 
   print(line)
   print(len(components_missing_assets), "asset components are missing example files:")
