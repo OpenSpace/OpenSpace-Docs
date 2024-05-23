@@ -360,7 +360,8 @@ def generate_scripting_api(environment, output_folder, folder_name_scripting, js
     # Go through all the functions in that library and print out a md file
     library = parse_doxygen_comments(library)
     output_library = scripting_api_template.render(library=library)
-    with open(os.path.join(scripting_output_path, f"{library["fullName"]}.md"), "w") as f:
+    library_name = library["fullName"]
+    with open(os.path.join(scripting_output_path, f"{library_name}.md"), "w") as f:
       f.write(output_library)
 
   # Create index file
