@@ -371,7 +371,6 @@ def generate_renderable_overview(environment, output_folder, folder_name_assets,
     # Create overview file
     generate_renderable_overview = environment.get_template("renderableOverviewTemplate.html.jinja")
     output_overview = generate_renderable_overview.render(
-        folder_name_assets=folder_name_assets,
         renderables=renderables, 
         images=images
     )
