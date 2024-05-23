@@ -13,7 +13,7 @@ from tqdm import tqdm # progress bar
 # Uses the latest master
 # Returns absolute path to the asset folder
 def clone_assets_folder_git(folder_name):
-  def print_progress(op_code, cur_count, max_count=None, message=''):
+  def print_progress(op_code, cur_count, max_count=None, message=""):
     print(message)
 
   print("Cloning assets examples...")
@@ -21,12 +21,12 @@ def clone_assets_folder_git(folder_name):
   branch_name = "origin/master"
 
   # Create a new remote if there isn't one already created
-  origin = repo.remotes[0] if len(repo.remotes) > 0 else None 
+  origin = repo.remotes[0] if len(repo.remotes) > 0 else None
   if not origin:
     print("No remote origin found. Creating OpenSpace remote...")
     origin = repo.create_remote("origin", "https://github.com/OpenSpace/OpenSpace")
 
-  print("Fetching OpenSpace on branch {}... this might take a while".format(branch_name))
+  print(f"Fetching OpenSpace on branch {branch_name}... this might take a while")
   origin.fetch(progress=print_progress)
 
   data_assets_path = "data/assets" 
@@ -40,13 +40,13 @@ def clone_assets_folder_git(folder_name):
 def get_file_length(path):
   try:
     # Read binary file as it is faster and we only want to know the length
-    with open(path, 'rb') as fp:
+    with open(path, "rb") as fp:
       if fp.readable():
         return len(fp.read()) 
       else:
         return None
   except IOError:
-    input("Could not open file path ", path)
+    print(f"Could not open file path {path}")
     return None
 
 # Find all .asset files in the root dir and subdirs
@@ -76,7 +76,7 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
   description = ""
   LUA_COMMENT = "-- "
   header_finished = 0
-  with open(asset_file, 'r', encoding='utf8') as file:
+  with open(asset_file, "r", encoding="utf8") as file:
     if not file.readable():
       return None
     # Read file line by line
@@ -118,7 +118,7 @@ def find_shortest_asset_in_path(path, name):
   # Find first example matching the asset component (files are sorted by length)
   for asset_file in asset_files:   
     # Search for Type = "<name>"
-    regex = r'Type = \"' + name + r'\"'
+    regex = r"Type = \"" + name + r"\""
     example = get_lines_and_content_from_file(asset_file, regex)
     if example:
       return example
@@ -138,7 +138,7 @@ def find_asset_example(assets_folder, category, name):
     examples = []
     for filename in filenames:
       # We search for the asset component <name> or "<name>"
-      regex = r'\b' + name + r'\b|\b\"' + name + r'\"\b'
+      regex = r"\b" + name + r"\b|\b\"" + name + r"\"\b"
       example = get_lines_and_content_from_file(filename, regex, True)
       examples.append(example)
     return examples
@@ -147,13 +147,13 @@ def find_asset_example(assets_folder, category, name):
   # shortest asset
   example = find_shortest_asset_in_path(examples_folder, name)
   if example:
-    return [example]
+    return [ example ]
     
   # Search pass 3: search through all assets in the **assets** folder and add the 
   # shortest asset
   example = find_shortest_asset_in_path(assets_folder, name)
   if example:
-    return [example]
+    return [ example ]
   
   # If nothing found, return empty array
   return []
@@ -168,15 +168,13 @@ def group_members_by_optionality(members):
     else:
       non_optional_indices.append(i)
   indices = non_optional_indices + optional_indices
-  return [members[i] for i in indices]
+  return [ members[i] for i in indices ]
 
 # Find a screenshot in the images folder with the exact same name as the component
 def find_asset_screenshot(name):
   image_directory = "_static/images/renderables"
-  img_path = image_directory + '/' + name + '.png'
-  if os.path.exists(img_path):
-    return img_path
-  return None
+  img_path = f"{image_directory}/{name}.png"
+  return img_path if os.path.exists(img_path) else None
 
 ################################################################################
 #                         SCRIPTING API HELPER FUNCTIONS                       #
@@ -187,14 +185,14 @@ def find_asset_screenshot(name):
 # Supported doxygen parameters: \param \return \code
 def parse_doxygen_comments(library):
   for function in library["functions"]:
-    [help_text, p, return_description] = function["help"].partition('\\\\return')
+    [help_text, p, return_description] = function["help"].partition("\\\\return")
         
     # Parse code blocks
-    help_text = help_text.replace('\\\\code', '\n:::{code-block} lua\n')
-    help_text = help_text.replace('\\\\endcode', '\n:::')
+    help_text = help_text.replace("\\\\code", "\n:::{code-block} lua\n")
+    help_text = help_text.replace("\\\\endcode", "\n:::")
 
     # Split help text into parameters and return type
-    help_text = help_text.split('\\\\param ')
+    help_text = help_text.split("\\\\param ")
     # First substring will be the description
     description = help_text[0].strip()
     # Add to the dictionary
@@ -234,7 +232,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
     os.mkdir(assets_output_path)
 
   # Open JSON file
-  f = open(os.path.join(json_location, 'assetComponents.json'))
+  f = open(os.path.join(json_location, "assetComponents.json"))
 
   # Convert JSON String to Python Dictionary
   asset_categories = json.load(f)
@@ -288,27 +286,27 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
         members=grouped_members,
         examples=examples
       )
-      with open(os.path.join(assets_output_path, asset_component["name"]+'.md'), 'w') as f:
+      with open(os.path.join(assets_output_path, f"{asset_component["name"]}.md"), "w") as f:
         f.write(output_asset_component)
 
   # Create index file
   index_asset_components_template = environment.get_template("indexAssetComponentsTemplate.html.jinja")
   outputIndex = index_asset_components_template.render(asset_categories=asset_categories)
-  with open(assets_output_path + '/index.md', 'w') as f:
+  with open(f"{assets_output_path}/index.md", "w") as f:
     f.write(outputIndex)
 
   # Print out missing assets
   total = no_of_found_assets + len(components_missing_assets)
   percent_found = no_of_found_assets / (total) * 100
   components_missing_assets.sort()
-  print('\n\n')
+  print("\n\n")
   print("Number of found asset examples (ignoring base classes):")
-  print(no_of_found_assets, "of", total, "or", "%.1f" % percent_found, "%\n")
+  print(f"{no_of_found_assets} of {total}, or {"%.1f" % percent_found}%\n")
   line = "-" * 80 
   print(line)
   print(len(components_missing_assets), "asset components are missing example files:")
   print(line) 
-  print('\n'.join(components_missing_assets))
+  print("\n".join(components_missing_assets))
   print("\n\n\n")
 
 ################################################################################
@@ -322,7 +320,7 @@ def generate_scripting_api(environment, output_folder, folder_name_scripting, js
     os.mkdir(scripting_output_path)
 
   # Opening JSON file
-  f = open(os.path.join(json_location, 'scriptingApi.json'))
+  f = open(os.path.join(json_location, "scriptingApi.json"))
 
   # Convert JSON String to Python Dictionary
   scripting_api = json.load(f)
@@ -333,13 +331,13 @@ def generate_scripting_api(environment, output_folder, folder_name_scripting, js
     # Go through all the functions in that library and print out a md file
     library = parse_doxygen_comments(library)
     output_library = scripting_api_template.render(library=library)
-    with open(os.path.join(scripting_output_path, library["fullName"]+'.md'), 'w') as f:
+    with open(os.path.join(scripting_output_path, f"{library["fullName"]}.md"), "w") as f:
       f.write(output_library)
 
   # Create index file
   index_scripting_template = environment.get_template("indexScriptingTemplate.html.jinja")
   output_index = index_scripting_template.render(libraries=scripting_api)
-  with open(os.path.join(scripting_output_path, "index.md"), 'w') as f:
+  with open(os.path.join(scripting_output_path, "index.md"), "w") as f:
     f.write(output_index)
 
 ################################################################################
@@ -348,7 +346,7 @@ def generate_scripting_api(environment, output_folder, folder_name_scripting, js
 
 def generate_renderable_overview(environment, output_folder, folder_name_assets, json_location):
   # Open JSON file
-  f = open(os.path.join(json_location, 'assetComponents.json'))
+  f = open(os.path.join(json_location, "assetComponents.json"))
 
   # Convert JSON String to Python Dictionary
   asset_categories = json.load(f)
