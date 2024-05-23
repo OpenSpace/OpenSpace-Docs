@@ -100,6 +100,7 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
                 if re.search(regex, line):
                     # If the header has been removed we need to adjust the line number
                     lines.append(l_no - header_finished)
+
     # If there were any matches to regex, set the content as the example
     if len(lines) > 0:
         return { "header": header, "description": description, "content": content, "lines": lines }
@@ -114,13 +115,11 @@ def find_shortest_asset_in_path(path, name):
     # This will ensure the simplest asset is displayed
     asset_files.sort(key=get_file_length)
 
-    # Find example for the asset component
+    # Find first example matching the asset component (files are sorted by length)
     for asset_file in asset_files:   
         # Search for Type = "<name>"
         regex = r'Type = \"' + name + r'\"'
         example = get_lines_and_content_from_file(asset_file, regex)
-        # As soon as we have a match, we return it
-        # It will be the shortest assets since they are sorted on length
         if example:
             return example
     # If nothing found, return None
@@ -371,10 +370,11 @@ def generate_renderable_overview(environment, output_folder, folder_name_assets,
 
     # Create overview file
     generate_renderable_overview = environment.get_template("renderableOverviewTemplate.html.jinja")
-    output_overview = generate_renderable_overview.render(folder_name_assets=folder_name_assets,
-                                                       renderables=renderables, 
-                                                       images=images
-                                                       )
+    output_overview = generate_renderable_overview.render(
+        folder_name_assets=folder_name_assets,
+        renderables=renderables, 
+        images=images
+    )
     with open(os.path.join(output_folder, "renderableOverview.md"), "w") as f:
         f.write(output_overview)
 
