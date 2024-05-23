@@ -310,7 +310,8 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
         members=grouped_members,
         examples=examples
       )
-      with open(os.path.join(assets_output_path, f"{asset_component["name"]}.md"), "w") as f:
+      name = asset_component["name"]
+      with open(os.path.join(assets_output_path, f"{name}.md"), "w") as f:
         f.write(output_asset_component)
 
   # Create index file
