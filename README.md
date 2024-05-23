@@ -22,9 +22,9 @@ Before committing to the repository it can also be beneficial to run `./make.bat
 
 ## Make commands
 
-`make html` will build the documentation locally
-`make clean` will clean out the build folder and remove everything built previously.
-`make linkcheck` will check so that all links are correct
+- `make html` will build the documentation locally
+- `make clean` will clean out the build folder and remove everything built previously.
+- `make linkcheck` will check so that all links are correct
 
 ## File Structure
   - Each major grouping in the documentation should have a separate folder in the repository that collects all of the files describing things belonging to that major category
