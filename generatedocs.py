@@ -5,11 +5,11 @@ import os # file paths
 import re # regex for searching for assets files
 from tqdm import tqdm # progress bar
 
-################################################################################
-#                      ASSET COMPONENTS HELPER FUNCTIONS                       #
-################################################################################
+##########################################################################################
+#                           ASSET COMPONENTS HELPER FUNCTIONS                            #
+##########################################################################################
 
-def clone_assets_folder_git(folder_name):
+def clone_assets_folder(folder_name):
   """
   Clones asset directory from OpenSpace git repository
   Uses the latest master
@@ -36,21 +36,6 @@ def clone_assets_folder_git(folder_name):
   print("Done cloning assets folder from OpenSpace repository")
   assets_folder_path = os.path.abspath(os.path.join(folder_name, data_assets_path))
   return assets_folder_path
-
-def get_file_length(path):
-  """
-  Returns the number of lines in a file
-  """
-  try:
-    # Read binary file as it is faster and we only want to know the length
-    with open(path, "rb") as fp:
-      if fp.readable():
-        return len(fp.read())
-      else:
-        return None
-  except IOError:
-    print(f"Could not open file path {path}")
-    return None
 
 def assets_in_path_recursive(root):
   """
@@ -123,8 +108,7 @@ def find_shortest_asset_in_path(path, name):
   """
   asset_files = assets_in_path_recursive(path)
   # Sort by shortest asset file first
-  # This will ensure the simplest asset is displayed
-  asset_files.sort(key=get_file_length)
+  asset_files.sort(key=lambda file: os.stat(file).st_size)
 
   # Find first example matching the asset component (files are sorted by length)
   for asset_file in asset_files:
@@ -189,18 +173,17 @@ def find_asset_screenshot(name):
   """
   Find a screenshot in the images folder with the exact same name as the component
   """
-  image_directory = "_static/images/renderables"
-  img_path = f"{image_directory}/{name}.png"
+  img_path = f"_static/images/renderables/{name}.png"
   return img_path if os.path.exists(img_path) else None
 
-################################################################################
-#                         SCRIPTING API HELPER FUNCTIONS                       #
-################################################################################
+##########################################################################################
+#                              SCRIPTING API HELPER FUNCTIONS                            #
+##########################################################################################
 
 def parse_doxygen_comments(library):
   """
-  This function modifies the scripting library so that the doxygen
-  comments are added to the arguments
+  This function modifies the scripting library so that the doxygen comments are added to
+  the arguments.
   Supported doxygen parameters: \\param \\return \\code
   """
   for function in library["functions"]:
@@ -236,28 +219,25 @@ def parse_doxygen_comments(library):
 
   return library
 
-################################################################################
-#                            CREATE ASSET COMPONENTS                           #
-################################################################################
+##########################################################################################
+#                                 CREATE ASSET COMPONENTS                                #
+##########################################################################################
 
 def generate_asset_components(environment, output_folder, folder_name_assets, json_location):
   """
-  Generates the markdown files for the asset components, as well as an index file which
+  Creates the Markdown files for the asset components, as well as an index file which
   links to them
   """
   assets_examples_folder_name = "assetExamples"
   # Download assets files from OpenSpace repository
-  assets_folder = clone_assets_folder_git(os.path.join(output_folder, assets_examples_folder_name))
+  assets_folder = clone_assets_folder(os.path.join(output_folder, assets_examples_folder_name))
 
   # Create target folder
   assets_output_path = os.path.join(output_folder, folder_name_assets)
   if not os.path.exists(assets_output_path):
     os.mkdir(assets_output_path)
 
-  # Open JSON file
   f = open(os.path.join(json_location, "assetComponents.json"))
-
-  # Convert JSON String to Python Dictionary
   asset_categories = json.load(f)
 
   # Create pages for the asset component pages
@@ -323,34 +303,34 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
   total = no_of_found_assets + len(components_missing_assets)
   percent_found = no_of_found_assets / (total) * 100
   components_missing_assets.sort()
-  print("\n\n")
-  print("Number of found asset examples (ignoring base classes):")
-  print(f"{no_of_found_assets} of {total}, or {percent_found:.1f}%\n")
-  line = "-" * 80
-  print(line)
-  print(len(components_missing_assets), "asset components are missing example files:")
-  print(line)
-  print("\n".join(components_missing_assets))
-  print("\n\n\n")
+  print(f"""
 
-################################################################################
-#                            CREATE SCRIPTING API                              #
-################################################################################
+Number of found asset examples (ignoring base classes):
+{no_of_found_assets} of {total}, or {percent_found:.1f}%
+
+{"-" * 80}
+{len(components_missing_assets)} asset components are missing example files:
+{"-" * 80}
+{"\n".join(components_missing_assets)}
+
+
+""")
+
+##########################################################################################
+#                                 CREATE SCRIPTING API                                   #
+##########################################################################################
 
 def generate_scripting_api(environment, output_folder, folder_name_scripting, json_location):
   """
-  Creates the markdown files for the scripting libraries, as well as an index file
-  which links to them
+  Creates the Markdown files for the scripting libraries, as well as an index file that
+  links to them
   """
   # Create target folder
   scripting_output_path = os.path.join(output_folder, folder_name_scripting)
   if not os.path.exists(scripting_output_path):
     os.mkdir(scripting_output_path)
 
-  # Opening JSON file
   f = open(os.path.join(json_location, "scriptingApi.json"))
-
-  # Convert JSON String to Python Dictionary
   scripting_api = json.load(f)
 
   # Create the pages for the scripting libraries
@@ -369,19 +349,16 @@ def generate_scripting_api(environment, output_folder, folder_name_scripting, js
   with open(os.path.join(scripting_output_path, "index.md"), "w") as f:
     f.write(output_index)
 
-################################################################################
-#                         CREATE RENDERABLE OVERVIEW                           #
-################################################################################
+##########################################################################################
+#                              CREATE RENDERABLE OVERVIEW                                #
+##########################################################################################
 
-def generate_renderable_overview(environment, output_folder, folder_name_assets, json_location):
+def generate_renderable_overview(environment, output_folder, json_location):
   """
-  Creates a markdown file with a grid of pictures of the renderables and ScreenSpaceRenderables
-  in OpenSpace
+  Creates a Markdown file with a grid of pictures of the renderables and
+  ScreenSpaceRenderables in OpenSpace
   """
-  # Open JSON file
   f = open(os.path.join(json_location, "assetComponents.json"))
-
-  # Convert JSON String to Python Dictionary
   asset_categories = json.load(f)
 
   images = {}
@@ -390,23 +367,24 @@ def generate_renderable_overview(environment, output_folder, folder_name_assets,
     if category["name"] == "Renderable" or category["name"] == "ScreenSpaceRenderable":
       for asset_component in category["classes"]:
         if asset_component["name"] == category["name"]:
-          # Base class - ignore
+          # Base class -> ignore
           continue
 
         # Find example image
         image = find_asset_screenshot(asset_component["name"])
-        if image:
-          images[asset_component["name"]] = image
+        images[asset_component["name"]] = image
         renderables.append(asset_component)
 
   # Create overview file
-  generate_renderable_overview = environment.get_template("renderableOverviewTemplate.html.jinja")
-  output_overview = generate_renderable_overview.render(
-    renderables=renderables,
-    images=images
-  )
+  renderable_overview = environment.get_template("renderableOverviewTemplate.html.jinja")
+  output_overview = renderable_overview.render(renderables=renderables, images=images)
   with open(os.path.join(output_folder, "renderableOverview.md"), "w") as f:
     f.write(output_overview)
+
+
+##########################################################################################
+#                                         MAIN                                           #
+##########################################################################################
 
 json_location = "json"
 output_folder = "generated"
@@ -419,5 +397,5 @@ environment = Environment(loader=FileSystemLoader("templates"))
 # Generate documentation
 generate_asset_components(environment, output_folder, folder_name_assets, json_location)
 generate_scripting_api(environment, output_folder, folder_name_scripting, json_location)
-generate_renderable_overview(environment, output_folder, folder_name_assets, json_location)
+generate_renderable_overview(environment, output_folder, json_location)
 
