@@ -109,9 +109,9 @@ creating-data-assets/custom-web-ui/index
 :maxdepth: 1
 :hidden:
 
-generated/renderableOverview
-generated/assetComponents/index
-generated/scriptingApi/index
+generated/renderable-overview
+generated/asset-components/index
+generated/scripting-api/index
 
 :::
 

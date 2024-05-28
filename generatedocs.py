@@ -224,7 +224,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
   Creates the Markdown files for the asset components, as well as an index file which
   links to them
   """
-  assets_examples_folder_name = "assetExamples"
+  assets_examples_folder_name = "asset_examples"
   # Download assets files from OpenSpace repository
   assets_folder = clone_assets_folder(os.path.join(output_folder, assets_examples_folder_name))
 
@@ -248,7 +248,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
   asset_categories = json.load(f)
 
   # Create pages for the asset component pages
-  asset_component_template = environment.get_template("assetComponentTemplate.html.jinja")
+  asset_component_template = environment.get_template("asset_component.html.jinja")
 
   # Missing and found asset files
   components_missing_assets = []
@@ -269,12 +269,10 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
       is_base_class = has_base_class and asset_component["name"] == base_class["name"]
       base_class_name = base_class["name"] if has_base_class and not is_base_class else ""
       base_class_identifier = base_class["identifier"] if has_base_class and not is_base_class else ""
-      base_class_members = []
 
       # Add the base class members to each derived class
       # If the component is the base class
-      if has_base_class and not is_base_class:
-        base_class_members = group_members_by_optionality(base_class["members"])
+      base_class_members = group_members_by_optionality(base_class["members"]) if has_base_class and not is_base_class else []
 
       grouped_members = group_members_by_optionality(asset_component["members"])
 
@@ -307,7 +305,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
         f.write(output_asset_component)
 
   # Create index file
-  index_asset_components_template = environment.get_template("indexAssetComponentsTemplate.html.jinja")
+  index_asset_components_template = environment.get_template("asset_components_index.html.jinja")
   outputIndex = index_asset_components_template.render(asset_categories=asset_categories)
   with open(f"{assets_output_path}/index.md", "w") as f:
     f.write(outputIndex)
@@ -347,18 +345,18 @@ def generate_scripting_api(environment, output_folder, folder_name_scripting, js
   scripting_api = json.load(f)
 
   # Create the pages for the scripting libraries
-  scripting_api_template = environment.get_template("scriptingApiTemplate.html.jinja")
+  template = environment.get_template("scripting_api.html.jinja")
   for library in scripting_api:
     # Go through all the functions in that library and print out a md file
     library = parse_doxygen_comments(library)
-    output_library = scripting_api_template.render(library=library)
+    output_library = template.render(library=library)
     library_name = library["fullName"]
     with open(os.path.join(scripting_output_path, f"{library_name}.md"), "w") as f:
       f.write(output_library)
 
   # Create index file
-  index_scripting_template = environment.get_template("indexScriptingTemplate.html.jinja")
-  output_index = index_scripting_template.render(libraries=scripting_api)
+  index_template = environment.get_template("scripting_api_index.html.jinja")
+  output_index = index_template.render(libraries=scripting_api)
   with open(os.path.join(scripting_output_path, "index.md"), "w") as f:
     f.write(output_index)
 
@@ -389,9 +387,9 @@ def generate_renderable_overview(environment, output_folder, json_location):
         renderables.append(asset_component)
 
   # Create overview file
-  renderable_overview = environment.get_template("renderableOverviewTemplate.html.jinja")
+  renderable_overview = environment.get_template("renderable_overview.html.jinja")
   output_overview = renderable_overview.render(renderables=renderables, images=images)
-  with open(os.path.join(output_folder, "renderableOverview.md"), "w") as f:
+  with open(os.path.join(output_folder, "renderable-overview.md"), "w") as f:
     f.write(output_overview)
 
 
@@ -401,8 +399,8 @@ def generate_renderable_overview(environment, output_folder, json_location):
 
 json_location = "json"
 output_folder = "generated"
-folder_name_assets = "assetComponents"
-folder_name_scripting = "scriptingApi"
+folder_name_assets = "asset-components"
+folder_name_scripting = "scripting-api"
 
 # Load jinja templates folder
 environment = Environment(loader=FileSystemLoader("templates"))
