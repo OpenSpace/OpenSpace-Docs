@@ -46,7 +46,7 @@ def get_file_length(path):
     # Read binary file as it is faster and we only want to know the length
     with open(path, "rb") as fp:
       if fp.readable():
-        return len(fp.read()) 
+        return len(fp.read())
       else:
         return None
   except IOError:
@@ -63,9 +63,9 @@ def assets_in_path_recursive(root):
     for file in files:
       if file.endswith(".asset"):
         filenames.append(os.path.join(path, file))
-  return filenames 
+  return filenames
 
-def assets_in_path(path):    
+def assets_in_path(path):
   """
   Find all .assets in directory - no subdirs
   """
@@ -76,7 +76,7 @@ def assets_in_path(path):
 def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
   """
   Matches an asset component name with the words in a file
-  Returns the content of the file and the lines where the 
+  Returns the content of the file and the lines where the
   matches occured, as well as the header if specified
   """
   lines = []
@@ -91,10 +91,10 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
       return None
     # Read file line by line
     for l_no, line in enumerate(file, 1):
-      # Check for header comment at top of file 
+      # Check for header comment at top of file
       if not line.startswith(LUA_COMMENT):
         is_header_comment = False
-      
+
       # If we are in header comment, split into header and description
       if look_for_header and is_header_comment:
         comment = line.split(LUA_COMMENT)[1]
@@ -114,21 +114,21 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
   # If there were any matches to regex, set the content as the example
   if len(lines) > 0:
     return { "header": header, "description": description, "content": content, "lines": lines }
-  else: 
+  else:
     return None
 
 def find_shortest_asset_in_path(path, name):
   """
-  Takes an asset component name and matches it to all files in a 
+  Takes an asset component name and matches it to all files in a
   path, and return the shortest asset with matches.
   """
   asset_files = assets_in_path_recursive(path)
-  # Sort by shortest asset file first                
+  # Sort by shortest asset file first
   # This will ensure the simplest asset is displayed
   asset_files.sort(key=get_file_length)
 
   # Find first example matching the asset component (files are sorted by length)
-  for asset_file in asset_files:   
+  for asset_file in asset_files:
     # Search for Type = "<name>"
     regex = r"Type = \"" + name + r"\""
     example = get_lines_and_content_from_file(asset_file, regex)
@@ -143,7 +143,7 @@ def find_asset_example(assets_folder, category, name):
   Returns file content and line numbers for where the name occurs
   """
   examples_folder = os.path.join(assets_folder, "examples")
-    
+
   # Search pass 1: look up folder “assets/<category>/<assetcomponentname>/”
   # and see if it exists. If it does, add all files in that folder (no subdirectories)
   asset_directory = os.path.join(examples_folder, (os.path.join(category, name)).lower())
@@ -157,18 +157,18 @@ def find_asset_example(assets_folder, category, name):
       examples.append(example)
     return examples
 
-  # Search pass 2: search through all assets in the **examples** folder and add the 
+  # Search pass 2: search through all assets in the **examples** folder and add the
   # shortest asset
   example = find_shortest_asset_in_path(examples_folder, name)
   if example:
     return [ example ]
-    
-  # Search pass 3: search through all assets in the **assets** folder and add the 
+
+  # Search pass 3: search through all assets in the **assets** folder and add the
   # shortest asset
   example = find_shortest_asset_in_path(assets_folder, name)
   if example:
     return [ example ]
-  
+
   # If nothing found, return empty array
   return []
 
@@ -200,13 +200,13 @@ def find_asset_screenshot(name):
 
 def parse_doxygen_comments(library):
   """
-  This function modifies the scripting library so that the doxygen 
+  This function modifies the scripting library so that the doxygen
   comments are added to the arguments
   Supported doxygen parameters: \\param \\return \\code
   """
   for function in library["functions"]:
     [help_text, p, return_description] = function["help"].partition("\\\\return")
-        
+
     # Parse code blocks
     help_text = help_text.replace("\\\\code", "\n:::{code-block} lua\n")
     help_text = help_text.replace("\\\\endcode", "\n:::")
@@ -225,7 +225,7 @@ def parse_doxygen_comments(library):
       [identifier, ws, params_description] = param.partition(" ")
       identifiers.append(identifier)
       argument_descriptions.append(params_description)
-        
+
       # Add params to the dictionary
       for argument in function["arguments"]:
         if argument["name"] in identifiers:
@@ -234,7 +234,7 @@ def parse_doxygen_comments(library):
       # Add return type to the dictionary, if there is one
       if return_description:
         function["returnDescription"] = return_description
-        
+
   return library
 
 ################################################################################
@@ -277,7 +277,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
         base_class = asset_component
         has_base_class = True
         break
-        
+
     # Go through all the components in that category and print out a md file
     for asset_component in tqdm(category["classes"], desc="Generating asset components for " + category["name"]):
       is_base_class = has_base_class and asset_component["name"] == base_class["name"]
@@ -289,7 +289,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
       # If the component is the base class
       if has_base_class and not is_base_class:
         base_class_members = group_members_by_optionality(base_class["members"])
-            
+
       grouped_members = group_members_by_optionality(asset_component["members"])
 
       # Find example for the asset component, if it is not a baseclass component
@@ -303,10 +303,10 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
 
       # Render component page with jinja
       output_asset_component = asset_component_template.render(
-        data=asset_component, 
+        data=asset_component,
         base_class_name=base_class_name,
         base_class_identifier=base_class_identifier,
-        base_class_members=base_class_members, 
+        base_class_members=base_class_members,
         members=grouped_members,
         examples=examples
       )
@@ -327,10 +327,10 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
   print("\n\n")
   print("Number of found asset examples (ignoring base classes):")
   print(f"{no_of_found_assets} of {total}, or {percent_found:.1f}%\n")
-  line = "-" * 80 
+  line = "-" * 80
   print(line)
   print(len(components_missing_assets), "asset components are missing example files:")
-  print(line) 
+  print(line)
   print("\n".join(components_missing_assets))
   print("\n\n\n")
 
@@ -384,7 +384,7 @@ def generate_renderable_overview(environment, output_folder, folder_name_assets,
 
   # Convert JSON String to Python Dictionary
   asset_categories = json.load(f)
-  
+
   images = {}
   renderables = []
   for category in asset_categories:
@@ -393,7 +393,7 @@ def generate_renderable_overview(environment, output_folder, folder_name_assets,
         if asset_component["name"] == category["name"]:
           # Base class - ignore
           continue
-                                              
+
         # Find example image
         image = find_asset_screenshot(asset_component["name"])
         if image:
@@ -403,7 +403,7 @@ def generate_renderable_overview(environment, output_folder, folder_name_assets,
   # Create overview file
   generate_renderable_overview = environment.get_template("renderableOverviewTemplate.html.jinja")
   output_overview = generate_renderable_overview.render(
-    renderables=renderables, 
+    renderables=renderables,
     images=images
   )
   with open(os.path.join(output_folder, "renderableOverview.md"), "w") as f:
