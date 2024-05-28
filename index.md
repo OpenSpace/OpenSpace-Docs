@@ -3,7 +3,7 @@ Welcome to the official documentation for [OpenSpace](https://openspaceproject.c
 
 In addition to the documentation provided here, you are very welcome on our [Slack channel](https://openspacesupport.slack.com) to which you can freely [sign-up](https://join.slack.com/t/openspacesupport/shared_invite/enQtMjUxNzUyMTQ1ODQxLTRmNDI1YTA4ODkzODUyODE0YjIzODU0NWU1NGY1NWIzZDUzMDgwM2VkYmE1ZGY3MmU2OWI5NzhlN2U3NWU2NTQ).
 
-On the left you can find a table of contents that allows you to access the individual topics of interest. The table also contains a search function to search through the available pages. If you are new to _OpenSpace_, we'd recommend you to start in the [Getting Started](users/getting-started/index) section.
+On the left you can find a table of contents that allows you to access the individual topics of interest. The table also contains a search function to search through the available pages. If you are new to _OpenSpace_, we'd recommend you to start in the [Getting Started](getting-started/getting-started/index) section.
 
 The overall structure of the documentation is as follows:
 
@@ -39,117 +39,118 @@ The overall structure of the documentation is as follows:
 ## Get involved
 OpenSpace is an open-source project and relies on the contribution by a community of volunteers. In particular, the documentation always needs feedback and help. If you come across errors in the documentation, find something that is unclear, or lack essential information, help us to make the documentation better by either letting us know in the `#documentation` channel of the [Slack channel](https://openspacesupport.slack.com) or by suggesting a change on the [GitHub](https://github.com/OpenSpace/OpenSpace-Docs) of the documentation.
 
-
-<!--
-  General
--->
-:::{toctree}
-:caption: General
-:maxdepth: 2
-:hidden:
-:titlesonly:
-
-general/releases/index
-general/links
-general/academics
-:::
+## Releases
+You can find a list of all releases of OpenSpace [here](about/releases/index.md).
 
 
 <!--
-  Users
+  Sidebar
 -->
+
 :::{toctree}
-:caption: Users
-:maxdepth: 2
-:hidden:
-:titlesonly:
-
-users/getting-started/index
-users/profiles/index
-users/console/index
-users/handling-errors
-users/hardware-requirements
-users/faq/index
-:::
-
-
-<!--
-  Manual
--->
-:::{toctree}
-:caption: Manual
-:maxdepth: 2
-:hidden:
-:titlesonly:
-
-manual/navigation/index
-manual/assets/index
-manual/content/index
-manual/properties/index
-manual/scenegraph/index
-manual/events/index
-manual/data-distribution/index
-:::
-
-
-<!--
-  Tutorials
--->
-:::{toctree}
-:caption: Tutorials
+:caption: Getting started
 :maxdepth: 1
 :hidden:
 
-tutorials/users/index
-tutorials/installers/index
-tutorials/builders/index
+getting-started/handling-errors
+getting-started/hardware-requirements
+getting-started/getting-started/index
+getting-started/faq/index
+
 :::
 
-
-<!--
-  How-To
--->
 :::{toctree}
-:caption: How-Tos
+:caption: Using OpenSpace
 :maxdepth: 1
 :hidden:
 
-how-to/index
+using-openspace/navigation/index
+using-openspace/properties/index
+using-openspace/scenegraph/index
+using-openspace/events/index
+using-openspace/scripting/index
+using-openspace/users/index
+using-openspace/installers/index
+using-openspace/builders/index
+using-openspace/remote-control/index
+
 :::
 
-
-<!--
-  Development
--->
 :::{toctree}
-:caption: Development
-:maxdepth: 2
+:caption: Profiles
+:maxdepth: 1
 :hidden:
-:titlesonly:
 
-dev/compiling/index
-dev/tools/index
-dev/dependencies/index
-dev/coding-style
-dev/structure/index
-dev/deploying-windows
-dev/folder-layout
-dev/pull-requests
-dev/branches
-dev/cpp-musings
-dev/skybrowser
-dev/webrtc/index
-dev/faq/index
+getting-started/profiles/index
+
 :::
 
-
-<!--
-  Support
--->
 :::{toctree}
-:caption: Support
+:caption: Content
+:maxdepth: 1
 :hidden:
 
-support/kitchensink
-support/field-list-example
+content/index
+
+:::
+
+:::{toctree}
+:caption: Creating data assets
+:maxdepth: 1
+:hidden:
+
+creating-data-assets/asset-creation/index
+creating-data-assets/custom-web-ui/index
+
+:::
+
+:::{toctree}
+:caption: Reference
+:maxdepth: 1
+:hidden:
+
+generated/renderable-overview
+generated/asset-components/index
+generated/scripting-api/index
+
+:::
+
+:::{toctree}
+:caption: Contribute
+:maxdepth: 1
+:hidden:
+
+contribute/development/index
+contribute/faq/index
+contribute/documentation/index
+
+:::
+
+:::{toctree}
+:caption: Community
+:maxdepth: 1
+:hidden:
+
+community/index
+
+:::
+
+:::{toctree}
+:caption: Glossary
+:maxdepth: 1
+:hidden:
+
+glossary/glossary
+
+:::
+
+:::{toctree}
+:caption: About
+:maxdepth: 1
+:hidden:
+
+about/academics
+about/releases/index
+about/links
+
 :::
