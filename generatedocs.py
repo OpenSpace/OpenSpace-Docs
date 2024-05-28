@@ -116,16 +116,17 @@ def find_shortest_asset_in_path(asset_files, name):
   # If nothing found, return None
   return None
 
-def find_asset_example(assets_folder, category, name, folder_asset_files, example_asset_files):
+def find_asset_examples(assets_folder, category, name, folder_asset_files, example_asset_files):
   """
   Search through all example assets for the component name
   Returns file content and line numbers for where the name occurs
   """
   examples_folder = os.path.join(assets_folder, "examples")
 
-  # Search pass 1: look up folder “assets/<category>/<assetcomponentname>/”
-  # and see if it exists. If it does, add all files in that folder (no subdirectories)
-  asset_directory = os.path.join(examples_folder, (os.path.join(category, name)).lower())
+  # Search pass 1
+  # Look up folder "assets/<category>/<assetcomponentname>/" and see if it exists. If it
+  # does, add all files in that folder (no subdirectories)
+  asset_directory = os.path.join(examples_folder, os.path.join(category, name).lower())
   if os.path.exists(asset_directory):
     filenames = assets_in_path(asset_directory)
     examples = []
@@ -136,14 +137,14 @@ def find_asset_example(assets_folder, category, name, folder_asset_files, exampl
       examples.append(example)
     return examples
 
-  # Search pass 2: search through all assets in the **examples** folder and add the
-  # shortest asset
+  # Search pass 2
+  # Search through all assets in the **examples** folder and add the shortest asset
   example = find_shortest_asset_in_path(example_asset_files, name)
   if example:
     return [ example ]
 
-  # Search pass 3: search through all assets in the **assets** folder and add the
-  # shortest asset
+  # Search pass 3
+  # Search through all assets in the **assets** folder and add the shortest asset
   example = find_shortest_asset_in_path(folder_asset_files, name)
   if example:
     return [ example ]
@@ -279,7 +280,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
       # Find example for the asset component, if it is not a baseclass component
       examples = []
       if not is_base_class:
-        examples = find_asset_example(
+        examples = find_asset_examples(
           assets_folder,
           category["name"],
           asset_component["name"],
