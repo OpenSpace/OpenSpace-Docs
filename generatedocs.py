@@ -321,8 +321,8 @@ Number of found asset examples (ignoring base classes):
 
 {"-" * 80}
 {len(components_missing_assets)} asset components are missing example files:
+{",".join(components_missing_assets)}
 {"-" * 80}
-{"\n".join(components_missing_assets)}
 
 
 """)
