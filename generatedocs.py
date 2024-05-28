@@ -101,15 +101,11 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
   else:
     return None
 
-def find_shortest_asset_in_path(path, name):
+def find_shortest_asset_in_path(asset_files, name):
   """
-  Takes an asset component name and matches it to all files in a
-  path, and return the shortest asset with matches.
+  Takes an asset component name and matches it to all provided files and then return the
+  shortest asset with matches.
   """
-  asset_files = assets_in_path_recursive(path)
-  # Sort by shortest asset file first
-  asset_files.sort(key=lambda file: os.stat(file).st_size)
-
   # Find first example matching the asset component (files are sorted by length)
   for asset_file in asset_files:
     # Search for Type = "<name>"
@@ -120,7 +116,7 @@ def find_shortest_asset_in_path(path, name):
   # If nothing found, return None
   return None
 
-def find_asset_example(assets_folder, category, name):
+def find_asset_example(assets_folder, category, name, folder_asset_files, example_asset_files):
   """
   Search through all example assets for the component name
   Returns file content and line numbers for where the name occurs
@@ -142,13 +138,13 @@ def find_asset_example(assets_folder, category, name):
 
   # Search pass 2: search through all assets in the **examples** folder and add the
   # shortest asset
-  example = find_shortest_asset_in_path(examples_folder, name)
+  example = find_shortest_asset_in_path(example_asset_files, name)
   if example:
     return [ example ]
 
   # Search pass 3: search through all assets in the **assets** folder and add the
   # shortest asset
-  example = find_shortest_asset_in_path(assets_folder, name)
+  example = find_shortest_asset_in_path(folder_asset_files, name)
   if example:
     return [ example ]
 
@@ -232,6 +228,17 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
   # Download assets files from OpenSpace repository
   assets_folder = clone_assets_folder(os.path.join(output_folder, assets_examples_folder_name))
 
+  # List all of the assets in the asset and the dedicated example folders
+  examples_folder = os.path.join(assets_folder, "examples")
+  example_asset_files = assets_in_path_recursive(examples_folder)
+  # Sort by shortest asset file first
+  example_asset_files.sort(key=lambda file: os.stat(file).st_size)
+
+  folder_asset_files = assets_in_path_recursive(assets_folder)
+  # Sort by shortest asset file first
+  folder_asset_files.sort(key=lambda file: os.stat(file).st_size)
+
+
   # Create target folder
   assets_output_path = os.path.join(output_folder, folder_name_assets)
   if not os.path.exists(assets_output_path):
@@ -274,7 +281,13 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
       # Find example for the asset component, if it is not a baseclass component
       examples = []
       if not is_base_class:
-        examples = find_asset_example(assets_folder, category["name"], asset_component["name"])
+        examples = find_asset_example(
+          assets_folder,
+          category["name"],
+          asset_component["name"],
+          folder_asset_files,
+          example_asset_files
+        )
         if len(examples) == 0:
           components_missing_assets.append(asset_component["name"])
         else:
