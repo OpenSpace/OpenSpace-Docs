@@ -14,10 +14,10 @@ needs_sphinx = "4.0"
 
 project = "OpenSpace"
 author = "OpenSpace community"
-project_copyright = "2014-2023, OpenSpace community"
+project_copyright = "2014-2024, OpenSpace community"
 
 # Update with every new release
-version = release = os.getenv("READTHEDOCS_VERSION", "0.19.2")
+version = release = os.getenv("READTHEDOCS_VERSION", "0.20.0")
 
 extensions = [
   "myst_parser",
