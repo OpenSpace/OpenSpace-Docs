@@ -1,11 +1,16 @@
 import os
+import sys
+
+# The way Sphinx handles the path during the evaluation of the conf.py is a bit strange
+# so we have to add the current folder or else the `import` statement will fail
+sys.path.append(os.path.abspath('.'))
+from generatedocs import generate_docs
+
+
 
 # Generate the files that dynamically depend on asset files in the main OpenSpace repo
-with open("generatedocs.py", encoding="utf8") as file:
-  try:
-    exec(file.read())
-  except Exception as e:
-    print(e)
+generate_docs()
+
 
 ###
 # Global Settings
