@@ -32,7 +32,7 @@ def clone_assets_folder(folder_name):
 
   data_assets_path = "data/assets"
   git = repo.git()
-  git.checkout("--", data_assets_path)
+  git.checkout("origin/master", "--", data_assets_path)
   print("Done cloning assets folder from OpenSpace repository")
   assets_folder_path = os.path.abspath(os.path.join(folder_name, data_assets_path))
   return assets_folder_path
