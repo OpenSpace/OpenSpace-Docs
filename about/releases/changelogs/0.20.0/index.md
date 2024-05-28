@@ -17,6 +17,12 @@ Below is a list of breaking changes in this release.
 
 - A New Renderable for Point Clouds (`RenderableBillboardsCloud` -> `RenderablePointCloud`) [Details](./conversion.md#a-new-renderable-for-point-clouds)
 - `RenderableSphere` -> `RenderableSphereImageLocal`/`RenderableSphereImageLocal` (@TODO: Provide details)
+- Property identifier changes
+  - RenderableAtmosphere: `EclipseHardShadowsInfo` -> `EclipseHardShadows`
+  - RenderableEclipseCone: `AmountOfPoints` -> `NumberOfPoints`
+  - RenderableShadowCylinder: `AmountOfPoints` -> `NumberOfPoints`
+  - RenderablePointCloud: `Coloring.OutlineWeight` -> `Coloring.OutlineWidth`
+  - RenderableOrbitalKepler: `Appearance.OutlineWeight` -> `Appearance.OutlineWidth`
 
 :::{toctree}
 :maxdepth: 1
