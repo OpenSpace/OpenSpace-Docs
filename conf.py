@@ -1,6 +1,6 @@
 import os
 
-# opening file_1.py and reading it with read() and executing if with exec()
+# Generate the files that dynamically depend on asset files in the main OpenSpace repo
 with open("generatedocs.py", encoding="utf8") as file:
   try:
     exec(file.read())
