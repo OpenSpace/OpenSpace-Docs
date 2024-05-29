@@ -7,26 +7,10 @@ import shutil # copytree, rmtree
 from tqdm import tqdm # progress bar
 
 ##########################################################################################
-#                                     CUSTOMIZATION                                      #
-##########################################################################################
-# This is the branch on the OpenSpace repository from which the documentation will be
-# built. Change this to a different branch to try a local branch before committing.
-# OBS: No other value than `master` should ever be committed to the master branch of the
-#      docs repository
-OPENSPACE_BRANCH = "master"
-
-# If this value is specified, instead of cloning OpenSpace from the main repository using
-# the branch provided above, instead use a local copy of the repository.
-# OBS: No other value than the empty string should ever be committed to the master branch
-#      of the docs repository
-LOCAL_OPENSPACE_FOLDER = ""
-
-
-##########################################################################################
 #                           ASSET COMPONENTS HELPER FUNCTIONS                            #
 ##########################################################################################
 
-def clone_assets_folder(folder_name):
+def clone_assets_folder(folder_name, branch, local_openspace_folder):
   """
   Clones asset directory from OpenSpace git repository
   Uses the latest master
@@ -34,12 +18,12 @@ def clone_assets_folder(folder_name):
   """
   data_assets_path = "data/assets"
 
-  if LOCAL_OPENSPACE_FOLDER != "":
-    print(f"Using local OpenSpace folder {LOCAL_OPENSPACE_FOLDER}")
+  if local_openspace_folder:
+    print(f"Using local OpenSpace folder {local_openspace_folder}")
     # If a local folders was provided, we don't have to do any of the cloning work, but we
     # must copy the files for any potential `literalinclude` directive to work
     os.makedirs(os.path.join(folder_name, "data"), exist_ok=True)
-    source_path = os.path.join(LOCAL_OPENSPACE_FOLDER, data_assets_path)
+    source_path = os.path.join(local_openspace_folder, data_assets_path)
     destination_path = os.path.join(folder_name, data_assets_path)
     if os.path.exists(destination_path):
       shutil.rmtree(destination_path)
@@ -65,7 +49,7 @@ def clone_assets_folder(folder_name):
   origin.fetch(progress=print_progress, depth=1)
 
   git = repo.git()
-  git.checkout(f"origin/{OPENSPACE_BRANCH}", "--", data_assets_path)
+  git.checkout(f"origin/{branch}", "--", data_assets_path)
   print("Done cloning assets folder from OpenSpace repository")
   assets_folder_path = os.path.abspath(os.path.join(folder_name, data_assets_path))
   return assets_folder_path
@@ -117,9 +101,7 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
       # If we are in header comment, split into header and description
       if look_for_header and is_header_comment:
         # Remove the beginning of the line that marks it being a Lua comment
-        comment = line[len(LUA_COMMENT):]
-        if comment[0] == " ":
-          comment = comment[1:]
+        comment = line[len(LUA_COMMENT):].lstrip()
 
         if l_no == 1:
           # The first line becomes the header
@@ -133,14 +115,12 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
             # that starts with a / as a path relative to the _base folder_. So we can
             # switch out the path at the last minute and make sure that it gets correctly
             # included
-            print("Before", comment)
             path = comment[len(LITERAL_INCLUDE):]
 
             # We need to get the path to the asset file relative to the base folder
             full_folder = os.path.dirname(asset_file)
             rel_folder = os.path.relpath(full_folder)
             comment = f"{LITERAL_INCLUDE} /{rel_folder}/{path}"
-            print("After", comment)
 
           description += comment
           header_finished = l_no + 1
@@ -282,14 +262,18 @@ def parse_doxygen_comments(library):
 #                                 CREATE ASSET COMPONENTS                                #
 ##########################################################################################
 
-def generate_asset_components(environment, output_folder, folder_name_assets, json_location):
+def generate_asset_components(environment, output_folder, folder_name_assets, json_location, branch, local_openspace_folder):
   """
   Creates the Markdown files for the asset components, as well as an index file which
   links to them
   """
   assets_examples_folder_name = "asset_examples"
   # Download assets files from OpenSpace repository
-  assets_folder = clone_assets_folder(os.path.join(output_folder, assets_examples_folder_name))
+  assets_folder = clone_assets_folder(
+    os.path.join(output_folder, assets_examples_folder_name),
+    branch,
+    local_openspace_folder
+  )
 
   # List all of the assets in the asset and the dedicated example folders
   examples_folder = os.path.join(assets_folder, "examples")
@@ -459,7 +443,7 @@ def generate_renderable_overview(environment, output_folder, json_location):
 #                                         MAIN                                           #
 ##########################################################################################
 
-def generate_docs():
+def generate_docs(branch, local_openspace_folder):
   print("Generating dynamic documentation")
 
   json_location = "json"
@@ -471,7 +455,14 @@ def generate_docs():
   environment = Environment(loader=FileSystemLoader("templates"))
 
   # Generate documentation
-  generate_asset_components(environment, output_folder, folder_name_assets, json_location)
+  generate_asset_components(
+    environment,
+    output_folder,
+    folder_name_assets,
+    json_location,
+    branch,
+    local_openspace_folder
+  )
   generate_scripting_api(environment, output_folder, folder_name_scripting, json_location)
   generate_renderable_overview(environment, output_folder, json_location)
 
