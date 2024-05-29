@@ -3,7 +3,7 @@ import sys
 
 # The way Sphinx handles the path during the evaluation of the conf.py is a bit strange
 # so we have to add the current folder or else the `import` statement will fail
-sys.path.append(os.path.abspath('.'))
+sys.path.append(os.path.abspath("."))
 from generatedocs import generate_docs
 
 
