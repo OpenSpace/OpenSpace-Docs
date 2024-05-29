@@ -84,7 +84,7 @@ html_context = {
 # This enables different logos in dark and light mode
 html_logo = "_static/transparent.png"
 
-html_title = f'OpenSpace documentation ({version})'
+html_title = f"OpenSpace documentation ({version})"
 html_short_title = "OpenSpace"
 
 html_favicon = "_static/icon.png"
