@@ -23,6 +23,7 @@ Below is a list of breaking changes in this release.
   - RenderableShadowCylinder: `AmountOfPoints` -> `NumberOfPoints`
   - RenderablePointCloud: `Coloring.OutlineWeight` -> `Coloring.OutlineWidth`
   - RenderableOrbitalKepler: `Appearance.OutlineWeight` -> `Appearance.OutlineWidth`
+  - All ScreenSpaceRenderables: `Gamma` -> `GammaOffset`
 
 :::{toctree}
 :maxdepth: 1
