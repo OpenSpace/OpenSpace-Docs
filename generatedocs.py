@@ -3,18 +3,36 @@ from jinja2 import Environment, FileSystemLoader # template magic
 import json # reading the input file
 import os # file paths
 import re # regex for searching for assets files
+import shutil # copytree, rmtree
 from tqdm import tqdm # progress bar
 
 ##########################################################################################
 #                           ASSET COMPONENTS HELPER FUNCTIONS                            #
 ##########################################################################################
 
-def clone_assets_folder(folder_name):
+def clone_assets_folder(folder_name, branch, local_openspace_folder):
   """
   Clones asset directory from OpenSpace git repository
   Uses the latest master
   Returns absolute path to the asset folder
   """
+  data_assets_path = "data/assets"
+
+  if local_openspace_folder:
+    print(f"Using local OpenSpace folder {local_openspace_folder}")
+    # If a local folders was provided, we don't have to do any of the cloning work, but we
+    # must copy the files for any potential `literalinclude` directive to work
+    os.makedirs(os.path.join(folder_name, "data"), exist_ok=True)
+    source_path = os.path.join(local_openspace_folder, data_assets_path)
+    destination_path = os.path.join(folder_name, data_assets_path)
+    if os.path.exists(destination_path):
+      shutil.rmtree(destination_path)
+    shutil.copytree(source_path, destination_path)
+
+    return os.path.abspath(destination_path)
+
+  # Otherwise (the default path), we need to clone the OpenSpace repository and checkout
+  # the requested branch
   def print_progress(op_code, cur_count, max_count=None, message=""):
     print(message)
 
@@ -30,9 +48,8 @@ def clone_assets_folder(folder_name):
   print(f"Fetching OpenSpace... this might take a while")
   origin.fetch(progress=print_progress, depth=1)
 
-  data_assets_path = "data/assets"
   git = repo.git()
-  git.checkout("origin/master", "--", data_assets_path)
+  git.checkout(f"origin/{branch}", "--", data_assets_path)
   print("Done cloning assets folder from OpenSpace repository")
   assets_folder_path = os.path.abspath(os.path.join(folder_name, data_assets_path))
   return assets_folder_path
@@ -68,11 +85,13 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
   header = ""
   content = ""
   description = ""
-  LUA_COMMENT = "-- "
+  LUA_COMMENT = "--"
+  LITERAL_INCLUDE = "```{literalinclude} "
   header_finished = 0
   with open(asset_file, "r", encoding="utf8") as file:
     if not file.readable():
       return None
+
     # Read file line by line
     for l_no, line in enumerate(file, 1):
       # Check for header comment at top of file
@@ -81,10 +100,28 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
 
       # If we are in header comment, split into header and description
       if look_for_header and is_header_comment:
-        comment = line.split(LUA_COMMENT)[1]
+        # Remove the beginning of the line that marks it being a Lua comment
+        comment = line[len(LUA_COMMENT):].lstrip()
+
         if l_no == 1:
+          # The first line becomes the header
           header = comment
         else:
+          if comment.startswith(LITERAL_INCLUDE):
+            # Literal includes have to be handled a bit separately. While writing examples
+            # we want to pretend that the file we are including is relative to the Lua
+            # file, but for Sphinx, it is relative to the Markdown file. To solve this, we
+            # make use of the fact that Sphinx will treat any path to a literalinclude
+            # that starts with a / as a path relative to the _base folder_. So we can
+            # switch out the path at the last minute and make sure that it gets correctly
+            # included
+            path = comment[len(LITERAL_INCLUDE):]
+
+            # We need to get the path to the asset file relative to the base folder
+            full_folder = os.path.dirname(asset_file)
+            rel_folder = os.path.relpath(full_folder)
+            comment = f"{LITERAL_INCLUDE} /{rel_folder}/{path}"
+
           description += comment
           header_finished = l_no + 1
       # Else, get the content of the example
@@ -97,7 +134,12 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
 
   # If there were any matches to regex, set the content as the example
   if len(lines) > 0:
-    return { "header": header, "description": description, "content": content, "lines": lines }
+    return {
+      "header": header,
+      "description": description,
+      "content": content,
+      "lines": lines
+    }
   else:
     return None
 
@@ -220,14 +262,18 @@ def parse_doxygen_comments(library):
 #                                 CREATE ASSET COMPONENTS                                #
 ##########################################################################################
 
-def generate_asset_components(environment, output_folder, folder_name_assets, json_location):
+def generate_asset_components(environment, output_folder, folder_name_assets, json_location, branch, local_openspace_folder):
   """
   Creates the Markdown files for the asset components, as well as an index file which
   links to them
   """
   assets_examples_folder_name = "asset_examples"
   # Download assets files from OpenSpace repository
-  assets_folder = clone_assets_folder(os.path.join(output_folder, assets_examples_folder_name))
+  assets_folder = clone_assets_folder(
+    os.path.join(output_folder, assets_examples_folder_name),
+    branch,
+    local_openspace_folder
+  )
 
   # List all of the assets in the asset and the dedicated example folders
   examples_folder = os.path.join(assets_folder, "examples")
@@ -242,8 +288,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
 
   # Create target folder
   assets_output_path = os.path.join(output_folder, folder_name_assets)
-  if not os.path.exists(assets_output_path):
-    os.mkdir(assets_output_path)
+  os.makedirs(assets_output_path, exist_ok=True)
 
   f = open(os.path.join(json_location, "assetComponents.json"))
   asset_categories = json.load(f)
@@ -254,6 +299,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
   # Missing and found asset files
   components_missing_assets = []
   no_of_found_assets = 0
+  print("Handle individual components")
   for category in asset_categories:
     # Find base class to add its members to each derived class
     base_class_name = category["name"]
@@ -266,7 +312,7 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
         break
 
     # Go through all the components in that category and print out a md file
-    for asset_component in tqdm(category["classes"], desc="Generating asset components for " + category["name"]):
+    for asset_component in tqdm(category["classes"], desc=category["name"]):
       is_base_class = has_base_class and asset_component["name"] == base_class["name"]
       base_class_name = base_class["name"] if has_base_class and not is_base_class else ""
       base_class_identifier = base_class["identifier"] if has_base_class and not is_base_class else ""
@@ -339,8 +385,7 @@ def generate_scripting_api(environment, output_folder, folder_name_scripting, js
   """
   # Create target folder
   scripting_output_path = os.path.join(output_folder, folder_name_scripting)
-  if not os.path.exists(scripting_output_path):
-    os.mkdir(scripting_output_path)
+  os.makedirs(scripting_output_path, exist_ok=True)
 
   f = open(os.path.join(json_location, "scriptingApi.json"))
   scripting_api = json.load(f)
@@ -398,16 +443,26 @@ def generate_renderable_overview(environment, output_folder, json_location):
 #                                         MAIN                                           #
 ##########################################################################################
 
-json_location = "json"
-output_folder = "generated"
-folder_name_assets = "asset-components"
-folder_name_scripting = "scripting-api"
+def generate_docs(branch, local_openspace_folder):
+  print("Generating dynamic documentation")
 
-# Load jinja templates folder
-environment = Environment(loader=FileSystemLoader("templates"))
+  json_location = "json"
+  output_folder = "generated"
+  folder_name_assets = "asset-components"
+  folder_name_scripting = "scripting-api"
 
-# Generate documentation
-generate_asset_components(environment, output_folder, folder_name_assets, json_location)
-generate_scripting_api(environment, output_folder, folder_name_scripting, json_location)
-generate_renderable_overview(environment, output_folder, json_location)
+  # Load jinja templates folder
+  environment = Environment(loader=FileSystemLoader("templates"))
+
+  # Generate documentation
+  generate_asset_components(
+    environment,
+    output_folder,
+    folder_name_assets,
+    json_location,
+    branch,
+    local_openspace_folder
+  )
+  generate_scripting_api(environment, output_folder, folder_name_scripting, json_location)
+  generate_renderable_overview(environment, output_folder, json_location)
 

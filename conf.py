@@ -1,11 +1,31 @@
 import os
+import sys
+
+# The way Sphinx handles the path during the evaluation of the conf.py is a bit strange
+# so we have to add the current folder or else the `import` statement will fail
+sys.path.append(os.path.abspath("."))
+from generatedocs import generate_docs
+
+##########################################################################################
+#                                     CUSTOMIZATION                                      #
+##########################################################################################
+# This is the branch on the OpenSpace repository from which the documentation will be
+# built. Change this to a different branch to try a local branch before committing.
+# OBS: No other value than `master` should ever be committed to the master branch of the
+#      docs repository
+OPENSPACE_BRANCH = "master"
+
+# If this value is specified, instead of cloning OpenSpace from the main repository using
+# the branch provided above, instead use a local copy of the repository.
+# OBS: No other value than the empty string should ever be committed to the master branch
+#      of the docs repository
+LOCAL_OPENSPACE_FOLDER = ""
+
+
 
 # Generate the files that dynamically depend on asset files in the main OpenSpace repo
-with open("generatedocs.py", encoding="utf8") as file:
-  try:
-    exec(file.read())
-  except Exception as e:
-    print(e)
+generate_docs(OPENSPACE_BRANCH, LOCAL_OPENSPACE_FOLDER)
+
 
 ###
 # Global Settings
@@ -79,7 +99,7 @@ html_context = {
 # This enables different logos in dark and light mode
 html_logo = "_static/transparent.png"
 
-html_title = f'OpenSpace documentation ({version})'
+html_title = f"OpenSpace documentation ({version})"
 html_short_title = "OpenSpace"
 
 html_favicon = "_static/icon.png"
