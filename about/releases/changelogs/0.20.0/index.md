@@ -15,8 +15,14 @@ Download version 0.20.0 for Windows and Mac on the OpenSpace website [installati
 ## Breaking Changes
 Below is a list of breaking changes in this release.
 
-- A New Renderable for Point Clouds (`RenderableBillboardsCloud` -> `RenderablePointCloud`) [Details](./conversion.md#a-new-renderable-for-point-clouds)
-- `RenderableSphere` -> `RenderableSphereImageLocal`/`RenderableSphereImageLocal` (@TODO: Provide details)
+- A New Renderable for Point Clouds (`RenderableBillboardsCloud` &rarr; `RenderablePointCloud`) [Details](./conversion.md#a-new-renderable-for-point-clouds)
+- `RenderableSphere` &rarr; `RenderableSphereImageOnline` & `RenderableSphereImageLocal` (@TODO: Provide details)
+- Property identifier changes
+  - RenderableAtmosphere: `EclipseHardShadowsInfo` &rarr; `EclipseHardShadows`
+  - RenderableEclipseCone: `AmountOfPoints` &rarr; `NumberOfPoints`
+  - RenderableShadowCylinder: `AmountOfPoints` &rarr; `NumberOfPoints`
+  - RenderableOrbitalKepler: `Appearance.OutlineWeight` &rarr; `Appearance.OutlineWidth`
+  - All ScreenSpaceRenderables: `Gamma` &rarr; `GammaOffset`
 
 :::{toctree}
 :maxdepth: 1
