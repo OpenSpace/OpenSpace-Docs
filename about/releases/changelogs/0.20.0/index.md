@@ -21,9 +21,8 @@ Below is a list of breaking changes in this release.
   - RenderableAtmosphere: `EclipseHardShadowsInfo` &rarr; `EclipseHardShadows`
   - RenderableEclipseCone: `AmountOfPoints` &rarr; `NumberOfPoints`
   - RenderableShadowCylinder: `AmountOfPoints` &rarr; `NumberOfPoints`
-  - RenderablePointCloud: `Coloring.OutlineWeight` &rarr; `Coloring.OutlineWidth`
   - RenderableOrbitalKepler: `Appearance.OutlineWeight` &rarr; `Appearance.OutlineWidth`
-  - All ScreenSpaceRenderables: `Gamma` -> `GammaOffset`
+  - All ScreenSpaceRenderables: `Gamma` &rarr; `GammaOffset`
 
 :::{toctree}
 :maxdepth: 1
