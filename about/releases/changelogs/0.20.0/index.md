@@ -23,6 +23,7 @@ Below is a list of breaking changes in this release.
   - RenderableShadowCylinder: `AmountOfPoints` &rarr; `NumberOfPoints`
   - RenderableOrbitalKepler: `Appearance.OutlineWeight` &rarr; `Appearance.OutlineWidth`
   - All ScreenSpaceRenderables: `Gamma` &rarr; `GammaOffset`
+- The functions `openspace.navigation.addLocalRoll`, `openspace.navigation.addGlobalRoll`, and `openspace.navigation.addTruckMovement`in the [Scripting API](/generated/scripting-api/index.md) now has one input parameter value instead of two. Previously, one of the values was not being used but had to be provided. For details on the functions, see the corresponding page in the [Reference](/generated/scripting-api/openspace.navigation.md).
 
 :::{toctree}
 :maxdepth: 1
