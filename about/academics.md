@@ -17,10 +17,13 @@
 ## Theses
 | _Year_ | _Person(s)_ | _Location_ | _Title_ | _Thesis_ |
 | ------ | ----------- | ---------- | ------- | -------- |
+| 2024 | Maria Burnned & Cindy Khuong | AMNH |  | |
+| 2024 | Dennis Moradkhani & Tim Olsson | AMNH |  | |
+| 2023 | Alice Molin & Julia Johnstone | CCMC | Space Weather Simulation Model Integration | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-200316) |
 | 2023 | Anders Lundkvist & Erik Salsborn | CCMC | Enhancing Dungey Cycle Visualization in OpenSpace | |
 | 2023 | Andreas Engberg | AMNH | Investigating the Chemical Cartography of the Galaxy Through Visualization | | |
-| 2023 | Märta Nilsson & Robin Ridell | AMNH | Using Point Cloud Interpolation to Present a Cosmic View of Life | |
-| 2022 | Jacob Molin & Victor Lindquist | SCI | | |
+| 2023 | Märta Nilsson & Robin Ridell | AMNH | Using Point Cloud Interpolation to Present a Cosmic View of Life | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-199028) |
+| 2022 | Jacob Molin & Victor Lindquist | SCI | Astronomy Software Integration with OpenSpace in Distributed Systems | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-196497) |
 | 2022 | Anne Olthoff & Catja Johansson Nordqvist | NYU | Interactive visualization of climate change on Earth in the OpenSpace project |
 | 2022 | Måns Aronsson & Simon Karlsson Brefält | CCMC | Advanced Fieldline Rendering for Space Weather Visualization | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-189157) |
 | 2022 | Emma Segolsson & Linn Storesund | AMNH | A Cosmic View of Life on Earth: Visualizing the relationship between species DNA in a threedimensional space | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-190669) |
