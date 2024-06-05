@@ -1,6 +1,6 @@
 # Academics
 ## Papers
-  - ExoplanetExplorer: Contextual Visualization of Exoplanet Systems. _E. Broman, J. Faherty, L. Kreidberg, S. Zieba, C. Hansen, A. Ynnerman, and A. Bock_, IEEE Visualization, **2023**
+  - ExoplanetExplorer: Contextual Visualization of Exoplanet Systems. _E. Broman, J. Faherty, L. Kreidberg, S. Zieba, C. Hansen, A. Ynnerman, and A. Bock_, IEEE Visualization, **2023**, [doi](https://doi.org/10.1109/VIS54172.2023.00025)
   - Moliverse: Contextually Embedding the Microcosm into the Universe. _M. Brossier, R. Skånberg, L. Besançon, M. Linares, T. Isenberg, A. Ynnerman, and A. Bock_, Computers & Graphics, **2022**, [doi](http://doi.org/10.1016/j.cag.2023.02.006)
   - OpenSpace Sonification: Complementing Visualization of the Solar System with Sound. _E. Elmquist, M. Ejdbo, A. Bock, and N. Rönnberg_, International Community for Auditory Displays, **2021**, [doi](http://doi.org/10.21785/icad2021.018)
   - Interactive Visualization of Atmospheric Effects for Celestial Bodies. _J. Costa, A. Bock, C. Emmart, C. Hansen, A. Ynnerman, and C. Silva_, IEEE Transactions on Visualization and Computer Graphics, **2019**, [doi](http://doi.org/10.1109/TVCG.2020.3030333)
