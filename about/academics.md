@@ -18,7 +18,7 @@
 | _Year_ | _Person(s)_ | _Location_ | _Title_ | _Thesis_ |
 | ------ | ----------- | ---------- | ------- | -------- |
 | 2024 | Maria Burnned & Cindy Khuong | AMNH |  | |
-| 2024 | Dennis Moradkhani & Tim Olsson | AMNH |  | |
+| 2024 | Dennis Moradkhani & Tim Olsson | SCI |  | |
 | 2023 | Alice Molin & Julia Johnstone | CCMC | Space Weather Simulation Model Integration | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-200316) |
 | 2023 | Anders Lundkvist & Erik Salsborn | CCMC | Enhancing Dungey Cycle Visualization in OpenSpace | |
 | 2023 | Andreas Engberg | AMNH | Investigating the Chemical Cartography of the Galaxy Through Visualization | | |
