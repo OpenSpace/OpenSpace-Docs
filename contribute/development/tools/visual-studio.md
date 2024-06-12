@@ -1,7 +1,7 @@
 # Visual Studio Tips and Tricks
 
 ## Detecting Exceptions
-A common problem is that an exception is thrown somewhere in the code and we can only put a breakpoint in the `catch` part at which point we have lost the stack information of where the exception orginated from and finding that out can be cumbersome.
+A common problem is that an exception is thrown somewhere in the code and we can only put a breakpoint in the `catch` part at which point we have lost the stack information of where the exception originated from and finding that out can be cumbersome.
 
 {menuselection}`Debug --> Exception Settings --> C++ Exceptions --> <All C++ Exceptions not in this list>` should be checked
 
@@ -9,7 +9,7 @@ If that checkbox is selected, Visual Studio will break every time a C++ exceptio
 
 
 ## Breaking on floating point exceptions
-Sometimes numbers break, for example `float x = std::sqrt(-1.0)` would store a a NaN, which would then propagate further into other calculations. Finding the source error of this can be very tedious and cumbersome as it involves a lot of (`assert(x == x)`).
+Sometimes numbers break, for example `float x = std::sqrt(-1.0)` would store as a NaN, which would then propagate further into other calculations. Finding the source error of this can be very tedious and cumbersome as it involves a lot of (`assert(x == x)`).
 
 Doing this somewhere early in the program:
 ```cpp
