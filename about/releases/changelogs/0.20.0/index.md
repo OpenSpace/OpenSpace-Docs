@@ -1,16 +1,54 @@
 # 0.20.0
-  - Release Date: 2024-XX-XX @TODO
-  - Commit: @TODO
-  - Full changelog: @TODO
+  - Release Date: 2024-06-17
+  - Commit: 14cf12d23ebad2e3ea663149c7101be756e98fbd
+  - [Full changelog](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.0)
 
-Download version 0.20.0 for Windows and Mac on the OpenSpace website [installation page](https://www.openspaceproject.com/version-0192)(@TODO: update link). Below are notes that highlight new content and bug fixes that will be relevant for OpenSpace users.
+Download version 0.20.0 for Windows and Mac on the OpenSpace website [installation page](https://www.openspaceproject.com/version-0200). Below are notes that highlight new content and bug fixes that will be relevant for OpenSpace users.
 
+#### New Features
+- **Documentation Revamp**: All static information has now been consolidated and relocated to the "Reference" section on the [OpenSpace documentation site](https://docs.openspaceproject.com).
+- **User Settings Storage**: Persistent file now saves user settings, including selected profile and configuration file.
+- **Keybinding Changes**: 
+	-   Toggle Trails:
+	    -   `T`: Toggles all trails with fade.
+	    -   `Shift+T`: Instantly toggles trails.
+	-   Blackout Toggle: `B` now toggles the blackout effect instead of `W`.
+- **Global Blackout Control**: New property to control the application of the global blackout factor to master rendering.
+- **Audio Support**: Playback of local MP3 files is now supported.
+- **MPCDI Format Support**: Support for new MPCDI format used by COSM/E&S.
+- **Point Cloud Overhaul**: 
+  - New rendering techniques.
+  - Ability to load labels from CSV/SPECK files.
+  - Enhanced scaling and outline rendering.
+  - Texture and orientation data support.
 
-## Content
-  - ...
+#### Enhancements
+- **Trail Rendering**: Improved performance, control over trail length and fading, and better handling of trajectory trails.
+- **Star Renderer Update**: Stars are now represented by layered textures for a more customizable appearance.
+- **Globe Layer Management**: Explicit layer order and improved layer handling with zIndex parsing that allows users to add their own layers more easily.
 
-## Bug Fixes
-  - ...
+#### UI Improvements
+- **Focus Menu**: New options and buttons for flying and focusing on nodes.
+- **Scene Menu**: Enhanced search functionality, better handling of visible and hidden nodes, and a "Quick Access" entry.
+- **Geoposition Panel**: Overhauled for better usability.
+- **Node Meta Panel**: Clearer information display.
+- **New Buttons**: Added buttons for various functionalities including GUI opening in an external browser and jump-to settings.
+
+#### Content Creation
+- **HttpSynchronization**: Faster resumption of partial downloads.
+- **UrlSynchronization**: Option to rate limit downloads, e.g., downloading new satellite trajectories once per day.
+- **File Drag-and-Drop**: Video files can be added as ScreenSpaceRenderables via drag-and-drop.
+- ** Session Recording**: Enhanced capabilities for recording and playing back sessions with new commands and options.
+- **Options Overhaul**: More specific command line options and the ability to override the `openspace.cfg` file.
+
+#### Content and Assets
+- **New Profiles and Assets**: 
+  - Euclid and BepiColombo mission profiles.
+  - Tiangong space station, Big Dipper constellation, historical epicycle concept, and more.
+- **Updated Assets**: Updated orientations, datasets, and various mission details.
+
+#### Bug Fixes
+- **Stability and Performance**: Numerous bug fixes addressing crashes, rendering issues, UI errors, and data handling problems
 
 ## Breaking Changes
 Below is a list of breaking changes in this release.
