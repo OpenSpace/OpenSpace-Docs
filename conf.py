@@ -1,4 +1,30 @@
 import os
+import sys
+
+# The way Sphinx handles the path during the evaluation of the conf.py is a bit strange
+# so we have to add the current folder or else the `import` statement will fail
+sys.path.append(os.path.abspath("."))
+from generatedocs import generate_docs
+
+##########################################################################################
+#                                     CUSTOMIZATION                                      #
+##########################################################################################
+# This is the branch on the OpenSpace repository from which the documentation will be
+# built. Change this to a different branch to try a local branch before committing.
+# OBS: No other value than `master` should ever be committed to the master branch of the
+#      docs repository
+OPENSPACE_BRANCH = "master"
+
+# If this value is specified, instead of cloning OpenSpace from the main repository using
+# the branch provided above, instead use a local copy of the repository.
+# OBS: No other value than the empty string should ever be committed to the master branch
+#      of the docs repository
+LOCAL_OPENSPACE_FOLDER = ""
+
+
+
+# Generate the files that dynamically depend on asset files in the main OpenSpace repo
+generate_docs(OPENSPACE_BRANCH, LOCAL_OPENSPACE_FOLDER)
 
 
 ###
@@ -8,10 +34,10 @@ needs_sphinx = "4.0"
 
 project = "OpenSpace"
 author = "OpenSpace community"
-project_copyright = "2014-2023, OpenSpace community"
+project_copyright = "2014-2024, OpenSpace community"
 
 # Update with every new release
-version = release = os.getenv("READTHEDOCS_VERSION", "0.19.2")
+version = release = os.getenv("READTHEDOCS_VERSION", "0.20.0")
 
 extensions = [
   "myst_parser",
@@ -34,7 +60,8 @@ keep_warnings = True
 ###
 source_encoding = "utf-8-sig"
 exclude_patterns = [
-  "README.md"
+  "README.md",
+  ".venv"
 ]
 root_doc = "index"
 primary_domain = "lua"
@@ -54,42 +81,32 @@ myst_heading_anchors = 3
 ###
 # HTML output
 ###
-html_theme = "furo"
+html_theme = "sphinx_rtd_theme"
 html_theme_options = {
-  # No written project title in the sidebar
-  "sidebar_hide_name": True,
-
-  # Make the edit button in the top right appear
-  "source_repository": "https://github.com/OpenSpace/OpenSpace-Docs/",
-  "source_branch": "master",
-  "source_directory": "/",
-
-  # Set CSS Variables. The dark theme inherits all light variables
-  "light_css_variables": {
-    "font-stack--monospace": "Source Code Pro Light, monospace"
-  },
-
-  # Add custom items in the footer
-  "footer_icons": [
-    {
-        "name": "GitHub",
-        "url": "https://github.com/OpenSpace/OpenSpace",
-        "html": "",
-        "class": "fa-brands fa-solid fa-github fa-2x"
-    }
-  ],
-
-  "dark_logo": "logo.png",
-  "light_logo": "logo-inverted.png"
+  "logo_only" : True,
+  "display_version": False,
+  "collapse_navigation": False,
 }
-html_title = f'OpenSpace documentation ({version})'
+
+html_context = {
+  "display_github": True,  # Integrate GitHub
+  "github_user": "OpenSpace",  # Username
+  "github_repo": "OpenSpace-Docs",  # Repo name
+}
+
+# Add a transparent image as the logo
+# Instead we add the logo later in the css
+# This enables different logos in dark and light mode
+html_logo = "_static/transparent.png"
+
+html_title = f"OpenSpace documentation ({version})"
 html_short_title = "OpenSpace"
 
 html_favicon = "_static/icon.png"
 
 # JavaScript files that are added into the generated documentation
 html_js_files = [
-
+  "custom.js"
 ]
 
 # CSS files that are added into the generated documentation
@@ -98,7 +115,8 @@ html_css_files = [
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
 
-  "required-reading.css"
+  "required-reading.css",
+  "sidebar.css"
 ]
 
 # These folders are copied to the documentation's HTML output

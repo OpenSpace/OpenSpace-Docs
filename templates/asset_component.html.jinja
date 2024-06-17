@@ -1,0 +1,87 @@
+{% macro member_table(input_members, parent_name="", link_description=true) -%}
+{% if input_members|length > 0 %}
+:::{list-table}
+:width: 100%
+:widths: 3 16 1 4 1
+:header-rows: 1
+*   - Name
+    - Documentation
+    - Type
+    - Description
+    - Optional
+{% for member in input_members %}
+*   - `{{ member.name }}`
+    - {{ member.documentation }}
+    - `{{ member.type }}`
+    {% if member.reference %}
+    - [{{ member.reference.name}}](#{{ member.reference.identifier }})
+    {% elif link_description %}
+    - {{ member.description }} {% if member.members|length > 0 %} [Table parameters](#{{ data.name }}{{ parent_name }}{{ member.name }}-target) {% endif %}
+    {% else %}
+    - {{ member.description }}
+    {% endif %}
+    - {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
+    {% endfor %}
+:::
+{% endif %}
+{%- endmacro %}
+
+{% macro table_parameters(member, nestingLevel = 0, parent_name="") -%}
+{{ member.documentation }}
+
+{% if member.description %}
+* Description: {{ member.description }}
+{% endif %}
+* Optional: {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
+
+{{ member_table(member.members, member.name) }}
+
+{% for nested_member in member.members if nested_member.members %}
+({{ data.name }}{{ member.name }}{{ nested_member.name }}-target)=
+#### Table parameters for `{{ nested_member.name }}`
+{{ table_parameters(nested_member, nestingLevel + 1, member.name) }}
+{% endfor %}
+{%- endmacro %}
+
+({{ data.identifier.lower() }}{% if data.identifier == data.name %}-identifier {% endif %})=
+# {{ data.name }}
+{% if base_class_name != "" %}
+_Inherits [{{ base_class_name }}](#{{ base_class_identifier }})_
+{% endif %}
+{{ data.description }}
+
+{% if members|length > 0 or base_class_members|length > 0 %}
+## Members
+{% endif %}
+{{ member_table(members) }}
+
+{% if base_class_members|length > 0 %}
+### Inherited members from [{{ base_class_name }}](#{{ base_class_identifier }})
+{{ member_table(base_class_members) }}
+{% endif %}
+
+{% for member in members %}
+{% if member.members|length > 0 %}
+
+({{ data.name }}{{ parent_name }}{{ member.name }}-target)=
+::::{dropdown} Table parameters for `{{ member.name }}`
+{{ table_parameters(member) }}
+::::
+{% endif %}
+{% endfor %}
+
+{% if examples|length > 0 %}
+## Asset Examples
+{% for example in examples %}
+
+:::{dropdown} {{ example.header }}
+{{ example.description }}
+:::{code-block} lua
+:linenos:
+:emphasize-lines: {{ example.lines|join(", ") }}
+{{ example.content }}
+:::
+:::
+
+{% endfor %}
+{% endif %}

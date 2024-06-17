@@ -1,0 +1,9 @@
+-- Include the child asset and store the resulting table in a local variable
+local child = asset.require("./example1_child")
+
+-- Register a function that is called when the asset should be initialized
+asset.onInitialize(function()
+  -- openspace.printInfo is a function defined that will print the passed parameter
+  -- Here, we access the 'Color' variable out of the child's table
+  openspace.printInfo(child.Color)
+end)

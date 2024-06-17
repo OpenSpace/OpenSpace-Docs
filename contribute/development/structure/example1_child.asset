@@ -1,0 +1,5 @@
+-- Define a local table variable
+local Green = { 0.0, 1.0, 0.0 }
+
+-- Export the table under the name "Color", making it available to everyone requiring it
+asset.export("Color", Green)
