@@ -5,10 +5,10 @@
 
 Download version 0.20.0 for Windows and Mac on the OpenSpace website [installation page](https://www.openspaceproject.com/version-0200). Below are notes that highlight new content and bug fixes that will be relevant for OpenSpace users.
 
-#### New Features
+## New Features
 - **Documentation Revamp**: All static information has now been consolidated and relocated to the "Reference" section on the [OpenSpace documentation site](https://docs.openspaceproject.com).
 - **User Settings Storage**: Persistent file now saves user settings, including selected profile and configuration file.
-- **Keybinding Changes**: 
+- **Keybinding Changes**:
 	-   Toggle Trails:
 	    -   `T`: Toggles all trails with fade.
 	    -   `Shift+T`: Instantly toggles trails.
@@ -16,38 +16,38 @@ Download version 0.20.0 for Windows and Mac on the OpenSpace website [installati
 - **Global Blackout Control**: New property to control the application of the global blackout factor to master rendering.
 - **Audio Support**: Playback of local MP3 files is now supported.
 - **MPCDI Format Support**: Support for new MPCDI format used by COSM/E&S.
-- **Point Cloud Overhaul**: 
+- **Point Cloud Overhaul**:
   - New rendering techniques.
   - Ability to load labels from CSV/SPECK files.
   - Enhanced scaling and outline rendering.
   - Texture and orientation data support.
 
-#### Enhancements
+## Enhancements
 - **Trail Rendering**: Improved performance, control over trail length and fading, and better handling of trajectory trails.
 - **Star Renderer Update**: Stars are now represented by layered textures for a more customizable appearance.
 - **Globe Layer Management**: Explicit layer order and improved layer handling with zIndex parsing that allows users to add their own layers more easily.
 
-#### UI Improvements
+## UI Improvements
 - **Focus Menu**: New options and buttons for flying and focusing on nodes.
 - **Scene Menu**: Enhanced search functionality, better handling of visible and hidden nodes, and a "Quick Access" entry.
 - **Geoposition Panel**: Overhauled for better usability.
 - **Node Meta Panel**: Clearer information display.
 - **New Buttons**: Added buttons for various functionalities including GUI opening in an external browser and jump-to settings.
 
-#### Content Creation
+## Content Creation
 - **HttpSynchronization**: Faster resumption of partial downloads.
 - **UrlSynchronization**: Option to rate limit downloads, e.g., downloading new satellite trajectories once per day.
 - **File Drag-and-Drop**: Video files can be added as ScreenSpaceRenderables via drag-and-drop.
 - ** Session Recording**: Enhanced capabilities for recording and playing back sessions with new commands and options.
 - **Options Overhaul**: More specific command line options and the ability to override the `openspace.cfg` file.
 
-#### Content and Assets
-- **New Profiles and Assets**: 
+## Content and Assets
+- **New Profiles and Assets**:
   - Euclid and BepiColombo mission profiles.
   - Tiangong space station, Big Dipper constellation, historical epicycle concept, and more.
 - **Updated Assets**: Updated orientations, datasets, and various mission details.
 
-#### Bug Fixes
+## Bug Fixes
 - **Stability and Performance**: Numerous bug fixes addressing crashes, rendering issues, UI errors, and data handling problems
 
 ## Breaking Changes
@@ -79,9 +79,9 @@ Below is a list of breaking changes in this release.
   - For cases that are not covered by the new commandline options, it is possible to create a `openspace.cfg.override` the content of which overwrites all settings set in the `openspace.cfg` file
   - `data/assets/spice/base.asset` is now called `data/assets/spice/core.asset`
 - Removed the ability to implicitly load kernels from `SpiceTranslation` and `SpiceRotations`. Use the `openspace.spice.loadKernel` and `openspace.spice.unloadKernel` functions in the `onInitialize`/`onDeinitialize` functions instead
-- Removed support for XML configuration files in SGCT. Convert existing XML files with the converter tool found at https://tools.openspaceproject.com
+- Removed support for XML configuration files in SGCT. Convert existing XML files with the [converter tool](https://tools.openspaceproject.com)
 - Move Sun light source specification from sun.asset to transforms.asset
-- Remove the ability to have optional parameters in the beginning of Lua functions (closes #3151). The first parameter for the `goToGeo` and `flyToGeo` functions is now required
+- Remove the ability to have optional parameters in the beginning of Lua functions (#3151). The first parameter for the `goToGeo` and `flyToGeo` functions is now required
 
 :::{toctree}
 :maxdepth: 1
