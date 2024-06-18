@@ -173,6 +173,7 @@ By default, all the variables in the dataset are loaded as possible options for 
 
 :::{figure} colormap_ui_annotated.png
 :align: center
+:width: 50em
 *The chosen set of parameters will be available in the user interface. Here we see the chosen parameter (A), which can be changed through a drop-down menu, and the currently selected value range (B). The value range (B) will automatically update when a parameter (A) is chosen, but it is also possible to set it explicitly. There is also a button for setting the range to the min and max value in the dataset (C).*
 :::
 
@@ -211,7 +212,7 @@ This means that the point will be rendered without any blending and the point th
 
 :::{figure} blending.png
 :align: center
-:width: 80%
+:width: 50em
 *Example of points with (right) and without (left) additive blending enabled. Note how the points to the right appear brighter in the overlapping areas, while the left set of points preserve their actual color. In the overlaps, the point that is closer to the camera will be the visible one.*
 :::
 
@@ -238,7 +239,7 @@ The points will look the best with textures that have a transparent background, 
 
 :::{figure} texture_star.png
 :align: center
-:width: 90%
+:width: 50em
 :::
 
 ### Textures and Colors
@@ -246,6 +247,7 @@ Textures also work with color maps. In that case, the color of the texture is mu
 
 :::{figure} textures.png
 :align: center
+:width: 50em
 :::
 
 :::{admonition} A note about file paths
@@ -289,11 +291,11 @@ In addition to the world-size scale, it is also possible to limit the maximum si
 
 :::{figure} pointsize_close.png
 :align: center
-:width: 90%
+:width: 50em
 :::
 :::{figure} pointsize_far.png
 :align: center
-:width: 90%
+:width: 50em
 *Example of the point size scaling in action. The green points (left) use regular sizing and the blue points (right) have a limited max size. Note how the green points (left) appear larger up close and smaller at a large distance, while the blue points (right) are scaled to have the same size at both distances.*
 :::
 
