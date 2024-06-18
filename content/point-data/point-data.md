@@ -246,6 +246,7 @@ Textures also work with color maps. In that case, the color of the texture is mu
 :::{figure} textures.png
 :align: center
 :width: 50em
+
 :::
 
 :::{admonition} A note about file paths
@@ -254,6 +255,60 @@ Textures also work with color maps. In that case, the color of the texture is mu
 
 The list of available path tokens and their corresponding locations are found in the openspace.cfg file.
 :::
+
+## Outlines
+
+:::{figure} outline_basic.png
+:align: right
+:width: 20em
+Blue points with white outline.
+:::
+
+When rendering points without additive blending, it might be difficult to distinguish the edges of the individual points. In this case, it might be useful to render a distinctly colored outline around the point.
+
+To add an outline to your point cloud, set the `Coloring.EnableOutline` setting to `true`, and possibly add an outline color and/or width setting. See example:
+
+```lua
+ ...
+  Renderable = {
+    ...
+    Coloring = {
+      FixedColor = { 0.5, 0.8, 1.0 }, -- light blue
+      -- Outline settings
+      EnableOutline = true,
+      OutlineColor = { 1.0, 1.0, 1.0 }, -- white
+      OutlineWidth = 0.1
+    }
+  },
+  ...
+```
+
+### Outline Style and Color From Color Map
+
+By default, setting the outline will enforce a round shape for the rendered points, but this is not always desired. For example, when a texture is used, a square outline might be more suitable. This is controlled by the `OutlineStyle` setting.
+
+It is also possible to set the color of the outline from the color map. In this case, the color map will not be applied to the texture, but only to the outline. See an example in the figure below.
+
+:::{figure} outline_cmap_styles.png
+:width: 80em
+Outlines on a textured point cloud in three different styles: Round (left), Square (center), Bottom (right). The color is set from a color map.
+:::
+
+```lua
+ ...
+  Renderable = {
+    ...
+    Coloring = {
+      ...
+      EnableOutline = true,
+      -- Set outline color to the one decided by the color map
+      ApplyColorMapToOutline = true,
+      -- Set the style of the outline. Will also affect the shape of the point
+      OutlineStyle = "Square" -- alternatively "Round" or "Bottom"
+    }
+  },
+  ...
+```
 
 ## Controlling the Point Size
 
