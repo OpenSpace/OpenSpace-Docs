@@ -1,9 +1,9 @@
 # Point Data
-A commonly used type of dataset is those containing a set of 3D positions. These can be used to spatially represent a vast variety of object types, where each object is represented by a point in space.
-
-In OpenSpace, such datasets are referred to as *point clouds* and include a set of features like: coloring, adjusting the point size, fading in and out based on the camera distance, and attaching text labels to the positions. Coloring includes color mapping based on data columns, and there is also support for handling missing values.
+A commonly used type of dataset is those containing a set of 3D positions. These can be used to spatially represent a vast variety of object types, where each object is represented by a point in space. In OpenSpace, such datasets are referred to as *point clouds* and include a set of features like coloring, adjusting the point size, fading in and out based on the camera distance, and attaching text labels to the positions. Coloring includes color mapping based on data columns, and there is also support for handling missing values.
 
 This page describes how to load a point dataset and the options for controlling the visual of the points. It is also possible to add text labels to the points. See the separate [Labels page](./labels.md) for more details on labels.
+
+Also see [RenderablePointCloud](/generated/asset-components/RenderablePointCloud.md) asset component documentation for more details, available settings and examples of how to load and render point datasets.
 
 :::{figure} sdss.png
 :align: center
@@ -26,8 +26,6 @@ local Node = {
     Path = "/Example/Point Clouds",
   }
 }
-
--- asset.onInitialize and asset.onDeinitialize... See page about Assets for details
 ...
 ```
 
@@ -53,7 +51,7 @@ Per default, the X, Y and Z positions of the points are interpreted in meters, b
   ...
 ```
 
-Other options are for example `"Mpc"` for Megaparsec, or `Km` for kilometers. See `RenderablePointCloud` documentation for a list of supported units.
+Other options are for example `"Mpc"` for Megaparsec, or `Km` for kilometers. See [RenderablePointCloud](/generated/asset-components/RenderablePointCloud.md) documentation for a list of supported units.
 
 ### Data Mapping
 
@@ -390,8 +388,9 @@ distances should match that unit.
 
 ## Specializations of RenderablePointCloud
 
-There are also other specializations of the `RenderablePointCloud` type, that adds one or more specialized feature for the points. However, `RenderablePointCloud` type renderable should be enough for most use cases.
+There are also other specializations of the [RenderablePointCloud](/generated/asset-components/RenderablePointCloud.md) type, that add one or more specialized features for the points. The [RenderablePointCloud](/generated/asset-components/RenderablePointCloud.md) type renderable should however be sufficient for most use cases.
 
 | Renderable type | Description |
 | :--- | :--- |
-| RenderablePolygonCloud | A point cloud where each point is represented by a dynamically created uniform polygon (such as a triangle, hexagon, octagon, etc.). The number of sides of the polygon is configured in the asset. |
+| [RenderablePolygonCloud](/generated/asset-components/RenderablePolygonCloud.md) | A point cloud where each point is represented by a dynamically created uniform polygon (such as a triangle, hexagon, octagon, etc.). The number of sides of the polygon is configured in the asset. |
+| [RenderableInterpolatedPoints](/generated/asset-components/RenderablePolygonCloud.md) | A point cloud that supports interpolation between a number of sets of positions. |
