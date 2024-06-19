@@ -1,4 +1,4 @@
-# Point Data
+# Rendering Point Data
 A commonly used type of dataset is those containing a set of 3D positions. These can be used to spatially represent a vast variety of object types, where each object is represented by a point in space. In OpenSpace, such datasets are referred to as *point clouds* and include a set of features like coloring, adjusting the point size, fading in and out based on the camera distance, and attaching text labels to the positions. Coloring includes color mapping based on data columns, and there is also support for handling missing values.
 
 This page describes how to load a point dataset and the options for controlling the visual of the points. It is also possible to add text labels to the points. See the separate [Labels page](./labels.md) for more details on labels.
@@ -291,7 +291,7 @@ It is also possible to set the color of the outline from the color map. In this 
 
 :::{figure} outline_cmap_styles.png
 :width: 80em
-Outlines on a textured point cloud in three different styles: Round (left), Square (center), Bottom (right). The color is set from a color map.
+Outlines on a textured point cloud in three different styles: Round (left), Square (center), Bottom (right). The color of the outline is set from a color map.
 :::
 
 ```lua
@@ -390,7 +390,7 @@ Similarly to the color mapping, the size mapping is added by specifying a list o
     SizeSettings = {
       -- The options for the columns that the points can be scaled by. The first
       -- alternative is chosen per default
-      SizeMapping = { "one parameter", "another parameter" },
+      SizeMapping = { "one parameter", "another parameter" }
     }
   },
   ...
@@ -438,8 +438,34 @@ The fading distances are specified in the same unit that is used to render the p
 distances should match that unit.
 :::
 
-<!-- ## Facing the Camera
-@TODO Talk about the render option here, or move this to a special page for spherical/non-planer displays? -->
+## Orientation
+
+Per default, the planes that make up the points will be oriented to face the camera's view direction in a way that is suited for planar displays. However, for non-planar displays, like domes or planetariums, this is not always appropriate. In this case, it is usually more suitable to orient the points to face the position of the audience. To accommodate for this, the renderable includes a few different options for the orientation of the points:
+
+| Orientation mode | Description |
+| :--- | :--- |
+| `Camera View Direction` | Orient planes to face the view direction of the camera. A billboarded mode that is suitable for *planar* displays. |
+| `Camera Position Normal` | Orient planes to face the position of the camera. A billboarded mode that is suitable for *spherical* displays. |
+| `Fixed Rotation` | Apply no specific camera-based orientation to the planes. The planes will have a fixed orientation in space. It is also possible to set the orientation from the dataset. See [this page](/content/point-data/advanced.md#orientation-from-data) for more details on that. |
+
+The schematic image below illustrates the resulting orientation for the first two modes. The left image shows planes orientated using the `Camera View Direction` option, and the right shows planes oriented to face the camera position using the `Camera Position Normal` option. Note how the latter lays out the points in a spherical way around the camera, which works better for spherical displays.
+
+:::{figure} orientation_billboard.svg
+:width: 600px
+:::
+
+And this is how the orientation is set from an asset file:
+
+```lua
+  ...
+  Renderable = {
+    ...
+    -- Set the orientation render option to face the camera position instead of the
+    -- view direction, which is default
+    OrientationRenderOption = "Camera Position Normal"
+  },
+  ...
+```
 
 ## Specializations of RenderablePointCloud
 
