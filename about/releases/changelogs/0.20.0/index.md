@@ -54,12 +54,13 @@ Download version 0.20.0 for Windows and Mac on the OpenSpace website [installati
 Below is a list of breaking changes in this release.
 
 - A New Renderable for Point Clouds (`RenderableBillboardsCloud` &rarr; `RenderablePointCloud`) [Details](./conversion.md#a-new-renderable-for-point-clouds)
-- `RenderableSphere` &rarr; `RenderableSphereImageOnline` & `RenderableSphereImageLocal` (@TODO: Provide details)
+- `RenderableSphere` &rarr; `RenderableSphereImageOnline` & `RenderableSphereImageLocal`
 - Property identifier changes
   - RenderableAtmosphere: `EclipseHardShadowsInfo` &rarr; `EclipseHardShadows`
   - RenderableEclipseCone: `AmountOfPoints` &rarr; `NumberOfPoints`
   - RenderableShadowCylinder: `AmountOfPoints` &rarr; `NumberOfPoints`
   - RenderableOrbitalKepler: `Appearance.OutlineWeight` &rarr; `Appearance.OutlineWidth`
+  - RernderableTrail: Line fade renamed from `Fade` &rarr; `LineFade`
   - All ScreenSpaceRenderables: `Gamma` &rarr; `GammaOffset`
 - The functions `openspace.navigation.addLocalRoll`, `openspace.navigation.addGlobalRoll`, and `openspace.navigation.addTruckMovement`in the [Scripting API](/generated/scripting-api/index.md) now has one input parameter value instead of two. Previously, one of the values was not being used but had to be provided. For details on the functions, see the corresponding page in the [Reference](/generated/scripting-api/openspace.navigation.md).
 - The TileLayer classes were renamed to TileProvider. This causes a breaking change in all assets that try to load a layer
@@ -73,7 +74,6 @@ Below is a list of breaking changes in this release.
     - `SizeReferenceTileLayer` &rarr; `SizeReferenceTileProvider`
     - `ByLevelTileLayer` &rarr; `TileProviderByLevel`
     - `ByIndexTileLayer` &rarr; `TileProviderByIndex`
-- Changed name of line fade in RenderableTrail from Fade to LineFade
 - Added the ability to set individual commandline options at the expense of a generic Lua script
   - Note breaking change: Previously `--config` specified one or more Lua scripts that were executed to update the configuration state, now the `--config` sets the path to the window configuration instead
   - For cases that are not covered by the new commandline options, it is possible to create a `openspace.cfg.override` the content of which overwrites all settings set in the `openspace.cfg` file
