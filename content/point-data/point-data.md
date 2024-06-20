@@ -228,7 +228,9 @@ A sprite texture (i.e. an image) can be used to decide the shape of the points. 
     Type = "RenderablePointCloud",
     File = asset.resource("path/to/dataset.csv"),
     -- Add a texture to the points (a variety of image formats are supported, not only .png)
-    Texture = asset.resource("path/to/texture.png")
+    Texture = {
+      File = asset.resource("path/to/texture.png")
+    }
   },
   ...
 ```
@@ -255,6 +257,9 @@ Textures also work with color maps. In that case, the color of the texture is mu
 
 The list of available path tokens and their corresponding locations are found in the openspace.cfg file.
 :::
+
+### Other Texture Settings
+There are some additional settings that might be set related to the texture, like whether image compression should be allowed or if the alpha channel of images should be used (both these settings are enabled per default).  For more details, see the documentation of the table parameters for the `Texture` table of `RenderablePointCloud` on the [reference page about that renderable](/generated/asset-components/RenderablePointCloud.md).
 
 ## Outlines
 
