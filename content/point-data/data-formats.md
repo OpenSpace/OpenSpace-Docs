@@ -17,6 +17,15 @@ x,y,z,aVariable,anotherVariable
 ...
 ```
 
+It is also possible to add comments to the top of the CSV file, like so:
+```python
+# Some kind of descriptive comment or maybe a license.
+# That may be multiple lines
+x,y,z,aVariable,anotherVariable
+70.8,-18.7,-13.3,1,242.5
+...
+```
+
 ## SPECK (.speck)
 The SPECK file format is an OpenSpace-specific format, initially created to represent objects in the [Digital Universe Atlas](https://www.amnh.org/research/hayden-planetarium/digital-universe). It is a plain text format that is easily editable by humans and is parsed in a line-by-line format.
 
