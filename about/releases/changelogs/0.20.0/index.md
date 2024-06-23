@@ -38,7 +38,7 @@ Download version 0.20.0 for Windows and Mac on the OpenSpace website [installati
 - **HttpSynchronization**: Faster resumption of partial downloads.
 - **UrlSynchronization**: Option to rate limit downloads, e.g., downloading new satellite trajectories once per day.
 - **File Drag-and-Drop**: Video files can be added as ScreenSpaceRenderables via drag-and-drop.
-- ** Session Recording**: Enhanced capabilities for recording and playing back sessions with new commands and options.
+- **Session Recording**: Enhanced capabilities for recording and playing back sessions with new commands and options.
 - **Options Overhaul**: More specific command line options and the ability to override the `openspace.cfg` file.
 
 ## Content and Assets
