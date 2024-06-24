@@ -18,7 +18,7 @@ x,y,z,aVariable,anotherVariable
 ```
 
 It is also possible to add comments to the top of the CSV file, like so:
-```python
+```
 # Some kind of descriptive comment or maybe a license.
 # That may be multiple lines
 x,y,z,aVariable,anotherVariable

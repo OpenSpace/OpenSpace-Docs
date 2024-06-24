@@ -19,7 +19,7 @@ Note that while the path to a single texture can be edited during runtime, this 
 ### Texture data - SPECK
 In a [SPECK](./data-formats.md#speck-speck) file, all the information can be included in one single file - the SPECK file itself. The texture mapping is done by adding lines starting with `texture`, followed by the texture index and texture name. In addition, we need to specify which of the `datavar` variables corresponds to the texture index for each data point. This is done by adding a line starting with `texturevar`, followed by the index of the `datavar`. See example below.
 
-```{code-block} python
+```{code-block}
 ---
 emphasize-lines: 4, 5-8
 ---
@@ -65,7 +65,7 @@ The `openspace.absPath` call is needed if you want to use path tokens (like `${U
 ### Texture data - CSV
 When using a CSV file, the texture mapping is done in a separate [texture map (.tmap)](/content/point-data/data-formats.md#texture-map-tmap) file. Below is an example of a CSV data file and a texture map file. The final column in the CSV file contains the index of the data file, which should match the ones in the texture map.
 
-```python
+```
 x,y,z,a,b,texture
 13428000,26239000,45870000,-3.226548224,33.95773276,1
 14727000,45282000,10832000,45.05941924,-106.0395917,0
@@ -147,7 +147,7 @@ The orientation per point is given as two vectors that decide how the plane is o
 :::
 
 Below is an example of a short SPECK file with orientation data:
-```{code-block} python
+```{code-block}
 ---
 emphasize-lines: 4
 ---
