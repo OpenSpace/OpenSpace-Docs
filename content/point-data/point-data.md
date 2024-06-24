@@ -262,7 +262,6 @@ The list of available path tokens and their corresponding locations are found in
 There are some additional settings that might be set related to the texture, like whether image compression should be allowed or if the alpha channel of images should be used (both these settings are enabled per default).  For more details, see the documentation of the table parameters for the `Texture` table of `RenderablePointCloud` on the [reference page about that renderable](/generated/asset-components/RenderablePointCloud.md).
 
 ## Outlines
-
 :::{figure} outline_basic.png
 :align: right
 :width: 20em
@@ -289,7 +288,6 @@ To add an outline to your point cloud, set the `Coloring.EnableOutline` setting 
 ```
 
 ### Outline Style and Color From Color Map
-
 By default, setting the outline will enforce a round shape for the rendered points, but this is not always desired. For example, when a texture is used, a square outline might be more suitable. This is controlled by the `OutlineStyle` setting.
 
 It is also possible to set the color of the outline from the color map. In this case, the color map will not be applied to the texture, but only to the outline. See an example in the figure below.
@@ -444,7 +442,6 @@ distances should match that unit.
 :::
 
 ## Orientation
-
 Per default, the planes that make up the points will be oriented to face the camera's view direction in a way that is suited for planar displays. However, for non-planar displays, like domes or planetariums, this is not always appropriate. In this case, it is usually more suitable to orient the points to face the position of the audience. To accommodate for this, the renderable includes a few different options for the orientation of the points:
 
 | Orientation mode | Description |
