@@ -2,7 +2,7 @@
 This page contains specific information necessary to compile OpenSpace on Windows. This page has the [general instructions](index) as a required reading.
 
 ## Development Tools
-[Visual Studio 2022](http://www.visualstudio.com) is the standard Interactive Development Environment (IDE)d for Windows. The "community" version is a free download for open-source projects. When you install it, be sure to select "Custom" configuration and select the C++ compiler -- it might not be included by default. You can also select a git client here ("Git GUI"). Installation could take a while (like an hour or so, depending on the machine). We are following the development of the C++ language quite closely, so there are more and more features that are no longer supported in Visual Studio 2019 or earlier versions.
+[Visual Studio 2022](http://www.visualstudio.com) is the standard Interactive Development Environment (IDE) for Windows. The "community" version is a free download for open-source projects. When you install it, be sure to select "Custom" configuration and select the C++ compiler -- it might not be included by default. You can also select a git client here ("Git GUI"). Installation could take a while (like an hour or so, depending on the machine). We are following the development of the C++ language quite closely, so there are more and more features that are no longer supported in Visual Studio 2019 or earlier versions.
 
 ## Dependencies
 ### Qt
