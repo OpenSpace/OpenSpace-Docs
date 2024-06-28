@@ -21,7 +21,7 @@ Save the profile with a new name
 :::
 
 :::{note}
-Note that you can also add an asset temporarily, or in a one-off manner, by using the [console](/using-openspace/scripting/console/index) as mentioned [here](/content/ephemeris/kepler#add-the-asset-to-openspace), or by dragging and dropping the **.asset** file into the OpenSpace window after OpenSpace has started up.
+Note that you can also add an asset temporarily, or in a one-off manner, by using the [console](/using-openspace/scripting/console/index) as mentioned in the last section of [this page](/content/ephemeris/kepler), or by dragging and dropping the **.asset** file into the OpenSpace window after OpenSpace has started up.
 :::
 
 ## Change the initial Camera Position
