@@ -4,6 +4,7 @@ Information about configuring OpenSpace. For dome/theater technicians or users w
 ## Table of Contents
 :::{toctree}
 :maxdepth: 1
+:caption: Instructions for installing on COSM/E&S Digistar system
 
 cosm
 :::
