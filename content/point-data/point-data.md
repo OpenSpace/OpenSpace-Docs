@@ -476,4 +476,4 @@ There are also other specializations of the [RenderablePointCloud](/generated/as
 | Renderable type | Description |
 | :--- | :--- |
 | [RenderablePolygonCloud](/generated/asset-components/RenderablePolygonCloud.md) | A point cloud where each point is represented by a dynamically created uniform polygon (such as a triangle, hexagon, octagon, etc.). The number of sides of the polygon is configured in the asset. |
-| [RenderableInterpolatedPoints](/generated/asset-components/RenderablePolygonCloud.md) | A point cloud that supports interpolation between a number of sets of positions. |
+| [RenderableInterpolatedPoints](/generated/asset-components/RenderableInterpolatedPoints.md) | A point cloud that supports interpolation between a number of sets of positions. |
