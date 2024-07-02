@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.82 157.52">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-5, .cls-6, .cls-7, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #66b2ff;
+        stroke-width: 4px;
+      }
+
+      .cls-8 {
+        fill: #eee;
+      }
+
+      .cls-8, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-9, .cls-10 {
+        fill: #0050ef;
+        stroke: #001dbc;
+      }
+
+      .cls-2, .cls-11 {
+        fill: #647687;
+        stroke: #314354;
+      }
+
+      .cls-6 {
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+      }
+
+      .cls-6, .cls-7, .cls-4 {
+        stroke: #36393d;
+      }
+
+      .cls-3 {
+        fill: #66b2ff;
+      }
+
+      .cls-7 {
+        stroke-miterlimit: 10;
+        stroke-width: 1px;
+      }
+
+      .cls-10 {
+        stroke-linejoin: round;
+        stroke-width: .1px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-2" d="M106.44,107.43l-9.02,13.52-9.02-13.52h18.03Z" pointer-events="all"/>
+      <rect class="cls-11" x="83.9" y="116.45" width="27.05" height="40.57" rx="4.06" ry="4.06" pointer-events="all"/>
+      <g>
+        <path class="cls-8" d="M83.9,1.49h27.05v27.05h-27.05V1.49Z" pointer-events="all"/>
+        <path class="cls-5" d="M86.15,3.75v22.54h22.54V3.75h-22.54" pointer-events="all"/>
+        <path class="cls-4" d="M83.9,1.49h27.05v27.05h-27.05V1.49Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-8" d="M.5,28.54h27.05v27.05H.5v-27.05Z" pointer-events="all"/>
+        <path class="cls-5" d="M2.75,30.8v22.54h22.54v-22.54H2.75" pointer-events="all"/>
+        <path class="cls-4" d="M.5,28.54h27.05v27.05H.5v-27.05Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-8" d="M162.79,15.02h27.05v27.05h-27.05V15.02Z" pointer-events="all"/>
+        <path class="cls-5" d="M165.05,17.27v22.54h22.54v-22.54h-22.54" pointer-events="all"/>
+        <path class="cls-4" d="M162.79,15.02h27.05v27.05h-27.05V15.02Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M13.8,42.07l.19,38.56" pointer-events="stroke"/>
+        <path class="cls-3" d="M14.02,85.13l-2.28-4.5,4.51-.02-2.23,4.52Z" pointer-events="all"/>
+      </g>
+      <path class="cls-10" d="M99.68,107.43h-4.51v-21.19h-4.51l6.76-8.11,6.76,8.11h-4.51v21.19Z" pointer-events="all"/>
+      <g>
+        <path class="cls-1" d="M97.2,15.02l.19,38.56" pointer-events="stroke"/>
+        <path class="cls-3" d="M97.42,58.08l-2.28-4.5,4.51-.02-2.23,4.52Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M176.32,28.54l.19,38.56" pointer-events="stroke"/>
+        <path class="cls-3" d="M176.53,71.61l-2.28-4.5,4.51-.02-2.23,4.52Z" pointer-events="all"/>
+      </g>
+    </g>
+    <g>
+      <path class="cls-2" d="M379.69,106.11l-9.03,13.54-9.03-13.54h18.05Z" pointer-events="all"/>
+      <rect class="cls-11" x="357.12" y="115.14" width="27.08" height="40.62" rx="4.06" ry="4.06" pointer-events="all"/>
+      <g>
+        <path class="cls-8" d="M357.12.5h27.08v27.08h-27.08V.5Z" pointer-events="all"/>
+        <path class="cls-5" d="M359.38,2.76v22.57h22.57V2.76h-22.57" pointer-events="all"/>
+        <path class="cls-4" d="M357.12.5h27.08v27.08h-27.08V.5Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-8" d="M268.3,37.8l22.18-15.53,15.53,22.18-22.18,15.53-15.53-22.18Z" pointer-events="all"/>
+        <path class="cls-5" d="M271.45,38.35l12.94,18.49h0l18.49-12.94-12.94-18.49-18.49,12.94" pointer-events="all"/>
+        <path class="cls-6" d="M268.3,37.8l22.18-15.53,15.53,22.18-22.18,15.53-15.53-22.18Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-8" d="M444.69,9.08l23.45,13.54-13.54,23.45-23.45-13.54,13.54-23.45Z" pointer-events="all"/>
+        <path class="cls-5" d="M445.51,12.17l-11.28,19.54h0l19.54,11.28,11.28-19.54-19.54-11.28" pointer-events="all"/>
+        <path class="cls-7" d="M444.69,9.08l23.45,13.54-13.54,23.45-23.45-13.54,13.54-23.45Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M286.94,41.12l21.81,32.92" pointer-events="stroke"/>
+        <path class="cls-3" d="M311.24,77.8l-4.37-2.51,3.76-2.5.61,5.01Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M370.43,14.04l.19,38.6" pointer-events="stroke"/>
+        <path class="cls-3" d="M370.65,57.16l-2.28-4.5,4.51-.02-2.23,4.53Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M449.64,27.58l-20.99,37.19" pointer-events="stroke"/>
+        <path class="cls-3" d="M426.43,68.7l.25-5.04,3.93,2.22-4.18,2.82Z" pointer-events="all"/>
+      </g>
+      <circle class="cls-9" cx="370.66" cy="135.45" r="6.77" pointer-events="all"/>
+      <path class="cls-2" d="M379.69,106.11l-9.03,13.54-9.03-13.54h18.05Z" pointer-events="all"/>
+      <rect class="cls-11" x="357.12" y="115.14" width="27.08" height="40.62" rx="4.06" ry="4.06" pointer-events="all"/>
+      <g>
+        <path class="cls-8" d="M357.12.5h27.08v27.08h-27.08V.5Z" pointer-events="all"/>
+        <path class="cls-5" d="M359.38,2.76v22.57h22.57V2.76h-22.57" pointer-events="all"/>
+        <path class="cls-4" d="M357.12.5h27.08v27.08h-27.08V.5Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-8" d="M268.3,37.8l22.18-15.53,15.53,22.18-22.18,15.53-15.53-22.18Z" pointer-events="all"/>
+        <path class="cls-5" d="M271.45,38.35l12.94,18.49h0l18.49-12.94-12.94-18.49-18.49,12.94" pointer-events="all"/>
+        <path class="cls-6" d="M268.3,37.8l22.18-15.53,15.53,22.18-22.18,15.53-15.53-22.18Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-8" d="M444.69,9.08l23.45,13.54-13.54,23.45-23.45-13.54,13.54-23.45Z" pointer-events="all"/>
+        <path class="cls-5" d="M445.51,12.17l-11.28,19.54h0l19.54,11.28,11.28-19.54-19.54-11.28" pointer-events="all"/>
+        <path class="cls-7" d="M444.69,9.08l23.45,13.54-13.54,23.45-23.45-13.54,13.54-23.45Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M286.94,41.12l21.81,32.92" pointer-events="stroke"/>
+        <path class="cls-3" d="M311.24,77.8l-4.37-2.51,3.76-2.5.61,5.01Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M370.43,14.04l.19,38.6" pointer-events="stroke"/>
+        <path class="cls-3" d="M370.65,57.16l-2.28-4.5,4.51-.02-2.23,4.53Z" pointer-events="all"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M449.64,27.58l-20.99,37.19" pointer-events="stroke"/>
+        <path class="cls-3" d="M426.43,68.7l.25-5.04,3.93,2.22-4.18,2.82Z" pointer-events="all"/>
+      </g>
+      <circle class="cls-9" cx="370.66" cy="135.45" r="6.77" pointer-events="all"/>
+    </g>
+  </g>
+</svg>

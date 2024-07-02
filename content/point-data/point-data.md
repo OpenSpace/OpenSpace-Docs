@@ -1,9 +1,9 @@
-# Point Data
-A commonly used type of dataset is those containing a set of 3D positions. These can be used to spatially represent a vast variety of object types, where each object is represented by a point in space.
-
-In OpenSpace, such datasets are referred to as *point clouds* and include a set of features like: coloring, adjusting the point size, fading in and out based on the camera distance, and attaching text labels to the positions. Coloring includes color mapping based on data columns, and there is also support for handling missing values.
+# Rendering Point Data
+A commonly used type of dataset is those containing a set of 3D positions. These can be used to spatially represent a vast variety of object types, where each object is represented by a point in space. In OpenSpace, such datasets are referred to as *point clouds* and include a set of features like coloring, adjusting the point size, fading in and out based on the camera distance, and attaching text labels to the positions. Coloring includes color mapping based on data columns, and there is also support for handling missing values.
 
 This page describes how to load a point dataset and the options for controlling the visual of the points. It is also possible to add text labels to the points. See the separate [Labels page](./labels.md) for more details on labels.
+
+Also see [RenderablePointCloud](/generated/asset-components/RenderablePointCloud.md) asset component documentation for more details, available settings and examples of how to load and render point datasets.
 
 :::{figure} sdss.png
 :align: center
@@ -26,8 +26,6 @@ local Node = {
     Path = "/Example/Point Clouds",
   }
 }
-
--- asset.onInitialize and asset.onDeinitialize... See page about Assets for details
 ...
 ```
 
@@ -53,7 +51,7 @@ Per default, the X, Y and Z positions of the points are interpreted in meters, b
   ...
 ```
 
-Other options are for example `"Mpc"` for Megaparsec, or `Km` for kilometers. See `RenderablePointCloud` documentation for a list of supported units.
+Other options are for example `"Mpc"` for Megaparsec, or `Km` for kilometers. See [RenderablePointCloud](/generated/asset-components/RenderablePointCloud.md) documentation for a list of supported units.
 
 ### Data Mapping
 
@@ -173,6 +171,7 @@ By default, all the variables in the dataset are loaded as possible options for 
 
 :::{figure} colormap_ui_annotated.png
 :align: center
+:width: 50em
 *The chosen set of parameters will be available in the user interface. Here we see the chosen parameter (A), which can be changed through a drop-down menu, and the currently selected value range (B). The value range (B) will automatically update when a parameter (A) is chosen, but it is also possible to set it explicitly. There is also a button for setting the range to the min and max value in the dataset (C).*
 :::
 
@@ -211,7 +210,7 @@ This means that the point will be rendered without any blending and the point th
 
 :::{figure} blending.png
 :align: center
-:width: 80%
+:width: 50em
 *Example of points with (right) and without (left) additive blending enabled. Note how the points to the right appear brighter in the overlapping areas, while the left set of points preserve their actual color. In the overlaps, the point that is closer to the camera will be the visible one.*
 :::
 
@@ -229,7 +228,9 @@ A sprite texture (i.e. an image) can be used to decide the shape of the points. 
     Type = "RenderablePointCloud",
     File = asset.resource("path/to/dataset.csv"),
     -- Add a texture to the points (a variety of image formats are supported, not only .png)
-    Texture = asset.resource("path/to/texture.png")
+    Texture = {
+      File = asset.resource("path/to/texture.png")
+    }
   },
   ...
 ```
@@ -238,7 +239,7 @@ The points will look the best with textures that have a transparent background, 
 
 :::{figure} texture_star.png
 :align: center
-:width: 90%
+:width: 50em
 :::
 
 ### Textures and Colors
@@ -246,6 +247,8 @@ Textures also work with color maps. In that case, the color of the texture is mu
 
 :::{figure} textures.png
 :align: center
+:width: 50em
+
 :::
 
 :::{admonition} A note about file paths
@@ -254,6 +257,61 @@ Textures also work with color maps. In that case, the color of the texture is mu
 
 The list of available path tokens and their corresponding locations are found in the openspace.cfg file.
 :::
+
+### Other Texture Settings
+There are some additional settings that might be set related to the texture, like whether image compression should be allowed or if the alpha channel of images should be used (both these settings are enabled per default).  For more details, see the documentation of the table parameters for the `Texture` table of `RenderablePointCloud` on the [reference page about that renderable](/generated/asset-components/RenderablePointCloud.md).
+
+## Outlines
+:::{figure} outline_basic.png
+:align: right
+:width: 20em
+Blue points with white outline.
+:::
+
+When rendering points without additive blending, it might be difficult to distinguish the edges of the individual points. In this case, it might be useful to render a distinctly colored outline around the point.
+
+To add an outline to your point cloud, set the `Coloring.EnableOutline` setting to `true`, and possibly add an outline color and/or width setting. See example:
+
+```lua
+ ...
+  Renderable = {
+    ...
+    Coloring = {
+      FixedColor = { 0.5, 0.8, 1.0 }, -- light blue
+      -- Outline settings
+      EnableOutline = true,
+      OutlineColor = { 1.0, 1.0, 1.0 }, -- white
+      OutlineWidth = 0.1
+    }
+  },
+  ...
+```
+
+### Outline Style and Color From Color Map
+By default, setting the outline will enforce a round shape for the rendered points, but this is not always desired. For example, when a texture is used, a square outline might be more suitable. This is controlled by the `OutlineStyle` setting.
+
+It is also possible to set the color of the outline from the color map. In this case, the color map will not be applied to the texture, but only to the outline. See an example in the figure below.
+
+:::{figure} outline_cmap_styles.png
+:width: 80em
+Outlines on a textured point cloud in three different styles: Round (left), Square (center), Bottom (right). The color of the outline is set from a color map.
+:::
+
+```lua
+ ...
+  Renderable = {
+    ...
+    Coloring = {
+      ...
+      EnableOutline = true,
+      -- Set outline color to the one decided by the color map
+      ApplyColorMapToOutline = true,
+      -- Set the style of the outline. Will also affect the shape of the point
+      OutlineStyle = "Square" -- alternatively "Round" or "Bottom"
+    }
+  },
+  ...
+```
 
 ## Controlling the Point Size
 
@@ -289,11 +347,11 @@ In addition to the world-size scale, it is also possible to limit the maximum si
 
 :::{figure} pointsize_close.png
 :align: center
-:width: 90%
+:width: 50em
 :::
 :::{figure} pointsize_far.png
 :align: center
-:width: 90%
+:width: 50em
 *Example of the point size scaling in action. The green points (left) use regular sizing and the blue points (right) have a limited max size. Note how the green points (left) appear larger up close and smaller at a large distance, while the blue points (right) are scaled to have the same size at both distances.*
 :::
 
@@ -335,7 +393,7 @@ Similarly to the color mapping, the size mapping is added by specifying a list o
     SizeSettings = {
       -- The options for the columns that the points can be scaled by. The first
       -- alternative is chosen per default
-      SizeMapping = { "one parameter", "another parameter" },
+      SizeMapping = { "one parameter", "another parameter" }
     }
   },
   ...
@@ -383,13 +441,39 @@ The fading distances are specified in the same unit that is used to render the p
 distances should match that unit.
 :::
 
-<!-- ## Facing the Camera
-@TODO Talk about the render option here, or move this to a special page for spherical/non-planer displays? -->
+## Orientation
+Per default, the planes that make up the points will be oriented to face the camera's view direction in a way that is suited for planar displays. However, for non-planar displays, like domes or planetariums, this is not always appropriate. In this case, it is usually more suitable to orient the points to face the position of the audience. To accommodate for this, the renderable includes a few different options for the orientation of the points:
+
+| Orientation mode | Description |
+| :--- | :--- |
+| `Camera View Direction` | Orient planes to face the view direction of the camera. A billboarded mode that is suitable for *planar* displays. |
+| `Camera Position Normal` | Orient planes to face the position of the camera. A billboarded mode that is suitable for *spherical* displays. |
+| `Fixed Rotation` | Apply no specific camera-based orientation to the planes. The planes will have a fixed orientation in space. It is also possible to set the orientation from the dataset. See [this page](/content/point-data/advanced.md#orientation-from-data) for more details on that. |
+
+The schematic image below illustrates the resulting orientation for the first two modes. The left image shows planes orientated using the `Camera View Direction` option, and the right shows planes oriented to face the camera position using the `Camera Position Normal` option. Note how the latter lays out the points in a spherical way around the camera, which works better for spherical displays.
+
+:::{figure} orientation_billboard.svg
+:width: 600px
+:::
+
+And this is how the orientation is set from an asset file:
+
+```lua
+  ...
+  Renderable = {
+    ...
+    -- Set the orientation render option to face the camera position instead of the
+    -- view direction, which is default
+    OrientationRenderOption = "Camera Position Normal"
+  },
+  ...
+```
 
 ## Specializations of RenderablePointCloud
 
-There are also other specializations of the `RenderablePointCloud` type, that adds one or more specialized feature for the points. However, `RenderablePointCloud` type renderable should be enough for most use cases.
+There are also other specializations of the [RenderablePointCloud](/generated/asset-components/RenderablePointCloud.md) type, that add one or more specialized features for the points. The [RenderablePointCloud](/generated/asset-components/RenderablePointCloud.md) type renderable should however be sufficient for most use cases.
 
 | Renderable type | Description |
 | :--- | :--- |
-| RenderablePolygonCloud | A point cloud where each point is represented by a dynamically created uniform polygon (such as a triangle, hexagon, octagon, etc.). The number of sides of the polygon is configured in the asset. |
+| [RenderablePolygonCloud](/generated/asset-components/RenderablePolygonCloud.md) | A point cloud where each point is represented by a dynamically created uniform polygon (such as a triangle, hexagon, octagon, etc.). The number of sides of the polygon is configured in the asset. |
+| [RenderableInterpolatedPoints](/generated/asset-components/RenderableInterpolatedPoints.md) | A point cloud that supports interpolation between a number of sets of positions. |
