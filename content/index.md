@@ -4,6 +4,7 @@
 :maxdepth: 1
 :caption: Content
 
+milky-way/index
 profiles
 asteroids
 exoplanets/index
