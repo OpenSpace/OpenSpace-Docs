@@ -6,10 +6,10 @@ This document contains details for getting OpenSpace to run in a COSM / Evans & 
 
 ### Typical System Overview
 A Digistar system uses a host computer used to control the planetarium display. The host (DSHOST) is networked to multiple Digi Star Graphics Processor (DSGP) computers which render the content and send output to projectors.
-The output of each DSGP runs through a proprietary sync card that uses the upper-left pixel data as a frame number to synchronize all channels. This sync card does not appear to interfere with the identification of the projector in Windows. The hostname pattern is `DSGP#`, and IP address pattern is `192.168.2.1#`
+The hostname pattern is `DSGP#`, and IP address pattern is `192.168.2.1#`
 
 ### Configure All Digistar Computers Prior to OpenSpace Installation
-The following installation and configuration steps will need to be done on the DSHOST and all DSGP computers in the system. The work on each DSGP computer can be done by starting a Windows Remote Desktop Session from the DSHOST to that computer, or by accessing the remote drives in the file manager (e.g. typing `\\DSGP3\C$` in the file manager URL bar will provide access to the C:\\ drive on DSGP3). If Windows requires credentials, use those provided in the [COSM internal wiki page](https://internal.openspaceproject.com/en/misc/ens-site-configuration).
+The following installation and configuration steps will need to be done on the DSHOST and all DSGP computers in the system. The work on each DSGP computer can be done by starting a Windows Remote Desktop Session from the DSHOST to that computer, or by accessing the remote drives in the file manager (e.g. typing `\\DSGP3\C$` in the file manager URL bar will provide access to the C:\\ drive on DSGP3).
 
 #### Install Additional Software
 Before OpenSpace can be installed, the DSHOST and DSGPs need to have a few software utilities installed. These are listed below, along with a description of what they do and why they are necessary:
