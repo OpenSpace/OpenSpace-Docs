@@ -1,6 +1,6 @@
 # Customizing Profiles
 [Profiles](/getting-started/profiles/index) help us to 
-1. set properties to initial values when we start up OpenSpace
+1. Set properties to initial values when we start up OpenSpace
 2. load the assets we desire to display
 3. set keybindings for various actions
 4. set initial camera location and orientation
