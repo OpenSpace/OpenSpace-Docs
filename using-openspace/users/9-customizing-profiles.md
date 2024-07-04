@@ -1,7 +1,7 @@
 # Customizing Profiles
 [Profiles](/getting-started/profiles/index) help us to 
 1. Set properties to initial values when we start up OpenSpace
-2. load the assets we desire to display
+2. Load the assets we desire to display
 3. set keybindings for various actions
 4. set initial camera location and orientation
 and more advanced uses like additional modules and additional scripts. Though we can [create profiles by hand](/content/profiles), the recommended way and the easier way would be to use the profile editor which is accessed via the "Edit" or "New" buttons under the 'Choose Profile' section of the Launcher window when starting up OpenSpace.
