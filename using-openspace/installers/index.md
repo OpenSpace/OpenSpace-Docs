@@ -6,4 +6,5 @@ Information about configuring OpenSpace. For dome/theater technicians or users w
 :caption: Set up
 
 dual-monitor
+cosm
 :::

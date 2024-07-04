@@ -1,0 +1,4 @@
+# The texture map is a mapping between an index and the name of an image file
+0 texture1.jpg
+1 texture2.png
+2 texture3.jpg

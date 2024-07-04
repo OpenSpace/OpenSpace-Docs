@@ -11,4 +11,5 @@ This section includes information pages that are relevant to the loading of poin
 point-data
 labels
 data-formats
+advanced
 :::
