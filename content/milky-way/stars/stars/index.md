@@ -1,19 +1,16 @@
+---
+authors:
+  - name: Brian Abbott
+    affiliation: American Museum of Natural History
+---
+
+
 # Stars
 
+{menuselection}`Milky Way --> Stars --> Stars`
 
-:::{table} Table with caption
-:widths: auto
-:align: left
-| title1           | title 2 |
-| ---------------- | ------- |
-| **Description:** | Stars in the local galactic neighborhood. |
-| **Census:**      | 112,746 stars |
-| **Version:**     | 8.10 |
-| **Reference:**   | Gaia DR3 (Gaia Collaboration); XHIP An Extended Hipparcos Compilation (Anderson & Francis) |
-| **Prepared by:** | Brian Abbott, Zack Reeves, Andrew Ayala, Jackie Faherty (AMNH) |
-| **License:**     | ??? - link to a page? |
-| **Location**     | {menuselection}`Milky Way --> Stars --> Stars` |
-:::
+
+In many ways, stars form the foundation of our astronomical knowledge and are incremental toward our understanding of the universe itself. We base much of what we know about the universe on the characteristics and evolution of stars, and they are an important rung on the so-called distance ladder that other distance-determination methods rely upon.
 
 
 :::{figure} stars_scorpius+constellations.png
@@ -24,8 +21,6 @@ A view of the night sky toward Scorpius and Sagittarius, shown with the constell
 :::
 
 ## What is a star?
-
-In many ways, stars form the foundation of our astronomical knowledge and are incremental toward our understanding of the universe itself. We base much of what we know about the universe on the characteristics and evolution of stars, and they are an important rung on the so-called distance ladder that other distance-determination methods rely upon.
 
 Stars are, in a literal sense, light factories. Their light is a product of the nuclear processes that naturally occur in stars and define the lifespan of a star. Stars are born, live a stable life, then transform into a post-stellar remnant. They condense from clouds of hydrogen, exist in equilibrium throughout their life as a *main sequence* star, and evolve into a post stellar object like a white dwarf, neutron star, or a black hole.
 
@@ -69,9 +64,21 @@ Exaggerating the brightness of the stars allows you to see even the dimmest amon
 
 
 
+## Dossier
+:::{list-table}
+:header-rows: 0
+:class: full-width
 
-
-:::{toctree}
-:maxdepth: 1
-:caption: Stars
+* - **Census:**
+  - 112,746 stars
+* - **Asset Version:**
+  - 4.0
+* - **Data Version:**
+  - 8.10 
+* - **Reference:**
+  - [Gaia DR3](https://doi.org/10.5270/esa-qa4lep3); [XHIP An Extended Hipparcos Compilation](https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971)
+* - **Prepared by:**
+  - Brian Abbott, Zack Reeves, Andrew Ayala, Jackie Faherty (AMNH)
+* - **License:**
+  - ??? - link to a page?
 :::

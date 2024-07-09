@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="550" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <use transform="matrix(1.7597 .53288 0 1.7597 187.48 -289.84)" stroke-width=".56828" xlink:href="#b"/>
+ <g id="b" transform="translate(10.032 -4.2502)">
+  <rect x="10.54" y="174.38" width="173.54" height="63.658" fill="#004ec4" stroke="#000" stroke-linecap="round"/>
+  <path id="a" transform="matrix(.55039 -.90238 .90238 .55039 -173.89 156.85)" d="m64.251 199.51-1.2128 3.1866-1.4047-3.1068-3.4054-0.16874 2.5206-2.296-0.89184-3.2909 2.9626 1.6877 2.8542-1.8651-0.68965 3.3391 2.6558 2.1382z" fill="#fff"/>
+  <use transform="translate(22.033 -12.199)" xlink:href="#a"/>
+  <use transform="translate(42.577 -12.532)" xlink:href="#a"/>
+  <use transform="translate(70.056 -8.6909)" xlink:href="#a"/>
+  <use transform="translate(111.87 -8.5802)" xlink:href="#a"/>
+  <use transform="translate(105.18 13.024)" xlink:href="#a"/>
+  <use transform="translate(75.733 15.79)" xlink:href="#a"/>
+ </g>
+ <g stroke-linecap="round">
+  <circle cx="158.6" cy="325.04" r="20" fill="#f1ed00" stroke="#f60"/>
+  <ellipse transform="rotate(-1.8776)" cx="152.08" cy="332.34" rx="117.14" ry="52.857" fill="none" stroke="#000" stroke-width="2"/>
+  <circle id="e" cx="96.744" cy="285.32" r="10" fill="#00aad4" stroke="#000" stroke-linecap="round"/>
+  <g fill="#f00">
+   <path d="m106.63 282.25 330.14-125.1" stroke="#000" stroke-width="2"/>
+   <path d="m386.49 141.33-149.31 226.2" stroke="#000" stroke-width="2"/>
+   <circle cx="354.75" cy="188.49" r="9" fill="#f00" stroke="#a00" stroke-linecap="round"/>
+  </g>
+  <circle cx="129.79" cy="209.45" r="4.2631" fill="#f00" stroke="#750000" stroke-width=".47368"/>
+ </g>
+ <use transform="translate(290.85 140.09)" xlink:href="#b"/>
+ <circle cx="402.09" cy="349.54" r="4.2631" fill="#f00" stroke="#750000" stroke-linecap="round" stroke-width=".47368"/>
+ <use transform="translate(141.42 80.307)" xlink:href="#e"/>
+ <path d="m364.21 175.08c7.4249-11.248 14.85-22.497 22.275-33.746" stroke="#b3b3b3" stroke-width="2"/>
+ <path d="m378.25 179.33c19.508-7.3921 39.015-14.784 58.522-22.176" stroke="#b3b3b3" stroke-width="2"/>
+</svg>
