@@ -12,7 +12,7 @@ Download version 0.20.1 for Windows and Mac on the OpenSpace website [installati
 - **Image Sequencing Performance**: Improved framerate during image sequencing.
 
 ## User Interface
-- **Scene Menu**:
+- **Scene Menu**
   - Possiblity to control the sorting of scene graph nodes in the Scene menu using a numerical value. This has been applied to the grids that show different distances.
   - Access Focus and Navigation controls in the popout menu per scene graph node.
   - Restructuring of the hierarchical menu groups. [See details below](#updated-hierarchy-in-scene-menu).
