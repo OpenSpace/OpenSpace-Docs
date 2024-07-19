@@ -22,7 +22,7 @@ Download version 0.20.1 for Windows and Mac on the OpenSpace website [installati
   - **Updated Datasets For**: Stars & labels, Constellations, Exoplanets, Globular Clusters, H2 Regions, Open Clusters, Planetary Nebulae, Pulsars, Quasars, Sload Digital Sky Survey, Supernova Remnants.
   - **New Datasets**: Star Distance Uncertainty, White/Brown Dwarfs.
   - Updated descriptions for some additional datasets.
-- **New Assets** (apart from Digital Universe):
+- **New Assets** (apart from Digital Universe)
   - Example asset to show the current in-game time in a screenspace object.
   - An advanced example asset for the point cloud rendering, changing the orientation of the points.
 - **Updates to Existing Assets/Profiles**
@@ -48,7 +48,7 @@ Download version 0.20.1 for Windows and Mac on the OpenSpace website [installati
 - Actions that no dot specify `IsLocal` will now be not local per default. Before, it was the opposite.
 - The old Lua function for creating debug coordinate axes (`openspace.debugging.addCartesianAxes`) has been replaced with the new function ([see above](#lua-scripting)) and no longer exists.
 - RenderEngine properties `ShowStatistics`, `StatisticsScale` and `ShowFrameInformation` have been moved to the Debugging Module.
-- **Digital Universe Update**:
+- **Digital Universe Update**
   - The star positions have been updated, so any custom content that is based on these positions (such as bookmarks) may require updating.
   - Constellations (Extragalactic) is removed.
   - The Dwarfs asset has been split up into White and Brown Dwarfs.
