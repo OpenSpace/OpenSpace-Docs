@@ -58,7 +58,7 @@ As part of updating the Digital Universe datasets, there has also been a signifi
   - The default top categories are now "Night Sky", "Solar System", "Milky Way", and "Universe". "Other" has been removed, and what was previously located under this group has been spread out to the other categories. Notice the addition of the "Night Sky" category to collect content that is specifically related to studying the night sky.
   - The Grids, Lines and Points from "Other" has been moved to "Solar System/Grids", "Milky Way/Grids", "Universe/Grids", and "Night Sky/Coordinate Systems".
   - The structure within the top categories has also been slightly changed to be more informative, correct (previously some objects that aren't galaxies were located under "Galaxies" in the menu, for example), and easier to explore. Note particularly that what was previously located in "Universe/Galaxies" is now split up into "Nearby Surveys" and "Deep Sky Surveys" under Universe, and that "Milky Way" now has several extra groups for collecting related objects that did not exist previously.
-  - Note that the top categories are no longer in order based on universal "scale", e.g. first Solar System, then Milky Way, then Universe. This is a known bug and is being worked on.
+  - Note that the top categories are no longer ordered based on universal "scale", e.g. first Solar System, then Milky Way, then Universe. This is a known bug and is being worked on.
 
 Below is a comparison of the hierarchy in the Scene menu before and after this update. The image shows what's under each of the top categories, one level into the menu tree.
 
