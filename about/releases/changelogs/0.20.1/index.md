@@ -3,7 +3,7 @@
   - Commit: [b368116](https://github.com/OpenSpace/OpenSpace/commit/c26f9db7d427c9d72f339f745cb2e5fb243ca6aa)
   - Full changelog: [link](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.1)
 
-Download version 0.20.1 on the OpenSpace website [installation page](https://openspaceproject.com/version-0201). Below are notes that highlight new content and bug fixes that will be relevant for OpenSpace users.
+Download version 0.20.1 on the OpenSpace website [installation page](https://openspaceproject.com/beta-version-0201). Below are notes that highlight new content and bug fixes that will be relevant for OpenSpace users.
 
 
 ## Features
