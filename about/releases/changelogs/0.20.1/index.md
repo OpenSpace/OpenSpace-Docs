@@ -18,7 +18,7 @@ Download version 0.20.1 for Windows and Mac on the OpenSpace website [installati
 
 ## Content
 - **2024 Digital Universe Data Update**
-  - **Updated Datasets For**: Stars & labels, Constellations, Exoplanets, Globular Clusters, H2 Regions, Open Clusters, Planetary Nebulae, Pulsars, Quasars, Sloan Digital Sky Survey, and Supernova Remnants.
+  - **Updated Datasets For**: Stars & Labels, Constellations, Exoplanets, Globular Clusters, H2 Regions, Open Clusters, Planetary Nebulae, Pulsars, Quasars, Sloan Digital Sky Survey, and Supernova Remnants.
   - **New Datasets**: Star Distance Uncertainty and White/Brown Dwarfs.
   - Updated descriptions for some additional datasets.
 - **New Assets**
@@ -44,7 +44,7 @@ Download version 0.20.1 for Windows and Mac on the OpenSpace website [installati
 - RenderEngine properties `ShowStatistics`, `StatisticsScale` and `ShowFrameInformation` have been moved to the Debugging Module.
 - **Digital Universe Update**
   - The star positions have been updated, so any custom content that is based on these positions (such as bookmarks) may require updating.
-  - Constellations (Extragalactic) is removed.
+  - Constellations (Extragalactic) are removed.
   - The Dwarfs asset has been split up into White and Brown Dwarfs.
   - The Oort Sphere has been moved into its own asset file.
   - Separate assets for all-sky images:
@@ -58,7 +58,7 @@ As part of updating the Digital Universe datasets, there has also been a signifi
   - The default top categories are now "Night Sky", "Solar System", "Milky Way", and "Universe". "Other" has been removed, and what was previously located under this group has been spread out to the other categories. Notice the addition of the "Night Sky" category to collect content that is specifically related to studying the night sky.
   - The Grids, Lines and Points from "Other" has been moved to "Solar System/Grids", "Milky Way/Grids", "Universe/Grids", and "Night Sky/Coordinate Systems".
   - The structure within the top categories has also been slightly changed to be more informative, correct (previously some objects that aren't galaxies were located under "Galaxies" in the menu, for example), and easier to explore. Note particularly that what was previously located in "Universe/Galaxies" is now split up into "Nearby Surveys" and "Deep Sky Surveys" under Universe, and that "Milky Way" now has several extra groups for collecting related objects that did not exist previously.
-- Note that the top categories are no longer in order based on universal "scale", e.g. first Solar System, then Milky Way, then Universe. This is a known bug and is being worked on.
+  - Note that the top categories are no longer in order based on universal "scale", e.g. first Solar System, then Milky Way, then Universe. This is a known bug and is being worked on.
 
 Below is a comparison of the hierarchy in the Scene menu before and after this update. The image shows what's under each of the top categories, one level into the menu tree.
 
