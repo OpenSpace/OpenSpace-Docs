@@ -12,9 +12,7 @@ Download version 0.20.1 for Windows and Mac on the OpenSpace website [installati
   - **Image Sequencing Performance**: Improved framerate during image sequencing.
 
 ## User Interface
-- **Scene Menu**
-  - Access Focus and Navigation controls in the popout menu per scene graph node.
-  - Restructuring of the hierarchical menu groups. [See details below](#updated-hierarchy-in-scene-menu).
+- Restructuring of the hierarchical menu groups in the Scene menu. [See details below](#updated-hierarchy-in-scene-menu).
 
 ## Content
 - **2024 Digital Universe Data Update**
