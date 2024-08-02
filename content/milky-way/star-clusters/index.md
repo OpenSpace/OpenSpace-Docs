@@ -24,7 +24,8 @@ Looking at the Milky Way Galaxy we see the star cluster data sets overlaid. Gree
 :maxdepth: 1
 :caption: Star Cluster Assets
 
-globular-clusters/index
-ob-associations/index
+
 open-clusters/index
+ob-associations/index
+globular-clusters/index
 :::

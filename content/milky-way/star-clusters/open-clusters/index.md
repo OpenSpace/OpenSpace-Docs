@@ -48,7 +48,7 @@ Over time some cluster members are ejected and join the general population of st
 
 Because these are young stars, we expect to see them in the star-forming regions of our Galaxy, namely in the spiral arms. For this reason, open clusters exist, for the most part, in the disk of the Galaxy. As we look to the sky, we view the spiral arms edge-on as that band of light that sweeps across the sky that the ancients called the Milky Way. Because of this, open clusters were originally known as Galactic clusters, but this term fell out of favor once astronomers began to understand that the Galaxy includes objects beyond the Milky Way's disk.
 
-If we look from above the Milky Way, the open clusters are huddled around the Sun, in our part of the Galaxy. It's easier for us to see those clusters in our galactic backyard than it is on the other side of the Milky Way. Because these clusters are in the disk of the Galaxy, where all the gas and dust lies, it prevents us from seeing objects on the side opposite us.
+If we look from above the Milky Way, the open clusters are huddled around the Sun, in our region of the Galaxy. Because these clusters are in the disk of the Galaxy, it's easier for us to see those clusters in our galactic backyard than it is on the other side of the Milky Way where the gas and dust prevents us from seeing objects deep into the disk.
 
 
 :::{figure} open_clusters_above.png

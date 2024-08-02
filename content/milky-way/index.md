@@ -27,7 +27,8 @@ The local stars that make up the night sky form a basis for these data sets, and
 :maxdepth: 1
 :caption: Milky Way Assets
 
-star-clusters/index
 stars/index
+star-clusters/index
+nebulae/index
 :::
 

@@ -9,73 +9,67 @@ authors:
 
 {menuselection}`Milky Way --> Nebulae --> HII Regions`
 
-Globular star clusters are gravitationally bound groups of roughly 100,000 to a few million stars. They are compact---stars near their centers are within a light year of one another---roughly spherical clusters that range from 30 to 100 light years in diameter.
+
+Stars form from large clouds of hydrogen gas. A typical gas cloud's density in the interstellar medium is too low to form stars. They need an outside stimulus or perturbation to stimulate the process. Such a disturbance to these clouds can occur via a nearby supernova shockwave or two clouds colliding. This will cause a localized area of the cloud to collapse. As the gas condenses, stars begin to form, eventually resulting in numerous stars enshrouded by the hydrogen gas.
+
+The hotter, more massive stars (like O stars) give off higher-energy light, and this light excites the atoms in the cloud, causing the area around the stars to glow. An O5 star can excite hydrogen gas up to 65 light years from the star. This is what we refer to as an HII region, or star forming region.
 
 
-:::{figure} globular_clusters_skyview.png
-:align: left
-:alt: Looking at the night sky with Scorpius and Sagittarius in view, we note the locations of globular clusters with yellow markers, which are concentrated in this part of the sky.
+:::{figure} Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg
+:align: center
+:width: 75%
+:alt: An image of the Orion Nebula with its glowing cloud of gas surrounding a cluster of young stars. The cloud glows off-white in its center and has pinks, reds and greens in its outskirts.
 
-Globular clusters are marked with yellow indicators. In reality, the cluster is much smaller than these markers, so we need a way to see them from the night sky or from outside the galaxy. Here, we are looking toward the center of the Milky Way Galaxy with Scorpius and Sagittarius in view. Larger markers indicate closer clusters.
+The Orion Nebula, at around 1,350 light years, is the most prominent HII region in the night sky. Here we see Hubble's view of the great nebula, but it is visible with the unaided eye in the night sky and appears as a small, bluish haze in Orion's sword. Credit: NASA, ESA, M. Robberto (Space Telescope Science Institute/ESA) and the Hubble Space Telescope Orion Treasury Project Team
 :::
 
 
 
-Globular clusters are not thought to be fertile environments for planet formation. However, imagine if a planet were located inside one of these clusters; its sky would be illuminated by an abundance of stars brighter than the Sun.
+:::{figure} HII-nightsky-orion.png
+:align: left
+:alt: A view of the night sky with the constellations Orion and some surrounding constellations. Aqua hexagons mark the location of HII regions.
+
+The night sky view of HII regions looking toward Orion. Several points mark the Orion nebula complex, other less prominent regions are shown and some are labeled. Relatively close are the HII regions Sharples 273, 255, and 252.
+:::
 
 
+## Nomenclature
 
-:::{figure} Globular_Cluster_M2_1024.jpg
-:align: center
-:width: 50%
+The name *HII* refers to the hydrogen gas (H) in its ionized state (II), and is pronounced "H-two". In astronomy, we refer to this excited state of hydrogen with the Roman numeral two. In most other sciences, it is expressed H{sup}`+`.
+
+
+## Lifetime of an HII region
+
+The typical HII region will be around for a few million years. Initially (a million years or so after these stars form), the most massive stars will begin to die off, resulting in a supernova explosion. This will push gas out of the area, but it does not necessarily mean the HII region disappears. 
+
+Another factor in the lifetime of an HII region is the radiation pressure from these hot stars, which tends to drive the gas away. This pushes the gas outside the ionization zone so the hydrogen will return to its ground state and no longer glow.
+
+
+## Location within the Galaxy
+
+Because HII regions are a byproduct of star formation, we will see them where stars form in the Milky Way Galaxy---namely, in the Galactic disk. This is why they are so tightly correlated with the Milky Way in the night sky.
+
+:::{figure} HII-nightsky-sagittarius.png
+:align: left
+:alt: A night sky view showing the constellations Scorpius and Sagittarius and the band of light we call the Milky Way. Aqua hexagons mark where the HII regions are located. They form a line that is aligned with the Milky Way.
+
+Looking toward Sagittarius from our night sky perspective, the HII regions are tightly aligned with the Milky Way. 
+:::
+
+
+## Tracers of Galactic structure
+
+HII regions are among the brightest objects in the Galaxy, so we can see them clear across the Galaxy. Our only blind spot is really on the opposite side of the Galactic core.
+
+The HII regions are good tracers of the spiral arms---where star formation happens in the Galaxy. So, not only are they constrained to the Galactic disk, they give us a good approximation of the location of spiral arms in the Milky Way Galaxy. We can see this in the image below.
+
+
+:::{figure} HII-milkyway.png
+:align: left
 :alt: 
 
-Messier 2, a globular cluster in the constellation Aquarius. Credit: NASA, ESA, STScI, and A. Sarajedini (University of Florida)
+Looking at the HII regions from above the Milky Way Galaxy. The panel on the left shows the nebulae with the Milky Way Galaxy turned on. Here, we clearly see the shadow, if you will, cast by the Galactic center's glowing gas and dust. In the right panel we see the data without the Galaxy, allowing the spiral structure to me more apparent.
 :::
-
-
-
-
-
-## Understanding our place in the Galaxy
-
-Globular clusters were instrumental in our understanding of the size and nature of the Galaxy and universe. The story began in 1912, when [Henrietta Leavitt](https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt) (1868–1921), a "computer" for astronomers at the Harvard College Observatory, though an accomplished astronomer in her own right, discovered a relationship between the period of Cepheid variable stars and their intrinsic luminosity, allowing her to determine their distance. 
-
-In 1918, the astronomer [Harlow Shapley](https://en.wikipedia.org/wiki/Harlow_Shapley) (1885–1972) noted that the open clusters were mainly in the plane of the Milky Way, while more than half the globular clusters were in or near the constellation Sagittarius. He deduced the center of our star system must be far off in the direction of Sagittarius.
-
-
-:::{figure} globular_clusters_galaxy_view.png
-:align: left
-:alt: A view from outside the Milky Way Galaxy showing the distribution of globular clusters in yellow. The clusters are distributed around the center of the Milky Way Galaxy.
-
-A view from outside the Milky Way Galaxy showing the distribution of globular clusters in yellow. The clusters are distributed around the center of the Milky Way Galaxy, and revolve around the Galaxy's center in elliptical orbits.
-:::
-
-
-
-## Star cluster or dwarf galaxy?
-
-The line between globular cluster and dwarf galaxy is not always clear. Dwarf galaxies orbit the Milky Way in a similar fashion---long elliptical orbits around the Milky Way's center. Many dwarf galaxies have been stripped of gas and dust via collisions with the Milky Way. So, where does a globular cluster end and a dwarf galaxy begin? Astronomers continue to seek the answer to that question.
-
-
-:::{figure} globular_clusters_local_group.png
-:align: left
-:alt: Looking back toward the Milky Way Galaxy from a distant vantage point, we see yellow points huddled around the Galaxy showing the locations of the globular clusters, and more distant aqua points demonstrating where the nearby dwarf galaxies are located. 
-
-Looking back at the Milky Way from extragalactic space. We see the Milky Way Galaxy and the yellow points indicating the location of the globular clusters, huddled around the Galaxy. Co-mingling with the globular clusters are the dwarf galaxies in aqua. Similar to the globulars, these dwarf galaxies revolve around the Milky Way.
-:::
-
-
-
-## Cosmically old
-
-Globular clusters are among the oldest objects in the Galaxy. They were around when the Galaxy formed 13 billion years ago, perhaps even before the Galactic disk evolved into the shape it is today. Some of the oldest stars in the entire Galaxy are found in these clusters.
-
-
-
-## Completeness
-
-The globular clusters form one of the most complete data sets in the atlas. These represent almost all the clusters we see in our Milky Way Galaxy. Our blind spot results from the Milky Way itself---that band of light across the night sky (and the gas and dust within it) prohibit us from seeing what lies within it and beyond it. 
 
 
 
@@ -85,13 +79,13 @@ The globular clusters form one of the most complete data sets in the atlas. Thes
 :class: full-width
 
 * - **Census:**
-  - 161 clusters
+  - 1,108 HII regions
 * - **Asset Version:**
-  - 3.1
+  - 2.1
 * - **Data Version:**
-  - 4.07
+  - 5.07
 * - **Reference:**
-  - [Gaia EDR3 view on Galactic globular clusters](https://doi.org/10.1093/mnras/stab1475)
+  - [The WISE catalog of Galactic HII regions](https://doi.org/10.1088/0067-0049/212/1/1)
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**

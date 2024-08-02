@@ -21,7 +21,7 @@ Globular clusters are marked with yellow indicators. In reality, the cluster is 
 
 
 
-Globular clusters are not thought to be fertile environments for planet formation. However, imagine if a planet were located inside one of these clusters; its sky would be illuminated by an abundance of stars brighter than the Sun.
+Globular clusters are not thought to be fertile environments for planet formation. However, imagine being on a planet located inside one of these clusters---its sky would be illuminated by an abundance of stars brighter than the Sun.
 
 
 
