@@ -3,6 +3,7 @@ OpenSpace versions are labeled by a version number of the form `MM.mm.rr`,  wher
 
 | _Version_ | _Date_ | _Description_ |
 | --------- | ------ | ------------- |
+| [0.20.1](changelogs/0.20.1/index)  | 2024-07-18 | This is a patch release for the thirteenth beta release, which also includes an extensive update to the Digital Universe datasets and changes to the Scene menu hierarchy in the GUI |
 | [0.20.0](changelogs/0.20.0/index)  | 2024-06-17 | This is the thirteenth beta release and the first in 2024 |
 | [0.19.2](changelogs/0.19.2)  | 2023-10-23 | This is a patch release for the twelfth beta release, which primarily includes bug fixes |
 | [0.19.1](changelogs/0.19.1)  | 2023-09-18 | This is a patch release for the twelfth beta release, which includes a new eclipse profile |

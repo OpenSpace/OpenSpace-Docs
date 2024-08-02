@@ -3,7 +3,7 @@
   - Commit: 14cf12d23ebad2e3ea663149c7101be756e98fbd
   - [Full changelog](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.0)
 
-Download version 0.20.0 for Windows and Mac on the OpenSpace website [installation page](https://www.openspaceproject.com/version-0200). Below are notes that highlight new content and bug fixes that will be relevant for OpenSpace users.
+Download version 0.20.0 on the OpenSpace website [installation page](https://www.openspaceproject.com/version-0200). Below are notes that highlight new content and bug fixes that will be relevant for OpenSpace users.
 
 ## New Features
 - **Documentation Revamp**: All static information has now been consolidated and relocated to the "Reference" section on the [OpenSpace documentation site](https://docs.openspaceproject.com).
