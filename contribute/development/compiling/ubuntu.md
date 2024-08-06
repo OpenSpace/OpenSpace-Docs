@@ -55,7 +55,7 @@ make -j
 ## Outdated Versions of Ubuntu
 Currently, pre-22.04 versions of Ubuntu use versions of `libmpv-dev` that are too old. An up-to-date debian package for mpv installation can be downloaded from [here](https://mpv.io/installation/), which would install an updated version of `libmpv-dev`.
 
-Similarly, `qt6-base-dev` is not available but can be installed through other means such as [aqtinstall](https://github.com/miurahr/aqtinstall)
+Similarly, `qt6-base-dev` is not available but can be installed through other means such as [aqtinstall](https://github.com/miurahr/aqtinstall).
 
 You can install gcc-13 using the following commands in case it is not supported:
 The final commands configure Ubuntu's "update-alternatives", which allows a user to select among multiple installations of gcc:

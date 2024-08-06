@@ -72,7 +72,6 @@ using-openspace/scripting/index
 using-openspace/users/index
 using-openspace/installers/index
 using-openspace/builders/index
-using-openspace/remote-control/index
 
 :::
 
