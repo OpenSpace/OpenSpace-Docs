@@ -17,7 +17,7 @@ Links for the OpenSpace software, documentation, data, everything.
 | Name / URL   | Description |
 |:-------------|:------------|
 | [SGCT Configuration Files](https://sgct.readthedocs.io/en/latest/configuration/index.html)) | Documentation for setting up custom windows  |
-| [Digital Universe](https://www.haydenplanetarium.org/downloads/universe/DU-Data-Profiles.pdf) | Documentation regarding the Digital Universe data set from AMNH |
+| [Digital Universe](https://www.amnh.org/content/download/423415/6144487/file/du-data-profiles-2020.pdf) | Documentation regarding the Digital Universe data set from AMNH |
 
 
 ## Data Links
