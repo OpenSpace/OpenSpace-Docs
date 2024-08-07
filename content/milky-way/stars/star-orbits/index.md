@@ -36,10 +36,6 @@ The Sun's orbit superimposed on the Milky Way galaxy. This trajectory shows wher
 Currently, the Sun is heading in the direction of the constellation Cygnus and lies about 50 light years above the plane of the Galaxy. The Sun's position oscillates above and below the plane every 38 billion years, reaching a maximum of about 260 light years above or below the plane. Imagine how our night sky changes due to this periodic motion. When we are centered on the plane of the Galaxy, the band of light across the sky will be at its thinnest. Conversely, when we are 260 light years above or below the plane, the band of light will appear a little thicker.
 
 
-## Barnard's Star
-
-Barnard's Star, the fourth-closest star to the Sun, has the highest proper motion of any star in the night sky. Edward Emerson Barnard discovered this motion in 1916, observing that it moves 10.3 arcseconds in the sky per year. While its path generally remains in the Galactic disk, its radius from the Galactic center varies greatly.
-
 
 :::{figure} star_orbits_panel.png
 :align: left
@@ -47,6 +43,13 @@ Barnard's Star, the fourth-closest star to the Sun, has the highest proper motio
 
 A panel of the remaining star orbits. Clockwise from the top left is the orbit of Barnard's Star (aqua), Kapteyn's Star (white), and the stars Lacaille 9352 (magenta), LSR 1826+3014 (green), LSR J0822+1700 (yellow), and PM J13420-3415 (red) in the bottom left.
 :::
+
+
+
+## Barnard's Star
+
+Barnard's Star, the fourth-closest star to the Sun, has the highest proper motion of any star in the night sky. Edward Emerson Barnard discovered this motion in 1916, observing that it moves 10.3 arcseconds in the sky per year. While its path generally remains in the Galactic disk, its radius from the Galactic center varies greatly.
+
 
 
 ## A Halo star

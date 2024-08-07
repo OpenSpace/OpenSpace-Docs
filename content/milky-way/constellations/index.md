@@ -22,9 +22,9 @@ Looking at the Milky Way Galaxy we see the star cluster data sets overlaid. Gree
 
 :::{toctree}
 :maxdepth: 1
-:caption: Star Cluster Assets
+:caption: Constellation Assets
 
-globular-clusters/index
-ob-associations/index
-open-clusters/index
+constellation-art/index
+constellation-boundaries/index
+constellation-lines/index
 :::
