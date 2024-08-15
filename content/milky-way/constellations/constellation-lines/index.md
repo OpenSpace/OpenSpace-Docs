@@ -5,21 +5,33 @@ authors:
 ---
 
 
-# Stars
+# Constellation Lines
 
 {menuselection}`Milky Way --> Constellations --> Constellation Lines`
 
 
-upon.
-
-
-:::{figure} stars_scorpius+constellations.png
+:::{figure} constellation_lines_orion_labels.png
 :align: left
 :alt: 
 :::
 
 
+:::{figure} constellation_lines_scorpius_labels.png
+:align: left
+:alt: 
+:::
 
+
+:::{figure} constellation_lines_ursa.png
+:align: left
+:alt: 
+:::
+
+
+:::{figure} constellation_lines_outside_galaxy.png
+:align: left
+:alt: 
+:::
 
 
 ## Dossier

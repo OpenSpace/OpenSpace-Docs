@@ -15,7 +15,7 @@ This asset controls how the Sun is represented within the Milky Way. We have two
 
 :::{figure} milky_way_sun.gif
 :align: left
-:alt: An animation showing the sun encircled by the planet orbits, then pulling away from the planets. As we leave the Solar System behind, the Sun transitions into a brightewr star on par with the stars in the Milky Way Galaxy.
+:alt: An animation showing the sun encircled by the planet orbits, then pulling away from the planets. As we leave the Solar System behind, the Sun transitions into a brighter star on par with the stars in the Milky Way Galaxy.
 
 An animations showing the transition between the sun we see in the Solar System and its transition as we recede from the planets and into the Milky Way. As we move away from the Solar System and into the nearby Milky Way, the Sun brightens and calibrates to the stars' brightness in the Milky Way.
 :::

@@ -5,15 +5,12 @@ authors:
 ---
 
 
-# Stars
+# Constellation Art
 
 {menuselection}`Milky Way --> Constellations --> Constellation Art`
 
 
-upon.
-
-
-:::{figure} stars_scorpius+constellations.png
+:::{figure} constellation-art-orion.png
 :align: left
 :alt: 
 :::

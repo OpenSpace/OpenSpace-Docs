@@ -28,8 +28,13 @@ The local stars that make up the night sky form a basis for these data sets, and
 :caption: Milky Way Assets
 
 stars/index
-star-clusters/index
+constellations/index
+all-sky-images/index
+substellar-objects/index
 exoplanets/index
+star-clusters/index
 nebulae/index
+stellar-remnants/index
+galaxy/index
 :::
 

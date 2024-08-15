@@ -10,12 +10,6 @@ authors:
 
 
 
-:::{figure} star_clusters.png
-:align: left
-:alt: 
-:::
-
-
 :::{toctree}
 :maxdepth: 1
 :caption: Constellation Assets

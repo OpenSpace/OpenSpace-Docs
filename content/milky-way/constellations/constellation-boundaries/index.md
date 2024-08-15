@@ -5,19 +5,21 @@ authors:
 ---
 
 
-# Stars
+# Constellation Boundaries
 
 {menuselection}`Milky Way --> Constellations --> Constellation Boundaries`
 
 
-upon.
-
-
-:::{figure} stars_scorpius+constellations.png
+:::{figure} constellation-boundaries-orion.png
 :align: left
 :alt: 
 :::
 
+
+:::{figure} constellation-boundaries-andromeda.png
+:align: left
+:alt: 
+:::
 
 
 
