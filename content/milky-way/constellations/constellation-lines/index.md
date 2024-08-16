@@ -65,7 +65,11 @@ A view from outside the Milky Way Galaxy with the constellation lines on. Showin
 :::
 
 
-Temp text to clear the dropdown.
+## Line colors
+
+The bulk of the constellations are represented by a subtle pink hue. The twelve zodiacal constellations have red connectivity lines to highlight them a bit in the sky. We give Orion and Ursa Major a blue color. These two constellations are very recognizable and we wanted to distinguish them not only in the sky, but as one flies away from the Sun they remain easy to track.
+
+
 
 :::{dropdown} Dossier
 :::{list-table}
