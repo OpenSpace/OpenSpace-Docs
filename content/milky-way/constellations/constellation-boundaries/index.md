@@ -10,15 +10,27 @@ authors:
 {menuselection}`Milky Way --> Constellations --> Constellation Boundaries`
 
 
+While the constellations have been around since antiquity, it is only in the last century that order has been brought to them via scientific consensus. Over the last two centuries, scientists over the generations published their star catalogs with renditions of the constellations and some even added constellations, particularly for the southern hemisphere.
+
+By the late 19th century, there was an effort to standardize the constellations. Once Johann Bayer (in the 17th century) assigned stars to a constellation by giving them Greek names like Alpha Orionis, it became necessary to remove the ambiguity in the celestial sphere and define boundaries for each constellation. Once completed and adopted in 1928, every object seen in the sky, by eye or by powerful telescopes, would now belong in one constellation. 
+
+
 :::{figure} constellation-boundaries-orion.png
 :align: left
-:alt: 
+:alt: Looking toward Orion in the night sky we see the constellation lines along with the constellation boundaries in yellow.
+
+Constellations and their boundaries in yellow looking toward Orion.
 :::
+
+
+The constellation boundaries follow lines of right ascension and declination, so they form squared-off, boxy shapes. In a sense, you can think of these eighty-eight regions as countries, each with its territory. The result was a division of the night sky into eighty-eight contiguous areas, which allowed astronomers to be more precise with their observations and discoveries. 
 
 
 :::{figure} constellation-boundaries-andromeda.png
 :align: left
-:alt: 
+:alt: A night sky view toward Aries and Pisces with Andromeda and Pegasus, with constellation lines drawn and each constellation's boundary in yellow.
+
+The night sky looking toward the constellations Aries, Pisces, and Andromeda. The constellation lines connect the stars, and their boundaries in yellow delineate each constellation's area on the night sky.
 :::
 
 
@@ -30,15 +42,15 @@ authors:
 :class: full-width
 
 * - **Census:**
-  - 112,746 stars
+  - 88 constellations boundaries
 * - **Asset Version:**
-  - 4.0
+  - 1.2
 * - **Data Version:**
-  - 8.10 
+  - 
 * - **Reference:**
-  - [Gaia DR3](https://doi.org/10.5270/esa-qa4lep3); [XHIP An Extended Hipparcos Compilation](https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971)
+  - 
 * - **Prepared by:**
-  - Brian Abbott, Zack Reeves, Andrew Ayala, Jackie Faherty (AMNH)
+  - 
 * - **License:**
-  - ??? - link to a page?
+  - ???
 :::

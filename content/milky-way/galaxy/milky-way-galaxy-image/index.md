@@ -32,15 +32,15 @@ authors:
 :class: full-width
 
 * - **Census:**
-  - 1,108 HII regions
+  - 1 image
 * - **Asset Version:**
-  - 2.1
+  - 3.0
 * - **Data Version:**
-  - 5.07
+  - 2.02
 * - **Reference:**
-  - [The WISE catalog of Galactic HII regions](https://doi.org/10.1088/0067-0049/212/1/1)
+  - ESO
 * - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
+  - Brian Abbott, Carter Emmart (AMNH)
 * - **License:**
   - ??? - link to a page?
 :::
