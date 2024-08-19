@@ -4,6 +4,7 @@ By Hanna Timander and Nisse Bergman, June 2022 (hanna.timander.exjobb@gmail.com)
 ## Initial Setup
 These setup/configuration steps need to be performed on both the Server and Viewer prior to any connection attempts.
 
+(setup-server)=
 ### Server
 Currently this only works on Windows. The Linux version has been mothballed.
   1. Ensure that Node.js is installed on the system.
@@ -29,17 +30,18 @@ Currently this only works on Windows. The Linux version has been mothballed.
      - Run `npm install` when running first time.
   1. Build OpenSpace (Preferably using *RelWithDebInfo* configuration).
 
+(setup-viewer)=
 ### Viewer
   1. Make sure you're using a Chromium based browser (e.g. Google Chrome, Opera, Microsoft Edge)
-  1. Chrome might not trust the source of the video streaming, so go to _chrome://flags_ and add the host's IP-address and port under the "_Insecure origins treated as secure"_-section. An address entered here should look something like `192.168.1.39:4690`. Note that this step is not necessary if running both the Server and Viewer on the same machine using `127.0.0.1`. 
+  1. Chrome might not trust the source of the video streaming, so go to _chrome://flags_ and add the host's IP-address and port under the "_Insecure origins treated as secure"_-section. An address entered here should look something like `192.168.1.39:4690`. Note that this step is not necessary if running both the Server and Viewer on the same machine using `127.0.0.1`.
 
 ## Starting a Remote Viewing Session
 There are steps are provided here for both the Server and the Viewer, because the current state of the software is somewhat fragile. In the future, the following Server steps won't be required each time.
 Do all of the following steps in one sequence, starting with the Server.
 
-### Viewer
-  1. Make sure that the OpenSpace WebGUI page is _not_ open in the browser. The connection won't work if the frontend GUI connects to OpenSpace too soon.
+**OBS:** Make sure that the OpenSpace WebGUI page is _not_ open in the browser. The connection won't work if the frontend GUI connects to OpenSpace too soon.
 
+(starting-server)=
 ### Server
   1. Start the developer frontend GUI in a terminal at _OpenSpace-WebGuiFrontend_
      - Run `npm start` to start frontend GUI (no need to restart if already running)
@@ -50,6 +52,7 @@ Do all of the following steps in one sequence, starting with the Server.
      - Run OpenSpace.exe, and select the _remote_gstreamer_output_ config option in the _Window Options_ popup menu
      - If desired, you can use a direct command to bypass the launcher: `bin\RelWithDebInfo\OpenSpace.exe -c config\remote_gstreamer_output.json -b`
 
+(starting-viewer)=
 ### Viewer
   1. One again, verify that the frontend GUI page is not open in a browser tab
   1. Wait until OpenSpace is past the initialization screen and starts rendering
