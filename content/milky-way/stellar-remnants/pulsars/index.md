@@ -12,7 +12,7 @@ authors:
 
 A pulsar is a spinning neutron star that emits beams of light from its magnetic poles. These beams are akin to a lighthouse's beam that sweeps across our view as the neutron star spins.
 
-:::{figure} Chandra-crab.png
+:::{figure} Chandra-crab.jpg
 :align: center
 :width: 75%
 :alt: The central region of the Crab Nebula, with red and blue clouds of swirling gas driven by the pulsar.
@@ -102,13 +102,13 @@ The pulsars (red) and globular clusters (yellow) shown together as we view the M
 :class: full-width
 
 * - **Census:**
-  - 1,108 HII regions
+  - 3,221 pulsars
 * - **Asset Version:**
-  - 2.1
+  - 4.0
 * - **Data Version:**
-  - 5.07
+  - 7.07
 * - **Reference:**
-  - [The WISE catalog of Galactic HII regions](https://doi.org/10.1088/0067-0049/212/1/1)
+  - [ATNF Pulsar Catalogue](http://www.atnf.csiro.au/research/pulsar/)
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**
