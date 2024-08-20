@@ -14,7 +14,7 @@ A small number of more prominent stars have proper names like Sirius, Betelgeuse
 
 
 
-:::{figure} stars-label-alternate.png
+:::{figure} stars_label_alternate.png
 :align: left
 :alt: A view of the night sky looking toward Orion with lines forming the constellations, and labels on the nearby stars.
 

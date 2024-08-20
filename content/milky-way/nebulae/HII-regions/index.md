@@ -25,7 +25,7 @@ The Orion Nebula, at around 1,350 light years, is the most prominent HII region 
 
 
 
-:::{figure} HII-nightsky-orion.png
+:::{figure} HII_nightsky_orion.png
 :align: left
 :alt: A view of the night sky with the constellations Orion and some surrounding constellations. Aqua hexagons mark the location of HII regions.
 
@@ -49,7 +49,7 @@ Another factor in the lifetime of an HII region is the radiation pressure from t
 
 Because HII regions are a byproduct of star formation, we will see them where stars form in the Milky Way Galaxy---namely, in the Galactic disk. This is why they are so tightly correlated with the Milky Way in the night sky.
 
-:::{figure} HII-nightsky-sagittarius.png
+:::{figure} HII_nightsky_sagittarius.png
 :align: left
 :alt: A night sky view showing the constellations Scorpius and Sagittarius and the band of light we call the Milky Way. Aqua hexagons mark where the HII regions are located. They form a line that is aligned with the Milky Way.
 
@@ -64,7 +64,7 @@ HII regions are among the brightest objects in the Galaxy, so we can see them cl
 The HII regions are good tracers of the spiral arms---where star formation happens in the Galaxy. So, not only are they constrained to the Galactic disk, they give us a good approximation of the location of spiral arms in the Milky Way Galaxy. We can see this in the image below.
 
 
-:::{figure} HII-milkyway.png
+:::{figure} HII_milkyway.png
 :align: left
 :alt: 
 

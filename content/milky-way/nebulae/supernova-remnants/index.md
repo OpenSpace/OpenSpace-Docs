@@ -54,7 +54,7 @@ Supernovae are a relatively rare occurrence. Only a tiny fraction of stars or bi
 Furthermore, it is difficult to obtain accurate distances for these objects. Fewer than half the catalog's objects have reliable distances.
 
 
-:::{figure} SNR-Orion.png
+:::{figure} SNR_Orion.png
 :align: left
 :alt: A view of the night sky looking toward the constellation Orion with orange points representing the supernova remnants.
 
@@ -74,7 +74,7 @@ Similar to pulsars, supernova remnants are found in the disk of the Galaxy, wher
 There are a handful of notable supernova remnants. We mentioned the Crab Nebula from 1054 and the Tycho remnant, named for the astronomer Tycho Brahe who observed the supernova of 1572. Similarly, there is a Kepler remnant from the 1604 supernova. Visible in the southern hemisphere is the Vela Remnant. It originated about 11,000 years ago from a supernova about 900 light years away. It is one of the closest to Earth and one of the brightest X-ray sources in the night sky.
 
 
-:::{figure} SNR-near-sun.png
+:::{figure} SNR_near_sun.png
 :align: left
 :alt: A view of the Milky Way Galaxy with the Sun in the foreground. Orange points mark the supernova remnants and are accompanied by their names.
 

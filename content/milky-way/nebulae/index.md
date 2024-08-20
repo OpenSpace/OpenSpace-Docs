@@ -17,7 +17,7 @@ Some nebulae are associated with the birth of stars: the so-called star forming 
 :maxdepth: 1
 :caption: Nebulae Assets
 
-HII_regions/index
-planetary_nebulae/index
-supernova_remnants/index
+HII-regions/index
+planetary-nebulae/index
+supernova-remnants/index
 :::

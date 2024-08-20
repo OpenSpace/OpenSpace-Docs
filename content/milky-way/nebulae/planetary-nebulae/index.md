@@ -32,7 +32,7 @@ An assortment of planetary nebulae seen by the Hubble Space Telescope. Credit: H
 
 Planetary nebulae are occasionally spherical and symmetric, and roughly a light year across. As the gas expands away from the star, it sweeps up cooler gas like a snowplow. The gas glows because of the ultraviolet light from the stellar remnant at its center. 
 
-:::{figure} PN-nightsky-orion.png
+:::{figure} PN_nightsky_orion.png
 :align: left
 :alt: Periwinkle triangles designate the locations of planetary nebulae in the night sky looking toward Orion.
 
@@ -47,7 +47,7 @@ The Milky Way Galaxy consists of two major star populations: an older halo popul
 Because of this, we expect to see planetary nebulae where star formation and evolution is ongoing---in the disk of the Galaxy. The stars that will evolve into planetary nebulae have relatively eccentric orbits around the Galaxy and, therefore, a wider range of distances above and below the Galactic disk when compared to younger objects like [open star clusters](../../star-clusters/open-clusters/index) or [HII regions](../HII_regions/index).
 
 
-:::{figure} PN-near-sun.png
+:::{figure} PN_near_sun.png
 :align: left
 :alt: Periwinkle triangles mark the locations of planetary nebulae around the Sun. Thde lines connecting constellation stars from this perspective appear to radiate away from the Sun, which is located at the center of the lines.
 
@@ -62,7 +62,7 @@ Due to their short lifetimes, on the order of thousands of years, astronomers ex
 
 
 
-:::{figure} PN-milkyway.png
+:::{figure} PN_milkyway.png
 :align: left
 :alt: Looking down upon the Milky Way Galaxy from outside we see blue indicators showing the distribution of planetary nebulae in the Galaxy.
 

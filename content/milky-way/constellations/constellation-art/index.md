@@ -30,7 +30,7 @@ A page showing the constellation Orion from Johann Bayer's *Uranometria* from 16
 The art appearing here was drawn by [James Hedberg](http://jameshedberg.com) from the City College of New York. He has updated the art from traditional depictions to something more modern.
 
 
-:::{figure} constellation-art-orion.png
+:::{figure} constellation_art_orion.png
 :align: left
 :alt: A night sky view toward Orion showing the constellation lines with their art overlayed. We see Orion, Taurus, and the big and little dogs. 
 
