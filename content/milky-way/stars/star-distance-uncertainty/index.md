@@ -42,6 +42,7 @@ A diagram of how stellar parallax works, from Earth's perspective. The Sun, in y
 Once we have this angle measured, it's a simple geometric formula to derive the distance to the star. And, of course, stars closer to the sun will have larger parallax angles. Because every measurement we make in science has some uncertainty associated with it, here the parallax angle is no different. This uncertainty could be due to the glare of the star, the nature of the sky during the observation, or the limitations of the instrument. Regardless, this uncertainty in the parallax angle results in an uncertainty in the star's distance.
 
 
+
 ## Drawing distance uncertainty
 
 We represent the distance uncertainty as lines that are plotted around the star in question. So, while each star may be plotted at the center of their respective line, in reality we do not know exactly where the star is located within the uncertainty line it sits on.
