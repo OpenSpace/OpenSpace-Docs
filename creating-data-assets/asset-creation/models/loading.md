@@ -2,7 +2,7 @@
 To load a model into OpenSpace you will need to create a new asset file. To learn more about assets see [Assets](../resources), and load the model with this piece of code:
 ```lua
 ...
-local sun = asset.require('scene/solarsystem/sun/sun')
+local sun = asset.require('scene/solarsystem/sun/transforms')
 
 Renderable = {
   Type = "RenderableModel",
