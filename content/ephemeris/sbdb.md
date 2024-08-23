@@ -35,7 +35,7 @@ Click "Get Results" button, and then the "Download (CSV-format)" button to save 
 ## Data Usage
 This wiki covers the scenario where an asset file references a data file served by one of the OpenSpace sync servers. At runtime, the file will be downloaded if a local copy does not already exist. This requires the file generated in the above steps to be uploaded to an OpenSpace sync server by one of the project's server administrators.
 
-For testing purposes, the file can be included in the asset by using the `localResource` method, but this is not discussed here.
+For testing purposes, the file can be included in the asset by using the `resource` method, but this is not discussed here.
 
 
 ## Create an Asset File

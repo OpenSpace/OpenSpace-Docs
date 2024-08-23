@@ -12,12 +12,12 @@ Renderable = {
 ...
 ```
 
-The first line in this example imports the asset for the Sun, this is to add it as a light source to the model in the end. Then you add the `Renderable` with the `"RenderableModel"` as Type. Lastly, you define the path to the model file as the `GeometryFile`, for more information regarding paths in assets see [Resources](..//resources). The line `modelPath .. "BoxAnimated.glb",` creates a path to your sync folder where the model is downloaded from our servers. If you want to add a local model file instead that is not located on our servers, then you could use the `localResource` function to create the path, like this (example with a local model file of New York City):
+The first line in this example imports the asset for the Sun, this is to add it as a light source to the model in the end. Then you add the `Renderable` with the `"RenderableModel"` as Type. Lastly, you define the path to the model file as the `GeometryFile`, for more information regarding paths in assets see [Resources](..//resources). The line `modelPath .. "BoxAnimated.glb",` creates a path to your sync folder where the model is downloaded from our servers. If you want to add a local model file instead that is not located on our servers, then you could use the `resource` function to create the path, like this (example with a local model file of New York City):
 ```lua
-GeometryFile = asset.localResource("nyc-model.obj"),
+GeometryFile = asset.resource("nyc-model.obj"),
 ```
 
-The `localResource` function here refers to a file that is located next to the asset file on the filesystem. If you want to reference a file on your computer that is not located directly next to the asset file, you can instead give the full path to that file like this:
+The `resource` function here refers to a file that is located next to the asset file on the filesystem. If you want to reference a file on your computer that is not located directly next to the asset file, you can instead give the full path to that file like this:
 ```lua
 GeometryFile = "C:/Users/username/Documents/data/nyc-model.obj",
 ```

@@ -3,11 +3,11 @@
 As an example on the Tesla in space module
   1. Starting with tesla.mod file
   1. Creating tesla.asset
-     1. Specifying local files we later need. By specifying with `localResource`, we put them in the same folder as the asset file and don't need to put them on a server anywhere
+     1. Specifying local files we later need. By specifying with `resource`, we put them in the same folder as the asset file and don't need to put them on a server anywhere
         ```lua
-        local kernel = asset.localResource("tesla.bsp")
-        local model = asset.localResource("tesla.obj")
-        local texture = asset.localResource("white.jpg")
+        local kernel = asset.resource("tesla.bsp")
+        local model = asset.resource("tesla.obj")
+        local texture = asset.resource("white.jpg")
         ```
   1. Converting
      ```
