@@ -18,26 +18,36 @@ The Milky Way as seen by our eyes---in visible light. Looking toward the constel
 :::
 
 
-In ancient times, our ancestors observed the stars, the wandering stars---planets, and the Milky Way. Aside from the occasional comet, guest star (or supernova), or aurora, these were the only cosmic attractions visible to them.
+In ancient times, our ancestors observed the stars, the wandering stars (a.k.a. planets), and the Milky Way. Aside from the occasional comet, guest star (a.k.a. supernova), or aurora, these were the only cosmic attractions visible to them.
 
-The Milky Way has been the subject of many myths and legends. The Greeks believed it to be a river of milk pouring from the breast of Hera, the wife of Zeus, and called it a "galaxy," from the Greek word for milk. The Romans called it the Via Lactea, or the Milky Way. But it was not until 1610 that Galileo first observed this faint band of light with his telescope, discovering that it was composed of innumerable faint stars.
+The Milky Way was the subject of many myths and legends. The Greeks believed it to be a river of milk pouring from the breast of Hera, the wife of Zeus, and called it a "galaxy," from the Greek word for milk. The Romans called it the Via Lactea, or the Milky Way. The Maori interpreted it as a canoe with the ends of the canoe being Scorpius and Orion. It was not until 1610 that Galileo first observed this faint band of light with his telescope, discovering that it was composed of innumerable faint stars.
 
-In the past 400 years, astronomers and philosophers have specu- lated about the nature of this band of light, but it was not until the 20th century that astronomers began to understand the nature and structure of our Galaxy.
-You will see the brightest part of the Galaxy if you look toward Galactic center in the constellations Scorpius and Sagittarius [or, turn on the Galactic coordinates and bring (l, b) = (0, 0)° to center screen]. This bright haze is the light from millions of stars; the dark lanes are foreground dust clouds, obscuring our view of the stars behind them.
-If you turn to look in the opposite direction, toward Orion, you will see that the Milky Way is not too bright on this side of the sky. Here we look out of the Galaxy through what remains of the Galactic disk between the Sun and its outer edge.
-This image, by Axel Mellinger, is composed of many photographs of the sky, carefully knitted together in this giant mosaic. The stars have been removed for the most part, but the bright stars show some residual light.
+Over the past 400 years, astronomers and philosophers have speculated about the nature of this band of light, but it was not until the 20th century that astronomers began to understand the nature of our Galaxy---that our 2-D view of this band of light represents a large, 3-D object with a structure of its own.
 
 
+
+## Image characteristics
+
+The brightest part of the Milky Way is toward the constellations Scorpius and Sagittarius. This is because you are looking directly toward the center of the Galaxy. Now that we understand the 3-D nature of the Galaxy, and that we're roughly two-thirds of the way out from its center, we know we look through more stars and gas in this direction.
+
+Conversely, when we look toward Orion, we are looking away from the Galactic center, and through a thinner zone of stars and gas and out into the universe.
+
+Along the band of light in this image you will see dark areas that appear to obscure the light from behind. These are called *dark nebulae* and are locations of dense molecular clouds that harbor dust which obscures visible light. Dust, for a scientist, is microscopic grains of rock, from a few molecules to a tenth of a millimeter, and they are a huge nuisance for astronomers.
 
 
 
 :::{figure} visible_orion.png
 :align: left
-:alt: 
+:alt: The diffuse band of light of the Milky Way as it passes by Orion. 
+
+The Milky Way toward Orion is very faint and diffuse because we are seeing through less material as we look out of the Galaxy and away from the Galaxy's center.
 :::
 
 
 
+## About the image
+
+This all-sky image was assembled from 3,000 individual frames over two years by Axel Mellinger. He captured these from Michigan, Texas, and South Africa. The stars we see in the sky were essentially subtracted out, leaving just the gas, dust, and diffuse starlight.
 
 
 ## Dossier
@@ -52,9 +62,9 @@ This image, by Axel Mellinger, is composed of many photographs of the sky, caref
 * - **Data Version:**
   - 1.04
 * - **Reference:**
-  - [Axel Mellinger's Milky Way Panorama 2.0](http://milkywaysky.com)
+  - [A Color All-Sky Panorama Image of the Milky Way](https://doi.org/10.1086/648480)
 * - **Prepared by:**
-  - OpenSpace Team  (NEED DETAILS!)
+  - Axel Mellinger, OpenSpace Team
 * - **License:**
   - MIT license - link to a page?
 :::
