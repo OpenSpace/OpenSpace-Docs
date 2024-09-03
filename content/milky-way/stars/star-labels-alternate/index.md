@@ -63,40 +63,33 @@ The Flamsteed Catalog uses numbers as designations along with the constellation 
 
 
 
-
 ## Greek Abbreviations
 
 | Abbreviation | Greek symbol | Greek letter |
 | :----------: | :----------: | :----------- |
 | Alf | α | Alpha |
 | Bet | β | Beta |
-| Gam | $\alpha$ | Gamma |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Gam | γ | Gamma |
+| Del | δ | Delta |
+| Eps | ε | Epsilon |
+| Zet | ζ | Zeta |
+| Eta | η | Eta |
+| Tet | θ | Theta |
+| Iot | ι | Iota |
+| Kap | κ | Kappa |
+| Lam | λ | Lambda |
+| Mu  | μ | Mu |
+| Nu  | ν | Nu |
+| Ksi | ξ | Xi |
+| Omi | ο | Omicron |
+| Pi  | π | Pi |
+| Rho | ρ | Rho |
+| Sig | σ | Sigma |
+| Tau | τ | Tau |
+| Ups | υ | Upsilon |
+| Phi | φ | Phi |
+| Chi | χ | Chi |
+| Psi | ψ | Psi |
+| Ome | ω | Omega |
 
 

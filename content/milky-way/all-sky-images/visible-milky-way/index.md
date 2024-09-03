@@ -20,7 +20,7 @@ The Milky Way as seen by our eyes---in visible light. Looking toward the constel
 
 In ancient times, our ancestors observed the stars, the wandering stars (a.k.a. planets), and the Milky Way. Aside from the occasional comet, guest star (a.k.a. supernova), or aurora, these were the only cosmic attractions visible to them.
 
-The Milky Way was the subject of many myths and legends. The Greeks believed it to be a river of milk pouring from the breast of Hera, the wife of Zeus, and called it a "galaxy," from the Greek word for milk. The Romans called it the Via Lactea, or the Milky Way. The Maori interpreted it as a canoe with the ends of the canoe being Scorpius and Orion. It was not until 1610 that Galileo first observed this faint band of light with his telescope, discovering that it was composed of innumerable faint stars.
+The Milky Way was the subject of many myths and legends. The Greeks believed it to be a river of milk pouring from the breast of Hera, the wife of Zeus, and called it a "galaxy," from the Greek word for milk. The Romans called it the Via Lactea, or the Milky Way. The Māori interpreted it as a canoe with the ends of the canoe being Scorpius and Orion. It was not until 1610 that Galileo first observed this faint band of light with his telescope, discovering that it was composed of innumerable faint stars.
 
 Over the past 400 years, astronomers and philosophers have speculated about the nature of this band of light, but it was not until the 20th century that astronomers began to understand the nature of our Galaxy---that our 2-D view of this band of light represents a large, 3-D object with a structure of its own.
 
