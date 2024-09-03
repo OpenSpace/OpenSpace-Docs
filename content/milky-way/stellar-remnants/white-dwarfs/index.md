@@ -12,12 +12,12 @@ authors:
 
 A white dwarf is compact remnant---the final evolutionary state of over 95% of the stars in the Milky Way. This fate is determined by the mass of the star. Stars less massive than the range have long lifetimes on the order of trillions of years. Stars more massive than the range will result in either a neutron star or black hole. Stars within the range, from about 0.08 to 8 solar masses, become a red giant, shed their layers in a planetary nebula, revealing a compact core called a white dwarf.
 
-:::{figure} Chandra-crab.jpg
+:::{figure} Sirius_A_and_B_Hubble_photo.png
 :align: center
-:width: 75%
+:width: 50%
 :alt: An image of a bright star (Sirius) with a very faint object beside it (the white dwarf) indicated by an arrow.
 
-An Hubble Space Telescope image of the star Sirius, and it's faint companion white dwarf, Sirius B, indicated by the arrow. Credit: NASA, ESA, H. Bond (STScI), and M. Barstow (University of Leicester)
+An Hubble Space Telescope image of the star Sirius, and it's faint companion white dwarf, Sirius B, located to the lower-left of Sirius. Sirius has prominent diffraction spikes resulting from the optics of the telescope. Credit: NASA, ESA, H. Bond (STScI), and M. Barstow (University of Leicester)
 :::
 
 
