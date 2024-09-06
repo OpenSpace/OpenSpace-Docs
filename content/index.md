@@ -5,6 +5,7 @@
 :caption: Content
 
 milky-way/index
+universe/index
 profiles
 asteroids
 exoplanets/index
