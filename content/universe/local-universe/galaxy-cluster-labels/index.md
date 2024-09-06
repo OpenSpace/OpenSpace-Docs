@@ -12,7 +12,7 @@ authors:
 
 
 
-:::{figure} .png
+:::{figure} galaxy_clusters_nearby.png
 :align: left
 :alt: 
 :::
@@ -21,18 +21,18 @@ authors:
 
 
 
-:::{figure} .jpg
+<!-- :::{figure} .jpg
 :align: center
 :width: 50%
 :alt: 
-:::
+::: -->
 
 
 
 
 
 
-:::{figure} .png
+:::{figure} galaxy_clusters_outside.png
 :align: left
 :alt: 
 :::

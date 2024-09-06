@@ -12,7 +12,7 @@ authors:
 
 
 
-:::{figure} .png
+:::{figure} tully_virgo_cluster_nightsky.png
 :align: left
 :alt: 
 :::
@@ -20,19 +20,7 @@ authors:
 
 
 
-
-:::{figure} .jpg
-:align: center
-:width: 50%
-:alt: 
-:::
-
-
-
-
-
-
-:::{figure} .png
+:::{figure} tully_virgo_cluster_nearby.png
 :align: left
 :alt: 
 :::
@@ -40,7 +28,25 @@ authors:
 
 
 
+:::{figure} tully_virgo_cluster_within.png
+:align: left
+:alt: 
+:::
 
+
+
+
+:::{figure} tully_outside.png
+:align: left
+:alt: 
+:::
+
+
+
+:::{figure} tully_cube.png
+:align: left
+:alt: 
+:::
 
 
 ## Dossier

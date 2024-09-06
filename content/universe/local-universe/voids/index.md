@@ -12,7 +12,7 @@ authors:
 
 
 
-:::{figure} .png
+:::{figure} voids_nearby.png
 :align: left
 :alt: 
 :::
@@ -21,18 +21,9 @@ authors:
 
 
 
-:::{figure} .jpg
-:align: center
-:width: 50%
-:alt: 
-:::
 
 
-
-
-
-
-:::{figure} .png
+:::{figure} voids_outside.png
 :align: left
 :alt: 
 :::

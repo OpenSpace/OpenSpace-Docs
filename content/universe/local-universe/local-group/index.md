@@ -12,7 +12,7 @@ authors:
 
 
 
-:::{figure} .png
+:::{figure} local_group_nearby.png
 :align: left
 :alt: 
 :::
@@ -21,9 +21,8 @@ authors:
 
 
 
-:::{figure} .jpg
-:align: center
-:width: 50%
+:::{figure} local_group_andromeda.png
+:align: left
 :alt: 
 :::
 
@@ -31,8 +30,7 @@ authors:
 
 
 
-
-:::{figure} .png
+:::{figure} local_group_outside.png
 :align: left
 :alt: 
 :::
