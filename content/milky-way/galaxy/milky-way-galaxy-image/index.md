@@ -14,8 +14,7 @@ The Milky Way Image provides a basis, albeit representational and two-dimensiona
 
 
 :::{figure} milky_way_image.png
-:align: center
-:width: 75%
+:align: left
 :alt: A top-down, face-on view of the Milky Way Image, the galaxy NGC 1232, showing the bright galactic core, spiral arms, and bright star-forming regions.
 
 The Galaxy Image---NGC 1232---as seen in OpenSpace. This view, from above the Galaxy, demonstrates the resemblance to what we believe the Milky Way Galaxy look like. We see a bright center with a slight bar structure, prominent spiral arms, bright star-forming regions sprinkled throughout the arms, and gas and dust filling out the disk.
@@ -29,8 +28,7 @@ We chose this galaxy because it resembles the overall structure of the Milky Way
 
 
 :::{figure} milky_way_image+model.png
-:align: center
-:width: 75%
+:align: left
 :alt: The Milky Way image shown with the Milky Way Volume. We are looking down on the galactic disk, showing the bright core and spiral arms.
 
 The Milky Way Image shown with the Milky Way Volume, our 3-D model of the Galaxy. Comparing this image to the image above, you can see the model enhances the center of the Galaxy and makes it appear more realistic.

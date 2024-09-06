@@ -35,14 +35,6 @@ Once the atom is excited, it cannot remain in that state for long before it want
 The most prominent feature of this image is the ever-present band of the Milky Way. Outside the familiar band of light we see large, round structures of glowing gas. These are actually spherical bubbles that surround supergiant stars. Two prominent examples are Lambda Orionis and Zeta Ophiuchi. The latter appears in the image above as a large, bright, round feature in the top right of the image, centered on the star Zeta Ophiuchi. The former is in the image below, just above image center. The energy coming off these hot, supergiant stars causes the surrounding gas to glow.
 
 
-## Nebulous regions
-
-Hydrogen-alpha also reveals nebulous regions to us, mainly where star formation is happening. The Orion Nebula area glows brightly in the image below, along with the Horsehead Nebula and the large, sweeping supernova remnant called Barnard's Loop. The nebula in Monoceros is also pronounced as one of the brighter points seen in this image.
-
-We can also see that galaxies emit Hα light. We see the Large and Small Magellanic Clouds in the southern sky, and also wisps around the Andromeda Galaxy and the Triangulum Galaxy (M33) nearby.
-
-
-
 
 :::{figure} halpha_orion.png
 :align: left
@@ -53,7 +45,35 @@ Hydrogen-alpha light looking toward the constellation Orion in the night sky. Th
 
 
 
+## Nebulous regions
 
+Hydrogen-alpha also reveals nebulous regions to us, mainly where star formation is happening. The Orion Nebula area glows brightly in the image below, along with the Horsehead Nebula and the large, sweeping supernova remnant called Barnard's Loop. The nebula in Monoceros is also pronounced as one of the brighter points seen in this image.
+
+We can also see that galaxies emit Hα light. We see the Large and Small Magellanic Clouds in the southern sky, and also wisps around the Andromeda Galaxy and the Triangulum Galaxy (M33) nearby.
+
+
+
+
+
+:::{dropdown} Dossier
+:::{list-table}
+:header-rows: 0
+:class: full-width
+
+* - **Census:**
+  - 1 all-sky image
+* - **Asset Version:**
+  - 1.0
+* - **Data Version:**
+  - 2.02
+* - **Reference:**
+  - [A Composite H-alpha Template for Microwave Foreground Prediction](https://doi.org/10.1086/374411)
+* - **Prepared by:**
+  - Doug Finkbeiner (Princeton), Brian Abbott (AMNH)
+* - **License:**
+  - ??? - link to a page?
+:::
+:::
 
 ## Dossier
 :::{list-table}
