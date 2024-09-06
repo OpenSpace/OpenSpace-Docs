@@ -10,6 +10,9 @@ authors:
 {menuselection}`Universe --> Local Universe`
 
 
+The Local Universe describes the area around the Milky Way Galaxy. It is a part of the universe that is more local to us, and; therefore, we have a better idea of what sort of objects are out there. And, of course, mostly that consists of more galaxies.
+
+The galaxy surveys here are generally more complete, and they cover most of the sky. Beyond, galaxy surveys tend to be less complete and cover less area of the night sky. We will cover these in Deep Sky Surveys.
 
 
 <!-- :::{figure} .png
