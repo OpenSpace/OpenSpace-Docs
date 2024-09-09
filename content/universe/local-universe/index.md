@@ -10,15 +10,17 @@ authors:
 {menuselection}`Universe --> Local Universe`
 
 
-The Local Universe describes the area around the Milky Way Galaxy. It is a part of the universe that is more local to us, and; therefore, we have a better idea of what sort of objects are out there. And, of course, mostly that consists of more galaxies.
+The Local Universe describes the neighborhood around the Milky Way Galaxy. Here, we have a better idea of what's out there (hint: galaxies) and the structures formed by those galaxies.
 
-The galaxy surveys here are generally more complete, and they cover most of the sky. Beyond, galaxy surveys tend to be less complete and cover less area of the night sky. We will cover these in Deep Sky Surveys.
+The galaxy surveys here are generally more complete, and they cover most of the sky. Beyond the Local Universe, in the Deep Sky Surveys, galaxy surveys tend to be less complete and cover less area on the night sky.
 
 
-<!-- :::{figure} .png
+:::{figure} local_universe.png
 :align: left
-:alt: 
-::: -->
+:alt: A view looking back toward the Milky Way Galaxy with each point representing a galaxy. We see nearby galaxy groups labeled in green, and large galaxy clusters labeled in orange.
+
+A view from the local universe. Each point here is a galaxy, where orange and yellow points are in dense areas while green and aqua points are in less dense regions. The Milky Way, marked Home, is at the center, and we see labels for some of the local galaxy groups near the Milky Way and its galaxy group---the Local Group. In the distance is the Norma Cluster, a large galaxy cluster seen from Earth in the constellation Norma. 
+:::
 
 
 
