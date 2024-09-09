@@ -10,36 +10,17 @@ authors:
 {menuselection}`Universe --> Local Universe --> Home Label`
 
 
-
-
-:::{figure} .png
+:::{figure} home_label.png
 :align: left
-:alt: 
+:alt: The Home label marks the location of the Milky Way Galaxy, which is located at the center of the image alongside some neighboring galaxies which are also labeled. 
+
+The Home label, at center, marks the location of the Milky Way Galaxy. Here, we see "Home" alongside some of its neighboring galaxies, also labeled.  
 :::
 
 
+The Home Label is our monicker for the Milky Way on this scale outside the Galaxy. We use "home" mainly because it harkens back to our place in the universe, and it's shorter and less visually cluttered.
 
-
-
-:::{figure} .jpg
-:align: center
-:width: 50%
-:alt: 
-:::
-
-
-
-
-
-
-:::{figure} .png
-:align: left
-:alt: 
-:::
-
-
-
-
+In the image above, we can see the Milky Way (Home) alongside some of its neighboring galaxies which are also labeled. Here, each point you see is a galaxy. Orange and yellow are in more dense areas while green and aqua are in less dense areas of the local universe.
 
 
 
@@ -49,15 +30,15 @@ authors:
 :class: full-width
 
 * - **Census:**
-  - 161 clusters
+  - 1 label
 * - **Asset Version:**
-  - 3.1
+  - 2.0
 * - **Data Version:**
-  - 4.07
+  - N/A
 * - **Reference:**
-  - [Gaia EDR3 view on Galactic globular clusters](https://doi.org/10.1093/mnras/stab1475)
+  - N/A
 * - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
+  - Carter Emmart (AMNH); OpenSpace Team
 * - **License:**
-  - ??? - link to a page?
+  - MIT license
 :::
