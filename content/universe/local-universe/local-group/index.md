@@ -10,33 +10,45 @@ authors:
 {menuselection}`Universe --> Local Universe --> Local Group`
 
 
-
-
-:::{figure} local_group_nearby.png
-:align: left
-:alt: 
-:::
-
-
-
-
-
-:::{figure} local_group_andromeda.png
-:align: left
-:alt: 
-:::
-
-
-
+A group of galaxies is a small number of large galaxies that are typically surrounded by a larger number of small galaxies. These galaxies are gravitationally bound to one another. 
 
 
 :::{figure} local_group_outside.png
 :align: left
-:alt: 
+:alt: A view of the Local Group from outside with aqua points representing the Milky Way and its satellite galaxies, yellow points representing the Andromeda Galaxy and its satellite galaxies, green points are other Local Group galaxies, and gray points are neighboring galaxies. 
+
+The Local Group of galaxies. The Milky Way (labeled "Home") is surrounded by its dwarf galaxies in aqua, the Andromeda Galaxy is surrounded by its dwarfs in yellow, green galaxies are other Local Group members, and gray are other nearby galaxies. The inner grid extends to one million light years, and the outer grid traces out to ten million light years. 
+:::
+
+
+The Milky Way belongs to the Local Group, and is one of roughly 100 galaxies in that group. The Milky Way, the Andromeda Galaxy (also known as Messier 31, or M31), and the Triangulum Galaxy (M33) are three of the largest galaxies in the Local Group. Each is a spiral galaxy containing hundreds of billions of stars.
+
+
+:::{figure} local_group_nearby.png
+:align: left
+:alt: The Milky Way Galaxy and its satellite dwarf galaxies.
+
+A close-up of the Milky Way Galaxy and its satellite galaxies in aqua. These include the Large and Small Magellanic CLouds (LMC and SMC, respectively), and some dwarf galaxies only discovered recently because they are interacting with the disk of our Galaxy.
 :::
 
 
 
+## Collisions and mergers
+
+Surrounding the Milky Way and Andromeda are a bevy of dwarf galaxies---smaller, often irregular galaxies, that contain hundreds of millions to a few billion stars. These dwarf galaxies are typically under the gravitational influence of a larger galaxy, and are often shredded by them at some point over their lifetime. Collisions between galaxies are common, and these smaller galaxies may even be the lifeblood for a larger galaxy by instigating star formation and replenishing its star-forming gas.
+
+
+:::{figure} local_group_andromeda.png
+:align: left
+:alt: The Local Group from outside the Andromeda Galaxy, showing its satellite dwarf galaxies in yellow, and the Milky Way and its satellites in aqua.
+
+Looking back toward the Milky Way (aqua) from the Andromeda Galaxy and its dwarf galaxies (yellow). You can see the names of these satellite galaxies often are just numbered versions of Andromeda. 
+:::
+
+
+## Other galaxy groups
+
+The Galaxy Group Labels identify many other nearby galaxy groups. Because the Local Group is, well, local, we see a fairly accurate representation of the dwarf galaxies that inhabit it. Neighboring groups are so far away, it's difficult to see their smaller members. With these other groups, we really only see the largest, brightest galaxies. If we considered the Local Group from afar, we would probably only see the Milky Way, Andromeda, and M33.
 
 
 
@@ -47,15 +59,15 @@ authors:
 :class: full-width
 
 * - **Census:**
-  - 161 clusters
+  - 102 galaxiess
 * - **Asset Version:**
-  - 3.1
+  - 3.0
 * - **Data Version:**
-  - 4.07
+  - 6.04
 * - **Reference:**
-  - [Gaia EDR3 view on Galactic globular clusters](https://doi.org/10.1093/mnras/stab1475)
+  - [Properties of dwarf galaxies in the Local Group](https://doi.org/10.1088/0004-6256/144/1/4)
 * - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
+  - Brian Abbott (AMNH)
 * - **License:**
   - ??? - link to a page?
 :::
