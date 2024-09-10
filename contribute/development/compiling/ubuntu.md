@@ -47,6 +47,7 @@ cmake \
 -DCMAKE_BUILD_TYPE:STRING="Release" \
 -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13 \
 -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13 \
+-DCMAKE_CXX_STANDARD=20 \
 -DASSIMP_BUILD_MINIZIP=1 "$openSpaceHome"
 
 make -j
