@@ -10,7 +10,7 @@ authors:
 {menuselection}`Universe --> Local Universe --> Local Group`
 
 
-A group of galaxies is a small number of large galaxies that are typically surrounded by a larger number of small galaxies. These galaxies are gravitationally bound to one another. 
+A group of galaxies is a small number of large galaxies that are typically surrounded by a larger number of small galaxies. These galaxies are gravitationally bound to one another. In the case of the Local Group, there are roughly two substructures, each centered around large, spiral galaxies, with a few other assorted galaxies that interact more loosely with the group.
 
 
 :::{figure} local_group_outside.png
@@ -21,7 +21,9 @@ The Local Group of galaxies. The Milky Way (labeled "Home") is surrounded by its
 :::
 
 
-The Milky Way belongs to the Local Group, and is one of roughly 100 galaxies in that group. The Milky Way, the Andromeda Galaxy (also known as Messier 31, or M31), and the Triangulum Galaxy (M33) are three of the largest galaxies in the Local Group. Each is a spiral galaxy containing hundreds of billions of stars.
+The Milky Way belongs to the Local Group, a term coined by Edwin Hubble (1889--1953), and is one of roughly 100 galaxies in that group. The Milky Way, the Andromeda Galaxy (also known as Messier 31, or M31), and the Triangulum Galaxy (M33) are three of the largest galaxies in the Local Group. Each is a spiral galaxy containing hundreds of billions of stars.
+
+
 
 
 :::{figure} local_group_nearby.png
@@ -36,6 +38,8 @@ A close-up of the Milky Way Galaxy and its satellite galaxies in aqua. These inc
 ## Collisions and mergers
 
 Surrounding the Milky Way and Andromeda are a bevy of dwarf galaxies---smaller, often irregular galaxies, that contain hundreds of millions to a few billion stars. These dwarf galaxies are typically under the gravitational influence of a larger galaxy, and are often shredded by them at some point over their lifetime. Collisions between galaxies are common, and these smaller galaxies may even be the lifeblood for a larger galaxy by instigating star formation and replenishing its star-forming gas.
+
+As these dwarf galaxies orbit and interact with their parent galaxy, the Milky Way and Andromeda collections are heading toward one another. Separated by about 3 million light years, they are moving toward one another at a rate of 120 kilometers per second, or 275,000 miles per hour.
 
 
 :::{figure} local_group_andromeda.png
