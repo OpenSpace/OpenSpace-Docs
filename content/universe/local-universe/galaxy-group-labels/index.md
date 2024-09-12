@@ -10,13 +10,21 @@ authors:
 {menuselection}`Universe --> Local Universe --> Galaxy Group Labels`
 
 
+As we outlined in [Local Group](../local-group/index), a galaxy group is a small number of galaxies gravitationally interacting with one another. Often, it consists of a one or a few large galaxies like the Milky Way and a cadre of small, satellite galaxies that orbit them.
 
+The Galaxy Groups Labels is a set of labels that identifies the nearby groups in the Tully Galaxies. 
 
 :::{figure} galaxy_groups_nearby.png
 :align: left
 :alt: 
+
+The nearby galaxy groups around the Milky Way, which lies at the center of the grid. Our home galaxy group is called the Local Group, seen labeled here. 
 :::
 
+
+While the Local Group is fairly fleshed out---we see many of the dwarf galaxies orbiting our galaxy and those around the Andromeda Galaxy---the surrounding groups are less well known. They are so far away that we cannot see the small dwarf galaxies within them. So, most of these galaxy groups have only a one, two or a few galaxies to them. These will be the largest galaxies in those groups, just as the Milky Way and Andromeda are the largest in the Local Group.
+
+Some of the closest groups include the M81 Group, the Sculptor Group, the Cen A Group, and the NGC 2403 Group. Each of these contain one or more large galaxies. Historically, the term *cloud* was used to describe groups of groups, but this term has fallen from favor given it's physically ambiguous.
 
 
 
@@ -49,15 +57,15 @@ authors:
 :class: full-width
 
 * - **Census:**
-  - 161 clusters
+  - 62 galaxy group labels
 * - **Asset Version:**
-  - 3.1
+  - 2.0
 * - **Data Version:**
-  - 4.07
+  - 1.02
 * - **Reference:**
-  - [Gaia EDR3 view on Galactic globular clusters](https://doi.org/10.1093/mnras/stab1475)
+  - Nearby Galaxy Catalog (private communication, Brent Tully)
 * - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
+  - R. Brent Tully, Stuart Levy, Brian Abbott (AMNH)
 * - **License:**
   - ??? - link to a page?
 :::
