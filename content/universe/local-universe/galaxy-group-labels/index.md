@@ -27,26 +27,12 @@ While the Local Group is fairly fleshed out---we see many of the dwarf galaxies 
 Some of the closest groups include the M81 Group, the Sculptor Group, the Cen A Group, and the NGC 2403 Group. Each of these contain one or more large galaxies. Historically, the term *cloud* was used to describe groups of groups, but this term has fallen from favor given it's physically ambiguous.
 
 
-
-
-<!-- :::{figure} .jpg
-:align: center
-:width: 50%
-:alt: 
-::: -->
-
-
-
-
-
-
 :::{figure} galaxy_groups_outside.png
 :align: left
-:alt: 
+:alt: Galaxy groups around the Local Group marked in green labels.
+
+Galaxy groups around the Local Group showing a concentration of groups that include the M51, M101, and M83 groups among many others.
 :::
-
-
-
 
 
 

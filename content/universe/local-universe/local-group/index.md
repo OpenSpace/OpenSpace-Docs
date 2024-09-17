@@ -41,6 +41,8 @@ Surrounding the Milky Way and Andromeda are a bevy of dwarf galaxies---smaller, 
 
 As these dwarf galaxies orbit and interact with their parent galaxy, the Milky Way and Andromeda collections are heading toward one another. Separated by about 3 million light years, they are moving toward one another at a rate of 120 kilometers per second, or 275,000 miles per hour.
 
+Over the next tens of billions of years, the galaxies of the Local Group will coalesce  into one giant elliptical galaxy, driven by the merging of the Milky Way and the Andromeda galaxies.
+
 
 :::{figure} local_group_andromeda.png
 :align: left
