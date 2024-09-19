@@ -12,33 +12,29 @@ authors:
 
 
 
-:::{figure} .png
+:::{figure} images_virgo_cluster_normal.png
 :align: left
 :alt: 
 :::
 
 
 
-
-
-:::{figure} .jpg
-:align: center
-:width: 50%
-:alt: 
-:::
-
-
-
-
-
-
-:::{figure} .png
+:::{figure} images_virgo_cluster_large.png
 :align: left
 :alt: 
 :::
 
 
+:::{figure} images_local_univerese_labels.png
+:align: left
+:alt: 
+:::
 
+
+:::{figure} images_gross_exaggeration.png
+:align: left
+:alt: 
+:::
 
 
 

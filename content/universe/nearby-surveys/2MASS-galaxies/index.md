@@ -12,30 +12,11 @@ authors:
 
 
 
-:::{figure} .png
+:::{figure} 2mass_galaxies.png
 :align: left
 :alt: 
 :::
 
-
-
-
-
-:::{figure} .jpg
-:align: center
-:width: 50%
-:alt: 
-:::
-
-
-
-
-
-
-:::{figure} .png
-:align: left
-:alt: 
-:::
 
 
 
