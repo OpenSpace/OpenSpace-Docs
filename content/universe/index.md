@@ -25,7 +25,7 @@ The Sloan Digital Sky Survey. The red points are quasars and the blue and green 
 
 
 
-## Our Cosmic Perspective
+**Our Cosmic Perspective**
 
 When you look at the data sets in the Universe section, it's tempting to believe we are the center of the universe. One of the consequences of showing real scientific data observed from telescopes on Earth, or in orbit around Earth, is that it appears that the Milky Way, the Sun, and the Earth
 are at the center of the universe.
