@@ -14,7 +14,7 @@ authors:
 
 These data sets are more homogeneous, consisting mostly of galaxy surveys. We also display the microwave all-sky images here, and a few other contextual data sets.
 
-Unlike the Milky Way that is organized by object type, here we divide the data by local surveys, deep sky surveys, and the cosmic microwave background all-sky maps.
+Unlike the Milky Way that is organized by object type, here we divide the data by nearby surveys, deep sky surveys, and the cosmic microwave background all-sky maps.
 
 :::{figure} universe.png
 :align: left

@@ -11,20 +11,36 @@ authors:
 
 
 
-<!-- :::{figure} .png
+
+
+:::{figure} cmb_planck.png
 :align: left
 :alt: 
-::: -->
+:::
+
+
+:::{figure} cmb_composite.png
+:align: center
+:width: 50%
+:alt: 
+:::
+
+
+:::{figure} outside_cmb.png
+:align: left
+:alt: 
+:::
+
 
 
 
 :::{toctree}
 :maxdepth: 1
-:caption: Milky Way Assets
+:caption: Cosmic Microwave Background Assets
 
 
-<!-- deep-sky-surveys/index
-cosmic-microwave-background/index
-grids/index -->
+cobe/index
+wmap/index
+planck/index
 :::
 

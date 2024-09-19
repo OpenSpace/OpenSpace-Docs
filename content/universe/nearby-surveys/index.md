@@ -12,7 +12,7 @@ authors:
 
 Nearby Surveys describes the neighborhood around the Milky Way Galaxy. Here, we have a better idea of what's out there (hint: galaxies) and the structures formed by those galaxies.
 
-The galaxy surveys here are generally more complete, and they cover most of the sky. Beyond the Nearby Surveys, in the Deep Sky Surveys, galaxy surveys tend to be less complete and cover less area on the night sky.
+The galaxy surveys here are generally more complete, and they cover most of the sky. Beyond the Nearby Surveys, galaxy surveys tend to be less complete and cover less area on the night sky.
 
 
 :::{figure} local_universe.png
@@ -31,10 +31,11 @@ A view from the local universe. Each point here is a galaxy, where orange and ye
 home-label/index
 local-group/index
 tully-galaxies/index
-tully-galaxy-images/index
+tully-galaxies-images/index
 galaxy-group-labels/index
 galaxy-cluster-labels/index
 2MASS-galaxies/index
+6df-galaxies/index
 voids/index
 :::
 

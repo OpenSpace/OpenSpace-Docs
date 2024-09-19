@@ -10,24 +10,25 @@ authors:
 {menuselection}`Universe --> Deep Sky Surveys`
 
 
-*Universe* includes everything outside the Milky Way Galaxy.
+Deep Sky Surveys refers to large surveys that probe deeper into the observable universe. These galaxy surveys see deeper, but are far less complete. Typically, only portions of the sky are observed, leaving whole swaths of the universe unseen.
 
-These data sets are more homogeneous, consisting mostly of galaxy surveys. We also display the microwave all-sky images here, and a few other contextual data sets.
-
-<!-- :::{figure} .png
+:::{figure} deep_sky_surveys.png
 :align: left
-:alt: 
-::: -->
+:alt: The two-lobed 2dF galaxies are shown with the Abell galaxy clusters and the supercluster labels.
+
+The multicolored Two-degree Field (2dF) galaxies alongside the Abell Galaxy Clusters and the Supercluster Labels. The 2dF galaxies, like all the galaxy surveys, are colored by density, with orange and yellow galaxies noting more dense regions of galaxies. The orange points are Abell clusters, each a cluster of hundreds or thousands of galaxies.  
+:::
 
 
 
 :::{toctree}
 :maxdepth: 1
-:caption: Milky Way Assets
+:caption: Deep Sky Surveys Assets
 
-
-<!-- deep-sky-surveys/index
-cosmic-microwave-background/index
-grids/index -->
+2df-galaxies/index
+sloan-galaxies/index
+abell-galaxy-clusters/index
+supercluster-labels/index
+quasars/index
 :::
 
