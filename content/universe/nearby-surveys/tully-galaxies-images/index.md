@@ -7,7 +7,7 @@ authors:
 
 # Tully Galaxy Images
 
-{menuselection}`Universe --> Local Universe --> Tully Galaxy Images`
+{menuselection}`Universe --> Nearby Surveys --> Tully Galaxy Images`
 
 
 

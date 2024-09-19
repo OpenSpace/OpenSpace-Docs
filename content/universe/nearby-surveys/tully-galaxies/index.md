@@ -7,7 +7,7 @@ authors:
 
 # Tully Galaxies
 
-{menuselection}`Universe --> Local Universe --> Tully Galaxies`
+{menuselection}`Universe --> Nearby Surveys --> Tully Galaxies`
 
 
 

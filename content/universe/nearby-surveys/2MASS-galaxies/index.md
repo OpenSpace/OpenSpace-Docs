@@ -7,7 +7,7 @@ authors:
 
 # 2MASS Galaxies
 
-{menuselection}`Universe --> Local Universe --> 2MASS Galaxies`
+{menuselection}`Universe --> Nearby Surveys --> 2MASS Galaxies`
 
 
 

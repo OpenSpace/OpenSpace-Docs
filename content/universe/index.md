@@ -47,7 +47,7 @@ That is the nature of the universe. There is no center and, except for very near
 :::{toctree}
 :maxdepth: 1
 
-local-universe/index
+nearby-surveys/index
 deep-sky-surveys/index
 cosmic-microwave-background/index
 :::

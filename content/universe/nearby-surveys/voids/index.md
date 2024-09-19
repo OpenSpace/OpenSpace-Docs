@@ -7,7 +7,7 @@ authors:
 
 # Voids
 
-{menuselection}`Universe --> Local Universe --> Voids`
+{menuselection}`Universe --> Nearby Surveys --> Voids`
 
 
 Cosmic voids are immense areas of little or no galaxies. These exist between filaments of galaxies and are typically tens of millions or hundreds of millions of light years in diameter. They are the negative space in the large-scale structure of the universe.
