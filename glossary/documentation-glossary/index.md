@@ -1,6 +1,7 @@
-# Glossary
+# Documentation Glossary
 
-A glossary of common terms.
+A glossary of terms for those who anticipate developing documentation for OpenSpace.
+
 
 :::{glossary}
 [CommonMark](https://commonmark.org/)
