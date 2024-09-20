@@ -23,51 +23,29 @@ The 6dF galaxies resemble those of Tully, in scale and in color. We use the same
 
 
 
-This catalog overlaps with the Tully dataset, and there is a noticeable
-difference in the quality of these datasets. Tully is much tighter
-and the structure is more apparent, while the 6dF data are more
-spread out. This is because of local motions within galaxy clusters
-have not been corrected in these data.
-Fingers of God. Early in the process of mapping the local universe,
-astronomers noticed that galaxies, when plotted, appeared
-on lines that pointed radially back to Earth. It turns out, these lines,
-dubbed “fingers of god,” are a cluster of galaxies spread out radially
-(along the line of sight) because of the local motions within the
-cluster result in a “smearing” of the redshift, which we use to compute
-the distance. For example, the galaxies of the Local Group are
-all moving in seemingly random directions as they gravitationally
-interact with one another—many are blueshifted (coming toward
-us) even as the universe expands. These local motions within clusters
-contaminate the overall redshift in the spectrum, causing the
-distances to be less accurate, which appears to stretch these clusters
-along our line of sight.
-Completeness. Unlike the Tully galaxies, these data show an
-incompleteness in the sample. Most of the rich structure is visible
-closer to the Milky Way, where we see more of the dimmer
-galaxies. Toward the edge of the data set we see galaxies by their
-lonesome. This is because these data are not as complete. We’re
-only seeing the brighter galaxies to this distance, and therefore less
-complex structures are visible.
+This catalog overlaps with the Tully dataset, and there is a noticeable difference in the quality of these datasets. Tully is much tighter and the structure is more apparent, while the 6dF data are more spread out. This is because of local motions within galaxy clusters have not been corrected in these data. (see explanation in the 2MASS Galaxies).
 
-
-
-
-Unlike other nearby galaxy catalogues, this one is not all-sky, meaning there are patches of sky that are not covered. In this case, the entire northern hemisphere has no
-coverage at all.
-
-
-
-
+In addition, the 6dF Galaxies cov er only the southern sky. It will only overlap with half of the Tully or 2MASS galaxy surveys.
 
 :::{figure} 6df_cutoff.png
 :align: left
-:alt: 
+:alt: Two wedges of galaxies with multicolored points, with the bottom void of data and the V-shaped wedge blocked from view by our own Milky Way.
+
+An "edge-on" view of the 6dF Galaxies, which observed only the southern sky, hence the hard line. The "V" area with a lack of data is the shadow area of the Milky Way---the band of light from our own galaxy blocks our view of the galaxies beyond. As with other galaxy surveys, orange galaxies are in denser areas, aqua galaxies are in less dense areas.
 :::
+
+
+
+## Completeness
+
+Unlike the Tully galaxies, these data show an incompleteness in the sample. Most of the rich structure is visible closer to the Milky Way, where we see more of the dimmer galaxies. Toward the edge of the data set we see galaxies by their lonesome. This is because these data are not as complete. We’re only seeing the brighter galaxies to this distance, and therefore less complex structures are visible.
 
 
 :::{figure} 6df_nightsky_cutoff.png
 :align: left
-:alt: 
+:alt: A night sky view with the stars, constellation lines, and the band of the Milky Way, along with the 6dF Galaxies seen in the southern sky.
+
+The 6dF Galaxies from the night sky perspective. We see the band of the Milky Way, the stars and constellation lines, with lines of right ascension and declination. The 6dF Galaxies lie below the celestial equator, the souther half of the sky.
 :::
 
 
