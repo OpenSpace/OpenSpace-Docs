@@ -93,8 +93,20 @@ getting-started/profiles/index
 :maxdepth: 1
 :hidden:
 
-content/index
-
+content/milky-way/index
+content/universe/index
+content/asteroids
+content/ephemeris/index
+content/exoplanets/index
+content/gaia
+content/globebrowsing/index
+content/point-data/index
+content/profiles
+content/renderablestars
+content/satellites
+content/session-recording
+content/skybrowser/index
+content/solar-video-overlay
 :::
 
 :::{toctree}
@@ -143,7 +155,7 @@ community/index
 :maxdepth: 1
 :hidden:
 
-glossary/glossary
+glossary/index
 
 :::
 
