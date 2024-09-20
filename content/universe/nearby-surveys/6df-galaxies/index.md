@@ -23,9 +23,9 @@ The 6dF galaxies resemble those of Tully, in scale and in color. We use the same
 
 
 
-This catalog overlaps with the Tully dataset, and there is a noticeable difference in the quality of these datasets. Tully is much tighter and the structure is more apparent, while the 6dF data are more spread out. This is because of local motions within galaxy clusters have not been corrected in these data. (see explanation in the 2MASS Galaxies).
+This catalog overlaps with the Tully dataset, and there is a noticeable difference in the quality of these datasets. Tully is much tighter and the structure is more apparent, while the 6dF data are more spread out with noticeable {term}`fingers of god <finger of god>`. This is because of local motions within galaxy clusters have not been corrected in these data. (see explanation in the 2MASS Galaxies).
 
-In addition, the 6dF Galaxies cov er only the southern sky. It will only overlap with half of the Tully or 2MASS galaxy surveys.
+In addition, the 6dF Galaxies cover only the southern sky. It will only overlap with half of the Tully or 2MASS galaxy surveys.
 
 :::{figure} 6df_cutoff.png
 :align: left
