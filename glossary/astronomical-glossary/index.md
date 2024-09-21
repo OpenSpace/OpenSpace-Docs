@@ -4,10 +4,10 @@
 
 
 All-sky Survey
-    Definition
+    An all-sky image constructed from many small images of the night sky. Astronomers have these in visible light, which is the light we see with our eyes, but also have images in infrared, radio, X-Ray, and Gamma Ray areas of the electromagnetic spectrum. Also, the cosmic microwave background images are an example of a processed all-sky image. These images are two-dimensional in nature, so we wrap them onto a sphere that surrounds our vantage point.
 
 Completeness
-    Definition
+    Data completeness is an attribute of a data set that relates to its overall quality. One might be tempted to think of this as gaps in observations, just as the Sloan Galaxies did not look at the entire sky, so there are gaps in the data. But, this is not the gist of completeness. Completeness tells you the quality of a data set. For example, for the Hipparcos catalog of stars, we know the catalog has a completeness down to a magnitude of +7.5 magnitude. That means for stars brighter than 7.5, the catalog is complete and we can treat as such when examining it. This complete subset of stars numbers about 25,000. But, Hipparcos has over 100,000 stars. This means that for stars dimmer than 7.5 magnitude, Hipparcos didn't capture them all in its data. The data set is incomplete for these dimmer stars.
 
 
 Finger of god
@@ -16,11 +16,11 @@ Finger of god
     Within a cluster of galaxies, there are random motions as the galaxies all orbit the center of the cluster. We derive the distance to galaxies using their relative velocity, and, in a sense, the velocities inside a cluster are contaminated by these random, local motions (as opposed to the more global recessional velocity of the expanding universe). This results in a radial spread in distance for the galaxies in a cluster. And, all these radial "lines" all point back to the observer here on Earth, puzzling astronomers who first observed this in the earliest maps of the universe.
 
 
-Lookback distance
-    Definition
+Lookback time
+    Lookback time is the difference between when we detect the light from an object here on Earth versus when the light was emitted by the object. Because the universe is expanding, and spacetime can expand faster than the speed of light (matter cannot, but the intervening fabric of spacetime can), it produces a discrepancy between how far an object was when its light left versus how far it actually is at this moment. The lookback time tells us when the light left the object.
 
 
-Redshift
-    Definition.
+Redshift/blueshift
+    Redshift refers to the shifting of light as the source moves away from the observer. It is the light equivalent of the Doppler shift in sound when, for example, a train's sound changes as it approaches you and recedes from you. We use redshift in astronomy to calculate the distance to objects outside the Milky Way. Almost all objects outside the Galaxy are moving away from us as the universe expands, and we can measure the shift of light in the spectral lines of a galaxy, and once we know that shift in wavelength, we can compute its distance. If the object is moving away from us, the light is shifted toward the red in the electromagnetic spectrum, and if the object is moving toward us, the light is shifted toward the blue end of the spectrum.
 :::
 
