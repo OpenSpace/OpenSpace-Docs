@@ -7,7 +7,7 @@ These setup/configuration steps need to be performed on both the Server and View
 **Server:**
 Currently this only works on Windows. The Linux version has been mothballed.
   1. Ensure that Node.js is installed on the system.
-  1. Ensure that you are using the `thesis/2022/streaming` branch of OpenSpace-WebGuiFrontend.
+  1. Ensure that you are using the `thesis/streaming-2024` branch of OpenSpace-WebGuiFrontend.
   1. Ensure that you are using the `feature/streaming` branch of OpenSpace (Clone with `--recurse-submodules`). Verify that the sgct submodule (apps/OpenSpace/ext/sgct) that it contains is at the `thesis/2022/streaming` branch (or at the correct commit to match).
   1. Configure and generate the OpenSpace project in CMake with the `SGCT_GSTREAMER_SUPPORT` checkbox enabled
   1. In **OpenSpace**
@@ -25,7 +25,7 @@ Currently this only works on Windows. The Linux version has been mothballed.
      - Open a terminal, go to _OpenSpace-WebGuiFrontend_
      - Run `npm install` when running first time, ensure that there are no errors. You can add the `--legacy-peer-deps` option if there are dependency problems.
   1. Setup the signaling server
-     - Open another terminal, go to _OpenSpace-WebGuiFrontend/signalingserver_
+     - Open another terminal, go to _OpenSpace-WebGuiFrontend/src/signalingserver_
      - Run `npm install` when running first time.
   1. Build OpenSpace (Preferably using *RelWithDebInfo* configuration).
 
@@ -42,7 +42,7 @@ Do all of the following steps in one sequence, starting with the Server.
 **Server:**
   1. Start the developer frontend GUI in a terminal at _OpenSpace-WebGuiFrontend_
      - Run `npm start` to start frontend GUI (no need to restart if already running)
-  1. Start the signaling server in a terminal at _OpenSpace-WebGuiFrontend/signalingserver_
+  1. Start the signaling server in a terminal at _OpenSpace-WebGuiFrontend/src/signalingserver_
      - Stop this server (CTRL+C) if it is already running
      - Run `node signaling` to start the server
   1. Start OpenSpace
