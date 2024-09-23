@@ -22,5 +22,9 @@ Lookback time
 
 Redshift/blueshift
     Redshift refers to the shifting of light as the source moves away from the observer. It is the light equivalent of the Doppler shift in sound when, for example, a train's sound changes as it approaches you and recedes from you. We use redshift in astronomy to calculate the distance to objects outside the Milky Way. Almost all objects outside the Galaxy are moving away from us as the universe expands, and we can measure the shift of light in the spectral lines of a galaxy, and once we know that shift in wavelength, we can compute its distance. If the object is moving away from us, the light is shifted toward the red in the electromagnetic spectrum, and if the object is moving toward us, the light is shifted toward the blue end of the spectrum.
+
+
+Zone of avoidance
+    definition.
 :::
 

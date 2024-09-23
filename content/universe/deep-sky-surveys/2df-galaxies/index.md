@@ -72,15 +72,15 @@ The South Galactic Pole strip of observations as seen in the night sky. The star
 :class: full-width
 
 * - **Census:**
-  - 161 clusters
+  - 221,539 galaxies
 * - **Asset Version:**
-  - 3.1
+  - 3.0
 * - **Data Version:**
-  - 4.07
+  - 1.09
 * - **Reference:**
-  - [Gaia EDR3 view on Galactic globular clusters](https://doi.org/10.1093/mnras/stab1475)
+  - [The 2dF Galaxy Redshift Survey: spectra and redshifts](https://doi.org/10.1046/j.1365-8711.2001.04902.x)
 * - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
+  - Brian Abbott, Zack Reeves (AMNH), Eric Gawiser (Rutgers)
 * - **License:**
   - ??? - link to a page?
 :::
