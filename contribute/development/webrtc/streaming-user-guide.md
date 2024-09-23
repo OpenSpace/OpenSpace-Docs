@@ -44,7 +44,7 @@ Do all of the following steps in one sequence, starting with the Server.
      - Run `npm start` to start frontend GUI (no need to restart if already running)
   1. Start the signaling server in a terminal at _OpenSpace-WebGuiFrontend/src/signalingserver_
      - Stop this server (CTRL+C) if it is already running
-     - Run `node signaling` to start the server
+     - Run `node signalingserver` to start the server
   1. Start OpenSpace
      - Run OpenSpace.exe, and select the _remote_gstreamer_output_ config option in the _Window Options_ popup menu
      - If desired, you can use a direct command to bypass the launcher: `bin\RelWithDebInfo\OpenSpace.exe -c config\remote_gstreamer_output.json -b`
