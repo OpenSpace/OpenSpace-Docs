@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Planck Cosmic Microwave Background
+# Planck
 
 {menuselection}`Universe --> Cosmic Microwave Background --> Planck`
 
@@ -15,11 +15,26 @@ authors:
 :::{figure} planck_cmb.png
 :align: left
 :alt: 
+
 :::
 
 
+:::{note}
+See the [top section page](../index) for broader discussion on the Cosmic Microwave Background.
+:::
 
 
+In 2009, the European Space Agency launched the Planck satellite
+into space. Its first all-sky map of the CMB was released in
+2013 and greatly improved upon WMAP’s results. The mission was
+named after Max Planck, who derived the equation for a blackbody
+(an object that absorbs light completely).
+Planck observed the sky in nine wavelengths to better constrain the
+foreground light (WMAP observed in five wavelengths). The resulting
+map is more precise than WMAP and will be more accurate in
+subtracting the foreground light.
+The orange areas represent the slightly hotter areas, and the blue
+areas show the areas that are slightly cooler.
 
 
 
@@ -32,15 +47,15 @@ authors:
 :class: full-width
 
 * - **Census:**
-  - 161 clusters
+  - 1 all-sky image
 * - **Asset Version:**
-  - 3.1
+  - 3.0
 * - **Data Version:**
-  - 4.07
+  - 2.03
 * - **Reference:**
-  - [Gaia EDR3 view on Galactic globular clusters](https://doi.org/10.1093/mnras/stab1475)
+  - [Planck 2015 results. XIII. Cosmological parameters](https://doi.org/10.1051/0004-6361/201525830)
 * - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
+  - Brian Abbott (AMNH)
 * - **License:**
   - ??? - link to a page?
 :::

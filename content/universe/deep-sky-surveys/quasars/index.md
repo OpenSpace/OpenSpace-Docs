@@ -21,7 +21,7 @@ The distribution of quasars, in orange, along with the Sloan Galaxies, in green,
 :::
 
 
-# Nomenclature and discovery
+## Nomenclature and discovery
 
 The term *quasar* is a shortening of these object's original name: *quasi-stellar objects*, often abbreviated QSO.
 
