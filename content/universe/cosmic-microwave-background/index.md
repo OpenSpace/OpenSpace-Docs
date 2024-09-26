@@ -133,6 +133,7 @@ Penzias and Wilson were awarded the Nobel Prize in 1978 for their discovery. The
 :::{toctree}
 :maxdepth: 1
 :caption: Cosmic Microwave Background Assets
+:titlesonly:
 
 
 cobe/index

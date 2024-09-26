@@ -10,7 +10,7 @@ authors:
 {menuselection}`Milky Way`
 
 
-These data sets make up the Milky Way portion of OpenSpace. This broadly includes anything outside the Solar System and within the Milky Way Galaxy.
+These data sets make up the Milky Way portion of OpenSpace. This broadly includes anything outside the Solar System but within the Milky Way Galaxy.
 
 The local stars that make up the night sky form a basis for these data sets, and we fill out the galaxy with exoplanets, star clusters, stellar remnants, and gaseous nebulae, among other data.
 
@@ -25,7 +25,7 @@ The local stars that make up the night sky form a basis for these data sets, and
 
 :::{toctree}
 :maxdepth: 1
-:caption: Milky Way Assets
+:caption: Milky Way Data Groups
 
 stars/index
 constellations/index
