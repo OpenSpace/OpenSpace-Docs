@@ -6,6 +6,11 @@
 All-sky Survey
     An all-sky image constructed from many small images of the night sky. Astronomers have these in visible light, which is the light we see with our eyes, but also have images in infrared, radio, X-Ray, and Gamma Ray areas of the electromagnetic spectrum. Also, the cosmic microwave background images are an example of a processed all-sky image. These images are two-dimensional in nature, so we wrap them onto a sphere that surrounds our vantage point.
 
+
+Blackbody
+    A theoretical body that absorbs and re-emits all light incident on it. The light emitted from such a body only depends on the temperature of the body and that temperature remains constant given it emits all light (energy) incident on it. We use the term as it relates to the cosmic microwave background (CMB) light, which has been referred to as the most perfect blackbody in nature. The CMB is a nearly constant 2.7 Kelvin, and , departing from an ideal blackbody by only one part in 100,000.
+
+
 Completeness
     Data completeness is an attribute of a data set that relates to its overall quality. One might be tempted to think of this as gaps in observations, just as the Sloan Galaxies did not look at the entire sky, so there are gaps in the data. But, this is not the gist of completeness. Completeness tells you the quality of a data set. For example, for the Hipparcos catalog of stars, we know the catalog has a completeness down to a magnitude of +7.5 magnitude. That means for stars brighter than 7.5, the catalog is complete and we can treat as such when examining it. This complete subset of stars numbers about 25,000. But, Hipparcos has over 100,000 stars. This means that for stars dimmer than 7.5 magnitude, Hipparcos didn't capture them all in its data. The data set is incomplete for these dimmer stars.
 
@@ -21,7 +26,9 @@ Lookback time
 
 
 Observable universe
-    Definition.
+    That part of the universe visible to us. Our sightline is limited because the early universe was opaque---light was constantly scattering off free electrons. About 380,000 years after the Big Bang, the universe expanded and cooled to the point where electrons combined with protons to make neutral hydrogen. At that time, light was able to travel across the universe, and this is the oldest light we can see.
+
+    Each point of observation in the universe has its own spherical observable universe. For our observation point on Earth, we have a 45-billion-light0year sphere surrounding us. And, for any other point, they will have their own similar sphere centered on them, revealing areas of the universe that are invisible to us while we can see areas invisible to them.
 
 
 Redshift/blueshift
@@ -29,6 +36,6 @@ Redshift/blueshift
 
 
 Zone of avoidance
-    definition.
+    This is a term invented by astronomers and describes the areas of the sky obscured by the Milky Way---that band of light across our sky. It is named as such because early galaxy maps showed areas where galaxies appeared to avoid. We prefer to use "zone of obscuration" because it has a more physical meaning and is inherently more clear.
 :::
 
