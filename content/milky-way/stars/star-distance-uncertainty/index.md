@@ -11,7 +11,7 @@ authors:
 {menuselection}`Milky Way --> Stars --> Star Distance Uncertainty`
 
 
-In this asset, we provide a visual representation of the uncertainty in a star's distance. Each line is along the line-of-sight back to Earth, and the length of each line represents how uncertain the distance value is for the particular star.
+In this asset, we provide a visual representation of the {term}`uncertainty` in a star's distance. Each line is along the line-of-sight back to Earth, and the length of each line represents how uncertain the distance value is for the particular star.
 
 
 
@@ -26,20 +26,20 @@ Lines that represent the range of distance uncertainty for a selection of stars.
 
 ## Parallax uncertainty
 
-Every object that we measure has some uncertainty associated with that measurement. For the stars, we measure something called *parallax*. Generally, parallax refers to the apparent motion of something relative to something else. If you hold your phone at arm's length to take a selfie, as you move your position to set up the perfect shot, your phone will appear to move relative to those objects in the background. Similarly, as Earth traverses around the Sun each year, nearby stars appear to shift relative to the more distant background stars. This apparent motion is imperceptible to the eye---we need highly specialized telescopes to measure the angle created by this parallax.
+Every object that we measure has some uncertainty associated with that measurement. For the stars, we measure something called *parallax*. Generally, parallax refers to the apparent motion of something relative to something else. If you hold your phone at arm's length to take a selfie, as you move your position to set up the perfect shot, your phone will appear to move relative to those objects in the background. Similarly, as Earth traverses around the Sun each year, nearby stars appear to shift relative to the more distant background stars. This apparent motion is imperceptible to the eye---we need highly specialized telescopes to measure the motion created by this parallax.
 
 :::{figure} Parallax_02.png
 :align: left
 :alt: A two-panel diagram showing how parallax works. In panel A, we see the earth to the left of the sun in its orbit, a line is drawn to a foreground star, and extended to background stars, showing the star appears to be beside those background stars in January. A similar diagram in July, when the Sun is on the opposite side of the Sun, shows the foreground star appears to be beside different stars because of the parallax effect.
 
-A diagram of how stellar parallax works. The Sun is shown along with Earth's orbit, and the Earth is shown at two different positions in its orbit, six months apart. A dashed line is drawn to a foreground star as seen from each epoch, January and June. The dashed line is extended out to the background stars. You can see in January the star appears to be beside the stars on the right from Earth's perspective, while six months later in July the star appears to be beside the stars on the left according to our view on Earth. Credit: Shay Krasinski/AMNH
+A diagram of how stellar parallax works. The Sun is shown along with Earth's orbit, and the Earth is shown at two different positions in its orbit, six months apart. A dotted line is drawn to a foreground star as seen from each epoch, January and June. The dashed line is extended out to the background stars. You can see in January the star appears to be beside the stars on the right from Earth's perspective, while six months later in July the star appears to be beside the stars on the left according to our view on Earth. Credit: Shay Krasinski/AMNH
 :::
 
 
 
 ## Distance uncertainty
 
-Once we have this angle measured, it's a simple geometric formula to derive the distance to the star. And, of course, stars closer to the sun will have larger parallax angles. Because every measurement we make in science has some uncertainty associated with it, here the parallax angle is no different. This uncertainty could be due to the glare of the star, the nature of the sky during the observation, or the limitations of the instrument. Regardless, this uncertainty in the parallax angle results in an uncertainty in the star's distance.
+Once we have the parallax angle measured, it's a simple geometric formula to derive the distance to the star. And, of course, stars closer to the sun will have larger parallax angles. Because every measurement we make has some uncertainty associated with it, there will be an uncertainty associated with the parallax angle. This uncertainty could be due to the glare of the star, the nature of the sky during the observation, or the limitations of the instrument. Regardless, the uncertainty in the parallax angle results in an uncertainty in the star's distance, which we visualize in this data set.
 
 
 
@@ -79,5 +79,5 @@ We've chosen to illustrate the distance uncertainty on a small number of stars--
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

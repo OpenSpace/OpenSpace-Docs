@@ -25,9 +25,9 @@ A view of the night sky's stars with Star Labels and Alternate Star Labels on as
 :caption: Stars Assets
 
 stars/index
-star-distance-uncertainty/index
 star-labels/index
 star-labels-alternate/index
+star-distance-uncertainty/index
 star-orbits/index
 sun/index
 :::

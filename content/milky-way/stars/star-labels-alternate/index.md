@@ -10,7 +10,7 @@ authors:
 {menuselection}`Milky Way --> Stars --> Alternate Star Labels`
 
 
-A small number of more prominent stars have proper names like Sirius, Betelgeuse, and Polaris. However, astronomers have long cataloged thousands of stars beyond the brightest ones we see. Several attempts over thousands of years to name all the visible stars have led to two main catalogs: Johann Bayer's Catalog from 1603 and John Flamsteed's Catalog published in 1725.
+A small number of more prominent stars have proper names like Sirius, Betelgeuse, and Polaris. However, astronomers have long cataloged thousands of stars beyond the brightest ones we see. Several attempts over thousands of years to name all the visible stars have led to two main catalogs: Johann Bayer's (1572--1625) catalog from 1603 and John Flamsteed's (1646--1719) catalog published in 1725.
 
 
 
@@ -33,7 +33,7 @@ smaller, more distant labels. This is controlled in the `Min/Max Size` dual slid
 
 ## Bayer Catalog (Greek names)
 
-The Bayer names (which take precedence in this data set) are designated by a Greek letter along with the genitive form of the constellation name. The stars were ranked by brightness and their names are sequential through the Greek alphabet. For example, the brightest star in each constellation received the alpha (α, or Alf) designation because that is the first letter in the alphabet. The second-brightest star is named beta (β, or Bet), and so on to omega (ω, Ome), provided there are enough stars in the constellation. So, Betelgeuse is α Orionis and Rigel is β Orionis (we use a three-letter abbreviation for the Greek letter and the constellation names, for example, Alf Ori). See below for a key to the Greek abbreviations.
+The Bayer names (which take precedence in this data set) are designated by a Greek letter along with the genitive form of the constellation name. The stars in Bayer's catalog were ranked by brightness and their names are sequential through the Greek alphabet. For example, the brightest star in each constellation received the alpha designation (α, or Alf) because that is the first letter in the alphabet. The second-brightest star is named beta (β, or Bet), and so on to omega (ω, Ome), provided there are enough stars in the constellation. So, Betelgeuse is α Orionis and Rigel is β Orionis (we use a three-letter abbreviation for the Greek letter and the constellation names, for example, Alf Ori). See [below](#greek-alphabet) for a key to the Greek abbreviations.
 
 
 ## Flamsteed Catalog (numbered names)
@@ -58,11 +58,12 @@ The Flamsteed Catalog uses numbers as designations along with the constellation 
 * - **Prepared by:**
   - Zack Reeves, Brian Abbott (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::
 
 
 
+(greek-alphabet)=
 ## Greek Abbreviations
 
 | Abbreviation | Greek symbol | Greek letter |

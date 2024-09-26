@@ -25,6 +25,10 @@ Lookback time
     Lookback time is the difference between when we detect the light from an object here on Earth versus when the light was emitted by the object. Because the universe is expanding, and spacetime can expand faster than the speed of light (matter cannot, but the intervening fabric of spacetime can), it produces a discrepancy between how far an object was when its light left versus how far it actually is at this moment. The lookback time tells us when the light left the object.
 
 
+Main Sequence
+    Definition.
+
+
 Observable universe
     That part of the universe visible to us. Our sightline is limited because the early universe was opaque---light was constantly scattering off free electrons. About 380,000 years after the Big Bang, the universe expanded and cooled to the point where electrons combined with protons to make neutral hydrogen. At that time, light was able to travel across the universe, and this is the oldest light we can see.
 
@@ -33,6 +37,10 @@ Observable universe
 
 Redshift/blueshift
     Redshift refers to the shifting of light as the source moves away from the observer. It is the light equivalent of the Doppler shift in sound when, for example, a train's sound changes as it approaches you and recedes from you. We use redshift in astronomy to calculate the distance to objects outside the Milky Way. Almost all objects outside the Galaxy are moving away from us as the universe expands, and we can measure the shift of light in the spectral lines of a galaxy, and once we know that shift in wavelength, we can compute its distance. If the object is moving away from us, the light is shifted toward the red in the electromagnetic spectrum, and if the object is moving toward us, the light is shifted toward the blue end of the spectrum.
+
+
+Uncertainty
+    Definition.
 
 
 Zone of avoidance

@@ -12,15 +12,15 @@ authors:
 
 Constellations have been part of the human experience since prehistoric times. We looked to the sky as bookmarks, in a sense, of the popular stories and lore of our culture. And, of course, many different cultures devised their own constellations independently of one another. 
 
-As language and the printed word became more common, illustrated star catalogs were published. Many examples of such illustrations exist, but Johann Bayer's, 17th-century *Uranometria* was one of the most complete and the first to depict the stars from Earth's view, rather than from outside the celestial sphere, the tradition up to that point.
+As language and the printed word became more common, illustrated star catalogs were published. Many examples of such illustrations exist, but Johann Bayer's, 17th-century *[Uranometria](https://en.wikipedia.org/wiki/Uranometria)* was one of the most complete and the first to depict the stars from Earth's view, rather than from outside the celestial sphere, the tradition up to that point.
 
-Bayer was also the first to assign star designations to the stars. Names for the brightest stars existed since antiquity, but he cataloged the stars giving them Greek names, Alpha for the brightest star in the constellation, Beta for the second brightest, and so on.
+Bayer was also the first to assign designations to the stars. Names for the brightest stars existed since antiquity, but he cataloged the stars giving them Greek names, Alpha for the brightest star in the constellation, Beta for the second brightest, and so on.
 
 :::{figure} Ioannis_Bayeri_Rhainani_Vranometria_1661_(84129163).png
 :align: left
 :alt: A page from Bayer's star atlas showing an illustrated star field, the stars of Orion and surrounding constellations and a drawing of Orion, the hunter, who wolds a sword, shield, and club.
 
-A page showing the constellation Orion from Johann Bayer's *Uranometria* from 1661. The stars are rendered according to brightness (larger is brighter), and have small Greek letters beside them assigned by Bayer. Atop the stars is the rendition of Orion, drawn with his sword, shield, and club. 
+A page showing the constellation Orion from Johann Bayer's *Uranometria* from 1661. The stars are rendered according to brightness (larger is brighter), and have small Greek letters beside them assigned by Bayer. Overlaid is the rendition of Orion, drawn with his sword, shield, and club. 
 :::
 
 
@@ -49,7 +49,7 @@ More often, we want to see all the constellation art at once---to see the entire
 :align: left
 :alt: A view of OpenSpace and its interface, with the Constellations Art action menu activated. On the panel we see buttons to turn all the artwork on or off, or to see only the zodiacal constellations.
 
-The Constellations Art action menu. Here you can turn each constellation's artwork with the Show all button. You can turn them all off with the Disable all button. You can show and hide all the zodiacal constellations. And, the Hide all button keeps the artwork loaded but unseen.
+The Constellations Art action menu. Here you can turn on each constellation's artwork with the `Show all` button. You can turn them all off with the `Disable all` button. You can show and hide all the zodiacal constellations. And, the `Hide all` button keeps the artwork loaded but unseen.
 :::
 
 

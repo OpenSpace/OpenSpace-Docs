@@ -10,7 +10,7 @@ authors:
 {menuselection}`Milky Way --> Stars --> Sun`
 
 
-This asset controls how the Sun is represented within the Milky Way. We have two views of the Sun, one within the Solar System and one from outside the Solar System. When we view the sun among the planets, we need to see it at a certain size that allows us to also see the planets. However, when we're among the neighboring stars, we need the Sun the be properly calibrated in brightness with these stars. As it is in astronomy, from afar the glare of the Sun overshadows its planets, and this is what happens the the Sun in OpenSpace as we transition from the Solar System to the Milky Way.
+This asset controls how the Sun is represented within the Milky Way. We have two views of the Sun, one within the Solar System and one from outside the Solar System. When we view the sun among the planets, we need to see it at a certain size that allows us to also see the planets. However, when we're among the neighboring stars, we need the Sun the be properly calibrated in brightness with these stars. As it is in astronomy, from afar the glare of the Sun overshadows its planets, and this is what happens with the Sun in OpenSpace as we transition from the Solar System to the Milky Way.
 
 
 <!-- :::{figure} milky_way_sun.gif
