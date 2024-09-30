@@ -10,7 +10,7 @@ authors:
 {menuselection}`Milky Way --> Constellations --> Constellation Boundaries`
 
 
-While the constellations have been around since antiquity, it is only in the last century that order has been brought to them via scientific consensus. Over the last two centuries, scientists over the generations published their star catalogs with renditions of the constellations and some even added constellations, particularly for the southern hemisphere.
+While the constellations have been around since antiquity, it is only in the last century that order has been brought to them via scientific consensus. Over the last two centuries, scientists over the generations published their star catalogs with renditions of the constellations and some even added their own constellations, particularly for the southern hemisphere.
 
 By the late 19th century, there was an effort to standardize the constellations. Once Johann Bayer (in the 17th century) assigned stars to a constellation by giving them Greek names like Alpha Orionis, it became necessary to remove the ambiguity in the celestial sphere and define boundaries for each constellation. Once completed and adopted in 1928, every object seen in the sky, by eye or by powerful telescopes, would now belong in one constellation. 
 

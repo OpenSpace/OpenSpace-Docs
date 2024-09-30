@@ -17,7 +17,7 @@ For the visible sky, we are left with the gas and dust that makes up the Milky W
 
 :::{toctree}
 :maxdepth: 1
-:caption: All-sky Images Assets
+:caption: Assets
 
 hydrogen-alpha/index
 visible-milky-way/index

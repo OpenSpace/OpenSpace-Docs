@@ -7,12 +7,20 @@ All-sky Survey
     An all-sky image constructed from many small images of the night sky. Astronomers have these in visible light, which is the light we see with our eyes, but also have images in infrared, radio, X-Ray, and Gamma Ray areas of the electromagnetic spectrum. Also, the cosmic microwave background images are an example of a processed all-sky image. These images are two-dimensional in nature, so we wrap them onto a sphere that surrounds our vantage point.
 
 
+Astrophysical dust
+    Astronomers refer to dust as the microscopic rocks that float around the universe. These rocky particles range from a few molecules to maybe a millimeter in diameter. From our point of view, dist is a nuisance and obscures our view of objects behind it. However, infrared telescopes allow us to see through the dust. Dust scatters light and can dim light and make objects appear more red than they are. Just as the daytime sky is blue because the atoms in our atmosphere scatter blue light, dust scatters red light and reddens objects, which astronomers call *extinction* of light.
+
+
 Blackbody
     A theoretical body that absorbs and re-emits all light incident on it. The light emitted from such a body only depends on the temperature of the body and that temperature remains constant given it emits all light (energy) incident on it. We use the term as it relates to the cosmic microwave background (CMB) light, which has been referred to as the most perfect blackbody in nature. The CMB is a nearly constant 2.7 Kelvin, and , departing from an ideal blackbody by only one part in 100,000.
 
 
 Completeness
     Data completeness is an attribute of a data set that relates to its overall quality. One might be tempted to think of this as gaps in observations, just as the Sloan Galaxies did not look at the entire sky, so there are gaps in the data. But, this is not the gist of completeness. Completeness tells you the quality of a data set. For example, for the Hipparcos catalog of stars, we know the catalog has a completeness down to a magnitude of +7.5 magnitude. That means for stars brighter than 7.5, the catalog is complete and we can treat as such when examining it. This complete subset of stars numbers about 25,000. But, Hipparcos has over 100,000 stars. This means that for stars dimmer than 7.5 magnitude, Hipparcos didn't capture them all in its data. The data set is incomplete for these dimmer stars.
+
+
+Ecliptic
+    Definition.
 
 
 Finger of god

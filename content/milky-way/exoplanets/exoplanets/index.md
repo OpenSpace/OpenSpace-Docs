@@ -24,7 +24,7 @@ A view of exoplanet systems in the night sky looking toward Cygnus, Lyra, and He
 
 To the eye, exoplanets are lost in the glare of their host star. Unconventional techniques are required to infer or observe them. The most common method, thanks to the Kepler and TESS missions, uses the **transit of the planet** in front of its host star. This, of course, requires the alignment of its orbit be edge-on from our vantage point, which is not terribly probable. However, this method can detect planets a few thousand light years away.
 
-Projects include the [Transiting Exoplanet Survey Satellite](https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite) (TESS), [Kepler](https://en.wikipedia.org/wiki/Kepler_space_telescope), [Wide Angle Search for Planets](https://en.wikipedia.org/wiki/Wide_Angle_Search_for_Planets) (WASP), the [Kilodegree Extremely Little Telescope](https://en.wikipedia.org/wiki/Kilodegree_Extremely_Little_Telescope) (KELT), the [Hungarian Automated Telescope](https://en.wikipedia.org/wiki/HATNet_Project) (HAT), and the [Convection Rotation and planetary Transits](https://en.wikipedia.org/wiki/CoRoT) (CoRoT). TESS, the Transiting Exoplanet Survey Satellite, is the current generation of planet-detecting telescopes. It was launched in April 2018 and has begun discovering exoplanets.
+Projects include the [Transiting Exoplanet Survey Satellite](https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite) (TESS), [Kepler](https://en.wikipedia.org/wiki/Kepler_space_telescope), [Wide Angle Search for Planets](https://en.wikipedia.org/wiki/Wide_Angle_Search_for_Planets) (WASP), the [Kilodegree Extremely Little Telescope](https://en.wikipedia.org/wiki/Kilodegree_Extremely_Little_Telescope) (KELT), the [Hungarian Automated Telescope](https://en.wikipedia.org/wiki/HATNet_Project) (HAT), and the [Convection Rotation and Planetary Transits](https://en.wikipedia.org/wiki/CoRoT) (CoRoT). TESS, the Transiting Exoplanet Survey Satellite, is the current generation of planet-detecting telescopes. It was launched in April 2018 and has begun discovering exoplanets.
 
 The **radial velocity method** is the next most common. A variation in the star's radial velocity is observed in the spectrum which results from the planet's motion around the star. While we think the Sun is stationary, it actually moves, or wobbles, because of the planets that orbit it. The larger the planet, the larger the wobble. This is because the center of the orbit is actually located at a point called the *center of mass* of the system. So, for example, the Sun-Jupiter system's center of mass is more than 742,000 kilometers (483,000 miles) from the Sun's center. This point, along the line connecting the two bodies, lies just outside the Sun's photosphere, or "surface," which has a radius of about 696,000 km (432,000 miles). While we do not perceive it, the Sun is orbiting this point and would be observed to wobble from a point of view outside the Solar System. Some projects detecting radial velocities include [High Accuracy Radial Velocity Planet Searcher](https://en.wikipedia.org/wiki/High_Accuracy_Radial_Velocity_Planet_Searcher) (HARPS) and the [High Resolution Echelle Spectrometer](https://en.wikipedia.org/wiki/W._M._Keck_Observatory#Instruments) (HIRES) on the Keck Telescope.
 
@@ -56,14 +56,14 @@ The night sky looking toward the constellations Orion and Taurus. The exoplaneta
 The exoplanet systems are represented by a blue ring centered on each host star. The ring is not intended to signify an orbit; the various ring sizes reveal their distance from you. The labels list the host star name, and if there is more than one planet, will list the number of planets in parentheses.
 
 :::{note}
-The blue rings do not signify an orbit, but merely mark the locations of stars with known planets. The larger the ring the closer it is to your position.
+The blue rings do not signify an orbit, but merely mark the locations of stars with known planets. The larger the ring, the closer it is to your position.
 :::
 
 
 
 ## Distribution
 
-Exoplanet systems remain huddled around the Sun for the most part. This reflects our observational constraints. Exceptions include the conical swath of system in the Kepler mission's footprint, which stretches out into the Galaxy in the direction of the constellation Cygnus. We also see in the image below the abundance of systems from the K2 mission that appear perpendicular to the Kepler portion.
+Exoplanet systems remain huddled around the Sun for the most part. This reflects our observational constraints. Exceptions include the conical swath of systems in the Kepler mission's footprint, which stretches out into the Galaxy in the direction of the constellation Cygnus. We also see in the image below the abundance of systems from the K2 mission that appear perpendicular to the Kepler portion.
 
 
 :::{figure} exoplanets_milky_way.png
@@ -92,5 +92,5 @@ A view of the exoplanetary systems from outside the Milky Way galaxy. We are sti
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

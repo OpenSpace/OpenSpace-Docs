@@ -10,7 +10,7 @@ authors:
 {menuselection}`Milky Way --> Stellar Remnants --> White Dwarfs`
 
 
-A white dwarf is compact remnant---the final evolutionary state of over 95% of the stars in the Milky Way. This fate is determined by the mass of the star. Stars less massive than the range have long lifetimes on the order of trillions of years. Stars more massive than the range will result in either a neutron star or black hole. Stars within the range, from about 0.08 to 8 solar masses, become a red giant, shed their layers in a planetary nebula, revealing a compact core called a white dwarf.
+A white dwarf is a compact remnant---the final evolutionary state of over 95% of the stars in the Milky Way. This fate is determined by the mass of the star. Stars within the range of  0.08 to 8 solar masses become a red giant, shed their layers in a planetary nebula, ultimately revealing a compact core called a white dwarf. Stars less massive than 0.08 solar masses have long lifetimes on the order of trillions of years. Stars more massive than 8 solar masses will result in either a neutron star or black hole. 
 
 :::{figure} Sirius_A_and_B_Hubble_photo.png
 :align: center
@@ -39,7 +39,7 @@ Over time, a white dwarf will cool slowly and eventually fade from view, ultimat
 We represent the white dwarfs with generic points with exaggerated brightness. Larger points indicate the object is closer to you.
 :::
 
-White dwarfs are too dim to see with the unaided eye. The first one, called 40 Eridani B, was discovered by the famous astronomer William Herschel (1738--1822) in 1783. The second one was discovered in 1862 as a companion to the star Sirius.
+White dwarfs are too dim to see with the unaided eye. The first one seen, called 40 Eridani B, was discovered by the famous astronomer William Herschel (1738--1822) in 1783. The second one was discovered in 1862 as a companion to the star Sirius.
 
 Because these are dim objects, we exaggerate their appearance here by representing them with points far brighter than their actual brightness. The relative size of the points describes their proximity to you, rather than the object's intrinsic brightness---so the larger the point, the closer it is to you. This exaggeration allows us to see where they are in the sky, and how they're distributed around the Sun. But, it's essential to remember all of these objects are invisible to us in the night sky.
 
@@ -65,14 +65,14 @@ A view of the night sky looking toward Scorpius and Sagittarius but, instead of 
 
 Because white dwarfs gradually cool over many billions of years, we expect to see them wherever we see stars. They are spherically distributed around the Sun, not limited to more recent stellar activity in the disk of the Galaxy. 
 
-This spherical huddle around the Sun is, of course, is limited by what we can see---these data, like all the data here are a product of our observations, and those observations happen from Earth (or low-Earth orbit, which is essentially the same).
+This spherical huddle around the Sun is, of course, limited by what we can see---these data, like all the data here are a product of our observations, and those observations happen from Earth (or low-Earth orbit, which is essentially the same).
 
 
 :::{figure} white_dwarfs_outside_milkyway.png
 :align: left
 :alt: An image of the Milky Way Galaxy and the location of the white dwarfs within it. They occupy a small area spherically distributed around the Sun.
 
-The distribution of white dwarfs in the Milky Way. These objects are huddled close to the Sun, which lies at the center of the white cluster of points. The Galaxy is, of course, filled with these objects, but they are too faint to see at great distances from the Sun. The lines jutting out from the white dwarf data are the constellation lines, represented in 3-D from this vantage point away from the night sky.
+The distribution of white dwarfs in the Milky Way. These objects are huddled close to the Sun, which lies at the center of the white cluster of points. The Galaxy is, of course, filled with these objects, but they are too faint to see at great distances from the Sun. The lines jutting out from the white dwarf data are the constellation lines, represented in 3-D from this vantage point.
 :::
 
 
@@ -94,5 +94,5 @@ The distribution of white dwarfs in the Milky Way. These objects are huddled clo
 * - **Prepared by:**
   - Zack Reeves, Brian Abbott (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

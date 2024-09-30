@@ -17,7 +17,7 @@ In astronomy, there are dwarf stars, dwarf novae, and even dwarf galaxies. Subst
 
 While brown dwarfs had been theorized starting in the 1960s, it took roughly thirty years to get conclusive observation of one. These dim objects emit most of their light in the infrared, and so infrared detectors were needed to see them. With the advent of [2MASS](https://en.wikipedia.org/wiki/2MASS) in 1997, the floodgates opened and many such objects were catalogued. Today, we know of thousands of such objects.
 
-The objects in this catalog use telescopes like [Pan-STARRS](https://en.wikipedia.org/wiki/Pan-STARRS), [2MASS](https://en.wikipedia.org/wiki/2MASS), [WISE](https://en.wikipedia.org/wiki/Wide-field_Infrared_Survey_Explorer), and [Gaia](https://en.wikipedia.org/wiki/Gaia_(spacecraft)). Missions take images of the sky at two different epochs and astronomers later compare them to find moving objects.
+The objects in this catalog use telescopes like [Pan-STARRS](https://en.wikipedia.org/wiki/Pan-STARRS), [2MASS](https://en.wikipedia.org/wiki/2MASS), [WISE](https://en.wikipedia.org/wiki/Wide-field_Infrared_Survey_Explorer), and [Gaia](https://en.wikipedia.org/wiki/Gaia_(spacecraft)).
 
 
 ## Classification
@@ -28,7 +28,7 @@ In the transition from star to brown dwarf, we have the M stars---the coolest st
 ## Representing brown dwarfs
 
 :::{note}
-None of these objects are visible to the eye, so we represent these objects conceptually with oversized points, tinted according to their type: L dwarfs, T dwarfs, and Y dwarfs. Their brightness (size) is grossly exaggerated relative to the stars.
+None of these objects are visible to the eye, so we represent these objects conceptually with oversized points, tinted according to their type: L dwarfs, T dwarfs, and Y dwarfs. Their brightness (size) is grossly exaggerated so we can examine them.
 :::
 
 We represent these data by oversized points colored according to their spectral type. These objects are incredibly faint, so we need to exaggerate their size in order to see them. We color them according to spectral type:
@@ -84,5 +84,5 @@ Brown dwarfs, in red, distributed around the Sun. The green object is a 160-ligh
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves, Jackie Faherty (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

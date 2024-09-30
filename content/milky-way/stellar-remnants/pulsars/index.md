@@ -60,7 +60,7 @@ Looking toward Scorpius and Sagittarius as viewed from Earth, we see red squares
 
 ## Pulsars and supernova remnants
 
-Many pulsars are found in the [supernova remnants](../..nebulae/supernova-remnants/index) data. Because supernova remnants have short lifetimes, we can assume that the pulsars seen in them are quite young. Once the supernova remnant disappears, the pulsar's rotation period continues to slow. After about 1 million years the pulsar is no longer visible; therefore, all the pulsars we see today must be the remnants of stars that have died over the previous 100,000 to 1 million years.
+Many pulsars are found in the [supernova remnants](../../nebulae/supernova-remnants/index) data. Because supernova remnants have short lifetimes, we can assume that the pulsars seen in them are quite young. Once the supernova remnant disappears, the pulsar's rotation period continues to slow. After about 1 million years the pulsar is no longer visible; therefore, all the pulsars we see today must be the remnants of stars that have died over the previous 100,000 to 1 million years.
 
 
 :::{figure} pulsars_milkyway_faceon.png
@@ -75,14 +75,14 @@ Looking down on the Milky Way Galaxy, we see the pulsars in red. These are more 
 :align: left
 :alt: An edge-on view of the Milky Way Galaxy, showing the locations of the pulsars as red points above and below the Galactic disk.
 
-An edge-on view of the Milky Way Galaxy, showing the vertical distribution off the plane of the Galaxy. There is a fair bit of scatter able and below the plane, some of which is attributed to pulsars in the foreground.
+An edge-on view of the Milky Way Galaxy, showing the vertical distribution off the plane of the Galaxy. There is a fair bit of scatter above and below the plane, some of which is attributed to pulsars in the foreground.
 :::
 
 
 
 ## Pulsars in globular clusters
 
-If pulsars are young objects, why do we see them in the relatively ancient globular clusters? The answer seems to be that these pulsars are drawing in material from a nearby companion star. This matter causes the star to spin faster, re-energizing the system. These are called millisecond pulsars for their periods, which can be as short as 0.002 seconds (2 milliseconds). More than 30 of these have been found and are easily seen to line up with the globular clusters in the atlas. Often, the distance of the pulsar and the independently deduced distance to the globular cluster will not match, demonstrating that distances in astronomy are by no means an exact science.
+If pulsars are young objects, why do we see them in the relatively ancient [globular clusters](../../star-clusters/globular-clusters/index)? The answer seems to be that these pulsars are drawing in material from a nearby companion star. This matter causes the star to spin faster, re-energizing the system. These are called millisecond pulsars for their periods, which can be as short as 0.002 seconds (2 milliseconds). More than 30 of these have been found and are easily seen to line up with the globular clusters in the atlas. Often, the distance of the pulsar and the independently deduced distance to the globular cluster will not match, demonstrating that distances in astronomy are by no means an exact science.
 
 :::{figure} pulsars_galaxy_globular_clusters.png
 :align: left
@@ -112,5 +112,5 @@ The pulsars (red) and globular clusters (yellow) shown together as we view the M
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

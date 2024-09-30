@@ -22,7 +22,7 @@ A view of the night sky's stars with Star Labels and Alternate Star Labels on as
 
 :::{toctree}
 :maxdepth: 1
-:caption: Stars Assets
+:caption: Assets
 
 stars/index
 star-labels/index

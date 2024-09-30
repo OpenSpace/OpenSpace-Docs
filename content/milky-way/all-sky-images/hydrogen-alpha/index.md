@@ -47,33 +47,12 @@ Hydrogen-alpha light looking toward the constellation Orion in the night sky. Th
 
 ## Nebulous regions
 
-Hydrogen-alpha also reveals nebulous regions to us, mainly where star formation is happening. The Orion Nebula area glows brightly in the image below, along with the Horsehead Nebula and the large, sweeping supernova remnant called Barnard's Loop. The nebula in Monoceros is also pronounced as one of the brighter points seen in this image.
+Hydrogen-alpha also reveals nebulous regions to us, mainly where star formation is happening. The Orion Nebula area glows brightly in the image above, along with the Horsehead Nebula and the large, sweeping supernova remnant called Barnard's Loop. The nebula in Monoceros is also pronounced as one of the brighter points seen in this image.
 
 We can also see that galaxies emit Hα light. We see the Large and Small Magellanic Clouds in the southern sky, and also wisps around the Andromeda Galaxy and the Triangulum Galaxy (M33) nearby.
 
 
 
-
-
-:::{dropdown} Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 1 all-sky image
-* - **Asset Version:**
-  - 1.0
-* - **Data Version:**
-  - 2.02
-* - **Reference:**
-  - [A Composite H-alpha Template for Microwave Foreground Prediction](https://doi.org/10.1086/374411)
-* - **Prepared by:**
-  - Doug Finkbeiner (Princeton), Brian Abbott (AMNH)
-* - **License:**
-  - ??? - link to a page?
-:::
-:::
 
 ## Dossier
 :::{list-table}
@@ -91,5 +70,5 @@ We can also see that galaxies emit Hα light. We see the Large and Small Magella
 * - **Prepared by:**
   - Doug Finkbeiner (Princeton), Brian Abbott (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

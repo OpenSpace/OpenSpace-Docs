@@ -20,7 +20,7 @@ The hotter, more massive stars (like O stars) give off higher-energy light, and 
 :width: 75%
 :alt: An image of the Orion Nebula with its glowing cloud of gas surrounding a cluster of young stars. The cloud glows off-white in its center and has pinks, reds and greens in its outskirts.
 
-The Orion Nebula, at around 1,350 light years, is the most prominent HII region in the night sky. Here we see Hubble's view of the great nebula, but it is visible with the unaided eye in the night sky and appears as a small, bluish haze in Orion's sword. Credit: NASA, ESA, M. Robberto (Space Telescope Science Institute/ESA) and the Hubble Space Telescope Orion Treasury Project Team
+The Orion Nebula, at around 1,350 light years, is the most prominent HII region in the night sky. Here we see Hubble's view of the great nebula, but with the unaided eye it appears as a small, bluish haze in Orion's sword. Credit: NASA, ESA, M. Robberto (Space Telescope Science Institute/ESA) and the Hubble Space Telescope Orion Treasury Project Team
 :::
 
 
@@ -29,7 +29,7 @@ The Orion Nebula, at around 1,350 light years, is the most prominent HII region 
 :align: left
 :alt: A view of the night sky with the constellations Orion and some surrounding constellations. Aqua hexagons mark the location of HII regions.
 
-The night sky view of HII regions looking toward Orion. Several points mark the Orion nebula complex, other less prominent regions are shown and some are labeled. Relatively close are the HII regions Sharples 273, 255, and 252.
+The night sky view of HII regions looking toward Orion. Several points mark the Orion nebula complex, other less prominent regions are shown and some are labeled. Sharples 273, 255, and 252 are relatively close to Earth.
 :::
 
 
@@ -89,5 +89,5 @@ Looking at the HII regions from above the Milky Way Galaxy. The panel on the lef
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

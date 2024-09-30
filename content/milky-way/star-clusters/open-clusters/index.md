@@ -27,7 +27,7 @@ A night sky view of the open star clusters looking toward Orion, with Cancer, Ge
 :width: 50%
 :alt: A zoomed-in image of the sky centered on the open star cluster NGC 3766, a loose grouping of stars amongst a backdrop of more distant stars.
 
- The open star cluster NGC 3766 in the constellation of Centaurus. Open clusters are looser assemblages of young stars. Credit: [ESO](https://www.eso.org/public/images/eso1326a/)
+ The open star cluster NGC 3766 in the constellation of Centaurus. Open clusters are loose assemblages of young stars. Credit: [ESO](https://www.eso.org/public/images/eso1326a/)
 :::
 
 
@@ -86,5 +86,5 @@ Looking at the Milky Way Galaxy edge-on, we can see the open clusters are tightl
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

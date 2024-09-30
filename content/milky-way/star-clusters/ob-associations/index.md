@@ -22,7 +22,7 @@ Local OB associations near the Sun seen from outside the Milky Way Galaxy. These
 :::
 
 
-Associations typically have anywhere from 10 to 100 massive stars (O and B stars), and hundreds or thousands of lower-mass stars. The short-lived O stars will explode via supernova in roughly a million years, so they do not move far from their birthplace. O and B stars are quite luminous, making OB associations visible to great distances. And because O and B stars are young stars, we know they form in the regions of the Galaxy where star formation occurs: the spiral arms. Therefore, OB associations are good tracers for spiral structure. We assign colors to these objects based on their spiral arm membership (see tip below).
+Associations typically have anywhere from 10 to 100 massive stars (O and B stars), and hundreds or thousands of lower-mass stars. The short-lived O stars will explode via supernova in roughly a million years, so they do not move far from their birthplace. O and B stars are quite luminous, making OB associations visible to great distances. And because O and B stars are young stars, we know they form in the regions of the Galaxy where star formation occurs---the spiral arms. Therefore, OB associations are good tracers for spiral structure. We assign colors to these objects based on their spiral arm membership (see tip below).
 
 :::{tip}
 - Blue associations trace the Sagittarius Arm
@@ -30,7 +30,7 @@ Associations typically have anywhere from 10 to 100 massive stars (O and B stars
 - Orange associations are in the Perseus Arm.
 :::
 
-Because O and B stars are relatively short lived, OB associations are generally young. Their member stars do not have much time to stray from their birthplace, so young associations tend to be fairly consolidated, although not as condensed as an open star cluster.
+Because O and B stars are relatively short lived, OB associations are generally young. Their member stars do not have much time to stray from their birthplace, so young associations tend to be fairly consolidated, although not as condensed as an [open star cluster](../open-clusters/index).
 
 
 
@@ -66,5 +66,5 @@ One of the few datasets that are sized according to their physical size. Most da
 * - **Prepared by:**
   - Brian Abbott (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

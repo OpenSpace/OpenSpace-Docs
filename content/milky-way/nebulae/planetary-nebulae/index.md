@@ -16,7 +16,7 @@ A planetary nebula is a glowing shell of gas ejected from a red giant star late 
 
 As an intermediate-mass star exhausts its hydrogen fuel, its helium core contracts and heats to meet the energy needs of the star. The core contraction releases gravitational energy, which has two consequences. First, hydrogen just outside the core begins to burn, producing a more massive helium core over time. Second, the star's outer layers begin to expand away from the core. Ultimately, the star transforms into a red giant.
 
-For stars between one and eight solar masses, the core continues to condense until the conditions (temperature and density) become sufficient to burn helium into carbon. The ignition of helium occurs rapidly, producing a flash of light. The star's outer shells expand, leaving a bright core that soon becomes a white dwarf. The expanding shells of gas, still illuminated by the radiation, become a planetary nebula.
+For stars between one and eight solar masses, the core continues to condense until the conditions (temperature and density) become sufficient to burn helium into carbon. The ignition of helium occurs rapidly, producing a flash of light. The star's outer shells expand, leaving a bright core that soon becomes a white dwarf. The expanding shells of gas, still illuminated by radiation, become a planetary nebula.
 
 
 :::{figure} opo9738b.png
@@ -44,7 +44,7 @@ Planetary nebulae represented as triangles in the night sky toward Orion.
 
 The Milky Way Galaxy consists of two major star populations: an older halo population spherically distributed around the Galactic center, and a younger population present in the Milky Way's disk. Because the planetary nebula phase of a star's evolution is relatively short (on the order of thousands of  years), when we see a planetary nebula we know it's formation is relatively recent, cosmically speaking.
 
-Because of this, we expect to see planetary nebulae where star formation and evolution is ongoing---in the disk of the Galaxy. The stars that will evolve into planetary nebulae have relatively eccentric orbits around the Galaxy and, therefore, a wider range of distances above and below the Galactic disk when compared to younger objects like [open star clusters](../../star-clusters/open-clusters/index) or [HII regions](../HII_regions/index).
+Because of this, we expect to see planetary nebulae where star formation and evolution is ongoing---in the disk of the Galaxy. The stars that will evolve into planetary nebulae have relatively eccentric orbits around the Galaxy and; therefore, a wider range of distances above and below the Galactic disk when compared to younger objects like [open star clusters](../../star-clusters/open-clusters/index) or [HII regions](../HII-regions/index). So, we see a wider dispersion above and below the disk with planetary nebulae when compared to other objects like HII regions.
 
 
 :::{figure} PN_near_sun.png
@@ -88,5 +88,5 @@ Planetary nebulae as seen from outside the Milky Way Galaxy. Most are located re
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

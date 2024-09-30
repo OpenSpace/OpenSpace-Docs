@@ -10,7 +10,7 @@ authors:
 {menuselection}`Milky Way --> Exoplanets --> Exoplanet Candidates`
 
 
-The exoplanet candidate stars are likely hosts for exoplanets. These are stars plucked from NASA's [Kepler](https://en.wikipedia.org/wiki/Kepler_space_telescope) and [TESS](https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite) space telescopes. They are not designed to look photo-realistic but, rather, are diagrammatic in nature and demonstrate the sheer number of candidate stars that continue to be examined. The nature of these stars is not as important as their abundance and distribution in the solar neighborhood.
+The exoplanet candidate stars are likely hosts for exoplanets. These are stars plucked from NASA's [Kepler](https://en.wikipedia.org/wiki/Kepler_space_telescope) and [TESS](https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite) space telescopes. They are not designed to look photo-realistic but, rather, are diagrammatic in nature and demonstrate the sheer number of candidate stars that continue to be examined for planets. The nature of these stars is not as important as their abundance and distribution in the solar neighborhood.
 
 
 :::{note}
@@ -35,13 +35,13 @@ These slight differences in brightness signify the transit of the star's planet,
 :align: left
 :alt: The night sky view toward the constellation Cygnus. Dominating the view are green and yellow stars, falsely colored by their mission. These are exoplanet candidate stars, yellow for the Kepler Mission and green for the TESS Mission.
 
-The exoplanet candidate stars looking toward the constellations Cygnus and Hercules. Yellow stars are from the Kepler mission while green stars are from TESS. The 12-degree Kepler field used to be defined to the extent that one could see the footprint of the telescope's detector. However, many of the former candidate stars have been either ruled a host to planets (and moved into the [Exoplanets](../exoplanets/index)), or were ruled out as planetary hosts. Thus, the detector footprint is not as well defined anymore, but is better defined in the Exoplanets data now.
+The exoplanet candidate stars looking toward the constellations Cygnus and Hercules. Yellow stars are from the Kepler mission while green stars are from TESS. The 12-degree Kepler field used to be defined to the extent that one could see the footprint of the telescope's detector. However, many of the former candidate stars have been either ruled a host to planets (and moved into the [Exoplanets](../exoplanets/index)), or were ruled out as planetary hosts. Thus, the detector footprint is not as well defined anymore, but is better defined in the [Exoplanets](../exoplanets/index) data now.
 :::
 
 
 ## The K2 mission
 
-In July 2012, Kepler lost control of four of its reaction wheels that provide attitude control of the spacecraft. And, less than one year later, one of the two remaining reaction wheels failed, threatening the entire mission. In response to this, the K2 mission was proposed as an extension of the original mission. The spacecraft was limited to searching along the ecliptic, the plane containing Earth's orbit around the Sun (or the annual path of the Sun in the sky). This is roughly the plane of the solar system, which is tipped about 62 deg to the Milky Way Galaxy.
+In July 2012, Kepler lost control of four of its reaction wheels that provide attitude control of the spacecraft. And, less than one year later, one of the two remaining reaction wheels failed, threatening the entire mission. In response to this, the K2 mission was proposed as an extension of the original mission. The spacecraft was limited to searching along the {term}`ecliptic`, the plane containing Earth's orbit around the Sun (or the annual path of the Sun in the sky). This is roughly the plane of the solar system, which is tipped about 62 deg to the Milky Way Galaxy.
 
 
 :::{figure} exoplanet_candidates_nightsky_leo.png
@@ -87,5 +87,5 @@ As seen from afar, the exoplanet candidate stars are huddled around the Sun. Gre
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves, Emily Rice, Jason No (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

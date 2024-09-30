@@ -22,7 +22,7 @@ The Galaxy Image---NGC 1232---as seen in OpenSpace. This view, from above the Ga
 
 
 
-We chose this galaxy because it resembles the overall structure of the Milky Way---a spiral galaxy with a bar---and it is oriented face-on from our vantage point on Earth. While NGC 1232 is not precisely a twin of the Milky Way, which is believed to have a more pronounced bar, it is a good stand in for its bar, spiral structure, and the bright star-forming regions (HII regions) that dot the arms. It is properly sized and oriented, and all the data sets inside and peripheral to the Galaxy may be viewed within this scaled context.
+We chose this galaxy because it resembles the overall structure of the Milky Way---a spiral galaxy with a bar---and it is oriented face-on from our vantage point on Earth. While NGC 1232 is not precisely a twin of the Milky Way, which is believed to have a more pronounced bar, it is a good stand in for its bar, spiral structure, and the bright star-forming regions ([HII regions](../../nebulae/HII-regions/index)) that dot the arms. It is properly sized and oriented, and all the data sets inside and peripheral to the Galaxy may be viewed within this scaled context.
 
 
 
@@ -34,6 +34,9 @@ We chose this galaxy because it resembles the overall structure of the Milky Way
 The Milky Way Image shown with the Milky Way Volume, our 3-D model of the Galaxy. Comparing this image to the image above, you can see the model enhances the center of the Galaxy and makes it appear more realistic.
 :::
 
+
+
+## Image modifications
 
 To prepare this image, some alterations were necessary. We "painted out" some areas, in particular an area where it's believed a companion galaxy was interacting with one of the outer spiral arms. Some work was also done on enhancing the image to highlight structure.
 
@@ -52,7 +55,7 @@ To prepare this image, some alterations were necessary. We "painted out" some ar
 * - **Reference:**
   - ESO
 * - **Prepared by:**
-  - Brian Abbott, Carter Emmart (AMNH)
+  - Carter Emmart, Brian Abbott (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

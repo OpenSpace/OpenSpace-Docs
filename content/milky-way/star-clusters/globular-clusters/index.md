@@ -39,7 +39,7 @@ Messier 2, a globular cluster in the constellation Aquarius. Credit: NASA, ESA, 
 
 ## Understanding our place in the Galaxy
 
-Globular clusters were instrumental in our understanding of the size and nature of the Galaxy and universe. The story began in 1912, when [Henrietta Leavitt](https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt) (1868–1921), a "computer" for astronomers at the Harvard College Observatory, though an accomplished astronomer in her own right, discovered a relationship between the period of Cepheid variable stars and their intrinsic luminosity, allowing her to determine their distance. 
+Globular clusters were instrumental in our understanding of the size and nature of the Galaxy and universe. The story began in 1912, when [Henrietta Leavitt](https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt) (1868–1921), a "computer" for astronomers at the Harvard College Observatory, though an accomplished astronomer in her own right, discovered a relationship between the period of [Cepheid variable stars](https://en.wikipedia.org/wiki/Cepheid_variable) and their intrinsic luminosity, allowing her to determine their distance. 
 
 In 1918, the astronomer [Harlow Shapley](https://en.wikipedia.org/wiki/Harlow_Shapley) (1885–1972) noted that the open clusters were mainly in the plane of the Milky Way, while more than half the globular clusters were in or near the constellation Sagittarius. He deduced the center of our star system must be far off in the direction of Sagittarius.
 
@@ -57,12 +57,14 @@ A view from outside the Milky Way Galaxy showing the distribution of globular cl
 
 The line between globular cluster and dwarf galaxy is not always clear. Dwarf galaxies orbit the Milky Way in a similar fashion---long elliptical orbits around the Milky Way's center. Many dwarf galaxies have been stripped of gas and dust via collisions with the Milky Way. So, where does a globular cluster end and a dwarf galaxy begin? Astronomers continue to seek the answer to that question.
 
+For more on dwarf galaxies, see [Local Group](../../../universe/nearby-surveys/local-group/index).
+
 
 :::{figure} globular_clusters_local_group.png
 :align: left
 :alt: Looking back toward the Milky Way Galaxy from a distant vantage point, we see yellow points huddled around the Galaxy showing the locations of the globular clusters, and more distant aqua points demonstrating where the nearby dwarf galaxies are located. 
 
-Looking back at the Milky Way from extragalactic space. We see the Milky Way Galaxy and the yellow points indicating the location of the globular clusters, huddled around the Galaxy. Co-mingling with the globular clusters are the dwarf galaxies in aqua. Similar to the globulars, these dwarf galaxies revolve around the Milky Way.
+Looking back at the Milky Way from extragalactic space. We see the Milky Way Galaxy and the yellow points indicating the location of the globular clusters, huddled around the Galaxy. Co-mingling with the globular clusters are the dwarf galaxies in aqua. These dwarf galaxies also revolve around the Milky Way.
 :::
 
 
@@ -75,7 +77,7 @@ Globular clusters are among the oldest objects in the Galaxy. They were around w
 
 ## Completeness
 
-The globular clusters form one of the most complete data sets in the atlas. These represent almost all the clusters we see in our Milky Way Galaxy. Our blind spot results from the Milky Way itself---that band of light across the night sky (and the gas and dust within it) prohibit us from seeing what lies within it and beyond it. 
+The globular clusters form one of the most {term}`complete <completeness>` data sets in the atlas. These represent almost all the clusters we see in our Milky Way Galaxy. Our blind spot results from the Milky Way itself---that band of light across the night sky (and the gas and dust within it) prohibits us from seeing what lies within it and beyond it. 
 
 
 
@@ -95,5 +97,5 @@ The globular clusters form one of the most complete data sets in the atlas. Thes
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::
