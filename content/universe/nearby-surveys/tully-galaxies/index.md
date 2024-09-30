@@ -18,7 +18,7 @@ The Tully Catalog is the most polished, accurate catalog of nearby galaxies. It 
 :align: left
 :alt: The Tully Nearby Galaxy Catalog represented as points of orange, green, and aqua points. 
 
-The Tully Nearby Galaxy Catalog from outside the data. It's difficult to capture the nature of this atlas in a static image, but we see here the large-scale structure of the local universe, with large galaxy clusters in orange and more remote galaxies in aqua.
+The Tully Nearby Galaxy Catalog from outside the data. It's difficult to capture the nature of this atlas in a static image, but we see here the large-scale structure of the local universe, with large galaxy clusters in orange and yellow and more remote galaxies in aqua.
 :::
 
 
@@ -68,7 +68,7 @@ A view from outside the Virgo Cluster (top), with the Milky Way (Home) in the di
 
 ## Size and shape of these data
 
-The Tully data forms a cube, which is a cutoff based on the completeness of these data. Beyond this, data from these sources are not as reliable, so effort is made to show a complete picture, albeit limited by observations (for example, we cannot see dwarf galaxies much beyond the Local Group).
+The Tully data forms a cube, which is a cutoff based on the {term}`completeness` of these data. Beyond this, data from these sources are not as reliable, so effort is made to show a complete picture, albeit limited by observations (for example, we cannot see dwarf galaxies much beyond the Local Group).
 
 The size of the cube is roughly 700 million light years on a side, or about 1 billion light years on the diagonal.
 
@@ -131,5 +131,5 @@ The integers assigned to these types are decoded in the table below. In this num
 * - **Prepared by:**
   - R. Brent Tully, Stuart Levy, Brian Abbott (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

@@ -10,7 +10,7 @@ authors:
 {menuselection}`Universe --> Nearby Surveys --> Voids`
 
 
-Cosmic voids are immense areas of little or no galaxies. These exist between filaments of galaxies and are typically tens of millions or hundreds of millions of light years in diameter. They are the negative space in the large-scale structure of the universe.
+Cosmic voids are immense areas with little or no galaxies. These exist between filaments of galaxies and are typically tens of millions or hundreds of millions of light years in diameter. They are the negative space in the large-scale structure of the universe.
 
 
 :::{figure} voids_nearby.png
@@ -26,11 +26,11 @@ The Void Labels data are designed to be shown with the Tully galaxies.
 :::
 
 
-Voids are a tracer of the evolution of the universe. The cold spots in the cosmic microwave background images are believed to evolve into the voids we see today. (The warmer spots in the images are believed to evolve into the large-scale structure of galaxies and matter we currently see---more on this in the cosmic microwave background section.)
+Voids are a tracer of the evolution of the universe. The cold spots in the cosmic microwave background images are believed to evolve into the voids we see today. (The warmer spots in the images are believed to evolve into the large-scale structure of galaxies and matter we currently see---more on this in the [cosmic microwave background section](../../cosmic-microwave-background/index).)
 
 Voids likely have some matter in them, but are overshadowed by the more massive galaxies that gravitate toward the large-scale structure that we see---clusters, superclusters,  and filaments of galaxies.
 
-Voids are often mostly spherical, partly shaped by the expansion of the universe. They, therefore, are important for studying dark energy and other properties of the expanding universe. As the universe expands, the changing shape of the voids reveals to us the nature of the dark energy and parameters of the universe. 
+Voids are often mostly spherical, partly shaped by the expansion of the universe. They, therefore, are important for studying dark energy and other properties of the expanding universe that shape them. As the universe expands, the changing shape of the voids reveals to us the nature of the dark energy and parameters of the universe. 
 
 
 
@@ -61,5 +61,5 @@ A view of the void labels from outside the Tully Galaxies. Again, it's a lot eas
 * - **Prepared by:**
   - Brian Abbott (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

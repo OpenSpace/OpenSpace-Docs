@@ -20,7 +20,7 @@ The Home label, at center, marks the location of the Milky Way Galaxy. Here, we 
 
 The Home Label is our monicker for the Milky Way on this scale outside the Galaxy. We use "home" mainly because it harkens back to our place in the universe, and it's shorter and less visually cluttered.
 
-In the image above, we can see the Milky Way (Home) alongside some of its neighboring galaxies which are also labeled. Here, each point you see is a galaxy. Orange and yellow are in more dense areas while green and aqua are in less dense areas of the local universe.
+In the image above, we can see the Milky Way (Home) alongside some of its neighboring galaxies which are also labeled. Here, each point you see is a galaxy. Orange and yellow galaxies are in more dense areas while green and aqua galaxies are in less dense areas of the local universe.
 
 
 

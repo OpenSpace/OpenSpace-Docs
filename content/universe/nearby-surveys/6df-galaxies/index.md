@@ -23,7 +23,7 @@ The 6dF galaxies resemble those of Tully, in scale and in color. We use the same
 
 
 
-This catalog overlaps with the Tully dataset, and there is a noticeable difference in the quality of these datasets. Tully is much tighter and the structure is more apparent, while the 6dF data are more spread out with noticeable {term}`fingers of god <finger of god>`. This is because of local motions within galaxy clusters have not been corrected in these data. (see explanation in the 2MASS Galaxies).
+This catalog overlaps with the [Tully Galaxies](../tully-galaxies/index), and there is a noticeable difference in the quality of these datasets. Tully is much tighter and the structure is more apparent, while the 6dF data are more spread out with noticeable {term}`fingers of god <finger of god>`. This is because of local motions within galaxy clusters have not been corrected in these data. (see explanation in the [2MASS Galaxies](../2MASS-galaxies/index)).
 
 In addition, the 6dF Galaxies cover only the southern sky. It will only overlap with half of the Tully or 2MASS galaxy surveys.
 
@@ -38,14 +38,14 @@ An "edge-on" view of the 6dF Galaxies, which observed only the southern sky, hen
 
 ## Completeness
 
-Unlike the Tully galaxies, these data show an incompleteness in the sample. Most of the rich structure is visible closer to the Milky Way, where we see more of the dimmer galaxies. Toward the edge of the data set we see galaxies by their lonesome. This is because these data are not as complete. We’re only seeing the brighter galaxies to this distance, and therefore less complex structures are visible.
+Unlike the Tully galaxies, these data show an incompleteness in the sample. Most of the rich structure is visible closer to the Milky Way, where we see more of the dimmer galaxies. Toward the edge of the data set we see galaxies by their lonesome. This is because these data are not as {term}`complete <completeness>`. We're only seeing the brighter galaxies to this distance, and therefore less complex structures are visible.
 
 
 :::{figure} 6df_nightsky_cutoff.png
 :align: left
 :alt: A night sky view with the stars, constellation lines, and the band of the Milky Way, along with the 6dF Galaxies seen in the southern sky.
 
-The 6dF Galaxies from the night sky perspective. We see the band of the Milky Way, the stars and constellation lines, with lines of right ascension and declination. The 6dF Galaxies lie below the celestial equator, the souther half of the sky.
+The 6dF Galaxies from the night sky perspective. We see the band of the Milky Way, the stars and constellation lines, with lines of right ascension and declination. The 6dF Galaxies lie below the celestial equator, the southern half of the sky.
 :::
 
 
@@ -67,5 +67,5 @@ The 6dF Galaxies from the night sky perspective. We see the band of the Milky Wa
 * - **Prepared by:**
   - Brian Abbott, Sohum Udani (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

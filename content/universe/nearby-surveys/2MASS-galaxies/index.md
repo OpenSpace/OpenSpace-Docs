@@ -23,7 +23,7 @@ A mapping of galaxies using the 2MASS data with the same color map as the other 
 :::
 
 
-The goal of the 2MASS redshift survey was to map out to roughly z=0.03. This is roughly equal to about 370 million light years. It fills in more of the galaxies that were formerly blocked by our own Milky Way---that band of light across the sky. The infrared bands used on 2MASS can peer through a lot of the gas and dust.
+The goal of the 2MASS redshift survey was to map out to roughly a {term}`redshift <Redshift/blueshift>` of 0.03. This is roughly equal to about 370 million light years. It fills in more of the galaxies that were formerly blocked by our own Milky Way---that band of light across the sky. The infrared bands used on 2MASS can peer through a lot of the gas and dust.
 
 
 
@@ -34,9 +34,9 @@ The 2MASS and Tully data overlay one another, so which one is better? You may no
 
 ### Fingers of god
 
-A "finger of god" is a line of galaxies that point radially back to the Milky Way. Early in the process of mapping the local universe, astronomers noticed that galaxies, when plotted, appeared on lines that pointed radially back to Earth. It turns out, these lines, dubbed fingers of god, are a cluster of galaxies spread out radially (along the line of sight) because of the local motions within the cluster contaminate the redshift measurement, which we use to compute the distance. 
+A "finger of god" is a line of galaxies that point radially back to the Milky Way. Early in the process of mapping the local universe, astronomers noticed that galaxies, when plotted, appeared on lines that pointed radially back to Earth. It turns out, these lines, dubbed fingers of god, are a cluster of galaxies spread out radially (along the line of sight) because of the local motions within the cluster contaminate the {term}`redshift <Redshift/blueshift>` measurement, which we use to compute the distance. 
 
-For example, the galaxies of the Local Group are all moving in seemingly random directions as they gravitationally interact with one another---many are blueshifted (coming toward us) even as the universe expands. These local motions within clusters contaminate the overall redshift in the spectrum, causing the distances to be less accurate, and appearing to stretch these clusters along our line of sight.
+For example, the galaxies of the [Local Group](../local-group/index) are all moving in seemingly random directions as they gravitationally interact with one another---many are blueshifted (coming toward us) even as the universe expands. These local motions within clusters contaminate the overall redshift in the spectrum, causing the distances to be less accurate, and appearing to stretch these clusters along our line of sight.
 
 
 ## Dossier
@@ -45,15 +45,15 @@ For example, the galaxies of the Local Group are all moving in seemingly random 
 :class: full-width
 
 * - **Census:**
-  - ??? galaxies
+  - 43,533 galaxies
 * - **Asset Version:**
-  - 
+  - 2.0
 * - **Data Version:**
-  - 
+  - 1.01
 * - **Reference:**
   - [The 2MASS Large Galaxy Atlas](https://iopscience.iop.org/article/10.1086/345794), (private communication, Tom Jarrett)
 * - **Prepared by:**
   - Tom Jarrett (IPAC), Brian Abbott (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
 :::

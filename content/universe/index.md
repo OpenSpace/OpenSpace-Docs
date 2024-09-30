@@ -14,7 +14,7 @@ authors:
 
 These data sets are more homogeneous, consisting mostly of galaxy surveys. We also display the microwave all-sky images here, and a few other contextual data sets.
 
-Unlike the Milky Way that is organized by object type, here we divide the data by nearby surveys, deep sky surveys, and the cosmic microwave background all-sky maps.
+Unlike the Milky Way that is organized by object type, here we divide data by nearby surveys, deep sky surveys, and the cosmic microwave background all-sky maps.
 
 :::{figure} universe.png
 :align: left
@@ -25,7 +25,7 @@ The Sloan Digital Sky Survey. The red points are quasars and the blue and green 
 
 
 
-**Our Cosmic Perspective**
+## Our cosmic perspective---where is the center?
 
 When you look at the data sets in the Universe section, it's tempting to believe we are the center of the universe. One of the consequences of showing real scientific data observed from telescopes on Earth, or in orbit around Earth, is that it appears that the Milky Way, the Sun, and the Earth
 are at the center of the universe.
@@ -40,6 +40,18 @@ The common analogy is to imagine an infinitely large raisin bread. As the bread 
 Another two-dimensional analogy is to imagine an infinitely large rubber sheet that's being stretched from all directions. No matter where you are, every other point will be moving farther away from you.
 
 That is the nature of the universe. There is no center and, except for very nearby galaxies where gravity remains influential, everything is receding from an observer at any location. 
+
+
+
+% ## Distance frame
+
+% In all our extragalactic data sets, we choose the philosophy of "where are they now" when it comes to plotting distances. Because of the relativistic effects on these cosmological scales, we have to decide whether we plot objects at the point the light we see left that object, the so called *lookback time*, or whether we plot them at their current position that accounts for the expansion of the universe.
+
+% ### Lookback time
+
+% If we plotted objects according to their lookback time, then we'd expect everything to fit within the 13.8-billion-year age of the universe. The farthest quasars would be around 12 to 13 billion light years from Earth. The limit of our observable universe, the cosmic microwave background light, would stretch out to about 13.3 billion light years. 
+
+
 
 
 
