@@ -367,8 +367,8 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
   for c in components_info:
     name = c["name"]
     category = c["category"]
-    has_example = c["has_example"]
-    comps = f"{comps}| {name} | {category} | {"Yes" if has_example else ""} |\n"
+    has_example = "Yes" if c["has_example"] else ""
+    comps = f"{comps}| {name} | {category} | {has_example} |\n"
 
   print(f"""
 Documentation Writing Overview
