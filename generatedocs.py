@@ -365,7 +365,10 @@ def generate_asset_components(environment, output_folder, folder_name_assets, js
   components_info.sort(key=lambda component: component["name"])
   comps = ""
   for c in components_info:
-    comps = f"{comps}| {c["name"]} | {c["category"]} | {"Yes" if c["has_example"] else ""} |\n"
+    name = c["name"]
+    category = c["category"]
+    has_example = c["has_example"]
+    comps = f"{comps}| {name} | {category} | {"Yes" if has_example else ""} |\n"
 
   print(f"""
 Documentation Writing Overview
