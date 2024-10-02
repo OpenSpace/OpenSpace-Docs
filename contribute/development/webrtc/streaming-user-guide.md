@@ -7,7 +7,7 @@ These setup/configuration steps need to be performed on both the Server and View
 **Server:**
 Currently this only works on Windows. The Linux version has been mothballed.
   1. Ensure that Node.js is installed on the system.
-  1. Ensure that you are using the `thesis/streaming-2024` branch of OpenSpace-WebGuiFrontend.
+  1. Ensure that you are using the `feature/streaming-2024` branch of OpenSpace-WebGuiFrontend.
   1. Ensure that you are using the `feature/streaming` branch of OpenSpace (Clone with `--recurse-submodules`). Verify that the sgct submodule (apps/OpenSpace/ext/sgct) that it contains is at the `thesis/2022/streaming` branch (or at the correct commit to match).
   1. Configure and generate the OpenSpace project in CMake with the `SGCT_GSTREAMER_SUPPORT` checkbox enabled
   1. In **OpenSpace**
