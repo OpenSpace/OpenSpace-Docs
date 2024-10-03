@@ -25,7 +25,7 @@ The local stars that make up the night sky form a basis for these data sets, and
 
 :::{toctree}
 :maxdepth: 1
-:caption: Milky Way Data Groups
+:caption: Subsections
 
 stars/index
 constellations/index

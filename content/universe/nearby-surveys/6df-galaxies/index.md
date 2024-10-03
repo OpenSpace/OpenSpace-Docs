@@ -67,5 +67,5 @@ The 6dF Galaxies from the night sky perspective. We see the band of the Milky Wa
 * - **Prepared by:**
   - Brian Abbott, Sohum Udani (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

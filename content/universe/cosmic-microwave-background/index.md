@@ -26,7 +26,7 @@ The Planck CMB all-sky image, showing a map of the temperature at microwave wave
 
 ## The CMB image
 
-The CMB is light that pervades the universe. We see the light in microwave wavelengths. In the image above, we see a mottled structure. This is a mapping of temperature taken directly by the telescope. However, the difference in temperature between the red spots and blue spots is in the hundreds of thousandths of degrees. The telescope can pick up temperature differences on the order of millionths of degrees. So, to all other unsophisticated instruments, this light appears to be one temperature: 2.7 Kelvin (-270&deg; C or -455&deg; F). 
+The CMB is light that pervades the universe. We see the light in microwave wavelengths. In the image above, we see a mottled structure. This is a mapping of temperature taken directly by the telescope. However, the difference in temperature between the red spots and blue spots is in the hundreds of thousandths of a degree. The telescope can pick up temperature differences on the order of millionths of degrees. So, to all other unsophisticated instruments, this light appears to be one temperature: 2.7 Kelvin (equivalent to -270&deg;C or -455&deg;F). 
 
 These imperceptible temperature differences tell us a lot about the nature of the universe and, ultimately, the large-scale structure we see today.
 
@@ -53,9 +53,7 @@ The tiny differences in temperature we see in the CMB image may be thought of as
 
 ## Cosmological constraints
 
-Mapping these cosmic fluctuations yields information about the nature of the universe. Measuring
-these fluctuations tells us about the density and composition of the universe, the nature of the expansion of the universe, and knowing the matter and energy of the universe, we can use Einstein's theory
-of general relativity to understand the rate of expansion then turn the clock back and deduce the age of the universe, which stands at around 13.8 billion years. The CMB confirms for us the Big Bang Theory of the formation of the universe.
+Mapping these cosmic fluctuations yields information about the nature of the universe. Measuring these fluctuations tells us about the density and composition of the universe, the nature of the expansion of the universe, and knowing the matter and energy of the universe, we can use Einstein's Theory of General Relativity to understand the rate of expansion then turn the clock back and deduce the age of the universe, which stands at around 13.8 billion years. The CMB confirms for us the Big Bang Theory of the formation of the universe.
 
 
 ## Mapping efforts
@@ -98,9 +96,9 @@ The CMB image wrapped on a sphere at the limit of the observable universe. The q
 
 ## Discovery
 
-In 1948, astronomers Ralph Alpher (1921--2007), Hans Bethe (1906--2005), and George Gamow (1904--1968) published their assertion that the gas in the early universe must have been very hot and dense and that this gas should be present throughout today's universe, albeit much cooler and less dense.
+In 1948, astronomers [Ralph Alpher](https://en.wikipedia.org/wiki/Ralph_Alpher) (1921--2007), [Hans Bethe](https://en.wikipedia.org/wiki/Hans_Bethe) (1906--2005), and [George Gamow](https://en.wikipedia.org/wiki/George_Gamow) (1904--1968) published their assertion that the gas in the early universe must have been very hot and dense and that this gas should be present throughout today's universe, albeit much cooler and less dense.
 
-Alpher searched for this cool gas, but it would be another sixteen years before it was discovered, not by astronomers but by two physicists working at Bell Telephone Laboratories in New Jersey. In 1964, Arno Penzias (1933--2024) and Robert Wilson (b. 1936) were trying to communicate with a recently launched communications satellite and could not remove "noise" from their transmissions. This weak hiss was a constant nuisance that was present during the day, the night, and throughout the year. This fact ruled out possibilities such as equipment interference, atmospheric effects, or even bird droppings on the radio telescope built to communicate with their satellite.
+Alpher searched for this cool gas, but it would be another sixteen years before it was discovered, not by astronomers but by two physicists working at [Bell Telephone Laboratories](https://en.wikipedia.org/wiki/Bell_Labs) in New Jersey. In 1964, [Arno Penzias](https://en.wikipedia.org/wiki/Arno_Allan_Penzias) (1933--2024) and [Robert Wilson](https://en.wikipedia.org/wiki/Robert_Woodrow_Wilson) (b. 1936) were trying to communicate with a recently launched communications satellite and could not remove "noise" from their transmissions. This weak hiss was a constant nuisance that was present during the day, the night, and throughout the year. This fact ruled out possibilities such as equipment interference, atmospheric effects, or even bird droppings on the radio telescope built to communicate with their satellite.
 
 Penzias and Wilson tried their best to remove this noise but were unsuccessful. In the end, they acknowledged that the faint microwave signal must be real and is not from some defect or artificial
 interference.
@@ -115,26 +113,9 @@ Penzias and Wilson were awarded the Nobel Prize in 1978 for their discovery. The
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 :::{toctree}
 :maxdepth: 1
-:caption: Cosmic Microwave Background Assets
-:titlesonly:
-
+:caption: Assets
 
 cobe/index
 wmap/index

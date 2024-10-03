@@ -77,5 +77,5 @@ Exaggerating the brightness of the stars allows you to see even the dimmest amon
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves, Andrew Ayala, Jackie Faherty (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

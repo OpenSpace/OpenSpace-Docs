@@ -10,7 +10,7 @@ authors:
 {menuselection}`Universe --> Deep Sky Surveys --> Abell Galaxy Clusters`
 
 
-The Abell Galaxy Clusters are rich clusters of galaxies akin to the Virgo Cluster. Each point in this data set contains tens to hundreds of galaxies. A handful of these Abell clusters overlap with the Tully Galaxies, but most are outside Tully.
+The Abell Galaxy Clusters are rich clusters of galaxies akin to the Virgo Cluster. Each point in this data set contains tens to hundreds of galaxies. A handful of these Abell clusters overlap with the [Tully Galaxies](../../nearby-surveys/tully-galaxies/index), but most are outside Tully.
 
 
 
@@ -27,7 +27,7 @@ A close-up of the Abell Galaxy Clusters, in orange. Select labels are shown with
 The Abell Catalog was compiled by George Abell (1927--1983) from the Palomar Sky Survey plates. He published the catalog in 1958, and a southern hemisphere survey was posthumously published in 1989 by Harold Corwin (b.1943) and Ronald Olowin (1945--2017). Further analysis by Brent Tully (b. 1943) determined
 their distance and three-dimensional distribution. 
 
-The distribution of Abell Clusters echoes that of the Tully Galaxies with two lobes on either side of the plane of the Milky Way. There is a completeness cut-off that makes the data set look squared off.
+The distribution of Abell Clusters echoes that of the [Tully Galaxies](../../nearby-surveys/tully-galaxies/index) with two lobes on either side of the plane of the Milky Way. There is a {term}`completeness` cut-off that makes the data set look squared off.
 
 Labels with the prefix "ACO" (for Abell, Corwin, Olowin) are present on each point. They are designed to show only when points come into the foreground.
 
@@ -37,7 +37,7 @@ Labels with the prefix "ACO" (for Abell, Corwin, Olowin) are present on each poi
 :align: left
 :alt: The Abell Clusters plotted with the Tully galaxies.
 
-The Abell Clusters, in orange, shown with the Tully galaxies in the center in aqua, green and yellow. Within Tully, we see the rich structure with many individual galaxies visible. The Abell Clusters are akin to removing all the individual galaxies and seeing only the large clusters like the Virgo Cluster. Structure is lost because we're only seeing the nexus points of the existing structure.
+The Abell Clusters, in orange, shown with the Tully galaxies in the center in aqua, green and yellow. Within Tully, we see a rich structure with many individual galaxies visible. The Abell Clusters are akin to removing all the individual galaxies and seeing only the large clusters like the Virgo Cluster. Structure is lost because we're only seeing the nexus points of the existing structure.
 :::
 
 
@@ -48,7 +48,7 @@ The Abell Galaxy Clusters show no prominent structure because we are only seeing
 
 ## Superclusters
 
-Galaxy clusters cluster themselves form superclusters---clusters of galaxy clusters. We can turn on the labels for these in {menuselection}`Universe --> Deep Sky Surveys --> Supercluster Labels` to see where the major superclusters align with the Abell Clusters. We will discuss superclusters more in [Supercluster Labels](../supercluster-labels/index).
+Galaxy clusters themselves form superclusters---groupings of galaxy clusters and larger structures. We can turn on the labels for these in {menuselection}`Universe --> Deep Sky Surveys --> Supercluster Labels` to see where the major superclusters align with the Abell Clusters. We will discuss superclusters more in [Supercluster Labels](../supercluster-labels/index).
 
 
 
@@ -82,5 +82,5 @@ The Abell Galaxy Clusters shown with the Supercluster Labels on and the faint Tu
 * - **Prepared by:**
   - Stuart Levy (NCSA), Brian Abbott (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

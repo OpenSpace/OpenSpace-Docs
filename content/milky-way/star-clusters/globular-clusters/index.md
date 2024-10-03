@@ -97,5 +97,5 @@ The globular clusters form one of the most {term}`complete <completeness>` data 
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

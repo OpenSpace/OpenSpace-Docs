@@ -32,7 +32,7 @@ Superclusters are among the largest structural elements in the universe. They ar
 
 Superclusters are typically not gravitationally bound to each other. They can also form higher-order structures like walls, sheets, and filaments. These super structures are separated by vast voids and create the weblike structure of the cosmos.
 
-Galaxy clusters are on the order of millions of light years across---the Virgo Cluster is about 15 million light ears in diameter. Superclusters are on the order of tens to hundreds of millions of light years across---the Virgo Supercluster is 110 million light years across, while the Laniakea Supercluster is 520 million light years across. Walls and filaments can be upwards of billions of light years across---the Pisces–Cetus Supercluster Complex is believed to be about 1 billion light years in its longest dimension. 
+Galaxy clusters are on the order of millions of light years across---the Virgo Cluster is about 15 million light years in diameter. Superclusters are on the order of tens to hundreds of millions of light years across---the Virgo Supercluster is 110 million light years across, while the Laniakea Supercluster is 520 million light years across. Walls and filaments can be upwards of billions of light years across---the Pisces–Cetus Supercluster Complex is believed to be about 1 billion light years in its longest dimension. 
 
 
 :::{figure} scl+galaxysurveys.png
@@ -47,7 +47,7 @@ The Supercluster Labels with several galaxy surveys, including Tully, 2dF, and S
 :align: left
 :alt: Supercluster Labels with the multicolored Tully Galaxies at center and the Abell Galaxy C;lusters in orange.
 
-Supercluster Labels with the multicolored Tully Galaxies at center and the Abell Galaxy C;lusters in orange.
+Supercluster Labels with the multicolored Tully Galaxies at center and the Abell Galaxy Clusters in orange.
 :::
 
 
@@ -70,5 +70,5 @@ Supercluster Labels with the multicolored Tully Galaxies at center and the Abell
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

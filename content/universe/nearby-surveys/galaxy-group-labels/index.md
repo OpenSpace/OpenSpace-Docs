@@ -60,5 +60,5 @@ Galaxy groups around the Local Group showing a concentration of groups that incl
 * - **Prepared by:**
   - R. Brent Tully, Stuart Levy, Brian Abbott (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

@@ -82,5 +82,5 @@ A view of the more distant cluster, including the Coma, Leo, Norma, and Perseus 
 * - **Prepared by:**
   - R. Brent Tully, Stuart Levy, Brian Abbott (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

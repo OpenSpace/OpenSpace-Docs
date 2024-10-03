@@ -61,5 +61,5 @@ A view of the void labels from outside the Tully Galaxies. Again, it's a lot eas
 * - **Prepared by:**
   - Brian Abbott (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

@@ -16,12 +16,12 @@ authors:
 :align: left
 :alt: A portion of the sky in microwave light from the COBE mission. We see areas of red and blue, showing tiny differences in temperature. 
 
-A portion of the COBE all-sky image from 1992 showing the CMB. Red areas are slightly warmer than average and blue areas are slightly cooler than average. THe lines of latitude and longitude are, unfortunately, baked into the image.
+A portion of the COBE all-sky image from 1992 showing the CMB. Red areas are slightly warmer than average and blue areas are slightly cooler than average. The lines of latitude and longitude are, unfortunately, baked into the image.
 :::
 
 
 :::{note}
-See the [top section page](../index) for broader discussion on the Cosmic Microwave Background.
+See the [top CMB page](../index) for an introduction on the cosmic microwave background.
 :::
 
 
@@ -29,7 +29,7 @@ In 1989, the Cosmic Background Explorer (COBE) was launched into orbit to see, o
 
 COBE's Differential Microwave Radiometer observed light in the range from a few millimeters to about 1 cm. The results were indisputable. COBE had confirmed decades of theories and conflicting experiments with observational proof that the CMB was indeed the light left over from a Big Bang.
 
-COBE also confirmed that the light was remarkably uniform. No matter where the telescope looked, it observed radiation equivalent to a 2.73-Kelvin blackbody with deviations on the order of one part in 100,000. These slight differences in temperature map to the density structure of the universe at this time, 380,000 years after the Big Bang. These fluctuations in density are the seeds of the large-scale structure we see today.
+COBE also confirmed that the light was remarkably uniform. No matter where the telescope looked, it observed radiation equivalent to a 2.73-Kelvin blackbody with deviations on the order of one part in 100,000. These slight differences in temperature correspond to the density structure of the universe at this time, 380,000 years after the Big Bang. These fluctuations in density are the seeds of the large-scale structure we see today.
 
 In the image, the red areas are relatively hotter areas of the CMB, while the blue areas are cooler than the average. The lines of latitude and longitude are baked into this image, and reflect galactic coordinates.
 
@@ -57,5 +57,5 @@ While the COBE map yielded the first all-sky image of the CMB, and netted two of
 * - **Prepared by:**
   - Brian Abbott (AMNH)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

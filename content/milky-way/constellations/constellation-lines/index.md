@@ -88,5 +88,5 @@ The bulk of the constellations are represented by a subtle pink hue. The twelve 
 * - **Prepared by:**
   - Brian Abbott, Carter Emmart (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

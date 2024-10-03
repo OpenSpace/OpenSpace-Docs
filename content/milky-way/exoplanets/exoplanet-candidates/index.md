@@ -87,5 +87,5 @@ As seen from afar, the exoplanet candidate stars are huddled around the Sun. Gre
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves, Emily Rice, Jason No (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

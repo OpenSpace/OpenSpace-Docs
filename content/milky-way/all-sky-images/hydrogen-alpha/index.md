@@ -70,5 +70,5 @@ We can also see that galaxies emit Hα light. We see the Large and Small Magella
 * - **Prepared by:**
   - Doug Finkbeiner (Princeton), Brian Abbott (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

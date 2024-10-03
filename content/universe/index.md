@@ -58,6 +58,7 @@ That is the nature of the universe. There is no center and, except for very near
 
 :::{toctree}
 :maxdepth: 1
+:caption: Subsections
 
 nearby-surveys/index
 deep-sky-surveys/index

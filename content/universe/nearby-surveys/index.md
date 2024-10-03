@@ -26,7 +26,7 @@ A view from the local universe. Each point here is a galaxy, where orange and ye
 
 :::{toctree}
 :maxdepth: 1
-:caption: Nearby Surveys Assets
+:caption: Assets
 
 home-label/index
 local-group/index

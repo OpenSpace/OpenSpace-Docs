@@ -84,5 +84,5 @@ Brown dwarfs, in red, distributed around the Sun. The green object is a 160-ligh
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves, Jackie Faherty (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

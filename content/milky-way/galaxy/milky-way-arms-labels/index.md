@@ -60,5 +60,5 @@ The Milky Way Arms Labels seen from the "wrong" side of the Galaxy, where they r
 * - **Prepared by:**
   - Brian Abbott (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

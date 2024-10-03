@@ -55,5 +55,5 @@ For example, the galaxies of the [Local Group](../local-group/index) are all mov
 * - **Prepared by:**
   - Tom Jarrett (IPAC), Brian Abbott (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

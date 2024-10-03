@@ -94,5 +94,5 @@ The distribution of white dwarfs in the Milky Way. These objects are huddled clo
 * - **Prepared by:**
   - Zack Reeves, Brian Abbott (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

@@ -56,12 +56,8 @@ Because the observations were along narrow swaths of sky, they result in relativ
 :align: left
 :alt: A view of the 2dF Galaxies as seen from the night sky, where we see a strip of galaxies on the sky, and random pointings of the telescope around that strip.
 
-The South Galactic Pole strip of observations as seen in the night sky. The stars and constellation lines are in view, with Eridanus and Cetus in view. The random pointings around the strip are also visible. Each telescopic footprint on the sky is, unsurprisingly, two degrees in diameter.
+The South Galactic Pole strip of observations as seen in the night sky along with the random pointings of the telescope. The stars and constellation lines are in view, with Eridanus and Cetus in view. Each telescopic footprint on the sky is, unsurprisingly, two degrees in diameter.
 :::
-
-
-
-
 
 
 
@@ -82,5 +78,5 @@ The South Galactic Pole strip of observations as seen in the night sky. The star
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH), Eric Gawiser (Rutgers)
 * - **License:**
-  - ??? - link to a page?
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

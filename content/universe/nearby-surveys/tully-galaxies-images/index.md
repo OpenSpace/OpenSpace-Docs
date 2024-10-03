@@ -92,5 +92,5 @@ An outrageous exaggeration---the Tully Galaxy Images are so large we can see the
 * - **Prepared by:**
   - Stuart Levy (NCSA)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

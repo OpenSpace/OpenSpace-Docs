@@ -57,5 +57,5 @@ To prepare this image, some alterations were necessary. We "painted out" some ar
 * - **Prepared by:**
   - Carter Emmart, Brian Abbott (AMNH)
 * - **License:**
-  - [AMNH's Digital Universe](../../../licenses/digital-universe-license.md)
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::
