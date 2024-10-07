@@ -78,14 +78,18 @@ As seen from afar, the exoplanet candidate stars are huddled around the Sun. Gre
 
 * - **Census:**
   - 8,589 stars
-* - **Asset Version:**
-  - 4.0
-* - **Data Version:**
-  - 12.09 
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/exoplanets_candidates.asset`
+* - **Location:**
+  - `sync/http/digitaluniverse_multiwavelength_milkyway_textures`
+* - **OpenSpace Version:**
+  - 2
 * - **Reference:**
   - [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/index.html)
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves, Emily Rice, Jason No (AMNH)
+* - **Source Version:**
+  - 12.09 
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

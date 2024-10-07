@@ -43,14 +43,18 @@ The night sky looking toward the constellations Aries, Pisces, and Andromeda. Th
 
 * - **Census:**
   - 88 constellations boundaries
-* - **Asset Version:**
-  - 1.2
-* - **Data Version:**
-  - 
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/constellationbounds.asset`
+* - **Location:**
+  - `sync/http//digitaluniverse_constellations_data`
+* - **OpenSpace Version:**
+  - 1
 * - **Reference:**
-  - 
+  - [Catalogue of Constellation Boundary Data](http://cdsarc.u-strasbg.fr/viz-bin/Cat?VI/49)
 * - **Prepared by:**
-  - 
+  - Zack Reeves, Brian Abbott (AMNH)
+* - **Source Version:**
+  - 1.01
 * - **License:**
-  - ???
+  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

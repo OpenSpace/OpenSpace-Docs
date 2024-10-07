@@ -57,14 +57,18 @@ This all-sky image was assembled from 3,000 individual frames over two years by 
 
 * - **Census:**
   - 1 all-sky image
-* - **Asset Version:**
-  - 2.1
-* - **Data Version:**
-  - 1.04
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/allsky_visible.asset`
+* - **Location:**
+  - `sync/http/milkyway_textures`
+* - **OpenSpace Version:**
+  - 2
 * - **Reference:**
   - [A Color All-Sky Panorama Image of the Milky Way](https://doi.org/10.1086/648480)
 * - **Prepared by:**
-  - Axel Mellinger, OpenSpace Team
+  - Brian Abbott, Carter Emmart (AMNH), OpenSpace Team
+* - **Source Version:**
+  - 1.04
 * - **License:**
   - [MIT license](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
 :::

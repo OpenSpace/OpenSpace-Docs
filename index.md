@@ -95,7 +95,6 @@ getting-started/profiles/index
 
 content/milky-way/index
 content/universe/index
-content/licenses/digital-universe-license.md
 content/asteroids
 content/ephemeris/index
 content/exoplanets/index

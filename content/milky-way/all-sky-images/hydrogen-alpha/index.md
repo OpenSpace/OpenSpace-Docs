@@ -61,14 +61,18 @@ We can also see that galaxies emit Hα light. We see the Large and Small Magella
 
 * - **Census:**
   - 1 all-sky image
-* - **Asset Version:**
-  - 1.0
-* - **Data Version:**
-  - 2.02
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/allsky_hydrogenalpha.asset`
+* - **Location:**
+  - `sync/http/digitaluniverse_multiwavelength_milkyway_textures`
+* - **OpenSpace Version:**
+  - 1
 * - **Reference:**
   - [A Composite H-alpha Template for Microwave Foreground Prediction](https://doi.org/10.1086/374411)
 * - **Prepared by:**
   - Doug Finkbeiner (Princeton), Brian Abbott (AMNH)
+* - **Source Version:**
+  - 2.02
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

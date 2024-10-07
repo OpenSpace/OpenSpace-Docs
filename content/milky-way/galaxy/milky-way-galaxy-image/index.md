@@ -48,14 +48,18 @@ To prepare this image, some alterations were necessary. We "painted out" some ar
 
 * - **Census:**
   - 1 image
-* - **Asset Version:**
-  - 3.0
-* - **Data Version:**
-  - 2.02
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/milkyway.asset`
+* - **Location:**
+  - `sync/http/digitaluniverse_milkyway_textures`
+* - **OpenSpace Version:**
+  - 3
 * - **Reference:**
   - ESO
 * - **Prepared by:**
   - Carter Emmart, Brian Abbott (AMNH)
+* - **Source Version:**
+  - 2.02
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::
