@@ -66,14 +66,16 @@ The [Galaxy Group Labels](../galaxy-group-labels/index) identify many other near
 
 * - **Census:**
   - 102 galaxiess
-* - **Asset Version:**
-  - 3.0
-* - **Data Version:**
-  - 6.04
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/local_group_dwarfs.asset`
+* - **OpenSpace Version:**
+  - 2
 * - **Reference:**
   - [Properties of dwarf galaxies in the Local Group](https://doi.org/10.1088/0004-6256/144/1/4)
 * - **Prepared by:**
   - Brian Abbott (AMNH)
+* - **Source Version:**
+  - 6.04
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

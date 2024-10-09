@@ -46,14 +46,16 @@ For example, the galaxies of the [Local Group](../local-group/index) are all mov
 
 * - **Census:**
   - 43,533 galaxies
-* - **Asset Version:**
-  - 2.0
-* - **Data Version:**
-  - 1.01
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/2mass.asset`
+* - **OpenSpace Version:**
+  - 2
 * - **Reference:**
   - [The 2MASS Large Galaxy Atlas](https://iopscience.iop.org/article/10.1086/345794), (private communication, Tom Jarrett)
 * - **Prepared by:**
   - Tom Jarrett (IPAC), Brian Abbott (AMNH)
+* - **Source Version:**
+  - 1.01
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

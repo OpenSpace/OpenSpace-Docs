@@ -122,14 +122,16 @@ The integers assigned to these types are decoded in the table below. In this num
 
 * - **Census:**
   - 30,159 galaxies
-* - **Asset Version:**
-  - 5.0
-* - **Data Version:**
-  - 1.05
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/tully.asset`
+* - **OpenSpace Version:**
+  - 4
 * - **Reference:**
   - Nearby Galaxy Catalog (private communication, Brent Tully)
 * - **Prepared by:**
   - R. Brent Tully, Stuart Levy, Brian Abbott (AMNH)
+* - **Source Version:**
+  - 1.05
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

@@ -50,8 +50,6 @@ To prepare this image, some alterations were necessary. We "painted out" some ar
   - 1 image
 * - **Asset File:**
   - `data/assets/scene/digitaluniverse/milkyway.asset`
-* - **Location:**
-  - `sync/http/digitaluniverse_milkyway_textures`
 * - **OpenSpace Version:**
   - 3
 * - **Reference:**

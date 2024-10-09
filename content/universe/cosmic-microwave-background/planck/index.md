@@ -43,14 +43,16 @@ The red areas represent the slightly hotter temperatures, and the blue areas are
 
 * - **Census:**
   - 1 all-sky image
-* - **Asset Version:**
-  - 3.0
-* - **Data Version:**
-  - 2.03
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/backgroundradiation.asset`
+* - **OpenSpace Version:**
+  - 2
 * - **Reference:**
   - [Planck 2015 results. XIII. Cosmological parameters](https://doi.org/10.1051/0004-6361/201525830)
 * - **Prepared by:**
   - Brian Abbott (AMNH)
+* - **Source Version:**
+  - 2.03
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

@@ -75,14 +75,16 @@ Brown dwarfs, in red, distributed around the Sun. The green object is a 160-ligh
 
 * - **Census:**
   - 2,203 brown dwarfs
-* - **Asset Version:**
-  - 1.0
-* - **Data Version:**
-  - 7.05
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/brown_dwarfs.asset`
+* - **OpenSpace Version:**
+  - 1
 * - **Reference:**
   - [The UltraCool Sheet](https://zenodo.org/records/4169085)
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves, Jackie Faherty (AMNH)
+* - **Source Version:**
+  - 7.05
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

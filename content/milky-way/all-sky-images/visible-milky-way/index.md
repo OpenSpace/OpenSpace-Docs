@@ -59,8 +59,6 @@ This all-sky image was assembled from 3,000 individual frames over two years by 
   - 1 all-sky image
 * - **Asset File:**
   - `data/assets/scene/digitaluniverse/allsky_visible.asset`
-* - **Location:**
-  - `sync/http/milkyway_textures`
 * - **OpenSpace Version:**
   - 2
 * - **Reference:**

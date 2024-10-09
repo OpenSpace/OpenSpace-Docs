@@ -67,14 +67,16 @@ The Sloan Galaxies from the outside. The large-scale structure we are used to se
 
 * - **Census:**
   - 2,862,767 galaxies
-* - **Asset Version:**
-  - 4.0
-* - **Data Version:**
-  - 12.08
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/sdss.asset`
+* - **OpenSpace Version:**
+  - 4
 * - **Reference:**
   - [The Eighteenth Data Release of the Sloan Digital Sky Surveys: Targeting and First Spectra from SDSS-V](https://iopscience.iop.org/article/10.3847/1538-4365/acda98)
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH), Eric Gawiser (Rutgers)
+* - **Source Version:**
+  - 12.08
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

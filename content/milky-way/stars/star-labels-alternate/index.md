@@ -49,14 +49,16 @@ The Flamsteed Catalog uses numbers as designations along with the constellation 
 
 * - **Census:**
   - 3,440 stars
-* - **Asset Version:**
-  - 3.0
-* - **Data Version:**
-  - 1.08
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/alternatestarlabels.asset`
+* - **OpenSpace Version:**
+  - 3
 * - **Reference:**
   - Bayer and Flamsteed Catalogs via Simbad
 * - **Prepared by:**
   - Zack Reeves, Brian Abbott (AMNH)
+* - **Source Version:**
+  - 1.08
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

@@ -46,14 +46,16 @@ As we mentioned, these differences are used to understand the nature of the univ
 
 * - **Census:**
   - 1 all-sky image
-* - **Asset Version:**
-  - 3.0
-* - **Data Version:**
-  - 4.02
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/backgroundradiation.asset`
+* - **OpenSpace Version:**
+  - 2
 * - **Reference:**
   - [Nine-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Final Maps and Results](https://doi.org/10.1093/mnras/stab1475)
 * - **Prepared by:**
   - Brian Abbott (AMNH)
+* - **Source Version:**
+  - 4.02
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

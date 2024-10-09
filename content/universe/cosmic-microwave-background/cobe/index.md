@@ -48,14 +48,16 @@ While the COBE map yielded the first all-sky image of the CMB, and netted two of
 
 * - **Census:**
   - 1 all-sky image
-* - **Asset Version:**
-  - ???
-* - **Data Version:**
-  - 2.02
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/backgroundradiation.asset`
+* - **OpenSpace Version:**
+  - 2
 * - **Reference:**
   - [Structure in the COBE Differential Microwave Radiometer First-Year Maps](https://doi.org/10.1086/186504)
 * - **Prepared by:**
   - Brian Abbott (AMNH)
+* - **Source Version:**
+  - 2.02
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

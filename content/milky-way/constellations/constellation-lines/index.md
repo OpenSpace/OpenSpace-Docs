@@ -81,8 +81,6 @@ The bulk of the constellations are represented by a subtle pink hue. The twelve 
   - 88 constellations
 * - **Asset File:**
   - `data/assets/scene/digitaluniverse/constellations.asset`
-* - **Location:**
-  - `sync/http/digitaluniverse_constellations_data`
 * - **OpenSpace Version:**
   - 3
 * - **Reference:**

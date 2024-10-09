@@ -39,14 +39,16 @@ A list of star names and their meanings may be found on the Wikipedia's [List of
 
 * - **Census:**
   - 335 star names
-* - **Asset Version:**
-  - 3.1
-* - **Data Version:**
-  - 8.10
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/starlabels.asset`
+* - **OpenSpace Version:**
+  - 3
 * - **Reference:**
   - IAU, Simbad
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
+* - **Source Version:**
+  - 8.10
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

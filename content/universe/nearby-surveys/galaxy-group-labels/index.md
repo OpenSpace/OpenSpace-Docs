@@ -51,14 +51,16 @@ Galaxy groups around the Local Group showing a concentration of groups that incl
 
 * - **Census:**
   - 62 galaxy group labels
-* - **Asset Version:**
-  - 2.0
-* - **Data Version:**
-  - 1.02
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/galaxy_groups.asset`
+* - **OpenSpace Version:**
+  - 1
 * - **Reference:**
   - Nearby Galaxy Catalog (private communication, Brent Tully)
 * - **Prepared by:**
   - R. Brent Tully, Stuart Levy, Brian Abbott (AMNH)
+* - **Source Version:**
+  - 1.02
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

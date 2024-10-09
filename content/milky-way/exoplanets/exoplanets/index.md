@@ -85,8 +85,6 @@ A view of the exoplanetary systems from outside the Milky Way galaxy. We are sti
   - 4,139 planets in 3,023 systems  CHECK THESE NUMBERS
 * - **Asset File:**
   - `data/assets/scene/digitaluniverse/exoplanets.asset`
-* - **Location:**
-  - `sync/http/digitaluniverse_exoplanets_speck`
 * - **OpenSpace Version:**
   - 4
 * - **Reference:**

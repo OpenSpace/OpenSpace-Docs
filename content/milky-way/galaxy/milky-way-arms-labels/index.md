@@ -53,8 +53,6 @@ The Milky Way Arms Labels seen from the "wrong" side of the Galaxy, where they r
   - 1 image
 * - **Asset File:**
   - `data/assets/scene/digitaluniverse/milkyway_arm_labels.asset`
-* - **Location:**
-  - `sync/http/digitaluniverse_milkyway_textures`
 * - **OpenSpace Version:**
   - 2
 * - **Reference:**

@@ -79,14 +79,16 @@ Planetary nebulae as seen from outside the Milky Way Galaxy. Most are located re
 
 * - **Census:**
   - 1,657 planetary nebulae
-* - **Asset Version:**
-  - 4.0
-* - **Data Version:**
-  - 3.09
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/planetarynebulae.asset`
+* - **OpenSpace Version:**
+  - 3
 * - **Reference:**
   - [Planetary nebulae in Gaia EDR3 Central star identification, properties and binarity.](https://doi.org/10.1051/0004-6361/202141916)
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
+* - **Source Version:**
+  - 3.09
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

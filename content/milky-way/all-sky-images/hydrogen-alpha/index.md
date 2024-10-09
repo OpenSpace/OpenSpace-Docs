@@ -63,8 +63,6 @@ We can also see that galaxies emit Hα light. We see the Large and Small Magella
   - 1 all-sky image
 * - **Asset File:**
   - `data/assets/scene/digitaluniverse/allsky_hydrogenalpha.asset`
-* - **Location:**
-  - `sync/http/digitaluniverse_multiwavelength_milkyway_textures`
 * - **OpenSpace Version:**
   - 1
 * - **Reference:**

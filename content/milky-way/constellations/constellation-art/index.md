@@ -63,8 +63,6 @@ The Constellations Art action menu. Here you can turn on each constellation's ar
   - 88 constallation images
 * - **Asset File:**
   - `data/assets/scene/milkyway/constellations/constellation_art.asset`
-* - **Location:**
-  - `sync/http/constellation_images`
 * - **OpenSpace Version:**
   - 4
 * - **Reference:**

@@ -80,8 +80,6 @@ As seen from afar, the exoplanet candidate stars are huddled around the Sun. Gre
   - 8,589 stars
 * - **Asset File:**
   - `data/assets/scene/digitaluniverse/exoplanets_candidates.asset`
-* - **Location:**
-  - `sync/http/digitaluniverse_multiwavelength_milkyway_textures`
 * - **OpenSpace Version:**
   - 2
 * - **Reference:**

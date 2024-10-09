@@ -69,14 +69,16 @@ Not all stars' motion are as well behaved as the Sun. The halo star PM J13420-34
 
 * - **Census:**
   - 7 star orbits
-* - **Asset Version:**
-  - 2.0
-* - **Data Version:**
-  - 1.06
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/starorbits.asset`
+* - **OpenSpace Version:**
+  - 2
 * - **Reference:**
   - Select Star Orbits; Private Communication, Sebastien Lepine
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
+* - **Source Version:**
+  - 1.06
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

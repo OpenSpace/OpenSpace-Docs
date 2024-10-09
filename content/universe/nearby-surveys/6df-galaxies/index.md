@@ -58,14 +58,16 @@ The 6dF Galaxies from the night sky perspective. We see the band of the Milky Wa
 
 * - **Census:**
   - 117,441 galaxies
-* - **Asset Version:**
-  - 3.0
-* - **Data Version:**
-  - 1.05
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/6dF.asset`
+* - **OpenSpace Version:**
+  - 3
 * - **Reference:**
   - [The 6dF Galaxy Survey: final redshift release (DR3) and southern large-scale structures](https://doi.org/10.1111/j.1365-2966.2009.15338.x)
 * - **Prepared by:**
   - Brian Abbott, Sohum Udani (AMNH)
+* - **Source Version:**
+  - 1.05
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

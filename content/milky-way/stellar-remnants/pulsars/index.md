@@ -103,14 +103,16 @@ The pulsars (red) and globular clusters (yellow) shown together as we view the M
 
 * - **Census:**
   - 3,221 pulsars
-* - **Asset Version:**
-  - 4.0
-* - **Data Version:**
-  - 7.07
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/pulsars.asset`
+* - **OpenSpace Version:**
+  - 3
 * - **Reference:**
   - [ATNF Pulsar Catalogue](http://www.atnf.csiro.au/research/pulsar/)
 * - **Prepared by:**
   - Brian Abbott, Zack Reeves (AMNH)
+* - **Source Version:**
+  - 7.07
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

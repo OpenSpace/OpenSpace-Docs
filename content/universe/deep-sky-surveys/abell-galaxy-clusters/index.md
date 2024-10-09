@@ -73,14 +73,16 @@ The Abell Galaxy Clusters shown with the Supercluster Labels on and the faint Tu
 
 * - **Census:**
   - 2,246 galaxy clusters
-* - **Asset Version:**
-  - 3.0
-* - **Data Version:**
-  - 1.03
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/abell.asset`
+* - **OpenSpace Version:**
+  - 3
 * - **Reference:**
   - [A Catalog of Rich Clusters of Galaxies](https://doi.org/10.1086%2F191333); private communication, Brent Tully
 * - **Prepared by:**
   - Stuart Levy (NCSA), Brian Abbott (AMNH)
+* - **Source Version:**
+  - 1.03
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

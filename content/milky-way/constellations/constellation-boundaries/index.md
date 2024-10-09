@@ -45,8 +45,6 @@ The night sky looking toward the constellations Aries, Pisces, and Andromeda. Th
   - 88 constellations boundaries
 * - **Asset File:**
   - `data/assets/scene/digitaluniverse/constellationbounds.asset`
-* - **Location:**
-  - `sync/http//digitaluniverse_constellations_data`
 * - **OpenSpace Version:**
   - 1
 * - **Reference:**

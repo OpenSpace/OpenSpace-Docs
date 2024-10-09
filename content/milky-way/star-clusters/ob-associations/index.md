@@ -57,14 +57,16 @@ One of the few datasets that are sized according to their physical size. Most da
 
 * - **Census:**
   - 61 OB associations
-* - **Asset Version:**
-  - 3.1
-* - **Data Version:**
-  - 2.04
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/obassociations.asset`
+* - **OpenSpace Version:**
+  - 4
 * - **Reference:**
   - New List of OB Associations (Melnik+)
 * - **Prepared by:**
   - Brian Abbott (AMNH)
+* - **Source Version:**
+  - 2.04
 * - **License:**
   - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
 :::

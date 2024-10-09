@@ -31,14 +31,16 @@ In the image above, we can see the Milky Way (Home) alongside some of its neighb
 
 * - **Census:**
   - 1 label
-* - **Asset Version:**
-  - 2.0
-* - **Data Version:**
-  - N/A
+* - **Asset File:**
+  - `data/assets/scene/digitaluniverse/milkyway_label.asset`
+* - **OpenSpace Version:**
+  - 1
 * - **Reference:**
-  - N/A
+  - Not applicable
 * - **Prepared by:**
   - Carter Emmart (AMNH); OpenSpace Team
+* - **Source Version:**
+  - 1.01
 * - **License:**
-  - MIT license
+  - [MIT license](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
 :::
