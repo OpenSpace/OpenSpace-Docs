@@ -7,7 +7,7 @@ authors:
 
 # Exoplanet Candidates
 
-{menuselection}`Milky Way --> Exoplanets --> Exoplanet Candidates`
+{menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Candidates`
 
 
 The exoplanet candidate stars are likely hosts for exoplanets. These are stars plucked from NASA's [Kepler](https://en.wikipedia.org/wiki/Kepler_space_telescope) and [TESS](https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite) space telescopes. They are not designed to look photo-realistic but, rather, are diagrammatic in nature and demonstrate the sheer number of candidate stars that continue to be examined for planets. The nature of these stars is not as important as their abundance and distribution in the solar neighborhood.

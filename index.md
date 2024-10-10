@@ -97,7 +97,6 @@ content/milky-way/index
 content/universe/index
 content/asteroids
 content/ephemeris/index
-content/exoplanets/index
 content/gaia
 content/globebrowsing/index
 content/point-data/index

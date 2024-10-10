@@ -15,7 +15,16 @@ Decades after their discovery, more sophisticated missions are discovering the l
 :align: left
 :alt: Blue rings mark the locations of exoplanetary systems. We are looking back toward the Sun from hundreds of light years away, and the green, wire-frame sphere, centered on the Sun, shows the extent of our radio signals. The sphere is 160 light years in diameter.
 
-Blue rings mark stars that have a known planetary system. The 80-light-year-radius, wire-frame sphere is called the Radio Sphere and encompasses our radio signals, which have been traveling out into space for roughly 80 years. The Sun and Solar System lie at the center of the sphere. Many exoplanets lie inside the sphere and, theoretically, have heard from us.
+Blue rings mark stars that have a known [exoplanetary system](./exoplanets/index). The 80-light-year-radius, wire-frame sphere is called the Radio Sphere and encompasses our radio signals, which have been traveling out into space for roughly 80 years. The Sun and Solar System lie at the center of the sphere. Many exoplanets lie inside the sphere and, theoretically, have heard from us.
+:::
+
+
+
+:::{figure} ./exoplanet-system-module/exoplanet_system_kepler11.png
+:align: left
+:alt: The Kepler-11 system with its six planets, and the habitable zone in green.
+
+The [exoplanet system module](./exoplanet-system-module/index) visualizes the planetary system and habitable zone around each exoplanetary system. Here, we see the star Kepler-11 and its system of six planets and the green habitable zone.
 :::
 
 
@@ -24,5 +33,6 @@ Blue rings mark stars that have a known planetary system. The 80-light-year-radi
 :caption: Assets
 
 exoplanets/index
+exoplanet-system-module/index
 exoplanet-candidates/index
 :::

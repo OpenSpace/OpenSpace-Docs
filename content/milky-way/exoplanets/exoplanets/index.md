@@ -7,7 +7,7 @@ authors:
 
 # Exoplanets
 
-{menuselection}`Milky Way --> Exoplanets --> Exoplanets`
+{menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanets`
 
 
 The discovery and study of exoplanets is a relatively new field within astrophysics. The first confirmed system was discovered in 1995, and since then it has been a burgeoning subfield of research.
@@ -57,6 +57,8 @@ The exoplanet systems are represented by a blue ring centered on each host star.
 
 :::{note}
 The blue rings do not signify an orbit, but merely mark the locations of stars with known planets. The larger the ring, the closer it is to your position.
+
+To see the individual systems of planets with planetary orbits and a rendition of the habitable zone, see the [Exoplanet System Module](../exoplanet-system-module/index).
 :::
 
 

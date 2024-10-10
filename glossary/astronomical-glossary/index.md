@@ -20,13 +20,17 @@ Completeness
 
 
 Ecliptic
-    Definition.
+    The ecliptic is the imaginary line in the sky on which the Sun travels throughout the year. Because it is defined by the annual path of Sun, it traverses the zodiacal constellations. Extrapolated to three dimensions, the ecliptic, then, defines the plane shared by the Sun and Earth.
 
 
 Finger of god
     A "finger of god" is a line of galaxies that point radially back to the Milky Way. Early in the process of mapping the local universe, astronomers noticed that galaxies, when plotted, appeared on lines that pointed radially back to Earth. They saw these "lines" of galaxies pointing at Earth from all directions in the sky. It turns out we see fingers of god mostly in clusters of galaxies. 
     
     Within a cluster of galaxies, there are random motions as the galaxies all orbit the center of the cluster. We derive the distance to galaxies using their relative velocity, and, in a sense, the velocities inside a cluster are contaminated by these random, local motions (as opposed to the more global recessional velocity of the expanding universe). This results in a radial spread in distance for the galaxies in a cluster. And, all these radial "lines" all point back to the observer here on Earth, puzzling astronomers who first observed this in the earliest maps of the universe.
+
+
+Habitable zone
+    Definition.
 
 
 Lookback time
@@ -48,7 +52,7 @@ Redshift/blueshift
 
 
 Uncertainty
-    Definition.
+    In science, uncertainty refers to doubt in a measurement value. These doubts arise from several things, but often derive from the limitations of the instrument doing the measurement. For example, a ruler has lines for each millimeter, but if the object being measured is somewhere between 2 mm and 3 mm, you have to estimate what the final value. We know 2 mm is too low, and 3 mm is too high, so the value will be some guess, with a "give or take" range, for example, maybe we estimate it to be 2.5 mm plus or minus 0.5 mm. In astrophysics, these limitations derive from limitations of telescopes, observational conditions, and the nature of the object we're measuring.
 
 
 Zone of avoidance
