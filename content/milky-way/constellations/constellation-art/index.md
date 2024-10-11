@@ -42,7 +42,7 @@ Constellation art overlay the constellation lines. Here we see Orion, the hunter
 
 There are two access points for the constellation art. One is the Scene Menu, in {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Art`, but access is limited here to each individual constellation. If you want to turn an individual constellation's artwork on, then use the Scene Menu to access that asset. 
 
-More often, we want to see all the constellation art at once---to see the entire night sky's constellations as figures, not lines. To achieve this, use the Action Menu {menuselection}`Actions --> Constellations --> Art`.
+Sometimes, we want to see all the constellation art at once---to see the entire night sky's constellations as figures, not lines. To achieve this, use the Action Menu {menuselection}`Actions --> Constellations --> Art`.
 
 
 :::{figure} constellation_art_actions_menu.png
@@ -74,3 +74,25 @@ The Constellations Art action menu. Here you can turn on each constellation's ar
 * - **License:**
   - [CC-BY](https://creativecommons.org/licenses/by/4.0/)
 :::
+
+
+
+
+Also, the keybind c for constellations I believe is still the default to show them all (and shift+c hides them).
+
+Not sure if it’s the right place but you might want to add a mention of the just show zodiac actions that are included by default:
+
+local ShowZodiacArt = {
+ Identifier = "os.constellation_art.ShowZodiacArt",
+ Name = "Show zodiac",
+ Command = [[
+   openspace.fadeIn("{zodiac}")
+ ]],
+ Documentation = "Enables and fades up zodiac art work",
+ GuiPath = "/Constellations/Art",
+ IsLocal = false
+}
+
+Otherwise, all wonderful.
+
+And, related to documentations, i wanted to make some spherical grids based on redshift values, z = 1,2,3… . Is there a global set of cosmology values that were used when building the DU data sets so I can get a coherent comoving distance?
