@@ -83,9 +83,10 @@ myst_heading_anchors = 3
 ###
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
-  "logo_only" : True,
+  "logo_only": True,
   "display_version": False,
   "collapse_navigation": False,
+  "titles_only": True,
 }
 
 html_context = {
