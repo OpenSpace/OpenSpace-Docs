@@ -14,7 +14,8 @@ A white dwarf is a compact remnant---the final evolutionary state of over 95% of
 
 :::{figure} Sirius_A_and_B_Hubble_photo.png
 :align: center
-:width: 50%
+:figwidth: 90%
+:width: 60%
 :alt: An image of a bright star (Sirius) with a very faint object beside it (the white dwarf) indicated by an arrow.
 
 An Hubble Space Telescope image of the star Sirius, and it's faint companion white dwarf, Sirius B, located to the lower-left of Sirius. Sirius has prominent diffraction spikes resulting from the optics of the telescope. Credit: NASA, ESA, H. Bond (STScI), and M. Barstow (University of Leicester)

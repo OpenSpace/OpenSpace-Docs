@@ -17,7 +17,8 @@ The hotter, more massive stars (like O stars) give off higher-energy light, and 
 
 :::{figure} Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg
 :align: center
-:width: 75%
+:figwidth: 90%
+:width: 60%
 :alt: An image of the Orion Nebula with its glowing cloud of gas surrounding a cluster of young stars. The cloud glows off-white in its center and has pinks, reds and greens in its outskirts.
 
 The Orion Nebula, at around 1,350 light years, is the most prominent HII region in the night sky. Here we see Hubble's view of the great nebula, but with the unaided eye it appears as a small, bluish haze in Orion's sword. Credit: NASA, ESA, M. Robberto (Space Telescope Science Institute/ESA) and the Hubble Space Telescope Orion Treasury Project Team

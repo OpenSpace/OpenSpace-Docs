@@ -34,7 +34,8 @@ One severe limitation of this asset is that it is merely a flat, two-dimensional
 
 :::{figure} milkyway_arms_labels_backwards.png
 :align: center
-:width: 75%
+:figwidth: 90%
+:width: 70%
 :alt: The Milky Way Arm Labels seen from underneath the Galaxy, where the words read backwards.
 
 The Milky Way Arms Labels seen from the "wrong" side of the Galaxy, where they read backwards.

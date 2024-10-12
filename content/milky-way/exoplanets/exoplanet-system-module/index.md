@@ -52,7 +52,8 @@ Inside the panel, search for the system you want to add by typing the name of th
 
 :::{figure} exoplanet_systems_panel_search.png
 :align: center
-:width: 35%
+:figwidth: 60%
+:width: 50%
 :alt: A screenshot of the exoplanets panel with the results of a search for the star Kepler 11.
 
 The exoplanets module panel with the results of a search for "Kepler-11," a multiplanet system around the star Kepler 11. 
@@ -69,7 +70,8 @@ Click on the desired system and then click the "Add System" button to the right.
 
 :::{figure} exoplanet_systems_panel_added.png
 :align: center
-:width: 35%
+:figwidth: 60%
+:width: 50%
 :alt: The exoplanet module panel with the Kepler-11 system added
 
 The exoplanet module panel with the Kepler-11 system added.

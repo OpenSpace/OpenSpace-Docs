@@ -65,7 +65,8 @@ COBE operated between 1989 and 1993 and returned the first detailed all-sky imag
 
 :::{figure} cmb_composite.png
 :align: center
-:width: 50%
+:figwidth: 80%
+:width: 70%
 :alt: A 3-panel view of the CMB showing the COBE map, WMAP, and Planck all from the same region of sky.
 
 A three-panel image of the CMB over the same region of the sky. The top panel is from COBE (1992), the middle panel is the WMAP data (2003), and the bottom map is the Planck image (2013). Each successive mission increased the resolution and our understanding of the universe.
