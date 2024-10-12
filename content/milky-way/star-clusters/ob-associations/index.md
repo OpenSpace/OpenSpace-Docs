@@ -8,7 +8,7 @@ authors:
 # OB Associations
 
 
-{menuselection}`Milky Way --> Star Clusters --> OB Associations`
+{menuselection}`Scene --> Milky Way --> Star Clusters --> OB Associations`
 
 
 OB associations are young groups of stars that were formed within a giant molecular cloud, but have dispersed after the original gas and dust from the cloud was blown away by the star's radiation pressure. Although an association's stars are no longer gravitationally bound to one another, they share a common motion in space because they were formed from the same cloud.

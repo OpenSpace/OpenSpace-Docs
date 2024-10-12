@@ -7,7 +7,7 @@ authors:
 
 # Universe
 
-{menuselection}`Universe`
+{menuselection}`Scene --> Universe`
 
 
 *Universe* includes everything outside the Milky Way Galaxy.

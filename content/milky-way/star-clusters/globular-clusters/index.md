@@ -7,7 +7,7 @@ authors:
 
 # Globular Clusters
 
-{menuselection}`Milky Way --> Star Clusters --> Globular Clusters`
+{menuselection}`Scene --> Milky Way --> Star Clusters --> Globular Clusters`
 
 Globular star clusters are gravitationally bound groups of roughly 100,000 to a few million stars. They are compact---stars near their centers are within a light year of one another---roughly spherical clusters that range from 30 to 100 light years in diameter.
 

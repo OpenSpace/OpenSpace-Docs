@@ -7,7 +7,7 @@ authors:
 
 # COBE
 
-{menuselection}`Universe --> Cosmic Microwave Background --> COBE`
+{menuselection}`Scene --> Universe --> Cosmic Microwave Background --> COBE`
 
 
 

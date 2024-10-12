@@ -7,7 +7,7 @@ authors:
 
 # Stars
 
-{menuselection}`Milky Way --> Stars --> Stars`
+{menuselection}`Scene --> Milky Way --> Stars --> Stars`
 
 
 In many ways, stars form the foundation of our astronomical knowledge and are incremental toward our understanding of the universe itself. We base much of what we know about the universe on the characteristics and evolution of stars, and they are an important rung on the so-called distance ladder that other distance-determination methods rely upon.

@@ -7,7 +7,7 @@ authors:
 
 # White Dwarfs
 
-{menuselection}`Milky Way --> Stellar Remnants --> White Dwarfs`
+{menuselection}`Scene --> Milky Way --> Stellar Remnants --> White Dwarfs`
 
 
 A white dwarf is a compact remnant---the final evolutionary state of over 95% of the stars in the Milky Way. This fate is determined by the mass of the star. Stars within the range of  0.08 to 8 solar masses become a red giant, shed their layers in a planetary nebula, ultimately revealing a compact core called a white dwarf. Stars less massive than 0.08 solar masses have long lifetimes on the order of trillions of years. Stars more massive than 8 solar masses will result in either a neutron star or black hole. 

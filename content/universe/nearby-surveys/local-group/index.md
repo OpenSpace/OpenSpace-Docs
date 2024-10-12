@@ -7,7 +7,7 @@ authors:
 
 # Local Group
 
-{menuselection}`Universe --> Nearby Surveys --> Local Group`
+{menuselection}`Scene --> Universe --> Nearby Surveys --> Local Group`
 
 
 A *group* of galaxies is a small number of large galaxies that are typically surrounded by a larger number of small galaxies. These galaxies are gravitationally bound to one another. In the case of the Local Group, there are roughly two substructures, each centered around large, spiral galaxies, with a few other assorted galaxies that interact more loosely with the group.

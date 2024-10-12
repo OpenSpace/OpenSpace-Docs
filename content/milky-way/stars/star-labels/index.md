@@ -7,7 +7,7 @@ authors:
 
 # Star Labels
 
-{menuselection}`Milky Way --> Stars --> Star Labels`
+{menuselection}`Scene --> Milky Way --> Stars --> Star Labels`
 
 
 The star labels show the common names of the stars. Of course, only the prominent stars have such a name, and we have 335 stars included in this asset.

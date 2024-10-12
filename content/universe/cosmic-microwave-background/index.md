@@ -7,7 +7,7 @@ authors:
 
 # Cosmic Microwave Background
 
-{menuselection}`Universe --> Cosmic Microwave Background`
+{menuselection}`Scene --> Universe --> Cosmic Microwave Background`
 
 
 

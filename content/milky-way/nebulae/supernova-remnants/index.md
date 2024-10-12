@@ -7,7 +7,7 @@ authors:
 
 # Supernova Remnants
 
-{menuselection}`Milky Way --> Nebulae --> Supernova Remnants`
+{menuselection}`Scene --> Milky Way --> Nebulae --> Supernova Remnants`
 
 A supernova remnant is a nebulous structure that forms from a supernova. The exploding star sends out ejected material and sweeps up the interstellar gas to form these nebulous, glowing clouds of gas.
 

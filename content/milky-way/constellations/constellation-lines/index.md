@@ -7,7 +7,7 @@ authors:
 
 # Constellation Lines
 
-{menuselection}`Milky Way --> Constellations --> Constellation Lines`
+{menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines`
 
 
 Constellation lines trace out the imaginary star patterns in the night sky. These lines are traditionally how we view the constellations---they guide the eye without being too visually intrusive.

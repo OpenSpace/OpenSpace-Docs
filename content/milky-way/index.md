@@ -7,7 +7,7 @@ authors:
 
 # Milky Way
 
-{menuselection}`Milky Way`
+{menuselection}`Scene --> Milky Way`
 
 
 These data sets make up the Milky Way portion of OpenSpace. This broadly includes anything outside the Solar System but within the Milky Way Galaxy.

@@ -7,7 +7,7 @@ authors:
 
 # Pulsars
 
-{menuselection}`Milky Way --> Stellar Remnants --> Pulsars`
+{menuselection}`Scene --> Milky Way --> Stellar Remnants --> Pulsars`
 
 
 A pulsar is a spinning neutron star that emits beams of light from its magnetic poles. These beams are akin to a lighthouse's beam that sweeps across our view as the neutron star spins.

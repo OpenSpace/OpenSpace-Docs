@@ -7,7 +7,7 @@ authors:
 
 # Sloan Galaxies
 
-{menuselection}`Universe --> Deep Sky Surveys --> Sloan Galaxies`
+{menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan Galaxies`
 
 
 The multifaceted Sloan Digital Sky Survey (SDSS) is an ambitious project to image and get spectra for about 35% of the sky. These spectra allow astronomers to probe deeply into the universe. The survey measured the position and brightness of almost 1 billion objects, and obtained spectra to more than 4 million objects.

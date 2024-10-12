@@ -7,7 +7,7 @@ authors:
 
 # Milky Way Arms Labels
 
-{menuselection}`Milky Way --> Galaxy --> Milky Way Arms Labels`
+{menuselection}`Scene --> Milky Way --> Galaxy --> Milky Way Arms Labels`
 
 
 Like the 3-D [Milky Way Volume](../milky-way-volume/index) and the 2-D [Galaxy Image](../milky-way-galaxy-image/index), the labels for the spiral arms are diagrammatic and to be used as a guide only. 

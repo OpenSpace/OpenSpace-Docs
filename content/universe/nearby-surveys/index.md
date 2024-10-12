@@ -7,7 +7,7 @@ authors:
 
 # Nearby Surveys
 
-{menuselection}`Universe --> Nearby Surveys`
+{menuselection}`Scene --> Universe --> Nearby Surveys`
 
 
 Nearby Surveys describe the neighborhood around the Milky Way Galaxy. Here, we have a better idea of what's out there (hint: galaxies) and the structures formed by those galaxies.

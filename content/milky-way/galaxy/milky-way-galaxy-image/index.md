@@ -7,7 +7,7 @@ authors:
 
 # Milky Way Galaxy Image
 
-{menuselection}`Milky Way --> Galaxy --> Milky Way Galaxy Image`
+{menuselection}`Scene --> Milky Way --> Galaxy --> Milky Way Galaxy Image`
 
 
 The Milky Way Image provides a basis, albeit representational and two-dimensional, of galactic structure that's typical of the Milky Way. It is an image of the galaxy [NGC 1232](https://en.wikipedia.org/wiki/NGC_1232) in the constellation Eridanus as seen from Earth. 

@@ -7,7 +7,7 @@ authors:
 
 # WMAP
 
-{menuselection}`Universe --> Cosmic Microwave Background --> WMAP`
+{menuselection}`Scene --> Universe --> Cosmic Microwave Background --> WMAP`
 
 
 

@@ -7,7 +7,7 @@ authors:
 
 # Abell Galaxy Clusters
 
-{menuselection}`Universe --> Deep Sky Surveys --> Abell Galaxy Clusters`
+{menuselection}`Scene --> Universe --> Deep Sky Surveys --> Abell Galaxy Clusters`
 
 
 The Abell Galaxy Clusters are rich clusters of galaxies akin to the Virgo Cluster. Each point in this data set contains tens to hundreds of galaxies. A handful of these Abell clusters overlap with the [Tully Galaxies](../../nearby-surveys/tully-galaxies/index), but most are outside Tully.
@@ -48,7 +48,7 @@ The Abell Galaxy Clusters show no prominent structure because we are only seeing
 
 ## Superclusters
 
-Galaxy clusters themselves form superclusters---groupings of galaxy clusters and larger structures. We can turn on the labels for these in {menuselection}`Universe --> Deep Sky Surveys --> Supercluster Labels` to see where the major superclusters align with the Abell Clusters. We will discuss superclusters more in [Supercluster Labels](../supercluster-labels/index).
+Galaxy clusters themselves form superclusters---groupings of galaxy clusters and larger structures. We can turn on the labels for these in {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Supercluster Labels` to see where the major superclusters align with the Abell Clusters. We will discuss superclusters more in [Supercluster Labels](../supercluster-labels/index).
 
 
 

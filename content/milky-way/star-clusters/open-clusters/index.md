@@ -8,7 +8,7 @@ authors:
 # Open Clusters
 
 
-{menuselection}`Milky Way --> Star Clusters --> Open Clusters`
+{menuselection}`Scene --> Milky Way --> Star Clusters --> Open Clusters`
 
 An open star cluster is a loose assemblage of stars numbering from hundreds to thousands that are bound by their mutual gravitation. Astronomers know from their stellar spectra that stars in open clusters are typically younger, so open clusters are relative newcomers in the scope of the Galaxy.
 

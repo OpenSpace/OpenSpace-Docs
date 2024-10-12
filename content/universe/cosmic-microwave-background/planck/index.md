@@ -7,7 +7,7 @@ authors:
 
 # Planck
 
-{menuselection}`Universe --> Cosmic Microwave Background --> Planck`
+{menuselection}`Scene --> Universe --> Cosmic Microwave Background --> Planck`
 
 
 

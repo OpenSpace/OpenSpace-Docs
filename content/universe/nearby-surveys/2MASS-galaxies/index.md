@@ -7,7 +7,7 @@ authors:
 
 # 2MASS Galaxies
 
-{menuselection}`Universe --> Nearby Surveys --> 2MASS Galaxies`
+{menuselection}`Scene --> Universe --> Nearby Surveys --> 2MASS Galaxies`
 
 
 2MASS is the Two Micron All-Sky Survey. It was an infrared survey of the entire sky that took place between 1997 and 2001. Two 1.3-meter telescopes were used, one in Arizona and the other in Chile.

@@ -7,7 +7,7 @@ authors:
 
 # Deep Sky Surveys
 
-{menuselection}`Universe --> Deep Sky Surveys`
+{menuselection}`Scene --> Universe --> Deep Sky Surveys`
 
 
 Deep Sky Surveys refer to large surveys that probe deeper into the observable universe. These galaxy surveys see deeper, but are far less complete. Typically, only portions of the sky are observed, leaving whole swaths of the universe unseen.

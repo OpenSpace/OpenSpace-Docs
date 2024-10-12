@@ -7,7 +7,7 @@ authors:
 
 # Supercluster Labels
 
-{menuselection}`Universe --> Deep Sky Surveys --> Supercluster Labels`
+{menuselection}`Scene --> Universe --> Deep Sky Surveys --> Supercluster Labels`
 
 
 Galaxy clusters, like the nearby Virgo Cluster, form into larger structures called superclusters. Many galaxy clusters can compose one supercluster. In this data set, we provide labels for the locations of these superclusters.

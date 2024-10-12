@@ -7,7 +7,7 @@ authors:
 
 # 2dF Galaxies
 
-{menuselection}`Universe --> Deep Sky Surveys --> 2dF Galaxies`
+{menuselection}`Scene --> Universe --> Deep Sky Surveys --> 2dF Galaxies`
 
 
 The Two-degree Field (2dF) survey was designed to probe the large-scale structure over two slices of the universe out to about 2 billion light years. It was conducted between 1997 and 2002 and was the largest survey of its kind until the Sloan Digital Sky Survey surpassed it.

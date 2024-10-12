@@ -7,7 +7,7 @@ authors:
 
 # Galaxy Cluster Labels
 
-{menuselection}`Universe --> Nearby Surveys --> Galaxy Cluster Labels`
+{menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Cluster Labels`
 
 
 The Galaxy Cluster Labels dataset is a series of labels that mark where the large clusters of galaxies are in the nearby universe. These labels must be used in conjunction with the [Tully Galaxies](../tully-galaxies/index).

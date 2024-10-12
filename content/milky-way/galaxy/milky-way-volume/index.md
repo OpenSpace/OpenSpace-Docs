@@ -7,7 +7,7 @@ authors:
 
 # Milky Way Volume
 
-{menuselection}`Milky Way --> Galaxy --> Milky Way Volume`
+{menuselection}`Scene --> Milky Way --> Galaxy --> Milky Way Volume`
 
 
 

@@ -7,7 +7,7 @@ authors:
 
 # Alternate Star Labels
 
-{menuselection}`Milky Way --> Stars --> Alternate Star Labels`
+{menuselection}`Scene --> Milky Way --> Stars --> Alternate Star Labels`
 
 
 A small number of more prominent stars have proper names like Sirius, Betelgeuse, and Polaris. However, astronomers have long cataloged thousands of stars beyond the brightest ones we see. Several attempts over thousands of years to name all the visible stars have led to two main catalogs: Johann Bayer's (1572--1625) catalog from 1603 and John Flamsteed's (1646--1719) catalog published in 1725.

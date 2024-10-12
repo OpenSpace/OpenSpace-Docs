@@ -7,7 +7,7 @@ authors:
 
 # Planetary Nebulae
 
-{menuselection}`Milky Way --> Nebulae --> Planetary Nebulae`
+{menuselection}`Scene --> Milky Way --> Nebulae --> Planetary Nebulae`
 
 
 A planetary nebula is a glowing shell of gas ejected from a red giant star late in its life. The term _planetary nebula_ emerged because early astronomers observed them to be planetlike in appearance. However, we know now they have no relation to planets.

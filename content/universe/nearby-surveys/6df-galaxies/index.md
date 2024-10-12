@@ -7,7 +7,7 @@ authors:
 
 # 6dF Galaxies
 
-{menuselection}`Universe --> Nearby Surveys --> 6dF Galaxies`
+{menuselection}`Scene --> Universe --> Nearby Surveys --> 6dF Galaxies`
 
 
 The Six-degree Field (6dF) Galaxy Survey mapped roughly half the sky from the Anglo-Australian Observatory. The survey used the 1.2-meter UK Schmidt Telescope at Siding Spring Observatory in New South Wales, Australia, and allowed for a six degree field of view per observation.

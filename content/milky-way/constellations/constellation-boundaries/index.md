@@ -7,7 +7,7 @@ authors:
 
 # Constellation Boundaries
 
-{menuselection}`Milky Way --> Constellations --> Constellation Boundaries`
+{menuselection}`Scene --> Milky Way --> Constellations --> Constellation Boundaries`
 
 
 While the constellations have been around since antiquity, it is only in the last century that order has been brought to them via scientific consensus. Over the last two centuries, scientists over the generations published their star catalogs with renditions of the constellations and some even added their own constellations, particularly for the southern hemisphere.

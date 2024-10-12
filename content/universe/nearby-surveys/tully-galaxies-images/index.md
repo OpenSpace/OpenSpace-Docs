@@ -7,7 +7,7 @@ authors:
 
 # Tully Galaxies Images
 
-{menuselection}`Universe --> Nearby Surveys --> Tully Galaxy Images`
+{menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxy Images`
 
 
 We've grown accustomed to seeing galaxies as multicolored points. Typically, these colors represent density, where orange galaxies are in a dense, galaxy-rich part of the universe and aqua-colored galaxies are in a less dense, galaxy-poor part of the universe.
@@ -34,7 +34,7 @@ A view of the Virgo Cluster with the Tully Galaxy points off. Normally these wou
 
 From a wide perspective, these images are impossible to see, hence the need for points. Galaxies are so small relative to our typical view in OpenSpace that one must be right beside them in order for their image to be visible. This is a consequence of having properly-sized images for each galaxy.
 
-While we would *never* do this in the public show, it is possible to exaggerate the image sizes. Using the menu item {menuselection}`Tully Galaxies Images -> Renderable -> Sizing -> Scale Factor`, you can make the images larger, to the point that neighboring galaxies are overlapping. This is **completely unrealistic and inaccurate**, but it can be illustrative at times when used with restraint.
+While we would *never* do this in the public show, it is possible to exaggerate the image sizes. Using the menu item {menuselection}`Scene --> Tully Galaxies Images -> Renderable -> Sizing -> Scale Factor`, you can make the images larger, to the point that neighboring galaxies are overlapping. This is **completely unrealistic and inaccurate**, but it can be illustrative at times when used with restraint.
 
 
 :::{figure} images_virgo_cluster_large.png

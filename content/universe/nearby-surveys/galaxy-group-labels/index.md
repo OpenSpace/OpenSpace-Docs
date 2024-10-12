@@ -7,7 +7,7 @@ authors:
 
 # Galaxy Group Labels
 
-{menuselection}`Universe --> Nearby Surveys --> Galaxy Group Labels`
+{menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Group Labels`
 
 
 As we outlined in [Local Group](../local-group/index), a galaxy group is a small number of galaxies gravitationally interacting with one another. Often, it consists of a one or a few large galaxies, like the Milky Way, and a cadre of small, satellite galaxies that orbit them.

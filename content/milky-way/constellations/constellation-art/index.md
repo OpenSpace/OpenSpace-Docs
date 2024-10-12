@@ -7,7 +7,7 @@ authors:
 
 # Constellation Art
 
-{menuselection}`Milky Way --> Constellations --> Constellation Art`
+{menuselection}`Scene --> Milky Way --> Constellations --> Constellation Art`
 
 
 Constellations have been part of the human experience since prehistoric times. We looked to the sky as bookmarks, in a sense, of the popular stories and lore of our culture. And, of course, many different cultures devised their own constellations independently of one another. 

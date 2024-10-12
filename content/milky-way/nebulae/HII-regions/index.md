@@ -7,7 +7,7 @@ authors:
 
 # HII Regions
 
-{menuselection}`Milky Way --> Nebulae --> HII Regions`
+{menuselection}`Scene --> Milky Way --> Nebulae --> HII Regions`
 
 
 Stars form from large clouds of hydrogen gas. A typical gas cloud's density in the interstellar medium is too low to form stars. They need an outside stimulus or perturbation to stimulate the process. Such a disturbance to these clouds can occur via a nearby supernova shockwave or two clouds colliding. This will cause a localized area of the cloud to collapse. As the gas condenses, stars begin to form, eventually resulting in numerous stars enshrouded by the hydrogen gas.

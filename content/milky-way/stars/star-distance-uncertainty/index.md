@@ -8,7 +8,7 @@ authors:
 # Star Distance Uncertainty
 
 
-{menuselection}`Milky Way --> Stars --> Star Distance Uncertainty`
+{menuselection}`Scene --> Milky Way --> Stars --> Star Distance Uncertainty`
 
 
 In this asset, we provide a visual representation of the {term}`uncertainty` in a star's distance. Each line is along the line-of-sight back to Earth, and the length of each line represents how uncertain the distance value is for the particular star.

@@ -7,7 +7,7 @@ authors:
 
 # Brown Dwarfs
 
-{menuselection}`Milky Way --> Substellar Objects --> Brown Dwarfs`
+{menuselection}`Scene --> Milky Way --> Substellar Objects --> Brown Dwarfs`
 
 
 In astronomy, there are dwarf stars, dwarf novae, and even dwarf galaxies. Substellar objects, like brown dwarfs, cover objects too small the be stars and too large to be planets. Planets are believed to range up to 13 Jupiter masses, while brown dwarfs range from there up to about 80 Jupiter masses, where there is enough mass to stimulate fusion.

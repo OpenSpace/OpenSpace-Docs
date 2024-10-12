@@ -7,7 +7,7 @@ authors:
 
 # Home Label
 
-{menuselection}`Universe --> Nearby Surveys --> Home Label`
+{menuselection}`Scene --> Universe --> Nearby Surveys --> Home Label`
 
 
 :::{figure} home_label.png
