@@ -64,7 +64,7 @@ The exoplanets module panel with the results of a search for "Kepler-11," a mult
 
 ### 3. Add the system
 
-Click on the desired system and then click the "Add System" button to the right. The system will then appear in the list of added systems at the bottom of the panel, and will also appear in the scene menu:  
+Click on the desired system and then click the "Add System" button to the right. The system will then appear in the list of added systems at the bottom of the panel, and will also appear in the scene menu: \
 {menuselection}`Scene -> Milky Way --> Exoplanets --> Exoplanet Systems`
 
 :::{figure} exoplanet_systems_panel_added.png

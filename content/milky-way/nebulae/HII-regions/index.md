@@ -35,7 +35,7 @@ The night sky view of HII regions looking toward Orion. Several points mark the 
 
 ## Nomenclature
 
-The name *HII* refers to the hydrogen gas (H) in its ionized state (II), and is pronounced "H-two". In astronomy, we refer to this excited state of hydrogen with the Roman numeral two. In most other sciences, it is expressed H{sup}`+`.
+The name _HII_ refers to the hydrogen gas (H) in its ionized state (II), and is pronounced "H-two". In astronomy, we refer to this excited state of hydrogen with the Roman numeral two. In most other sciences, it is expressed H{sup}`+`.
 
 
 ## Lifetime of an HII region

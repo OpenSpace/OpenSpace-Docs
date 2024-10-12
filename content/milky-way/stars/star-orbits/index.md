@@ -8,13 +8,12 @@ authors:
 # Star Orbits
 
 
-{menuselection}`Milky Way --> Stars --> Star Orbits --> Barnards Orbit`,
-{menuselection}`Milky Way --> Stars --> Star Orbits --> Kapteyns Orbit`
-
-{menuselection}`Milky Way --> Stars --> Star Orbits --> Lacaille 9352 Orbit`, {menuselection}`Milky Way --> Stars --> Star Orbits --> LSR1826+3014 Orbit`
-
-{menuselection}`Milky Way --> Stars --> Star Orbits --> LSRJ0822+1700 Orbit`, {menuselection}`Milky Way --> Stars --> Star Orbits --> PM_J13420-3415 Orbit`
-
+{menuselection}`Milky Way --> Stars --> Star Orbits --> Barnards Orbit` \
+{menuselection}`Milky Way --> Stars --> Star Orbits --> Kapteyns Orbit` \
+{menuselection}`Milky Way --> Stars --> Star Orbits --> Lacaille 9352 Orbit` \
+{menuselection}`Milky Way --> Stars --> Star Orbits --> LSR1826+3014 Orbit` \
+{menuselection}`Milky Way --> Stars --> Star Orbits --> LSRJ0822+1700 Orbit` \
+{menuselection}`Milky Way --> Stars --> Star Orbits --> PM_J13420-3415 Orbit` \
 {menuselection}`Milky Way --> Stars --> Star Orbits --> Sun Orbit`
 
 

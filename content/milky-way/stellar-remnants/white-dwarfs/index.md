@@ -23,7 +23,7 @@ An Hubble Space Telescope image of the star Sirius, and it's faint companion whi
 
 ## Extraordinarily dense
 
-The size of a white dwarf is approximately that of Earth, but its mass is on the order of the Sun's mass. So, they are extremely dense objects---one billion kilograms per cubic meter. Astronomers call the material that makes up a white dwarf *degenerate* matter. Inside a normal star, gravitational forces pulling inward are balanced by the internal pressure produced from the release of energy. However, inside a white dwarf, there is no internal pressure to counter gravity, so the object is further compacted by the force of gravity until the electrons of neighboring atoms are smashed up against one another. The object cannot collapse further because, atomically, the electrons have nowhere to go.
+The size of a white dwarf is approximately that of Earth, but its mass is on the order of the Sun's mass. So, they are extremely dense objects---one billion kilograms per cubic meter. Astronomers call the material that makes up a white dwarf _degenerate_ matter. Inside a normal star, gravitational forces pulling inward are balanced by the internal pressure produced from the release of energy. However, inside a white dwarf, there is no internal pressure to counter gravity, so the object is further compacted by the force of gravity until the electrons of neighboring atoms are smashed up against one another. The object cannot collapse further because, atomically, the electrons have nowhere to go.
 
 
 ## Ultimate fate

@@ -26,7 +26,7 @@ Lines that represent the range of distance uncertainty for a selection of stars.
 
 ## Parallax uncertainty
 
-Every object that we measure has some uncertainty associated with that measurement. For the stars, we measure something called *parallax*. Generally, parallax refers to the apparent motion of something relative to something else. If you hold your phone at arm's length to take a selfie, as you move your position to set up the perfect shot, your phone will appear to move relative to those objects in the background. Similarly, as Earth traverses around the Sun each year, nearby stars appear to shift relative to the more distant background stars. This apparent motion is imperceptible to the eye---we need highly specialized telescopes to measure the motion created by this parallax.
+Every object that we measure has some uncertainty associated with that measurement. For the stars, we measure something called _parallax_. Generally, parallax refers to the apparent motion of something relative to something else. If you hold your phone at arm's length to take a selfie, as you move your position to set up the perfect shot, your phone will appear to move relative to those objects in the background. Similarly, as Earth traverses around the Sun each year, nearby stars appear to shift relative to the more distant background stars. This apparent motion is imperceptible to the eye---we need highly specialized telescopes to measure the motion created by this parallax.
 
 :::{figure} Parallax_02.png
 :align: left

@@ -24,9 +24,9 @@ A view toward Orion with the star labels turned on. As with all labels, the larg
 
 ## Name origins
 
-Many of these names have their origin in ancient civilizations, in particular the Greeks, Egyptians, and Arabs. Most of the traditional star names are derived from an Arabic translation of Ptolemy's [*Almagest*](https://en.wikipedia.org/wiki/Almagest).
+Many of these names have their origin in ancient civilizations, in particular the Greeks, Egyptians, and Arabs. Most of the traditional star names are derived from an Arabic translation of Ptolemy's [_Almagest_](https://en.wikipedia.org/wiki/Almagest).
 
-Many of these names merely describe that part of the constellation they represent. For example, the word *deneb* appears in several star names and translates into "tail". Betelgeuse, located at Orion's shoulder, translates from an Arabic phrase "the armpit of the central one."
+Many of these names merely describe that part of the constellation they represent. For example, the word _deneb_ appears in several star names and translates into "tail". Betelgeuse, located at Orion's shoulder, translates from an Arabic phrase "the armpit of the central one."
 
 A list of star names and their meanings may be found on the Wikipedia's [List of proper names of stars](https://en.wikipedia.org/wiki/List_of_proper_names_of_stars).
 

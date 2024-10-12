@@ -54,7 +54,7 @@ The list of eighty-eight constellations now adopted by astronomers was produced 
 
 ## The Celestial Sphere
 
-Relevant to the constellations, and a [few other data sets](../all-sky-images/index), is the concept of the *celestial sphere*. The celestial sphere is a phenomenon of our perspective as we look toward the sky. While we understand the remote distance of astrophysical objects, from our perspective on Earth, everything we see---the Sun, planets, and stars---all appear to be projected on a sphere at some arbitrary distance.
+Relevant to the constellations, and a [few other data sets](../all-sky-images/index), is the concept of the _celestial sphere_. The celestial sphere is a phenomenon of our perspective as we look toward the sky. While we understand the remote distance of astrophysical objects, from our perspective on Earth, everything we see---the Sun, planets, and stars---all appear to be projected on a sphere at some arbitrary distance.
 
 This is especially pertinent to the constellations because they are built from lines that connect two stars. To the ancients, who had no concept of the vast distances of the stars, these lines were devised as one would paint a line on a two-dimensional canvas. Now, we understand the stars, while close in the sky to one another, may be no where near one another in three dimensions. 
 

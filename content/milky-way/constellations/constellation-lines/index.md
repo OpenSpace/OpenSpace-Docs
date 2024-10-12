@@ -45,7 +45,7 @@ While the lines connect stars at their accurate distance, the labels for the con
 :align: left
 :alt: A view of the night sky looking toward the constellation Ursa Major.
 
-A view of the night sky toward Ursa Major (the big bear), in blue. Also in view is Ursa Minor (the little bear) at the top of the frame. Each of these constellations have patterns that are recognized parts of the overall constellation. Astronomers call these *asterisms*. In Ursa Major we have the widely recognized (to northern hemisphere observers) Big Dipper while Ursa Minor is also known as the Little Dipper. Ursa Minor also contains the "pole star," Polaris, which is often thought to be the brightest star in the sky, but, in fact, it is only the 48th brightest star. Polaris is special because it's always in the same spot in the sky.
+A view of the night sky toward Ursa Major (the big bear), in blue. Also in view is Ursa Minor (the little bear) at the top of the frame. Each of these constellations have patterns that are recognized parts of the overall constellation. Astronomers call these _asterisms_. In Ursa Major we have the widely recognized (to northern hemisphere observers) Big Dipper while Ursa Minor is also known as the Little Dipper. Ursa Minor also contains the "pole star," Polaris, which is often thought to be the brightest star in the sky, but, in fact, it is only the 48th brightest star. Polaris is special because it's always in the same spot in the sky.
 :::
 
 

@@ -32,7 +32,7 @@ The brightest part of the Milky Way is toward the constellations Scorpius and Sa
 
 Conversely, when we look toward Orion, we are looking away from the Galactic center, and through a thinner zone of stars and gas and out into the universe.
 
-Along the band of light in this image you will see dark areas that appear to obscure the light from behind. These are called *dark nebulae* and are locations of dense molecular clouds that harbor {term}`dust <astrophysical dust>` which obscures visible light. Dust, for a scientist, is microscopic grains of rock, from a few molecules to a tenth of a millimeter, and they are a huge nuisance for astronomers.
+Along the band of light in this image you will see dark areas that appear to obscure the light from behind. These are called _dark nebulae_ and are locations of dense molecular clouds that harbor {term}`dust <astrophysical dust>` which obscures visible light. Dust, for a scientist, is microscopic grains of rock, from a few molecules to a tenth of a millimeter, and they are a huge nuisance for astronomers.
 
 
 

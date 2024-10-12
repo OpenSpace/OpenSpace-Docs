@@ -20,7 +20,7 @@ Bayer was also the first to assign designations to the stars. Names for the brig
 :align: left
 :alt: A page from Bayer's star atlas showing an illustrated star field, the stars of Orion and surrounding constellations and a drawing of Orion, the hunter, who wolds a sword, shield, and club.
 
-A page showing the constellation Orion from Johann Bayer's *Uranometria* from 1661. The stars are rendered according to brightness (larger is brighter), and have small Greek letters beside them assigned by Bayer. Overlaid is the rendition of Orion, drawn with his sword, shield, and club. 
+A page showing the constellation Orion from Johann Bayer's _Uranometria_ from 1661. The stars are rendered according to brightness (larger is brighter), and have small Greek letters beside them assigned by Bayer. Overlaid is the rendition of Orion, drawn with his sword, shield, and club. 
 :::
 
 

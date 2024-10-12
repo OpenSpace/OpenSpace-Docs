@@ -38,7 +38,7 @@ authors:
 * - **OpenSpace Version:**
   - 1
 * - **Reference:**
-  - [On the Interpretation of the *l* − *v* Features in the Milky Way Galaxy](https://arxiv.org/abs/1009.3096)
+  - [On the Interpretation of the _l_ − _v_ Features in the Milky Way Galaxy](https://arxiv.org/abs/1009.3096)
 * - **Prepared by:**
   - Jon Parker, Carter Emmart, OpenSpace Team
 * - **Source Version:**
