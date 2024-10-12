@@ -11,10 +11,22 @@ authors:
 Constellations are the objects, animals, and people conjured up from star patterns they perceived in the night sky. Ancient in origin, in the 20th century astronomers adopted eighty-eight official constellations to cover the entire sky.
 
 We represent constellations in three ways:
-- [Lines](constellation-lines/index): the traditional "stick figures" with lines that connect stars, thereby making up the figure.
-- [Art](constellation-art/index): a drawn rendition of the figure.
-- [Boundaries](constellation-boundaries/index): the assigned borders of each constellation.
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
 
+:::{grid-item-card} [Lines](./constellation-lines/index)
+![constellation lines](./constellation-lines/constellation_lines_orion_labels.png)
+:::
+
+:::{grid-item-card} [Art](./constellation-art/index)
+![constellation art](./constellation-art/constellation_art_orion.png)
+:::
+
+:::{grid-item-card} [Boundaries](constellation-boundaries/index)
+![constellation boundaries](./constellation-boundaries/constellation-boundaries-andromeda.png)
+:::
+
+::::
 
 
 ## History
@@ -26,6 +38,12 @@ The earliest accepted evidence for constellations dates back to roughly 3000 BCE
 *[The Almagest](https://en.wikipedia.org/wiki/Almagest)* by Ptolemy (c. 100--170 CE), a resident of Roman-ruled Egypt, is the source of today's Western constellations. His treatise on math and astronomy was one of the most influential scientific books in history, and remained the standard for over 1,000 years until the early Renaissance and Copernicus.
 
 For almost 2,000 years these figures were passed down on star charts. Most of the northern-hemisphere constellations date from antiquity and adopt the names of ancient Greek legends and lore. Many southern-hemisphere constellations are more modern in origin.
+
+
+:::{image} ./constellation-art/Ioannis_Bayeri_Rhainani_Vranometria_1661_(84129163).png
+:align: left
+:width: 40%
+:::
 
 Johann Bayer's (1572--1625) *[Uranometria](https://en.wikipedia.org/wiki/Uranometria)* of 1603 was the first text to assign stars to individual constellations, and gave the stars within each constellation Greek letter designations.
 
