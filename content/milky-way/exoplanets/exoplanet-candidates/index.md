@@ -23,6 +23,11 @@ These candidate stars are colored by their mission:
 This data set demonstrates the scientific process in action. Stars here are, in a sense, temporary, as they are discovered, then confirmed to be a host to planets, or discounted as a host. The data shrink over time while being replenished with new observations that require follow-up observations to make a confirmation one way or the other.
 
 
+:::{note}
+See the main [Exoplanets](../index) page for some background on exoplanets.
+:::
+
+
 
 ## Kepler mission
 
@@ -35,7 +40,7 @@ These slight differences in brightness signify the transit of the star's planet,
 :align: left
 :alt: The night sky view toward the constellation Cygnus. Dominating the view are green and yellow stars, falsely colored by their mission. These are exoplanet candidate stars, yellow for the Kepler Mission and green for the TESS Mission.
 
-The exoplanet candidate stars looking toward the constellations Cygnus and Hercules. Yellow stars are from the Kepler mission while green stars are from TESS. The 12-degree Kepler field used to be defined to the extent that one could see the footprint of the telescope's detector. However, many of the former candidate stars have been either ruled a host to planets (and moved into the [Exoplanets](../exoplanets/index)), or were ruled out as planetary hosts. Thus, the detector footprint is not as well defined anymore, but is better defined in the [Exoplanets](../exoplanets/index) data now.
+The exoplanet candidate stars looking toward the constellations Cygnus and Hercules. Yellow stars are from the Kepler mission while green stars are from TESS. The 12-degree Kepler field used to be defined to the extent that one could see the footprint of the telescope's detector. However, many of the former candidate stars have been either ruled a host to planets (and moved into the [Exoplanets](../exoplanet-systems/index)), or were ruled out as planetary hosts. Thus, the detector footprint is not as well defined anymore, but is better defined in the [Exoplanets](../exoplanet-systems/index) data now.
 :::
 
 

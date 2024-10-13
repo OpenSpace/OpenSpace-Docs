@@ -14,7 +14,11 @@ authors:
 :::
 
 
-The exoplanets module enables the visualization of exoplanetary systems in OpenSpace. While the main [exoplanets](../exoplanets/index) data displays all the stars that have exoplanets with a simple, blue ring, the exoplanets module depicts the system of planets around these stars. This includes the planetary orbits, at the proper inclination, a depiction of the {term}`habitable zone`, and, when available, the planets themselves.
+The exoplanets module enables the visualization of exoplanetary systems in OpenSpace. While the main [exoplanets](../exoplanet-systems/index) data displays all the stars that have exoplanets with a simple, blue ring, the exoplanets module depicts the system of planets around these stars. This includes the planetary orbits, at the proper inclination, a depiction of the {term}`habitable zone`, and, when available, the planets themselves.
+
+:::{note}
+See the main [Exoplanets](../index) page for some background on exoplanets.
+:::
 
 
 :::{figure} exoplanet_system_55cnc.png
