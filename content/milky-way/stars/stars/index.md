@@ -49,7 +49,10 @@ A view of the night sky toward Orion and Taurus. Orion, the hunter, is conspicuo
 
 ## Brightnening in OpenSpace
 
-The most common operation on the stars is to brighten them. By default, the stars are loaded at their accurate brightness, according to how we see them in the night sky. However, if you fly away from the Sun, they will quickly disappear. You may want to brighten the stars using the {menuselection}`Stars --> Renderable --> Magnitude Exponent` slider. This will allow you to see the stars as you fly away from them, yielding the view in the figure below. This is, of course, wildly exaggerated.
+The most common operation on the stars is to brighten them. By default, the stars are loaded at their accurate brightness, according to how we see them in the night sky. However, if you fly away from the Sun, they will quickly disappear. You may want to brighten the stars using the slider: \
+{menuselection}`Scene --> Milky Way --> Stars --> Stars --> Renderable --> Magnitude Exponent`
+
+This will allow you to see the stars as you fly away from them, yielding the view in the figure below. This is, of course, wildly exaggerated.
 
 
 :::{figure} stars_from_afar.png

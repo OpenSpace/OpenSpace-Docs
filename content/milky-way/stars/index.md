@@ -15,9 +15,41 @@ These data sets contain the local stars, the backbone of the Digital Universe at
 :align: left
 :alt: A view of the night sky toward the Summer Triangle with star labels and the orbit of Barnard's Star.
 
-A view of the night sky's stars with Star Labels and Alternate Star Labels on as well as the orbit of Barnard's Star.
+A view of the night sky's stars with [Star Labels](./star-labels/index) and [Alternate Star Labels](./star-labels-alternate/index) on as well as the [orbit](./star-orbits/index) of Barnard's Star.
 :::
 
+
+
+## Assets
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [Stars](./stars/index)
+![stars](./stars/stars_orion+taurus.png)
+:::
+
+:::{grid-item-card} [Star Labels](./star-labels/index)
+![star labels](./star-labels/star_names.png)
+:::
+
+:::{grid-item-card} [Alternate Star Labels](./star-labels-alternate/index)
+![alternate star labels](./star-labels-alternate/stars_label_alternate.png)
+:::
+
+:::{grid-item-card} [Star Distance Uncertainty](./star-distance-uncertainty/index)
+![star distance uncertainty](./star-distance-uncertainty/star_distance_uncertainty.png)
+:::
+
+:::{grid-item-card} [Star Orbits](./star-orbits/index)
+![star orbits](./star-orbits/star_orbits_sun.png)
+:::
+
+:::{grid-item-card} [Sun](./sun/index)
+
+:::
+
+::::
 
 
 :::{toctree}
