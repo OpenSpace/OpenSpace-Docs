@@ -12,7 +12,7 @@ authors:
 
 In OpenSpace, {menuselection}`Milky Way` broadly includes anything outside the Solar System but within the Milky Way Galaxy.
 
-The local stars that make up the night sky form a basis for these data sets, and we fill out the galaxy with exoplanets, star clusters, stellar remnants, and gaseous nebulae, among other data.
+The local stars that make up the night sky form a basis for these data sets, and we fill out the galaxy with exoplanets, star clusters, stellar remnants, and gaseous nebulae, among other objects.
 
 :::{figure} milky_way_all.png
 :align: left
@@ -23,12 +23,54 @@ The local stars that make up the night sky form a basis for these data sets, and
 
 
 :::{note}
-The Milky Way takes on two meanings in astronomy. Originally, it referred to that band of light we see in the night sky. Later, as we understood the universe, it referred to the galaxy that we live in. 
+The term _Milky Way_ takes on two meanings in astronomy. Originally, it referred to that band of light we see in the night sky. Later, as we understood the nature of the universe, it referred to the galaxy that we live in. 
 
 Here, we will refer to that band of light as the _Milky Way_, and the 3-D galaxy as the _Milky Way Galaxy_, or just _Galaxy_ (in uppercase).
 :::
 
 
+## Subsections
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [Stars](./stars/index)
+![Stars](./milky_way_all.png)
+:::
+
+:::{grid-item-card} [Constellations](./constellations/index)
+![Constellations](./milky_way_all.png)
+:::
+
+:::{grid-item-card} [All-sky Images](./all-sky-images/index)
+![All-sky Images](./milky_way_all.png)
+:::
+
+:::{grid-item-card} [Substellar Objects](./substellar-objects/index)
+![Substellar Objects](./milky_way_all.png)
+:::
+
+:::{grid-item-card} [Exoplanets](./exoplanets/index)
+![Exoplanets](./milky_way_all.png)
+:::
+
+:::{grid-item-card} [Star Clusters](./star-clusters/index)
+![Star Clusters](./milky_way_all.png)
+:::
+
+:::{grid-item-card} [Nebulae](./nebulae/index)
+![Nebulae](./milky_way_all.png)
+:::
+
+:::{grid-item-card} [Stellar Remnants](./stellar-remnants/index)
+![Stellar Remnants](./milky_way_all.png)
+:::
+
+:::{grid-item-card} [Galaxy](./galaxy/index)
+![Galaxy](./milky_way_all.png)
+:::
+
+::::
 
 :::{toctree}
 :maxdepth: 1

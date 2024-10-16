@@ -11,7 +11,7 @@ authors:
 {menuselection}`Scene --> Milky Way --> Stars --> Star Distance Uncertainty`
 
 
-In this asset, we provide a visual representation of the {term}`uncertainty` in a star's distance. Each line is along the line-of-sight back to Earth, and the length of each line represents how uncertain the distance value is for the particular star.
+In this scene, we provide a visual representation of the {term}`uncertainty` in a star's distance. Each line is along the line-of-sight back to Earth, and the length of each line represents how uncertain the distance value is for the particular star.
 
 
 
@@ -26,13 +26,13 @@ Lines that represent the range of distance uncertainty for a selection of stars.
 
 ## Parallax uncertainty
 
-Every object that we measure has some uncertainty associated with that measurement. For the stars, we measure something called _parallax_. Generally, parallax refers to the apparent motion of something relative to something else. If you hold your phone at arm's length to take a selfie, as you move your position to set up the perfect shot, your phone will appear to move relative to those objects in the background. Similarly, as Earth traverses around the Sun each year, nearby stars appear to shift relative to the more distant background stars. This apparent motion is imperceptible to the eye---we need highly specialized telescopes to measure the motion created by this parallax.
+Every object that we measure has some uncertainty associated with that measurement. For the stars, we measure something called _parallax_. Generally, parallax refers to the apparent motion of something relative to something else. If you hold your phone at arm's length to take a selfie, as you move your arm to set up the perfect shot, your phone will appear to move relative to those objects in the background. Similarly, as Earth traverses around the Sun each year, nearby stars appear to shift relative to the more distant background stars. This apparent motion is imperceptible to the eye---we need highly specialized telescopes to measure the motion created by this parallax.
 
 :::{figure} Parallax_02.png
 :align: left
 :alt: A two-panel diagram showing how parallax works. In panel A, we see the earth to the left of the sun in its orbit, a line is drawn to a foreground star, and extended to background stars, showing the star appears to be beside those background stars in January. A similar diagram in July, when the Sun is on the opposite side of the Sun, shows the foreground star appears to be beside different stars because of the parallax effect.
 
-A diagram of how stellar parallax works. The Sun is shown along with Earth's orbit, and the Earth is shown at two different positions in its orbit, six months apart. A dotted line is drawn to a foreground star as seen from each epoch, January and June. The dashed line is extended out to the background stars. You can see in January the star appears to be beside the stars on the right from Earth's perspective, while six months later in July the star appears to be beside the stars on the left according to our view on Earth. Credit: Shay Krasinski/AMNH
+An illustration of how stellar parallax works. The Sun is shown along with Earth's orbit, and the Earth is shown at two different positions in its orbit, six months apart. A dotted line is drawn to a foreground star as seen from each epoch, January and July. The dashed line is extended out to the background stars. You can see in January, from Earth's perspective, the star appears to be beside the stars on the right, while six months later in July the star appears to be beside the stars on the left. Credit: Shay Krasinski/AMNH
 :::
 
 
@@ -49,16 +49,16 @@ We represent the distance uncertainty as lines that are plotted around the star 
 
 We have three different colored lines that represent different data:
 
-| Line Color | `dcalc` Value | Description |
-| ---------- | ------------------ | ----------- |
-| [Aqua]{.star_uncertainty_aqua}       | 2                  | Aqua lines are for geometric parallax measurements using the Gaia Catalog. These are the most accurate and so these uncertainty lines will be shorter. |
-| Orange     | 1                  | These are also derived from Gaia data, but for stars with statistically small parallax angles, other stellar characteristics are used to inform a distance. |
-| Yellow     | 3                  | Yellow uncertainty lines use the Hipparcos geometric parallax values, which are the least accurate. |
+| Line Color | Description |
+| ---------- | ----------- |
+| [Aqua]{.star_uncertainty_aqua}       | Aqua lines are for geometric parallax measurements using the Gaia Catalog. These are the most accurate and so these uncertainty lines will be shorter. (`dcalc` = 2) |
+| Orange     | These are also derived from Gaia data, but for stars with statistically small parallax angles, other stellar characteristics are used to inform a distance. (`dcalc` = 1) |
+| Yellow     | Yellow uncertainty lines use the Hipparcos geometric parallax values, which are the least accurate. (`dcalc` = 3) |
 
 
 ## Just a sample
 
-We've chosen to illustrate the distance uncertainty on a small number of stars---only 3,440. These are the more well-known stars with more commonly used names. However, every star has an uncertainty on its distance. In fact, as you explore the universe, consider that there is uncertainty associated with every object---stars, nebulae, and galaxies---and often the uncertainty for nonstellar objects will be far greater. 
+We've chosen to illustrate the distance uncertainty on a small number of stars---only 3,440. These are the more well-known stars with commonly used names. However, every star's distance has an uncertainty. In fact, as you explore the universe, consider that there is uncertainty associated with every object---stars, nebulae, and galaxies---and often the uncertainty for nonstellar objects will be far greater. 
 
 
 

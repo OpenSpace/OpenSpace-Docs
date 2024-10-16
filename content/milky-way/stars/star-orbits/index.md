@@ -26,7 +26,7 @@ Everything in the Universe moves. The Earth moves around the Sun, and the Sun an
 :align: left
 :alt: A view from outside the Milky Way Galaxy looking back toward the galactic disk and spiral arms. The Sun's orbit is shown indicating where the Sun will travel in the next billion years. It forms a fairly regular circle around the Galaxy.
 
-The Sun's orbit superimposed on the Milky Way galaxy. This trajectory shows where the Sun will go in the next billion years. It takes roughly 225 million years to circle the Galaxy once, so there are roughly four orbits of the Sun around the Galaxy in these next billion years.
+The Sun's orbit superimposed on the Milky Way galaxy. This trajectory shows where the Sun will go in the next billion years. It takes roughly 225 million years to circle the Galaxy once, so there are roughly four revolutions of the Sun around the Galaxy in these next billion years.
 :::
 
 
@@ -39,7 +39,7 @@ Currently, the Sun is heading in the direction of the constellation Cygnus and l
 
 ## Barnard's Star
 
-Barnard's Star, the fourth-closest star to the Sun, has the highest proper motion of any star in the night sky. E. E. Barnard (1857--1923) discovered this motion in 1916, observing that it moves 10.3 arcseconds in the sky per year. While its path generally remains in the Galactic disk, its radius from the Galactic center varies greatly.
+Barnard's Star, the fourth-closest star to the Sun, has the highest proper motion of any star in the night sky. [E. E. Barnard](https://en.wikipedia.org/wiki/Edward_Emerson_Barnard) (1857--1923) discovered this motion in 1916, observing that it moves 10.3 arcseconds in the sky per year. While its path generally remains in the Galactic disk, its radius from the Galactic center varies greatly.
 
 
 

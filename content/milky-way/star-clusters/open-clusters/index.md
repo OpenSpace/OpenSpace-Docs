@@ -10,7 +10,7 @@ authors:
 
 {menuselection}`Scene --> Milky Way --> Star Clusters --> Open Clusters`
 
-An open star cluster is a loose assemblage of stars numbering from hundreds to thousands that are bound by their mutual gravitation. Astronomers know from their stellar spectra that stars in open clusters are typically younger, so open clusters are relative newcomers in the scope of the Galaxy.
+An open star cluster is a loose assemblage of stars numbering from hundreds to thousands that are bound by their mutual gravitation. Astronomers know from their spectra that stars in open clusters are typically younger, so open clusters are relative newcomers in the scope of the Galaxy.
 
 
 :::{figure} open_clusters_nightsky.png
@@ -47,9 +47,9 @@ Over time some cluster members are ejected and join the general population of st
 
 ## Location
 
-Because these are young stars, we expect to see them in the star-forming regions of our Galaxy, namely in the spiral arms. For this reason, open clusters exist, for the most part, in the disk of the Galaxy. As we look to the sky, we view the spiral arms edge-on as that band of light that sweeps across the sky that the ancients called the Milky Way. Because of this, open clusters were originally known as Galactic clusters, but this term fell out of favor once astronomers began to understand that the Galaxy includes objects beyond the Milky Way's disk.
+Because these are young stars, we expect to see them in the star-forming regions of our Galaxy, namely in the spiral arms. For this reason, open clusters exist, for the most part, in the disk of the Galaxy. As we look to the sky, we view the spiral arms edge-on as that band of light that sweeps across the sky that the ancients called the Milky Way. Because of this, open clusters were originally known as _Galactic clusters_, but this term fell out of favor once astronomers began to understand that the Galaxy includes objects beyond the Milky Way's disk.
 
-If we look from above the Milky Way, the open clusters are huddled around the Sun, in our region of the Galaxy. Because these clusters are in the disk of the Galaxy, it's easier for us to see those clusters in our galactic backyard than it is on the other side of the Milky Way where the gas and dust prevents us from seeing objects deep into the disk.
+If we look from above the Milky Way, the open clusters are huddled around the Sun in our region of the Galaxy. Because these clusters are in the disk of the Galaxy, it's easier for us to see those clusters in our galactic backyard than it is on the other side of the Milky Way where the gas and dust prevents us from seeing objects deep into the disk.
 
 
 :::{figure} open_clusters_above.png

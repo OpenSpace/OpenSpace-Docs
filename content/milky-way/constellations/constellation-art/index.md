@@ -10,9 +10,9 @@ authors:
 {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Art`
 
 
-Constellations have been part of the human experience since prehistoric times. We looked to the sky as bookmarks, in a sense, of the popular stories and lore of our culture. And, of course, many different cultures devised their own constellations independently of one another. 
+Constellations have been part of the human experience since prehistoric times. We looked to the sky as these visual bookmarks reminded us of the popular stories and lore of our culture. And, of course, many different cultures devised their own constellations independently of one another. 
 
-As language and the printed word became more common, illustrated star catalogs were published. Many examples of such illustrations exist, but Johann Bayer's, 17th-century *[Uranometria](https://en.wikipedia.org/wiki/Uranometria)* was one of the most complete and the first to depict the stars from Earth's view, rather than from outside the celestial sphere, the tradition up to that point.
+As language and the printed word became more common, illustrated star catalogs were published. Many examples of such illustrations exist, but Johann Bayer's, 17th-century *[Uranometria](https://en.wikipedia.org/wiki/Uranometria)* was one of the most complete and the first to depict the stars from Earth's view, rather than from outside the celestial sphere, as was traditional up to that point.
 
 Bayer was also the first to assign designations to the stars. Names for the brightest stars existed since antiquity, but he cataloged the stars giving them Greek names, Alpha for the brightest star in the constellation, Beta for the second brightest, and so on.
 

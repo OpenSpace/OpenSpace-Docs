@@ -29,7 +29,7 @@ A view of exoplanet systems in the night sky looking toward Cygnus, Lyra, and He
 
 ## Visualizing exoplanet systems
 
-The exoplanet systems are represented by a blue ring centered on each host star. The ring is not intended to signify an orbit; the various ring sizes reveal their distance from you. The labels list the host star name, and if there is more than one planet, will list the number of planets in parentheses.
+The exoplanet systems are represented by a blue ring centered on each host star. The ring is not intended to signify an orbit; the various ring sizes reveal their distance from you. The labels list the host star name, and if there is more than one planet, will list the number of planets in parentheses. Note that not all objects here have a label, we omitted the longer labels to keep the view less cluttered.
 
 :::{note}
 The blue rings do not signify an orbit, but merely mark the locations of stars with known planets. The larger the ring, the closer it is to your position.
@@ -67,7 +67,7 @@ A view of the exoplanetary systems from outside the Milky Way galaxy. We are sti
 :class: full-width
 
 * - **Census:**
-  - 4,139 planets in 3,023 systems  CHECK THESE NUMBERS
+  - 4,139 planets in 3,023 systems
 * - **Asset File:**
   - `data/assets/scene/digitaluniverse/exoplanets.asset`
 * - **OpenSpace Version:**

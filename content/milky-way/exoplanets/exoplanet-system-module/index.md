@@ -51,7 +51,7 @@ A red indicator highlights the exoplanet module icon. Click on this symbol to op
 
 ### 2. Search for the exoplanetary system
 
-Inside the panel, search for the system you want to add by typing the name of the system where it says "Star name." In the image below, we typed "Kepler-11" which brings up all the text matches. (The Kepler-11 system, discovered in 2010, has a total of 6 confirmed planets orbiting the host star Kepler-11.)
+Inside the panel, search for the system you want to add by typing the name of the system where it says "Star name." In the image below, we typed "Kepler-11" which brings up all the text matches. (The Kepler-11 system, discovered in 2010, has a total of six confirmed planets orbiting the host star Kepler-11.)
 
 
 :::{figure} exoplanet_systems_panel_search.png
@@ -91,7 +91,9 @@ Adding a system does not automatically display it on the screen. You must fly up
 
 :::{dropdown} Adding systems via command line
 
-It is possible to add exoplanet systems using the `openspace.exoplanets.addExoplanetSystem(name)` function in the OpenSpace scripting API. Here, `name` is the name of the host star to add, in our example the value of `name` would be "Kepler-11". So, the command would be typed:  
+It is possible to add exoplanet systems using the `addExoplanetSystem` function. \
+`openspace.exoplanets.addExoplanetSystem(name)` \
+Here, `name` is the name of the host star to add, in our example the value of `name` would be "Kepler-11". So, the command would be typed: \
 `openspace.exoplanets.addExoplanetSystem("Kepler-11")`
 
 Executing this command in OpenSpace's command line results in adding the system. Multiple systems can be added by specifying a list of host names as input, for example, `{"Kepler-11", "GJ 1061"}`. 
@@ -104,7 +106,7 @@ This function may be used to add exoplanets to OpenSpace before start-up.
 
 Use the target button beside the added system to center on the exoplanetary system. Once you center on it, you can fly forward to visit it. It will take longer than you expect to see the system---keep flying forward.
 
-Once you approach a system, it will appear similar to the image below for the Kepler-11 system. You see the host star at center, and the system of planetary orbits encircling it.
+Once you approach a system, it will appear similar to the image below for the Kepler-11 system. You see the host star at center, and the system of planetary orbits encircling it along with an visualization of the habitable zone.
 
 :::{figure} exoplanet_system_kepler11.png
 :align: left
@@ -132,7 +134,7 @@ The {term}`habitable zone` is represented by a multicolored disk. Green indicate
 :class: full-width
 
 * - **Census:**
-  - 4,139 planets in 3,023 systems  CHECK THESE NUMBERS
+  - 4,139 planets in 3,023 systems
 * - **Asset File:**
   - `data/assets/modules/exoplanets/exoplanets.asset`
 * - **OpenSpace Version:**

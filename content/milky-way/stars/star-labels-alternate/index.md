@@ -10,7 +10,7 @@ authors:
 {menuselection}`Scene --> Milky Way --> Stars --> Alternate Star Labels`
 
 
-A small number of more prominent stars have proper names like Sirius, Betelgeuse, and Polaris. However, astronomers have long cataloged thousands of stars beyond the brightest ones we see. Several attempts over thousands of years to name all the visible stars have led to two main catalogs: Johann Bayer's (1572--1625) catalog from 1603 and John Flamsteed's (1646--1719) catalog published in 1725.
+A small number of more prominent stars have proper names like Sirius, Betelgeuse, and Polaris. However, astronomers have long cataloged thousands of stars beyond the brightest ones we see. Several attempts over thousands of years to name all the visible stars have led to two main catalogs: [Johann Bayer](https://en.wikipedia.org/wiki/Johann_Bayer)'s (1572--1625) catalog from 1603 and [John Flamsteed](https://en.wikipedia.org/wiki/John_Flamsteed)'s (1646--1719) catalog published in 1725.
 
 
 
@@ -18,7 +18,7 @@ A small number of more prominent stars have proper names like Sirius, Betelgeuse
 :align: left
 :alt: A view of the night sky looking toward Orion with lines forming the constellations, and labels on the nearby stars.
 
-A view toward Orion with the alternate star labels turned on. As with all labels, the larger it is, the closer it is to you, but we do not draw labels too far into the distance, so these are all mostly nearby stars. We have Greek-named (Bayer catalog) stars, like `Alf CMa`, or Alpha Canis Majoris (also known as Sirius), at bottom-center, and we also include Flamsteed-numbered stars for those without a Greek designation. We don't see Alpha Orionis, for example, because it is too far away from our current position.
+A view toward Orion with the alternate star labels turned on. As with all labels, the larger it is, the closer it is to you, but we do not draw labels too far into the distance, so these are all mostly nearby stars. We have Greek-named (Bayer catalog) stars, like `Alf CMa`, short for Alpha Canis Majoris (also known as Sirius), at bottom-center, and we also include Flamsteed-numbered stars for those without a Greek designation. We don't see Alpha Orionis, for example, because it is too far away from our current position for the label to be drawn.
 :::
 
 
@@ -27,7 +27,7 @@ A view toward Orion with the alternate star labels turned on. As with all labels
 To effectively visualize these star names, it helps to limit the number
 of labels drawn. This is typically controlled by drawing only
 labels that are larger than specified size, thereby removing the
-smaller, more distant labels. This is controlled in the `Min/Max Size` dual slider in {menuselection}`Alternate Star Labels --> Renderable --> Labels`
+smaller, more distant labels. This is controlled in the dual slider in {menuselection}`Alternate Star Labels --> Renderable --> Labels --> Min/Max Size`.
 :::
 
 
@@ -38,7 +38,7 @@ The Bayer names (which take precedence in this data set) are designated by a Gre
 
 ## Flamsteed Catalog (numbered names)
 
-The Flamsteed Catalog uses numbers as designations along with the constellation name. Originally they were sequenced according to their position in the sky; however, precession has created inconsistencies over the centuries. Flamsteed names take the form 58 Orionis, which is Betelgeuse. Unlike the Bayer names, which are limited by the twenty-four letters of the Greek alphabet, Flamsteed numbers can exceed 100 for a particular constellation.
+The Flamsteed Catalog uses numbers as designations along with the constellation name. Originally they were sequenced according to their position in the sky; however, [precession](https://en.wikipedia.org/wiki/Precession#Axial_precession_(precession_of_the_equinoxes)) has created inconsistencies over the centuries. Flamsteed names take the form _58 Orionis_, which is Betelgeuse. Unlike the Bayer names, which are limited by the twenty-four letters of the Greek alphabet, Flamsteed numbers can exceed 100 for a particular constellation.
 
 
 

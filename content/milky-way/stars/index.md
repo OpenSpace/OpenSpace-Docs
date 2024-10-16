@@ -7,6 +7,8 @@ authors:
 
 # Stars
 
+{menuselection}`Scene --> Milky Way --> Stars`
+
 These data sets contain the local stars, the backbone of the Digital Universe atlas and basis of the stars we see in the night sky. This section also contains various data that enhance our knowledge of the stars, including star labels, orbital paths of a select group of stars, and a visualization of the distance uncertainty of the stars.
 
 
@@ -25,27 +27,27 @@ A view of the night sky's stars with [Star Labels](./star-labels/index) and [Alt
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [Stars](./stars/index)
+:::{grid-item-card} [](./stars/index)
 ![stars](./stars/stars_orion+taurus.png)
 :::
 
-:::{grid-item-card} [Star Labels](./star-labels/index)
+:::{grid-item-card} [](./star-labels/index)
 ![star labels](./star-labels/star_names.png)
 :::
 
-:::{grid-item-card} [Alternate Star Labels](./star-labels-alternate/index)
+:::{grid-item-card} [](./star-labels-alternate/index)
 ![alternate star labels](./star-labels-alternate/stars_label_alternate.png)
 :::
 
-:::{grid-item-card} [Star Distance Uncertainty](./star-distance-uncertainty/index)
+:::{grid-item-card} [](./star-distance-uncertainty/index)
 ![star distance uncertainty](./star-distance-uncertainty/star_distance_uncertainty.png)
 :::
 
-:::{grid-item-card} [Star Orbits](./star-orbits/index)
+:::{grid-item-card} [](./star-orbits/index)
 ![star orbits](./star-orbits/star_orbits_sun.png)
 :::
 
-:::{grid-item-card} [Sun](./sun/index)
+:::{grid-item-card} [](./sun/index)
 
 :::
 

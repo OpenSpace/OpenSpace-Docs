@@ -14,7 +14,7 @@ authors:
 :align: left
 :alt: A night sky view of the Milky Way as seen with our eyes looking toward the constellation Scorpius.
 
-The Milky Way as seen by our eyes---in visible light. Looking toward the constellations Scorpius and Sagittarius, the Milky Way is very prominent. This is because we're looking toward the center of the Galaxy, so there is more "stuff" in that direction.
+The Milky Way as seen by our eyes---in visible light. Looking toward the constellations Scorpius and Sagittarius, the Milky Way is very prominent. This is because we're looking toward the center of the Galaxy, so there is more gas and {term}`dust <astrophysical dust>` in that direction.
 :::
 
 

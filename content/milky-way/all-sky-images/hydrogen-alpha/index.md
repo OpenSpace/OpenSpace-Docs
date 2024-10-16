@@ -40,7 +40,7 @@ The most prominent feature of this image is the ever-present band of the Milky W
 :align: left
 :alt: Looking toward Orion from Earth, we see the bright, glowing areas of hydrogen-alpha light---wispy, orange gas with bright concentrations and areas of thinner gas.
 
-Hydrogen-alpha light looking toward the constellation Orion in the night sky. The large, round feature just above center is the hot, glowing gas around the blue supergiant star Lambda Orionis. Barnard's Loop, the large, arcing nebula is thought to originate from a supernova and is glowing from the stars in the Orion Nebula. Several other nebulae are visible in this image.
+Hydrogen-alpha light looking toward the constellation Orion in the night sky. The large, round feature just above center is the hot, glowing gas around the blue supergiant star Lambda Orionis. Barnard's Loop, the large, arcing nebula, is thought to originate from a supernova and is glowing from the stars in the Orion Nebula. Several other nebulae are visible in this image.
 :::
 
 
@@ -49,7 +49,7 @@ Hydrogen-alpha light looking toward the constellation Orion in the night sky. Th
 
 Hydrogen-alpha also reveals nebulous regions to us, mainly where star formation is happening. The Orion Nebula area glows brightly in the image above, along with the Horsehead Nebula and the large, sweeping supernova remnant called Barnard's Loop. The nebula in Monoceros is also pronounced as one of the brighter points seen in this image.
 
-We can also see that galaxies emit Hα light. We see the Large and Small Magellanic Clouds in the southern sky, and also wisps around the Andromeda Galaxy and the Triangulum Galaxy (M33) nearby.
+We can also see that galaxies emit Hα light. The Large and Small Magellanic Clouds in the southern sky glow brightly in this image, and also wisps are visible around the Andromeda Galaxy and the Triangulum Galaxy (M33) nearby.
 
 
 

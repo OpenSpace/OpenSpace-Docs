@@ -12,14 +12,14 @@ authors:
 
 Constellation lines trace out the imaginary star patterns in the night sky. These lines are traditionally how we view the constellations---they guide the eye without being too visually intrusive.
 
-Constellations have a long [history](../index), but by the early 20th century, astronomers had designated eighty-eight constellations that covered the entire night sky, northern and southern hemisphere. Many of these derived from the ancient Greek constellations.
+Constellations have a long [history](#constellation-history), but by the early 20th century astronomers had designated eighty-eight constellations that covered the entire night sky, northern and southern hemisphere. Many of these derived from the ancient Greek constellations.
 
 
 :::{figure} constellation_lines_orion_labels.png
 :align: left
 :alt: Looking at the stars of the night sky we see lines connecting the stars in the constellations Orion, Taurus, Canis Minor, Monoceros, and some surrounding constellations.
 
-The constellations looking toward Orion. Orion appears in blue, with Taurus in red, and other nearby constellations in an pink hue.
+The constellations looking toward Orion. Orion appears in blue, with Taurus in red, and other nearby constellations in a pink hue.
 :::
 
 
@@ -36,7 +36,7 @@ Constellations looking toward Scorpius and Sagittarius and the heart of the Milk
 
 ## A unique perspective
 
-As mentioned on the [constellation section page](../index), the constellations are only relevant from our point of view. Because the stars are so far away, we can fly beyond the orbit of Neptune and they will still look the same. However, beyond the Solar System the figures breakdown.
+As mentioned on the [constellation section page](#celestial-sphere), the constellations are only relevant from our point of view. Because the stars are so far away, we can fly beyond the orbit of Neptune and they will still look the same. However, beyond the Solar System the figures breakdown.
 
 While the lines connect stars at their accurate distance, the labels for the constellations are placed arbitrarily at a constant distance. If you fly away from Earth you'll soon see the labels all huddled around the Sun at the same distance.
 
@@ -54,7 +54,7 @@ A view of the night sky toward Ursa Major (the big bear), in blue. Also in view 
 
 As we fly away from the Solar System, the constellation figures distort; however, the lines may be used as a visual aid in other ways. As mentioned earlier, as we pull away from the Sun and into the stars, the lines cue us to the distance of these objects, providing a good perspective on the solar neighborhood. 
 
-Additionally, the constellation lines may be used a signpost that points back to Earth from outside the Milky Way Galaxy. With the lines on as one roams around the outside of the Galaxy, we can see where the Solar System lies within the Galaxy, and we see the miniscule extent to which the stars that make up the constellations occupy the Milky Way Galaxy.
+Additionally, the constellation lines may be used as a signpost that points back to Earth from outside the Milky Way Galaxy. With the lines on as one roams around the outside of the Galaxy, we can see where the Solar System lies within the Galaxy, and we see the miniscule extent to which the stars that make up the constellations occupy the Milky Way Galaxy.
 
 
 :::{figure} constellation_lines_outside_galaxy.png
@@ -67,7 +67,7 @@ A view from outside the Milky Way Galaxy with the constellation lines on. Showin
 
 ## Line colors
 
-The bulk of the constellations are represented by a subtle pink hue. The twelve zodiacal constellations have red connectivity lines to highlight them a bit in the sky. We give Orion and Ursa Major a blue color. These two constellations are very recognizable and we wanted to distinguish them not only in the sky, but as one flies away from the Sun they remain easy to track.
+The bulk of the constellations are represented by a subtle pink hue. The twelve zodiacal constellations have red connectivity lines to highlight them a bit in the sky. We give the recognizable Orion and Ursa Major a blue color to distinguish them not only in the sky, but as one flies away from the Sun the blue lines remain easy to track.
 
 
 

@@ -46,7 +46,7 @@ The exoplanet candidate stars looking toward the constellations Cygnus and Hercu
 
 ## The K2 mission
 
-In July 2012, Kepler lost control of four of its reaction wheels that provide attitude control of the spacecraft. And, less than one year later, one of the two remaining reaction wheels failed, threatening the entire mission. In response to this, the K2 mission was proposed as an extension of the original mission. The spacecraft was limited to searching along the {term}`ecliptic`, the plane containing Earth's orbit around the Sun (or the annual path of the Sun in the sky). This is roughly the plane of the solar system, which is tipped about 62 deg to the Milky Way Galaxy.
+In July 2012, Kepler lost control of four of its reaction wheels that provide attitude control of the spacecraft. And, less than one year later, one of the two remaining reaction wheels failed, threatening the entire mission. In response to this, the K2 mission was proposed as an extension of the original mission. The spacecraft was limited to searching along the {term}`ecliptic`, the plane containing Earth's orbit around the Sun (or the annual path of the Sun in the sky). This is roughly the plane of the solar system, which is tipped about 62 degrees to the Milky Way Galaxy.
 
 
 :::{figure} exoplanet_candidates_nightsky_leo.png
