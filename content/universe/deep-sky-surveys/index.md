@@ -10,7 +10,7 @@ authors:
 {menuselection}`Scene --> Universe --> Deep Sky Surveys`
 
 
-Deep Sky Surveys refer to large surveys that probe deeper into the observable universe. These galaxy surveys see deeper, but are far less complete. Typically, only portions of the sky are observed, leaving whole swaths of the universe unseen.
+Deep Sky Surveys refer to large surveys that probe deeper into the observable universe. These galaxy surveys see deeper, but are far less {term}`complete <completeness>`. Typically, only portions of the sky are observed, leaving whole swaths of the universe unseen.
 
 :::{figure} deep_sky_surveys.png
 :align: left
@@ -21,9 +21,40 @@ The multicolored Two-degree Field (2dF) galaxies alongside the Abell Galaxy Clus
 
 
 
+
+## Assets
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](./2df-galaxies/index)
+![2dF galaxies](./2df-galaxies/2df_faceon.png)
+:::
+
+:::{grid-item-card} [](./sloan-galaxies/index)
+![Sloan galaxies](./sloan-galaxies/sloan_faceon.png)
+:::
+
+:::{grid-item-card} [](./abell-galaxy-clusters/index)
+![Abell clusters](./abell-galaxy-clusters/abell+tully.png)
+:::
+
+:::{grid-item-card} [](./supercluster-labels/index)
+![Supercluster labels](./supercluster-labels/scl+galaxysurveys.png)
+:::
+
+:::{grid-item-card} [](./quasars/index)
+![Quasars](./quasars/quasars+galaxies.png)
+:::
+
+::::
+
+
+
 :::{toctree}
 :maxdepth: 1
 :caption: Assets
+:hidden:
 
 2df-galaxies/index
 sloan-galaxies/index

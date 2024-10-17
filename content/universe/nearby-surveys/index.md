@@ -10,9 +10,9 @@ authors:
 {menuselection}`Scene --> Universe --> Nearby Surveys`
 
 
-Nearby Surveys describe the neighborhood around the Milky Way Galaxy. Here, we have a better idea of what's out there (hint: galaxies) and the structures formed by those galaxies.
+{menuselection}`Nearby Surveys` describe the neighborhood around the Milky Way Galaxy. Here, we have a better idea of what's out there (hint: galaxies) and the structures formed by those galaxies.
 
-The galaxy surveys here are generally more complete, and they cover most of the sky. Beyond the Nearby Surveys, galaxy surveys tend to be less complete and cover less area on the night sky.
+The galaxy surveys here are generally more complete, and they cover most of the sky. Beyond these nearby surveys, galaxy surveys tend to be less complete and cover less area on the night sky.
 
 
 :::{figure} local_universe.png
@@ -24,9 +24,55 @@ A view from the local universe. Each point here is a galaxy, where orange and ye
 
 
 
+## Assets
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](./home-label/index)
+![Home (Milky Way) label](./home-label/home_label.png)
+:::
+
+:::{grid-item-card} [](./local-group/index)
+![Local group](./local-group/local_group_andromeda.png)
+:::
+
+:::{grid-item-card} [](./tully-galaxies/index)
+![Tully galaxies](./tully-galaxies/tully_virgo_cluster_nearby.png)
+:::
+
+:::{grid-item-card} [](./tully-galaxies-images/index)
+![Tully galaxies images](./tully-galaxies-images/images_virgo_cluster_large.png)
+:::
+
+:::{grid-item-card} [](./galaxy-group-labels/index)
+![Galaxy group labels](./galaxy-group-labels/galaxy_groups_outside.png)
+:::
+
+:::{grid-item-card} [](./galaxy-cluster-labels/index)
+![Galaxy cluster labels](./galaxy-cluster-labels/galaxy_clusters_nearby.png)
+:::
+
+:::{grid-item-card} [](./2MASS-galaxies/index)
+![2MASS galaxies](./2MASS-galaxies/2mass_galaxies.png)
+:::
+
+:::{grid-item-card} [](./6df-galaxies/index)
+![6dF galaxies](./6df-galaxies/6df_cutoff.png)
+:::
+
+:::{grid-item-card} [](./voids/index)
+![Voids](./voids/voids_outside.png)
+:::
+
+::::
+
+
+
 :::{toctree}
 :maxdepth: 1
 :caption: Assets
+:hidden:
 
 home-label/index
 local-group/index

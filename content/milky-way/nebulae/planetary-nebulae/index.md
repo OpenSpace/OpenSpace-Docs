@@ -50,16 +50,16 @@ Because of this, we expect to see planetary nebulae where star formation and evo
 
 :::{figure} PN_near_sun.png
 :align: left
-:alt: Periwinkle triangles mark the locations of planetary nebulae around the Sun. Thde lines connecting constellation stars from this perspective appear to radiate away from the Sun, which is located at the center of the lines.
+:alt: Periwinkle triangles mark the locations of planetary nebulae around the Sun. The lines connecting constellation stars from this perspective appear to radiate away from the Sun, which is located at the center of the lines.
 
-Periwinkle triangles represent planetary nebulae shown here around the Sun. We are looking toward the center of the Milky Way Galaxy. The lines connecting the stars of the constellations are shown, which from this perspective, appear to all point back to the Sun which is at the focal point of those lines. 
+Periwinkle triangles represent planetary nebulae shown here around the Sun. We are looking toward the center of the Milky Way Galaxy. The lines connecting the stars of the constellations are shown which, from this perspective, appear to all point back to the Sun located at the focal point of those lines. 
 :::
 
 
 
 ## Population
 
-Due to their short lifetimes, on the order of thousands of years, astronomers expect roughly 20,000 in the Milky Way. Some are spherical in nature, but others are elliptical or even bipolar. They are notoriously difficult objects to obtain accurate distances for, so we are limited to those in our part of the Galaxy. And, you will notice an abundance as we look toward the center of the Galaxy. It's safe to assume, like the [stellar distance uncertainty](../../stars/star-distance-uncertainty/index), that these positions have a large uncertainty associated with them.
+Due to their short lifetimes, on the order of thousands of years, astronomers expect roughly 20,000 planetary nebulae in the Milky Way. Some are spherical in nature, but others are elliptical or even bipolar. They are notoriously difficult objects to obtain accurate distances for, so we are limited to those in our part of the Galaxy. And, you will notice an abundance as we look toward the center of the Galaxy. It's safe to assume, like the [stellar distance uncertainty](../../stars/star-distance-uncertainty/index), that these positions have a large {term}`uncertainty` associated with them.
 
 
 

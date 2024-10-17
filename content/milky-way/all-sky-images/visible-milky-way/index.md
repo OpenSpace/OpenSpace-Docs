@@ -26,7 +26,7 @@ Over the past 400 years, astronomers and philosophers have speculated about the 
 
 
 
-## Image characteristics
+## Image Characteristics
 
 The brightest part of the Milky Way is toward the constellations Scorpius and Sagittarius. This is because you are looking directly toward the center of the Galaxy. Now that we understand the 3-D nature of the Galaxy, and that we're roughly two-thirds of the way out from its center, we know we look through more stars and gas in this direction.
 
@@ -45,7 +45,7 @@ The Milky Way toward Orion is very faint and diffuse because we are seeing throu
 
 
 
-## About the image
+## About the Image
 
 This all-sky image was assembled from 3,000 individual frames over two years by Axel Mellinger. He captured these from Michigan, Texas, and South Africa. The stars we see in the sky were essentially subtracted out, leaving just the gas, dust, and diffuse starlight.
 

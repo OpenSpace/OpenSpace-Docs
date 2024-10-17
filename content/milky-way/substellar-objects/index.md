@@ -25,6 +25,7 @@ Astronomers refer to an object that does not have enough mass to fuse hydrogen i
 :::{toctree}
 :maxdepth: 1
 :caption: Assets
+:hidden:
 
 brown-dwarfs/index
 :::

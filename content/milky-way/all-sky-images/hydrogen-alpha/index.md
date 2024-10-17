@@ -22,7 +22,7 @@ The night sky in hydrogen-alpha light. Here, we look toward Scorpius and the cen
 
 
 
-## What is hydrogen-alpha?
+## What Is Hydrogen-alpha?
 
 Hydrogen-alpha, also designated H-alpha or Hα, is a term that describes light from the ground state of the hydrogen atom. When an electron in an atom moves from one energy level to a higher one, we say the atom is excited. But the electron does not move to this higher energy level without the atom absorbing energy from either another atom or a passing photon (packet of light).
 
@@ -30,7 +30,7 @@ Once the atom is excited, it cannot remain in that state for long before it want
 
 
 
-## Spherical bubbles
+## Spherical Bubbles
 
 The most prominent feature of this image is the ever-present band of the Milky Way. Outside the familiar band of light we see large, round structures of glowing gas. These are actually spherical bubbles that surround supergiant stars. Two prominent examples are Lambda Orionis and Zeta Ophiuchi. The latter appears in the image above as a large, bright, round feature in the top right of the image, centered on the star Zeta Ophiuchi. The former is in the image below, just above image center. The energy coming off these hot, supergiant stars causes the surrounding gas to glow.
 
@@ -45,7 +45,7 @@ Hydrogen-alpha light looking toward the constellation Orion in the night sky. Th
 
 
 
-## Nebulous regions
+## Nebulous Regions
 
 Hydrogen-alpha also reveals nebulous regions to us, mainly where star formation is happening. The Orion Nebula area glows brightly in the image above, along with the Horsehead Nebula and the large, sweeping supernova remnant called Barnard's Loop. The nebula in Monoceros is also pronounced as one of the brighter points seen in this image.
 

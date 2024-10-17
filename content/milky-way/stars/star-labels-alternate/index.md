@@ -31,12 +31,12 @@ smaller, more distant labels. This is controlled in the dual slider in {menusele
 :::
 
 
-## Bayer Catalog (Greek names)
+## Bayer Catalog (Greek Names)
 
 The Bayer names (which take precedence in this data set) are designated by a Greek letter along with the genitive form of the constellation name. The stars in Bayer's catalog were ranked by brightness and their names are sequential through the Greek alphabet. For example, the brightest star in each constellation received the alpha designation (α, or Alf) because that is the first letter in the alphabet. The second-brightest star is named beta (β, or Bet), and so on to omega (ω, Ome), provided there are enough stars in the constellation. So, Betelgeuse is α Orionis and Rigel is β Orionis (we use a three-letter abbreviation for the Greek letter and the constellation names, for example, Alf Ori). See [below](#greek-alphabet) for a key to the Greek abbreviations.
 
 
-## Flamsteed Catalog (numbered names)
+## Flamsteed Catalog (Numbered Names)
 
 The Flamsteed Catalog uses numbers as designations along with the constellation name. Originally they were sequenced according to their position in the sky; however, [precession](https://en.wikipedia.org/wiki/Precession#Axial_precession_(precession_of_the_equinoxes)) has created inconsistencies over the centuries. Flamsteed names take the form _58 Orionis_, which is Betelgeuse. Unlike the Bayer names, which are limited by the twenty-four letters of the Greek alphabet, Flamsteed numbers can exceed 100 for a particular constellation.
 

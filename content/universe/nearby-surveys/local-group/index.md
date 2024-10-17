@@ -21,7 +21,7 @@ The Local Group of galaxies. The Milky Way (labeled "Home") is surrounded by its
 :::
 
 
-The Milky Way belongs to the Local Group, a term coined by Edwin Hubble (1889--1953), and is one of roughly 100 galaxies in that group. The Milky Way, the Andromeda Galaxy (also known as Messier 31, or M31), and the Triangulum Galaxy (M33) are three of the largest galaxies in the Local Group. Each is a spiral galaxy contains hundreds of billions of stars.
+The Milky Way belongs to the Local Group, a term coined by [Edwin Hubble](https://en.wikipedia.org/wiki/Edwin_Hubble) (1889--1953), and is one of roughly 100 galaxies in that group. The Milky Way, the [Andromeda Galaxy](https://en.wikipedia.org/wiki/Andromeda_Galaxy) (also known as Messier 31, or M31), and the [Triangulum Galaxy](https://en.wikipedia.org/wiki/Triangulum_Galaxy) (M33) are three of the largest galaxies in the Local Group. Each is a spiral galaxy that contains hundreds of billions of stars.
 
 
 
@@ -35,11 +35,11 @@ A close-up of the Milky Way Galaxy and its satellite galaxies in aqua. These inc
 
 
 
-## Collisions and mergers
+## Collisions and Mergers
 
 Surrounding the Milky Way and Andromeda are a bevy of dwarf galaxies---smaller, often irregular galaxies, that contain hundreds of millions to a few billion stars. These dwarf galaxies are typically under the gravitational influence of a larger galaxy, and are often shredded by them at some point over their lifetime. Collisions between galaxies are common, and these smaller galaxies may even be the lifeblood for a larger galaxy by instigating star formation and replenishing its star-forming gas.
 
-As these dwarf galaxies orbit and interact with their parent galaxy, the Milky Way and Andromeda collections are heading toward one another. Separated by about 3 million light years, they are moving toward one another at a rate of 120 kilometers per second, or 275,000 miles per hour.
+As these dwarf galaxies orbit and interact with their parent galaxy, the Milky Way and Andromeda galaxies are heading toward one another. Separated by about 3 million light years, they are moving toward one another at a rate of 120 kilometers per second, or 275,000 miles per hour.
 
 Over the next tens of billions of years, the galaxies of the Local Group will coalesce  into one giant elliptical galaxy, driven by the merging of the Milky Way and the Andromeda galaxies.
 
@@ -52,7 +52,7 @@ Looking back toward the Milky Way (aqua) from the Andromeda Galaxy and its dwarf
 :::
 
 
-## Other galaxy groups
+## Other Galaxy Groups
 
 The [Galaxy Group Labels](../galaxy-group-labels/index) identify many other nearby galaxy groups. Because the Local Group is, well, local, we see a fairly accurate representation of the dwarf galaxies that inhabit it. Neighboring groups are so far away, it's difficult to see their smaller members. With these other groups, we really only see the largest, brightest galaxies. If we considered the Local Group from afar, we would probably only see the Milky Way, Andromeda, and M33.
 

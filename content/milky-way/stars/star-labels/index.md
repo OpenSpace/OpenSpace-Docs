@@ -22,7 +22,7 @@ A view toward Orion with the star labels turned on. As with all labels, the larg
 
 
 
-## Name origins
+## Name Origins
 
 Many of these names have their origin in ancient civilizations, in particular the Greeks, Egyptians, and Arabs. Most of the traditional star names are derived from an Arabic translation of Ptolemy's [_Almagest_](https://en.wikipedia.org/wiki/Almagest).
 

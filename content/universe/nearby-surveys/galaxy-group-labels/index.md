@@ -24,14 +24,14 @@ The nearby galaxy groups around the Milky Way, which lies at the center of the g
 
 
 :::{note}
-The Galaxy Group Labels data are designed to be shown with the Tully galaxies.
+The Galaxy Group Labels are designed to be shown with the [Tully Galaxies](../tully-galaxies/index).
 :::
 
 
 
-While the Local Group is fairly fleshed out---we see many dwarf galaxies orbiting the Milky Way and Andromeda Galaxies---the surrounding groups are less well known. They are so far away that we cannot see the small dwarf galaxies within them. So, most of these galaxy groups have only a one, two or a few galaxies to them. These will be the largest galaxies in those groups, just as the Milky Way and Andromeda are the largest in the Local Group.
+While the Local Group is fairly fleshed out---we see many dwarf galaxies orbiting the Milky Way and Andromeda Galaxies---the surrounding groups are less detailed. They are so far away that we cannot see the small dwarf galaxies within them. So, most of these galaxy groups have only one, two, or a few galaxies as members. These will be the largest galaxies in those groups, just as the Milky Way and Andromeda are the largest in the Local Group.
 
-Some of the closest groups include the M81 Group, the Sculptor Group, the Cen A Group, and the NGC 2403 Group. Each of these contain one or more large galaxies. Historically, the term *cloud* was used to describe groups of groups, but this term has fallen from favor given it's physically ambiguous.
+Some of the closest groups include the [M81 Group](https://en.wikipedia.org/wiki/M81_Group), the [Sculptor Group](https://en.wikipedia.org/wiki/Sculptor_Group), the [Cen A/M83 Group](https://en.wikipedia.org/wiki/Centaurus_A/M83_Group), and the [NGC 2403 Group](https://en.wikipedia.org/wiki/NGC_2403). Each of these contain one or more large galaxies. Historically, the term *cloud* was used to describe groups of groups, but this term has fallen from favor given it's physically ambiguous.
 
 
 :::{figure} galaxy_groups_outside.png

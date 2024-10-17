@@ -30,7 +30,7 @@ A view of the Virgo Cluster with the Tully Galaxy points off. Normally these wou
 
 
 
-## Image size and visibility
+## Image Size and Visibility
 
 From a wide perspective, these images are impossible to see, hence the need for points. Galaxies are so small relative to our typical view in OpenSpace that one must be right beside them in order for their image to be visible. This is a consequence of having properly-sized images for each galaxy.
 
@@ -46,7 +46,7 @@ A view of the Virgo Cluster with the galaxy images exaggerated. The galaxy M61 i
 
 
 
-## Image sources
+## Image Sources
 
 Most of these images come from [The Galaxy Catalog](http://www.zsolt-frei.net/catalog.htm). This source has a small number of galaxy images and we use those images repeatedly for galaxies of a specific morphological type. In other words, elliptical galaxies may all be represented by the same image throughout the catalog.
 
@@ -70,7 +70,7 @@ A view of the nearby universe with grossly exaggerated images and labels for gal
 :align: left
 :alt: The Tully Galaxies as seen with highly exaggerated images.
 
-An outrageous exaggeration---the Tully Galaxy Images are so large we can see the structure of the universe from outside the data set.
+An outrageous exaggeration---the Tully Galaxy Images are so large we can see the structure of the universe from outside the data set. Indeed, the galaxies are so large they are touching one another.
 :::
 
 

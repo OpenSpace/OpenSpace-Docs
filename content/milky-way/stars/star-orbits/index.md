@@ -31,7 +31,7 @@ The Sun's orbit superimposed on the Milky Way galaxy. This trajectory shows wher
 
 
 
-## Sun's orbit
+## Sun's Orbit
 
 Currently, the Sun is heading in the direction of the constellation Cygnus and lies about 50 light years above the plane of the Galaxy. The Sun's position oscillates above and below the plane every 38 billion years, reaching a maximum of about 260 light years above or below the plane. Imagine how our night sky changes due to this periodic motion. When we are centered on the plane of the Galaxy, the band of light across the sky will be at its thinnest. Conversely, when we are 260 light years above or below the plane, the band of light will appear a little thicker.
 
@@ -54,7 +54,7 @@ A panel of the remaining star orbits. Clockwise from the top left is the orbit o
 
 
 
-## A Halo star
+## A Halo Star
 
 Not all stars' motion are as well behaved as the Sun. The halo star PM J13420-3415 moves perpendicular to the Galactic disk. The Milky Way Halo is a spherical component of the Galaxy populated by cool, dim stars and globular clusters. Let's imagine how our night sky will appear under these circumstances. If we were living on a planet with this star as our sun, when the star is high above the Galactic disk, we would have a magnificent, face-on view of the Galaxy filling half our night sky.
 

@@ -17,13 +17,13 @@ The Six-degree Field (6dF) Galaxy Survey mapped roughly half the sky from the An
 :align: left
 :alt: A view of the 6dF galaxies as multicolored points. The large-scale structure, the weblike appearance of the nearby universe, is readily apparent. 
 
-The 6dF galaxies resemble those of Tully, in scale and in color. We use the same color map for all galaxy surveys, where galaxies in more dense areas appear orange and yellow, and galaxies in less dense areas are green and aqua. The large-scale structure is clearly visible here, but not as consolidated as it is in the Tully galaxies.
+The 6dF galaxies resemble those of Tully, in scale and in color. We use the same color map for all galaxy surveys, where galaxies in more dense areas appear orange and yellow, and galaxies in less dense areas are green and aqua. The large-scale structure is clearly visible here, but not as consolidated as it is in the [Tully Galaxies](../tully-galaxies/index).
 :::
 
 
 
 
-This catalog overlaps with the [Tully Galaxies](../tully-galaxies/index), and there is a noticeable difference in the quality of these datasets. Tully is much tighter and the structure is more apparent, while the 6dF data are more spread out with noticeable {term}`fingers of god <finger of god>`. This is because of local motions within galaxy clusters have not been corrected in these data. (see explanation in the [2MASS Galaxies](../2MASS-galaxies/index)).
+This catalog overlaps with the [Tully Galaxies](../tully-galaxies/index), and there is a noticeable difference in the quality of these datasets. Tully is much tighter and the structure is more apparent, while the 6dF data are more spread out with noticeable {term}`fingers of god <finger of god>`. This is because of local motions within galaxy clusters have not been corrected in these data. (see explanation in the [2MASS Galaxies](#2mass-finger-of-god)).
 
 In addition, the 6dF Galaxies cover only the southern sky. It will only overlap with half of the Tully or 2MASS galaxy surveys.
 

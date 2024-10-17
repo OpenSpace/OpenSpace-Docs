@@ -38,7 +38,7 @@ Messier 2, a globular cluster in the constellation Aquarius. Credit: NASA, ESA, 
 
 
 
-## Understanding our place in the Galaxy
+## Understanding Our Place in the Galaxy
 
 Globular clusters were instrumental in our understanding of the size and nature of the Galaxy and universe. The story began in 1912, when [Henrietta Leavitt](https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt) (1868–1921), a "computer" for astronomers at the Harvard College Observatory, though an accomplished astronomer in her own right, discovered a relationship between the period of [Cepheid variable stars](https://en.wikipedia.org/wiki/Cepheid_variable) and their intrinsic luminosity, allowing her to determine their distance. 
 
@@ -54,7 +54,7 @@ A view from outside the Milky Way Galaxy showing the distribution of globular cl
 
 
 
-## Star cluster or dwarf galaxy?
+## Star Cluster or Dwarf Galaxy?
 
 The line between globular cluster and dwarf galaxy is not always clear. Dwarf galaxies orbit the Milky Way in a similar fashion---long elliptical orbits around the Milky Way's center. Many dwarf galaxies have been stripped of gas and dust via collisions with the Milky Way. So, where does a globular cluster end and a dwarf galaxy begin? Astronomers continue to seek the answer to that question.
 
@@ -70,7 +70,7 @@ Looking back at the Milky Way from extragalactic space. We see the Milky Way Gal
 
 
 
-## Cosmically old
+## Cosmically Old
 
 Globular clusters are among the oldest objects in the Galaxy. They were around when the Galaxy formed 13 billion years ago, perhaps even before the Galactic disk evolved into the shape it is today. Some of the oldest stars in the entire Galaxy are found in these clusters.
 

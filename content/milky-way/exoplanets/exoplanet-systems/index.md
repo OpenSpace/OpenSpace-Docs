@@ -27,7 +27,7 @@ A view of exoplanet systems in the night sky looking toward Cygnus, Lyra, and He
 
 
 
-## Visualizing exoplanet systems
+## Visualizing Exoplanet Systems
 
 The exoplanet systems are represented by a blue ring centered on each host star. The ring is not intended to signify an orbit; the various ring sizes reveal their distance from you. The labels list the host star name, and if there is more than one planet, will list the number of planets in parentheses. Note that not all objects here have a label, we omitted the longer labels to keep the view less cluttered.
 

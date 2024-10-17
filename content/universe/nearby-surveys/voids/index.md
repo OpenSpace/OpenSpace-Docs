@@ -22,15 +22,18 @@ A mapping of the voids via labels. It's difficult to capture these 3-D voids in 
 
 
 :::{note}
-The Void Labels data are designed to be shown with the Tully galaxies.
+The Void Labels data are designed to be shown with the [Tully Galaxies](../tully-galaxies/index).
 :::
 
+
+
+## Why Are Voids Important?
 
 Voids are a tracer of the evolution of the universe. The cold spots in the cosmic microwave background images are believed to evolve into the voids we see today. (The warmer spots in the images are believed to evolve into the large-scale structure of galaxies and matter we currently see---more on this in the [cosmic microwave background section](../../cosmic-microwave-background/index).)
 
 Voids likely have some matter in them, but are overshadowed by the more massive galaxies that gravitate toward the large-scale structure that we see---clusters, superclusters,  and filaments of galaxies.
 
-Voids are often mostly spherical, partly shaped by the expansion of the universe. They, therefore, are important for studying dark energy and other properties of the expanding universe that shape them. As the universe expands, the changing shape of the voids reveals to us the nature of the dark energy and parameters of the universe. 
+Voids are often roughly spherical, partly shaped by the expansion of the universe. They, therefore, are important for studying [dark energy](https://en.wikipedia.org/wiki/Dark_energy) and other properties of the expanding universe that shape them. As the universe expands, the changing shape of the voids reveals to us the nature of the dark energy and parameters of the universe. 
 
 
 

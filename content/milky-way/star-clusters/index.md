@@ -48,6 +48,7 @@ Looking at the Milky Way Galaxy we see the star cluster data sets overlaid. Gree
 :::{toctree}
 :maxdepth: 1
 :caption: Assets
+:hidden:
 
 
 open-clusters/index

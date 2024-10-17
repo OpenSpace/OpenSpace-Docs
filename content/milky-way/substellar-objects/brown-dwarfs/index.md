@@ -25,7 +25,7 @@ The objects in this catalog use telescopes like [Pan-STARRS](https://en.wikipedi
 In the transition from star to brown dwarf, we have the M stars---the coolest stars. Some astronomers consider the less massive of these to be brown dwarfs, or red dwarfs. These are the **M type** dwarfs. Cooler objects are given the spectral class L. **L type** objects have distinct absorption bands in their spectra. Defined by their spectra in this way, the L-type objects can include very low mass stars as well as brown dwarfs. **T type** objects are dimmer and more magenta colored and exhibit different spectral features. Established in 2009, the coolest known objects were called **Y type** objects. These are around 500 Kelvin
 
 
-## Representing brown dwarfs
+## Representing Brown Dwarfs
 
 :::{note}
 None of these objects are visible to the eye, so we represent these objects conceptually with oversized points, tinted according to their type: L dwarfs, T dwarfs, and Y dwarfs. Their brightness (size) is grossly exaggerated so we can examine them.
@@ -54,7 +54,7 @@ Brown dwarfs in the nighttime sky. Here, we're looking toward the constellations
 
 
 
-## Distribution in the solar neighborhood
+## Distribution in the Solar Neighborhood
 
 Because brown dwarfs are extremely dim objects, we cannot detect these objects to great distances. In many ways, it is still a research frontier where new objects are being discovered and new telescopes tailored to detect these objects are coming online. 
 

@@ -10,7 +10,7 @@ authors:
 {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Abell Galaxy Clusters`
 
 
-The Abell Galaxy Clusters are rich clusters of galaxies akin to the Virgo Cluster. Each point in this data set contains tens to hundreds of galaxies. A handful of these Abell clusters overlap with the [Tully Galaxies](../../nearby-surveys/tully-galaxies/index), but most are outside Tully.
+The Abell Galaxy Clusters are rich clusters of galaxies akin to the [Virgo Cluster](https://en.wikipedia.org/wiki/Virgo_Cluster). Each point in this data set contains tens to hundreds of galaxies. A handful of these Abell clusters overlap with the [Tully Galaxies](../../nearby-surveys/tully-galaxies/index), but most are outside Tully.
 
 
 
@@ -22,9 +22,9 @@ A close-up of the Abell Galaxy Clusters, in orange. Select labels are shown with
 :::
 
 
-## The catalog
+## The Catalog
 
-The Abell Catalog was compiled by George Abell (1927--1983) from the Palomar Sky Survey plates. He published the catalog in 1958, and a southern hemisphere survey was posthumously published in 1989 by Harold Corwin (b.1943) and Ronald Olowin (1945--2017). Further analysis by Brent Tully (b. 1943) determined
+The Abell Catalog was compiled by [George Abell](https://en.wikipedia.org/wiki/George_O._Abell) (1927--1983) from the [Palomar Sky Survey](https://en.wikipedia.org/wiki/National_Geographic_Society_%E2%80%93_Palomar_Observatory_Sky_Survey) plates. He published the catalog in 1958, and a southern hemisphere survey was posthumously published in 1989 by Harold Corwin (b.1943) and Ronald Olowin (1945--2017). Further analysis by [Brent Tully](https://en.wikipedia.org/wiki/R._Brent_Tully) (b. 1943) determined
 their distance and three-dimensional distribution. 
 
 The distribution of Abell Clusters echoes that of the [Tully Galaxies](../../nearby-surveys/tully-galaxies/index) with two lobes on either side of the plane of the Milky Way. There is a {term}`completeness` cut-off that makes the data set look squared off.
@@ -41,9 +41,9 @@ The Abell Clusters, in orange, shown with the Tully galaxies in the center in aq
 :::
 
 
-## Large-scale structure?
+## Large-scale Structure?
 
-The Abell Galaxy Clusters show no prominent structure because we are only seeing the nexus points of structure---the large galaxy clusters. There are roughly 30 Abell Clusters within the Tully Galaxies, so this is a case if reducing 30,000 galaxies down to about 30 points. So we do not see the galaxy filaments, the details of each cluster, or the lower-level groups of galaxies that form the large-scale structure of the universe.
+The Abell Galaxy Clusters show no prominent structure because we are only seeing the nexus points of structure---the large galaxy clusters. There are roughly 30 Abell Clusters within the Tully Galaxies, so this is a case of reducing 30,000 galaxies down to about 30 points. So we do not see the galaxy filaments, the details of each cluster, or the lower-level groups of galaxies that form the large-scale structure of the universe.
 
 
 ## Superclusters
@@ -56,12 +56,8 @@ Galaxy clusters themselves form superclusters---groupings of galaxy clusters and
 :align: left
 :alt: The Tully Galaxies at center, surrounded by the Abell Galaxy Clusters in orange, and the Supercluster Labels.
 
-The Abell Galaxy Clusters shown with the Supercluster Labels on and the faint Tully Galaxies in the center. In most cases, multiple Abell Clusters comprise one Supercluster. We can see this on the outskirts of the Tully Galaxies where the Hydra-Centaurus and Perseus superclusters are made up of many Abell Clusters.
+The Abell Galaxy Clusters shown with the [Supercluster Labels](../supercluster-labels/index) on and the faint [Tully Galaxies](../../nearby-surveys/tully-galaxies/index) in the center. In most cases, one supercluster will contain multiple Abell Clusters. We can see this on the outskirts of the Tully Galaxies where the [Hydra-Centaurus](https://en.wikipedia.org/wiki/Hydra%E2%80%93Centaurus_Supercluster) and [Perseus-Pisces](https://en.wikipedia.org/wiki/Perseus%E2%80%93Pisces_Supercluster) superclusters are made up of many Abell Clusters.
 :::
-
-
-
-
 
 
 

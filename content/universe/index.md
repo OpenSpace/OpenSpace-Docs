@@ -10,11 +10,37 @@ authors:
 {menuselection}`Scene --> Universe`
 
 
-*Universe* includes everything outside the Milky Way Galaxy.
+{menuselection}`Universe` includes everything outside the Milky Way Galaxy.
 
-These data sets are more homogeneous, consisting mostly of galaxy surveys. We also display the microwave all-sky images here, and a few other contextual data sets.
+These data sets are more homogeneous, consisting mostly of galaxy surveys. We also display the microwave background images here, and a few other contextual data sets.
 
 Unlike the Milky Way that is organized by object type, here we divide data by nearby surveys, deep sky surveys, and the cosmic microwave background all-sky maps.
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](./nearby-surveys/index)
+![Nearby surveys](./nearby-surveys/local_universe.png)
+:::
+
+:::{grid-item-card} [](./deep-sky-surveys/index)
+![Deep sky surveys](./deep-sky-surveys/deep_sky_surveys.png)
+:::
+
+:::{grid-item-card} [](./cosmic-microwave-background/index)
+![Cosmic microwave background](./cosmic-microwave-background/cmb_planck.png)
+:::
+
+::::
+
+
+
+## Our Cosmic Perspective---Where Is the Center?
+
+When you look at the data sets in {menuselection}`Universe`, it's tempting to believe we are the center of everything. One of the consequences of showing real scientific data observed from telescopes on Earth, or in orbit around Earth, is that it appears as though the Milky Way, the Sun, and the Earth
+are at the center of the universe.
+
+Nothing could be further from the truth.
 
 :::{figure} universe.png
 :align: left
@@ -23,17 +49,8 @@ Unlike the Milky Way that is organized by object type, here we divide data by ne
 The Sloan Digital Sky Survey. The red points are quasars and the blue and green points are the galaxy survey. These are among the deepest surveys of the universe we have observed, and quasars are the farthest objects we see. The Milky Way Galaxy is located at the center of the image where these data appear to converge. This convergence is an observational bias based on the fact that we observe all of these data from Earth---our only observatory in the universe. The conspicuous absence of data on either side in the centerline of the image are due to observational limitations of the survey.
 :::
 
-
-
-## Our cosmic perspective---where is the center?
-
-When you look at the data sets in the Universe section, it's tempting to believe we are the center of the universe. One of the consequences of showing real scientific data observed from telescopes on Earth, or in orbit around Earth, is that it appears that the Milky Way, the Sun, and the Earth
-are at the center of the universe.
-
-Nothing could be further from the truth.
-
-We are the center of these data sets merely because Earth is our observation point. In reality, the universe has no center. The Big Bang describes the beginning of the universe, when the universe began to expand everywhere. The Big Bang was not an explosion that radiated from one point---the Big Bang
-describes the expansion of the universe at every point.
+We are the center of these data sets merely because Earth is our observation point. In reality, the universe has no center. The Big Bang describes the beginning of the universe, when the universe began to expand everywhere. The Big Bang was not an explosion that radiated from one point. The Big Bang
+describes the expansion of the universe at every point---the expansion of {term}`spacetime` itself.
 
 The common analogy is to imagine an infinitely large raisin bread. As the bread rises (expands), the space between two points increases. The raisins represent galaxies, which do not expand themselves, but do recede from one another as the expansion continues.
 
@@ -54,11 +71,29 @@ That is the nature of the universe. There is no center and, except for very near
 
 
 
+## Subsections
 
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](./nearby-surveys/index)
+![Nearby surveys](./nearby-surveys/local_universe.png)
+:::
+
+:::{grid-item-card} [](./deep-sky-surveys/index)
+![Deep sky surveys](./deep-sky-surveys/deep_sky_surveys.png)
+:::
+
+:::{grid-item-card} [](./cosmic-microwave-background/index)
+![Cosmic microwave background](./cosmic-microwave-background/cmb_planck.png)
+:::
+
+::::
 
 :::{toctree}
 :maxdepth: 1
 :caption: Subsections
+:hidden:
 
 nearby-surveys/index
 deep-sky-surveys/index

@@ -17,37 +17,35 @@ Quasars are the most distant objects we can see. They are extremely active galax
 :align: left
 :alt: A two-lobed distribution of the quasars as orange points along with the Sloan Galaxies embedded within to give us a sense of scale.
 
-The distribution of quasars, in orange, along with the Sloan Galaxies, in green, for scale. The data are bifurcated because of the {term}`zone of avoidance`, that part of the sky where the band of the Milky Way blocks our view of the galaxies beyond our own.
+The distribution of quasars, in orange, along with the [Sloan Galaxies](../sloan-galaxies/index), in green, for scale. The data are bifurcated because of the {term}`zone of avoidance`, that part of the sky where the band of the Milky Way blocks our view of the galaxies beyond our own.
 :::
 
 
-## Nomenclature and discovery
+## Nomenclature and Discovery
 
-The term *quasar* is a shortening of these object's original name: *quasi-stellar objects*, often abbreviated QSO.
-
-The name quasi-stellar object was chosen because, when first discovered in the 1950s, they resembled faint stars in imagery. However, the light from these objects was not like any star that had been discovered to that point---they emitted radio waves, hence the *quasi* qualifier.
+The term *quasar* is a shortening of these object's original name: *quasi-stellar objects*, often abbreviated QSO. The name quasi-stellar object was chosen because, when first discovered in the 1950s, they resembled faint stars. However, the light from these objects was not like any star that had been discovered to that point---they emitted radio waves, hence the *quasi* qualifier.
 
 Radio astronomy was born in 1931 when [Karl Jansky](https://en.wikipedia.org/wiki/Karl_Guthe_Jansky) (1905--1950) of [Bell Telephone Laboratories](https://en.wikipedia.org/wiki/Bell_Labs) in New Jersey discovered that the Milky Way was radiating its own radio waves. In the years following World War Two, hundreds of radio observations were recorded and catalogued in the [Third Cambridge (3C) Catalog of Radio Sources](https://en.wikipedia.org/wiki/Third_Cambridge_Catalogue_of_Radio_Sources). Many of these sources were identified to have a nebulous optical counterpart, like the [Crab Nebula](https://en.wikipedia.org/wiki/Crab_Nebula).
 
-However, in 1960, astronomers detected the first object that emitted radio light, but appeared like a faint blue star rather than a nebulous cloud. This object, 3C 48, was mysterious because its spectrum revealed lines that were unfamiliar. Astronomers thought they had discovered a new class of radio-emitting stars.
+However, in 1960, astronomers detected the first object that emitted radio light, but appeared like a faint blue star rather than a nebulous cloud. This object, [3C 48](https://en.wikipedia.org/wiki/3C_48), was mysterious because its spectrum revealed lines that were unfamiliar. Astronomers thought they had discovered a new class of radio-emitting stars.
 
-About two years later, this object was joined by another, 3C 273. Astronomers observed the same spectral features in this object, and, in 1963, [Maarten Schmidt](https://en.wikipedia.org/wiki/Maarten_Schmidt) (1929--2022) of the [Palomar Observatory](https://en.wikipedia.org/wiki/Palomar_Observatory) discovered that these were not new lines but were the familiar hydrogen lines shifted by 16% into the radio spectrum. This redshift (0.16) was the largest that had been observed to date and meant that the object was receding from us at about 16% the speed of light. (3C 273 is the brightest quasar in the night sky in visible light at +12.9 magnitude, and was the first object understood to be a far-off galaxy.)
+About two years later, this object was joined by another, [3C 273](https://en.wikipedia.org/wiki/3C_273). Astronomers observed the same spectral features in this object, and, in 1963, [Maarten Schmidt](https://en.wikipedia.org/wiki/Maarten_Schmidt) (1929--2022) of the [Palomar Observatory](https://en.wikipedia.org/wiki/Palomar_Observatory) discovered that these were not new lines but were the familiar hydrogen lines shifted by 16% into the radio spectrum. This redshift (0.16) was the largest that had been observed to date and meant that the object was receding from us at about 16% the speed of light. (3C 273 is the brightest quasar in the night sky in visible light at +12.9 magnitude, and was the first object understood to be a far-off galaxy.)
 
 With such large redshifts, these objects were clearly not stars in our Galaxy. Furthermore, their enormous distances implied that they must be incredibly bright. In fact, they are the brightest objects in the universe, comparable in luminosity to 20 trillion suns or 1,000 Milky Way galaxies. But what are these mysterious objects?
 
 
-## What is a quasar?
+## What Is a Quasar?
 
 Quasars have been observed in all regions of the electromagnetic spectrum, but they emit most of their light in the infrared. They resemble active galaxies but have much higher luminosities. An active galaxy has a supermassive black hole at its center that gobbles up gas from a surrounding accretion disk. This process emits high-energy light that is seen to great distances.
 
-A quasars is a super-powered version of these active galactic nuclei. They are powered by the accretion of material around the supermassive black hole. This energy is generated just outside the black hole and results in the brightest objects in the universe.
+A quasar is a super-powered version of [active galactic nuclei](https://en.wikipedia.org/wiki/Active_galactic_nucleus). They are powered by the accretion of material around the supermassive black hole. This energy is generated just outside the black hole and results in the brightest objects in the universe.
 
 The Milky Way is known to have a supermassive black hole at its center, but it is more quiescent---it is not actively gobbling up material and producing the energy we see in a quasar.
 
 
-## Seeing the earlier universe
+## Seeing the Earlier Universe
 
-We do not see quasars near the Milky Way Galaxy. Their distances typically range from roughly 500 million light years to over 30 billion light years (if 30 billion confounds you, see the note below). These distances are so great that the light travel time becomes a factor in our understanding of them. 
+We do not see quasars near the Milky Way Galaxy. Their distances typically range from roughly 500 million light years to over 30 billion light years (if 30 billion confounds you, see the [note](#note-distances-universe) below). These distances are so great that the light travel time becomes a factor in our understanding of them. 
 
 
 :::{figure} quasars_grid.png
@@ -60,17 +58,17 @@ The quasars as orange points plotted alongside a coordinate grid centered on the
 
 The farther an object it is, the longer its light takes to reach us. We understand the Moon is 1.5 light seconds from Earth---it takes 1.5 seconds for a radio transmission to reach astronauts on the Moon. The Sun is 8 light minutes away---the light takes 8 minutes to reach your eyes on Earth. And, the Andromeda Galaxy, one of our nearest galactic neighbors, is about 2.3 million light years away. When we see Andromeda in a telescope or binoculars, we are seeing that galaxy as it looked 2.3 million years ago. This is the underlying notion that as we look out farther into the universe, we are looking further back in time.
 
-When we see a quasar, we are seeing galaxies in their childhood, or perhaps in a restless adolescence phase. We are looking to an earlier era in the universe. Why don't we see quasars near the Milky Way? Because the light from these galaxies has had time to reach us, so we see them in a later age, closer to the present.
+When we see a quasar, we are seeing galaxies in their childhood, or perhaps in a restless adolescence phase. We are looking to an earlier era in the universe. Why don't we see quasars near the Milky Way? Because the light from these galaxies has had time to reach us, so we see them in a later age---they are out of their adolescence and in a more stable stage.
 
-It's likely the Milky Way started out as a quasar, with an overactive, supermassive back hole at its center. Now, it's calmed and the supermassive black hole in its center is no longer as active. We're in a more quiescent state as a galaxy. And, if we could defy the laws of physics and travel instantaneously to a distant quasar, we would likely see it's a galaxy like the Milky Way, calmer and dimmer. (Of course, we can and do break the laws of physics in OpenSpace all the time, and we fly to these objects in seconds.)
+It's likely the Milky Way started out as a quasar, with an overactive, supermassive back hole at its center. Now, it's calmed and the supermassive black hole at its center is no longer as active. We're in a more quiescent state as a galaxy. And, if we could defy the laws of physics and travel instantaneously to a distant quasar, we would likely see it's a galaxy like the Milky Way, calmer and dimmer. (Of course, we can and do break the laws of physics in OpenSpace all the time, as we fly to these objects in seconds.)
 
 
-
+(note-distances-universe)=
 :::{admonition} Distances in the expanding universe
 :class: note
-In this section, you will see distances that exceed the age of the universe. The age of the universe is 13.8 billion years, so you might expect the farthest object must be closer than that. However, the universe is expanding---and accelerating in its expansion.
+With the quasars, you will see distances that exceed the age of the universe. The age of the universe is 13.8 billion years, so you might expect the farthest object must be closer than 13.8 billion light years. However, the universe is expanding---and accelerating in its expansion.
 
-If the universe were expanding at a constant rate, then the farthest objects would be inside the 13.8-billion-light-year limitation. But, because the universe is accelerating in its expansion, and spacetime can expand faster than the speed of light (though matter cannot), the extent of the observable universe is presently 46.6 billion light years in radius.
+If the universe were expanding at a constant rate, then the farthest objects would be inside the 13.8-billion-light-year limitation. But, because the universe is accelerating in its expansion, and {term}`spacetime` can expand faster than the speed of light (though matter cannot), the extent of the observable universe is presently 46.6 billion light years in radius.
 
 In all our galaxy surveys, we use the present distance for each object, called the *comoving distance*. We do not use the distance from where the light we see today was emitted, called the *light-travel distance*.
 

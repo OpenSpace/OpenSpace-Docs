@@ -49,18 +49,18 @@ The [exoplanet system module](./exoplanet-system-module/index) visualizes the pl
 
 
 
-## Detecting exoplanets---lost in starlight
+## Detecting Exoplanets---Lost in Starlight
 
 To the eye, exoplanets are lost in the glare of their host star. Unconventional techniques are required to infer or observe them.
 
 
-### Transit of the planet
+### Transit of the Planet
 
  The most common method, thanks to the Kepler and TESS missions, uses the transit of the planet in front of its host star. This, of course, requires the alignment of its orbit be edge-on from our vantage point, which is not terribly probable. However, this method can detect planets a few thousand light years away.
 
 Projects include the [Transiting Exoplanet Survey Satellite](https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite) (TESS), [Kepler](https://en.wikipedia.org/wiki/Kepler_space_telescope), [Wide Angle Search for Planets](https://en.wikipedia.org/wiki/Wide_Angle_Search_for_Planets) (WASP), the [Kilodegree Extremely Little Telescope](https://en.wikipedia.org/wiki/Kilodegree_Extremely_Little_Telescope) (KELT), the [Hungarian Automated Telescope](https://en.wikipedia.org/wiki/HATNet_Project) (HAT), and the [Convection Rotation and Planetary Transits](https://en.wikipedia.org/wiki/CoRoT) (CoRoT). TESS, the Transiting Exoplanet Survey Satellite, is the current generation of planet-detecting telescopes. It was launched in April 2018 and has discovered many exoplanets.
 
-### Radial velocity method
+### Radial Velocity Method
 
 The radial velocity method is the next most common way to detect exoplanets. A variation in the star's radial velocity is observed in the spectrum which results from the planet's motion around the star. While we think the Sun is stationary, it actually moves, or wobbles, because of the planets that orbit it. The larger the planet, the larger the wobble. This is because the center of the orbit is actually located at a point called the _center of mass_ of the system. 
 
@@ -82,12 +82,12 @@ So, for example, the Sun-Jupiter system's center of mass is more than 742,000 ki
 The next most common method for exoplanet discovery uses gravitational microlensing to detect a planet. Lensing occurs when the light of a distant star is magnified by a foreground star. When the foreground star has a planet, its gravitational influence is seen in the lensed light from the background star. This requires two stars to align with one another, which only happens for a short time, given Earth is in motion along with the two stars in question. This requires continuous monitoring to catch one of these lensing events. The [Optical Gravitational Lensing Experiment](https://en.wikipedia.org/wiki/Optical_Gravitational_Lensing_Experiment) (OGLE) developed a technique for observing such events. The benefit of this technique is that lensing can reveal low-mass planets with smaller orbits. The drawback is that the observation cannot be repeated, and science favors reproducibility.
 
 
-### Direct imaging
+### Direct Imaging
 
 At the bleeding edge of exoplanet science is direct imaging. Planets that orbit far from their host star tend to reflect less starlight and so we can detect their thermal energy. This method is beneficial only for systems near the sun, and for large planets that orbit far from their host star. But, it is a growing field and about one percent of these planets were found by direct imaging.
 
 
-### Pulsar timings
+### Pulsar Timing
 
 Less than one percent of the known systems were discovered using other methods, including pulsar timings that measure the periodic variation in the light arrival time.
 
@@ -116,6 +116,7 @@ Less than one percent of the known systems were discovered using other methods, 
 :::{toctree}
 :maxdepth: 1
 :caption: Assets
+:hidden:
 
 exoplanet-systems/index
 exoplanet-system-module/index

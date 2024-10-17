@@ -34,7 +34,7 @@ Constellations looking toward Scorpius and Sagittarius and the heart of the Milk
 
 
 
-## A unique perspective
+## A Unique Perspective
 
 As mentioned on the [constellation section page](#celestial-sphere), the constellations are only relevant from our point of view. Because the stars are so far away, we can fly beyond the orbit of Neptune and they will still look the same. However, beyond the Solar System the figures breakdown.
 
@@ -65,7 +65,7 @@ A view from outside the Milky Way Galaxy with the constellation lines on. Showin
 :::
 
 
-## Line colors
+## Line Colors
 
 The bulk of the constellations are represented by a subtle pink hue. The twelve zodiacal constellations have red connectivity lines to highlight them a bit in the sky. We give the recognizable Orion and Ursa Major a blue color to distinguish them not only in the sky, but as one flies away from the Sun the blue lines remain easy to track.
 

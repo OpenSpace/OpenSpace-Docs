@@ -87,6 +87,7 @@ For this reason, the constellations only work from Earth's perspective. Once you
 :::{toctree}
 :maxdepth: 1
 :caption: Assets
+:hidden:
 
 constellation-lines/index
 constellation-art/index

@@ -16,12 +16,12 @@ Stellar remnants include objects that are left behind when a star exhausts its f
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./pulsars/index)
-![pulsars](./pulsars/pulsars_nightsky_scorpius.png)
-:::
-
 :::{grid-item-card} [](./white-dwarfs/index)
 ![white dwarfs](./white-dwarfs/white_dwarfs_outside_milkyway.png)
+:::
+
+:::{grid-item-card} [](./pulsars/index)
+![pulsars](./pulsars/pulsars_nightsky_scorpius.png)
 :::
 
 ::::
@@ -31,7 +31,8 @@ Stellar remnants include objects that are left behind when a star exhausts its f
 :::{toctree}
 :maxdepth: 1
 :caption: Assets
+:hidden:
 
-pulsars/index
 white-dwarfs/index
+pulsars/index
 :::

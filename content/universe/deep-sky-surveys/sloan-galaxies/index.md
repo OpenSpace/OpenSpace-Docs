@@ -10,7 +10,7 @@ authors:
 {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan Galaxies`
 
 
-The multifaceted Sloan Digital Sky Survey (SDSS) is an ambitious project to image and get spectra for about 35% of the sky. These spectra allow astronomers to probe deeply into the universe. The survey measured the position and brightness of almost 1 billion objects, and obtained spectra to more than 4 million objects.
+The multifaceted [Sloan Digital Sky Survey](https://en.wikipedia.org/wiki/Sloan_Digital_Sky_Survey) (SDSS) is an ambitious project to image and get spectra for about 35% of the sky. These spectra allow astronomers to probe deeply into the universe. The survey measured the position and brightness of almost 1 billion objects, and obtained spectra to more than 4 million objects.
 
 Sloan DSS operates many investigations on all manner of objects. Here, we focus on the {term}`redshift <redshift/blueshift>` survey which yields galaxies and quasars (discussed in [Quasars](../quasars/index)).
 
@@ -32,14 +32,14 @@ An edge-on view of the Sloan Galaxies, revealing the wide swaths of data and the
 :::
 
 
-## The project
+## The Project
 
 The SDSS telescope is located at Apache Point Observatory in south-central New Mexico (US) and began operating in June 1998. It is 2.5 meters (8.2 feet) in diameter and was designed specifically for this mapping project. The telescope takes images of the sky as well as spectra for individual objects.
 
-The spectral range for the SDSS is 380 nm to 920 nm, stretching from the blue end of the visible spectrum to the red end and barely into the infrared.
+The spectral range for the SDSS is 380 to 920 nanometers, stretching from the blue end of the visible spectrum to the red end and barely into the infrared.
 
 
-## The distribution
+## The Distribution
 
 The SDSS galaxies are similar to the 2dF data in that they form triangular wedges, revealing those parts of the sky observed by the telescope. If the entire sky were covered, you would see a spherical distribution of galaxies surrounding the Milky Way. With only 35% of the entire sky observed, we see plenty of empty space---areas that have not been observed by SDSS.
 
@@ -54,8 +54,6 @@ The weblike cosmic large-scale structure is echoed in these data, with orange cl
 
 The Sloan Galaxies from the outside. The large-scale structure we are used to seeing is more local to the Milky Way, while the data are more homogenous toward the outskirts.
 :::
-
-
 
 
 

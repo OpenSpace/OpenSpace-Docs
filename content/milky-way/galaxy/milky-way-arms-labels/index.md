@@ -12,7 +12,7 @@ authors:
 
 Like the 3-D [Milky Way Volume](../milky-way-volume/index) and the 2-D [Galaxy Image](../milky-way-galaxy-image/index), the labels for the spiral arms are diagrammatic and to be used as a guide only. 
 
-As we mentioned, we cannot know exactly what the Milky Way looks like from this perspective because we are embedded in it. Therefore, our rendition of the Milky Way as seen from outside the Galaxy is not data from observations. It is a scientifically informed model that resembles the structure and overall characteristics of the Milky Way.
+As we previously mentioned, we cannot know exactly what the Milky Way looks like from this perspective because we are embedded in it. Therefore, our rendition of the Milky Way as seen from outside the Galaxy is not data from observations. It is a scientifically informed model that resembles the structure and overall characteristics of the Milky Way.
 
 Overlaying spiral arm labels on top of this model is a further departure from reality, but these named spiral arms are known to astronomers, and we can use the spiral arms in our model to fit these labels given the Sun's position.
 
@@ -25,12 +25,12 @@ A view of the Milky Way Galaxy from above, with the Milky Way Arms Labels asset 
 :::
 
 
-There remains some debate about the positions and names of some of these arms. It's widely accepted that our neighboring arm toward the center of the Galaxy is the Sagittarius-Carina Arm, and the arm beside the Sun looking away from the center is the Perseus Arm. We exist on a sub-arm called the Orion Spur, or the Orion-Cygnus Arm.
+There remains some debate about the positions and names of some of these arms. It's widely accepted that our neighboring arm toward the center of the Galaxy is the Sagittarius-Carina Arm, and the arm beside the Sun looking away from the center is the Perseus Arm. We exist on a sub-arm called the Orion Spur, or the Orion-Cygnus Arm---though that, too, is a topic for debate among scientists.
 
 
 ## Limitations
 
-One severe limitation of this asset is that it is merely a flat, two-dimensional image with words on it. So, there is a right side and a wrong side to view it from. These are not dynamic labels as used for other data in OpenSpace. These are baked into an image that is superimposed on the Milky Way. So, if you view it from underneath, the words will be backwards, as seen in the image below.
+One severe limitation of this asset is that it is merely a flat, two-dimensional image with words on it. So, there is a right side and a wrong side to view it from. These are not dynamic, interactive labels as used for other data in OpenSpace. These are baked into an image that is superimposed on the Milky Way. So, if you view it from underneath, the words will be backwards, as seen in the image below.
 
 :::{figure} milkyway_arms_labels_backwards.png
 :align: center

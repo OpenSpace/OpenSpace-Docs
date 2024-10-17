@@ -25,7 +25,7 @@ A page showing the constellation Orion from Johann Bayer's _Uranometria_ from 16
 
 
 
-## Artwork updated
+## Artwork Updated
 
 The art appearing here was drawn by [James Hedberg](http://jameshedberg.com) from the City College of New York. He has updated the art from traditional depictions to something more modern.
 
@@ -47,14 +47,14 @@ Constellation art overlay the constellation lines. Here we see Orion, the hunter
 From the scene menu, each constellation is accessible for you to turn on and off individually. Use this option if you just want to show one or a limited number of constellations.
 
 
-### Keyboard shortcut
+### Keyboard Shortcuts
 
 `c`, `Shift-c`
 
 Use the `c` key to turn on all constellation figures. There may be a slight delay while they load, but this will bring up the artwork for all 88 constellations. Use `Shift-c` to turn them off.
 
 
-### Actions panel
+### Actions Panel
 
 {menuselection}`Actions --> Constellations --> Art`
 

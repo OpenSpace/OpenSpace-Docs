@@ -33,9 +33,6 @@ The red areas represent the slightly hotter temperatures, and the blue areas are
 
 
 
-
-
-
 ## Dossier
 :::{list-table}
 :header-rows: 0

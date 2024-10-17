@@ -36,6 +36,7 @@ Some nebulae are associated with the birth of stars: the so-called star forming 
 :::{toctree}
 :maxdepth: 1
 :caption: Assets
+:hidden:
 
 HII-regions/index
 planetary-nebulae/index

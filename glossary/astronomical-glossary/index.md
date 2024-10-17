@@ -51,6 +51,11 @@ Redshift/blueshift
     Redshift refers to the shifting of light as the source moves away from the observer. It is the light equivalent of the Doppler shift in sound when, for example, a train's sound changes as it approaches you and recedes from you. We use redshift in astronomy to calculate the distance to objects outside the Milky Way. Almost all objects outside the Galaxy are moving away from us as the universe expands, and we can measure the shift of light in the spectral lines of a galaxy, and once we know that shift in wavelength, we can compute its distance. If the object is moving away from us, the light is shifted toward the red in the electromagnetic spectrum, and if the object is moving toward us, the light is shifted toward the blue end of the spectrum.
 
 
+
+Spacetime
+    Definition.
+
+
 Uncertainty
     In science, uncertainty refers to doubt in a measurement value. These doubts arise from several things, but often derive from the limitations of the instrument doing the measurement. For example, a ruler has lines for each millimeter, but if the object being measured is somewhere between 2 mm and 3 mm, you have to estimate what the final value. We know 2 mm is too low, and 3 mm is too high, so the value will be some guess, with a "give or take" range, for example, maybe we estimate it to be 2.5 mm plus or minus 0.5 mm. In astrophysics, these limitations derive from limitations of telescopes, observational conditions, and the nature of the object we're measuring.
 

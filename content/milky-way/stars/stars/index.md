@@ -20,7 +20,7 @@ In many ways, stars form the foundation of our astronomical knowledge and are in
 A view of the night sky toward Scorpius and Sagittarius, shown with the constellations lines connecting the main stars within each constellation. The band of light, called the Milky Way, is prominent in this part of the sky.
 :::
 
-## What is a star?
+## What Is a Star?
 
 Stars are, in a literal sense, light factories. Their light is a product of the nuclear processes that naturally occur in stars and define the lifespan of a star. Stars are born, live a stable life, then transform into a [stellar remnant](../../stellar-remnants/index). They condense from clouds of hydrogen, exist in equilibrium throughout their life as a *{term}`main sequence`* star, and evolve into a post stellar object like a [white dwarf](../../stellar-remnants/white-dwarfs/index), [neutron star](../../stellar-remnants/pulsars/index), or a black hole.
 

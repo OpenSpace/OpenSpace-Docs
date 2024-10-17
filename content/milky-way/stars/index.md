@@ -57,6 +57,7 @@ A view of the night sky's stars with [Star Labels](./star-labels/index) and [Alt
 :::{toctree}
 :maxdepth: 1
 :caption: Assets
+:hidden:
 
 stars/index
 star-labels/index

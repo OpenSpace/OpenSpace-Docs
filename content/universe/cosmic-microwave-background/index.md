@@ -10,10 +10,7 @@ authors:
 {menuselection}`Scene --> Universe --> Cosmic Microwave Background`
 
 
-
-
-
-The cosmic microwave background (CMB) radiation is our baby picture of the universe. It is the earliest light that we can see and reveals the primordial conditions in the early universe. For the past century, we have searched for and refined our knowledge of the CMB using space telescopes, but the history of its discovery predates our ventures into space.
+The cosmic microwave background (CMB) radiation is our baby picture of the universe. It is the earliest light that we can see and reveals the primordial conditions in the early universe. For the past century, we have searched for, discovered, and refined our knowledge of the CMB using ground and space telescopes, but the history of its discovery predates our ventures into space.
 
 
 :::{figure} cmb_planck.png
@@ -24,7 +21,7 @@ The Planck CMB all-sky image, showing a map of the temperature at microwave wave
 :::
 
 
-## The CMB image
+## The CMB Image
 
 The CMB is light that pervades the universe. We see the light in microwave wavelengths. In the image above, we see a mottled structure. This is a mapping of temperature taken directly by the telescope. However, the difference in temperature between the red spots and blue spots is in the hundreds of thousandths of a degree. The telescope can pick up temperature differences on the order of millionths of degrees. So, to all other unsophisticated instruments, this light appears to be one temperature: 2.7 Kelvin (equivalent to -270&deg;C or -455&deg;F). 
 
@@ -36,31 +33,37 @@ Unlike the all-sky maps in the infrared, visible, and other wavelengths, all the
 
 ## Origin of the CMB
 
-We call the CMB a "baby picture" because its origins are from a time when light began to travel across the universe---a time shortly after the Big Bang. The universe was born 13.8 billion years ago when the Big Bang occurred. The primordial universe of subatomic particles quickly formed into atomic nuclei of hydrogen, helium, and lithium. Electrons and light scattered off these nuclei in this early epoch when we say the universe was opaque---light was scattering off these particles and could not travel across space. 
+We call the CMB a "baby picture" because its origins are from a time when light began to travel across the universe---a time shortly after the Big Bang. The universe was born 13.8 billion years ago when the [Big Bang](https://en.wikipedia.org/wiki/Big_Bang) occurred. The primordial universe of subatomic particles quickly formed into atomic nuclei of hydrogen, helium, and lithium. Electrons and light scattered off these nuclei in this early epoch when we say the universe was opaque---light was scattering off these particles and could not travel across space. 
 
-Around 380,000 years after the Big Bang, the expanding universe cooled to about 3,000 Kelvin. At this temperature, the free electrons were able to combine with the hydrogen nuclei (protons) to form neutral hydrogen. At this point, like a fog lifting, light was able to travel across the universe without scattering off all these particles. This is the beginning of the Radiation Era of the universe. At this point the CMB light peaked at about 1 micron in the infrared and, as we mentioned above, the gas temperature was about 3,000 Kelvin. The CMB would have glowed orange-red in visible light.
+Around 380,000 years after the Big Bang, the expanding universe cooled to about 3,000 Kelvin. At this temperature, the free electrons were able to combine with the hydrogen nuclei (protons) to form neutral hydrogen. At this point, like a fog lifting, light was able to travel across the universe without scattering off all these particles---the universe becomes transparent to light. At this point the CMB light peaked at a wavelength of about 1 micron in the infrared and, as we mentioned above, the gas temperature was about 3,000 Kelvin. The CMB would have glowed orange-red in visible light.
 
 However, since that time, the universe has expanded 1,000 times in size, and the light within has been {term}`redshifted <redshift/blueshift>` toward longer and longer wavelengths. Today, the peak CMB light has redshifted 1,000 times, so it's now in the microwave with a wavelength of 1 millimeter (1 micron &times; 1,000 = 1 mm). The corresponding gas temperature over that expansion is also 1,000 times less, so instead of 3,000 Kelvin, it's now 3 Kelvin, or the more precise 2.7 Kelvin. 
 
 While the fog lifted 380,000 years after the Big Bang when electrons combined with protons to form hydrogen, to continue our analogy, we are still subject to an upper cloud deck. The CMB light itself is the limit of what we can see---it prevents us from seeing an earlier time in the universe because light did not travel freely in the universe before that time. The CMB light is our observational limit and an imprint of the universe at that time.
 
 
-
-## Seeds of structure
-
-The tiny differences in temperature we see in the CMB image may be thought of as infinitesimally small fluctuations in the density of the universe at that time, 380,000 years after the Big Bang. These are the seeds of the large-scale structure we see today---the walls, filaments, and superclusters. These seeds will grow, by gravity, into the present structure. *How* that happened remains a mystery to us, and is surely the subject of a future Nobel Prize. 
+Read more on the [Chronology of the Universe](https://en.wikipedia.org/wiki/Chronology_of_the_universe).
 
 
-## Cosmological constraints
 
-Mapping these cosmic fluctuations yields information about the nature of the universe. Measuring these fluctuations tells us about the density and composition of the universe, the nature of the expansion of the universe, and knowing the matter and energy of the universe, we can use Einstein's Theory of General Relativity to understand the rate of expansion then turn the clock back and deduce the age of the universe, which stands at around 13.8 billion years. The CMB confirms for us the Big Bang Theory of the formation of the universe.
+## Seeds of Structure
+
+The tiny differences in temperature we see in the CMB image may be thought of as infinitesimally small fluctuations in the density of the universe at that time, 380,000 years after the Big Bang. These are the seeds of the large-scale structure we see today---the [walls](https://en.wikipedia.org/wiki/Galaxy_filament#Galaxy_walls), [filaments](https://en.wikipedia.org/wiki/Galaxy_filament), and [superclusters](https://en.wikipedia.org/wiki/Supercluster). These seeds will grow, by gravity, into the present structure. *How* that happened remains a mystery to us, and is surely the subject of a future Nobel Prize. 
 
 
-## Mapping efforts
+## Cosmological Constraints
+
+Mapping these cosmic fluctuations yields information about the nature of the universe. Measuring these fluctuations tells us about the density and composition of the universe, the nature of the expansion of the universe, and knowing the matter and energy of the universe, we can use Einstein's [Theory of General Relativity](https://en.wikipedia.org/wiki/General_relativity) to understand the rate of expansion then turn the clock back and deduce the age of the universe, which stands at around 13.8 billion years. The CMB confirms for us the Big Bang Theory of the formation of the universe.
+
+
+## Mapping Efforts
 
 The CMB has been mapped by three main space telescopes: the Cosmic Background Explorer (COBE), the Wilkinson Microwave Anisotropy Probe (WMAP), and the Planck mission.
 
 COBE operated between 1989 and 1993 and returned the first detailed all-sky image of the CMB. WMAP gathered data from 2001 through 2010 and offered a much clearer picture of the CMB. The Planck mission ran from 2009 to 2013 and is the best image to date of the CMB.
+
+
+Each successive mission increased the quality of the maps and refined our understanding of the universe. COBE's effective resolution in this map is 10&deg; while the Planck map has 5-arcminute resolution.
 
 
 :::{figure} cmb_composite.png
@@ -73,12 +76,9 @@ A three-panel image of the CMB over the same region of the sky. The top panel is
 :::
 
 
-Each successive mission increased the quality of the maps and refined our understanding of the universe. COBE's effective resolution in this map is 10&deg; while the Planck map has 5-arcminute resolution.
+## Image Placement
 
-
-## Image placement
-
-Each CMB all-sky image is placed on a sphere, like all other all-sky images. However, rather than confined to the area around Earth, we place this sphere at the boundary of the observable universe. In our comoving space, this is around 45 billion light years from Earth.
+Each CMB all-sky image is placed on a sphere, like all other all-sky images. However, rather than confined to the area around Earth, we place this sphere at the boundary of the {term}`observable universe`. In our comoving space, this is around 45 billion light years from Earth.
 
 **This is not an accurate representation of the CMB light.** In reality, the CMB light pervades the universe---it is all around us all the time. Because these are two-dimensional images we are placing in a three-dimensional space, we need to make a choice how we visualize them. We decided to allow the image to represent two concepts: the CMB itself and the limit of our observable universe. But, it's important to remember this light is everywhere in the universe. 
 
@@ -89,7 +89,7 @@ Each CMB all-sky image is placed on a sphere, like all other all-sky images. How
 :align: left
 :alt: A sphere with the CMB all-sky image mapped onto it. In the center are the quasars.
 
-The CMB image wrapped on a sphere at the limit of the observable universe. The quasars appear in the center of the 45-billion-light-year sphere. Everything inside the CMB sphere is that part of the universe we can see. We do not recommend flying out to this vantage point, but want to show it to see the extent of the observable universe in the context of the quasars.
+The CMB image wrapped on a sphere at the limit of the observable universe. The [Quasars](../deep-sky-surveys/quasars/index) appear in the center of the 45-billion-light-year-radius sphere. Everything inside the CMB sphere is that part of the universe we can see. We do not recommend flying out to this vantage point, but we want to show it to see the extent of the observable universe in the context of the quasars.
 :::
 
 
@@ -109,14 +109,34 @@ In the meantime, researchers down the road at Princeton University were on Alphe
 If the signal detected at Bell Labs corresponded to a blackbody, it would have a temperature of about 3 Kelvin. But the Bell Labs observations could not confirm that the radiation was in fact from a blackbody, and they could not conclude with certainty that this was the radiation left from the Big
 Bang.
 
-Penzias and Wilson were awarded the Nobel Prize in 1978 for their discovery. The observational and theoretical work of many others led to the investment in missions to see this light in higher resolution to start to nail down the cosmological parameters that describe the nature of the universe. COBE was launched in 1989, and first quantified the "structure" seen in the light. The COBE team received the Nobel Prize in 2006 for their findings. Since then, missions of increasing resolution on the sky offered a more accurate understanding of the origins and characteristics of the universe.
+Penzias and Wilson were awarded the Nobel Prize in 1978 for their discovery. The observational and theoretical work of many others led to the investment in missions to see this light in higher resolution in order to better understand the cosmological parameters that describe the nature of the universe. COBE was launched in 1989, and first quantified the "structure" seen in the light. The COBE team received the Nobel Prize in 2006 for their findings. Since then, missions of increasing resolution on the sky offered a more accurate understanding of the origins and characteristics of the universe.
 
+
+
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](./cobe/index)
+![COBE microwave background](./cobe/cobe_cmb.png)
+:::
+
+:::{grid-item-card} [](./wmap/index)
+![WMAP microwave background](./wmap/wmap_cmb.png)
+:::
+
+:::{grid-item-card} [](./planck/index)
+![Planck microwave background](./planck/planck_cmb.png)
+:::
+
+::::
 
 
 
 :::{toctree}
 :maxdepth: 1
 :caption: Assets
+:hidden:
 
 cobe/index
 wmap/index
