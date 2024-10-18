@@ -35,39 +35,39 @@ Here, we will refer to that band of light as the _Milky Way_, and the 3-D galaxy
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./stars/index)
-![Stars](./milky_way_all.png)
+[![Stars](./stars/stars_icon.png)](./stars/index)
 :::
 
 :::{grid-item-card} [](./constellations/index)
-![Constellations](./milky_way_all.png)
+[![Constellations](./constellations/constellation_icon.png)](./constellations/index)
 :::
 
 :::{grid-item-card} [](./all-sky-images/index)
-![All-sky Images](./milky_way_all.png)
+[![All-sky Images](./all-sky-images/all_sky_icon.png)](./all-sky-images/index)
 :::
 
 :::{grid-item-card} [](./substellar-objects/index)
-![Substellar Objects](./milky_way_all.png)
+[![Substellar Objects](./substellar-objects/substellar_objects_icon.png)](./substellar-objects/index)
 :::
 
 :::{grid-item-card} [](./exoplanets/index)
-![Exoplanets](./milky_way_all.png)
+[![Exoplanets](./exoplanets/exoplanets_icon.png)](./exoplanets/index)
 :::
 
 :::{grid-item-card} [](./star-clusters/index)
-![Star Clusters](./milky_way_all.png)
+[![Star Clusters](./star-clusters/star_clusters_icon.png)](./star-clusters/index)
 :::
 
 :::{grid-item-card} [](./nebulae/index)
-![Nebulae](./milky_way_all.png)
+[![Nebulae](./nebulae/nebulae_icon.png)](./nebulae/index)
 :::
 
 :::{grid-item-card} [](./stellar-remnants/index)
-![Stellar Remnants](./milky_way_all.png)
+[![Stellar Remnants](./stellar-remnants/stellar_remnant_icon.png)](./stellar-remnants/index)
 :::
 
 :::{grid-item-card} [](./galaxy/index)
-![Galaxy](./milky_way_all.png)
+[![Galaxy](./galaxy/galaxy_icon.png)](./galaxy/index)
 :::
 
 ::::
