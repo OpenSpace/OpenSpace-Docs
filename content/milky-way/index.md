@@ -35,39 +35,39 @@ Here, we will refer to that band of light as the _Milky Way_, and the 3-D galaxy
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./stars/index)
-[![Stars](./stars/stars_icon.png)](./stars/index)
+[![Stars](./stars/stars/stars_icon.png)](./stars/index)
 :::
 
 :::{grid-item-card} [](./constellations/index)
-[![Constellations](./constellations/constellation_icon.png)](./constellations/index)
+[![Constellations](./constellations/constellation-art/constellation_art_icon.png)](./constellations/index)
 :::
 
 :::{grid-item-card} [](./all-sky-images/index)
-[![All-sky Images](./all-sky-images/all_sky_icon.png)](./all-sky-images/index)
+[![All-sky Images](./all-sky-images/hydrogen-alpha/halpha_icon.png)](./all-sky-images/index)
 :::
 
 :::{grid-item-card} [](./substellar-objects/index)
-[![Substellar Objects](./substellar-objects/substellar_objects_icon.png)](./substellar-objects/index)
+[![Substellar Objects](./substellar-objects/brown-dwarfs/brown_dwarfs_icon.png)](./substellar-objects/index)
 :::
 
 :::{grid-item-card} [](./exoplanets/index)
-[![Exoplanets](./exoplanets/exoplanets_icon.png)](./exoplanets/index)
+[![Exoplanets](./exoplanets/exoplanet-system-module/exoplanet_module_icon.png)](./exoplanets/index)
 :::
 
 :::{grid-item-card} [](./star-clusters/index)
-[![Star Clusters](./star-clusters/star_clusters_icon.png)](./star-clusters/index)
+[![Star Clusters](./star-clusters/globular-clusters/globular_clusters_icon.png)](./star-clusters/index)
 :::
 
 :::{grid-item-card} [](./nebulae/index)
-[![Nebulae](./nebulae/nebulae_icon.png)](./nebulae/index)
+[![Nebulae](./nebulae/HII-regions/HII_regions_icon.png)](./nebulae/index)
 :::
 
 :::{grid-item-card} [](./stellar-remnants/index)
-[![Stellar Remnants](./stellar-remnants/stellar_remnant_icon.png)](./stellar-remnants/index)
+[![Stellar Remnants](./stellar-remnants/pulsars/pulsars_icon.png)](./stellar-remnants/index)
 :::
 
 :::{grid-item-card} [](./galaxy/index)
-[![Galaxy](./galaxy/galaxy_icon.png)](./galaxy/index)
+[![Galaxy](./galaxy/milky-way-galaxy-image/galaxy_image_icon.png)](./galaxy/index)
 :::
 
 ::::
