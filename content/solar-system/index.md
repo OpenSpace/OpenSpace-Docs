@@ -22,26 +22,26 @@ Here we explore these objects and the various assets in OpenSpace that we use to
 
 ## Subsections
 
-::::{grid} 1 2 2 3
-:gutter: 1 1 1 2
-
-:::{grid-item-card} [](./sun/index)
+% ::::{grid} 1 2 2 3
+% :gutter: 1 1 1 2
+% 
+% :::{grid-item-card} [](./sun/index)
 % ![Stars](./milky_way_all.png)
-:::
-
-:::{grid-item-card} [](./planets/index)
+% :::
+% 
+% :::{grid-item-card} [](./planets/index)
 % ![Constellations](./milky_way_all.png)
-:::
-
-:::{grid-item-card} [](./dwarf-planets/index)
+% :::
+% 
+% :::{grid-item-card} [](./dwarf-planets/index)
 % ![All-sky Images](./milky_way_all.png)
-:::
-
-:::{grid-item-card} [](./comets/index)
+% :::
+% 
+% :::{grid-item-card} [](./comets/index)
 % ![Substellar Objects](./milky_way_all.png)
-:::
-
-::::
+% :::
+% 
+% ::::
 
 :::{toctree}
 :maxdepth: 1
@@ -52,5 +52,6 @@ sun/index
 planets/index
 dwarf-planets/index
 comets/index
+
 :::
 
