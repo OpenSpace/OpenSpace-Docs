@@ -12,6 +12,28 @@ authors:
 
 The cosmic microwave background (CMB) radiation is our baby picture of the universe. It is the earliest light that we can see and reveals the primordial conditions in the early universe. For the past century, we have searched for, discovered, and refined our knowledge of the CMB using ground and space telescopes, but the history of its discovery predates our ventures into space.
 
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](./cobe/index)
+[![COBE microwave background](./cobe/cobe_cmb_icon.png)](./cobe/index)
+:::
+
+:::{grid-item-card} [](./wmap/index)
+[![WMAP microwave background](./wmap/wmap_cmb_icon.png)](./wmap/index)
+:::
+
+:::{grid-item-card} [](./planck/index)
+[![Planck microwave background](./planck/planck_cmb_icon.png)](./planck/index)
+:::
+
+::::
+
+
+## The CMB Image
+
+The CMB is light that pervades the universe. We see the light in microwave wavelengths. In the image above, we see a mottled structure. This is a mapping of temperature taken directly by the telescope. However, the difference in temperature between the red spots and blue spots is in the hundreds of thousandths of a degree. The telescope can pick up temperature differences on the order of millionths of degrees. So, to all other unsophisticated instruments, this light appears to be one temperature: 2.7 Kelvin (equivalent to -270&deg;C or -455&deg;F). 
+
 
 :::{figure} cmb_planck.png
 :align: left
@@ -20,10 +42,6 @@ The cosmic microwave background (CMB) radiation is our baby picture of the unive
 The Planck CMB all-sky image, showing a map of the temperature at microwave wavelengths. Red areas are warmer than blue areas, but the difference is only a hundred thousandth of a degree.
 :::
 
-
-## The CMB Image
-
-The CMB is light that pervades the universe. We see the light in microwave wavelengths. In the image above, we see a mottled structure. This is a mapping of temperature taken directly by the telescope. However, the difference in temperature between the red spots and blue spots is in the hundreds of thousandths of a degree. The telescope can pick up temperature differences on the order of millionths of degrees. So, to all other unsophisticated instruments, this light appears to be one temperature: 2.7 Kelvin (equivalent to -270&deg;C or -455&deg;F). 
 
 These imperceptible temperature differences tell us a lot about the nature of the universe and, ultimately, the large-scale structure we see today.
 
@@ -114,19 +132,21 @@ Penzias and Wilson were awarded the Nobel Prize in 1978 for their discovery. The
 
 
 
+## Assets
+
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./cobe/index)
-![COBE microwave background](./cobe/cobe_cmb.png)
+[![COBE microwave background](./cobe/cobe_cmb_icon.png)](./cobe/index)
 :::
 
 :::{grid-item-card} [](./wmap/index)
-![WMAP microwave background](./wmap/wmap_cmb.png)
+[![WMAP microwave background](./wmap/wmap_cmb_icon.png)](./wmap/index)
 :::
 
 :::{grid-item-card} [](./planck/index)
-![Planck microwave background](./planck/planck_cmb.png)
+[![Planck microwave background](./planck/planck_cmb_icon.png)](./planck/index)
 :::
 
 ::::

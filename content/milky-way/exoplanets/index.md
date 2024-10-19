@@ -18,15 +18,15 @@ We have three assets that tell the story of the exoplanets:
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./exoplanet-systems/index)
-![Exoplanet systems](./exoplanet-systems/exoplanets_nightsky_cygnus.png)
+[![Exoplanet systems](./exoplanet-systems/exoplanets_icon.png)](./exoplanet-systems/index)
 :::
 
-:::{grid-item-card} [](./exoplanet-system-module/index)
+:::{grid-item-card} [Exoplanet Module](./exoplanet-system-module/index)
 [![Exoplanet system module](./exoplanet-system-module/exoplanet_module_icon.png)](./exoplanet-system-module/index)
 :::
 
 :::{grid-item-card} [](./exoplanet-candidates/index)
-![Exoplanet candidates](./exoplanet-candidates/exoplanet_candidates_galaxy.png)
+[![Exoplanet candidates](./exoplanet-candidates/exoplanet_candidates_icon.png)](./exoplanet-candidates/index)
 :::
 
 ::::
@@ -82,7 +82,7 @@ Less than one percent of the known systems were discovered using other methods, 
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./exoplanet-systems/index)
-![Exoplanet systems](./exoplanet-systems/exoplanets_nightsky_cygnus.png)
+[![Exoplanet systems](./exoplanet-systems/exoplanets_icon.png)](./exoplanet-systems/index)
 :::
 
 :::{grid-item-card} [](./exoplanet-system-module/index)
@@ -90,7 +90,7 @@ Less than one percent of the known systems were discovered using other methods, 
 :::
 
 :::{grid-item-card} [](./exoplanet-candidates/index)
-![Exoplanet candidates](./exoplanet-candidates/exoplanet_candidates_galaxy.png)
+[![Exoplanet candidates](./exoplanet-candidates/exoplanet_candidates_icon.png)](./exoplanet-candidates/index)
 :::
 
 ::::

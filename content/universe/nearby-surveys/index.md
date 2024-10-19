@@ -15,12 +15,12 @@ authors:
 The galaxy surveys here are generally more complete, and they cover most of the sky. Beyond these nearby surveys, galaxy surveys tend to be less complete and cover less area on the night sky.
 
 
-:::{figure} local_universe.png
-:align: left
-:alt: A view looking back toward the Milky Way Galaxy with each point representing a galaxy. We see nearby galaxy groups labeled in green, and large galaxy clusters labeled in orange.
-
-A view from the local universe. Each point here is a galaxy, where orange and yellow points are in dense areas while green and aqua points are in less dense regions. The Milky Way, marked Home, is at the center, and we see labels for some of the local galaxy groups near the Milky Way and its galaxy group---the Local Group. In the distance is the Norma Cluster, a large galaxy cluster seen from Earth in the constellation Norma. 
-:::
+% :::{figure} local_universe.png
+% :align: left
+% :alt: A view looking back toward the Milky Way Galaxy with each point representing a galaxy. We see nearby galaxy groups labeled in green, and large galaxy clusters labeled in orange.
+% 
+% A view from the local universe. Each point here is a galaxy, where orange and yellow points are in dense areas while green and aqua points are in less dense regions. The Milky Way, marked Home, is at the center, and we see labels for some of the local galaxy groups near the Milky Way and its galaxy group---the Local Group. In the distance is the Norma Cluster, a large galaxy cluster seen from Earth in the constellation Norma. 
+% :::
 
 
 
@@ -30,39 +30,39 @@ A view from the local universe. Each point here is a galaxy, where orange and ye
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./home-label/index)
-![Home (Milky Way) label](./home-label/home_label.png)
+[![Home (Milky Way) label](./home-label/home_label_icon.png)](./home-label/index)
 :::
 
 :::{grid-item-card} [](./local-group/index)
-![Local group](./local-group/local_group_andromeda.png)
+[![Local group](./local-group/local_group_icon.png)](./local-group/index)
 :::
 
 :::{grid-item-card} [](./tully-galaxies/index)
-![Tully galaxies](./tully-galaxies/tully_virgo_cluster_nearby.png)
+[![Tully galaxies](./tully-galaxies/tully_icon.png)](./tully-galaxies/index)
 :::
 
 :::{grid-item-card} [](./tully-galaxies-images/index)
-![Tully galaxies images](./tully-galaxies-images/images_virgo_cluster_large.png)
+[![Tully galaxies images](./tully-galaxies-images/tully_images_icon.png)](./tully-galaxies-images/index)
 :::
 
 :::{grid-item-card} [](./galaxy-group-labels/index)
-![Galaxy group labels](./galaxy-group-labels/galaxy_groups_outside.png)
+[![Galaxy group labels](./galaxy-group-labels/galaxy_groups_icon.png)](./galaxy-group-labels/index)
 :::
 
 :::{grid-item-card} [](./galaxy-cluster-labels/index)
-![Galaxy cluster labels](./galaxy-cluster-labels/galaxy_clusters_nearby.png)
+[![Galaxy cluster labels](./galaxy-cluster-labels/galaxy_clusters_icon.png)](./galaxy-cluster-labels/index)
 :::
 
 :::{grid-item-card} [](./2MASS-galaxies/index)
-![2MASS galaxies](./2MASS-galaxies/2mass_galaxies.png)
+[![2MASS galaxies](./2MASS-galaxies/2mass_galaxies_icon.png)](./2MASS-galaxies/index)
 :::
 
 :::{grid-item-card} [](./6df-galaxies/index)
-![6dF galaxies](./6df-galaxies/6df_cutoff.png)
+[![6dF galaxies](./6df-galaxies/6df_icon.png)](./6df-galaxies/index)
 :::
 
 :::{grid-item-card} [](./voids/index)
-![Voids](./voids/voids_outside.png)
+[![Voids](./voids/voids_icon.png)](./voids/index)
 :::
 
 ::::

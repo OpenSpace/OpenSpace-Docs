@@ -25,11 +25,11 @@ These data sets fill that role, providing a model for the Milky Way that we can 
 :::
 
 :::{grid-item-card} [](./milky-way-volume/index)
-![Galaxy volume](./milky-way-volume/milky_way_model_edgeon.png)
+[![Galaxy volume](./milky-way-volume/milky_way_model_icon.png)](./milky-way-volume/index)
 :::
 
 :::{grid-item-card} [](./milky-way-arms-labels/index)
-![Galaxy arm labels](./milky-way-arms-labels/milkyway_arms_labels.png)
+[![Galaxy arm labels](./milky-way-arms-labels/milkyway_arms_labels_icon.png)](./milky-way-arms-labels/index)
 :::
 
 ::::

@@ -17,7 +17,7 @@ Stellar remnants include objects that are left behind when a star exhausts its f
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./white-dwarfs/index)
-![white dwarfs](./white-dwarfs/white_dwarfs_outside_milkyway.png)
+[![white dwarfs](./white-dwarfs/white_dwarfs_icon.png)](./white-dwarfs/index)
 :::
 
 :::{grid-item-card} [](./pulsars/index)

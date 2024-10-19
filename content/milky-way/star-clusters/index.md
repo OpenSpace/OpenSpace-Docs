@@ -29,11 +29,11 @@ OB Associations are groupings of stars that have moved apart over time and are n
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./open-clusters/index)
-![Open star clusters](./open-clusters/open_clusters_nightsky.png)
+[![Open star clusters](./open-clusters/open_clusters_icon.png)](./open-clusters/index)
 :::
 
 :::{grid-item-card} [](./ob-associations/index)
-![OB associations](./ob-associations/ob_associations_labels.png)
+[![OB associations](./ob-associations/ob_associations_icon.png)](./ob-associations/index)
 :::
 
 :::{grid-item-card} [](./globular-clusters/index)

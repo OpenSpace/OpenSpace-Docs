@@ -20,15 +20,15 @@ Unlike the Milky Way that is organized by object type, here we divide data by ne
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./nearby-surveys/index)
-![Nearby surveys](./nearby-surveys/local_universe.png)
+[![Nearby surveys](./nearby-surveys/local-group/local_group_icon.png)](./nearby-surveys/index)
 :::
 
 :::{grid-item-card} [](./deep-sky-surveys/index)
-![Deep sky surveys](./deep-sky-surveys/deep_sky_surveys.png)
+[![Deep sky surveys](./deep-sky-surveys/quasars/quasars_icon.png)](./deep-sky-surveys/index)
 :::
 
 :::{grid-item-card} [](./cosmic-microwave-background/index)
-![Cosmic microwave background](./cosmic-microwave-background/cmb_planck.png)
+[![Cosmic microwave background](./cosmic-microwave-background/planck/planck_cmb_icon.png)](./cosmic-microwave-background/index)
 :::
 
 ::::
@@ -77,15 +77,15 @@ That is the nature of the universe. There is no center and, except for very near
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./nearby-surveys/index)
-![Nearby surveys](./nearby-surveys/local_universe.png)
+[![Nearby surveys](./nearby-surveys/local-group/local_group_icon.png)](./nearby-surveys/index)
 :::
 
 :::{grid-item-card} [](./deep-sky-surveys/index)
-![Deep sky surveys](./deep-sky-surveys/deep_sky_surveys.png)
+[![Deep sky surveys](./deep-sky-surveys/quasars/quasars_icon.png)](./deep-sky-surveys/index)
 :::
 
 :::{grid-item-card} [](./cosmic-microwave-background/index)
-![Cosmic microwave background](./cosmic-microwave-background/cmb_planck.png)
+[![Cosmic microwave background](./cosmic-microwave-background/planck/planck_cmb_icon.png)](./cosmic-microwave-background/index)
 :::
 
 ::::

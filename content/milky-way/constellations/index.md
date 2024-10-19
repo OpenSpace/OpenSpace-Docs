@@ -15,16 +15,16 @@ We represent constellations in three ways:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./constellation-lines/index)
-![constellation lines](./constellation-lines/constellation_lines_orion_labels.png)
+:::{grid-item-card} [Lines](./constellation-lines/index)
+[![constellation lines](./constellation-lines/constellation_lines_icon.png)](./constellation-lines/index)
 :::
 
-:::{grid-item-card} [](./constellation-art/index)
+:::{grid-item-card} [Art](./constellation-art/index)
 [![constellation art](./constellation-art/constellation_art_icon.png)](./constellation-art/index)
 :::
 
-:::{grid-item-card} [](constellation-boundaries/index)
-![constellation boundaries](./constellation-boundaries/constellation-boundaries-andromeda.png)
+:::{grid-item-card} [Boundaries](./constellation-boundaries/index)
+[![constellation boundaries](./constellation-boundaries/constellation_boundaries_icon.png)](./constellation-boundaries/index)
 :::
 
 ::::
@@ -70,7 +70,7 @@ For this reason, the constellations only work from Earth's perspective. Once you
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./constellation-lines/index)
-![constellation lines](./constellation-lines/constellation_lines_orion_labels.png)
+[![constellation lines](./constellation-lines/constellation_lines_icon.png)](./constellation-lines/index)
 :::
 
 :::{grid-item-card} [](./constellation-art/index)
@@ -78,7 +78,7 @@ For this reason, the constellations only work from Earth's perspective. Once you
 :::
 
 :::{grid-item-card} [](./constellation-boundaries/index)
-![constellation boundaries](./constellation-boundaries/constellation-boundaries-andromeda.png)
+[![constellation boundaries](./constellation-boundaries/constellation_boundaries_icon.png)](./constellation-boundaries/index)
 :::
 
 ::::

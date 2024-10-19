@@ -23,7 +23,7 @@ For the visible sky, we are left with the gas and dust that makes up the Milky W
 :::
 
 :::{grid-item-card} [](visible-milky-way/index)
-![visible all-sky image](./visible-milky-way/visible_scorpius.png)
+[![visible all-sky image](./visible-milky-way/visible_icon.png)](./visible-milky-way/index)
 :::
 
 ::::

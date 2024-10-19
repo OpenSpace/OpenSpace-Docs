@@ -23,11 +23,11 @@ Some nebulae are associated with the birth of stars: the so-called star forming 
 :::
 
 :::{grid-item-card} [](./planetary-nebulae/index)
-![Planetary nebulae](./planetary-nebulae/PN_near_sun.png)
+[![Planetary nebulae](./planetary-nebulae/PN_icon.png)](./planetary-nebulae/index)
 :::
 
 :::{grid-item-card} [](./supernova-remnants/index)
-![Supernova remnants](./supernova-remnants/supernova_remnants_solar_neighborhood.png)
+[![Supernova remnants](./supernova-remnants/SNR_icon.png)](./supernova-remnants/index)
 :::
 
 ::::
