@@ -55,7 +55,7 @@ Exoplanet systems remain huddled around the Sun for the most part. This reflects
 :align: left
 :alt: Blue rings mark the locations of exoplanetary systems. We are looking back toward the Sun from hundreds of light years away, and the green, wire-frame sphere, centered on the Sun, shows the extent of our radio signals. The sphere is 160 light years in diameter.
 
-Blue rings mark stars that have a known [exoplanetary system](./exoplanet-systems/index). The 80-light-year-radius, wire-frame sphere is called the Radio Sphere and encompasses our radio signals, which have been traveling out into space for roughly 80 years. The Sun and Solar System lie at the center of the sphere. Many exoplanets lie inside the sphere and, theoretically, have heard from us.
+Blue rings mark stars that have a known exoplanetary system. The 80-light-year-radius, wire-frame sphere is called the Radio Sphere and encompasses our radio signals, which have been traveling out into space for roughly 80 years. The Sun and Solar System lie at the center of the sphere. Many exoplanets lie inside the sphere and, theoretically, have heard from us.
 :::
 
 
