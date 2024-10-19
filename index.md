@@ -93,6 +93,7 @@ getting-started/profiles/index
 :maxdepth: 1
 :hidden:
 
+content/solar-system/index
 content/milky-way/index
 content/universe/index
 content/asteroids
