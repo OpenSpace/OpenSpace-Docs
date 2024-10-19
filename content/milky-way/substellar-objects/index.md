@@ -17,7 +17,7 @@ Astronomers refer to an object that does not have enough mass to fuse hydrogen i
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./brown-dwarfs/index)
-![brown dwarfss](./brown-dwarfs/brown_dwarfs_around_sun.png)
+[![brown dwarfs](./brown-dwarfs/brown_dwarfs_icon.png)](./brown-dwarfs/index)
 :::
 
 ::::

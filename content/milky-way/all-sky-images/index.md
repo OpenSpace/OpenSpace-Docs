@@ -19,7 +19,7 @@ For the visible sky, we are left with the gas and dust that makes up the Milky W
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./hydrogen-alpha/index)
-![hydrogen-alpha sky](./hydrogen-alpha/halpha_orion.png)
+[![hydrogen-alpha sky](./hydrogen-alpha/halpha_icon.png)](./hydrogen-alpha/index)
 :::
 
 :::{grid-item-card} [](visible-milky-way/index)

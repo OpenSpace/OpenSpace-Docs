@@ -22,7 +22,7 @@ We have three assets that tell the story of the exoplanets:
 :::
 
 :::{grid-item-card} [](./exoplanet-system-module/index)
-![Exoplanet system module](./exoplanet-system-module/exoplanet_system_kepler11.png)
+[![Exoplanet system module](./exoplanet-system-module/exoplanet_module_icon.png)](./exoplanet-system-module/index)
 :::
 
 :::{grid-item-card} [](./exoplanet-candidates/index)
@@ -30,23 +30,6 @@ We have three assets that tell the story of the exoplanets:
 :::
 
 ::::
-
-
-:::{figure} exoplanets_radio_sphere.png
-:align: left
-:alt: Blue rings mark the locations of exoplanetary systems. We are looking back toward the Sun from hundreds of light years away, and the green, wire-frame sphere, centered on the Sun, shows the extent of our radio signals. The sphere is 160 light years in diameter.
-
-Blue rings mark stars that have a known [exoplanetary system](./exoplanet-systems/index). The 80-light-year-radius, wire-frame sphere is called the Radio Sphere and encompasses our radio signals, which have been traveling out into space for roughly 80 years. The Sun and Solar System lie at the center of the sphere. Many exoplanets lie inside the sphere and, theoretically, have heard from us.
-:::
-
-
-:::{figure} ./exoplanet-system-module/exoplanet_system_kepler11.png
-:align: left
-:alt: The Kepler-11 system with its six planets, and the habitable zone in green.
-
-The [exoplanet system module](./exoplanet-system-module/index) visualizes the planetary system and habitable zone around each exoplanetary system. Here, we see the star Kepler-11 and its system of six planets and the green habitable zone.
-:::
-
 
 
 ## Detecting Exoplanets---Lost in Starlight
@@ -103,7 +86,7 @@ Less than one percent of the known systems were discovered using other methods, 
 :::
 
 :::{grid-item-card} [](./exoplanet-system-module/index)
-![Exoplanet system module](./exoplanet-system-module/exoplanet_system_kepler11.png)
+[![Exoplanet system module](./exoplanet-system-module/exoplanet_module_icon.png)](./exoplanet-system-module/index)
 :::
 
 :::{grid-item-card} [](./exoplanet-candidates/index)

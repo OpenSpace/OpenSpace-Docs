@@ -37,7 +37,7 @@ Looking at the Milky Way Galaxy we see the star cluster data sets overlaid. Gree
 :::
 
 :::{grid-item-card} [](./globular-clusters/index)
-![Globular star clusters](./globular-clusters/globular_clusters_galaxy_view.png)
+[![Globular star clusters](./globular-clusters/globular_clusters_icon.png)](./globular-clusters/index)
 :::
 
 ::::

@@ -19,7 +19,7 @@ Some nebulae are associated with the birth of stars: the so-called star forming 
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./HII-regions/index)
-![HII regions](./HII-regions/HII_nightsky_sagittarius.png)
+[![HII regions](./HII-regions/HII_regions_icon.png)](./HII-regions/index)
 :::
 
 :::{grid-item-card} [](./planetary-nebulae/index)

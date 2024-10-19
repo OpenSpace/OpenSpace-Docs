@@ -20,7 +20,7 @@ We represent constellations in three ways:
 :::
 
 :::{grid-item-card} [](./constellation-art/index)
-![constellation art](./constellation-art/constellation_art_orion.png)
+[![constellation art](./constellation-art/constellation_art_icon.png)](./constellation-art/index)
 :::
 
 :::{grid-item-card} [](constellation-boundaries/index)
@@ -74,7 +74,7 @@ For this reason, the constellations only work from Earth's perspective. Once you
 :::
 
 :::{grid-item-card} [](./constellation-art/index)
-![constellation art](./constellation-art/constellation_art_orion.png)
+[![constellation art](./constellation-art/constellation_art_icon.png)](./constellation-art/index)
 :::
 
 :::{grid-item-card} [](./constellation-boundaries/index)

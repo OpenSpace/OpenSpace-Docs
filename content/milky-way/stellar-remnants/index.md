@@ -21,7 +21,7 @@ Stellar remnants include objects that are left behind when a star exhausts its f
 :::
 
 :::{grid-item-card} [](./pulsars/index)
-![pulsars](./pulsars/pulsars_nightsky_scorpius.png)
+[![pulsars](./pulsars/pulsars_icon.png)](./pulsars/index)
 :::
 
 ::::

@@ -21,7 +21,7 @@ These data sets fill that role, providing a model for the Milky Way that we can 
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./milky-way-galaxy-image/index)
-![Galaxy image](./milky-way-galaxy-image/milky_way_image.png)
+[![Galaxy image](./milky-way-galaxy-image/galaxy_image_icon.png)](./milky-way-galaxy-image/index)
 :::
 
 :::{grid-item-card} [](./milky-way-volume/index)

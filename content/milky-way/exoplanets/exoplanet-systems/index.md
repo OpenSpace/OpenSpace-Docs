@@ -48,7 +48,19 @@ The night sky looking toward the constellations Orion and Taurus. The exoplaneta
 
 ## Distribution
 
-Exoplanet systems remain huddled around the Sun for the most part. This reflects our observational constraints. Exceptions include the conical swath of systems in the Kepler mission's footprint, which stretches out into the Galaxy in the direction of the constellation Cygnus. We also see in the image below the abundance of systems from the K2 mission that appear perpendicular to the Kepler portion.
+Exoplanet systems remain huddled around the Sun for the most part. This reflects our observational constraints. When viewed with the Radio Sphere, we can see that there are many systems within that theoretical boundary of our radio signals.
+
+
+:::{figure} exoplanets_radio_sphere.png
+:align: left
+:alt: Blue rings mark the locations of exoplanetary systems. We are looking back toward the Sun from hundreds of light years away, and the green, wire-frame sphere, centered on the Sun, shows the extent of our radio signals. The sphere is 160 light years in diameter.
+
+Blue rings mark stars that have a known [exoplanetary system](./exoplanet-systems/index). The 80-light-year-radius, wire-frame sphere is called the Radio Sphere and encompasses our radio signals, which have been traveling out into space for roughly 80 years. The Sun and Solar System lie at the center of the sphere. Many exoplanets lie inside the sphere and, theoretically, have heard from us.
+:::
+
+
+
+Exceptions include the conical swath of systems in the Kepler mission's footprint, which stretches out into the Galaxy in the direction of the constellation Cygnus. We also see in the image below the abundance of systems from the K2 mission that appear perpendicular to the Kepler portion.
 
 
 :::{figure} exoplanets_milky_way.png
