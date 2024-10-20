@@ -119,6 +119,15 @@ In 1948, astronomers [Ralph Alpher](https://en.wikipedia.org/wiki/Ralph_Alpher) 
 
 Alpher searched for this cool gas, but it would be another sixteen years before it was discovered, not by astronomers but by two physicists working at [Bell Telephone Laboratories](https://en.wikipedia.org/wiki/Bell_Labs) in New Jersey. In 1964, [Arno Penzias](https://en.wikipedia.org/wiki/Arno_Allan_Penzias) (1933--2024) and [Robert Wilson](https://en.wikipedia.org/wiki/Robert_Woodrow_Wilson) (b. 1936) were trying to communicate with a recently launched communications satellite and could not remove "noise" from their transmissions. This weak hiss was a constant nuisance that was present during the day, the night, and throughout the year. This fact ruled out possibilities such as equipment interference, atmospheric effects, or even bird droppings on the radio telescope built to communicate with their satellite.
 
+
+:::{figure} 20231104-DSC_6268-lg.jpg
+:align: left
+:alt: The Horn Antenna that discovered the cosmic microwave background.
+
+The Horn Antenna, located in Holmdel, New Jersey, on the former Bell Labs campus, was the instrument that Arno Penzias and Robert Wilson used to discover the cosmic microwave background light. The bizarre looking horn antenna was designed to listen for satellite communications and radio signals (microwaves are within the broader radio spectrum). The horn is focused into the control room on the right, where the detector was located. Credit: Brian P. Abbott
+:::
+
+
 Penzias and Wilson tried their best to remove this noise but were unsuccessful. In the end, they acknowledged that the faint microwave signal must be real and is not from some defect or artificial
 interference.
 
