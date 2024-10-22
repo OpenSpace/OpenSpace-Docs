@@ -112,7 +112,7 @@ Once you approach a system, it will appear similar to the image below for the Ke
 :align: left
 :alt: The Kepler-11 system with its six planets, and the habitable zone in green.
 
-The Kepler-11 system of six planets with the yellowish host star, Kepler-11, and accompanying planetary orbits. Encircling the system is a diagram of the {term}`habitable zone`, with red and blue edges indicating its probable boundaries and a green center indicating where liquid water could exist.
+The Kepler-11 system of six planets with the yellowish host star, Kepler-11, and accompanying planetary orbits. Encircling the system is a diagram of the {term}`habitable zone`, with red and blue edges indicating its probable boundaries and a green center indicating where liquid water could exist for an earth-sized planet.
 :::
 
 
@@ -123,7 +123,7 @@ The exoplanets module renders planetary systems based on the orbital characteris
 
 The host star is the the proper color, representing its stellar type, and it is necessary to dim the star as we pull into the system---just as we do in the Solar System. Dimming the star means it's no longer calibrated with the other stars. Once you pull away from the system, the star brightens up and is back on par with the other stars.
 
-The {term}`habitable zone` is represented by a multicolored disk. Green indicates where liquid water could likely exist given the properties of the host star, though the zone can change with planetary mass as well. The red and blue edges represent the estimated edges of the zone. These are conservative estimates and could be refined with more atmospheric modeling.
+The {term}`habitable zone` is represented by a multicolored disk. Green indicates where liquid water could likely exist given the properties of the host star, though the zone can change with planetary mass as well---the zones here are calibrated for earth-sized planets. The red and blue edges represent the estimated edges of the zone. These are conservative estimates and could be refined with more atmospheric modeling.
 
 
 
