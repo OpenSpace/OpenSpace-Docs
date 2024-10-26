@@ -49,9 +49,9 @@ From the scene menu, each constellation is accessible for you to turn on and off
 
 ### Keyboard Shortcuts
 
-`c`, `Shift-c`
+{kbd}`c`, {kbd}`Shift-c`
 
-Use the `c` key to turn on all constellation figures. There may be a slight delay while they load, but this will bring up the artwork for all 88 constellations. Use `Shift-c` to turn them off.
+Use the {kbd}`c` key to turn on all constellation figures. There may be a slight delay while they load, but this will bring up the artwork for all 88 constellations. Use {kbd}`Shift-c` to turn them off.
 
 
 ### Actions Panel

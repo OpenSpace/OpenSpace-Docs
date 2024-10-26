@@ -65,7 +65,7 @@ For more on dwarf galaxies, see [Local Group](../../../universe/nearby-surveys/l
 :align: left
 :alt: Looking back toward the Milky Way Galaxy from a distant vantage point, we see yellow points huddled around the Galaxy showing the locations of the globular clusters, and more distant aqua points demonstrating where the nearby dwarf galaxies are located. 
 
-Looking back at the Milky Way from extragalactic space. We see the Milky Way Galaxy and the yellow points indicating the location of the globular clusters, huddled around the Galaxy. Co-mingling with the globular clusters are the dwarf galaxies of the [Local Group](../../../universe/nearby-surveys/local-group/index)in aqua. These dwarf galaxies also revolve around the Milky Way.
+Looking back at the Milky Way from extragalactic space. We see the Milky Way Galaxy and the yellow points indicating the location of the globular clusters, huddled around the Galaxy. Co-mingling with the globular clusters are the dwarf galaxies of the [Local Group](../../../universe/nearby-surveys/local-group/index) in aqua. These dwarf galaxies also revolve around the Milky Way.
 :::
 
 

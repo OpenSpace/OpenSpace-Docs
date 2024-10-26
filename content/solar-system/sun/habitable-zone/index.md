@@ -14,7 +14,7 @@ authors:
 This section is incomplete---nothing to see here, yet.
 :::
 
-
+The habitable zone is the region around a star where liquid water could exist on a hypothetical planet.
 
 
 ## Dossier

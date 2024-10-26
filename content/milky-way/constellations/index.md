@@ -9,9 +9,7 @@ authors:
 
 {menuselection}`Scene --> Milky Way --> Constellations`
 
-Constellations are the objects, animals, and people conjured up from star patterns the ancients perceived in the night sky. Passed down through the millennia, eventually astronomers adopted eighty-eight official constellations located over the entire sky.
 
-We represent constellations in three ways:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -28,6 +26,9 @@ We represent constellations in three ways:
 :::
 
 ::::
+
+
+Constellations are the objects, animals, and people conjured up from star patterns the ancients perceived in the night sky. Passed down through the millennia, eventually astronomers adopted eighty-eight official constellations located over the entire sky.
 
 
 (constellation-history)=
@@ -64,8 +65,9 @@ This is especially pertinent to the constellations because they are built from l
 For this reason, the constellations only work from Earth's perspective. Once you fly away from Earth, the figures begin to distort and become unrecognizable. Visually, this has utility, particularly as one flies away from the Solar System and into the neighboring stars where the true dimensionality of the Galaxy is highlighted by the distorted constellation lines.
 
 
+---
 
-## Assets
+
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -86,7 +88,6 @@ For this reason, the constellations only work from Earth's perspective. Once you
 
 :::{toctree}
 :maxdepth: 1
-:caption: Assets
 :hidden:
 
 constellation-lines/index

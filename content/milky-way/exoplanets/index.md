@@ -9,11 +9,7 @@ authors:
 
 {menuselection}`Scene --> Milky Way --> Exoplanets`
 
-Extrasolar planets, or exoplanets, are a relatively new phenomenon in astrophysics. While many astronomers believed in their existence, observational evidence was not confirmed until 1995. Since that time, scientists have discovered thousands of systems consisting of one or more planets around a host star.
 
-Decades after their discovery, more sophisticated missions are discovering the locations and characteristics of these systems which we visualize with these data sets.
-
-We have three assets that tell the story of the exoplanets:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -30,6 +26,11 @@ We have three assets that tell the story of the exoplanets:
 :::
 
 ::::
+
+
+Extrasolar planets, or exoplanets, are a relatively new phenomenon in astrophysics. While many astronomers believed in their existence, observational evidence was not confirmed until 1995. Since that time, scientists have discovered thousands of systems consisting of one or more planets around a host star.
+
+Decades after their discovery, more sophisticated missions are discovering the locations and characteristics of these systems which we visualize with these data sets.
 
 
 ## Detecting Exoplanets---Lost in Starlight
@@ -75,9 +76,9 @@ At the bleeding edge of exoplanet science is direct imaging. Planets that orbit 
 Less than one percent of the known systems were discovered using other methods, including pulsar timings that measure the periodic variation in the light arrival time.
 
 
+---
 
 
-## Assets
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -98,7 +99,6 @@ Less than one percent of the known systems were discovered using other methods, 
 
 :::{toctree}
 :maxdepth: 1
-:caption: Assets
 :hidden:
 
 exoplanet-systems/index

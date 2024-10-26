@@ -10,8 +10,6 @@ authors:
 {menuselection}`Scene --> Universe --> Cosmic Microwave Background`
 
 
-The cosmic microwave background (CMB) radiation is our baby picture of the universe. It is the earliest light that we can see and reveals the primordial conditions in the early universe. For the past century, we have searched for, discovered, and refined our knowledge of the CMB using ground and space telescopes, but the history of its discovery predates our ventures into space.
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -28,6 +26,9 @@ The cosmic microwave background (CMB) radiation is our baby picture of the unive
 :::
 
 ::::
+
+
+The cosmic microwave background (CMB) radiation is our baby picture of the universe. It is the earliest light that we can see and reveals the primordial conditions in the early universe. For the past century, we have searched for, discovered, and refined our knowledge of the CMB using ground and space telescopes, but the history of its discovery predates our ventures into space.
 
 
 ## The CMB Image
@@ -141,7 +142,8 @@ Penzias and Wilson were awarded the Nobel Prize in 1978 for their discovery. The
 
 
 
-## Assets
+---
+
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
@@ -164,7 +166,6 @@ Penzias and Wilson were awarded the Nobel Prize in 1978 for their discovery. The
 
 :::{toctree}
 :maxdepth: 1
-:caption: Assets
 :hidden:
 
 cobe/index

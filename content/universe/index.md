@@ -10,12 +10,6 @@ authors:
 {menuselection}`Scene --> Universe`
 
 
-{menuselection}`Universe` includes everything outside the Milky Way Galaxy.
-
-These data sets are more homogeneous, consisting mostly of galaxy surveys. We also display the microwave background images here, and a few other contextual data sets.
-
-Unlike the Milky Way that is organized by object type, here we divide data by nearby surveys, deep sky surveys, and the cosmic microwave background all-sky maps.
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -32,6 +26,13 @@ Unlike the Milky Way that is organized by object type, here we divide data by ne
 :::
 
 ::::
+
+
+{menuselection}`Universe` includes everything outside the Milky Way Galaxy.
+
+These data sets are more homogeneous, consisting mostly of galaxy surveys. We also display the microwave background images here, and a few other contextual data sets.
+
+Unlike the Milky Way that is organized by object type, here we divide data by nearby surveys, deep sky surveys, and the cosmic microwave background all-sky maps.
 
 
 
@@ -70,25 +71,6 @@ That is the nature of the universe. There is no center and, except for very near
 
 
 
-
-## Subsections
-
-::::{grid} 1 2 2 3
-:gutter: 1 1 1 2
-
-:::{grid-item-card} [](./nearby-surveys/index)
-[![Nearby surveys](./nearby-surveys/local-group/local_group_icon.png)](./nearby-surveys/index)
-:::
-
-:::{grid-item-card} [](./deep-sky-surveys/index)
-[![Deep sky surveys](./deep-sky-surveys/quasars/quasars_icon.png)](./deep-sky-surveys/index)
-:::
-
-:::{grid-item-card} [](./cosmic-microwave-background/index)
-[![Cosmic microwave background](./cosmic-microwave-background/planck/planck_cmb_icon.png)](./cosmic-microwave-background/index)
-:::
-
-::::
 
 :::{toctree}
 :maxdepth: 1
