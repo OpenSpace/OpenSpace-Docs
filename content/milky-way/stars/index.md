@@ -34,7 +34,7 @@ authors:
 :::
 
 :::{grid-item-card} [](./sun/index)
-
+[![sun](./sun/sun_icon.png)](./sun/index)
 :::
 
 ::::
