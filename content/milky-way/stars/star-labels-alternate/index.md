@@ -18,7 +18,7 @@ A small number of more prominent stars have proper names like Sirius, Betelgeuse
 :align: left
 :alt: A view of the night sky looking toward Orion with lines forming the constellations, and labels on the nearby stars.
 
-A view toward Orion with the alternate star labels turned on. As with all labels, the larger it is, the closer it is to you, but we do not draw labels too far into the distance, so these are all mostly nearby stars. We have Greek-named (Bayer catalog) stars, like `Alf CMa`, short for Alpha Canis Majoris (also known as Sirius), at bottom-center, and we also include Flamsteed-numbered stars for those without a Greek designation. We don't see Alpha Orionis, for example, because it is too far away from our current position for the label to be drawn.
+A view toward Orion with the alternate star labels turned on. As with all labels, the larger it is, the closer it is to you, but we do not draw labels too far into the distance, so these are all mostly nearby stars. We have Greek-named (Bayer catalog) stars, like "Alf CMa", short for Alpha Canis Majoris (also known as Sirius), at bottom-center, and we also include Flamsteed-numbered stars for those without a Greek designation. We don't see Alpha Orionis, for example, because it is too far away from our current position for the label to be drawn.
 :::
 
 
