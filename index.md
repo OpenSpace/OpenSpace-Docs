@@ -93,9 +93,7 @@ getting-started/profiles/index
 :maxdepth: 1
 :hidden:
 
-content/solar-system/index
-content/milky-way/index
-content/universe/index
+content/index
 content/asteroids
 content/ephemeris/index
 content/gaia
