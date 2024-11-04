@@ -77,6 +77,9 @@ using-openspace/users/index
 using-openspace/installers/index
 using-openspace/builders/index
 
+using-openspace/session-recording
+using-openspace/skybrowser/index
+
 :::
 
 :::{toctree}
@@ -94,17 +97,6 @@ getting-started/profiles/index
 :hidden:
 
 content/index
-content/asteroids
-content/ephemeris/index
-content/gaia
-content/globebrowsing/index
-content/point-data/index
-content/profiles
-content/renderablestars
-content/satellites
-content/session-recording
-content/skybrowser/index
-content/solar-video-overlay
 :::
 
 :::{toctree}
@@ -115,6 +107,15 @@ content/solar-video-overlay
 creating-data-assets/asset-creation/index
 creating-data-assets/custom-web-ui/index
 
+creating-data-assets/asteroids
+creating-data-assets/ephemeris/index
+creating-data-assets/gaia
+creating-data-assets/globebrowsing/index
+creating-data-assets/point-data/index
+creating-data-assets/profiles
+creating-data-assets/renderablestars
+creating-data-assets/satellites
+creating-data-assets/solar-video-overlay
 :::
 
 :::{toctree}
