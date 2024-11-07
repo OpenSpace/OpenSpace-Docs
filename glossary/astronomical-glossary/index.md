@@ -7,6 +7,11 @@ All-sky Survey
     An all-sky image constructed from many small images of the night sky. Astronomers have these in visible light, which is the light we see with our eyes, but also have images in infrared, radio, X-Ray, and Gamma Ray areas of the electromagnetic spectrum. Also, the cosmic microwave background images are an example of a processed all-sky image. These images are two-dimensional in nature, so we wrap them onto a sphere that surrounds our vantage point.
 
 
+
+Astronomical Unit
+    Definition.
+
+
 Astrophysical dust
     Astronomers refer to dust as the microscopic rocks that float around the universe. These rocky particles range from a few molecules to maybe a millimeter in diameter. From our point of view, dist is a nuisance and obscures our view of objects behind it. However, infrared telescopes allow us to see through the dust. Dust scatters light and can dim light and make objects appear more red than they are. Just as the daytime sky is blue because the atoms in our atmosphere scatter blue light, dust scatters red light and reddens objects, which astronomers call *extinction* of light.
 

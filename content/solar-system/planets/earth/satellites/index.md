@@ -5,9 +5,9 @@ authors:
 ---
 
 
-# Dwarf Planets
+# Satellites
 
-{menuselection}`Scene --> Solar System --> Dwarf Planets`
+{menuselection}`Scene --> Solar System --> Planets --> Earth --> Satellites`
 
 
 :::{warning}
@@ -15,15 +15,15 @@ This section is incomplete---nothing to see here, yet.
 :::
 
 
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./pluto/index)
-[![Pluto](./pluto/pluto_icon.png)](./pluto/index)
+:::{grid-item-card} [](./iss/index)
+[![International Space Station](./iss/iss_icon.png)](./iss/index)
 :::
- 
+
 ::::
+
 
 
 
@@ -31,6 +31,9 @@ This section is incomplete---nothing to see here, yet.
 :maxdepth: 1
 :hidden:
 
-pluto/index
+iss/index
+
 :::
+
+
 

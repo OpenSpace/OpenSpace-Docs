@@ -15,6 +15,25 @@ This section is incomplete---nothing to see here, yet.
 :::
 
 
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](./sun-surface/index)
+[![Sun surface](./sun-surface/sun_photosphere_icon.png)](./sun-surface/index)
+:::
+
+:::{grid-item-card} [](./sun-glare/index)
+[![Sun glare](./sun-glare/sun_glare_icon.png)](./sun-glare/index)
+:::
+
+:::{grid-item-card} [](./habitable-zone/index)
+[![Habitable zone](./habitable-zone/sun_habitable_zone_icon.png)](./habitable-zone/index)
+:::
+
+::::
+
+
+
 The Sun is our local star. It is responsible for the formation of the Solar System,  provides energy to the planets, drives the weather, and allows for plants to thrive and feed us---it enables the conditions for life itself to exist on our world. The Sun is vital to our very existence on Earth, but when compared to the hundreds of billions of stars in the Milky Way Galaxy, it is not terribly special in any way. In fact, it is an average star, and perhaps that is good for us.
 
 
@@ -61,32 +80,14 @@ Relative to the plane of the Milky Way Galaxy, the orbits of the planets are tip
 % On average, Earth is 149 million kilometers (93 million miles) from the Sun, with its closest approach (147 million km or 91.4 million miles) in early January and its farthest distance from the Sun in July (152 million km, or 94.5 million miles). While the planets' orbits look circular, they are actually ellipses that, in most cases, are close to circular.
 
 
-## Subsections
 
-::::{grid} 1 2 2 3
-:gutter: 1 1 1 2
-
-:::{grid-item-card} [](./sun/index)
-% ![](.png)
-:::
-
-:::{grid-item-card} [](./sun-glare/index)
-% ![](.png)
-:::
-
-:::{grid-item-card} [](./habitable-zone/index)
-% ![](.png)
-:::
-
-::::
 
 :::{toctree}
 :maxdepth: 1
-:caption: Subsections
 :hidden:
 
-sun/index
 sun-glare/index
+sun-surface/index
 habitable-zone/index
 
 :::
