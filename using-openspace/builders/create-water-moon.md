@@ -1,7 +1,7 @@
 # Create and display a "Water Moon"
 The objective is to show all the volume of the water on Earth as a little "moon" right next to Earth. 
 For this, we're going to create an asset. 
-We could create a [renderable globe](/content/globebrowsing/creation/creating-a-renderableglobe) to do this, 
+We could create a [renderable globe](/creating-data-assets/globebrowsing/creation/creating-a-renderableglobe) to do this, 
 but we have a simpler way, using the [RenderableSphereImageLocal](/generated/asset-components/RenderableSphereImageLocal) asset component 
 introduced in version 0.20.
 

@@ -108,7 +108,7 @@ nan 0.3 0.3 0.3 0.5  # (transparent gray)
 Note that the exact position of the lines with the `nan`, `belowRange`, or `aboveRange` keys in the file does not matter.
 
 ## Texture Map (.tmap)
-Texture maps are used when loading CSV datasets that should be [rendered using multiple textures](/content/point-data/advanced.md#using-multiple-textures). The dataset should then include a column with indices of textures to use for the rendering, and the texture map file is a mapping between those indices and a certain texture file.
+Texture maps are used when loading CSV datasets that should be [rendered using multiple textures](./advanced.md#using-multiple-textures). The dataset should then include a column with indices of textures to use for the rendering, and the texture map file is a mapping between those indices and a certain texture file.
 
 The file starts with an optional comment, and then each line includes two values:
   - An index for the texture (integer).

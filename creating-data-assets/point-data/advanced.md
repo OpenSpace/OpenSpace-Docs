@@ -1,15 +1,15 @@
 # Advanced Rendering
-This page includes some more advanced rendering concepts for the `RenderablePointCloud` renderable type and its [specializations](/content/point-data/point-data.md#specializations-of-renderablepointcloud). For the basics on settings, options, and customizations when rendering point datasets, see the page on [Rendering Point Data](/content/point-data/point-data.md).
+This page includes some more advanced rendering concepts for the `RenderablePointCloud` renderable type and its [specializations](./point-data.md#specializations-of-renderablepointcloud). For the basics on settings, options, and customizations when rendering point datasets, see the page on [Rendering Point Data](./point-data.md).
 
 ## Using Multiple Textures
-Most commonly, we want to use one texture, or sprite, for all the points in a dataset. More about how to do this on [this page](/content/point-data/point-data.md#adding-a-texture). However, it is also possible to use multiple textures and map which one is used for which point using a column in the dataset.
+Most commonly, we want to use one texture, or sprite, for all the points in a dataset. More about how to do this on [this page](./point-data.md#adding-a-texture). However, it is also possible to use multiple textures and map which one is used for which point using a column in the dataset.
 
 To add multiple textures to a point cloud, the dataset must include a mapping of image names to a number that can be added to each data point. All the images should be located in the same folder, or the name has to be specified as a path relative to a specific folder. You also need to provide information about which column in the dataset corresponds to the texture index for the point, as well as a location for where the textures are located on disk. How to do this depends on whether the dataset is loaded from a CSV file or SPECK file.
 
 The sections below cover how to load multiple textures from the data when using SPECK or CSV, respectively.
 
 :::{note}
-The `Texture` entry in the asset when using multiple textures looks very similar to [adding a single texture](/content/point-data/point-data.md#adding-a-texture), but here a `Folder` is specified instead of a `File`. By specifying a folder, the renderable will automatically be set to multi-texture mode, and any single file will be ignored.
+The `Texture` entry in the asset when using multiple textures looks very similar to [adding a single texture](./point-data.md#adding-a-texture), but here a `Folder` is specified instead of a `File`. By specifying a folder, the renderable will automatically be set to multi-texture mode, and any single file will be ignored.
 :::
 
 :::{note}
@@ -63,7 +63,7 @@ The `openspace.absPath` call is needed if you want to use path tokens (like `${U
 :::
 
 ### Texture data - CSV
-When using a CSV file, the texture mapping is done in a separate [texture map (.tmap)](/content/point-data/data-formats.md#texture-map-tmap) file. Below is an example of a CSV data file and a texture map file. The final column in the CSV file contains the index of the data file, which should match the ones in the texture map.
+When using a CSV file, the texture mapping is done in a separate [texture map (.tmap)](./data-formats.md#texture-map-tmap) file. Below is an example of a CSV data file and a texture map file. The final column in the CSV file contains the index of the data file, which should match the ones in the texture map.
 
 ```
 x,y,z,a,b,texture
@@ -116,7 +116,7 @@ To reduce the number of render calls needed for your point cloud, make sure to u
 :::
 
 ## Orientation From Data
-When using the `Fixed Rotation` [orientation option](/content/point-data/point-data.md#orientation) for rendering the points, the orientation per point may be read from the dataset. In that case, the points are no longer rendered based on the position of the camera, but on a specified orientation per point. This can be useful when rendering objects that are given as just 3D positions, but which should be represented as 3D planes with a certain rotation. For example, the images for the galaxies in the Tully dataset of Digital Universe are rendered using this method.
+When using the `Fixed Rotation` [orientation option](./point-data.md#orientation) for rendering the points, the orientation per point may be read from the dataset. In that case, the points are no longer rendered based on the position of the camera, but on a specified orientation per point. This can be useful when rendering objects that are given as just 3D positions, but which should be represented as 3D planes with a certain rotation. For example, the images for the galaxies in the Tully dataset of Digital Universe are rendered using this method.
 
 Below is an example of what parameters must be specified in the asset file to render points based on orientation data in the dataset. In addition, the data file must, of course, also include this orientation information. More about this in the next section.
 

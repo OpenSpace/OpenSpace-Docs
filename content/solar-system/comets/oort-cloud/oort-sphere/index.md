@@ -5,14 +5,9 @@ authors:
 ---
 
 
-# Oort Cloud
+# Oort Sphere
 
 {menuselection}`Scene --> Solar System --> Comets --> Oort Cloud --> Oort Sphere`
-
-
-:::{warning}
-This section is incomplete---nothing to see here, yet.
-:::
 
 
 The Oort Sphere is a diagrammatic representation of the Oort Cloud where it is most dense. The Oort Cloud is a diffuse distribution of icy planetesimals, so one sphere cannot represent it accurately. However, this sphere has utility in that it shows the scale of the outer reaches of the Solar System---the extent of our star system within the Milky Way.

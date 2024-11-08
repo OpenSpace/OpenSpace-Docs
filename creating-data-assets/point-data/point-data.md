@@ -448,7 +448,7 @@ Per default, the planes that make up the points will be oriented to face the cam
 | :--- | :--- |
 | `Camera View Direction` | Orient planes to face the view direction of the camera. A billboarded mode that is suitable for *planar* displays. |
 | `Camera Position Normal` | Orient planes to face the position of the camera. A billboarded mode that is suitable for *spherical* displays. |
-| `Fixed Rotation` | Apply no specific camera-based orientation to the planes. The planes will have a fixed orientation in space. It is also possible to set the orientation from the dataset. See [this page](/content/point-data/advanced.md#orientation-from-data) for more details on that. |
+| `Fixed Rotation` | Apply no specific camera-based orientation to the planes. The planes will have a fixed orientation in space. It is also possible to set the orientation from the dataset. See [this page](./advanced.md#orientation-from-data) for more details on that. |
 
 The schematic image below illustrates the resulting orientation for the first two modes. The left image shows planes orientated using the `Camera View Direction` option, and the right shows planes oriented to face the camera position using the `Camera Position Normal` option. Note how the latter lays out the points in a spherical way around the camera, which works better for spherical displays.
 

@@ -4,7 +4,7 @@
 2. Load the assets we desire to display
 3. Set keybindings for various actions
 4. Set initial camera location and orientation
-and more advanced uses like additional modules and additional scripts. Though we can [create profiles by hand](/content/profiles), the recommended way and the easier way would be to use the profile editor which is accessed via the "Edit" or "New" buttons under the 'Choose Profile' section of the Launcher window when starting up OpenSpace.
+and more advanced uses like additional modules and additional scripts. Though we can [create profiles by hand](/getting-started/profiles/index), the recommended way and the easier way would be to use the profile editor which is accessed via the "Edit" or "New" buttons under the 'Choose Profile' section of the Launcher window when starting up OpenSpace.
 
 ## Add an asset
 Let's take the example of the dwarf planet Haumea for customizing a profile. The default profile does not include this dwarf planet (though the default_full profile does), so let's edit the default profile to add Haumea. With the default profile selected, click "Edit" under the 'Choose Profile' section of the Launcher window. Now choose the "Edit" button next to Assets in the Profile Editor window.
@@ -21,7 +21,7 @@ Save the profile with a new name
 :::
 
 :::{note}
-Note that you can also add an asset temporarily, or in a one-off manner, by using the [console](/using-openspace/scripting/console/index) as mentioned in the last section of [this page](/content/ephemeris/kepler), or by dragging and dropping the **.asset** file into the OpenSpace window after OpenSpace has started up.
+Note that you can also add an asset temporarily, or in a one-off manner, by using the [console](/using-openspace/scripting/console/index) as mentioned in the last section of [this page](/creating-data-assets/ephemeris/kepler), or by dragging and dropping the **.asset** file into the OpenSpace window after OpenSpace has started up.
 :::
 
 ## Change the initial Camera Position
