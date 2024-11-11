@@ -1,0 +1,25 @@
+## Dossier
+
+:::{list-table}
+:header-rows: 0
+:class: full-width
+
+* - **Census:**
+  - {{ census }}
+* - **Asset File:**
+  - {{ assetfile }}
+* - **OpenSpace Version:**
+  - {{ openspaceversion }}
+* - **Reference:**
+  - {{ reference }}
+* - **Prepared by:**
+  - {{ preparedby }}
+* - **Source Version:**
+  - {{ sourceversion }}
+* - **License:**
+  {% if license.name %}
+  - [{{ license.name }}]({{ license.link }})
+  {% else %}
+  - {{ license }}
+  {% endif %}
+:::

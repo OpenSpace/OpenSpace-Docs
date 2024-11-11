@@ -9,5 +9,6 @@ Contributions to our documentation are very welcome.
 
 kitchensink
 field-list-example
+customdirectives
 
 :::

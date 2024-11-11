@@ -4,11 +4,17 @@ import sys
 # The way Sphinx handles the path during the evaluation of the conf.py is a bit strange
 # so we have to add the current folder or else the `import` statement will fail
 sys.path.append(os.path.abspath("."))
+from directives import Dossier
 from generatedocs import generate_docs
 
 ##########################################################################################
 #                                     CUSTOMIZATION                                      #
 ##########################################################################################
+
+
+def setup(app):
+    app.add_directive("dossier", Dossier)
+
 # This is the branch on the OpenSpace repository from which the documentation will be
 # built. Change this to a different branch to try a local branch before committing.
 # OBS: No other value than `master` should ever be committed to the master branch of the
