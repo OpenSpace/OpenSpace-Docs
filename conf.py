@@ -36,7 +36,7 @@ generate_docs(OPENSPACE_BRANCH, LOCAL_OPENSPACE_FOLDER)
 ###
 # Global Settings
 ###
-needs_sphinx = "4.0"
+needs_sphinx = "7.4.6"
 
 project = "OpenSpace"
 author = "OpenSpace community"
