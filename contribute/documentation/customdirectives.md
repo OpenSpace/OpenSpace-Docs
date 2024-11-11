@@ -16,7 +16,7 @@ We have created custom Sphinx directives for the documentation.
 To use this, you need a Sphinx version of at least [7.4](https://www.sphinx-doc.org/en/master/changes/7.4.html). To upgrade, run
 
 ```
-pip install sphinx --upgrade 7.4.6
+pip install -r "requirements.txt"
 ```
 
 The example above was created with the following code:
