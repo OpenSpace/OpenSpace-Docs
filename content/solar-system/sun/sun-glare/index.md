@@ -14,9 +14,13 @@ authors:
 This section is incomplete---nothing to see here, yet.
 :::
 
-The Solar Glare is the default representation of the Sun. It is a diffuse image placed on the Sun that represents a bright star. It is the same image we use for other stars.
+:::{note}
+See the main [Sun page](../index) for some background on the Sun.
+:::
 
-The glare is designed to emulate how we actually see stars given the limitation of our eyes. We do not see a "ball" in the sky (unless the cloud cover is just right), we see a bright, diffuse light.
+Solar Glare is the default representation of the Sun. It is a diffuse image placed on the Sun that represents a bright star. It is the same image we use for other stars.
+
+The glare is designed to emulate how we actually see stars given the limitation of our eyes. We do not see a "ball" in the sky (unless Earth's cloud cover filtering the sunlight is just right), we see a bright, diffuse light.
 
 This rendition allows us to see the Sun to great distances, and reminds us that the Sun is the biggest, brightest object in our tiny corner of the universe.
 
@@ -27,24 +31,14 @@ This rendition allows us to see the Sun to great distances, and reminds us that 
 
 
 
-## Dossier
 
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 1 image
-* - **Asset File:**
-  - `data/assets/scene/solarsystem/sun/glare.asset`
-* - **OpenSpace Version:**
-  - 4
-* - **Reference:**
-  - 
-* - **Prepared by:**
-  - OpenSpace Team
-* - **Source Version:**
-  - N/A 
-* - **License:**
-  - [MIT license](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+:::{dossier}
+:census: 1 image
+:assetfile: data/assets/scene/solarsystem/sun/glare.asset
+:openspaceversion: 4
+:preparedby: OpenSpace Team
+:sourceversion: Not Applicable
+:license: mit
+:reference: Not Applicable
 :::

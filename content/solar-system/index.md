@@ -10,11 +10,6 @@ authors:
 {menuselection}`Scene --> Solar System`
 
 
-:::{warning}
-This section is incomplete---nothing to see here, yet.
-:::
-
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -38,10 +33,9 @@ This section is incomplete---nothing to see here, yet.
 
 
 
+The Solar System describes everything in our cosmic backyard. Powered by our local star, the Sun, we are accustomed to thinking of the Solar System as merely the planets. However, there is a zoo of objects that reside in the Solar System and orbit around the Sun---planets, dwarf planets, asteroids, and comets, among others.
 
-The Solar System describes everything in our cosmic backyard. Powered by our local star, the Sun, we are accustomed to thinking of the Solar System as merely the planets. However, there is a whole zoo of objects that reside in the Solar System and orbit around the Sun---planets, dwarf planets, asteroids, comets.
-
-Here we explore these objects and the various assets in OpenSpace that we use to display them.
+In this section, we explore these objects and how we use them in OpenSpace to tell the stories of the Solar System.
 
 
 

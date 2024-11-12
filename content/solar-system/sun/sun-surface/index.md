@@ -23,24 +23,12 @@ This rendition is properly sized for the radius of the Sun, which is 695,700 kil
 
 
 
-## Dossier
-
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 1 image
-* - **Asset File:**
-  - `data/assets/scene/solarsystem/sun.asset`
-* - **OpenSpace Version:**
-  - N/A
-* - **Reference:**
-  - N/A
-* - **Prepared by:**
-  - OpenSpace Team
-* - **Source Version:**
-  - N/A
-* - **License:**
-  - [MIT license](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+:::{dossier}
+:census: 1 image
+:assetfile: data/assets/scene/solarsystem/sun.asset
+:openspaceversion: Not applicable
+:preparedby: OpenSpace Team
+:sourceversion: Not applicable
+:license: mit
+:reference: Not applicable
 :::
