@@ -29,24 +29,13 @@ years.
 
 
 
-## Dossier
 
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 1 wire-framed sphere
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/oort_cloud.asset`
-* - **OpenSpace Version:**
-  - 3
-* - **Reference:**
-  - Not applicable
-* - **Prepared by:**
-  - Brian Abbott, Carter Emmart (AMNH)
-* - **Source Version:**
-  - Not applicable 
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 1 wire-framed sphere
+:assetfile: data/assets/scene/digitaluniverse/oort_cloud.asset
+:openspaceversion: 3
+:preparedby: Brian Abbott, Carter Emmart (AMNH)
+:sourceversion: 2.01
+:license: amnh
+:reference: Not applicable
 :::

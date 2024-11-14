@@ -30,5 +30,5 @@ This rendition is properly sized for the radius of the Sun, which is 695,700 kil
 :preparedby: OpenSpace Team
 :sourceversion: Not applicable
 :license: mit
-:reference: Not applicable
+:reference: Unknown
 :::
