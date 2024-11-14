@@ -74,23 +74,12 @@ Looking at the HII regions from above the Milky Way Galaxy. The panel on the lef
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 1,108 HII regions
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/h2regions.asset`
-* - **OpenSpace Version:**
-  - 4
-* - **Reference:**
-  - [The WISE catalog of Galactic HII regions](https://doi.org/10.1088/0067-0049/212/1/1)
-* - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
-* - **Source Version:**
-  - 5.07
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 1,108 HII regions
+:assetfile: data/assets/scene/digitaluniverse/h2regions.asset
+:openspaceversion: 4
+:preparedby: Brian Abbott, Zack Reeves (AMNH)
+:sourceversion: 5.07
+:license: amnh
+:reference: The WISE catalog of Galactic HII regions=https://doi.org/10.1088/0067-0049/212/1/1
 :::

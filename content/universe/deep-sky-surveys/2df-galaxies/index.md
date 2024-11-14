@@ -62,24 +62,12 @@ The South Galactic Pole strip of observations as seen in the night sky along wit
 
 
 
-
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 221,539 galaxies
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/2dF.asset`
-* - **OpenSpace Version:**
-  - 3
-* - **Reference:**
-  - [The 2dF Galaxy Redshift Survey: spectra and redshifts](https://doi.org/10.1046/j.1365-8711.2001.04902.x)
-* - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH), Eric Gawiser (Rutgers)
-* - **Source Version:**
-  - 1.09
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 221,539 galaxies
+:assetfile: data/assets/scene/digitaluniverse/2dF.asset
+:openspaceversion: 3
+:preparedby: Brian Abbott, Zack Reeves (AMNH), Eric Gawiser (Rutgers)
+:sourceversion: 1.09
+:license: amnh
+:reference: The 2dF Galaxy Redshift Survey - Spectra and Redshifts=https://doi.org/10.1046/j.1365-8711.2001.04902.x
 :::

@@ -64,24 +64,13 @@ Exaggerating the brightness of the stars allows you to see even the dimmest amon
 
 
 
-## Dossier
 
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 112,746 stars
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/stars.asset`
-* - **OpenSpace Version:**
-  - 6
-* - **Reference:**
-  - [Gaia DR3](https://doi.org/10.5270/esa-qa4lep3); [XHIP An Extended Hipparcos Compilation](https://doi.org/10.48550/arXiv.1108.4971)
-* - **Prepared by:**
-  - Brian Abbott, Zack Reeves, Andrew Ayala, Jackie Faherty (AMNH)
-* - **Source Version:**
-  - 8.10 
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 112,746 stars
+:assetfile: data/assets/scene/digitaluniverse/stars.asset
+:openspaceversion: 6
+:preparedby: Brian Abbott, Zack Reeves, Andrew Ayala, Jackie Faherty (AMNH)
+:sourceversion: 8.10
+:license: amnh
+:reference: Gaia DR3=https://doi.org/10.5270/esa-qa4lep3;XHIP An Extended Hipparcos Compilation=https://doi.org/10.48550/arXiv.1108.4971
 :::

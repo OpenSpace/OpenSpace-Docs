@@ -77,25 +77,12 @@ Because of this accelerated expansion, the distant quasars are presently upwards
 
 
 
-
-
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 161 clusters
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/quasars.asset`
-* - **OpenSpace Version:**
-  - 3
-* - **Reference:**
-  - [Gaia EDR3 view on Galactic globular clusters](https://doi.org/10.1093/mnras/stab1475)
-* - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
-* - **Source Version:**
-  - 4.07
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 755,850 quasars
+:assetfile: data/assets/scene/digitaluniverse/quasars.asset
+:openspaceversion: 3
+:preparedby: Brian Abbott, Zack Reeves (AMNH)
+:sourceversion: 4.07
+:license: amnh
+:reference: Quaia - The Gaia-unWISE Quasar Catalog=https://doi.org/10.5281/zenodo.10403370
 :::

@@ -130,23 +130,13 @@ asset.meta = {
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 1 volumetric model
-* - **Asset File:**
-  - `data/assets/scene/milkyway/milkyway/volume.asset`
-* - **OpenSpace Version:**
-  - 1
-* - **Reference:**
-  - [On the Interpretation of the _l_ − _v_ Features in the Milky Way Galaxy](https://doi.org/10.48550/arXiv.1009.3096)
-* - **Prepared by:**
-  - Jon Parker, Emil Axelsson, Carter Emmart, OpenSpace Team
-* - **Source Version:**
-  - 1.0
-* - **License:**
-  - [MIT license](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+:::{dossier}
+:census: 1 volumetric model
+:assetfile: data/assets/scene/milkyway/milkyway/volume.asset
+:openspaceversion: 1
+:preparedby: Jon Parker, Emil Axelsson, Carter Emmart, OpenSpace Team
+:sourceversion: 1.0
+:license: mit
+:reference: On the Interpretation of the _l_ − _v_ Features in the Milky Way Galaxy=https://doi.org/10.48550/arXiv.1009.3096
 :::

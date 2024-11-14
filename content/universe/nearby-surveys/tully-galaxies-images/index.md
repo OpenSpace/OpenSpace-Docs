@@ -76,23 +76,12 @@ An outrageous exaggeration---the Tully Galaxy Images are so large we can see the
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 122 images
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/tully.asset`
-* - **OpenSpace Version:**
-  - 3
-* - **Reference:**
-  - [The Galaxy Catalog](http://www.zsolt-frei.net/catalog.htm); National Optical Astronomy Observatory
-* - **Prepared by:**
-  - Stuart Levy (NCSA)
-* - **Source Version:**
-  - 1.05
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 122 images
+:assetfile: data/assets/scene/digitaluniverse/tully.asset
+:openspaceversion: 3
+:preparedby: Stuart Levy (NCSA)
+:sourceversion: 1.05
+:license: amnh
+:reference: The Galaxy Catalog=http://www.zsolt-frei.net/catalog.htm;National Optical Astronomy Observatory
 :::

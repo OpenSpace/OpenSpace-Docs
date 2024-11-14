@@ -42,26 +42,17 @@ The Flamsteed Catalog uses numbers as designations along with the constellation 
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 3,440 stars
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/alternatestarlabels.asset`
-* - **OpenSpace Version:**
-  - 3
-* - **Reference:**
-  - Bayer and Flamsteed Catalogs via Simbad
-* - **Prepared by:**
-  - Zack Reeves, Brian Abbott (AMNH)
-* - **Source Version:**
-  - 1.08
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 3,440 stars
+:assetfile: data/assets/scene/digitaluniverse/alternatestarlabels.asset
+:openspaceversion: 3
+:preparedby: Zack Reeves, Brian Abbott (AMNH)
+:sourceversion: 1.08
+:license: amnh
+:reference: Bayer and Flamsteed Catalogs via Simbad
 :::
+
 
 
 

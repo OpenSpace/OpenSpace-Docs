@@ -71,23 +71,13 @@ Looking at the Milky Way Galaxy edge-on, we can see the open clusters are tightl
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 1,867 clusters
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/openclusters.asset`
-* - **OpenSpace Version:**
-  - 4
-* - **Reference:**
-  - [Galactic spiral structure revealed by Gaia EDR3](https://doi.org/10.1051/0004-6361/202140687)
-* - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
-* - **Source Version:**
-  - 8.09
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 1,867 clusters
+:assetfile: data/assets/scene/digitaluniverse/openclusters.asset
+:openspaceversion: 4
+:preparedby: Brian Abbott, Zack Reeves (AMNH)
+:sourceversion: 8.09
+:license: amnh
+:reference: Galactic spiral structure revealed by Gaia EDR3=https://doi.org/10.1051/0004-6361/202140687
 :::

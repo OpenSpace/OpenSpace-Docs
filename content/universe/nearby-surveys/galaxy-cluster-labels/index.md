@@ -64,25 +64,12 @@ A view of the more distant clusters, including the Coma, Leo, Norma, and Perseus
 
 
 
-
-
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 15 cluster labels
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/galaxy_clusters.asset`
-* - **OpenSpace Version:**
-  - 2
-* - **Reference:**
-  - Nearby Galaxy Catalog (private communication, Brent Tully)
-* - **Prepared by:**
-  - R. Brent Tully, Stuart Levy, Brian Abbott (AMNH)
-* - **Source Version:**
-  - 1.02
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 15 cluster labels
+:assetfile: data/assets/scene/digitaluniverse/galaxy_clusters.asset
+:openspaceversion: 2
+:preparedby: R. Brent Tully (U Hawaii), Stuart Levy (NCSA), Brian Abbott (AMNH)
+:sourceversion: 1.02
+:license: amnh
+:reference: Nearby Galaxy Catalog, Private communication, Brent Tully
 :::

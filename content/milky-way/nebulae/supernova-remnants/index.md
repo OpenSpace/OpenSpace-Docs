@@ -85,23 +85,12 @@ Some notable supernova remnants around the Sun.
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 112 supernova remnants
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/supernovaremnants.asset`
-* - **OpenSpace Version:**
-  - 3
-* - **Reference:**
-  - [The First Fermi LAT SNR Catalog](https://doi.org/10.3847/0067-0049/224/1/8)
-* - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
-* - **Source Version:**
-  - 4.08
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 112 supernova remnants
+:assetfile: data/assets/scene/digitaluniverse/supernovaremnants.asset
+:openspaceversion: 3
+:preparedby: Brian Abbott, Zack Reeves (AMNH)
+:sourceversion: 4.08
+:license: amnh
+:reference: The First Fermi LAT SNR Catalog=https://doi.org/10.3847/0067-0049/224/1/8
 :::

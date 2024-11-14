@@ -42,23 +42,13 @@ A "finger of god" is a line of galaxies that point radially back to the Milky Wa
 For example, the galaxies of the [Local Group](../local-group/index) are all moving in seemingly random directions as they gravitationally interact with one another---many are blueshifted (coming toward us) even as the universe expands. These local motions within clusters contaminate the overall redshift in the spectrum, causing the distances to be less accurate, and appearing to stretch these clusters along our line of sight.
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 43,533 galaxies
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/2mass.asset`
-* - **OpenSpace Version:**
-  - 2
-* - **Reference:**
-  - [The 2MASS Large Galaxy Atlas](https://iopscience.iop.org/article/10.1086/345794), (private communication, Tom Jarrett)
-* - **Prepared by:**
-  - Tom Jarrett (IPAC), Brian Abbott (AMNH)
-* - **Source Version:**
-  - 1.01
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 43,533 galaxies
+:assetfile: data/assets/scene/digitaluniverse/2mass.asset
+:openspaceversion: 2
+:preparedby: Tom Jarrett (IPAC), Brian Abbott (AMNH)
+:sourceversion: 1.01
+:license: amnh
+:reference: The 2MASS Large Galaxy Atlas=https://iopscience.iop.org/article/10.1086/345794;Private communication, Tom Jarrett
 :::

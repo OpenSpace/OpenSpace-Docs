@@ -33,23 +33,13 @@ As we [mentioned](../index), these differences are used to understand the nature
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 1 all-sky image
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/backgroundradiation.asset`
-* - **OpenSpace Version:**
-  - 2
-* - **Reference:**
-  - [Nine-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Final Maps and Results](https://doi.org/10.1093/mnras/stab1475)
-* - **Prepared by:**
-  - Brian Abbott (AMNH)
-* - **Source Version:**
-  - 4.02
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 1 all-sky image
+:assetfile: data/assets/scene/digitaluniverse/backgroundradiation.asset
+:openspaceversion: 2
+:preparedby: Brian Abbott (AMNH)
+:sourceversion: 4.02
+:license: amnh
+:reference: Nine-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations - Final Maps and Results=https://doi.org/10.1093/mnras/stab1475
 :::

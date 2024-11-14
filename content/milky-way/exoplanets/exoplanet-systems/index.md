@@ -73,23 +73,12 @@ A view of the exoplanetary systems from outside the Milky Way galaxy. We are sti
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 4,139 planets in 3,023 systems
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/exoplanets.asset`
-* - **OpenSpace Version:**
-  - 4
-* - **Reference:**
-  - [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/index.html); [Gaia DR3](https://doi.org/10.5270/esa-qa4lep3); [XHIP An Extended Hipparcos Compilation](https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971)
-* - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
-* - **Source Version:**
-  - 21.13
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 4,139 planets in 3,023 systems
+:assetfile: data/assets/scene/digitaluniverse/exoplanets.asset
+:openspaceversion: 4
+:preparedby: Brian Abbott, Zack Reeves (AMNH)
+:sourceversion: 21.13
+:license: amnh
+:reference: NASA Exoplanet Archive=https://exoplanetarchive.ipac.caltech.edu/index.html;Gaia DR3=https://doi.org/10.5270/esa-qa4lep3;XHIP An Extended Hipparcos Compilation=https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971
 :::

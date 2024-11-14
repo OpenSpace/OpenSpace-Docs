@@ -41,23 +41,14 @@ The Milky Way Image shown with the [Milky Way Volume](../milky-way-volume/index)
 To prepare this image, some alterations were necessary. We "painted out" some areas, in particular an area where it's believed a companion galaxy was interacting with one of the outer spiral arms. Some work was also done on enhancing the image to highlight structure. And, of course, the foreground stars within the Milky Way were removed.
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 1 image
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/milkyway.asset`
-* - **OpenSpace Version:**
-  - 3
-* - **Reference:**
-  - ESO
-* - **Prepared by:**
-  - Carter Emmart, Brian Abbott (AMNH)
-* - **Source Version:**
-  - 2.02
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+
+:::{dossier}
+:census: 1 image
+:assetfile: data/assets/scene/digitaluniverse/milkyway.asset
+:openspaceversion: 3
+:preparedby: Carter Emmart, Brian Abbott (AMNH)
+:sourceversion: 2.02
+:license: amnh
+:reference: ESO
 :::

@@ -47,24 +47,12 @@ A view of the void labels from outside the Tully Galaxies. Again, it's a lot eas
 
 
 
-
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 24 cosmic voids
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/voids.asset`
-* - **OpenSpace Version:**
-  - 2
-* - **Reference:**
-  - [Optical and X-Ray Clusters as Tracers of the Supercluster-Void Network --- I. Superclusters of Abell and X-Ray Clusters](https://doi.org/10.1086/323707)
-* - **Prepared by:**
-  - Brian Abbott (AMNH)
-* - **Source Version:**
-  - 1.02
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 24 cosmic voids
+:assetfile: data/assets/scene/digitaluniverse/voids.asset
+:openspaceversion: 2
+:preparedby: Brian Abbott (AMNH)
+:sourceversion: 1.02
+:license: amnh
+:reference: Optical and X-Ray Clusters as Tracers of the Supercluster-Void Network --- I. Superclusters of Abell and X-Ray Clusters=https://doi.org/10.1086/323707
 :::

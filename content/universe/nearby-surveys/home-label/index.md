@@ -24,23 +24,13 @@ In the image above, we can see the Milky Way (Home) alongside some of its neighb
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 1 label
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/milkyway_label.asset`
-* - **OpenSpace Version:**
-  - 1
-* - **Reference:**
-  - Not applicable
-* - **Prepared by:**
-  - Carter Emmart (AMNH); OpenSpace Team
-* - **Source Version:**
-  - 1.01
-* - **License:**
-  - [MIT license](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+:::{dossier}
+:census: 1 label
+:assetfile: data/assets/scene/digitaluniverse/milkyway_label.asset
+:openspaceversion: 1
+:preparedby: Carter Emmart (AMNH); OpenSpace Team
+:sourceversion: 1.01
+:license: mit
+:reference: Not applicable
 :::

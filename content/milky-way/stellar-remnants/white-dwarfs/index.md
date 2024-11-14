@@ -79,23 +79,12 @@ The distribution of white dwarfs in the Milky Way. These objects are huddled clo
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 192,613 white dwarfs
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/white_dwarfs.asset`
-* - **OpenSpace Version:**
-  - 1
-* - **Reference:**
-  - [Catalogue of white dwarfs in Gaia EDR3](https://doi.org/10.1093/mnras/stab2672)
-* - **Prepared by:**
-  - Zack Reeves, Brian Abbott (AMNH)
-* - **Source Version:**
-  - 1.01
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 192,613 white dwarfs
+:assetfile: data/assets/scene/digitaluniverse/white_dwarfs.asset
+:openspaceversion: 1
+:preparedby: Zack Reeves, Brian Abbott (AMNH)
+:sourceversion: 1.01
+:license: amnh
+:reference: Catalogue of white dwarfs in Gaia EDR3=https://doi.org/10.1093/mnras/stab2672
 :::

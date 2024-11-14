@@ -62,23 +62,13 @@ The Abell Galaxy Clusters shown with the [Supercluster Labels](../supercluster-l
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 2,246 galaxy clusters
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/abell.asset`
-* - **OpenSpace Version:**
-  - 3
-* - **Reference:**
-  - [A Catalog of Rich Clusters of Galaxies](https://doi.org/10.1086%2F191333); private communication, Brent Tully
-* - **Prepared by:**
-  - Stuart Levy (NCSA), Brian Abbott (AMNH)
-* - **Source Version:**
-  - 1.03
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 2,246 galaxy clusters
+:assetfile: data/assets/scene/digitaluniverse/abell.asset
+:openspaceversion: 3
+:preparedby: Stuart Levy (NCSA), Brian Abbott (AMNH)
+:sourceversion: 1.03
+:license: amnh
+:reference: A Catalog of Rich Clusters of Galaxies=https://doi.org/10.1086%2F191333; Private communication, Brent Tully
 :::

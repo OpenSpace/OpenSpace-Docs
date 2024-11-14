@@ -62,24 +62,12 @@ We've chosen to illustrate the distance uncertainty on a small number of stars--
 
 
 
-
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 3,440 stars
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/star_uncertainty.asset`
-* - **OpenSpace Version:**
-  - 1
-* - **Reference:**
-  - [Gaia DR3](https://doi.org/10.5270/esa-qa4lep3); [XHIP An Extended Hipparcos Compilation](https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971)
-* - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
-* - **Source Version:**
-  - 6.06
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 3,440 stars
+:assetfile: data/assets/scene/digitaluniverse/star_uncertainty.asset
+:openspaceversion: 1
+:preparedby: Brian Abbott, Zack Reeves (AMNH)
+:sourceversion: 6.06
+:license: amnh
+:reference: Gaia DR3=https://doi.org/10.5270/esa-qa4lep3;XHIP An Extended Hipparcos Compilation=https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971
 :::

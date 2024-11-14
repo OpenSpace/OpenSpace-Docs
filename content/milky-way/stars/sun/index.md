@@ -23,23 +23,12 @@ An animations showing the transition between the sun we see in the Solar System 
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 1 star
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/stars.asset`
-* - **OpenSpace Version:**
-  - 1
-* - **Reference:**
-  - Not applicable
-* - **Prepared by:**
-  - OpenSpace Team
-* - **Source Version:**
-  - 1.01
-* - **License:**
-  - [MIT license](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+:::{dossier}
+:census: 1 star
+:assetfile: data/assets/scene/digitaluniverse/stars.asset
+:openspaceversion: 1
+:preparedby: OpenSpace Team
+:sourceversion: 1.01
+:license: mit
+:reference: Not applicable
 :::

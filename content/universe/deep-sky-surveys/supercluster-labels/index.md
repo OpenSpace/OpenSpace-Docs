@@ -53,24 +53,12 @@ Supercluster Labels with the multicolored Tully Galaxies at center and the Abell
 
 
 
-
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 161 clusters
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/superclusters.asset`
-* - **OpenSpace Version:**
-  - 4
-* - **Reference:**
-  - [Gaia EDR3 view on Galactic globular clusters](https://doi.org/10.1093/mnras/stab1475)
-* - **Prepared by:**
-  - Brian Abbott, Zack Reeves (AMNH)
-* - **Source Version:**
-  - 4.07
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 33 supercluster labels
+:assetfile: data/assets/scene/digitaluniverse/superclusters.asset
+:openspaceversion: 3
+:preparedby: Brian Abbott (AMNH)
+:sourceversion: 1.03
+:license: amnh
+:reference: Optical and X-Ray Clusters as Tracers of the Supercluster-Void Network - I. Superclusters of Abell and X-Ray Clusters=https://doi.org/10.1086/323707
 :::

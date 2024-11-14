@@ -135,5 +135,5 @@ The {term}`habitable zone` is represented by a multicolored disk. Green indicate
 :preparedby: Emma Broman, Karin Reidarman, OpenSpace Team
 :sourceversion: 
 :license: mit
-:reference: NASA Exoplanet Archive=https://exoplanetarchive.ipac.caltech.edu/index.html; Habitable Zones Around Main-sequence Stars: Dependence on Planetary Mass=https://doi.org/10.1088/2041-8205/787/2/L29
+:reference: NASA Exoplanet Archive=https://exoplanetarchive.ipac.caltech.edu/index.html;Habitable Zones Around Main-sequence Stars - Dependence on Planetary Mass=https://doi.org/10.1088/2041-8205/787/2/L29
 :::

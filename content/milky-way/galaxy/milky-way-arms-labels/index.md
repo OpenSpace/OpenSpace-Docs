@@ -44,24 +44,12 @@ The Milky Way Arms Labels seen from the "wrong" side of the Galaxy, where they r
 
 
 
-
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 1 image
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/milkyway_arm_labels.asset`
-* - **OpenSpace Version:**
-  - 2
-* - **Reference:**
-  - Not applicable
-* - **Prepared by:**
-  - Brian Abbott (AMNH)
-* - **Source Version:**
-  - 1.02
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 1 image
+:assetfile: data/assets/scene/digitaluniverse/milkyway_arm_labels.asset
+:openspaceversion: 2
+:preparedby: Brian Abbott (AMNH)
+:sourceversion: 1.02
+:license: amnh
+:reference: Not applicable
 :::
