@@ -50,23 +50,14 @@ The Milky Way toward Orion is very faint and diffuse because we are seeing throu
 This all-sky image was assembled from 3,000 individual frames over two years by Axel Mellinger. He captured these from Michigan, Texas, and South Africa. The stars we see in the sky were essentially subtracted out, leaving just the gas, dust, and diffuse starlight.
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 1 all-sky image
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/allsky_visible.asset`
-* - **OpenSpace Version:**
-  - 2
-* - **Reference:**
-  - [A Color All-Sky Panorama Image of the Milky Way](https://doi.org/10.1086/648480)
-* - **Prepared by:**
-  - Brian Abbott, Carter Emmart (AMNH), OpenSpace Team
-* - **Source Version:**
-  - 1.04
-* - **License:**
-  - [MIT license](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+
+:::{dossier}
+:census: 1 all-sky image
+:assetfile: data/assets/scene/digitaluniverse/allsky_visible.asset
+:openspaceversion: 2
+:preparedby: Brian Abbott, Carter Emmart (AMNH), OpenSpace Team
+:sourceversion: 1.04
+:license: mit
+:reference: A Color All-Sky Panorama Image of the Milky Way=https://doi.org/10.1086/648480
 :::

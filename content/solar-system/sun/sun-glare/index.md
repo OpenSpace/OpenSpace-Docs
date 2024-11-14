@@ -10,10 +10,6 @@ authors:
 {menuselection}`Scene --> Solar System --> Solar Glare`
 
 
-:::{warning}
-This section is incomplete---nothing to see here, yet.
-:::
-
 :::{note}
 See the main [Sun page](../index) for some background on the Sun.
 :::

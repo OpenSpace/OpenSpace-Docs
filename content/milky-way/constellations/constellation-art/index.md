@@ -72,23 +72,13 @@ The Constellations Art action menu. Here you can turn on each constellation's ar
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 88 constallation images
-* - **Asset File:**
-  - `data/assets/scene/milkyway/constellations/constellation_art.asset`
-* - **OpenSpace Version:**
-  - 4
-* - **Reference:**
-  - [Drawing the 88 constellations](http://www.jameshedberg.com/creations/2020/07/20/constellations.html)
-* - **Prepared by:**
-  - [James Hedberg](http://jameshedberg.com)
-* - **Source Version:**
-  - 4.0
-* - **License:**
-  - [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+:::{dossier}
+:census: 88 constallation images
+:assetfile: data/assets/scene/milkyway/constellations/constellation_art.asset
+:openspaceversion: 4
+:preparedby: James Hedberg (CUNY-CCNY)
+:sourceversion: 4.0
+:license: cc-by
+:reference: Drawing the 88 constellations=http://www.jameshedberg.com/creations/2020/07/20/constellations.html
 :::

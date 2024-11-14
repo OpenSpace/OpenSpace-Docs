@@ -53,24 +53,12 @@ We can also see that galaxies emit Hα light. The Large and Small Magellanic Clo
 
 
 
-
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 1 all-sky image
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/allsky_hydrogenalpha.asset`
-* - **OpenSpace Version:**
-  - 1
-* - **Reference:**
-  - [A Composite H-alpha Template for Microwave Foreground Prediction](https://doi.org/10.1086/374411)
-* - **Prepared by:**
-  - Doug Finkbeiner (Princeton), Brian Abbott (AMNH)
-* - **Source Version:**
-  - 2.02
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 1 all-sky image
+:assetfile: data/assets/scene/digitaluniverse/allsky_hydrogenalpha.asset
+:openspaceversion: 1
+:preparedby: Doug Finkbeiner (Princeton), Brian Abbott (AMNH)
+:sourceversion: 2.02
+:license: amnh
+:reference: A Composite H-alpha Template for Microwave Foreground Prediction=https://doi.org/10.1086/374411
 :::

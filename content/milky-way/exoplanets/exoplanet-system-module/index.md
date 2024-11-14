@@ -128,21 +128,12 @@ The {term}`habitable zone` is represented by a multicolored disk. Green indicate
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Census:**
-  - 4,139 planets in 3,023 systems
-* - **Asset File:**
-  - `data/assets/modules/exoplanets/exoplanets.asset`
-* - **OpenSpace Version:**
-  - 6
-* - **Reference:**
-  - [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/index.html); [Habitable Zones Around Main-sequence Stars: Dependence on Planetary Mass](https://doi.org/10.1088/2041-8205/787/2/L29)
-* - **Prepared by:**
-  - Emma Broman, Karin Reidarman, OpenSpace Team
-* - **License:**
-  - [MIT license](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+:::{dossier}
+:census: 4,139 planets in 3,023 systems
+:assetfile: data/assets/modules/exoplanets/exoplanets.asset
+:openspaceversion: 6
+:preparedby: Emma Broman, Karin Reidarman, OpenSpace Team
+:sourceversion: 
+:license: mit
+:reference: NASA Exoplanet Archive=https://exoplanetarchive.ipac.caltech.edu/index.html; Habitable Zones Around Main-sequence Stars: Dependence on Planetary Mass=https://doi.org/10.1088/2041-8205/787/2/L29
 :::

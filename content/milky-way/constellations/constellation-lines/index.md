@@ -72,23 +72,13 @@ The bulk of the constellations are represented by a subtle pink hue. The twelve 
 
 
 
-## Dossier
-:::{list-table}
-:header-rows: 0
-:class: full-width
 
-* - **Census:**
-  - 88 constellations
-* - **Asset File:**
-  - `data/assets/scene/digitaluniverse/constellations.asset`
-* - **OpenSpace Version:**
-  - 3
-* - **Reference:**
-  - International Astronomical Union
-* - **Prepared by:**
-  - Brian Abbott, Carter Emmart (AMNH)
-* - **Source Version:**
-  - 3.05 
-* - **License:**
-  - [AMNH's Digital Universe](https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license)
+:::{dossier}
+:census: 88 constellations
+:assetfile: data/assets/scene/digitaluniverse/constellations.asset
+:openspaceversion: 3
+:preparedby: Brian Abbott, Carter Emmart (AMNH)
+:sourceversion: 3.05
+:license: amnh
+:reference: International Astronomical Union
 :::
