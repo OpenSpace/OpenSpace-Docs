@@ -1,10 +1,10 @@
 # Customizing Profiles
-[Profiles](/getting-started/profiles/index) help us to 
+[Profiles](/profiles/index) help us to 
 1. Set properties to initial values when we start up OpenSpace
 2. Load the assets we desire to display
 3. Set keybindings for various actions
 4. Set initial camera location and orientation
-and more advanced uses like additional modules and additional scripts. Though we can [create profiles by hand](/getting-started/profiles/index), the recommended way and the easier way would be to use the profile editor which is accessed via the "Edit" or "New" buttons under the 'Choose Profile' section of the Launcher window when starting up OpenSpace.
+and more advanced uses like additional modules and additional scripts. Though we can [create profiles by hand](/profiles/index), the recommended way and the easier way would be to use the profile editor which is accessed via the "Edit" or "New" buttons under the 'Choose Profile' section of the Launcher window when starting up OpenSpace.
 
 ## Add an asset
 Let's take the example of the dwarf planet Haumea for customizing a profile. The default profile does not include this dwarf planet (though the default_full profile does), so let's edit the default profile to add Haumea. With the default profile selected, click "Edit" under the 'Choose Profile' section of the Launcher window. Now choose the "Edit" button next to Assets in the Profile Editor window.

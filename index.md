@@ -60,8 +60,9 @@ getting-started/handling-errors
 getting-started/hardware-requirements
 getting-started/getting-started/index
 getting-started/faq/index
-
 :::
+
+
 
 :::{toctree}
 :caption: Using OpenSpace
@@ -79,17 +80,19 @@ using-openspace/builders/index
 
 using-openspace/session-recording
 using-openspace/skybrowser/index
-
 :::
+
+
 
 :::{toctree}
 :caption: Profiles
 :maxdepth: 1
 :hidden:
 
-getting-started/profiles/index
-
+profiles/index
 :::
+
+
 
 :::{toctree}
 :caption: Content
@@ -98,6 +101,8 @@ getting-started/profiles/index
 
 content/index
 :::
+
+
 
 :::{toctree}
 :caption: Creating data assets
@@ -118,6 +123,8 @@ creating-data-assets/satellites
 creating-data-assets/solar-video-overlay
 :::
 
+
+
 :::{toctree}
 :caption: Reference
 :maxdepth: 1
@@ -126,8 +133,9 @@ creating-data-assets/solar-video-overlay
 generated/renderable-overview
 generated/asset-components/index
 generated/scripting-api/index
-
 :::
+
+
 
 :::{toctree}
 :caption: Contribute
@@ -137,8 +145,9 @@ generated/scripting-api/index
 contribute/development/index
 contribute/faq/index
 contribute/documentation/index
-
 :::
+
+
 
 :::{toctree}
 :caption: Community
@@ -146,8 +155,9 @@ contribute/documentation/index
 :hidden:
 
 community/index
-
 :::
+
+
 
 :::{toctree}
 :caption: Glossary
@@ -155,8 +165,9 @@ community/index
 :hidden:
 
 glossary/index
-
 :::
+
+
 
 :::{toctree}
 :caption: About
@@ -166,5 +177,4 @@ glossary/index
 about/academics
 about/releases/index
 about/links
-
 :::
