@@ -14,7 +14,7 @@ The discovery and study of exoplanets is a relatively new field within astrophys
 
 
 :::{note}
-See the main [Exoplanets](../index) page for some background on exoplanets.
+See this section's [top page](../index) page for some background on exoplanets.
 :::
 
 

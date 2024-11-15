@@ -19,7 +19,7 @@ authors:
 The exoplanets module enables the visualization of exoplanetary systems in OpenSpace. While the main [exoplanets](../exoplanet-systems/index) data displays all the stars that have exoplanets with a simple, blue ring, the exoplanets module depicts the system of planets around these stars. This includes the planetary orbits, at the proper inclination, a depiction of the {term}`habitable zone`, and, when available, the planets themselves.
 
 :::{note}
-See the main [Exoplanets](../index) page for some background on exoplanets.
+See this section's [top page](../index) page for some background on exoplanets.
 :::
 
 
@@ -124,6 +124,9 @@ The exoplanets module renders planetary systems based on the orbital characteris
 The host star is the the proper color, representing its stellar type, and it is necessary to dim the star as we pull into the system---just as we do in the Solar System. Dimming the star means it's no longer calibrated with the other stars. Once you pull away from the system, the star brightens up and is back on par with the other stars.
 
 The {term}`habitable zone` is represented by a multicolored disk. Green indicates where liquid water could likely exist given the properties of the host star, though the zone can change with planetary mass as well---the zones here are calibrated for earth-sized planets. The red and blue edges represent the estimated edges of the zone. These are conservative estimates and could be refined with more atmospheric modeling.
+
+:::{note}
+See more on habitable zones here: [](../../../solar-system/sun/habitable-zone/index)
 
 
 

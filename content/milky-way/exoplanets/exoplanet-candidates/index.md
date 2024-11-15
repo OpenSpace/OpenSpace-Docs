@@ -24,7 +24,7 @@ This data set demonstrates the scientific process in action. Stars here are, in 
 
 
 :::{note}
-See the main [Exoplanets](../index) page for some background on exoplanets.
+See this section's [top page](../index) page for some background on exoplanets.
 :::
 
 

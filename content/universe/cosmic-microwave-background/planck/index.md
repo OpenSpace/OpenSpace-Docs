@@ -21,7 +21,7 @@ One portion of the Planck cosmic microwave background radiation image. This is a
 
 
 :::{note}
-See the [top CMB page](../index) for an introduction on the cosmic microwave background.
+See this section's [top page](../index) for an introduction on the cosmic microwave background.
 :::
 
 

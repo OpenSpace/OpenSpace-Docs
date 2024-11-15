@@ -19,7 +19,7 @@ The WMAP image of a portion of the sky. Tiny differences in temperature are mapp
 
 
 :::{note}
-See the [top CMB page](../index) for an introduction on the cosmic microwave background.
+See this section's [top page](../index) for an introduction on the cosmic microwave background.
 :::
 
 
