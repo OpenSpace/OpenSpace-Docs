@@ -4,7 +4,7 @@ import sys
 # The way Sphinx handles the path during the evaluation of the conf.py is a bit strange
 # so we have to add the current folder or else the `import` statement will fail
 sys.path.append(os.path.abspath("."))
-from directives import Dossier
+from directives import Dossier, Profile_Dossier
 from generatedocs import generate_docs
 
 ##########################################################################################
@@ -14,6 +14,7 @@ from generatedocs import generate_docs
 
 def setup(app):
     app.add_directive("dossier", Dossier)
+    app.add_directive("profile_dossier", Profile_Dossier)
 
 # This is the branch on the OpenSpace repository from which the documentation will be
 # built. Change this to a different branch to try a local branch before committing.
@@ -30,7 +31,7 @@ LOCAL_OPENSPACE_FOLDER = ""
 
 
 # Generate the files that dynamically depend on asset files in the main OpenSpace repo
-generate_docs(OPENSPACE_BRANCH, LOCAL_OPENSPACE_FOLDER)
+#generate_docs(OPENSPACE_BRANCH, LOCAL_OPENSPACE_FOLDER)
 
 
 ###
