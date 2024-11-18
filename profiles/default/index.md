@@ -133,63 +133,15 @@ Way Galaxy
 
 
 :::{tab-item} Keyboard Shortcuts
+
 ## Keyboard Shortcuts
 
+```{include} /using-openspace/keyboard-shortcuts/default.md
+:heading-offset: 2
+```
 
-```{list-table}
-:header-rows: 1
-:class: full-width
-* - **Shortcut**
-  - **Function**
-
-* - **{kbd}`F1`**
-  - Toggle the original User Interface (deprecated)
-* - **{kbd}`ESC`**
-  - Initiates shutdown in 3 seconds
-* - **{kbd}`F12`** or **{kbd}`Print Screen`**
-  - Take a screenshot
-* - **{kbd}`Space`**
-  - Toggle time (pause and unpause)
-* - **{kbd}`Shift + Space`**
-  - ?
-* - **{kbd}`f`**
-  - Toggle rotational fraiction on and off
-* - **{kbd}`Shift + f`**
-  - Toggle zoom friction on and off
-* - **{kbd}`CTRL + f`**
-  - Toggle roll friction on and off
-* - **{kbd}`b`**
-  - Fade to black
-* - **{kbd}`Tab`**
-  - Toogle main user interface
-* - **{kbd}`Shift + Tab`**
-  - Toggle overlays (info text) ?
-* - **{kbd}`ALT + r`**
-  - Toggle master rendering (everything off)
-* - **{kbd}`&rarr;`**
-  - Next time step interpolate ?
-* - **{kbd}`Shift + &arr;`**
-  - Next time step immediate ?
-* - **{kbd}`&larr;`**
-  - Previous time step interpolate ?
-* - **{kbd}`Shift + &larr;`**
-  - Previous time step immediate ?
-* - **{kbd}`&darr;`**
-  - Return to real time interpolate
-* - **{kbd}`Shift + &darr;`**
-  - Return to real time immediate
-* - **{kbd}`&uarr;`**
-  - Return to present date and time interpolate
-* - **{kbd}`Shift + &uarr;`**
-  - Return to present date and time immediate
-* - **{kbd}`F5`**
-  - Reload user interface
-* - **{kbd}`s`**
-  - Toggle satellite trails
-* - **{kbd}`i`**
-  - Focus on the International Space Station
-* - **{kbd}`Home`**
-  - Focus on Earth
+```{include} /using-openspace/keyboard-shortcuts/base.md
+:heading-offset: 2
 ```
 
 :::

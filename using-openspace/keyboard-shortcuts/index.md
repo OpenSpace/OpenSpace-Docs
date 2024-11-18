@@ -8,16 +8,14 @@ authors:
 # Keyboard Shortcuts
 
 
-(base-shortcuts)=
-## Base
 
-Shortcuts found in the base asset, found at `data/assets/base.asset`.
 
-:::{list-table}
-:header-rows: 1
-:class: full-width
-* - **Shortcut**
-  - **Function**
-* - **{kbd}`F1`**
-  - Toggle the original User Interface (deprecated)
+
+:::{toctree}
+:maxdepth: 1
+
+base
+default
+
 :::
+
