@@ -13,9 +13,8 @@ A supernova remnant is a nebulous structure that forms from a supernova. The exp
 
 :::{figure} Crab_Nebula.jpg
 :align: center
-:figwidth: 90%
-:width: 60%
-:alt: 
+:figwidth: 60%
+:alt: The Crab Nebula
 
 The Crab Nebula, located in Taurus, is a remnant from the supernova of 1054. Credit: NASA, ESA, J. Hester and A. Loll (Arizona State University)
 :::

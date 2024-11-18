@@ -27,8 +27,7 @@ Globular clusters are not thought to be fertile environments for planet formatio
 
 :::{figure} Globular_Cluster_M2_1024.jpg
 :align: center
-:figwidth: 90%
-:width: 70%
+:figwidth: 60%
 :alt: A globular cluster---a tightly-packed star cluster.
 
 Messier 2, a globular cluster in the constellation Aquarius. Credit: NASA, ESA, STScI, and A. Sarajedini (University of Florida)

@@ -32,8 +32,8 @@ Comets are small, icy bodies that orbit the Sun. As they approach the Sun, they 
 
 :::{figure} 20200716_CometNeowise_JW1-scaled.jpg
 :align: center
-:figwidth: 100%
-:width: 90%
+:figwidth: 90%
+:width: 80%
 :alt: A photo of Coment NEOWISE in the evening sky.
 
 Comet C/2020 F3 NEOWISE as seen in the sky. This is enhanced slightly through photography, but the comet and its tail were clearly visible to the unaided eye. This photo approximates how a prominent comet will look in the sky---most comets are not this bright. Credit: [Joshua Wachuta](https://atreeleftstanding.com/2020/07/20/comet-photos-and-other-nighttime-diversions/), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
@@ -48,7 +48,7 @@ The nucleus of a comet is characterized by the "dirty snowball" model. Rock, wat
 
 :::{figure} Comet_Hartley_2.jpg
 :align: center
-:figwidth: 90%
+:figwidth: 80%
 :width: 60%
 :alt: The nucleus of comet 103P/Hartley, roughly shaped like a bowling pin.
 
@@ -68,7 +68,7 @@ The tail of a comet only appears when materials inside the nucleus begin to vapo
 :::{figure} Structure_of_a_comet.jpg
 :align: center
 :figwidth: 90%
-:width: 90%
+:width: 80%
 :alt: An illustration of the structure of a comet.
 
 Structure of a comet, showing the nucleus, coma, and tails. Credit: ESA, [CC BY-SA IGO 3.0](https://creativecommons.org/licenses/by-sa/3.0/igo/)

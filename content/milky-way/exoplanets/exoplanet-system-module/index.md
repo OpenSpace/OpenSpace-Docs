@@ -58,8 +58,8 @@ Inside the panel, search for the system you want to add by typing the name of th
 
 :::{figure} exoplanet_systems_panel_search.png
 :align: center
-:figwidth: 60%
-:width: 50%
+:figwidth: 50%
+:width: 70%
 :alt: A screenshot of the exoplanets panel with the results of a search for the star Kepler 11.
 
 The exoplanets module panel with the results of a search for "Kepler-11," a multiplanet system around the star Kepler 11. 
@@ -74,8 +74,8 @@ Click on the desired system and then click the "Add System" button to the right.
 
 :::{figure} exoplanet_systems_panel_added.png
 :align: center
-:figwidth: 60%
-:width: 50%
+:figwidth: 50%
+:width: 70%
 :alt: The exoplanet module panel with the Kepler-11 system added
 
 The exoplanet module panel with the Kepler-11 system added.
@@ -91,12 +91,12 @@ Adding a system does not automatically display it on the screen. You must fly up
 
 :::{dropdown} Adding systems via command line
 
-It is possible to add exoplanet systems using the `addExoplanetSystem` function. \
-`openspace.exoplanets.addExoplanetSystem(name)` \
-Here, `name` is the name of the host star to add, in our example the value of `name` would be "Kepler-11". So, the command would be typed: \
-`openspace.exoplanets.addExoplanetSystem("Kepler-11")`
+It is possible to add exoplanet systems using the {command}`addExoplanetSystem` function. \
+{command}`openspace.exoplanets.addExoplanetSystem(name)` \
+Here, {command}`name` is the name of the host star to add, in our example the value of {command}`name` would be "Kepler-11". So, the command would be typed: \
+{command}`openspace.exoplanets.addExoplanetSystem("Kepler-11")`
 
-Executing this command in OpenSpace's command line results in adding the system. Multiple systems can be added by specifying a list of host names as input, for example, `{"Kepler-11", "GJ 1061"}`. 
+Executing this command in OpenSpace's command line results in adding the system. Multiple systems can be added by specifying a list of host names as input, for example, {command}`{"Kepler-11", "GJ 1061"}`. 
 
 This function may be used to add exoplanets to OpenSpace before start-up.
 :::

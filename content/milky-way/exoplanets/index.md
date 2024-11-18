@@ -49,7 +49,7 @@ Projects include the [Transiting Exoplanet Survey Satellite](https://en.wikipedi
 The radial velocity method is the next most common way to detect exoplanets. A variation in the star's radial velocity is observed in the spectrum which results from the planet's motion around the star. While we think the Sun is stationary, it actually moves, or wobbles, because of the planets that orbit it. The larger the planet, the larger the wobble. This is because the center of the orbit is actually located at a point called the _center of mass_ of the system. 
 
 :::{figure} Orbit3.gif
-:figwidth: 80%
+:figwidth: 70%
 :align: center
 :alt: Two bodies (Earth and Moon) rotating around their center of mass, which lies just inside Earth's surface.
 

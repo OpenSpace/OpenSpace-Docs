@@ -14,7 +14,7 @@ A white dwarf is a compact remnant---the final evolutionary state of over 95% of
 
 :::{figure} Sirius_A_and_B_Hubble_photo.png
 :align: center
-:figwidth: 90%
+:figwidth: 80%
 :width: 60%
 :alt: An image of a bright star (Sirius) with a very faint object beside it (the white dwarf) indicated by an arrow.
 

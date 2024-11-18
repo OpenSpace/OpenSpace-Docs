@@ -14,7 +14,8 @@ A pulsar is a spinning neutron star that emits beams of light from its magnetic 
 
 :::{figure} Chandra-crab.jpg
 :align: center
-:figwidth: 75%
+:figwidth: 80%
+:width: 70%
 :alt: The central region of the Crab Nebula, with red and blue clouds of swirling gas driven by the pulsar.
 
 An optical (red) and X-Ray (blue) composite image of the pulsar at the center of the Crab Nebula. The winds of the central pulsar creates the surrounding nebula, with high-energy radiation causing the gas to glow. Credit: Optical -- NASA/HST/ASU/J. Hester et al.; X-Ray -- NASA/CXC/ASU/J. Hester et al.

@@ -21,8 +21,7 @@ For stars between one and eight solar masses, the core continues to condense unt
 
 :::{figure} opo9738b.png
 :align: center
-:figwidth: 90%
-:width: 75%
+:figwidth: 75%
 :alt: A montage of six planetary nebulae. Some appear spherical, others more elliptical. Gases glow and shades of green, red, and orange.
 
 An assortment of planetary nebulae seen by the Hubble Space Telescope. Credit: H. Bond (STSci), B. Balick (University of Washington), NASA
