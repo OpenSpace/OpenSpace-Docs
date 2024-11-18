@@ -601,23 +601,14 @@ Way Galaxy
 
 
 
-
-:::{list-table}
-:header-rows: 0
-:class: full-width
-
-* - **Name:**
-  - Default
-* - **File:**
-  - `data/profiles/default.profile`
-* - **Anchor**
-  - [](/content/solar-system/planets/earth/index)
-* - **Time**
-  - Current time
-* - **Author:**
-  - OpenSpace Team
-* - **License:**
-  - MIT
+:::{profile_dossier}
+:name: Default
+:profilefile: data/profiles/default.profile
+:anchor: Earth=/content/solar-system/planets/earth/index
+:time: Current time
+:author: OpenSpace Team
+:license: mit
+:version: 1.0
 :::
 
 

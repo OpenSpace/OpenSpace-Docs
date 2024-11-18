@@ -77,3 +77,84 @@ class Dossier(SphinxDirective):
     self.content = output
     allow_headers = True
     return self.parse_content_to_nodes(allow_headers)
+  
+
+
+class Profile_Dossier(SphinxDirective):
+  has_content = True
+
+  licenses = {
+    "amnh": {
+      "name": "AMNH's Digital Universe",
+      "link": "https://www.amnh.org/research/hayden-planetarium/digital-universe/download/digital-universe-license"
+    },
+    "mit": {
+      "name": "MIT",
+      "link": "https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md"
+    },
+    "cc-by": {
+      "name": "CC-BY",
+      "link": "https://creativecommons.org/licenses/by/4.0/"
+    },
+  }
+
+
+  option_spec = {
+    "name": unchanged, # Expects a string
+    "profilefile": unchanged, # Expects a string
+    "anchor": unchanged, # Expects a string
+    "time": unchanged, # Expects a string
+    "author": unchanged, # Expects a string
+    "license": lambda x: choice(x, ["amnh", "mit", "cc-by"]), # Expects a string, one of these
+    "version": unchanged, # Expects a string
+  }
+
+  def process_anchor(self, r):
+    if ("=" in r):
+      [name, link] = r.split("=")
+      return {
+        "name": name,
+        "link": link
+      }
+    else:
+      return { "name": r }
+
+
+  def run(self):
+    notapplicable = "Not applicable"
+    name = self.options.get("name", notapplicable)
+    profilefile = self.options.get("profilefile", notapplicable)
+    anchor = self.options.get("anchor", notapplicable)
+    time = self.options.get("time", notapplicable)
+    author = self.options.get("author", notapplicable)
+    license = self.options.get("license", notapplicable)
+    version = self.options.get("version", notapplicable)
+
+    
+    if (anchor != notapplicable):
+      anchor = anchor.split(";")
+      anchor = list(map(self.process_anchor, anchor))
+
+    environment = Environment(loader=FileSystemLoader("templates"))
+
+    # We can't pass free text as a parameter to the directive, so instead we
+    # add the ability to add free text for the references through the content of the
+    # directive. This is an array of strings.
+    license = self.licenses[license] if self.licenses.__contains__(license) else license
+    profilefile = f'`{profilefile}`' if profilefile != notapplicable else profilefile
+    template = environment.get_template("dossier_profile.html.jinja")
+
+    # Render component page with jinja
+    output = template.render(
+      name=name,
+      profilefile=profilefile,
+      anchor=anchor,
+      time=time,
+      author=author,
+      license=license,
+      version=version      
+    )
+
+    self.content = output
+    allow_headers = True
+    return self.parse_content_to_nodes(allow_headers)
