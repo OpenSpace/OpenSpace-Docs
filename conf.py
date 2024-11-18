@@ -31,7 +31,7 @@ LOCAL_OPENSPACE_FOLDER = ""
 
 
 # Generate the files that dynamically depend on asset files in the main OpenSpace repo
-generate_docs(OPENSPACE_BRANCH, LOCAL_OPENSPACE_FOLDER)
+#generate_docs(OPENSPACE_BRANCH, LOCAL_OPENSPACE_FOLDER)
 
 
 ###
