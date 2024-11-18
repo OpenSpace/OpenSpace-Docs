@@ -4,7 +4,7 @@ import sys
 # The way Sphinx handles the path during the evaluation of the conf.py is a bit strange
 # so we have to add the current folder or else the `import` statement will fail
 sys.path.append(os.path.abspath("."))
-from directives import Dossier
+from directives import Dossier, Profile_Dossier
 from generatedocs import generate_docs
 
 ##########################################################################################
@@ -14,6 +14,7 @@ from generatedocs import generate_docs
 
 def setup(app):
     app.add_directive("dossier", Dossier)
+    app.add_directive("profile_dossier", Profile_Dossier)
 
 # This is the branch on the OpenSpace repository from which the documentation will be
 # built. Change this to a different branch to try a local branch before committing.
@@ -123,7 +124,8 @@ html_css_files = [
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
 
   "required-reading.css",
-  "sidebar.css"
+  "sidebar.css",
+  "profile.css"
 ]
 
 # These folders are copied to the documentation's HTML output
