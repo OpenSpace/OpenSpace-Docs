@@ -13,16 +13,16 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./milky-way-galaxy-image/index)
-[![Galaxy image](./milky-way-galaxy-image/galaxy_image_icon.png)](./milky-way-galaxy-image/index)
+:::{grid-item-card} [](/content/milky-way/galaxy/milky-way-galaxy-image/index)
+[![Galaxy image](/content/milky-way/galaxy/milky-way-galaxy-image/galaxy_image_icon.png)](/content/milky-way/galaxy/milky-way-galaxy-image/index)
 :::
 
-:::{grid-item-card} [](./milky-way-volume/index)
-[![Galaxy volume](./milky-way-volume/milky_way_model_icon.png)](./milky-way-volume/index)
+:::{grid-item-card} [](/content/milky-way/galaxy/milky-way-volume/index)
+[![Galaxy volume](/content/milky-way/galaxy/milky-way-volume/milky_way_model_icon.png)](/content/milky-way/galaxy/milky-way-volume/index)
 :::
 
-:::{grid-item-card} [](./milky-way-arms-labels/index)
-[![Galaxy arm labels](./milky-way-arms-labels/milkyway_arms_labels_icon.png)](./milky-way-arms-labels/index)
+:::{grid-item-card} [](/content/milky-way/galaxy/milky-way-arms-labels/index)
+[![Galaxy arm labels](/content/milky-way/galaxy/milky-way-arms-labels/milkyway_arms_labels_icon.png)](/content/milky-way/galaxy/milky-way-arms-labels/index)
 :::
 
 ::::

@@ -19,8 +19,8 @@ This section is incomplete---nothing to see here, yet.
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./pluto/index)
-[![Pluto](./pluto/pluto_icon.png)](./pluto/index)
+:::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/index)
+[![Pluto](/content/solar-system/dwarf-planets/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/index)
 :::
  
 ::::

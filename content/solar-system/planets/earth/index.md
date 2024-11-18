@@ -22,8 +22,8 @@ This section is incomplete---nothing to see here, yet.
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./moon/index)
-[![Moon](./moon/moon_icon.png)](./moon/index)
+:::{grid-item-card} [](/content/solar-system/planets/earth/moon/index)
+[![Moon](/content/solar-system/planets/earth/moon/moon_icon.png)](/content/solar-system/planets/earth/moon/index)
 :::
 
 
@@ -36,8 +36,8 @@ This section is incomplete---nothing to see here, yet.
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./satellites/index)
-[![Satellites](./satellites/iss/iss_icon.png)](./satellites/index)
+:::{grid-item-card} [](/content/solar-system/planets/earth/satellites/index)
+[![Satellites](/content/solar-system/planets/earth/satellites/iss/iss_icon.png)](/content/solar-system/planets/earth/satellites/index)
 :::
 
 

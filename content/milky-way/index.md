@@ -13,40 +13,40 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./stars/index)
-[![Stars](./stars/stars/stars_icon.png)](./stars/index)
+:::{grid-item-card} [](/content/milky-way/stars/index)
+[![Stars](/content/milky-way/stars/stars/stars_icon.png)](/content/milky-way/stars/index)
 :::
 
-:::{grid-item-card} [](./constellations/index)
-[![Constellations](./constellations/constellation-art/constellation_art_icon.png)](./constellations/index)
+:::{grid-item-card} [](/content/milky-way/constellations/index)
+[![Constellations](/content/milky-way/constellations/constellation-art/constellation_art_icon.png)](/content/milky-way/constellations/index)
 :::
 
-:::{grid-item-card} [](./all-sky-images/index)
-[![All-sky Images](./all-sky-images/hydrogen-alpha/halpha_icon.png)](./all-sky-images/index)
+:::{grid-item-card} [](/content/milky-way/all-sky-images/index)
+[![All-sky Images](/content/milky-way/all-sky-images/hydrogen-alpha/halpha_icon.png)](/content/milky-way/all-sky-images/index)
 :::
 
-:::{grid-item-card} [](./substellar-objects/index)
-[![Substellar Objects](./substellar-objects/brown-dwarfs/brown_dwarfs_icon.png)](./substellar-objects/index)
+:::{grid-item-card} [](/content/milky-way/substellar-objects/index)
+[![Substellar Objects](/content/milky-way/substellar-objects/brown-dwarfs/brown_dwarfs_icon.png)](/content/milky-way/substellar-objects/index)
 :::
 
-:::{grid-item-card} [](./exoplanets/index)
-[![Exoplanets](./exoplanets/exoplanet-system-module/exoplanet_module_icon.png)](./exoplanets/index)
+:::{grid-item-card} [](/content/milky-way/exoplanets/index)
+[![Exoplanets](/content/milky-way/exoplanets/exoplanet-system-module/exoplanet_module_icon.png)](/content/milky-way/exoplanets/index)
 :::
 
-:::{grid-item-card} [](./star-clusters/index)
-[![Star Clusters](./star-clusters/globular-clusters/globular_clusters_icon.png)](./star-clusters/index)
+:::{grid-item-card} [](/content/milky-way/star-clusters/index)
+[![Star Clusters](/content/milky-way/star-clusters/globular-clusters/globular_clusters_icon.png)](/content/milky-way/star-clusters/index)
 :::
 
-:::{grid-item-card} [](./nebulae/index)
-[![Nebulae](./nebulae/HII-regions/HII_regions_icon.png)](./nebulae/index)
+:::{grid-item-card} [](/content/milky-way/nebulae/index)
+[![Nebulae](/content/milky-way/nebulae/HII-regions/HII_regions_icon.png)](/content/milky-way/nebulae/index)
 :::
 
-:::{grid-item-card} [](./stellar-remnants/index)
-[![Stellar Remnants](./stellar-remnants/pulsars/pulsars_icon.png)](./stellar-remnants/index)
+:::{grid-item-card} [](/content/milky-way/stellar-remnants/index)
+[![Stellar Remnants](/content/milky-way/stellar-remnants/pulsars/pulsars_icon.png)](/content/milky-way/stellar-remnants/index)
 :::
 
-:::{grid-item-card} [](./galaxy/index)
-[![Galaxy](./galaxy/milky-way-galaxy-image/galaxy_image_icon.png)](./galaxy/index)
+:::{grid-item-card} [](/content/milky-way/galaxy/index)
+[![Galaxy](/content/milky-way/galaxy/milky-way-galaxy-image/galaxy_image_icon.png)](/content/milky-way/galaxy/index)
 :::
 
 ::::

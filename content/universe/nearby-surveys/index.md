@@ -13,40 +13,40 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./home-label/index)
-[![Home (Milky Way) label](./home-label/home_label_icon.png)](./home-label/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/home-label/index)
+[![Home (Milky Way) label](/content/universe/nearby-surveys/home-label/home_label_icon.png)](/content/universe/nearby-surveys/home-label/index)
 :::
 
-:::{grid-item-card} [](./local-group/index)
-[![Local group](./local-group/local_group_icon.png)](./local-group/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/local-group/index)
+[![Local group](/content/universe/nearby-surveys/local-group/local_group_icon.png)](/content/universe/nearby-surveys/local-group/index)
 :::
 
-:::{grid-item-card} [](./tully-galaxies/index)
-[![Tully galaxies](./tully-galaxies/tully_icon.png)](./tully-galaxies/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/tully-galaxies/index)
+[![Tully galaxies](/content/universe/nearby-surveys/tully-galaxies/tully_icon.png)](/content/universe/nearby-surveys/tully-galaxies/index)
 :::
 
-:::{grid-item-card} [](./tully-galaxies-images/index)
-[![Tully galaxies images](./tully-galaxies-images/tully_images_icon.png)](./tully-galaxies-images/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/tully-galaxies-images/index)
+[![Tully galaxies images](/content/universe/nearby-surveys/tully-galaxies-images/tully_images_icon.png)](/content/universe/nearby-surveys/tully-galaxies-images/index)
 :::
 
-:::{grid-item-card} [](./galaxy-group-labels/index)
-[![Galaxy group labels](./galaxy-group-labels/galaxy_groups_icon.png)](./galaxy-group-labels/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/galaxy-group-labels/index)
+[![Galaxy group labels](/content/universe/nearby-surveys/galaxy-group-labels/galaxy_groups_icon.png)](/content/universe/nearby-surveys/galaxy-group-labels/index)
 :::
 
-:::{grid-item-card} [](./galaxy-cluster-labels/index)
-[![Galaxy cluster labels](./galaxy-cluster-labels/galaxy_clusters_icon.png)](./galaxy-cluster-labels/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/galaxy-cluster-labels/index)
+[![Galaxy cluster labels](/content/universe/nearby-surveys/galaxy-cluster-labels/galaxy_clusters_icon.png)](/content/universe/nearby-surveys/galaxy-cluster-labels/index)
 :::
 
-:::{grid-item-card} [](./2MASS-galaxies/index)
-[![2MASS galaxies](./2MASS-galaxies/2mass_galaxies_icon.png)](./2MASS-galaxies/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/2MASS-galaxies/index)
+[![2MASS galaxies](/content/universe/nearby-surveys/2MASS-galaxies/2mass_galaxies_icon.png)](/content/universe/nearby-surveys/2MASS-galaxies/index)
 :::
 
-:::{grid-item-card} [](./6df-galaxies/index)
-[![6dF galaxies](./6df-galaxies/6df_icon.png)](./6df-galaxies/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/6df-galaxies/index)
+[![6dF galaxies](/content/universe/nearby-surveys/6df-galaxies/6df_icon.png)](/content/universe/nearby-surveys/6df-galaxies/index)
 :::
 
-:::{grid-item-card} [](./voids/index)
-[![Voids](./voids/voids_icon.png)](./voids/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/voids/index)
+[![Voids](/content/universe/nearby-surveys/voids/voids_icon.png)](/content/universe/nearby-surveys/voids/index)
 :::
 
 ::::

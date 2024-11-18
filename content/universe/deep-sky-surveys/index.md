@@ -13,24 +13,24 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./2df-galaxies/index)
-[![2dF galaxies](./2df-galaxies/2df_icon.png)](./2df-galaxies/index)
+:::{grid-item-card} [](/content/universe/deep-sky-surveys/2df-galaxies/index)
+[![2dF galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.png)](/content/universe/deep-sky-surveys/2df-galaxies/index)
 :::
 
-:::{grid-item-card} [](./sloan-galaxies/index)
-[![Sloan galaxies](./sloan-galaxies/sloan_icon.png)](./sloan-galaxies/index)
+:::{grid-item-card} [](/content/universe/deep-sky-surveys/sloan-galaxies/index)
+[![Sloan galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
 :::
 
-:::{grid-item-card} [](./abell-galaxy-clusters/index)
-[![Abell clusters](./abell-galaxy-clusters/abell_icon.png)](./abell-galaxy-clusters/index)
+:::{grid-item-card} [](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
+[![Abell clusters](/content/universe/deep-sky-surveys/abell-galaxy-clusters/abell_icon.png)](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
 :::
 
-:::{grid-item-card} [](./supercluster-labels/index)
-[![Supercluster labels](./supercluster-labels/scl_icon.png)](./supercluster-labels/index)
+:::{grid-item-card} [](/content/universe/deep-sky-surveys/supercluster-labels/index)
+[![Supercluster labels](/content/universe/deep-sky-surveys/supercluster-labels/scl_icon.png)](/content/universe/deep-sky-surveys/supercluster-labels/index)
 :::
 
-:::{grid-item-card} [](./quasars/index)
-[![Quasars](./quasars/quasars_icon.png)](./quasars/index)
+:::{grid-item-card} [](/content/universe/deep-sky-surveys/quasars/index)
+[![Quasars](/content/universe/deep-sky-surveys/quasars/quasars_icon.png)](/content/universe/deep-sky-surveys/quasars/index)
 :::
 
 ::::

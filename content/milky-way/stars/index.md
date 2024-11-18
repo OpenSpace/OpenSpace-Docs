@@ -13,28 +13,28 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./stars/index)
-[![stars](./stars/stars_icon.png)](./stars/index)
+:::{grid-item-card} [](/content/milky-way/stars/stars/index)
+[![stars](/content/milky-way/stars/stars/stars_icon.png)](/content/milky-way/stars/stars/index)
 :::
 
-:::{grid-item-card} [](./star-labels/index)
-[![star labels](./star-labels/star_names_icon.png)](./star-labels/index)
+:::{grid-item-card} [](/content/milky-way/stars/star-labels/index)
+[![star labels](/content/milky-way/stars/star-labels/star_names_icon.png)](/content/milky-way/stars/star-labels/index)
 :::
 
-:::{grid-item-card} [](./star-labels-alternate/index)
-[![alternate star labels](./star-labels-alternate/alternate_star_labels_icon.png)](./star-labels-alternate/index)
+:::{grid-item-card} [](/content/milky-way/stars/star-labels-alternate/index)
+[![alternate star labels](/content/milky-way/stars/star-labels-alternate/alternate_star_labels_icon.png)](/content/milky-way/stars/star-labels-alternate/index)
 :::
 
-:::{grid-item-card} [](./star-distance-uncertainty/index)
-[![star distance uncertainty](./star-distance-uncertainty/star_distance_uncertainty_icon.png)](./star-distance-uncertainty/index)
+:::{grid-item-card} [](/content/milky-way/stars/star-distance-uncertainty/index)
+[![star distance uncertainty](/content/milky-way/stars/star-distance-uncertainty/star_distance_uncertainty_icon.png)](/content/milky-way/stars/star-distance-uncertainty/index)
 :::
 
-:::{grid-item-card} [](./star-orbits/index)
-[![star orbits](./star-orbits/star_orbits_icon.png)](./star-orbits/index)
+:::{grid-item-card} [](/content/milky-way/stars/star-orbits/index)
+[![star orbits](/content/milky-way/stars/star-orbits/star_orbits_icon.png)](/content/milky-way/stars/star-orbits/index)
 :::
 
-:::{grid-item-card} [](./sun/index)
-[![sun](./sun/sun_icon.png)](./sun/index)
+:::{grid-item-card} [](/content/milky-way/stars/sun/index)
+[![sun](/content/milky-way/stars/sun/sun_icon.png)](/content/milky-way/stars/sun/index)
 :::
 
 ::::

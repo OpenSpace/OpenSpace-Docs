@@ -13,16 +13,16 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./open-clusters/index)
-[![Open star clusters](./open-clusters/open_clusters_icon.png)](./open-clusters/index)
+:::{grid-item-card} [](/content/milky-way/star-clusters/open-clusters/index)
+[![Open star clusters](/content/milky-way/star-clusters/open-clusters/open_clusters_icon.png)](/content/milky-way/star-clusters/open-clusters/index)
 :::
 
-:::{grid-item-card} [](./ob-associations/index)
-[![OB associations](./ob-associations/ob_associations_icon.png)](./ob-associations/index)
+:::{grid-item-card} [](/content/milky-way/star-clusters/ob-associations/index)
+[![OB associations](/content/milky-way/star-clusters/ob-associations/ob_associations_icon.png)](/content/milky-way/star-clusters/ob-associations/index)
 :::
 
-:::{grid-item-card} [](./globular-clusters/index)
-[![Globular star clusters](./globular-clusters/globular_clusters_icon.png)](./globular-clusters/index)
+:::{grid-item-card} [](/content/milky-way/star-clusters/globular-clusters/index)
+[![Globular star clusters](/content/milky-way/star-clusters/globular-clusters/globular_clusters_icon.png)](/content/milky-way/star-clusters/globular-clusters/index)
 :::
 
 ::::

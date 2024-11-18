@@ -13,16 +13,16 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./nearby-surveys/index)
-[![Nearby surveys](./nearby-surveys/local-group/local_group_icon.png)](./nearby-surveys/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/index)
+[![Nearby surveys](/content/universe/nearby-surveys/local-group/local_group_icon.png)](/content/universe/nearby-surveys/index)
 :::
 
-:::{grid-item-card} [](./deep-sky-surveys/index)
-[![Deep sky surveys](./deep-sky-surveys/quasars/quasars_icon.png)](./deep-sky-surveys/index)
+:::{grid-item-card} [](/content/universe/deep-sky-surveys/index)
+[![Deep sky surveys](/content/universe/deep-sky-surveys/quasars/quasars_icon.png)](/content/universe/deep-sky-surveys/index)
 :::
 
-:::{grid-item-card} [](./cosmic-microwave-background/index)
-[![Cosmic microwave background](./cosmic-microwave-background/planck/planck_cmb_icon.png)](./cosmic-microwave-background/index)
+:::{grid-item-card} [](/content/universe/cosmic-microwave-background/index)
+[![Cosmic microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.png)](/content/universe/cosmic-microwave-background/index)
 :::
 
 ::::

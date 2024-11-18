@@ -14,16 +14,16 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./sun-surface/index)
-[![Sun surface](./sun-surface/sun_photosphere_icon.png)](./sun-surface/index)
+:::{grid-item-card} [](/content/solar-system/sun/sun-surface/index)
+[![Sun surface](/content/solar-system/sun/sun-surface/sun_photosphere_icon.png)](/content/solar-system/sun/sun-surface/index)
 :::
 
-:::{grid-item-card} [](./sun-glare/index)
-[![Sun glare](./sun-glare/sun_glare_icon.png)](./sun-glare/index)
+:::{grid-item-card} [](/content/solar-system/sun/sun-glare/index)
+[![Sun glare](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
 :::
 
-:::{grid-item-card} [](./habitable-zone/index)
-[![Habitable zone](./habitable-zone/sun_habitable_zone_icon.png)](./habitable-zone/index)
+:::{grid-item-card} [](/content/solar-system/sun/habitable-zone/index)
+[![Habitable zone](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
 :::
 
 ::::

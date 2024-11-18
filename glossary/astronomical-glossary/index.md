@@ -38,6 +38,10 @@ Habitable zone
     Definition.
 
 
+Light year
+    A light year is the distance over which light travels in one year. Light speed is 300,000 km/s (186,000 miles/sec). So, 1 light second is just 300,000 km (186,000 miles), 1 light day is 26 billion km (16 billion miles) and 1 light year is 9.5 trillion km (6 trillion miles).
+
+
 Lookback time
     Lookback time is the difference between when we detect the light from an object here on Earth versus when the light was emitted by the object. Because the universe is expanding, and spacetime can expand faster than the speed of light (matter cannot, but the intervening fabric of spacetime can), it produces a discrepancy between how far an object was when its light left versus how far it actually is at this moment. The lookback time tells us when the light left the object.
 

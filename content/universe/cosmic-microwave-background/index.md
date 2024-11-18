@@ -13,16 +13,16 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./cobe/index)
-[![COBE microwave background](./cobe/cobe_cmb_icon.png)](./cobe/index)
+:::{grid-item-card} [](/content/universe/cosmic-microwave-background/cobe/index)
+[![COBE microwave background](/content/universe/cosmic-microwave-background/cobe/cobe_cmb_icon.png)](/content/universe/cosmic-microwave-background/cobe/index)
 :::
 
-:::{grid-item-card} [](./wmap/index)
-[![WMAP microwave background](./wmap/wmap_cmb_icon.png)](./wmap/index)
+:::{grid-item-card} [](/content/universe/cosmic-microwave-background/wmap/index)
+[![WMAP microwave background](/content/universe/cosmic-microwave-background/wmap/wmap_cmb_icon.png)](/content/universe/cosmic-microwave-background/wmap/index)
 :::
 
-:::{grid-item-card} [](./planck/index)
-[![Planck microwave background](./planck/planck_cmb_icon.png)](./planck/index)
+:::{grid-item-card} [](/content/universe/cosmic-microwave-background/planck/index)
+[![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.png)](/content/universe/cosmic-microwave-background/planck/index)
 :::
 
 ::::
@@ -148,16 +148,16 @@ Penzias and Wilson were awarded the Nobel Prize in 1978 for their discovery. The
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./cobe/index)
-[![COBE microwave background](./cobe/cobe_cmb_icon.png)](./cobe/index)
+:::{grid-item-card} [](/content/universe/cosmic-microwave-background/cobe/index)
+[![COBE microwave background](/content/universe/cosmic-microwave-background/cobe/cobe_cmb_icon.png)](/content/universe/cosmic-microwave-background/cobe/index)
 :::
 
-:::{grid-item-card} [](./wmap/index)
-[![WMAP microwave background](./wmap/wmap_cmb_icon.png)](./wmap/index)
+:::{grid-item-card} [](/content/universe/cosmic-microwave-background/wmap/index)
+[![WMAP microwave background](/content/universe/cosmic-microwave-background/wmap/wmap_cmb_icon.png)](/content/universe/cosmic-microwave-background/wmap/index)
 :::
 
-:::{grid-item-card} [](./planck/index)
-[![Planck microwave background](./planck/planck_cmb_icon.png)](./planck/index)
+:::{grid-item-card} [](/content/universe/cosmic-microwave-background/planck/index)
+[![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.png)](/content/universe/cosmic-microwave-background/planck/index)
 :::
 
 ::::

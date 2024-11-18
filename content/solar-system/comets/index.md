@@ -19,8 +19,8 @@ This section is incomplete.
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./oort-cloud/index)
-[![Oort sphere](./oort-cloud/oort-sphere/oort_cloud_icon.png)](./oort-cloud/index)
+:::{grid-item-card} [](/content/solar-system/comets/oort-cloud/index)
+[![Oort sphere](/content/solar-system/comets/oort-cloud/oort-sphere/oort_cloud_icon.png)](/content/solar-system/comets/oort-cloud/index)
 :::
 
 

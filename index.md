@@ -69,6 +69,7 @@ getting-started/faq/index
 :maxdepth: 1
 :hidden:
 
+/using-openspace/index
 using-openspace/navigation/index
 using-openspace/properties/index
 using-openspace/scenegraph/index

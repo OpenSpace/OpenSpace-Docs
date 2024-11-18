@@ -14,16 +14,16 @@ authors:
 :gutter: 1 1 1 2
 
 
-:::{grid-item-card} [](./solar-system/index)
-[![solar system](./solar-system/solar_system_icon.png)](./solar-system/index)
+:::{grid-item-card} [](/content/solar-system/index)
+[![solar system](/content/solar-system/solar_system_icon.png)](/content/solar-system/index)
 :::
 
-:::{grid-item-card} [](./milky-way/index)
-[![milky way](./milky-way/star-clusters/globular-clusters/globular_clusters_icon.png)](./milky-way/index)
+:::{grid-item-card} [](/content/milky-way/index)
+[![milky way](/content/milky-way/star-clusters/globular-clusters/globular_clusters_icon.png)](/content/milky-way/index)
 :::
 
-:::{grid-item-card} [](./universe/index)
-[![star distance uncertainty](./universe/deep-sky-surveys/2df-galaxies/2df_icon.png)](./universe/index)
+:::{grid-item-card} [](/content/universe/index)
+[![universe](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.png)](/content/universe/index)
 :::
 
 ::::

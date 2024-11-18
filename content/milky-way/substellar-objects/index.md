@@ -13,8 +13,8 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./brown-dwarfs/index)
-[![brown dwarfs](./brown-dwarfs/brown_dwarfs_icon.png)](./brown-dwarfs/index)
+:::{grid-item-card} [](/content/milky-way/substellar-objects/brown-dwarfs/index)
+[![brown dwarfs](/content/milky-way/substellar-objects/brown-dwarfs/brown_dwarfs_icon.png)](/content/milky-way/substellar-objects/brown-dwarfs/index)
 :::
 
 ::::
