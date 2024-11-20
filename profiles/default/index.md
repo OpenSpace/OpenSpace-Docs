@@ -33,6 +33,7 @@ In this tour, we will explore the Universe from Earth to the most distant object
 
 :::::{grid-item}
 :::{important}
+
 {.no-bullet}
 - {octicon}`rocket;1.25em;profile-tour-action` : Flight instructions
 - {octicon}`diff-added;1.25em;profile-tour-action` : Turn on a data set or check a setting
@@ -40,13 +41,7 @@ In this tour, we will explore the Universe from Earth to the most distant object
 - {octicon}`tools;1.25em;profile-tour-action`: Adjust a scene setting for a data set
 - {octicon}`telescope;1.25em;profile-tour-action` :  Target an object
 - {octicon}`stopwatch;1.25em;profile-tour-action` : Change the time settings
-% {octicon}`globe`: 
-% {octicon}`info`: 
-% {octicon}`play`: 
-% {octicon}`question`: 
-% {octicon}`smiley`: 
-% {octicon}`milestone`:
-% {octicon}`location`:  
+
 :::
 :::::
 ::::::
@@ -391,9 +386,7 @@ Imagine how many planets we'd see today if Kepler was able to look at the entire
 
 #### Exoplanet Candidates
 
-{octicon}`rocket;1.25em;profile-tour-action` Turn on the [Exoplanet Candidates](/content/milky-way/exoplanets/exoplanet-candidates/index).
-
-
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Candidates`
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -409,54 +402,108 @@ The Exoplanet Candidates are stars, colored by mission, that are thought to be s
 
 
 
-
-
-
-
 ### Milky Way Galaxy
 
+{octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Candidates` \
+{octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Systems`
+
+{octicon}`rocket;1.25em;profile-tour-action` Zoom out so the entire Galaxy is visible.
 
 
-
-
-
-
+#### Our Place in the Galaxy
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
-[![](radio_sphere_galaxy.png)](radio_sphere_galaxy.png)
+[![Milky Way with a tiny radio sphere](radio_sphere_galaxy.png)](radio_sphere_galaxy.png)
 :::::
 
 :::::{grid-item}
+As you move farther away, keep your eye on the Radio Sphere as it becomes smaller and smaller. In this image, it's reduced to a tiny green dot and marks our location in the Milky Way Galaxy---about 26,000 light years from its center.
+
+Just as we went from the two-dimensional sky into the three-dimensional stars, we now see how that band of light in the night sky we call the Milky Way is actually a vast complex of stars, gas, and dust.
+:::::
+::::::
+
+
+
+#### Galactic Parts
+
+{octicon}`rocket;1.25em;profile-tour-action` Continue to orbit the Galaxy.
+
+::::::{grid} 1 2 2 2
+:::::{grid-item}
+[![Milky Way Galaxy](galaxy-face-on.png)](galaxy-face-on.png)
+:::::
+
+:::::{grid-item}
+The Galaxy is composed of over 100 billion stars, gas, and {term}`dust <astrophysical dust>`. This gas and dust is arranged in spiral arms that emanate from center of the Galaxy and are confined to a thin disk. Its bright center is rife with stars and a supermassive black hole. The black hole is considered inactive, with a low rate of accretion.
+
+The Galaxy is about 100,000 light years across, but the disk is only about 1,000 light years thick in the spiral arms. Galaxies, generally, are star-making machines, where stars are born from this gas and provide light in the otherwise dark universe. When stars die, they return some fraction of their gas back into the Galaxy to form a new star one day. The Sun formed about five billion years ago from such a cloud, and has about five billion years left before it evolves into a [white dwarf](/content/milky-way/stellar-remnants/white-dwarfs/index)---an Earth-sized, dim object that will ultimately fade away.
+
+% Stars form in the disk of the Milky Way---the part we see now---but, the Galaxy has a spherical component called the halo. The spherical halo stretches beyond the disk and is filled with cool, dim stars. Cooler stars have much longer lifetimes (they burn their fuel more slowly), and live long enough to be sent on a trajectory out of the disk of the Galaxy, where they formed. Over time, the halo has been populated with such stars.
+:::::
+::::::
+
+
+
+
+#### Extent of the Night Sky Stars
+
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines`
+
+::::::{grid} 1 2 2 2
+:::::{grid-item}
+[![Constellation lines in the Milky Way Galaxy](/content/milky-way/constellations/constellation-lines/constellation_lines_outside_galaxy.png)](/content/milky-way/constellations/constellation-lines/constellation_lines_outside_galaxy.png)
+:::::
+
+:::::{grid-item}
+All of the stars we see in the night sky with our eye (about 9,000 total---6,000 over the course of one night) are very close to the Sun. We cannot see stars this far away from the Sun without sophisticated telescopes.
+
+Given that the Milky Way has hundreds of billions of stars, it's compelling to wonder just how many planets might be in our own Galaxy. Not all stars will necessarily have planets, but astronomers estimate that the number could be over 500 billion planets.
+:::::
+::::::
+
+
+
+#### The Sun's Orbit
+
+{octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines` \
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits --> Sun`
+
+::::::{grid} 1 2 2 2
+:::::{grid-item}
+[![Orbit of the Sun in the Milky Way Galaxy](sun_orbit.png)](sun_orbit.png)
+:::::
+
+:::::{grid-item}
+Everything moves in and around the Galaxy. We can see the trajectory of the Sun over the next billion years by turning on the Sun's orbit. The Sun, and its accompanying planets, orbit about the center of the Milky Way about once every 225 million years. This makes us about 20 galactic years old, in other words, we've made about 20 revolutions around the Galaxy since the Sun was born.
+
+On this scale, life began on Earth about 17 galactic years ago, multicellular life appeared about 7 galactic years ago, the KT extinction event occurred 0.3 galactic years ago (65 million years ago), and modern humans appeared 0.001 galactic years ago (roughly 200,000 years ago).
+
+The Sun has only moved about 145 light years in the time since humans have walked on Earth, a tiny fraction of its galactic orbit and a distance that could fit inside the [Radio Sphere](/content/milky-way/graphics/radio-sphere/index).
+
+The Sun's orbit is remarkably stable, in contrast to other stars that orbit the Galaxy in irregular, unstable orbits, inside and outside the Galactic disk. Turn on some of the other star orbits to see just how unstable they are.
+
+::::{grid} 1 1 1 2
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/content/milky-way/stars/star-orbits/index)
+[![star orbits](/content/milky-way/stars/star-orbits/star_orbits_icon.png)](/content/milky-way/stars/star-orbits/index)
+:::
+
+::::
 
 :::::
 ::::::
 
 
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![](galaxy-face-on.png)](galaxy-face-on.png)
-:::::
+### Beyond the Galaxy
 
-:::::{grid-item}
+Contemplating the Milky Way and all its worlds, we now turn to what lies outside the Galaxy and the multitude of objects that lie beyond our home star system.
 
-:::::
-::::::
-
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![](sun_orbit.png)](sun_orbit.png)
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-
+First, some housekeeping: \
+{octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits --> Sun`
 
 
 
