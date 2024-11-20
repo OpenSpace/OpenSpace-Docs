@@ -5,39 +5,44 @@ import os # file paths
 import re # regex for searching for assets files
 import shutil # copytree, rmtree
 from tqdm import tqdm # progress bar
+from sphinx.application import Sphinx
+from sphinx.util.typing import ExtensionMetadata
+
+DATA_ASSETS_PATH = "data/assets"
 
 ##########################################################################################
 #                           ASSET COMPONENTS HELPER FUNCTIONS                            #
 ##########################################################################################
+def copy_local_folder(assset_examples_output, local_openspace_folder):
+  print(f"Using local OpenSpace folder {local_openspace_folder}")
+  print(f"Copying {DATA_ASSETS_PATH} to {assset_examples_output}...")
 
-def clone_assets_folder(folder_name, branch, local_openspace_folder):
+  # If a local folders was provided, we don't have to do any of the cloning work, but we
+  # must copy the files for any potential `literalinclude` directive to work
+  os.makedirs(os.path.join(assset_examples_output, "data"), exist_ok=True)
+  source_path = os.path.join(local_openspace_folder, DATA_ASSETS_PATH)
+  destination_path = os.path.join(assset_examples_output, DATA_ASSETS_PATH)
+  if os.path.exists(destination_path):
+    shutil.rmtree(destination_path)
+  shutil.copytree(source_path, destination_path)
+  print(f"Done copying asset files")
+
+  return os.path.abspath(destination_path)
+
+def clone_github_branch(assset_examples_output, branch):
   """
   Clones asset directory from OpenSpace git repository
   Uses the latest master
   Returns absolute path to the asset folder
   """
-  data_assets_path = "data/assets"
-
-  if local_openspace_folder:
-    print(f"Using local OpenSpace folder {local_openspace_folder}")
-    # If a local folders was provided, we don't have to do any of the cloning work, but we
-    # must copy the files for any potential `literalinclude` directive to work
-    os.makedirs(os.path.join(folder_name, "data"), exist_ok=True)
-    source_path = os.path.join(local_openspace_folder, data_assets_path)
-    destination_path = os.path.join(folder_name, data_assets_path)
-    if os.path.exists(destination_path):
-      shutil.rmtree(destination_path)
-    shutil.copytree(source_path, destination_path)
-
-    return os.path.abspath(destination_path)
 
   # Otherwise (the default path), we need to clone the OpenSpace repository and checkout
   # the requested branch
   def print_progress(op_code, cur_count, max_count=None, message=""):
     print(message)
 
-  print("Cloning assets examples...")
-  repo = Repo.init(folder_name)
+  print(f"Cloning assets examples from branch '{branch}'...")
+  repo = Repo.init(assset_examples_output)
 
   # Create a new remote if there isn't one already created
   origin = repo.remotes[0] if len(repo.remotes) > 0 else None
@@ -49,9 +54,9 @@ def clone_assets_folder(folder_name, branch, local_openspace_folder):
   origin.fetch(progress=print_progress, depth=1)
 
   git = repo.git()
-  git.checkout(f"origin/{branch}", "--", data_assets_path)
+  git.checkout(f"origin/{branch}", "--", DATA_ASSETS_PATH)
   print("Done cloning assets folder from OpenSpace repository")
-  assets_folder_path = os.path.abspath(os.path.join(folder_name, data_assets_path))
+  assets_folder_path = os.path.abspath(os.path.join(assset_examples_output, DATA_ASSETS_PATH))
   return assets_folder_path
 
 def assets_in_path_recursive(root):
@@ -262,19 +267,11 @@ def parse_doxygen_comments(library):
 #                                 CREATE ASSET COMPONENTS                                #
 ##########################################################################################
 
-def generate_asset_components(environment, output_folder, folder_name_assets, json_location, branch, local_openspace_folder):
+def generate_asset_components(environment, assets_folder, output_folder, folder_name_assets, json_location):
   """
   Creates the Markdown files for the asset components, as well as an index file which
   links to them
   """
-  assets_examples_folder_name = "asset_examples"
-  # Download assets files from OpenSpace repository
-  assets_folder = clone_assets_folder(
-    os.path.join(output_folder, assets_examples_folder_name),
-    branch,
-    local_openspace_folder
-  )
-
   # List all of the assets in the asset and the dedicated example folders
   examples_folder = os.path.join(assets_folder, "examples")
   example_asset_files = assets_in_path_recursive(examples_folder)
@@ -443,13 +440,39 @@ def generate_renderable_overview(environment, output_folder, json_location):
 #                                         MAIN                                           #
 ##########################################################################################
 
-def generate_docs(branch, local_openspace_folder):
+def generate_docs(app, config):
+  if not config.generate_assets_examples:
+    print("Skipping generating new assets examples...")
+    print("To generate set 'generate_assets_examples' to True in the conf.py file")
+    return
+
   print("Generating dynamic documentation")
 
+  # Get config values
+  use_github = config.assets_examples_use_github
+  branch = config.assets_branch
+  local_openspace_folder = config.assets_folder
+
+  # Name variables
   json_location = "json"
   output_folder = "generated"
   folder_name_assets = "asset-components"
   folder_name_scripting = "scripting-api"
+  assset_examples_output = os.path.join(output_folder, "asset_examples")
+
+  assets_folder = None
+  if use_github:
+    if branch == "":
+      print("You need to name a branch name for 'assets_branch'")
+      return
+    # Download assets files from OpenSpace repository
+    assets_folder = clone_github_branch(assset_examples_output, branch)
+  else:
+    if local_openspace_folder == "":
+      print("You need to specify a local OpenSpace folder for 'assets_folder'")
+      return
+    # Copy asset files from local OpenSpace folder
+    assets_folder = copy_local_folder(assset_examples_output, local_openspace_folder)
 
   # Load jinja templates folder
   environment = Environment(loader=FileSystemLoader("templates"))
@@ -457,12 +480,29 @@ def generate_docs(branch, local_openspace_folder):
   # Generate documentation
   generate_asset_components(
     environment,
+    assets_folder,
     output_folder,
     folder_name_assets,
-    json_location,
-    branch,
-    local_openspace_folder
+    json_location
   )
   generate_scripting_api(environment, output_folder, folder_name_scripting, json_location)
   generate_renderable_overview(environment, output_folder, json_location)
 
+
+##########################################################################################
+#                                         Sphinx setup                                   #
+##########################################################################################
+def setup(app: Sphinx) -> ExtensionMetadata:
+    app.add_config_value('generate_assets_examples', True, 'bool')
+    app.add_config_value('assets_examples_use_github', True, "bool")
+    app.add_config_value('assets_branch', "master", 'string')
+    app.add_config_value('assets_folder', "", 'string')
+
+    app.connect('config-inited', generate_docs)
+
+    return {
+        'version': '1.0',
+        'env_version': 1,
+        'parallel_read_safe': True,
+        'parallel_write_safe': True,
+    }

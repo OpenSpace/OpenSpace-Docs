@@ -1,39 +1,23 @@
 import os
 import sys
-
-# The way Sphinx handles the path during the evaluation of the conf.py is a bit strange
-# so we have to add the current folder or else the `import` statement will fail
-sys.path.append(os.path.abspath("."))
-from directives import Dossier, Profile_Dossier
-from generatedocs import generate_docs
+from pathlib import Path
+sys.path.append(str(Path('_ext').resolve()))
 
 ##########################################################################################
-#                                     CUSTOMIZATION                                      #
+#                               Generate asset examples                                  #
 ##########################################################################################
 
-
-def setup(app):
-    app.add_directive("dossier", Dossier)
-    app.add_directive("profile_dossier", Profile_Dossier)
-
-# This is the branch on the OpenSpace repository from which the documentation will be
-# built. Change this to a different branch to try a local branch before committing.
-# OBS: No other value than `master` should ever be committed to the master branch of the
-#      docs repository
-OPENSPACE_BRANCH = "master"
-
-# If this value is specified, instead of cloning OpenSpace from the main repository using
-# the branch provided above, instead use a local copy of the repository.
-# OBS: No other value than the empty string should ever be committed to the master branch
-#      of the docs repository
-LOCAL_OPENSPACE_FOLDER = ""
-
-
-
-# Generate the files that dynamically depend on asset files in the main OpenSpace repo
-generate_docs(OPENSPACE_BRANCH, LOCAL_OPENSPACE_FOLDER)
-
-
+# If we are on Read the docs, always build from github master
+if (os.environ.get("READTHEDOCS")):
+  generate_assets_examples = True
+  assets_examples_use_github = True
+  assets_branch = "master" # Use the environment variable READTHEDOCS_VERSION here?
+# If we are working on our local machine
+else:
+  generate_assets_examples = False # Generates asset examples if true
+  assets_examples_use_github = True # Use github for the examples? Else, local folder
+  assets_branch = "master" # Branch name for github option
+  assets_folder = "" # Folder path for local folder option
 ###
 # Global Settings
 ###
@@ -55,7 +39,9 @@ extensions = [
   "sphinx.ext.duration",
   "sphinxcontrib.jquery",
   "sphinxcontrib.luadomain",
-  "sphinxcontrib.mermaid"
+  "sphinxcontrib.mermaid",
+  "generate_docs",
+  "custom_directives"
 ]
 
 keep_warnings = True
