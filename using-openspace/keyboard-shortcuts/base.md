@@ -49,7 +49,7 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
   - Previous time step immediate ?
 * - {kbd}`&darr;`
   - Return to real time interpolate
-* - {kbd}`Shift` + {kbd}`&darr;`
+* - {kbd}`Shift` + {kbd}`&darr;` + {kbd}`{octicon}arrow-down`
   - Return to real time immediate
 * - {kbd}`&uarr;`
   - Return to present date and time interpolate

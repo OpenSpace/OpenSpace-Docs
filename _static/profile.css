@@ -1,3 +1,7 @@
-.profile_tour {
-    font-size: 2em;
+.profile-tour-action {
+    color: rgb(254, 85, 54);
+}
+
+.rst-content section ul.no-bullet li  {
+    list-style-type: none;
 }

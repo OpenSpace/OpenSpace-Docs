@@ -14,8 +14,31 @@ We list the Default profile first because it provides a basis for many other pro
 Each of these pages is designed to offer a narrative---the storytelling that drove the creation of the profile---links to the included data sets in [Content](/content/index), and screenshots at critical steps in the story.
 
 
+
 :::{note}
 We will discuss profile authoring in a forthcoming page. For the time being, a [syntax page](/creating-data-assets/profiles) exists for those who are comfortable with behind the scenes coding.
+:::
+
+
+
+
+:::{important}
+We use the following symbols in profile pages to indicate actions:
+
+{.no-bullet}
+- {octicon}`rocket;1.25em;profile-tour-action` : Flight instructions
+- {octicon}`diff-added;1.25em;profile-tour-action` : Turn on a data set or check a setting
+- {octicon}`diff-removed;1.25em;profile-tour-action` : Turn off a data set or uncheck a setting
+- {octicon}`tools;1.25em;profile-tour-action`: Adjust a scene setting for a data set
+- {octicon}`telescope;1.25em;profile-tour-action` :  Target an object
+- {octicon}`stopwatch;1.25em;profile-tour-action` : Change the time settings
+% {octicon}`globe`: 
+% {octicon}`info`: 
+% {octicon}`play`: 
+% {octicon}`question`: 
+% {octicon}`smiley`: 
+% {octicon}`milestone`:
+% {octicon}`location`:  
 :::
 
 
@@ -23,10 +46,12 @@ We will discuss profile authoring in a forthcoming page. For the time being, a [
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./default/index)
-[![Stars](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](./default/index)
+[![default profile](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](./default/index)
 :::
 
 ::::
+
+
 
 
 
