@@ -10,6 +10,12 @@ authors:
 {menuselection}`Scene --> Universe --> Nearby Surveys --> Local Group`
 
 
+::::::{tab-set}
+:::::{tab-item} Details
+
+
+## Galaxy Groups
+
 A *group* of galaxies is a small number of large galaxies that are typically surrounded by a larger number of small galaxies. These galaxies are gravitationally bound to one another. In the case of the Local Group, there are roughly two substructures, each centered around large, spiral galaxies, with a few other assorted galaxies that interact more loosely with the group.
 
 
@@ -56,6 +62,31 @@ Looking back toward the Milky Way (aqua) from the Andromeda Galaxy and its dwarf
 
 The [Galaxy Group Labels](../galaxy-group-labels/index) identify many other nearby galaxy groups. Because the Local Group is, well, local, we see a fairly accurate representation of the dwarf galaxies that inhabit it. Neighboring groups are so far away, it's difficult to see their smaller members. With these other groups, we really only see the largest, brightest galaxies. If we considered the Local Group from afar, we would probably only see the Milky Way, Andromeda, and M33.
 
+:::::
+
+
+
+
+
+
+:::::{tab-item} Profiles
+
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![Stars](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](/profiles/default/index)
+:::
+
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
 
 
 :::{dossier}
@@ -67,3 +98,6 @@ The [Galaxy Group Labels](../galaxy-group-labels/index) identify many other near
 :license: amnh
 :reference: Properties of dwarf galaxies in the Local Group=https://doi.org/10.1088/0004-6256/144/1/4
 :::
+:::::
+
+::::::

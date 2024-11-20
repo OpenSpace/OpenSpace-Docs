@@ -86,5 +86,6 @@ star-clusters/index
 nebulae/index
 stellar-remnants/index
 galaxy/index
+graphics/index
 :::
 

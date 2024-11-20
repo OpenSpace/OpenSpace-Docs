@@ -33,6 +33,7 @@ Extrasolar planets, or exoplanets, are a relatively new phenomenon in astrophysi
 Decades after their discovery, more sophisticated missions are discovering the locations and characteristics of these systems which we visualize with these data sets.
 
 
+(exoplanets-detecting)=
 ## Detecting Exoplanets---Lost in Starlight
 
 To the eye, exoplanets are lost in the glare of their host star. Unconventional techniques are required to infer or observe them.
