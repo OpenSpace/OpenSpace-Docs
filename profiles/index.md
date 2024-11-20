@@ -27,9 +27,9 @@ We use the following symbols in profile pages to indicate actions:
 
 {.no-bullet}
 - {octicon}`rocket;1.25em;profile-tour-action` : Flight instructions
-- {octicon}`diff-added;1.25em;profile-tour-action` : Turn on a data set or check a setting
-- {octicon}`diff-removed;1.25em;profile-tour-action` : Turn off a data set or uncheck a setting
-- {octicon}`tools;1.25em;profile-tour-action`: Adjust a scene setting for a data set
+- {octicon}`diff-added;1.25em;profile-tour-action` : Turn on a data set
+- {octicon}`diff-removed;1.25em;profile-tour-action` : Turn off a data set
+- {octicon}`tools;1.25em;profile-tour-action`: Adjust a setting for a data set
 - {octicon}`telescope;1.25em;profile-tour-action` :  Target an object
 - {octicon}`stopwatch;1.25em;profile-tour-action` : Change the time settings
 % {octicon}`globe`: 

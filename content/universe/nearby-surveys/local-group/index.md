@@ -41,6 +41,15 @@ A close-up of the Milky Way Galaxy and its satellite galaxies in aqua. These inc
 
 
 
+:::{admonition} Local Group Colors
+The Local Group's galaxies are given these colors:
+- Aqua: galaxies under the gravitational influence of the Milky Way
+- Yellow: galaxies in Andromeda's sphere of influence
+- Green: other Local Group members
+- Gray: other nearby galaxies
+:::
+
+
 ## Collisions and Mergers
 
 Surrounding the Milky Way and Andromeda are a bevy of dwarf galaxies---smaller, often irregular galaxies, that contain hundreds of millions to a few billion stars. These dwarf galaxies are typically under the gravitational influence of a larger galaxy, and are often shredded by them at some point over their lifetime. Collisions between galaxies are common, and these smaller galaxies may even be the lifeblood for a larger galaxy by instigating star formation and replenishing its star-forming gas.
