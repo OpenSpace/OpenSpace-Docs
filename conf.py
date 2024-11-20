@@ -1,23 +1,31 @@
 import os
 import sys
 from pathlib import Path
+# Resolves custom extensions that live in _ext
 sys.path.append(str(Path('_ext').resolve()))
 
 ##########################################################################################
 #                               Generate asset examples                                  #
 ##########################################################################################
 
-# If we are on Read the docs, always build from github master
+# If we are on Read the docs, get the RTD version and try to find that OS release
 if (os.environ.get("READTHEDOCS")):
   generate_assets_examples = True
   assets_examples_use_github = True
-  assets_branch = "master" # Use the environment variable READTHEDOCS_VERSION here?
+  assets_release = os.environ.get("READTHEDOCS_VERSION")
+  print(f"Read the docs will look for the OpenSpace tag: {assets_release}")
 # If we are working on our local machine
+elif os.path.exists("generated"):
+  # If we already have the path, no need to copy files again
+  generate_assets_examples = False
 else:
-  generate_assets_examples = False # Generates asset examples if true
+  # Dev options
+  generate_assets_examples = True # Generates asset examples if true
   assets_examples_use_github = True # Use github for the examples? Else, local folder
-  assets_branch = "master" # Branch name for github option
+  assets_release = "" # Release tag name for github option. If empty, will use origin/master
   assets_folder = "" # Folder path for local folder option
+
+
 ###
 # Global Settings
 ###
@@ -40,8 +48,8 @@ extensions = [
   "sphinxcontrib.jquery",
   "sphinxcontrib.luadomain",
   "sphinxcontrib.mermaid",
-  "generate_docs",
-  "custom_directives"
+  "generate_docs", # Custom extension, lives in _ext
+  "custom_directives" # Custom extension, lives in _ext
 ]
 
 keep_warnings = True

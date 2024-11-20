@@ -29,21 +29,24 @@ def copy_local_folder(assset_examples_output, local_openspace_folder):
 
   return os.path.abspath(destination_path)
 
-def clone_github_branch(assset_examples_output, branch):
+def clone_github_release(assset_examples_output, release_tag):
   """
   Clones asset directory from OpenSpace git repository
   Uses the latest master
   Returns absolute path to the asset folder
   """
 
-  # Otherwise (the default path), we need to clone the OpenSpace repository and checkout
-  # the requested branch
   def print_progress(op_code, cur_count, max_count=None, message=""):
     print(message)
 
-  print(f"Cloning assets examples from branch '{branch}'...")
   repo = Repo.init(assset_examples_output)
+  ref = repo.tag(release_tag)
 
+  if not repo.tag(release_tag) in repo.references:
+    print(f"Could not find tag {release_tag}. Defaulting to origin/master")
+    ref = "origin/master"
+
+  print(f"Downloading assets examples from '{ref}'...")
   # Create a new remote if there isn't one already created
   origin = repo.remotes[0] if len(repo.remotes) > 0 else None
   if not origin:
@@ -52,10 +55,13 @@ def clone_github_branch(assset_examples_output, branch):
 
   print(f"Fetching OpenSpace... this might take a while")
   origin.fetch(progress=print_progress, depth=1)
-
   git = repo.git()
-  git.checkout(f"origin/{branch}", "--", DATA_ASSETS_PATH)
+
+  print(f"Cloning OpenSpace... this might take a while")
+  # Only clone the assets from the repository to speed up the build time
+  git.checkout(ref, "--", DATA_ASSETS_PATH)
   print("Done cloning assets folder from OpenSpace repository")
+
   assets_folder_path = os.path.abspath(os.path.join(assset_examples_output, DATA_ASSETS_PATH))
   return assets_folder_path
 
@@ -450,7 +456,7 @@ def generate_docs(app, config):
 
   # Get config values
   use_github = config.assets_examples_use_github
-  branch = config.assets_branch
+  release_tag = config.assets_release
   local_openspace_folder = config.assets_folder
 
   # Name variables
@@ -462,11 +468,8 @@ def generate_docs(app, config):
 
   assets_folder = None
   if use_github:
-    if branch == "":
-      print("You need to name a branch name for 'assets_branch'")
-      return
     # Download assets files from OpenSpace repository
-    assets_folder = clone_github_branch(assset_examples_output, branch)
+    assets_folder = clone_github_release(assset_examples_output, release_tag)
   else:
     if local_openspace_folder == "":
       print("You need to specify a local OpenSpace folder for 'assets_folder'")
@@ -495,7 +498,7 @@ def generate_docs(app, config):
 def setup(app: Sphinx) -> ExtensionMetadata:
     app.add_config_value('generate_assets_examples', True, 'bool')
     app.add_config_value('assets_examples_use_github', True, "bool")
-    app.add_config_value('assets_branch', "master", 'string')
+    app.add_config_value('assets_release', "", 'string')
     app.add_config_value('assets_folder', "", 'string')
 
     app.connect('config-inited', generate_docs)
