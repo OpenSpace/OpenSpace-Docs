@@ -39,21 +39,21 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
   - Toggle overlays (info text) ?
 * - {kbd}`Alt` + {kbd}`r`
   - Toggle master rendering (everything off)
-* - {kbd}`&rarr;`
+* - {kbd}`→`
   - Next time step interpolate ?
-* - {kbd}`Shift` + {kbd}`&arr;`
+* - {kbd}`Shift` + {kbd}`→`
   - Next time step immediate ?
-* - {kbd}`&larr;`
+* - {kbd}`←`
   - Previous time step interpolate ?
-* - {kbd}`Shift` + {kbd}`&larr;`
+* - {kbd}`Shift` + {kbd}`←`
   - Previous time step immediate ?
-* - {kbd}`&darr;`
+* - {kbd}`↓`
   - Return to real time interpolate
-* - {kbd}`Shift` + {kbd}`&darr;` + {kbd}`{octicon}arrow-down`
+* - {kbd}`Shift` + {kbd}`↓`
   - Return to real time immediate
-* - {kbd}`&uarr;`
+* - {kbd}`↑`
   - Return to present date and time interpolate
-* - {kbd}`Shift` + {kbd}`&uarr;`
+* - {kbd}`Shift` + {kbd}`↑`
   - Return to present date and time immediate
 * - {kbd}`F5`
   - Reload user interface
