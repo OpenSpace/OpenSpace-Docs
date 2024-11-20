@@ -1,6 +1,10 @@
 from docutils.parsers.rst.directives import unchanged, choice
 from jinja2 import Environment, FileSystemLoader
 from sphinx.util.docutils import SphinxDirective
+from sphinx.util.typing import ExtensionMetadata
+from sphinx.application import Sphinx
+
+
 
 class Dossier(SphinxDirective):
   has_content = True
@@ -158,3 +162,17 @@ class Profile_Dossier(SphinxDirective):
     self.content = output
     allow_headers = True
     return self.parse_content_to_nodes(allow_headers)
+  
+  ##########################################################################################
+#                                         Sphinx setup                                   #
+##########################################################################################
+def setup(app: Sphinx) -> ExtensionMetadata:
+    app.add_directive("dossier", Dossier)
+    app.add_directive("profile_dossier", Profile_Dossier)
+
+    return {
+        'version': '1.0',
+        'env_version': 1,
+        'parallel_read_safe': True,
+        'parallel_write_safe': True,
+    }
