@@ -78,6 +78,7 @@ pygments_dark_style = "monokai"
 
 myst_enable_extensions = {
   "attrs_inline",
+  "attrs_block",
   "colon_fence",
   "fieldlist"
 }
@@ -134,3 +135,4 @@ html_static_path = [ "_static" ]
 templates_path = [ "_templates" ]
 
 # html_extra_path = ["robots.txt"]
+
