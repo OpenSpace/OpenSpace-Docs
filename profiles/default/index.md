@@ -60,12 +60,6 @@ In this tour, we will explore the Universe from Earth to the most distant object
 
 :::::{grid-item}
 [![Earth](earth.png)](earth.png)
-:::::
-
-:::::{grid-item}
-Earth is, of course, home to everyone you know, and we're all huddled on those parts of the planet that are above present sea level---about 30% of the planet's surface. Earth remains a dynamic planet, with plate tectonics, active volcanoes, and crust formation.
-
-Earth formed about 4.6 billion years ago, but our modern species appeared only about 200,000 years ago. In that time, we have populated all corners of the planet, developed agriculture circa 10,000 years ago, and produce enough food to be able to think beyond our own survival and about things that enrich our lives and advance civilization.
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -75,6 +69,12 @@ Earth formed about 4.6 billion years ago, but our modern species appeared only a
 :::
 ::::
 
+:::::
+
+:::::{grid-item}
+Earth is, of course, home to everyone you know, and we're all huddled on those parts of the planet that are above present sea level---about 30% of the planet's surface. Earth remains a dynamic planet, with plate tectonics, active volcanoes, and crust formation.
+
+Earth formed about 4.6 billion years ago, but our modern species appeared only about 200,000 years ago. In that time, we have populated all corners of the planet, developed agriculture circa 10,000 years ago, and produce enough food to be able to think beyond our own survival and about things that enrich our lives and advance civilization.
 :::::
 ::::::
 
@@ -86,12 +86,6 @@ Earth formed about 4.6 billion years ago, but our modern species appeared only a
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Moon's orbit](moon_orbit.png)](moon_orbit.png)
-:::::
-
-:::::{grid-item}
-The Moon is Earth's only natural satellite. Its average distance is 384,400 km (almost 239,000 miles), but it ranges from 362,000 km at its nearest to 405,000 km at its most distant (that's 225,000 miles to 251,600 miles).
-
-The Moon is the farthest humans have ventured into space. In fact, the record for the farthest humans from Earth belongs to the crew of Apollo 13, the failed mission to the Moon. On April 15, 1970, their flightpath took them 254 km (158 miles) above the far side of the Moon, or 400,171 km (248,655 miles) from Earth. We have sent probes farther into space, but we have not set foot on any other world beyond the Moon. We last left the Moon on December 14, 1972, over fifty years ago.
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -101,6 +95,12 @@ The Moon is the farthest humans have ventured into space. In fact, the record fo
 :::
 ::::
 
+:::::
+
+:::::{grid-item}
+The Moon is Earth's only natural satellite. Its average distance is 384,400 km (almost 239,000 miles), but it ranges from 362,000 km at its nearest to 405,000 km at its most distant (that's 225,000 miles to 251,600 miles).
+
+The Moon is the farthest humans have ventured into space. In fact, the record for the farthest humans from Earth belongs to the crew of Apollo 13, the failed mission to the Moon. On April 15, 1970, their flightpath took them 254 km (158 miles) above the far side of the Moon, or 400,171 km (248,655 miles) from Earth. We have sent probes farther into space, but we have not set foot on any other world beyond the Moon. We last left the Moon on December 14, 1972, over fifty years ago.
 :::::
 ::::::
 
@@ -157,14 +157,6 @@ The planets align very well within a common plane. Mercury is inclined about 7&d
 :::::{grid-item}
 [![Pluto's orbit](pluto_orbit.png)](pluto_orbit.png)
 
-
-:::::
-
-:::::{grid-item}
-In contrast to these planets, Pluto is inclined 17&deg; to this plane, clearly demonstrating it's different from the planets. When viewed from above the plane, you can see that the trajectory of Pluto is interior to Neptune's orbit for a portion of its 248-year journey around the Sun.
-
-Once we discovered Kuiper Belt objects in 1992---small, rock-ice worlds beyond Neptune---astronomers understood that Pluto resembles these objects, and belongs with its Kuiper Belt brethren. Pluto is now one of a many [dwarf planets](/content/solar-system/dwarf-planets/index) in the Solar System, and one of over 2,000 known objects orbiting in the Kuiper Belt.
-
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
 
@@ -173,6 +165,12 @@ Once we discovered Kuiper Belt objects in 1992---small, rock-ice worlds beyond N
 :::
 ::::
 
+:::::
+
+:::::{grid-item}
+In contrast to these planets, Pluto is inclined 17&deg; to this plane, clearly demonstrating it's different from the planets. When viewed from above the plane, you can see that the trajectory of Pluto is interior to Neptune's orbit for a portion of its 248-year journey around the Sun.
+
+Once we discovered Kuiper Belt objects in 1992---small, rock-ice worlds beyond Neptune---astronomers understood that Pluto resembles these objects, and belongs with its Kuiper Belt brethren. Pluto is now one of a many [dwarf planets](/content/solar-system/dwarf-planets/index) in the Solar System, and one of over 2,000 known objects orbiting in the Kuiper Belt.
 :::::
 ::::::
 
@@ -198,13 +196,6 @@ The Solar System is composed of an exotic variety of objects that orbit the Sun.
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Solar System orbits plus the constellation lines](solar_system_constellations.png)](solar_system_constellations.png)
-:::::
-
-:::::{grid-item}
-Even from this great distance, with the constellation lines on, we still see the same star patterns traced in the starry sky. The familiar Ursa Major ("Big Dipper"), Orion, Scorpius, and the other constellations remain the same from this perspective because the stars are very far away. We also see the band of light we call the Milky Way.
-
-The constellation lines connect stars that trace the figures outlined in the night sky. The sky is divided into eighty-eight constellations, each claiming a region of the sky as a country's borders claim part
-of a continent.
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -214,6 +205,13 @@ of a continent.
 :::
 ::::
 
+:::::
+
+:::::{grid-item}
+Even from this great distance, with the constellation lines on, we still see the same star patterns traced in the starry sky. The familiar Ursa Major ("Big Dipper"), Orion, Scorpius, and the other constellations remain the same from this perspective because the stars are very far away. We also see the band of light we call the Milky Way.
+
+The constellation lines connect stars that trace the figures outlined in the night sky. The sky is divided into eighty-eight constellations, each claiming a region of the sky as a country's borders claim part
+of a continent.
 :::::
 ::::::
 
@@ -242,10 +240,6 @@ As you fly away from the Sun and Earth, you will begin to see some of the nearby
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Star labels](star_names.png)](star_names.png)
-:::::
-
-:::::{grid-item}
-Some of the nearby stars are easily distinguished. In particular, Sirius, the brightest star in the sky (due to its intrinsic brightness and its distance), is about 9 light years from the Sun. Nearby is Procyon, about 11.5 light years from us. Opposite the Sun is Vega, 25 light years away, and Altair, around 16 light years from Earth. Several dimmer stars also populate the solar neighborhood.
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -255,6 +249,10 @@ Some of the nearby stars are easily distinguished. In particular, Sirius, the br
 :::
 ::::
 
+:::::
+
+:::::{grid-item}
+Some of the nearby stars are easily distinguished. In particular, Sirius, the brightest star in the sky (due to its intrinsic brightness and its distance), is about 9 light years from the Sun. Nearby is Procyon, about 11.5 light years from us. Opposite the Sun is Vega, 25 light years away, and Altair, around 16 light years from Earth. Several dimmer stars also populate the solar neighborhood.
 :::::
 ::::::
 
@@ -292,12 +290,6 @@ From this location, you may notice that the stars exhibit various brightnesses a
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![The exoplanetary systems with the constellation lines.](exoplanets_constellations.png)](exoplanets_constellations.png)
-:::::
-
-:::::{grid-item}
-It may appear we are now lost in a sea of stars and constellation lines connecting some of them, but we can now explore objects on larger scales beyond the solar neighborhood.
-
-Each exoplanet marker indicates a star with a confirmed planetary system. None of these were known before 1995, so this is a relatively new branch of astrophysics, and a burgeoning one at that. We now know of over 5,000 planets outside our Solar System, and some of these systems have multiple planets, indicated by the parenthetical number in their label (no number signifies only one known planet).
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -305,7 +297,14 @@ Each exoplanet marker indicates a star with a confirmed planetary system. None o
 :::{grid-item-card} [](/content/milky-way/exoplanets/exoplanet-systems/index)
 [![Exoplanet systems](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](/content/milky-way/exoplanets/exoplanet-systems/index)
 :::
+::::
 
+:::::
+
+:::::{grid-item}
+It may appear we are now lost in a sea of stars and constellation lines connecting some of them, but we can now explore objects on larger scales beyond the solar neighborhood.
+
+Each exoplanet marker indicates a star with a confirmed planetary system. None of these were known before 1995, so this is a relatively new branch of astrophysics, and a burgeoning one at that. We now know of over 5,000 planets outside our Solar System, and some of these systems have multiple planets, indicated by the parenthetical number in their label (no number signifies only one known planet).
 :::::
 ::::::
 
@@ -337,6 +336,15 @@ As you fly farther from the Sun, it quickly becomes clear that the constellation
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Radio sphere with exoplanets](radio_sphere_exoplanets.png)](radio_sphere_exoplanets.png)
+
+::::{grid} 1 1 1 2
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/content/milky-way/graphics/radio-sphere/index)
+[![HII regions](/content/milky-way/graphics/radio-sphere/radio_sphere_icon.png)](/content/milky-way/graphics/radio-sphere/index)
+:::
+::::
+
 :::::
 
 :::::{grid-item}
@@ -350,16 +358,6 @@ signals, like the initial broadcast of [_I Love Lucy_](https://en.wikipedia.org/
 We mentioned earlier that this is a hypothetical boundary because these signals lose strength as they travel out into space---as all light does. The intensity of light falls off as the radius increases---the farther you are from a candle, the dimmer it appears---and Earth's signals are no different.
 
 In reality, by the time our radio signals reach the outer Solar System, their strength is equal to that of the cosmic noise, the background signals that randomly float throughout the Galaxy. The radio sphere remains a hypothetical boundary, but exemplifies our farthest reach into the universe, not by humans or machines, but by light we produced on Earth.
-
-::::{grid} 1 1 1 2
-:gutter: 1 1 1 2
-
-:::{grid-item-card} [](/content/milky-way/graphics/radio-sphere/index)
-[![HII regions](/content/milky-way/graphics/radio-sphere/radio_sphere_icon.png)](/content/milky-way/graphics/radio-sphere/index)
-:::
-
-::::
-
 :::::
 ::::::
 
@@ -391,12 +389,6 @@ Imagine how many planets we'd see today if Kepler was able to look at the entire
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Exoplanet candidate systems](exoplanet_candidates.png)](exoplanet_candidates.png)
-:::::
-
-:::::{grid-item}
-Initially, we observed large planets in nearby stars---all the known planets were relatively close to the Sun. In 2009, the Kepler Telescope was launched into space. Its mission was to stare at one patch of sky near the constellation Cygnus, and find planets in that patch of sky using one [detection method](/content/milky-way/exoplanets/index). Later, in 2018, TESS was launched and is scanning the entire sky for planets.
-
-The Exoplanet Candidates are stars, colored by mission, that are thought to be strong candidates for hosting planets. Yellow stars are from the Kepler Mission, orange stars are from the K2 Mission, and green stars are from TESS. We see the Kepler footprint clearly in the Exoplanet data---it used to be more prominent but many former candidates are now confirmed exoplanet systems and appear in that data set instead.
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -406,7 +398,12 @@ The Exoplanet Candidates are stars, colored by mission, that are thought to be s
 :::
 ::::
 
+:::::
 
+:::::{grid-item}
+Initially, we observed large planets in nearby stars---all the known planets were relatively close to the Sun. In 2009, the Kepler Telescope was launched into space. Its mission was to stare at one patch of sky near the constellation Cygnus, and find planets in that patch of sky using one [detection method](/content/milky-way/exoplanets/index). Later, in 2018, TESS was launched and is scanning the entire sky for planets.
+
+The Exoplanet Candidates are stars, colored by mission, that are thought to be strong candidates for hosting planets. Yellow stars are from the Kepler Mission, orange stars are from the K2 Mission, and green stars are from TESS. We see the Kepler footprint clearly in the Exoplanet data---it used to be more prominent but many former candidates are now confirmed exoplanet systems and appear in that data set instead.
 :::::
 ::::::
 
@@ -443,14 +440,6 @@ Just as we went from the two-dimensional sky into the three-dimensional stars, w
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Milky Way Galaxy](galaxy-face-on.png)](galaxy-face-on.png)
-:::::
-
-:::::{grid-item}
-The Galaxy is composed of over 100 billion stars, gas, and {term}`dust <astrophysical dust>`. This gas and dust is arranged in spiral arms that emanate from center of the Galaxy and are confined to a thin disk. Its bright center is rife with stars and a supermassive black hole. The black hole is considered inactive, with a low rate of accretion.
-
-The Galaxy is about 100,000 light years across, but the disk is only about 1,000 light years thick in the spiral arms. Galaxies, generally, are star-making machines, where stars are born from this gas and provide light in the otherwise dark universe. When stars die, they return some fraction of their gas back into the Galaxy to form a new star one day. The Sun formed about five billion years ago from such a cloud, and has about five billion years left before it evolves into a [white dwarf](/content/milky-way/stellar-remnants/white-dwarfs/index)---an Earth-sized, dim object that will ultimately fade away.
-
-% Stars form in the disk of the Milky Way---the part we see now---but, the Galaxy has a spherical component called the halo. The spherical halo stretches beyond the disk and is filled with cool, dim stars. Cooler stars have much longer lifetimes (they burn their fuel more slowly), and live long enough to be sent on a trajectory out of the disk of the Galaxy, where they formed. Over time, the halo has been populated with such stars.
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -464,6 +453,14 @@ The Galaxy is about 100,000 light years across, but the disk is only about 1,000
 :::
 ::::
 
+:::::
+
+:::::{grid-item}
+The Galaxy is composed of over 100 billion stars, gas, and {term}`dust <astrophysical dust>`. This gas and dust is arranged in spiral arms that emanate from center of the Galaxy and are confined to a thin disk. Its bright center is rife with stars and a supermassive black hole. The black hole is considered inactive, with a low rate of accretion.
+
+The Galaxy is about 100,000 light years across, but the disk is only about 1,000 light years thick in the spiral arms. Galaxies, generally, are star-making machines, where stars are born from this gas and provide light in the otherwise dark universe. When stars die, they return some fraction of their gas back into the Galaxy to form a new star one day. The Sun formed about five billion years ago from such a cloud, and has about five billion years left before it evolves into a [white dwarf](/content/milky-way/stellar-remnants/white-dwarfs/index)---an Earth-sized, dim object that will ultimately fade away.
+
+% Stars form in the disk of the Milky Way---the part we see now---but, the Galaxy has a spherical component called the halo. The spherical halo stretches beyond the disk and is filled with cool, dim stars. Cooler stars have much longer lifetimes (they burn their fuel more slowly), and live long enough to be sent on a trajectory out of the disk of the Galaxy, where they formed. Over time, the halo has been populated with such stars.
 :::::
 ::::::
 
@@ -496,16 +493,6 @@ Given that the Milky Way has hundreds of billions of stars, it's compelling to w
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Orbit of the Sun in the Milky Way Galaxy](sun_orbit.png)](sun_orbit.png)
-:::::
-
-:::::{grid-item}
-Everything moves in and around the Galaxy. We can see the trajectory of the Sun over the next billion years by turning on the Sun's orbit. The Sun, and its accompanying planets, orbit about the center of the Milky Way about once every 225 million years. This makes us about 20 galactic years old, in other words, we've made about 20 revolutions around the Galaxy since the Sun was born.
-
-On this scale, life began on Earth about 17 galactic years ago, multicellular life appeared about 7 galactic years ago, the KT extinction event occurred 0.3 galactic years ago (65 million years ago), and modern humans appeared 0.001 galactic years ago (roughly 200,000 years ago).
-
-The Sun has only moved about 145 light years in the time since humans have walked on Earth, a tiny fraction of its galactic orbit and a distance that could fit inside the [Radio Sphere](/content/milky-way/graphics/radio-sphere/index).
-
-The Sun's orbit is remarkably stable, in contrast to other stars that orbit the Galaxy in irregular, unstable orbits, inside and outside the Galactic disk. Turn on some of the other star orbits to see just how unstable they are.
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -516,13 +503,23 @@ The Sun's orbit is remarkably stable, in contrast to other stars that orbit the 
 ::::
 
 :::::
+
+:::::{grid-item}
+Everything moves in and around the Galaxy. We can see the trajectory of the Sun over the next billion years by turning on the Sun's orbit. The Sun, and its accompanying planets, orbit about the center of the Milky Way about once every 225 million years. This makes us about 20 galactic years old, in other words, we've made about 20 revolutions around the Galaxy since the Sun was born.
+
+On this scale, life began on Earth about 17 galactic years ago, multicellular life appeared about 7 galactic years ago, the KT extinction event occurred 0.3 galactic years ago (65 million years ago), and modern humans appeared 0.001 galactic years ago (roughly 200,000 years ago).
+
+The Sun has only moved about 145 light years in the time since humans have walked on Earth, a tiny fraction of its galactic orbit and a distance that could fit inside the [Radio Sphere](/content/milky-way/graphics/radio-sphere/index).
+
+The Sun's orbit is remarkably stable, in contrast to other stars that orbit the Galaxy in irregular, unstable orbits, inside and outside the Galactic disk. Turn on some of the other star orbits to see just how unstable they are.
+:::::
 ::::::
 
 
 
 ### Local Group
 
-Contemplating the Milky Way and all its stars, we now turn to what lies outside the Galaxy and the multitude of worlds that lie beyond our home star system.
+Contemplating the Milky Way and its hundreds of billions of stars, we now turn to what lies outside the Galaxy and the multitude of worlds that lie beyond our home star system.
 
 ::::{tip}
 By default, [Tully](/content/universe/nearby-surveys/tully-galaxies/index), [2Df](/content/universe/deep-sky-surveys/2df-galaxies/index), and [Sloan](/content/universe/deep-sky-surveys/sloan-galaxies/index) galaxies are on and will appear when you reach a distance from the Sun that triggers them to appear. For an audience, I like to have control of when they appear, so I turn them off. \
@@ -544,15 +541,6 @@ By default, [Tully](/content/universe/nearby-surveys/tully-galaxies/index), [2Df
 :::::{grid-item}
 [![Local Group of galaxies near the Milky Way](local_group_milky_way.png)](local_group_milky_way.png)
 
-:::::
-
-:::::{grid-item}
-
-The Milky Way is surrounded by many smaller objects called dwarf galaxies. Dwarf galaxies are small systems with up to several billion stars. They often orbit and interact with larger galaxies, which play a part in their evolution. The Milky Way has many such dwarfs in its sphere of influence. These include the Large and Small Magellanic Clouds (LMC and SMC, if you have the labels on), and many other small star systems, a few of which are colliding with the Milky Way right now.
-
-The Milky Way dominates this area, but nearby is the Andromeda galaxy, another large spiral galaxy about 2.5 million light years away. It is slightly larger than the Milky Way, and also has a number of dwarf galaxies caught in its gravitational pull. These two large spiral galaxies, along with another called Triangulum (or, Messier 33), and the many dwarf galaxies, comprise what's called the Local Group.
-
-
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
 
@@ -561,6 +549,13 @@ The Milky Way dominates this area, but nearby is the Andromeda galaxy, another l
 :::
 ::::
 
+:::::
+
+:::::{grid-item}
+
+The Milky Way is surrounded by many smaller objects called dwarf galaxies. Dwarf galaxies are small systems with up to several billion stars. They often orbit and interact with larger galaxies, which play a part in their evolution. The Milky Way has many such dwarfs in its sphere of influence. These include the Large and Small Magellanic Clouds (LMC and SMC, if you have the labels on), and many other small star systems, a few of which are colliding with the Milky Way right now.
+
+The Milky Way dominates this area, but nearby is the Andromeda galaxy, another large spiral galaxy about 2.5 million light years away. It is slightly larger than the Milky Way, and also has a number of dwarf galaxies caught in its gravitational pull. These two large spiral galaxies, along with another called Triangulum (or, Messier 33), and the many dwarf galaxies, comprise what's called the Local Group.
 :::::
 ::::::
 
@@ -590,7 +585,6 @@ All of these galaxies are influencing one another gravitationally. In fact, the 
 Eventually, these two galaxies will coalesce into one large system, in about 30 galactic years from now---long after Earth becomes inhospitable and the Sun is extinguished.
 
 Far off in the future, circa 150 billion years from now, all the galaxies of the Local Group will have coalesced into one large galaxy, but that's a topic for another tour.
-
 :::::
 ::::::
 
@@ -606,10 +600,6 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Nearby galaxies to the Milky Way](tully_near_home.png)](tully_near_home.png)
-:::::
-
-:::::{grid-item}
-
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -624,6 +614,27 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 ::::
 
 :::::
+
+:::::{grid-item}
+As we pull away from the Local Group, we begin to see the local
+universe is populated with many galaxies. These galaxies are in the
+Tully Catalog, compiled by Brent Tully. It is one of the earliest
+three-dimensional catalogs of the nearby universe, and its roughly
+30,000 galaxies remain one of the richest galaxy atlases, with
+properly scaled and inclined images. Turn on the Galaxy Groups
+labels to see most of the nearby galaxy groups.
+
+:::::
+::::::
+
+
+
+::::::{admonition} Galaxy Survey Colors
+Galaxy surveys all use the same color scheme based on local density. We count how many neighbors 
+- Aqua: galaxies under the gravitational influence of the Milky Way
+- Yellow: galaxies in Andromeda's sphere of influence
+- Green: other Local Group members
+- Gray: other nearby galaxies
 ::::::
 
 
@@ -634,6 +645,20 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 :::::
 
 :::::{grid-item}
+A little farther out and we can see the galaxy clusters in orange. The
+Virgo Cluster is the nearest, large cluster to us. It’s over 50 million
+light years away, and contains over 1,000 galaxies. This is the bustling
+center in our corner of the universe.
+
+With the boundaries off, we now see the nearby galaxies more
+clearly. As you orbit more quickly, the weblike structure of the local
+universe becomes more apparent. We see clusters of galaxies connected
+by strands and filaments of galaxies. Between them, we see
+relatively empty areas, called Voids.
+
+% The Virgo Cluster is the heart of the Virgo Supercluster. A supercluster is a conglomeration of galaxy clusters and groupings. They are among the largest structures known. But, their constituent clusters and galaxies are not necessarily bound gravitationally, their motions are guided more by the overall expansion of the universe. With the Virgo Supercluster Boundary on, you can see the Local Group is only a tiny part of the supercluster, and located far from its center.
+
+% In 2014, Brent Tully and a group of astronomers discovered that we are part of an even larger structure which they named the Laniakea Supercluster. This humongous region contains the Milky Way and many thousands of galaxies. The Virgo Supercluster is now just one region among a larger complex of galaxy clusters, connecting strands, and filaments. -->
 
 :::::
 ::::::
@@ -644,10 +669,6 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Galaxy group labels on](galaxy_groups.png)](galaxy_groups.png)
-:::::
-
-:::::{grid-item}
-
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -658,6 +679,16 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 ::::
 
 :::::
+
+:::::{grid-item}
+None of these other groups are as rich as the Local Group because
+we cannot see tiny dwarf galaxies from such great distances. From
+out here, we would likely only see Andromeda, Milky Way, and
+Triangulum—the large, luminous galaxies. Many of the Messier❉
+galaxies are somewhat local, like M81, M101, M51. One can imagine
+a cadre of small dwarf galaxies around each of these groups.
+
+:::::
 ::::::
 
 
@@ -666,10 +697,6 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Galaxy cluster labels on](galaxy_clusters.png)](galaxy_clusters.png)
-:::::
-
-:::::{grid-item}
-
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -678,6 +705,11 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 [![Galaxy cluster labels](/content/universe/nearby-surveys/galaxy-cluster-labels/galaxy_clusters_icon.png)](/content/universe/nearby-surveys/galaxy-cluster-labels/index)
 :::
 ::::
+
+:::::
+
+:::::{grid-item}
+
 
 :::::
 ::::::
@@ -691,58 +723,6 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 :::::
 
 :::::{grid-item}
-
-:::::
-::::::
-
-
-
-
-
-As we pull away from the Local Group, we begin to see the local
-universe is populated with many galaxies. These galaxies are in the
-Tully Catalog, compiled by Brent Tully. It is one of the earliest
-three-dimensional catalogs of the nearby universe, and its roughly
-30,000 galaxies remain one of the richest galaxy atlases, with
-properly scaled and inclined images. Turn on the Galaxy Groups
-labels to see most of the nearby galaxy groups.
-
-None of these other groups are as rich as the Local Group because
-we cannot see tiny dwarf galaxies from such great distances. From
-out here, we would likely only see Andromeda, Milky Way, and
-Triangulum—the large, luminous galaxies. Many of the Messier❉
-galaxies are somewhat local, like M81, M101, M51. One can imagine
-a cadre of small dwarf galaxies around each of these groups.
-
-
-A little farther out and we can see the galaxy clusters in orange. The
-Virgo Cluster is the nearest, large cluster to us. It’s over 50 million
-light years away, and contains over 1,000 galaxies. This is the bustling
-center in our corner of the universe.
-
-The Virgo Cluster is the heart of the Virgo Supercluster. A supercluster
-is a conglomeration of galaxy clusters and groupings. They are
-among the largest structures known. But, their constituent clusters
-and galaxies are not necessarily bound gravitationally, their motions
-are guided more by the overall expansion of the universe.
-With the Virgo Supercluster Boundary on, you can see the Local
-Group is only a tiny part of the supercluster, and located far from its
-center.
-
-In 2014, Brent Tully and a group of astronomers discovered that we
-are part of an even larger structure which they named the Laniakea
-Supercluster. This humongous region contains the Milky Way and
-many thousands of galaxies. The Virgo Supercluster is now just
-one region among a larger complex of galaxy clusters, connecting
-strands, and filaments.
-
-
-With the boundaries off, we now see the nearby galaxies more
-clearly. As you orbit more quickly, the weblike structure of the local
-universe becomes more apparent. We see clusters of galaxies connected
-by strands and filaments of galaxies. Between them, we see
-relatively empty areas, called Voids.
-
 Once you’re outside the 30,000 galaxies in Tully, you’ll notice that
 it forms a cube. The universe, of course, is not cube shaped. This
 squared-off boundary ensures that these data remain consistent. In
@@ -756,6 +736,25 @@ we call the zone of obscuration❉. It delineates an absence of galaxies,
 but it is an observational phenomenon. We cannot see the galaxies
 that exist in these areas because that band of light in the night
 sky—the Milky Way—blocks our view of the galaxies beyond.
+:::::
+::::::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -768,10 +767,6 @@ sky—the Milky Way—blocks our view of the galaxies beyond.
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Two-degree Field galaxy survey](two_degree_field.png)](two_degree_field.png)
-:::::
-
-:::::{grid-item}
-
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -782,6 +777,11 @@ sky—the Milky Way—blocks our view of the galaxies beyond.
 ::::
 
 :::::
+
+:::::{grid-item}
+
+
+:::::
 ::::::
 
 
@@ -790,10 +790,6 @@ sky—the Milky Way—blocks our view of the galaxies beyond.
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Sloan Digital Sky Survey galaxies](sloan_galaxies.png)](sloan_galaxies.png)
-:::::
-
-:::::{grid-item}
-
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -804,6 +800,11 @@ sky—the Milky Way—blocks our view of the galaxies beyond.
 ::::
 
 :::::
+
+:::::{grid-item}
+
+
+:::::
 ::::::
 
 
@@ -812,10 +813,6 @@ sky—the Milky Way—blocks our view of the galaxies beyond.
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Quasar survey](quasars.png)](quasars.png)
-:::::
-
-:::::{grid-item}
-
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -824,6 +821,11 @@ sky—the Milky Way—blocks our view of the galaxies beyond.
 [![Quasars](/content/universe/deep-sky-surveys/quasars/quasars_icon.png)](/content/universe/deep-sky-surveys/quasars/index)
 :::
 ::::
+
+:::::
+
+:::::{grid-item}
+
 
 :::::
 ::::::
@@ -921,10 +923,6 @@ years old.
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
 [![Cosmic microwave background](cmb_inside.png)](cmb_inside.png)
-:::::
-
-:::::{grid-item}
-
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
@@ -934,6 +932,11 @@ years old.
 :::
 
 ::::
+
+:::::
+
+:::::{grid-item}
+
 
 :::::
 ::::::
