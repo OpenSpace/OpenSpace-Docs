@@ -10,7 +10,7 @@ authors:
 {menuselection}`Scene --> Milky Way --> Galaxy --> Milky Way Volume`
 
 
-While a two-dimensional [Milky Way Image](../milky-way-galaxy-image/index) of the Galaxy can be useful for seeing data sets within the context of the Galaxy, the Milky Way Galaxy is, of course, a massive, three-dimensional entity, so it would be nice to see its dimensionality here to compare its scale with other objects in the universe and have a more realistic depiction of the Galaxy.
+While a two-dimensional [Milky Way Image](../milky-way-image/index) of the Galaxy can be useful for seeing data sets within the context of the Galaxy, the Milky Way Galaxy is, of course, a massive, three-dimensional entity, so it would be nice to see its dimensionality here to compare its scale with other objects in the universe and have a more realistic depiction of the Galaxy.
 
 
 ## Perspective Problem
@@ -40,7 +40,7 @@ The team collaborated with scientists at the [National Astronomical Observatory 
 :align: left
 :alt: A two-panel image of the Milky Way Galaxy in OpenSpace. On the left is the Milky Way Volume model and on the right is the volumetric model and the Milky Way Image. 
 
-The Milky Way Galaxy Volume in OpenSpace. The left panel shows only the volumetric model, while the right panel shows the volumetric model and the [Milky Way Galaxy Image](../milky-way-galaxy-image/index). From this view, it is clear the two assets complement one another nicely, and should typically be shown together.
+The Milky Way Galaxy Volume in OpenSpace. The left panel shows only the volumetric model, while the right panel shows the volumetric model and the [Milky Way Galaxy Image](../milky-way-image/index). From this view, it is clear the two assets complement one another nicely, and should typically be shown together.
 :::
 
 

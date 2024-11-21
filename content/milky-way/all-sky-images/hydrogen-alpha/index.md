@@ -5,9 +5,9 @@ authors:
 ---
 
 
-# Hydrogen-alpha All-sky Image
+# Hydrogen-alpha All-sky
 
-{menuselection}`Scene --> Milky Way --> All-sky Images --> Hydrogen-alpha`
+{menuselection}`Scene --> Milky Way --> All-sky Images --> Hydrogen-alpha All-sky`
 
 
 The hydrogen-alpha all-sky image is light from a narrow band in the red end of the visible spectrum. We see this light in the composite of visible light, but here we can probe this specific wavelength to see only this small part of red light. It reveals where the glowing hydrogen gas is in the sky.

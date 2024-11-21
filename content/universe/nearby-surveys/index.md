@@ -25,8 +25,8 @@ authors:
 [![Tully galaxies](/content/universe/nearby-surveys/tully-galaxies/tully_icon.png)](/content/universe/nearby-surveys/tully-galaxies/index)
 :::
 
-:::{grid-item-card} [](/content/universe/nearby-surveys/tully-galaxies-images/index)
-[![Tully galaxies images](/content/universe/nearby-surveys/tully-galaxies-images/tully_images_icon.png)](/content/universe/nearby-surveys/tully-galaxies-images/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/tully-galaxy-images/index)
+[![Tully galaxy images](/content/universe/nearby-surveys/tully-galaxy-images/tully_images_icon.png)](/content/universe/nearby-surveys/tully-galaxy-images/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/galaxy-group-labels/index)
@@ -75,7 +75,7 @@ The galaxy surveys here are generally more complete, and they cover most of the 
 home-label/index
 local-group/index
 tully-galaxies/index
-tully-galaxies-images/index
+tully-galaxy-images/index
 galaxy-group-labels/index
 galaxy-cluster-labels/index
 2MASS-galaxies/index

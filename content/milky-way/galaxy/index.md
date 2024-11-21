@@ -13,16 +13,16 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](/content/milky-way/galaxy/milky-way-galaxy-image/index)
-[![Galaxy image](/content/milky-way/galaxy/milky-way-galaxy-image/galaxy_image_icon.png)](/content/milky-way/galaxy/milky-way-galaxy-image/index)
+:::{grid-item-card} [](/content/milky-way/galaxy/milky-way-image/index)
+[![Galaxy image](/content/milky-way/galaxy/milky-way-image/galaxy_image_icon.png)](/content/milky-way/galaxy/milky-way-image/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/galaxy/milky-way-volume/index)
 [![Galaxy volume](/content/milky-way/galaxy/milky-way-volume/milky_way_model_icon.png)](/content/milky-way/galaxy/milky-way-volume/index)
 :::
 
-:::{grid-item-card} [](/content/milky-way/galaxy/milky-way-arms-labels/index)
-[![Galaxy arm labels](/content/milky-way/galaxy/milky-way-arms-labels/milkyway_arms_labels_icon.png)](/content/milky-way/galaxy/milky-way-arms-labels/index)
+:::{grid-item-card} [](/content/milky-way/galaxy/milky-way-arm-labels/index)
+[![Galaxy arm labels](/content/milky-way/galaxy/milky-way-arm-labels/milkyway_arms_labels_icon.png)](/content/milky-way/galaxy/milky-way-arm-labels/index)
 :::
 
 ::::
@@ -41,7 +41,7 @@ These data sets fill that role, providing a model for the Milky Way that we can 
 :maxdepth: 1
 :hidden:
 
-milky-way-galaxy-image/index
+milky-way-image/index
 milky-way-volume/index
-milky-way-arms-labels/index
+milky-way-arm-labels/index
 :::

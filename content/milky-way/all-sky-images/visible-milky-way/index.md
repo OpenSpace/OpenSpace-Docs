@@ -5,9 +5,9 @@ authors:
 ---
 
 
-# Visible All-sky Image
+# Visible All-sky
 
-{menuselection}`Scene --> Milky Way --> All-sky Images --> Visible Milky Way`
+{menuselection}`Scene --> Milky Way --> All-sky Images --> Visible All-sky`
 
 
 :::{figure} visible_scorpius.png

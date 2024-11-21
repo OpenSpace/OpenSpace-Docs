@@ -444,8 +444,8 @@ Just as we went from the two-dimensional sky into the three-dimensional stars, w
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [Image](/content/milky-way/galaxy/milky-way-galaxy-image/index)
-[![Galaxy image](/content/milky-way/galaxy/milky-way-galaxy-image/galaxy_image_icon.png)](/content/milky-way/galaxy/milky-way-galaxy-image/index)
+:::{grid-item-card} [Image](/content/milky-way/galaxy/milky-way-image/index)
+[![Galaxy image](/content/milky-way/galaxy/milky-way-image/galaxy_image_icon.png)](/content/milky-way/galaxy/milky-way-image/index)
 :::
 
 :::{grid-item-card} [Volume](/content/milky-way/galaxy/milky-way-volume/index)
@@ -1366,16 +1366,16 @@ that we yearn to solve.
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [Image](/content/milky-way/galaxy/milky-way-galaxy-image/index)
-[![Galaxy image](/content/milky-way/galaxy/milky-way-galaxy-image/galaxy_image_icon.png)](/content/milky-way/galaxy/milky-way-galaxy-image/index)
+:::{grid-item-card} [Image](/content/milky-way/galaxy/milky-way-image/index)
+[![Galaxy image](/content/milky-way/galaxy/milky-way-image/galaxy_image_icon.png)](/content/milky-way/galaxy/milky-way-image/index)
 :::
 
 :::{grid-item-card} [Volume](/content/milky-way/galaxy/milky-way-volume/index)
 [![Galaxy volume](/content/milky-way/galaxy/milky-way-volume/milky_way_model_icon.png)](/content/milky-way/galaxy/milky-way-volume/index)
 :::
 
-:::{grid-item-card} [Arm Labels](/content/milky-way/galaxy/milky-way-arms-labels/index)
-[![Galaxy arm labels](/content/milky-way/galaxy/milky-way-arms-labels/milkyway_arms_labels_icon.png)](/content/milky-way/galaxy/milky-way-arms-labels/index)
+:::{grid-item-card} [Arm Labels](/content/milky-way/galaxy/milky-way-arm-labels/index)
+[![Galaxy arm labels](/content/milky-way/galaxy/milky-way-arm-labels/milkyway_arms_labels_icon.png)](/content/milky-way/galaxy/milky-way-arm-labels/index)
 :::
 
 ::::
@@ -1412,8 +1412,8 @@ that we yearn to solve.
 [![Tully galaxies](/content/universe/nearby-surveys/tully-galaxies/tully_icon.png)](/content/universe/nearby-surveys/tully-galaxies/index)
 :::
 
-:::{grid-item-card} [](/content/universe/nearby-surveys/tully-galaxies-images/index)
-[![Tully galaxies images](/content/universe/nearby-surveys/tully-galaxies-images/tully_images_icon.png)](/content/universe/nearby-surveys/tully-galaxies-images/index)
+:::{grid-item-card} [](/content/universe/nearby-surveys/tully-galaxy-images/index)
+[![Tully galaxies images](/content/universe/nearby-surveys/tully-galaxy-images/tully_images_icon.png)](/content/universe/nearby-surveys/tully-galaxy-images/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/galaxy-group-labels/index)

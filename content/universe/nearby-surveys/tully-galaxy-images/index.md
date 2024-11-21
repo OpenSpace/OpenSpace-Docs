@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Tully Galaxies Images
+# Tully Galaxy Images
 
 {menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxy Images`
 

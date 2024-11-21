@@ -46,7 +46,7 @@ authors:
 :::
 
 :::{grid-item-card} [](/content/milky-way/galaxy/index)
-[![Galaxy](/content/milky-way/galaxy/milky-way-galaxy-image/galaxy_image_icon.png)](/content/milky-way/galaxy/index)
+[![Galaxy](/content/milky-way/galaxy/milky-way-image/galaxy_image_icon.png)](/content/milky-way/galaxy/index)
 :::
 
 ::::

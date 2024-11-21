@@ -29,7 +29,7 @@ From this perspective and at this scale, the galaxies are so small that you have
 
 On each point we place an image that is representative of its morphological type---spiral, elliptical, or irregular. Most of these come from [The Galaxy Catalog](http://zsolt-frei.net/catalog.htm). A handful of galaxies are represented by their actual images, which primarily come from the [National Optical Astronomy Observatory](https://en.wikipedia.org/wiki/National_Optical_Astronomy_Observatory) (NOAO).
 
-Each of these images has been altered from its original state. These images were taken from Earth on some of the world's largest telescopes, so foreground stars from our own Galaxy appear in each image. We are representing galaxies in extragalactic space, so we have removed the stars from each image. See more in [Tully Galaxies Images](../tully-galaxies-images/index).
+Each of these images has been altered from its original state. These images were taken from Earth on some of the world's largest telescopes, so foreground stars from our own Galaxy appear in each image. We are representing galaxies in extragalactic space, so we have removed the stars from each image. See more in [Tully Galaxies Images](../tully-galaxy-images/index).
 
 
 ## Large-scale Structure
