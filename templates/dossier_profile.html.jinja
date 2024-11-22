@@ -1,31 +1,30 @@
-## Dossier
-
 :::{list-table}
 :header-rows: 0
+:stub-columns: 1
 :align: left
-:class: full-width
+:width: 90%
 
-* - **Name**:
+* - Name:
   - {{ name }}
-* - **File:**
+* - File:
   - {{ profilefile }}
-* - **Anchor:**
+* - Anchor:
 {% if anchor is string %}
   - {{ anchor }}
 {% else %}
 {% set colon = joiner(";") %}
   - {% for r in anchor %}{{ colon() }}{% if r.link %} [{{ r.name }}]({{ r.link }}){% else %} {{ r.name }}{% endif %}{% endfor %}
 {% endif %}
-* - **Time:**
+* - Time:
   - {{ time }}
-* - **Author:**
+* - Author:
   - {{ author }}
-* - **License:**
+* - License:
 {% if license.name %}
   - [{{ license.name }}]({{ license.link }})
 {% else %}
   - {{ license }}
 {% endif %}
-* - **Version:**
+* - Version:
   - {{ version }}
 :::
