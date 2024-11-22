@@ -91,7 +91,7 @@ The OpenSpace executable will be build in the `bin` folder (or `bin/Debug`/`bin/
 The first window showing OpenSpace
 :::
 
-  - See the [Getting Started Guide: Using OpenSpace](/getting-started/getting-started/index) page for how to get started with running and using OpenSpace
+  - See [Getting Started](/getting-started/index) page for how to get started with running and using OpenSpace
   - The [Coding Style](../coding-style) describe the general coding guidelines that are applicable to the Ghoul, SGCT, and OpenSpace repository
   - See the [OpenSpace Layout](../folder-layout) page for more information about the structure of OpenSpace directories
   - See the [Deploy to a Windows Machine](../deploying-windows) page for additional information about what goes where on Windows (and how to copy from one machine to another).

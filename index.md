@@ -7,7 +7,7 @@ In addition to the documentation provided here, you are welcome to [join](https:
 This documentation is structured to provide information for those new to OpenSpace, those seeking to expand their knowledge, and will touch on advanced topics that may be more appropriate for those who want to build data sets or customize a presentation.
 
 
-On the left you can find a table of contents that allows you to access the individual topics of interest. The table also contains a search function to search through the available pages. If you are new to _OpenSpace_, we'd recommend you to start in the [Getting Started](getting-started/getting-started/index) section.
+On the left you can find a table of contents that allows you to access the individual topics of interest. The table also contains a search function to search through the available pages. If you are new to _OpenSpace_, we'd recommend you to start in the [Getting Started](getting-started/index) section.
 
 The overall structure of the documentation is as follows:
 
@@ -56,10 +56,7 @@ You can find a list of all releases of OpenSpace [here](about/releases/index.md)
 :maxdepth: 1
 :hidden:
 
-getting-started/handling-errors
-getting-started/hardware-requirements
-getting-started/getting-started/index
-getting-started/faq/index
+getting-started/index
 :::
 
 
