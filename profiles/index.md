@@ -46,7 +46,11 @@ We use the following symbols in profile pages to indicate actions:
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./default/index)
-[![default profile](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](./default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](./default/index)
+:::
+
+:::{grid-item-card} [](./empty/index)
+[![empty profile](/profiles/empty/profile_empty_icon.png)](./empty/index)
 :::
 
 ::::
@@ -67,7 +71,7 @@ dawn
 default/index
 default_full
 eclipse
-empty
+empty/index
 gaia
 juice
 juno
