@@ -11,7 +11,7 @@ authors:
 
 
 ::::::{tab-set}
-:::::{tab-item} Details
+:::::{tab-item} Overview
 
 
 ## Galaxy Groups
@@ -43,10 +43,10 @@ A close-up of the Milky Way Galaxy and its satellite galaxies in aqua. These inc
 
 :::{admonition} Local Group Colors
 The Local Group's galaxies are given these colors:
-- Aqua: galaxies under the gravitational influence of the Milky Way
-- Yellow: galaxies in Andromeda's sphere of influence
-- Green: other Local Group members
-- Gray: other nearby galaxies
+- Aqua: Galaxies under the gravitational influence of the Milky Way
+- Yellow: Galaxies in Andromeda's sphere of influence
+- Green: Other Local Group members
+- Gray: Other nearby galaxies
 :::
 
 
@@ -96,6 +96,9 @@ The [Galaxy Group Labels](../galaxy-group-labels/index) identify many other near
 
 
 :::::{tab-item} Dossier
+
+
+## Dossier
 
 
 :::{dossier}

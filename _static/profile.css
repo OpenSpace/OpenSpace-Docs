@@ -5,3 +5,16 @@
 .rst-content section ul.no-bullet li  {
     list-style-type: none;
 }
+
+.galaxy-survey-orange {
+    color: rgb(255 128 0)
+}
+.galaxy-survey-yellow {
+    color: rgb(200, 200, 0)
+}
+.galaxy-survey-green {
+    color: rgb(0, 200, 0)
+}
+.galaxy-survey-aqua {
+    color: rgb(0, 204, 204)
+}
