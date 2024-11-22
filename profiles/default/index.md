@@ -16,9 +16,11 @@ authors:
 The default profile loads the basic data sets that enable a broad tour of the universe. It loads the base asset file, which includes an array of data from Earth out to the most distant objects we can see, along with many default keyboard shortcuts, and some actions as well.
 
 
-::::::::{tab-set}
-:::::::{tab-item} Tour
 
+
+::::::::{tab-set}
+
+:::::::{tab-item} Tour
 
 ## Tour
 
@@ -48,10 +50,7 @@ In this tour, we will explore the Universe from Earth to the most distant object
 
 
 
-
-
 ### Earth & Moon
-
 
 #### Earth
 {octicon}`rocket;1.25em;profile-tour-action` Start a slow orbit around Earth.
@@ -72,12 +71,16 @@ In this tour, we will explore the Universe from Earth to the most distant object
 :::::
 
 :::::{grid-item}
-Earth is, of course, home to everyone you know, and we're all huddled on those parts of the planet that are above present sea level---about 30% of the planet's surface. Earth remains a dynamic planet, with plate tectonics, active volcanoes, and crust formation.
+Earth is, of course, home to everyone you know, and we're mostly huddled on those parts of the planet that are above present sea level---about 30% of the planet's surface. Earth remains a dynamic planet, with plate tectonics, active volcanoes, and crust formation.
 
 Earth formed about 4.6 billion years ago, but our modern species appeared only about 200,000 years ago. In that time, we have populated all corners of the planet, developed agriculture circa 10,000 years ago, and produce enough food to be able to think beyond our own survival and about things that enrich our lives and advance civilization.
 :::::
 ::::::
 
+
+:::{tip}
+Use the {kbd}`f` key to turn friction on and off for orbital motion. If you orbit too fast, you can tap {kbd}`f` to slow down, then tap {kbd}`f` again to maintain a new, slower speed.
+:::
 
 
 #### Distance of the Moon
@@ -109,7 +112,6 @@ We can also express distance in terms of light travel time. You may be familiar 
 :::::
 
 
-
 #### Distance of the Sun
 
 {octicon}`rocket;1.25em;profile-tour-action` Pull out from Earth to see the planets of the inner Solar System.
@@ -124,6 +126,9 @@ The Sun, our host star, is, on average, 150 million km (93 million miles) from E
 :::::
 ::::::
 
+
+
+***
 
 ### Outer Solar System
 
@@ -147,7 +152,6 @@ The planets align very well within a common plane. Mercury is inclined about 7&d
 ::::::
 
 
-
 #### Pluto
 
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Solar System --> Dwarf Planets --> Pluto --> Pluto Keplarian Trail` \
@@ -168,7 +172,7 @@ The planets align very well within a common plane. Mercury is inclined about 7&d
 :::::
 
 :::::{grid-item}
-In contrast to these planets, Pluto is inclined 17&deg; to this plane, clearly demonstrating it's different from the planets. When viewed from above the plane, you can see that the trajectory of Pluto is interior to Neptune's orbit for a portion of its 248-year journey around the Sun.
+In contrast to the eight planets, Pluto is inclined 17&deg; to this plane, clearly demonstrating it's different. When viewed from above the plane, you can see that the trajectory of Pluto is interior to Neptune's orbit for a portion of its 248-year journey around the Sun.
 
 Once we discovered Kuiper Belt objects in 1992---small, rock-ice worlds beyond Neptune---astronomers understood that Pluto resembles these objects, and belongs with its Kuiper Belt brethren. Pluto is now one of a many [dwarf planets](/content/solar-system/dwarf-planets/index) in the Solar System, and one of over 2,000 known objects orbiting in the Kuiper Belt.
 :::::
@@ -186,6 +190,9 @@ The Solar System is composed of an exotic variety of objects that orbit the Sun.
 % IF SO, GET TEXT FROM pdf
 
 
+
+
+***
 
 ### Constellations & Stars
 
@@ -216,6 +223,10 @@ of a continent.
 ::::::
 
 
+:::{tip}
+You can see more historical information on [main constellation page](/content/milky-way/constellations/index).
+:::
+
 #### Nearby Stars
 
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Solar System --> Sun --> Sun Label` \
@@ -235,7 +246,8 @@ As you fly away from the Sun and Earth, you will begin to see some of the nearby
 
 #### Star Names
 
-{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Labels`
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Labels` \
+{octicon}`rocket;1.25em;profile-tour-action` Continue orbiting.
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -279,6 +291,9 @@ From this location, you may notice that the stars exhibit various brightnesses a
 
 
 
+
+***
+
 ### Exoplanets
 
 #### Exoplanet Systems
@@ -302,7 +317,7 @@ From this location, you may notice that the stars exhibit various brightnesses a
 :::::
 
 :::::{grid-item}
-It may appear we are now lost in a sea of stars and constellation lines connecting some of them, but we can now explore objects on larger scales beyond the solar neighborhood.
+It appears we are now lost in a sea of stars and the constellation lines connecting some of them, but we can now explore objects on larger scales beyond the solar neighborhood.
 
 Each exoplanet marker indicates a star with a confirmed planetary system. None of these were known before 1995, so this is a relatively new branch of astrophysics, and a burgeoning one at that. We now know of over 5,000 planets outside our Solar System, and some of these systems have multiple planets, indicated by the parenthetical number in their label (no number signifies only one known planet).
 :::::
@@ -318,7 +333,7 @@ Each exoplanet marker indicates a star with a confirmed planetary system. None o
 :::::
 
 :::::{grid-item}
-As you fly farther from the Sun, it quickly becomes clear that the constellations are only practical from our perspective in the Galaxy. Once you're a few light years out, they begin to distort. Farther still, and they only serve to visually distract, so let's turn off the constellation lines to simplify the view a little bit.
+As you fly farther from the Sun, it quickly becomes clear that the constellations are only practical from our perspective in the Solar System. Once you're a few light years away, they begin to distort. Farther still, and they only serve to visually distract, so let's turn off the constellation lines to simplify the view.
 :::::
 ::::::
 
@@ -353,15 +368,19 @@ From this vantage point, turn on the Radio Sphere. The Radio Sphere is a hypothe
 Earth began broadcasting to the universe around 1940. Before that, signals did not escape the atmosphere. But, in 1940, stronger signals were able to pass through the atmosphere and travel into space at one light year per year---as all light does. This results in an ever-expanding bubble we call the Radio Sphere.
 
 At the boundary, roughly 80 light years away, are Earth's oldest
-signals, like the initial broadcast of [_I Love Lucy_](https://en.wikipedia.org/wiki/I_Love_Lucy). As we look closer to Earth, we see more recent signals, until we arrive at Earth, where today's signals are being emitted.
-
-We mentioned earlier that this is a hypothetical boundary because these signals lose strength as they travel out into space---as all light does. The intensity of light falls off as the radius increases---the farther you are from a candle, the dimmer it appears---and Earth's signals are no different.
-
-In reality, by the time our radio signals reach the outer Solar System, their strength is equal to that of the cosmic noise, the background signals that randomly float throughout the Galaxy. The radio sphere remains a hypothetical boundary, but exemplifies our farthest reach into the universe, not by humans or machines, but by light we produced on Earth.
+signals, like the initial broadcast of [_I Love Lucy_](https://en.wikipedia.org/wiki/I_Love_Lucy). As we look closer to Earth, we will find more recent signals, until we arrive at Earth, where today's signals are being emitted.
 :::::
 ::::::
 
 
+:::{admonition} All Light Dims... Even Radio Signals
+We mentioned earlier that this is a hypothetical boundary because these signals lose strength as they travel out into space---as all light does. The intensity of light falls off as the radius increases---the farther you are from a candle, the dimmer it appears---and Earth's signals are no different.
+
+In reality, by the time our radio signals reach the outer Solar System, their strength is equal to that of the cosmic noise, the background signals that randomly float throughout the Galaxy. The radio sphere remains a hypothetical boundary, but exemplifies our farthest reach into the universe, not by humans or machines, but by light we produced on Earth.
+:::
+
+
+#### The Farthest Exoplanets
 
 {octicon}`rocket;1.25em;profile-tour-action` Zoom away from Earth a bit more \
 {octicon}`tools;1.25em;profile-tour-action` Increase the size of the exoplanets: {menuselection}`... --> Exoplanet Systems --> Renderable --> Sizing --> Scale Exponent`
@@ -403,17 +422,23 @@ Imagine how many planets we'd see today if Kepler was able to look at the entire
 :::::{grid-item}
 Initially, we observed large planets in nearby stars---all the known planets were relatively close to the Sun. In 2009, the Kepler Telescope was launched into space. Its mission was to stare at one patch of sky near the constellation Cygnus, and find planets in that patch of sky using one [detection method](/content/milky-way/exoplanets/index). Later, in 2018, TESS was launched and is scanning the entire sky for planets.
 
-The Exoplanet Candidates are stars, colored by mission, that are thought to be strong candidates for hosting planets. Yellow stars are from the Kepler Mission, orange stars are from the K2 Mission, and green stars are from TESS. We see the Kepler footprint clearly in the Exoplanet data---it used to be more prominent but many former candidates are now confirmed exoplanet systems and appear in that data set instead.
+The Exoplanet Candidates are stars, colored by mission, that are thought to be strong candidates for hosting planets. We see the yellow Kepler footprint clearly in the Exoplanet data---it used to be more prominent but many former candidates are now confirmed exoplanet systems and appear in that data set instead.
 :::::
 ::::::
 
+::::::{admonition} Exoplanet Candidate Colors
+- [**Yellow**]{.galaxy-survey-yellow}: Kepler mission candidates
+- [**Orange**]{.galaxy-survey-orange}: K2 misison candidates
+- [**Green**]{.galaxy-survey-green}: TESS mission candidates
+::::::
 
+
+***
 
 ### Milky Way Galaxy
 
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Candidates` \
-{octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Systems`
-
+{octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Systems` \
 {octicon}`rocket;1.25em;profile-tour-action` Zoom out so the entire Galaxy is visible.
 
 
@@ -425,7 +450,7 @@ The Exoplanet Candidates are stars, colored by mission, that are thought to be s
 :::::
 
 :::::{grid-item}
-As you move farther away, keep your eye on the Radio Sphere as it becomes smaller and smaller. In this image, it's reduced to a tiny green dot and marks our location in the Milky Way Galaxy---about 26,000 light years from its center.
+As you move farther away, keep your eye on the 160-light-year-diameter Radio Sphere as it becomes smaller and smaller. In this image, it's reduced to a tiny green dot and marks our location in the Milky Way Galaxy---about 26,000 light years from its center.
 
 Just as we went from the two-dimensional sky into the three-dimensional stars, we now see how that band of light in the night sky we call the Milky Way is actually a vast complex of stars, gas, and dust.
 :::::
@@ -456,9 +481,9 @@ Just as we went from the two-dimensional sky into the three-dimensional stars, w
 :::::
 
 :::::{grid-item}
-The Galaxy is composed of over 100 billion stars, gas, and {term}`dust <astrophysical dust>`. This gas and dust is arranged in spiral arms that emanate from center of the Galaxy and are confined to a thin disk. Its bright center is rife with stars and a supermassive black hole. The black hole is considered inactive, with a low rate of accretion.
+The Galaxy is composed of over 100 billion stars, gas, and {term}`dust <astrophysical dust>`. This gas and dust is arranged in spiral arms that emanate from the center of the Galaxy and are confined to a relatively thin disk. Its bright center is rife with stars and a supermassive black hole. The black hole is considered inactive, with a low rate of accretion.
 
-The Galaxy is about 100,000 light years across, but the disk is only about 1,000 light years thick in the spiral arms. Galaxies, generally, are star-making machines, where stars are born from this gas and provide light in the otherwise dark universe. When stars die, they return some fraction of their gas back into the Galaxy to form a new star one day. The Sun formed about five billion years ago from such a cloud, and has about five billion years left before it evolves into a [white dwarf](/content/milky-way/stellar-remnants/white-dwarfs/index)---an Earth-sized, dim object that will ultimately fade away.
+The Galaxy is about 100,000 light years across, but the disk is only about 1,000 light years thick in the spiral arms. Galaxies, generally, are star factories, where stars are born from this gas and provide light in the otherwise dark universe. When stars die, they return some fraction of their gas back into the Galaxy to form a new star one day. The Sun formed about five billion years ago from such a cloud, and has about five billion years left before it evolves into a [white dwarf](/content/milky-way/stellar-remnants/white-dwarfs/index)---an Earth-sized, dim object that will ultimately fade away.
 
 % Stars form in the disk of the Milky Way---the part we see now---but, the Galaxy has a spherical component called the halo. The spherical halo stretches beyond the disk and is filled with cool, dim stars. Cooler stars have much longer lifetimes (they burn their fuel more slowly), and live long enough to be sent on a trajectory out of the disk of the Galaxy, where they formed. Over time, the halo has been populated with such stars.
 :::::
@@ -467,9 +492,11 @@ The Galaxy is about 100,000 light years across, but the disk is only about 1,000
 
 
 
-#### Extent of the Night Sky Stars
+#### Extent of the Night-sky Stars
 
-{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines`
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines` \
+{octicon}`rocket;1.25em;profile-tour-action` Continue to orbit the Galaxy.
+
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -477,13 +504,19 @@ The Galaxy is about 100,000 light years across, but the disk is only about 1,000
 :::::
 
 :::::{grid-item}
-All of the stars we see in the night sky with our eye (about 9,000 total---6,000 over the course of one night) are very close to the Sun. We cannot see stars this far away from the Sun without sophisticated telescopes.
+All of the stars we see in the night sky with our eye (about 9,000 total---6,000 over the course of one night) are very close to the Sun. We cannot see stars this far away from the Sun without sophisticated telescopes. We can use the constellation lines to delineate the extent of those stars from this vantage point.
 
 Given that the Milky Way has hundreds of billions of stars, it's compelling to wonder just how many planets might be in our own Galaxy. Not all stars will necessarily have planets, but astronomers estimate that the number could be over 500 billion planets.
 :::::
 ::::::
 
 
+
+
+***
+
+
+### Star Orbits Around the Galaxy
 
 #### The Sun's Orbit
 
@@ -507,17 +540,51 @@ Given that the Milky Way has hundreds of billions of stars, it's compelling to w
 :::::{grid-item}
 Everything moves in and around the Galaxy. We can see the trajectory of the Sun over the next billion years by turning on the Sun's orbit. The Sun, and its accompanying planets, orbit about the center of the Milky Way about once every 225 million years. This makes us about 20 galactic years old, in other words, we've made about 20 revolutions around the Galaxy since the Sun was born.
 
-On this scale, life began on Earth about 17 galactic years ago, multicellular life appeared about 7 galactic years ago, the KT extinction event occurred 0.3 galactic years ago (65 million years ago), and modern humans appeared 0.001 galactic years ago (roughly 200,000 years ago).
-
 The Sun has only moved about 145 light years in the time since humans have walked on Earth, a tiny fraction of its galactic orbit and a distance that could fit inside the [Radio Sphere](/content/milky-way/graphics/radio-sphere/index).
-
-The Sun's orbit is remarkably stable, in contrast to other stars that orbit the Galaxy in irregular, unstable orbits, inside and outside the Galactic disk. Turn on some of the other star orbits to see just how unstable they are.
 :::::
 ::::::
 
 
+:::::{admonition} Marking Galactic Years
+If Earth has been orbiting the Sun for 4.6 billion years, and the Sun orbits the Galaxy once every 225 million years, then we can mark time on Earth in galactic years.
 
-### Local Group
+| Event | Earth Years | Galactic Years |
+| ----- | ----------- | -------------- |
+| Life appears | 4.0 billion | 17 |
+| Multicellular life appears | 1.5 billion | 6.7 |
+| Animals appear | 600 million | 2.7 |
+| First vertebrate land animals | 380 million | 1.7 |
+| Dinosaurs exist | 230--66 million | 1--0.29 |
+| Homo erectus appear | 2 million | 0.009 |
+| Homo sapiens appear | 200,000 | 0.0009 |
+:::::
+
+
+
+
+#### A Variety of Orbits
+
+{octicon}`diff-added;1.25em;profile-tour-action` Turn on a variety of star orbits in {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits`
+
+::::::{grid} 1 2 2 2
+:::::{grid-item}
+[![A variety of star orbits around the Galaxy.](star_orbits.png)](star_orbits.png)
+
+:::::
+
+:::::{grid-item}
+The Sun's orbit is remarkably stable, in contrast to other stars that orbit the Galaxy in irregular, unstable orbits, inside and outside the Galactic disk. Turn on some of the other star orbits to see just how unstable they are.
+
+One remarkable star orbit is the star PM J13420-3415 (red in this image). This is a star that travels high above the Milky Way's disk. Imagine your view from a planet around this star. For part of your year, the entire night sky would be filled with a view of the Milky Way below.
+:::::
+::::::
+
+
+***
+
+### Nearby Galaxies
+
+#### The Local Group
 
 Contemplating the Milky Way and its hundreds of billions of stars, we now turn to what lies outside the Galaxy and the multitude of worlds that lie beyond our home star system.
 
@@ -549,6 +616,8 @@ By default, [Tully](/content/universe/nearby-surveys/tully-galaxies/index), [2Df
 :::
 ::::
 
+:::{admonition} Farthest Naked-eye Object
+At 2.5 million light years, the Andromeda Galaxy is the farthest object we can see with the unaided eye.
 :::::
 
 :::::{grid-item}
@@ -562,12 +631,11 @@ The Milky Way dominates this area, but nearby is the Andromeda galaxy, another l
 
 ::::::{admonition} Local Group Colors
 The Local Group's galaxies are given these colors:
-- Aqua: galaxies under the gravitational influence of the Milky Way
-- Yellow: galaxies in Andromeda's sphere of influence
-- Green: other Local Group members
-- Gray: other nearby galaxies
+- [**Aqua**]{.galaxy-survey-aqua}: Galaxies under the gravitational influence of the Milky Way
+- [**Yellow**]{.galaxy-survey-yellow}: Galaxies in Andromeda's sphere of influence
+- [**Green**]{.galaxy-survey-green}: Other Local Group members
+- **Gray**: Other nearby galaxies
 ::::::
-
 
 
 #### Colliding Galaxies
@@ -580,9 +648,9 @@ The Local Group's galaxies are given these colors:
 :::::
 
 :::::{grid-item}
-All of these galaxies are influencing one another gravitationally. In fact, the Milky Way (center of the aqua points) and Andromeda (center of the yellow points) are on a collision course toward one another. In about four billion years (22 galactic years from now), the two mammoth galaxies will begin their dance, ramming directly into one another.
+All of these galaxies are influencing one another gravitationally. In fact, the Milky Way (center of the aqua points) and Andromeda (center of the yellow points) are on a collision course toward one another. In about four billion years, the two mammoth galaxies will begin their dance, ramming directly into one another.
 
-Eventually, these two galaxies will coalesce into one large system, in about 30 galactic years from now---long after Earth becomes inhospitable and the Sun is extinguished.
+Eventually, these two galaxies will coalesce into one large system, long after Earth becomes inhospitable and the Sun is extinguished.
 
 Far off in the future, circa 150 billion years from now, all the galaxies of the Local Group will have coalesced into one large galaxy, but that's a topic for another tour.
 :::::
@@ -593,9 +661,10 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 
 
 
-### Nearby Universe
+#### Tully Galaxies
 
-{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxies`
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxies` \
+{octicon}`rocket;1.25em;profile-tour-action` Fly out a bit to see the galaxies that surround the Local Group.
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -616,55 +685,28 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 :::::
 
 :::::{grid-item}
-As we pull away from the Local Group, we begin to see the local
-universe is populated with many galaxies. These galaxies are in the
-Tully Catalog, compiled by Brent Tully. It is one of the earliest
-three-dimensional catalogs of the nearby universe, and its roughly
-30,000 galaxies remain one of the richest galaxy atlases, with
-properly scaled and inclined images. Turn on the Galaxy Groups
-labels to see most of the nearby galaxy groups.
-
+As we pull away from the Local Group, we begin to see the local universe is populated with many galaxies. These galaxies are in the Tully Catalog compiled by Brent Tully, and is one of the earliest three-dimensional catalogs of the nearby universe. Beginning in the 1980s and completed in the 1990s, its roughly 30,000 galaxies remain one of the richest galaxy atlases, with properly scaled and inclined images.
 :::::
 ::::::
 
 
 
 ::::::{admonition} Galaxy Survey Colors
-Galaxy surveys all use the same color scheme based on local density. We count how many neighbors 
-- Aqua: galaxies under the gravitational influence of the Milky Way
-- Yellow: galaxies in Andromeda's sphere of influence
-- Green: other Local Group members
-- Gray: other nearby galaxies
+Galaxy surveys all use the same color scheme based on local density. We count how many neighbors each galaxy has within 5 {term}`megaparsecs <parsec>` (16 million light years), and set the color based on how many neighbors it has within this bubble.
+- [**Orange**]{.galaxy-survey-orange}: Galaxy is in a very dense area
+- [**Yellow**]{.galaxy-survey-yellow}: Galaxy is a moderately dense area
+- [**Green**]{.galaxy-survey-green}: Galaxy is in a less dense area
+- [**Aqua**]{.galaxy-survey-aqua}: Galaxy is off on its own in a low density area
 ::::::
 
 
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Nearby galaxies with the Virgo Cluster in the foreground](tully_near_virgo.png)](tully_near_virgo.png)
-:::::
 
-:::::{grid-item}
-A little farther out and we can see the galaxy clusters in orange. The
-Virgo Cluster is the nearest, large cluster to us. It’s over 50 million
-light years away, and contains over 1,000 galaxies. This is the bustling
-center in our corner of the universe.
-
-With the boundaries off, we now see the nearby galaxies more
-clearly. As you orbit more quickly, the weblike structure of the local
-universe becomes more apparent. We see clusters of galaxies connected
-by strands and filaments of galaxies. Between them, we see
-relatively empty areas, called Voids.
-
-% The Virgo Cluster is the heart of the Virgo Supercluster. A supercluster is a conglomeration of galaxy clusters and groupings. They are among the largest structures known. But, their constituent clusters and galaxies are not necessarily bound gravitationally, their motions are guided more by the overall expansion of the universe. With the Virgo Supercluster Boundary on, you can see the Local Group is only a tiny part of the supercluster, and located far from its center.
-
-% In 2014, Brent Tully and a group of astronomers discovered that we are part of an even larger structure which they named the Laniakea Supercluster. This humongous region contains the Milky Way and many thousands of galaxies. The Virgo Supercluster is now just one region among a larger complex of galaxy clusters, connecting strands, and filaments. -->
-
-:::::
-::::::
+#### Galaxy Groups
 
 
-{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Group Labels`
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Group Labels` \
+{octicon}`rocket;1.25em;profile-tour-action` Explore the Galaxy Groups.
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -681,18 +723,51 @@ relatively empty areas, called Voids.
 :::::
 
 :::::{grid-item}
-None of these other groups are as rich as the Local Group because
-we cannot see tiny dwarf galaxies from such great distances. From
-out here, we would likely only see Andromeda, Milky Way, and
-Triangulum—the large, luminous galaxies. Many of the Messier❉
-galaxies are somewhat local, like M81, M101, M51. One can imagine
-a cadre of small dwarf galaxies around each of these groups.
+With the Galaxy Group Labels on, you can see a number of groups that are akin to our Local Group. None of these other groups are as rich as the Local Group because we cannot see tiny dwarf galaxies from such great distances. From out here, we would likely only see Andromeda, Milky Way, and Triangulum---the large, luminous galaxies of the Local Group---and that type of galaxy is what represents the scant members of these far-off galaxy groups. 
+
+Many of the Messier galaxies are somewhat local, like M81, M101, M51. One can imagine a cadre of small dwarf galaxies around each of these groups.
+:::::
+::::::
+
+
+:::{admonition} The Messier Catalog
+The [Messier Catalog](https://en.wikipedia.org/wiki/Messier_object) is a compilation of fuzzy objects in the night sky recorded by Charles Messier in the 18th century. He was searching for comets, and noted these stationary look-alikes so as not to confuse his search. M51, for example, is the 51st object in the catalog, and is also called the [Whirlpool Galaxy](https://en.wikipedia.org/wiki/Whirlpool_Galaxy).
+:::
+
+
+
+#### Seeing Structure
+
+{octicon}`rocket;1.25em;profile-tour-action` Fly farther away to see the large cluster of orange points.
+
+::::::{grid} 1 2 2 2
+:::::{grid-item}
+[![Nearby galaxies with the Virgo Cluster in the foreground](tully_near_virgo.png)](tully_near_virgo.png)
+:::::
+
+:::::{grid-item}
+A little farther out and we can see the galaxy clusters in orange. The Virgo Cluster is the nearest, large cluster to us. It's about 60 million light years away, and contains over 1,000 galaxies. This is the bustling center in our corner of the universe.
+
+We are beginning to see the web-like distribution of galaxies around us.
+
+
+% With the boundaries off, we now see the nearby galaxies more clearly. As you orbit more quickly, the web-like structure of the local universe becomes more apparent. We see clusters of galaxies connected by strands and filaments of galaxies. Between them, we see relatively empty areas, called Voids.
+
+% The Virgo Cluster is the heart of the Virgo Supercluster. A supercluster is a conglomeration of galaxy clusters and groupings. They are among the largest structures known. But, their constituent clusters and galaxies are not necessarily bound gravitationally, their motions are guided more by the overall expansion of the universe. With the Virgo Supercluster Boundary on, you can see the Local Group is only a tiny part of the supercluster, and located far from its center.
+
+% In 2014, Brent Tully and a group of astronomers discovered that we are part of an even larger structure which they named the Laniakea Supercluster. This humongous region contains the Milky Way and many thousands of galaxies. The Virgo Supercluster is now just one region among a larger complex of galaxy clusters, connecting strands, and filaments. -->
 
 :::::
 ::::::
 
 
-{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Cluster Labels`
+
+
+#### Galaxy Clusters
+
+
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Cluster Labels` \
+{octicon}`rocket;1.25em;profile-tour-action` Pull out to explore the galaxy groups.
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -709,13 +784,21 @@ a cadre of small dwarf galaxies around each of these groups.
 :::::
 
 :::::{grid-item}
+The galaxy Cluster Labels reveal the location of the major clusters in our corner of the universe. Like the Virgo Cluster, these clusters contain hundreds and sometimes over a thousand galaxies.
 
+Opposite the Virgo Cluster is the Fornax Cluster at about 60 million light years. It is smaller than Virgo, but is the second-closest rich cluster to us.
 
+Other clusters and structures are labeled, such as the Ursa Major Filament, which is a tube-like structure adjacent to the Virgo Cluster. It appears to run from the Constellation Virgo up toward Ursa Major in the night sky, hence its name.
+
+From this vantage point, we clearly see the universe is structured. The sponge-like structure is made up of these clusters, with filaments connecting them, and large [voids](/content/universe/nearby-surveys/voids/index) where there is a dearth of matter.
 :::::
 ::::::
 
 
 
+#### Zone of Avoidance
+
+{octicon}`rocket;1.25em;profile-tour-action` Fly completely outside the Tully Galaxies.
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -723,19 +806,9 @@ a cadre of small dwarf galaxies around each of these groups.
 :::::
 
 :::::{grid-item}
-Once you’re outside the 30,000 galaxies in Tully, you’ll notice that
-it forms a cube. The universe, of course, is not cube shaped. This
-squared-off boundary ensures that these data remain consistent. In
-other words, including galaxies beyond this area would selectively
-include the brighter galaxies, but not the dim ones represented in
-the data you see. These data would no longer be representative of
-the structure of the universe.
+Once you're outside the 30,000 galaxies in Tully, you'll notice that it forms a cube. The universe, of course, is not cube shaped. This squared-off boundary ensures that these data remain consistent. In other words, including galaxies beyond this area would selectively include the brighter galaxies, but not the dimmer ones represented in Tully's data. These data would no longer be representative of the structure of the universe. This pertains to the {term}`completeness` of these data.
 
-You may also notice a cleft in the middle of the dataset. This is what
-we call the zone of obscuration❉. It delineates an absence of galaxies,
-but it is an observational phenomenon. We cannot see the galaxies
-that exist in these areas because that band of light in the night
-sky—the Milky Way—blocks our view of the galaxies beyond.
+You may also notice a cleft in the middle of the data set as you orbit around these data. This is what astronomers call the _zone of avoidance_, though we prefer to call it the _zone of obscuration_. Regardless of what we call it, it is an observational effect whereby the band of light in the night sky---the Milky Way---blocks our view of what lies beyond. We cannot see the galaxies that surely exist in these areas because we exist within the Milky Way Galaxy and when we look  toward its disk, what lies beyond is obscured from our view.
 :::::
 ::::::
 
@@ -743,26 +816,21 @@ sky—the Milky Way—blocks our view of the galaxies beyond.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+***
 
 
 ### Deep-sky Surveys
 
-{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> 2dF Galaxies`
+The Tully Catalog is special because it's an all-sky survey---galaxies were observed in all directions. As we look to more distant objects, it becomes more difficult to achieve this because it takes far more time to peer deeper into the universe.
+
+Deep-sky galaxy surveys cover only part of the sky. If one viewed them from Earth, they form distinct patches on the sky, but in three dimensions, they fill out a conical shape, and galaxies lie across a range of distances for each line of sight. The dark areas outside these surveys is simply the areas astronomers have not yet pointed their telescopes.
+
+
+
+#### Two-degree Field Survey
+
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> 2dF Galaxies` \
+{octicon}`rocket;1.25em;profile-tour-action` Continue to pull out to see the bulk of the 2dF Galaxies.
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -779,13 +847,18 @@ sky—the Milky Way—blocks our view of the galaxies beyond.
 :::::
 
 :::::{grid-item}
+The Two-Degree Field Survey (2dF) project was designed to observe along two strips of sky that are opposite one another, but in three dimensions they are narrow fins, shaped like a bow tie, if you will. We benefit, visually, from their narrowness because we can see the rich structure within these fins.
 
-
+The 2dF's 229,000 galaxies show the same sponge-like, large-scale structure, with clusters, filaments, and voids. We also see larger-scale structures like _sheets_ and so-called _walls_ of galaxies. Walls are a special type of galaxy filament.
 :::::
 ::::::
 
 
-{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan Galaxies`
+
+#### Sloan Galaxies
+
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan Galaxies` \
+{octicon}`rocket;1.25em;profile-tour-action` Continue zooming out to see the Sloan Galaxies.
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -802,13 +875,20 @@ sky—the Milky Way—blocks our view of the galaxies beyond.
 :::::
 
 :::::{grid-item}
+Peering even deeper, the Sloan Digital Sky Survey covers more of the sky. It contains over 2.8 million galaxies, and also echoes the large-scale structure we observe in other surveys.
 
+With these surveys, it's important not to lose sight of the fact that each point you see is a large galaxy akin to the Milky Way. Each point has billions of stars, and who knows how many planets---conservatively, at least a hundred billion.
 
+These deep surveys remind us that we are only one small planet, orbiting an ordinary star, in an unremarkable galaxy, in a nondescript part of the universe.
 :::::
 ::::::
 
 
-{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Quasars`
+
+#### Quasars
+
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Quasars` \
+{octicon}`rocket;1.25em;profile-tour-action` Fly out to examine the quasars.
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -825,98 +905,37 @@ sky—the Milky Way—blocks our view of the galaxies beyond.
 :::::
 
 :::::{grid-item}
+Beyond the galaxy surveys are quasars---the farthest objects we see. Quasar is just another name for an active galaxy. An active galaxy is one where the central black hole is gobbling up material at a rapid rate. This process causes immense amounts of energy to be released just outside the black hole, as the material accretes into it, making these objects extremely luminous. The Milky Way is no longer this active, but may have been earlier in its evolution.
 
+Upon initial observation, these mystery objects were called quasi-stellar objects, and the shortened name, quasar, stuck. But, really we're mapping active galactic nuclei, or, in another sense, you can think of this as a catalog of supermassive black holes.
 
+This catalog consists of over 700,000 quasars, and you can see they extend to far greater distances than the galaxies. However, we are now only seeing the brightest objects, so no discernible structure is apparent. There are radial artifacts where more quasars lie, but these are not real, they result from how the data were observed.
 :::::
 ::::::
 
 
+:::{admonition} The Farther We Look, the Younger the Universe Appears
+You may notice that there are no quasars near the Milky Way. We only see so called _normal_ galaxies around us, like our own. Why is this?
 
+As we look deeper into the universe, we are looking back in cosmic time. When we gaze upon the 2.5-million-light-year-distant Andromeda galaxy with our eyes or a telescope, we're seeing it as it was 2.5 million years ago. When we see one of these quasars, we're seeing light that left billions of years ago. So, we're looking at an earlier epoch in the universe. It's likely that these quasars have evolved into normal galaxies by now, but that light has not had enough time to reach our eyes. All the quasars that once dominated our neighborhood have now evolved into normal galaxies along with the Milky Way, so their light has had enough time to reach our eyes on Earth.
 
-
-he Tully Catalog is special because it’s an all-sky survey—galaxies
-were observed in all directions. As we look to more distant objects,
-it becomes more difficult to achieve this because it takes far more
-time to peer deeper into the universe.
-
-Galaxy surveys farther out from Tully cover only part of the sky. If
-one viewed them from Earth, they form distinct patches on the sky,
-but in three dimensions, they fill out a conical shape, and galaxies
-lie across a range of distances for each line of sight.
-
-The Two-Degree Field Survey (2dF) is an excellent example. The
-project was designed to observe along two strips of sky that are
-opposite one another, but in three dimensions they are narrow fins,
-shaped like a bow tie, if you will. We benefit, visually, from their
-narrowness because we can see the rich structure within these fins.
-Density scales with color. Orange galaxies are in more dense regions,
-green galaxies are in more sparse areas of the cosmos, while
-aqua galaxies are in the middle, density wise.
-
-The 2dF’s 229,000 galaxies show the same sponge-like structure,
-with clusters, filaments, and voids. We also see larger-scale structures
-like sheets and so-called walls of galaxies.
-
-Peering even deeper, the Sloan Digital Sky Survey covers more of
-the sky. It contains over 2.5 million galaxies, and also echoes the
-large-scale structure we observe in other surveys.
-
-With these surveys, it’s important not to lose sight of the fact that
-each point you see is a large galaxy akin to the Milky Way. Each
-point has billions of stars, and who knows how many planets.
-
-These deep surveys demonstrate that we are only one small planet,
-orbiting an ordinary star, in an unremarkable galaxy, in a nondescript
-part of the universe.
+The farther out we look into the Universe, the further back in time we see.
+:::
 
 
 
 
 
-
-
-Beyond the galaxy surveys are quasars—the farthest objects we see.
-Quasar is just another name for an active galaxy. An active galaxy is
-one where the central black hole is gobbling up material at a rapid
-rate. This process causes immense amounts of energy to be released
-just outside the black hole, as the material falls into it, making these
-objects extremely luminous. The Milky Way is no longer this active,
-in this sense, so astronomers call it a normal galaxy.
-
-Upon initial observation, these mystery objects were called quasi-
-stellar objects, and the shortened name, quasar, stuck. But, really
-we’re mapping active galactic nuclei, or, in another sense, you can
-think of this as a catalog of supermassive black holes.
-
-This catalog consists of a half million quasars, and you can see they
-extend to far greater distances than the galaxies. However, we are
-now only seeing the brightest objects, so no discernible structure
-is apparent. There are radial artifacts where more quasars lie, but
-these are not real, they result from how the data were observed.
-You may also notice that there are no quasars near the Milky Way.
-We only see so-called normal galaxies around us, like our own.
-Why is this?
-
-As we look deeper into the universe, we are looking back in cosmic
-time. When we see the 2.5-million-light-year-distant Andromeda
-galaxy with our eyes❉ or a telescope, we’re seeing it as was 2.5
-million years ago. When we see one of these quasars, we’re seeing
-light that left billions of years ago. So, we’re looking at an earlier
-epoch in the universe. It’s likely that these quasars have evolved
-into normal galaxies by now, but the light has not had enough
-time to reach our eyes. So, all the quasars that once dominated our
-neighborhood have now evolved into normal galaxies, and their
-light has had enough time to reach our eyes on Earth.
-
-Quasars are the farthest objects we see in the universe, and represent
-some of the brightest objects we see. The farthest object ever
-seen is a quasar whose light began its journey when the universe
-was less than a billion years old. Peak activity for quasars was
-around 10 billion years ago, when the universe was about 4 billion
-years old.
-
+***
 
 ### Cosmic Microwave Background
+
+:::{tip}
+The Cosmic Microwave Background demands a fair bit of explanation. It should not be squeezed into the last two minutes of a presentation. Without adequate time to discuss it, it can, and should, be skipped.
+:::
+
+
+#### Planck's Map
 
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Cosmic Microwave Background --> Planck`
 
@@ -930,20 +949,30 @@ years old.
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/planck/index)
 [![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.png)](/content/universe/cosmic-microwave-background/planck/index)
 :::
-
 ::::
 
 :::::
 
 :::::{grid-item}
+Quasars may be the most distant objects we see, but there is light from an earlier epoch of the universe that remains visible to us. The so called "baby picture of the universe" is the cosmic microwave background (CMB). It is light we observe in microwave wavelengths, and marks an important transition in the young universe.
 
+The Planck mission delivered the most recent survey of the CMB in 2013. It is a map of temperature variation in microwave light. The differences between the orange (hotter) and blue (cooler) areas is 1/100,000 of a degree, so the telescope that detects these differences is very precise. This light marks the the time when the proverbial fog lifted and light could freely travel across the Universe.
 
+We can also think about this light as tiny density differences in the early universe. The question astronomers now ponder is how do these early density fluctuations in the universe result in the large-scale structure we see today.
 :::::
 ::::::
 
 
+:::{tip}
+For more on the origin and meaning of the CMB, see our [main CMB page](/content/universe/cosmic-microwave-background/index).
+:::
 
 
+
+
+#### CMB Image Placement
+
+{octicon}`rocket;1.25em;profile-tour-action` Resist the temptation to fly outside the CMB.
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
@@ -951,120 +980,54 @@ years old.
 :::::
 
 :::::{grid-item}
+We place the CMB on a sphere that signifies the boundary of our observable universe. **This is misleading.** While this is the earliest light we can see, it is ubiquitous throughout the universe, even in the Solar System.
 
+And, what does it mean to fly outside the observable universe? It is not physically relevant, but represents, at best, a thought experiment. We prefer to stay within the bounds of what we see.
 :::::
 ::::::
 
 
 
-### Cosmic Perspective
+***
 
-Quasars may be the most distant objects we see, but there is light
-from an earlier epoch of the universe that remains visible to us.
-The so-called baby picture of the universe is the cosmic microwave
-background (CMB). It is light we observe in microwave wavelengths,
-and marks an important transition in the young universe.
+### A Cosmic Perspective
 
-The Planck map. The Planck mission delivered the most recent
-survey of the CMB in 2013. It is a map of temperature variation in
-microwave light. The differences between the orange and blue areas
-is 1/100,000 of a degree, so the telescope that detects these differences
-is very precise. This light marks the beginning of the radiation
-epoch in the universe—when light began to travel freely across the
-universe.
+{octicon}`rocket;1.25em;profile-tour-action` From the outskirts of the observable universe, with friction off, start a nice orbital pace, and then start flying back to Earth. Try to achieve balance in this compound motion.
 
-The Big Bang occurred 13.8 billion years ago. The early universe
-expanded rapidly and was a sea of protons and free electrons. Any
-light in the early universe was constantly scattered off these particles,
-just as light is scattered off water vapor on a foggy day, preventing
-us from seeing objects in the distance.
+:::{tip}
+Remember, {kbd}`f` controls orbital friction, and {kbd}`Shift` + {kbd}`f` controls your zoom friction. \
+I usually use {kbd}`f` and zoom back to Earth on manual flight.
+:::
 
-The fog lifted. Around 400,000 years after the Big Bang, the universe
-expanded and cooled enough to allow these free electrons to
-combine with the protons and form hydrogen. When this occurred,
-it was as if the fog lifted, and light was able to freely travel across
-the universe.
+#### The Observable Universe
 
-The CMB is an imprint of the universe at this time. These slight
-differences in temperature reflect the tiny fluctuations in density in
-the early universe—the structure of the universe shortly after the
-Big Bang. These are the seeds that will eventually grow, by gravity,
-into the large-scale structure of galaxy clusters and filaments we see
-today. How we went from these small fluctuations in this map to
-present-day structure remains one of the great challenges in astrophysics
-today.
-
-When recombination took place, the light from the Big Bang peaked
-at about 1 micrometer, which is in the infrared. At that time
-the gas would have been about 3,000 Kelvin (about 2,700 °C or
-5,000 °F) and would have glowed orange-red in the visible spectrum.
-However, the universe has expanded 1,000 times since, and
-the light within space has been shifted to longer and longer wavelengths
-because of that expansion. Today, the peak wavelength is
-close to 1 mm (1 micrometer × 1,000 = 1 mm) and corresponds to
-a gas temperature around 3 Kelvin (3,000 K ÷ 1,000 = 3 K), which
-is in the microwave spectrum (about –270 °C or –454 °F).
-
-Placement. We place the CMB on a sphere that signifies the
-boundary of our observable universe. This is a bit misleading. While
-this is the earliest light we can see, it is ubiquitous throughout the
-universe, even in the Solar System.
-
-And, what does it mean to fly outside the observable universe? It
-is not physically relevant, but represents, at best, a thought experiment.
-We prefer to stay within the bounds of what we see.
+We've now covered the observable universe. Does that cover the
+entire universe? No. In a way, this defines a bubble that surrounds everything we can possibly see. Imagine if you lived on one of these far-off quasars, our bubble would be centered on that quasar, giving us a different perspective on the universe.
 
 
+#### Does the Universe Have a Center?
+
+These surveys might tempt us to think we're at the center of everything. This is merely an artifact of our perspective---everything you see in this atlas is observed data seen from our vantage point. And, every point in the universe has its own unique vantage point.
+
+In fact, the universe has no center. The best analogy to describe the fabric of spacetime that comprises the universe is to imagine inflating a balloon. As the balloon grows larger, the distance between any two points on its surface increases. And, more importantly, everything in the universe exists on the surface of the balloon. To go from point A to point B, one cannot go through the center of the balloon, one must travel along the surface of the balloon. The universe behaves in a similar manner, albeit with far greater complexity.
 
 
+#### Revising the Cosmic Scales
+
+As we return to Earth, we traverse the scales of the universe, from a view that encompass billions of light years, down to objects in the Milky Way that are tens to hundreds of light years in size, to the kilometer-scale continents on earth. Our ability to bridge all these scales allows us to see these data in one, consistent scene, all within the context of the scales that surround it.
 
 
+#### Potential for Life
 
-We’ve now covered the observable universe. Does that cover the
-entire universe? No. In a way, this defines the bubble that we can
-see. We can imagine if we lived on one of these far-off quasars, our
-bubble would be centered on that quasar.
+Upon returning to Earth, it's easy to see just how small we are and how insignificant Earth is, even in our own galaxy, let alone the rest of the universe. But, it also reveals the staggering probability that life (in some form or fashion) exists somewhere, in another far-off galaxy, or even within the Milky Way. The possibility is just too great to assume that life exists only on Earth.
 
-We are not the center. These surveys might tempt us to think
-we’re at the center of everything. This is merely an artifact of our
-perspective—everything you see in this atlas is observed data seen
-from our vantage point. And, every point in the universe has its own
-unique vantage point.
 
-There is no center. In fact, the universe has no center. The best
-analogy to describe the fabric of spacetime that comprises the universe
-is to imagine inflating a balloon. As the balloon grows larger,
-the distance between any two points on its surface increases. And,
-more importantly, everything in the universe exists on the surface of
-the balloon. To go from point A to point B, one cannot go through
-the center of the balloon, one must travel along the surface of the
-balloon. The universe behaves in a similar manner, albeit with far
-greater complexity.
+#### Final Thoughts
 
-As we return to Earth, we traverse the scales of the universe, from
-a view that encompass billions of light years, down to objects in
-the Milky Way that are tens to hundreds of light years in size, to the
-kilometer-scale continents on earth. Our ability to bridge all these
-scales allows us to see these data in one, consistent scene, all within
-the context of the scales that surround it.
-
-Upon returning to Earth, it’s easy to see just how small we are and
-how insignificant Earth is, even in our own galaxy, let alone the rest
-of the universe. But, it also reveals the staggering probability that
-life (in some form or fashion) exists somewhere, in another far-off
-galaxy, or even within the Milky Way. The possibility is just too
-great to assume that life exists only on Earth.
-
-Conclusion. That’s the grand tour. Hopefully, you have an idea of
-the scale of the observable universe, and what surrounds us in the
-Solar System, the Milky Way galaxy, and outside the Galaxy. We
-are a tiny spec among many other specs in the universe, and we’ve
-come to understand so much about how the universe formed, our
-place within it, and its ultimate fate. The universe never fails to invoke
-a sense of wonder and, in its light, presents pieces to a puzzle
-that we yearn to solve.
+That's the grand tour. Hopefully, you have an idea of the scale of the observable universe, and what surrounds us in the Solar System, the Milky Way galaxy, and outside the Galaxy. We are a tiny spec among many other specs in the universe, and we've come to understand so much about how the universe formed, our place within it, and its ultimate fate. The universe never fails to invoke a sense of wonder and, in its light, presents pieces to a puzzle that we yearn to solve.
 
 :::::::
+
 
 
 
@@ -1091,9 +1054,8 @@ that we yearn to solve.
 
 
 
-
-
 :::::::{tab-item} Data Sets
+
 ## Data Sets
 
 ### Solar System
@@ -1115,8 +1077,6 @@ that we yearn to solve.
 :::
 
 ::::
-
-
 
 
 #### Planets
@@ -1158,31 +1118,6 @@ that we yearn to solve.
 ::::
 
 
-% [](/content/solar-system/planets/mars/moons/phobos/index)
-% [](/content/solar-system/planets/mars/moons/deimos/index)
-% 
-% [](/content/solar-system/planets/jupiter/moons/major/index)
-%
-% [](/content/solar-system/planets/saturn/moons/major/index)
-% 
-% [](/content/solar-system/planets/uranus/moons/major/index)
-% 
-% [](/content/solar-system/planets/neptune/moons/major/index)
-
-
-
-% asset.require("./misc/brightest")
-% asset.require("./communications/geostationary")
-% asset.require("./navigation/gps")
-% asset.require("./misc/spacestations")
-% asset.require("./misc/iss")
-% asset.require("./misc/tiangong")
-% asset.require("./misc/tle-new")
-
-
-
-
-
 #### Dwarf Planets
 
 ::::{grid} 1 2 3 4
@@ -1195,7 +1130,6 @@ that we yearn to solve.
 ::::
 
 
-
 #### Comets
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
@@ -1205,6 +1139,8 @@ that we yearn to solve.
 :::
 
 ::::
+
+
 
 ### Milky Way
 
@@ -1392,8 +1328,6 @@ that we yearn to solve.
 ::::
 
 
-
-
 ### Universe
 
 #### Nearby Surveys
@@ -1491,50 +1425,66 @@ that we yearn to solve.
 
 
 
-
-
-
 :::::::{tab-item} Dossier
 
-```{profile_dossier}
-:name: Default
-:profilefile: data/profiles/default.profile
-:anchor: Earth=/content/solar-system/planets/earth/index
-:time: Current time
-:author: OpenSpace Team
-:license: mit
-:version: 1.0
-```
+## Dossier
 
+:::{list-table}
+:header-rows: 0
+:stub-columns: 1
+:align: left
+:width: 90%
 
-
-
-% asset.require("scene/digitaluniverse/grids")
-
-% asset.require("nightsky/nightsky")
-
-% asset.require("customization/globebrowsing")
-% asset.require("actions/default_actions")
-
-
-% asset.require("modules/skybrowser/skybrowser")
-
-
-
-
-
-
-% default.profile
-% 
-%   "assets": [
-%     "base",
-%     "base_keybindings",
-%     "events/toggle_sun",
-%     "scene/solarsystem/planets/earth/earth",
-%     "scene/solarsystem/planets/earth/satellites/satellites"
-%   ],
+* - Name:
+  - Default
+* - File:
+  - `data/profiles/default.profile`
+* - Anchor:
+  - [Earth](/content/solar-system/planets/earth/index)
+* - Time:
+  - Current time
+* - Author:
+  - OpenSpace Team
+* - License:
+  - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+* - Version:
+  - 1.0
+:::
 
 :::::::
- 
-  
+
 ::::::::
+
+
+
+
+
+
+% Need to add these cards when we get them into /content/solar-system/...  documentation
+% [](/content/solar-system/planets/mars/moons/phobos/index)
+% [](/content/solar-system/planets/mars/moons/deimos/index)
+% 
+% [](/content/solar-system/planets/jupiter/moons/major/index)
+%
+% [](/content/solar-system/planets/saturn/moons/major/index)
+% 
+% [](/content/solar-system/planets/uranus/moons/major/index)
+% 
+% [](/content/solar-system/planets/neptune/moons/major/index)
+
+% asset.require("./misc/brightest")
+% asset.require("./communications/geostationary")
+% asset.require("./navigation/gps")
+% asset.require("./misc/spacestations")
+% asset.require("./misc/iss")
+% asset.require("./misc/tiangong")
+% asset.require("./misc/tle-new")
+
+
+
+% Other assets we need to add once we get them into /content
+% asset.require("scene/digitaluniverse/grids")
+% asset.require("nightsky/nightsky")
+% asset.require("customization/globebrowsing")
+% asset.require("actions/default_actions")
+% asset.require("modules/skybrowser/skybrowser")
