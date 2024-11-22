@@ -1,6 +1,6 @@
 # Astronomical Glossary
 
-:::{glossary}
+::::{glossary}
 
 
 All-sky Survey
@@ -9,7 +9,7 @@ All-sky Survey
 
 
 Astronomical Unit
-    Definition.
+    An Astronomical Unit is the average distance between the Sun and Earth. The adopted value is 149,597,870,700 meters, or 149.6 million kilometers, or 93 million miles.
 
 
 Astrophysical dust
@@ -35,7 +35,7 @@ Finger of god
 
 
 Habitable zone
-    Definition.
+    The habitable zone for a planetary system is a region where liquid water can exist. It depends on the type of host star and the nature of the planet. Here, we tend to assume a rocky, earth-like planet and a star akin to the Sun. For the Solar System, Earth is comfortably in the [habitable zone](/content/solar-system/sun/habitable-zone/index), while Venus flirts with the inner boundary, and Mars lies within but closer to the outer boundary. We also show [exoplanet habitable zones](/content/milky-way/exoplanets/exoplanet-system-module/index) in the module.
 
 
 Light year
@@ -46,14 +46,14 @@ Lookback time
     Lookback time is the difference between when we detect the light from an object here on Earth versus when the light was emitted by the object. Because the universe is expanding, and spacetime can expand faster than the speed of light (matter cannot, but the intervening fabric of spacetime can), it produces a discrepancy between how far an object was when its light left versus how far it actually is at this moment. The lookback time tells us when the light left the object.
 
 
-Main Sequence
-    Definition.
-
-
 Observable universe
     That part of the universe visible to us. Our sightline is limited because the early universe was opaque---light was constantly scattering off free electrons. About 380,000 years after the Big Bang, the universe expanded and cooled to the point where electrons combined with protons to make neutral hydrogen. At that time, light was able to travel across the universe, and this is the oldest light we can see.
 
     Each point of observation in the universe has its own spherical observable universe. For our observation point on Earth, we have a 45-billion-light0year sphere surrounding us. And, for any other point, they will have their own similar sphere centered on them, revealing areas of the universe that are invisible to us while we can see areas invisible to them.
+
+
+Parsec
+    A parsec is a unit of distance in astronomy. The word comes from "one parallax second." Parallax is the technique by which we measure the distance to stars. It is a geometrical method where we measure a star's position relative to the background stars on one side of Earth's orbit, then six months later measure the star's position again. The difference in positions is called parallax. (More on [parallax](/content/milky-way/stars/star-distance-uncertainty/index).) When this Earth-Sun distance of 1 {term}`Astronomical Unit` subtends an angle of 1 arcsecond on the sky due to the star's apparent motion as we orbit the Sun, then it is said to be 1 parsec away. One parsec equals 206,265 Astronomical Units exactly, and 3.26 {term}`light years <light year>`.
 
 
 Redshift/blueshift
@@ -62,7 +62,7 @@ Redshift/blueshift
 
 
 Spacetime
-    Definition.
+    Spacetime is a mathematical model that incorporates both space and time into one, unified continuum. It is not needed to describe the non-relativistic world, where Euclidean space and classical mechanics describes the universe accurately. But, in a relativistic universe the three-dimensional space cannot be separated from time. Gravity, and therefore matter, when moving close to the speed of light, slows time down for an outside observer. A massive object's gravity warps spacetime, creating valleys for the light to traverse, which takes slightly longer than it would in the absence of that mass.
 
 
 Uncertainty
@@ -71,5 +71,9 @@ Uncertainty
 
 Zone of avoidance
     This is a term invented by astronomers and describes the areas of the sky obscured by the Milky Way---that band of light across our sky. It is named as such because early galaxy maps showed areas where galaxies appeared to avoid. We prefer to use "zone of obscuration" because it has a more physical meaning and is inherently more clear.
-:::
+
+
+
+
+::::
 
