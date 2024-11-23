@@ -28,4 +28,6 @@ builders/index
 
 session-recording
 skybrowser/index
+
+faq/index
 :::

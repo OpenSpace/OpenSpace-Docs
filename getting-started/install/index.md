@@ -91,21 +91,16 @@ If you receive this error, you will need to [download](https://aka.ms/vs/17/rele
 Upon running OpenSpace for the first time, it will ask for permission to access the internet via two pop-up windows. If you do not give OpenSpace that permission, some important features, such as the user interface, will be inaccessible.
 
 
-### Slow Performance---Frame Rate Issue
+### Slow Performance---Low Frame Rate Issue
 
 If your frame rate is low (the FPS number in the top left corner), please ensure that OpenSpace is using your dedicated graphics card. If the frame rate is debilitatingly slow, OpenSpace is probably using your system's integrated graphics card.
 
 You can set which graphics OpenSpace uses via the following procedure:
 
 
+::::::{dropdown} Windows 11
 
-
-The most likely cause is that OpenSpace is using the _Integrated_ graphics card, rather than the _Dedicated_ one, the former of which is less powerful. If you are using an NVIDIA dedicated graphics card, you can change this by right clicking the Desktop and selecting "NVIDIA Control Panel" in the context menu. In the window that opens, select "Manage 3D settings" from the menu on the left and then search for the Dropdown menu called "Preferred graphics processor". It should say "Integrated graphics" right now, but double-click that setting and chose "High-Performance NVIDIA processor" instead.
-
-
-
-
-In Windows 11, these setting are found in the Settings App under {menuselection}`System --> Display --> Graphics`. 
+In Windows 11, these setting are found in Window's Settings App under {menuselection}`System --> Display --> Graphics`. 
 
 :::{figure} windows_graphics_panel.png
 :width: 50%
@@ -125,6 +120,47 @@ In Windows 11, these setting are found in the Settings App under {menuselection}
 :::
 
 3. Choose `High performance` and save.
+
+::::::
+
+
+::::::{dropdown} Windows 10
+
+In Windows 10, assuming you have an NVIDIA card, you must use the NVIDIA Control Panel to set which application explicitly uses the NVIDIA card. Access the NVIDIA Control Panel through these steps:
+
+1. Right click on the desktop to bring up the contextual menu.
+
+:::{figure} context-menu.png
+:width: 50%
+:align: center
+:alt: Windows context menu
+
+Windows Desktop contextural menu.
+:::
+
+2. Select {menuselection}`NVIDIA Control Panel`.
+
+:::{figure} control-panel.png
+:width: 80%
+:align: center
+:alt: NVIDIA control panel
+
+NVIDIA Control Panel.
+:::
+
+3. Select "Manage 3D settings" from the left navigation menu.
+4. Search for the dropdown menu called "Preferred graphics processor."
+5. These settings should indicate "Integrated graphics." Double-click that setting to choose "High-Performance NVIDIA processor."
+6. Relaunch OpenSpace.
+
+::::::
+
+
+
+
+
+
+
 :::::::
 
 

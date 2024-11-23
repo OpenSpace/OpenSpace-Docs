@@ -1,12 +1,5 @@
 # FAQ
-## Windows
-### 1. Low framerate on a computer with a modern dedicated graphics card
-The most likely cause is that OpenSpace is using the _Integrated_ graphics card, rather than the _Dedicated_ one, the former of which is less powerful. If you are using an NVIDIA dedicated graphics card, you can change this by right clicking the Desktop and selecting "NVIDIA Control Panel" in the context menu. In the window that opens, select "Manage 3D settings" from the menu on the left and then search for the Dropdown menu called "Preferred graphics processor". It should say "Integrated graphics" right now, but double-click that setting and chose "High-Performance NVIDIA processor" instead.
 
-After changing this setting and restarting OpenSpace, it should run at a better framerate.
-
-![Windows context menu](context-menu.png)
-![NVIDIA control panel](control-panel.png)
 
 ## Using in Planetariums
 ### 1. How do I get a fulldome (fisheye) output from OpenSpace?

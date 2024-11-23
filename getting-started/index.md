@@ -19,7 +19,4 @@ install/index
 launch/index
 user-interface/index
 navigation/index
-
-
-faq/index
 :::
