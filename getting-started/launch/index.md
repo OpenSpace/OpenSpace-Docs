@@ -17,9 +17,9 @@ If you see any errors or pop-up windows you're unsure about, please refer back t
 :::
 
 
-## Console
+## Console Window
 
-The first item that pops up is a green terminal with output streaming by at a rapid pace. The output to this console is basically all the command OpenSpace is executing to get itself up and running. You can generally ignore this window.
+The first item that pops up is a green terminal with output streaming by at a rapid pace. The output to this console is basically all the commands OpenSpace is executing to get itself up and running. You can generally ignore this window.
 
 :::{figure} console.png
 :align: center
@@ -80,7 +80,7 @@ The profile loading screen showing the status of loading each data set.
 
 ### The Cosmos
 
-Once the profile and all its assets have loaded, you will now have a view of Earth along with the user interface. Next, we will explore the interface basics.
+Once the profile and all its assets have loaded, you will now have a view of Earth along with the user interface. Next, we will explore the [interface basics](/getting-started/user-interface/index).
 
 :::{figure} openspace.png
 :align: center

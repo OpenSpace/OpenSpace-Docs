@@ -18,9 +18,9 @@ We take you through the installation process, how to launch OpenSpace, an orient
 install/index
 launch/index
 user-interface/index
+navigation/index
 
-system
-navigation
+
 time
 
 

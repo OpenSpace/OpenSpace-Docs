@@ -1442,7 +1442,7 @@ That's the grand tour. Hopefully, you have an idea of the scale of the observabl
 * - Anchor:
   - [Earth](/content/solar-system/planets/earth/index)
 * - Time:
-  - Current time
+  - Yesterday, 24 hours ago
 * - Author:
   - OpenSpace Team
 * - License:

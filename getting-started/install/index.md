@@ -152,6 +152,18 @@ If you try to launch OpenSpace and you get an error that the application is not 
 ### Open in Low Resolution Mode
 For users running on a Retina display, you may want to apply the "Open in Low Resolution Mode" setting on the OpenSpace.app to get better performance.   HOW IS THIS DONE???
 ::::
+
+
+
+
+
+::::{tab-item} Linux
+
+### Linux Installation
+
+NEED CONTENT HERE. Does it have to be built? Or is it a binary installation?
+
+::::
 :::::
 
 
