@@ -13,5 +13,5 @@ or using other tools like [OCVWarp](https://github.com/hn-88/OCVWarp/wiki/Transf
 An example of a renderable sphere created in this manner using a local texture is described in another howto article.
 
 ## 3. Move the camera
-If the renderable sphere is scaled to be very large, the camera would already be inside the sphere with the default view, and only [yaw/pitch adjustments](/getting-started/navigation) may 
+If the renderable sphere is scaled to be very large, the camera would already be inside the sphere with the default view, and only [yaw/pitch adjustments](/getting-started/navigation/index) may 
 need to be made.
