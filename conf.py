@@ -15,7 +15,8 @@ if (os.environ.get("READTHEDOCS")):
   assets_release = os.environ.get("READTHEDOCS_VERSION")
   print(f"Read the docs will look for the OpenSpace tag: {assets_release}")
 # If we are working on our local machine
-elif os.path.exists("generated"):
+#elif os.path.exists("generated"):   #### Original test
+elif os.path.exists("reference/scripting-api"):
   # If we already have the path, no need to copy files again
   generate_assets_examples = False
 else:

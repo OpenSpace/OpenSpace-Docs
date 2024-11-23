@@ -461,7 +461,7 @@ def generate_docs(app, config):
 
   # Name variables
   json_location = "json"
-  output_folder = "generated"
+  output_folder = "reference"
   folder_name_assets = "asset-components"
   folder_name_scripting = "scripting-api"
   assset_examples_output = os.path.join(output_folder, "asset_examples")
