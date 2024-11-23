@@ -2,10 +2,10 @@
 The objective is to show all the volume of the water on Earth as a little "moon" right next to Earth. 
 For this, we're going to create an asset. 
 We could create a [renderable globe](/creating-data-assets/globebrowsing/creation/creating-a-renderableglobe) to do this, 
-but we have a simpler way, using the [RenderableSphereImageLocal](/generated/asset-components/RenderableSphereImageLocal) asset component 
+but we have a simpler way, using the [RenderableSphereImageLocal](/reference/asset-components/RenderableSphereImageLocal) asset component 
 introduced in version 0.20.
 
-In order to locate the newly created sphere at a chosen location near Earth, we can use the [GlobeTranslation](/generated/asset-components/GlobeTranslation) 
+In order to locate the newly created sphere at a chosen location near Earth, we can use the [GlobeTranslation](/reference/asset-components/GlobeTranslation) 
 asset component. To load the texture, if we save the texture image (many such water textures are available for free online) as "watertexture.jpg" in the same directory as the asset file created below, 
 we can use the [resource method](/creating-data-assets/asset-creation/resources) to render the texture on the sphere.
 

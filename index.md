@@ -1,4 +1,4 @@
-# OpenSpace User Guides
+# OpenSpace User Guide
 
 Welcome to the official documentation for [OpenSpace](https://openspaceproject.com). OpenSpace is an open-source, interactive data visualization software designed to visualize the entire known universe and portray our ongoing efforts to investigate the cosmos covering all possible scales.
 
@@ -52,7 +52,6 @@ You can find a list of all releases of OpenSpace [here](about/releases/index.md)
 -->
 
 :::{toctree}
-:caption: Getting started
 :maxdepth: 1
 :hidden:
 
@@ -62,28 +61,15 @@ getting-started/index
 
 
 :::{toctree}
-:caption: Using OpenSpace
 :maxdepth: 1
 :hidden:
 
-/using-openspace/index
-using-openspace/navigation/index
-using-openspace/properties/index
-using-openspace/scenegraph/index
-using-openspace/events/index
-using-openspace/scripting/index
-using-openspace/users/index
-using-openspace/installers/index
-using-openspace/builders/index
-
-using-openspace/session-recording
-using-openspace/skybrowser/index
+using-openspace/index
 :::
 
 
 
 :::{toctree}
-:caption: Profiles
 :maxdepth: 1
 :hidden:
 
@@ -93,7 +79,6 @@ profiles/index
 
 
 :::{toctree}
-:caption: Content
 :maxdepth: 1
 :hidden:
 
@@ -103,62 +88,33 @@ content/index
 
 
 :::{toctree}
-:caption: Creating data assets
 :maxdepth: 1
 :hidden:
 
-creating-data-assets/asset-creation/index
-creating-data-assets/custom-web-ui/index
-
-creating-data-assets/asteroids
-creating-data-assets/ephemeris/index
-creating-data-assets/gaia
-creating-data-assets/globebrowsing/index
-creating-data-assets/point-data/index
-creating-data-assets/profiles
-creating-data-assets/renderablestars
-creating-data-assets/satellites
-creating-data-assets/solar-video-overlay
+creating-data-assets/index
 :::
 
 
 
 :::{toctree}
-:caption: Reference
 :maxdepth: 1
 :hidden:
 
-generated/renderable-overview
-generated/asset-components/index
-generated/scripting-api/index
+reference/index
 :::
 
 
 
 :::{toctree}
-:caption: Contribute
 :maxdepth: 1
 :hidden:
 
-contribute/development/index
-contribute/faq/index
-contribute/documentation/index
+contribute/index
 :::
 
 
 
 :::{toctree}
-:caption: Community
-:maxdepth: 1
-:hidden:
-
-community/index
-:::
-
-
-
-:::{toctree}
-:caption: Glossary
 :maxdepth: 1
 :hidden:
 
@@ -168,11 +124,18 @@ glossary/index
 
 
 :::{toctree}
-:caption: About
 :maxdepth: 1
 :hidden:
 
-about/academics
-about/releases/index
-about/links
+about/index
 :::
+
+
+
+:::{toctree}
+:maxdepth: 1
+:hidden:
+
+community/index
+:::
+

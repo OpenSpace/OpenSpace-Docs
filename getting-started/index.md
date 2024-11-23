@@ -21,8 +21,5 @@ user-interface/index
 navigation/index
 
 
-time
-
-
 faq/index
 :::

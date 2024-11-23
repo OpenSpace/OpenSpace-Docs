@@ -62,7 +62,7 @@ Below is a list of breaking changes in this release.
   - RenderableOrbitalKepler: `Appearance.OutlineWeight` &rarr; `Appearance.OutlineWidth`
   - RernderableTrail: Line fade renamed from `Fade` &rarr; `LineFade`
   - All ScreenSpaceRenderables: `Gamma` &rarr; `GammaOffset`
-- The functions `openspace.navigation.addLocalRoll`, `openspace.navigation.addGlobalRoll`, and `openspace.navigation.addTruckMovement`in the [Scripting API](/generated/scripting-api/index.md) now has one input parameter value instead of two. Previously, one of the values was not being used but had to be provided. For details on the functions, see the corresponding page in the [Reference](/generated/scripting-api/openspace.navigation.md).
+- The functions `openspace.navigation.addLocalRoll`, `openspace.navigation.addGlobalRoll`, and `openspace.navigation.addTruckMovement`in the [Scripting API](/reference/scripting-api/index.md) now has one input parameter value instead of two. Previously, one of the values was not being used but had to be provided. For details on the functions, see the corresponding page in the [Reference](/reference/scripting-api/openspace.navigation.md).
 - The TileLayer classes were renamed to TileProvider. This causes a breaking change in all assets that try to load a layer
   - Type changes:
     - `DefaultTileLayer` &rarr; `DefaultTileProvider`

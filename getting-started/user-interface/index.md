@@ -182,6 +182,7 @@ OpenSpace {menuselection}`Settings` Menu
 
 ## Panels
 
+A panel collects specific functionality to alter time, record your session, access actions, and so on. Each will bring up a window that is attached to its corresponding icon, but may also be detached as a floating window.
 
 :::{figure} panels_orientation.png
 :align: center
@@ -190,6 +191,10 @@ OpenSpace {menuselection}`Settings` Menu
 
 OpenSpace's panels annotated.
 :::
+
+We will discuss details of each of these panels in the [Using OpenSpace](/using-openspace/index) chapter. For now, we will give you an overview of each panel.
+
+
 
 
 

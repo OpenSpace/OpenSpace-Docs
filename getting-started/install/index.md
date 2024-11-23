@@ -61,8 +61,8 @@ Multiple versions of OpenSpace may be installed beside one another without confl
 
 4. Continue below for your particular operating system:
 
-:::::{tab-set}
-::::{tab-item} Windows
+::::::::{tab-set}
+:::::::{tab-item} Windows
 
 ### Windows Installation Video
 
@@ -93,7 +93,17 @@ Upon running OpenSpace for the first time, it will ask for permission to access 
 
 ### Slow Performance---Frame Rate Issue
 
-If your frame rate is low (the FPS number in the top left corner), please ensure that OpenSpace is using your NVIDIA graphics card. 
+If your frame rate is low (the FPS number in the top left corner), please ensure that OpenSpace is using your dedicated graphics card. If the frame rate is debilitatingly slow, OpenSpace is probably using your system's integrated graphics card.
+
+You can set which graphics OpenSpace uses via the following procedure:
+
+
+
+
+The most likely cause is that OpenSpace is using the _Integrated_ graphics card, rather than the _Dedicated_ one, the former of which is less powerful. If you are using an NVIDIA dedicated graphics card, you can change this by right clicking the Desktop and selecting "NVIDIA Control Panel" in the context menu. In the window that opens, select "Manage 3D settings" from the menu on the left and then search for the Dropdown menu called "Preferred graphics processor". It should say "Integrated graphics" right now, but double-click that setting and chose "High-Performance NVIDIA processor" instead.
+
+
+
 
 In Windows 11, these setting are found in the Settings App under {menuselection}`System --> Display --> Graphics`. 
 
@@ -115,13 +125,13 @@ In Windows 11, these setting are found in the Settings App under {menuselection}
 :::
 
 3. Choose `High performance` and save.
-::::
+:::::::
 
 
 
 
 
-::::{tab-item} macOS
+:::::::{tab-item} macOS
 
 ### macOS Installation Video
 
@@ -151,20 +161,20 @@ If you try to launch OpenSpace and you get an error that the application is not 
 
 ### Open in Low Resolution Mode
 For users running on a Retina display, you may want to apply the "Open in Low Resolution Mode" setting on the OpenSpace.app to get better performance.   HOW IS THIS DONE???
-::::
+:::::::
 
 
 
 
 
-::::{tab-item} Linux
+:::::::{tab-item} Linux
 
 ### Linux Installation
 
 NEED CONTENT HERE. Does it have to be built? Or is it a binary installation?
 
-::::
-:::::
+:::::::
+::::::::
 
 
 ## Uninstalling OpenSpace

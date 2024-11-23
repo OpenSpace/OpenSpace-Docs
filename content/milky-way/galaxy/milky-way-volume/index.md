@@ -46,7 +46,7 @@ The Milky Way Galaxy Volume in OpenSpace. The left panel shows only the volumetr
 
 ## Display Options
 
-The Milky Way Volume has specific options that can be accessed via its [renderable settings](../../../../generated/asset-components/RenderableGalaxy.md). These options, specified in its asset file (below), control the look and quality of the volumentric model rendering in OpenSpace. These can be adjusted if the model is too detailed for your system, or not detailed enough. There is also the option to enable or disable star rendering within the model.
+The Milky Way Volume has specific options that can be accessed via its [renderable settings](/reference/asset-components/RenderableGalaxy). These options, specified in its asset file (below), control the look and quality of the volumentric model rendering in OpenSpace. These can be adjusted if the model is too detailed for your system, or not detailed enough. There is also the option to enable or disable star rendering within the model.
 
 :::{dropdown} Asset File
 
