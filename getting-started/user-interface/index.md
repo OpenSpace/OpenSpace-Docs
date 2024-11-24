@@ -257,7 +257,8 @@ When you start OpenSpace, friction for each of these types of flight is on. This
 Friction status is "on".
 :::
 
-### Friction Keyboard Shortcuts
+
+You can use keyboard shortcuts (recommended) or click on the green Flight Mode words to toggle them on and off.
 
 To toggle friction on and off, we use these keys:
 :::{list-table}

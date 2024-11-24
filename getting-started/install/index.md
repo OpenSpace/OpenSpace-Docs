@@ -66,7 +66,7 @@ Multiple versions of OpenSpace may be installed beside one another without confl
 
 ### Windows Installation Video
 
-<iframe width="740" height="530" id="tutorialPlayer" src="https://www.youtube.com/embed/YHl5L85hEUQ?enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div style="margin-left: auto; margin-right: auto; width: 640px;"><iframe width="640" height="360" src="https://www.youtube.com/embed/YHl5L85hEUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 :::{dropdown} Visual Transcript
 
@@ -80,6 +80,8 @@ Multiple versions of OpenSpace may be installed beside one another without confl
 | 1:15 | You will be presented with more Windows protection pop-us, this time for the firewall. Click "Allow access" on each. |
 | 1:35 | OpenSpace is started and you can use the application. |
 :::
+</div>
+
 
 
 ### Error: “VCRUNTIME140_1.dll was not found
@@ -171,7 +173,7 @@ NVIDIA Control Panel.
 
 ### macOS Installation Video
 
-<iframe width="740" height="530" src="https://www.youtube.com/embed/uSceew-98Cg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div style="margin-left: auto; margin-right: auto; width: 640px;"><iframe width="640" height="360" src="https://www.youtube.com/embed/uSceew-98Cg?si=SSP9iDw9Y0rsazFD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 :::{dropdown} Visual Transcript
 
@@ -185,6 +187,8 @@ NVIDIA Control Panel.
 | 5:23 | Run the OpenSpace application, found in the `bin` folder. When the Launcher opens, start OpenSpace with the start button. |
 | 6:25 | Open OpenSpace in low resolution mode by selecting the application and going to {menuselection}`File --> Get Info`. Check the box that says "Open in Low Resolution" and then run the application. |
 :::
+</div>
+
 
 
 ### macOS Folder Permissions

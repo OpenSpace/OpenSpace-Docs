@@ -26,11 +26,11 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
 * - {kbd}`Shift` + {kbd}`Space`
   - ?
 * - {kbd}`f`
-  - Toggle rotational friction on and off
+  - Toggle Rotational Friction on and off
 * - {kbd}`Shift` + {kbd}`f`
-  - Toggle zoom friction on and off
+  - Toggle Zoom Friction on and off
 * - {kbd}`Ctrl` + {kbd}`f`
-  - Toggle roll friction on and off
+  - Toggle Roll Friction on and off
 * - {kbd}`b`
   - Fade to black
 * - {kbd}`Tab`
