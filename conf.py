@@ -75,7 +75,8 @@ myst_enable_extensions = {
   "attrs_inline",
   "attrs_block",
   "colon_fence",
-  "fieldlist"
+  "fieldlist",
+  "deflist"
 }
 myst_heading_anchors = 3
 

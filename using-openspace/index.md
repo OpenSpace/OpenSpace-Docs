@@ -30,4 +30,5 @@ session-recording
 skybrowser/index
 
 faq/index
+focus
 :::

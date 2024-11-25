@@ -7,7 +7,9 @@ authors:
 
 # Content
 
-{menuselection}`Scene`
+Content is traditionally a data set with a reference.
+
+This whole chapter is designed to mirror the structure of the Scene Menu in OpenSpace. The Scene Menu path---{menuselection}`Scene --> Solar System` for example---is echoed at the top of each content page.
 
 
 ::::{grid} 1 2 2 3

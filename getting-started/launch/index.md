@@ -80,7 +80,7 @@ The profile loading screen showing the status of loading each data set.
 
 ### The Cosmos
 
-Once the profile and all its assets have loaded, you will now have a view of Earth along with the user interface. Next, we will explore the [interface basics](/getting-started/user-interface/index).
+Once the profile and all its assets have loaded, you will now have a view of Earth along with the user interface. Next, we will explore the [interface basics](/getting-started/orientation/index).
 
 :::{figure} openspace.png
 :align: center

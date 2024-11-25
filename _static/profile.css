@@ -18,3 +18,17 @@
 .galaxy-survey-aqua {
     color: rgb(0, 204, 204)
 }
+
+kbd {
+    font-weight: bold;
+}
+
+.glossary.index-list dt {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.glossary.index-list dd {
+    margin-left: 2px;
+    margin-bottom: 20px;
+}

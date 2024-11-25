@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# User Interface Overview
+# Orientation
 
 OpenSpace's user interface is unconventional, but straightforward and easy to learn. Here, we will touch on the elements of the interface and discuss the details of each item later.
 
