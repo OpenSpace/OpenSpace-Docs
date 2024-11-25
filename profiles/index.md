@@ -52,13 +52,26 @@ We will discuss profile authoring in a forthcoming page. For the time being, a [
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](./default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](./default/index)
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
 :::
 
-:::{grid-item-card} [](./empty/index)
-[![empty profile](/profiles/empty/profile_empty_icon.png)](./empty/index)
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
 :::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/empty/index)
+[![empty profile](/profiles/empty/profile_empty_icon.png)](/profiles/empty/index)
+:::
+
+
 
 ::::
 
@@ -76,7 +89,7 @@ asteroids
 bastilleday2000
 dawn
 default/index
-default_full
+default-full/index
 eclipse
 empty/index
 gaia
@@ -87,7 +100,7 @@ mars
 messenger
 newhorizons
 nightsky
-offline
+offline/index
 osirisrex
 rosetta
 solarstorm2012

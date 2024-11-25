@@ -1060,6 +1060,10 @@ That's the grand tour. Hopefully, you have an idea of the scale of the observabl
 
 ### Solar System
 
+:::{warning}
+This section is missing some data sets. Mostly planet moons and satellites whose documentation has not yet been written.
+:::
+
 #### Sun
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2

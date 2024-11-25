@@ -17,15 +17,15 @@ If you see any errors or pop-up windows you're unsure about, please refer back t
 :::
 
 
-## Console Window
+## Terminal Window
 
 The first item that pops up is a green terminal with output streaming by at a rapid pace. The output to this console is basically all the commands OpenSpace is executing to get itself up and running. You can generally ignore this window.
 
 :::{figure} console.png
 :align: center
 :width: 70%
-:alt: OpenSpace's Console Window
-The Console Window, giving you real-time status of the launch.
+:alt: OpenSpace's Terminal Window
+The Terminal Window, giving you real-time status of the launch.
 :::
 
 
@@ -88,4 +88,3 @@ Once the profile and all its assets have loaded, you will now have a view of Ear
 :alt: Earth as seen in OpenSpace
 The initial view of Earth in OpenSpace when launching is complete.
 :::
-

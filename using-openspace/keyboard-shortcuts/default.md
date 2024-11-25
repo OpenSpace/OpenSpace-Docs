@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Default Profile
+# Default Profile Keyboard Shortcuts
 
 Shortcuts found in the default profile, found at `data/profiles/default.asset`.
 

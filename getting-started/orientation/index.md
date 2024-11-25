@@ -294,3 +294,11 @@ Friction status is "off" for rotational flight (orbiting).
 In the bottom-right of the Graphics Window is the version number you are running. This cryptic string reflects the current build you are using, and can be useful for troubleshooting.
 
 The string is the branch and commit you are running, for those who speak [Git](https://github.com/OpenSpace).
+
+
+
+## Quitting OpenSpace
+
+To quit OpenSpace you have two options:
+1. Use your Operating System's quit button in the top-right of the window.
+2. Press {kbd}`Esc` and you will see a three-second timer. At the end of that three seconds, OpenSpace will close and quit. However, if you errantly quit, you can hit {kbd}`Esc` again to cancel the quit.

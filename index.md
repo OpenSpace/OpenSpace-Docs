@@ -1,8 +1,11 @@
 # OpenSpace User Guide
 
 
-You've arrived at the official documentation for [OpenSpace](https://openspaceproject.com). 
+You've arrived at the official documentation for [OpenSpace](https://openspaceproject.com). OpenSpace is an open-source, interactive data visualization software designed to visualize the entire known universe at all possible scales.
 
+
+::::::{grid} 1 1 2 2 
+:::::{grid-item}
 
 {.glossary .index-list}
 [Getting Started](/getting-started/index)
@@ -18,7 +21,7 @@ You've arrived at the official documentation for [OpenSpace](https://openspacepr
 : A description of each data set in OpenSpace.
 
 [Importing Data](/creating-data-assets/index)
-: How to add your own data and media, build asset files, and actions.
+: How to add your own data and media, build asset files, actions, and events.
 
 [Reference](/reference/index)
 : A reference section for OpenSpace commands, asset examples, and its scripting API.
@@ -36,9 +39,15 @@ You've arrived at the official documentation for [OpenSpace](https://openspacepr
 : How to reach the team and communicate with others in the OpenSpace community.
 
 
+:::::
 
 
+:::::{grid-item}
 
+![Inside Candor Chasma on Mars](./index_mars_terrain.png)
+
+:::::
+::::::
 
 ## Releases
 You can find a list of all releases of OpenSpace [here](about/releases/index.md).

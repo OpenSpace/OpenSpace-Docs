@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Base
+# Base Keyboard Shortcuts
 
 Shortcuts found in the base asset, found at `data/assets/base.asset`.
 
