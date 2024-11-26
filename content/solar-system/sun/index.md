@@ -14,8 +14,8 @@ authors:
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](/content/solar-system/sun/sun-surface/index)
-[![Sun surface](/content/solar-system/sun/sun-surface/sun_photosphere_icon.png)](/content/solar-system/sun/sun-surface/index)
+:::{grid-item-card} [](/content/solar-system/sun/sun/index)
+[![Sun surface](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/sun-glare/index)
@@ -118,7 +118,7 @@ The orbit of the Sun around the Milky Way Galaxy over the next billion years. It
 :maxdepth: 1
 :hidden:
 
-sun-surface/index
+sun/index
 sun-glare/index
 habitable-zone/index
 

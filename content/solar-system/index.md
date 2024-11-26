@@ -14,7 +14,7 @@ authors:
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./sun/index)
-[![Dwarf planets](./sun/sun-surface/sun_photosphere_icon.png)](./sun/index)
+[![Dwarf planets](./sun/sun/sun_icon.png)](./sun/index)
 :::
 
 :::{grid-item-card} [](./planets/index)

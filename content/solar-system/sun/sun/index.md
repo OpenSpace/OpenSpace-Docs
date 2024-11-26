@@ -5,9 +5,9 @@ authors:
 ---
 
 
-# Solar Surface
+# Sun
 
-{menuselection}`Scene --> Solar System --> Sun --> Solar Surface`
+{menuselection}`Scene --> Solar System --> Sun --> Sun`
 
 
 :::{note}
@@ -19,9 +19,9 @@ Do stars have a surface? Not in the traditional sense of how we think of a surfa
 We see this when the cloud cover is just right to show the Sun as a "ball" of light in the sky. The clouds adequately filter the Sun so we can see the Sun as a round disk of light. Of course, it's never good to look directly at the Sun, but now and then mother nature allows us to peek.
 
 
-:::{figure} solar_surface.png
+:::{figure} sun.png
 :align: left
-:alt: An image of the Solar Surface image with some planetary orbits above
+:alt: An image of the Sun with some planetary orbits above
 
 An image of the Sun's photosphere. Wrapped on a sphere which is properly sized, the image is not how we see the Sun, but how a telescope sees the Sun. The orbits of the planets appear at the top of the image, in the distance.
 :::
@@ -35,11 +35,11 @@ The temperature of the Sun at the photosphere is about 5,800 Kelvin (5,500&deg;C
 
 
 
-:::{figure} solar_surface_afar.png
+:::{figure} sun_afar.png
 :align: left
-:alt: The Solar Surface from afar, within the context of the inner Solar System.
+:alt: The Sun from afar, within the context of the inner Solar System.
 
-The Solar Surface image from afar within the context of the inner Solar System. Probably best to turn this off here and use the [Solar Glare](../sun-glare/index) instead.
+The Sun image from afar within the context of the inner Solar System. Probably best to turn this off here and use the [Solar Glare](../sun-glare/index) instead.
 :::
 
 
