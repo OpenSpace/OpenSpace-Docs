@@ -1,4 +1,18 @@
-# Time
+---
+authors:
+  - name: Brian Abbott, Micah Acinapura
+    affiliation: American Museum of Natural History
+---
+
+
+# Time Menu: 
+
+:::{warning}
+This section is in progress. Text will appear on this page in the future.
+:::
+
+
+## Time
 This section will cover the various aspects of manipulating time in OpenSpace. We often refer to this as the _In-Game time_ as it oftentimes will be different from the time shown on a _wall clock_.
 
 

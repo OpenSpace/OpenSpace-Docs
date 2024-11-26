@@ -153,6 +153,9 @@ If you're _really_ good, you can disable friction on the Rotation and Zoom Fligh
 Similarly, when you fly over the planetary surface, it's nice to have Rotation Friction off and use the Zoom Flight Mode to control how close to the surface you are flying. We discuss that next.
 
 
+
+{.advanced-topic}
+[Advanced]{.advanced}
 #### How to Land on a Planet
 
 For most flying, particularly through large, dispersed data in space, it is typical to maintain Focus in the center of the screen. However, landing on a planet or moon demands the object in Focus me moved away from your view.

@@ -1,4 +1,18 @@
-# Customizing Profiles
+---
+authors:
+  - name: Brian Abbott, Micah Acinapura
+    affiliation: American Museum of Natural History
+---
+
+
+# Create a Profile 
+
+:::{warning}
+This section is in progress. Text will appear on this page in the future.
+:::
+
+
+## Customizing Profiles
 [Profiles](/profiles/index) help us to 
 1. Set properties to initial values when we start up OpenSpace
 2. Load the assets we desire to display

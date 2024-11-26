@@ -1,4 +1,19 @@
-# Sky Browser
+---
+authors:
+  - name: Brian Abbott, Alex Bok
+    affiliation: American Museum of Natural History
+---
+
+
+# SkyBrowsing Menu
+
+:::{warning}
+This section is in progress. Text will appear on this page in the future.
+:::
+
+
+
+## Sky Browser
 The Sky Browser feature is a virtual telescope. It lets you see telescope images taken by famous telescopes, such as Hubble, Chandra and Spitzer, while also visualizing their locations in the sky. The Sky Browser is powered by [AAS WorldWide Telescope](http://worldwidetelescope.org/webclient/).
 
 

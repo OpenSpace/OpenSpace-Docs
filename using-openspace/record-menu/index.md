@@ -1,3 +1,17 @@
+---
+authors:
+  - name: Brian Abbott, Alex Bock
+    affiliation: American Museum of Natural History
+---
+
+
+# Record Menu: 
+
+:::{warning}
+This section is in progress. Text will appear on this page in the future.
+:::
+
+
 # Session Recording
 The Session Recording feature provides a way to record all views, renderables, and time control to a file that can be played back at a later time. OpenSpace is interactive software, meant to be used in real-time. However, it can be difficult and time-consuming to recreate all of the camera movements and content settings when presenting content that is complex and/or prolonged. Session Recording can be used to automate some or all parts of a particular presentation.
 

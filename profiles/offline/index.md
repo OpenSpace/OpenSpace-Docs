@@ -81,8 +81,8 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](/content/solar-system/sun/sun-surface/index)
-[![](/content/solar-system/sun/sun-surface/sun_photosphere_icon.png)](/content/solar-system/sun/sun-surface/index)
+:::{grid-item-card} [](/content/solar-system/sun/sun/index)
+[![](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/sun-glare/index)

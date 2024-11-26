@@ -14,8 +14,17 @@ authors:
 :::{toctree}
 :maxdepth: 1
 
+scene-menu/index
+focus-menu/index
+time-menu/index
+actions-menu/index
+create-profile/index
+skybrowser-menu/index
+record-menu/index
+geolocation-menu/index
+exoplanet-systems-menu/index
 keyboard-shortcuts/index
-time
+
 
 navigation/index
 properties/index
@@ -26,9 +35,8 @@ users/index
 installers/index
 builders/index
 
-session-recording
-skybrowser/index
+
 
 faq/index
-focus
+
 :::

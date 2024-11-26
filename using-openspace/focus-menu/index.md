@@ -1,4 +1,17 @@
-# Focus
+---
+authors:
+  - name: Brian Abbott, Micah Acinapura
+    affiliation: American Museum of Natural History
+---
+
+
+# Focus Menu: 
+
+:::{warning}
+This section is in progress. Text will appear on this page in the future.
+:::
+
+
 
 ## Orbital Navigation and Focus
 In order to fly to another place, you must change the _Focus_ object that the camera is attached to. To change your object of focus use the focus menu, located at the bottom of your screen between the settings and time menus:
