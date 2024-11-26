@@ -122,7 +122,7 @@ html_css_files = [
 
   "required-reading.css",
   "sidebar.css",
-  "profile.css"
+  "custom.css"
 ]
 
 # These folders are copied to the documentation's HTML output
