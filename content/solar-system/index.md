@@ -48,6 +48,7 @@ sun/index
 planets/index
 dwarf-planets/index
 comets/index
+missions/index
 
 :::
 

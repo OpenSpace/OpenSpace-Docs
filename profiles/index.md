@@ -83,24 +83,29 @@ We will discuss profile authoring in a forthcoming page. For the time being, a [
 :maxdepth: 1
 :caption: Profiles
 
+default/index
+default-full/index
+missions/index
+offline/index
+empty/index
+
 apollo
 artemis
 asteroids
 bastilleday2000
 dawn
-default/index
-default-full/index
+
 eclipse
-empty/index
+
 gaia
 juice
 juno
-jwst
+
 mars
 messenger
 newhorizons
 nightsky
-offline/index
+
 osirisrex
 rosetta
 solarstorm2012
