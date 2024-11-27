@@ -9,7 +9,7 @@ Note that this will work without modification only if the browser is run on the 
 for example using Remote Desktop on Windows or VNC for Linux. 
 Read on below for configuration changes needed, if you want to run a web server on the local machine and access it from a browser on a remote system. 
    
-2. Using the Web GUI - The main gui of the OpenSpace project as seen in the screenshots on the [Getting Started](/getting-started/getting-started/index) page
+2. Using the Web GUI - The main gui of the OpenSpace project as seen in the screenshots on the [Getting Started](/getting-started/index) page
 can be accessed via a browser at port 4680, for example if the computer's IP address is 10.0.0.3, then the GUI can be accessed at: `http://10.0.0.3:4680` - but some configuration changes are needed as noted below.
 
 The web interface can be made accessible to other devices by modifying the settings. This can be done by editing the `openspace.cfg` file, which would then cause the changes made

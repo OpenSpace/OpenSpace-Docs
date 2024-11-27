@@ -11,8 +11,7 @@ Here you will find general tutorials on the basics of using OpenSpace, including
 :::{toctree}
 :maxdepth: 1
 
-6-menus-dataset
+
 7-menus-globebrowsing
 8-customizing-bookmarks
-9-customizing-profiles
 :::

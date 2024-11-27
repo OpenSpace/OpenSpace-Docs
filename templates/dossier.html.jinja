@@ -1,0 +1,30 @@
+:::{list-table}
+:header-rows: 0
+:stub-columns: 1
+:align: left
+:width: 90%
+
+* - Census:
+  - {{ census }}
+* - Asset File:
+  - {{ assetfile }}
+* - OpenSpace Version:
+  - {{ openspaceversion }}
+* - Reference:
+{% if reference is string %}
+  - {{ reference }}
+{% else %}
+{% set colon = joiner(";") %}
+  - {% for r in reference %}{{ colon() }}{% if r.link %} [{{ r.name }}]({{ r.link }}){% else %} {{ r.name }}{% endif %}{% endfor %}
+{% endif %}
+* - Prepared by:
+  - {{ preparedby }}
+* - Source Version:
+  - {{ sourceversion }}
+* - License:
+{% if license.name %}
+  - [{{ license.name }}]({{ license.link }})
+{% else %}
+  - {{ license }}
+{% endif %}
+:::

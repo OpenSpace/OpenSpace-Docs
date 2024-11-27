@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134 134">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Icons">
+    <g id="User_Panels" data-name="User Panels">
+      <rect width="134" height="134"/>
+      <g>
+        <rect class="cls-1" x="49.17" y="52.24" width="35.67" height="29.52" rx="3" ry="3"/>
+        <rect x="53.28" y="61.12" width="19.68" height="8.61" rx="1" ry="1"/>
+        <rect x="53.34" y="70.66" width="19.56" height="7.61" rx="1" ry="1"/>
+        <rect x="74.3" y="61.12" width="7.38" height="17.22" rx="1" ry="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

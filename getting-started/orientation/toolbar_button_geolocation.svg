@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134 134">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Icons">
+    <g id="GeoLocation">
+      <rect width="134" height="134"/>
+      <g>
+        <path class="cls-1" d="M83,60.5c0,8.84-16,30-16,30,0,0-16-21.16-16-30s7.16-16,16-16,16,7.16,16,16Z"/>
+        <circle cx="67" cy="60.5" r="5.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

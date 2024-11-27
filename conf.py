@@ -1,36 +1,36 @@
 import os
 import sys
-
-# The way Sphinx handles the path during the evaluation of the conf.py is a bit strange
-# so we have to add the current folder or else the `import` statement will fail
-sys.path.append(os.path.abspath("."))
-from generatedocs import generate_docs
+from pathlib import Path
+# Resolves custom extensions that live in _ext
+sys.path.append(str(Path('_ext').resolve()))
 
 ##########################################################################################
-#                                     CUSTOMIZATION                                      #
+#                               Generate asset examples                                  #
 ##########################################################################################
-# This is the branch on the OpenSpace repository from which the documentation will be
-# built. Change this to a different branch to try a local branch before committing.
-# OBS: No other value than `master` should ever be committed to the master branch of the
-#      docs repository
-OPENSPACE_BRANCH = "master"
 
-# If this value is specified, instead of cloning OpenSpace from the main repository using
-# the branch provided above, instead use a local copy of the repository.
-# OBS: No other value than the empty string should ever be committed to the master branch
-#      of the docs repository
-LOCAL_OPENSPACE_FOLDER = ""
-
-
-
-# Generate the files that dynamically depend on asset files in the main OpenSpace repo
-generate_docs(OPENSPACE_BRANCH, LOCAL_OPENSPACE_FOLDER)
+# If we are on Read the docs, get the RTD version and try to find that OS release
+if (os.environ.get("READTHEDOCS")):
+  generate_assets_examples = True
+  assets_examples_use_github = True
+  assets_release = os.environ.get("READTHEDOCS_VERSION")
+  print(f"Read the docs will look for the OpenSpace tag: {assets_release}")
+# If we are working on our local machine
+#elif os.path.exists("generated"):   #### Original test
+elif os.path.exists("reference/scripting-api"):
+  # If we already have the path, no need to copy files again
+  generate_assets_examples = False
+else:
+  # Dev options
+  generate_assets_examples = True # Generates asset examples if true
+  assets_examples_use_github = True # Use github for the examples? Else, local folder
+  assets_release = "" # Release tag name for github option. If empty, will use origin/master
+  assets_folder = "" # Folder path for local folder option
 
 
 ###
 # Global Settings
 ###
-needs_sphinx = "4.0"
+needs_sphinx = "7.4.6"
 
 project = "OpenSpace"
 author = "OpenSpace community"
@@ -48,7 +48,9 @@ extensions = [
   "sphinx.ext.duration",
   "sphinxcontrib.jquery",
   "sphinxcontrib.luadomain",
-  "sphinxcontrib.mermaid"
+  "sphinxcontrib.mermaid",
+  "generate_docs", # Custom extension, lives in _ext
+  "custom_directives" # Custom extension, lives in _ext
 ]
 
 keep_warnings = True
@@ -71,8 +73,10 @@ pygments_dark_style = "monokai"
 
 myst_enable_extensions = {
   "attrs_inline",
+  "attrs_block",
   "colon_fence",
-  "fieldlist"
+  "fieldlist",
+  "deflist"
 }
 myst_heading_anchors = 3
 
@@ -83,9 +87,10 @@ myst_heading_anchors = 3
 ###
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
-  "logo_only" : True,
+  "logo_only": True,
   "display_version": False,
   "collapse_navigation": False,
+  "titles_only": True,
 }
 
 html_context = {
@@ -116,7 +121,8 @@ html_css_files = [
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
 
   "required-reading.css",
-  "sidebar.css"
+  "sidebar.css",
+  "custom.css"
 ]
 
 # These folders are copied to the documentation's HTML output
@@ -125,3 +131,4 @@ html_static_path = [ "_static" ]
 templates_path = [ "_templates" ]
 
 # html_extra_path = ["robots.txt"]
+
