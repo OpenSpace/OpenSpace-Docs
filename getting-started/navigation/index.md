@@ -45,7 +45,7 @@ A three-button mouse is recommended, but not necessary.
 
 * - Pan
   - {kbd}`Ctrl` + {kbd}`left mouse`
-  - Hold the {kbd}`Ctrl` key while dragging the {kbd}`left mouse button` to pan the view away from the Focus. While you're learning, use this movement sparingly. Once you move the Focus out of view, flight motions become counterintuitive, we why explain next.
+  - Hold the {kbd}`Ctrl` key while dragging the {kbd}`left mouse button` to pan the view away from the Focus. this is akin to pitch and yaw motion in one mode. While you're learning, use this movement sparingly. Once you move the Focus out of view, flight motions become counterintuitive, we why explain next.
 ::::
 
 :::{tip}
