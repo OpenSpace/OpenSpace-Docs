@@ -1,5 +1,7 @@
 ﻿__pycache__
 .venv
 build
-generated
+reference/asset-components
+reference/scripting-api
+reference/renderable-overview.md
 .DS_Store
