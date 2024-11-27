@@ -5,13 +5,50 @@ authors:
 ---
 
 
-# Scene Menu: Working with Data Sets
+# Scene Panel: Manipulating Data
 
 :::{warning}
 This section is in progress. Text will appear on this page in the future.
 :::
 
+We covered the Scene Panel basics in [](/getting-started/orientation/index). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
 
+
+:::{note}
+We will refer to aspects of the Scene Panel with the path convention, for example: \
+{menuselection}`Scene --> Solar System --> Planets --> Earth`
+ 
+In the context of a data set, we'll use the ellipses to abbreviate the path: \
+{menuselection}`... --> Earth --> Moon --> Moon Label` \
+or, for example, to change the scale of the Moon Label: \
+{menuselection}`... --> Moon --> Moon Label --> Scale`.
+:::
+
+
+## Locating Data Sets
+First and foremost, the Scene Panel is used to access all the data sets loaded into OpenSpace. What shows up in the Scene Panel is based on which assets are loaded into the profile used to launch OpenSpace.
+
+The Scene Panel is organized by scales, with groups for the Solar System, Milky Way, and Universe---everything outside the Milky Way Galaxy. It is not limited to these three groups---there is a Night Sky group too---but much of the data you see in OpenSpace is in one of these three.
+
+The entire [](/content/index) chapter's structure is based on the structure of the Scene Panel.
+
+### Search Is Faster
+Rather than fish through the tree to deeper and deeper levels looking for one particular data set, it's often easiest to simply search for it in the search box at the top of the panel.
+
+The resulting matches will appear as a list, replacing the main list. Here, you can access their settings and make changes or turn the data set on or off.
+
+To get the rest of the tree back, clear the search box.
+
+## Turning Data On and Off
+
+
+## Hierarchial Structure
+Renderable, Scale, Translation
+even labels have these
+
+and labels have Sizing, which does notihing... need to use Labels then Size under that.
+
+## 
 
 
 ## Using the Menus - Datasets

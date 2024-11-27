@@ -23,5 +23,6 @@ authors:
 
 base
 default
+jwst
 :::
 
