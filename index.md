@@ -4,6 +4,16 @@
 You've arrived at the official documentation for [OpenSpace](https://openspaceproject.com). OpenSpace is an open-source, interactive data visualization software designed to visualize the entire known universe at all possible scales.
 
 
+:::{attention}
+This site is in the midst of an overhaul. Sections break down into:
+- Relatively complete, but perhaps some bits missing,
+- A hybrid of work in progress plus old documentation pages,
+- Untouched from the old documentation version.
+
+In the near future we will try to mark these sections as such.
+:::
+
+
 ::::::{grid} 1 1 2 2 
 :::::{grid-item}
 
