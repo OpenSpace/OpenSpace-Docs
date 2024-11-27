@@ -122,7 +122,7 @@ Asset files have access to a special `asset` object that represents the current 
 
     Declares a data resource to be synchronized before the asset can be initialized. This includes downloading data from the official OpenSpace server (data.openspaceproject.com), but can also be used to make arbitrary HTTP requests. The data is downloaded to the sync folder (typically `${BASE}/sync` but can be changed in `openspace.cfg`). The method returns the absolute path to the folder of the downloaded resource. Valid inputs are tables representing `ResourceSynchronization`s documented in more detail on the [Resources](./resources) page.
 
-  - `string asset.localResource(string relativePath)`
+  - `string asset.resource(string relativePath)`
 
     Declares a data resource already located on disk. The input to the function is a path relative to the asset file and the function returns the absolute path to that resource.
 

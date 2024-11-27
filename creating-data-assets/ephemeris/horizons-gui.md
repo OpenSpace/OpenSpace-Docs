@@ -38,7 +38,7 @@ The start of the time range you want data for.
 The end of the time range you want data for.
 
 ### Step Size
-The step size is the temporal resolution you want the data to have. The default value is 1 sample per day.
+The step size is the temporal resolution you want the data to have. The default value is 1 sample per day. A useful trick here is to use `equal intervals (unitless)` and use the maximum number of 90000 which Horizons allows for a single request. This will result in the maximum resolution that is possible.
 
 ### Horizons Log Messages
 This is a log that only displays messages related to your input in this tool and the download of the data. When using this tool there are a few different issues that you can encounter and they will be explained in more detail below. All of the issues you will encounter will be detailed in this log and the messages will guide you towards a fix. If OpenSpace fails with getting this helpful information there will be an error file stored at the specified location in the **File Path** field. This file might contain some useful information about what went wrong and how it can be fixed.

@@ -37,7 +37,7 @@ local Plane = {
     Type = "RenderableVideoPlane",
     MirrorBackside = true,
     Size = 3E7,
-    Video = asset.localResource("20170821_1024_0171.mp4")
+    Video = asset.resource("20170821_1024_0171.mp4")
   },
   GUI = {
     Name = "Sun Corona",

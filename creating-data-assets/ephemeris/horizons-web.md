@@ -70,7 +70,7 @@ Examine the .hrz file and verify that it is valid. If it only contains the heade
 ## Data Usage
 This wiki covers the scenario where an asset file references a data file served by one of the OpenSpace sync servers. At runtime, the file will be downloaded if a local copy does not already exist. This requires the file generated in the steps above to be uploaded to an OpenSpace sync server by one of the project's server administrators.
 
-For testing purposes, the file can be included in the asset by using the `localResource` method, but this is not discussed here (however the [builders/asteroids](asteroids) page contains an example using this method).
+For testing purposes, the file can be included in the asset by using the `resource` method, but this is not discussed here (however the [builders/asteroids](asteroids) page contains an example using this method).
 
 
 ## Create an Asset File

@@ -169,6 +169,8 @@ def find_shortest_asset_in_path(asset_files, name):
   # If nothing found, return None
   return None
 
+# Returns the list of examples and as a second argument whether there are hand-written
+# dedicated examples
 def find_asset_examples(assets_folder, category, name, folder_asset_files, example_asset_files):
   """
   Search through all example assets for the component name
@@ -188,22 +190,22 @@ def find_asset_examples(assets_folder, category, name, folder_asset_files, examp
       regex = r"\b" + name + r"\b|\b\"" + name + r"\"\b"
       example = get_lines_and_content_from_file(filename, regex, True)
       examples.append(example)
-    return examples
+    return examples, True
 
   # Search pass 2
   # Search through all assets in the **examples** folder and add the shortest asset
   example = find_shortest_asset_in_path(example_asset_files, name)
   if example:
-    return [ example ]
+    return [ example ], False
 
   # Search pass 3
   # Search through all assets in the **assets** folder and add the shortest asset
   example = find_shortest_asset_in_path(folder_asset_files, name)
   if example:
-    return [ example ]
+    return [ example ], False
 
   # If nothing found, return empty array
-  return []
+  return [], False
 
 def group_members_by_optionality(members):
   """
@@ -300,8 +302,7 @@ def generate_asset_components(environment, assets_folder, output_folder, folder_
   asset_component_template = environment.get_template("asset_component.html.jinja")
 
   # Missing and found asset files
-  components_missing_assets = []
-  no_of_found_assets = 0
+  components_info = []
   print("Handle individual components")
   for category in asset_categories:
     # Find base class to add its members to each derived class
@@ -329,17 +330,20 @@ def generate_asset_components(environment, assets_folder, output_folder, folder_
       # Find example for the asset component, if it is not a baseclass component
       examples = []
       if not is_base_class:
-        examples = find_asset_examples(
+        examples, has_hand_written = find_asset_examples(
           assets_folder,
           category["name"],
           asset_component["name"],
           folder_asset_files,
           example_asset_files
         )
-        if len(examples) == 0:
-          components_missing_assets.append(asset_component["name"])
-        else:
-          no_of_found_assets += 1
+
+        components_info.append({
+          "name": asset_component["name"],
+          "category": category["name"],
+          "has_example": has_hand_written
+        })
+
 
       # Render component page with jinja
       output_asset_component = asset_component_template.render(
@@ -360,21 +364,22 @@ def generate_asset_components(environment, assets_folder, output_folder, folder_
   with open(f"{assets_output_path}/index.md", "w") as f:
     f.write(outputIndex)
 
-  # Print out missing assets
-  total = no_of_found_assets + len(components_missing_assets)
-  percent_found = no_of_found_assets / (total) * 100
-  components_missing_assets.sort()
+  # Create table for the Wiki
+  components_info.sort(key=lambda component: component["name"])
+  comps = ""
+  for c in components_info:
+    name = c["name"]
+    category = c["category"]
+    has_example = "Yes" if c["has_example"] else ""
+    comps = f"{comps}| {name} | {category} | {has_example} |\n"
+
   print(f"""
+Documentation Writing Overview
+https://internal.openspaceproject.com/e/en/documentation-writing
 
-Number of found asset examples (ignoring base classes):
-{no_of_found_assets} of {total}, or {percent_found:.1f}%
-
-{"-" * 80}
-{len(components_missing_assets)} asset components are missing example files:
-{",".join(components_missing_assets)}
-{"-" * 80}
-
-
+| Name | Type | Has Example |
+| ---- | ---- | ----------- |
+{comps}
 """)
 
 ##########################################################################################

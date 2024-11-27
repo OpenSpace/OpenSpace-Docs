@@ -13,7 +13,7 @@ Create a new .asset file in **data/assets/scene/solarsystem/sssb/** using the fo
 local assetHelper = asset.require('util/asset_helper')
 local sharedSssb = asset.require('./sssb_shared')
 
-local filepath = asset.localResource("./")
+local filepath = asset.resource("./")
 local object = sharedSssb.createSssbGroupObject('<downloaded filename>.csv', "<Name of object(s)>", filepath, { 1.0, 1.0, 1.0 })
 object.Renderable.Enabled = true
 object.Renderable.SegmentQuality = 7

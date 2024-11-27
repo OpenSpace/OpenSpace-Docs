@@ -11,10 +11,10 @@ To load a local resource into OpenSpace you need to tell OpenSpace where the fil
 The recommended method is to place the resource in the same folder as the asset as it makes it easier to share assets with others.
 
 ### If your resource is in the same folder as the asset
-If your asset file and resource are in the same folder you can include the resource by writing `asset.localResource("filename.fileextension")`. In the example below, it would be:
+If your asset file and resource are in the same folder you can include the resource by writing `asset.resource("filename.fileextension")`. In the example below, it would be:
 
 ```lua
-asset.localResource("myVideo.mp4")
+asset.resource("myVideo.mp4")
 ```
 
 ![An asset and a file in the same folder](asset_path.png)
@@ -26,7 +26,7 @@ local ScreenSpace = {
   Identifier = "ScreenSpaceVideoExample",
   Type = "ScreenSpaceVideo",
   Name = "Screen Space Video Example",
-  Video = asset.localResource("myVideo.mp4")
+  Video = asset.resource("myVideo.mp4")
 }
 
 
