@@ -340,14 +340,13 @@ A list of light sources that this model should accept light from.
 ## Asset Examples
 
 
-:::{dropdown} Animation Loop From Start
+:::{dropdown} Basic
 
-This example loads a model with an animation. The animation starts at a set time, in
-this case "2024 07 09 12:00:00" and is set to loop after that time.
+This example loads a model.
 
 :::{code-block} lua
 :linenos:
-:emphasize-lines: 13, 26
+:emphasize-lines: 13, 19
 
 -- Load the example model from OpenSpace servers
 -- If you want to use your own model, this block of code can be safely deleted
@@ -359,22 +358,15 @@ local model = asset.resource({
 })
 
 local Node = {
-  Identifier = "RenderableModel_Example_Animation_Loop",
+  Identifier = "RenderableModel_Example",
   Renderable = {
     Type = "RenderableModel",
     GeometryFile = model .. "BoxAnimated.glb",
     -- Use the line below insted of the one above if you want to use your own model
     --GeometryFile = "C:/path/to/model.fbx",
-
-    -- Animation Parameters:
-    EnableAnimation = true,
-    -- Start the animation and play it once at this time
-    AnimationStartTime = "2024 07 09 12:00:00",
-    -- Loop the animation after the set start time
-    AnimationMode = "LoopFromStart",
   },
   GUI = {
-    Name = "RenderableModel - Animation Loop From Start",
+    Name = "RenderableModel - Basic",
     Path = "/Examples"
   }
 }
@@ -392,60 +384,6 @@ end)
 --[[
   Author = Cesium, https://cesium.com/
   URL = https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/BoxAnimated
-  License =
-    Creative Commons Attribution 4.0 International License,
-    https://creativecommons.org/licenses/by/4.0/
-]]
-
-:::
-:::
-
-
-
-:::{dropdown} Vertex Colors
-
-This example loads a model with vertex colors as material.
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 13, 19
-
--- Load the example model from OpenSpace servers
--- If you want to use your own model, this block of code can be safely deleted
-local model = asset.resource({
-  Name = "Vertex Colors Test Model",
-  Type = "HttpSynchronization",
-  Identifier = "model_vertex_color_test",
-  Version = 1
-})
-
-local Node = {
-  Identifier = "RenderableModel_Example_Vertex_Colors",
-  Renderable = {
-    Type = "RenderableModel",
-    GeometryFile = model .. "VertexColorTest.glb",
-    -- Use the line below insted of the one above if you want to use your own model
-    --GeometryFile = "C:/path/to/model.fbx",
-  },
-  GUI = {
-    Name = "RenderableModel - Vertex Colors",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-
--- Model credit
---[[
-  Author = Ed Mackey
-  URL = "https://github.com/KhronosGroup/glTF-Sample-Models/tree/main/2.0/VertexColorTest"
   License =
     Creative Commons Attribution 4.0 International License,
     https://creativecommons.org/licenses/by/4.0/
@@ -489,193 +427,6 @@ local Node = {
   },
   GUI = {
     Name = "RenderableModel - Basic Animation",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-
--- Model credit
---[[
-  Author = Cesium, https://cesium.com/
-  URL = https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/BoxAnimated
-  License =
-    Creative Commons Attribution 4.0 International License,
-    https://creativecommons.org/licenses/by/4.0/
-]]
-
-:::
-:::
-
-
-
-:::{dropdown} Lighting
-
-This example loads a model and load the Sun to illuminate it.
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 16, 27
-
--- Load the asset of the Sun to illuminate the model
-local sun = asset.require("scene/solarsystem/sun/transforms")
-
--- Load the example model from OpenSpace servers
--- If you want to use your own model, this block of code can be safely deleted
-local model = asset.resource({
-  Name = "Animated Box",
-  Type = "HttpSynchronization",
-  Identifier = "animated_box",
-  Version = 1
-})
-
-local Node = {
-  Identifier = "RenderableModel_Example_Lighting",
-  Renderable = {
-    Type = "RenderableModel",
-    GeometryFile = model .. "BoxAnimated.glb",
-    -- Use the line below insted of the one above if you want to use your own model
-    --GeometryFile = "C:/path/to/model.fbx",
-
-    -- Add the Sun as a light source to illuminate the model
-    LightSources = {
-      sun.LightSource
-    }
-  },
-  GUI = {
-    Name = "RenderableModel - Lighting",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-
--- Model credit
---[[
-  Author = Cesium, https://cesium.com/
-  URL = https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/BoxAnimated
-  License =
-    Creative Commons Attribution 4.0 International License,
-    https://creativecommons.org/licenses/by/4.0/
-]]
-
-:::
-:::
-
-
-
-:::{dropdown} Animation Bounce Infinitely
-
-This example loads a model with an animation. The animation starts at a set time, in
-this case "2024 07 09 12:00:00" and is set to bounce both before and after that time
-(bounce is similar to a boomerang for videos).
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 13, 26
-
--- Load the example model from OpenSpace servers
--- If you want to use your own model, this block of code can be safely deleted
-local model = asset.resource({
-  Name = "Animated Box",
-  Type = "HttpSynchronization",
-  Identifier = "animated_box",
-  Version = 1
-})
-
-local Node = {
-  Identifier = "RenderableModel_Example_Animation_Bounce_Infinitely",
-  Renderable = {
-    Type = "RenderableModel",
-    GeometryFile = model .. "BoxAnimated.glb",
-    -- Use the line below insted of the one above if you want to use your own model
-    --GeometryFile = "C:/path/to/model.fbx",
-
-    -- Animation Parameters:
-    EnableAnimation = true,
-    -- Start the animation and play it once at this time
-    AnimationStartTime = "2024 07 09 12:00:00",
-    -- Bounce the animation both before and after the set start time
-    AnimationMode = "BounceInfinitely",
-  },
-  GUI = {
-    Name = "RenderableModel - Animation Bounce Infinitely",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-
--- Model credit
---[[
-  Author = Cesium, https://cesium.com/
-  URL = https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/BoxAnimated
-  License =
-    Creative Commons Attribution 4.0 International License,
-    https://creativecommons.org/licenses/by/4.0/
-]]
-
-:::
-:::
-
-
-
-:::{dropdown} Animation Loop Infinitely
-
-This example loads a model with an animation. The animation starts at a set time, in
-this case "2024 07 09 12:00:00" and is set to loop both before and after that time.
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 13, 26
-
--- Load the example model from OpenSpace servers
--- If you want to use your own model, this block of code can be safely deleted
-local model = asset.resource({
-  Name = "Animated Box",
-  Type = "HttpSynchronization",
-  Identifier = "animated_box",
-  Version = 1
-})
-
-local Node = {
-  Identifier = "RenderableModel_Example_Animation_Loop_Infinitely",
-  Renderable = {
-    Type = "RenderableModel",
-    GeometryFile = model .. "BoxAnimated.glb",
-    -- Use the line below insted of the one above if you want to use your own model
-    --GeometryFile = "C:/path/to/model.fbx",
-
-    -- Animation Parameters:
-    EnableAnimation = true,
-    -- Start the animation and play it once at this time
-    AnimationStartTime = "2024 07 09 12:00:00",
-    -- Loop the animation both before and after the set start time
-    AnimationMode = "LoopInfinitely",
-  },
-  GUI = {
-    Name = "RenderableModel - Animation Loop Infinitely",
     Path = "/Examples"
   }
 }
@@ -766,13 +517,15 @@ end)
 
 
 
-:::{dropdown} Basic
+:::{dropdown} Animation Bounce Infinitely
 
-This example loads a model.
+This example loads a model with an animation. The animation starts at a set time, in
+this case "2024 07 09 12:00:00" and is set to bounce both before and after that time
+(bounce is similar to a boomerang for videos).
 
 :::{code-block} lua
 :linenos:
-:emphasize-lines: 13, 19
+:emphasize-lines: 13, 26
 
 -- Load the example model from OpenSpace servers
 -- If you want to use your own model, this block of code can be safely deleted
@@ -784,15 +537,22 @@ local model = asset.resource({
 })
 
 local Node = {
-  Identifier = "RenderableModel_Example",
+  Identifier = "RenderableModel_Example_Animation_Bounce_Infinitely",
   Renderable = {
     Type = "RenderableModel",
     GeometryFile = model .. "BoxAnimated.glb",
     -- Use the line below insted of the one above if you want to use your own model
     --GeometryFile = "C:/path/to/model.fbx",
+
+    -- Animation Parameters:
+    EnableAnimation = true,
+    -- Start the animation and play it once at this time
+    AnimationStartTime = "2024 07 09 12:00:00",
+    -- Bounce the animation both before and after the set start time
+    AnimationMode = "BounceInfinitely",
   },
   GUI = {
-    Name = "RenderableModel - Basic",
+    Name = "RenderableModel - Animation Bounce Infinitely",
     Path = "/Examples"
   }
 }
@@ -810,6 +570,246 @@ end)
 --[[
   Author = Cesium, https://cesium.com/
   URL = https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/BoxAnimated
+  License =
+    Creative Commons Attribution 4.0 International License,
+    https://creativecommons.org/licenses/by/4.0/
+]]
+
+:::
+:::
+
+
+
+:::{dropdown} Animation Loop From Start
+
+This example loads a model with an animation. The animation starts at a set time, in
+this case "2024 07 09 12:00:00" and is set to loop after that time.
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 13, 26
+
+-- Load the example model from OpenSpace servers
+-- If you want to use your own model, this block of code can be safely deleted
+local model = asset.resource({
+  Name = "Animated Box",
+  Type = "HttpSynchronization",
+  Identifier = "animated_box",
+  Version = 1
+})
+
+local Node = {
+  Identifier = "RenderableModel_Example_Animation_Loop",
+  Renderable = {
+    Type = "RenderableModel",
+    GeometryFile = model .. "BoxAnimated.glb",
+    -- Use the line below insted of the one above if you want to use your own model
+    --GeometryFile = "C:/path/to/model.fbx",
+
+    -- Animation Parameters:
+    EnableAnimation = true,
+    -- Start the animation and play it once at this time
+    AnimationStartTime = "2024 07 09 12:00:00",
+    -- Loop the animation after the set start time
+    AnimationMode = "LoopFromStart",
+  },
+  GUI = {
+    Name = "RenderableModel - Animation Loop From Start",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+
+-- Model credit
+--[[
+  Author = Cesium, https://cesium.com/
+  URL = https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/BoxAnimated
+  License =
+    Creative Commons Attribution 4.0 International License,
+    https://creativecommons.org/licenses/by/4.0/
+]]
+
+:::
+:::
+
+
+
+:::{dropdown} Animation Loop Infinitely
+
+This example loads a model with an animation. The animation starts at a set time, in
+this case "2024 07 09 12:00:00" and is set to loop both before and after that time.
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 13, 26
+
+-- Load the example model from OpenSpace servers
+-- If you want to use your own model, this block of code can be safely deleted
+local model = asset.resource({
+  Name = "Animated Box",
+  Type = "HttpSynchronization",
+  Identifier = "animated_box",
+  Version = 1
+})
+
+local Node = {
+  Identifier = "RenderableModel_Example_Animation_Loop_Infinitely",
+  Renderable = {
+    Type = "RenderableModel",
+    GeometryFile = model .. "BoxAnimated.glb",
+    -- Use the line below insted of the one above if you want to use your own model
+    --GeometryFile = "C:/path/to/model.fbx",
+
+    -- Animation Parameters:
+    EnableAnimation = true,
+    -- Start the animation and play it once at this time
+    AnimationStartTime = "2024 07 09 12:00:00",
+    -- Loop the animation both before and after the set start time
+    AnimationMode = "LoopInfinitely",
+  },
+  GUI = {
+    Name = "RenderableModel - Animation Loop Infinitely",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+
+-- Model credit
+--[[
+  Author = Cesium, https://cesium.com/
+  URL = https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/BoxAnimated
+  License =
+    Creative Commons Attribution 4.0 International License,
+    https://creativecommons.org/licenses/by/4.0/
+]]
+
+:::
+:::
+
+
+
+:::{dropdown} Lighting
+
+This example loads a model and load the Sun to illuminate it.
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 16, 27
+
+-- Load the asset of the Sun to illuminate the model
+local sun = asset.require("scene/solarsystem/sun/transforms")
+
+-- Load the example model from OpenSpace servers
+-- If you want to use your own model, this block of code can be safely deleted
+local model = asset.resource({
+  Name = "Animated Box",
+  Type = "HttpSynchronization",
+  Identifier = "animated_box",
+  Version = 1
+})
+
+local Node = {
+  Identifier = "RenderableModel_Example_Lighting",
+  Renderable = {
+    Type = "RenderableModel",
+    GeometryFile = model .. "BoxAnimated.glb",
+    -- Use the line below insted of the one above if you want to use your own model
+    --GeometryFile = "C:/path/to/model.fbx",
+
+    -- Add the Sun as a light source to illuminate the model
+    LightSources = {
+      sun.LightSource
+    }
+  },
+  GUI = {
+    Name = "RenderableModel - Lighting",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+
+-- Model credit
+--[[
+  Author = Cesium, https://cesium.com/
+  URL = https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/BoxAnimated
+  License =
+    Creative Commons Attribution 4.0 International License,
+    https://creativecommons.org/licenses/by/4.0/
+]]
+
+:::
+:::
+
+
+
+:::{dropdown} Vertex Colors
+
+This example loads a model with vertex colors as material.
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 13, 19
+
+-- Load the example model from OpenSpace servers
+-- If you want to use your own model, this block of code can be safely deleted
+local model = asset.resource({
+  Name = "Vertex Colors Test Model",
+  Type = "HttpSynchronization",
+  Identifier = "model_vertex_color_test",
+  Version = 1
+})
+
+local Node = {
+  Identifier = "RenderableModel_Example_Vertex_Colors",
+  Renderable = {
+    Type = "RenderableModel",
+    GeometryFile = model .. "VertexColorTest.glb",
+    -- Use the line below insted of the one above if you want to use your own model
+    --GeometryFile = "C:/path/to/model.fbx",
+  },
+  GUI = {
+    Name = "RenderableModel - Vertex Colors",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+
+-- Model credit
+--[[
+  Author = Ed Mackey
+  URL = "https://github.com/KhronosGroup/glTF-Sample-Models/tree/main/2.0/VertexColorTest"
   License =
     Creative Commons Attribution 4.0 International License,
     https://creativecommons.org/licenses/by/4.0/

@@ -69,46 +69,6 @@ This type can be used to adjust the aspect ratio of Renderable types, for exampl
 ## Asset Examples
 
 
-:::{dropdown} Ellipsoid
-
-This asset creates a SceneGraphNode that is rendering a sphere which is adjust to an
-ellipsoidal shape by using a non-uniform scaling. In particular, the second axis is
-half as long as the first, and the third axis is a third as long.
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 5, 13
-
-local Node = {
-  Identifier = "NonUniformStaticScale_Example_Ellipsoid",
-  Transform = {
-    Scale = {
-      Type = "NonUniformStaticScale",
-      Scale = { 149597870700, 149597870700 / 2, 149597870700 / 3 }
-    }
-  },
-  Renderable = {
-    Type = "RenderableSphericalGrid"
-  },
-  GUI = {
-    Name = "NonUniformStaticScale - Ellipsoid",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-:::
-:::
-
-
-
 :::{dropdown} Basic
 
 This asset creates a SceneGraphNode that only displays coordinate axes. The coordinate
@@ -135,6 +95,46 @@ local Node = {
   },
   GUI = {
     Name = "NonUniformStaticScale - Basic",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+:::
+:::
+
+
+
+:::{dropdown} Ellipsoid
+
+This asset creates a SceneGraphNode that is rendering a sphere which is adjust to an
+ellipsoidal shape by using a non-uniform scaling. In particular, the second axis is
+half as long as the first, and the third axis is a third as long.
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 5, 13
+
+local Node = {
+  Identifier = "NonUniformStaticScale_Example_Ellipsoid",
+  Transform = {
+    Scale = {
+      Type = "NonUniformStaticScale",
+      Scale = { 149597870700, 149597870700 / 2, 149597870700 / 3 }
+    }
+  },
+  Renderable = {
+    Type = "RenderableSphericalGrid"
+  },
+  GUI = {
+    Name = "NonUniformStaticScale - Ellipsoid",
     Path = "/Examples"
   }
 }

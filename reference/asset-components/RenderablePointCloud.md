@@ -518,244 +518,6 @@ This setting can be used if you have textures with transparency, but do not need
 ## Asset Examples
 
 
-:::{dropdown} Color Mapping with Pre-set Options and Missing Values
-
-This example creates a point cloud where the color is set from a color map and the
-options for parameters to color by are pre-set to a limited number of options,
-including settings for which range to use. It also includes settings to render
-missing data values in gray.
-Note that the color map is loaded from another asset. This is a utility asset that
-includes some common color maps for general usage.
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 6, 28
-
-local colormaps = asset.require("util/default_colormaps")
-
-local Node = {
-  Identifier = "RenderablePointCloud_Example_ColorMapped_More",
-  Renderable = {
-    Type = "RenderablePointCloud",
-    File = asset.resource("data/dummydata.csv"),
-    Coloring = {
-      ColorMapping = {
-        File = colormaps.Uniform.Viridis,
-        -- Specify which parameters we want to show up in the user interface, as
-        -- well as what range we want the color mapping to be done based on. If not
-        -- included, all the columns in the data file would be exposed as options
-        ParameterOptions = {
-          { Key = "number_withNan" }, -- No range => compute min and max
-          { Key = "normaldist_withMissing", Range = { -0.5, 0.5 } }
-        },
-        -- Also show missing data values in a specific color
-        ShowMissingData = true,
-        NoDataColor = { 0.5, 0.5, 0.5, 1.0 }
-      }
-    },
-    SizeSettings = {
-      ScaleExponent = 6.5
-    }
-  },
-  GUI = {
-    Name = "RenderablePointCloud - Color Mapped with Settings",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-:::
-:::
-
-
-
-:::{dropdown} Orientation - Face Camera Position
-
-This example creates a point cloud where the planes that make up the points are
-oriented to face the camera position, rather than the view direction (which is
-default). This means that the point will be layed out in a spherical way around the
-camera, which works better for spherical displays compared to the default
-orientation.
-A texture is added so that we can more easily see how the orientation is altered.
-See Textured example for more details.
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 4, 16
-
-local Node = {
-  Identifier = "RenderablePointCloud_Example_FaceCameraPosition",
-  Renderable = {
-    Type = "RenderablePointCloud",
-    File = asset.resource("data/dummydata.csv"),
-    -- Change the orientation render option to face the camera position instead
-    -- of its view direction
-    OrientationRenderOption = "Camera Position Normal",
-    -- Add a texture so we can more easily see how the orientation is changed
-    Texture = {
-      File = openspace.absPath("${DATA}/test3.jpg")
-    },
-    UseAdditiveBlending = false
-  },
-  GUI = {
-    Name = "RenderablePointCloud - Face Camera Position",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-:::
-:::
-
-
-
-:::{dropdown} Textured
-
-This example creates a point cloud using a texture to render each point.
-Note that other color related settings, like color mapping, can still be applied.
-The color will then be multiplied with the texture color.
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 4, 19
-
-local Node = {
-  Identifier = "RenderablePointCloud_Example_Textured",
-  Renderable = {
-    Type = "RenderablePointCloud",
-    File = asset.resource("data/dummydata.csv"),
-    Texture = {
-      -- The path to the texture file. Here we use openspace.absPath so that we can use
-      -- the ${DATA} token to get the path to a texture in the "OpenSpace/data" folder,
-      -- but for a file at a relative location it would also work to use asset.resource,
-      -- like for the data file above
-      File = openspace.absPath("${DATA}/test3.jpg")
-    },
-    -- Disable additive blending, so that points will be rendered with their actual color
-    -- and overlapping points will be sorted by depth. This works best when the points
-    -- have an opacity of 1
-    UseAdditiveBlending = false
-  },
-  GUI = {
-    Name = "RenderablePointCloud - Textured",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-:::
-:::
-
-
-
-:::{dropdown} Limit Max Size
-
-This example creates a point cloud where the size of the points is limited to a
-given max size. The color is set to a fixed value.
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 4, 17
-
-local Node = {
-  Identifier = "RenderablePointCloud_Example_MaxSize",
-  Renderable = {
-    Type = "RenderablePointCloud",
-    File = asset.resource("data/dummydata.csv"),
-    Coloring = {
-      FixedColor = { 0.0, 0.8, 0.8 }
-    },
-    -- Set the max size of the points. The larger the "MaxSize" value, the larger the
-    -- points are allowed to get when moving the camera closer to them
-    SizeSettings = {
-      MaxSize = 0.7,
-      EnableMaxSizeControl = true
-    }
-  },
-  GUI = {
-    Name = "RenderablePointCloud - Max Size",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-:::
-:::
-
-
-
-:::{dropdown} Point Size / Scaling
-
-This example creates a point cloud where the size of the points is set by entering a
-a scale exponent. This makes it so that the points will be given a world-scale size of
-10 to the power of the provided scale exponent.
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 4, 16
-
-local Node = {
-  Identifier = "RenderablePointCloud_Example_Scaled",
-  Renderable = {
-    Type = "RenderablePointCloud",
-    File = asset.resource("data/dummydata.csv"),
-    Coloring = {
-      FixedColor = { 0.0, 0.0, 0.8 }
-    },
-    SizeSettings = {
-      -- We set the exponent for the scale explicitly, to a value that
-      -- gives the points a suitable size based on their world-space coordinates
-      ScaleExponent = 6.5
-    }
-  },
-  GUI = {
-    Name = "RenderablePointCloud - Point Size / Scaling",
-    Path = "/Examples",
-    Description = "Point cloud with configured point size"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-:::
-:::
-
-
-
 :::{dropdown} Basic (Fixed Color and Size)
 
 This example creates a point cloud with a fixed color and default size.
@@ -838,24 +600,90 @@ end)
 
 
 
-:::{dropdown} Units
+:::{dropdown} Color Mapping with Pre-set Options and Missing Values
 
-This example creates a point cloud where the positions are interpreted to be in
-another unit than meters (here kilometers).
+This example creates a point cloud where the color is set from a color map and the
+options for parameters to color by are pre-set to a limited number of options,
+including settings for which range to use. It also includes settings to render
+missing data values in gray.
+Note that the color map is loaded from another asset. This is a utility asset that
+includes some common color maps for general usage.
 
 :::{code-block} lua
 :linenos:
-:emphasize-lines: 4, 9
+:emphasize-lines: 6, 28
+
+local colormaps = asset.require("util/default_colormaps")
 
 local Node = {
-  Identifier = "RenderablePointCloud_Example_Units",
+  Identifier = "RenderablePointCloud_Example_ColorMapped_More",
   Renderable = {
     Type = "RenderablePointCloud",
     File = asset.resource("data/dummydata.csv"),
-    Unit = "Km"
+    Coloring = {
+      ColorMapping = {
+        File = colormaps.Uniform.Viridis,
+        -- Specify which parameters we want to show up in the user interface, as
+        -- well as what range we want the color mapping to be done based on. If not
+        -- included, all the columns in the data file would be exposed as options
+        ParameterOptions = {
+          { Key = "number_withNan" }, -- No range => compute min and max
+          { Key = "normaldist_withMissing", Range = { -0.5, 0.5 } }
+        },
+        -- Also show missing data values in a specific color
+        ShowMissingData = true,
+        NoDataColor = { 0.5, 0.5, 0.5, 1.0 }
+      }
+    },
+    SizeSettings = {
+      ScaleExponent = 6.5
+    }
   },
   GUI = {
-    Name = "RenderablePointCloud - Units",
+    Name = "RenderablePointCloud - Color Mapped with Settings",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+:::
+:::
+
+
+
+:::{dropdown} Limit Max Size
+
+This example creates a point cloud where the size of the points is limited to a
+given max size. The color is set to a fixed value.
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 4, 17
+
+local Node = {
+  Identifier = "RenderablePointCloud_Example_MaxSize",
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("data/dummydata.csv"),
+    Coloring = {
+      FixedColor = { 0.0, 0.8, 0.8 }
+    },
+    -- Set the max size of the points. The larger the "MaxSize" value, the larger the
+    -- points are allowed to get when moving the camera closer to them
+    SizeSettings = {
+      MaxSize = 0.7,
+      EnableMaxSizeControl = true
+    }
+  },
+  GUI = {
+    Name = "RenderablePointCloud - Max Size",
     Path = "/Examples"
   }
 }
@@ -914,6 +742,50 @@ end)
 
 
 
+:::{dropdown} Point Size / Scaling
+
+This example creates a point cloud where the size of the points is set by entering a
+a scale exponent. This makes it so that the points will be given a world-scale size of
+10 to the power of the provided scale exponent.
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 4, 16
+
+local Node = {
+  Identifier = "RenderablePointCloud_Example_Scaled",
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("data/dummydata.csv"),
+    Coloring = {
+      FixedColor = { 0.0, 0.0, 0.8 }
+    },
+    SizeSettings = {
+      -- We set the exponent for the scale explicitly, to a value that
+      -- gives the points a suitable size based on their world-space coordinates
+      ScaleExponent = 6.5
+    }
+  },
+  GUI = {
+    Name = "RenderablePointCloud - Point Size / Scaling",
+    Path = "/Examples",
+    Description = "Point cloud with configured point size"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+:::
+:::
+
+
+
 :::{dropdown} Point Size from Data
 
 This example creates a point cloud where the size of the points is computed based on
@@ -948,6 +820,134 @@ local Node = {
   },
   GUI = {
     Name = "RenderablePointCloud - Size from Data",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+:::
+:::
+
+
+
+:::{dropdown} Textured
+
+This example creates a point cloud using a texture to render each point.
+Note that other color related settings, like color mapping, can still be applied.
+The color will then be multiplied with the texture color.
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 4, 19
+
+local Node = {
+  Identifier = "RenderablePointCloud_Example_Textured",
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("data/dummydata.csv"),
+    Texture = {
+      -- The path to the texture file. Here we use openspace.absPath so that we can use
+      -- the ${DATA} token to get the path to a texture in the "OpenSpace/data" folder,
+      -- but for a file at a relative location it would also work to use asset.resource,
+      -- like for the data file above
+      File = openspace.absPath("${DATA}/test3.jpg")
+    },
+    -- Disable additive blending, so that points will be rendered with their actual color
+    -- and overlapping points will be sorted by depth. This works best when the points
+    -- have an opacity of 1
+    UseAdditiveBlending = false
+  },
+  GUI = {
+    Name = "RenderablePointCloud - Textured",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+:::
+:::
+
+
+
+:::{dropdown} Orientation - Face Camera Position
+
+This example creates a point cloud where the planes that make up the points are
+oriented to face the camera position, rather than the view direction (which is
+default). This means that the point will be layed out in a spherical way around the
+camera, which works better for spherical displays compared to the default
+orientation.
+A texture is added so that we can more easily see how the orientation is altered.
+See Textured example for more details.
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 4, 16
+
+local Node = {
+  Identifier = "RenderablePointCloud_Example_FaceCameraPosition",
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("data/dummydata.csv"),
+    -- Change the orientation render option to face the camera position instead
+    -- of its view direction
+    OrientationRenderOption = "Camera Position Normal",
+    -- Add a texture so we can more easily see how the orientation is changed
+    Texture = {
+      File = openspace.absPath("${DATA}/test3.jpg")
+    },
+    UseAdditiveBlending = false
+  },
+  GUI = {
+    Name = "RenderablePointCloud - Face Camera Position",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+:::
+:::
+
+
+
+:::{dropdown} Units
+
+This example creates a point cloud where the positions are interpreted to be in
+another unit than meters (here kilometers).
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 4, 9
+
+local Node = {
+  Identifier = "RenderablePointCloud_Example_Units",
+  Renderable = {
+    Type = "RenderablePointCloud",
+    File = asset.resource("data/dummydata.csv"),
+    Unit = "Km"
+  },
+  GUI = {
+    Name = "RenderablePointCloud - Units",
     Path = "/Examples"
   }
 }

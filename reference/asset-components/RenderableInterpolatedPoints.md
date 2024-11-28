@@ -622,53 +622,6 @@ end)
 
 
 
-:::{dropdown} Smoother Interpolation (Spline-based)
-
-Example of interpolating points with spline-based interpolation for the position. This
-leads to smoother transitions at the nodes of the interpolation.
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 4, 21
-
-local Node = {
-  Identifier = "RenderableInterpolatedPoints_Example_Spline",
-  Renderable = {
-    Type = "RenderableInterpolatedPoints",
-    -- Using a random walk dataset, to get movement in some different directions
-    File = asset.resource("data/interpolation_randomwalk.csv"),
-    -- Specify how many objects the rows in the dataset represent. Here, the dataset is
-    -- consists of 10 objects with positions at 6 different time steps
-    NumberOfObjects = 10,
-    Interpolation = {
-      -- Smoothen transitions between two different sets of points, by
-      -- using a spline based interpolation of the points
-      UseSplineInterpolation = true
-    },
-    -- Reduce the scale of the points a bit compared to default, so we see them more clearly
-    SizeSettings = {
-      ScaleExponent = 3.0
-    }
-  },
-  GUI = {
-    Name = "RenderableInterpolatedPoints - Spline",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-:::
-:::
-
-
-
 :::{dropdown} Interpolated Points with Color Mapping
 
 Example of interpolating points with a color map. The data value used for the coloring
@@ -706,6 +659,53 @@ local Node = {
   },
   GUI = {
     Name = "RenderableInterpolatedPoints - Color Mapped",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+:::
+:::
+
+
+
+:::{dropdown} Smoother Interpolation (Spline-based)
+
+Example of interpolating points with spline-based interpolation for the position. This
+leads to smoother transitions at the nodes of the interpolation.
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 4, 21
+
+local Node = {
+  Identifier = "RenderableInterpolatedPoints_Example_Spline",
+  Renderable = {
+    Type = "RenderableInterpolatedPoints",
+    -- Using a random walk dataset, to get movement in some different directions
+    File = asset.resource("data/interpolation_randomwalk.csv"),
+    -- Specify how many objects the rows in the dataset represent. Here, the dataset is
+    -- consists of 10 objects with positions at 6 different time steps
+    NumberOfObjects = 10,
+    Interpolation = {
+      -- Smoothen transitions between two different sets of points, by
+      -- using a spline based interpolation of the points
+      UseSplineInterpolation = true
+    },
+    -- Reduce the scale of the points a bit compared to default, so we see them more clearly
+    SizeSettings = {
+      ScaleExponent = 3.0
+    }
+  },
+  GUI = {
+    Name = "RenderableInterpolatedPoints - Spline",
     Path = "/Examples"
   }
 }

@@ -97,41 +97,36 @@ _Inherits [Rotation](#core_transform_rotation)_
 ## Asset Examples
 
 
-:::{dropdown} TimeFrame
+:::{dropdown} Fixed Date
 
 This asset creates a rotation provided by a SPICE kernel and applies it to a
 SceneGraphNode that only displays coordinate axes. The rotation of the coordinate axes
 are determined by SPICE, in this case pretending that the coordinate axes are rotating
-at the same rate as Earth. In this example, the rotation is only calculated between
-2000 JAN 01 and 2002 JAN 01 to exemplify a use-case in which the data from the SPICE
-kernel is not available for the whole duration.
+at the same rate as Earth. In this specific example, the orientation is independent of
+the actual in-game time in OpenSpace and only uses a fixed date of 2000 JAN 01 instead.
 
 :::{code-block} lua
 :linenos:
-:emphasize-lines: 8, 22
+:emphasize-lines: 8, 18
 
 -- Load the default SPICE kernels, which is the planetary constants and the DE430 kernel
 asset.require("spice/core")
 
 local Node = {
-  Identifier = "SpiceRotation_Example_TimeFrame",
+  Identifier = "SpiceRotation_Example_FixedDate",
   Transform = {
     Rotation = {
       Type = "SpiceRotation",
       SourceFrame = "IAU_EARTH",
       DestinationFrame = "GALACTIC",
-      TimeFrame = {
-        Type = "TimeFrameInterval",
-        Start = "2000 JAN 01",
-        End = "2002 JAN 01"
-      }
+      FixedDate = "2000 JAN 01 00:00:00.000"
     }
   },
   Renderable = {
     Type = "RenderableCartesianAxes"
   },
   GUI = {
-    Name = "SpiceRotation - TimeFrame",
+    Name = "SpiceRotation - Fixed Date",
     Path = "/Examples"
   }
 }
@@ -195,36 +190,41 @@ end)
 
 
 
-:::{dropdown} Fixed Date
+:::{dropdown} TimeFrame
 
 This asset creates a rotation provided by a SPICE kernel and applies it to a
 SceneGraphNode that only displays coordinate axes. The rotation of the coordinate axes
 are determined by SPICE, in this case pretending that the coordinate axes are rotating
-at the same rate as Earth. In this specific example, the orientation is independent of
-the actual in-game time in OpenSpace and only uses a fixed date of 2000 JAN 01 instead.
+at the same rate as Earth. In this example, the rotation is only calculated between
+2000 JAN 01 and 2002 JAN 01 to exemplify a use-case in which the data from the SPICE
+kernel is not available for the whole duration.
 
 :::{code-block} lua
 :linenos:
-:emphasize-lines: 8, 18
+:emphasize-lines: 8, 22
 
 -- Load the default SPICE kernels, which is the planetary constants and the DE430 kernel
 asset.require("spice/core")
 
 local Node = {
-  Identifier = "SpiceRotation_Example_FixedDate",
+  Identifier = "SpiceRotation_Example_TimeFrame",
   Transform = {
     Rotation = {
       Type = "SpiceRotation",
       SourceFrame = "IAU_EARTH",
       DestinationFrame = "GALACTIC",
-      FixedDate = "2000 JAN 01 00:00:00.000"
+      TimeFrame = {
+        Type = "TimeFrameInterval",
+        Start = "2000 JAN 01",
+        End = "2002 JAN 01"
+      }
     }
   },
   Renderable = {
     Type = "RenderableCartesianAxes"
   },
   GUI = {
-    Name = "SpiceRotation - Fixed Date",
+    Name = "SpiceRotation - TimeFrame",
     Path = "/Examples"
   }
 }

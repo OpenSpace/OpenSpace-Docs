@@ -97,6 +97,55 @@ _Inherits [Translation](#core_transform_translation)_
 ## Asset Examples
 
 
+:::{dropdown} Fixed Date
+
+This asset creates a time-varying translation with information from a SPICE kernel and
+applies it to a SceneGraphNode that only displays coordinate axes. The position of the
+coordinate axes are determined by SPICE, in this case pretending that the axes are
+orbiting the same way the Moon does around Earth. In this specific example, the
+position is independent of the actual in-game time in OpenSpace and only uses a fixed
+date of 2000 JAN 01 instead.
+For more information about SPICE see: https://naif.jpl.nasa.gov/naif/
+
+:::{code-block} lua
+:linenos:
+:emphasize-lines: 8, 18
+
+-- Load the default SPICE kernels, which are the planetary constants and the DE430 kernel
+asset.require("spice/core")
+
+local Node = {
+  Identifier = "SpiceTranslation_Example_FixedDate",
+  Transform = {
+    Translation = {
+      Type = "SpiceTranslation",
+      Target = "MOON",
+      Observer = "EARTH",
+      FixedDate = "2000 JAN 01 00:00:00.000"
+    }
+  },
+  Renderable = {
+    Type = "RenderableCartesianAxes"
+  },
+  GUI = {
+    Name = "SpiceTranslation - Fixed Date",
+    Path = "/Examples"
+  }
+}
+
+asset.onInitialize(function()
+  openspace.addSceneGraphNode(Node)
+end)
+
+asset.onDeinitialize(function()
+  openspace.removeSceneGraphNode(Node)
+end)
+
+:::
+:::
+
+
+
 :::{dropdown} Reference Frame
 
 This asset creates a time-varying translation with information from a SPICE kernel and
@@ -174,55 +223,6 @@ local Node = {
   },
   GUI = {
     Name = "SpiceTranslation - Basic",
-    Path = "/Examples"
-  }
-}
-
-asset.onInitialize(function()
-  openspace.addSceneGraphNode(Node)
-end)
-
-asset.onDeinitialize(function()
-  openspace.removeSceneGraphNode(Node)
-end)
-
-:::
-:::
-
-
-
-:::{dropdown} Fixed Date
-
-This asset creates a time-varying translation with information from a SPICE kernel and
-applies it to a SceneGraphNode that only displays coordinate axes. The position of the
-coordinate axes are determined by SPICE, in this case pretending that the axes are
-orbiting the same way the Moon does around Earth. In this specific example, the
-position is independent of the actual in-game time in OpenSpace and only uses a fixed
-date of 2000 JAN 01 instead.
-For more information about SPICE see: https://naif.jpl.nasa.gov/naif/
-
-:::{code-block} lua
-:linenos:
-:emphasize-lines: 8, 18
-
--- Load the default SPICE kernels, which are the planetary constants and the DE430 kernel
-asset.require("spice/core")
-
-local Node = {
-  Identifier = "SpiceTranslation_Example_FixedDate",
-  Transform = {
-    Translation = {
-      Type = "SpiceTranslation",
-      Target = "MOON",
-      Observer = "EARTH",
-      FixedDate = "2000 JAN 01 00:00:00.000"
-    }
-  },
-  Renderable = {
-    Type = "RenderableCartesianAxes"
-  },
-  GUI = {
-    Name = "SpiceTranslation - Fixed Date",
     Path = "/Examples"
   }
 }
