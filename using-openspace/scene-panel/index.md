@@ -11,8 +11,17 @@ authors:
 This section is in progress. Text will appear on this page in the future.
 :::
 
+
+:::{figure} scene_panel.png
+:align: right
+:alt:
+
+The Scene Panel in OpenSpace.
+:::
+
 We covered the Scene Panel basics in [](/getting-started/orientation/index). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
 
+The Scene Panel is a hierarchial listing of data sets in your OpenSpace session, which are determined by what assets are in the profile you loaded upon launching OpenSpace.
 
 :::{note}
 We will refer to aspects of the Scene Panel with the path convention, for example: \
@@ -39,10 +48,22 @@ The resulting matches will appear as a list, replacing the main list. Here, you 
 
 To get the rest of the tree back, clear the search box.
 
+
+
 ## Turning Data On and Off
+One of the primary uses of the Scene Panel is to turn data sets on and off. Using the check box besiide each data set's name in the panel, you can toggle the data set on or off.
+
 
 
 ## Hierarchial Structure
+The Scene Panel has a hierarchial structure, expanding deeper and deeper depending on how many items and nested settings you have. At its most basic, each data set will have at least three submenus:
+- Renderable: where all of the settings for the renderable used by the data set can be changed---the look of the data set.
+- Scale: where you can scale the data up or down spatially.
+- Translation: where you can move the data set spatially in x, y, z.
+
+
+
+
 Renderable, Scale, Translation
 even labels have these
 
