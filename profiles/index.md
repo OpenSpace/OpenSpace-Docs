@@ -76,18 +76,23 @@ We will discuss profile authoring in a forthcoming page. For the time being, a [
 ::::
 
 
-
-
-
 :::{toctree}
 :maxdepth: 1
-:caption: Profiles
+:hidden:
 
 default/index
 default-full/index
 missions/index
 offline/index
 empty/index
+:::
+
+
+
+
+:::{toctree}
+:maxdepth: 1
+:caption: Profiles (Unrenovated)
 
 apollo
 artemis

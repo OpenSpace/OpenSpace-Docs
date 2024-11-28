@@ -8,10 +8,8 @@ You've arrived at the official documentation for [OpenSpace](https://openspacepr
 This site is in the midst of an overhaul. Sections break down into:
 - {octicon}`check-circle-fill;1.25em` Completely overhauled,
 - {octicon}`check-circle;1.25em` Relatively complete, but perhaps some bits missing,
-- {octicon}`alert;1.25em` A hybrid of work in progress plus old documentation pages,
+- {octicon}`alert;1.25em` A hybrid of work in progress plus old, unrenovated  documentation pages,
 - {octicon}`x-circle;1.25em` Untouched from the old documentation version.
-
-In the near future we will try to mark these sections as such.
 :::
 
 

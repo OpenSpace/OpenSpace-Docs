@@ -9,17 +9,31 @@ authors:
 
 In this chapter, we will delve more deeply into how to use OpenSpace. We will confine our topics here to _using_ the software, and discuss building assets and importing data in [](/creating-data-assets/index).
 
-For this chapter, we need to understand a bit more what goes on under the hood with OpenSpace. So, we kick this chapter off with a bit of an introduction on assets, one of the main elements that defines what the user sees.
+For this chapter, we need to understand a bit more what goes on under the hood with OpenSpace. So, we kick this chapter off with a bit of an introduction on how data is brought to OpenSpace via profiles, assets, and renderables.
 
 
+
+{.glossary .index-list}
+[The Building Blocks of OpenSpace](/using-openspace/building-blocks/index)
+: How profiles, assets, and renderables work together.
 
 
 
 
 :::{toctree}
 :maxdepth: 1
+:hidden:
 
-what-is-asset/index
+building-blocks/index
+:::
+
+
+
+
+:::{toctree}
+:maxdepth: 1
+:caption: Using OpenSpace (Unrenovated)
+
 scene-panel/index
 focus-menu/index
 time-menu/index

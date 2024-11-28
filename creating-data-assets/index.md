@@ -13,6 +13,7 @@ authors:
 
 :::{toctree}
 :maxdepth: 1
+:caption: Building Content (Unrenovated)
 
 asset-creation/index
 custom-web-ui/index
