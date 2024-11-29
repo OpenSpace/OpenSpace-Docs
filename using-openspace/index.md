@@ -17,7 +17,8 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [The Building Blocks of OpenSpace](/using-openspace/building-blocks/index)
 : How profiles, assets, and renderables work together.
 
-
+[Scene Panel](/using-openspace/scene-panel/index)
+: Turn data sets on and off and alter their appearance.
 
 
 :::{toctree}
@@ -25,6 +26,7 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 :hidden:
 
 building-blocks/index
+scene-panel/index
 :::
 
 
@@ -34,7 +36,7 @@ building-blocks/index
 :maxdepth: 1
 :caption: Using OpenSpace (Unrenovated)
 
-scene-panel/index
+
 focus-menu/index
 time-menu/index
 actions-menu/index
