@@ -15,9 +15,9 @@ Quasars are the most distant objects we can see. They are extremely active galax
 
 :::{figure} quasars+galaxies.png
 :align: left
-:alt: A two-lobed distribution of the quasars as orange points along with the Sloan Galaxies embedded within to give us a sense of scale.
+:alt: A two-lobed distribution of the quasars as orange points along with the Sloan DSS Galaxies embedded within to give us a sense of scale.
 
-The distribution of quasars, in orange, along with the [Sloan Galaxies](../sloan-galaxies/index), in green, for scale. The data are bifurcated because of the {term}`zone of avoidance`, that part of the sky where the band of the Milky Way blocks our view of the galaxies beyond our own.
+The distribution of quasars, in orange, along with the [Sloan DSS Galaxies](../sloan-galaxies/index), in green, for scale. The data are bifurcated because of the {term}`zone of avoidance`, that part of the sky where the band of the Milky Way blocks our view of the galaxies beyond our own.
 :::
 
 

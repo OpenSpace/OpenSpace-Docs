@@ -7,7 +7,7 @@ authors:
 
 # Scene Panel: Manipulating Data
 
-We covered the Scene Panel basics in [](/getting-started/orientation/index). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
+We covered the Scene Panel basics in [Orientation](/getting-started/orientation/index). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
 
 
 <div style="margin-left: auto; margin-right: auto; width: 640px;">
@@ -42,7 +42,7 @@ Expanding a data set will display its properties and their adjustment tools. The
 
 
 ## Locating Data Sets
-First and foremost, the Scene Panel is used to access all the data sets loaded into OpenSpace. What shows up in the Scene Panel is based on which assets are loaded into the profile used to launch OpenSpace.
+First and foremost, the Scene Panel is used to access all the data sets loaded into OpenSpace. What shows up in the Scene Panel is determined by the assets that are loaded into the profile used to launch OpenSpace.
 
 The Scene Panel is organized by scales, with groups for the Solar System, Milky Way, and Universe (everything outside the Milky Way Galaxy). It is not limited to these three groups---there is a Night Sky group too---but much of the data you see in OpenSpace is in one of these three.
 
@@ -78,7 +78,7 @@ For some objects, you may have to turn off more than one data set to remove it f
 :::
 
 :::{warning}
-Some data sets have a sizing or fading setting applied to them based on your distance from them, so they may not appear even if you turn them on. The galaxy surveys like [Tully Galaxies](/content/universe/nearby-surveys/tully-galaxies/index) or the [](/content/universe/deep-sky-surveys/sloan-galaxies/index) or the planet labels are examples of this. If you want to see Tully Galaxies from the night sky, you must uncheck: \
+Some data sets have a Fade setting applied to them based on your distance from them, so they may not appear even if you turn them on. The galaxy surveys like [Tully Galaxies](/content/universe/nearby-surveys/tully-galaxies/index) or the [Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/index), or the planet labels are examples of this. If you want to see Tully Galaxies from the night sky, you must uncheck: \
 {menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxies --> Renderable --> Fading --> Enable Distance Based Fading`
 :::
 
@@ -88,7 +88,7 @@ Some data sets have a sizing or fading setting applied to them based on your dis
 To the right of the data set is the target icon ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png). You can press this button to set that data set as the focus.
 
 :::{note}
-Many of these data sets are observationally based---so they are centered on the Sun. If you were to press ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png) for the Open Star Clusters, the Sun would remain the Focus. This button is more critical when you want to visit a planet, moon, or a spacecraft.
+Many of these data sets are observationally based---so they are centered on the Sun. If you were to press ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png) for the Open Star Clusters, the Sun would remain the Focus. This button is more critical when you want to visit an object like a  planet, moon, exoplanet system, or a spacecraft.
 :::
 
 
@@ -101,14 +101,14 @@ Many of these data sets are observationally based---so they are centered on the 
 :alt: OpenSpace's Scene Panel Context Menu
 :::
 
-Beside the target button is a context menu ![Context menu](/getting-started/orientation/navigation_panel_context_menu_button.png). This opens up a subpanel that has the navigation options to Fly To, Jump To, or Pan+Fly To. There is also a button to connect you to information about the data set.
+Beside the target button is a context menu ![Context menu](/getting-started/orientation/navigation_panel_context_menu_button.png). This opens up a subpanel that has the navigation options to Fly To, Jump To, or Zoom To/Frame. There is also a button to connect you to information about the data set.
 
 
 
 
 
 ## Asset Settings
-The Scene Panel has a hierarchial structure, expanding deeper and deeper depending on how many nested items you have. Under each data set, there is a hierarchical list of settings. At its most basic, each data set will have three settings submenus:
+The Scene Panel has a hierarchial structure, expanding deeper and deeper depending on how many nested items you have. Under each data set, there is a hierarchical list of settings. At its most basic, each data set will have three settings subsections:
 - Renderable: where all of the settings for the renderable used by the data set can be changed---the look of the data set.
 - Scale: where you can scale the data up or down spatially.
 - Translation: where you can move the data set spatially in x, y, z.
@@ -125,7 +125,7 @@ The Scene Panel's settings for the Open Star Clusters. \
 
 
 :::{important}
-**The Asset's Renderable Determines the Data Set's Settings**
+**The Asset's Renderable Determines the Settings Shown**
 
 In this section we are showing the Scene Panel and settings for the [Open Star Clusters](/content/milky-way/star-clusters/open-clusters/index). The Renderable for the Open Clusters is [RenderablePolygonCloud](/reference/asset-components/RenderablePolygonCloud), and that Rendedrable has a Sizing setting. The [Stars](/content/milky-way/stars/stars/index) data set, for example, uses [RenderableStars](/reference/asset-components/RenderableStars), which has no Sizing setting.
 
@@ -216,8 +216,89 @@ When you look at their settings in the Scene Panel, you will still see the Sizin
 
 
 
-## Can I Save my Changes?
-Short answer: no. 
+## Other Renderable's Settings
+We cannot delineate every [renderable's](/reference/renderable-overview) settings configuration. But, we will provide a few more here that you're likely to encounter.
 
-Longer answer, yes, but not in an automated way yet. If you find settings that you want to preserve, you must add them to that data set's asset file, then save that file. Each data set's asset file is listed in that data set's dossier in the [Content](/content/index) Chapter.
+
+### Stars: Magnitude Exponent
+
+::::::{grid}
+:::::{grid-item}
+
+:::{figure} scene_panel_stars.png
+:align: center
+:width: 70%
+:figwidth: 100%
+:alt: The Stars settings.
+
+The [Stars](/content/milky-way/stars/stars/index) settings via {menuselection}`Scene --> Milky Way --> Stars --> Stars`.
+:::
+:::::
+
+:::::{grid-item}
+For the Stars the size (brightness) is controlled with the Magnitude Exponent. This is similar to the Scale Exponent, but instead works directly on the magnitude data, which sets the stars brightness.
+
+The Core and Glare properties set the look of the stars.
+
+More: [](/reference/asset-components/RenderableStars)
+:::::
+::::::
+
+
+### Planets: Layers
+
+::::::{grid}
+:::::{grid-item}
+
+:::{figure} scene_panel_mars.png
+:align: center
+:width: 70%
+:figwidth: 100%
+:alt: The settings for Mars.
+
+A typical planet's settings, in this case Mars: {menuselection}`Scene --> Solar System --> Planets --> Mars --> Mars`.
+:::
+:::::
+
+:::::{grid-item}
+Planets have a different set of parameters to adjust. The most important one, particularly for Mars but for other planets and some moons too, is the Layers section. Layers are what are drawn on the globe, so you can add a higher-resolution layer or even patches to the current view in this section. We will talk more about layers later.
+
+Some planets have Labels too. These are for surface features like craters and mountains.
+
+More: [](/reference/asset-components/RenderableGlobe)
+
+:::::
+::::::
+
+
+
+### Lines and Wire-frame Objects: Opacity
+
+::::::{grid}
+:::::{grid-item}
+
+:::{figure} scene_panel_constellation_lines.png
+:align: center
+:width: 70%
+:figwidth: 100%
+:alt: The settings for the Constellation Lines.
+
+Settings for the [Constellation Lines](/content/milky-way/constellations/constellation-lines/index), but similar settings are found in other line-drawing assets like the Radio Sphere and Grids.  {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines`.
+:::
+:::::
+
+:::::{grid-item}
+When it comes to images and lines, be they for constellations, or the Radio Sphere, or the Mliky Way Image or All-sky, Opacity is going to be the more important setting to alter their brightness.
+
+Opacity ranges from 0 to 1, with 0 being totally invisible and 1 being completely opaque. For lines, it can appear to alter their color, so choosing the right color and opacity go hand-in-hand.
+
+More: [](/reference/asset-components/RenderableConstellationLines), [](/reference/asset-components/RenderableSphericalGrid), [](/reference/asset-components/RenderableGrid), and many others.
+:::::
+::::::
+
+
+
+
+## Can I Save my Changes?
+Yes, but not in an automated way yet. If you find settings that you want to preserve, you must add them to that data set's asset file, then save that file. Each data set's asset file is listed in that data set's dossier in the [Content](/content/index) Chapter.
 

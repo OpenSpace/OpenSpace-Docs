@@ -589,10 +589,10 @@ One remarkable star orbit is the star PM J13420-3415 (red in this image). This i
 Contemplating the Milky Way and its hundreds of billions of stars, we now turn to what lies outside the Galaxy and the multitude of worlds that lie beyond our home star system.
 
 ::::{tip}
-By default, [Tully](/content/universe/nearby-surveys/tully-galaxies/index), [2Df](/content/universe/deep-sky-surveys/2df-galaxies/index), and [Sloan](/content/universe/deep-sky-surveys/sloan-galaxies/index) galaxies are on and will appear when you reach a distance from the Sun that triggers them to appear. For an audience, I like to have control of when they appear, so I turn them off. \
+By default, [Tully](/content/universe/nearby-surveys/tully-galaxies/index), [2Df](/content/universe/deep-sky-surveys/2df-galaxies/index), and [Sloan DSS](/content/universe/deep-sky-surveys/sloan-galaxies/index) galaxies are on and will appear when you reach a distance from the Sun that triggers them to appear. For an audience, I like to have control of when they appear, so I turn them off. \
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxies` \
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> 2dF Galaxies` \
-{octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan Galaxies`
+{octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan DSS Galaxies`
 ::::
 
 
@@ -855,20 +855,20 @@ The 2dF's 229,000 galaxies show the same sponge-like, large-scale structure, wit
 
 
 
-#### Sloan Galaxies
+#### Sloan DSS Galaxies
 
-{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan Galaxies` \
+{octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan DSS Galaxies` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue zooming out to see the Sloan Galaxies.
 
 ::::::{grid} 1 2 2 2
 :::::{grid-item}
-[![Sloan Digital Sky Survey galaxies](sloan_galaxies.png)](sloan_galaxies.png)
+[![Sloan DSS Galaxies](sloan_galaxies.png)](sloan_galaxies.png)
 
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/sloan-galaxies/index)
-[![Sloan galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
+[![Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
 :::
 ::::
 
@@ -1383,19 +1383,19 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/2df-galaxies/index)
-[![2dF galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.png)](/content/universe/deep-sky-surveys/2df-galaxies/index)
+[![2dF Galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.png)](/content/universe/deep-sky-surveys/2df-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/sloan-galaxies/index)
-[![Sloan galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
+[![Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
-[![Abell clusters](/content/universe/deep-sky-surveys/abell-galaxy-clusters/abell_icon.png)](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
+[![Abell Clusters](/content/universe/deep-sky-surveys/abell-galaxy-clusters/abell_icon.png)](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/supercluster-labels/index)
-[![Supercluster labels](/content/universe/deep-sky-surveys/supercluster-labels/scl_icon.png)](/content/universe/deep-sky-surveys/supercluster-labels/index)
+[![Supercluster Labels](/content/universe/deep-sky-surveys/supercluster-labels/scl_icon.png)](/content/universe/deep-sky-surveys/supercluster-labels/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/quasars/index)

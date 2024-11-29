@@ -114,7 +114,7 @@ The integers assigned to these types are decoded in the table below. In this num
 :::
 
 
-
+## Dossier
 
 :::{dossier}
 :census: 30,159 galaxies

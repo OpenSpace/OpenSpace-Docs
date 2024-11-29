@@ -21,7 +21,7 @@ Blackbody
 
 
 Completeness
-    Data completeness is an attribute of a data set that relates to its overall quality. One might be tempted to think of this as gaps in observations, just as the Sloan Galaxies did not look at the entire sky, so there are gaps in the data. But, this is not the gist of completeness. Completeness tells you the quality of a data set. For example, for the Hipparcos catalog of stars, we know the catalog has a completeness down to a magnitude of +7.5 magnitude. That means for stars brighter than 7.5, the catalog is complete and we can treat as such when examining it. This complete subset of stars numbers about 25,000. But, Hipparcos has over 100,000 stars. This means that for stars dimmer than 7.5 magnitude, Hipparcos didn't capture them all in its data. The data set is incomplete for these dimmer stars.
+    Data completeness is an attribute of a data set that relates to its overall quality. One might be tempted to think of this as gaps in observations, just as the Sloan DSS Galaxies did not look at the entire sky, so there are gaps in the data. But, this is not the gist of completeness. Completeness tells you the quality of a data set. For example, for the Hipparcos catalog of stars, we know the catalog has a completeness down to a magnitude of +7.5 magnitude. That means for stars brighter than 7.5, the catalog is complete and we can treat as such when examining it. This complete subset of stars numbers about 25,000. But, Hipparcos has over 100,000 stars. This means that for stars dimmer than 7.5 magnitude, Hipparcos didn't capture them all in its data. The data set is incomplete for these dimmer stars.
 
 
 Ecliptic

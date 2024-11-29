@@ -22,7 +22,7 @@ The supercluster labels within the [Tully Galaxies](../../nearby-surveys/tully-g
 
 
 :::{note}
-The Supercluster Labels are intended to be viewed with the galaxy surveys ([Tully](../../nearby-surveys/tully-galaxies/index), [2dF](../2df-galaxies/index), [Sloan](../sloan-galaxies/index)) and the [Abell Galaxy Clusters](../abell-galaxy-clusters/index).
+The Supercluster Labels are intended to be viewed with the galaxy surveys ([Tully](../../nearby-surveys/tully-galaxies/index), [2dF](../2df-galaxies/index), [Sloan DSS](../sloan-galaxies/index)) and the [Abell Galaxy Clusters](../abell-galaxy-clusters/index).
 :::
 
 
@@ -39,7 +39,7 @@ Galaxy clusters are on the order of millions of light years across---the Virgo C
 :align: left
 :alt: Supercluster labels seen with a variety of galaxy surveys.
 
-The Supercluster Labels with several galaxy surveys, including Tully, 2dF, and Sloan galaxies.
+The Supercluster Labels with several galaxy surveys, including Tully, 2dF, and Sloan DSS galaxies.
 :::
 
 

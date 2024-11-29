@@ -193,7 +193,9 @@ The OpenSpace {menuselection}`System` Menu.
 ::::{grid-item}
 The Scene Panel collects all the assets (data sets) that were loaded via the profile chosen upon launch. It is, by far, the most used menu in OpenSpace. 
 
-Throughout this guide, we will refer to this panel as {menuselection}`Scene`.
+Throughout this guide, we will refer to this panel as {menuselection}`Scene`. 
+
+You will find more detailed information about this panel in the [Using OpenSpace](/using-openspace/scene-panel/index) chapter.
 
 #### List of Data Assets
 For the [Default](/profiles/default/index) Profile, all the general data sets for the universe are loaded. This includes the planets, moons, and other objects and satellites in the [Solar System](/content/solar-system/index), the zoo of objects in the [Milky Way](/content/milky-way/index), and the large surveys outside the Galaxy, in [Universe](/content/universe/index).
@@ -302,7 +304,7 @@ Here, you can set as specific time. Or, increase time by choosing the unit (Seco
 
 The pause and two play buttons (one for forward, the other for backward) set the clock going.
 
-The Realtime Button sets yuo back to 1 second per second, and the Now Button resets the date to the current date and time.
+The Realtime Button sets you back to 1 second per second, and the Now Button resets the date to the current date and time.
 ::::
 
 ::::{grid-item}

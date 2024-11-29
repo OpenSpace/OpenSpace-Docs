@@ -400,19 +400,19 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/2df-galaxies/index)
-[![2dF galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.png)](/content/universe/deep-sky-surveys/2df-galaxies/index)
+[![2dF Galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.png)](/content/universe/deep-sky-surveys/2df-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/sloan-galaxies/index)
-[![Sloan galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
+[![Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
-[![Abell clusters](/content/universe/deep-sky-surveys/abell-galaxy-clusters/abell_icon.png)](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
+[![Abell Clusters](/content/universe/deep-sky-surveys/abell-galaxy-clusters/abell_icon.png)](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/supercluster-labels/index)
-[![Supercluster labels](/content/universe/deep-sky-surveys/supercluster-labels/scl_icon.png)](/content/universe/deep-sky-surveys/supercluster-labels/index)
+[![Supercluster Labels](/content/universe/deep-sky-surveys/supercluster-labels/scl_icon.png)](/content/universe/deep-sky-surveys/supercluster-labels/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/quasars/index)

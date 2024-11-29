@@ -5,9 +5,9 @@ authors:
 ---
 
 
-# Sloan Galaxies
+# Sloan DSS Galaxies
 
-{menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan Galaxies`
+{menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan DSS Galaxies`
 
 
 The multifaceted [Sloan Digital Sky Survey](https://en.wikipedia.org/wiki/Sloan_Digital_Sky_Survey) (SDSS) is an ambitious project to image and get spectra for about 35% of the sky. These spectra allow astronomers to probe deeply into the universe. The survey measured the position and brightness of almost 1 billion objects, and obtained spectra to more than 4 million objects.
@@ -17,18 +17,18 @@ Sloan DSS operates many investigations on all manner of objects. Here, we focus 
 
 :::{figure} sloan_faceon.png
 :align: left
-:alt: A face-on view of the Sloan Galaxies slices of galaxies.
+:alt: A face-on view of the Sloan DSS Galaxies slices of galaxies.
 
-A face-on view of the Sloan Galaxies. Similar to the 2dF Galaxies, Sloan observed in two general directions in the sky, and we see the resulting slices here. Sloan's slices are wider, covering more of the sky, but they are also thicker, particularly the one on the right side in this image. 
+A face-on view of the Sloan DSS Galaxies. Similar to the 2dF Galaxies, Sloan observed in two general directions in the sky, and we see the resulting slices here. Sloan's slices are wider, covering more of the sky, but they are also thicker, particularly the one on the right side in this image. 
 :::
 
 
 
 :::{figure} sloan_edgeon.png
 :align: left
-:alt: An edge-on view of the Sloan Galaxies that demonstrates the extent of the data slices and the those areas not yet observed.
+:alt: An edge-on view of the Sloan DSS Galaxies that demonstrates the extent of the data slices and the those areas not yet observed.
 
-An edge-on view of the Sloan Galaxies, revealing the wide swaths of data and the more concentrated trio of slices on the left.  
+An edge-on view of the Sloan DSS Galaxies, revealing the wide swaths of data and the more concentrated trio of slices on the left.  
 :::
 
 
@@ -50,9 +50,9 @@ The weblike cosmic large-scale structure is echoed in these data, with orange cl
 
 :::{figure} sloan_afar.png
 :align: left
-:alt: A view of the Sloan Galaxies from the outside, showing the large-scale structure huddled near the sun and a more homogenous view farther out.
+:alt: A view of the Sloan DSS Galaxies from the outside, showing the large-scale structure huddled near the sun and a more homogenous view farther out.
 
-The Sloan Galaxies from the outside. The large-scale structure we are used to seeing is more local to the Milky Way, while the data are more homogenous toward the outskirts.
+The Sloan DSS Galaxies from the outside. The large-scale structure we are used to seeing is more local to the Milky Way, while the data are more homogenous toward the outskirts.
 :::
 
 

@@ -7,7 +7,8 @@ Also see [RenderablePointCloud](/reference/asset-components/RenderablePointCloud
 
 :::{figure} sdss.png
 :align: center
-*One example of a point cloud dataset is the Sloan Digital Sky Survey in the Default profile.*
+
+One example of a point cloud dataset is the [Sloan Digital Sky Survey Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/index) in the [Default](/profiles/default/index) profile.
 :::
 
 ## Loading Point Datasets

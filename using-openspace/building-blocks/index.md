@@ -77,4 +77,4 @@ If you look up the word renderable, you will find the smarty-pants definition of
 
 Here, we apply the latter in OpenSpace by defining set [Renderables](/reference/renderable-overview) that know how to draw things. That thing could be a point in 3-D space, it could be a line between two points, it could be planet's atmosphere, or a model of a space station or satellite, among many others.
 
-Assets call on Renderables to do the heavy lifting by taking its settings---color, label size, size (or brightness)---and apply them to a renderable. Every data set you see has a renderable enabling it to appear in OpenSpace.
+Assets call on Renderables to do the heavy lifting by taking its settings---color, label size, size (or brightness)---and applying them to a renderable. Every data set you see has a renderable enabling it to appear in OpenSpace.
