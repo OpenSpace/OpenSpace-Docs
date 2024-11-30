@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Milky Way --> Stars --> Star Labels`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 The {menuselection}`Star Labels` show the common names of the stars. Of course, only the prominent stars have such a name, and we have 335 stars included in this asset.
 
 
@@ -22,16 +27,44 @@ A view toward Orion with the star labels turned on. As with all labels, the larg
 
 
 
-## Name Origins
+### Name Origins
 
 Many of these names have their origin in ancient civilizations, in particular the Greeks, Egyptians, and Arabs. Most of the traditional star names are derived from an Arabic translation of Ptolemy's [_Almagest_](https://en.wikipedia.org/wiki/Almagest).
 
 Many of these names merely describe that part of the constellation they represent. For example, the word _deneb_ appears in several star names and translates into "tail". Betelgeuse, located at Orion's shoulder, translates from an Arabic phrase "the armpit of the central one."
 
 A list of star names and their meanings may be found on the Wikipedia's [List of proper names of stars](https://en.wikipedia.org/wiki/List_of_proper_names_of_stars).
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 335 star names
@@ -42,3 +75,6 @@ A list of star names and their meanings may be found on the Wikipedia's [List of
 :license: amnh
 :reference: IAU, Simbad
 :::
+
+:::::
+::::::

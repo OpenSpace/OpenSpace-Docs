@@ -18,11 +18,11 @@ authors:
 :::
 
 :::{grid-item-card} [](./planets/index)
-[![Planets](./planets/saturn/saturn_icon.png)](./planets/index)
+[![Planets](./planets/saturn/saturn/saturn_icon.png)](./planets/index)
 :::
 
 :::{grid-item-card} [](./dwarf-planets/index)
-[![Dwarf planets](./dwarf-planets/pluto/pluto_icon.png)](./dwarf-planets/index)
+[![Dwarf planets](./dwarf-planets/pluto/pluto/pluto_icon.png)](./dwarf-planets/index)
 :::
 
 :::{grid-item-card} [](./comets/index)

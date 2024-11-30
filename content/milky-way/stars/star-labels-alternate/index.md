@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Milky Way --> Stars --> Alternate Star Labels`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 A small number of more prominent stars have proper names like Sirius, Betelgeuse, and Polaris. However, astronomers have long cataloged thousands of stars beyond the brightest ones we see. Several attempts over thousands of years to name all the visible stars have led to two main catalogs: [Johann Bayer](https://en.wikipedia.org/wiki/Johann_Bayer)'s (1572--1625) catalog from 1603 and [John Flamsteed](https://en.wikipedia.org/wiki/John_Flamsteed)'s (1646--1719) catalog published in 1725.
 
 
@@ -31,33 +36,19 @@ smaller, more distant labels. This is controlled in the dual slider in {menusele
 :::
 
 
-## Bayer Catalog (Greek Names)
+### Bayer Catalog (Greek Names)
 
 The Bayer names (which take precedence in this data set) are designated by a Greek letter along with the genitive form of the constellation name. The stars in Bayer's catalog were ranked by brightness and their names are sequential through the Greek alphabet. For example, the brightest star in each constellation received the alpha designation (α, or Alf) because that is the first letter in the alphabet. The second-brightest star is named beta (β, or Bet), and so on to omega (ω, Ome), provided there are enough stars in the constellation. So, Betelgeuse is α Orionis and Rigel is β Orionis (we use a three-letter abbreviation for the Greek letter and the constellation names, for example, Alf Ori). See [below](#greek-alphabet) for a key to the Greek abbreviations.
 
 
-## Flamsteed Catalog (Numbered Names)
+### Flamsteed Catalog (Numbered Names)
 
 The Flamsteed Catalog uses numbers as designations along with the constellation name. Originally they were sequenced according to their position in the sky; however, [precession](https://en.wikipedia.org/wiki/Precession#Axial_precession_(precession_of_the_equinoxes)) has created inconsistencies over the centuries. Flamsteed names take the form _58 Orionis_, which is Betelgeuse. Unlike the Bayer names, which are limited by the twenty-four letters of the Greek alphabet, Flamsteed numbers can exceed 100 for a particular constellation.
 
 
 
-
-:::{dossier}
-:census: 3,440 stars
-:assetfile: data/assets/scene/digitaluniverse/alternatestarlabels.asset
-:openspaceversion: 3
-:preparedby: Zack Reeves, Brian Abbott (AMNH)
-:sourceversion: 1.08
-:license: amnh
-:reference: Bayer and Flamsteed Catalogs via Simbad
-:::
-
-
-
-
 (greek-alphabet)=
-## Greek Abbreviations
+### Greek Abbreviations
 
 | Abbreviation | Greek symbol | Greek letter |
 | :----------: | :----------: | :----------- |
@@ -86,4 +77,47 @@ The Flamsteed Catalog uses numbers as designations along with the constellation 
 | Psi | ψ | Psi |
 | Ome | ω | Omega |
 
+:::::
 
+
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
+
+:::{dossier}
+:census: 3,440 stars
+:assetfile: data/assets/scene/digitaluniverse/alternatestarlabels.asset
+:openspaceversion: 3
+:preparedby: Zack Reeves, Brian Abbott (AMNH)
+:sourceversion: 1.08
+:license: amnh
+:reference: Bayer and Flamsteed Catalogs via Simbad
+:::
+
+:::::
+::::::

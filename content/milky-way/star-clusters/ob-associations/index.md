@@ -11,6 +11,11 @@ authors:
 {menuselection}`Scene --> Milky Way --> Star Clusters --> OB Associations`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 OB associations are young groups of stars that were formed within a giant molecular cloud, but have dispersed after the original gas and dust from the cloud was blown away by the star's radiation pressure. Although an association's stars are no longer gravitationally bound to one another, they share a common motion in space because they were formed from the same cloud.
 
 
@@ -46,9 +51,37 @@ Looking down the spiral arms in the vicinity of the Sun, with the OB association
 :::{note}
 One of the few datasets that are sized according to their physical size. Most data are sized according to brightness, or are all sized equally, in which case the size of the point conveys its distance---larger points are closer to you. The OB associations are scaled according to their physical diameter.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 61 OB associations
@@ -59,3 +92,6 @@ One of the few datasets that are sized according to their physical size. Most da
 :license: amnh
 :reference: New List of OB Associations (Melnik+)
 :::
+
+:::::
+::::::

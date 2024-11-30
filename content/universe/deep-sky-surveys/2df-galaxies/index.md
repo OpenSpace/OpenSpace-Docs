@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Universe --> Deep Sky Surveys --> 2dF Galaxies`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 The Two-degree Field (2dF) survey was designed to probe the large-scale structure over two slices of the universe out to about 2 billion light years. It was conducted between 1997 and 2002 and was the largest survey of its kind until the Sloan Digital Sky Survey surpassed it.
 
 
@@ -31,7 +36,7 @@ Looking edge-on to the 2dF Galaxies reveals how thin the observational slices ar
 
 
 
-## The Telescope
+### The Telescope
 
 The 2dF instrument was mounted on the 3.9-meter (12.8-foot) Anglo-Australian Telescope (AAT), located 450 km (280 miles) northwest of Sydney. The telescope has a two-degree field of view on the sky, enabling large parts of the sky to be observed at one time. For each pointing of the telescope, the instrument can acquire up to 400 spectra simultaneously via optical fibers that feed into two spectrographs. Each spectrograph sees light that is between 350 and 800 nanometers, spanning the visible spectrum.
 
@@ -45,7 +50,7 @@ The 2dF Galaxies alongside the Tully Galaxies, the cubic, brighter galaxies at c
 
 
 
-## The Survey
+### The Survey
 
 The 2dF survey has three main components: the North Galactic Pole strip, the South Galactic Pole strip, and the random fields that surround the South Galactic Pole strip. The galaxy survey is composed of about 230,000 galaxies with brightness and redshift measurements. Roughly 90% of these galaxies are within 2.5 million light years, corresponding to a {term}`lookback time` of about 2.3 billion years.
 
@@ -59,8 +64,37 @@ Because the observations were along narrow swaths of sky, they result in relativ
 
 The South Galactic Pole strip of observations as seen in the night sky along with the random pointings of the telescope. The stars and constellation lines are in view, with Eridanus and Cetus shown. Each telescopic footprint on the sky is, unsurprisingly, two degrees in diameter.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 221,539 galaxies
@@ -71,3 +105,6 @@ The South Galactic Pole strip of observations as seen in the night sky along wit
 :license: amnh
 :reference: The 2dF Galaxy Redshift Survey - Spectra and Redshifts=https://doi.org/10.1046/j.1365-8711.2001.04902.x
 :::
+
+:::::
+::::::

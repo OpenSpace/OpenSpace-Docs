@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Group Labels`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 As we outlined in [Local Group](../local-group/index), a galaxy group is a small number of galaxies gravitationally interacting with one another. Often, it consists of a one or a few large galaxies, like the Milky Way, and a cadre of small, satellite galaxies that orbit them.
 
 The Galaxy Groups Labels is a set of labels that identifies the nearby groups in the Tully Galaxies. 
@@ -40,9 +45,37 @@ Some of the closest groups include the [M81 Group](https://en.wikipedia.org/wiki
 
 Galaxy groups around the Local Group showing a concentration of groups that include the M51, M101, and M83 groups among many others.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 62 galaxy group labels
@@ -53,3 +86,13 @@ Galaxy groups around the Local Group showing a concentration of groups that incl
 :license: amnh
 :reference: Nearby Galaxy Catalog, Private communication, Brent Tully
 :::
+
+:::::
+::::::
+
+
+
+
+
+
+

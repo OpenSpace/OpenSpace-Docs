@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Supercluster Labels`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 Galaxy clusters, like the nearby [Virgo Cluster](https://en.wikipedia.org/wiki/Virgo_Cluster), form into larger structures called _superclusters_. Many galaxy clusters can compose one supercluster. In this data set, we provide labels for the locations of these superclusters.
 
 
@@ -26,7 +31,7 @@ The Supercluster Labels are intended to be viewed with the galaxy surveys ([Tull
 :::
 
 
-## What Is a Supercluster?
+### What Is a Supercluster?
 
 Superclusters are among the largest structural elements in the universe. They are composed of galaxy clusters, and the substructures around them. Astronomers estimate there are around 10 million superclusters in the {term}`observable universe`. The Milky Way belongs to the [Virgo Supercluster](https://en.wikipedia.org/wiki/Virgo_Supercluster), which is centered around the Virgo Cluster, and the Virgo Supercluster is, in turn, part of the [Laniakea Supercluster](https://en.wikipedia.org/wiki/Laniakea_Supercluster) which is part of the larger [Pisces–Cetus Supercluster Complex](https://en.wikipedia.org/wiki/Pisces%E2%80%93Cetus_Supercluster_Complex).
 
@@ -49,9 +54,37 @@ The Supercluster Labels with several galaxy surveys, including Tully, 2dF, and S
 
 Supercluster Labels with the multicolored Tully Galaxies at center and the Abell Galaxy Clusters in orange.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 33 supercluster labels
@@ -62,3 +95,6 @@ Supercluster Labels with the multicolored Tully Galaxies at center and the Abell
 :license: amnh
 :reference: Optical and X-Ray Clusters as Tracers of the Supercluster-Void Network - I. Superclusters of Abell and X-Ray Clusters=https://doi.org/10.1086/323707
 :::
+
+:::::
+::::::

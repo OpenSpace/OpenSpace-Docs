@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxy Images`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 We've grown accustomed to seeing galaxies as multicolored points. Typically, these colors represent density, where orange galaxies are in a dense, galaxy-rich part of the universe and aqua-colored galaxies are in a less dense, galaxy-poor part of the universe.
 
 The [Tully Galaxy Survey](../tully-galaxies/index) is rich for a number of reasons. For one, the galaxy positions are massaged---{term}`fingers of god <finger of god>` and systematic uncertainties are adjusted to yield a more scientifically accurate rendition of the structure. The Tully Galaxies also have an image attached to each galaxy in the data set.
@@ -30,7 +35,7 @@ A view of the Virgo Cluster with the Tully Galaxy points off. Normally these wou
 
 
 
-## Image Size and Visibility
+### Image Size and Visibility
 
 From a wide perspective, these images are impossible to see, hence the need for points. Galaxies are so small relative to our typical view in OpenSpace that one must be right beside them in order for their image to be visible. This is a consequence of having properly-sized images for each galaxy.
 
@@ -46,7 +51,7 @@ A view of the Virgo Cluster with the galaxy images exaggerated. The galaxy M61 i
 
 
 
-## Image Sources
+### Image Sources
 
 Most of these images come from [The Galaxy Catalog](http://www.zsolt-frei.net/catalog.htm). This source has a small number of galaxy images and we use those images repeatedly for galaxies of a specific morphological type. In other words, elliptical galaxies may all be represented by the same image throughout the catalog.
 
@@ -72,8 +77,37 @@ A view of the nearby universe with grossly exaggerated images and labels for gal
 
 An outrageous exaggeration---the Tully Galaxy Images are so large we can see the structure of the universe from outside the data set. Indeed, the galaxies are so large they are touching one another.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 
 :::{dossier}
@@ -85,3 +119,6 @@ An outrageous exaggeration---the Tully Galaxy Images are so large we can see the
 :license: amnh
 :reference: The Galaxy Catalog=http://www.zsolt-frei.net/catalog.htm;National Optical Astronomy Observatory
 :::
+
+:::::
+::::::

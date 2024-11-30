@@ -10,9 +10,14 @@ authors:
 {menuselection}`Scene --> Milky Way --> Nebulae --> Planetary Nebulae`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 A planetary nebula is a glowing shell of gas ejected from a red giant star late in its life. The term _planetary nebula_ emerged because early astronomers observed them to be planetlike in appearance. However, we know now they have no relation to planets.
 
-## Origin
+### Origin
 
 As an intermediate-mass star exhausts its hydrogen fuel, its helium core contracts and heats to meet the energy needs of the star. The core contraction releases gravitational energy, which has two consequences. First, hydrogen just outside the core begins to burn, producing a more massive helium core over time. Second, the star's outer layers begin to expand away from the core. Ultimately, the star transforms into a red giant.
 
@@ -28,7 +33,7 @@ An assortment of planetary nebulae seen by the Hubble Space Telescope. Credit: H
 :::
 
 
-## Shape
+### Shape
 
 Planetary nebulae are occasionally spherical and symmetric, and roughly a light year across. As the gas expands away from the star, it sweeps up cooler gas like a snowplow. The gas glows because of the ultraviolet light from the stellar remnant at its center. 
 
@@ -40,7 +45,7 @@ Planetary nebulae represented as triangles in the night sky toward Orion.
 :::
 
 
-## Location
+### Location
 
 The Milky Way Galaxy consists of two major star populations: an older halo population spherically distributed around the Galactic center, and a younger population present in the Milky Way's disk. Because the planetary nebula phase of a star's evolution is relatively short (on the order of thousands of  years), when we see a planetary nebula we know it's formation is relatively recent, cosmically speaking.
 
@@ -56,7 +61,7 @@ Periwinkle triangles represent planetary nebulae shown here around the Sun. We a
 
 
 
-## Population
+### Population
 
 Due to their short lifetimes, on the order of thousands of years, astronomers expect roughly 20,000 planetary nebulae in the Milky Way. Some are spherical in nature, but others are elliptical or even bipolar. They are notoriously difficult objects to obtain accurate distances for, so we are limited to those in our part of the Galaxy. And, you will notice an abundance as we look toward the center of the Galaxy. It's safe to assume, like the [stellar distance uncertainty](../../stars/star-distance-uncertainty/index), that these positions have a large {term}`uncertainty` associated with them.
 
@@ -68,9 +73,37 @@ Due to their short lifetimes, on the order of thousands of years, astronomers ex
 
 Planetary nebulae as seen from outside the Milky Way Galaxy. Most are located relatively close to the Sun, and you can see an overdensity as we look toward the Galactic center. 
 :::
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1,657 planetary nebulae
@@ -81,3 +114,6 @@ Planetary nebulae as seen from outside the Milky Way Galaxy. Most are located re
 :license: amnh
 :reference: Planetary nebulae in Gaia EDR3 Central star identification, properties and binarity=https://doi.org/10.1051/0004-6361/202141916
 :::
+
+:::::
+::::::

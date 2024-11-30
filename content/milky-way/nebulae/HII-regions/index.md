@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Milky Way --> Nebulae --> HII Regions`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 Stars form from large clouds of hydrogen gas. A typical gas cloud's density in the interstellar medium is too low to form stars. They need an outside stimulus or perturbation to stimulate the process. Such a disturbance to these clouds can occur via a nearby supernova shockwave or two clouds colliding. This will cause a localized area of the cloud to collapse. As the gas condenses, stars begin to form, eventually resulting in numerous stars enshrouded by the hydrogen gas.
 
 The hotter, more massive stars (like O stars) give off higher-energy light, and this light excites the atoms in the cloud, causing the area around the stars to glow. An O5 star (a mid-range O star) can excite hydrogen gas up to 65 light years from the star. This is what we refer to as an HII region, or star forming region.
@@ -34,19 +39,19 @@ The night sky view of HII regions looking toward Orion. Several points mark the 
 :::
 
 
-## Nomenclature
+### Nomenclature
 
 The name _HII_ refers to the hydrogen gas (H) in its ionized state (II), and is pronounced "H-two". In astronomy, we refer to this excited state of hydrogen with the Roman numeral two. In most other sciences, it is expressed H{sup}`+`.
 
 
-## Lifetime of an HII Region
+### Lifetime of an HII Region
 
 The typical HII region will be around for a few million years. Initially (a million years or so after these stars form), the most massive stars will begin to die off, resulting in a supernova explosion. This will push gas out of the area, but it does not necessarily mean the HII region disappears. 
 
 Another factor in the lifetime of an HII region is the radiation pressure from these hot stars, which tends to drive the gas away. This pushes the gas outside the ionization zone so the hydrogen will return to its ground state and no longer glow.
 
 
-## Location Within the Galaxy
+### Location Within the Galaxy
 
 Because HII regions are a byproduct of star formation, we will see them where stars form in the Milky Way Galaxy---namely, in the Galactic disk. This is why they are so tightly correlated with the Milky Way in the night sky.
 
@@ -58,7 +63,7 @@ Looking toward Sagittarius from our night sky perspective, the HII regions are t
 :::
 
 
-## Tracers of Galactic Structure
+### Tracers of Galactic Structure
 
 HII regions are among the brightest objects in the Galaxy, so we can see them clear across the Galaxy. Our only blind spot is on the opposite side of the Galactic core.
 
@@ -71,8 +76,37 @@ The HII regions are good tracers of the spiral arms---where star formation happe
 
 Looking at the HII regions from above the Milky Way Galaxy. The panel on the left shows the nebulae with the Milky Way Galaxy turned on. Here, we clearly see the shadow, if you will, cast by the Galactic center's glowing gas and {term}`dust <astrophysical dust>`. In the right panel we see the data without the Galaxy, allowing the spiral structure to me more apparent.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1,108 HII regions
@@ -83,3 +117,6 @@ Looking at the HII regions from above the Milky Way Galaxy. The panel on the lef
 :license: amnh
 :reference: The WISE catalog of Galactic HII regions=https://doi.org/10.1088/0067-0049/212/1/1
 :::
+
+:::::
+::::::

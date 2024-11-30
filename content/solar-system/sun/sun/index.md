@@ -10,6 +10,12 @@ authors:
 {menuselection}`Scene --> Solar System --> Sun --> Sun`
 
 
+
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 :::{note}
 See this section's [top page](../index) for some background on the Sun.
 :::
@@ -32,17 +38,43 @@ This rendition is properly sized for the radius of the Sun, which is 695,700 kil
 The temperature of the Sun at the photosphere is about 5,800 Kelvin (5,500&deg;C or 9,900&deg;F). Its varying surface suggests areas of activity. We know there are sunspots, flares, and other outbursts characterizing an active surface. This activity occurs over regular eleven-year periods.
 
 
-
-
-
 :::{figure} sun_afar.png
 :align: left
 :alt: The Sun from afar, within the context of the inner Solar System.
 
 The Sun image from afar within the context of the inner Solar System. Probably best to turn this off here and use the [Solar Glare](../sun-glare/index) instead.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1 image
@@ -53,3 +85,12 @@ The Sun image from afar within the context of the inner Solar System. Probably b
 :license: mit
 :reference: Unknown
 :::
+
+:::::
+::::::
+
+
+
+
+
+

@@ -10,6 +10,10 @@ authors:
 {menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxies`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
 
 The Tully Catalog is the most polished, accurate catalog of nearby galaxies. It includes over 30,000 galaxies in the local universe that surround the Milky Way. This catalog demonstrates the large-scale structure of the universe exceptionally well. And, each galaxy has a representative image reflecting its morphological type, and is properly sized and inclined. These data have also been "massaged" a bit, correcting and smoothing some of the observational artifacts and data contamination to produce a more realistic view of the structure.
 
@@ -23,7 +27,7 @@ The Tully Nearby Galaxy Catalog from outside the data. It's difficult to capture
 
 
 
-## Portraying Galaxies 
+### Portraying Galaxies 
 
 From this perspective and at this scale, the galaxies are so small that you have to be beside one to see its representative image. In order to see the galaxies, we must assign points to them that will be seen from great distances. We color-code these points by relative density, so galaxies in a relatively dense area are orange and yellow, galaxies in less dense areas are in green then aqua.
 
@@ -32,7 +36,7 @@ On each point we place an image that is representative of its morphological type
 Each of these images has been altered from its original state. These images were taken from Earth on some of the world's largest telescopes, so foreground stars from our own Galaxy appear in each image. We are representing galaxies in extragalactic space, so we have removed the stars from each image. See more in [Tully Galaxies Images](../tully-galaxy-images/index).
 
 
-## Large-scale Structure
+### Large-scale Structure
 
 The strength of these data are not visiting individual galaxies, but seeing the overall structure of the galaxies. This so called large-scale structure divides into galaxy clusters, sheets, walls, filaments, and voids. Clusters are prominent groups of hundreds or thousands of galaxies. The nearest cluster to us is the Virgo Cluster. Walls, sheets, and filaments describe the amalgam of galaxy clusters and superclusters into massive, tubelike structures. A local example is the Ursa Major Filament that stretches up from the Virgo Cluster, or the [Great Wall](https://en.wikipedia.org/wiki/CfA2_Great_Wall). 
 
@@ -65,7 +69,7 @@ A view from outside the Virgo Cluster (top), with the Milky Way (Home) in the di
 
 
 
-## Size and Shape of These Data
+### Size and Shape of These Data
 
 The Tully data forms a cube, which is a cutoff based on the {term}`completeness` of these data. Beyond this, data from these sources are not as reliable, so effort is made to show a complete picture, albeit limited by observations (for example, we cannot see dwarf galaxies much beyond the Local Group).
 
@@ -82,7 +86,7 @@ The cubic nature of the Tully Nearby Galaxies Catalog. This is an arbitrary cuto
 
 
 
-## Galaxy Morphological Types
+### Galaxy Morphological Types
 
 The galaxy morphological type metadata is an integer that reflects the type of galaxy classified first by Edwin Hubble (1889--1953) in the 1930s. The classification scheme has four main groups: elliptical galaxies (E), barred spiral galaxies (SB), unbarred spiral galaxies (S), and irregular galaxies (Irr). 
 
@@ -113,6 +117,35 @@ The integers assigned to these types are decoded in the table below. In this num
 | 13 | P | Peculiar | 0 |
 :::
 
+:::::
+
+
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
 
 ## Dossier
 
@@ -125,3 +158,6 @@ The integers assigned to these types are decoded in the table below. In this num
 :license: amnh
 :reference: Nearby Galaxy Catalog, Private communication, Brent Tully
 :::
+
+:::::
+::::::
