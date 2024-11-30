@@ -14,7 +14,9 @@ authors:
 :::::{tab-item} Overview
 
 
-## Galaxy Groups
+## Overview
+
+### Galaxy Groups
 
 A *group* of galaxies is a small number of large galaxies that are typically surrounded by a larger number of small galaxies. These galaxies are gravitationally bound to one another. In the case of the Local Group, there are roughly two substructures, each centered around large, spiral galaxies, with a few other assorted galaxies that interact more loosely with the group.
 
@@ -50,7 +52,7 @@ The Local Group's galaxies are given these colors:
 :::
 
 
-## Collisions and Mergers
+### Collisions and Mergers
 
 Surrounding the Milky Way and Andromeda are a bevy of dwarf galaxies---smaller, often irregular galaxies, that contain hundreds of millions to a few billion stars. These dwarf galaxies are typically under the gravitational influence of a larger galaxy, and are often shredded by them at some point over their lifetime. Collisions between galaxies are common, and these smaller galaxies may even be the lifeblood for a larger galaxy by instigating star formation and replenishing its star-forming gas.
 
@@ -67,15 +69,10 @@ Looking back toward the Milky Way (aqua) from the Andromeda Galaxy and its dwarf
 :::
 
 
-## Other Galaxy Groups
+### Other Galaxy Groups
 
 The [Galaxy Group Labels](../galaxy-group-labels/index) identify many other nearby galaxy groups. Because the Local Group is, well, local, we see a fairly accurate representation of the dwarf galaxies that inhabit it. Neighboring groups are so far away, it's difficult to see their smaller members. With these other groups, we really only see the largest, brightest galaxies. If we considered the Local Group from afar, we would probably only see the Milky Way, Andromeda, and M33.
-
 :::::
-
-
-
-
 
 
 :::::{tab-item} Profiles
@@ -97,7 +94,6 @@ The [Galaxy Group Labels](../galaxy-group-labels/index) identify many other near
 :::{grid-item-card} [](/profiles/offline/index)
 [![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
 :::
-
 ::::
 
 :::::
@@ -107,7 +103,6 @@ The [Galaxy Group Labels](../galaxy-group-labels/index) identify many other near
 
 
 ## Dossier
-
 
 :::{dossier}
 :census: 102 galaxies

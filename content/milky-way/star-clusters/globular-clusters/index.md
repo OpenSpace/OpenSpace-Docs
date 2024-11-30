@@ -9,6 +9,12 @@ authors:
 
 {menuselection}`Scene --> Milky Way --> Star Clusters --> Globular Clusters`
 
+
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 Globular star clusters are gravitationally bound groups of roughly 100,000 to a few million stars. They are compact---stars near their centers are within a light year of one another---roughly spherical clusters that range from 30 to 100 light years in diameter.
 
 
@@ -37,7 +43,7 @@ Messier 2, a globular cluster in the constellation Aquarius. Credit: NASA, ESA, 
 
 
 
-## Understanding Our Place in the Galaxy
+### Understanding Our Place in the Galaxy
 
 Globular clusters were instrumental in our understanding of the size and nature of the Galaxy and universe. The story began in 1912, when [Henrietta Leavitt](https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt) (1868–1921), a "computer" for astronomers at the Harvard College Observatory, though an accomplished astronomer in her own right, discovered a relationship between the period of [Cepheid variable stars](https://en.wikipedia.org/wiki/Cepheid_variable) and their intrinsic luminosity, allowing her to determine their distance. 
 
@@ -53,7 +59,7 @@ A view from outside the Milky Way Galaxy showing the distribution of globular cl
 
 
 
-## Star Cluster or Dwarf Galaxy?
+### Star Cluster or Dwarf Galaxy?
 
 The line between globular cluster and dwarf galaxy is not always clear. Dwarf galaxies orbit the Milky Way in a similar fashion---long elliptical orbits around the Milky Way's center. Many dwarf galaxies have been stripped of gas and dust via collisions with the Milky Way. So, where does a globular cluster end and a dwarf galaxy begin? Astronomers continue to seek the answer to that question.
 
@@ -69,18 +75,46 @@ Looking back at the Milky Way from extragalactic space. We see the Milky Way Gal
 
 
 
-## Cosmically Old
+### Cosmically Old
 
 Globular clusters are among the oldest objects in the Galaxy. They were around when the Galaxy formed 13 billion years ago, perhaps even before the Galactic disk evolved into the shape it is today. Some of the oldest stars in the entire Galaxy are found in these clusters.
 
 
 
-## Completeness
+### Completeness
 
-The globular clusters form one of the most {term}`complete <completeness>` data sets in the atlas. These represent almost all the clusters we see in our Milky Way Galaxy. Our blind spot results from the Milky Way itself---that band of light across the night sky (and the gas and dust within it) prohibits us from seeing what lies within it and beyond it. 
+The globular clusters form one of the most {term}`complete <completeness>` data sets in the atlas. These represent almost all the clusters we see in our Milky Way Galaxy. Our blind spot results from the Milky Way itself---that band of light across the night sky (and the gas and dust within it) prohibits us from seeing what lies within it and beyond it.
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 161 clusters
@@ -91,3 +125,6 @@ The globular clusters form one of the most {term}`complete <completeness>` data 
 :license: amnh
 :reference: Gaia EDR3 view on Galactic globular clusters=https://doi.org/10.1093/mnras/stab1475
 :::
+
+:::::
+::::::

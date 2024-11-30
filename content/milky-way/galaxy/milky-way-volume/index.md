@@ -10,10 +10,15 @@ authors:
 {menuselection}`Scene --> Milky Way --> Galaxy --> Milky Way Volume`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 While a two-dimensional [Milky Way Image](../milky-way-image/index) of the Galaxy can be useful for seeing data sets within the context of the Galaxy, the Milky Way Galaxy is, of course, a massive, three-dimensional entity, so it would be nice to see its dimensionality here to compare its scale with other objects in the universe and have a more realistic depiction of the Galaxy.
 
 
-## Perspective Problem
+### Perspective Problem
 
 We have one small problem in showing the Milky Way galaxy in 3-D. We---all of us Earthlings---are stuck _inside_ the Galaxy. For that reason, we cannot know exactly what the Galaxy looks like. Scientists continue to debate the structure of the Galaxy, what the arms look like, the shape of the central bar, and even how many arms the Galaxy has.
 
@@ -28,7 +33,7 @@ The three-dimensional model of the Milky Way Galaxy. Looking toward the center, 
 :::
 
 
-## Building a Model
+### Building a Model
 
 The model in OpenSpace was developed by Jon Parker for the American Museum of Natural History's [_Dark Universe_](https://www.amnh.org/global-business-development/planetarium-content/dark-universe) Space Show. This was a pre-rendered show (a video), so the model needed to be adapted for real-time use in OpenSpace. But, before that, we needed a scientific basis for modeling the Galaxy.
 
@@ -44,7 +49,7 @@ The Milky Way Galaxy Volume in OpenSpace. The left panel shows only the volumetr
 :::
 
 
-## Display Options
+### Display Options
 
 The Milky Way Volume has specific options that can be accessed via its [renderable settings](/reference/asset-components/RenderableGalaxy). These options, specified in its asset file (below), control the look and quality of the volumentric model rendering in OpenSpace. These can be adjusted if the model is too detailed for your system, or not detailed enough. There is also the option to enable or disable star rendering within the model.
 
@@ -127,9 +132,37 @@ asset.meta = {
 :::
 
 :::
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1 volumetric model
@@ -140,3 +173,6 @@ asset.meta = {
 :license: mit
 :reference: On the Interpretation of the _l_ − _v_ Features in the Milky Way Galaxy=https://doi.org/10.48550/arXiv.1009.3096
 :::
+
+:::::
+::::::

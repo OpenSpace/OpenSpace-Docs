@@ -7,9 +7,13 @@ authors:
 
 # Star Distance Uncertainty
 
-
 {menuselection}`Scene --> Milky Way --> Stars --> Star Distance Uncertainty`
 
+
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
 
 In this scene, we provide a visual representation of the {term}`uncertainty` in a star's distance. Each line is along the line-of-sight back to Earth, and the length of each line represents how uncertain the distance value is for the particular star.
 
@@ -24,7 +28,7 @@ Lines that represent the range of distance uncertainty for a selection of stars.
 
 
 
-## Parallax Uncertainty
+### Parallax Uncertainty
 
 Every object that we measure has some uncertainty associated with that measurement. For the stars, we measure something called _parallax_. Generally, parallax refers to the apparent motion of something relative to something else. If you hold your phone at arm's length to take a selfie, as you move your arm to set up the perfect shot, your phone will appear to move relative to those objects in the background. Similarly, as Earth traverses around the Sun each year, nearby stars appear to shift relative to the more distant background stars. This apparent motion is imperceptible to the eye---we need highly specialized telescopes to measure the motion created by this parallax.
 
@@ -37,13 +41,13 @@ An illustration of how stellar parallax works. The Sun is shown along with Earth
 
 
 
-## Distance Uncertainty
+### Distance Uncertainty
 
 Once we have the parallax angle measured, it's a simple geometric formula to derive the distance to the star. And, of course, stars closer to the sun will have larger parallax angles. Because every measurement we make has some uncertainty associated with it, there will be an uncertainty associated with the parallax angle. This uncertainty could be due to the glare of the star, the nature of the sky during the observation, or the limitations of the instrument. Regardless, the uncertainty in the parallax angle results in an uncertainty in the star's distance, which we visualize in this data set.
 
 
 
-## Drawing Distance Uncertainty
+### Drawing Distance Uncertainty
 
 We represent the distance uncertainty as lines that are plotted around the star in question. So, while each star may be plotted at the center of their respective line, in reality we do not know exactly where the star is located within the uncertainty line it sits on.
 
@@ -56,11 +60,40 @@ We have three different colored lines that represent different data:
 | Yellow     | Yellow uncertainty lines use the Hipparcos geometric parallax values, which are the least accurate. (`dcalc` = 3) |
 
 
-## Just a Sample
+### Just a Sample
 
-We've chosen to illustrate the distance uncertainty on a small number of stars---only 3,440. These are the more well-known stars with commonly used names. However, every star's distance has an uncertainty. In fact, as you explore the universe, consider that there is uncertainty associated with every object---stars, nebulae, and galaxies---and often the uncertainty for nonstellar objects will be far greater. 
+We've chosen to illustrate the distance uncertainty on a small number of stars---only 3,440. These are the more well-known stars with commonly used names. However, every star's distance has an uncertainty. In fact, as you explore the universe, consider that there is uncertainty associated with every object---stars, nebulae, and galaxies---and often the uncertainty for nonstellar objects will be far greater.
+:::::
 
 
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 3,440 stars
@@ -71,3 +104,6 @@ We've chosen to illustrate the distance uncertainty on a small number of stars--
 :license: amnh
 :reference: Gaia DR3=https://doi.org/10.5270/esa-qa4lep3;XHIP An Extended Hipparcos Compilation=https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971
 :::
+
+:::::
+::::::

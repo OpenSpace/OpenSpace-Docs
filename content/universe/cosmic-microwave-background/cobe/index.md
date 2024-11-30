@@ -10,7 +10,10 @@ authors:
 {menuselection}`Scene --> Universe --> Cosmic Microwave Background --> COBE`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
 
+## Overview
 
 :::{figure} cobe_cmb.png
 :align: left
@@ -34,9 +37,37 @@ COBE also confirmed that the light was remarkably uniform. No matter where the t
 In the image, the red areas are relatively hotter areas of the CMB, while the blue areas are cooler than the average. The lines of latitude and longitude are baked into this image, and reflect galactic coordinates.
 
 While the COBE map yielded the first all-sky image of the CMB, and netted two of its principle scientists the Nobel Prize, it was superseded by more accurate maps in the coming years, namely the [WMAP](../wmap/index) and [Planck](../planck/index) missions.
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1 all-sky image
@@ -47,3 +78,11 @@ While the COBE map yielded the first all-sky image of the CMB, and netted two of
 :license: amnh
 :reference: Structure in the COBE Differential Microwave Radiometer First-Year Maps=https://doi.org/10.1086/186504
 :::
+
+:::::
+::::::
+
+
+
+
+

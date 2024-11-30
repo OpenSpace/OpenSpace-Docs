@@ -39,7 +39,7 @@ We use the following symbols in profile pages to indicate actions:
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/missions/jwst/index)
-[![JWST profile](/profiles/default/profile_default_icon.png)](/profiles/missions/jwst/index)
+[![JWST profile](/profiles/missions/jwst/jwst_icon.png)](/profiles/missions/jwst/index)
 :::
 
 

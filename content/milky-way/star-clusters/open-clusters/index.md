@@ -7,8 +7,13 @@ authors:
 
 # Open Clusters
 
-
 {menuselection}`Scene --> Milky Way --> Star Clusters --> Open Clusters`
+
+
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
 
 An open star cluster is a loose assemblage of stars numbering from hundreds to thousands that are bound by their mutual gravitation. Astronomers know from their spectra that stars in open clusters are typically younger, so open clusters are relative newcomers in the scope of the Galaxy.
 
@@ -32,7 +37,7 @@ A night sky view of the open star clusters looking toward Orion, with Cancer, Ge
 
 
 
-## Formation
+### Formation
 
 Open clusters form from giant clouds of hydrogen gas. Something triggers the cloud to become unstable and begin collapsing. That trigger could be a shockwave from a nearby supernova, or another passing cloud that disrupts the gas. This collapse results in hundreds or thousands of stars forming. 
 
@@ -44,7 +49,7 @@ Over time some cluster members are ejected and join the general population of st
 
 
 
-## Location
+### Location
 
 Because these are young stars, we expect to see them in the star-forming regions of our Galaxy, namely in the spiral arms. For this reason, open clusters exist, for the most part, in the disk of the Galaxy. As we look to the sky, we view the spiral arms edge-on as that band of light that sweeps across the sky that the ancients called the Milky Way. Because of this, open clusters were originally known as _Galactic clusters_, but this term fell out of favor once astronomers began to understand that the Galaxy includes objects beyond the Milky Way's disk.
 
@@ -67,9 +72,37 @@ When we look at the Milky Way Galaxy edge-on, like looking at a record from the 
 
 Looking at the Milky Way Galaxy edge-on, we can see the open clusters are tightly correlated with the disk, where young stars are forming. Those few that appear to be above or below are mainly in the foreground.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1,867 clusters
@@ -80,3 +113,6 @@ Looking at the Milky Way Galaxy edge-on, we can see the open clusters are tightl
 :license: amnh
 :reference: Galactic spiral structure revealed by Gaia EDR3=https://doi.org/10.1051/0004-6361/202140687
 :::
+
+:::::
+::::::

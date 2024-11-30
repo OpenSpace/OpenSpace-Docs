@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Cluster Labels`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 The Galaxy Cluster Labels dataset is a series of labels that mark where the large clusters of galaxies are in the nearby universe. These labels must be used in conjunction with the [Tully Galaxies](../tully-galaxies/index).
 
 
@@ -28,14 +33,14 @@ The Galaxy Cluster Labels are designed to be shown with the [Tully Galaxies](../
 
 
 
-## What Constitutes a Galaxy Cluster?
+### What Constitutes a Galaxy Cluster?
 
 A cluster of galaxies can contain hundreds or thousands of galaxies. These member galaxies are bound by gravity and are the second-largest structures after superclusters. Within the cluster exists hot gas and dark matter. A typical cluster has a diameter of roughly 3 million to 15 million light years.
 
 Clusters are often named for the constellation in the night sky where they appear. The [Virgo Cluster](https://en.wikipedia.org/wiki/Virgo_Cluster) appears in the constellation Virgo, from our point of view on Earth.
 
 
-## Structural Landscape---Notable Clusters
+### Structural Landscape---Notable Clusters
 
 The large-scale structure of the universe is hierarchical in nature. Individual galaxies form small groups and larger galaxy clusters. These are organized into superclusters and [filaments](https://en.wikipedia.org/wiki/Galaxy_filament), and those, in turn, form larger meta structures like sheets and [walls](https://en.wikipedia.org/wiki/Galaxy_filament#Galaxy_walls).
 
@@ -59,8 +64,35 @@ The [**Norma Cluster**](https://en.wikipedia.org/wiki/Norma_Cluster) is about 22
 
 A view of the more distant clusters, including the Coma, Leo, Norma, and Perseus clusters. 
 :::
+:::::
 
 
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
 
 ## Dossier
 
@@ -73,3 +105,6 @@ A view of the more distant clusters, including the Coma, Leo, Norma, and Perseus
 :license: amnh
 :reference: Nearby Galaxy Catalog, Private communication, Brent Tully
 :::
+
+:::::
+::::::

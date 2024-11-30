@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Boundaries`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 While the constellations have been around since antiquity, it is only in the last century that order has been brought to them via scientific consensus. Over the last two centuries, scientists over the generations published their star catalogs with renditions of the constellations and some even added their own constellations, particularly for the southern hemisphere.
 
 By the late 19th century, there was an effort to standardize the constellations. Once Johann Bayer (in the 17th century) assigned stars to a constellation by giving them Greek names like Alpha Orionis, it became necessary to remove the ambiguity in the celestial sphere and define boundaries for each constellation. Once completed and adopted in 1928, every object seen in the sky, by eye or by powerful telescopes, would now belong in one constellation. 
@@ -32,10 +37,37 @@ The constellation boundaries follow lines of right ascension and declination, so
 
 The night sky looking toward the constellations Aries, Pisces, and Andromeda. The constellation lines connect the stars, and their boundaries in yellow delineate each constellation's area on the night sky.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
 
 
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 88 constellations boundaries
@@ -46,3 +78,6 @@ The night sky looking toward the constellations Aries, Pisces, and Andromeda. Th
 :license: amnh
 :reference: Catalogue of Constellation Boundary Data=http://cdsarc.u-strasbg.fr/viz-bin/Cat?VI/49
 :::
+
+:::::
+::::::

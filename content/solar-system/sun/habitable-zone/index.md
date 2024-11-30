@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Solar System --> Sun --> Habitable Zone`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 :::{note}
 See this section's [top page](../index) for some background on the Sun.
 :::
@@ -29,22 +34,22 @@ A close-up view of the Sun's habitable zone. The zone includes Earth and Mars, b
 
 
 
-## Inner, Red Edge
+### Inner, Red Edge
 
 The inner, red, edge of the zone is characterized by a runaway greenhouse limit, where the oceans would vaporize completely. Venus, for example, touches the inner edge of the Sun's habitable zone. The planet could, and likely once did, support water given its surface pressure, but its greenhouse effect raises the surface temperature to over 400&deg;C (over 800&deg;F), vaporizing any liquid water.
 
 
-## Outer, Blue Limit
+### Outer, Blue Limit
 
 The outer, blue, edge of the zone is largely determined by the incident solar light on the planet and the ability of the planet to absorb it. Here, we have a maximum amount of warming possible, resulting in a "freezing out" of the atmosphere beyond the zone.
 
 
-## Mars
+### Mars
 
 Mars is closer to the outer edge, and has a lower atmospheric pressure and temperature. Only at its lowest elevations and during the part of the year when temperatures rise above freezing on the surface could liquid water exist for a short period of time.
 
 
-## Water Beyond the Habitable Zone
+### Water Beyond the Habitable Zone
 
 Astronomers have discovered liquid water beyond this zone, notably in Jupiter's moons Europa and Ganymede and Saturn's moons Titan and Enceladus---all well outside this habitable zone for the Sun. These favorable conditions may result from tidal heating (when a body is being stretched or squeezed by a larger, nearby body) or radioactive decay (unstable elements decay and produce energy in the form of heat). 
 
@@ -55,6 +60,35 @@ Astronomers have discovered liquid water beyond this zone, notably in Jupiter's 
 The habitable zone in the context of the inner and outer planets. While some bodies outside the zone may possess liquid water, it is because of unusual circumstances like tidal heating.
 :::
 
+:::::
+
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 
 :::{dossier}
@@ -66,3 +100,10 @@ The habitable zone in the context of the inner and outer planets. While some bod
 :license: mit
 :reference: Habitable Zones Around Main-Sequence Stars---Dependence on Planetary Mass=https://doi.org/10.1088/2041-8205/787/2/L29
 :::
+
+:::::
+::::::
+
+
+
+

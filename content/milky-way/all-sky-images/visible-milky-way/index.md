@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Milky Way --> All-sky Images --> Visible All-sky`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 :::{figure} visible_scorpius.png
 :align: left
 :alt: A night sky view of the Milky Way as seen with our eyes looking toward the constellation Scorpius.
@@ -26,7 +31,7 @@ Over the past 400 years, astronomers and philosophers have speculated about the 
 
 
 
-## Image Characteristics
+### Image Characteristics
 
 The brightest part of the Milky Way is toward the constellations Scorpius and Sagittarius. This is because you are looking directly toward the center of the Galaxy. Now that we understand the 3-D nature of the Galaxy, and that we're roughly two-thirds of the way out from its center, we know we look through more stars and gas in this direction.
 
@@ -45,12 +50,40 @@ The Milky Way toward Orion is very faint and diffuse because we are seeing throu
 
 
 
-## About the Image
+### About the Image
 
 This all-sky image was assembled from 3,000 individual frames over two years by Axel Mellinger. He captured these from Michigan, Texas, and South Africa. The stars we see in the sky were essentially subtracted out, leaving just the gas, dust, and diffuse starlight.
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1 all-sky image
@@ -61,3 +94,6 @@ This all-sky image was assembled from 3,000 individual frames over two years by 
 :license: mit
 :reference: A Color All-Sky Panorama Image of the Milky Way=https://doi.org/10.1086/648480
 :::
+
+:::::
+::::::

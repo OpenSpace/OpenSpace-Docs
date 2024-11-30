@@ -11,7 +11,23 @@ authors:
 
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
 
+## Overview
+
+
+:::::
+
+:::::{tab-item} Profiles
+
+## Profiles
+
+:::::
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 
@@ -22,3 +38,8 @@ authors:
 :license: mit
 :reference: Not applicable
 :::
+
+:::::
+::::::
+
+

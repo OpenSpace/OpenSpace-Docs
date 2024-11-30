@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Milky Way --> Galaxy --> Milky Way Image`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 The Milky Way Image provides a basis, albeit representational and two-dimensional, of Galactic structure that's typical of the Milky Way. It is an altered image of the galaxy [NGC 1232](https://en.wikipedia.org/wiki/NGC_1232), seen in the constellation Eridanus. 
 
 
@@ -36,12 +41,40 @@ The Milky Way Image shown with the [Milky Way Volume](../milky-way-volume/index)
 
 
 
-## Image Modifications
+### Image Modifications
 
 To prepare this image, some alterations were necessary. We "painted out" some areas, in particular an area where it's believed a companion galaxy was interacting with one of the outer spiral arms. Some work was also done on enhancing the image to highlight structure. And, of course, the foreground stars within the Milky Way were removed.
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1 image
@@ -52,3 +85,6 @@ To prepare this image, some alterations were necessary. We "painted out" some ar
 :license: amnh
 :reference: ESO
 :::
+
+:::::
+::::::

@@ -78,7 +78,7 @@ myst_enable_extensions = {
   "fieldlist",
   "deflist"
 }
-myst_heading_anchors = 3
+myst_heading_anchors = 4
 
 
 

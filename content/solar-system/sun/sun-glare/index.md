@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Solar System --> Sun --> Solar Glare`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 :::{note}
 See this section's [top page](../index) for some background on the Sun.
 :::
@@ -36,7 +41,37 @@ This rendition allows us to see the Sun to great distances, and reminds us that 
 
 The Sun from outside the inner Solar System. The glare image is visible throughout the Solar System in OpenSpace. 
 :::
+:::::
 
+
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1 image
@@ -47,3 +82,6 @@ The Sun from outside the inner Solar System. The glare image is visible througho
 :license: mit
 :reference: Not Applicable
 :::
+
+:::::
+::::::

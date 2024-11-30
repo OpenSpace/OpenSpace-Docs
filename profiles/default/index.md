@@ -63,8 +63,8 @@ In this tour, we will explore the Universe from Earth to the most distant object
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](/content/solar-system/planets/earth/index)
-[![Earth](/content/solar-system/planets/earth/earth_icon.png)](/content/solar-system/planets/earth/index)
+:::{grid-item-card} [](/content/solar-system/planets/earth/earth/index)
+[![Earth](/content/solar-system/planets/earth/earth/earth_icon.png)](/content/solar-system/planets/earth/earth/index)
 :::
 ::::
 
@@ -164,8 +164,8 @@ The planets align very well within a common plane. Mercury is inclined about 7&d
 ::::{grid} 1 1 1 2
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/index)
-[![Pluto](/content/solar-system/dwarf-planets/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/index)
+:::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/pluto/index)
+[![Pluto](/content/solar-system/dwarf-planets/pluto/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/pluto/index)
 :::
 ::::
 
@@ -1087,36 +1087,36 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](/content/solar-system/planets/mercury/index)
-[![Mercury](/content/solar-system/planets/mercury/mercury_icon.png)](/content/solar-system/planets/mercury/index)
+:::{grid-item-card} [](/content/solar-system/planets/mercury/mercury/index)
+[![Mercury](/content/solar-system/planets/mercury/mercury/mercury_icon.png)](/content/solar-system/planets/mercury/mercury/index)
 :::
 
-:::{grid-item-card} [](/content/solar-system/planets/venus/index)
-[![Venus](/content/solar-system/planets/venus/venus_icon.png)](/content/solar-system/planets/venus/index)
+:::{grid-item-card} [](/content/solar-system/planets/venus/venus/index)
+[![Venus](/content/solar-system/planets/venus/venus/venus_icon.png)](/content/solar-system/planets/venus/venus/index)
 :::
 
-:::{grid-item-card} [](/content/solar-system/planets/earth/index)
-[![Earth](/content/solar-system/planets/earth/earth_icon.png)](/content/solar-system/planets/earth/index)
+:::{grid-item-card} [](/content/solar-system/planets/earth/earth/index)
+[![Earth](/content/solar-system/planets/earth/earth/earth_icon.png)](/content/solar-system/planets/earth/earth/index)
 :::
 
-:::{grid-item-card} [](/content/solar-system/planets/mars/index)
-[![Mars](/content/solar-system/planets/mars/mars_icon.png)](/content/solar-system/planets/mars/index)
+:::{grid-item-card} [](/content/solar-system/planets/mars/mars/index)
+[![Mars](/content/solar-system/planets/mars/mars/mars_icon.png)](/content/solar-system/planets/mars/mars/index)
 :::
 
-:::{grid-item-card} [](/content/solar-system/planets/jupiter/index)
-[![Jupiter](/content/solar-system/planets/jupiter/jupiter_icon.png)](/content/solar-system/planets/jupiter/index)
+:::{grid-item-card} [](/content/solar-system/planets/jupiter/jupiter/index)
+[![Jupiter](/content/solar-system/planets/jupiter/jupiter/jupiter_icon.png)](/content/solar-system/planets/jupiter/jupiter/index)
 :::
 
-:::{grid-item-card} [](/content/solar-system/planets/saturn/index)
-[![Saturn](/content/solar-system/planets/saturn/saturn_icon.png)](/content/solar-system/planets/saturn/index)
+:::{grid-item-card} [](/content/solar-system/planets/saturn/saturn/index)
+[![Saturn](/content/solar-system/planets/saturn/saturn/saturn_icon.png)](/content/solar-system/planets/saturn/saturn/index)
 :::
 
-:::{grid-item-card} [](/content/solar-system/planets/uranus/index)
-[![Uranus](/content/solar-system/planets/uranus/uranus_icon.png)](/content/solar-system/planets/uranus/index)
+:::{grid-item-card} [](/content/solar-system/planets/uranus/uranus/index)
+[![Uranus](/content/solar-system/planets/uranus/uranus/uranus_icon.png)](/content/solar-system/planets/uranus/uranus/index)
 :::
 
-:::{grid-item-card} [](/content/solar-system/planets/neptune/index)
-[![Neptune](/content/solar-system/planets/neptune/neptune_icon.png)](/content/solar-system/planets/neptune/index)
+:::{grid-item-card} [](/content/solar-system/planets/neptune/neptune/index)
+[![Neptune](/content/solar-system/planets/neptune/neptune/neptune_icon.png)](/content/solar-system/planets/neptune/neptune/index)
 :::
 
 ::::
@@ -1127,8 +1127,8 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
 
-:::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/index)
-[![Pluto](/content/solar-system/dwarf-planets/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/index)
+:::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/pluto/index)
+[![Pluto](/content/solar-system/dwarf-planets/pluto/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/pluto/index)
 :::
  
 ::::
@@ -1444,7 +1444,7 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 * - File:
   - `data/profiles/default.profile`
 * - Anchor:
-  - [Earth](/content/solar-system/planets/earth/index)
+  - [Earth](/content/solar-system/planets/earth/earth/index)
 * - Time:
   - Yesterday, 24 hours ago
 * - Author:

@@ -10,6 +10,12 @@ authors:
 {menuselection}`Scene --> Universe --> Cosmic Microwave Background --> WMAP`
 
 
+
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 :::{figure} wmap_cmb.png
 :align: left
 :alt: The WMAP image of the cosmic microwave background, with red areas slightly hotter and blue areas slightly cooler.
@@ -29,10 +35,38 @@ WMAP gathered data for a few years, and aimed to observe the cosmic temperature 
 
 In the WMAP image, the red areas are hotter and the blue areas are cooler, but as we mentioned in the [introduction on the CMB](../index), these differences are to one part in 100,000 Kelvin---extremely sensitive instruments are necessary to see these differences.
 
-As we [mentioned](../index), these differences are used to understand the nature of the universe---its geometry, structure, and how it will evolve. 
+As we [mentioned](../index), these differences are used to understand the nature of the universe---its geometry, structure, and how it will evolve.
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1 all-sky image
@@ -43,3 +77,7 @@ As we [mentioned](../index), these differences are used to understand the nature
 :license: amnh
 :reference: Nine-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations - Final Maps and Results=https://doi.org/10.1093/mnras/stab1475
 :::
+
+:::::
+::::::
+

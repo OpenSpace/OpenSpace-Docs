@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Systems`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 The discovery and study of exoplanets is a relatively new field within astrophysics. The first confirmed system was discovered in 1995, and since then it has been a burgeoning subfield of research.
 
 
@@ -27,7 +32,7 @@ A view of exoplanet systems in the night sky looking toward Cygnus, Lyra, and He
 
 
 
-## Visualizing Exoplanet Systems
+### Visualizing Exoplanet Systems
 
 The exoplanet systems are represented by a blue ring centered on each host star. The ring is not intended to signify an orbit; the various ring sizes reveal their distance from you. The labels list the host star name, and if there is more than one planet, will list the number of planets in parentheses. Note that not all objects here have a label, we omitted the longer labels to keep the view less cluttered.
 
@@ -46,7 +51,7 @@ The night sky looking toward the constellations Orion and Taurus. The exoplaneta
 :::
 
 
-## Distribution
+### Distribution
 
 Exoplanet systems remain huddled around the Sun for the most part. This reflects our observational constraints. When viewed with the Radio Sphere, we can see that there are many systems within that theoretical boundary of our radio signals.
 
@@ -69,9 +74,37 @@ Exceptions include the conical swath of systems in the Kepler mission's footprin
 
 A view of the exoplanetary systems from outside the Milky Way galaxy. We are still limited to systems near Earth, but missions like Kepler and TESS are extending our range deeper into the Galaxy. Kepler discovered the swath of systems that extend to the left in this image.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 4,139 planets in 3,023 systems
@@ -82,3 +115,6 @@ A view of the exoplanetary systems from outside the Milky Way galaxy. We are sti
 :license: amnh
 :reference: NASA Exoplanet Archive=https://exoplanetarchive.ipac.caltech.edu/index.html;Gaia DR3=https://doi.org/10.5270/esa-qa4lep3;XHIP An Extended Hipparcos Compilation=https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971
 :::
+
+:::::
+::::::

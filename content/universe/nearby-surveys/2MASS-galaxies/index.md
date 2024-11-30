@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Universe --> Nearby Surveys --> 2MASS Galaxies`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 2MASS is the Two Micron All-Sky Survey. It was an infrared survey of the entire sky that took place between 1997 and 2001. Two 1.3-meter telescopes were used, one in Arizona and the other in Chile.
 
 2MASS produced a catalog with over 300 million objects, including minor planets, brown dwarfs, nebulae, and galaxies. The Canis Major Dwarf Galaxy, a dwarf galaxy interacting with the Milky Way's disk, was discovered using 2MASS data in 2003.
@@ -27,7 +32,7 @@ The goal of the 2MASS redshift survey was to map out to roughly a {term}`redshif
 
 
 
-## Tully Substitute?
+### Tully Substitute?
 
 The 2MASS and Tully data overlay one another, so which one is better? You may notice more spread in the 2MASS galaxy positions. That is, what appears to be a smearing of the large-scale structure. Around clusters of galaxies, you will also see the _{term}`finger of god`_ effect.
 
@@ -40,8 +45,37 @@ The [Tully Galaxies](../tully-galaxies/index) have performed a scientifically in
 A "finger of god" is a line of galaxies that point radially back to the Milky Way. Early in the process of mapping the local universe, astronomers noticed that galaxies, when plotted, appeared on lines that pointed radially back to Earth. It turns out these lines, dubbed _fingers of god_, are a cluster of galaxies spread out radially (along the line of sight) because of the local motions within the cluster contaminate the {term}`redshift <Redshift/blueshift>` measurement, which we use to compute the distance. 
 
 For example, the galaxies of the [Local Group](../local-group/index) are all moving in seemingly random directions as they gravitationally interact with one another---many are blueshifted (coming toward us) even as the universe expands. These local motions within clusters contaminate the overall redshift in the spectrum, causing the distances to be less accurate, and appearing to stretch these clusters along our line of sight.
+:::::
 
 
+:::::{tab-item} Profiles
+
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 43,533 galaxies
@@ -52,3 +86,6 @@ For example, the galaxies of the [Local Group](../local-group/index) are all mov
 :license: amnh
 :reference: The 2MASS Large Galaxy Atlas=https://iopscience.iop.org/article/10.1086/345794;Private communication, Tom Jarrett
 :::
+
+:::::
+::::::

@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Solar System --> Comets --> Oort Cloud --> Oort Sphere`
 
 
+
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
 The Oort Sphere is a diagrammatic representation of the Oort Cloud where it is most dense. The Oort Cloud is a diffuse distribution of icy planetesimals, so one sphere cannot represent it accurately. However, this sphere has utility in that it shows the scale of the outer reaches of the Solar System---the extent of our star system within the Milky Way.
 
 
@@ -26,9 +31,39 @@ Now, imagine a similar sphere around each star. Of course, the sphere's size wou
 
 The Oort cloud is the last outpost of the Solar System. Beyond it is the gas of the interstellar medium through which the Sun, planets, and comets move as they orbit the Galaxy once every 225 million
 years.
+:::::
+
+
+:::::{tab-item} Profiles
+
+## Profiles
 
 
 
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 1 wire-framed sphere

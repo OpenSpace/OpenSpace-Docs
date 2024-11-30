@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Art`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 Constellations have been part of the human experience since prehistoric times. We looked to the sky as these visual bookmarks reminded us of the popular stories and lore of our culture. And, of course, many different cultures devised their own constellations independently of one another. 
 
 As language and the printed word became more common, illustrated star catalogs were published. Many examples of such illustrations exist, but Johann Bayer's, 17th-century *[Uranometria](https://en.wikipedia.org/wiki/Uranometria)* was one of the most complete and the first to depict the stars from Earth's view, rather than from outside the celestial sphere, as was traditional up to that point.
@@ -25,7 +30,7 @@ A page showing the constellation Orion from Johann Bayer's _Uranometria_ from 16
 
 
 
-## Artwork Updated
+### Artwork Updated
 
 The art appearing here was drawn by [James Hedberg](http://jameshedberg.com) from the City College of New York. He has updated the art from traditional depictions to something more modern.
 
@@ -38,23 +43,23 @@ Constellation art overlay the constellation lines. Here we see Orion, the hunter
 :::
 
 
-## Using in OpenSpace
+### Using in OpenSpace
 
-### Scene Menu
+#### Scene Menu
 
 {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Art`
 
 From the scene menu, each constellation is accessible for you to turn on and off individually. Use this option if you just want to show one or a limited number of constellations.
 
 
-### Keyboard Shortcuts
+#### Keyboard Shortcuts
 
 {kbd}`c`, {kbd}`Shift-c`
 
 Use the {kbd}`c` key to turn on all constellation figures. There may be a slight delay while they load, but this will bring up the artwork for all 88 constellations. Use {kbd}`Shift-c` to turn them off.
 
 
-### Actions Panel
+#### Actions Panel
 
 {menuselection}`Actions --> Constellations --> Art`
 
@@ -69,9 +74,37 @@ Use `Show zodiac` and `Hide zodiac` buttons turn only the zodiacal constellation
 
 The Constellations Art action menu. Here you can turn on each constellation's artwork with the `Show all` button. You can turn them all off with the `Disable all` button. You can show and hide all the zodiacal constellations. And, the `Hide all` button keeps the artwork loaded but unseen.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 88 constallation images
@@ -82,3 +115,6 @@ The Constellations Art action menu. Here you can turn on each constellation's ar
 :license: cc-by
 :reference: Drawing the 88 constellations=http://www.jameshedberg.com/creations/2020/07/20/constellations.html
 :::
+
+:::::
+::::::

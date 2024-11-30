@@ -10,22 +10,27 @@ authors:
 {menuselection}`Scene --> Milky Way --> Substellar Objects --> Brown Dwarfs`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 In astronomy, there are dwarf stars, dwarf novae, and even dwarf galaxies. Substellar objects, like brown dwarfs, cover objects too small the be stars and too large to be planets. Planets are believed to range up to 13 Jupiter masses, while brown dwarfs range from there up to about 80 Jupiter masses, where there is enough mass to stimulate fusion.
 
 
-## Discovery
+### Discovery
 
 While brown dwarfs had been theorized starting in the 1960s, it took roughly thirty years to get conclusive observation of one. These dim objects emit most of their light in the infrared, and so infrared detectors were needed to see them. With the advent of [2MASS](https://en.wikipedia.org/wiki/2MASS) in 1997, the floodgates opened and many such objects were catalogued. Today, we know of thousands of such objects.
 
 The objects in this catalog use telescopes like [Pan-STARRS](https://en.wikipedia.org/wiki/Pan-STARRS), [2MASS](https://en.wikipedia.org/wiki/2MASS), [WISE](https://en.wikipedia.org/wiki/Wide-field_Infrared_Survey_Explorer), and [Gaia](https://en.wikipedia.org/wiki/Gaia_(spacecraft)).
 
 
-## Classification
+### Classification
 
 In the transition from star to brown dwarf, we have the M stars---the coolest stars. Some astronomers consider the less massive of these to be brown dwarfs, or red dwarfs. These are the **M type** dwarfs. Cooler objects are given the spectral class L. **L type** objects have distinct absorption bands in their spectra. Defined by their spectra in this way, the L-type objects can include very low mass stars as well as brown dwarfs. **T type** objects are dimmer and more magenta colored and exhibit different spectral features. Established in 2009, the coolest known objects were called **Y type** objects. These are around 500 Kelvin
 
 
-## Representing Brown Dwarfs
+### Representing Brown Dwarfs
 
 :::{note}
 None of these objects are visible to the eye, so we represent these objects conceptually with oversized points, tinted according to their type: L dwarfs, T dwarfs, and Y dwarfs. Their brightness (size) is grossly exaggerated so we can examine them.
@@ -54,7 +59,7 @@ Brown dwarfs in the nighttime sky. Here, we're looking toward the constellations
 
 
 
-## Distribution in the Solar Neighborhood
+### Distribution in the Solar Neighborhood
 
 Because brown dwarfs are extremely dim objects, we cannot detect these objects to great distances. In many ways, it is still a research frontier where new objects are being discovered and new telescopes tailored to detect these objects are coming online. 
 
@@ -65,9 +70,37 @@ Because these objects are difficult to detect, we only see them very close to th
 
 Brown dwarfs, in red, distributed around the Sun. The green object is a 160-light-year diameter sphere centered on the Sun. The brown dwarfs are not distributed evenly around the Sun, rather, they are easier to observe off the plane of the Milky Way, so we see more of them above and below the plane of the Galaxy.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 2,203 brown dwarfs
@@ -78,3 +111,6 @@ Brown dwarfs, in red, distributed around the Sun. The green object is a 160-ligh
 :license: amnh
 :reference: The UltraCool Sheet=https://zenodo.org/records/4169085
 :::
+
+:::::
+::::::

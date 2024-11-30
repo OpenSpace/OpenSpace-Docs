@@ -10,6 +10,11 @@ authors:
 {menuselection}`Scene --> Universe --> Nearby Surveys --> 6dF Galaxies`
 
 
+::::::{tab-set}
+:::::{tab-item} Overview
+
+## Overview
+
 The Six-degree Field (6dF) Galaxy Survey mapped roughly half the sky from the Anglo-Australian Observatory. The survey used the 1.2-meter UK Schmidt Telescope at Siding Spring Observatory in New South Wales, Australia, and allowed for a six degree field of view per observation.
 
 
@@ -36,7 +41,7 @@ An "edge-on" view of the 6dF Galaxies, which observed only the southern sky, hen
 
 
 
-## Completeness
+### Completeness
 
 Unlike the Tully galaxies, these data show an incompleteness in the sample. Most of the rich structure is visible closer to the Milky Way, where we see more of the dimmer galaxies. Toward the edge of the data set we see galaxies by their lonesome. This is because these data are not as {term}`complete <completeness>`. We're only seeing the brighter galaxies to this distance, and therefore less complex structures are visible.
 
@@ -47,9 +52,37 @@ Unlike the Tully galaxies, these data show an incompleteness in the sample. Most
 
 The 6dF Galaxies from the night sky perspective. We see the band of the Milky Way, the stars and constellation lines, with lines of right ascension and declination. The 6dF Galaxies lie below the celestial equator, the southern half of the sky.
 :::
+:::::
 
 
+:::::{tab-item} Profiles
 
+## Profiles
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/default-full/index)
+[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
+:::
+
+
+:::{grid-item-card} [](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+:::
+::::
+
+:::::
+
+
+:::::{tab-item} Dossier
+
+## Dossier
 
 :::{dossier}
 :census: 117,441 galaxies
@@ -60,3 +93,6 @@ The 6dF Galaxies from the night sky perspective. We see the band of the Milky Wa
 :license: amnh
 :reference: The 6dF Galaxy Survey - Final Redshift Release (DR3) and Southern Large-scale Structures=https://doi.org/10.1111/j.1365-2966.2009.15338.x
 :::
+
+:::::
+::::::
