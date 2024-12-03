@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# SkyBrowsing Menu
+# SkyBrowsing Panel
 
 :::{warning}
 This section is in progress. Text will appear on this page in the future.

@@ -37,14 +37,14 @@ scene-panel/index
 :caption: Using OpenSpace (Unrenovated)
 
 
-focus-menu/index
-time-menu/index
-actions-menu/index
+navigation-panel/index
+time-panel/index
+actions-panel/index
 create-profile/index
-skybrowser-menu/index
-record-menu/index
-geolocation-menu/index
-exoplanet-systems-menu/index
+skybrowser-panel/index
+record-panel/index
+geolocation-panel/index
+exoplanet-systems-panel/index
 keyboard-shortcuts/index
 
 

@@ -5,10 +5,18 @@ authors:
 ---
 
 
-# Time Menu: 
+# Time Panel: 
 
 :::{warning}
 This section is in progress. Text will appear on this page in the future.
+:::
+
+
+:::{figure} toolbar_time.png
+:align: center
+:alt: Toolbar with the Time Panel highlighted
+
+The Time Panel Button in the OpenSpace Toolbar.
 :::
 
 

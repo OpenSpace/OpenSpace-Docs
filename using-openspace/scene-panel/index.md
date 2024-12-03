@@ -5,9 +5,20 @@ authors:
 ---
 
 
-# Scene Panel: Manipulating Data
+# Scene Panel: Manipulate Data
+
+:::{figure} toolbar_scene.png
+:align: center
+:alt: The Scene Panel button on the toolbar
+
+The Scene Panel Button in the OpenSpace Toolbar.
+:::
 
 We covered the Scene Panel basics in [Orientation](/getting-started/orientation/index). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
+
+The Scene Panel is a hierarchial listing of all the data sets in your OpenSpace session, which are determined by what assets are in the profile you loaded upon launching OpenSpace.
+
+Expanding a data set will display its properties and their adjustment tools. These can be color choosers, sliders, or text boxes to type into that can change the size of a data set or its labels, the color and opacity of data, and the width and length of trails, to name a few. 
 
 
 <div style="margin-left: auto; margin-right: auto; width: 640px;">
@@ -35,9 +46,7 @@ We covered the Scene Panel basics in [Orientation](/getting-started/orientation/
 The Scene Panel in OpenSpace, looking at the data sets under Star Clusters.
 :::
 
-The Scene Panel is a hierarchial listing of all the data sets in your OpenSpace session, which are determined by what assets are in the profile you loaded upon launching OpenSpace.
 
-Expanding a data set will display its properties and their adjustment tools. These can be color choosers, sliders, or text boxes to type into that can change the size of a data set or its labels, the color and opacity of data, and the width and length of trails, to name a few. 
 
 
 
