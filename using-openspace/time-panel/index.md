@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Time Panel: 
+# Time Panel: Adjust the Date
 
 :::{warning}
 This section is in progress. Text will appear on this page in the future.
@@ -18,6 +18,36 @@ This section is in progress. Text will appear on this page in the future.
 
 The Time Panel Button in the OpenSpace Toolbar.
 :::
+
+
+The Time Panel enables you to set the scene to a specific date and time.
+
+This could be to dial in a specific milestone of a space mission, or simply to spin a part of a planet into sunlight. We will discuss the panel here and the ways you can use it with these data.
+
+
+
+<div style="margin-left: auto; margin-right: auto; width: 640px;">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/z0daNU4OFFA?si=dGTIrgsDlr46b5GF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+:::{dropdown} Visual Transcript
+
+| Video time | Description |
+|:-------------|:------------------|
+| 0:00 | Open and pop-out the Time Panel. |
+| 0:11 | Change the date by typing and pressing `Enter`. |
+| 0:31 | Change the date with the arrows above and below the date. |
+| 1:11 | Change the date by opening the calendar view and clicking on a date. |
+| 1:41 | Change the rate of time with the sliders. |
+| 2:20 | Using the quick adjust slider to temporarily adjust the rate of time. |
+| 3:02 | Play and pause time with the panel's play and pause button. |
+| 3:30 | Change the rate of time using the panel's left and right arrows. |
+| 4:08 | Use the Realtime and Now buttons to set the rate of time to 1 second/second and the date to your computer's date. |
+| 4:35 | Using the Time Manager settings to adjust how quickly or slowly changes happen. |
+:::
+</div>
+
+
+
 
 
 ## Time
@@ -53,19 +83,4 @@ The {menuselection}`Settings --> Time Manager` section contains four values rele
 
 ## Video
 This video illustrates all of the concepts that are presented in this part of the getting started guide:
-
-<iframe width="740" height="530" src="https://www.youtube.com/embed/z0daNU4OFFA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-| Video time | Description |
-|:-------------|:------------------|
-| 0:00 | Open and pop-out the Time menu. |
-| 0:11 | Change the date by typing and pressing Enter. |
-| 0:31 | Change the date with the arrows above and below the date. |
-| 1:11 | Change the date by opening the calendar view and clicking on a date. |
-| 1:41 | Change the rate of time with the sliders. |
-| 2:20 | Using the quick adjust slider to temporarily adjust the rate of time. |
-| 3:02 | Play and pause time with the menu's play and pause button. |
-| 3:30 | Change the rate of time using the menu's left and right arrows. |
-| 4:08 | Use the Realtime and Now buttons to set the rate of time to 1 second/second and the date to your computer's date. |
-| 4:35 | Using the Time Manager settings to adjust how quickly or slowly changes happen. |
 

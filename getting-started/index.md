@@ -16,10 +16,10 @@ We take you through the installation process, how to launch OpenSpace, an orient
 : Hardware requirements, installing OpenSpace, and how to get help.
 
 [Launching OpenSpace](./launch/index)
-: How to launch, and what you see when you run OpenSpace.
+: What you see when you run OpenSpace.
 
 [Orientation](./orientation/index)
-: An overview of OpenSpace's menus and other items on the screen.
+: An overview of OpenSpace's panels and other items on the screen.
 
 [Navigation](./navigation/index)
 : How to fly in OpenSpace.

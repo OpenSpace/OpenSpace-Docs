@@ -1,15 +1,17 @@
 # OpenSpace User Guide
 
 
-You've arrived at the official documentation for [OpenSpace](https://openspaceproject.com). OpenSpace is an open-source, interactive data visualization software designed to visualize the entire known universe at all possible scales.
+You've arrived at the official documentation for [OpenSpace](https://openspaceproject.com).
+
+OpenSpace is an open-source, interactive, data visualization software designed to reveal the entire known universe at all possible scales.
 
 
 :::{attention}
 This site is in the midst of an overhaul. Sections break down into:
 - {octicon}`check-circle-fill;1.25em` Completely overhauled,
 - {octicon}`check-circle;1.25em` Relatively complete, but perhaps some bits missing,
-- {octicon}`alert;1.25em` A hybrid of work in progress plus old, unrenovated  documentation pages,
-- {octicon}`x-circle;1.25em` Untouched from the old documentation version.
+- {octicon}`alert;1.25em` A hybrid of work in progress plus previous documentation pages,
+- {octicon}`x-circle;1.25em` Untouched from the previous documentation version.
 :::
 
 
