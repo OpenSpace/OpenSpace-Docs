@@ -20,10 +20,10 @@ This telemetry type sends out information about the user interface settings rega
   2. The index of the second planet to be compared, (will never be the same as the first).
   3. List of user interface settings for the comparison. This determines which aspects of the sonification should be turned on or off. A value of 0 means that it is turned off and a 1 means that it is turned on. The order of the settings can be seen in the second table below.
 
-::::{grid} 1 1 1 2
+:::::{grid} 1 1 1 2
 
+::::{grid-item}
 :::{table}
-:widths: auto
 :align: right
 | Selected Planet Index | Selected Planet Name |
 |-----------------------|----------------------|
@@ -37,9 +37,10 @@ This telemetry type sends out information about the user interface settings rega
 | 7                     | Uranus               |
 | 8                     | Neptune              |
 :::
+::::
 
+::::{grid-item}
 :::{table}
-:widths: auto
 :align: left
 | Index in settings list | Aspect of the sonification that the setting turns on/off |
 |------------------------|-----------------------------------------------------------|
@@ -50,8 +51,9 @@ This telemetry type sends out information about the user interface settings rega
 | 4                      | Moons                                                     |
 | 5                      | Rings                                                     |
 :::
-
 ::::
+
+:::::
 
 Here is an example of how a message from this telemetry type can look:
 :::{code-block}
