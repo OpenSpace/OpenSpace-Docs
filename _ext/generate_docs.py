@@ -114,6 +114,12 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
         # Remove the beginning of the line that marks it being a Lua comment
         comment = line[len(LUA_COMMENT):].lstrip()
 
+        # If the comment is empty after stipping the comment marker and whitespace, it
+        # was an empty line, which we want to keep to preserve paragraph separation. So
+        # add it again
+        if len(comment) == 0:
+            description += "\n\n"
+
         if l_no == 1:
           # The first line becomes the header
           header = comment
