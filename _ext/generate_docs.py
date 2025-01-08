@@ -458,24 +458,28 @@ def generate_renderable_overview(environment, output_folder, json_location):
 ##########################################################################################
 
 def generate_docs(app, config):
-  if not config.generate_assets_examples:
-    print("Skipping generating new assets examples...")
-    print("To generate set 'generate_assets_examples' to True in the conf.py file")
-    return
-
-  print("Generating dynamic documentation")
-
-  # Get config values
-  use_github = config.assets_examples_use_github
-  release_tag = config.assets_release
-  local_openspace_folder = config.assets_folder
-
   # Name variables
   json_location = "json"
   output_folder = "reference"
   folder_name_assets = "asset-components"
   folder_name_scripting = "scripting-api"
   assset_examples_output = os.path.join(output_folder, "asset_examples")
+
+  # Check if the reference has already been generated. Note that we assume that this is
+  # the case if the asset examples folder exists
+  reference_already_generated = os.path.exists(assset_examples_output)
+
+  if not config.generate_reference and reference_already_generated:
+    print("Skipping generating new assets examples...")
+    print("To generate set 'generate_reference' to True in the conf.py file")
+    return
+
+  print("Generating dynamic documentation (the reference)")
+
+  # Get config values
+  use_github = config.assets_examples_use_github
+  release_tag = config.assets_release
+  local_openspace_folder = config.assets_local_openspace_folder
 
   assets_folder = None
   if use_github:
@@ -507,10 +511,10 @@ def generate_docs(app, config):
 #                                         Sphinx setup                                   #
 ##########################################################################################
 def setup(app: Sphinx) -> ExtensionMetadata:
-    app.add_config_value('generate_assets_examples', True, 'bool')
+    app.add_config_value('generate_reference', True, 'bool')
     app.add_config_value('assets_examples_use_github', True, "bool")
     app.add_config_value('assets_release', "", 'string')
-    app.add_config_value('assets_folder', "", 'string')
+    app.add_config_value('assets_local_openspace_folder', "", 'string')
 
     app.connect('config-inited', generate_docs)
 
