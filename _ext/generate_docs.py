@@ -29,24 +29,18 @@ def copy_local_folder(assset_examples_output, local_openspace_folder):
 
   return os.path.abspath(destination_path)
 
-def clone_github_release(assset_examples_output, release_tag):
+def clone_github_release(asset_examples_output, tag_or_branch):
   """
   Clones asset directory from OpenSpace git repository
-  Uses the latest master
+  Can check out a release tag or branch. Default is latest master.
   Returns absolute path to the asset folder
   """
 
   def print_progress(op_code, cur_count, max_count=None, message=""):
     print(message)
 
-  repo = Repo.init(assset_examples_output)
-  ref = repo.tag(release_tag)
-
-  if not repo.tag(release_tag) in repo.references:
-    print(f"Could not find tag {release_tag}. Defaulting to origin/master")
-    ref = "origin/master"
-
-  print(f"Downloading assets examples from '{ref}'...")
+  # Initialize the git repo of OpenSpace repo in the output folder
+  repo = Repo.init(asset_examples_output)
   # Create a new remote if there isn't one already created
   origin = repo.remotes[0] if len(repo.remotes) > 0 else None
   if not origin:
@@ -54,15 +48,32 @@ def clone_github_release(assset_examples_output, release_tag):
     origin = repo.create_remote("origin", "https://github.com/OpenSpace/OpenSpace")
 
   print(f"Fetching OpenSpace... this might take a while")
-  origin.fetch(progress=print_progress, depth=1)
-  git = repo.git()
+  origin.fetch(progress=print_progress, depth=1, tags=True)
 
+  # See if the tag or branch exists. Else, default to origin/master
+
+  # Get all tags on remote
+  ref = None
+  # Check if the release tag exists first in the repository
+  if repo.tag(tag_or_branch) in repo.tags:
+    ref = repo.tag(tag_or_branch)
+  # If no release exists, check for branch name in the repository
+  elif tag_or_branch in repo.references:
+    ref = tag_or_branch
+  # Neither branch nor release exists: default to origin/master
+  else:
+    print(f"Could not find tag {tag_or_branch}. Defaulting to origin/master")
+    ref = "origin/master"
+
+  # Clone the assets folder from the selected tag or branch
+  print(f"Downloading assets examples from '{ref}'...")
   print(f"Cloning OpenSpace... this might take a while")
   # Only clone the assets from the repository to speed up the build time
+  git = repo.git()
   git.checkout(ref, "--", DATA_ASSETS_PATH)
   print("Done cloning assets folder from OpenSpace repository")
 
-  assets_folder_path = os.path.abspath(os.path.join(assset_examples_output, DATA_ASSETS_PATH))
+  assets_folder_path = os.path.abspath(os.path.join(asset_examples_output, DATA_ASSETS_PATH))
   return assets_folder_path
 
 def assets_in_path_recursive(root):
@@ -467,7 +478,7 @@ def generate_docs(app, config):
 
   # Get config values
   use_github = config.assets_examples_use_github
-  release_tag = config.assets_release
+  release_tag_or_branch = config.assets_release_tag_or_branch
   local_openspace_folder = config.assets_folder
 
   # Name variables
@@ -480,7 +491,7 @@ def generate_docs(app, config):
   assets_folder = None
   if use_github:
     # Download assets files from OpenSpace repository
-    assets_folder = clone_github_release(assset_examples_output, release_tag)
+    assets_folder = clone_github_release(assset_examples_output, release_tag_or_branch)
   else:
     if local_openspace_folder == "":
       print("You need to specify a local OpenSpace folder for 'assets_folder'")
@@ -509,7 +520,7 @@ def generate_docs(app, config):
 def setup(app: Sphinx) -> ExtensionMetadata:
     app.add_config_value('generate_assets_examples', True, 'bool')
     app.add_config_value('assets_examples_use_github', True, "bool")
-    app.add_config_value('assets_release', "", 'string')
+    app.add_config_value('assets_release_tag_or_branch', "", 'string')
     app.add_config_value('assets_folder', "", 'string')
 
     app.connect('config-inited', generate_docs)

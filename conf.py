@@ -23,7 +23,10 @@ else:
   # Dev options
   generate_assets_examples = True # Generates asset examples if true
   assets_examples_use_github = True # Use github for the examples? Else, local folder
-  assets_release = "" # Release tag name for github option. If empty, will use origin/master
+
+  # Release tag name or branch for github option. If empty, will use origin/master
+  # E.g. "releases/v0.20.1" or "origin/thesis/2022/streaming"
+  assets_release_tag_or_branch = ""
   assets_folder = "" # Folder path for local folder option
 
 
