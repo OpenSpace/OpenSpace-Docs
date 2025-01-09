@@ -17,15 +17,15 @@ sys.path.append(str(Path('_ext').resolve()))
 ###
 
 # If true, always generate new files for the reference. If false, only generate if the
-# generated files do not alreday exist, to speed up the build process
+# generated files do not already exist, to speed up the build process
 generate_reference = False
 
 # Use github for getting the asset example files? Else, use a local folder. Set to false
 # to get the assets from a local OpenSpace version. Also specify the folder path below
 assets_examples_use_github = True
 
-# If using github for the examples, specify the release tag name here. If empty, will use
-# origin/master
+# If using github for the examples, specify the release tag name or the branch name here.
+# If empty, will use origin/master
 assets_release = ""
 
 # If using a local OpenSpace version for the examples, specify the path here
