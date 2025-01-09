@@ -26,7 +26,7 @@ assets_examples_use_github = True
 
 # If using github for the examples, specify the release tag name or the branch name here.
 # If empty, will use origin/master
-assets_release = ""
+assets_release_tag_or_branch = ""
 
 # If using a local OpenSpace version for the examples, specify the path here
 assets_local_openspace_folder = ""
@@ -42,8 +42,8 @@ assets_local_openspace_folder = ""
 if (os.environ.get("READTHEDOCS")):
   generate_reference = True
   assets_examples_use_github = True
-  assets_release = os.environ.get("READTHEDOCS_VERSION")
-  print(f"Read the docs will look for the OpenSpace tag: {assets_release}")
+  assets_release_tag_or_branch = os.environ.get("READTHEDOCS_VERSION")
+  print(f"Read the docs will look for the OpenSpace tag: {assets_release_tag_or_branch}")
 
 
 
