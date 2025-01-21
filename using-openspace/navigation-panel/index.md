@@ -18,9 +18,9 @@ authors:
 
 :::::::{tab-item} Overview
 
-The Navigation Panel is primarily used to target an object and navigate to those objects.
+The Navigation Panel is primarily used to target objects and navigate to those objects.
 
-The name of the object that is set to Focus will appear in the button, in this case Earth is set to Focus. If you focus on the James Web Space Telescope, then the button would expand to accommodate that name in the Toolbar.
+The name of the object that is set to Focus will appear in the toolbar button, in this case Earth is set to Focus as seen in the above image. If you focus on the James Web Space Telescope, then the button would expand to accommodate that name in the Toolbar.
 
 :::{figure} /getting-started/orientation/panel_navigation.png
 :align: center
@@ -28,16 +28,16 @@ The name of the object that is set to Focus will appear in the button, in this c
 :figwidth: 80%
 :alt: OpenSpace's Navigation Panel
 
-The Navigation Panel, with a top, iconized menu that sets the menu below.
+The Navigation Panel, with a top, iconized menu that determines which menu is displayed below.
 :::
 
 
 
 
 The panel has an iconized submenu at the top that determines what you see in the panel:
-- ![focus button](/getting-started/orientation/navigation_panel_focus_button.png) --- This shows the list of objects that you can quickly designate as Focus, and includes a search box to choose other data sets that don't appear in the menu.
-- ![anchor button](/getting-started/orientation/navigation_panel_anchor_button.png) --- This brings the list of objects that one can set as the anchor.
-- ![aim button](/getting-started/orientation/navigation_panel_aim_button.png) --- Brings up a list of objects that one can choose to aim toward.
+- ![focus button](/getting-started/orientation/navigation_panel_focus_button.png) --- The target button shows the list of objects that you can quickly designate as Focus, and includes a search box to choose other data sets that don't appear in the menu.
+- ![anchor button](/getting-started/orientation/navigation_panel_anchor_button.png) --- The anchor brings the list of objects that one can set as the anchor.
+- ![aim button](/getting-started/orientation/navigation_panel_aim_button.png) --- The telescope button brings up a list of objects that one can choose to aim toward.
 
 
 ## Focus
@@ -61,12 +61,12 @@ In order to visit another object in OpenSpace, it is easier, and often necessary
 :::{note}
 All of the large data sets in OpenSpace are observed from telescopes on Earth, or in low-earth orbit. These data sets are typically centered on Earth, so there is little need to change Focus to them because you're not attempting to fly up to an object, per se. Rather, you will examine these data from a macro level that allows you to view the entire data set.
 
-There is no need to change focus unless you're planning to visit in individual point in space or object in the Solar System.
+There is no need to change focus unless you're planning to visit an individual point in space or object in the Solar System.
 :::
 
 To change the focus, make sure ![focus button](/getting-started/orientation/navigation_panel_focus_button.png){w=25px} is selected in the panel's top menu, then you can do one of three things:
-- Click on the object in the resulting list,
-- If the object you're looking for is not there, you can search for it, 
+- Click on the object in the resulting list, or
+- If the object you're looking for is not there, you can search for it, or
 - If you don't know the name of the object you're looking for, hit the {menuselection}`More` button and an alphabetical list of all loaded assets will appear.
 
 
@@ -109,7 +109,7 @@ While Focus chooses an object to center and navigate around, Anchor and Aim allo
 
 ### Anchor an Object
 
-![anchor button](/getting-started/orientation/navigation_panel_anchor_button.png) The Anchor panel menu reveals the list of possible objects to set as your anchor. Once you choose an object from the list, or search for an existing asset, it makes that object the Focus. So, like Focus Mode, it will center the object up in the Graphics Window, and your navigation will revolve around that object.
+![anchor button](/getting-started/orientation/navigation_panel_anchor_button.png) The Anchor panel menu reveals the list of possible objects to set as your anchor. Once you choose an object from the list, or search for an existing asset, it sets that object to the Focus. So, like Focus Mode, it will center the object up in the Graphics Window, and your navigation will revolve around that object.
 
 
 ### Aim Toward an Object
@@ -129,7 +129,12 @@ While Focus chooses an object to center and navigate around, Anchor and Aim allo
 ::::::{grid} 1 2 2 2
 
 :::::{grid-item}
-This tutorial will demonstrate how you can use the Navigation Panel to explore data in OpenSpace. We will use the Focus Mode and understand how flying works with your focus, and then use the Anchor & Aim Mode to understand how to orchestrate more complex scenes.
+This tutorial will demonstrate how you can use the Navigation Panel to explore data in OpenSpace. We will:
+- Explore the Focus Mode.
+- Understand how flying works with your focus.
+- Use the Anchor & Aim Mode to orchestrate more complex scenes.
+  
+We will also use the Time Panel, which we will cover in more detail.
 :::::
 
 :::::{grid-item}
@@ -150,408 +155,209 @@ This tutorial will demonstrate how you can use the Navigation Panel to explore d
 
 
 
+### Begin at Earth
 
-### Earth
+{.tutorial}
+1. Bring up the Navigation Panel and detach it from the Toolbar by clicking the icon beside the close icon in the upper-right corner of the panel window.
+2. Move the panel off to the right and out of the way.
 
+[![Earth](earth.png)](earth.png)
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
 
-:::::
 
-:::::{grid-item}
 
-:::::
-::::::
 
+### Zoom Out to the Moon's Orbit
 
+{.tutorial}
+1. {octicon}`rocket;1.25em;profile-tour-action` Zoom away from Earth until you see the Moon's orbit.
+2. Note that Earth remains the Focus.
 
+[![Earth & Moon](earth_and_moon.png)](earth_and_moon.png)
 
-### Moon's Orbit
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
 
-:::::
+### Focus on the Moon
 
-:::::{grid-item}
+{.tutorial}
+1. {octicon}`telescope;1.25em;profile-tour-action` Choose Moon in the Focus Panel. This will set the Focus to the Moon and center it.
+2. {octicon}`rocket;1.25em;profile-tour-action` Orbit a bit to see that motion is now relative to the Moon.
 
-:::::
-::::::
+[![Moon targeted](target_moon.png)](target_moon.png)
 
 
 
-### Focus on Moon
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
+### Fly to the Moon
 
-:::::
+{.tutorial}
+1. {octicon}`rocket;1.25em;profile-tour-action` Fly to the Moon manually.
+2. {octicon}`rocket;1.25em;profile-tour-action` Orbit from a reasonable distance so that you see Earth in the background.
 
-:::::{grid-item}
+[![Approaching Moon](approach_moon.png)](approach_moon.png)
 
-:::::
-::::::
 
 
+### Anchor the Moon, Aim to Earth
 
-### Fly to Moon manually, then orbit around it so Earth is in view.
+{.tutorial}
+1. In the anchor submenu of the panel, confirm that the Moon is set to Anchor.
+2. {octicon}`telescope;1.25em;profile-tour-action` In the Aim submenu, choose Earth. This will keep your spaceship aimed toward Earth and move Earth to the center, behind the Moon.
+3. {octicon}`rocket;1.25em;profile-tour-action` Orbit a bit to bring Earth back into view.
+4. {octicon}`stopwatch;1.25em;profile-tour-action` Use the Time Panel to change the Simulation Speed to 1 hour/second.
+5. As the clock goes, we are traveling with the Moon, but looking toward Earth. 
+6. As the Moon orbits Earth, we will follow alongside it.
+7. {octicon}`stopwatch;1.25em;profile-tour-action` Pause time.
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
+[![Moon targeted, aiming to Earth](target_moon_aim_earth.png)](target_moon_aim_earth.png)
 
-:::::
 
-:::::{grid-item}
 
-:::::
-::::::
+### Practice Automated Flight
 
+{.tutorial}
+1. {octicon}`telescope;1.25em;profile-tour-action` In the Focus submenu, set Earth as the Focus.
+2. {octicon}`rocket;1.25em;profile-tour-action` Fly to Earth using the Pan & Fly Button ![Pan & Fly](../../getting-started/orientation/navigation_panel_panfly.png).
+3. {octicon}`rocket;1.25em;profile-tour-action` Fly back out to the Moon manually using the {kbd}`right mouse button`.
+4. {octicon}`rocket;1.25em;profile-tour-action` Revisit Earth using the Fly To button ![Fly to](../../getting-started/orientation/navigation_panel_fly.png). Notice this is a curved path.
 
 
-### Confirm moon is anchor, then  aim to earth
-earth will disappear behind moon, but orbit a bit to make it visible.
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
 
-:::::
+### Focus on ISS and Jump to It
 
-:::::{grid-item}
+{.tutorial}
+1. {octicon}`diff-added;1.25em;profile-tour-action` Turn on the International Space Station (ISS) if it's not already on: \
+{menuselection}`Scene --> Solar System --> Planets --> Earth --> Satellites --> ISS`
+2. {octicon}`telescope;1.25em;profile-tour-action` In the Navigation Panel, Focus submenu, select `ISS`.
+3. {octicon}`rocket;1.25em;profile-tour-action` Fly up to the space station using the {kbd}`right mouse button` or any of the automatic flight buttons.
 
-:::::
-::::::
+[![ISS over Earth](ISS_focus.png)](ISS_focus.png)
 
 
 
-### Change time to 1 hour per second
+:::{tip}
+You can see where the ISS is by the shading on its orbital path. If the ISS is out of view---in other words, it's on the opposite side of Earth---you run the risk of flying right through Earth. This is inelegant. It's best to manually orbit Earth to bring the ISS into view in front of Earth, then fly toward it. 
+:::
 
-Following Moon around it's orbit and earth is stationary with satellites going
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
 
-:::::
 
-:::::{grid-item}
+### Turn off Trails with Action Panel
 
-:::::
-::::::
+{.tutorial}
+1. {octicon}`rocket;1.25em;profile-tour-action` Move Earth to see its horizon using the {kbd}`Ctrl` + {kbd}`left mouse button`.
+2. {octicon}`rocket;1.25em;profile-tour-action` Level the horizon using the {kbd}`Shift` + {kbd}`left mouse button` so that Earth fills the bottom half of your view.
+3. {octicon}`diff-removed;1.25em;profile-tour-action` Turn off trails using {menuselection}`Action --> Trails --> Hide All Trails`.
+4. {octicon}`stopwatch;1.25em;profile-tour-action` Set the clock speed at 1 second/second by hitting the `Realtime` button.
+5. {octicon}`stopwatch;1.25em;profile-tour-action` Use the Time Panel's Quick Adjust slider and move the indicator up one tick, which will be about 4 seconds per second.
+6. {octicon}`stopwatch;1.25em;profile-tour-action` Switch the Simulation Speed up to Hours. Earth suddenly starts moving violently. This is because we are focused on the ISS.
+7. {octicon}`stopwatch;1.25em;profile-tour-action` Return the Simulation Time to Seconds.
 
+[![Turn off trails](hide_trails.png)](hide_trails.png)
 
-### Pause time
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
 
-:::::
 
-:::::{grid-item}
+### Aim to Earth
 
-:::::
-::::::
+{.tutorial}
+1. {octicon}`telescope;1.25em;profile-tour-action` In the Navigation Panel, use the Aim submenu to set the Aim to Earth. This will move you so you're directly looking down on the ISS and Earth.
+2. {octicon}`rocket;1.25em;profile-tour-action`  Use the Pan Flight Mode ({kbd}`Ctrl` + {kbd}`left mouse button`) to see Earth's horizon again. You may have to adjust your distance from the ISS.
+3. {octicon}`stopwatch;1.25em;profile-tour-action` Increase the Simulation Time to 5 seconds/second. Now, the ISS rotates a bit, but Earth remains stationary in your view as we follow the ISS around it. This is more manageable. You can increase the simulation time with the Quick Adjust Slider to see the ISS rotate more quickly.
+4. {octicon}`stopwatch;1.25em;profile-tour-action` Reset the Simulation Time back to normal by pressing the `Realtime` button.
 
+[![ISS over Earth](ISS_aim_earth.png)](ISS_aim_earth.png)
 
-### Fly back to earth using Refocus Button
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
 
-:::::
 
-:::::{grid-item}
+### Use Home key to Focus on Earth Again
 
-:::::
-::::::
+{.tutorial}
+1. {octicon}`telescope;1.25em;profile-tour-action` Use the {kbd}`Home` key to return Earth to Focus.
+2. {octicon}`rocket;1.25em;profile-tour-action` Zoom away from Earth a bit.
+3. {octicon}`diff-added;1.25em;profile-tour-action` Turn trails back on using {menuselection}`Actions --> Trails --> Show All Trails`.
 
+[![Earth with trails](earth_pull_away.png)](earth_pull_away.png)
 
-### Fly back out right button to bring moon back into the foreground, now use the Plane Button to fly back
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Turn on ISS if it's not on
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Focus on ISS and Jump to it
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Set view with shift-left button to get earth level
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Turn off trails with Action Panel
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Set time going at 1 second/second
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Jog to first tick on scale, should be about 4 sec/sec
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Switch to hours and move Jog up a wee bit. Earth dances all over the place
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Set Aim to earth
-
-moves your view to be looking down on earth, so move it back to see the horizon
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Now increase by hours and ISS dances around a bit, but that's more manageable. Earth stays stationary.
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-
-### Use Home key to focus on earth again
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
 
 
 ### Focus on Mars
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
+{.tutorial}
+1. {octicon}`telescope;1.25em;profile-tour-action` Using the Navigation Panel, select Mars from the Focus submenu.
+2. {octicon}`rocket;1.25em;profile-tour-action` Fly up to the system manually, using the Zoom Flight Mode.
 
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
+[![Focus on Mars](inner_ss_mars_focus.png)](inner_ss_mars_focus.png)
 
 
-### Fly up to system, focus on Phobos
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
+### Focus on Phobos
 
-:::::
+{.tutorial}
+1. {octicon}`telescope;1.25em;profile-tour-action` Using the Scene Menu, set Mars' moon Phobos as the Focus. \
+{menuselection}`Scene --> Solar System --> Planets --> Mars --> Moons --> Phobos --> Phobos`.
+2. {octicon}`rocket;1.25em;profile-tour-action` Approach Phobos so it's in the foreground.
 
-:::::{grid-item}
+[![Focus on Phobos](phobos_focus_afar.png)](phobos_focus_afar.png)
 
-:::::
-::::::
+[![Phobos](phobos.png)](phobos.png)
+
 
 
 ### Aim to Mars
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
+{.tutorial}
+1. {octicon}`telescope;1.25em;profile-tour-action` Aim to Mars in the Navigation Panel's Aim submenu.
+2. {octicon}`stopwatch;1.25em;profile-tour-action` In the Time Panel, change the Simulation Unit to Minutes.
 
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
+[![Aim to Mars](phobos_aim_to_mars.png)](phobos_aim_to_mars.png)
 
 
-### Set time to 5 min / sec by right-click in input window
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
+### Follow Phobos
 
-:::::
+{.tutorial}
+1. {octicon}`stopwatch;1.25em;profile-tour-action` Set the Simulation Time to 5 minutes / second by right-clicking inside the input box and typing `5`.
+2. {octicon}`rocket;1.25em;profile-tour-action` Fly out to see Mars and it's moon's orbits.
+3. Now, Phobos remains stationary but everything else is moving slowly.
 
-:::::{grid-item}
-
-:::::
-::::::
+[![Mars and moons](mars_and_moons.png)](mars_and_moons.png)
 
 
-### Fly out to see Mars and it's moons orbits
 
-mars and scene dancing around
+### Focus on Mars
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
+{.tutorial}
+1. {octicon}`telescope;1.25em;profile-tour-action` Set Mars back to the Focus.
+2. Note now that Mars is stationary and its moons are revolving around the planet. This is as you probably expect---Mars is stationary and the moons are now moving around it.
 
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
+[![Mars as focus](mars_focus.png)](mars_focus.png)
 
 
-### Set Mars back to Focus and it stops dancing
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
 
 
-### Jump back to Earth
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
+### Phases of the Moon
 
-:::::
+{.tutorial}
+1. Jump To Earth. Use the Focus submenu context menu, ![Context menu](../../getting-started/orientation/navigation_panel_context_menu_button.png), then hit Jump To ![Jump to](../../getting-started/orientation/navigation_panel_jump_button.png). This takes you directly to Earth and sets it as Focus.
+2. {octicon}`stopwatch;1.25em;profile-tour-action` Pause time.
+3. {octicon}`rocket;1.25em;profile-tour-action` Orbit to locate the Moon.
+4. {octicon}`tools;1.25em;profile-tour-action` Increase the Moon's Scale to 25. {menuselection}`Scene --> Solar System --> Planets --> Earth --> Moon --> Moon --> Scale`. Right-click in the text input box and type `25`, then press {kbd}`Enter`.
+5. {octicon}`telescope;1.25em;profile-tour-action` Aim at the Moon: {menuselection}`Navigation --> Aim submenu --> Moon`.
+6. {octicon}`rocket;1.25em;profile-tour-action` Orbit a bit to move the Moon away from Earth.
+7. {octicon}`stopwatch;1.25em;profile-tour-action` Set the Simulation Time to 1 day/second.
+8. Watch the Moon's phases as it orbits Earth.
+9. {octicon}`stopwatch;1.25em;profile-tour-action` Pause time and {octicon}`telescope;1.25em;profile-tour-action` set Focus to Earth.
 
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Scale up moon to 25
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
+[![Scale up Moon](scale_up_moon.png)](scale_up_moon.png)
 
 
-### Aim to moon, move a bit to see it from behind earth
 
-::::::{grid} 1 2 2 2
-:::::{grid-item}
+### Conclusion
 
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Increase time to 20 hours/sec
-
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
-
-### Watch Moon phases
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-
-:::::
-
-:::::{grid-item}
-
-:::::
-::::::
-
+This tutorial exercised your use of the Navigation Panel and, to some degree gave you an introduction to the Time Panel. We demonstrated several means of navigating around space, whether manually or using one of the automated flight functions. And, we showed the utility and differences between Focus, Anchor, and Aim when bringing an object front and center.
 
 ::::::::
