@@ -20,6 +20,9 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [Scene Panel](/using-openspace/scene-panel/index)
 : Turn data sets on and off and alter their appearance.
 
+[Navigation Panel](/using-openspace/navigation-panel/index)
+: Focus on an object and use automated flights to reach them.
+
 
 :::{toctree}
 :maxdepth: 1
@@ -27,6 +30,7 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 
 building-blocks/index
 scene-panel/index
+navigation-panel/index
 :::
 
 
@@ -37,7 +41,7 @@ scene-panel/index
 :caption: Using OpenSpace (Unrenovated)
 
 
-navigation-panel/index
+
 time-panel/index
 actions-panel/index
 create-profile/index
