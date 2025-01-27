@@ -33,7 +33,7 @@ Before committing to the repository it can also be beneficial to run `./make.bat
 
 If you have updated documentation for the Scripting API or the Asset Components (including example files) in the engine, you might want to view these changes in the documentation. The following steps describe how to do this.
 
-1. Set the `genereate_reference` variable in `conf.py` to `True`. This will result in the files being regenerated when you run `make html`. Otherwise, the generation is only done if the files do not already exist.
+1. Set the `generate_reference` variable in `conf.py` to `True`. This will result in the files being regenerated when you run `make html`. Otherwise, the generation is only done if the files do not already exist.
 
 2. (optional) If you are working on example assets, you may also want to change where the source files for those examples are acquired form. Per default, the generation script will download a partial clone of the OpenSpace repository (only the assets folder) from the _latest master_ and then generate the documentation. However, you can change this through the following setting in `conf.py`:
 

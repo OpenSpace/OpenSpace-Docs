@@ -20,8 +20,10 @@ sys.path.append(str(Path('_ext').resolve()))
 # generated files do not already exist, to speed up the build process
 generate_reference = False
 
-# Use github for getting the asset example files? Else, use a local folder. Set to false
-# to get the assets from a local OpenSpace version. Also specify the folder path below
+# If true, use github for getting the asset example files. The GitHub tag or branch 
+# is specified with assets_release_tag_or_branch
+# If false, use a local OpenSpace folder path, which is specified with 
+# assets_local_openspace_folder
 assets_examples_use_github = True
 
 # If using github for the examples, specify the release tag name or the branch name here.
@@ -37,8 +39,8 @@ assets_local_openspace_folder = ""
 # Settings for Web Build
 ###
 
-# If we are on Read the docs, get the RTD version and try to find that OS release. Also,
-# always generate the reference and use github for the asset files
+# If we are on Read the Docs, get the name of the current OpenSpace-Docs branch and try to find a 
+# OS release tag that matches. Also, always generate the reference and use GitHub for the asset files.
 if (os.environ.get("READTHEDOCS")):
   generate_reference = True
   assets_examples_use_github = True
