@@ -13,15 +13,15 @@ DATA_ASSETS_PATH = "data/assets"
 ##########################################################################################
 #                           ASSET COMPONENTS HELPER FUNCTIONS                            #
 ##########################################################################################
-def copy_local_folder(assset_examples_output, local_openspace_folder):
+def copy_local_folder(asset_examples_output, local_openspace_folder):
   print(f"Using local OpenSpace folder {local_openspace_folder}")
-  print(f"Copying {DATA_ASSETS_PATH} to {assset_examples_output}...")
+  print(f"Copying {DATA_ASSETS_PATH} to {asset_examples_output}...")
 
   # If a local folders was provided, we don't have to do any of the cloning work, but we
   # must copy the files for any potential `literalinclude` directive to work
-  os.makedirs(os.path.join(assset_examples_output, "data"), exist_ok=True)
+  os.makedirs(os.path.join(asset_examples_output, "data"), exist_ok=True)
   source_path = os.path.join(local_openspace_folder, DATA_ASSETS_PATH)
-  destination_path = os.path.join(assset_examples_output, DATA_ASSETS_PATH)
+  destination_path = os.path.join(asset_examples_output, DATA_ASSETS_PATH)
   if os.path.exists(destination_path):
     shutil.rmtree(destination_path)
   shutil.copytree(source_path, destination_path)
@@ -469,35 +469,39 @@ def generate_renderable_overview(environment, output_folder, json_location):
 ##########################################################################################
 
 def generate_docs(app, config):
-  if not config.generate_assets_examples:
-    print("Skipping generating new assets examples...")
-    print("To generate set 'generate_assets_examples' to True in the conf.py file")
-    return
-
-  print("Generating dynamic documentation")
-
-  # Get config values
-  use_github = config.assets_examples_use_github
-  release_tag_or_branch = config.assets_release_tag_or_branch
-  local_openspace_folder = config.assets_folder
-
   # Name variables
   json_location = "json"
   output_folder = "reference"
   folder_name_assets = "asset-components"
   folder_name_scripting = "scripting-api"
-  assset_examples_output = os.path.join(output_folder, "asset_examples")
+  asset_examples_output = os.path.join(output_folder, "asset_examples")
+
+  # Check if the reference has already been generated. Note that we assume that this is
+  # the case if the asset examples folder exists
+  reference_already_generated = os.path.exists(asset_examples_output)
+
+  if not config.generate_reference and reference_already_generated:
+    print("Skipping generating new assets examples...")
+    print("To generate set 'generate_reference' to True in the conf.py file")
+    return
+
+  print("Generating dynamic documentation (the reference)")
+
+  # Get config values
+  use_github = config.assets_examples_use_github
+  release_tag_or_branch = config.assets_release_tag_or_branch
+  local_openspace_folder = config.assets_local_openspace_folder
 
   assets_folder = None
   if use_github:
     # Download assets files from OpenSpace repository
-    assets_folder = clone_github_release(assset_examples_output, release_tag_or_branch)
+    assets_folder = clone_github_release(asset_examples_output, release_tag_or_branch)
   else:
     if local_openspace_folder == "":
       print("You need to specify a local OpenSpace folder for 'assets_folder'")
       return
     # Copy asset files from local OpenSpace folder
-    assets_folder = copy_local_folder(assset_examples_output, local_openspace_folder)
+    assets_folder = copy_local_folder(asset_examples_output, local_openspace_folder)
 
   # Load jinja templates folder
   environment = Environment(loader=FileSystemLoader("templates"))
@@ -518,10 +522,10 @@ def generate_docs(app, config):
 #                                         Sphinx setup                                   #
 ##########################################################################################
 def setup(app: Sphinx) -> ExtensionMetadata:
-    app.add_config_value('generate_assets_examples', True, 'bool')
+    app.add_config_value('generate_reference', True, 'bool')
     app.add_config_value('assets_examples_use_github', True, "bool")
     app.add_config_value('assets_release_tag_or_branch', "", 'string')
-    app.add_config_value('assets_folder', "", 'string')
+    app.add_config_value('assets_local_openspace_folder', "", 'string')
 
     app.connect('config-inited', generate_docs)
 
