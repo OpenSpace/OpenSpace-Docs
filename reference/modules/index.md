@@ -9,5 +9,4 @@ authors:
 :maxdepth: 1
 
 telemetry/index
-
 :::

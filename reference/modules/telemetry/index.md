@@ -3,15 +3,6 @@ authors:
   - name: OpenSpace Team
 ---
 
-:::{toctree}
-:maxdepth: 1
-:hidden:
-
-general
-specialized
-angle-information
-:::
-
 # The Telemetry Module
 The telemetry module in OpenSpace can be used to send information from OpenSpace to a remote receiver using [Open Sound Control](https://ccrma.stanford.edu/groups/osc/index.html) (OSC). OSC is a realtime data transport messaging format used for communication between applications and even certain hardware. It is commonly used for music/sound related applications, however it can be used as a messaging protocol for a wide range of applications beyond that. The IP address and port of the receiver, along with other settings of the module, can be set in the _openspace.cfg_ file located in the OpenSpace folder.
 
@@ -79,3 +70,12 @@ Each telemetry type sends OSC messages containing specific telemetry information
 For some telemetry types, it is possible to adjust one or more precision settings in in the user interface. The precision setting determines how sensitive the telemetry is, which affects how frequently new messages are sent. A new message is only sent if the monitored information changes by at least the specified precision amount.
 
 Some telemetry types have multiple precision settings for different monitored aspects, such as angles and distances, or for different levels of detail. The high precision value (high level of detail) is used when the monitored object is the current focus in OpenSpace, providing more accurate data. While the low precision value (low level of detail) is used for objects that are not the current focus, saving performance.
+
+:::{toctree}
+:maxdepth: 1
+:hidden:
+
+general
+specialized
+angle-information
+:::
