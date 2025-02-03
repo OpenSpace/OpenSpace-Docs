@@ -4,15 +4,19 @@ authors:
 ---
 
 # Specialized Telemetry Types
-The specialized telemetry types in the Telemetry Module monitor specific aspects of OpenSpace and send that information over the OSC connection for a particular purpose. There are a few telemetry types that monitor certain aspects, and each of them is explained in more detail in the sections below.
+The specialized telemetry types in the [Telemetry Module](index.md) monitor specific aspects of OpenSpace and send that information over the OSC connection. In contrast to the general telemetry types, these telemetry types are designed to be used for a particular purpose, such as adding a specific type of sonification to the planets in the Solar System. 
 
-All the specialized telemetry types that are available in OpenSpace:
+There are a few specialized telemetry types that monitor different aspects. Each is explained in more detail in the sections below.
+
+The specialized telemetry types available in OpenSpace are:
 - Planets Sonification
 - Planets Compare Sonification
 - Planets Overview Sonification
 
 ## Planets Sonification
-The Planets Sonification telemetry type require an asset file to specify which planets and moons are of interest to monitor. The file _planets.asset_ located in _data\assets\modules\telemetry\sonification_ adds all the planets in the solarsystem and their major moons to the list of planets to monitor with this telemetry type. The OSC messages from this telemetry type are split up to each of the planets that has been added. Using the planets sonificaiton, the OSC messages would be sent under the OSC label `/Earth`, `/Mars`, etc. The messages contian at least four items but depending on how many major moons the planet has there can be more items, each are explained in detail below:
+The Planets Sonification telemetry type requires an asset file to specify which planets and moons are of interest to monitor. The file _planets.asset_ located in _data\assets\modules\telemetry\sonification_ adds all the planets in the solar system and their major moons to the list of planets to monitor with this telemetry type. 
+
+The OSC messages from this telemetry type are split up to each of the planets that have been added. That is, the OSC messages would be sent under the OSC label `/Earth`, `/Mars`, et cetera. The messages contain at least four items, but depending on how many major moons the planet has there may be more. Each item is explained in detail below:
 
 @TODO Add a link to the explanation that the angles for the moons are calculated in another manner and add figures for that too.
 
@@ -114,11 +118,11 @@ In the example above, there are three messages. The first message is for Mercury
 ::::
 
 ## Planets Compare Sonification
-This telemetry type sends out information about the user interface settings regarding the Planets Compare sonification. The OSC messages from this telemetry type goes under the OSC label `/Compare` and contains three items, explained in detail below:
+This telemetry type sends out information about the user interface settings regarding the Planets Compare sonification. The OSC messages from this telemetry type go under the OSC label `/Compare` and contain three items:
 
   1. The index of the first planet to be compared, see the first table below on how to convert the index to a planet name.
   2. The index of the second planet to be compared, (will never be the same as the first).
-  3. List of user interface settings for the comparison. This determines which aspects of the sonification should be turned on or off. A value of 0 means that it is turned off and a 1 means that it is turned on. The order of the settings can be seen in the second table below.
+  3. List of user interface settings for the comparison, that determines which aspects of the sonification should be turned on or off. A value of 0 means that a setting is turned off and 1 means that it is turned on. The order of the settings can be seen in the second table below.
 
 :::::{grid} 1 1 1 2
 
@@ -173,7 +177,7 @@ Here is a breakdown of the example message above:
     - `0` Rings, is turned off.
 
 ## Planets Overview Sonification
-This telemetry type sends out information about the user interface settings regarding the Planets Overview sonification. The OSC messages from this telemetry type go under the OSC label `/Overview` and contain only one item, explained in detail below:
+This telemetry type sends out information about the user interface settings regarding the Planets Overview sonification. The OSC messages from this telemetry type go under the OSC label `/Overview` and contain only one item:
 
   1. List of user interface settings for the planets overview. This determines which planets are part of the sonification or not. A value of 0 means that the planet is turned off and a 1 means that it is turned on. The order of the settings can be seen in the table below.
 
@@ -209,14 +213,16 @@ Here is a breakdown of the example message above:
     - `1` Neptune, is turned on.
 
 # Sonification
-There is a sonification of the planets in our solar system that can be used together with the telemetry module. Sonification is when information is conveyed using sound in contrast to visualization when images are used. The files for the sonification can be found in _data\assets\modules\telemetry\sonification_ in the OpenSpace folder. The file _planets.asset_ is a regular Lua script OpenSpace asset that configures the telemetry module to monitor each of the planets in the solar system and their major moons. The sonification file itelf _OpenSpaceSonification.scd_ is a SuperCollider file and needs to be run seperatly in that program. The sonification will then be produced by SuperCollider and just uses the informaiton that OpenSpace sends with the OSC messages provided by the telemetry module.
+The [Telemetry Module](index.md) can be used together with a _sonification_ of the planets in our solar system. Sonification is the concept of conveying information using sound (in contrast to visualization, where information is conveyed using images). In addition to the telemetry module, the sonification requires a separate application/program called [SuperCollider](#supercollider). This software will be used as the receiver for the OSC messages from the telemetry module.
+
+The files for the sonification can be found in _data\assets\modules\telemetry\sonification_ in the OpenSpace folder. The file _planets.asset_ is a regular OpenSpace asset that configures the telemetry module to monitor each of the planets in the solar system and their major moons. The sonification file itself is the _OpenSpaceSonification.scd_ file, which is a SuperCollider file and needs to be run separately in that program. The sonification will then be produced by SuperCollider and just uses the information that OpenSpace sends with the OSC messages provided by the telemetry module.
 
 :::{note}
-Note that the _planets.asset_ file cannot be customized or altered since the sonification expects the data from the telemetry module to be in a certain format determined by this file. If this file is altered, then the sonification file needs to be updated to reflect the change as well. If you want to create your own sonification for other objects in OpenSpace other than the planets, then the general [Customized Nodes Information](./general.md#customized-nodes-information) telemetry type is likely a better fit for that purpose.
+Note that the _planets.asset_ file cannot be customized or altered since the sonification expects the data from the telemetry module to be in a certain format determined by this file. If this file is altered, then the sonification file needs to be updated to reflect the change as well. If you want to create your own sonification for objects in OpenSpace other than the planets, then the general [Customized Nodes Information](./general.md#customized-nodes-information) telemetry type is likely a better fit for that purpose.
 :::
 
 ## SuperCollider
-[SuperCollider](https://supercollider.github.io/) is the software used to produce the sounds of the sonification. The messages from the telemetry module is sent to SuperCollider and it then uses that information to create sounds that corresonds to that informaiton. In order to run the sonification follow the steps below:
+[SuperCollider](https://supercollider.github.io/) is the software used to produce the sounds of the sonification. The messages from the telemetry module are sent to SuperCollider and it then uses that information to create sounds that respond to that information. To run the sonification follow the steps below:
 
 @TODO Add instruction on how to add needed SuperCollider dependencies to run the sonification in an immersive surround environment
 
@@ -237,7 +243,7 @@ Before you shut down OpenSpace after using the telemetry module, you will need t
 :::
 
 ## The Sounds of the Planets Sonification
-The table below describes shortly what aspects of the planets are conveyed by the sonification, how they sound, and how the sounds change depending on the data.
+The table below describes what aspects of the planets are conveyed by the sonification, how they sound, and how the sounds change depending on the data.
 :::{table}
 :align: center
 | Planet Property      | Sonification Sound        | Mapping Polarity                                            |
