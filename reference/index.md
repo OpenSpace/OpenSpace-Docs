@@ -14,7 +14,6 @@ authors:
 :::{toctree}
 :maxdepth: 1
 
-modules/index
 renderable-overview
 asset-components/index
 scripting-api/index

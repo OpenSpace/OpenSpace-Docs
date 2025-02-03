@@ -17,14 +17,14 @@ In summary, the general telemetry types available in OpenSpace are:
 This telemetry type monitors the camera state and sends that information over the OSC connection. The OSC messages from this telemetry type go under the OSC label `/Camera` and contain nine items in addition to the label:
 
   1. The following three items describe the {math}`x`, {math}`y`, and {math}`z` positions of the camera in the world, specified in relation to the Solar System barycenter. This is the {math}`x` position of the camera in the world.
-  2. The {math}`y` position of the camera in the world.
-  3. The {math}`z` position of the camera in the world.
-  4. The next four items are the quaternion rotation of the camera. This first item is the angle {math}`w` in radians for the quaternion rotation of the camera.
-  5. The next three items are the axis of the quaternion rotation of the camera. This is the {math}`x` component of the unit rotation axis in the quaternion rotation of the camera.
-  6. The {math}`y` component of the rotation axis in the quaternion rotation.
-  7. The {math}`z` component of the rotation axis in the quaternion rotation.
-  8. The speed of the camera, specified in the selected distance unit per second.
-  9. The selected distance unit for the speed of the camera, as a string in singular form with the first letter capitalized.
+  1. The {math}`y` position of the camera in the world.
+  1. The {math}`z` position of the camera in the world.
+  1. The next four items are the quaternion rotation of the camera. This first item is the angle {math}`w` in radians for the quaternion rotation of the camera.
+  1. The next three items are the axis of the quaternion rotation of the camera. This is the {math}`x` component of the unit rotation axis in the quaternion rotation of the camera.
+  1. The {math}`y` component of the rotation axis in the quaternion rotation.
+  1. The {math}`z` component of the rotation axis in the quaternion rotation.
+  1. The speed of the camera, specified in the selected distance unit per second.
+  1. The selected distance unit for the speed of the camera, as a string in singular form with the first letter capitalized.
 
 A  message from this telemetry type can for example look like this:
 :::{code-block}
@@ -49,8 +49,8 @@ In the example above, the current focus in OpenSpace was set to Earth.
 This telemetry type monitors the time in OpenSpace and sends that information over the OSC connection. The OSC messages from this telemetry type go under the OSC label `/Time` and contain three items:
 
   1. The speed of the simulation time, specified in the selected time unit in the simulation, per real-life second.
-  2. The selected time unit for the speed of simulation time, as a string in singular form with the first letter capitalized.
-  3. The current simulation time in OpenSpace specified in J2000 seconds, that is, the number of seconds past the J2000 epoch (i.e. January 1, 2000 12:00:00 TT).
+  1. The selected time unit for the speed of simulation time, as a string in singular form with the first letter capitalized.
+  1. The current simulation time in OpenSpace specified in J2000 seconds, that is, the number of seconds past the J2000 epoch (i.e. January 1, 2000 12:00:00 TT).
 
 Here is an example of how a message from this telemetry type can look:
 :::{code-block}
@@ -63,9 +63,9 @@ In the example above, the simulation time in OpenSpace progresses {math}`30.0` m
 This telemetry type requires the user to specify with a script which nodes are of interest to monitor, which is what makes it customizable. There is an example file _nodes.asset_ located in _data\assets\examples\sonification_ that adds the ISS and Tiangong to the list of nodes to monitor with this telemetry type. The OSC messages from this telemetry type are split up for each of the nodes that have been added. Using the mentioned example file, the OSC messages would be sent under the OSC labels `/ISS` and `/Tiangong` respectively (i.e. the identifiers of the added nodes). The messages contain four items:
 
   1. The distance from the camera to the node, specified in the selected distance unit.
-  2. The horizontal angle in radians to the node, with the current angle calculation mode taken into account. For more information see [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation).
-  3. The elevation angle in radians to the node, with the current angle calculation mode taken into account.
-  4. The selected distance unit for the distance to the camera, as a string in singular form with the first letter capitalised.
+  1. The horizontal angle in radians to the node, with the current angle calculation mode taken into account. For more information see [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation).
+  1. The elevation angle in radians to the node, with the current angle calculation mode taken into account.
+  1. The selected distance unit for the distance to the camera, as a string in singular form with the first letter capitalised.
 
 Here is an example of how messages from this telemetry type can look:
 :::{code-block}
@@ -79,7 +79,7 @@ The example above includes two messages. The first message is for ISS and the se
 For some telemetry types, such as the [Customized Nodes Information](#customized-nodes-information) and the specialized [Planets Sonification](./specialized.md#planets-sonification), one part of the information that is sent is two angles that describes where the object is placed on the screen. This telemetry type monitors which method has been used to calculate those angles, more informaiton about how these angle calculations are done can be found in [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation). The OSC messages from this telemetry type goes under the OSC label `/Mode` and contains two items, explained in detail below:
 
   1. The first item is an integer value that specifies what method was used to calculate the angles. If the value is 0, then the method used was the [Horizontal](./angle-information.md#horizontal) angle calculation mode. In the case where tha value is 1, then the [Circular](./angle-information.md#circular) angle calculation mode was used.
-  2. The second value is an integer that is either 0 or 1 that detemines if the additional elevation angle is used or not. If the value is 0 then the elevation angle is always set to {math}`0.0`, if the value is 1 then the additional elevation angle is calculated.
+  1. The second value is an integer that is either 0 or 1 that detemines if the additional elevation angle is used or not. If the value is 0 then the elevation angle is always set to {math}`0.0`, if the value is 1 then the additional elevation angle is calculated.
 
 Here is an example of how a message from this telemetry type can look like:
 :::{code-block}

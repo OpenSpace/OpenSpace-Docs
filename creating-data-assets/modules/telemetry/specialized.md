@@ -18,19 +18,19 @@ The Planets Sonification telemetry type requires an asset file to specify which 
 
 The OSC messages from this telemetry type are split up to each of the planets that have been added. That is, the OSC messages would be sent under the OSC label `/Earth`, `/Mars`, et cetera. The messages contain at least four items, but depending on how many major moons the planet has there may be more. Each item is explained in detail below:
 
-@TODO Add a link to the explanation that the angles for the moons are calculated in another manner and add figures for that too.
+<!-- @TODO (malej) Add a link to the explanation that the angles for the moons are calculated in another manner and add figures for that too. -->
 
   1. The distance from the camera to the planet in kilometers.
-  2. The horizontal angle in radians to the planet, with the current angle calculation mode taken into account.
-  3. The elevation angle in radians to the planet, with the current angle calculation mode taken into account.
-  4. List of user interface settings for the planet sonification, which aspectes of the sonification should be turned on or off. A value of 0 means that it is turned off and a 1 means that it is turned on. The order of the settings can be seen in the table below. If the setting does not exist for a planet, the value is always 0.
-  5. The distance from the camera to the first moon in kilometers
-  6. The horizontal angle in radians to the first moon, with the current angle calculation mode taken into account.
-  7. The elevation angle in radians to the first moon, with the current angle calculation mode taken into account.
-  8. The distance from the camera to the second moon in kilometers
-  9. The horizontal angle in radians to the second moon, with the current angle calculation mode taken into account.
-  10. The elevation angle in radians to the second moon, with the current angle calculation mode taken into account.
-  11. Data continues in the same pattern for as many moons there are for the planet
+  1. The horizontal angle in radians to the planet, with the current angle calculation mode taken into account.
+  1. The elevation angle in radians to the planet, with the current angle calculation mode taken into account.
+  1. List of user interface settings for the planet sonification, which aspectes of the sonification should be turned on or off. A value of 0 means that it is turned off and a 1 means that it is turned on. The order of the settings can be seen in the table below. If the setting does not exist for a planet, the value is always 0.
+  1. The distance from the camera to the first moon in kilometers
+  1. The horizontal angle in radians to the first moon, with the current angle calculation mode taken into account.
+  1. The elevation angle in radians to the first moon, with the current angle calculation mode taken into account.
+  1. The distance from the camera to the second moon in kilometers
+  1. The horizontal angle in radians to the second moon, with the current angle calculation mode taken into account.
+  1. The elevation angle in radians to the second moon, with the current angle calculation mode taken into account.
+  1. Data continues in the same pattern for as many moons there are for the planet
 
 :::{table}
 :align: center
@@ -121,8 +121,8 @@ In the example above, there are three messages. The first message is for Mercury
 This telemetry type sends out information about the user interface settings regarding the Planets Compare sonification. The OSC messages from this telemetry type go under the OSC label `/Compare` and contain three items:
 
   1. The index of the first planet to be compared, see the first table below on how to convert the index to a planet name.
-  2. The index of the second planet to be compared, (will never be the same as the first).
-  3. List of user interface settings for the comparison, that determines which aspects of the sonification should be turned on or off. A value of 0 means that a setting is turned off and 1 means that it is turned on. The order of the settings can be seen in the second table below.
+  1. The index of the second planet to be compared, (will never be the same as the first).
+  1. List of user interface settings for the comparison, that determines which aspects of the sonification should be turned on or off. A value of 0 means that a setting is turned off and 1 means that it is turned on. The order of the settings can be seen in the second table below.
 
 :::::{grid} 1 1 1 2
 
@@ -211,79 +211,3 @@ Here is a breakdown of the example message above:
     - `1` Saturn, is turned on.
     - `1` Uranus, is turned on.
     - `1` Neptune, is turned on.
-
-# Sonification
-The [Telemetry Module](index.md) can be used together with a _sonification_ of the planets in our solar system. Sonification is the concept of conveying information using sound (in contrast to visualization, where information is conveyed using images). In addition to the telemetry module, the sonification requires a separate application/program called [SuperCollider](#supercollider). This software will be used as the receiver for the OSC messages from the telemetry module.
-
-The files for the sonification can be found in _data\assets\modules\telemetry\sonification_ in the OpenSpace folder. The file _planets.asset_ is a regular OpenSpace asset that configures the telemetry module to monitor each of the planets in the solar system and their major moons. The sonification file itself is the _OpenSpaceSonification.scd_ file, which is a SuperCollider file and needs to be run separately in that program. The sonification will then be produced by SuperCollider and just uses the information that OpenSpace sends with the OSC messages provided by the telemetry module.
-
-:::{note}
-Note that the _planets.asset_ file cannot be customized or altered since the sonification expects the data from the telemetry module to be in a certain format determined by this file. If this file is altered, then the sonification file needs to be updated to reflect the change as well. If you want to create your own sonification for objects in OpenSpace other than the planets, then the general [Customized Nodes Information](./general.md#customized-nodes-information) telemetry type is likely a better fit for that purpose.
-:::
-
-## SuperCollider
-[SuperCollider](https://supercollider.github.io/) is the software used to produce the sounds of the sonification. The messages from the telemetry module are sent to SuperCollider and it then uses that information to create sounds that respond to that information. To run the sonification follow the steps below:
-
-@TODO Add instruction on how to add needed SuperCollider dependencies to run the sonification in an immersive surround environment
-
-1. Download and install [SuperCollider](https://supercollider.github.io/)
-2. Run the SuperCollider planets sonification file _OpenSpaceSonification.scd_ located in _data\assets\modules\telemetry\sonification_.
-    - To run the file in SuperCollider, click on line 8 and press CTRL + ENTER
-    - Wait a while for the sonification to boot up
-    - The SuperCollider console should respond with: `Sonification is ready` when it is finished
-3. Run OpenSpace with the profile called _sonification_
-4. Turn on the Telemetry module in the user interface under _Settings/Modules_
-5. Turn on the telemetries/sonifications that are of interest with the checkboxes in the telemetry module settings
-6. Fly around in OpenSpace, and you should see messages being printed in the SuperCollider console window
-7. Now, you can freely try the different settings for the different telemetries/sonifications, read the tooltips, and stress-test it in general.
-
-:::{danger}
-Before you shut down OpenSpace after using the telemetry module, you will need to turn off the telemetry module in the settings menu. If OpenSpace is shut down while the telemetry module is still enabled, it will **crash**. This is an issue with the Scene not being safe for multiple threads, especially around startup and shutdown. Due to the same reason, the telemetry module cannot be enabled with scripts before OpenSpace has properly booted up completely.
-@TODO I am planning to (hopefully) fix the shutdown issue in th PR. However, the startup problem will remain.
-:::
-
-## The Sounds of the Planets Sonification
-The table below describes what aspects of the planets are conveyed by the sonification, how they sound, and how the sounds change depending on the data.
-:::{table}
-:align: center
-| Planet Property      | Sonification Sound        | Mapping Polarity                                            |
-|----------------------|---------------------------| ------------------------------------------------------------|
-| Mass                 | Pitch                     | Higher pitch = Lower mass                                   |
-| Length of day        | Tempo of oscillation      | Faster tempo = Shorter day                                  |
-| Length of Year       | Surround position         | Uses [angle calculations](./angle-information.md#angle-calculations-explanation) to place the planet in a surround sound configuration |
-| Gravity              | Bouncing ball sound       | Faster bouncing ball = Stronger gravity                     |
-| Temperature          | Sizzling intensity        | More sizzling = Higher temperature                          |
-| Atmospheric pressure | Depth of wind sound       | Deeper wind sound = Higher atmospheric pressure             |
-| Average wind speed   | Fluctuation of wind sound | More fluctuations in wind sound = Faster average wind speed |
-:::
-
-:::{note}
-Note that the sonification uses additional data provided in the SuperCollider files. This data comes from the [Nasa Planetary Fact Sheet](https://nssdc.gsfc.nasa.gov/planetary/factsheet/)
-:::
-
-:::{seealso}
-For more details about the sonification of the planets see the paper **OpenSpace Sonification: Complementing Visualization of the Solar System with Sound** by Elias Elmquist, Malin Ejdbo, Alexander Bock, and Niklas Rönnberg, published in _International Community for Auditory Displays_, 2021 [doi:10.21785/icad2021.018](http://dx.doi.org/10.21785/icad2021.018).
-:::
-
-## Surround Sound Configurations
-The surround sound aspect of the sonification is designed for two specific configurations, as shown in the images below. In both images, black dots represent speakers, and the subwoofer is positioned outside the circle since it is not considered a directional sound source.
-
-@TODO Generate a dark mode version of this image
-:::{image} images/NKPG-Dome.png
-:alt: "Surround Sound Configuration Schematic for the Visualization Center Dome Theater in Norrköping, Sweden"
-:width: 100%
-:align: center
-:class: only-light
-:::
-
-This image shows a top-down view of the surround sound setup for the Visualization Center Dome Theater in Norrköping, Sweden. The audience sits in rows inside the circle, facing the front center of the dome surface, which is marked as _Center_ at the top of the image. The circle represents the edge of the dome surface. This configuration uses the [Horizontal](./angle-information.md#horizontal) angle calculation mode without the elevation angle, as it only has one ring of speakers.
-
-@TODO Generate a dark mode version of this image
-:::{image} images/AMNH-Dome.png
-:alt: "Surround Sound Configuration Schematic for the Hayden Planetarium at the American Museum of Natural History in New York, USA"
-:width: 100%
-:align: center
-:class: only-light
-:::
-
-This image shows a bottom-up view of the surround sound setup for the Hayden Planetarium at the American Museum of Natural History in New York, USA. The audience sits in concentric rings inside the outermost circle, looking up towards the center of the dome surface, which is marked as _Center_ with a blue cross in the middle of the image. The outermost ring represents the edge of the dome surface. This configuration uses the [Circular](./angle-information.md#circular) angle calculation mode with the elevation angle enabled, as it has multiple rings of speakers.

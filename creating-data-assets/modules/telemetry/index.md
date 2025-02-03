@@ -30,18 +30,18 @@ ModuleConfigurations = {
 
 :::
 
-The first two settings in the example above are the IP address and port for the receiver of the OSC telemetry messages. The next setting is the angle calculation mode that is used, and the last setting is whether an elevation angle should be added in the angle calculation. For more information about the angle calculation modes and which is more suitable for your system, see [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation). In the example above, the IP address used is `"127.0.0.1"`, which is the local computer, and the port `57120` is used, which is the port where the software [SuperCollider](https://supercollider.github.io/) receives OSC messages from by default. For more information about SuperCollider and how it can be used for sonification, see [Sonification](./specialized.md#sonification). Lastly, the angle calculation mode is set as `"Horizontal"`, and no elevation angle is added.
+The first two settings in the example above are the IP address and port for the receiver of the OSC telemetry messages. The next setting is the angle calculation mode that is used, and the last setting is whether an elevation angle should be added in the angle calculation. For more information about the angle calculation modes and which is more suitable for your system, see [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation). In the example above, the IP address used is `"127.0.0.1"`, which is the local computer, and the port `57120` is used, which is the port where the software [SuperCollider](https://supercollider.github.io/) receives OSC messages from by default. For more information about SuperCollider and how it can be used for sonification, see [Sonification](./sonification.md#sonification). Lastly, the angle calculation mode is set as `"Horizontal"`, and no elevation angle is added.
 
 ## How To Use It
-@TODO Add a short text of how the telemetry module can be used. Including the sonification examples and possible other OSC reciving software.
+<!--@TODO (malej) Add a short text of how the telemetry module can be used. Including the sonification examples and possible other OSC reciving software. -->
 
 To use the telemetry module in OpenSpace, follow these steps:
 
 1. Configure the telemetry settings, such as the receiver's IP address and port, in the _openspace.cfg_ file before starting OpenSpace. See an example of this above.
-2. Start OpenSpace and navigate to the settings menu in the user interface.
-3. Under _Settings/Modules_ locate and enable the telemetry module.
-5. Select the desired telemetry types to be used by checking the corresponding checkboxes.
-6. Now you can freely fly around in OpenSpace and the telemetry data will be sent to the specified receiver in real-time.
+1. Start OpenSpace and navigate to the settings menu in the user interface.
+1. Under _Settings/Modules_ locate and enable the telemetry module.
+1. Select the desired telemetry types to be used by checking the corresponding checkboxes.
+1. Now you can freely fly around in OpenSpace and the telemetry data will be sent to the specified receiver in real-time.
 
 :::{danger}
 After using the telemetry module, you need to turn off the telemetry module in the settings menu _before shutting down OpenSpace_. If OpenSpace is shut down while the telemetry module is still enabled, it will **crash**. This is an unsolved issue with the Scene not being safe for multiple threads, especially around startup and shutdown. For the same reason, the telemetry module cannot be enabled with scripts before OpenSpace has initialized completely.
@@ -51,7 +51,7 @@ After using the telemetry module, you need to turn off the telemetry module in t
 ## Telemetry Types
 The telemetry module sends out messages with information about OpenSpace over the OSC connection. The module supports multiple types of messages, each with different information. These message types are referred to as different telemetry types. 
 
-There are two categories of telemetry types: the [general](general) telemetry types and the [specialized](specialized) telemetry types. The general category of telemetry types monitors the general state of OpenSpace, such as the current time and focus. The specialized category of telemetry types is used for a specific purpose and monitors specific aspects of OpenSpace. For example, there are telemetry types that specifically monitor the planets in the solar system, and that information is then used for a [sonification](./specialized.md#sonification) of the planets in the solar system.
+There are two categories of telemetry types: the [general](general) telemetry types and the [specialized](specialized) telemetry types. The general category of telemetry types monitors the general state of OpenSpace, such as the current time and focus. The specialized category of telemetry types is used for a specific purpose and monitors specific aspects of OpenSpace. For example, there are telemetry types that specifically monitor the planets in the solar system, and that information is then used for a [sonification](./sonification.md#sonification) of the planets in the solar system.
 
 Below is a table of the available telemetry types and which category they belong to. More details about each type can be found on the linked pages. 
 :::{table}
@@ -79,5 +79,6 @@ Some telemetry types have multiple precision settings for different monitored as
 
 general
 specialized
+sonification
 angle-information
 :::
