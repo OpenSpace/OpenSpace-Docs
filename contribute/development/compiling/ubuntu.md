@@ -23,10 +23,11 @@ There are specific CMake variables that need to be set. See the "Compile OpenSpa
 You can install all of the necessary dependencies through `apt`:
 
 ```bash
-sudo apt install glew-utils libpng-dev freeglut3-dev git libxrandr-dev libxinerama-dev xorg-dev libxcursor-dev libcurl4-openssl-dev libxi-dev libasound2-dev libgdal-dev libboost1.74-dev qt6-base-dev libmpv-dev libvulkan-dev
+sudo apt install glew-utils libpng-dev freeglut3-dev git libxrandr-dev libxinerama-dev xorg-dev libxcursor-dev libcurl4-openssl-dev libxi-dev libasound2-dev libgdal-dev qt6-base-dev libmpv-dev libvulkan-dev
 ```
+If you are on Ubuntu 22.04, install this version of boost: `sudo apt install libboost1.74-dev`; if Ubuntu 24.04 then install this version: `sudo apt install libboost1.83-dev`.
 
-If you are on Ubuntu 22.04, you'll also need to install gcc 13 (requires ubuntu-toolchain-r/test ppa):
+Also for Ubuntu 22.04, you'll also need to install gcc 13 (requires ubuntu-toolchain-r/test ppa):
 
 ```bash
 sudo apt install software-properties-common

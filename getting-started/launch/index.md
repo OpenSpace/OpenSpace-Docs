@@ -19,7 +19,7 @@ If you see any errors or pop-up windows you're unsure about, please refer back t
 
 ## Terminal Window
 
-The first item that pops up is a green terminal with output streaming by at a rapid pace. The output to this console is basically all the commands OpenSpace is executing to get itself up and running. You can generally ignore this window.
+The first item that pops up is a terminal (I set mine to have a green background) with output streaming by at a rapid pace. The output to this console is basically all the commands OpenSpace is executing to get itself up and running. You can generally ignore this window.
 
 :::{figure} console.png
 :align: center

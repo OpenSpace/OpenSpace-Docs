@@ -51,7 +51,7 @@ The Scene Panel in OpenSpace, looking at the data sets under Star Clusters.
 
 
 ## Locating Data Sets
-First and foremost, the Scene Panel is used to access all the data sets loaded into OpenSpace. What shows up in the Scene Panel is determined by the assets that are loaded into the profile used to launch OpenSpace.
+First and foremost, the Scene Panel is used to access all the data sets loaded into OpenSpace. What shows up in the Scene Panel is determined by the assets that are added and saved in the profile used to launch OpenSpace.
 
 The Scene Panel is organized by scales, with groups for the Solar System, Milky Way, and Universe (everything outside the Milky Way Galaxy). It is not limited to these three groups---there is a Night Sky group too---but much of the data you see in OpenSpace is in one of these three.
 
@@ -94,10 +94,10 @@ Some data sets have a Fade setting applied to them based on your distance from t
 
 
 ## Targeting a Data Set
-To the right of the data set is the target icon ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png). You can press this button to set that data set as the focus.
+To the right of the data set is the target icon ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png). You can press this button to activate that data set as the Focus.
 
 :::{note}
-Many of these data sets are observationally based---so they are centered on the Sun. If you were to press ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png) for the Open Star Clusters, the Sun would remain the Focus. This button is more critical when you want to visit an object like a  planet, moon, exoplanet system, or a spacecraft.
+Many of these data sets are observationally based---so they are centered on the Sun. If you were to press ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png) for the Open Clusters, the Sun would remain the Focus. This button is more critical when you want to visit an object like a  planet, moon, exoplanet system, or a spacecraft.
 :::
 
 
@@ -159,7 +159,7 @@ The Open Star Clusters' Sizing settings consists of a slider for Scale Factor an
 Sizing a data set's points is a bit tricky. There are several variables that determine a point's final size. You see two here, Scale Exponent, and Scale Factor. There are also settings to determine a maximum size for the points that can clamp the size. And, your position also factors into the point size particularly when you are close to a point.
 
 #### Scale Exponent
-This is an exponential slider that ranges from 0 to 25. It sets the absolute size of the points in meters to this exponent. If you set this value to zero, the resulting size will be 1 ({math}`e^0 = 1`). It's wise to set this value first such that the data set looks decent close up, for example from the night sky view with the Open Clusters, but also so they don't totally disappear if you fly out to see the entire data set.
+This is an exponential slider that ranges from 0 to 25. It sets the absolute size of the points in meters to this exponent. If you set this value to zero, the resulting size will be 1 meter ({math}`e^0 = 1`). It's wise to set this value first such that the data set looks decent close up, for example from the night sky view with the Open Clusters, but also so they don't totally disappear if you fly out to see the entire data set.
 
 #### Scale Factor
 This is a simple multiplying factor on top of the Scale Exponent. With the Open Clusters, you'll notice they are sized well for viewing in the night sky---the points don't dominate the entire sky. However, when you fly out of the Galaxy, they are barely visible. It's best here to use the Scale Factor to simply scale the point size up.
@@ -213,7 +213,7 @@ Label settings are controlled in the Labels dropdown. Here, you can set an opaci
 The Open Star Clusters' Labels settings. {menuselection}`... --> Renderable --> Labels`.
 :::
 
-The Opacity merely controls how transparent the labels are drawn. This can affect their brightness and color. Opacity ranges from 0 to 1, where 0 is completely transparent (and, hence, invisible), and 1 is totally opaque. If you set the label color to white, then they will be pure white at an opacity of 1. If you have an opacity less than 1, they will be a bit more grayer.
+The Opacity merely controls the transparency of the labels. This can affect their brightness and color. Opacity ranges from 0 to 1, where 0 is completely transparent (and, hence, invisible), and 1 is totally opaque. If you set the label color to white, then they will be pure white at an opacity of 1. If you have an opacity less than 1, they will be a bit grayer.
 
 The Size is the most important slider here, but it is also exponential, so it can be ultra sensitive.
 
@@ -245,7 +245,7 @@ The [Stars](/content/milky-way/stars/stars/index) settings via {menuselection}`S
 :::::
 
 :::::{grid-item}
-For the Stars the size (brightness) is controlled with the Magnitude Exponent. This is similar to the Scale Exponent, but instead works directly on the magnitude data, which sets the stars brightness.
+For the Stars, the size (brightness) is controlled with the Magnitude Exponent. This is similar to the Scale Exponent, but instead works directly on the magnitude data, which sets the stars brightnesses.
 
 The Core and Glare properties set the look of the stars.
 
@@ -299,7 +299,7 @@ Settings for the [Constellation Lines](/content/milky-way/constellations/constel
 :::::{grid-item}
 When it comes to images and lines, be they for constellations, or the Radio Sphere, or the Mliky Way Image or All-sky, Opacity is going to be the more important setting to alter their brightness.
 
-Opacity ranges from 0 to 1, with 0 being totally invisible and 1 being completely opaque. For lines, it can appear to alter their color, so choosing the right color and opacity go hand-in-hand.
+Opacity ranges from 0 to 1, with 0 being totally invisible and 1 being completely opaque. For lines, it can appear to alter their color, so setting the color and opacity go hand-in-hand to achieve the desired result.
 
 More: [](/reference/asset-components/RenderableConstellationLines), [](/reference/asset-components/RenderableSphericalGrid), [](/reference/asset-components/RenderableGrid), and many others.
 :::::
@@ -309,5 +309,5 @@ More: [](/reference/asset-components/RenderableConstellationLines), [](/referenc
 
 
 ## Can I Save my Changes?
-Yes, but not in an automated way yet. If you find settings that you want to preserve, you must add them to that data set's asset file, then save that file. Each data set's asset file is listed in that data set's dossier in the [Content](/content/index) Chapter.
+Yes, but not yet in an automated way. If you find settings that you want to preserve, you must add them to that data set's asset file, then save that file. Each data set's asset file is listed in that data set's dossier in the [Content](/content/index) Chapter.
 

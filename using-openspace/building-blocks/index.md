@@ -13,6 +13,8 @@ OpenSpace, like any program, is made up of components that build upon themselves
 ## Profiles: Define an OpenSpace Session
 When you launch OpenSpace, you choose a profile and then press Start. You can [create and edit profiles](/using-openspace/create-profile/index) in the Profile Editor, as we'll see soon.
 
+%%%% LINK ABOVE
+
 When you create or edit a profile, you are adding components called _assets_. 
 
 
@@ -75,6 +77,6 @@ local Object = {
 ## Renderables: Defining the Visual
 If you look up the word renderable, you will find the smarty-pants definition of "capable of being rendered." But, if you look deeper, past the "to melt something down" and "to give something in return or retribution," you will eventually come to the definition "to cause something, such as an image or text, to display (as on a screen)."
 
-Here, we apply the latter in OpenSpace by defining set [Renderables](/reference/renderable-overview) that know how to draw things. That thing could be a point in 3-D space, it could be a line between two points, it could be planet's atmosphere, or a model of a space station or satellite, among many others.
+Here, we apply the latter in OpenSpace by setting [Renderables](/reference/renderable-overview) to assets. These Renderables know how to draw objects---a point in 3-D space, a line between two points, a planet's atmosphere, or a model of a space station or satellite, among many others.
 
 Assets call on Renderables to do the heavy lifting by taking its settings---color, label size, size (or brightness)---and applying them to a renderable. Every data set you see has a renderable enabling it to appear in OpenSpace.

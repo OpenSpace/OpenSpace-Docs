@@ -68,5 +68,12 @@ kbd {
     text-transform: uppercase;
 }
 
-
-
+ol.tutorial {
+    margin: 0 5em;
+}
+ol.tutorial li {
+    margin-bottom: 0.25em;
+}
+ol.tutorial + p {
+    margin-bottom: 3em;
+}

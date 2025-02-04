@@ -8,23 +8,46 @@ sys.path.append(str(Path('_ext').resolve()))
 #                               Generate asset examples                                  #
 ##########################################################################################
 
-# If we are on Read the docs, get the RTD version and try to find that OS release
+###
+# Settings for Local Build (Developer)
+#
+# These settings controls if the files for the reference should be genereated and where
+# the files for the asset examples should be acquired from. When building locally, feel
+# free to change these settings to your liking, but do not commit the changes.
+###
+
+# If true, always generate new files for the reference. If false, only generate if the
+# generated files do not already exist, to speed up the build process
+generate_reference = False
+
+# If true, use github for getting the asset example files. The GitHub tag or branch 
+# is specified with assets_release_tag_or_branch
+# If false, use a local OpenSpace folder path, which is specified with 
+# assets_local_openspace_folder
+assets_examples_use_github = True
+
+# If using github for the examples, specify the release tag name or the branch name here.
+# If empty, will use origin/master
+assets_release_tag_or_branch = ""
+
+# If using a local OpenSpace version for the examples, specify the path here
+assets_local_openspace_folder = ""
+
+
+
+###
+# Settings for Web Build
+###
+
+# If we are on Read the Docs, get the name of the current OpenSpace-Docs branch and try to find a 
+# OS release tag that matches. Also, always generate the reference and use GitHub for the asset files.
 if (os.environ.get("READTHEDOCS")):
-  generate_assets_examples = True
+  generate_reference = True
   assets_examples_use_github = True
-  assets_release = os.environ.get("READTHEDOCS_VERSION")
-  print(f"Read the docs will look for the OpenSpace tag: {assets_release}")
-# If we are working on our local machine
-#elif os.path.exists("generated"):   #### Original test
-elif os.path.exists("reference/scripting-api"):
-  # If we already have the path, no need to copy files again
-  generate_assets_examples = False
-else:
-  # Dev options
-  generate_assets_examples = True # Generates asset examples if true
-  assets_examples_use_github = True # Use github for the examples? Else, local folder
-  assets_release = "" # Release tag name for github option. If empty, will use origin/master
-  assets_folder = "" # Folder path for local folder option
+  assets_release_tag_or_branch = os.environ.get("READTHEDOCS_VERSION")
+  print(f"Read the docs will look for the OpenSpace tag: {assets_release_tag_or_branch}")
+
+
 
 
 ###

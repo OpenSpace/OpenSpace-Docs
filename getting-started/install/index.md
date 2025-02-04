@@ -7,7 +7,7 @@ authors:
 
 # Installing OpenSpace
 
-This guide has information about installing the downloadable application form the [OpenSpace website](https://www.openspaceproject.com/).
+This guide has information about installing the downloadable application from the [OpenSpace website](https://www.openspaceproject.com/).
 
 :::{note}
 If you wish to download the source code and build the application, please see [Compiling](/contribute/development/compiling/index).
@@ -16,14 +16,15 @@ If you wish to download the source code and build the application, please see [C
 
 ## Hardware Requirements
 
-OpenSpace is designed for use on a wide array of devices ranging from laptops to state-of-the-art planetarium domes. However, its ability to create complex scenes demands graphics power to run efficiently. It also makes it challenging to provide accurate hardware specs.
-
+OpenSpace is designed for use on a wide array of devices ranging from laptops to state-of-the-art planetarium domes. However, its ability to create complex scenes demands graphics power to run efficiently.
 
 ::::{grid}
 :::{grid-item}
 
+%%%% Would be good to link or elaborate on AMD issues
+
 ### Minimum Requirements
-- i5 processor
+- i5 processor (Apple's M-chip is not supported)
 - NVIDIA 1060 GTX GPU (or comparable) (AMD cards work with some issues)
 - 8 GB RAM
 - 4 GB VRAM
@@ -33,7 +34,7 @@ OpenSpace is designed for use on a wide array of devices ranging from laptops to
 
 :::{grid-item}
 ### Optimal Specs
-- Windows 10 or above or MacOS 10.15 or above
+- Windows 10 or above or macOS 10.15 or above
 - 16 GB RAM (or more)
 - 6 GB VRAM (or more)
 :::
@@ -200,7 +201,8 @@ If you try to launch OpenSpace and you get an error that the application is not 
 
 
 ### Open in Low Resolution Mode
-For users running on a Retina display, you may want to apply the "Open in Low Resolution Mode" setting on the OpenSpace.app to get better performance.   HOW IS THIS DONE???
+For users running on a Retina display, you may want to apply the "Open in Low Resolution Mode" setting on the OpenSpace.app to get better performance.
+%%%% HOW ISD THIS DONE???
 :::::::
 
 
@@ -211,7 +213,9 @@ For users running on a Retina display, you may want to apply the "Open in Low Re
 
 ### Linux Installation
 
-NEED CONTENT HERE. Does it have to be built? Or is it a binary installation?
+A binary version exists for Debian on the [OpenSpace website](https://www.openspaceproject.com/).
+
+All other Linux platforms will require you to build the application. Please see [Compiling](/contribute/development/compiling/index).
 
 :::::::
 ::::::::

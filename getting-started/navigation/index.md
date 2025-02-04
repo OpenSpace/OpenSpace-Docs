@@ -41,11 +41,11 @@ A three-button mouse is recommended, but not necessary.
 
 * - Roll
   - {kbd}`middle mouse` or {kbd}`Shift` + {kbd}`left mouse`
-  - Using the {kbd}`middle mouse button` (or depressing the scroll wheel) lets you roll the view, like a kaleidoscope. If you do not have a third button, you can achieve Roll motion by holding the {kbd}`Shift` key and dragging while pressing the {kbd}`left mouse button`.
+  - Using the {kbd}`middle mouse button` (which may be activated by depressing the scroll wheel on your mouse) lets you roll the view, akin to a kaleidoscopic motion. If you do not have a third button, you can achieve Roll motion by holding the {kbd}`Shift` key and dragging while pressing the {kbd}`left mouse button`.
 
 * - Pan
   - {kbd}`Ctrl` + {kbd}`left mouse`
-  - Hold the {kbd}`Ctrl` key while dragging the {kbd}`left mouse button` to pan the view away from the Focus. this is akin to pitch and yaw motion in one mode. While you're learning, use this movement sparingly. Once you move the Focus out of view, flight motions become counterintuitive, we why explain next.
+  - Hold the {kbd}`Ctrl` key while dragging the {kbd}`left mouse button` to pan the view away from the Focus. This is comparable to pitch and yaw motion in one mode. While you're learning, use this movement sparingly. Once you move the focused object out of view, flight motions become counterintuitive---we why explain next.
 ::::
 
 :::{tip}
@@ -79,11 +79,11 @@ Ideally, and by default, the focused object is at the center of your view in the
 
 * - Roll
   - {kbd}`middle mouse` or {kbd}`Shift` + {kbd}`left mouse`
-  - Roll moves the view up and down without moving your position. Akin to not moving, but looking up and down.
+  - Roll moves the view up and down without moving your position, as if you're not moving from your position, but are looking up and down.
 
 * - Pan
   - {kbd}`Ctrl` + {kbd}`left mouse`
-  - This motion is exactly the same, regardless of where the Focus is relative to your view. In fact, it is the only way to bring the Focus back into your view.
+  - This motion is exactly the same, regardless of where the Focus is relative to your view. In fact, it is the only way to bring the focused object back into view.
 ::::
 
 
@@ -137,7 +137,7 @@ This is an extremely useful way to create gradual transitions between flight spe
 
 ### Advanced Flying Techniques
 
-We describe some ways you can make your flight more graceful, and take you though how to fly along a planet's surface.
+We describe some ways you can make your flight more graceful, and guide you though flying along a planet's surface.
 
 #### Compound Motion
 
@@ -148,7 +148,7 @@ One of the most effective compound flights is the spiral. To achieve a spiral fl
 - Once you have a speed you like, turn off Rotation Friction using the {kbd}`f` key.
 - Next, begin zooming toward or away using the {kbd}`right mouse button`.
 
-If you're _really_ good, you can disable friction on the Rotation and Zoom Flight Modes, then fly hands off. If you want to induce nausea disable all three frictions and see how long you last.
+If you're _really_ good, you can disable friction on the Rotation and Zoom Flight Modes, then fly hands free on an auto pilot of sorts. If you want to induce nausea, disable all three frictions and see how long you last.
 
 Similarly, when you fly over the planetary surface, it's nice to have Rotation Friction off and use the Zoom Flight Mode to control how close to the surface you are flying. We discuss that next.
 
@@ -156,7 +156,7 @@ Similarly, when you fly over the planetary surface, it's nice to have Rotation F
 
 {.advanced-topic}
 [Advanced]{.advanced}
-#### How to Land on a Planet
+#### How to Explaore a Planet's Surface
 
 For most flying, particularly through large, dispersed data in space, it is typical to maintain Focus in the center of the screen. However, landing on a planet or moon demands the object in Focus me moved away from your view.
 
@@ -214,7 +214,7 @@ Still hovering 500 km over Valles Marineris, but now with the higher-resolution 
 
 Now, "tip" Mars a bit with the Pan Flight Mode using {kbd}`Ctrl` + {kbd}`left mouse button`. Move Mars so only a little bit of Mars is visible at the bottom of your screen. 
 
-If Mars comes in tilted, you can "right" it so the horizon is horizontal by using the {kbd}`Ctrl` + {kbd}`Shift` + {kbd}`left mouse button` to set a level horizon.
+If Mars comes in tilted, you can level the horizon by using the {kbd}`Ctrl` + {kbd}`Shift` + {kbd}`left mouse button`.
 
 
 :::{figure} mars_hover.png
@@ -222,7 +222,7 @@ If Mars comes in tilted, you can "right" it so the horizon is horizontal by usin
 :width: 100%
 :alt: Hovering 15 km above the canyon
 
-About 15 km above the canyon, and we're "righted" Mars making the horizon horizontal. The orbits of Mars's two moons, Phobos and Deimos, are seen at center, while other planet's orbits are seen to the left in the sky.
+About 15 km above Mars' Valles Marineris. The orbits of Mars's two moons, Phobos and Deimos, are seen at center, while other planet's orbits are seen to the left in the sky.
 :::
 
 
@@ -238,12 +238,14 @@ Inside Valles Marineris, you can see the Altitude in the Dashboard says -198 km.
 
 From a position just above the canyon, you can now explore it using the {kbd}`left mouse button` in Rotation Mode. This will give you the sense of flying right above the surface, like a plane. Use the four directions and go where you want to explore. Flying forward in this scenario works well.
 
+##### Compound Motion on Planetary Surfaces
 
-When you get adept at landing on planets, you can begin to employ compound motion: set a good speed with the Rotation Flight Mode, then turn friction off using the {kbd}`f` key. 
+Once you are adept at landing on planets, you can begin to employ compound motion:
+1. Set a suitable speed with the Rotation Flight Mode
+2. Turn friction off using the {kbd}`f` key to drift above the surface like a plane.
+3. Use the Pan Flight Mode {kbd}`Ctrl` + {kbd}`left mouse button` to look around in different directions as you fly forward.
+4. Continue to fly forward but now alter your altitude, ascending mountains and exploring valleys, using the {kbd}`right mouse button` to change your altitude.
 
-Look around in different directions as you fly forward with the Pan Flight Mode using the {kbd}`Ctrl` + {kbd}`left mouse button`. 
-
-Now, while still flying forward on a frictionless Rotation, use the {kbd}`right mouse button` to change your altitude above and below the surface, going into the canyon and rising up as you approach a mountain or canyon wall.
 
 Landing on planets takes some practice, but it results in breathtaking scenes.
 
@@ -318,7 +320,7 @@ Let's put these navigation skills to the test. In this tutorial we will cover:
 
 ::::{grid-item} 
 :::{important}
-We use the following symbols in profile pages to indicate actions:
+We use the following symbols in tutorials to indicate actions:
 
 {.no-bullet}
 - {octicon}`rocket;1.25em;profile-tour-action` : Flight instructions
