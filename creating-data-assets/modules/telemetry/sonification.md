@@ -4,7 +4,7 @@ The [Telemetry Module](index.md) can be used together with a _sonification_ of t
 The files for the sonification can be found in _data\assets\modules\telemetry\sonification_ in the OpenSpace folder. The file _planets.asset_ is a regular OpenSpace asset that configures the telemetry module to monitor each of the planets in the solar system and their major moons. The sonification file itself is the _OpenSpaceSonification.scd_ file, which is a SuperCollider file and needs to be run separately in that program. The sonification will then be produced by SuperCollider and just uses the information that OpenSpace sends with the OSC messages provided by the telemetry module.
 
 :::{note}
-Note that the _planets.asset_ file cannot be customized or altered since the sonification expects the data from the telemetry module to be in a certain format determined by this file. If this file is altered, then the sonification file needs to be updated to reflect the change as well. If you want to create your own sonification for objects in OpenSpace other than the planets, then the general [Customized Nodes Information](./general.md#customized-nodes-information) telemetry type is likely a better fit for that purpose.
+Note that the _planets.asset_ file cannot be customized or altered since the sonification expects the data from the telemetry module to be in a certain format determined by this file. If this file is altered, then the sonification file needs to be updated to reflect the change as well. If you want to create your own sonification for objects in OpenSpace other than the planets, then the general [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type is likely a better fit for that purpose.
 :::
 
 ## SuperCollider
@@ -24,8 +24,7 @@ Note that the _planets.asset_ file cannot be customized or altered since the son
 1. Now, you can freely try the different settings for the different telemetries/sonifications, read the tooltips, and stress-test it in general.
 
 :::{danger}
-Before you shut down OpenSpace after using the telemetry module, you will need to turn off the telemetry module in the settings menu. If OpenSpace is shut down while the telemetry module is still enabled, it will **crash**. This is an issue with the Scene not being safe for multiple threads, especially around startup and shutdown. Due to the same reason, the telemetry module cannot be enabled with scripts before OpenSpace has properly booted up completely.
-<!-- @TODO (malej) I am planning to (hopefully) fix the shutdown issue in th PR. However, the startup problem will remain. -->
+Due to an unsolved issue with the Scene not being safe for multiple threads, especially around startup, the telemetry module cannot be enabled before OpenSpace has completely initialized.
 :::
 
 ## The Sounds of the Planets Sonification
