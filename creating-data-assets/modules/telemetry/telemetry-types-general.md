@@ -23,8 +23,8 @@ This telemetry type monitors the camera state and sends that information to the 
   1. The {math}`x` component of the quaternion rotation of the camera.
   1. The {math}`y` component of the quaternion rotation of the camera.
   1. The {math}`z` component of the quaternion rotation of the camera.
-  1. The movement speed of the camera, in the selected distance unit per second.
-  1. The selected distance unit for the movement speed of the camera, as a string in singular form with the first letter capitalized. For example, `Kilometer`.
+  1. The movement speed of the camera, in the unit per second specified by the next item.
+  1. The distance unit for the movement speed of the camera, as a string in singular form with the first letter capitalized. For example, `Kilometer`.
 
 Note that the first seven items describe the position and orientation of the camera. The first three items specify the {math}`x`, {math}`y`, and {math}`z` positions of the camera in the world, in relation to the Solar System barycenter. The next four items are the quaternion rotation of the camera in the order of {math}`w`, {math}`x`, {math}`y`, and {math}`z`.
 
@@ -62,10 +62,10 @@ A message from this telemetry type can for example look like this:
 In the example above, the simulation time in OpenSpace progresses {math}`30.0` minutes per real-life second, and the current time is {math}`787312539.37412` seconds past the J2000 epoch.
 
 ## Angle Calculation Mode
-For some telemetry types, such as the [Customized Nodes Information](#customized-nodes-information) and the specialized [Planets Sonification](./telemetry-types-specialized.md#planets-sonification), part of the information that is sent are two angles that describe where the object is placed on the screen, a horizontal angle and an optional elevation angle. This telemetry type monitors which method has been used to calculate those angles, more information about these angles and how they are calculated can be found in [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation). The OSC messages from this telemetry type go under the OSC label `/Mode` and contain two items:
+For some telemetry types, such as the [Customized Nodes Information](#customized-nodes-information) and the specialized [Planets Sonification](./telemetry-types-specialized.md#planets-sonification), part of the information that is sent are two angles that describe where the object is placed on the screen, a _horizontal_ angle and an optional _elevation_ angle. More information about these angles and their calculation can be found in [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation). This telemetry type monitors which method has been used to calculate those angles. The OSC messages from this telemetry type go under the OSC label `/Mode` and contain two items:
 
   1. The first item is an integer value that specifies what method was used to calculate the angles. If the value is 0, then the method used was the [Horizontal](./angle-information.md#horizontal) angle calculation mode. In the case where the value is 1, then the [Circular](./angle-information.md#circular) angle calculation mode was used.
-  1. The second value is an integer that is either 0 or 1 that detemines if the additional elevation angle is used or not. If the value is 0 then the elevation angle is always set to {math}`0.0`, if the value is 1 then the additional elevation angle is calculated.
+  1. The second value is an integer value of either 0 or 1 that determines if the additional elevation angle is used or not. If the value is one, the additional elevation angle is calculated. Otherwise, if zero, the elevation angle is always set to {math}`0.0`.
 
 A message from this telemetry type can for example look like this:
 :::{code-block}
@@ -77,10 +77,10 @@ In the example above, the used angle calculation mode is Horizontal and the addi
 ## Customized Nodes Information
 This telemetry type requires the user to specify with a script which nodes are of interest to monitor, which is what makes it customizable. There is an example file _nodes.asset_ located in _data\assets\examples\sonification_ that adds the ISS and Tiangong to the list of nodes to monitor with this telemetry type. The OSC messages from this telemetry type are split up for each of the nodes that have been added. Using the mentioned example file, the OSC messages would be sent under the OSC labels `/ISS` and `/Tiangong` respectively (i.e. the identifiers of the added nodes). The messages contain four items:
 
-  1. The distance from the camera to the node, specified in the selected distance unit.
-  1. The horizontal angle in radians to the node, with the current angle calculation mode taken into account. For more information, see [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation).
-  1. The elevation angle in radians to the node, with the current angle calculation mode taken into account. Again, see the page [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation) for details.
-  1. The selected distance unit for the distance to the camera, as a string in singular form with the first letter capitalized. For example, `Meter`.
+  1. The distance from the camera to the node, in the distance unit specified in the last item.
+  1. The horizontal angle to the node, in radians, with the current angle calculation mode taken into account. For more information, see [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation).
+  1. The elevation angle to the node, in radians, with the current angle calculation mode taken into account. Again, see the page [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation) for details.
+  1. The unit for the distance to the camera, as a string in singular form with the first letter capitalized. For example, `Meter`.
 
 A message from this telemetry type can for example look like this:
 :::{code-block}
@@ -88,4 +88,4 @@ A message from this telemetry type can for example look like this:
 [ /Tiangong, 23365224.606017, -0.22186482355859, 0.0, Meter ]
 :::
 
-The example above includes two messages. The first message is for ISS and the second is for Tiangong. In this example the angle calculation mode [Horizontal](./angle-information.md#horizontal) was used without the [elevation angle](./angle-information.md#additional-elevation-angle-horizontal) included. The first message indicates that ISS is located {math}`23649385.12794` meters from the camera, with a horizontal angle of {math}`-0.11008636407019` radians and an elevation angle of {math}`0.0` radians (the elevation angle is not enabled). The second message shows that Tiangong is {math}`23365224.606017` meters from the camera, with a horizontal angle of {math}`-0.22186482355859` radians and an elevation angle of {math}`0.0` radians.
+The example above includes two messages. The first message is for ISS and the second is for Tiangong. In this example, the [Horizontal](./angle-information.md#horizontal) angle calculation mode was used without the [elevation angle](./angle-information.md#additional-elevation-angle-horizontal) included. The first message indicates that ISS is located {math}`23649385.12794` meters from the camera, with a horizontal angle of {math}`-0.11008636407019` radians. The elevation angle is {math}`0.0` radians, since the elevation angle was not enabled. The second message shows that Tiangong is {math}`23365224.606017` meters from the camera, with a horizontal angle of {math}`-0.22186482355859` radians and an elevation angle of {math}`0.0` radians.

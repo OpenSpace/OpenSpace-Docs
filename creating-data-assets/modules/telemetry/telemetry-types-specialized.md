@@ -30,7 +30,7 @@ The OSC messages from this telemetry type are split up to each of the planets th
   1. (optional) The distance from the camera to the **second** moon in kilometers
   1. (optional) The horizontal angle in radians to the second moon.
   1. (optional) The elevation angle in radians to the second moon.
-  1. (optional) .. The data continues in the same pattern for as many moons as the planet has
+  1. (optional) ... The data then continues in the same pattern for as many moons as the planet has, with three values per moon
 
 The table below lists the aspects of the planets that can be conveyed by the sonification. Each of there aspects can be turned on or off in the settings of the user interface.
 :::{table}
