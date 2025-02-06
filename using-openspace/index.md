@@ -23,6 +23,9 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [Navigation Panel](/using-openspace/navigation-panel/index)
 : Focus on an object and use automated flights to reach them.
 
+[Time Panel](/using-openspace/time-panel/index)
+: Manipulate the date, time, and the simulation speed.
+
 
 :::{toctree}
 :maxdepth: 1
@@ -31,6 +34,7 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 building-blocks/index
 scene-panel/index
 navigation-panel/index
+time-panel/index
 :::
 
 
@@ -42,7 +46,6 @@ navigation-panel/index
 
 
 
-time-panel/index
 actions-panel/index
 create-profile/index
 skybrowser-panel/index

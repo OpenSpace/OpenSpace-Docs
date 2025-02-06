@@ -5,12 +5,7 @@ authors:
 ---
 
 
-# Time Panel: Adjust the Date
-
-:::{warning}
-This section is in progress. Text will appear on this page in the future.
-:::
-
+# Time Panel: Manipulating the Date & Time
 
 :::{figure} toolbar_time.png
 :align: center
@@ -20,10 +15,22 @@ The Time Panel Button in the OpenSpace Toolbar.
 :::
 
 
-The Time Panel enables you to set the scene to a specific date and time.
 
-This could be to dial in a specific milestone of a space mission, or simply to spin a part of a planet into sunlight. We will discuss the panel here and the ways you can use it with these data.
+## Panel Overview
 
+:::{figure} time_panel.png
+:align: right
+:width: 90%
+:figwidth: 50%
+:alt: OpenSpace's Time Panel
+
+The Time Panel in OpenSpace.
+:::
+
+
+The Time Panel is where you go to change the date and time, and alter the _Simulation Speed_, or the rate of time. 
+
+The panel has various adjustments that allow you to select the date and time via typing in values, choosing from a calendar, or using a slider to adjust the simulation speed. It has a quick adjust slider to move rate of time forward or backward interactively. And, there are buttons to automatically go to the current date and time and reset the simulation time to "realtime," or 1 second per second.
 
 
 <div style="margin-left: auto; margin-right: auto; width: 640px;">
@@ -48,39 +55,227 @@ This could be to dial in a specific milestone of a space mission, or simply to s
 
 
 
+:::{note}
+For many profiles, when you launch OpenSpace the date will be set to the current date, minus one day. This is mainly to ensure full cloud coverage on Earth---because we receive cloud imagery from the latest satellite data, we need to show yesterday's image in order to have full-Earth coverage.
+:::
 
 
-## Time
-This section will cover the various aspects of manipulating time in OpenSpace. We often refer to this as the _In-Game time_ as it oftentimes will be different from the time shown on a _wall clock_.
+
+## Time Transitions
+
+There are many methods for altering the date, time, and rate of time in OpenSpace. Each of these methods results in a transition---moving the current view to the new view specified by the new date, time, or rate of time.
+
+
+### Interpolated Transition
+
+An _interpolated_ transition happens when the view smoothly changes from the initial view to the final view. As you can imagine, if you're in the Solar System and the difference in time is minutes or hours, then this transition probably will be fairly smooth, visually. However, if you have an interpolated transition on the order of many years, the transition could be visually disorienting, particularly if you're beside a planet. In this case, you may want an instantaneous transition.
+
+### Instantaneous Transition
+
+An _instantaneous_ transition fades the view down and fades back up at the designated date and time. It is graceful no matter the duration chosen for a new date and time, but you do not maintain a visual temporal context---it's an instantaneous switch from one view to the next.
+
+
+:::::{dropdown} Transition Settings
+
+{menuselection}`Settings --> Time Manager` contains options to control the behavior of transitions. Lower values will make things happen faster, while higher values will make a transition slower.
+
+{menuselection}`Time Manager --> Default Time Interpolation Duration` sets the transition duration when you change the date.
+
+{menuselection}`Time Manager --> Default Delta Time Interpolation Duration` sets the duration of the transition when changing the rate of time, or simulated speed.
+::::::
+
+
+
+
+
+
+
+
+
+## Set a Date and Time
+
+There are several ways to specify the date and time in OpenSpace. You can type or add increments to the time fields at the top, you can choose from a calendar, or preset a time and choose a transition method.
+
+### Use the Date and Time Fields
+
+The six fields at the top of the panel---year, month, day, hours, minutes, seconds---may be used to alter the date and time. You can type directly in these fields or use the arrows above or below the fields.
+
+:::{figure} time_panel_fields.png
+:align: center
+:width: 50%
+:alt: OpenSpace's Time Panel
+
+The date and time fields.
+:::
+
+
+**Using the Arrows:** If you use the arrows, the transition is **interpolated**, meaning the transition from your present view to the view on your new specified date is animated over some set duration.
+
+**Typing in the Fields:** If you type your desired values directly in the fields, the transition is **instantaneous**. There is no possibility of a disorienting experience because it goes directly to the new view.
+
+
+### Using the Calendar
+
+::::::{grid}
+:::::{grid-item}
+The ![calendar button](time_panel_calendar_button.png) button expands the Time Panel to reveal a calendar. You can choose a date here to set a new date for OpenSpace. 
+
+Using the calendar will result in an **interpolated transition**, so use caution.
+:::::
+
+:::::{grid-item}
+:::{figure} time_panel_calendar.png
+:align: center
+:width: 100%
+:figwidth: 60%
+:alt: OpenSpace's Time Panel's calendar
+
+The locking function for time transitions.
+:::
+:::::
+::::::
+
+
+
+
+
+
+### Locking the Simulation Speed
+
+:::{figure} time_panel_lock.png
+:align: center
+:width: 40%
+:alt: OpenSpace's Time Panel
+
+Pressing the Lock Button displays the Interpolate, Set, and Cancel buttons.
+:::
+
+The ![Lock Button](time_panel_lock_button.png) button allows you to alter the date and time without altering the view. Normally, if you set a new date the view will change to the date specified, either instantaneously or by interpolating to it as we discussed above. When you use the Lock Button, you can change the date and the view won't change until you press either the Interpolate Button or the Set Button.
+
+The {menuselection}`Interpolate` Button results in an interpolated transition, while the {menuselection}`Set` Button will bring up the view for the new date using an instantaneous transition.
+
+
+
+
+## Simulation Speed
+
+The Simulation Speed alters the **rate** of time in OpenSpace. There will be many reasons for changing the speed of the simulation: to see the planets revolve around the Sun, to spin one side of a planet into sunlight, examine a mission and its spacecraft over time, or to watch the stars move over millennia.  
+
+### Display Unit Menu
+
+:::{figure} time_panel_simulation_units.png
+:align: right
+:width: 90%
+:figwidth: 40%
+:alt: The Time Panel display unit menu.
+
+The Time Panel's Display Unit Menu to change the rate of time.
+:::
+
+Use the Display Unit dropdown menu to select the time units you desire, between seconds and years. Pressing on the field reveals the menu.
+
+### Time Rate Value
+
+Change the time increment in the two sliders below the menu. The left slider is for negative rates of time (time going in reverse), the right slider is for positive rates moving time into the future.
+
+The unit on the rate of time will be displayed in the slider. By default, the rate of time is seconds per second. Of course, when the value is 1 and the unit is seconds/second, we're running in real time. If you change the unit to hours, then the slider will show "hours/second, and if the value is 10, then time will move at 10 hours for every second on your watch.
+
+Like all sliders in OpenSpace, you can:
+- Click the mouse inside the slider to set a value, then drag to move the value to the desired value, or
+- Type a specific value by right-clicking inside the slider, then press {kbd}`Enter` to set the value.
+
+### Quick Adjust
+
+Use the Quick Adjust slider to adjust the rate temporarily. For example, if you wanted to move one side of a planet into sunlight, you might set the Display Unit to Hours, then move the Quick Adjust slider a bit to the left (backward in time) or right (forward in time) at a rate that complements what you're trying to achieve. Once you let go of the slider, your rate of time will return to your original value.
+
+
+
+### Play/Pause Button
+
+The Play/Pause Button does just that to the Simulation Time. Pausing will, obviously, bring the passage of time in OpenSpace to a halt. Play will resume the passing of time at the presently set rate. Alternatively, you can use the {kbd}`Space` button to play and pause the simulation time. This action will include an interpolated transition to go from start to stop. If you want to forego that transition you can use {kbd}`Shift` + {kbd}`Space`, which will result in an instantaneous transition.
+
+
+:::::{dropdown} Pause/Unpause Transition Options
+When you press the Play/Pause button, there is a transition that occurs when time comes to a halt (Pause Button), or when time ramps up from zero to the desired simulation time (Play Button).
+
+Inside the {menuselection}`Settings --> Time Manager` menu, you will find these two options for controlling this transition duration:
+- {menuselection}`Time Manager --> Default Pause Interpolation Duration` affects how long the transition will take when pausing, which is changing the rate of time from your chosen value to zero.
+- {menuselection}`Time Manager --> Default Unpause Interpolation Duration` affects how long the transition will take when unpausing, which is changing the rate of time from zero to your chosen value.
+:::::
+
+
+### Fast-forward & Rewind Buttons
+The fast-forward and rewind buttons change the simulation speed according to preset increments defined in a profile. Appearing under each button is the increment it will implement and it will change as you progressively select adjacent increments. 
+
+Alternatively, you can use the keyboard shortcuts {kbd}`→` to increase and {kbd}`←` to decrease the simulation time by the increments specified in the profile. For example, in the [](/profiles/default/index.md) Profile, the second time increment is 5.0 (see the _Default Profile Time Increments_ dropdown below), and this value is shown under the fast-forward button. If you press the {kbd}`→` key, the simulated time will increase to 5 seconds per second. Press the {kbd}`←` key and it will return to 1 second per second.
+
+You can also use the number keys {kbd}`1`, {kbd}`2`, ..., {kbd}`0` to go directly to a time increment, so {kbd}`1` sets the simulated time to the first defined increment: 1 second per second. {kbd}`2` sets it to 5 seconds per second, and so on. If you press {kbd}`Alt` + {kbd}`1`, {kbd}`Alt` + {kbd}`2`, etc., you can go directly to the negative value of the increment. So, hitting {kbd}`2` will take you to a simulated time of 5 seconds per second, and hitting {kbd}`Alt` + {kbd}`2` will take you directly to -5 seconds per second.
+
+
+
+:::::{dropdown} Default Profile Time Increments
+
+This block of code from the [](/profiles/default/index) profile file defines the increments for the Simulated Speed.
+:::{code-block} lua
+"delta_times": [
+    1.0,
+    5.0,
+    30.0,
+    60.0,
+    300.0,
+    1800.0,
+    3600.0,
+    43200.0,
+    86400.0,
+    604800.0,
+    1209600.0,
+    2592000.0,
+    5184000.0,
+    7776000.0,
+    15552000.0,
+    31536000.0,
+    63072000.0,
+    157680000.0,
+    315360000.0,
+    630720000.0
+  ],
+:::
+
+:::::
+
+
 
 
 ## Keyboard Shortcuts
-Upon launch of the default profile, the simulation will be set to one day behind the current time -- this is to provide full coverage of Earth as often, temporal data will not yet be available for the current date. However, the date of the simulation can be changed to any date. By default the simulation will progress in real time, also expressed as _1 second per second_. The rate at which the simulation progresses (also called the _Delta Time_) can be changed. Press the {kbd}`RightArrow` key once to change it to _5 seconds per second_. Now time inside _OpenSpace_ progresses five times as fast as in real life. Press the {kbd}`LeftArrow` to change it back to real-time. You can also pause the progress of time entirely by pressing the {kbd}`Space` key. Lastly, the number keys {kbd}`1-0` are set to different _Delta Times_ that can be accessed directly through those keys.
 
-As you can tell, all of the keys we have used so far have changed the time smoothly. To see this in action use the {kbd}`RightArrow` key to increase the _Delta Time_ to _12h per second_ and you should see Earth rotate every two seconds. If you now press the {kbd}`Space` key, it will take a short while for the Earth to stop spinning. If you press {kbd}`Shift+Space` instead, the Earth will start spinning immediately instead. Similarly, {kbd}`Shift+1-0` and {kbd}`Shift+LeftArrow` and {kbd}`Shift+RightArrow` will instantaneously change the _Delta Time_ to the new value.
+Summary of the keyboard shortcuts for the Time Panel.
 
-Lastly, {kbd}`Alt+1-0` will change the _Delta Time_ to the corresponding negative value. So {kbd}`2` will change it to _5 seconds per second_ and {kbd}`Alt+2` will change it to _-5 seconds per second_, meaning that we slowly move into the past.
+:::{list-table}
+:header-rows: 1
+:stub-columns: 1
+* - Shortcut
+  - Function
+* - {kbd}`Space`
+  - Play or pause the simulation time.
+* - {kbd}`→`
+  - Increase the simulation time.
+* - {kbd}`←`
+  - Decrease the simulation time.
+* - {kbd}`1` to {kbd}`0`
+  - Change the simulation time to one of the predefined increments.
+* - {kbd}`Shift` + {kbd}`1` to {kbd}`Shift` + {kbd}`0`
+  - Change the simulation time to one of the predefined increments.
+* - {kbd}`Shift` + {kbd}`Space`
+  - Play or pause the simulation time which will result in an instantaneous transition.
+* - {kbd}`Shift` + {kbd}`→`
+  - Increase the simulation time with an instantaneous transition.
+* - {kbd}`Shift` + {kbd}`←`
+  - Decrease the simulation time with an instantaneous transition.
+* - {kbd}`Alt` + {kbd}`1` to {kbd}`Alt` + {kbd}`9`
+  - Change the simulation time to the negative value of the predefined increment.
+
+:::
 
 
-## Time Menu
-Keyboard shortcuts are useful to quickly change the time, but it can be difficult to set an accurate time using these buttons. In order to jump to a specific time, click on the date at the bottom of the screen will open the Time menu. The Time menu can be popped out using the button in the upper right next to `x`. The Time menu is separated into sections for changing the date, the rate of time, and two buttons. The {menuselection}`Realtime` and {menuselection}`Now` buttons set the rate of time to one second per second and set the date to the current date respectively.
 
-There are different ways to change the date/time using the Time menu. Clicking the arrow above or below any of the date components will advance or retract that part of the date. For example, clicking the arrow above the current month will advance time by one month, clicking on the arrow below the current day will change the time inside _OpenSpace_ back by one day. Similar to the keyboard shortcuts above, holding the {kbd}`Shift` key while clicking on the arros will change the time instantly.
-
-You can also type values directly into the date components. After entering the value you must press the {kbd}`Enter` key to confirm the change. Make sure to enter valid values for time and date, invalid values (such as 55 for day, or 75 for minutes) will result in unexpected behavior. An alternatie way to change the date is to use the calendar function of the Time menu. To show the calendar, click the expand icon on the right next to the seconds component of the date. Clicking on a date in the calendar will smoothly transition the date, holding {kbd}`Shift` while clicking instantly sets the date.
-
-The most flexible way to change the date is to use the lock icon on the left, next to the year component of the date. Clicking the lock icon will expand the menu with three new buttons. Once activated, you can now change the components of the date without the simulation updating. Once you have changed all the components to the exact date/time you want to use, then press the 'Interpolate' or 'Set' buttons to change the date in the simulation.
-
-### Changing the Rate of Time
-There are four components of the Time menu under {menuselection}`Simulation Speed`. The main two components are the {menuselection}`Display Unit` dropdown and the {menuselection}`Unit/second` sliders. To change the rate of time, adjust the dropdown to your desired unit, and then use the slider to specify the value you want. For time to go in reverse, use the {menuselection}`Negative Unit/second` slider. The third component is the {menuselection}`Quick Adjust` Slider.
-
-Once you have chosen your desired rate, click and hold the {menuselection}`Quick Adjust` slider to make a momentary change to the rate. When you release the mouse the rate will return to your chosen value. The fourth components are the arrow and Play/Pause buttons. The arrow buttons will cycle through predetermined rates of time specified by the profile the same way as the {kbd}`LeftArrow` and {kbd}`RightArrow` keys will. The Play/Pause button will toggle the rate of time between zero and your specified value just like using the {kbd}`Space` key, holding {kbd}`Shift` while clicking the Play/Pause button will make an instant change to the rate instead of a smooth change.
-
-
-## Time Options in the Settings Menu
-The {menuselection}`Settings --> Time Manager` section contains four values relevant to the Time menu. Lower values will make things happen faster, higher values will make things happen slower. {menuselection}`Default Time Interpolation Duration` affects how long the interpolation will take when changing the date. {menuselection}`Default Delta Time Interpolation Duration` affects how long the interpolation will take when changing the rate of time. `Default Pause Interpolation Duration` affects how long the interpolation will take when pausing, which is changing the rate of time from your chosen value to zero. {menuselection}`Default Unpause Interpolation Duration` affects how long the interpolation will take when unpausing, which is changing the rate of time from zero to your chosen value.
-
-
-## Video
-This video illustrates all of the concepts that are presented in this part of the getting started guide:
 
