@@ -30,18 +30,18 @@ ModuleConfigurations = {
 
 :::
 
-The first two settings in the example above are the IP address and port for the receiver of the OSC telemetry messages. The next setting is the angle calculation mode that is used, and the last setting is whether an elevation angle should be added in the angle calculation. For more information about the angle calculation modes and which is more suitable for your system, see [Angle Calculations Explanation](./angle-information.md#angle-calculations-explanation). In the example above, the IP address used is `"127.0.0.1"`, which is the local computer, and the port `57120` is used, which is the port where the software [SuperCollider](https://supercollider.github.io/) receives OSC messages from by default. For more information about SuperCollider and how it can be used for sonification, see [Sonification](./sonification.md#sonification). Lastly, the angle calculation mode is set as `"Horizontal"`, and no elevation angle is added.
+The first two settings in the example above are the IP address and port for the receiver of the OSC telemetry messages. The next setting is the angle calculation mode that is used, and the last setting is whether an elevation angle should be added in the angle calculation. For more information about the angle calculation modes and which is more suitable for your system, see [Angle Calculations](./angle-information.md). In the example above, the IP address used is `"127.0.0.1"`, which is the local computer, and the port `57120` is used, which is the port where the software [SuperCollider](https://supercollider.github.io/) receives OSC messages from by default. For more information about SuperCollider and how it can be used for sonification, see [Sonification](./sonification.md#sonification). Lastly, the angle calculation mode is set as `"Horizontal"`, and no elevation angle is added.
 
 ## How To Use It
 <!--@TODO (malej) Add a short text of how the telemetry module can be used. Including the sonification examples and possible other OSC reciving software. -->
 
 To use the telemetry module in OpenSpace, follow these steps:
 
-1. Configure the telemetry settings, such as the receiver's IP address and port, in the _openspace.cfg_ file before starting OpenSpace. See an example of this above.
-1. Start OpenSpace and navigate to the settings menu in the user interface.
-1. Under _Settings/Modules_ locate and enable the telemetry module.
-1. Select the desired telemetry types to be used by checking the corresponding checkboxes. See the next section [Telemetry Types](#telemetry-types) for an overview of the different telemetry types.
-1. Now you can freely fly around in OpenSpace and the telemetry data will be sent to the specified OSC receiver in real-time.
+  1. Configure the telemetry settings, such as the receiver's IP address and port, in the _openspace.cfg_ file before starting OpenSpace. See an example of this above.
+  1. Start OpenSpace and navigate to the settings menu in the user interface.
+  1. Under _Settings/Modules_ locate and enable the telemetry module.
+  1. Select the desired telemetry types to be used by checking the corresponding checkboxes. See the next section [Telemetry Types](#telemetry-types) for an overview of the different telemetry types.
+  1. Now you can freely fly around in OpenSpace and the telemetry data will be sent to the specified OSC receiver in real-time.
 
 :::{danger}
 Due to an unsolved issue with the Scene not being safe for multiple threads, especially around startup, the telemetry module cannot be enabled before OpenSpace has completely initialized.

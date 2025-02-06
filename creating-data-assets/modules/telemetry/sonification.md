@@ -1,3 +1,8 @@
+---
+authors:
+  - name: OpenSpace Team
+---
+
 # Sonification
 The [Telemetry Module](index.md) can be used together with a _sonification_ of the planets in our solar system. Sonification is the concept of conveying information using sound (in contrast to visualization, where information is conveyed using images). In addition to the telemetry module, the sonification requires a separate application/program called [SuperCollider](#supercollider). This software will be used as the receiver for the OSC messages from the telemetry module.
 
@@ -12,16 +17,16 @@ Note that the _planets.asset_ file cannot be customized or altered since the son
 
 <!-- @TODO (malej) Add instruction on how to add needed SuperCollider dependencies to run the sonification in an immersive surround environment -->
 
-1. Download and install [SuperCollider](https://supercollider.github.io/)
-1. Run the SuperCollider planets sonification file _OpenSpaceSonification.scd_ located in _data\assets\modules\telemetry\sonification_.
+  1. Download and install [SuperCollider](https://supercollider.github.io/)
+  1. Run the SuperCollider planets sonification file _OpenSpaceSonification.scd_ located in _data\assets\modules\telemetry\sonification_.
     - To run the file in SuperCollider, click on line 8 and press CTRL + ENTER
     - Wait a while for the sonification to boot up
     - The SuperCollider console should respond with: `Sonification is ready` when it is finished
-1. Run OpenSpace with the profile called _sonification_
-1. Turn on the Telemetry module in the user interface under _Settings/Modules_
-1. Turn on the telemetries/sonifications that are of interest with the checkboxes in the telemetry module settings
-1. Fly around in OpenSpace, and you should see messages being printed in the SuperCollider console window
-1. Now, you can freely try the different settings for the different telemetries/sonifications, read the tooltips, and stress-test it in general.
+  1. Run OpenSpace with the profile called _sonification_
+  1. Turn on the Telemetry module in the user interface under _Settings/Modules_
+  1. Turn on the telemetries/sonifications that are of interest with the checkboxes in the telemetry module settings
+  1. Fly around in OpenSpace, and you should see messages being printed in the SuperCollider console window
+  1. Now, you can freely try the different settings for the different telemetries/sonifications, read the tooltips, and stress-test it in general.
 
 :::{danger}
 Due to an unsolved issue with the Scene not being safe for multiple threads, especially around startup, the telemetry module cannot be enabled before OpenSpace has completely initialized.
@@ -35,7 +40,7 @@ The table below describes what aspects of the planets are conveyed by the sonifi
 |----------------------|---------------------------| ------------------------------------------------------------|
 | Mass                 | Pitch                     | Higher pitch = Lower mass                                   |
 | Length of day        | Tempo of oscillation      | Faster tempo = Shorter day                                  |
-| Length of Year       | Surround position         | Uses [angle calculations](./angle-information.md#angle-calculations-explanation) to place the planet in a surround sound configuration |
+| Length of Year       | Surround position         | Uses [angle calculations](./angle-information.md) to place the planet in a surround sound configuration |
 | Gravity              | Bouncing ball sound       | Faster bouncing ball = Stronger gravity                     |
 | Temperature          | Sizzling intensity        | More sizzling = Higher temperature                          |
 | Atmospheric pressure | Depth of wind sound       | Deeper wind sound = Higher atmospheric pressure             |
