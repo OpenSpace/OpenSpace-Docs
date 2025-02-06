@@ -1,6 +1,7 @@
 ﻿__pycache__
 .venv
 build
+reference/asset_examples
 reference/asset-components
 reference/scripting-api
 reference/renderable-overview.md

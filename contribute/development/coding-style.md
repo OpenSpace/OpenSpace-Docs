@@ -429,6 +429,24 @@ ReturnType function(int param1, int p2,
                int reallyLongParameterName)
 {
 
+// 3. Once a "too long" parameter is
+// encountered, all the remaining
+// parameters are also right-aligned
+Return Type function(int param1, int p2,
+                     int p2, int p3,
+               int reallyLongParameterName,
+                                    int p4)
+{
+
+// 4. Once a "too long" parameter is
+// encountered, all the remaining
+// parameters are also right-aligned
+Return Type function(int param1, int p2,
+                     int p2, int p3,
+               int reallyLongParameterName,
+                            int p4, int p5)
+{
+
 //
 // Function calls
 //
