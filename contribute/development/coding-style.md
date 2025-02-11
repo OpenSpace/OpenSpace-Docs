@@ -238,7 +238,7 @@ We use Doxygen to document classes, enums, functions, etc. in the source code. A
 
 Syntax highlighting in Doxygen can be done using Markdown-style annotations.
 
-### 1. Overall structure for Doxygen comments:
+### 1. Overall structure for Doxygen comments
 Nonapplicable things of course can be left out, and if that happens, we leave out the empty line at the end.
 
   1. Description text
@@ -471,25 +471,34 @@ int result = function(
 );
 
 // An exception to this is the handling of
-// parameters to the fmt::format function
+// parameters to the std::format function
 // since this function is not supposed to
 // take any complex, derived parameters.
 // In this case, it is better to provide
 // the arguments in a compact manner:
-LINFO(fmt::format(
+LINFO(std::format(
     "Foobar {} and barfoo {}", nBars, nFoos
 ));
 
 // The exception continues even if the
 // arguments don't fit on the same line.
 // In the case were the arguments are going
-// into the fmt::format function, they can
+// into the std::format function, they can
 // all be on the same line. But avoid any
 // complex function expressions in here
-LINFO(fmt::format(
+LINFO(std::format(
     "Foobarbazbarbazbar {} and barfoo {}",
     nBars, nFoos
 ));
+
+// Another exception is when calling the
+// `connect` function in Qt code. In that
+// case it is more useful to group the
+// object together with the signal/slot.
+connect(
+  obj, &TypeA::foo,
+  this, &TypeB::bar
+);
 
 //
 // Operators
