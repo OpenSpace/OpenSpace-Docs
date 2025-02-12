@@ -51,7 +51,7 @@ A  message from this telemetry type can for example look like this:
 [ /Earth, 23378.137051742, -1.3549538910548, 0.0, Int8Array[ 1, 0, 0, 1, 0, 0 ], 393844.29544736, 1.1503961663306, 1.4013056448997 ]
 :::
 
-In the example above, there are two messages. The first message is for Mercury, and the second is for Earth. In this example the angle calculation mode [Circular](./angle-information.md#circular) was used with the [elevation angle](./angle-information.md#additional-elevation-angle-circular) included. The example messages above can be broken down into the following parts:
+In the example above, there are two messages. The first message is for Mercury, and the second is for Earth. In this example the angle calculation mode [Circular](./angle-information.md#circular) was used with the {ref}`elevation angle <additional-elevation-angle-circular>` included. The example messages above can be broken down into the following parts:
 
 ::::{grid} 1 1 1 2
 :::{grid-item}

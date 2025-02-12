@@ -4,20 +4,24 @@ authors:
 ---
 
 # Angle Calculations
-The telemetry types in the [Telemetry Module](index.md) sometimes provide angles from the camera to one or more tracked objects in the scene. The angles provide information about the objects' location in relation to the viewer (camera). This page covers the details of how those angles are computed. 
+The telemetry types in the [Telemetry Module](index.md) sometimes provide angles from the camera to one or more tracked objects in the scene. The angles provide information about the objects' location in relation to the viewer (camera). This page covers the details of how those angles are computed.
 
-As briefly mentioned in the [Angle Calculation Mode](./telemetry-types-general.md#angle-calculation-mode) telemetry type on the general telemetry types page, there are two different angle calculation modes: [Horizontal](#horizontal) and [Circular](#circular). The mode can be set in the OpenSpace user interface and which mode to use depends on the type of display and/or sound environment used, as well as the use case. For example, in the [sonification](./sonification.md#sonification), the angles map sounds to positions in a surround sound system. Depending on the setup of the speakers in a surround sound system, the angle may need to be computed differently. This is why there are two modes. The Horizontal mode is tailored for display environments with a forward-facing direction, like the Visualization Center dome theater in Norrköping, Sweden. While the Circular mode is designed for omnidirectional planetariums, like the Hayden Planetarium at the American Museum of Natural History in New York, USA. For an overview of these surround sound configurations, see [Surround Sound Configurations](./sonification.md#surround-sound-configurations). Each angle calculation mode and its respective use case is explained in more detail below.
+As briefly mentioned in the [Angle Calculation Mode](./telemetry-types-general.md#angle-calculation-mode) telemetry type on the general telemetry types page, there are two different angle calculation modes: [Horizontal](#horizontal) and [Circular](#circular). The mode can be set in the OpenSpace user interface, and which mode to use depends on the type of display and/or sound environment used, as well as the use case. For example, in the [sonification](./sonification.md#sonification), the angles map sounds to positions in a surround sound system. Depending on the setup of the speakers in a surround sound system, the angle may need to be computed differently. This is why there are two modes. The Horizontal mode is tailored for display environments with a forward-facing direction, like the Visualization Center dome theater in Norrköping, Sweden, while the Circular mode is designed for omnidirectional planetariums, like the Hayden Planetarium at the American Museum of Natural History in New York, USA. For an overview of these surround sound configurations, see [Surround Sound Configurations](./sonification.md#surround-sound-configurations). Each angle calculation mode and its respective use case is explained in more detail below.
 
 Both angle calculation modes will always compute an angle from the camera to the object within a horizontal plane of reference in relation to the camera. However, both modes may also include an optional _elevation angle_ that provides information about the objects' vertical height in relation to the reference plane.
 
+:::{important}
+In a multiple-node display system, where several computers work together to create an immersive display (such as a dome theater or a planetarium), the angles are only calculated on the main display (often the display used by the pilot). Therefore, to ensure that the angles match the surround sound system, it is important that the main display is configured to align with the surround system. For example, if the immersive display has a forward direction at the center of the entire display, then the main display should also have its center as the forward direction. This ensures that the angles calculated for the main display correspond to the object's position in the larger immersive environment, aligning with the surround sound configuration.
+:::
+
 :::{note}
-Note that in a multiple node display system, where several computers work together to create an immersive display (such as a dome theater or a planetarium), the angles are only calculated on the main display (often the display used by the pilot). Therefore, to ensure that the angles match the surround sound system, it is important that the main display is configured to align with the surround system. For example, if the immersive display has a forward direction at the center of the entire display, then the main display should also have its center as the forward direction. This ensures that the angles calculated for the main display correspond to the object's position in the larger immersive environment, aligning with the surround sound configuration.
+Note that in the figures below, none of the vectors that are shown are normalized.
 :::
 
 :::::{tab-set}
 ::::{tab-item} Horizontal
 ## Horizontal
-This angle calculation mode is suitable for flat displays or forward-facing immersive environments, such as the Visualization Center dome theater in Norrköping, Sweden. For more information about surround sound configurations, see [Surround Sound Configurations](./sonification.md#surround-sound-configurations). This angle determines where the object is placed within a horizontal plane of reference in relation to the camera, how this angle is computed is explained below.
+This angle calculation mode is suitable for flat displays or forward-facing immersive environments, such as the Visualization Center dome theater in Norrköping, Sweden. For more information about surround sound configurations, see [Surround Sound Configurations](./sonification.md#surround-sound-configurations). This angle determines where the object is placed within a horizontal plane of reference in relation to the camera. How this angle is computed is explained below.
 
 The goal is to calculate the angle, {math}`\theta`, from the camera to the object within a horizontal plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{View}` vector and the left direction of the camera (i.e., the negative {math}`Camera_{Right}` vector), with the {math}`Camera_{Up}` vector as the normal. The image below shows a figure of these objects and the computations.
 
@@ -37,7 +41,8 @@ The {math}`CameraToObject` vector is the vector from the {math}`Camera` to the {
 
 Then the angle, {math}`\theta`, between the {math}`Camera_{View}` vector, and the {math}`P_{R}(Object)` vector, is calculated with the {math}`Camera_{Up}` vector (i.e. the normal of the plane {math}`R`) used as the reference axis. The angle goes from {math}`-\pi` to {math}`\pi` in radians, and zero degrees would be directly in the {math}`Camera_{View}` direction. When the object is located towards the left relative to the {math}`Camera_{View}` vector, then the angle will be a positive value. If instead, the object is located towards the right, the angle will become negative, as shown in the figure above.
 
-### Additional Elevation Angle (Horizontal)
+### Additional Elevation Angle
+(additional-elevation-angle-horizontal)=
 This angle is optional and is only calculated if a setting in the [Telemetry Module](index) is enabled. If this setting is not enabled, then this angle is always set to {math}`0.0`. This angle determines where the object is placed within a vertical plane of reference in relation to the camera, i.e the height in relation to the horizontal plane of reference mentioned in the previous section. How this angle is computed is explained below.
 
 The goal is to calculate the elevation angle, {math}`\psi`, from the camera to the object within a vertical plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{View}` vector and the {math}`Camera_{Up}` vector, with the {math}`Camera_{Right}` vector as the normal. The image below shows a figure of these objects and the computations.
@@ -58,9 +63,43 @@ The {math}`CameraToObject` vector is the vector from the {math}`Camera` to the {
 
 Then the elevation angle, {math}`\psi`, between the {math}`Camera_{View}` vector, and the {math}`P_{R}(Object)` vector is calculated, with the {math}`Camera_{Right}` vector (i.e. the normal of plane {math}`R`) used as the reference axis. The elevation angle goes from {math}`-\frac{\pi}{2}` to {math}`\frac{\pi}{2}` in radians, and zero degrees would be directly in the {math}`Camera_{View}` direction. When the object is located above the {math}`Camera_{View}` vector, then the elevation angle will be a positive value, as shown in the figure above. If instead, the object is located below, the elevation angle will become negative.
 
-<!-- @TODO Add an explanation that the angles for the moons are calculated in another manner and add figures for that too. -->
-::::
+### Moon Angle
+(moon-angle-horizontal)=
+This angle is only calculated for the specialized [Planets Sonification](./telemetry-types-specialized.md#planets-sonification) telemetry type. It is the angle from the planet, {math}`A`, to one of its moons, {math}`B`, within a horizontal plane of reference in relation to the camera, how this angle is computed is explained below.
 
+The goal is to calculate the angle, {math}`\theta`, from object {math}`A` (the planet) to object {math}`B` (the moon) within a horizontal plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{View}` vector and the left direction of the camera (i.e., the negative {math}`Camera_{Right}` vector), with the {math}`Camera_{Up}` vector as the normal. The image below shows a figure of these objects and the computations.
+
+<!-- @TODO Generate a dark mode version of this image -->
+:::{image} images/horizontal-moon.png
+:alt: "Moon Angle Calculation (Horizontal) Schematic"
+:width: 100%
+:align: center
+:class: only-light
+:::
+
+The {math}`AToB` vector is the vector from the object {math}`A` to object {math}`B`. The {math}`P_{R}(AToB)` vector is then the {math}`AToB` vector projected onto the reference plane {math}`R`. The {math}`M(Camera_{View})` vector is the {math}`Camera_{View}` vector that has been moved (without changing its direction) to the projected position of {math}`A` onto the reference plane {math}`R`.
+
+Then the angle, {math}`\theta`, between the {math}`M(Camera_{View})` vector, and the {math}`P_{R}(AToB)` vector, is calculated with the {math}`Camera_{Up}` vector (i.e. the normal of the plane {math}`R`) used as the reference axis. The angle goes from {math}`-\pi` to {math}`\pi` in radians, and zero degrees would be directly in the {math}`M(Camera_{View})` direction. When the object is located towards the left relative to the {math}`M(Camera_{View})` vector, then the angle will be a positive value. If instead, the object is located towards the right, the angle will become negative, as shown in the figure above.
+
+### Moon Additional Elevation Angle
+(moon-additional-elevation-angle-horizontal)=
+This angle is only calculated for the specialized [Planets Sonification](./telemetry-types-specialized.md#planets-sonification) telemetry type. This angle is also optional and only calculated if a setting in the [Telemetry Module](index) is enabled. If this setting is not enabled, then this angle is always set to {math}`0.0`. It is the elevation angle from the planet, {math}`A`, to one of its moons, {math}`B`, within a vertical plane of reference in relation to the camera, i.e the height in relation to the horizontal plane of reference mentioned in the previous section. How this angle is computed is explained below.
+
+The goal is to calculate the elevation angle, {math}`\psi`, from object {math}`A` (the planet) to object {math}`B` (the moon) within a vertical plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{View}` vector and the {math}`Camera_{Up}` vector, with the {math}`Camera_{Right}` vector as the normal. The image below shows a figure of these objects and the computations.
+
+<!-- @TODO Generate a dark mode version of this image -->
+:::{image} images/horizontal-moon-vertical.png
+:alt: "Moon Elevation Angle Calculation (Horizontal) Schematic"
+:width: 100%
+:align: center
+:class: only-light
+:::
+
+The {math}`AToB` vector is the vector from the object {math}`A` to object {math}`B`. The {math}`P_{R}(AToB)` vector is then the {math}`AToB` vector projected onto the reference plane {math}`R`. The {math}`M(Camera_{View})` vector is the {math}`Camera_{View}` vector that has been moved (without changing its direction) to the projected position of {math}`A` onto the reference plane {math}`R`.
+
+Then the elevation angle, {math}`\psi`, between the {math}`M(Camera_{View})` vector, and the {math}`P_{R}(AToB)` vector is calculated, with the {math}`Camera_{Right}` vector (i.e. the normal of plane {math}`R`) used as the reference axis. The elevation angle goes from {math}`-\frac{\pi}{2}` to {math}`\frac{\pi}{2}` in radians, and zero degrees would be directly in the {math}`M(Camera_{View})` direction. When the object is located above the {math}`M(Camera_{View})` vector, then the elevation angle will be a positive value, as shown in the figure above. If instead, the object is located below, the elevation angle will become negative.
+
+::::
 ::::{tab-item} Circular
 ## Circular
 This angle calculation mode is suitable for centered fisheye displays or omnidirectional immersive environments, such as the Hayden Planetarium at the American Museum of Natural History in New York, USA. For more information about surround sound configurations see [Surround Sound Configurations](./sonification.md#surround-sound-configurations). This angle determines where the object is placed in a circular space around the center of the screen.
@@ -83,7 +122,8 @@ The {math}`CameraToObject` vector is the vector from the {math}`Camera` to the {
 
 Then the angle, {math}`\theta`, between the {math}`Camera_{Up}` direction, and the {math}`Radius` vector, is calculated with the negative {math}`Camera_{View}` vector (i.e. the normal of the {math}`CameraViewPlane`) used as the reference axis.
 
-### Additional Elevation Angle (Circular)
+### Additional Elevation Angle
+(additional-elevation-angle-circular)=
 This angle determines how far away from the center of the screen the object is.
 
 An additional elevation angle, {math}`\psi`, in the vertical direction within the {math}`Camera View + Up Plane` can be added to the calculations. This is enabled with a setting in the [Telemetry Module](index). The {math}`Camera View + Up Plane` is the plane with the {math}`Camera_{View}` direction and the {math}`Camera_{Up}` direction, with the {math}`Camera_{Right}` direction as the normal. The elevation angle goes from {math}`-\dfrac{\pi}{2}` to {math}`\dfrac{\pi}{2}` in radians and zero degrees is directly in the {math}`Camera_{View}` direction. Positive elevation angles is in the {math}`Camera_{Up}` direction, and negative angles are in the down direction of the camera.
@@ -107,8 +147,24 @@ In the next step, the angle {math}`\theta`, between the {math}`Camera_{Up}` dire
 
 The next step is to counter-rotate the {math}`CameraToObject` vector with the angle {math}`\theta` from the previous step. The result is that the {math}`CameraToObject_{Rotated}` vector is now located within the {math}`Camera View + Up Plane`.
 
-Lastly, the elavation angle, {math}`\psi`, between the {math}`Camera_{View}` direction, and the {math}`CameraToObject_{Rotated}` vector is calculated, with the {math}`Camera_{Right}` vector (i.e. the normal of the {math}`Camera View + Up Plane`) used as the reference axis.
+Lastly, the elevation angle, {math}`\psi`, between the {math}`Camera_{View}` direction, and the {math}`CameraToObject_{Rotated}` vector is calculated, with the {math}`Camera_{Right}` vector (i.e. the normal of the {math}`Camera View + Up Plane`) used as the reference axis.
 
-<!-- @TODO Add an explanation that the angles for the moons are calculated in another manner and add figures for that too. -->
+### Moon Angle
+(moon-angle-circular)=
+This angle is only calculated for the specialized [Planets Sonification](./telemetry-types-specialized.md#planets-sonification) telemetry type. It is the angle from the planet, {math}`A`, to one of its moons, {math}`B`, within a horizontal plane of reference in relation to the camera, how this angle is computed is explained below.
+
+The goal is to calculate the angle, {math}`\theta`, from object {math}`A` (the planet) to object {math}`B` (the moon) within a horizontal plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{View}` vector and the left direction of the camera (i.e., the negative {math}`Camera_{Right}` vector), with the {math}`Camera_{Up}` vector as the normal. The image below shows a figure of these objects and the computations.
+
+<!-- @TODO Generate a dark mode version of this image -->
+:::{image} images/horizontal-moon.png
+:alt: "Moon Angle Calculation (Horizontal) Schematic"
+:width: 100%
+:align: center
+:class: only-light
+:::
+
+The {math}`AToB` vector is the vector from the object {math}`A` to object {math}`B`. The {math}`P_{R}(AToB)` vector is then the {math}`AToB` vector projected onto the reference plane {math}`R`. The {math}`M(Camera_{View})` vector is the {math}`Camera_{View}` vector that has been moved (without changing its direction) to the projected position of {math}`A` onto the reference plane {math}`R`.
+
+Then the angle, {math}`\theta`, between the {math}`M(Camera_{View})` vector, and the {math}`P_{R}(AToB)` vector, is calculated with the {math}`Camera_{Up}` vector (i.e. the normal of the plane {math}`R`) used as the reference axis. The angle goes from {math}`-\pi` to {math}`\pi` in radians, and zero degrees would be directly in the {math}`M(Camera_{View})` direction. When the object is located towards the left relative to the {math}`M(Camera_{View})` vector, then the angle will be a positive value. If instead, the object is located towards the right, the angle will become negative, as shown in the figure above.
 ::::
 :::::
