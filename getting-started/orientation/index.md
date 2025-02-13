@@ -150,11 +150,12 @@ Throughout this guide, we will refer to this panel as {menuselection}`System`.
 
 
 :::{figure} panel_system.png
-:align: right
-:width: 100%
+:align: center
+:width: 60%
+:figwidth: 50% 
 :alt: The OpenSpace System Menu
 
-The OpenSpace {menuselection}`System` Menu.
+OpenSpace's System Menu.
 :::
 
 

@@ -342,212 +342,168 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Rotation Flight Mode
-::::::{grid} 1 2 2 2
 
-:::::{grid-item}
-[![Earth in OpenSpace](earth_upon_launch.png)](earth_upon_launch.png)
-:::::
-
-:::::{grid-item}
+{.tutorial}
 1. Launch OpenSpace.
 2. {octicon}`rocket;1.25em;profile-tour-action` From the start-up position, use the Rotation Flight Mode and begin to orbit Earth by pressing the {kbd}`left mouse button` and gently moving the mouse to the right.
 3. When you have a speed you like, turn off Rotational Friction by hitting the {kbd}`f` key and take your hand off the mouse. You should see the Rotation Flight Friction Status turn red in the upper-right corner of the Graphics Window.
 4. To alter your rotational speed, press {kbd}`f` once, then press it again a second or two later. You will now be in a slower orbit around Earth.
 5. Press {kbd}`f` again to enable Rotation Friction once more. Your flight will come to a stop.
-:::::
-::::::
+
+[![Earth in OpenSpace](earth_upon_launch.png)](earth_upon_launch.png)
+
 
 
 
 ### Zoom Flight Mode
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Earth and Moon with orbits on](earth_moon.png)](earth_moon.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Press the {kbd}`right mouse button` and begin moving the mouse down slowly to move away from Earth in the Zoom Flight Mode.
 2. Continue to zoom away from Earth until you see the Moon's orbit.
 3. Remove your finger from the mouse and come to a stop with the Earth and Moon in view, albeit tiny.
-:::::
-::::::
+
+[![Earth and Moon with orbits on](earth_moon.png)](earth_moon.png)
+
 
 
 
 ### Change Focus
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Earth and Moon](moon_focus.png)](moon_focus.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` In the Focus Menu, choose "Moon" from the preloaded list. You will see the Moon move to the center of your view---it is now the Focus and all motion will revolve around it.
-:::::
-::::::
+
+[![Earth and Moon](moon_focus.png)](moon_focus.png)
+
 
 
 
 ### To the Moon!
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Above the Moon](above_moon.png)](above_moon.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. Click on the plane symbol in the Focus Menu to approach the Moon. This will automatically take you to the Moon.
-:::::
-::::::
+
+[![Above the Moon](above_moon.png)](above_moon.png)
+
 
 
 
 
 ### Roll Motion
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Above the Moon](moon_roll.png)](moon_roll.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Use the Roll Flight Mode and "twist" your view. We've not moved positions here, only rotated the view.
-:::::
-::::::
+
+[![Above the Moon](moon_roll.png)](moon_roll.png)
+
 
 
 
 
 ### Change the Focus Back to Earth
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Target Earth in OpenSpace](earth_target.png)](earth_target.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Zoom away from the Moon so Earth is in view.
 2. Open the Scene Menu. 
 3. Navigate to {menuselection}`Solar System --> Planets --> Earth --> Earth`.
 4. {octicon}`telescope;1.25em;profile-tour-action` Click on the target icon to the right of Earth. This will set Earth to Focus, and is an alternative way to set Focus right from the Scene Menu. Earth is now back to the center of your screen.
-:::::
-::::::
+
+[![Target Earth in OpenSpace](earth_target.png)](earth_target.png)
+
 
 
 
 ### Find a Place to Land On Earth
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Grand Canyon from 400 km up](grand_canyon.png)](grand_canyon.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Zoom up to Earth and toward the surface.
 2. Find a place you'd like to land---we're going to the Grand Canyon.
 3. {octicon}`rocket;1.25em;profile-tour-action` Center your destination in the Graphics Window so that when you Zoom into it, it will come right toward you.
 4. {octicon}`rocket;1.25em;profile-tour-action` Zoom closer to the surface. You might have to wait for some map tiles to load.
-:::::
-::::::
+
+[![Grand Canyon from 400 km up](grand_canyon.png)](grand_canyon.png)
+
 
 
 
 ### Pan Flight Mode---Tilt Earth Down
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Five kilometers over the Grand Canyon](grand_canyon_flying_over.png)](grand_canyon_flying_over.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Use the {kbd}`Ctrl` + {kbd}`left mouse button` and move the mouse up to bring Earth down.
 2. Stop when Earth's limb is about halfway down the graphics window, so the bottom half is Earth and the top half is sky. The horizon may be tilted, that's ok.
-:::::
-::::::
+
+[![Five kilometers over the Grand Canyon](grand_canyon_flying_over.png)](grand_canyon_flying_over.png)
+
 
 
 
 ### Get Closer to the Surface
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Two kilometers over the Grand Canyon](grand_canyon_two_km.png)](grand_canyon_two_km.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Use the {kbd}`right mouse button` while pushing the mouse up to bring you closer to Earth's surface.
 2. {octicon}`rocket;1.25em;profile-tour-action` While you're here, use the Roll Flight Mode to look around. Use {kbd}`Shift` + {kbd}`left mouse button` and do a 360-degree spin.
-:::::
-::::::
+
+[![Two kilometers over the Grand Canyon](grand_canyon_two_km.png)](grand_canyon_two_km.png)
+
+
+
 
 ### Exploring the Surface
-::::::{grid} 1 2 2 2
 
-:::::{grid-item}
-[![One kilometer above the Grand Canyon](grand_canyon_one_km.png)](grand_canyon_one_km.png)
-:::::
-
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Fly even closer to the surface using the Zoom Flight Mode: {kbd}`right mouse button` while pushing the mouse up.
 2. {octicon}`rocket;1.25em;profile-tour-action` Look straight below your position using the Pan Flight Mode. Use {kbd}`Ctrl` + {kbd}`left mouse button` while moving the mouse down.
 3. Then, look back up to the horizon again.
 4. {octicon}`rocket;1.25em;profile-tour-action` Start a slow orbit with the {kbd}`left mouse button` and move the mouse down. This moves you forward along the surface, like a flight simulator.
 5. Once you get a speed you like, turn Rotation Friction off using {kbd}`f`. If you want to move a little slower, press {kbd}`f` and {kbd}`f` again.
 6. As you're flying over the surface, now get closer to the surface with Zoom by using the {kbd}`right mouse button` and move the mouse up. You can explore valleys and move away from the surface to avoid crashing into mountains.
-:::::
-::::::
+
+[![One kilometer above the Grand Canyon](grand_canyon_one_km.png)](grand_canyon_one_km.png)
 
 
 
 
 
 ### Fly Away From Earth---Back to Normal Flight
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Earth](back_away_earth.png)](back_away_earth.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Fly away from the surface using the {kbd}`right mouse button` and pull the mouse down.
 2. {octicon}`rocket;1.25em;profile-tour-action` To return Earth to the center of the screen, pull far enough away, then use the Pan Flight, with {kbd}`Ctrl` + {kbd}`left mouse button` to bring the Earth, now out of view, back into view and at the center of the screen. Earth should be fairly small when it pops back into view. If it's still taking up the entire screen as it comes in, pull farther away.
-:::::
-::::::
+
+[![Earth](back_away_earth.png)](back_away_earth.png)
+
 
 
 
 
 ### Turn on the Constellation Lines
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Constellation Lines with Earth](constellations_on.png)](constellations_on.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`diff-added;1.25em;profile-tour-action` Turn on the [Constellation Lines](/content/milky-way/constellations/constellation-lines/index) using the Scene Menu.
 2. Check {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines` on.
-:::::
-::::::
+
+[![Constellation Lines with Earth](constellations_on.png)](constellations_on.png)
+
 
 
 
 ### Leave the Solar System
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![Looking back toward the Sun with constellation lines on](nearby_stars_constellations.png)](nearby_stars_constellations.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Use Zoom Flight to move away from Earth and the Solar System. Use the {kbd}`z` key to increase your speed, but watch out, it can take you right out of the universe.
 2. Fly out to about 50 {term}`parsecs <parsec>` away (monitor the Dashboard Altitude).
 3. {octicon}`rocket;1.25em;profile-tour-action` Orbit using the Rotation Flight and enjoy the view.
 4. Turn Rotation Friction off using {kbd}`f`.
 4. Extra Credit: {octicon}`diff-added;1.25em;profile-tour-action` Turn on Star Labels if you like: {menuselection}`Scene --> Milky Way --> Stars --> Star Labels`.
-:::::
-::::::
+
+[![Looking back toward the Sun with constellation lines on](nearby_stars_constellations.png)](nearby_stars_constellations.png)
+
 
 
 
 
 ### Spiral Flight Back Home
-::::::{grid} 1 2 2 2
-:::::{grid-item}
-[![](home.png)](home.png)
-:::::
 
-:::::{grid-item}
+{.tutorial}
 1. Continue your orbital motion with friction off.
 2. {octicon}`rocket;1.25em;profile-tour-action` Use the Zoom Flight to begin moving back toward Earth. Use the {kbd}`right mouse button` and move the mouse up. Now, you're on a spiral flight that will lead you back to Earth.
 3. Find the right balance between orbital motion and zooming until it's a graceful pace.
@@ -555,9 +511,8 @@ We use the following symbols in tutorials to indicate actions:
 5. Stop your orbital motion by hitting the {kbd}`f` key. This will bring you to a stop.
 6. This is the end of the tour, please exit through the gift shop.
 7. To quit OpenSpace, either press {kbd}`Esc` for the grace period quit, or press your operating system's close button on the window to quit instantaneously.
-:::::
-::::::
+
+[![Earth](home.png)](home.png)
 
 
-:::::::
 ::::::::
