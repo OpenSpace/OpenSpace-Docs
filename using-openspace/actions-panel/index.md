@@ -5,11 +5,8 @@ authors:
 ---
 
 
-# Actions Panel: Automate Property Adjustments
+# Actions Panel: Automate Adjustments
 
-:::{warning}
-This section is in progress. Text will appear on this page in the future.
-:::
 
 :::{figure} toolbar_actions.png
 :align: center
@@ -21,9 +18,14 @@ The Actions Panel Button in the OpenSpace Toolbar.
 
 ## What Is an Action?
 
-Actions are set of instructions that can automatically alter one or more properties in OpenSpace's Scene Panel. These can be used to make a planet larger, turn off object trails, or change the Simulation Speed or time. There is no editor, per se, to create actions---currently they are only available via asset files and coding the proper openSpace commands.
+Actions are set of instructions that can automatically alter one or more properties in OpenSpace's Scene Panel. These can be used to make a planet larger, turn off object trails, or change the Simulation Speed or time, among many other things. There is no editor, per se, to create actions---currently they are only available via asset files and coding the proper OpenSpace commands.
 
-The idea with an action is to automate one or many alterations that you would otherwise have to find in the Scene Panel and enact via checking something on and off, or adjusting a slider. With one button, you can accomplish many adjustments to many datasets to craft a scene to your liking.
+
+:::{note}
+Authoring actions is too advanced for this section. We will discuss authoring actions later in this guide.
+:::
+
+The idea with an action is to automate one or many adjustments that you would otherwise have to find in the Scene Panel and enact via checking something on or off, adjusting a slider, or changing a color. With one button, you can accomplish many adjustments to many datasets to craft a scene to your liking.
 
 
 :::{figure} actions_panel.png
@@ -40,24 +42,14 @@ The Actions Panel with buttons that open hierarchical folders of related actions
 
 ## Using the Actions Panel
 
-At the top of the panel is the current location. This is denoted by a slash, 
+The panel has three main sections: your location, a search box, and the folder and action buttons.
+
+### Your location
+At the top of the panel is the current location. This is denoted by a slash, which represents the top, or root. When you navigate into subfolders, for example if you press the {menuselection}`Constellations` action button (which is a folder denoted by its icon), the location will appear as `/Constellations`.
+
+### Search for an Action
+Use the search box to enter terms that go directly to an action. If you know the name or subject of the action, this is the quickest way to reach the button you want.
 
 
-
-grouping of one or more things you cn do in the menu, and it's given a name.
-
-change scene penal properties.
-
-easier names and bundle of several properties
-
-folder structure highlight...
-
-mars global illumination then all planets global illuminaiton
-
-search
-
-
-
-:::{note}
-Authoring actions is too advanced for this section on using the Actions Panel. We will discuss authoring actions later in this guide.
-:::
+### Explore Actions
+The primary way to explore the available actions is via the buttons at the bottom of the panel. The buttons resemble a file system, where clicking on a folder will open up a new view of actions and possible subfolders. As you descend into the actions hierarchy, your location within it will appear at the top of the window.
