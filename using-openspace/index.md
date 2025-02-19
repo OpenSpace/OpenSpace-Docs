@@ -26,6 +26,9 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [Time Panel](/using-openspace/time-panel/index)
 : Manipulate the date, time, and the simulation speed.
 
+[Actions Panel](/using-openspace/actions-panel/index)
+: Automate Scene Adjustments.
+
 
 :::{toctree}
 :maxdepth: 1
@@ -35,6 +38,7 @@ building-blocks/index
 scene-panel/index
 navigation-panel/index
 time-panel/index
+actions-panel/index
 :::
 
 
@@ -45,8 +49,6 @@ time-panel/index
 :caption: Using OpenSpace (Unrenovated)
 
 
-
-actions-panel/index
 create-profile/index
 skybrowser-panel/index
 record-panel/index
