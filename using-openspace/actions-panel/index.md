@@ -45,11 +45,21 @@ The Actions Panel with buttons that open hierarchical folders of related actions
 The panel has three main sections: your location, a search box, and the folder and action buttons.
 
 ### Your location
-At the top of the panel is the current location. This is denoted by a slash, which represents the top, or root. When you navigate into subfolders, for example if you press the {menuselection}`Constellations` action button (which is a folder denoted by its icon), the location will appear as `/Constellations`.
+At the top of the panel is the current location. This is denoted by a slash, which represents the top, or root. When you navigate into subfolders, for example if you press the {menuselection}`Trails` action button (which is a folder denoted by its icon), the location will appear as `/Trails`.
+
+:::{figure} actions_panel_trails.png
+:align: center
+:width: 50%
+:figwidth: 80%
+:alt: Actions Panel's Trails folder
+
+The Actions Panel's Trails folder.
+:::
+
 
 ### Search for an Action
 Use the search box to enter terms that go directly to an action. If you know the name or subject of the action, this is the quickest way to reach the button you want.
 
 
 ### Explore Actions
-The primary way to explore the available actions is via the buttons at the bottom of the panel. The buttons resemble a file system, where clicking on a folder will open up a new view of actions and possible subfolders. As you descend into the actions hierarchy, your location within it will appear at the top of the window.
+The primary way to explore the available actions is via the buttons at the bottom of the panel. The buttons resemble a file system, where clicking on a folder (button with the {octicon}`file-directory;1.25em` icon) will open up a new view of actions and possible subfolders. Clickign on an action button (denoted with the {octicon}`link-external;1.25em` icon) will execute the action. As you descend into the actions hierarchy, your location within it will appear at the top of the window.
