@@ -326,7 +326,7 @@ We use the following symbols in tutorials to indicate actions:
 - {octicon}`rocket;1.25em;profile-tour-action` : Flight instructions
 - {octicon}`diff-added;1.25em;profile-tour-action` : Turn on a data set
 - {octicon}`diff-removed;1.25em;profile-tour-action` : Turn off a data set
-- {octicon}`tools;1.25em;profile-tour-action`: Adjust a setting for a data set
+- {octicon}`tools;1.25em;profile-tour-action`: Adjust a setting
 - {octicon}`telescope;1.25em;profile-tour-action` :  Target an object
 - {octicon}`stopwatch;1.25em;profile-tour-action` : Change the time settings
 :::
@@ -343,6 +343,8 @@ We use the following symbols in tutorials to indicate actions:
 
 ### Rotation Flight Mode
 
+[![Earth in OpenSpace](earth_upon_launch.png)](earth_upon_launch.png)
+
 {.tutorial}
 1. Launch OpenSpace.
 2. {octicon}`rocket;1.25em;profile-tour-action` From the start-up position, use the Rotation Flight Mode and begin to orbit Earth by pressing the {kbd}`left mouse button` and gently moving the mouse to the right.
@@ -350,39 +352,44 @@ We use the following symbols in tutorials to indicate actions:
 4. To alter your rotational speed, press {kbd}`f` once, then press it again a second or two later. You will now be in a slower orbit around Earth.
 5. Press {kbd}`f` again to enable Rotation Friction once more. Your flight will come to a stop.
 
-[![Earth in OpenSpace](earth_upon_launch.png)](earth_upon_launch.png)
+
 
 
 
 
 ### Zoom Flight Mode
 
+[![Earth and Moon with orbits on](earth_moon.png)](earth_moon.png)
+
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Press the {kbd}`right mouse button` and begin moving the mouse down slowly to move away from Earth in the Zoom Flight Mode.
 2. Continue to zoom away from Earth until you see the Moon's orbit.
 3. Remove your finger from the mouse and come to a stop with the Earth and Moon in view, albeit tiny.
 
-[![Earth and Moon with orbits on](earth_moon.png)](earth_moon.png)
+
 
 
 
 
 ### Change Focus
 
+[![Earth and Moon](moon_focus.png)](moon_focus.png)
+
 {.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` In the Focus Menu, choose "Moon" from the preloaded list. You will see the Moon move to the center of your view---it is now the Focus and all motion will revolve around it.
 
-[![Earth and Moon](moon_focus.png)](moon_focus.png)
+
 
 
 
 
 ### To the Moon!
 
+[![Above the Moon](above_moon.png)](above_moon.png)
+
 {.tutorial}
 1. Click on the plane symbol in the Focus Menu to approach the Moon. This will automatically take you to the Moon.
 
-[![Above the Moon](above_moon.png)](above_moon.png)
 
 
 
@@ -390,10 +397,12 @@ We use the following symbols in tutorials to indicate actions:
 
 ### Roll Motion
 
+[![Above the Moon](moon_roll.png)](moon_roll.png)
+
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Use the Roll Flight Mode and "twist" your view. We've not moved positions here, only rotated the view.
 
-[![Above the Moon](moon_roll.png)](moon_roll.png)
+
 
 
 
@@ -401,18 +410,22 @@ We use the following symbols in tutorials to indicate actions:
 
 ### Change the Focus Back to Earth
 
+[![Target Earth in OpenSpace](earth_target.png)](earth_target.png)
+
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Zoom away from the Moon so Earth is in view.
 2. Open the Scene Menu. 
 3. Navigate to {menuselection}`Solar System --> Planets --> Earth --> Earth`.
 4. {octicon}`telescope;1.25em;profile-tour-action` Click on the target icon to the right of Earth. This will set Earth to Focus, and is an alternative way to set Focus right from the Scene Menu. Earth is now back to the center of your screen.
 
-[![Target Earth in OpenSpace](earth_target.png)](earth_target.png)
+
 
 
 
 
 ### Find a Place to Land On Earth
+
+[![Grand Canyon from 400 km up](grand_canyon.png)](grand_canyon.png)
 
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Zoom up to Earth and toward the surface.
@@ -420,34 +433,40 @@ We use the following symbols in tutorials to indicate actions:
 3. {octicon}`rocket;1.25em;profile-tour-action` Center your destination in the Graphics Window so that when you Zoom into it, it will come right toward you.
 4. {octicon}`rocket;1.25em;profile-tour-action` Zoom closer to the surface. You might have to wait for some map tiles to load.
 
-[![Grand Canyon from 400 km up](grand_canyon.png)](grand_canyon.png)
+
 
 
 
 
 ### Pan Flight Mode---Tilt Earth Down
 
+[![Five kilometers over the Grand Canyon](grand_canyon_flying_over.png)](grand_canyon_flying_over.png)
+
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Use the {kbd}`Ctrl` + {kbd}`left mouse button` and move the mouse up to bring Earth down.
 2. Stop when Earth's limb is about halfway down the graphics window, so the bottom half is Earth and the top half is sky. The horizon may be tilted, that's ok.
 
-[![Five kilometers over the Grand Canyon](grand_canyon_flying_over.png)](grand_canyon_flying_over.png)
+
 
 
 
 
 ### Get Closer to the Surface
 
+[![Two kilometers over the Grand Canyon](grand_canyon_two_km.png)](grand_canyon_two_km.png)
+
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Use the {kbd}`right mouse button` while pushing the mouse up to bring you closer to Earth's surface.
 2. {octicon}`rocket;1.25em;profile-tour-action` While you're here, use the Roll Flight Mode to look around. Use {kbd}`Shift` + {kbd}`left mouse button` and do a 360-degree spin.
 
-[![Two kilometers over the Grand Canyon](grand_canyon_two_km.png)](grand_canyon_two_km.png)
+
 
 
 
 
 ### Exploring the Surface
+
+[![One kilometer above the Grand Canyon](grand_canyon_one_km.png)](grand_canyon_one_km.png)
 
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Fly even closer to the surface using the Zoom Flight Mode: {kbd}`right mouse button` while pushing the mouse up.
@@ -457,7 +476,7 @@ We use the following symbols in tutorials to indicate actions:
 5. Once you get a speed you like, turn Rotation Friction off using {kbd}`f`. If you want to move a little slower, press {kbd}`f` and {kbd}`f` again.
 6. As you're flying over the surface, now get closer to the surface with Zoom by using the {kbd}`right mouse button` and move the mouse up. You can explore valleys and move away from the surface to avoid crashing into mountains.
 
-[![One kilometer above the Grand Canyon](grand_canyon_one_km.png)](grand_canyon_one_km.png)
+
 
 
 
@@ -465,11 +484,13 @@ We use the following symbols in tutorials to indicate actions:
 
 ### Fly Away From Earth---Back to Normal Flight
 
+[![Earth](back_away_earth.png)](back_away_earth.png)
+
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Fly away from the surface using the {kbd}`right mouse button` and pull the mouse down.
 2. {octicon}`rocket;1.25em;profile-tour-action` To return Earth to the center of the screen, pull far enough away, then use the Pan Flight, with {kbd}`Ctrl` + {kbd}`left mouse button` to bring the Earth, now out of view, back into view and at the center of the screen. Earth should be fairly small when it pops back into view. If it's still taking up the entire screen as it comes in, pull farther away.
 
-[![Earth](back_away_earth.png)](back_away_earth.png)
+
 
 
 
@@ -477,16 +498,20 @@ We use the following symbols in tutorials to indicate actions:
 
 ### Turn on the Constellation Lines
 
+[![Constellation Lines with Earth](constellations_on.png)](constellations_on.png)
+
 {.tutorial}
 1. {octicon}`diff-added;1.25em;profile-tour-action` Turn on the [Constellation Lines](/content/milky-way/constellations/constellation-lines/index) using the Scene Menu.
 2. Check {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines` on.
 
-[![Constellation Lines with Earth](constellations_on.png)](constellations_on.png)
+
 
 
 
 
 ### Leave the Solar System
+
+[![Looking back toward the Sun with constellation lines on](nearby_stars_constellations.png)](nearby_stars_constellations.png)
 
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Use Zoom Flight to move away from Earth and the Solar System. Use the {kbd}`z` key to increase your speed, but watch out, it can take you right out of the universe.
@@ -495,13 +520,15 @@ We use the following symbols in tutorials to indicate actions:
 4. Turn Rotation Friction off using {kbd}`f`.
 4. Extra Credit: {octicon}`diff-added;1.25em;profile-tour-action` Turn on Star Labels if you like: {menuselection}`Scene --> Milky Way --> Stars --> Star Labels`.
 
-[![Looking back toward the Sun with constellation lines on](nearby_stars_constellations.png)](nearby_stars_constellations.png)
+
 
 
 
 
 
 ### Spiral Flight Back Home
+
+[![Earth](home.png)](home.png)
 
 {.tutorial}
 1. Continue your orbital motion with friction off.
@@ -512,7 +539,7 @@ We use the following symbols in tutorials to indicate actions:
 6. This is the end of the tour, please exit through the gift shop.
 7. To quit OpenSpace, either press {kbd}`Esc` for the grace period quit, or press your operating system's close button on the window to quit instantaneously.
 
-[![Earth](home.png)](home.png)
+
 
 
 ::::::::
