@@ -215,31 +215,38 @@ You can also use the number keys {kbd}`1`, {kbd}`2`, ..., {kbd}`0` to go directl
 
 :::::{dropdown} Default Profile Time Increments
 
-This block of code from the [](/profiles/default/index) profile file defines the increments for the Simulated Speed.
-:::{code-block} lua
-"delta_times": [
-    1.0,
-    5.0,
-    30.0,
-    60.0,
-    300.0,
-    1800.0,
-    3600.0,
-    43200.0,
-    86400.0,
-    604800.0,
-    1209600.0,
-    2592000.0,
-    5184000.0,
-    7776000.0,
-    15552000.0,
-    31536000.0,
-    63072000.0,
-    157680000.0,
-    315360000.0,
-    630720000.0
-  ],
+Each profile can have custom time increments, used with the {kbd}`→` or {kbd}`←` shortcut keys or direct shortcut keys.
+
+These are the increments from the [](/profiles/default/index) profile file defines the increments for the Simulated Speed. You can find these in the [Profile Editor](/using-openspace/create-profile/index.md).
+
+:::{table} Default Profile time increments
+:widths: auto
+:align: center
+
+| Shortcut Key | Increment (sec) | Increment (relatable units) |
+| --- | --- | --- |
+| {kbd}`1` | 1.0 | 1 second/second |
+| {kbd}`2` | 5.0 | 5 seconds/second |
+| {kbd}`3` | 30.0 | 30 seconds/second |
+| {kbd}`4` | 60.0 | 1 minute/second |
+| {kbd}`5` | 300.0 | 5 minutes/second |
+| {kbd}`6` | 1800.0 | 30 minutes/second |
+| {kbd}`7` | 3600.0 | 1 hour/second |
+| {kbd}`8` | 43200.0 | 12 hours/second |
+| {kbd}`9` | 86400.0 | 1 day/second |
+| {kbd}`0` | 604800.0 | 1 week/second |
+| {kbd}`Shift`+{kbd}`1` | 1209600.0 | 2 weeks/second |
+| {kbd}`Shift`+{kbd}`2` | 2592000.0 | 4.3 weeks/second (~1 month) |
+| {kbd}`Shift`+{kbd}`3` | 5184000.0 | 8.6 weeks/second (~2 months) |
+| {kbd}`Shift`+{kbd}`4` | 7776000.0 | 12.9 weeks/second (~3 months) |
+| {kbd}`Shift`+{kbd}`5` | 15552000.0 | 25.7 weeks/second (~6 months) |
+| {kbd}`Shift`+{kbd}`6` | 31536000.0 | 1 year/second |
+| {kbd}`Shift`+{kbd}`7` | 63072000.0 | 2 years/second |
+| {kbd}`Shift`+{kbd}`8` | 157680000.0 | 5 years/second |
+| {kbd}`Shift`+{kbd}`9` | 315360000.0 | 10 years/second |
+| {kbd}`Shift`+{kbd}`0` | 630720000.0 | 20 years/second |
 :::
+
 
 :::::
 
