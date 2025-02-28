@@ -22,7 +22,7 @@ In general contrasts are one of the key importances when designing the UI. Make 
   - Make sure that the tab order of menu items make sense and are not jumping all over the menu. [#3099](https://github.com/OpenSpace/OpenSpace/issues/3099)
 
 ## General
-- Make sure Qt elements have a `setAccessibileName` and/or `setAccessibleDescription` that are sensible, use descriptive names e.g., "new x", "edit x" instead of just "new" and "edit". [#3089](https://github.com/OpenSpace/OpenSpace/issues/3089)
+  - Make sure Qt elements have a `setAccessibileName` and/or `setAccessibleDescription` that are sensible, use descriptive names e.g., "new x", "edit x" instead of just "new" and "edit". [#3089](https://github.com/OpenSpace/OpenSpace/issues/3089)
 
   - Ensure forms clearly show which fields are required and which ones are optional e.g., using asterix (visual) and adding a descriptive text (e.g., "required") for screen readers. [#3101](https://github.com/OpenSpace/OpenSpace/issues/3101)
   - Prefer error dialog / modal over having an error message printed somewhere on screen. Optionally set the focus back to the problem input field (if possible) and add an accessible descriptive text. [#3100](https://github.com/OpenSpace/OpenSpace/issues/3100)
