@@ -8,7 +8,7 @@ authors:
 # Profile Editor
 
 :::{warning}
-This section is in progress. Text will appear on this page in the future.
+This section is in progress. Some sections remain incomplete.
 :::
 
 

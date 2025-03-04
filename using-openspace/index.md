@@ -29,6 +29,12 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [Actions Panel](/using-openspace/actions-panel/index)
 : Automate Scene Adjustments.
 
+[Profile Editor](/using-openspace/profile-editor/index)
+: Save settings for a particulay story.
+
+[Keyboard Shortcuts](/using-openspace/keyboard-shortcuts/index)
+: Keyboard shortcuts save you time.
+
 
 :::{toctree}
 :maxdepth: 1
@@ -39,6 +45,8 @@ scene-panel/index
 navigation-panel/index
 time-panel/index
 actions-panel/index
+profile-editor/index
+keyboard-shortcuts/index
 :::
 
 
@@ -48,13 +56,11 @@ actions-panel/index
 :maxdepth: 1
 :caption: Using OpenSpace (Unrenovated)
 
-
-create-profile/index
 skybrowser-panel/index
 record-panel/index
 geolocation-panel/index
 exoplanet-systems-panel/index
-keyboard-shortcuts/index
+
 
 
 navigation/index

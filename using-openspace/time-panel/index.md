@@ -217,7 +217,7 @@ You can also use the number keys {kbd}`1`, {kbd}`2`, ..., {kbd}`0` to go directl
 
 Each profile can have custom time increments, used with the {kbd}`→` or {kbd}`←` shortcut keys or direct shortcut keys.
 
-These are the increments from the [](/profiles/default/index) profile file defines the increments for the Simulated Speed. You can find these in the [Profile Editor](/using-openspace/create-profile/index.md).
+These are the increments from the [](/profiles/default/index) profile file defines the increments for the Simulated Speed. You can find these in the [Profile Editor](/using-openspace/profile-editor/index.md).
 
 :::{table} Default Profile time increments
 :widths: auto
