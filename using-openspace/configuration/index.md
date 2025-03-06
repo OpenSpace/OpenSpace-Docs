@@ -40,7 +40,7 @@ Some of the configurations in the config file can use environment variables. The
 
   - Less storage space as all instances of OpenSpace will use the same data.
 
-- `OPENSPACE_LEVEL` If this environment variable is set, the Property Visibility level will be determined on startup. The property visibility level is a setting that determines how complex the user interface should be. If you select `User`, for example, it means you won't see the more advanced properties that will be visible if you select `AdvancedUser`. The levels are:
+- `OPENSPACE_LEVEL`: If this environment variable is set, the Property Visibility level will be determined on startup. The property visibility level is a setting that determines how complex the user interface should be. If you select `User`, for example, it means you won't see the more advanced properties that will be visible if you select `AdvancedUser`. The available levels in order of increasing complexity are:
 
   - `NoviceUser`
 
