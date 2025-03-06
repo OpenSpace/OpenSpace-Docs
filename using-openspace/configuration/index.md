@@ -20,7 +20,7 @@ OpenSpace uses a configuration file which is called `openspace.cfg`. This file i
 
 ## Environment variables
 
-Some of the configurations in the config file can use environment variables. These can be very handy if you use OpenSpace a lot, as they will speed up and / or customize your setup automatically. The environment variables are set as Path variables in a Windows environment. The environment variables are:
+Some of the configurations in the config file can use environment variables. These can be very handy if you use OpenSpace a lot, as they will speed up and/or customize your setup automatically. The environment variables are set as Path variables in a Windows environment. The environment variables are:
 
 - `OPENSPACE_SYNC`: The `sync` folder is where OpenSpace stores all downloaded data, such as models, maps, textures, etc. If this environment variable is set, the `sync` folder (which normally is placed inside the OpenSpace folder) can be placed anywhere on your computer. This is very handy if you are using multiple versions of OpenSpace, for the following reasons:
 
