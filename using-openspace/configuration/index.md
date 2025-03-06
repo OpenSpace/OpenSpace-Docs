@@ -32,7 +32,7 @@ Some of the configurations in the config file can use environment variables. The
 
   - You can have one "global" folder for all your OpenSpace data, and all your OpenSpace instances will find it.
 
-  - It might save you space as you don’t have to store data in multiple places.
+  - It might save you space as you don't have to store data in multiple places.
 
 - `OPENSPACE_GLOBEBROWSING` If this environment variable is set, the OpenSpaceData folder which normally is placed one level above the OpenSpace folder, can be placed anywhere on your computer. This folder stored all the map data from planets. This is very handy if you are using multiple versions of OpenSpace, for the following reasons:
 
