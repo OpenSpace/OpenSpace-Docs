@@ -8,7 +8,7 @@ OpenSpace uses a configuration file which is called `openspace.cfg`. This file i
 
 - The paths where OpenSpace can find files
 
-- The visibility level for properties
+- The default visibility level for properties
 
 - Configurations for modules
 
