@@ -30,7 +30,7 @@ Some of the configurations in the config file can use environment variables. The
 
 - `OPENSPACE_USER`: The `user` folder is meant to be used for all user created files. These include webpanels, bookmarks, recordings, screenshots, data, and configs. If this environment variable is set, the `user` folder which normally is placed inside the OpenSpace folder, can be placed anywhere on your computer. This is very handy if you are using multiple versions of OpenSpace, for the following reasons:
 
-  - You can have one “global” folder for all your OpenSpace data, and all your OpenSpace instances will find it.
+  - You can have one "global" folder for all your OpenSpace data, and all your OpenSpace instances will find it.
 
   - It might save you space as you don’t have to store data in multiple places.
 
