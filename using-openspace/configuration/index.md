@@ -18,7 +18,7 @@ OpenSpace uses a configuration file which is called `openspace.cfg`. This file i
 
 ...and a number of other configurations. For complete documentation with regards to the config file, please refer to [this page](#core_configuration).
 
-## Environment variables
+## Environment Variables
 
 Some of the configurations in the config file can use environment variables. These can be very handy if you use OpenSpace a lot, as they will speed up and/or customize your setup automatically. The environment variables are set as Path variables in a Windows environment. The environment variables are:
 
