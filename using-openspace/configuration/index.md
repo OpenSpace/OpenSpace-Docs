@@ -1,6 +1,6 @@
 # Configuration
 
-OpenSpace uses a configuration file which is called `openspace.cfg`. This file is located in the OpenSpace folder. This file determines:
+OpenSpace uses a configuration file which is called `openspace.cfg`. This file is located in the OpenSpace folder and includes settings that determine:
 
 - The SGCT configuration (the type of projection and number of windows)
 
