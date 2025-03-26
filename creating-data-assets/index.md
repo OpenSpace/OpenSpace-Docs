@@ -17,6 +17,7 @@ authors:
 
 asset-creation/index
 custom-web-ui/index
+modules/index
 
 asteroids
 ephemeris/index
