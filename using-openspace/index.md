@@ -8,7 +8,7 @@ authors:
 
 In this chapter, we will delve more deeply into how to use OpenSpace. We will confine our topics here to _using_ the software, and discuss building assets and importing data in [](/creating-data-assets/index).
 
-For this chapter, we need to understand a bit more what goes on under the hood with OpenSpace. So, we kick this chapter off with a bit of an introduction on how data is brought to OpenSpace via profiles, assets, and renderables.
+For this chapter, we need to understand a bit more what goes on under the hood with OpenSpace. So, we kick this chapter off with a bit of an introduction on how data is brought to OpenSpace via profiles, assets, and renderables. We then cover topics, broadly, in order of importance and frequency of use.
 
 {.glossary .index-list}
 [The Building Blocks of OpenSpace](/using-openspace/building-blocks/index)
@@ -26,6 +26,16 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [Actions Panel](/using-openspace/actions-panel/index)
 : Automate Scene Adjustments.
 
+[Record Panel](/using-openspace/record-panel/index)
+: Save and Playback a Session.
+
+[Profile Editor](/using-openspace/profile-editor/index)
+: Save settings for a particular story.
+
+[Keyboard Shortcuts](/using-openspace/keyboard-shortcuts/index)
+: Keyboard shortcuts save you time.
+
+
 :::{toctree}
 :maxdepth: 1
 :hidden:
@@ -35,6 +45,9 @@ scene-panel/index
 navigation-panel/index
 time-panel/index
 actions-panel/index
+record-panel/index
+profile-editor/index
+keyboard-shortcuts/index
 :::
 
 :::{toctree}
@@ -42,11 +55,11 @@ actions-panel/index
 :caption: Using OpenSpace (Unrenovated)
 
 create-profile/index
+
 skybrowser-panel/index
-record-panel/index
 geolocation-panel/index
 exoplanet-systems-panel/index
-keyboard-shortcuts/index
+
 
 navigation/index
 properties/index
