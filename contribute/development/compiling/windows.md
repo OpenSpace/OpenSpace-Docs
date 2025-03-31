@@ -8,15 +8,6 @@ This page contains specific information necessary to compile OpenSpace on Window
 ### Qt
 Make sure to install the [Qt](https://www.qt.io/download) version that is called `MSVC 2019 64-bit`. After installing you should add the `bin` folder from the installation to your `PATH` environment variable, and it is highly recommended to have only one Qt `bin` folder in this variable (e.g. no different versions). It is possible to copy specific Qt .dll files from the Qt `bin` folder to the OpenSpace `bin` folder, but this is discouraged. Having both the Qt `bin` folder set in path **and** the dll files copied to OpenSpace `bin` might cause the program to crash.
 
-### Boost
-Some of the optional modules have Boost as a dependency, which will need to be compiled separately. See [boost.org](https://www.boost.org) for a complete compilation instructions.
-  1. Download the newest version of the source from [here](https://www.boost.org/users/download/)
-  1. Unpack the boost folder to its final destination
-  1. Start the Visual Studio x64 native tools command prompt and navigate to the folder
-  1. In the boost folder, run `bootstrap.bat` and wait
-  1. Run the `b2` command
-  1. Add the boost folder as the `BOOST_ROOT` environment variable in Windows
-
 
 ## Notes
 ### Git
@@ -26,6 +17,9 @@ If you use the command line interface for `git`, remember that OpenSpace has man
 
 ### Visual Studio
 The `Release` mode currently does not run correctly due to an [issue](https://github.com/OpenSpace/OpenSpace/issues/1657) with dependent libraries. Instead, use the `RelWithDebInfo` which has almost identical performance as the `Release` mode, but also provides information to debug potential crashes.
+
+### Deploying
+If you want to build OpenSpace to deploy to a third party that does not have a development environment, you can use the `deploy.bat` file found in the `support` folder. When starting this batch file, it will automatically build a fresh version of OpenSpace that includes the `sync` and `user` folder. The result of the deployment is a `.zip` file that can be shared with other computers that are then able to extract the file and run the application directly.
 
 ### FAQ
 If Windows is complaining that it cannot find the `VCOMP120.dll`, download the [Visual Studio Redistributable](https://aka.ms/vs/16/release/vc_redist.x64.exe). On Windows 10 and up, this is not installed by default anymore. In general, this shouldn't be an issue if you have Visual Studio installed correctly, but it will be necessary to install on other computers that do not have the IDE installed.
