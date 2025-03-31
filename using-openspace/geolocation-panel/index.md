@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# GeoLocation Panel: 
+# GeoLocation Panel: Pinpoint a Place
 
 :::{warning}
 This section is in progress. Text will appear on this page in the future.
@@ -89,6 +89,12 @@ Using the Add Focus mode in the GeoLocation Panel adds a `GeoLocation` folder to
 :::
 
 
+
+## Custom Coordinate
+
+You can also enter a specific coordinate and fly to that location. Enter the latitude, longitude, and altitude above Earth, then press the button to the right.
+
+The button will change according to the mode---it will either read {menuselection}`Fly To`, {menuselection}`Jump To`, or {menuselection}`Add Focus`.
 
 
 

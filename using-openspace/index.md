@@ -27,16 +27,20 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 : Manipulate the date, time, and the simulation speed.
 
 [Actions Panel](/using-openspace/actions-panel/index)
-: Automate Scene Adjustments.
+: Automate scene adjustments.
 
 [Record Panel](/using-openspace/record-panel/index)
 : Save and Playback a Session.
+
+[GeoLocation Panel](/using-openspace/geolocation-panel/index)
+: Fly to a location on Earth.
 
 [Profile Editor](/using-openspace/profile-editor/index)
 : Save settings for a particular story.
 
 [Keyboard Shortcuts](/using-openspace/keyboard-shortcuts/index)
 : Keyboard shortcuts save you time.
+
 
 
 :::{toctree}
@@ -49,6 +53,7 @@ navigation-panel/index
 time-panel/index
 actions-panel/index
 record-panel/index
+geolocation-panel/index
 profile-editor/index
 keyboard-shortcuts/index
 :::
@@ -61,7 +66,6 @@ keyboard-shortcuts/index
 :caption: Using OpenSpace (Unrenovated)
 
 skybrowser-panel/index
-geolocation-panel/index
 exoplanet-systems-panel/index
 
 
