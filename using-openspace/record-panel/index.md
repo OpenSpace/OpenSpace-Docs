@@ -122,7 +122,7 @@ Choose a file to be played back using the dropdown menu. The files that appear h
 
 :::{figure} record_panel_playback.png
 :align: center
-:width: 70%
+:width: 90%
 :alt: OpenSpace's playback butttons
 
 Portion of the OpenSpace Toolbar showing a playback in progress.
