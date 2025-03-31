@@ -3,6 +3,8 @@ In OpenSpace, Assets are modular components used to populate the scene and provi
 
 Assets are written in Lua and have access to all OpenSpace Lua scripting functions. One asset file corresponds to exactly one asset and has the suffix `.asset`.
 
+If you are editing assets, you are most likely a more advanced user. By default, OpenSpace will hide a lot of the properties that are not useful to a normal user through a setting called `PropertyVisibility`. While creating assets, you will probably want to set the {menuselection}`Settings --> OpenSpace Engine --> Property Visibility` to at least "Advanced User". Otherwise you might find yourself in the situation that setting can be controlled in the asset file, but their counterpart in the user interface won't show up as they are hidden behind a more limiting Property Visibility.
+
 
 ## Asset lifecycle
 When OpenSpace loads, a _root-level asset_ will be loaded according to the `Asset` setting in `openspace.cfg`. Typically, the scene asset refers to several other assets, which in turn reference others. Additional root-level assets can be added while OpenSpace is running using the Lua command `openspace.asset.add(<path to asset>)`. Assets can be removed by calling `openspace.asset.remove(<path to asset>)`. Only root-level assets may be removed using this method, while assets that are dependencies of other root-level will be automatically deinitialized when the last referencing root-level asset is removed.
