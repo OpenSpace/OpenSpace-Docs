@@ -31,7 +31,7 @@ OpenSpace uses Git submodules, which are not supported on all clients. Xcode on 
   1. [SourceTree](http://www.sourcetreeapp.com) A free and powerful Git client usable on both Windows and macOS
   1. [GitKraken](https://www.gitkraken.com) A free GUI for Windows, macOS, and Linux
   1. [SmartGit](http://www.syntevo.com/smartgit/) Another GUI Git client which runs on Windows and Mac
-  1. XCode does not support recursive cloning or git submodule commands. However, installing Xcode makes Git available on the Terminal, which supports the `--recusive` flag
+  1. XCode does not support recursive cloning or git submodule commands. However, installing Xcode makes Git available on the Terminal, which supports the `--recursive` flag
 
 Please ensure that, specifially on Windows, to enable automatic line-ending conversion when checking out a repository (see information [here](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings)) as some of the shader files in OpenSpace are sensitive to using the native line endings.
 
