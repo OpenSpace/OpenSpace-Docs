@@ -4,14 +4,11 @@ authors:
     affiliation: American Museum of Natural History
 ---
 
-
 # Using OpenSpace
 
 In this chapter, we will delve more deeply into how to use OpenSpace. We will confine our topics here to _using_ the software, and discuss building assets and importing data in [](/creating-data-assets/index).
 
 For this chapter, we need to understand a bit more what goes on under the hood with OpenSpace. So, we kick this chapter off with a bit of an introduction on how data is brought to OpenSpace via profiles, assets, and renderables. We then cover topics, broadly, in order of importance and frequency of use.
-
-
 
 {.glossary .index-list}
 [The Building Blocks of OpenSpace](/using-openspace/building-blocks/index)
@@ -58,28 +55,25 @@ profile-editor/index
 keyboard-shortcuts/index
 :::
 
-
-
-
 :::{toctree}
 :maxdepth: 1
 :caption: Using OpenSpace (Unrenovated)
+
+create-profile/index
 
 skybrowser-panel/index
 exoplanet-systems-panel/index
 
 
-
 navigation/index
 properties/index
+configuration/index
 scenegraph/index
 events/index
 scripting/index
 users/index
 installers/index
 builders/index
-
-
 
 faq/index
 
