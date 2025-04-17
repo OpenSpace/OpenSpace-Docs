@@ -38,8 +38,6 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [Keyboard Shortcuts](/using-openspace/keyboard-shortcuts/index)
 : Keyboard shortcuts save you time.
 
-
-
 :::{toctree}
 :maxdepth: 1
 :hidden:
@@ -53,18 +51,15 @@ record-panel/index
 geolocation-panel/index
 profile-editor/index
 keyboard-shortcuts/index
+
 :::
 
 :::{toctree}
 :maxdepth: 1
 :caption: Using OpenSpace (Unrenovated)
 
-create-profile/index
-
 skybrowser-panel/index
 exoplanet-systems-panel/index
-
-
 navigation/index
 properties/index
 configuration/index
@@ -74,7 +69,6 @@ scripting/index
 users/index
 installers/index
 builders/index
-
 faq/index
 
 :::
