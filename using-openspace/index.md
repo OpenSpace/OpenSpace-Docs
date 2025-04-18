@@ -41,7 +41,7 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [Keyboard Shortcuts](/using-openspace/keyboard-shortcuts/index)
 : Keyboard shortcuts save you time.
 
-
+# Add page on "User" options in Settings
 
 :::{toctree}
 :maxdepth: 1

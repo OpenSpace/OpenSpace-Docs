@@ -382,7 +382,7 @@ Once added, it appears in the list and you can aim toward it, fly to it, and acc
 
 In this guide, we refer to this panel as {menuselection}`Exoplanet Systems`.
 
-See [](/content/milky-way/exoplanets/exoplanet-system-module/index) for more on using this panel.
+See [](/using-openspace/exoplanet-systems-panel/index) for more on using this panel.
 ::::
 
 ::::{grid-item}
