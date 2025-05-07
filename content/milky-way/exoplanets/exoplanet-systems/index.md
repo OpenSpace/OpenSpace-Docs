@@ -39,7 +39,7 @@ The exoplanet systems are represented by a blue ring centered on each host star.
 :::{note}
 The blue rings do not signify an orbit, but merely mark the locations of stars with known planets. The larger the ring, the closer it is to your position.
 
-To see the individual systems of planets with planetary orbits and a rendition of the habitable zone, see the [Exoplanet System Module](../exoplanet-system-module/index).
+To see the individual systems of planets with planetary orbits and a rendition of the habitable zone, see the [Exoplanet System Module](/using-openspace/exoplanet-systems-panel/index).
 :::
 
 
@@ -49,6 +49,25 @@ To see the individual systems of planets with planetary orbits and a rendition o
 
 The night sky looking toward the constellations Orion and Taurus. The exoplanetary systems are marked by blue rings positioned at each host star's location. Larger rings indicate they are closer to our position. Select systems are labeled. Labels followed by a number in parentheses indicates the number of planets in that system. Labels with nothing following the name have one confirmed planet.
 :::
+
+
+#### Seeing Individual Systems
+
+You can view individual exoplanetary systems using the [Exoplanet Systems Panel](/using-openspace/exoplanet-systems-panel/index). To see an individual system of planets at their correct distance and inclination, along with a habitable zone, take the following steps:
+- Bring up the [Exoplanet Systems Panel](/using-openspace/exoplanet-systems-panel/index).
+- Search for the system you want to see.
+- Add that system.
+- Target and fly to the system.
+
+:::{figure} exoplanet_system_kepler11.png
+:align: left
+:alt: The Kepler-11 system with its six planets, and the habitable zone in green.
+
+The Kepler-11 system of six planets with the yellowish host star, Kepler-11, and accompanying planetary orbits. Encircling the system is a diagram of the {term}`habitable zone`, with red and blue edges indicating its probable boundaries and a green center indicating where liquid water could exist for an earth-sized planet.
+:::
+
+Once you fly up to the system it will resemble the image for the Kepler-11 system pictured here. You can see the individual planetary orbits huddled around their host star. In addition, we depict a {term}`habitable zone` where liquid water could exist. Using the Exoplanet Systems Panel allows you to target specific exoplanetary systems and examine their characteristics.
+
 
 
 ### Distribution

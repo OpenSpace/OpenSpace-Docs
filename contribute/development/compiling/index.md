@@ -31,7 +31,7 @@ OpenSpace uses Git submodules, which are not supported on all clients. Xcode on 
   1. [SourceTree](http://www.sourcetreeapp.com) A free and powerful Git client usable on both Windows and macOS
   1. [GitKraken](https://www.gitkraken.com) A free GUI for Windows, macOS, and Linux
   1. [SmartGit](http://www.syntevo.com/smartgit/) Another GUI Git client which runs on Windows and Mac
-  1. XCode does not support recursive cloning or git submodule commands. However, installing Xcode makes Git available on the Terminal, which supports the `--recusive` flag
+  1. XCode does not support recursive cloning or git submodule commands. However, installing Xcode makes Git available on the Terminal, which supports the `--recursive` flag
 
 Please ensure that, specifially on Windows, to enable automatic line-ending conversion when checking out a repository (see information [here](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings)) as some of the shader files in OpenSpace are sensitive to using the native line endings.
 
@@ -64,7 +64,7 @@ The platform specific pages found in the menu on the left contain more detailed 
 ## 2. Dependencies
 Almost all dependencies in OpenSpace are handled via [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules), which means that when cloning the GitHub repository, you should ensure that the `--recursive` flag is passed to the command.
 
-The one dependency that is not included via submodules and that needs to be installed manually due to licensing reasons is [Qt](https://www.qt.io/download), which is used for the Launcher and profile editor GUI. Qt version 6 is required. The open-source version of Qt, if applicable to you from a licensing point of view, can be obtained here: https://www.qt.io/download-qt-installer. As of 2020, this installer unfortunately needs a valid Qt user account. Select the `Custom installation` and select the newest version and any optional additional packages. Only the core Qt installation (e.g. `Qt 6.2.0`) is needed to run OpenSpace -- no additional Qt packages are required.
+The one dependency that is not included via submodules and that needs to be installed manually due to licensing reasons is [Qt](https://www.qt.io/download), which is used for the Launcher and profile editor GUI. Qt version 6.9 or higher is required. The open-source version of Qt, if applicable to you from a licensing point of view, can be obtained here: https://www.qt.io/download-qt-installer. As of 2020, this installer unfortunately needs a valid Qt user account. Select the `Custom installation` and select the newest version and any optional additional packages. Only the core Qt installation (e.g. `Qt 6.9.0`) is needed to run OpenSpace -- no additional Qt packages are required.
 
 On Linux and macOS, the [GDAL](http://www.gdal.org/) library also requires a manual install, for Windows, this library is contained in the repository, otherwise you it is available via `apt-get` or `homebrew` or MacPorts. Suggested version: 2.4.1 or above
 

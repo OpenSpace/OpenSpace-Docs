@@ -17,7 +17,7 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
   - Function
 * - {kbd}`F1`
   - Toggle the original User Interface (deprecated)
-* - {kbd}`Esc`
+* - {kbd}`Ctrl+Q`
   - Initiates shutdown in 3 seconds
 * - {kbd}`F12` or {kbd}`Print Screen`
   - Take a screenshot
@@ -33,10 +33,10 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
   - Toggle Roll Friction on and off
 * - {kbd}`b`
   - Fade to black
-* - {kbd}`Tab`
+* - {kbd}`F2`
   - Toogle main user interface
-* - {kbd}`Shift` + {kbd}`Tab`
-  - Toggle overlays (info text) ?
+* - {kbd}`Shift` + {kbd}`F2`
+  - Toggle overlays (info text)
 * - {kbd}`Alt` + {kbd}`r`
   - Toggle master rendering (everything off)
 * - {kbd}`→`
@@ -47,14 +47,6 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
   - Previous time step interpolate ?
 * - {kbd}`Shift` + {kbd}`←`
   - Previous time step immediate ?
-* - {kbd}`↓`
-  - Return to real time interpolate
-* - {kbd}`Shift` + {kbd}`↓`
-  - Return to real time immediate
-* - {kbd}`↑`
-  - Return to present date and time interpolate
-* - {kbd}`Shift` + {kbd}`↑`
-  - Return to present date and time immediate
 * - {kbd}`F5`
   - Reload user interface
 :::

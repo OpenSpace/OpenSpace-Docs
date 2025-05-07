@@ -11,7 +11,7 @@ OpenSpace, like any program, is made up of components that build upon themselves
 
 
 ## Profiles: Define an OpenSpace Session
-When you launch OpenSpace, you choose a profile and then press Start. You can [create and edit profiles](/using-openspace/create-profile/index) in the Profile Editor, as we'll see soon.
+When you launch OpenSpace, you choose a profile and then press Start. You can [create and edit profiles](/using-openspace/profile-editor/index) in the Profile Editor, as we'll see soon.
 
 %%%% LINK ABOVE
 

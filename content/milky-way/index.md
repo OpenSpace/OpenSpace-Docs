@@ -30,7 +30,7 @@ authors:
 :::
 
 :::{grid-item-card} [](/content/milky-way/exoplanets/index)
-[![Exoplanets](/content/milky-way/exoplanets/exoplanet-system-module/exoplanet_module_icon.png)](/content/milky-way/exoplanets/index)
+[![Exoplanets](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](/content/milky-way/exoplanets/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/star-clusters/index)

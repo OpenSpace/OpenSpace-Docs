@@ -59,21 +59,18 @@ kbd {
     margin-bottom: 0.25em;
 }
 .advanced-topic .advanced {
-    padding: 0.4em 1.5em;
+    padding: 0.3em 1em;
     background-color: #ffb366;
     border-radius: 6px;
     border: 1px solid #ff8000;
-    font-size: 0.75em;
+    font-size: 0.7em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
-ol.tutorial {
-    margin: 0 5em;
+.tutorial {
+    margin: 0 5rem;
 }
-ol.tutorial li {
-    margin-bottom: 0.25em;
-}
-ol.tutorial + p {
-    margin-bottom: 3em;
+.tutorial li {
+    margin-bottom: 0.5rem;
 }

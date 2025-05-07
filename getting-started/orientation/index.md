@@ -150,11 +150,12 @@ Throughout this guide, we will refer to this panel as {menuselection}`System`.
 
 
 :::{figure} panel_system.png
-:align: right
-:width: 100%
+:align: center
+:width: 60%
+:figwidth: 50% 
 :alt: The OpenSpace System Menu
 
-The OpenSpace {menuselection}`System` Menu.
+OpenSpace's System Menu.
 :::
 
 
@@ -381,7 +382,7 @@ Once added, it appears in the list and you can aim toward it, fly to it, and acc
 
 In this guide, we refer to this panel as {menuselection}`Exoplanet Systems`.
 
-See [](/content/milky-way/exoplanets/exoplanet-system-module/index) for more on using this panel.
+See [](/using-openspace/exoplanet-systems-panel/index) for more on using this panel.
 ::::
 
 ::::{grid-item}
