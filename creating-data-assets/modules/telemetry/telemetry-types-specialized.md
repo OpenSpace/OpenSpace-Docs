@@ -35,7 +35,7 @@ The OSC messages from this telemetry type are divided among the planets that hav
   1. (optional) The distance from the camera to the **first** moon in kilometers.
   1. (optional) The horizontal angle in radians to the first moon.
   1. (optional) The elevation angle in radians to the first moon.
-  1. (optional) The distance from the camera to the **second** moon in kilometers
+  1. (optional) The distance from the camera to the **second** moon in kilometers.
   1. (optional) The horizontal angle in radians to the second moon.
   1. (optional) The elevation angle in radians to the second moon.
   1. (optional) ... The data then continues in the same pattern for as many moons as the planet has, with three values per moon. The moons are in the order of distance to the planet, the closest moon first and the farthest away moon last, which was specified in the _planets.asset_ file located in the _data\assets\modules\telemetry\sonification_ folder.

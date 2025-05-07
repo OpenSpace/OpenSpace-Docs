@@ -115,7 +115,7 @@ The steps below explain how to run the OSC example sonification provided by Open
 The surround sound aspect of the provides sonifications is designed for two specific configurations, as shown in the images below. In both images, black dots represent speakers, and the subwoofer is positioned outside the circle since it is not considered a directional sound source.
 
 <!-- @TODO (malej) Generate a dark mode version of this image -->
-:::{image} images/NKPG-Dome.png
+:::{image} images/nkpg-dome.png
 :alt: "Surround Sound Configuration Schematic for the Visualization Center Dome Theater in Norrköping, Sweden"
 :width: 100%
 :align: center
@@ -125,7 +125,7 @@ The surround sound aspect of the provides sonifications is designed for two spec
 This image above shows a _top-down_ view of the surround sound setup for the Visualization Center Dome Theater in Norrköping, Sweden. The audience sits in rows inside the circle, facing the front center of the dome surface, which is marked as _Center_ at the top of the image. The circle represents the edge of the dome surface. This configuration uses the [Horizontal](./angle-information.md#horizontal) angle calculation mode without the elevation angle, as it only has one ring of speakers.
 
 <!-- @TODO (malej) Generate a dark mode version of this image -->
-:::{image} images/AMNH-Dome.png
+:::{image} images/amnh-dome.png
 :alt: "Surround Sound Configuration Schematic for the Hayden Planetarium at the American Museum of Natural History in New York, USA"
 :width: 100%
 :align: center
