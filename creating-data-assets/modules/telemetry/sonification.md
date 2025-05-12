@@ -116,27 +116,35 @@ The steps below explain how to run the OSC example sonification provided by Open
   1. Fly around in OpenSpace, and you should see messages being printed in the SuperCollider console window
 
 ## Surround Sound Configurations
-The surround sound aspect of the provides sonifications is designed for two specific configurations, as shown in the images below. In both images, black dots represent speakers, and the subwoofer is positioned outside the circle since it is not considered a directional sound source.
+The surround sound aspect of the provided sonifications is designed for two specific configurations, as shown in the images below. In both images, black dots represent speakers, and the subwoofer is positioned outside the circle because it is not considered a directional sound source.
 
 <!-- @TODO (malej) Generate a dark mode version of this image -->
 :::{image} images/nkpg-dome.png
 :alt: "Surround Sound Configuration Schematic for the Visualization Center Dome Theater in Norrköping, Sweden"
-:width: 100%
+:width: 70%
 :align: center
 :class: only-light
 :::
 
-This image above shows a _top-down_ view of the surround sound setup for the Visualization Center Dome Theater in Norrköping, Sweden. The audience sits in rows inside the circle, facing the front center of the dome surface, which is marked as _Center_ at the top of the image. The circle represents the edge of the dome surface. This configuration uses the [Horizontal](./angle-information.md#horizontal) angle calculation mode without the elevation angle, as it only has only one ring of speakers.
+The image above shows a **top-down** view of the surround sound setup for the Visualization Center Dome Theater in Norrköping, Sweden. The audience sits in rows inside the circle, facing the front center of the dome surface, which is marked as _Center_ at the top of the image. The arrow in the image represents the viewing direction of the audience. The circle represents the edge of the dome surface. This configuration uses the [Horizontal](./angle-information.md#horizontal) angle calculation mode without the elevation angle, as it only has one ring of speakers.
 
 <!-- @TODO (malej) Generate a dark mode version of this image -->
 :::{image} images/amnh-dome.png
 :alt: "Surround Sound Configuration Schematic for the Hayden Planetarium at the American Museum of Natural History in New York, USA"
-:width: 100%
+:width: 70%
 :align: center
 :class: only-light
 :::
 
-This image above shows a _bottom-up_ view of the surround sound setup for the Hayden Planetarium at the American Museum of Natural History in New York, USA. The audience sits in concentric rings inside the outermost circle, looking up towards the center of the dome surface, which is marked as _Center_ with a blue cross in the middle of the image. The outermost ring represents the edge of the dome surface. This configuration uses the [Circular](./angle-information.md#circular) angle calculation mode with the elevation angle enabled, as it has multiple rings of speakers.
+The image above shows a **bottom-up** view of the surround sound setup for the Hayden Planetarium at the American Museum of Natural History in New York, USA. The audience sits in concentric rings inside the outermost circle, looking up toward the center of the dome surface, which is marked as _Center_ with a blue cross in the middle of the image. For a better understanding of the 3D structure, see the image below that shows the dome in 3D from a side view. In the image below, the arrow represents the viewing direction of the audience. The outermost ring represents the edge of the dome surface. This configuration uses the [Circular](./angle-information.md#circular) angle calculation mode with the elevation angle enabled, as it has multiple rings of speakers.
+
+<!-- @TODO (malej) Generate a dark mode version of this image -->
+:::{image} images/amnh-dome-3d.png
+:alt: "Surround Sound Configuration Schematic in 3D from the side for the Hayden Planetarium at the American Museum of Natural History in New York, USA"
+:width: 70%
+:align: center
+:class: only-light
+:::
 
 ### Further Notes
-Even though the sonifications have been designed with these specific surround configurations in mind, it is still possible to use them in other surround configurations. When choosing the appropriate [Angle Calculation Mode](./angle-information.md) for your surround sound configuration, consider two things: whether there is a clear forward direction, and the number of rings or rows of speakers. Use [Horizontal](./angle-information.md#horizontal) mode if there is a clear forward direction, and [Circular](./angle-information.md#circular) mode otherwise. If there is only one ring or row of speakers, then the elevation information can be omitted. Otherwise, the multiple rings or rows of speakers can be used to convey elevation information, and the elevation angle can be included in the angle calculations.
+Even though the sonifications have been designed with these specific surround configurations in mind, it is still possible to use them in other surround configurations. When choosing the appropriate [Angle Calculation Mode](./angle-information.md) for your surround sound configuration, consider two factors: whether there is a clear forward direction and the number of rings or rows of speakers. Use [Horizontal](./angle-information.md#horizontal) mode if there is a clear forward direction, and [Circular](./angle-information.md#circular) mode otherwise. If there is only one ring or row of speakers, then the elevation information can be omitted. Otherwise, the multiple rings or rows of speakers can be used to convey elevation information, and the elevation angle can be included in the angle calculations.

@@ -21,7 +21,7 @@ Note that in the figures below, none of the vectors that are shown are normalize
 :::::{tab-set}
 ::::{tab-item} Horizontal
 ## Horizontal
-This angle calculation mode is suitable for flat displays or forward-facing immersive environments, such as the Visualization Center dome theater in Norrköping, Sweden. For more information about surround sound configurations, see [Surround Sound Configurations](./sonification.md#surround-sound-configurations). This angle determines where the object is placed within a horizontal plane of reference in relation to the camera. How this angle is computed is explained below.
+This angle calculation mode is suitable for flat displays or forward-facing immersive environments. For more information about surround sound configurations, see [Surround Sound Configurations](./sonification.md#surround-sound-configurations). This angle determines where the object is placed within a horizontal plane of reference in relation to the camera. How this angle is computed is explained below.
 
 The angle {math}`\theta` is here defined as the angle from the camera to the object within a horizontal plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{View}` vector and the left direction of the camera (i.e. the negative {math}`Camera_{Right}` vector), with the {math}`Camera_{Up}` vector as the normal. The image below shows a figure of these objects and the computations.
 
