@@ -4,10 +4,14 @@ authors:
 ---
 
 # Sonification
-The [Telemetry Module](index.md) can be used together with [SuperCollider](#supercollider) to create a sonification. Sonification is the concept of conveying information using sound (in contrast to visualization, where information is conveyed using images). In addition to the telemetry module in OpenSpace, the sonification requires a separate program called [SuperCollider](https://supercollider.github.io/). This software acts as the receiver for the OSC messages from the telemetry module and uses that information to generate sounds, creating a sonification.
+The [Telemetry Module](index.md) can be used together with [SuperCollider](#supercollider) to create a sonification. Sonification is the concept of conveying information using sound (in contrast to visualization, where information is conveyed using visuals). In addition to the telemetry module in OpenSpace, the sonification requires a separate program, for example [SuperCollider](https://supercollider.github.io/). Any software can act as the receiver for the OSC messages from the telemetry module and uses that information to generate sounds, creating a sonification.
 
 <!-- @TODO (malej) Add more sonifications to this list if we add more -->
 OpenSpace currently provides three sonifications. The first is the [Planets Sonification](#planets-sonification-details), which is a complete sonification of the planets in the solar system. Then there is the [Customized Nodes Sonification](#customized-nodes-sonification), which is a smaller example sonification using the [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type. Lastly, there is the [OSC Example Sonification](#osc-example-sonification), which does not produce any sounds but instead contains more details on each telemetry type and basic examples of how to receive the OSC messages in SuperCollider.
+
+:::{note}
+Only one sonification can be listened to at a time in SuperCollider. Users need to keep in mind to disable the currently active sonification before enabling another one to listen to.
+:::
 
 <!-- @TODO (malej) Use the proper line number for the planets sonification -->
 ## SuperCollider
@@ -19,7 +23,7 @@ To run a sonification file in SuperCollider, follow the following steps:
   1. When you want to stop the sonification in SuperCollider, press <kbd>CTRL</kbd> + <kbd>.</kbd> and go back to the first step to start it up again
 
 :::{danger}
-Due to an unresolved issue with the scene not being safe for multiple threads, especially during startup, the telemetry module cannot be enabled before OpenSpace has fully initialized. This means that the user must manually enable it each time OpenSpace is started.
+Due to an unresolved issue with the scene not being safe for multiple threads, especially during startup, the telemetry module cannot be enabled before OpenSpace has fully initialized. This means that it must be manually enabled each time OpenSpace is started. This is done through the checkbox for the module in the settings menu of the user interface.
 :::
 
 ### Switching Audio Output
@@ -122,7 +126,7 @@ The surround sound aspect of the provides sonifications is designed for two spec
 :class: only-light
 :::
 
-This image above shows a _top-down_ view of the surround sound setup for the Visualization Center Dome Theater in Norrköping, Sweden. The audience sits in rows inside the circle, facing the front center of the dome surface, which is marked as _Center_ at the top of the image. The circle represents the edge of the dome surface. This configuration uses the [Horizontal](./angle-information.md#horizontal) angle calculation mode without the elevation angle, as it only has one ring of speakers.
+This image above shows a _top-down_ view of the surround sound setup for the Visualization Center Dome Theater in Norrköping, Sweden. The audience sits in rows inside the circle, facing the front center of the dome surface, which is marked as _Center_ at the top of the image. The circle represents the edge of the dome surface. This configuration uses the [Horizontal](./angle-information.md#horizontal) angle calculation mode without the elevation angle, as it only has only one ring of speakers.
 
 <!-- @TODO (malej) Generate a dark mode version of this image -->
 :::{image} images/amnh-dome.png
@@ -134,4 +138,5 @@ This image above shows a _top-down_ view of the surround sound setup for the Vis
 
 This image above shows a _bottom-up_ view of the surround sound setup for the Hayden Planetarium at the American Museum of Natural History in New York, USA. The audience sits in concentric rings inside the outermost circle, looking up towards the center of the dome surface, which is marked as _Center_ with a blue cross in the middle of the image. The outermost ring represents the edge of the dome surface. This configuration uses the [Circular](./angle-information.md#circular) angle calculation mode with the elevation angle enabled, as it has multiple rings of speakers.
 
+### Further Notes
 Even though the sonifications have been designed with these specific surround configurations in mind, it is still possible to use them in other surround configurations. When choosing the appropriate [Angle Calculation Mode](./angle-information.md) for your surround sound configuration, consider two things: whether there is a clear forward direction, and the number of rings or rows of speakers. Use [Horizontal](./angle-information.md#horizontal) mode if there is a clear forward direction, and [Circular](./angle-information.md#circular) mode otherwise. If there is only one ring or row of speakers, then the elevation information can be omitted. Otherwise, the multiple rings or rows of speakers can be used to convey elevation information, and the elevation angle can be included in the angle calculations.

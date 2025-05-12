@@ -26,12 +26,12 @@ In this telemetry type, angle information is provided for both planets and their
 When the Planets Overview Sonification is enabled, the angle calculated for the planet is modified in this telemetry type. Instead of calculating the angle from the camera to the planet, the angle is calculated similarly to that for the moons, from the Sun to the planet. More information can be found in [Further Notes](#further-notes).
 :::
 
-The OSC messages from this telemetry type are divided among the planets that have been added. These messages are sent under OSC labels such as `/Earth`, `/Mars`, etc. Each message contains at least four items, but there may be more depending on the number of major moons the planet has. Each item is explained in detail below:
+The OSC messages from this telemetry type are divided among the planets that have been added. These messages are sent under OSC labels such as `/Earth`, `/Mars`, et cetera. Each message contains at least four items, but there may be more depending on the number of major moons the planet has. Each item is explained in detail below:
 
   1. The distance from the camera to the planet in kilometers.
   1. The horizontal angle in radians to the planet, with the current angle calculation mode taken into account. For more information, see [Angle Calculations](./angle-information.md).
   1. The elevation angle in radians to the planet, with the current angle calculation mode taken into account. Again, see [Angle Calculations](./angle-information.md) for details.
-  1. List of user interface settings for the planet sonification, which aspects of the sonification should be turned on or off. A value of 0 means that it is turned off, and a 1 means that it is turned on. The order of the settings can be seen in the table below. If the setting does not exist for a planet, the value is always 0.
+  1. List of user interface settings for the planet sonification, which aspects of the sonification should be turned on or off. A value of `0` means that it is turned off, and a `1` means that it is turned on. The order of the settings can be seen in the table below. If the setting does not exist for a planet, the value is always `0`.
   1. (optional) The distance from the camera to the **first** moon in kilometers.
   1. (optional) The horizontal angle in radians to the first moon.
   1. (optional) The elevation angle in radians to the first moon.
@@ -53,7 +53,7 @@ The table below lists the aspects of the planets that can be conveyed by the son
 | 5                      | Rings                                                            |
 :::
 
-A  message from this telemetry type can for example, look like this:
+A message from this telemetry type can, for example, look like this:
 :::{code-block}
 [ /Mercury, 132973827.75397, 3.0632956233535, 2.4592313674705, Int8Array[ 1, 1, 0, 0, 0, 0 ] ]
 [ /Earth, 23378.137051742, -1.3549538910548, 0.0, Int8Array[ 1, 0, 0, 1, 0, 0 ], 393844.29544736, 1.1503961663306, 1.4013056448997 ]
@@ -95,7 +95,7 @@ In the example above, there are two messages. The first message is for Mercury, 
 
 ::::
 
-Another message from this telemetry type for a planet with many moons can for example, look like this:
+Another message from this telemetry type for a planet with many moons can, for example, look like this:
 :::{code-block}
 [ /Uranus, 2802287304.3966, -0.51042779334867, 0.77991915326513, Int8Array[ 1, 0, 0, 0, 1, 0 ], 2802327335.3037, -2.296671696741, 1.0691106829325, 2802319474.7116, -0.39361430235799, 2.0952173560493, 2802407613.9156, -0.35519426892961, 2.1357200596744, 2802296365.598, 0.18863273887734, 2.195427733976, 2802217828.1715, 0.99476981366003, 2.0118520154497 ]
 :::
@@ -133,7 +133,7 @@ This telemetry type sends out information about the user interface settings rega
 
   1. The index of the first planet to be compared. See the first table below on how to convert the index to a planet name.
   1. The index of the second planet to be compared (will never be the same as the first).
-  1. List of user interface settings for the comparison, which determines which aspects of the sonification should be turned on or off. A value of 0 means that a setting is turned off, and 1 means that it is turned on. The order of the settings can be seen in the second table below.
+  1. List of user interface settings for the comparison, which determines which aspects of the sonification should be turned on or off. A value of `0` means that a setting is turned off, and `1` that it is turned on. The order of the settings is shown in the second table below.
 
 :::::{grid} 1 1 1 2
 
@@ -170,7 +170,7 @@ This telemetry type sends out information about the user interface settings rega
 
 :::::
 
-A  message from this telemetry type can for example, look like this:
+A  message from this telemetry type can, for example, look like this:
 :::{code-block}
 [ /Compare, 3, 5, Int8Array[ 1, 1, 0, 0, 1, 0 ] ]
 :::
@@ -190,7 +190,7 @@ The example message above can be broken down into the following parts:
 ## Planets Overview Sonification
 This telemetry type sends out information about the user interface settings regarding the Planets Overview sonification. The OSC messages from this telemetry type go under the OSC label `/Overview` and contain only one item:
 
-  1. List of user interface settings for the planets overview. This determines which planets are part of the sonification or not. A value of 0 means that the planet is turned off, and a 1 means that it is turned on. The order of the settings can be seen in the table below.
+  1. List of user interface settings for the planets overview. This determines which planets are part of the sonification or not. A value of `0` means that the planet is turned off, and a `1` that it is turned on. The order of the settings is shown in the table below.
 
 :::{table}
 :align: center
@@ -206,7 +206,7 @@ This telemetry type sends out information about the user interface settings rega
 | 7                      | Neptune                                   |
 :::
 
-A  message from this telemetry type can for example, look like this:
+A  message from this telemetry type can, for example, look like this:
 :::{code-block}
 [ /Overview, Int8Array[ 0, 0, 1, 0, 1, 1, 1, 1 ] ]
 :::
@@ -225,7 +225,3 @@ The example message above can be broken down into the following parts:
 
 ## Further Notes
 Note that neither the [Planets Compare Sonification](#planets-compare-sonification) nor the [Planets Overview Sonification](#planets-overview-sonification) sends detailed information about the planets themselves. Instead, they only send a list of user interface settings and depend on the [Planets Sonification](#planets-sonification) to send the rest. These settings are used to modify the sonification in SuperCollider, altering how it sounds. However, the Planets Overview Sonification also changes the angle information for the planets sent by the Planets Sonification. Normally, the angle is calculated from the camera to the planet, but when the Planets Overview Sonification is active, the angle is calculated from the Sun to the planet, using the same method as described for the {ref}`Moon Angle <moon-angle-horizontal>`. Fortunately, users do not need to manually enable the Planets Sonification in OpenSpace while exploring the other sonifications, as OpenSpace will automatically send data from the Planets Sonification whenever any of the sonifications are enabled.
-
-:::{note}
-Only one sonification can be listened to at a time in SuperCollider. Users need to keep in mind to disable the currently active sonification before enabling another one to listen to.
-:::
