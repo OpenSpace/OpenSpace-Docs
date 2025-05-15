@@ -17,16 +17,17 @@
 ## Theses
 | _Year_ | _Person(s)_ | _Location_ | _Title_ | _Thesis_ |
 | ------ | ----------- | ---------- | ------- | -------- |
-| 2024 | Maria Brunned & Cindy Khuong | AMNH |  | |
-| 2024 | Dennis Moradkhani & Tim Olsson | SCI |  | |
+| 2025 | Wilhelm Björkström & Emil Wallberg | LiU | | |
+| 2024 | Maria Brunned & Cindy Khuong | AMNH | Contextual Visualization of Adaptive Meshes using YT | |
+| 2024 | Dennis Moradkhani & Tim Olsson | SCI | Cloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpace | |
 | 2023 | Alice Molin & Julia Johnstone | CCMC | Space Weather Simulation Model Integration | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-200316) |
 | 2023 | Anders Lundkvist & Erik Salsborn | CCMC | Enhancing Dungey Cycle Visualization in OpenSpace | |
-| 2023 | Andreas Engberg | AMNH | Investigating the Chemical Cartography of the Galaxy Through Visualization | | |
+| 2023 | Andreas Engberg | AMNH | Investigating the Chemical Cartography of the Galaxy Through Visualization | [link](https://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-206480) |
 | 2023 | Märta Nilsson & Robin Ridell | AMNH | Using Point Cloud Interpolation to Present a Cosmic View of Life | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-199028) |
 | 2022 | Jacob Molin & Victor Lindquist | SCI | Astronomy Software Integration with OpenSpace in Distributed Systems | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-196497) |
 | 2022 | Anne Olthoff & Catja Johansson Nordqvist | NYU | Interactive visualization of climate change on Earth in the OpenSpace project |
 | 2022 | Måns Aronsson & Simon Karlsson Brefält | CCMC | Advanced Fieldline Rendering for Space Weather Visualization | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-189157) |
-| 2022 | Emma Segolsson & Linn Storesund | AMNH | A Cosmic View of Life on Earth: Visualizing the relationship between species DNA in a threedimensional space | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-190669) |
+| 2022 | Emma Segolsson & Linn Storesund | AMNH | A Cosmic View of Life on Earth: Visualizing the relationship between species DNA in a three-dimensional space | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-190669) |
 | 2022 | Philip Ngo | CCMC | Topological Analysis Tool for Earth's Magnetosphere | |
 | 2022 | Christoffer Paulusson | CCMC | Real-time Field Line Rendering for Temporal and Heliophysical Datasets | [link](http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-184908) |
 | 2022 | Nisse Bergman & Hanna Timander Björknert | LiU | Designing a Streaming Pipeline for the Public Dissemination of Astronomy Data | [link](http://liu.diva-portal.org/smash/record.jsf?pid=diva2:1686604) |
