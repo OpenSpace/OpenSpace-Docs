@@ -442,8 +442,8 @@ The fading distances are specified in the same unit that is used to render the p
 distances should match that unit.
 :::
 
-## Orientation
-Per default, the planes that make up the points will be oriented to face the camera's view direction in a way that is suited for planar displays. However, for non-planar displays, like domes or planetariums, this is not always appropriate. In this case, it is usually more suitable to orient the points to face the position of the audience. To accommodate for this, the renderable includes a few different options for the orientation of the points:
+## Orientation / Billboarding
+Per default, the planes that make up the points will be oriented to face the camera's view direction in a way that is suited for planar displays. However, for non-planar displays, like domes or planetariums, this is not always appropriate. In this case, it is usually more suitable to orient the points to face the position of the audience, a process that is also called "Billboarding". To accommodate for this, the renderable includes a few different options for the orientation of the points:
 
 | Orientation mode | Description |
 | :--- | :--- |
@@ -465,7 +465,7 @@ And this is how the orientation is set from an asset file:
     ...
     -- Set the orientation render option to face the camera position instead of the
     -- view direction, which is default
-    OrientationRenderOption = "Camera Position Normal"
+    Billboard = "Camera Position Normal"
   },
   ...
 ```
