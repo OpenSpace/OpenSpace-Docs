@@ -4,14 +4,14 @@ authors:
 ---
 
 # Sonification
-The [Telemetry Module](index.md) can be used together with [SuperCollider](#supercollider) to create a sonification. Sonification is the concept of conveying information using sound (in contrast to visualization, where information is conveyed using visuals). In addition to the telemetry module in OpenSpace, the sonification requires a separate program, for example [SuperCollider](https://supercollider.github.io/). However, any software can act as the receiver for the OSC messages from the telemetry module and use that information to generate sounds, creating a sonification.
+The [Telemetry Module](index.md) can be used together with [SuperCollider](#supercollider) to create a sonification. Sonification is the practice of conveying information using sound (in contrast to visualization, where information is conveyed using visuals). In addition to the telemetry module in OpenSpace, the sonification requires a separate program, for example [SuperCollider](https://supercollider.github.io/). However, any software can act as the receiver for the OSC messages from the telemetry module and use that information to generate sounds, creating a sonification.
 
 :::{note}
 Only one sonification can be listened to at a time in SuperCollider. Users need to keep in mind to disable the currently active sonification before enabling another one to listen to.
 :::
 
 ## SuperCollider
-[SuperCollider](https://supercollider.github.io/) is the software used to produce the sounds of the sonifications. However, any other software capable of receiving OSC messages could be used. The messages from the telemetry module are sent to SuperCollider, which then uses that information to create sounds that correspond to that information.
+[SuperCollider](https://supercollider.github.io/) is the software used to produce the sounds of the sonifications. The messages from the telemetry module are sent to SuperCollider, which then uses that information to create sounds that correspond to that information.
 To run a sonification file in SuperCollider, follow the following steps:
   1. Download and install [SuperCollider](https://supercollider.github.io/) (if not already installed).
   1. Click any line within the outer parentheses `()` in the file and press <kbd>CTRL</kbd> + <kbd>ENTER</kbd>. For example, the line with the comment `// To run this example...` (should be around line 50) in the [_osc-example.scd_](#osc-example-sonification) file.
@@ -27,7 +27,7 @@ The [sonification examples from OpenSpace](#sonifications-provided-by-openspace)
 1. Add the line `o.outDevice_("Device Name");` below the line `o = Server.default.options;` in the sonification file, replacing `Device Name` with the chosen device name. The device name is the name found in the list, minus the dash at the start and the device information at the end (e.g., `MME : Headset Earphone (Poly BT700)`).
 
 ### Ambisonics
-To run the sonification with ambisonics, a few additional plugins must be installed in SuperCollider. Follow these steps to install them:
+To run the sonification with ambisonics, a few additional plugins must be installed in SuperCollider. Once installed, these plugins enable ambisonics functionality in SuperCollider for an enhanced surround experience. Follow these steps to install them:
 
 1. Locate the Extensions folder of SuperCollider:
     - Run `Platform.userExtensionDir` in SuperCollider to find the path to the extensions folder. This command is included in all the example files provided by OpenSpace, located below the copyright header (around line 25).
@@ -46,8 +46,6 @@ To run the sonification with ambisonics, a few additional plugins must be instal
         - Move all `.dll` files from the downloaded IEM Plug-in into this folder.
 
 1. Restart SuperCollider after the plugins have been installed.
-
-Once installed, these plugins enable ambisonics functionality in SuperCollider for an enhanced surround experience.
 
 ## Sonifications Provided by OpenSpace
 OpenSpace currently provides five sonifications. The first is the {ref}`Planets Sonification <planets-sonification-details>`, which is a complete sonification of the planets in the solar system. Then there are two smaller example sonifications that use the [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type, the [Space Station Sonification](#space-station-sonification), and the [Voyager Sonification](#voyager-sonification). Lastly, there is the [OSC Example Sonification](#osc-example-sonification), which does not produce any sounds but instead contains more details on each telemetry type and basic examples of how to receive the OSC messages in SuperCollider.
@@ -74,7 +72,8 @@ The steps below explain how to run the planet sonification provided by OpenSpace
       - To run the file in SuperCollider, find the line with the comment `// To run this sonification...` (should be around line 50), click on that line and press <kbd>CTRL</kbd> + <kbd>ENTER</kbd>.
       - Wait for the sonification to boot up.
       - The SuperCollider console should display: `Sonification is ready` when it finishes booting.
-  1. Run OpenSpace with the profile called _planets-sonification_.
+  1. Run OpenSpace with any profile (make sure that the planets and their major moons are included).
+  1. Load the asset file _planets.asset_ (which is located in the same directory as the sonification file) either by dragging and dropping the file into OpenSpace while it is running, or by creating a new profile that loads that asset.
   1. Turn on the Telemetry module in the user interface under _Settings/Modules_.
   1. Turn on the telemetry types that are of interest with the checkboxes in the telemetry module settings (refer to the list above).
   1. Fly around in OpenSpace and enjoy the sonification. When flying close to a planet, when its sonification is enabled in the Planets Sonification, you should be able to hear it.
@@ -86,12 +85,12 @@ The table below briefly describes what aspects of the planets are conveyed by th
 
 :::{table}
 :align: center
-| Planet Property      | Sonification Sound        | Mapping Polarity                                            |
+| Planet Property      | Sonification Mapping      | Mapping Polarity                                            |
 |----------------------|---------------------------|-------------------------------------------------------------|
 | Mass                 | Pitch                     | Higher pitch = Lower mass                                   |
 | Length of Day        | Tempo of oscillation      | Faster tempo = Shorter day                                  |
 | Length of Year       | Surround position         | Uses [angle calculations](./angle-information.md) to place the planet in a surround sound configuration |
-| Gravity              | Bouncing ball sound       | Faster bouncing ball = Stronger gravity                     |
+| Gravity              | Bouncing ball analogy     | Faster bouncing ball = Stronger gravity                     |
 | Temperature          | Sizzling intensity        | More sizzling = Higher temperature                          |
 | Atmospheric Pressure | Depth of wind sound       | Deeper wind sound = Higher atmospheric pressure             |
 | Average Wind Speed   | Fluctuation of wind sound | More fluctuations in wind sound = Faster average wind speed |
@@ -121,7 +120,7 @@ The steps below explain how to run the space station sonification provided by Op
   1. Turn on the Customized Nodes Information telemetry (called Nodes Telemetry in the user interface) type with the checkbox in the telemetry module settings.
   1. Fly around in OpenSpace and enjoy the sonification. When flying close to ISS or Tiangong, when the sonification is enabled, you should be able to hear it.
 
-This example demonstrates using SuperCollider to create a simple parametric sonification based on OSC messages from OpenSpace's telemetry module. The sonification emits a "poof" sound for both stations, with Tiangong having a higher pitch and ISS a lower pitch. The sound's loudness varies based on the distance to each station.
+This example demonstrates using SuperCollider to create a simple parametric sonification based on OSC messages from OpenSpace's telemetry module. The sonification emits a impulse sound for both stations, with Tiangong having a higher pitch and ISS a lower pitch. The sound's loudness varies based on the distance to each station.
 
 ### Voyager Sonification
 This sonification is a smaller example using the [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type. It uses the file _voyager-sonification.scd_, which can be found in the folder _data\assets\examples\sonification_ within the OpenSpace directory. This sonification follows the Voyager 1 and 2 space probes in OpenSpace and plays the sonification when the camera is located close to either of them.
