@@ -15,7 +15,7 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
 :stub-columns: 1
 * - Shortcut
   - Function
-* - {kbd}`F1`
+* - {kbd}`F2`
   - Toggle the original User Interface (deprecated)
 * - {kbd}`Ctrl+Q`
   - Initiates shutdown in 3 seconds
@@ -33,9 +33,9 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
   - Toggle Roll Friction on and off
 * - {kbd}`b`
   - Fade to black
-* - {kbd}`F2`
+* - {kbd}`F1`
   - Toogle main user interface
-* - {kbd}`Shift` + {kbd}`F2`
+* - {kbd}`Shift` + {kbd}`F1`
   - Toggle overlays (info text)
 * - {kbd}`Alt` + {kbd}`r`
   - Toggle master rendering (everything off)
