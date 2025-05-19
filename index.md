@@ -38,7 +38,7 @@ This site is in the midst of an overhaul. Sections break down into:
 : A reference section for OpenSpace commands, asset examples, and its scripting API.
 
 [Contribute](/contribute/index) {octicon}`x-circle;0.8em`
-: How **you** can contribute to the OpenSpace's development via coding of documentation.
+: How **you** can contribute to the OpenSpace's development via coding or documentation.
 
 [Glossary](/glossary/index) {octicon}`check-circle-fill;0.8em`
 : Glossaries of terms on astronomy, coding, or documentation.
@@ -55,7 +55,7 @@ This site is in the midst of an overhaul. Sections break down into:
 
 :::::{grid-item}
 
-![Inside Candor Chasma on Mars](./index_mars_terrain.png)
+![Inside Candor Chasma on Mars](_static/images/index_mars_terrain.png)
 
 :::::
 ::::::
