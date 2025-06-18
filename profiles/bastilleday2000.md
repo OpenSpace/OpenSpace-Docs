@@ -1,3 +1,11 @@
+---
+authors:
+  - name: Elon Olsson
+    affiliation: Community Coordinated Modeling Center
+---
+
+
+
 # Bastille Day 2000
 This profile shows the Coronal mass ejection (CME) that occurred on Bastille Day, July 14, 2000. The profile is data heavy and will require a powerful graphics card (GPU). This CME event might be the most studied solar storm so far. The visualizations to highlight the CME include: a volume rendering of the density of the material ejected from the sun; field lines showing the Sun's magnetic structure; magnetograms which are texture layers on the sun showing variation in strength of the magnetic field; an extreme ultra violet (EUV) image sequence layer shown on the sun; a light speed indicator to compare the speed of the CME; cut plane sequences showing the flux values of the CME, one equatorial cut plane and one meridional. Also there are flux nodes that show flux values, which are accompanied by a legend describing the color scheme. Showing all different visualization parts at once, may make the scene cluttered so hotkeys are provided to toggle different parts on and off.
 
