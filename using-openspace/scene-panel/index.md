@@ -136,7 +136,7 @@ The Scene Panel's settings for the Open Star Clusters. \
 :::{important}
 **The Asset's Renderable Determines the Settings Shown**
 
-In this section we are showing the Scene Panel and settings for the [Open Star Clusters](/content/milky-way/star-clusters/open-clusters/index). The Renderable for the Open Clusters is [RenderablePolygonCloud](/reference/asset-components/RenderablePolygonCloud), and that Rendedrable has a Sizing setting. The [Stars](/content/milky-way/stars/stars/index) data set, for example, uses [RenderableStars](/reference/asset-components/RenderableStars), which has no Sizing setting.
+In this section we are showing the Scene Panel and settings for the [Open Star Clusters](/content/milky-way/star-clusters/open-clusters/index). The Renderable for the Open Clusters is [RenderablePolygonCloud](/reference/asset-components/Renderable/RenderablePolygonCloud), and that Rendedrable has a Sizing setting. The [Stars](/content/milky-way/stars/stars/index) data set, for example, uses [RenderableStars](/reference/asset-components/Renderable/RenderableStars), which has no Sizing setting.
 
 We chose Open Clusters because a lot of data sets use the RenderablePolygonCloud renderable, but you will need to see a specific data set's renderable to understand its settings.
 :::
@@ -249,7 +249,7 @@ For the Stars, the size (brightness) is controlled with the Magnitude Exponent. 
 
 The Core and Glare properties set the look of the stars.
 
-More: [](/reference/asset-components/RenderableStars)
+More: [](/reference/asset-components/Renderable/RenderableStars)
 :::::
 ::::::
 
@@ -274,7 +274,7 @@ Planets have a different set of parameters to adjust. The most important one, pa
 
 Some planets have Labels too. These are for surface features like craters and mountains.
 
-More: [](/reference/asset-components/RenderableGlobe)
+More: [](/reference/asset-components/Renderable/RenderableGlobe)
 
 :::::
 ::::::
@@ -301,7 +301,7 @@ When it comes to images and lines, be they for constellations, or the Radio Sphe
 
 Opacity ranges from 0 to 1, with 0 being totally invisible and 1 being completely opaque. For lines, it can appear to alter their color, so setting the color and opacity go hand-in-hand to achieve the desired result.
 
-More: [](/reference/asset-components/RenderableConstellationLines), [](/reference/asset-components/RenderableSphericalGrid), [](/reference/asset-components/RenderableGrid), and many others.
+More: [](/reference/asset-components/Renderable/RenderableConstellationLines), [](/reference/asset-components/Renderable/RenderableSphericalGrid), [](/reference/asset-components/Renderable/RenderableGrid), and many others.
 :::::
 ::::::
 
