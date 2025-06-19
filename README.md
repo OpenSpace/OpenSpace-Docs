@@ -71,3 +71,36 @@ When adding images that require different files for light-mode and dark-mode, th
 - `scenemenu_dark.png`: Dark-mode version.
 
 If the same image can be used for both light and dark mode, the normal name would be used: `scenemenu.png`
+
+## A note about links
+
+Links to other pages are best done with their ID than their path. Paths can change but IDs should stay consistent, making it easier to ensure links aren't broken over time.
+
+✅ Great!
+```md:
+[RenderablePointCloud](galaxy_renderablegalaxy)
+```
+
+🙅 Try to avoid this if possible:
+```md:
+[RenderablePointCloud](/reference/asset-components/Renderable/RenderableGalaxy.md)
+```
+
+You find the ID of a page next to the title of the `.md` file, if you have the docs locally:
+```md:
+(galaxy_renderablegalaxy)=
+# RenderableGalaxy
+```
+
+For all the generated documentation, that is the `codegen` id in the OpenSpace engine repository
+```cpp:
+documentation::Documentation RenderableGalaxy::Documentation() {
+return codegen::doc<Parameters>("galaxy_renderablegalaxy");
+}
+```
+
+If you need to link to a handwritten markdown in the docs, you can add a similar id like above to the page and refer to that.
+```md:
+(example_id)=
+# Example Page
+```
