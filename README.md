@@ -74,7 +74,7 @@ If the same image can be used for both light and dark mode, the normal name woul
 
 ## A note about links
 
-Links to other pages are best done with their ID than their path. Paths can change but IDs should stay consistent, making it easier to ensure links aren't broken over time.
+Links to other pages are best done with their ID rather than their path. Paths can change but IDs should stay consistent, making it easier to ensure links aren't broken over time.
 
 ✅ Great!
 ```md:
