@@ -17,7 +17,7 @@
 ## Theses
 | _Year_ | _Person(s)_ | _Location_ | _Title_ | _Thesis_ |
 | ------ | ----------- | ---------- | ------- | -------- |
-| 2025 | Wilhelm Björkström & Emil Wallberg | LiU | | |
+| 2025 | Wilhelm Björkström & Emil Wallberg | LiU | An Interactive Black Hole Visualisation in OpenSpace | |
 | 2024 | Maria Brunned & Cindy Khuong | AMNH | Contextual Visualization of Adaptive Meshes using YT | |
 | 2024 | Dennis Moradkhani & Tim Olsson | SCI | Cloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpace | |
 | 2023 | Alice Molin & Julia Johnstone | CCMC | Space Weather Simulation Model Integration | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-200316) |
