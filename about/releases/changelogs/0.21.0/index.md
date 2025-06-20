@@ -16,12 +16,6 @@ Download version 0.21.0 on the OpenSpace website [installation page](https://ope
 ## New Presentation Tools & Night Sky Features
 -   New Night Sky panel, ideal for constellation and planetarium-style shows.
 -   "ShowComposer" tool allows you to create your own custom control panels (`http://localhost:4680/showcomposer`) with narration scripts for presenters. 
-
-## Enhanced Navigation
--   Zoom control using Z and X keys is now smoother and more responsive.
--   More accurate camera position and distance display, even when not focused on planets.
--   Each window can now have its own horizontal field of view (FOV).
--   Ability to mirror or offset display windows.
     
 ## Updated Datasets
 -   Exoplanets now have: 
