@@ -1,5 +1,5 @@
 # 0.21.0
-  - Release Date: 2025-06-20
+  - Release Date: 2025-06-19
   - Commit: [80f46de](https://github.com/OpenSpace/OpenSpace/commit/80f46ded1f97d7de40a34179446e9cc47299ab91)
   - Full changelog: [link](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.21.0)
 
