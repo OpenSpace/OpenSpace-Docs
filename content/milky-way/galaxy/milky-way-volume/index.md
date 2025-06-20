@@ -43,7 +43,7 @@ The team collaborated with scientists at the [National Astronomical Observatory 
 
 :::{figure} milky_way_model_faceon_composite.png
 :align: left
-:alt: A two-panel image of the Milky Way Galaxy in OpenSpace. On the left is the Milky Way Volume model and on the right is the volumetric model and the Milky Way Image. 
+:alt: A two-panel image of the Milky Way Galaxy in OpenSpace. On the left is the Milky Way Volume model and on the right is the volumetric model and the Milky Way Image.
 
 The Milky Way Galaxy Volume in OpenSpace. The left panel shows only the volumetric model, while the right panel shows the volumetric model and the [Milky Way Galaxy Image](../milky-way-image/index). From this view, it is clear the two assets complement one another nicely, and should typically be shown together.
 :::
@@ -51,7 +51,7 @@ The Milky Way Galaxy Volume in OpenSpace. The left panel shows only the volumetr
 
 ### Display Options
 
-The Milky Way Volume has specific options that can be accessed via its [renderable settings](/reference/asset-components/RenderableGalaxy). These options, specified in its asset file (below), control the look and quality of the volumentric model rendering in OpenSpace. These can be adjusted if the model is too detailed for your system, or not detailed enough. There is also the option to enable or disable star rendering within the model.
+The Milky Way Volume has specific options that can be accessed via its [renderable settings](/reference/asset-components/Renderable/RenderableGalaxy). These options, specified in its asset file (below), control the look and quality of the volumentric model rendering in OpenSpace. These can be adjusted if the model is too detailed for your system, or not detailed enough. There is also the option to enable or disable star rendering within the model.
 
 :::{dropdown} Asset File
 
