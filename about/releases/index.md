@@ -48,6 +48,7 @@ OpenSpace versions are labeled by a version number of the form `MM.mm.rr`,  wher
 :maxdepth: 1
 :hidden:
 
+changelogs/0.21.0/index
 changelogs/0.20.1/index
 changelogs/0.20.0/index
 changelogs/0.19.2
