@@ -92,7 +92,7 @@ You find the ID of a page next to the title of the `.md` file, if you have the d
 # RenderableGalaxy
 ```
 
-For all the generated documentation, that is the `codegen` id in the OpenSpace engine repository
+For all the generated documentation, that is the `codegen` ID in the OpenSpace engine repository
 ```cpp:
 documentation::Documentation RenderableGalaxy::Documentation() {
 return codegen::doc<Parameters>("galaxy_renderablegalaxy");
