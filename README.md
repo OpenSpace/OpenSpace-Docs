@@ -99,7 +99,7 @@ return codegen::doc<Parameters>("galaxy_renderablegalaxy");
 }
 ```
 
-If you need to link to a handwritten markdown in the docs, you can add a similar id like above to the page and refer to that.
+If you need to link to a handwritten markdown in the docs, you can add a similar ID like above to the page and refer to that.
 ```md:
 (example_id)=
 # Example Page
