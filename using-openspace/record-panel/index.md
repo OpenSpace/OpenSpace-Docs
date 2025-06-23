@@ -10,6 +10,7 @@ authors:
 
 :::{figure} toolbar_record.png
 :align: center
+:width: 1000px
 :alt: Toolbar with the Record Panel highlighted
 
 The Record Panel Button in the OpenSpace Toolbar.
@@ -35,7 +36,7 @@ Recording a session is easy, but you'll want to do some homework before you hit 
 
 Once you're ready, proceed to your starting point. Enter a filename, without an extension, in the `Enter recording filename` box, the press the {menuselection}`Record` Button, leaving all other options unchecked.
 
-Once the recording begins, you will see a red indicator on the Toolbar and the Record Panel will disappear. 
+Once the recording begins, you will see a red indicator on the Toolbar as well as in the Record Panel.
 
 :::{figure} record_panel_recording.png
 :align: center
@@ -43,6 +44,14 @@ Once the recording begins, you will see a red indicator on the Toolbar and the R
 :alt: OpenSpace's Stop Recording button
 
 Portion of the OpenSpace Toolbar showing a recording in progress.
+:::
+
+:::{figure} record_panel_recording_2.png
+:align: center
+:width: 40%
+:alt: OpenSpace's Stop Recording button, in the record panel
+
+Portion of the Record Panel showing a recording in progress.
 :::
 
 Once you're finished with your session, press the red {menuselection}`Stop Recording` Button in the Toolbar.
@@ -55,7 +64,7 @@ The resulting file is saved in the `user/recordings` folder and has an `.osrec` 
 [Advanced]{.advanced}
 ::::{dropdown} Option: Text File Format
 
-If you check the `Text file format` option in the Record Panel, the file will be saved in a readable text format. This is less efficient than the default binary format, but allows you to fine-tune the parameters. This is an advanced topic because you can only fine-tune these parameters by writing code yourself to hand-make a flightpath over some period of time. It is virtually impossible to create a sensible flightpath by altering the position and view angles by hand. 
+If you check the `Use text file format` option in the Record Panel, the file will be saved in a readable text format. This is less efficient than the default binary format, but allows you to fine-tune the parameters. This is an advanced topic because you can only fine-tune these parameters by writing code yourself to hand-make a flightpath over some period of time. It is virtually impossible to create a sensible flightpath by altering the position and view angles by hand.
 
 With this option checked, the resulting file will have an `.osrectxt` extension.
 
@@ -71,7 +80,7 @@ Each field in this line is defined as:
 :widths: auto
 :align: center
 
-| Column | Description | units | 
+| Column | Description | units |
 | --- | --- | --- |
 | 1 | [`camera` or `script`] denotes that this row represents a camera keyframe or script action. |  |
 | 2 | Time since OpenSpace launch | seconds |
@@ -118,17 +127,23 @@ If you wish to comment out a line, you can use the `#` character.
 
 Playing back a previously recorded session will abruptly move you to the starting point of the recoded session, then play the session. The time in OpenSpace will shift to the time settings when the sessions was recorded. Navigation control is disabled during playback.
 
-Choose a file to be played back using the dropdown menu. The files that appear here are located in your `user/recordings` directory. Choose the desired file, then press the {menuselection}`Play` Button.
+Choose a file to be played back using the dropdown menu. The files that appear here are located in your `user/recordings` directory. Choose the desired file, then press the {menuselection}`Play` Button. Once you play a recording back, the blue Pause and Stop Playback buttons appear in the Toolbar.
 
 :::{figure} record_panel_playback.png
 :align: center
-:width: 90%
+:width: 70%
 :alt: OpenSpace's playback butttons
 
 Portion of the OpenSpace Toolbar showing a playback in progress.
 :::
 
-Once you play a recording back, the blue Pause and Stop Playback buttons appear in the Toolbar.
+:::{figure} record_panel_playback_2.png
+:align: center
+:width: 40%
+:alt: OpenSpace's playback buttons, in the record panel
+
+Portion of the Record Panel showing a playback in progress.
+:::
 
 
 ### Option: Loop Playback
@@ -144,7 +159,12 @@ The `Output Frames` option determines whether screen shots are generated for the
 The resulting images may be imported into a program that can render them into a movie file.
 
 
+### Options: Hide User Interface Components on Playback
+The `Hide GUI on playback` and `Hide dashboards on playback` options can be used to hide the user interface overlays while a recording is being played back. This can for example be useful when outputting the frames of a recording, to not show the user interface in the outputed frames. The overlays will be shown again once the playback is finished.
 
+:::{note}
+Hiding the user interface during playback also hides the buttons for pausing or stopping the playback. If you want to abort a sessions recording, you can use the {kbd}`F1` key to bring back the user interface.
+:::
 
 
 % ### Playback of a Recorded Session
@@ -154,7 +174,7 @@ The resulting images may be imported into a program that can render them into a 
 % ### Session Recording Advanced Features
 % #### Console Script Commands
 % To start a recording, open the console with the **\`** key and enter: `openspace.sessionRecording.startRecording('filename.osrec');` To finish recording, open the console again and enter: `openspace.sessionRecording.stopRecording();` The GUI restricts the available playback files to those that reside in user/recordings (or possibly elsewhere if the USER variable has a custom definition). However, a relative path to a playback file anywhere in the filesystem can be entered in the `startPlayback` function. To see a full list of these commands, open a browser URL window and type the directory path to where OpenSpace is installed, and add the following path: /documentation/index.html#openspace.sessionRecording
-% 
+%
 % #### Playback Using Advanced Time Options
 % There are two ways to handle the simulation time when playing back a session. The most common method is to allow OpenSpace to set the simulation time (the current time visible in the menu) to exactly what it was when recorded.
 %   1. To play back a session in this manner, use the syntax: `openspace.sessionRecording.startPlayback('filename.osrec');` This function is available in the GUI with the "Force time change to match recording" box checked. Playback can also be performed without changing the current simulation time, in which case there are three different time options that can be used:
