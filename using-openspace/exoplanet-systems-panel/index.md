@@ -34,8 +34,7 @@ To load a system, click on ![Exoplanets module icon](exoplanet_module_icon_light
 
 :::{figure} exoplanet_systems_panel.png
 :align: center
-:width: 50%
-:figwidth: 70%
+:width: 400px
 :alt: OpenSpace's Exoplanet Systems Panel
 
 OpenSpace's Exoplanet Systems Panel.
@@ -50,8 +49,7 @@ Inside the panel, search for the system you want to add by typing the name of th
 
 :::{figure} exoplanet_systems_panel_search.png
 :align: center
-:figwidth: 50%
-:width: 70%
+:width: 400px
 :alt: A screenshot of the exoplanets panel with the results of a search for the star Kepler 11.
 
 The exoplanets module panel with the results of a search for "Kepler-11," a multiplanet system around the star Kepler 11.
@@ -66,8 +64,7 @@ Click on the desired system and then click the "Add System" button to the right.
 
 :::{figure} exoplanet_systems_panel_added.png
 :align: center
-:figwidth: 50%
-:width: 70%
+:width: 400px
 :alt: The exoplanet module panel with the Kepler-11 system added
 
 The exoplanet module panel with the Kepler-11 system added.
@@ -101,7 +98,8 @@ Use the target button beside the added system to center on the exoplanetary syst
 Once you approach a system, it will appear similar to the image below for the Kepler-11 system. You see the host star at center, and the system of planetary orbits encircling it along with an visualization of the habitable zone.
 
 :::{figure} exoplanet_system_kepler11.png
-:align: left
+:align: center
+:width: 1000px
 :alt: The Kepler-11 system with its six planets, and the habitable zone in green.
 
 The Kepler-11 system of six planets with the yellowish host star, Kepler-11, and accompanying planetary orbits. Encircling the system is a diagram of the {term}`habitable zone`, with red and blue edges indicating its probable boundaries and a green center indicating where liquid water could exist for an earth-sized planet.
