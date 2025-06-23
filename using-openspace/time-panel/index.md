@@ -9,6 +9,7 @@ authors:
 
 :::{figure} toolbar_time.png
 :align: center
+:width: 1000px
 :alt: Toolbar with the Time Panel highlighted
 
 The Time Panel Button in the OpenSpace Toolbar.
@@ -21,16 +22,16 @@ The Time Panel Button in the OpenSpace Toolbar.
 :::{figure} time_panel.png
 :align: right
 :width: 90%
-:figwidth: 50%
+:figwidth: 40%
 :alt: OpenSpace's Time Panel
 
 The Time Panel in OpenSpace.
 :::
 
 
-The Time Panel is where you go to change the date and time, and alter the _Simulation Speed_, or the rate of time. 
+The Time Panel is where you go to change the date and time, and alter the _Simulation Speed_, or the rate of time.
 
-The panel has various adjustments that allow you to select the date and time via typing in values, choosing from a calendar, or using a slider to adjust the simulation speed. It has a quick adjust slider to move rate of time forward or backward interactively. And, there are buttons to automatically go to the current date and time and reset the simulation time to "realtime," or 1 second per second.
+The panel has various adjustments that allow you to select the date and time via typing in values, choosing from a calendar, or using a slider to adjust the simulation speed. It has a quick adjust slider to move rate of time forward or backward interactively. And, there are buttons to automatically go to the current date and time and reset the simulation time to "realtime", or 1 second per second.
 
 
 <div style="margin-left: auto; margin-right: auto; width: 640px;">
@@ -102,7 +103,7 @@ The six fields at the top of the panel---year, month, day, hours, minutes, secon
 
 :::{figure} time_panel_fields.png
 :align: center
-:width: 50%
+:width: 400px
 :alt: OpenSpace's Time Panel
 
 The date and time fields.
@@ -114,43 +115,19 @@ The date and time fields.
 **Typing in the Fields:** If you type your desired values directly in the fields, the transition is **instantaneous**. There is no possibility of a disorienting experience because it goes directly to the new view.
 
 
-### Using the Calendar
-
-::::::{grid}
-:::::{grid-item}
-The ![calendar button](time_panel_calendar_button.png) button expands the Time Panel to reveal a calendar. You can choose a date here to set a new date for OpenSpace. 
-
-Using the calendar will result in an **interpolated transition**, so use caution.
-:::::
-
-:::::{grid-item}
-:::{figure} time_panel_calendar.png
-:align: center
-:width: 100%
-:figwidth: 60%
-:alt: OpenSpace's Time Panel's calendar
-
-The locking function for time transitions.
-:::
-:::::
-::::::
-
-
-
-
 
 
 ### Locking the Simulation Speed
 
 :::{figure} time_panel_lock.png
 :align: center
-:width: 40%
+:width: 400px
 :alt: OpenSpace's Time Panel
 
 Pressing the Lock Button displays the Interpolate, Set, and Cancel buttons.
 :::
 
-The ![Lock Button](time_panel_lock_button.png) button allows you to alter the date and time without altering the view. Normally, if you set a new date the view will change to the date specified, either instantaneously or by interpolating to it as we discussed above. When you use the Lock Button, you can change the date and the view won't change until you press either the Interpolate Button or the Set Button.
+The ![Lock Button](time_panel_lock_button.png){h=2em} button allows you to alter the date and time without altering the view. Normally, if you set a new date the view will change to the date specified, either instantaneously or by interpolating to it as we discussed above. When you use the Lock Button, you can change the date and the view won't change until you press either the Interpolate Button or the Set Button.
 
 The {menuselection}`Interpolate` Button results in an interpolated transition, while the {menuselection}`Set` Button will bring up the view for the new date using an instantaneous transition.
 
@@ -159,7 +136,7 @@ The {menuselection}`Interpolate` Button results in an interpolated transition, w
 
 ## Simulation Speed
 
-The Simulation Speed alters the **rate** of time in OpenSpace. There will be many reasons for changing the speed of the simulation: to see the planets revolve around the Sun, to spin one side of a planet into sunlight, examine a mission and its spacecraft over time, or to watch the stars move over millennia.  
+The Simulation Speed alters the **rate** of time in OpenSpace. There will be many reasons for changing the speed of the simulation: to see the planets revolve around the Sun, to spin one side of a planet into sunlight, examine a mission and its spacecraft over time, or to watch the stars move over millennia.
 
 ### Display Unit Menu
 
@@ -205,7 +182,7 @@ Inside the {menuselection}`Settings --> Time Manager` menu, you will find these 
 
 
 ### Fast-forward & Rewind Buttons
-The fast-forward and rewind buttons change the simulation speed according to preset increments defined in a profile. Appearing under each button is the increment it will implement and it will change as you progressively select adjacent increments. 
+The fast-forward and rewind buttons change the simulation speed according to preset increments defined in a profile. Appearing under each button is the increment it will implement and it will change as you progressively select adjacent increments.
 
 Alternatively, you can use the keyboard shortcuts {kbd}`→` to increase and {kbd}`←` to decrease the simulation time by the increments specified in the profile. For example, in the [](/profiles/default/index.md) Profile, the second time increment is 5.0 (see the _Default Profile Time Increments_ dropdown below), and this value is shown under the fast-forward button. If you press the {kbd}`→` key, the simulated time will increase to 5 seconds per second. Press the {kbd}`←` key and it will return to 1 second per second.
 
