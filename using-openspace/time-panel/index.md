@@ -153,13 +153,9 @@ Use the Display Unit dropdown menu to select the time units you desire, between 
 
 ### Time Rate Value
 
-Change the time increment in the two sliders below the menu. The left slider is for negative rates of time (time going in reverse), the right slider is for positive rates moving time into the future.
+Change the time increment in the input next to the display unit menu. Enter a number and then press {kbd}`Enter` to set the value. To use negative rates of time (time going in reverse), enter a negative number.
 
-The unit on the rate of time will be displayed in the slider. By default, the rate of time is seconds per second. Of course, when the value is 1 and the unit is seconds/second, we're running in real time. If you change the unit to hours, then the slider will show "hours/second, and if the value is 10, then time will move at 10 hours for every second on your watch.
-
-Like all sliders in OpenSpace, you can:
-- Click the mouse inside the slider to set a value, then drag to move the value to the desired value, or
-- Type a specific value by right-clicking inside the slider, then press {kbd}`Enter` to set the value.
+The unit on the rate of time is displayed above the input. By default, the rate of time is seconds per second. Of course, when the value is 1 and the unit is seconds/second, we're running in real time. If you change the unit to hours, then the input will show "hours/second", and if the value is 10, then time will move at 10 hours for every second on your watch.
 
 ### Quick Adjust
 
