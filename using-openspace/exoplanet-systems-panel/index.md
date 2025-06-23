@@ -11,6 +11,7 @@ authors:
 
 :::{figure} toolbar_exoplanet.png
 :align: center
+:width: 1000px
 :alt: Toolbar with the Exoplanet Systems Panel highlighted
 
 The Exoplanet Systems Panel Button in the OpenSpace Toolbar.
@@ -53,7 +54,7 @@ Inside the panel, search for the system you want to add by typing the name of th
 :width: 70%
 :alt: A screenshot of the exoplanets panel with the results of a search for the star Kepler 11.
 
-The exoplanets module panel with the results of a search for "Kepler-11," a multiplanet system around the star Kepler 11. 
+The exoplanets module panel with the results of a search for "Kepler-11," a multiplanet system around the star Kepler 11.
 :::
 
 
@@ -76,7 +77,7 @@ The exoplanet module panel with the Kepler-11 system added.
 
 :::{note}
 Adding a system does not automatically display it on the screen. You must fly up to it, and it will take longer than you expect before it becomes visible to you---these systems are very small.
-::: 
+:::
 
 
 
@@ -87,7 +88,7 @@ It is possible to add exoplanet systems using the {command}`addExoplanetSystem` 
 Here, {command}`name` is the name of the host star to add, in our example the value of {command}`name` would be "Kepler-11". So, the command would be typed: \
 {command}`openspace.exoplanets.addExoplanetSystem("Kepler-11")`
 
-Executing this command in OpenSpace's command line results in adding the system. Multiple systems can be added by specifying a list of host names as input, for example, {command}`{"Kepler-11", "GJ 1061"}`. 
+Executing this command in OpenSpace's command line results in adding the system. Multiple systems can be added by specifying a list of host names as input, for example, {command}`{"Kepler-11", "GJ 1061"}`.
 
 This function may be used to add exoplanets to OpenSpace before start-up.
 :::
