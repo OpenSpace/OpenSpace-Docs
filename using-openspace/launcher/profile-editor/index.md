@@ -12,7 +12,7 @@ This section is in progress. Some sections remain incomplete.
 :::
 
 
-A profile is an assemblage of data assets and settings that, grouped together, allow you to tell a story. A crucial aspect of the Profile Editor is selecting which data sets are included and, therefore, loaded into OpenSpace. 
+A profile is an assemblage of data assets and settings that, grouped together, allow you to tell a story. A crucial aspect of the Profile Editor is selecting which data sets are included and, therefore, loaded into OpenSpace.
 
 OpenSpace provides access to the profile editor via the Launcher Window:
 
@@ -89,7 +89,7 @@ Assets may also be added to a session temporarily (as opposed to saving it in a 
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-The Mark Interesting Nodes section allows you to determine what appears in the Navigation Panel. Each asset that appears there is available for targeting, aiming toward, or flying to. See the [Navigation Panel](/using-openspace/navigation-panel/index) for more.
+The Mark Interesting Nodes section allows you to determine what appears in the Navigation Panel. Each asset that appears there is available for targeting, aiming toward, or flying to. See the [Navigation Panel](/using-openspace/ui-panels/navigation-panel/index) for more.
 
 For this panel, you need to know the name of the asset, or node, you want to add.
 ::::
@@ -107,7 +107,7 @@ For this panel, you need to know the name of the asset, or node, you want to add
 
 ## Simulation Time Increments
 
-Simulation Time Increments allows you to edit the time increments that function within the [Time Panel](/using-openspace/time-panel/index). These increments are triggered by button on that panel, or more easily by keystrokes outlined in the Time Panel page.
+Simulation Time Increments allows you to edit the time increments that function within the [Time Panel](/using-openspace/ui-panels/time-panel/index). These increments are triggered by button on that panel, or more easily by keystrokes outlined in the Time Panel page.
 
 :::{figure} profile_editor_time_increments.png
 :align: center
@@ -125,7 +125,7 @@ Here, you have three ways to set the initial campera position: Geo State, Naviga
 
 ### Geo State
 
-Use the Geo State tab to set a camera position. This is useful when a planet or moon is set as the target---which is often the case. 
+Use the Geo State tab to set a camera position. This is useful when a planet or moon is set as the target---which is often the case.
 
 :::{figure} profile_editor_camera_geo.png
 :align: center
@@ -133,7 +133,7 @@ Use the Geo State tab to set a camera position. This is useful when a planet or 
 :figwidth: 100%
 :alt: Geo State tab in the Profile Editor's camera settings
 
-The Geo State tab in the Profile Editor's camera settings. 
+The Geo State tab in the Profile Editor's camera settings.
 :::
 
 Enter the anchor node (the object of focus), then the latitude, longitude, and altitude in meters. You can find values for these numbers interactively by flying to the desired position in OpenSpace, then reading the values for these in the informational Dashboard in the upper left of the Graphics Window. (If the Dashboard is not visible,  try {kbd}`Shift`+{kbd}`Tab` to toggle it on, or go to {menuselection}`Settings --> Dashboard`.)
@@ -157,7 +157,7 @@ The Navigation State tab in the Profile Editor's camera settings.
 
 ### Scene Graph Node
 
-With this option, you can enter a scene graph node, or a known data object in OpenSpace---something you can click on and off in the Scene Panel---and use that data for determining an initial camera setting. 
+With this option, you can enter a scene graph node, or a known data object in OpenSpace---something you can click on and off in the Scene Panel---and use that data for determining an initial camera setting.
 
 :::{figure} profile_editor_camera_node.png
 :align: center
@@ -217,7 +217,7 @@ The OpenSpace Profile Editor's Properties section, where you can add or remove a
 [Advanced]{.advanced}
 ## Actions & Keybindings
 
-At the bottom left, you'll see the Actions & Keybindings section. Press its {menuselection}`Edit` Button and you will see this window: 
+At the bottom left, you'll see the Actions & Keybindings section. Press its {menuselection}`Edit` Button and you will see this window:
 
 :::{figure} profile_editor_keybindings.png
 :align: center

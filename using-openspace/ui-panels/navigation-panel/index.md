@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Navigation Panel: Focus & Fly
+# Navigation: Focus & Fly
 
 :::{figure} toolbar_navigation.png
 :align: center
@@ -225,9 +225,9 @@ We will also use the Time Panel, which we will cover in more detail.
 
 {.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` In the Focus submenu, set Earth as the Focus.
-2. {octicon}`rocket;1.25em;profile-tour-action` Fly to Earth using the Pan & Fly Button ![Pan & Fly](../../getting-started/orientation/navigation_panel_panfly.png){h=2em}.
+2. {octicon}`rocket;1.25em;profile-tour-action` Fly to Earth using the Pan & Fly Button ![Pan & Fly](/getting-started/orientation/navigation_panel_panfly.png){h=2em}.
 3. {octicon}`rocket;1.25em;profile-tour-action` Fly back out to the Moon manually using the {kbd}`right mouse button`.
-4. {octicon}`rocket;1.25em;profile-tour-action` Revisit Earth using the Fly To button ![Fly to](../../getting-started/orientation/navigation_panel_fly.png){h=2em}. Notice this is a curved path.
+4. {octicon}`rocket;1.25em;profile-tour-action` Revisit Earth using the Fly To button ![Fly to](/getting-started/orientation/navigation_panel_fly.png){h=2em}. Notice this is a curved path.
 
 
 
@@ -370,7 +370,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 ![Scale up Moon](tutorial_scale_up_moon.png)
 
 {.tutorial}
-1. Jump To Earth, by pressing the Jump To button [Jump to](../../getting-started/orientation/navigation_panel_jump_button.png){h=2em} in the Focus submenu. This takes you directly to Earth and sets it as Focus.
+1. Jump To Earth, by pressing the Jump To button [Jump to](/getting-started/orientation/navigation_panel_jump_button.png){h=2em} in the Focus submenu. This takes you directly to Earth and sets it as Focus.
 2. {octicon}`stopwatch;1.25em;profile-tour-action` Pause time.
 3. {octicon}`rocket;1.25em;profile-tour-action` Orbit to locate the Moon.
 4. {octicon}`tools;1.25em;profile-tour-action` Increase the Moon's Scale to 25. {menuselection}`Scene --> Solar System --> Planets --> Earth --> Moon --> Moon --> Scale`. Click in the text input box and type `25`, then press {kbd}`Enter`.

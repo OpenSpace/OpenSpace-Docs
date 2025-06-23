@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Scene Panel: Manipulate Data
+# Scene: Manipulate Data
 
 :::{figure} toolbar_scene.png
 :align: center
