@@ -9,6 +9,7 @@ authors:
 
 :::{figure} toolbar_scene.png
 :align: center
+:width: 1000px
 :alt: The Scene Panel button on the toolbar
 
 The Scene Panel Button in the OpenSpace Toolbar.
@@ -18,7 +19,7 @@ We covered the Scene Panel basics in [Orientation](/getting-started/orientation/
 
 The Scene Panel is a hierarchial listing of all the data sets in your OpenSpace session, which are determined by what assets are in the profile you loaded upon launching OpenSpace.
 
-Expanding a data set will display its properties and their adjustment tools. These can be color choosers, sliders, or text boxes to type into that can change the size of a data set or its labels, the color and opacity of data, and the width and length of trails, to name a few. 
+Expanding a data set will display its properties and their adjustment tools. These can be color choosers, sliders, or text boxes to type into that can change the size of a data set or its labels, the color and opacity of data, and the width and length of trails, to name a few.
 
 
 <div style="margin-left: auto; margin-right: auto; width: 640px;">
@@ -40,7 +41,7 @@ Expanding a data set will display its properties and their adjustment tools. The
 :::{figure} scene_panel.png
 :align: right
 :width: 90%
-:figwidth: 40%
+:figwidth: 400px
 :alt: OpenSpace's Scene Panel
 
 The Scene Panel in OpenSpace, looking at the data sets under Star Clusters.
@@ -70,7 +71,7 @@ To get the rest of the tree back, clear the search box.
 :::{note}
 We will refer to aspects of the Scene Panel with the path convention, for example: \
 {menuselection}`Scene --> Milky Way --> Star Clusters --> Open Clusters`
- 
+
 In the context of a data set, we'll use the ellipses to abbreviate the path: \
 {menuselection}`... --> Open Clusters --> Renderable --> Labels --> Size` \
 or, for example, to change the size (brightness) of the Open Clusters: \
@@ -94,10 +95,10 @@ Some data sets have a Fade setting applied to them based on your distance from t
 
 
 ## Targeting a Data Set
-To the right of the data set is the target icon ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png). You can press this button to activate that data set as the Focus.
+To the right of the data set is the target icon ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png){h=2em}. You can press this button to activate that data set as the Focus.
 
 :::{note}
-Many of these data sets are observationally based---so they are centered on the Sun. If you were to press ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png) for the Open Clusters, the Sun would remain the Focus. This button is more critical when you want to visit an object like a  planet, moon, exoplanet system, or a spacecraft.
+Many of these data sets are observationally based---so they are centered on the Sun. If you were to press ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png){h=2em} for the Open Clusters, the Sun would remain the Focus. This button is more critical when you want to visit an object like a  planet, moon, exoplanet system, or a spacecraft.
 :::
 
 
@@ -106,11 +107,13 @@ Many of these data sets are observationally based---so they are centered on the 
 :::{figure} scene_panel_context_menu.png
 :align: right
 :width: 100%
-:figwidth: 30%
+:figwidth: 200px
 :alt: OpenSpace's Scene Panel Context Menu
 :::
 
-Beside the target button is a context menu ![Context menu](/getting-started/orientation/navigation_panel_context_menu_button.png). This opens up a subpanel that has the navigation options to Fly To, Jump To, or Zoom To/Frame. There is also a button to connect you to information about the data set.
+Beside the target button is a context menu ![Context menu](scene_panel_context_menu_button.png){h=2em}. This opens up a subpanel that has the navigation options to Fly To, Jump To, or Zoom To/Frame. There is also a button to pop out the settings for this object in a separate window.
+
+At the bottom there is a Delete button, that can be used to remove the object from the scene. Note that this action is irreversible, and that any objects that may depend on this object will also be deleted.
 
 
 
@@ -119,13 +122,13 @@ Beside the target button is a context menu ![Context menu](/getting-started/orie
 ## Asset Settings
 The Scene Panel has a hierarchial structure, expanding deeper and deeper depending on how many nested items you have. Under each data set, there is a hierarchical list of settings. At its most basic, each data set will have three settings subsections:
 - Renderable: where all of the settings for the renderable used by the data set can be changed---the look of the data set.
-- Scale: where you can scale the data up or down spatially.
-- Translation: where you can move the data set spatially in x, y, z.
+- Transform: has settings related to the position and size of the object. Two common subsections under this are: `Scale`, where you can scale the data up or down spatially, and `Translation`, where you can move the data set spatially in x, y, z.
+- Info: where you find information about the asset.
 
 :::{figure} scene_panel_open_clusters.png
 :align: center
 :width: 70%
-:figwidth: 60%
+:figwidth: 500px
 :alt: The Scene Panel's settings for the Open Star Clusters.
 
 The Scene Panel's settings for the Open Star Clusters. \
@@ -150,7 +153,7 @@ To remedy this, you can use the Sizing sliders. Bring the value up to increase t
 :::{figure} scene_panel_sizing.png
 :align: center
 :width: 70%
-:figwidth: 60%
+:figwidth: 500px
 :alt: The Open Star Clusters' Sizing settings.
 
 The Open Star Clusters' Sizing settings consists of a slider for Scale Factor and one for Scale Exponent. {menuselection}`... --> Renderable --> Sizing`.
@@ -192,7 +195,7 @@ Changing color in OpenSpace is fairly straightforward. Under the Coloring sectio
 :::{figure} scene_panel_coloring.png
 :align: center
 :width: 70%
-:figwidth: 60%
+:figwidth: 500px
 :alt: The Open Star Clusters' Coloring settings.
 
 The Open Star Clusters' Coloring settings consists of a color chooser (recommended) as well as a red-green-blue inputs. {menuselection}`... --> Renderable --> Coloring`.
@@ -207,7 +210,7 @@ Label settings are controlled in the Labels dropdown. Here, you can set an opaci
 :::{figure} scene_panel_labels.png
 :align: center
 :width: 70%
-:figwidth: 60%
+:figwidth: 500px
 :alt: The Open Star Clusters' Labels settings.
 
 The Open Star Clusters' Labels settings. {menuselection}`... --> Renderable --> Labels`.
@@ -237,7 +240,7 @@ We cannot delineate every [renderable's](/reference/renderable-overview) setting
 :::{figure} scene_panel_stars.png
 :align: center
 :width: 70%
-:figwidth: 100%
+:figwidth: 500px
 :alt: The Stars settings.
 
 The [Stars](/content/milky-way/stars/stars/index) settings via {menuselection}`Scene --> Milky Way --> Stars --> Stars`.
@@ -262,7 +265,7 @@ More: [](/reference/asset-components/Renderable/RenderableStars)
 :::{figure} scene_panel_mars.png
 :align: center
 :width: 70%
-:figwidth: 100%
+:figwidth: 500px
 :alt: The settings for Mars.
 
 A typical planet's settings, in this case Mars: {menuselection}`Scene --> Solar System --> Planets --> Mars --> Mars`.
@@ -289,7 +292,7 @@ More: [](/reference/asset-components/Renderable/RenderableGlobe)
 :::{figure} scene_panel_constellation_lines.png
 :align: center
 :width: 70%
-:figwidth: 100%
+:figwidth: 500px
 :alt: The settings for the Constellation Lines.
 
 Settings for the [Constellation Lines](/content/milky-way/constellations/constellation-lines/index), but similar settings are found in other line-drawing assets like the Radio Sphere and Grids.  {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines`.
