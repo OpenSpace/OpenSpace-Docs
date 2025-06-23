@@ -7,6 +7,15 @@ authors:
 
 # SkyBrowsing Panel
 
+:::{figure} toolbar_skybrowser.png
+:align: center
+:width: 1000px
+:alt: Toolbar with the SkyBrowsing Panel highlighted
+
+The SkyBrowser Panel Button in the OpenSpace Toolbar.
+:::
+
+
 :::{warning}
 This section is in progress. Text will appear on this page in the future.
 :::
