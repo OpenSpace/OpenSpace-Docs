@@ -154,7 +154,7 @@ We will also use the Time Panel, which we will cover in more detail.
 
 ### Begin at Earth
 
-[![Earth](earth.png)](earth.png)
+![Earth](tutorial_earth.png)
 
 {.tutorial}
 1. Bring up the Navigation Panel by clicking its button in the Toolbar.
@@ -168,7 +168,7 @@ We will also use the Time Panel, which we will cover in more detail.
 
 ### Zoom Out to the Moon's Orbit
 
-[![Earth & Moon](earth_and_moon.png)](earth_and_moon.png)
+![Earth & Moon](tutorial_earth_and_moon.png)
 
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Zoom away from Earth until you see the Moon's orbit.
@@ -180,7 +180,7 @@ We will also use the Time Panel, which we will cover in more detail.
 
 ### Focus on the Moon
 
-[![Moon targeted](target_moon.png)](target_moon.png)
+![Moon targeted](tutorial_target_moon.png)
 
 {.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` Choose Moon in the Focus Panel. This will set the Focus to the Moon and center it.
@@ -193,7 +193,7 @@ We will also use the Time Panel, which we will cover in more detail.
 
 ### Fly to the Moon
 
-[![Approaching Moon](approach_moon.png)](approach_moon.png)
+![Approaching Moon](tutorial_approach_moon.png)
 
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Fly to the Moon manually by holding down the {kbd}`right mouse button`.
@@ -205,7 +205,7 @@ We will also use the Time Panel, which we will cover in more detail.
 
 ### Anchor the Moon, Aim to Earth
 
-[![Moon targeted, aiming to Earth](target_moon_aim_earth.png)](target_moon_aim_earth.png)
+![Moon targeted, aiming to Earth](tutorial_target_moon_aim_earth.png)
 
 {.tutorial}
 1. Open the Anchor and Aim submenu of the panel, confirm that the Moon is set to Anchor.
@@ -233,7 +233,7 @@ We will also use the Time Panel, which we will cover in more detail.
 
 ### Focus on ISS and Jump to It
 
-[![ISS over Earth](ISS_focus.png)](ISS_focus.png)
+![ISS over Earth](tutorial_ISS_focus.png)
 
 {.tutorial}
 1. {octicon}`diff-added;1.25em;profile-tour-action` Turn on the International Space Station (ISS) if it's not already on: \
@@ -254,7 +254,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 ### Turn off Trails with Action Panel
 
-[![Turn off trails](hide_trails.png)](hide_trails.png)
+![Turn off trails](tutorial_hide_trails.png)
 
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Rotate around ISS to see the Earth's horizon.
@@ -272,7 +272,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 ### Aim to Earth
 
-[![ISS over Earth](ISS_aim_earth.png)](ISS_aim_earth.png)
+![ISS over Earth](tutorial_ISS_aim_earth.png)
 
 {.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` In the Navigation Panel, use the Aim submenu to set the Aim to Earth. This will move you so you're directly looking down on the ISS and Earth.
@@ -288,7 +288,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 ### Use Home key to Focus on Earth Again
 
-[![Earth with trails](earth_pull_away.png)](earth_pull_away.png)
+![Earth with trails](tutorial_earth_pull_away.png)
 
 {.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` Use the {kbd}`Home` key to return Earth to Focus.
@@ -301,7 +301,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 ### Focus on Mars
 
-[![Focus on Mars](inner_ss_mars_focus.png)](inner_ss_mars_focus.png)
+![Focus on Mars](tutorial_inner_ss_mars_focus.png)
 
 {.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` Using the Navigation Panel, select Mars from the Focus submenu.
@@ -313,7 +313,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 ### Focus on Phobos
 
-[![Focus on Phobos](phobos_focus_afar.png)](phobos_focus_afar.png)
+![Focus on Phobos](tutorial_phobos_focus_afar.png)
 
 {.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` Focus Phobos using one of the following two ways:
@@ -322,13 +322,13 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
   - Using the Navigation Menu, search for Phobos in Focus menu and select it.
 2. {octicon}`rocket;1.25em;profile-tour-action` Approach Phobos so it's in the foreground.
 
-[![Phobos](phobos.png)](phobos.png)
+![Phobos](tutorial_phobos.png)
 
 
 
 ### Aim to Mars
 
-[![Aim to Mars](phobos_aim_to_mars.png)](phobos_aim_to_mars.png)
+![Aim to Mars](tutorial_phobos_aim_to_mars.png)
 
 {.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` Aim to Mars in the Navigation Panel's Aim submenu.
@@ -339,7 +339,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 ### Follow Phobos
 
-[![Mars and moons](mars_and_moons.png)](mars_and_moons.png)
+![Mars and moons](tutorial_mars_and_moons.png)
 
 {.tutorial}
 1. {octicon}`stopwatch;1.25em;profile-tour-action` Set the Simulation Time to 5 minutes / second by clicking inside the input box and typing `5`.
@@ -352,7 +352,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 ### Focus on Mars
 
-[![Mars as focus](mars_focus.png)](mars_focus.png)
+![Mars as focus](tutorial_mars_focus.png)
 
 {.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` Set Mars back to the Focus.
@@ -366,7 +366,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 ### Phases of the Moon
 
-[![Scale up Moon](scale_up_moon.png)](scale_up_moon.png)
+![Scale up Moon](tutorial_scale_up_moon.png)
 
 {.tutorial}
 1. Jump To Earth, by pressing the Jump To button [Jump to](../../getting-started/orientation/navigation_panel_jump_button.png){h=2em} in the Focus submenu. This takes you directly to Earth and sets it as Focus.
