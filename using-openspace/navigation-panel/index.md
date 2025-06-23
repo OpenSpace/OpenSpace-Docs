@@ -11,8 +11,9 @@ authors:
 :align: center
 :width: 1000px
 :alt: Toolbar with the Navigation Panel highlighted
-:::
 
+The Navigation Panel Button in the OpenSpace Toolbar.
+:::
 
 
 ::::::::{tab-set}
