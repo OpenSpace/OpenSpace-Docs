@@ -221,9 +221,18 @@ Friction status is "off" for rotational flight (orbiting).
 
 The Toolbar consists of panels that you use to control aspects of OpenSpace. Each Toolbar Button opens a panel. These panels collect specific functionality to alter time, record your session, access actions, and so on. Clicking on each button will bring up a panel that is attached to its corresponding icon, but may also be detached to float the panel.
 
+<!-- Only add the figure text to the last image, because otherwise it shows up twice -->
 :::{figure} panels_orientation.png
 :align: center
 :width: 100%
+:class: only-light
+:alt: OpenSpace Toolbar annotated.
+:::
+
+:::{figure} panels_orientation_dark.png
+:align: center
+:width: 100%
+:class: only-dark
 :alt: OpenSpace Toolbar annotated.
 
 OpenSpace's Toolbar annotated.
