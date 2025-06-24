@@ -102,14 +102,14 @@ Many of these data sets are observationally based---so they are centered on the 
 :::
 
 
-## Quick Access Menu
-
 :::{figure} scene_panel_context_menu.png
 :align: right
 :width: 100%
 :figwidth: 200px
 :alt: OpenSpace's Scene Panel Context Menu
 :::
+
+## Quick Access Menu
 
 Beside the target button is a context menu ![Context menu](scene_panel_context_menu_button.png){h=2em}. This opens up a subpanel that has the navigation options to Fly To, Jump To, or Zoom To/Frame. There is also a button to pop out the settings for this object in a separate window.
 
