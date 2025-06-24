@@ -18,8 +18,7 @@ OpenSpace provides access to the profile editor via the Launcher Window:
 
 :::{figure} /getting-started/launch/launcher.png
 :align: center
-:width: 70%
-:figwidth: 80%
+:width: 400px
 :alt: OpenSpace launcher window
 
 The OpenSpace launcher window, with the profile chooser at top, and the New and Edit buttons.
@@ -32,8 +31,7 @@ The easiest way to create a new profile is to find a profile that has many of th
 
 :::{figure} profile_editor.png
 :align: center
-:width: 100%
-:figwidth: 80%
+:width: 540px
 :alt: OpenSpace Profile Editor
 
 The OpenSpace Profile Editor.
@@ -48,8 +46,7 @@ Once you have a new profile, you can change its meta-information: the name, desc
 
 :::{figure} profile_editor_meta.png
 :align: center
-:width: 100%
-:figwidth: 70%
+:width: 540px
 :alt: OpenSpace Profile Editor metadata editor
 
 The OpenSpace Profile Editor's Meta Editor.
@@ -62,8 +59,7 @@ The most-used portion of the Profile Editor is the Assets section in the middle 
 
 :::{figure} profile_editor_assets.png
 :align: center
-:width: 100%
-:figwidth: 80%
+:width: 540px
 :alt: OpenSpace Profile Editor's Asset Section
 
 The OpenSpace Profile Editor's Assets section, where you can add or remove assets in the profile.
@@ -96,8 +92,8 @@ For this panel, you need to know the name of the asset, or node, you want to add
 
 ::::{grid-item}
 :::{image} profile_editor_nodes.png
-:align: right
-:width: 90%
+:align: center
+:width: 70%
 :alt: OpenSpace Profile Editor's add nodes
 :::
 ::::
@@ -111,8 +107,7 @@ Simulation Time Increments allows you to edit the time increments that function 
 
 :::{figure} profile_editor_time_increments.png
 :align: center
-:width: 80%
-:figwidth: 100%
+:width: 540px
 :alt: OpenSpace Profile Editor's Simulation Time Increments section.
 :::
 
@@ -129,8 +124,7 @@ Use the Geo State tab to set a camera position. This is useful when a planet or 
 
 :::{figure} profile_editor_camera_geo.png
 :align: center
-:width: 80%
-:figwidth: 100%
+:width: 540px
 :alt: Geo State tab in the Profile Editor's camera settings
 
 The Geo State tab in the Profile Editor's camera settings.
@@ -147,8 +141,7 @@ Enter the anchor node (the object of focus), then the latitude, longitude, and a
 
 :::{figure} profile_editor_camera_navigation.png
 :align: center
-:width: 80%
-:figwidth: 100%
+:width: 540px
 :alt: Navigation State tab in the Profile Editor's camera settings
 
 The Navigation State tab in the Profile Editor's camera settings.
@@ -161,8 +154,7 @@ With this option, you can enter a scene graph node, or a known data object in Op
 
 :::{figure} profile_editor_camera_node.png
 :align: center
-:width: 80%
-:figwidth: 100%
+:width: 540px
 :alt: Scene Graph Node tab in the Profile Editor's camera settings
 
 The Scene Graph Node tab in the Profile Editor's camera settings.
@@ -176,8 +168,6 @@ Trpically, though, you set a planet as the opening view upon launch. So, if you 
 
 ## Initial Time Settings
 
-
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 Pressing the {menuselection}`Edit` button in the Time section of the Profile Editor brings up a small window with a few time settings for the profile where you set the initial time for the profile.
@@ -187,9 +177,10 @@ You can choose `Relative` or `Absolute` from the dropdown menu. `Relative` is re
 The Relative Time section allows you to provide an offset to the selected time above. This is typically set to `-1d`, or "minus one day." We use a one-day offset prior to the set time because the clouds on Earth are from satellite data that will be missing or incomplete if we choose the current day.
 ::::
 
-::::{grid-item}
+
 :::{figure} profile_editor_time.png
-:width: 80%
+:align: center
+:width: 50%
 :alt: OpenSpace Profile Editor's Actions and Keybindings section
 :::
 
@@ -205,8 +196,7 @@ The Relative Time section allows you to provide an offset to the selected time a
 
 :::{figure} profile_editor_properties.png
 :align: center
-:width: 100%
-:figwidth: 100%
+:width: 700px
 :alt: OpenSpace Profile Editor's Properties settings
 
 The OpenSpace Profile Editor's Properties section, where you can add or remove actions and keyboard shortcuts in the profile.
@@ -221,8 +211,7 @@ At the bottom left, you'll see the Actions & Keybindings section. Press its {men
 
 :::{figure} profile_editor_keybindings.png
 :align: center
-:width: 100%
-:figwidth: 100%
+:width: 900px
 :alt: OpenSpace Profile Editor's Actions and Keybindings section
 
 The OpenSpace Profile Editor's Actions and Keybindings section, where you can add or remove actions and keyboard shortcuts in the profile.
@@ -250,7 +239,8 @@ This section uses scripting expressions and functions that instruct OpenSpace wh
 
 ::::{grid-item}
 :::{figure} profile_editor_modules.png
-:width: 80%
+:align: center
+:width: 70%
 :alt: OpenSpace Profile Editor's Modules section
 :::
 
