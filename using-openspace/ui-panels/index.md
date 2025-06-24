@@ -1,5 +1,6 @@
 # User Interface Panels
 
+These pages collect information about the most commonly used panels in the user interface.
 
 :::{toctree}
 :maxdepth: 1
@@ -13,5 +14,7 @@ geolocation-panel/index
 
 skybrowser-panel/index
 exoplanet-systems-panel/index
+screenspace-renderables/index
+user-panels/index
 
 :::
