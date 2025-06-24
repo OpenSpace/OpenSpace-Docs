@@ -177,7 +177,7 @@ You can choose `Relative` or `Absolute` from the dropdown menu. `Relative` is re
 The Relative Time section allows you to provide an offset to the selected time above. This is typically set to `-1d`, or "minus one day." We use a one-day offset prior to the set time because the clouds on Earth are from satellite data that will be missing or incomplete if we choose the current day.
 ::::
 
-
+::::{grid-item}
 :::{figure} profile_editor_time.png
 :align: center
 :width: 50%
