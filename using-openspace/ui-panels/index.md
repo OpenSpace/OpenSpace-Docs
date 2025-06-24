@@ -5,15 +5,15 @@ These pages collect information about the most commonly used panels in the user 
 :::{toctree}
 :maxdepth: 1
 
-scene-panel/index
-navigation-panel/index
-time-panel/index
-actions-panel/index
-record-panel/index
-geolocation-panel/index
+scene/index
+navigation/index
+time/index
+actions/index
+record/index
+geolocation/index
 
-skybrowser-panel/index
-exoplanet-systems-panel/index
+skybrowser/index
+exoplanet-systems/index
 screenspace-renderables/index
 user-panels/index
 

@@ -14,22 +14,22 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [The Building Blocks of OpenSpace](/using-openspace/building-blocks/index)
 : How profiles, assets, and renderables work together.
 
-[Scene Panel](/using-openspace/ui-panels/scene-panel/index)
+[Scene Panel](/using-openspace/ui-panels/scene/index)
 : Turn data sets on and off and alter their appearance.
 
-[Navigation Panel](/using-openspace/ui-panels/navigation-panel/index)
+[Navigation Panel](/using-openspace/ui-panels/navigation/index)
 : Focus on an object and use automated flights to reach them.
 
-[Time Panel](/using-openspace/ui-panels/time-panel/index)
+[Time Panel](/using-openspace/ui-panels/time/index)
 : Manipulate the date, time, and the simulation speed.
 
-[Actions Panel](/using-openspace/ui-panels/actions-panel/index)
+[Actions Panel](/using-openspace/ui-panels/actions/index)
 : Automate scene adjustments.
 
-[Record Panel](/using-openspace/ui-panels/record-panel/index)
+[Record Panel](/using-openspace/ui-panels/record/index)
 : Save and Playback a Session.
 
-[GeoLocation Panel](/using-openspace/ui-panels/geolocation-panel/index)
+[GeoLocation Panel](/using-openspace/ui-panels/geolocation/index)
 : Fly to a location on Earth.
 
 [Profile Editor](/using-openspace/launcher/profile-editor/index)
