@@ -65,12 +65,16 @@ Each major grouping in the documentation should have a separate folder in the re
 - `requirements.txt`: A PIP requirements file that describes all of the Python package requirements that need to be installed.
 - `make.bat` / `Makefile`: A batch script for Windows or bash script for Linux to build the documentation. The script needs a second parameter that describes the output type, by default we use `html` for our documentation or `linkcheck` to check whether links in the files are correct. `clean` can be used to remove existing files to build the documentation from scratch, for example via `make.bat clean && make.bat html`.
 
+## Different images for dark and light mode
+
 When adding images that require different files for light-mode and dark-mode, the file should be named normally for the light version and have the suffix `_dark` for the dark-mode version of the images. Example:
 
 - `scenemenu.png`: Light-mode version.
 - `scenemenu_dark.png`: Dark-mode version.
 
-If the same image can be used for both light and dark mode, the normal name would be used: `scenemenu.png`
+If the same image can be used for both light and dark mode, the normal name would be used: `scenemenu.png`.
+
+Use the CSS classes `only-dark` and `only-light` to show an image in only dark mode or light mode, respectively.
 
 ## A note about links
 
