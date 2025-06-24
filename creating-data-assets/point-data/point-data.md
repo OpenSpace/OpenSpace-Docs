@@ -3,7 +3,7 @@ A commonly used type of dataset is those containing a set of 3D positions. These
 
 This page describes how to load a point dataset and the options for controlling the visual of the points. It is also possible to add text labels to the points. See the separate [Labels page](./labels.md) for more details on labels.
 
-Also see [RenderablePointCloud](/reference/asset-components/RenderablePointCloud.md) asset component documentation for more details, available settings and examples of how to load and render point datasets.
+Also see [RenderablePointCloud](/reference/asset-components/Renderable/RenderablePointCloud.md) asset component documentation for more details, available settings and examples of how to load and render point datasets.
 
 :::{figure} sdss.png
 :align: center
@@ -52,7 +52,7 @@ Per default, the X, Y and Z positions of the points are interpreted in meters, b
   ...
 ```
 
-Other options are for example `"Mpc"` for Megaparsec, or `Km` for kilometers. See [RenderablePointCloud](/reference/asset-components/RenderablePointCloud.md) documentation for a list of supported units.
+Other options are for example `"Mpc"` for Megaparsec, or `Km` for kilometers. See [RenderablePointCloud](/reference/asset-components/Renderable/RenderablePointCloud.md) documentation for a list of supported units.
 
 ### Data Mapping
 
@@ -260,7 +260,7 @@ The list of available path tokens and their corresponding locations are found in
 :::
 
 ### Other Texture Settings
-There are some additional settings that might be set related to the texture, like whether image compression should be allowed or if the alpha channel of images should be used (both these settings are enabled per default).  For more details, see the documentation of the table parameters for the `Texture` table of `RenderablePointCloud` on the [reference page about that renderable](/reference/asset-components/RenderablePointCloud.md).
+There are some additional settings that might be set related to the texture, like whether image compression should be allowed or if the alpha channel of images should be used (both these settings are enabled per default). For more details, see the documentation of the table parameters for the `Texture` table of `RenderablePointCloud` on the [reference page about that renderable](/reference/asset-components/Renderable/RenderablePointCloud.md).
 
 ## Outlines
 :::{figure} outline_basic.png
@@ -472,9 +472,9 @@ And this is how the orientation is set from an asset file:
 
 ## Specializations of RenderablePointCloud
 
-There are also other specializations of the [RenderablePointCloud](/reference/asset-components/RenderablePointCloud.md) type, that add one or more specialized features for the points. The [RenderablePointCloud](/reference/asset-components/RenderablePointCloud.md) type renderable should however be sufficient for most use cases.
+There are also other specializations of the [RenderablePointCloud](/reference/asset-components/Renderable/RenderablePointCloud.md) type, that add one or more specialized features for the points. The [RenderablePointCloud](/reference/asset-components/Renderable/RenderablePointCloud.md) type renderable should however be sufficient for most use cases.
 
 | Renderable type | Description |
 | :--- | :--- |
-| [RenderablePolygonCloud](/reference/asset-components/RenderablePolygonCloud.md) | A point cloud where each point is represented by a dynamically created uniform polygon (such as a triangle, hexagon, octagon, etc.). The number of sides of the polygon is configured in the asset. |
-| [RenderableInterpolatedPoints](/reference/asset-components/RenderableInterpolatedPoints.md) | A point cloud that supports interpolation between a number of sets of positions. |
+| [RenderablePolygonCloud](/reference/asset-components/Renderable/RenderablePolygonCloud.md)             | A point cloud where each point is represented by a dynamically created uniform polygon (such as a triangle, hexagon, octagon, etc.). The number of sides of the polygon is configured in the asset. |
+| [RenderableInterpolatedPoints](/reference/asset-components/Renderable/RenderableInterpolatedPoints.md) | A point cloud that supports interpolation between a number of sets of positions.                                                                                                                    |

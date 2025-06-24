@@ -317,11 +317,21 @@ def generate_asset_components(environment, assets_folder, output_folder, folder_
 
   # Create pages for the asset component pages
   asset_component_template = environment.get_template("asset_component.html.jinja")
+  asset_component_category_index_template = environment.get_template("asset_component_category_index.html.jinja")
 
   # Missing and found asset files
   components_info = []
   print("Handle individual components")
   for category in asset_categories:
+    # Create a folder for the category
+    asset_category_output_path = os.path.join(assets_output_path, category["name"])
+    os.makedirs(asset_category_output_path, exist_ok=True)
+
+    # Create a category index file
+    output_category_index = asset_component_category_index_template.render(category=category)
+    with open(os.path.join(asset_category_output_path, f"index.md"), "w") as f:
+      f.write(output_category_index)
+
     # Find base class to add its members to each derived class
     base_class_name = category["name"]
     base_class = None
@@ -372,7 +382,7 @@ def generate_asset_components(environment, assets_folder, output_folder, folder_
         examples=examples
       )
       name = asset_component["name"]
-      with open(os.path.join(assets_output_path, f"{name}.md"), "w") as f:
+      with open(os.path.join(asset_category_output_path, f"{name}.md"), "w") as f:
         f.write(output_asset_component)
 
   # Create index file
