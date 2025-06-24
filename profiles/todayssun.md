@@ -51,18 +51,21 @@ A few guiding lines are added in the scene. There are there to help the user nav
 
 ## Keyboard Shortcuts
 
-
-No shortcuts provided.
+No additional shortcuts provided.
 
 :::::::
+
 
 :::::::{tab-item} Data Sets
 
 ## Data Sets
 
+The data for this profile is visualized mainly by the two renderables: <br>
+[Renderable Time Varying Fits Sphere](fitsfilereader_renderable_time_varying_fits_sphere) and [Renderable Field Lines Sequence](fieldlinessequence_renderablefieldlinessequence). They grab data on the data formats FITS and OSFLS respectively. They are downloading these data sets dynamicaly during run-time from the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Fight Center and their Integrated Space Weather Analysis (ISWA) system. It is using the [Dynamic File Sequence Downloader](spaceweather_id) to achive this.
+
+The profile is exclusivly using simulation outputs from the space weather simulation model called [WSA](https://ccmc.gsfc.nasa.gov/models/WSA~5.4) version 5.4.
+
 :::::::
-
-
 
 
 :::::::{tab-item} Dossier
