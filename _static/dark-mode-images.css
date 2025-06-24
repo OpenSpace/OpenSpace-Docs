@@ -1,0 +1,22 @@
+/*
+ * Use the classes `only-light` and `only-dark` to show images in dark mode or light mode
+ * only
+ */
+
+@media (prefers-color-scheme: light) {
+  .only-light {
+    display: block !important;
+  }
+  .only-dark {
+    display: none !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .only-light {
+    display: none !important;
+  }
+  .only-dark {
+    display: block !important;
+  }
+}
