@@ -22,5 +22,5 @@ OpenSpace is an open-source project and relies on the contribution by a communit
 development/index
 faq/index
 documentation/index
-testing/index
+imagetesting/index
 :::
