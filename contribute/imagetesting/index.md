@@ -1,6 +1,7 @@
 # Image Testing
 OpenSpace is using an image-based regression testing on the backend. Its two main goals are to (a) prevent code changes accidentally affecting the visualization and (b) generating screenshots for use in the documentation that keep up to date with the current OpenSpace version.
 
+
 ## Server
 The generated images are available at [https://regression.openspaceproject.com](https://regression.openspaceproject.com).
 
@@ -27,6 +28,11 @@ The reference image for example test
 :width: 540px
 The difference image for example test
 :::
+
+
+## Local testing
+All image tests should be tested manually before committing them into the repository. See the [OpenSpace-VisualTesting](https://github.com/OpenSpace/OpenSpace-VisualTesting) repository's README for more information on how to use the _Runner_ application to run individual tests locally. The Runner will execute the test and save the rendered screenshot locally in a `test` folder. The screenshot should correspond to the result that the test is supposed to create.
+
 
 ## Test Files
 The image test files are located in the `visualtests` folder in the main OpenSpace repository. The regression server will automatically run through all tests that are contained in this folder.
@@ -138,7 +144,8 @@ That means it is not necessary to explicitly add instructions for these changes.
 : Lua scripting equivalent: none
 :::
 
-### Wizard
+
+## Wizard
 The main OpenSpace repository contains a wizard that helps with creating `.ostest` files. The wizard is located in `support/testwizard` and requires a working Python installation on the system. First, the necessary packages need to be installed by running `pip install -r requirements.txt` from that folder. Before running the wizard, OpenSpace needs to be started with the profile for which a test should be created. Then, the wizard is run by `python main.py` which starts an interactive shell.
 
 When starting, the wizard will provide information about the different instructions that can be added and then ask for the name of the test, which will become the filename for the `.ostest` file. After that, the wizard will ask for instructions to add to the test. The general workflow is to set up changes in the running OpenSpace version and then pick the instruction in the wizard which will retrieve the necessary information from the running OpenSpace instance. For cases where that is not possible, the wizard will ask for additional input when the instruction was selected.
