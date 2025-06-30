@@ -15,7 +15,7 @@ Shortcuts found in the [Solar Storm 2012](/profiles/spaceweather/solarstorm2012)
 * - Shortcut
   - Function
 * - {kbd}`d`
-  - Toggles between darkening the sun and showing the surface of the Sun
+  - Toggles between darkening the Sun and showing the surface of the Sun
 * - {kbd}`e`
   - Starts a loop that best highlights the ENLIL model
 * - {kbd}`b`

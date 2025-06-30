@@ -17,13 +17,13 @@ Since this profile include a lot of different visuals. To avoid cluttering the s
 
 This CME event might be the most studied solar storm so far. The visualizations to highlight the CME include;
 
-* a volume rendering of the density of the material ejected from the Sun,<br>
-* field lines showing the Sun's magnetic structure,<br>
-* magnetograms which are texture layers on the Sun showing variation in strength of the magnetic field,<br>
-* an extreme ultra violet (EUV) image sequence layer shown on the Sun,<br>
-* a light speed indicator to compare the speed of the CME,<br>
-* cut-plane sequences showing the proton intensity (flux values) of the CME, one equatorial cut plane and one meridional,<br>
-* flux nodes that also show the proton intensity (flux values), which are accompanied by a legend describing the color scheme. Flux nodes are simulated points positioned along the magnetic fields where the flux values are calculated
+- a volume rendering of the density of the material ejected from the Sun,
+- field lines showing the Sun's magnetic structure,
+- magnetograms which are texture layers on the Sun showing variation in strength of the magnetic field,
+- an extreme ultra violet (EUV) image sequence layer shown on the Sun,
+- a light speed indicator to compare the speed of the CME,
+- cut-plane sequences showing the proton intensity (flux values) of the CME, one equatorial cut plane and one meridional,
+- flux nodes that also show the proton intensity (flux values), which are accompanied by a legend describing the color scheme. Flux nodes are simulated points positioned along the magnetic fields where the flux values are calculated
 
 :::::::
 

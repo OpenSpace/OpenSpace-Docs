@@ -31,9 +31,9 @@ To best interact with these visualizations, it is recommended to use the keyboar
 ## Data Sets
 
 A few simulation models have been used in this profile.
-* ENLIL, for solar winds. Visualized with magnetic field lines.
-* BATSRUS, for magnetosphere. Also visualized with magnetic field lines, as well as velocity field lines.
-* PFSS, just one time step to highlight with field lines the comlex magnetic field in the Suns corona.
+- ENLIL, for solar winds. Visualized with magnetic field lines.
+- BATSRUS, for magnetosphere. Also visualized with magnetic field lines, as well as velocity field lines.
+- PFSS, just one time step to highlight with field lines the comlex magnetic field in the Suns corona.
 
 :::::::
 
