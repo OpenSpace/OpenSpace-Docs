@@ -40,11 +40,26 @@ The image test files are located in the `visualtests` folder in the main OpenSpa
 The files are organized in folders, where the folder names are used as the _Group_ name for the tests within, and the filename of each test (without the `.ostest` extension) is used as the _Name_ of the test. Each folder can contain additional subfolders. The top-level folders are predetermined based on what the tests will be used for:
 
   - `documentation`: Files that generate images used for the documentation page
+
+    Files in this folder are sorted based on the location in the documentation where they are used. For example, images that are used in the Dawn profile should be placed in `profiles/dawn/name.png`
+
   - `profiles`: Integration test files that verify individual views for the different profiles
+
+    All tests belonging to a specific profile should be grouped into a subfolder with the profiles name. If possible, as many of the visible elements of the profiles should be tested.
+
   - `example`: Tests using the individual example asset files from the data/assets folder
+
+    The subfolders in this folder should be organized to mimick the folder structure of `data/assets/examples` exactly, including that the test of a specific example asset must be named identical to the filename of the example asset. For example the test for `data/assets/examples/rotation/globerotation/globe.asset` should be placed in `visualtests/example/rotation/globerotation/globe.ostest`
+
   - `misc`: Other tests that are testing various pieces of the rendering
 
+    In this folder, common sense should be used to group tests into reasonable categories.
+
 Top-level folders should generally only be added sparingly and tests that do not fit any of the other tests, should be placed in the `misc` folder with a properly named subfolder first.
+
+:::{important}
+If at all possible, it should be avoided to move or rename tests as third-party users might depend on the URL of the location. In particular all of the tests included in the `documentation` folder must be verified in the documentation repository and all links must be updated.
+:::
 
 
 ## Test Structure
