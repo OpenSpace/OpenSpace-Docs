@@ -233,7 +233,7 @@ From this position and view, Zoom, using the {kbd}`right mouse button`, will now
 :width: 100%
 :alt: Inside Valles Marineris
 
-Inside Valles Marineris, you can see the Altitude in the Dashboard says -198 km. This is because we are below the normal altitude of Mars---what would be considered their sea level had all their seas not evaporated away billions of years ago.
+Inside Valles Marineris, you can see the Altitude in the Dashboard says -198 m. This is because we are below the normal altitude of Mars---what would be considered their sea level had all their seas not evaporated away billions of years ago.
 :::
 
 From a position just above the canyon, you can now explore it using the {kbd}`left mouse button` in Rotation Mode. This will give you the sense of flying right above the surface, like a plane. Use the four directions and go where you want to explore. Flying forward in this scenario works well.
