@@ -15,7 +15,6 @@ authors:
 The Geo Location Panel Button in the OpenSpace Toolbar.
 :::
 
-
 Use the GeoLocation Panel to locate places on Earth and fly to them. The panel is straightforward with only few sections: the search area, the Custom Coordinate section, and a list of any added nodes. There is also a section at the top for selecting the anchor (globe) for which to search and/or add nodes for. At the time of writing, only Earth is supported.
 
 :::{figure} geolocation_panel.png
@@ -60,7 +59,7 @@ If you choose the {menuselection}`Add Focus` option, the location will be added 
 :width: 1000px
 :alt: OpenSpace's GeoLocation Panel using the Add Focus
 
-Using the Add Focus mode in the GeoLocation Panel adds a `GeoLocation` folder to the Scene Panel, and populates it with the searched location. It is also added to the list of added nodes.
+Using the Add Focus mode in the GeoLocation Panel adds a `GeoLocation` folder to the Scene Panel and populates it with the searched location. It is also added to the list of added nodes.
 :::
 
 

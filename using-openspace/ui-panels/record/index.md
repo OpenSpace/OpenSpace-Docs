@@ -160,10 +160,10 @@ The resulting images may be imported into a program that can render them into a 
 
 
 ### Options: Hide User Interface Components on Playback
-The `Hide GUI on playback` and `Hide dashboards on playback` options can be used to hide the user interface overlays while a recording is being played back. This can for example be useful when outputting the frames of a recording, to not show the user interface in the outputed frames. The overlays will be shown again once the playback is finished.
+The {menuselection}`Hide GUI on playback` and {menuselection}`Hide dashboards on playback` options can be used to hide the user interface overlays while a recording is being played back. This can, for example, be useful when outputting the frames of a recording to not show the user interface in the outputted frames. The overlays will be shown again once the playback is finished.
 
 :::{note}
-Hiding the user interface during playback also hides the buttons for pausing or stopping the playback. If you want to abort a sessions recording, you can use the {kbd}`F1` key to bring back the user interface.
+Hiding the user interface during playback also hides the buttons for pausing or stopping the playback. If you want to abort a session recording, you can use the {kbd}`F1` key to bring back the user interface.
 :::
 
 

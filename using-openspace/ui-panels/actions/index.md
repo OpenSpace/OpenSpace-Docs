@@ -65,4 +65,3 @@ The search is relative to your current location in Actions Panel, so that only a
 ### Explore Actions
 The primary way to explore the available actions is via the buttons in the panel. The buttons resemble a file system, where clicking on a folder (button with the {octicon}`file-directory;1.25em` icon) will open up a new view of actions and possible subfolders. Clicking on an action button will execute the action. As you descend into the actions hierarchy, your location within it will appear at the top of the window.
 
-

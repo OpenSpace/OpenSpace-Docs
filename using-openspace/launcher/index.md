@@ -2,9 +2,9 @@
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-The OpenSpace launcher is where you choose which content (profile) to load, and in what window configuration.
+The OpenSpace Launcher is where you choose which content (profile) to load and which window configuration to use.
 
-These pages collect information about the interfaces exposed through the launcher, such as the one for editing profiles.
+These pages collect information about the interfaces exposed through the Launcher, such as the one for editing profiles.
 
 :::{toctree}
 :maxdepth: 1
@@ -27,7 +27,4 @@ The OpenSpace launcher window.
 
 ::::
 :::::
-
-
-
 

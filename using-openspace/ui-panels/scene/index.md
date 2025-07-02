@@ -113,7 +113,7 @@ Many of these data sets are observationally based---so they are centered on the 
 
 Beside the target button is a context menu ![Context menu](scene_panel_context_menu_button.png){h=2em}. This opens up a subpanel that has the navigation options to Fly To, Jump To, or Zoom To/Frame. There is also a button to pop out the settings for this object in a separate window.
 
-At the bottom there is a Delete button, that can be used to remove the object from the scene. Note that this action is irreversible, and that any objects that may depend on this object will also be deleted.
+At the bottom there is a {menuselection}`Delete` button, that can be used to remove the object from the scene. Note that this action is irreversible and that any objects that may depend on this object will also be deleted.
 
 
 
