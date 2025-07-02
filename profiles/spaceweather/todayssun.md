@@ -8,7 +8,7 @@ authors:
 (todayssun_id)=
 # Today's Sun
 
-This profile shows the Sun's magnetic field using outputs from the WSA (Wang-Sheeley-Arge) simulation model. All simulation data in this profile is downloaded dynamically during runtime. The visuals will be tied to the in-game time in OpenSpace, so you can jump or scrub time to a previous timestamp within the sequence interval and see historic outputs visualized without needing to download all the data in between or the whole sequence. The field lines visualize the Sun's magnetic field. Some loop back into the Sun (closed, shown in yellow), while others stream into space (open). The simulation data throughout this visualization is colored red for positive values and blue for negative. Red field lines indicate that the direction of the field is pointing away from the sun and blue that it is pointing inward toward the Sun. On the Sun's surface, white and black indicate areas of positive and negative magnetic polarity, respectively. Understanding these fields is critical, as solar activity like Coronal Mass Ejections (CMEs) can disrupt satellites, power grids, and pose risks to astronauts and spacecraft throughout the solar system.
+This profile shows the Sun's magnetic field using outputs from the WSA (Wang-Sheeley-Arge) simulation model. All simulation data in this profile is downloaded dynamically during runtime. The visuals will be tied to the in-game time in OpenSpace, so you can jump or scrub time to a previous timestamp within the sequence interval and see historic outputs visualized without needing to download all the data in between or the whole sequence. The field lines visualize the Sun's magnetic field. Some loop back into the Sun (closed, shown in yellow), while others stream into space (open). The simulation data throughout this visualization is colored red for positive values and blue for negative values. Red field lines indicate that the direction of the field is pointing away from the sun, and blue that it is pointing inward toward the Sun. On the Sun's surface, white and black indicate areas of positive and negative magnetic polarity, respectively. Understanding these fields is critical, as solar activity like Coronal Mass Ejections (CMEs) can disrupt satellites, power grids, and pose risks to astronauts and spacecraft throughout the solar system.
 
 This page focuses on the content in the profile and how to use it. For more information on the back-end, data, and underlying features see [Space Weather](spaceweather_id).
 
@@ -24,8 +24,8 @@ The simulation data throughout this visualization is colored red for positive va
 
 ### Solar Surfaces
 
-In total, there are six assets with time varying textures on spheres. There are two different input data sources to the WSA simulation model, for three spheres each. The input sources are from GONG-Z and from GONG ADAPT.
-The [RenderableTimeVaryingFitsSphere](fitsfilereader_renderable_time_varying_fits_sphere) is the Renderable that visualizes the solar textures. These are created straight from the .fits files downloaded using the Dynamic File Sequence Downloader and are not saved as images. For each scene graph node there are settings in the Scene menu in the GUI in OpenSpace for these surface textures. The .fits files, contain different layers that show different data. By default the _Observed Photospheric Field_ is shown, also known as magnetogram. There are other options to choose from. There is a setting to choose if you want to use a color map or not, and a field to specify a transfer function/ color map file to change it. You can also choose to apply a linear smoothing filter, which makes the texture look more blurry rather than discrete pixel squares. Additionally there is an option to save the downloaded content for next time.
+In total, there are six assets with time-varying textures on spheres. There are two different input data sources for the WSA simulation model, for three spheres each. The input sources are from GONG-Z and GONG ADAPT.
+The data for this profile is visualized mainly by the two renderables: [RenderableTimeVaryingFitsSphere](fitsfilereader_renderable_time_varying_fits_sphere) and [RenderableFieldLinesSequence](fieldlinessequence_renderablefieldlinessequence). They use data in the data formats .fits and .osfls, respectively. They both download these data sets dynamically during run-time from the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Flight Center and their Integrated Space Weather Analysis [(ISWA)](https://ccmc.gsfc.nasa.gov/tools/ISWA/) system, using the [Dynamic File Sequence Downloader](spaceweather_id).
 
 ### Field Lines
 
@@ -41,7 +41,7 @@ Lastly, there is the tracing from Earth. These are field line trace from the Ear
 
 ### Guiding Lines
 
-A few guiding lines are added in the scene. There are there to help navigate around the Sun to get a better sense of orientation. There is a white line that connects the Sun and Earth, as well as an arc that goes from pole to pole and intersect the Sun-Earth line, that show the longitude on the Sun that is facing Earth. Additionally the Carrington prime meridian longitude line is visualized in red and also a grid with 10 degrees (on default) between each segment.
+The profile also includes a few guiding lines to help navigate around the Sun and get a better sense of orientation. There is a white line that connects the Sun and Earth, as well as an arc that goes from pole to pole and intersects the Sun-Earth line, which shows the longitude on the Sun that is facing Earth. Additionally, the Carrington prime meridian longitude line is visualized in red, and also a grid with 10 degrees (by default) between each segment.
 
 :::::::
 
@@ -61,7 +61,7 @@ No additional shortcuts provided.
 
 ## Data Sets
 
-The data for this profile is visualized mainly by the two renderables: [RenderableTimeVaryingFitsSphere](fitsfilereader_renderable_time_varying_fits_sphere) and [RenderableFieldLinesSequence](fieldlinessequence_renderablefieldlinessequence). They grab data on the data formats fits and osfls respectively. They are downloading these data sets dynamically during run-time from the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Fight Center and their Integrated Space Weather Analysis [(ISWA)](https://ccmc.gsfc.nasa.gov/tools/ISWA/) system. It is using the [Dynamic File Sequence Downloader](spaceweather_id) to achieve this.
+The data for this profile is visualized mainly by the two renderables: [RenderableTimeVaryingFitsSphere](fitsfilereader_renderable_time_varying_fits_sphere) and [RenderableFieldLinesSequence](fieldlinessequence_renderablefieldlinessequence). They use data in the data formats .fits and .osfls, respectively. They both download these data sets dynamically during run-time from the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Flight Center and their Integrated Space Weather Analysis [(ISWA)](https://ccmc.gsfc.nasa.gov/tools/ISWA/) system, using the [Dynamic File Sequence Downloader](spaceweather_id).
 
 The profile is exclusivly using simulation outputs from the space weather simulation model called [WSA](https://ccmc.gsfc.nasa.gov/models/WSA~5.4) version 5.4.
 

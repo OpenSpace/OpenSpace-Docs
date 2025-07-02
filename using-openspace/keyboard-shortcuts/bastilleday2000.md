@@ -32,7 +32,7 @@ Shortcuts found in the [Bastille Day Profile](/profiles/spaceweather/bastilleday
   - Use the next magnetogram texture in a list of magnetograms of the Sun
 :::
 
-To better show the CME event a few different time loops have been implemented with different start and end times and differences in how fast time is sped up:
+To better show the CME event, a few different time loops have been implemented with different start and end times and differences in how fast time is sped up:
 
 :::{list-table}
 :header-rows: 1

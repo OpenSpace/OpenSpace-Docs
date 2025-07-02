@@ -13,17 +13,17 @@ This profile shows the Coronal Mass Ejection (CME) that occurred on Bastille Day
 :::::::{tab-item} Tour
 ## Tour
 
-Since this profile include a lot of different visuals. To avoid cluttering the scene it is recommended to use the provided keyboard shortcuts to toggle different parts on and off.
+This profile includes many different visuals, so to avoid cluttering the scene, it is recommended to use the provided keyboard shortcuts to toggle elements on and off.
 
-This CME event might be the most studied solar storm so far. The visualizations to highlight the CME include;
+This CME event might be the most studied solar storm so far. The visualizations to highlight the CME include:
 
-- a volume rendering of the density of the material ejected from the Sun,
-- field lines showing the Sun's magnetic structure,
-- magnetograms which are texture layers on the Sun showing variation in strength of the magnetic field,
-- an extreme ultra violet (EUV) image sequence layer shown on the Sun,
-- a light speed indicator to compare the speed of the CME,
-- cut-plane sequences showing the proton intensity (flux values) of the CME, one equatorial cut plane and one meridional,
-- flux nodes that also show the proton intensity (flux values), which are accompanied by a legend describing the color scheme. Flux nodes are simulated points positioned along the magnetic fields where the flux values are calculated
+- A volume rendering of the density of the material ejected from the Sun
+- Field lines showing the Sun's magnetic structure
+- Magnetograms which are texture layers on the Sun showing variation in strength of the magnetic field,
+- An extreme ultra-violet (EUV) image sequence layer shown on the Sun
+- A speed of light indicator to compare the speed of the CME
+- Cut-plane sequences showing the proton intensity (flux values) of the CME, one equatorial cut plane and one meridiona,
+- Flux nodes that also show the proton intensity (flux values), which are accompanied by a legend describing the color scheme. Flux nodes are simulated points positioned along the magnetic fields where the flux values are calculated
 
 :::::::
 
@@ -39,7 +39,7 @@ This CME event might be the most studied solar storm so far. The visualizations 
 :::::::{tab-item} Data Sets
 ## Data Sets
 
-The data for this profile is provided by Predictive Science Inc. (PSI) and are the results of simulations. The two models used from them are the MAS / CORHEL model for the corona visualizations and EPREM for the flux visualizations. At PSI they call the flux nodes, "Stream nodes".
+The data for this profile is provided by Predictive Science Inc. (PSI) and are the results of simulations. The two models used from them are the [MAS/CORHEL](https://ccmc.gsfc.nasa.gov/models/CORHEL~MAS-TDM~6.0) model for the corona visualizations and [EPREM](https://ccmc.gsfc.nasa.gov/models/EPREM~0/) for the flux visualizations. At PSI they call the flux nodes "Stream nodes".
 
 :::::::
 
