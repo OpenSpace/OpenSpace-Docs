@@ -1,4 +1,4 @@
-# The Launcher
+# Launcher
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}

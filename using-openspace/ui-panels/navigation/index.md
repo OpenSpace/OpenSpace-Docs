@@ -210,7 +210,7 @@ We will also use the Time Panel, which we will cover in more detail.
 
 {.tutorial}
 1. Open the Anchor and Aim submenu of the panel, confirm that the Moon is set to Anchor.
-2. {octicon}`telescope;1.25em;profile-tour-action` Choose Earth as the Aim by clicking the telescopr button next to Earth. This will keep your spaceship aimed toward Earth and move Earth to the center, behind the Moon.
+2. {octicon}`telescope;1.25em;profile-tour-action` Choose Earth as the Aim by clicking the telescope button next to Earth. This will keep your spaceship aimed toward Earth and move Earth to the center, behind the Moon.
 3. {octicon}`rocket;1.25em;profile-tour-action` Orbit a bit to bring Earth back into view.
 4. {octicon}`stopwatch;1.25em;profile-tour-action` Use the Time Panel to change the Simulation Speed to 1 hour/second.
 5. As the clock goes, we are traveling with the Moon, but looking toward Earth.
@@ -258,7 +258,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 ![Turn off trails](tutorial_hide_trails.png)
 
 {.tutorial}
-1. {octicon}`rocket;1.25em;profile-tour-action` Rotate around ISS to see the Earth's horizon.
+1. {octicon}`rocket;1.25em;profile-tour-action` Rotate around ISS to see Earth's horizon.
 2. {octicon}`rocket;1.25em;profile-tour-action` Level the horizon using the {kbd}`Shift` + {kbd}`left mouse button` so that Earth fills the bottom half of your view.
 3. {octicon}`diff-removed;1.25em;profile-tour-action` Turn off trails using {menuselection}`Action --> Trails --> Hide All Trails`.
 4. {octicon}`stopwatch;1.25em;profile-tour-action` Set the clock speed at 1 second/second by hitting the `Realtime` button.
@@ -320,7 +320,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 1. {octicon}`telescope;1.25em;profile-tour-action` Focus Phobos using one of the following two ways:
   - Using the Scene Menu, set Mars' moon Phobos as the Focus. \
 {menuselection}`Scene --> Solar System --> Planets --> Mars --> Moons --> Phobos --> Phobos`.
-  - Using the Navigation Menu, search for Phobos in Focus menu and select it.
+  - Using the Navigation Menu, search for Phobos in Focus menu, and select it.
 2. {octicon}`rocket;1.25em;profile-tour-action` Approach Phobos so it's in the foreground.
 
 ![Phobos](tutorial_phobos.png)
@@ -374,7 +374,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 2. {octicon}`stopwatch;1.25em;profile-tour-action` Pause time.
 3. {octicon}`rocket;1.25em;profile-tour-action` Orbit to locate the Moon.
 4. {octicon}`tools;1.25em;profile-tour-action` Increase the Moon's Scale to 25. {menuselection}`Scene --> Solar System --> Planets --> Earth --> Moon --> Moon --> Scale`. Click in the text input box and type `25`, then press {kbd}`Enter`.
-5. {octicon}`telescope;1.25em;profile-tour-action` Aim at the Moon. In the Navigation Panel, select the Anchor & Aim submenu and click the telescope button next to Moon.
+5. {octicon}`telescope;1.25em;profile-tour-action` Aim at the Moon. In the Navigation Panel, select the Anchor & Aim submenu, and click the telescope button next to Moon.
 6. {octicon}`rocket;1.25em;profile-tour-action` Orbit a bit to move the Moon away from Earth.
 7. {octicon}`stopwatch;1.25em;profile-tour-action` Set the Simulation Time to 1 day/second.
 8. Watch the Moon's phases as it orbits Earth.
