@@ -589,6 +589,7 @@ The string is the branch and commit you are running, for those who speak [Git](h
 
 ## Quitting OpenSpace
 
-To quit OpenSpace you have two options:
+To quit OpenSpace you have three options:
 1. Use your Operating System's quit button in the top of the window.
 2. Use the File Menu in the Top Bar: {menuselection}`File --> Quit OpenSpace`. This will first open a modal where you need to confirm that you want to quit. Once confirmed, you will see a three-second timer. At the end of that three seconds, OpenSpace will close and quit. During those three seconds you may press anywhere to abort the quitting.
+3. Press {kbd}`CTRL+Q`. This will also trigger the three-second timer, during which you can abort the quitting by clicking any key or anywhere with the mouse.
