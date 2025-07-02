@@ -206,7 +206,7 @@ When connecting a new controller to OpenSpace, the first step is to get a good m
 :::{image} joysticks-list.png
 :alt: "Where to find a joystick entry in the GUI list"
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 Now we can begin to explore the controller. What we want to have in the end is a list of all the axes and buttons and which index in the OpenSpace list they correspond to. To start, it can be good to have descriptive names for each button and axis you can find on the controller, or at least the ones that you are interested in.
@@ -216,7 +216,7 @@ Now that we have a clear image of what the controller is capable of, we need to 
 :::{image} joystick-axis.png
 :alt: "Where to find the axes in the joystick entry"
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 For the buttons, we will use the same strategy, push one button a few times and see which of the buttons in OpenSpace reacts, note down that number, and move on to the next. Now that we have a clear image of how each button and axis relate to the list in OpenSpace, we could build a map in our asset. Below is an image to show how it can look like when one of the buttons is pressed:
@@ -224,7 +224,7 @@ For the buttons, we will use the same strategy, push one button a few times and 
 :::{image} joystick-button.png
 :alt: "Where to find the buttons in the joystick entry"
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 In each joystick asset file that OpenSpace provides there will be a section at the top that looks similar to this:

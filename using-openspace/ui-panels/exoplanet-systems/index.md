@@ -29,7 +29,7 @@ Unlike the main exoplanets data, where you see all the planetary systems from af
 
 ### 1. Bring Up the Exoplanets Module Panel
 
-To load a system, click on ![Exoplanets module icon](exoplanet_module_icon_lighttheme.png){width="2.5em" height="1.5em" class="only-light"} to bring up the panel.
+To load a system, click on ![Exoplanets module icon](exoplanet_module_icon.png){width="2.5em" height="1.5em"} to bring up the panel.
 
 
 :::{figure} exoplanet_systems_panel.png

@@ -30,7 +30,7 @@ The angle {math}`\theta` is here defined as the angle from the camera to the obj
 :alt: "Horizontal Angle Calculation Schematic"
 :width: 100%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 The {math}`CameraToObject` vector points from the {math}`Camera` to the {math}`Object` (not shown in the figure above). {math}`P_{R}(Object)` is {math}`CameraToObject` projected onto the reference plane {math}`R`. {math}`P_{Up}(Object)` is {math}`CameraToObject` projected onto {math}`Camera_{Up}` (i.e. the normal of plane {math}`R`). This gives the formula to calculate {math}`P_{R}(Object)` as follows:
@@ -52,7 +52,7 @@ The elevation angle {math}`\phi` is here defined as the angle from the camera to
 :alt: "Elevation Angle Calculation (Horizontal) Schematic"
 :width: 100%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 {math}`CameraToObject` is the vector from the {math}`Camera` to the {math}`Object` (not shown in the figure above). {math}`P_{R}(Object)` is then {math}`CameraToObject` projected onto the reference plane {math}`R`. {math}`P_{Right}(Object)` is {math}`CameraToObject` projected onto {math}`Camera_{Right}` (i.e. the normal of the plane {math}`R`). This gives the formula to calculate {math}`P_{R}(Object)` as follows:
@@ -74,7 +74,7 @@ The angle {math}`\theta` is here defined as the angle from object {math}`A` (the
 :alt: "Moon Angle Calculation (Horizontal) Schematic"
 :width: 100%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 {math}`AToB` is the vector from the object {math}`A` to object {math}`B`. {math}`P_{R}(AToB)` is then {math}`AToB` projected onto the reference plane {math}`R`. {math}`M(Camera_{View})` is {math}`Camera_{View}` that has been moved (without changing its direction) to the projected position of {math}`A` onto the reference plane {math}`R`.
@@ -92,7 +92,7 @@ The elevation angle {math}`\phi` is here defined as the angle from object {math}
 :alt: "Moon Elevation Angle Calculation (Horizontal) Schematic"
 :width: 100%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 {math}`AToB` is the vector from the object {math}`A` to object {math}`B`. {math}`P_{R}(AToB)` is then {math}`AToB` projected onto the reference plane {math}`R`. {math}`M(Camera_{View})` is {math}`Camera_{View}` that has been moved (without changing its direction) to the projected position of {math}`A` onto the reference plane {math}`R`.
@@ -112,7 +112,7 @@ The angle {math}`\theta` is here defined as the angle to the object in a circula
 :alt: "Circular Angle Calculation Schematic"
 :width: 100%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 {math}`CameraToObject` is the vector from the {math}`Camera` to the {math}`Object` (not shown in the figure above). {math}`P_{R}(Object)` is then {math}`CameraToObject` projected onto the reference plane {math}`R`. {math}`P_{View}(Object)` (not shown in the figure above) is {math}`CameraToObject` projected onto {math}`Camera_{View}` (i.e. the negative normal of plane {math}`R`). This gives the formula to calculate {math}`P_{R}(Object)` as follows:
@@ -134,7 +134,7 @@ The elevation angle, {math}`\phi`, is in this case defined as the angle from the
 :alt: "Elevation Angle Calculation (Circular) Schematic"
 :width: 100%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 Calculating the elevation angle {math}`\phi` in the circular mode is done in multiple steps. First, {math}`CameraToObject`, which is the vector from the {math}`Camera` to the {math}`Object` (not shown in the figure above), is projected onto the plane {math}`A`, creating the vector {math}`P_{A}(Object)`. {math}`P_{View}(Object)` is {math}`CameraToObject` projected onto {math}`Camera_{View}` (which is the normal of the plane {math}`A`). This gives the formula to calculate {math}`P_{A}(Object)` as follows:
@@ -158,7 +158,7 @@ The angle {math}`\theta` is here defined as the angle from object {math}`A` (the
 :alt: "Moon Angle Calculation (Circular) Schematic"
 :width: 100%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 {math}`AToB` is the vector from the object {math}`A` to object {math}`B`. {math}`P_{R}(AToB)` is then {math}`AToB` projected onto the reference plane {math}`R`.
@@ -180,7 +180,7 @@ The elevation angle, {math}`\phi`, is here defined as the angle from object {mat
 :alt: "Moon Elevation Angle Calculation (Circular) Schematic"
 :width: 100%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 Calculating the elevation angle, {math}`\phi`, from the object {math}`A` to object {math}`B` in this case again requires several steps. First, {math}`AToB`, which is the vector from the object {math}`A` to object {math}`B`, is projected onto the plane {math}`C`, creating {math}`P_{C}(AToB)`. {math}`M(Camera_{Up})` is {math}`Camera_{Up}` that has been moved (without changing its direction) to the projected position of {math}`A` onto the plane {math}`C`. Also, {math}`M(Camera_{View})` is {math}`Camera_{View}` that has been moved (without changing its direction) to end at the projected position of {math}`A` onto the reference plane {math}`R`.
