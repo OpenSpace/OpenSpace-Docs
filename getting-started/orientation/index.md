@@ -22,13 +22,13 @@ The main parts of the OpenSpace user interface.
 :::{tip}
 **Hiding Interface Elements**
 
-You can toggle the text in the Graphics Window on and off using the {kbd}`Shift` + {kbd}`F1` keys.
+You can toggle the text in the Graphics Window using the {kbd}`Shift+F1` keys.
 
-You can toggle the Toolbar and user interface components on and off using the {kbd}`F1` key.
+You can toggle the Toolbar and user interface components using the {kbd}`F1` key.
 :::
 
 
-## Top Bar
+## Top Menu Bar
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
@@ -58,11 +58,11 @@ The Show Console menu item displays (or hides) a single-line [console](/using-op
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 ### Windows
-The Windows menu includes a list of all available panels in the software, and shows which panels are currently open. Click a button in the list to open that panel. Further down on this page is information of some of the most commonly used panels.
+The Windows menu includes a list of all available panels in the software and shows which panels are currently open. Click a button in the list to open that panel. Further down on this page is information of some of the most commonly used panels.
 
 In the example to the right, the Actions window is currently open and can be closed using the X button.
 
-This menu can for example be used to open the Settings Panel, which is not enabled in the Toolbar per default.
+This menu can, for example, be used to open the Settings Panel, which is not enabled in the Toolbar per default.
 ::::
 ::::{grid-item}
 :::{figure} topbar_menu_windows.png
@@ -90,7 +90,7 @@ You might be tempted to choose Everything, but it quickly clutters up the Scene 
 
 ::::{grid-item}
 ### Help
-The Help menu offers some high-level operations in OpenSpace, such as "about" information, links to resources and feedback.
+The Help menu offers some high-level operations in OpenSpace, such as "about" information, links to resources, and feedback.
 
 :::{list-table}
 :header-rows: 0
@@ -238,7 +238,7 @@ The Toolbar consists of panels that you use to control aspects of OpenSpace. Eac
 OpenSpace's Toolbar annotated.
 :::
 
-We will discuss details of each of these panels in the [Using OpenSpace](/using-openspace/index) chapter. For now, we will give you an overview of each panel.
+We discuss details of each of these panels in the [Using OpenSpace](/using-openspace/index) chapter. For now, we will give you an overview of each panel.
 
 
 
@@ -313,8 +313,8 @@ The Navigation Panel is where you choose a target to act as your Focus and fly t
 We will refer to this panel as {menuselection}`Navigation` throughout this guide.
 
 The Navigation Panel has two modes, accessed through an iconized menu at the top:
-- ![Focus](navigation_panel_mode_focus.png){h=20px} Focus: In every OpenSpace session, *something* needs to be set as Focus. This is an object around which navigation is centered. With this chosen in the top menu, simply pick an object in the list, or search for an object, to set as Focus. See [](/getting-started/navigation/index.md#navigation-and-focus) for more on this.
-- ![Anchor/Aim](navigation_panel_mode_anchoraim.png){h=20px} Anchor & Aim: This more complex navigation mode uses two objects: an *Anchor* that acts similarly to Focus in that the camera navigates around it, and an *Aim* that the view will be set to point towards. See [](/using-openspace/ui-panels/navigation/index) for more on using Anchor & Aim.
+- ![Focus](navigation_panel_mode_focus.png){h=20px} Focus: In every OpenSpace session, *something* needs to be set as Focus. This is an object around which navigation is centered. With this chosen in the top menu, simply pick an object in the list, or search for an object, to set as Focus. See [Navigation and Focus](/getting-started/navigation/index.md#navigation-and-focus) for more on this.
+- ![Anchor/Aim](navigation_panel_mode_anchoraim.png){h=20px} Anchor & Aim: This more complex navigation mode uses two objects: an *Anchor* that acts similarly to Focus in that the camera navigates around it, and an *Aim* that the view will be set to point towards. See [Navigation](/using-openspace/ui-panels/navigation/index) for more on using Anchor & Aim.
 ::::
 ::::{grid-item}
 
@@ -328,11 +328,10 @@ The Navigation Panel has two modes, accessed through an iconized menu at the top
 
 :::::
 
-The Focus mode is the one most commonly used, and for each object in the entry list there are three items for navigation:
-For each object in the list, there are three items for navigation:
+The Focus mode is the one most commonly used. For each object in the entry list there are three items for navigation:
 - ![Focus](navigation_panel_focus_button.png){h=2em} Focus: Rotates to look at the object and sets it as the focus for navigation.
-- ![Fly to](navigation_panel_fly.png){h=2em} Fly To: Automatically takes you to the object using a curved path.
-- ![Jump to](navigation_panel_jump_button.png){h=2em} Jump To: Fades to black, then takes you directly to the object.
+- ![Fly to](navigation_panel_fly.png){h=2em} Fly To: Automatically flies to the object using a curved path.
+- ![Jump to](navigation_panel_jump_button.png){h=2em} Jump To: Fades to black, then jumps directly to the object.
 
 Additionally, for the object that is currently in focus, there is an extra button:
 - ![Pan & Fly](navigation_panel_panfly.png){h=2em} Pan & Fly To: Flight moves along a straight line, and gracefully pans until the object is in view.
