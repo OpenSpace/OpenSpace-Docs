@@ -104,7 +104,6 @@ The SpaceMouse is a controller that has a joystick with 6 degrees of freedom tha
 :::{image} spacemouse-map.png
 :alt: "Spacemouse Mapping Schematic"
 :align: center
-<!-- :class: only-light -->
 :::
 
 The table below gives an overview of what each button or joystick on the SpaceMouse does in OpenSpace. The `Left` and `Right` buttons are only supported for the Compact version of the SpaceMouse. However, if you are using the Enterprise version you can bind some of the buttons to a regular key on the keyboard and bind actions to them.
