@@ -51,14 +51,14 @@ A three-button mouse is recommended, but not necessary.
 :::{tip}
 Hold the {kbd}`z` key to turbocharge the Zoom Flight Mode. See more [](/using-openspace/keyboard-shortcuts/index).
 :::
-  
+
 
 
 ### Navigation and Focus
 
 In OpenSpace, _something_ is always set to the Focus. In order to fly to an object, especially a planet, moon, or space probe, it _must_ be set as the Focus. In the [](/profiles/default/index) Profile, Earth is set as the Focus.
 
-What is set to Focus, and more importantly in terms of flying, _where_ that object is relative to your view, is important as you navigate in OpenSpace. 
+What is set to Focus, and more importantly in terms of flying, _where_ that object is relative to your view, is important as you navigate in OpenSpace.
 
 Ideally, and by default, the focused object is at the center of your view in the Graphics Window. If the focused object is not in your view, navigating can be a bit cumbersome. We will explain...
 
@@ -71,7 +71,7 @@ Ideally, and by default, the focused object is at the center of your view in the
 
 * - Rotation
   - {kbd}`left mouse`
-  - The orbital motion around the Focus now turns into a motion akin to riding a ferris wheel but looking away from its center or the ground. You're tracing a circle, but objects appear to come toward or away from you on circular arcs. 
+  - The orbital motion around the Focus now turns into a motion akin to riding a ferris wheel but looking away from its center or the ground. You're tracing a circle, but objects appear to come toward or away from you on circular arcs.
 
 * - Zoom
   - {kbd}`right mouse`
@@ -91,13 +91,13 @@ Ideally, and by default, the focused object is at the center of your view in the
 
 ### Friction
 
-As discussed in [](/getting-started/orientation/index.md#flight-friction-status), friction brings your motion to a gradual stop if you let your finger off the mouse button. 
+As discussed in [](/getting-started/orientation/index.md#flight-friction-status), friction brings your motion to a gradual stop if you let your finger off the mouse button.
 
 The Rotation, Zoom, and Roll Flight Modes are subject to friction by default when you launch OpenSpace. Their status is in the upper-right corner of the Graphics Window and looks like this:
 
 :::{figure} /getting-started/orientation/friction_status_default.png
 :align: center
-:width: 20%
+:width: 300px
 :alt: Friction status is on
 
 Friction status is "on" for each flight mode.
@@ -106,7 +106,7 @@ Friction status is "on" for each flight mode.
 
 #### Turning Friction On and Off
 
-There are two ways to turn the friction on and off. 
+There are two ways to turn the friction on and off.
 1. Click each word in the Friction Status area. Once friction is off, the word will turn red.
 2. Use the keyboard shortcuts---the recommended method:
 
@@ -160,7 +160,7 @@ Similarly, when you fly over the planetary surface, it's nice to have Rotation F
 
 For most flying, particularly through large, dispersed data in space, it is typical to maintain Focus in the center of the screen. However, landing on a planet or moon demands the object in Focus me moved away from your view.
 
-Suppose you want to land on the surface of Mars and explore the great canyon [Valles Marineris](https://en.wikipedia.org/wiki/Valles_Marineris), you'd first target Mars so it is the Focus, fly up to the planet, then orbit Mars until the canyon is in front of you on Mars's surface. 
+Suppose you want to land on the surface of Mars and explore the great canyon [Valles Marineris](https://en.wikipedia.org/wiki/Valles_Marineris), you'd first target Mars so it is the Focus, fly up to the planet, then orbit Mars until the canyon is in front of you on Mars's surface.
 
 :::{figure} mars_approaching.png
 :align: center
@@ -204,7 +204,7 @@ You will find it in the Scene Menu: \
 :alt: Mars's Valles Marineris from 500 km up in hi-res
 
 Still hovering 500 km over Valles Marineris, but now with the higher-resolution layer on.
-::: 
+:::
 
 ::::
 
@@ -212,7 +212,7 @@ Still hovering 500 km over Valles Marineris, but now with the higher-resolution 
 
 
 
-Now, "tip" Mars a bit with the Pan Flight Mode using {kbd}`Ctrl` + {kbd}`left mouse button`. Move Mars so only a little bit of Mars is visible at the bottom of your screen. 
+Now, "tip" Mars a bit with the Pan Flight Mode using {kbd}`Ctrl` + {kbd}`left mouse button`. Move Mars so only a little bit of Mars is visible at the bottom of your screen.
 
 If Mars comes in tilted, you can level the horizon by using the {kbd}`Ctrl` + {kbd}`Shift` + {kbd}`left mouse button`.
 
@@ -233,7 +233,7 @@ From this position and view, Zoom, using the {kbd}`right mouse button`, will now
 :width: 100%
 :alt: Inside Valles Marineris
 
-Inside Valles Marineris, you can see the Altitude in the Dashboard says -198 km. This is because we are below the normal altitude of Mars---what would be considered their sea level had all their seas not evaporated away billions of years ago.
+Inside Valles Marineris, you can see the Altitude in the Dashboard says -198 m. This is because we are below the normal altitude of Mars---what would be considered their sea level had all their seas not evaporated away billions of years ago.
 :::
 
 From a position just above the canyon, you can now explore it using the {kbd}`left mouse button` in Rotation Mode. This will give you the sense of flying right above the surface, like a plane. Use the four directions and go where you want to explore. Flying forward in this scenario works well.
@@ -310,7 +310,7 @@ Landing on planets takes some practice, but it results in breathtaking scenes.
 
 :::::{grid} 1 1 1 2
 
-::::{grid-item} 
+::::{grid-item}
 Let's put these navigation skills to the test. In this tutorial we will cover:
 - The four Flight Modes: Rotation, Zoom, Roll, and Pan
 - Changing the Focus object
@@ -318,7 +318,7 @@ Let's put these navigation skills to the test. In this tutorial we will cover:
 - Zooming out of the Solar System
 ::::
 
-::::{grid-item} 
+::::{grid-item}
 :::{important}
 We use the following symbols in tutorials to indicate actions:
 
@@ -414,7 +414,7 @@ We use the following symbols in tutorials to indicate actions:
 
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Zoom away from the Moon so Earth is in view.
-2. Open the Scene Menu. 
+2. Open the Scene Menu.
 3. Navigate to {menuselection}`Solar System --> Planets --> Earth --> Earth`.
 4. {octicon}`telescope;1.25em;profile-tour-action` Click on the target icon to the right of Earth. This will set Earth to Focus, and is an alternative way to set Focus right from the Scene Menu. Earth is now back to the center of your screen.
 

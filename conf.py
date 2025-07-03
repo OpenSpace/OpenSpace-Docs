@@ -20,9 +20,9 @@ sys.path.append(str(Path('_ext').resolve()))
 # generated files do not already exist, to speed up the build process
 generate_reference = False
 
-# If true, use github for getting the asset example files. The GitHub tag or branch 
+# If true, use github for getting the asset example files. The GitHub tag or branch
 # is specified with assets_release_tag_or_branch
-# If false, use a local OpenSpace folder path, which is specified with 
+# If false, use a local OpenSpace folder path, which is specified with
 # assets_local_openspace_folder
 assets_examples_use_github = True
 
@@ -39,7 +39,7 @@ assets_local_openspace_folder = ""
 # Settings for Web Build
 ###
 
-# If we are on Read the Docs, get the name of the current OpenSpace-Docs branch and try to find a 
+# If we are on Read the Docs, get the name of the current OpenSpace-Docs branch and try to find a
 # OS release tag that matches. Also, always generate the reference and use GitHub for the asset files.
 if (os.environ.get("READTHEDOCS")):
   generate_reference = True
@@ -145,7 +145,8 @@ html_css_files = [
 
   "required-reading.css",
   "sidebar.css",
-  "custom.css"
+  "custom.css",
+  "dark-mode-images.css"
 ]
 
 # These folders are copied to the documentation's HTML output

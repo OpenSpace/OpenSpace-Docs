@@ -14,45 +14,38 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [The Building Blocks of OpenSpace](/using-openspace/building-blocks/index)
 : How profiles, assets, and renderables work together.
 
-[Scene Panel](/using-openspace/scene-panel/index)
+[Scene Panel](/using-openspace/ui-panels/scene/index)
 : Turn data sets on and off and alter their appearance.
 
-[Navigation Panel](/using-openspace/navigation-panel/index)
+[Navigation Panel](/using-openspace/ui-panels/navigation/index)
 : Focus on an object and use automated flights to reach them.
 
-[Time Panel](/using-openspace/time-panel/index)
+[Time Panel](/using-openspace/ui-panels/time/index)
 : Manipulate the date, time, and the simulation speed.
 
-[Actions Panel](/using-openspace/actions-panel/index)
+[Actions Panel](/using-openspace/ui-panels/actions/index)
 : Automate scene adjustments.
 
-[Record Panel](/using-openspace/record-panel/index)
+[Record Panel](/using-openspace/ui-panels/record/index)
 : Save and Playback a Session.
 
-[GeoLocation Panel](/using-openspace/geolocation-panel/index)
+[GeoLocation Panel](/using-openspace/ui-panels/geolocation/index)
 : Fly to a location on Earth.
 
-[Profile Editor](/using-openspace/profile-editor/index)
+[Profile Editor](/using-openspace/launcher/profile-editor/index)
 : Save settings for a particular story.
 
 [Keyboard Shortcuts](/using-openspace/keyboard-shortcuts/index)
 : Keyboard shortcuts save you time.
-
-
 
 :::{toctree}
 :maxdepth: 1
 :hidden:
 
 building-blocks/index
-scene-panel/index
-navigation-panel/index
-time-panel/index
-actions-panel/index
-record-panel/index
-geolocation-panel/index
-profile-editor/index
+ui-panels/index
 keyboard-shortcuts/index
+launcher/index
 
 :::
 
@@ -60,8 +53,6 @@ keyboard-shortcuts/index
 :maxdepth: 1
 :caption: Using OpenSpace (Unrenovated)
 
-skybrowser-panel/index
-exoplanet-systems-panel/index
 navigation/index
 properties/index
 configuration/index

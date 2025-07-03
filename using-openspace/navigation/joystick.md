@@ -12,14 +12,13 @@ The image below shows a map of the buttons and joysticks on an Xbox controller.
 :class: only-light
 :::
 
-<!-- TODO: Use the dark mode version when the automatic switching has been fixed
 :::{image} xbox_dark.png
 :alt: "Xbox Controller Schematic"
 :width: 80%
 :align: center
 :class: only-dark
 :::
--->
+
 
 Navigation using an Xbox controller in OpenSpace is defined in the Xbox asset file (`xbox.asset`) or the Xbox wireless asset file (`xbox-wireless.asset`). The table below shows the function for each button or joystick on the Xbox controller. NA in the table specifies that this button or joystick has no functionality per default, read more about how to add or customize functionality in [Joystick Customization](joystick-customization).
 
@@ -60,14 +59,13 @@ The navigation using an Xbox or PS4/PS5 controller is very similar, the only dif
 :class: only-light
 :::
 
-<!-- TODO: Use the dark mode version when the automatic switching has been fixed
 :::{image} ps4_dark.png
 :alt: "PS4 Controller Schematic"
 :width: 80%
 :align: center
 :class: only-dark
 :::
--->
+
 
 Navigation using a PS4 controller in OpenSpace is defined in the PS4 asset file (`ps4.asset`), and the PS5 controller in `ps5.asset`. The table below gives an overview of what each button or joystick on the PS4 controller does in OpenSpace (a PS5 controller is very similar). NA in the table specifies that this button or joystick has no functionality per default, read more about how to add or customize functionality in [Joystick Customization](joystick-customization).
 
@@ -106,7 +104,7 @@ The SpaceMouse is a controller that has a joystick with 6 degrees of freedom tha
 :::{image} spacemouse-map.png
 :alt: "Spacemouse Mapping Schematic"
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 The table below gives an overview of what each button or joystick on the SpaceMouse does in OpenSpace. The `Left` and `Right` buttons are only supported for the Compact version of the SpaceMouse. However, if you are using the Enterprise version you can bind some of the buttons to a regular key on the keyboard and bind actions to them.

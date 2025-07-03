@@ -162,7 +162,7 @@ The surround sound aspect of the provided sonifications is designed for two spec
 :alt: "Surround Sound Configuration Schematic for the Visualization Center Dome Theater in Norrköping, Sweden"
 :width: 70%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 The image above shows a **top-down** view of the surround sound setup for the Visualization Center Dome Theater in Norrköping, Sweden. The audience sits in rows inside the circle, facing the front center of the dome surface, which is marked as _Center_ at the top of the image. The arrow in the image represents the viewing direction of the audience. The circle represents the edge of the dome surface. This configuration uses the [Horizontal](./angle-information.md#horizontal) angle calculation mode without the elevation angle, as it only has one ring of speakers.
@@ -172,7 +172,7 @@ The image above shows a **top-down** view of the surround sound setup for the Vi
 :alt: "Surround Sound Configuration Schematic for the Hayden Planetarium at the American Museum of Natural History in New York, USA"
 :width: 70%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 The image above shows a **bottom-up** view of the surround sound setup for the Hayden Planetarium at the American Museum of Natural History in New York, USA. The audience sits in concentric rings inside the outermost circle, looking up toward the center of the dome surface, which is marked as _Center_ with a blue cross in the middle of the image. For a better understanding of the 3D structure, see the image below that shows the dome in 3D from a side view. In the image below, the arrow represents the viewing direction of the audience. The outermost ring represents the edge of the dome surface. This configuration uses the [Circular](./angle-information.md#circular) angle calculation mode with the elevation angle enabled, as it has multiple rings of speakers.
@@ -182,7 +182,7 @@ The image above shows a **bottom-up** view of the surround sound setup for the H
 :alt: "Surround Sound Configuration Schematic in 3D from the side for the Hayden Planetarium at the American Museum of Natural History in New York, USA"
 :width: 70%
 :align: center
-:class: only-light
+<!-- :class: only-light -->
 :::
 
 ### Further Notes
