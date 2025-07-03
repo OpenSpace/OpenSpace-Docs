@@ -28,4 +28,5 @@ profiles
 renderablestars
 satellites
 solar-video-overlay
+space-weather
 :::
