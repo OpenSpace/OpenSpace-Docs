@@ -43,17 +43,22 @@ The files are organized in folders, where the folder names are used as the _Grou
 
     Files in this folder are sorted based on the location in the documentation where they are used. For example, images that are used in the Dawn profile should be placed in `profiles/dawn/name.png`
 
-  - `profiles`: Integration test files that verify individual views for the different profiles
-
-    All tests belonging to a specific profile should be grouped into a subfolder with the profiles name. If possible, as many of the visible elements of the profiles should be tested.
-
   - `example`: Tests using the individual example asset files from the data/assets folder
 
     The subfolders in this folder should be organized to mimick the folder structure of `data/assets/examples` exactly, including that the test of a specific example asset must be named identical to the filename of the example asset. For example the test for `data/assets/examples/rotation/globerotation/globe.asset` should be placed in `visualtests/example/rotation/globerotation/globe.ostest`
 
+  - `gallery`: Tests that are used to generate images for the homepage gallery
+
+    This folder should not contain any subfolders and all of the tests should be named such that when anyone sees the filename, it should be obvious what the test is about. The generated images will have the same name as the test and are meant for downloading.
+
   - `misc`: Other tests that are testing various pieces of the rendering
 
     In this folder, common sense should be used to group tests into reasonable categories.
+
+  - `profiles`: Integration test files that verify individual views for the different profiles
+
+    All tests belonging to a specific profile should be grouped into a subfolder with the profiles name. If possible, as many of the visible elements of the profiles should be tested.
+
 
 Top-level folders should generally only be added sparingly and tests that do not fit any of the other tests, should be placed in the `misc` folder with a properly named subfolder first.
 
