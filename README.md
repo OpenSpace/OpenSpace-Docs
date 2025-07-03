@@ -74,7 +74,18 @@ When adding images that require different files for light-mode and dark-mode, th
 
 If the same image can be used for both light and dark mode, the normal name would be used: `scenemenu.png`.
 
-Use the CSS classes `only-dark` and `only-light` to show an image in only dark mode or light mode, respectively.
+Use the CSS classes `only-dark` and `only-light` to show an image in only dark mode or light mode, respectively. Make sure that you include both images if adding the class, as the `only-dark` images will be hidden in light mode, and vice versa. Below is an example of how to use the classes.
+```md
+<!-- This will only be shown in light mode -->
+:::{image} image_name.png
+:class: only-light
+:::
+
+<!-- This will only be shown in dark mode -->
+:::{image} image_name_dark.png
+:class: only-dark
+:::
+```
 
 ## A note about links
 
