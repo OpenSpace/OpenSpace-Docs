@@ -156,7 +156,7 @@ Similarly, when you fly over the planetary surface, it's nice to have Rotation F
 
 {.advanced-topic}
 [Advanced]{.advanced}
-#### How to Explaore a Planet's Surface
+#### How to Explore a Planet's Surface
 
 For most flying, particularly through large, dispersed data in space, it is typical to maintain Focus in the center of the screen. However, landing on a planet or moon demands the object in Focus me moved away from your view.
 
