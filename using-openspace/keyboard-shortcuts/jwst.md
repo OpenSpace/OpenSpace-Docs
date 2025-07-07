@@ -7,7 +7,7 @@ authors:
 
 # James Webb Space Telescope Profile Keyboard Shortcuts
 
-Shortcuts found in the [James Webb Space Telescope profile](/profiles/missions/jwst/index), found at `data/profiles/jwst.asset`.
+Shortcuts found in the [James Webb Space Telescope profile](/profiles/missions/jwst/index), found at `data/profiles/missions/jwst.profile`.
 
 (default-shortcuts)=
 :::{list-table}
