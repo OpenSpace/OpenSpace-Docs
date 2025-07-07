@@ -19,7 +19,7 @@ If you see any errors or pop-up windows you're unsure about, please refer back t
 
 ## Terminal Window
 
-The first item that pops up is a terminal (I set mine to have a green background) with output streaming by at a rapid pace. The output to this console is basically all the commands OpenSpace is executing to get itself up and running. You can generally ignore this window.
+The first item that pops up is a terminal with output streaming by at a rapid pace. The output to this console is basically all the commands OpenSpace is executing to get itself up and running. You can generally ignore this window; however, it can be useful for troubleshooting, though we recommend using the Error Log to trace errors.
 
 :::{figure} console.png
 :align: center
@@ -36,7 +36,7 @@ Next, the Launcher Window will appear with two basic options.
 :::::{grid} 1 1 2 2
 
 ::::{grid-item}
-### Profile Chooser
+### Choose Profile
 This is a drop-down menu with a list of available profiles. For the initial run, stick with the [`default` profile](/profiles/default/index).
 
 ### Window Options
@@ -62,9 +62,9 @@ OpenSpace's Launcher Window pops up upon launching the app.
 
 ## Graphics Window
 
-### Profile Loading Screen
+### Asset Loading Screen
 
-The Profile Loading Screen gives you the status of each asset as it loads. On your first launch, OpenSpace needs to retrieve data from its servers, so this step can take a few minutes. 
+The Asset Loading Screen gives you the status of each asset as it loads. On your first launch, OpenSpace needs to retrieve data from its servers, so this step can take a few minutes. 
 
 Most assets load instantaneously, but some take some time to download then load. Each asset's name appears on the loading screen. As it downloads it's color is gray and it has a progress indicator beside it. As it loads it is yellow. And, once it's green it's loaded and will slowly fade from the screen.
 
@@ -86,5 +86,5 @@ Once the profile and all its assets have loaded, you will now have a view of Ear
 :align: center
 :width: 100%
 :alt: Earth as seen in OpenSpace
-The initial view of Earth in OpenSpace when launching is complete.
+The initial view of Earth in OpenSpace when launching is complete (except for a portion of the cloud layer).
 :::
