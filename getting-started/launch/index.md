@@ -19,7 +19,7 @@ If you see any errors or pop-up windows you're unsure about, please refer back t
 
 ## Terminal Window
 
-The first item that pops up is a terminal with output streaming by at a rapid pace. The output to this console is basically all the commands OpenSpace is executing to get itself up and running. You can generally ignore this window; however, it can be useful for troubleshooting, though we recommend using the Error Log to trace errors.
+The first item that pops up is a terminal with output streaming by at a rapid pace. The output to this window is basically all the commands OpenSpace is executing to get itself up and running. You can generally ignore this window; however, it can be useful for troubleshooting, though we recommend using the Error Log to trace errors.
 
 :::{figure} console.png
 :align: center
