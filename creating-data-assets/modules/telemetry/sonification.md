@@ -16,6 +16,7 @@ To run a sonification file in SuperCollider, follow the following steps:
   1. Download and install [SuperCollider](https://supercollider.github.io/) (if not already installed).
   1. Click any line within the outer parentheses `()` in the file and press <kbd>CTRL</kbd> + <kbd>ENTER</kbd>. For example, the line with the comment `// To run this example...` (should be around line 50) in the [_osc-example.scd_](#osc-example-sonification) file.
   1. Wait a while for SuperCollider to boot.
+  1. If SuperCollider raises an error regarding the **VST Plugin**, you will need to install some additional plugins. See [Ambisonics](#ambisonics) for more information and instructions.
   1. When you want to stop the sonification in SuperCollider, press <kbd>CTRL</kbd> + <kbd>.</kbd> and go back to the second step to start it up again.
 
 ### Switching Audio Output
@@ -31,21 +32,29 @@ To run the sonification with ambisonics, a few additional plugins must be instal
 
 1. Locate the Extensions folder of SuperCollider:
     - Run `Platform.userExtensionDir` in SuperCollider to find the path to the extensions folder. This command is included in all the example files provided by OpenSpace, located below the copyright header (around line 25).
-    - Click the line with this command and press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd>. The console will display a path similar to _C:\Users\user\AppData\Local\SuperCollider\Extensions_.
+    - Click the line with this command and press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd>. The console will display a path similar to _C:\Users\user\AppData\Local\SuperCollider\Extensions_. This is the folder where the SuperCollider plugins will be placed.
 
 1. Install the Required Plugins:
-    - **VST Plugin**:
-        - Download [VST Plugin](https://git.iem.at/pd/vstplugin/-/releases).
-        - Place the downloaded plugin folder in the SuperCollider extensions folder.
-    - **IEMPluginOSC**:
-        - Download [IEMPluginOSC](https://git.iem.at/ressi/iempluginosc).
-        - Place the downloaded plugin folder in the SuperCollider extensions folder.
-    - **IEM Plug-in**:
-        - Download [IEM Plug-ins](https://plugins.iem.at/download/).
-        - Create a folder named _VSTPlugins_ in _C:\Program Files_.
-        - Move all `.dll` files from the downloaded IEM Plug-in into this folder.
+   - **VST Plugin**:
+      - Go to the [VST Plugin download page](https://git.iem.at/pd/vstplugin/-/releases) and download the latest version.
+      - After downloading, unzip (extract) the folder.
+      - Inside the unzipped folder, there are two folders named *sc* and *pd*. Open the *sc* folder.
+      - Look for a folder named *VSTPlugin* and move it into the SuperCollider extensions folder.
+   - **IEMPluginOSC**:
+      - Go to the [IEMPluginOSC download page](https://git.iem.at/ressi/iempluginosc/-/releases) and download the version for SuperCollider.
+      - Unzip the downloaded folder.
+      - Inside the unzipped folder, find the *IEMPluginOSC* folder and move it into the SuperCollider extensions folder.
+   - **IEM Plug-in**:
+      - Go to the [IEM Plug-ins download page](https://plugins.iem.at/download/) and download the installer.
+      - Run the installer to install the IEM Plug-ins.
 
-1. Restart SuperCollider after the plugins have been installed.
+1. After installing the plugins, close and reopen SuperCollider to ensure it recognizes the new plugins.
+
+1. If you encounter any issues, it may help to also restart your computer to refresh the system.
+
+:::{note}
+Some sonification files may require the Ambisonics plugins, even if you are not using surround sound.
+:::
 
 ## Sonifications Provided by OpenSpace
 OpenSpace currently provides five sonifications. The first is the {ref}`Planets Sonification <planets-sonification-details>`, which is a complete sonification of the planets in the solar system. Then there are two smaller example sonifications that use the [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type, the [Space Station Sonification](#space-station-sonification), and the [Voyager Sonification](#voyager-sonification). Lastly, there is the [OSC Example Sonification](#osc-example-sonification), which does not produce any sounds but instead contains more details on each telemetry type and basic examples of how to receive the OSC messages in SuperCollider.
