@@ -7,6 +7,9 @@ Sections [General](#general), [Naming](#naming), and [Structure](#structure) con
 
 
 ## General
+### 0. "Boy Scouts" rule
+While editing a piece of code and you find some other code that violates some of rules, fix it and leave it in a better state than you found it.
+
 ### 1. Violations to the guidelines are allowed if it enhances readability of the code
 The main goal of these guidelines is to improve readability and thereby the understanding, the maintainability, and general quality of the code. It is impossible to cover all the specific cases in a general guide and the programmer should be flexible. However, the guidelines should be followed as closely as possible without sacrificing readability.
 
