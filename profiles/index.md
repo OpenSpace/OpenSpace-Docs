@@ -83,6 +83,7 @@ We will discuss profile authoring in a forthcoming page. For the time being, a [
 default/index
 default-full/index
 missions/index
+spaceweather/index
 offline/index
 empty/index
 :::
@@ -97,7 +98,6 @@ empty/index
 apollo
 artemis
 asteroids
-bastilleday2000
 dawn
 
 eclipse
@@ -113,7 +113,6 @@ nightsky
 
 osirisrex
 rosetta
-solarstorm2012
 touch
 voyager
 :::
