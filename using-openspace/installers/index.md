@@ -7,5 +7,6 @@ Information about configuring OpenSpace. For dome/theater technicians or users w
 
 dual-monitor
 remote-control
+multi-node
 cosm
 :::
