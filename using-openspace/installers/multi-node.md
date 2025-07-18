@@ -47,6 +47,16 @@ Launching OpenSpace on multiple nodes simultaneously can be done with scripts, o
 
 `\[directorypath\]/OpenSpace.exe -p \[profilename\] -c {$CONFIG}/\[configuration\].json`
 
+:::{note}
+The complete list of command-line parameters available for OpenSpace can be seen at [this point in the code](https://github.com/OpenSpace/OpenSpace/blob/0bcfc7790f580a0ba0decf4adc58081284d2a8c7/apps/OpenSpace/main.cpp#L1227).
+| short param name   | long parameter name     | explanation    |
+| ------------ | -------------- | --------------- |
+| -f      | --file       | Provides the path to the OpenSpace configuration file.     |
+| Dignissim 11 | Morbi 12       | Pellentesque 13 |
+| Donec sit 21 | Ullamcorper 22 | Quis 23         |
+| Phasellus 31 | Ante 32        | Tempus 33       |
+:::
+
 Also, note that in case not already set up, some firewall and Windows settings would need to be done as mentioned in the [E&S Site Configuration page](cosm).
 
 ### Synchronizing data between the nodes
