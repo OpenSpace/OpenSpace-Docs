@@ -52,7 +52,7 @@ Also, note that in case not already set up, some firewall and Windows settings w
 ### Synchronizing data between the nodes
 
 OpenSpace does not have a built-in data synchronization routine, but you can easily synchronize data and configuration files
-across a Windows cluster with Windows Robust File Copy, robocopy. Robocopy can run about 3x faster
+across a Windows cluster with Windows Robust File Copy, [robocopy](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy). Robocopy can run about 3x faster
 than copying through the Windows GUI and can be set up with additional options for improved
 synchronization.
 
