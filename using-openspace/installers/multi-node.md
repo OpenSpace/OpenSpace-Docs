@@ -33,7 +33,7 @@ production system. This would make all the advanced menu options visible in the 
 
 We can also change the path settings for where OpenSpace looks for files, in the `Paths:` section of `openSpace.cfg`. 
 
-There are parts in `openSpace.cfg` where we need to change settings to allow access to OpenSpace's GUI from external devices - the `Server`, `WebBrowser` and `WebGui` sections.
+There are parts in `openSpace.cfg` where we need to change settings to allow access to OpenSpace's GUI from external devices - the `Server`, `WebBrowser` and `WebGui` sections as mentioned in the [Controlling OpenSpace remotely](remote-control) page.
 
 And we can even adjust the available map data servers, with the `LayerServer` property.
 
