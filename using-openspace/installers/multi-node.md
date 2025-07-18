@@ -2,7 +2,7 @@
 
 ## Installing & Running OpenSpace in a site which uses multiple projector nodes
 
-This page contains some notes for getting OpenSpace to run in a multi-node setup, most commonly used in planetariums. Each planetarium has unique features, so this document is not guaranteed to contain all of the necessary instructions to run OpenSpace. Special thanks to Dan Tell of [Tau Immersive LLC](https://tauimmersive.com/) for sharing much of the content. The [E&S Site Configuration page](cosm) has some Digistar-specific details. Though this document is written with Windows as the operating system running OpenSpace, the same concepts would apply to all OSes.
+This page contains some notes  - pointers for getting OpenSpace to run in a multi-node setup, most commonly used in planetariums. Special thanks to Dan Tell of [Tau Immersive LLC](https://tauimmersive.com/) for sharing much of the content. The [E&S Site Configuration page](cosm) has some Digistar-specific details. Though this document is written with Windows as the operating system running OpenSpace, the same concepts would apply to all OSes.
 
 ### The OpenSpace directory and config file
 
