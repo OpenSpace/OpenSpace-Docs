@@ -56,7 +56,7 @@ across a Windows cluster with Windows Robust File Copy, [robocopy](https://learn
 than copying through the Windows GUI and can be set up with additional options for improved
 synchronization.
 
-You can write a robocopy script into a Windows batch (.bat) file to easily automate and run it. An
+You can write a robocopy script into a Windows batch (`.bat`) file to easily automate and run it. An
 example might look like this:
 ```
 ::set variables
@@ -70,7 +70,7 @@ robocopy %OPENSPACE_USER_DIR%
 )
 ```
 
-In the above example, OpenSpace is located on the D: of all machines in a cluster with IP
+In the above example, OpenSpace is located on the `D:` of all machines in a cluster with IP
 addresses between 192.168.1.101 and 106 (the master would be a different IP, perhaps 100).
 Running this routine will synchronize all files in the master OpenSpace user directory to the
 same directory across the cluster. The `/XO` flag ensures that it only updates files that are newer
