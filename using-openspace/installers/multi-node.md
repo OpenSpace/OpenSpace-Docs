@@ -25,7 +25,7 @@ and now when we open the launcher, that will appear as our default configuration
 
 Similarly, in the Profiles section of the `openSpace.cfg` file, we can comment out the profiles we don't need, and uncomment only the profile we need.
 
-Once we have set up the profiles and configurations and the system is ready, we can also completely bypass the launcher - for this, search the `openSpace.cfg` file for "Bypass: and you’ll find the BypassLauncher setting. Set this to true to start OpenSpace without the launcher, opening the profile and configuration which you have set in `openSpace.cfg` as the default.
+Once we have set up the profiles and configurations and the system is ready, we can also completely bypass the launcher - for this, search the `openSpace.cfg` file for "Bypass": and you’ll find the `BypassLauncher` setting. Set this to `true` to start OpenSpace without the launcher, opening the profile and configuration which you have set in `openSpace.cfg` as the default.
 
 There are many other adjustments we can make in the configuration file. For example, we can specify the
 default user level to always have the `AdvancedUser` level on a
