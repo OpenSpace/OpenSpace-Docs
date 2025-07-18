@@ -2,75 +2,87 @@
 
 ## Installing & Running OpenSpace in a site which uses multiple projector nodes
 
-This page contains some notes for getting OpenSpace to run in a multi-node setup, most commonly used in planetariums. Each planetarium has unique features, so this document is not guaranteed to contain all of the necessary instructions to run OpenSpace. Special thanks to Dan Tell of [Tau Immersive LLC](https://tauimmersive.com/) for sharing much of the content. The [E&S Site Configuration page](cosm) was used as a template for this document, and that page has some Digistar-specific details.
+This page contains some notes for getting OpenSpace to run in a multi-node setup, most commonly used in planetariums. Each planetarium has unique features, so this document is not guaranteed to contain all of the necessary instructions to run OpenSpace. Special thanks to Dan Tell of [Tau Immersive LLC](https://tauimmersive.com/) for sharing much of the content. The [E&S Site Configuration page](cosm) has some Digistar-specific details. Though this document is written with Windows as the operating system running OpenSpace, the same concepts would apply to all OSes.
 
-### Typical System Overview
-A Digistar system uses a host computer used to control the planetarium display. The host (DSHOST) is networked to multiple Digi Star Graphics Processor (DSGP) computers which render the content and send output to projectors.
-The hostname pattern is `DSGP#`, and IP address pattern is `192.168.2.1#`
+### The OpenSpace directory and config file
 
-### Configure All Digistar Computers Prior to OpenSpace Installation
-The following installation and configuration steps will need to be done on the DSHOST and all DSGP computers in the system. The work on each DSGP computer can be done by starting a Windows Remote Desktop Session from the DSHOST to that computer, or by accessing the remote drives in the file manager (e.g. typing `\\DSGP3\C$` in the file manager URL bar will provide access to the C:\\ drive on DSGP3).
+#### Configuration file overview
 
-#### Install Additional Software
-Before OpenSpace can be installed, the DSHOST and DSGPs need to have a few software utilities installed. These are listed below, along with a description of what they do and why they are necessary:
-1. **C-Troll** - A Windows-only application suite that provides the ability to control the OpenSpace application in the Digistar cluster (DSHOST + DSGPs). This software can be found [here](https://github.com/c-toolbox/C-Troll).
-2. **Microsoft Visual C++ Redistributable for Visual Studio 2017** - This is not required in all cases but should be installed anyway on all computers. It can be downloaded from [here](https://www.visualstudio.com/downloads/).
+`openspace.cfg` lives in the root directory of your OpenSpace-\[version\] folder. You can open it in any text editor of your choice. There are other folders inside the your OpenSpace-\[version\] folder which are important for synchronizing data between the nodes of your multi-node setup - these are described later in this document. 
 
-#### Configure Windows Settings
-The following configuration settings are probably already done, but should still be checked on the DSHOST _and_ all DSGPs. 
-* Each computer needs to have file and print sharing enabled
-* Each computer needs to be able to see all others in the **Network** section of the File manager
-* The default **Admin$** share is defined
+`openSpace.cfg` is used to customize the behaviour of OpenSpace. Near the top of the file, you
+can assign what the default launch configuration for your install will be, by editing the 
+`SGCTConfig` property. If we comment out the default
 
-#### Configure Windows Firewall
-All computers in the system must have firewall rules to allow TCP incoming & outgoing traffic for the ports specified in the SGCT config file (shown below). For this system, rules were set for ports 20400-20420. Follow these steps to set firewall rules:
-  1. Open **Control Panel** and select **Windows Firewall** and then **Advanced Settings**
-  2. Select "Inbound Rules" and a new dialog box will appear
-  3. Select "New Rule"
-  4. Select "Port" then click Next
-  5. Select "TCP" and type ports 20400-20420 in the ports text box, then click Next
-  6. Select "Allow the Connection", then click Next
-  7. Ensure that the rule is accepted for all profiles (all checked), then click Next
-  8. Type "OpenSpace" for a rule name and click Exit to accept this new rule
-  9. Now back in the **Advanced Settings** window for the firewall, select "Outbound Rules", and go back to step 3 above to apply the TCP rule for the same ports
+`SGCTConfig = sgct.config.single{vsync=false}` 
 
-#### Generate Configuration Files for the Dome
-Digistar software contains a CreateMPCDI.exe utility that will read the configuration/calibration files and generate an .mpcdi file for the dome. The utility is located somewhere in the Digistar installation directory. A Digistar version that contains updates from June 2024 or later will contain the necessary changes that fix the projection distortion.
-Running it on the system's main (DSHOST) computer will create a file (probably called SystemConfiguration.mpcdi) for the dome.
+we can
+uncomment another configuration, say 
 
-The next steps will convert the .mpcdi file into an SGCT configuration file that OpenSpace can use.
-1. Rename the .mpcdi file with a .zip extension.
-2. Extract/unzip the contents
-3. Move the .pfm files to OpenSpace/config/mesh/.
-4. Use the [OpenSpace tools server](https://tools.openspaceproject.com/)'s COSM configuration file converter to upload & convert the extracted mpcdi.xml file.
-5. In order to make this translation work from the COSM/E&S MPCDI warping, OpenSpace needs to render an FOV from which a smaller area will be extracted and warped to fit the necessary dome distortion. This means that some of what OpenSpace renders will not be used. In some dome configurations, the warping required for each projector may be extreme enough that the resulting resolution is low quality due to a small portion of the rendered result being expanded to fit the projector's output resolution. A solution for this is to increase the resolution of the content that OpenSpace renders, so that when a smaller portion of this rendered window is expanded, the result will look good. This can be done by leaving the `size` entry to be the projector's default resolution, but adding a `res` entry with x and y values that are larger than the `size` values. The `res` values should have the same aspect ratio, but scaled up to compensate for the distortion. The amount of the scaling is up to the user, but it should be proportional to how much the image is warped, because while increased scaling improves the resolution quality, it also reduces the framerate.
-6. Move the resulting mpcdi.json file to OpenSpace/config/, and rename it if desired.
+`SGCTConfig = sgct.config.fisheye{1024, 1024}` 
 
-### Create a Staging Directory for the OpenSpace installation
-The staging directory will contain all of the files necessary to constitute a working OpenSpace software install for each DSGP. It is best to start with a full version of OpenSpace (minimal install _plus_ the necessary download data). This staging area can be on the Digistar DSHOST computer, or on an external drive (e.g. USB drive) that will be used to copy to the computers at the time of installation. This directory will reside in C:\OpenSpace, and should contain:
-1. The OpenSpace software folder, which might be a release version or a custom-built version.
-2. The resulting .json configuration file obtained by converting the COSM MPCDI file via the tools conversion page.
-3. C-Troll software mentioned above. A release can be used without needing to compile a version.
-Modify the C:\OpenSpace\openspace.cfg file in the following ways:
-1. Set it to use the converted configuration file discussed in the previous section: `SGCTConfig = ${CONFIG}/<config_from_conversion_tool>.json` 
-2. Set it to bypass the launcher using this line: `BypassLauncher = true`
+and now when we open the launcher, that will appear as our default configuration. We can also choose custom configurations we have written for our system - an example two-node configuration file is provided along with OpenSpace, in the `config/two_nodes.json` file.
 
-### Configure C-Troll
-The details of configuring C-Troll can be found at [its repository](https://github.com/c-toolbox/C-Troll), so only the most relevant details are provided here.
-Use the C-Troll editor to edit the specific files discussed below.
-Create an openspace applications file(applications/openspace.js) containing the `executable` path (e.g. C:/OpenSpace/bin/RelWithDebInfo/OpenSpace.exe), and a `workingDirectory` entry with that same path to OpenSpace.exe.
-Create a node file for all computers in the dome, including the host. Create host.json with name `host` and port 20400. The IP address will likely be 192.168.2.99 for a Digistar configuration. Create a `dsgp#.json` file for each DSGP. Each file will contain:
-```text
-"name": "dsgp#",
-"ip": "192.168.2.10#",
-"port": 2040#
+Similarly, in the Profiles section of the `openSpace.cfg` file, we can comment out the profiles we don't need, and uncomment only the profile we need.
+
+Once we have set up the profiles and configurations and the system is ready, we can also completely bypass the launcher - for this, search the `openSpace.cfg` file for "Bypass: and you’ll find the BypassLauncher setting. Set this to true to start OpenSpace without the launcher, opening the profile and configuration which you have set in `openSpace.cfg` as the default.
+
+There are many other adjustments we can make in the configuration file. For example, we can specify the
+default user level to always have the `AdvancedUser` level on a
+production system. This would make all the advanced menu options visible in the OpenSpace GUI.  
+
+We can also change the path settings for where OpenSpace looks for files, in the `Paths:` section of `openSpace.cfg`. 
+
+There are parts in `openSpace.cfg` where we need to change settings to allow access to OpenSpace's GUI from external devices - the `Server`, `WebBrowser` and `WebGui` sections.
+
+And we can even adjust the available map data servers, with the `LayerServer` property.
+
+#### Other folders
+
+On first startup, OpenSpace will create some directories like the `user` folder in locations specified by the `openSpace.cfg` - the default location uses the OpenSpace folder as the parent directory. You can start up all the nodes once using the method described in the section below, and synchronize the data between the nodes later.
+
+### C-Troll and external launchers
+
+Launching OpenSpace on multiple nodes simultaneously can be done with scripts, or using GUI tools like [C-Troll](https://github.com/c-toolbox/C-Troll). Detailed documentation for using C-Troll is available at the [github page](https://github.com/c-toolbox/C-Troll). The most important points to note would be the `-p` and `-c` command-line options for OpenSpace, which load the specified profile and configuration respectively, as below:
+
+`\[directorypath\]/OpenSpace.exe -p \[profilename\] -c {$CONFIG}/\[configuration\].json`
+
+Also, note that in case not already set up, some firewall and Windows settings would need to be done as mentioned in the [E&S Site Configuration page](cosm).
+
+### Synchronizing data between the nodes
+
+OpenSpace does not have a built-in data synchronization routine, but you can easily synchronize data and configuration files
+across a Windows cluster with Windows Robust File Copy, robocopy. Robocopy can run about 3x faster
+than copying through the Windows GUI and can be set up with additional options for improved
+synchronization.
+
+You can write a robocopy script into a Windows batch (.bat) file to easily automate and run it. An
+example might look like this:
 ```
-where `#` is the number of the DSGP in its hostname, starting with 1. This assumes that the IP addresses are set according to the pre-assigned DSGP number.
-For clusters, create a clusters/dome.json file with all of the node names discussed above contained in an array entry for nodes (e.g. `"nodes": [ "host", "dsgp1", "dsgp2", ... ]`)
+::set variables
+set OPENSPACE_DIR=D:\OpenSpace\OpenSpace-0.21.0
+set OPENSPACE_USER_DIR=D:\OpenSpace\OpenSpace-0.21.0\user
+set OPENSPACE_DATA_DIR= D:\OpenSpace\OpenSpaceData
+::start nodes
+FOR %%i in (101,102,103,104,105,106) DO (
+robocopy %OPENSPACE_USER_DIR%
+\\192.168.1.%%i\%OPENSPACE_USER_DIR% /XO /S
+)
+```
 
-### Copy Staging Directory to All Digistar Computers
-Once the staging directory has been built with all of the components above, it can be copied to the DSHOST and all DSGP computers. Copy the C:\\OpenSpace\\ directory directly into the C:\\ location on all DSGPs.
-After all copying, each DSGP will need to be configured so that it runs the C-Troll Tray.exe on startup. Do this by remote-desktop'ing into each DSGP, pressing the windows logo + R keys, typing `shell:startup` at the prompt, and then pressing Enter. This will open a file browser window in the auto-startup directory. Browse to where OpenSpace.exe resides, then right-click and create a shortcut. Finally, copy that shortcut icon to the auto-startup directory.
+In the above example, OpenSpace is located on the D: of all machines in a cluster with IP
+addresses between 192.168.1.101 and 106 (the master would be a different IP, perhaps 100).
+Running this routine will synchronize all files in the master OpenSpace user directory to the
+same directory across the cluster. The `/XO` flag ensures that it only updates files that are newer
+than the versions on the cluster, while the `/S` flag provides recursive sync for all subdirectories.
+Make sure to carefully test any robocopy script first and back up files before the first time you
+run it.
 
-### Running OpenSpace on the Entire System
-Open C-Troll on the DSHOST and click the OpenSpace application.
+This can also be used to synchronize the main OpenSpace data directories as well, and the
+OpenSpaceData folder to more quickly copy map data over. If using it to sync the default
+directories, including the `/XD` flag is recommended, which will exclude directories you don’t need
+to sync – excluding at least `cache` and `mrf_cache` directories is recommended.
+
+### Generating Configuration Files and running the system
+
+The configuration file generation and other steps needed to run a multi-node system are described in more detail in the [E&S Site Configuration page](cosm).
