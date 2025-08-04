@@ -22,7 +22,9 @@ authors:
 :hidden:
 
 base
+bastilleday2000
 default
 jwst
+solarstorm2012
 :::
 

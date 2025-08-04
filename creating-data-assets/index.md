@@ -21,6 +21,7 @@ modules/index
 
 asteroids
 ephemeris/index
+field-lines
 gaia
 globebrowsing/index
 point-data/index
@@ -28,4 +29,5 @@ profiles
 renderablestars
 satellites
 solar-video-overlay
+space-weather
 :::
