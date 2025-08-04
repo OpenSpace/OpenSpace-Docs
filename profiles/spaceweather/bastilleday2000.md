@@ -39,7 +39,7 @@ This CME event might be the most studied solar storm so far. The visualizations 
 :::::::{tab-item} Data Sets
 ## Data Sets
 
-The visulizations of the solar corona in this profile is provided by Predictive Science Inc. (PSI) simulation model [MAS/CORHEL](https://ccmc.gsfc.nasa.gov/models/CORHEL~MAS-TDM~6.0) for the corona visualizations. The [EPREM](https://ccmc.gsfc.nasa.gov/models/EPREM~0/) model is used for the flux visualizations. The EPREM Model was developed by the Young-Schwadron modeling group at the University of New Hampshire.
+The visualizations of the solar corona in this profile are provided by Predictive Science Inc. (PSI) simulation model [MAS/CORHEL](https://ccmc.gsfc.nasa.gov/models/CORHEL~MAS-TDM~6.0) for the corona visualizations. The [EPREM](https://ccmc.gsfc.nasa.gov/models/EPREM~0/) model is used for the flux visualizations. The EPREM model was developed by the Young-Schwadron modeling group at the University of New Hampshire.
 
 :::::::
 

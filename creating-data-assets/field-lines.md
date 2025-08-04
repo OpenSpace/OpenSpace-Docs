@@ -76,7 +76,7 @@ Field lines can be traced in OpenSpace using the Kameleon module, developed at C
 The tracing is done using the OpenSpace Task Manager, and using the [Kameleon Volume To Fieldlines Task.](fieldlinesequence_kameleon_volume_to_fieldlines_task)
 To use this, a .task file is created that specifies the input folder with CDF files (data volumes, read more in next chapter), a folder with corresponding files that include the seed points, from where the tracing will start from, what file format to save the traced field lines in, JSON or OSFLS, where the output folder is as well as which vector field to trace the lines in. There are additional optional inputs that can be useful. Read the full documentation of the Task.
 
-The models supported in Kamelon:
+The models supported in Kameleon:
 - Open GGCM / UCLA GGCM
 - SWMF
 - BATSRUS
@@ -87,4 +87,4 @@ The models supported in Kamelon:
 
 ### CDF
 
-Only the models in the list above is supported to use the tracer in OpenSpace. The format of the data volume also needs to be CDF. At CCMC these models can be requested to run and output in this format. Note that there is a difference between the common file format called netCDF and this CDF.
+Only the models in the list above are supported to use the tracer in OpenSpace. The format of the data volume also needs to be CDF. At CCMC, these models can be requested to be run and output in this format. Note that there is a difference between the common file format called netCDF and this CDF.

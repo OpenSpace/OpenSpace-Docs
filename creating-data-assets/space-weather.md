@@ -25,7 +25,7 @@ The min and max time for the sequence is then used in the FilesInRangeServlet li
 
 ### Features and Notes on Robustness
 
-There are a few noteworthy things about the Dynamic File Sequence Downloader.
+There are a few noteworthy things about the Dynamic File Sequence Downloader:
 - When, for any reason, a download fails, that file is discarded. Whenever a download succeeds, the file name is noted in a text file. If the user has chosen to save the files for next run, only the files in the list will be used. In addition to discarding failed downloads, this is needed to ensures corrupted files are not used, that might have stuck around if the software had crashed for any other reason, while a file was downloading.
 
 - The longer you run a visualization with the Dynamic File Sequence Downloader, more and more files are downloaded. To ensure internal memory is not overloaded, an internal list keeps track of the loaded files, ordered newest to oldest. When the list is full, the oldest file will be unloaded, but the file still exists on the hard drive. If the user has low internal memory, this does not guarantee that it will not run out. The max number of files loaded is 100.
