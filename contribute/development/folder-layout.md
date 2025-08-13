@@ -1,6 +1,64 @@
 # Folder Layout
 This page describes the layout of the source code inside the OpenSpace repository.
 
+```
+├── apps                  <-- Source for applications built on the core libraries
+│   ├── DocsWriter        <-- Application to update the current documentation
+│   ├── OpenSpace         <-- The main OpenSpace application
+│   └── OpenSpace-MinVR   <-- OpenSpace built against the MinVR windowing framework
+│
+├── bin                   <-- The location where built applications are placed
+│
+├── cache                 <-- A folder where cached files between runs are stored to speed
+│                             up subsequent runs
+│
+├── config                <-- Built-in window configuration files
+│
+├── data                  <-- Built-in data files that control which content is available
+│   ├── assets            <-- Asset files defining the actual content, actions, etc
+│   ├── fonts             <-- Fonts that are used in the software
+│   └── profiles          <-- Profiles combining different assets
+│
+├── documentation         <-- Automatically generated documentation about the last profile
+│
+├── ext                   <-- External libraries that OpenSpace depends on
+│
+├── include               <-- Header files for the source code of the core library
+│
+├── logs                  <-- HTML log files and files containing the script log
+│
+├── modules               <-- Different optional modules that can be enabled and disabled
+│   │                         individually to customize what functionality is available
+│   ├── atmosphere
+│   ├── audio
+│   └── ...
+│
+├── scripts               <-- Core Lua scripts that are available for the window
+│                             configuration and during scripting
+│
+├── shaders               <-- OpenGL shaders that are used by the core library
+│
+├── src                   <-- Source code of the core OpenSpace library
+│
+├── support               <-- Supporting folder that helps in the development steps
+│   ├── assetvalidation   <-- Tool to error-check the loading and unloading of assets
+│   ├── cmake             <-- Files necessary to create a project using CMake
+│   ├── testwizard        <-- Tool to help create image tests from a running OpenSpace
+│   │                         instance
+│   ├── deploy.bat        <-- Tool to automatically build, package, and zip the current
+│   │                         OpenSpace version
+│   └── ...
+│
+├── temp                  <-- Folder containing temporary files needed at runtime
+│
+├── visualtests           <-- All visual tests that are built on the regression server to
+│                             detect rendering errors
+│
+├── openspace.cfg         <-- Main OpenSpace configuration file
+│
+└── ...
+```
+
 
 ## Source Code
 The codebase is separated into source files (`*.cpp`), which are in located the `src` directory, and header files (`*.h`), which are located in the `include/openspace` directory. The internal directory structure of those two locations should always be the same. Potential inline header files (`*.inl`) should be stored in the same directory as the corresponding header file.
