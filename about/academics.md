@@ -17,27 +17,27 @@
 ## Theses
 | _Year_ | _Person(s)_ | _Location_ | _Title_ | _Thesis_ |
 | ------ | ----------- | ---------- | ------- | -------- |
-| 2025 | Wilhelm Björkström & Emil Wallberg | LiU | An Interactive Black Hole Visualisation in OpenSpace | |
-| 2024 | Maria Brunned & Cindy Khuong | AMNH | Contextual Visualization of Adaptive Meshes using YT | |
-| 2024 | Dennis Moradkhani & Tim Olsson | SCI | Cloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpace | |
-| 2023 | Alice Molin & Julia Johnstone | CCMC | Space Weather Simulation Model Integration | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-200316) |
+| 2025 | Wilhelm Björkström & Emil Wallberg | LiU | An Interactive Black Hole Visualisation in OpenSpace | https://liu.diva-portal.org/smash/get/diva2:1974754/FULLTEXT01.pdf |
+| 2024 | Maria Brunned & Cindy Khuong | AMNH | Contextual Visualization of Adaptive Meshes using YTContextual Visualization of Adaptive Meshes using YT | https://liu.diva-portal.org/smash/get/diva2:1975471/FULLTEXT01.pdf |
+| 2024 | Dennis Moradkhani & Tim Olsson | SCI | Cloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpaceCloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpace | https://liu.diva-portal.org/smash/get/diva2:1974447/FULLTEXT01.pdf |
+| 2023 | Alice Molin & Julia Johnstone | CCMC | Space Weather Simulation Model Integration | [link](https://liu.diva-portal.org/smash/get/diva2:1829691/FULLTEXT02.pdf) |
 | 2023 | Anders Lundkvist & Erik Salsborn | CCMC | Enhancing Dungey Cycle Visualization in OpenSpace | |
 | 2023 | Andreas Engberg | AMNH | Investigating the Chemical Cartography of the Galaxy Through Visualization | [link](https://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-206480) |
 | 2023 | Märta Nilsson & Robin Ridell | AMNH | Using Point Cloud Interpolation to Present a Cosmic View of Life | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-199028) |
 | 2022 | Jacob Molin & Victor Lindquist | SCI | Astronomy Software Integration with OpenSpace in Distributed Systems | [link](https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-196497) |
 | 2022 | Anne Olthoff & Catja Johansson Nordqvist | NYU | Interactive visualization of climate change on Earth in the OpenSpace project |
 | 2022 | Måns Aronsson & Simon Karlsson Brefält | CCMC | Advanced Fieldline Rendering for Space Weather Visualization | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-189157) |
-| 2022 | Emma Segolsson & Linn Storesund | AMNH | A Cosmic View of Life on Earth: Visualizing the relationship between species DNA in a three-dimensional space | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-190669) |
+| 2022 | Emma Segolsson & Linn Storesund | AMNH | A Cosmic View of Life on Earth: Visualizing the relationship between species DNA in a threedimensional space | [link](http://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Aliu%3Adiva-190669) |
 | 2022 | Philip Ngo | CCMC | Topological Analysis Tool for Earth's Magnetosphere | |
-| 2022 | Christoffer Paulusson | CCMC | Real-time Field Line Rendering for Temporal and Heliophysical Datasets | [link](http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-184908) |
-| 2022 | Nisse Bergman & Hanna Timander Björknert | LiU | Designing a Streaming Pipeline for the Public Dissemination of Astronomy Data | [link](http://liu.diva-portal.org/smash/record.jsf?pid=diva2:1686604) |
-| 2021 | Adrian Andersson & Joel Paulsson | LiU | Interactive Visualization of Air Traffic in OpenSpace | [link](http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-178124) |
-| 2021 | Ester Lindgren & Ylva Selling | AMNH | Interactive Visualization of Astronomy Images: Integrating AAS WorldWide Telescope into OpenSpace | [link](http://liu.diva-portal.org/smash/record.jsf?pid=diva2%3A1740944&dswid=3206) |
-| 2020 | Christian Adamsson & Emilie Ho | CCMC | Interactive 3D-visualization of a Solar Particle Event for Public Outreach | [link](http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-173571) |
-| 2020 | Aniisa Bihi & Johanna Granström | SCI | Astronomy Software Integration with OpenSpace | [link](http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-173569) |
-| 2020 | Malin Ejdbo & Elias Elmquist | LiU | Interactive Sonification in OpenSpace | [link](http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-170250) |
-| 2020 | Emma Broman & Ingela Rossing | NYU | A System for Procedural Camera Movements for Navigation in Astrographics | [link](http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-182410) |
-| 2019 | Sovanny Huy & Axel Kollberg | CCMC | Today's Space Weather in the Planetarium | [link](http://liu.diva-portal.org/smash/record.jsf?pid=diva2:1429856) |
+| 2022 | Christoffer Paulusson | CCMC | Real-time Field Line Rendering for Temporal and Heliophysical Datasets | [link](https://liu.diva-portal.org/smash/get/diva2:1657454/FULLTEXT01.pdf) |
+| 2022 | Nisse Bergman & Hanna Timander Björknert | LiU | Designing a Streaming Pipeline for the Public Dissemination of Astronomy Data | [link](https://liu.diva-portal.org/smash/get/diva2:1686604/FULLTEXT01.pdf) |
+| 2021 | Adrian Andersson & Joel Paulsson | LiU | Interactive Visualization of Air Traffic in OpenSpace | [link](https://liu.diva-portal.org/smash/get/diva2:1582766/FULLTEXT01.pdf) |
+| 2021 | Ester Lindgren & Ylva Selling | AMNH | Interactive Visualization of Astronomy Images: Integrating AAS WorldWide Telescope into OpenSpace | [link](https://liu.diva-portal.org/smash/get/diva2:1740944/FULLTEXT01.pdf) |
+| 2020 | Christian Adamsson & Emilie Ho | CCMC | Interactive 3D-visualization of a Solar Particle Event for Public Outreach | [link](https://liu.diva-portal.org/smash/get/diva2:1530786/FULLTEXT01.pdf) |
+| 2020 | Aniisa Bihi & Johanna Granström | SCI | Astronomy Software Integration with OpenSpace | [link](https://liu.diva-portal.org/smash/get/diva2:1530782/FULLTEXT01.pdf) |
+| 2020 | Malin Ejdbo & Elias Elmquist | LiU | Interactive Sonification in OpenSpace | [link](https://liu.diva-portal.org/smash/get/diva2:1473031/FULLTEXT01.pdf) |
+| 2020 | Emma Broman & Ingela Rossing | NYU | A System for Procedural Camera Movements for Navigation in Astrographics | [link](https://liu.diva-portal.org/smash/get/diva2:1629977/FULLTEXT01.pdf) |
+| 2019 | Sovanny Huy & Axel Kollberg | CCMC | Today's Space Weather in the Planetarium | [link](https://liu.diva-portal.org/smash/get/diva2:1429856/FULLTEXT01.pdf) |
 | 2019 | Jonathan Fransson & Elon Olsson | SCI | Visualization of Space Debris using Orbital Representation and Volume Rendering | [link](http://liu.diva-portal.org/smash/get/diva2:1371832/FULLTEXT01.pdf) |
 | 2019 | Matthew Territo | SCI | Flight Controller | |
 | 2018 | Matthias Berg & Jonathan Grangien | CCMC | Implementing an Interactive Simulation Data Pipeline for Space Weather Visualization | [link](http://liu.diva-portal.org/smash/get/diva2:1375791/FULLTEXT01.pdf) |
