@@ -18,8 +18,8 @@
 | _Year_ | _Person(s)_ | _Location_ | _Title_ | _Thesis_ |
 | ------ | ----------- | ---------- | ------- | -------- |
 | 2025 | Wilhelm Björkström & Emil Wallberg | LiU | An Interactive Black Hole Visualisation in OpenSpace | [link](https://liu.diva-portal.org/smash/get/diva2:1974754/FULLTEXT01.pdf) |
-| 2024 | Maria Brunned & Cindy Khuong | AMNH | Contextual Visualization of Adaptive Meshes using YTContextual Visualization of Adaptive Meshes using YT | [link]https://liu.diva-portal.org/smash/get/diva2:1975471/FULLTEXT01.pdf) |
-| 2024 | Dennis Moradkhani & Tim Olsson | SCI | Cloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpaceCloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpace | [link]https://liu.diva-portal.org/smash/get/diva2:1974447/FULLTEXT01.pdf) |
+| 2024 | Maria Brunned & Cindy Khuong | AMNH | Contextual Visualization of Adaptive Meshes using YTContextual Visualization of Adaptive Meshes using YT | [link](https://liu.diva-portal.org/smash/get/diva2:1975471/FULLTEXT01.pdf) |
+| 2024 | Dennis Moradkhani & Tim Olsson | SCI | Cloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpaceCloud-Based Tablet User Interface for Real-Time Touch Interaction in OpenSpace | [link](https://liu.diva-portal.org/smash/get/diva2:1974447/FULLTEXT01.pdf) |
 | 2023 | Alice Molin & Julia Johnstone | CCMC | Space Weather Simulation Model Integration | [link](https://liu.diva-portal.org/smash/get/diva2:1829691/FULLTEXT02.pdf) |
 | 2023 | Anders Lundkvist & Erik Salsborn | CCMC | Enhancing Dungey Cycle Visualization in OpenSpace | |
 | 2023 | Andreas Engberg | AMNH | Investigating the Chemical Cartography of the Galaxy Through Visualization | [link](https://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-206480) |
