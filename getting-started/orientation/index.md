@@ -22,9 +22,8 @@ The main parts of the OpenSpace user interface.
 :::{tip}
 **Hiding Interface Elements**
 
-You can toggle the text in the Graphics Window using the {kbd}`Shift+F1` keys.
-
-You can toggle the Toolbar and user interface components using the {kbd}`F1` key.
+**{kbd}`F1`:** Toggles the Top Bar, Toolbar, and Flight Friction Status elements on and off. \
+**{kbd}`Shift` + {kbd}`F1`:** Toggles the Dashboard, Version, and any messages on and off.
 :::
 
 
@@ -32,19 +31,19 @@ You can toggle the Toolbar and user interface components using the {kbd}`F1` key
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-The Top Bar is similar to that of other applications, and includes four submenus: File, Windows, View and Help.
+The Top Bar is similar to that of other applications, and includes four submenus: File, Windows, View, and Help.
 ::::
 ::::{grid-item}
 ![Top Bar Menu](topbar.png)
 ::::
 :::::
 
+
+
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-### File
-The File menu includes information of the currently loaded profile, as well as controls for quitting the software.
-
-The Show Console menu item displays (or hides) a single-line [console](/using-openspace/scripting/console/index) at the top of the Graphics Window which enables you to enter OpenSpace commands. Use {kbd}`~` to toggle on and off.
+### File Menu
+The File Menu lists the currently loaded profile and offers options for getting more detail on the profile, displying the [Console](/using-openspace/scripting/console/index) (an advanced topic we discuss later), and quitting the software.
 ::::
 ::::{grid-item}
 :::{figure} topbar_menu_file.png
@@ -55,30 +54,39 @@ The Show Console menu item displays (or hides) a single-line [console](/using-op
 ::::
 :::::
 
+
+
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-### Windows
-The Windows menu includes a list of all available panels in the software and shows which panels are currently open. Click a button in the list to open that panel. Further down on this page is information of some of the most commonly used panels.
+### Windows Menu
+The Windows Menu includes a list of all available panels and indicates which are currently open. 
 
-In the example to the right, the Actions window is currently open and can be closed using the X button.
+Click a button in the list to open that particular panel; use the `X` to close the panel. 
 
-This menu can, for example, be used to open the Settings Panel, which is not enabled in the Toolbar per default.
+We discuss each panel in the [Toolbar section below](#toolbar).
 ::::
 ::::{grid-item}
 :::{figure} topbar_menu_windows.png
 :align: center
-:width: 70%
+:figwidth: 90%
+:width: 60%
 :alt: Top Bar Windows Menu
+
+The Windows Menu, indicating the Actions Panel is currently open.
 :::
 ::::
 
+
+
 ::::{grid-item}
-### View
-The View menu includes settings for what is being shown in the user interface, such as which panel buttons are shown in the Toolbar (currently referred to as Task Bar in the menu).
+### View Menu
+The View Menu determines what is shown in the user interface. Most notably, which panel buttons are shown in the Toolbar (currently referred to as Task Bar in the menu). The Task Bar submenu allows you to customize the Toolbar and reorder the buttons. There are also settings for saving and loading a Toolbar configuration.
 
-Another useful setting is the Visbility Level in the GUI Settings. It sets the level of detailed information about an asset in the Scene Panel based on the user level you choose. Choices include Novice User, User, Advanced User, Developer, Everything. The higher the level, the more settings are shown in the interface.
+GUI Settings establishes the number of items that appear in the Scene Panel. The five categories---`Novice User`, `User`, `Advanced User`, `Developer`, and `Everything`---reveal increasing levels of detailed settings for assets in the Scene Panel.
 
-You might be tempted to choose Everything, but it quickly clutters up the Scene Panel and makes its use more cumbersome. The more advanced categories are however often useful when adding your own data or working in the source code and you want additional information reported to you about an asset.
+While you may be tempted to choose `Everything`, the downside is it clutters the Scene Panel with settings you're unlikely to use and makes using the panel more cumbersome. For the most part, `Developer` and `Everything` are useful for those who are adding their own data or working within the OpenSpace source code and desire more options and reporting on assets.
+
+At the bottom of this subpanel is a Scale magnifier, which allows you to adjust the size of the interface elements.
 ::::
 ::::{grid-item}
 :::{figure} topbar_menu_view.png
@@ -89,26 +97,26 @@ You might be tempted to choose Everything, but it quickly clutters up the Scene 
 ::::
 
 ::::{grid-item}
-### Help
-The Help menu offers some high-level operations in OpenSpace, such as "about" information, links to resources, and feedback.
+### Help Menu
+The Help Menu offers a getting started tour, resources for help and sending feedback, and enables some high-level operations in OpenSpace, such as opening the user interface in a browser for external control.
 
-:::{list-table}
-:header-rows: 0
-:stub-columns: 1
-* - Open Web Tutorials
-  - Opens this documentation website in your browser.
-* - Open Getting Started Tour
-  - Launches a wizard panel that will guide you through the basics of OpenSpace.
-* - Open Routes Page
-  - Opens a menu where you can navigate to alternative user interfaces, such as the ShowComposer.
-* - Send Feedback
-  - Opens a web form to send feedback.
-* - Open GUI in Browser
-  - Opens the user interface in a separate browser window.
-* - About
-  - Version information and a short description about OpenSpace.
-:::
+Open Web Tutorials
+: Opens our YouTube page in your browser.
 
+Open Getting Started Tour
+: Launches a wizard panel that will guide you through the basics of OpenSpace.
+
+Open Routes Page
+: Opens a menu where you can navigate to alternative user interfaces, such as the ShowComposer.
+
+Send Feedback
+: Opens a web form to send feedback.
+
+Open GUI in Browser
+: Opens the user interface in a separate browser window.
+
+About
+: Version information and a short description about OpenSpace.
 
 
 ::::
@@ -135,23 +143,23 @@ The default Dashboard display.
 :::
 
 It reports on:
-- Current date and time in Universal Time (UT)
-- The simulation increment
-- Your distance to the current focus
-- Average frames per second (FPS)---useful for seeing how well OpenSpace is performing on your system
-- Position, in Latitude and Longitude, and altitude from the object set to Focus
+- Current date and time in Universal Time (UT).
+- The simulation increment.
+- Your distance to the current focus.
+- Average frames per second (FPS)---useful for seeing how well OpenSpace is performing on your system.
+- Position, in latitude and longitude, and altitude from the object set to Focus.
 
 
 ### Set What is Shown
 
-In Settings Panel, under Dashboard, you can set what appears in the Dashboard, or turn it off completely.
+In Settings Panel, under Dashboard, you can set what appears in the Dashboard, or turn it off completely by unchecking the `Enabled` option.
 
 :::{figure} settings_menu_dashboard.png
 :align: center
 :width: 40%
 :alt: The Dashboard settings
 
-{menuselection}`Settings --> Dashboard`
+The {menuselection}`Settings --> Dashboard` submenu.
 :::
 
 The full-on Dashboard with all items on looks like this:
@@ -168,11 +176,9 @@ The Dashboard with all items displayed.
 
 ## Flight Friction Status
 
-An important aspect of navigating in OpenSpace, a topic we will discuss soon, is friction. When friction is on and you let off the gas (either let go of the mouse button or your controller), your flight will gradually come to a halt. This is friction.
+An important aspect of gracefully navigating in OpenSpace is friction. When friction is on and you let off the gas (either let go of the mouse button or your controller), your flight will gradually come to a halt. This is friction, and there is a toggle for each type of flight: Rotation, Zoom, and Roll.
 
-In OpenSpace you can toggle friction on and off using keyboard shortcuts. There is one for each type of flight: Rotation, Zoom, and Roll.
-
-When you start OpenSpace, friction for each of these types of flight is on. This is indicated by green indicators in the Friction Status, like this:
+When you start OpenSpace, friction for each of these types of flight is on. This is indicated by check marks and green buttons in the Friction Status, like this:
 
 :::{figure} friction_status_default.png
 :align: center
@@ -182,10 +188,7 @@ When you start OpenSpace, friction for each of these types of flight is on. This
 Friction status is "on".
 :::
 
-
-You can use keyboard shortcuts (recommended) or click on the green Flight Mode words to toggle them on and off.
-
-To toggle friction on and off, use these keys:
+You can toggle the friction modes on and off using keyboard shortcuts (recommended) or click on the green buttons. To toggle friction on and off using the keyboard, use these keys:
 :::{list-table}
 :header-rows: 1
 :stub-columns: 1
@@ -201,7 +204,7 @@ To toggle friction on and off, use these keys:
 
 :::
 
-If we turn the rotational friction off, so when we orbit it will continue at a constant pace once we let go of the controller, the Friction Status will look like this:
+If we turn the rotational friction off, when we orbit it will continue at a constant speed once we let go of the controller, and the Friction Status will look like this:
 
 :::{figure} friction_status_on.png
 :align: center
@@ -210,9 +213,6 @@ If we turn the rotational friction off, so when we orbit it will continue at a c
 
 Friction status is "off" for rotational flight (orbiting).
 :::
-
-
-
 
 
 
@@ -260,7 +260,7 @@ The panel is essentially a vertical, sidebar menu with expanding items to reveal
 
 
 #### Data Adjustments
-Under each data set you will find adjustments. You can brighten objects, change their color, change a label size, and so on.
+Under each data set you will find adjustments. You can brighten objects, change their color, change a label size, and so on. These adjustments will appear in a new panel at the bottom of the Scene Panel.
 ::::
 
 ::::{grid-item}
@@ -281,7 +281,11 @@ OpenSpace Scene Panel
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-The Settings Panel is rarely used, but has a number of useful items that alter some behaviors or change what's displayed. It is not shown in the Toolbar per default, but can be opened either from the Windows menu in Top Bar. Alternatively, it can be added to the Toolbar from the View menu in the Top Bar.
+The Settings Panel is rarely used, but has a number of useful items that alter some behaviors or change what's displayed. It is not shown in the Toolbar by default.
+
+Open the Settings Panel from the Top Bar using {menuselection}`Windows --> Settings`. 
+
+Use {menuselection}`View --> Task Bar --> Settings` to add the Settings Panel button to the Toolbar.
 
 Throughout this guide, we will refer to this panel as {menuselection}`Settings`.
 
@@ -328,14 +332,11 @@ The Navigation Panel has two modes, accessed through an iconized menu at the top
 
 :::::
 
-The Focus mode is the one most commonly used. For each object in the entry list there are three items for navigation:
+Focus Mode is most commonly used. For each object in the entry list there are three items for navigation:
+- ![Pan & Fly](navigation_panel_panfly.png){h=2em} Pan & Fly To: Flight moves along a straight line, and gracefully pans until the object is in view.
 - ![Focus](navigation_panel_focus_button.png){h=2em} Focus: Rotates to look at the object and sets it as the focus for navigation.
 - ![Fly to](navigation_panel_fly.png){h=2em} Fly To: Automatically flies to the object using a curved path.
 - ![Jump to](navigation_panel_jump_button.png){h=2em} Jump To: Fades to black, then jumps directly to the object.
-
-Additionally, for the object that is currently in focus, there is an extra button:
-- ![Pan & Fly](navigation_panel_panfly.png){h=2em} Pan & Fly To: Flight moves along a straight line, and gracefully pans until the object is in view.
-
 
 
 
@@ -375,9 +376,9 @@ The `Realtime` button sets you back to 1 second per second, and the `Now` button
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-The Record Panel enables session recording. After entering a name for your recording, press the `Record` button and begin flying, turning data sets on and off, then hit `Stop`. This will save a file that may then be read in for playback.
+The Record Panel enables session recording. After entering a name for your recording, press the `Record` button and begin flying. Feel free to turn data sets on and off or make adjustments. To end your recording, hit `Stop`. This will save a file that may then be read in for playback.
 
-Reading in this file for playback will not only loop you through the sequence in OpenSpace, but it can also output frames. These frames, a set of images at each point along the path, can then be used to create video content outside OpenSpace. It will save a _lot_ of files, so ensure you have adequate space before outputting frames.
+Reading in this file for playback will not only loop you through the sequence in OpenSpace, but it can also output frames if you check the Output Frames box on. These frames, a set of images at each point along the path, can then be used to create video content outside OpenSpace. It will save a _lot_ of files, so ensure you have adequate space before outputting frames.
 ::::
 
 ::::{grid-item}
@@ -587,9 +588,21 @@ The string is the branch and commit you are running, for those who speak [Git](h
 
 
 
+:::{tip}
+**Hiding the Version**
+
+You can remove the version from the screen using the **{kbd}`Shift` + {kbd}`F1`** shortcut, which toggles the Dashboard, Version, and any messages on and off.
+
+To turn off only the version, use {menuselection}`Settings --> Render Engine --> Shows the version on-screen information` to toggle it on and off.
+:::
+
+
+
+
+
 ## Quitting OpenSpace
 
 To quit OpenSpace you have three options:
 1. Use your Operating System's quit button in the top of the window.
-2. Use the File Menu in the Top Bar: {menuselection}`File --> Quit OpenSpace`. This will first open a modal where you need to confirm that you want to quit. Once confirmed, you will see a three-second timer. At the end of that three seconds, OpenSpace will close and quit. During those three seconds you may press anywhere to abort the quitting.
-3. Press {kbd}`CTRL+Q`. This will also trigger the three-second timer, during which you can abort the quitting by clicking any key or anywhere with the mouse.
+2. Use the File Menu in the Top Bar: {menuselection}`File --> Quit OpenSpace`. This will prompt you to confirm that you want to quit. Once confirmed, you will see a three-second timer. At the end of that three seconds, OpenSpace will close and quit. During those three seconds you may press anywhere to abort the quitting.
+3. Press {kbd}`CTRL` + {kbd}`Q`. This will also trigger the three-second timer, during which you can abort the quitting by clicking any key or press anywhere with the mouse.

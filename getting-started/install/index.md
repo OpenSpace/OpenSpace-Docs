@@ -112,7 +112,7 @@ In Windows 11, these setting are found in Window's Settings App under {menuselec
 
 :::
 
-1. Under `Add an app`, browse to choose the OpenSpace.exe file in the `OpenSpace/bin` folder in your main OpenSpace folder.
+1. Under `Add an app`, browse to choose the `OpenSpace.exe` file in the `OpenSpace/bin/` folder in your main OpenSpace folder.
 
 2. Click on the resulting OpenSpace entry in the list of apps, and click the `Options` button.
 
@@ -141,7 +141,7 @@ In Windows 10, assuming you have an NVIDIA card, you must use the NVIDIA Control
 Windows Desktop contextural menu.
 :::
 
-2. Select {menuselection}`NVIDIA Control Panel`.
+1. Select `NVIDIA Control Panel`.
 
 :::{figure} control-panel.png
 :width: 80%
@@ -151,9 +151,9 @@ Windows Desktop contextural menu.
 NVIDIA Control Panel.
 :::
 
-3. Select "Manage 3D settings" from the left navigation menu.
-4. Search for the dropdown menu called "Preferred graphics processor."
-5. These settings should indicate "Integrated graphics." Double-click that setting to choose "High-Performance NVIDIA processor."
+3. Select `Manage 3D settings` from the left navigation menu.
+4. Search for the dropdown menu called `Preferred graphics processor`.
+5. These settings should indicate `Integrated graphics`. Double-click that setting to choose `High-Performance NVIDIA processor`.
 6. Relaunch OpenSpace.
 
 ::::::
@@ -222,9 +222,7 @@ All other Linux platforms will require you to build the application. Please see 
 
 
 ## Uninstalling OpenSpace
-Because OpenSpace is self-contained, all the files it needs to run are in the OpenSpace folder where you installed it.
-
-Uninstalling OpenSpace is as easy as deleting the OpenSpace folder.
+Because OpenSpace is self-contained, all the files it needs to run are in the OpenSpace folder where you installed it. Uninstalling is as easy as deleting the OpenSpace folder.
 
 
 ## Getting Help
