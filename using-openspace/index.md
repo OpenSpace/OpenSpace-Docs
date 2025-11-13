@@ -38,6 +38,9 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 [Keyboard Shortcuts](/using-openspace/keyboard-shortcuts/index)
 : Keyboard shortcuts save you time.
 
+[OpenSpace Log](/using-openspace/log/index)
+: OpenSpace's output log.
+
 :::{toctree}
 :maxdepth: 1
 :hidden:
@@ -45,6 +48,7 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 building-blocks/index
 ui-panels/index
 keyboard-shortcuts/index
+log/index
 launcher/index
 
 :::
