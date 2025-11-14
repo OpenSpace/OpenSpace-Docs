@@ -33,7 +33,7 @@ A three-button mouse is recommended, but not necessary.
 
 * - Rotation
   - {kbd}`left mouse`
-  - Press the {kbd}`left mouse button` and drag your mouse to orbit around your target---the object in Focus indicated in the Focus Menu. Your motion will orbit in the direction you drag the mouse. The farther you drag the mouse, the faster the orbital speed.
+  - Press the {kbd}`left mouse button` and drag your mouse to orbit around the target---the object in Focus indicated in the Focus Panel. Your motion will orbit in the direction you drag the mouse. The farther you drag the mouse, the faster the orbital speed.
 
 * - Zoom
   - {kbd}`right mouse`
@@ -45,7 +45,7 @@ A three-button mouse is recommended, but not necessary.
 
 * - Pan
   - {kbd}`Ctrl` + {kbd}`left mouse`
-  - Hold the {kbd}`Ctrl` key while dragging the {kbd}`left mouse button` to pan the view away from the Focus. This is comparable to pitch and yaw motion in one mode. While you're learning, use this movement sparingly. Once you move the focused object out of view, flight motions become counterintuitive---we why explain next.
+  - Hold the {kbd}`Ctrl` key while dragging the {kbd}`left mouse button` to pan the view away from the Focus. This is comparable to pitch and yaw motion in one mode. While you're learning, use this movement sparingly. Once you move the focused object out of view, flight motions become counterintuitive---we explain why next.
 ::::
 
 :::{tip}
@@ -107,9 +107,9 @@ Friction status is "on" for each flight mode.
 #### Turning Friction On and Off
 
 There are two ways to turn the friction on and off.
+
 1. Click each word in the Friction Status area. Once friction is off, the word will turn red.
 2. Use the keyboard shortcuts---the recommended method:
-
 :::{list-table}
 :header-rows: 1
 :stub-columns: 1
@@ -158,7 +158,7 @@ Similarly, when you fly over the planetary surface, it's nice to have Rotation F
 [Advanced]{.advanced}
 #### How to Explore a Planet's Surface
 
-For most flying, particularly through large, dispersed data in space, it is typical to maintain Focus in the center of the screen. However, landing on a planet or moon demands the object in Focus me moved away from your view.
+For most flying, particularly through large, dispersed data in space, it is typical to maintain Focus in the center of the screen. However, landing on a planet or moon demands the object in Focus be moved away from your view.
 
 Suppose you want to land on the surface of Mars and explore the great canyon [Valles Marineris](https://en.wikipedia.org/wiki/Valles_Marineris), you'd first target Mars so it is the Focus, fly up to the planet, then orbit Mars until the canyon is in front of you on Mars's surface.
 
@@ -177,7 +177,8 @@ If a surface feature is on the dark side of a planet, you can do one of two thin
 - Turn on global illumination. Use the Actions Menu and choose \
 {menuselection}`Actions --> Solar System --> All Globes Global Illumination`, or alternatively, \
 {menuselection}`Actions --> Solar System --> Mars --> Mars Global Illumination` \
-This will remove the darkness created by the planet's shadow and bring sunlight to the entire planet. Obviously, this violates the laws of physics, but it's often necessary to do that in OpenSpace.
+This will remove the darkness created by the planet's shadow and bring sunlight to the entire planet. Obviously, this violates the laws of physics, but it's often necessary to go into a diagrammatic mode, if you will, to demonstrate specific things 
+in OpenSpace.
 :::
 
 Next you'd zoom in toward it. But, zooming in will eventually crash you into Mars head-first. What you need to do is fly up toward the surface with the canyon directly in front of you as you fly toward it.
