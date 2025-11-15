@@ -10,7 +10,7 @@ You can choose to display a different resolution, and render at a different reso
 
 ### 3. How can I get rid of the text and GUI elements in my planetarium display?
 There are several ways to do this. For example, you could
-- press {kbd}`TAB` and {kbd}`SHIFT+TAB` to toggle visibility of the GUI and text elements respectively
+- press {kbd}`F1` and {kbd}`SHIFT+F1` ({kbd}`TAB` and {kbd}`SHIFT+TAB` in earlier versions) to toggle visibility of the GUI and text elements respectively
 - create or use a _Window Options_ configuration file which renders the GUI and the data visualization separately on different windows, for example the `single_fisheye_gui.json` configuration file
 - create a [HTML control page](/creating-data-assets/custom-web-ui/html-controls-setup/index) and use that to control the navigation, hiding the GUI
 
