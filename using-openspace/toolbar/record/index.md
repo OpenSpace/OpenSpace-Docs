@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Record: Save and Playback a Session
+# Record Panel
 
 
 :::{figure} toolbar_record.png

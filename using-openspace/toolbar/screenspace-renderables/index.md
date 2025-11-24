@@ -1,4 +1,4 @@
-# Screenspace Renderables
+# Screenspace Renderables Panel
 
 :::{figure} toolbar_screenspacerenderables.png
 :align: center

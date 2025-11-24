@@ -7,7 +7,7 @@ authors:
 ---
 
 
-# Exoplanet Systems
+# Exoplanet Systems Panel
 
 :::{figure} toolbar_exoplanet.png
 :align: center

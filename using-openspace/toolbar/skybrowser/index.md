@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# SkyBrowsing
+# SkyBrowser Panel
 
 :::{figure} toolbar_skybrowser.png
 :align: center

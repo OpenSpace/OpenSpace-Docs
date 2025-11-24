@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# GeoLocation: Pinpoint a Place
+# GeoLocation Panel
 
 :::{figure} toolbar_geolocation.png
 :align: center

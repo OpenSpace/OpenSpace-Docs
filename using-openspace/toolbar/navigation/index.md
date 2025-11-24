@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Navigation: Focus & Fly
+# Navigation Panel
 
 :::{figure} toolbar_navigation.png
 :align: center

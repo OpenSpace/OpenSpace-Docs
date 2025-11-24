@@ -39,7 +39,7 @@ The exoplanet systems are represented by a blue ring centered on each host star.
 :::{note}
 The blue rings do not signify an orbit, but merely mark the locations of stars with known planets. The larger the ring, the closer it is to your position.
 
-To see the individual systems of planets with planetary orbits and a rendition of the habitable zone, see the [Exoplanet System Module](/using-openspace/ui-panels/exoplanet-systems/index).
+To see the individual systems of planets with planetary orbits and a rendition of the habitable zone, see the [Exoplanet System Module](/using-openspace/toolbar/exoplanet-systems/index).
 :::
 
 
@@ -53,8 +53,8 @@ The night sky looking toward the constellations Orion and Taurus. The exoplaneta
 
 #### Seeing Individual Systems
 
-You can view individual exoplanetary systems using the [Exoplanet Systems Panel](/using-openspace/ui-panels/exoplanet-systems/index). To see an individual system of planets at their correct distance and inclination, along with a habitable zone, take the following steps:
-- Bring up the [Exoplanet Systems Panel](/using-openspace/ui-panels/exoplanet-systems/index).
+You can view individual exoplanetary systems using the [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index). To see an individual system of planets at their correct distance and inclination, along with a habitable zone, take the following steps:
+- Bring up the [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index).
 - Search for the system you want to see.
 - Add that system.
 - Target and fly to the system.

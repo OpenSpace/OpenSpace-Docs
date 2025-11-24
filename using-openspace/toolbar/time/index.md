@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Time: Manipulating the Date & Time
+# Time Panel
 
 :::{figure} toolbar_time.png
 :align: center

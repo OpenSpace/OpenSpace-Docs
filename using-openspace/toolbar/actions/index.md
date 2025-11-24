@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Actions: Automate Adjustments
+# Actions Panel
 
 
 :::{figure} toolbar_actions.png
