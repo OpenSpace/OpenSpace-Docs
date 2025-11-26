@@ -3,7 +3,9 @@ OpenSpace versions are labeled by a version number of the form `MM.mm.rr`,  wher
 
 | _Version_ | _Date_ | _Description_ |
 | --------- | ------ | ------------- |
-| [0.21.3](changelogs/0.21.3/index)  | 2025-11-25 | This is a patch release for the fourteenth release, which primarily includes bug fixes. |
+| [0.21.3](changelogs/0.21.3/index)  | 2025-11-26 | This is a patch release for the fourteenth release, which primarily includes bug fixes. |
+| [0.21.2](changelogs/0.21.2/index)  | 2025-07-30 | This is a patch release for the fourteenth release, which primarily includes bug fixes. |
+| [0.21.1](changelogs/0.21.1/index)  | 2025-07-27 | This is a patch release for the fourteenth release, which primarily includes bug fixes. |
 | [0.21.0](changelogs/0.21.0/index)  | 2025-06-19 | This is the fourteenth release, which introduces a redesigned, more flexible user interface, improved presentation tools, enhanced exoplanet and star data, and easier content loading. |
 | [0.20.1](changelogs/0.20.1/index)  | 2024-07-18 | This is a patch release for the thirteenth beta release, which also includes an extensive update to the Digital Universe datasets and changes to the Scene menu hierarchy in the GUI. |
 | [0.20.0](changelogs/0.20.0/index)  | 2024-06-17 | This is the thirteenth beta release and the first in 2024. |
