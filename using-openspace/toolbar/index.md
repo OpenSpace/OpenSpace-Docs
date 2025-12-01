@@ -1,7 +1,7 @@
 # Toolbar
 
 
-![Toolbar Panels](/using-openspace/panels.png)
+![Toolbar Panels](/using-openspace/toolbar/toolbar_full.png)
 
 The Toolbar appears at the bottom of the OpenSpace window and gives you quick access to the panels. These panels can help with data manipulation, navigation, time control, and many other OpenSpace functions.
 
@@ -11,7 +11,8 @@ This section is in progress and is, therefore, incomplete.
 :::
 
 :::{note}
-The toolbar above shows all the possible options from the Top Bar's Windows menu. When you start OpenSpace, the Toolbar will look abbreviated---not all panels are present in the Toolbar by default.
+The toolbar above shows all the possible panel options, set via the Top Bar's Windows menu. When you start OpenSpace, the default Toolbar will look abbreviated---not all panels are present in the Toolbar by default, like this:
+![Toolbar Panels Default](/using-openspace/toolbar/toolbar_default.png)
 :::
 
 

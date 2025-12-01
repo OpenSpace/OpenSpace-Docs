@@ -15,7 +15,7 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 : How profiles, assets, and renderables work together.
 
 [The Toolbar](/using-openspace/toolbar/index)
-: [![Toolbar Panels](/using-openspace/panels.png)](/using-openspace/toolbar/index)
+: [![Toolbar Panels](/using-openspace/toolbar/toolbar_full.png)](/using-openspace/toolbar/index)
 
 [Profile Editor](/using-openspace/launcher/profile-editor/index)
 : Save settings for a particular story.
