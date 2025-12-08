@@ -3,6 +3,9 @@
 We provide a series of glossaries divided by subject.
 
 {.glossary .index-list}
+[User Glossary](/glossary/user-glossary/index)
+: Terms for the OpenSpace user.
+
 [Astronomical Glossary](/glossary/astronomical-glossary/index)
 : Tricky or cryptic terms bandied about mostly in the [](/content/index) section.
 
@@ -17,6 +20,7 @@ We provide a series of glossaries divided by subject.
 :maxdepth: 1
 :hidden:
 
+user-glossary/index
 astronomical-glossary/index
 development-glossary/index
 documentation-glossary/index
