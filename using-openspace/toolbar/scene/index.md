@@ -7,19 +7,13 @@ authors:
 
 # Scene Panel
 
-:::{figure} toolbar_scene.png
-:align: center
-:width: 1000px
-:alt: The Scene Panel button on the toolbar
+![Scene Toolbar Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
 
-The Scene Panel Button in the OpenSpace Toolbar.
-:::
-
-We covered the Scene Panel basics in [Orientation](/getting-started/orientation/index). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
+We covered the Scene Panel basics in [Orientation](orientation_scene_panel). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
 
 The Scene Panel is a hierarchial listing of all the data sets in your OpenSpace session, which are determined by what assets are in the profile you loaded upon launching OpenSpace.
 
-Expanding a data set will display its properties and their adjustment tools. These can be color choosers, sliders, or text boxes to type into that can change the size of a data set or its labels, the color and opacity of data, and the width and length of trails, to name a few.
+Expanding a data set will display its properties and their adjustment tools. These can be color choosers, sliders, or text boxes that can change the size of a data set or its labels, the color and opacity of data, and the width and length of trails, to name a few.
 
 
 <div style="margin-left: auto; margin-right: auto; width: 640px;">
@@ -41,7 +35,7 @@ Expanding a data set will display its properties and their adjustment tools. The
 :::{figure} scene_panel.png
 :align: right
 :width: 90%
-:figwidth: 400px
+:figwidth: 50%
 :alt: OpenSpace's Scene Panel
 
 The Scene Panel in OpenSpace, looking at the data sets under Star Clusters.
@@ -59,9 +53,7 @@ The Scene Panel is organized by scales, with groups for the Solar System, Milky 
 The entire [](/content/index) chapter's structure is based on the structure of the Scene Panel.
 
 ### Search Is Faster
-Rather than fish through the tree to deeper and deeper levels looking for one particular data set, it's often easiest to simply search for it in the search box at the top of the panel.
-
-The resulting matches will appear as a list, replacing the main list. Here, you can access their settings and make changes or turn the data set on or off.
+Rather than fish through the tree to deeper and deeper levels looking for one particular data set, it's often easiest to simply search for it in the search box at the top of the panel. The resulting matches will appear as a list, replacing the main list. Here, you can access their settings and make changes or turn the data set on or off.
 
 To get the rest of the tree back, clear the search box.
 
@@ -81,7 +73,7 @@ or, for example, to change the size (brightness) of the Open Clusters: \
 
 
 ## Turning Data On and Off
-One of the primary uses of the Scene Panel is to turn data sets on and off. Using the check box beside each data set's name in the panel, you can toggle the data set on or off.
+One of the primary uses of the Scene Panel is to turn data sets on and off. You can toggle a data set on or off using the check box beside each data set's name in the panel.
 
 :::{note}
 For some objects, you may have to turn off more than one data set to remove it from view. Most notably, planets with atmospheres, where the planet is one checkbox and the atmosphere is a different data set to uncheck.
@@ -89,46 +81,51 @@ For some objects, you may have to turn off more than one data set to remove it f
 
 :::{warning}
 Some data sets have a Fade setting applied to them based on your distance from them, so they may not appear even if you turn them on. The galaxy surveys like [Tully Galaxies](/content/universe/nearby-surveys/tully-galaxies/index) or the [Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/index), or the planet labels are examples of this. If you want to see Tully Galaxies from the night sky, you must uncheck: \
-{menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxies --> Renderable --> Fading --> Enable Distance Based Fading`
+{menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxies --> Renderable --> Fading`
 :::
 
 
 
-## Targeting a Data Set
+<!-- ## Targeting a Data Set
 To the right of the data set is the target icon ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png){h=2em}. You can press this button to activate that data set as the Focus.
 
 :::{note}
 Many of these data sets are observationally based---so they are centered on the Sun. If you were to press ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png){h=2em} for the Open Clusters, the Sun would remain the Focus. This button is more critical when you want to visit an object like a  planet, moon, exoplanet system, or a spacecraft.
-:::
+::: -->
 
+
+
+
+## Quick Access Menu
 
 :::{figure} scene_panel_context_menu.png
 :align: right
 :width: 100%
-:figwidth: 200px
+:figwidth: 30%
 :alt: OpenSpace's Scene Panel Context Menu
 :::
 
-## Quick Access Menu
+Beside each data set is a context menu ![Context menu](scene_panel_context_menu_button.png){h=24px}. This opens up a subpanel that has the navigation options to {menuselection}`Fly To`, {menuselection}`Jump To`, or {menuselection}`Zoom To/Frame`. There is also a button to pop out the settings for this object in a separate window.
 
-Beside the target button is a context menu ![Context menu](scene_panel_context_menu_button.png){h=2em}. This opens up a subpanel that has the navigation options to {menuselection}`Fly To`, {menuselection}`Jump To`, or {menuselection}`Zoom To/Frame`. There is also a button to pop out the settings for this object in a separate window.
-
-At the bottom there is a {menuselection}`Delete` button, that can be used to remove the object from the scene. Note that this action is irreversible and that any objects that may depend on this object will also be deleted.
+At the bottom, there is a {menuselection}`Delete` button that can be used to remove the object from the scene. Note that this action is irreversible and that any objects that may depend on this object will also be deleted.
 
 
 
 
 
 ## Asset Settings
-The Scene Panel has a hierarchial structure, expanding deeper and deeper depending on how many nested items you have. Under each data set, there is a hierarchical list of settings. At its most basic, each data set will have three settings subsections:
-- Renderable: where all of the settings for the renderable used by the data set can be changed---the look of the data set.
-- Transform: has settings related to the position and size of the object. Two common subsections under this are: `Scale`, where you can scale the data up or down spatially, and `Translation`, where you can move the data set spatially in x, y, z.
-- Info: where you find information about the asset.
+The Scene Panel has a hierarchial structure, expanding deeper and deeper depending on how many nested data sets you have. Under each data set, there is a hierarchical list of settings. At its most basic, each data set will have three settings tabbed subsections:
+
+- **Renderable**: where all of the settings for the data set's [renderable](/reference/asset-components/Renderable/index.md) can be changed---the look of the data set.
+
+- **Transform**: settings related to the position and size of the object. Two common subsections under this are: `Scale`, where you can scale the data up or down spatially, and `Translation`, where you can move the data set spatially in x, y, z.
+
+- **Info**: where you find information about the asset.
 
 :::{figure} scene_panel_open_clusters.png
 :align: center
 :width: 70%
-:figwidth: 500px
+:figwidth: 70%
 :alt: The Scene Panel's settings for the Open Star Clusters.
 
 The Scene Panel's settings for the Open Star Clusters. \
@@ -153,7 +150,7 @@ To remedy this, you can use the Sizing sliders. Bring the value up to increase t
 :::{figure} scene_panel_sizing.png
 :align: center
 :width: 70%
-:figwidth: 500px
+:figwidth: 70%
 :alt: The Open Star Clusters' Sizing settings.
 
 The Open Star Clusters' Sizing settings consists of a slider for Scale Factor and one for Scale Exponent. {menuselection}`... --> Renderable --> Sizing`.
@@ -183,7 +180,7 @@ In the case of a planet or an object (like a spacecraft model), the Scale Slider
 
 
 ### Translation
-This is a set of three sliders, one for each coordinate in x, y, z, that will move a data set from its current position.
+This is a set of three sliders, one for each coordinate in {math}`x, y, z` that will move a data set from its current position.
 
 The tricky thing with these sliders is that, natively, everything is in meters in OpenSpace. As you can imagine, once you reach even Neptune's distance, let alone far-off galaxies, the number of meters becomes unwieldy. These sliders are in meters, so it can be cumbersome to use them effectively.
 
@@ -195,7 +192,7 @@ Changing color in OpenSpace is fairly straightforward. Under the Coloring sectio
 :::{figure} scene_panel_coloring.png
 :align: center
 :width: 70%
-:figwidth: 500px
+:figwidth: 70%
 :alt: The Open Star Clusters' Coloring settings.
 
 The Open Star Clusters' Coloring settings consists of a color chooser (recommended) as well as a red-green-blue inputs. {menuselection}`... --> Renderable --> Coloring`.
@@ -210,7 +207,7 @@ Label settings are controlled in the Labels dropdown. Here, you can set an opaci
 :::{figure} scene_panel_labels.png
 :align: center
 :width: 70%
-:figwidth: 500px
+:figwidth: 70%
 :alt: The Open Star Clusters' Labels settings.
 
 The Open Star Clusters' Labels settings. {menuselection}`... --> Renderable --> Labels`.
@@ -229,18 +226,19 @@ When you look at their settings in the Scene Panel, you will still see the Sizin
 
 
 ## Other Renderable's Settings
-We cannot delineate every [renderable's](/reference/renderable-overview) settings configuration. But, we will provide a few more here that you're likely to encounter.
+We cannot delineate every setting for each [renderable](/reference/renderable-overview), but we will provide a few more that you're likely to encounter.
 
 
 ### Stars: Magnitude Exponent
+
 
 ::::::{grid}
 :::::{grid-item}
 
 :::{figure} scene_panel_stars.png
 :align: center
-:width: 70%
-:figwidth: 500px
+:width: 90%
+:figwidth: 100%
 :alt: The Stars settings.
 
 The [Stars](/content/milky-way/stars/stars/index) settings via {menuselection}`Scene --> Milky Way --> Stars --> Stars`.
@@ -264,8 +262,8 @@ More: [](/reference/asset-components/Renderable/RenderableStars)
 
 :::{figure} scene_panel_mars.png
 :align: center
-:width: 70%
-:figwidth: 500px
+:width: 90%
+:figwidth: 100%
 :alt: The settings for Mars.
 
 A typical planet's settings, in this case Mars: {menuselection}`Scene --> Solar System --> Planets --> Mars --> Mars`.
@@ -291,8 +289,8 @@ More: [](/reference/asset-components/Renderable/RenderableGlobe)
 
 :::{figure} scene_panel_constellation_lines.png
 :align: center
-:width: 70%
-:figwidth: 500px
+:width: 90%
+:figwidth: 100%
 :alt: The settings for the Constellation Lines.
 
 Settings for the [Constellation Lines](/content/milky-way/constellations/constellation-lines/index), but similar settings are found in other line-drawing assets like the Radio Sphere and Grids.  {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines`.
@@ -300,7 +298,7 @@ Settings for the [Constellation Lines](/content/milky-way/constellations/constel
 :::::
 
 :::::{grid-item}
-When it comes to images and lines, be they for constellations, or the Radio Sphere, or the Mliky Way Image or All-sky, Opacity is going to be the more important setting to alter their brightness.
+When it comes to images and lines, be they for [constellations](/content/milky-way/constellations/constellation-lines/index), or the [Radio Sphere](/content/milky-way/graphics/radio-sphere/index), or the [Mliky Way Image](/content/milky-way/galaxy/milky-way-image/index) or [All-sky](/content/milky-way/all-sky-images/index), Opacity is going to be the more important setting to alter their brightness.
 
 Opacity ranges from 0 to 1, with 0 being totally invisible and 1 being completely opaque. For lines, it can appear to alter their color, so setting the color and opacity go hand-in-hand to achieve the desired result.
 

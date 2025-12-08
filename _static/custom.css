@@ -53,6 +53,18 @@ kbd {
 }
 
 
+/* A stylized TOC listing for top-level pages */
+.fancy-toc.index-list dt {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.fancy-toc.index-list dd {
+    margin-left: 2px;
+    margin-bottom: 20px;
+}
+
+
 
 /* The "Advanced" box used on advanced sections. */
 .advanced-topic {
@@ -74,3 +86,18 @@ kbd {
 .tutorial li {
     margin-bottom: 0.5rem;
 }
+
+
+/* A styled TOC for the default listing */
+/* .fancy-toc .toctree-wrapper ul li {
+    font-size: 1.2em;
+    
+    margin-left: 0;
+}
+.fancy-toc .rst-content .toctree-wrapper ul li, .rst-content section ul li {
+    list-style: none;
+}
+.fancy-toc .toctree-l1 {
+    font-size: 1.75em;
+    
+} */

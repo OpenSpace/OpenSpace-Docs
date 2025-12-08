@@ -11,7 +11,8 @@ This section is designed to get you up and running with OpenSpace.
 
 We take you through the installation process, how to launch OpenSpace, an orientation of the OpenSpace window, and some basic skills that will allow you to begin using OpenSpace.
 
-{.glossary .index-list}
+
+{.fancy-toc .index-list}
 [Installing OpenSpace](./install/index)
 : Hardware requirements, installing OpenSpace, and how to get help.
 
@@ -23,7 +24,6 @@ We take you through the installation process, how to launch OpenSpace, an orient
 
 [Navigation](./navigation/index)
 : How to fly in OpenSpace.
-
 
 :::{toctree}
 :maxdepth: 1

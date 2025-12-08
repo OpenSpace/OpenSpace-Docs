@@ -242,7 +242,7 @@ We discuss details of each of these panels in the [Using OpenSpace](/using-opens
 
 
 
-
+(orientation_scene_panel)=
 ### ![Scene Panel button](toolbar_button_scene.png){h=45px} Scene Panel
 
 :::::{grid} 1 1 1 2

@@ -11,14 +11,14 @@ This section is in progress and is, therefore, incomplete.
 :::
 
 :::{note}
-The toolbar above shows all the possible panel options, set via the Top Bar's Windows menu. When you start OpenSpace, the default Toolbar will look abbreviated---not all panels are present in the Toolbar by default, like this:
+The toolbar above shows all the possible panel options, set via the Top Bar's Windows menu. When you start OpenSpace, the default Toolbar is abbreviated:
 ![Toolbar Panels Default](/using-openspace/toolbar/toolbar_default.png)
 :::
 
 
-{.glossary .index-list}
-[Scene Panel](/using-openspace/toolbar/scene/index)
-: Manipulate data.
+{.fancy-toc .index-list}
+![Scene Button](/using-openspace/toolbar/scene/toolbar_button_scene.png) [Scene Panel](/using-openspace/toolbar/scene/index)
+: Manipulate data and assets.
 
 [Navigation Panel](/using-openspace/toolbar/navigation/index)
 : Focus and fly.
@@ -34,7 +34,6 @@ The toolbar above shows all the possible panel options, set via the Top Bar's Wi
 
 [GeoLocation Panel](/using-openspace/toolbar/geolocation/index)
 : Pinpoint and fly to a place.
-
 
 
 :::{toctree}
