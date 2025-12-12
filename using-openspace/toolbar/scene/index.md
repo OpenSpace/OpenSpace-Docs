@@ -9,7 +9,7 @@ authors:
 
 ![Scene Toolbar Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
 
-We covered the Scene Panel basics in [Orientation](orientation_scene_panel). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
+We covered the Scene Panel basics in [Orientation](getting-statrted--orientation--scene-panel). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
 
 The Scene Panel is a hierarchial listing of all the data sets in your OpenSpace session, which are determined by what assets are in the profile you loaded upon launching OpenSpace.
 
@@ -116,7 +116,7 @@ At the bottom, there is a {menuselection}`Delete` button that can be used to rem
 ## Asset Settings
 The Scene Panel has a hierarchial structure, expanding deeper and deeper depending on how many nested data sets you have. Under each data set, there is a hierarchical list of settings. At its most basic, each data set will have three settings tabbed subsections:
 
-- **Renderable**: where all of the settings for the data set's [renderable](/reference/asset-components/Renderable/index.md) can be changed---the look of the data set.
+- **Renderable**: where all of the settings for the data set's [renderable](/reference/asset-components/Renderable/index) can be changed---the look of the data set.
 
 - **Transform**: settings related to the position and size of the object. Two common subsections under this are: `Scale`, where you can scale the data up or down spatially, and `Translation`, where you can move the data set spatially in x, y, z.
 

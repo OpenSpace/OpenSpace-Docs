@@ -20,7 +20,7 @@ The toolbar above shows all the possible panel options, set via the Top Bar's Wi
 ![Scene Button](/using-openspace/toolbar/scene/toolbar_button_scene.png) [Scene Panel](/using-openspace/toolbar/scene/index)
 : Manipulate data and assets.
 
-[Navigation Panel](/using-openspace/toolbar/navigation/index)
+![Scene Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png) [Navigation Panel](/using-openspace/toolbar/navigation/index)
 : Focus and fly.
 
 [Time Panel](/using-openspace/toolbar/time/index)

@@ -63,6 +63,7 @@ What is set to Focus, and more importantly in terms of flying, _where_ that obje
 Ideally, and by default, the focused object is at the center of your view in the Graphics Window. If the focused object is not in your view, navigating can be a bit cumbersome. We will explain...
 
 
+(getting-started--navigation--out-of-focus)=
 #### Flight Modes When Focus Is Out of View
 {#flight-without-focus-in-view}
 ::::{list-table}
