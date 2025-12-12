@@ -17,16 +17,16 @@ The toolbar above shows all the possible panel options, set via the Top Bar's Wi
 
 
 {.fancy-toc .index-list}
-![Scene Button](/using-openspace/toolbar/scene/toolbar_button_scene.png) [Scene Panel](/using-openspace/toolbar/scene/index)
+![Scene Panel Button](/using-openspace/toolbar/scene/toolbar_button_scene.png) [Scene Panel](/using-openspace/toolbar/scene/index)
 : Manipulate data and assets.
 
-![Navigation Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png) [Navigation Panel](/using-openspace/toolbar/navigation/index)
+![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png) [Navigation Panel](/using-openspace/toolbar/navigation/index)
 : Focus and fly.
 
-![Time Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=40px} [Time Panel](/using-openspace/toolbar/time/index)
+![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=40px} [Time Panel](/using-openspace/toolbar/time/index)
 : Manipulate the date, time, and the simulation speed.
 
-[Actions Panel](/using-openspace/toolbar/actions/index)
+![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png) [Actions Panel](/using-openspace/toolbar/actions/index)
 : Automate scene adjustments.
 
 [Record Panel](/using-openspace/toolbar/record/index)
