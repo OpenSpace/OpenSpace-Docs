@@ -7,14 +7,7 @@ authors:
 
 # Time Panel
 
-:::{figure} toolbar_time.png
-:align: center
-:width: 1000px
-:alt: Toolbar with the Time Panel highlighted
-
-The Time Panel Button in the OpenSpace Toolbar.
-:::
-
+![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=50px}
 
 
 ## Panel Overview
@@ -31,7 +24,7 @@ The Time Panel in OpenSpace.
 
 The Time Panel is where you go to change the date and time, and alter the _Simulation Speed_, or the rate of time.
 
-The panel has various adjustments that allow you to select the date and time via typing in values, choosing from a calendar, or using a slider to adjust the simulation speed. It has a quick adjust slider to move rate of time forward or backward interactively. And, there are buttons to automatically go to the current date and time and reset the simulation time to "realtime", or 1 second per second.
+The panel has various adjustments that allow you to select the date and time by typing in values, choosing from a calendar, or using a slider to adjust the simulation speed. It has a quick adjust slider to move rate of time forward or backward interactively. And, there are buttons to automatically go to the current date and time and reset the simulation time to "realtime", or 1 second per second.
 
 
 <div style="margin-left: auto; margin-right: auto; width: 640px;">
@@ -80,9 +73,9 @@ An _instantaneous_ transition fades the view down and fades back up at the desig
 
 {menuselection}`Settings --> Time Manager` contains options to control the behavior of transitions. Lower values will make things happen faster, while higher values will make a transition slower.
 
-{menuselection}`Time Manager --> Default Time Interpolation Duration` sets the transition duration when you change the date.
+{menuselection}`Settings --> Time Manager --> Default Time Interpolation Duration` sets the transition duration when you change the date.
 
-{menuselection}`Time Manager --> Default Delta Time Interpolation Duration` sets the duration of the transition when changing the rate of time, or simulated speed.
+{menuselection}`Settings --> Time Manager --> Default Delta Time Interpolation Duration` sets the duration of the transition when changing the rate of time, or simulated speed.
 ::::::
 
 
@@ -103,7 +96,7 @@ The six fields at the top of the panel---year, month, day, hours, minutes, secon
 
 :::{figure} time_panel_fields.png
 :align: center
-:width: 400px
+:width: 55%
 :alt: OpenSpace's Time Panel
 
 The date and time fields.
@@ -121,7 +114,7 @@ The date and time fields.
 
 :::{figure} time_panel_lock.png
 :align: center
-:width: 400px
+:width: 55%
 :alt: OpenSpace's Time Panel
 
 Pressing the Lock Button displays the Interpolate, Set, and Cancel buttons.
@@ -153,11 +146,18 @@ Use the Display Unit dropdown menu to select the time units you desire, between 
 
 ### Time Rate Value
 
-Change the time increment in the input next to the display unit menu. Enter a number and then press {kbd}`Enter` to set the value. To use negative rates of time (time going in reverse), enter a negative number.
+Change the time increment in the input next to the display unit menu. Enter a number and then press {kbd}`Enter` to set the value. To reverse time, enter a negative number.
 
 The unit on the rate of time is displayed above the input. By default, the rate of time is seconds per second. Of course, when the value is 1 and the unit is seconds/second, we're running in real time. If you change the unit to hours, then the input will show "hours/second", and if the value is 10, then time will move at 10 hours for every second on your watch.
 
 ### Quick Adjust
+
+:::{figure} time_panel.png
+:align: right
+:width: 90%
+:figwidth: 40%
+:alt: OpenSpace's Time Panel
+:::
 
 Use the Quick Adjust slider to adjust the rate temporarily. For example, if you wanted to move one side of a planet into sunlight, you might set the Display Unit to Hours, then move the Quick Adjust slider a bit to the left (backward in time) or right (forward in time) at a rate that complements what you're trying to achieve. Once you let go of the slider, your rate of time will return to your original value.
 
@@ -172,8 +172,8 @@ The Play/Pause Button does just that to the Simulation Time. Pausing will, obvio
 When you press the Play/Pause button, there is a transition that occurs when time comes to a halt (Pause Button), or when time ramps up from zero to the desired simulation time (Play Button).
 
 Inside the {menuselection}`Settings --> Time Manager` menu, you will find these two options for controlling this transition duration:
-- {menuselection}`Time Manager --> Default Pause Interpolation Duration` affects how long the transition will take when pausing, which is changing the rate of time from your chosen value to zero.
-- {menuselection}`Time Manager --> Default Unpause Interpolation Duration` affects how long the transition will take when unpausing, which is changing the rate of time from zero to your chosen value.
+- {menuselection}`Settings --> Time Manager --> Default Pause Interpolation Duration` affects how long the transition will take when pausing, which is changing the rate of time from your chosen value to zero.
+- {menuselection}`Settings --> Time Manager --> Default Unpause Interpolation Duration` affects how long the transition will take when unpausing, which is changing the rate of time from zero to your chosen value.
 :::::
 
 
