@@ -10,9 +10,6 @@ In this chapter, we will delve more deeply into how to use OpenSpace. We will co
 
 For this chapter, we need to understand a bit more what goes on under the hood with OpenSpace. So, we kick this chapter off with a bit of an introduction on how data is brought to OpenSpace via profiles, assets, and renderables. We then cover topics, broadly, in order of importance and frequency of use.
 
-{.heading-toc}
-## [The Building Blocks of OpenSpace](/using-openspace/building-blocks/index)
-How profiles, assets, and renderables work together.
 
 {.heading-toc}
 ## [The Toolbar](/using-openspace/toolbar/index)
@@ -34,7 +31,6 @@ OpenSpace's output log.
 :maxdepth: 1
 :hidden:
 
-building-blocks/index
 toolbar/index
 keyboard-shortcuts/index
 log/index

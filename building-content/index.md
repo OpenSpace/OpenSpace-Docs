@@ -7,8 +7,17 @@ authors:
 
 # Building Content
 
+{.heading-toc}
+## [The Building Blocks of OpenSpace](/building-content/building-blocks/index)
+How profiles, assets, and renderables work together.
 
 
+:::{toctree}
+:maxdepth: 1
+:hidden:
+
+building-blocks/index
+:::
 
 
 :::{toctree}
