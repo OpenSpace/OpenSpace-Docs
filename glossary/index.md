@@ -2,18 +2,21 @@
 
 We provide a series of glossaries divided by subject.
 
-{.glossary .index-list}
-[User Glossary](/glossary/user-glossary/index)
-: Terms for the OpenSpace user.
+{.heading-toc}
+## [User Glossary](/glossary/user-glossary/index)
+Terms for the OpenSpace user.
 
-[Astronomical Glossary](/glossary/astronomical-glossary/index)
-: Tricky or cryptic terms bandied about mostly in the [](/content/index) section.
+{.heading-toc}
+## [Astronomical Glossary](/glossary/astronomical-glossary/index)
+Tricky or cryptic terms bandied about mostly in the [](/content/index) section.
 
-[Development (a Coder's) Glossary](/glossary/development-glossary/index)
-: Some terms apropos to a coder who wants to contribute.
+{.heading-toc}
+## [Development (a Coder's) Glossary](/glossary/development-glossary/index)
+Some terms apropos to a coder who wants to contribute.
 
-[Documentation Glossary](/glossary/documentation-glossary/index)
-: Some words used in the documentation process for those who'd like to add to it.
+{.heading-toc}
+## [Documentation Glossary](/glossary/documentation-glossary/index)
+Some words used in the documentation process for those who'd like to add to it.
 
 
 :::{toctree}

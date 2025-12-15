@@ -16,24 +16,30 @@ The toolbar above shows all the possible panel options, set via the Top Bar's Wi
 :::
 
 
-{.fancy-toc .index-list}
-![Scene Panel Button](/using-openspace/toolbar/scene/toolbar_button_scene.png) [Scene Panel](/using-openspace/toolbar/scene/index)
-: Manipulate data and assets.
+{.heading-toc}
+## [Scene Panel](/using-openspace/toolbar/scene/index)
+![Scene Panel Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
 
-![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png) [Navigation Panel](/using-openspace/toolbar/navigation/index)
-: Focus and fly.
+{.heading-toc}
+## [Navigation Panel](/using-openspace/toolbar/navigation/index)
+![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png)
 
-![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=40px} [Time Panel](/using-openspace/toolbar/time/index)
-: Manipulate the date, time, and the simulation speed.
+{.heading-toc}
+## [Time Panel](/using-openspace/toolbar/time/index)
+![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=40px}
 
-![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png) [Actions Panel](/using-openspace/toolbar/actions/index)
-: Automate scene adjustments.
+{.heading-toc}
+## [Actions Panel](/using-openspace/toolbar/actions/index)
+![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png)
 
-[Record Panel](/using-openspace/toolbar/record/index)
-: Save and playback a session.
+{.heading-toc}
+## [Record Panel](/using-openspace/toolbar/record/index)
+![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
 
-[GeoLocation Panel](/using-openspace/toolbar/geolocation/index)
-: Pinpoint and fly to a place.
+{.heading-toc}
+## [GeoLocation Panel](/using-openspace/toolbar/geolocation/index)
+
+
 
 
 :::{toctree}
