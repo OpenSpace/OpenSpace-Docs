@@ -7,23 +7,16 @@ authors:
 
 # Record Panel
 
+![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
 
-:::{figure} toolbar_record.png
-:align: center
-:width: 1000px
-:alt: Toolbar with the Record Panel highlighted
-
-The Record Panel Button in the OpenSpace Toolbar.
-:::
-
-The Record Panel enables the recording of a session. Included are the flightpath, the assets used, and the time settings. Once a session is recorded and saved, you can play it back later using the same panel.
+The Record Panel enables the recording of a session. A recorded session includes the flightpath, the assets used, and the time settings. Once a session is recorded and saved, you can play it back later using the same panel.
 
 While OpenSpace was designed to be an interactive tool to explore data, there are times when you'll want to record a session to playback for an audience so you do not have to recreate all the camera moves and scene settings. Or, you may want to render frames from a recording session into a movie. We will discuss how to do these things below.
 
 
 :::{figure} record_panel.png
 :align: center
-:width: 50%
+:width: 60%
 :figwidth: 80%
 :alt: OpenSpace's Record Panel
 
@@ -32,7 +25,7 @@ The Record Panel in OpenSpace.
 
 
 ## Record a Session
-Recording a session is easy, but you'll want to do some homework before you hit the Record Button. First, you'll want to have the data sets configured how you like to see them. If you want trails on or off, if you want certain data sets on or off, etc. Second, you'll want to adjust the time settings to your liking. Finally, you'll want to map out your planned flight a bit to have a notion of your planned route and any flight moves.
+Recording a session is easy, but you'll want to do some homework before you hit the Record Button. First, you'll want to have the data sets configured how you'd like to see them. If you want trails on or off, if you want certain data sets on or off, etc. Second, you'll want to adjust the time settings to your liking. Finally, you'll want to map out your planned flight a bit to have a notion of your planned route and any flight moves.
 
 Once you're ready, proceed to your starting point. Enter a filename, without an extension, in the `Enter recording filename` box, the press the {menuselection}`Record` Button, leaving all other options unchecked.
 
@@ -125,7 +118,7 @@ If you wish to comment out a line, you can use the `#` character.
 
 ## Playback a Session
 
-Playing back a previously recorded session will abruptly move you to the starting point of the recoded session, then play the session. The time in OpenSpace will shift to the time settings when the sessions was recorded. Navigation control is disabled during playback.
+Playing back a previously recorded session will abruptly move you to the starting point of the recoded session, then play the session. The time in OpenSpace will shift to the time settings when the session was recorded. Navigation control is disabled during playback.
 
 Choose a file to be played back using the dropdown menu. The files that appear here are located in your `user/recordings` directory. Choose the desired file, then press the {menuselection}`Play` Button. Once you play a recording back, the blue Pause and Stop Playback buttons appear in the Toolbar.
 
@@ -154,13 +147,13 @@ Playback will run continuously until you use the {menuselection}`Stop Playback` 
 
 ### Option: Output Frames
 
-The `Output Frames` option determines whether screen shots are generated for the recoded session during playback. Once you check this option, you can specify the desired framerate. Pressing {menuselection}`Play` will then play the session, and take a snapshot at each frame---this will cause the playback to be a bit slower. Outputting frames will create a series of `.png` image files in the `user.screenshots/[timestamp]`, for example, `user/screenshots/2024-10-27-14-30-00` if you began recording frames on 27 October 2024 at 2:30pm.
+The `Output Frames` option determines whether screen shots are generated for the recoded session during playback. Once you check this option, you can specify the desired framerate. Pressing {menuselection}`Play` will then play the session, and take a snapshot at each frame---this will cause the playback to be a bit slower. Outputting frames will create a series of `.png` image files in `user.screenshots/[timestamp]`, for example, `user/screenshots/2024-10-27-14-30-00` if you began recording frames on 27 October 2024 at 2:30pm.
 
 The resulting images may be imported into a program that can render them into a movie file.
 
 
 ### Options: Hide User Interface Components on Playback
-The {menuselection}`Hide GUI on playback` and {menuselection}`Hide dashboards on playback` options can be used to hide the user interface overlays while a recording is being played back. This can, for example, be useful when outputting the frames of a recording to not show the user interface in the outputted frames. The overlays will be shown again once the playback is finished.
+The {menuselection}`Hide GUI on playback` and {menuselection}`Hide dashboards on playback` options are used to hide the user interface overlays while a recording is being played back. This can, for example, be useful when outputting the frames of a recording to not show the user interface in the outputted frames. The overlays will be shown again once the playback is finished.
 
 :::{note}
 Hiding the user interface during playback also hides the buttons for pausing or stopping the playback. If you want to abort a session recording, you can use the {kbd}`F1` key to bring back the user interface.
