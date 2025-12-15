@@ -4,7 +4,7 @@ For remotely starting up OpenSpace, remote control tools like Remote Desktop or 
 over SSH has been shared [on github.](https://gist.github.com/curiousercreative/84d70417bbbb183bf68043b8b1127d65)
 Once OpenSpace is running, there are several ways in which OpenSpace can be controlled remotely over the network, from another computer or device.
 
-1. Using the [html-based button pages](/creating-data-assets/custom-web-ui/html-controls-setup/index) served from the computer running OpenSpace. 
+1. Using the [html-based button pages](/building-content/custom-web-ui/html-controls-setup/index) served from the computer running OpenSpace. 
 Note that this will work without modification only if the browser is run on the same computer which is running OpenSpace, 
 for example using Remote Desktop on Windows or VNC for Linux. 
 Read on below for configuration changes needed, if you want to run a web server on the local machine and access it from a browser on a remote system. 

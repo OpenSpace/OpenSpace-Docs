@@ -18,36 +18,71 @@ This site is in the midst of an overhaul. Sections break down into:
 ::::::{grid} 1 1 2 2 
 :::::{grid-item}
 
-{.glossary .index-list}
-[Getting Started](/getting-started/index) {octicon}`check-circle-fill;0.8em`
-: How to install & launch OpenSpace, a brief orientation, and how to fly.
 
-[Using OpenSpace](/using-openspace/index) {octicon}`alert;0.8em`
-: Section not yet complete.
 
-[Profiles](/profiles/index) {octicon}`alert;0.8em`
-: Profiles load data and settings, here are the profiles that ship with OpenSpace.
+## [Getting Started](/getting-started/index) {octicon}`check-circle-fill;0.8em`
 
-[Content](/content/index) {octicon}`check-circle;0.8em`
-: A description of each data set in OpenSpace.
+## [Using OpenSpace](/using-openspace/index) {octicon}`alert;0.8em`
 
-[Importing Data](/creating-data-assets/index) {octicon}`x-circle;0.8em`
-: How to add your own data and media, build asset files, actions, and events.
+## [Profiles](/profiles/index) {octicon}`alert;0.8em`
 
-[Reference](/reference/index) {octicon}`check-circle;0.8em`
-: A reference section for OpenSpace commands, asset examples, and its scripting API.
+## [Content](/content/index) {octicon}`check-circle;0.8em`
 
-[Contribute](/contribute/index) {octicon}`x-circle;0.8em`
-: How **you** can contribute to the OpenSpace's development via coding or documentation.
+## [Building Content](/building-content/index) {octicon}`x-circle;0.8em`
 
-[Glossary](/glossary/index) {octicon}`check-circle-fill;0.8em`
-: Glossaries of terms on astronomy, coding, or documentation.
+## [Reference](/reference/index) {octicon}`check-circle;0.8em`
 
-[About](/about/index) {octicon}`x-circle;0.8em`
-: The whos, hows, and maybe even whys of OpenSpace.
+## [Contribute](/contribute/index) {octicon}`x-circle;0.8em`
 
-[Community](/community/index) {octicon}`x-circle;0.8em`
-: How to reach the team and communicate with others in the OpenSpace community.
+## [Glossary](/glossary/index) {octicon}`check-circle-fill;0.8em`
+
+## [About](/about/index) {octicon}`x-circle;0.8em`
+
+## [Community](/community/index) {octicon}`x-circle;0.8em`
+
+
+
+% {.heading-toc}
+% ## [Getting Started](/getting-started/index) {octicon}`check-circle-fill;0.8em`
+
+
+% {.heading-toc}
+% ## [Using OpenSpace](/using-openspace/index) {octicon}`alert;0.8em`
+% How to use OpenSpace.
+
+% {.heading-toc}
+% ## [Profiles](/profiles/index) {octicon}`alert;0.8em`
+% Profiles load data and settings, here are the profiles that ship with OpenSpace.
+
+% {.heading-toc}
+% ## [Content](/content/index) {octicon}`check-circle;0.8em`
+% A description of each data set in OpenSpace.
+
+% {.heading-toc}
+% ## [Building Content](/building-content/index) {octicon}`x-circle;0.8em`
+% How to add your own data and media, build asset files, actions, and events.
+
+% {.heading-toc}
+% ## [Reference](/reference/index) {octicon}`check-circle;0.8em`
+% A reference section for OpenSpace commands, asset examples, and its scripting API.
+
+% {.heading-toc}
+% ## [Contribute](/contribute/index) {octicon}`x-circle;0.8em`
+% How **you** can contribute to the OpenSpace's development via coding or documentation.
+
+% {.heading-toc}
+% ## [Glossary](/glossary/index) {octicon}`check-circle-fill;0.8em`
+% Glossaries of terms on astronomy, coding, or documentation.
+
+% {.heading-toc}
+% ## [About](/about/index) {octicon}`x-circle;0.8em`
+% The whos, hows, and maybe even whys of OpenSpace.
+
+% {.heading-toc}
+% ## [Community](/community/index) {octicon}`x-circle;0.8em`
+% How to reach the team and communicate with others in the OpenSpace community.
+
+
 
 
 :::::
@@ -108,7 +143,7 @@ content/index
 :maxdepth: 1
 :hidden:
 
-creating-data-assets/index
+building-content/index
 :::
 
 

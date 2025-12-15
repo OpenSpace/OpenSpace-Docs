@@ -23,7 +23,7 @@ An Asset is a file that defines a Scene in OpenSpace. Assets are at the root of 
 
 Not only do assets define data sets for scenes, but they also can define keyboard shortcuts, actions, and more esoteric building blocks.
 
-Many of the following sections will refer to the existence of asset files. While you don't need to understand how to read or create one, it's good to understand what one is before we go deeper into OpenSpace. We will discuss all the gritty details of asset building in [](/creating-data-assets/index).
+Many of the following sections will refer to the existence of asset files. While you don't need to understand how to read or create one, it's good to understand what one is before we go deeper into OpenSpace. We will discuss all the gritty details of asset building in [](/building-content/index).
 
 
 ::::{dropdown} Asset File Syntax

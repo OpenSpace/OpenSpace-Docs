@@ -6,7 +6,7 @@ authors:
 
 # Using OpenSpace
 
-In this chapter, we will delve more deeply into how to use OpenSpace. We will confine our topics here to _using_ the software, and discuss building assets and importing data in [](/creating-data-assets/index).
+In this chapter, we will delve more deeply into how to use OpenSpace. We will confine our topics here to _using_ the software, and discuss building assets and importing data in [](/building-content/index).
 
 For this chapter, we need to understand a bit more what goes on under the hood with OpenSpace. So, we kick this chapter off with a bit of an introduction on how data is brought to OpenSpace via profiles, assets, and renderables. We then cover topics, broadly, in order of importance and frequency of use.
 

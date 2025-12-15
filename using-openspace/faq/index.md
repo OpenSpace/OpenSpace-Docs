@@ -12,7 +12,7 @@ You can choose to display a different resolution, and render at a different reso
 There are several ways to do this. For example, you could
 - press {kbd}`F1` and {kbd}`SHIFT+F1` ({kbd}`TAB` and {kbd}`SHIFT+TAB` in earlier versions) to toggle visibility of the GUI and text elements respectively
 - create or use a _Window Options_ configuration file which renders the GUI and the data visualization separately on different windows, for example the `single_fisheye_gui.json` configuration file
-- create a [HTML control page](/creating-data-assets/custom-web-ui/html-controls-setup/index) and use that to control the navigation, hiding the GUI
+- create a [HTML control page](/building-content/custom-web-ui/html-controls-setup/index) and use that to control the navigation, hiding the GUI
 
 ### 4. How do I ensure that all the data sets I need are loaded before playing back a recorded path? Can I play back without an internet connection?
 Go into the `openspace.cfg` file and set {menuselection}`ModuleConfigurations --> GlobeBrowsing --> MRFCacheEnabled` to `true`. Run OpenSpace again it will cache the globe browsing data for planet/moon locations you visit. Then later, it should use the cached data for those same locations. There is also an `offline` profile that you can select from the launcher, and see if that has the content you want.

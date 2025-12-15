@@ -2,7 +2,7 @@
 The sections on this page describe some major breaking changes in version 0.20.0, together with instructions on how to adapt to the changes.
 
 ## A New Renderable for Point Clouds
-The `RenderableBillboardsCloud` class has been removed and replaced with a new Renderable type called `RenderablePointCloud`. This renderable includes some bug fixes as well as updates to the specifications in the asset related to color mapping, fading, and point sizing. These are made more explicit, to make it easier to use, and more understandable compared to its predecessor. The new Renderable also has support for CSV files, in addition to the previous SPECK file format. For full details on the renderable, check out the new [content pages for point data](/creating-data-assets/point-data/index).
+The `RenderableBillboardsCloud` class has been removed and replaced with a new Renderable type called `RenderablePointCloud`. This renderable includes some bug fixes as well as updates to the specifications in the asset related to color mapping, fading, and point sizing. These are made more explicit, to make it easier to use, and more understandable compared to its predecessor. The new Renderable also has support for CSV files, in addition to the previous SPECK file format. For full details on the renderable, check out the new [content pages for point data](/building-content/point-data/index).
 
 The following sections describe [how to convert an asset with a `RenderableBillboardsCloud` to the new format](./conversion.md#how-to-update-an-asset-with-a-renderablebillboardscloud), or how to [update a color map file](./conversion.md#update-color-map-data-format) (the .cmap data format has changed slightly). Finally, there is also a [summary of the updated property names](./conversion.md#summary-of-updated-properties), that can hopefully be useful if you have Lua scripts or actions that require updating due to the use properties that have been updated or removed.
 
@@ -36,7 +36,7 @@ Note that the `Texture` field is no longer required. If a texture is excluded, t
 
 (compute-scaleexponent-from-scalefactor)=
 #### Compute `ScaleExponent` from `ScaleFactor`
-The scaling of the points has been made more intuitive by changing the previous `ScaleFactor` property slightly, to make it more apparent that it affects an exponential scaling. See [details on the point data page](/creating-data-assets/point-data/point-data.md#controlling-the-point-size), but in general, with the new `ScaleExponent` the value is used as the exponent for `10^exponent` to compute the world-scale size of the points.
+The scaling of the points has been made more intuitive by changing the previous `ScaleFactor` property slightly, to make it more apparent that it affects an exponential scaling. See [details on the point data page](/building-content/point-data/point-data.md#controlling-the-point-size), but in general, with the new `ScaleExponent` the value is used as the exponent for `10^exponent` to compute the world-scale size of the points.
 
 The new `ScaleExponent` property can be computed from the previous `ScaleFactor` as:
 :::{math}
@@ -96,7 +96,7 @@ Following is a table that summarizes the updated property names/URI:s, which can
 Note that the full property URI would be of the form
 `Scene.<IdentifierOfNode>.Renderable.<NameOfPropertyFromTableAbove>`.
 
-Some new features are that the data file can be loaded using a CSV file, and that the fading direction can be inverted. See [the content page on point data](/creating-data-assets/point-data/point-data) for more details.
+Some new features are that the data file can be loaded using a CSV file, and that the fading direction can be inverted. See [the content page on point data](/building-content/point-data/point-data) for more details.
 
 ## Updates to the `RenderableStars`
 The `RenderableStars` class has been updated, which requires some changes to existing assets. Instead of specifying the `Texture` directly in the asset, it is now specified as part of the `Halo` group. As part of this change, the `RenderableStars` class has gained a number of additional features as well, for example the ability to configure the look of the halo textures through a `Multiplier`, `Gamma`, and `Size` values. Additionally, the same parameters exist for a `Glare` textures, where now stars can be rendered using one or both of these textures rendered on top of each other.
