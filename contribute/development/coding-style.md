@@ -81,6 +81,8 @@ Following this standard, it becomes easy to spot bugs where a return value is om
 ### 10. Names representing namespaces must be all lowercase and should not be nested deeper than two levels
 A third level is admissible if the last level is an `internal` namespace that is an implementation detail. Limiting the `namespace`s to two prevents awkwardly long prefixes in the code which would otherwise require `using` statements.
 
+The main `namespace` of a file does not cause the contents to be indented, but the content of any other namespace must be indented.
+
 ### 11. Abbreviations in names must be avoided
 ```cpp
 computeAverage();   // NOT: compAvg();
@@ -161,19 +163,43 @@ Include-files should be grouped based on their first directory entry (Â´modulesÂ
 #include <fstream>
 #include <iomanip>
 ```
-In addition to showing the individual include files, it also gives a clue about the modules that are involved in the source file. Include file paths must never be absolute. A `cpp` file should always include it's accompanying header file first and separate the other includes by an empty line.
+In addition to showing the individual include files, it also gives a clue about the modules that are involved in the source file. Include file paths must never be absolute. A `cpp` file should always include its accompanying header file first and separate the other includes by an empty line.
 
-### 20. The parts of a class must be sorted `public`, `protected` and `private`
+In the case of a dependent file (`.cpp` to its own `.h` file, or a derived class `.h` file to its baseclass `.h`), includes should no be repeated. If a file is already included in the `.h` file and the `.cpp` file needs the same include, it should not be repeated.
+The same rule holds for included files that the base class header file includes (transitively going further up if the base class has its own baseclass).
+
+An exception to this is the inclusion of `Property` types. If a class needs, for example, a `FloatProperty`, that header should be included even if the base class has already included it.
+
+### 20. Forward declarations and namespace organization
+Forward declarations are preferred instead of including other files to improve compilation times. Forward declarations should be organized alphabetically with subnamespaces coming before structs/classes. If there are multiple entries in a namespace, multiple lines are to be used, otherwise a single line.
+
+Example:
+```cpp
+
+namespace ghoul { class Dictionary; }
+namespace ghoul::opengl { class ProgramObject; }
+
+namespace openspace {
+
+namespace documentation { struct Documentation; }
+class Camera;
+class Renderable;
+struct UpdateData;
+
+class SceneGraphNode : public properties::PropertyOwner {
+```
+
+### 21. The parts of a class must be sorted `public`, `protected` and `private`
 Not applicable sections should be left out. The ordering is "most public first" so people who only wish to use the class can stop reading when they reach the protected/private sections.
 
-### 21. Type conversions must always be done explicitly
+### 22. Type conversions must always be done explicitly
 Don't rely on implicit type conversion.
 ```cpp
 floatValue = static_cast<float>(intValue); // NOT: floatValue = intValue;
 ```
 Implementing this removes a lot of bugs that come from unexpected conversion. By making it very visible that a casting is intended, it becomes easier to spot buggy casts
 
-### 22. All definitions must reside in source or inline files
+### 23. All definitions must reside in source or inline files
 ```cpp
 class MyClass {
 public:
@@ -185,7 +211,7 @@ private:
 ```
 The header files should declare an interface and the source file should implement it. Exceptions to this are template classes and template functions among others. The implementations of those methods must go in a `*.inl` file that is included at the bottom of the header file. The `inl` file does not require an include guard as it should never be included directly except in the header file it belongs to. While this restriction increases the number of files that we have to take care of, it also drastically enhances the readability of the code when looking at the header as one doesn't have to mentally remove any code but can focus on the function definitions instead.
 
-### 23. Implicit test for `0` should only be used for boolean variables and pointer-types
+### 24. Implicit test for `0` should only be used for boolean variables and pointer-types
 ```cpp
 bool isTrue = ...;
 if (isTrue) // NOT: if (isTrue == true)
@@ -198,7 +224,7 @@ if (ptr)        // OR: if (ptr != nullptr)
 ```
 Using an explicit test, the statement gives an immediate clue of the type being tested. Testing pointers for `nullptr` is so common that it can be used.
 
-### 24. Complex conditional expressions should be avoided. Introduce constant temporary boolean variables instead
+### 25. Complex conditional expressions should be avoided. Introduce constant temporary boolean variables instead
 ```cpp
 bool isFinished = (elementNo < 0) || (elementNo > maxElement);
 bool isRepeatedEntry = elementNo == lastElement;
@@ -214,7 +240,7 @@ if ((elementNo < 0) || (elementNo > maxElement) ||
 ```
 By assigning boolean variables to expressions, the program gets automatic documentation. The construction will be easier to read, debug, and maintain. In optimized code, the intermediate variables will be removed either way, so they don't incur any performance drawbacks.
 
-### 25. Executable statements in conditionals should be avoided
+### 26. Executable statements in conditionals should be avoided
 ```cpp
 File* fileHandle = open(fileName, "w");
 if (!fileHandle) {
@@ -227,12 +253,12 @@ This is an extension of the "one statement per line" rule that makes things easi
 
 This rule is somewhat relaxed with C++ feature of having an instruction and evaluating the result in the same if statement. As long as this lowers the scope of the variable the following is allowed:  `if (int count = countThings();  count > 0) {`
 
-### 26. The use of magic values in the code should be avoided
+### 27. The use of magic values in the code should be avoided
 Numbers other than `0`, `1`, or `-1` should be declared as named constants instead. The same holds true for string constants, refactoring is made easier if they are defined as a constant.
 
 This rule also enforces the "code as documentation" guide as it avoids magic constants, but makes things more readable
 
-### 27. `nullptr` must be used instead of `0` or `NULL` for declaring null pointer
+### 28. `nullptr` must be used instead of `0` or `NULL` for declaring null pointer
 `NULL` is part of the standard C library, but is made obsolete in C++ and `0` has a double meaning as an integer and the null pointer. Use the C++ `nullptr` instead.
 
 
