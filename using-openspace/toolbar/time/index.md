@@ -10,6 +10,10 @@ authors:
 ![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=50px}
 
 
+::::::::{tab-set}
+
+:::::::{tab-item} Overview
+
 ## Panel Overview
 
 :::{figure} time_panel.png
@@ -224,9 +228,14 @@ These are the increments from the [](/profiles/default/index) profile file defin
 :::::
 
 
+:::::::
 
 
-## Keyboard Shortcuts
+
+:::::::{tab-item} Keyboard Shortcuts
+
+
+## Time Panel Keyboard Shortcuts
 
 Summary of the keyboard shortcuts for the Time Panel.
 
@@ -257,5 +266,9 @@ Summary of the keyboard shortcuts for the Time Panel.
 :::
 
 
+:::::::
 
+
+
+::::::::
 

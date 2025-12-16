@@ -117,24 +117,7 @@ While Focus chooses an object to center and navigate around, Anchor & Aim allows
 ![aim to button](/getting-started/orientation/navigation_panel_aim_button.png){h=2em} Once an object is set to Anchor, you can then set a different object to aim toward. This allows you to keep one object as your focus while looking toward another object. This is useful when, for example, you want to follow the space station as it orbits Earth, but keep Earth in view as time moves forward.
 
 
-## Keyboard Shortcuts
 
-Keyboard shortcuts for the Navigation Panel revolve around what happens when you click on the list items in the panel to set a new focus. Typically, when you click with the mouse button on an item in the list, your current flight speed will drop to zero (flight will stop), and the new object will be centereed in your view. But, with some of these keyboard shortcuts, you can change that behavior.
-
-:::{list-table}
-:header-rows: 1
-:stub-columns: 1
-* - Shortcut
-  - Function in the list items to focus on
-* - {kbd}`left mouse`
-  - Set focus: stops flight and centers object.
-* - {kbd}`Ctrl` + {kbd}`left mouse`
-  - Set focus: continuous flight, centers object.
-* - {kbd}`Shift` + {kbd}`left mouse`
-  - Set focus: stops flight, does not center object.
-* - {kbd}`Ctrl` + {kbd}`Shift` + {kbd}`left mouse`
-  - Set focus, continuous flight, does not center object.
-:::
 
 
 Next, try the Navigation Tutorial on the tab at the [top of this page](using-openspace--toolbar--navigation-panel-top).
@@ -416,5 +399,34 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 ### Conclusion
 
 This tutorial exercised your use of the Navigation Panel and, to some degree gave you an introduction to the Time Panel and Scene Panel. We demonstrated several means of navigating around space, whether manually or using one of the automated flight functions. And, we showed the utility and differences between Focus and Anchor & Aim when bringing an object front and center.
+
+:::::::
+
+
+
+:::::::{tab-item} Keyboard Shortcuts
+
+## Navigation Panel Keyboard Shortcuts
+
+Keyboard shortcuts for the Navigation Panel revolve around what happens when you click on the list items in the panel to set a new focus. Typically, when you click with the mouse button on an item in the list, your current flight speed will drop to zero (flight will stop), and the new object will be centereed in your view. But, with some of these keyboard shortcuts, you can change that behavior.
+
+:::{list-table}
+:header-rows: 1
+:stub-columns: 1
+* - Shortcut
+  - Function in the list items to focus on
+* - {kbd}`left mouse`
+  - Set focus: stops flight and centers object.
+* - {kbd}`Ctrl` + {kbd}`left mouse`
+  - Set focus: continuous flight, centers object.
+* - {kbd}`Shift` + {kbd}`left mouse`
+  - Set focus: stops flight, does not center object.
+* - {kbd}`Ctrl` + {kbd}`Shift` + {kbd}`left mouse`
+  - Set focus, continuous flight, does not center object.
+:::
+
+:::::::
+
+
 
 ::::::::
