@@ -44,6 +44,11 @@ The toolbar above shows all the possible panel options, set via the Top Bar's Wi
 ## [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index)
 ![Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.png)
 
+{.heading-toc}
+## [User Panels](/using-openspace/toolbar/user-panels/index)
+![User Panels](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.png)
+
+
 
 :::{toctree}
 :maxdepth: 1
@@ -56,6 +61,7 @@ actions/index
 record/index
 geolocation/index
 exoplanet-systems/index
+user-panels/index
 
 :::
 
@@ -66,6 +72,6 @@ exoplanet-systems/index
 skybrowser/index
 
 screenspace-renderables/index
-user-panels/index
+
 
 :::
