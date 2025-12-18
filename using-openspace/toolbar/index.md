@@ -38,6 +38,7 @@ The toolbar above shows all the possible panel options, set via the Top Bar's Wi
 
 {.heading-toc}
 ## [GeoLocation Panel](/using-openspace/toolbar/geolocation/index)
+![GeoLocation Panel](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
 
 
 
