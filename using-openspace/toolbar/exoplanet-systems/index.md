@@ -9,13 +9,8 @@ authors:
 
 # Exoplanet Systems Panel
 
-:::{figure} toolbar_exoplanet.png
-:align: center
-:width: 1000px
-:alt: Toolbar with the Exoplanet Systems Panel highlighted
+![Exoplanet Systems Planel Button](toolbar_button_exoplanets.png)
 
-The Exoplanet Systems Panel Button in the OpenSpace Toolbar.
-:::
 
 
 The exoplanets module enables the visualization of exoplanetary systems in OpenSpace. While the main [exoplanets](/content/milky-way/exoplanets/exoplanet-systems/index) data displays all the stars that have exoplanets with a simple, blue ring, the exoplanets module depicts the system of planets around these stars. This includes the planetary orbits, at the proper inclination, a depiction of the {term}`habitable zone`, and, when available, the planets themselves.
@@ -29,12 +24,13 @@ Unlike the main exoplanets data, where you see all the planetary systems from af
 
 ### 1. Bring Up the Exoplanets Module Panel
 
-To load a system, click on ![Exoplanets module icon](exoplanet_module_icon.png){width="2.5em" height="1.5em"} to bring up the panel.
+To load a system, click on ![Exoplanets module icon](toolbar_button_exoplanets.png){height=24px} to bring up the panel.
 
 
 :::{figure} exoplanet_systems_panel.png
 :align: center
-:width: 400px
+:width: 60%
+:figwidth: 90%
 :alt: OpenSpace's Exoplanet Systems Panel
 
 OpenSpace's Exoplanet Systems Panel.
@@ -49,7 +45,8 @@ Inside the panel, search for the system you want to add by typing the name of th
 
 :::{figure} exoplanet_systems_panel_search.png
 :align: center
-:width: 400px
+:width: 60%
+:figwidth: 90%
 :alt: A screenshot of the exoplanets panel with the results of a search for the star Kepler 11.
 
 The exoplanets module panel with the results of a search for "Kepler-11," a multiplanet system around the star Kepler 11.
@@ -64,7 +61,8 @@ Click on the desired system and then click the "Add System" button to the right.
 
 :::{figure} exoplanet_systems_panel_added.png
 :align: center
-:width: 400px
+:width: 60%
+:figwidth: 90%
 :alt: The exoplanet module panel with the Kepler-11 system added
 
 The exoplanet module panel with the Kepler-11 system added.

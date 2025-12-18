@@ -40,7 +40,9 @@ The toolbar above shows all the possible panel options, set via the Top Bar's Wi
 ## [GeoLocation Panel](/using-openspace/toolbar/geolocation/index)
 ![GeoLocation Panel](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
 
-
+{.heading-toc}
+## [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index)
+![Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.png)
 
 
 :::{toctree}
@@ -53,6 +55,7 @@ time/index
 actions/index
 record/index
 geolocation/index
+exoplanet-systems/index
 
 :::
 
@@ -61,7 +64,7 @@ geolocation/index
 :caption: Using OpenSpace (Unrenovated)
 
 skybrowser/index
-exoplanet-systems/index
+
 screenspace-renderables/index
 user-panels/index
 
