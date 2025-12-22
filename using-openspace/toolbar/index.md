@@ -3,18 +3,38 @@
 
 ![Toolbar Panels](/using-openspace/toolbar/toolbar_full.png)
 
-The Toolbar appears at the bottom of the OpenSpace window and gives you quick access to the panels. These panels can help with data manipulation, navigation, time control, and many other OpenSpace functions.
+The Toolbar appears at the bottom of the OpenSpace window and gives you quick access to the panels that enable data manipulation, navigation, time control, and many other OpenSpace functions.
 
 
-:::{warning}
-This section is in progress and is, therefore, incomplete.
-:::
 
 :::{note}
-The toolbar above shows all the possible panel options, set via the Top Bar's Windows menu. When you start OpenSpace, the default Toolbar is abbreviated:
+The toolbar above shows all the possible panel options, set via the Top Bar's View menu. When you start OpenSpace, the default Toolbar is abbreviated:
 ![Toolbar Panels Default](/using-openspace/toolbar/toolbar_default.png)
 :::
 
+
+## Customizing the Toolbar
+
+:::{figure} menu_view_toolbar.png
+:align: right
+:width: 100%
+:figwidth: 50%
+:alt: OpenSpace's View Toolbar menu
+
+The {menuselection}`View --> Toolbar` Menu in OpenSpace, displying options for customizing the Toolbar. The checked panels shown here are on by default upon starting up OpenSpace.
+:::
+
+Use the {menuselection}`View --> Toolbar` Menu to add, subtract, or reorder panel buttons on the Toolbar. 
+
+Check the item on and off to add or subtract the panel from the Toolbar. Use the reorder button, ![Reorder button](/using-openspace/toolbar/reorder_button.png){height=20px}, to rearrange the panel buttons on the Toolbar. The {menuselection}`Reset` Button returns the Toolbar to its default state. 
+
+
+
+<br style="clear: both;">
+
+
+
+## Toolbar Panels
 
 {.heading-toc}
 ## [Scene Panel](/using-openspace/toolbar/scene/index)
