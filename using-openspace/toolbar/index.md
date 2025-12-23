@@ -61,6 +61,10 @@ Check the item on and off to add or subtract the panel from the Toolbar. Use the
 ![GeoLocation Panel](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
 
 {.heading-toc}
+## [SkyBrowser Panel](/using-openspace/toolbar/skybrowser/index)
+![SkyBrowser Panel](/using-openspace/toolbar/skybrowser/toolbar_button_skybrowser.png)
+
+{.heading-toc}
 ## [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index)
 ![Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.png)
 
@@ -80,6 +84,7 @@ time/index
 actions/index
 record/index
 geolocation/index
+skybrowser/index
 exoplanet-systems/index
 user-panels/index
 
@@ -89,7 +94,7 @@ user-panels/index
 :maxdepth: 1
 :caption: Using OpenSpace (Unrenovated)
 
-skybrowser/index
+
 
 screenspace-renderables/index
 
