@@ -1,6 +1,15 @@
+---
+authors:
+  - name: Brian Abbott
+    affiliation: American Museum of Natural History
+---
+
 # User Panels
 
 ![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.png)
+
+{menuselection}`Windows --> User Panels`
+
 
 User Panels in OpenSpace are custom panels that are developed by users outside of the OpenSpace development team. They allow custom functionality within OpenSpace. By default, OpenSpace does not ship with any such panels, but panels may be available on the [OpenSpace Hub](https://hub.openspaceproject.com/).
 

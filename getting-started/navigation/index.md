@@ -140,6 +140,8 @@ This is an extremely useful way to create gradual transitions between flight spe
 
 We describe some ways you can make your flight more graceful, and guide you though flying along a planet's surface.
 
+
+(getting-started--navigation--compound-motion)=
 #### Compound Motion
 
 Disabling friction on one or more Flight Modes allows you to apply a compound motion to your flight.

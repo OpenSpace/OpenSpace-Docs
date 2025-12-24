@@ -9,6 +9,8 @@ authors:
 
 ![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png)
 
+{menuselection}`Windows --> Actions`
+
 ## What Is an Action?
 
 Actions are set of instructions that can automatically alter one or more properties in OpenSpace. Typically, one would alter these properties in the Scene Panel, but Actions automate one or more such adjustments with the press of a button. These can be used to make a planet larger, turn off object trails, or change the Simulation Speed or time, among many other things. There is no editor, per se, to create actions---currently they are only available via asset files by coding the proper OpenSpace commands.

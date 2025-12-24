@@ -9,6 +9,8 @@ authors:
 
 ![Geolocation Panel](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
 
+{menuselection}`Windows --> Geo Location`
+
 
 ::::::::{tab-set}
 

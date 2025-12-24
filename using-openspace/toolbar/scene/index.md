@@ -9,6 +9,9 @@ authors:
 
 ![Scene Toolbar Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
 
+{menuselection}`Windows --> Scene`
+
+
 We covered the Scene Panel basics in [Orientation](getting-statrted--orientation--scene-panel). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
 
 The Scene Panel is a hierarchial listing of all the data sets in your OpenSpace session, which are determined by what assets are in the profile you loaded upon launching OpenSpace.

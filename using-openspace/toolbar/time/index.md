@@ -9,6 +9,8 @@ authors:
 
 ![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=50px}
 
+{menuselection}`Windows --> Time Panel`
+
 
 ::::::::{tab-set}
 
