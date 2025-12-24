@@ -78,6 +78,8 @@ kbd {
 
 
 .heading-toc h2,
-h2.heading-toc {
+h2.heading-toc,
+.heading-toc h3,
+h3.heading-toc {
     margin-bottom: 0.25em;
 }
