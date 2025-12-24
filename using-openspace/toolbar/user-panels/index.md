@@ -1,3 +1,9 @@
+---
+authors:
+  - name: Brian Abbott
+    affiliation: American Museum of Natural History
+---
+
 # User Panels
 
 ![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.png)
