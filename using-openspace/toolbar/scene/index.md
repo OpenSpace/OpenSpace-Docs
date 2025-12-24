@@ -7,9 +7,10 @@ authors:
 
 # Scene Panel
 
+![Scene Toolbar Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
+
 {menuselection}`Windows --> Scene`
 
-![Scene Toolbar Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
 
 We covered the Scene Panel basics in [Orientation](getting-statrted--orientation--scene-panel). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
 
