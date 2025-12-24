@@ -11,6 +11,8 @@ This section is designed to get you up and running with OpenSpace.
 
 We take you through the installation process, how to launch OpenSpace, an orientation of the OpenSpace window, and some basic skills that will allow you to begin using OpenSpace.
 
+If you've installed OpenSpace and want a quick, interactive tour where you will learn basic skills, bring up the [Tour Panel](/using-openspace/toolbar/tour-panel/index) and take the **Getting Started Tour**. You can bring up this using the top menu {menuselection}`Window --> Getting Started Tour`.
+
 
 {.heading-toc}
 ## [Installing OpenSpace](./install/index)
