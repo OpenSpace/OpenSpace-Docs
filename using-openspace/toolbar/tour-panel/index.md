@@ -8,6 +8,8 @@ authors:
 
 ![Tour Panel Button](/using-openspace/toolbar/tour-panel/toolbar_button_tour.png)
 
+{menuselection}`Windows --> Getting Started Tour`
+
 The Tour Panel displays an interactive, getting started tour of OpenSpace. The panel will guide you through exercises while you interact with OpenSpace. The tour will give you an introduction to navigating in OpenSpace, how to manipulate time, and alter scenes (the look of objects and data).
 
 :::{figure} tour_panel_getting_started.png

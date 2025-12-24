@@ -53,6 +53,11 @@ Check the item on and off to add or subtract the panel from the Toolbar. Use the
 ![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png)
 
 {.heading-toc}
+### [Keybinds Panel](/using-openspace/toolbar/keybinds/index)
+![Keybinds Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.png)
+
+
+{.heading-toc}
 ### [Record Panel](/using-openspace/toolbar/record/index)
 ![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
 
@@ -67,6 +72,7 @@ Check the item on and off to add or subtract the panel from the Toolbar. Use the
 {.heading-toc}
 ### [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index)
 ![Exoplanet Systems Panel Button](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.png)
+
 
 {.heading-toc}
 ### [User Panels](/using-openspace/toolbar/user-panels/index)
@@ -86,6 +92,7 @@ scene/index
 navigation/index
 time/index
 actions/index
+keybinds/index
 record/index
 geolocation/index
 skybrowser/index
