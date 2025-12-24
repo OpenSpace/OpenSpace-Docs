@@ -181,7 +181,7 @@ The SkyBrowser tab's buttons.
 
 * - ![Telescope View SkyBrowser button](skybrowser_buttons_telescope_view.png)
   - Open Telescope View
-  -
+  - Use this to reopen any closed browsers.
 
 * - ![Settings SkyBrowser button](skybrowser_buttons_settings.png)
   - SkyBrowser Settings
