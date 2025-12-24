@@ -213,7 +213,7 @@ For users running on a Retina display, you may want to apply the "Open in Low Re
 
 ### Linux Installation
 
-A binary version exists for Debian on the [OpenSpace website](https://www.openspaceproject.com/).
+Binary versions - AppImage and deb files for Ubuntu - exist on the volunteer-run Github repo [OpenSpace-AppImage](https://github.com/hn-88/OpenSpace-AppImage/releases)).
 
 All other Linux platforms will require you to build the application. Please see [Compiling](/contribute/development/compiling/index).
 
