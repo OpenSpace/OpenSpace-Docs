@@ -9,6 +9,8 @@ authors:
 
 ![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
 
+{menuselection}`Windows --> Session Recording`
+
 The Record Panel enables the recording of a session. A recorded session includes the flightpath, the assets used, and the time settings. Once a session is recorded and saved, you can play it back later using the same panel.
 
 While OpenSpace was designed to be an interactive tool to explore data, there are times when you'll want to record a session to playback for an audience so you do not have to recreate all the camera moves and scene settings. Or, you may want to render frames from a recording session into a movie. We will discuss how to do these things below.

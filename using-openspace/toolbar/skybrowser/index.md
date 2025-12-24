@@ -9,6 +9,8 @@ authors:
 
 ![SkyBrowser Panel Button](toolbar_button_skybrowser.png)
 
+{menuselection}`Windows --> SkyBrowser`
+
 The Sky Browser is an overlay window---a virtual telescope, if you will---that interactively connects OpenSpace to the night sky. Powered by [WorldWide Telescope](http://worldwidetelescope.org/webclient/), the SkyBrowser displays images in an overlay window that connects to the night sky via a target. 
 
 The SkyBrowser enables you to view the famous, and not-so-famous, images from the world's renown telescopes. Not only are there targeted images, think Eagle Nebula's "pillars of Creation" and the like, but there are also all-sky survey images, giving you a view of the night sky in multiple wavelengths.
