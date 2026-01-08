@@ -8,13 +8,13 @@ authors:
 # Keyboard Shortcuts
 
 
-{.glossary .index-list}
-[Base Shortcuts](./base.md)
-: A set of shortcuts that is always loaded in OpenSpace.
+{.heading-toc}
+## [Base Shortcuts](./base.md)
+A set of shortcuts that is always loaded in OpenSpace.
 
-
-[Default Profile](./default.md)
-: Keyboard shortcuts specific to the [](/profiles/default/index)
+{.heading-toc}
+## [Default Profile](./default.md)
+Keyboard shortcuts specific to the [](/profiles/default/index)
 
 
 :::{toctree}

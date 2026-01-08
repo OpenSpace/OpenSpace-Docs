@@ -35,7 +35,7 @@ Finger of god
 
 
 Habitable zone
-    The habitable zone for a planetary system is a region where liquid water can exist. It depends on the type of host star and the nature of the planet. Here, we tend to assume a rocky, earth-like planet and a star akin to the Sun. For the Solar System, Earth is comfortably in the [habitable zone](/content/solar-system/sun/habitable-zone/index), while Venus flirts with the inner boundary, and Mars lies within but closer to the outer boundary. We also show [exoplanet habitable zones](/using-openspace/ui-panels/exoplanet-systems/index) in the module.
+    The habitable zone for a planetary system is a region where liquid water can exist. It depends on the type of host star and the nature of the planet. Here, we tend to assume a rocky, earth-like planet and a star akin to the Sun. For the Solar System, Earth is comfortably in the [habitable zone](/content/solar-system/sun/habitable-zone/index), while Venus flirts with the inner boundary, and Mars lies within but closer to the outer boundary. We also show [exoplanet habitable zones](/using-openspace/toolbar/exoplanet-systems/index) in the module.
 
 
 Light year

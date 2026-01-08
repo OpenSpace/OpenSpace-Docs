@@ -69,8 +69,17 @@ kbd {
 }
 
 .tutorial {
-    margin: 0 5rem;
+    margin: 0 10%;
 }
 .tutorial li {
     margin-bottom: 0.5rem;
+    margin-left: 0;
+}
+
+
+.heading-toc h2,
+h2.heading-toc,
+.heading-toc h3,
+h3.heading-toc {
+    margin-bottom: 0.25em;
 }

@@ -45,7 +45,7 @@ We use the following symbols in profile pages to indicate actions:
 
 
 :::{note}
-We will discuss profile authoring in a forthcoming page. For the time being, a [syntax page](/creating-data-assets/profiles) exists for those who are comfortable with behind the scenes coding.
+We will discuss profile authoring in a forthcoming page. For the time being, a [syntax page](/building-content/profiles) exists for those who are comfortable with behind the scenes coding.
 :::
 
 

@@ -242,7 +242,7 @@ We discuss details of each of these panels in the [Using OpenSpace](/using-opens
 
 
 
-
+(getting-statrted--orientation--scene-panel)=
 ### ![Scene Panel button](toolbar_button_scene.png){h=45px} Scene Panel
 
 :::::{grid} 1 1 1 2
@@ -251,7 +251,7 @@ The Scene Panel collects all the assets (data sets) that were loaded via the pro
 
 Throughout this guide, we will refer to this panel as {menuselection}`Scene`.
 
-You will find more detailed information about this panel in the [Using OpenSpace](/using-openspace/ui-panels/scene/index) chapter.
+You will find more detailed information about this panel in the [Using OpenSpace](/using-openspace/toolbar/scene/index) chapter.
 
 #### List of Data Assets
 For the [Default](/profiles/default/index) Profile, all the general data sets for the universe are loaded. This includes the planets, moons, and other objects and satellites in the [Solar System](/content/solar-system/index), the zoo of objects in the [Milky Way](/content/milky-way/index), and the large surveys outside the Galaxy, in [Universe](/content/universe/index).
@@ -318,7 +318,7 @@ We will refer to this panel as {menuselection}`Navigation` throughout this guide
 
 The Navigation Panel has two modes, accessed through an iconized menu at the top:
 - ![Focus](navigation_panel_mode_focus.png){h=20px} Focus: In every OpenSpace session, *something* needs to be set as Focus. This is an object around which navigation is centered. With this chosen in the top menu, simply pick an object in the list, or search for an object, to set as Focus. See [Navigation and Focus](/getting-started/navigation/index.md#navigation-and-focus) for more on this.
-- ![Anchor/Aim](navigation_panel_mode_anchoraim.png){h=20px} Anchor & Aim: This more complex navigation mode uses two objects: an *Anchor* that acts similarly to Focus in that the camera navigates around it, and an *Aim* that the view will be set to point towards. See [Navigation](/using-openspace/ui-panels/navigation/index) for more on using Anchor & Aim.
+- ![Anchor/Aim](navigation_panel_mode_anchoraim.png){h=20px} Anchor & Aim: This more complex navigation mode uses two objects: an *Anchor* that acts similarly to Focus in that the camera navigates around it, and an *Aim* that the view will be set to point towards. See [Navigation](/using-openspace/toolbar/navigation/index) for more on using Anchor & Aim.
 ::::
 ::::{grid-item}
 
@@ -457,7 +457,7 @@ Once added, it appears in the list and you can aim toward it, fly to it, and acc
 
 In this guide, we refer to this panel as {menuselection}`Exoplanet Systems`.
 
-See [](/using-openspace/ui-panels/exoplanet-systems/index) for more on using this panel.
+See [](/using-openspace/toolbar/exoplanet-systems/index) for more on using this panel.
 ::::
 
 ::::{grid-item}

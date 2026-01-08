@@ -24,15 +24,15 @@ Links for the OpenSpace software, documentation, data, everything.
 ### Map Data
 | Name / URL   | Description |
 |:-------------|:------------|
-| [NASA TREKS](https://trek.nasa.gov/) | NASA Curated collection of maps for multiple Solar System bodies. Can be used to download regional patches of [globebrowsing](/creating-data-assets/globebrowsing/index) data to add to OpenSpace. |
+| [NASA TREKS](https://trek.nasa.gov/) | NASA Curated collection of maps for multiple Solar System bodies. Can be used to download regional patches of [globebrowsing](/building-content/globebrowsing/index) data to add to OpenSpace. |
 | [USGS Astropedia](https://astrogeology.usgs.gov/search) | USGS prepared maps for Solar System bodies. These maps are the source of many global mosaics in OpenSpace. |
 | [LROC RDR](http://wms.lroc.asu.edu/lroc/rdr_product_select) | Lunar Reconansance Orbiter Reduced Data Record product search. This page can be used to obtain moon maps prepared by the LRO NAC team. |
-| [Orbital Data Explorer](https://ode.rsl.wustl.edu/) | Search tool for PDS archived orbital mission data. This can be used to obtain regional [globebrowsing](/creating-data-assets/globebrowsing/index) patches to add to OpenSpace from Mercury, Venus, the Moon, and Mars. |
+| [Orbital Data Explorer](https://ode.rsl.wustl.edu/) | Search tool for PDS archived orbital mission data. This can be used to obtain regional [globebrowsing](/building-content/globebrowsing/index) patches to add to OpenSpace from Mercury, Venus, the Moon, and Mars. |
 
 ### Orbital Data
 | Name / URL   | Description |
 |:-------------|:------------|
-| [JPL Horizons Bodies](https://ssd.jpl.nasa.gov/sbdb_query.cgi) | Source of asteroid belt data in OpenSpace. Can be used to obtain differnt/sub data sets. [Example/More info](/creating-data-assets/ephemeris/sbdb)|
+| [JPL Horizons Bodies](https://ssd.jpl.nasa.gov/sbdb_query.cgi) | Source of asteroid belt data in OpenSpace. Can be used to obtain differnt/sub data sets. [Example/More info](/building-content/ephemeris/sbdb)|
 | [Celestrak](https://celestrak.com/) | Source of earth satellite/debris data in OpenSpace. Can be used to obtain trails for individual satellites  |
 | [NASA GMAT](https://software.nasa.gov/software/GSC-17177-1) | NASA General Mission Analysis Tool. Used for planning missions. [Example here.](https://www.reddit.com/r/OpenSpaceProject/comments/lq058v/newbie_question_plotting_a_highfidelity/) (to be replaced with wiki page about asset) |
 
@@ -41,7 +41,7 @@ Links for the OpenSpace software, documentation, data, everything.
 |:-------------|:------------|
 | [SPICE Archived Missions](https://naif.jpl.nasa.gov/naif/data_archived.html) | NAIF SPICE Data for archived missions. Can be used to add an asset to OpenSpace for a spacecraft not already included (or included with low resolution data) |
 | [SPICE Operational Missions](https://naif.jpl.nasa.gov/naif/data_operational.html) | NAIF SPICE Data for operation missions. Can be used to add an asset to OpenSpace for a spacecraft not already included, or to add additional/newer data for an existing mission. |
-| [JPL Ephemeris Bodies](https://ssd.jpl.nasa.gov/horizons.cgi) | Source of some trajectory data in OpenSpace. Can be used by to add new trajectories to OpenSpace. [Example/More info](/creating-data-assets/ephemeris/horizons-gui)|
+| [JPL Ephemeris Bodies](https://ssd.jpl.nasa.gov/horizons.cgi) | Source of some trajectory data in OpenSpace. Can be used by to add new trajectories to OpenSpace. [Example/More info](/building-content/ephemeris/horizons-gui)|
 
 ### Testing Servers
 | Name / URL   | Description |

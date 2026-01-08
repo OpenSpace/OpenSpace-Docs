@@ -85,7 +85,7 @@ Assets may also be added to a session temporarily (as opposed to saving it in a 
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-The Mark Interesting Nodes section allows you to determine what appears in the Navigation Panel. Each asset that appears there is available for targeting, aiming toward, or flying to. See the [Navigation Panel](/using-openspace/ui-panels/navigation/index) for more.
+The Mark Interesting Nodes section allows you to determine what appears in the Navigation Panel. Each asset that appears there is available for targeting, aiming toward, or flying to. See the [Navigation Panel](/using-openspace/toolbar/navigation/index) for more.
 
 For this panel, you need to know the name of the asset, or node, you want to add.
 ::::
@@ -103,7 +103,7 @@ For this panel, you need to know the name of the asset, or node, you want to add
 
 ## Simulation Time Increments
 
-Simulation Time Increments allows you to edit the time increments that function within the [Time Panel](/using-openspace/ui-panels/time/index). These increments are triggered by button on that panel, or more easily by keystrokes outlined in the Time Panel page.
+Simulation Time Increments allows you to edit the time increments that function within the [Time Panel](/using-openspace/toolbar/time/index). These increments are triggered by button on that panel, or more easily by keystrokes outlined in the Time Panel page.
 
 :::{figure} profile_editor_time_increments.png
 :align: center

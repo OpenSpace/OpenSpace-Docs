@@ -63,6 +63,7 @@ What is set to Focus, and more importantly in terms of flying, _where_ that obje
 Ideally, and by default, the focused object is at the center of your view in the Graphics Window. If the focused object is not in your view, navigating can be a bit cumbersome. We will explain...
 
 
+(getting-started--navigation--out-of-focus)=
 #### Flight Modes When Focus Is Out of View
 {#flight-without-focus-in-view}
 ::::{list-table}
@@ -139,6 +140,8 @@ This is an extremely useful way to create gradual transitions between flight spe
 
 We describe some ways you can make your flight more graceful, and guide you though flying along a planet's surface.
 
+
+(getting-started--navigation--compound-motion)=
 #### Compound Motion
 
 Disabling friction on one or more Flight Modes allows you to apply a compound motion to your flight.

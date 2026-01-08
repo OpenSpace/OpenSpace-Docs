@@ -12,19 +12,27 @@ You can choose to display a different resolution, and render at a different reso
 There are several ways to do this. For example, you could
 - press {kbd}`F1` and {kbd}`SHIFT+F1` ({kbd}`TAB` and {kbd}`SHIFT+TAB` in earlier versions) to toggle visibility of the GUI and text elements respectively
 - create or use a _Window Options_ configuration file which renders the GUI and the data visualization separately on different windows, for example the `single_fisheye_gui.json` configuration file
-- create a [HTML control page](/creating-data-assets/custom-web-ui/html-controls-setup/index) and use that to control the navigation, hiding the GUI
+- create a [HTML control page](/building-content/custom-web-ui/html-controls-setup/index) and use that to control the navigation, hiding the GUI
 
 ### 4. How do I ensure that all the data sets I need are loaded before playing back a recorded path? Can I play back without an internet connection?
 Go into the `openspace.cfg` file and set {menuselection}`ModuleConfigurations --> GlobeBrowsing --> MRFCacheEnabled` to `true`. Run OpenSpace again it will cache the globe browsing data for planet/moon locations you visit. Then later, it should use the cached data for those same locations. There is also an `offline` profile that you can select from the launcher, and see if that has the content you want.
+
+:::{note}
+OpenSpace 0.21.x has a checkbox which overrides the `openspace.cfg` file. This is accessed by clicking on the gear symbol at the bottom right of the Launcher when choosing the profile and window options. In the Launcher settings window which opens, we need to check the "Enable MRF caching" checkbox and optionally select an MRF cache location which will override the location specified in the `openspace.cfg` file, before selecting "Save" and then the "Start" button to begin using OpenSpace.
+:::
 
 ## Related to running OpenSpace on MacOS, Linux and unsupported hardware
 ### 1. Why do you only provide Intel Mac packages? Why not packages for Apple Silicon Macs?
 When starting an x86 or x64 application on MacOS, it automatically runs through the Rosetta 2 translation layer, so that the ARM chip in the machine can execute the instructions.  That part is not really a big deal and it would come with some performance loss that could be acceptable.  However, we are using OpenGL as our graphics pipeline, which Apple has deprecated on their platforms for a number of years now.  The way they still support it on M1 is a separate conversion layer that transforms the OpenGL calls into Metal 3 (the Apple-specific graphics API) before it gets executed by the GPU cores on the M1/M2 chip.  Apple decided for some very strange reason to not support double precision floating point operations (https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf Section 2.1) which we use everywhere in OpenSpace to get enough precision for the whole universe. So as soon as we run any OpenGL that uses double precision, it no longer uses the GPU cores built into the chip, but reverts to software-based rendering, which kills the performance entirely.
 
-Asahi Linux has successfully ported OpenGL to Apple Silicon Macs, so those with Apple Silicon Macs could, if they're feeling adventurous, [install Asahi Fedora remix](https://asahilinux.org/fedora/) and try to compile and run OpenSpace on their Apple Silicon Macs.
+Asahi Linux has successfully ported OpenGL to Apple Silicon Macs, so those with Apple Silicon Macs could, if they're feeling adventurous, [install Asahi Fedora remix](https://asahilinux.org/fedora/) and try to compile and run OpenSpace on their Apple Silicon Macs. Asahi does not have an installer for M4 Macs yet, so [UTM virtualization](https://mac.getutm.app/) is the way for getting OpenSpace to run on M4 Macs.
+
+:::{note}
+Since the MacOS display drivers do not support double precision floating point operations, we have to run the virtual machine on UTM with hardware acceleration turned off to prevent hard crashes. This results in a frame-rate of around 8 fps for OpenSpace 0.21.2 as tested on an M4 Mac-mini using the [unofficial deb binary](https://github.com/hn-88/OpenSpace-AppImage/releases/tag/daily-CPACK-DEB) on Ubuntu 24.04 virtualized on MacOS 15.7.
+:::
 
 ### 2. Does OpenSpace run on Linux?
-Yes. Linux users can compile and run OpenSpace using the MIT licensed code on [GitHub](https://github.com/OpenSpace/OpenSpace). Also see the [Compile instructions](/contribute/development/compiling/index) on this page.
+Yes. Linux users can compile and run OpenSpace using the MIT licensed code on [GitHub](https://github.com/OpenSpace/OpenSpace). Also see the [Compile instructions](/contribute/development/compiling/index) on this page. Volunteer-built AppImage and Ubuntu deb file builds also exist - [external link](https://hn-88.github.io/OpenSpace-AppImage/) - but please note that these builds are not supported by the official OpenSpace development team.
 
 ### 3. I don't have an NVidia graphics card. Can I still run the Windows executable on my Windows laptop which has integrated Intel graphics?
 Yes. The executable will run, but as integrated Intel cards are generally less powerful than dedicated graphics cards, the frame rate would be very low.
@@ -32,4 +40,4 @@ Yes. The executable will run, but as integrated Intel cards are generally less p
 Futhermore, AMD cards work in principle, but might have some non-fatal rendering glitches.
 
 ### 4. What keyboard shortcuts does OpenSpace support?
-You can view the keyboard bindings included in the current _Profile_ by clicking on the left-most {menuselection}`Kebab button (three vertical dots)` in the GUI and choosing the {menuselection}`Show Keybindings` menu item. You can also add more keyboard shortcuts or keybindings by editing the _Profile_ on startup. The full list of properties for which you can add keybindings can be found in the _index.html_ file under the _documentation_ directory of your installation.
+You can view the keyboard bindings included in the current _Profile_ by clicking on the {menuselection}`Windows --> Keybinds` menu item in the GUI (in the older version 0.20.x GUI, this was under the left-most {menuselection}`Kebab button (three vertical dots)`  on choosing the {menuselection}`Show Keybindings` menu item). You can also add more keyboard shortcuts or keybindings by editing the _Profile_ on startup. The full list of properties for which you can add keybindings can be found in the _index.html_ file under the _documentation_ directory of your installation.

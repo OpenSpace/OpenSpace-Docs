@@ -11,18 +11,25 @@ This section is designed to get you up and running with OpenSpace.
 
 We take you through the installation process, how to launch OpenSpace, an orientation of the OpenSpace window, and some basic skills that will allow you to begin using OpenSpace.
 
-{.glossary .index-list}
-[Installing OpenSpace](./install/index)
-: Hardware requirements, installing OpenSpace, and how to get help.
+If you've installed OpenSpace and want a quick, interactive tour where you will learn basic skills, bring up the [Tour Panel](/using-openspace/toolbar/tour-panel/index) and take the **Getting Started Tour**. You can bring up this using the top menu {menuselection}`Window --> Getting Started Tour`.
 
-[Launching OpenSpace](./launch/index)
-: What you see when you run OpenSpace.
 
-[Orientation](./orientation/index)
-: An overview of OpenSpace's panels and other items on the screen.
+{.heading-toc}
+## [Installing OpenSpace](./install/index)
+Hardware requirements, installing OpenSpace, and how to get help.
 
-[Navigation](./navigation/index)
-: How to fly in OpenSpace.
+{.heading-toc}
+## [Launching OpenSpace](./launch/index)
+What you see when you run OpenSpace.
+
+{.heading-toc}
+## [Orientation](./orientation/index)
+An overview of OpenSpace's panels and other items on the screen.
+
+{.heading-toc}
+## [Navigation](./navigation/index)
+How to fly in OpenSpace.
+
 
 
 :::{toctree}
