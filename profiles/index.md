@@ -109,7 +109,7 @@ juno
 mars
 messenger
 newhorizons
-nightsky
+night-sky/index
 
 osirisrex
 rosetta
