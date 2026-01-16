@@ -7,3 +7,10 @@ Here are some pages collecting a variety of tools with tips & tricks for some of
 
 visual-studio
 :::
+
+:::{toctree}
+:maxdepth: 1
+:caption: Debugging
+
+tuio-touch-simulator
+:::
