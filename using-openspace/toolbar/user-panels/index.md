@@ -13,7 +13,7 @@ authors:
 
 User Panels in OpenSpace are custom panels that are developed by users outside of the OpenSpace development team. They allow custom functionality within OpenSpace. By default, OpenSpace does not ship with any such panels, but panels may be available on the [OpenSpace Hub](https://hub.openspaceproject.com/).
 
-The User Panels button provides shortcuts to user-created web panels, which are html pages using the OpenSpace javascript API. The "Open Local panels" section needs html pages to be saved as `index.html` inside individual folders created inside the `user/webpanels` folder. The "Open from URL" section allows you to create shortcuts to html pages served from elsewhere. The [HTML Controls Setup Guide](/creating-data-assets/custom-web-ui/html-controls-setup/) explains the process of creating such html control pages.
+The User Panels button provides shortcuts to user-created web panels, which are html pages using the OpenSpace javascript API. The "Open Local panels" section needs html pages to be saved as `index.html` inside individual folders created inside the `user/webpanels` folder. The "Open from URL" section allows you to create shortcuts to html pages served from elsewhere. The [HTML Controls Setup Guide](/building-content/custom-web-ui/html-controls-setup/index) explains the process of creating such html control pages.
 
 :::{figure} user-panels.png
 :align: center
