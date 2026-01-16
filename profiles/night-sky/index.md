@@ -1,2 +1,7 @@
 # Night Sky
-This profile visualizes the night sky from Earth. The profile starts on Earth, with a camera view of the horizon and night sky. Adjust the date and time settings to view the sunrise and sunset.
+
+:::{note}
+This profile page has not yet been written. It will be coming soon.
+
+For now, please see the [Night Sky Panel](/using-openspace/toolbar/night-sky/index) for information about using OpenSpace to simulate the night sky and the motions of the stars, planets, Sun, and Moon.
+:::

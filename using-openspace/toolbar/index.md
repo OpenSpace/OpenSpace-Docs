@@ -13,6 +13,74 @@ The toolbar above shows all the possible panel options, set via the Top Bar's Vi
 :::
 
 
+
+
+## Toolbar Panels
+
+<style>
+    .column_container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .column_container > * {
+        margin: 1rem 2rem;
+    }
+</style>
+<div class="column_container">
+
+
+{.heading-toc}
+### [Scene Panel](/using-openspace/toolbar/scene/index)
+![Scene Panel Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
+
+{.heading-toc}
+### [Navigation Panel](/using-openspace/toolbar/navigation/index)
+![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png)
+
+{.heading-toc}
+### [Time Panel](/using-openspace/toolbar/time/index)
+![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=40px}
+
+{.heading-toc}
+### [Actions Panel](/using-openspace/toolbar/actions/index)
+![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png)
+
+{.heading-toc}
+### [GeoLocation Panel](/using-openspace/toolbar/geolocation/index)
+![GeoLocation Panel Button](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
+
+{.heading-toc}
+### [Night Sky Panel](/using-openspace/toolbar/night-sky/index)
+![Night Sky Panel Button](/using-openspace/toolbar/night-sky/toolbar_button_nightsky.png)
+
+{.heading-toc}
+### [SkyBrowser Panel](/using-openspace/toolbar/skybrowser/index)
+![SkyBrowser Panel Button](/using-openspace/toolbar/skybrowser/toolbar_button_skybrowser.png)
+
+{.heading-toc}
+### [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index)
+![Exoplanet Systems Panel Button](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.png)
+
+{.heading-toc}
+### [Keybinds Panel](/using-openspace/toolbar/keybinds/index)
+![Keybinds Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.png)
+
+{.heading-toc}
+### [Record Panel](/using-openspace/toolbar/record/index)
+![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
+
+{.heading-toc}
+### [User Panels](/using-openspace/toolbar/user-panels/index)
+![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.png)
+
+
+{.heading-toc}
+### [Tour Panel](/using-openspace/toolbar/tour-panel/index)
+![Tour Panel Button](/using-openspace/toolbar/tour-panel/toolbar_button_tour.png)
+
+</div>
+
+
 ## Customizing the Toolbar
 
 :::{figure} menu_view_toolbar.png
@@ -33,57 +101,6 @@ Check the item on and off to add or subtract the panel from the Toolbar. Use the
 <br style="clear: both;">
 
 
-
-## Toolbar Panels
-
-{.heading-toc}
-### [Scene Panel](/using-openspace/toolbar/scene/index)
-![Scene Panel Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
-
-{.heading-toc}
-### [Navigation Panel](/using-openspace/toolbar/navigation/index)
-![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png)
-
-{.heading-toc}
-### [Time Panel](/using-openspace/toolbar/time/index)
-![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=40px}
-
-{.heading-toc}
-### [Actions Panel](/using-openspace/toolbar/actions/index)
-![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png)
-
-{.heading-toc}
-### [Keybinds Panel](/using-openspace/toolbar/keybinds/index)
-![Keybinds Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.png)
-
-
-{.heading-toc}
-### [Record Panel](/using-openspace/toolbar/record/index)
-![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
-
-{.heading-toc}
-### [GeoLocation Panel](/using-openspace/toolbar/geolocation/index)
-![GeoLocation Panel Button](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
-
-{.heading-toc}
-### [SkyBrowser Panel](/using-openspace/toolbar/skybrowser/index)
-![SkyBrowser Panel Button](/using-openspace/toolbar/skybrowser/toolbar_button_skybrowser.png)
-
-{.heading-toc}
-### [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index)
-![Exoplanet Systems Panel Button](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.png)
-
-
-{.heading-toc}
-### [User Panels](/using-openspace/toolbar/user-panels/index)
-![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.png)
-
-
-{.heading-toc}
-### [Tour Panel](/using-openspace/toolbar/tour-panel/index)
-![Tour Panel Button](/using-openspace/toolbar/tour-panel/toolbar_button_tour.png)
-
-
 :::{toctree}
 :maxdepth: 1
 :hidden:
@@ -92,11 +109,12 @@ scene/index
 navigation/index
 time/index
 actions/index
-keybinds/index
-record/index
 geolocation/index
+night-sky/index
 skybrowser/index
 exoplanet-systems/index
+keybinds/index
+record/index
 user-panels/index
 tour-panel/index
 
