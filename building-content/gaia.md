@@ -25,7 +25,7 @@ This is used to change dataset during runtime.
 There are 3 different render modes; _Static_, _Color_ and _Motion_. _Static_ uses only the position of the stars and assume that they all have the same magnitude. _Color_ uses position, absolute magnitude (to calculate luminosity and apparent magnitude) and color. _Motion_ adds velocity to the mix. For a realistic rendering use _Color_. To be able to make the stars move use _Motion_.
 
 ### Shader Option
-Sets which technique to use for the rendering. This will change what other options that will are available in the menu. Generally, _Points_ are faster than _Billboards_, especially for big datasets, and _SSBOs_ are faster than _VBOs_. _SSBOs_ are not available for Mac users, unfortunately.
+Sets which technique to use for the rendering. This will change what other options that will are available in the menu. Generally, _Points_ are faster than _Billboards_, especially for big datasets, and _SSBOs_ are faster than _VBOs_.
 
 ### Thresholds
 Used to filter the data in real-time. Sets min and maximum. If they are set to the same value only that value will be filtered away.

@@ -8,8 +8,7 @@ authors:
 # Launching OpenSpace
 
 Launching OpenSpace is as easy as double-clicking on the app from the `OpenSpace/bin` folder: \
-`OpenSpace.exe` file in Windows, or \
-`OpenSpace.app` file for macOS.
+`OpenSpace.exe` file in Windows.
 
 
 :::{tip}
@@ -31,7 +30,7 @@ The Terminal Window, giving you real-time status of the launch.
 
 ## Launcher Window
 
-Next, the Launcher Window will appear with two basic options. 
+Next, the Launcher Window will appear with two basic options.
 
 :::::{grid} 1 1 2 2
 

@@ -34,7 +34,7 @@ OpenSpace is designed for use on a wide array of devices ranging from laptops to
 
 :::{grid-item}
 ### Optimal Specs
-- Windows 10 or above or macOS 10.15 or above
+- Windows 10 or above
 - 16 GB RAM (or more)
 - 6 GB VRAM (or more)
 :::
@@ -164,45 +164,6 @@ NVIDIA Control Panel.
 
 
 
-:::::::
-
-
-
-
-
-:::::::{tab-item} macOS
-
-### macOS Installation Video
-
-<div style="margin-left: auto; margin-right: auto; width: 640px;"><iframe width="640" height="360" src="https://www.youtube.com/embed/uSceew-98Cg?si=SSP9iDw9Y0rsazFD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-:::{dropdown} Visual Transcript
-
-| Video time | Description |
-|:-------------|:------------------|
-| 0:00 | Download the pkg file from the OpenSpace website. |
-| 1:45 | Run the pkg file to install OpenSpace. |
-| 2:33 | If a macOS installation "unidentified developer" error pops up, go to System Preferences, Security & Privacy and click "Open Anyways." Another pop up will say the software cannot be verified. Click "Open." |
-| 3:28 | Run the installer and close when it is complete. You can delete the pkg file when prompted. |
-| 4:53 | Select the installed OpenSpace folder and {menuselection}`File --> Get Info`. In the info window, apply Read & Write privileges to the  OpenSpace folder. |
-| 5:23 | Run the OpenSpace application, found in the `bin` folder. When the Launcher opens, start OpenSpace with the start button. |
-| 6:25 | Open OpenSpace in low resolution mode by selecting the application and going to {menuselection}`File --> Get Info`. Check the box that says "Open in Low Resolution" and then run the application. |
-:::
-</div>
-
-
-
-### macOS Folder Permissions
-As demonstrated in the video, most users will need to adjust the folder permissions on the installed OpenSpace folder, and "Apply to Enclosed Items" as [outlined by Apple](https://support.apple.com/guide/mac-help/change-permissions-for-files-folders-or-disks-mchlp1203/mac).
-
-
-### macOS "Unidentified Developer" Error
-If you try to launch OpenSpace and you get an error that the application is not registered with Apple by an identified developer, you can follow [these steps from Apple](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac) to override macOS's default security settings to run OpenSpace.
-
-
-### Open in Low Resolution Mode
-For users running on a Retina display, you may want to apply the "Open in Low Resolution Mode" setting on the OpenSpace.app to get better performance.
-%%%% HOW ISD THIS DONE???
 :::::::
 
 

@@ -21,10 +21,3 @@ There are two steps and two options to achieving what I think you want;
 ## Wormhole
 ### Is there a way to configure the Wormhole to fixate the passwords for connection & host? I would like to automate the connecting process, but I guess that is not possible with the random password generation at each start?
 Yes, you can fix the password generation; if you start Wormhole.exe from the commandline you can pass `--password` and `--hostpassword` which will prevent the automatic generation of passwords. Additionally, you can also pass `--port` to manually fix the port
-
-## Compiling
-### MacOS
-#### While running CMake , `No CMAKE_C_COMPILER could be found` or `No CMAKE_CXX_COMPILER could be found`
-Running
-`sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer`
-before starting CMake can fix this if Xcode is installed on the machine.

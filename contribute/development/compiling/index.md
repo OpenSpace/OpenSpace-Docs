@@ -7,14 +7,13 @@ This page outlines the steps and resources required to compile OpenSpace from sc
 
 windows
 ubuntu
-macos
 freebsd
 fedora
 :::
 
 
 ## 0. Hardware requirements
-  - Dedicated graphics card that supports OpenGL 3.3 or higher. Most new graphics cards have this capability, but sometimes you need to update your drivers. Nvidia graphics cards work best, but AMD cards will work (but currently have some known [issues](https://github.com/OpenSpace/OpenSpace/labels/GPU%3A%20AMD))
+  - Dedicated graphics card that supports OpenGL 4.6. Most new graphics cards have this capability, but sometimes you need to update your drivers. Nvidia graphics cards work best, but AMD cards will work (but currently have some known [issues](https://github.com/OpenSpace/OpenSpace/labels/GPU%3A%20AMD))
   - A mouse makes navigation easier than using a trackpad, since you need left, right, and middle mouse buttons
   - Enough disk space (all numbers approximate):
     - 1 GB of disk space to clone the GitHub repository
@@ -26,12 +25,11 @@ fedora
 To compile OpenSpace on any platform you will need a Git client, CMake, and a C++ compiler that supports at least C++20.
 
 ### Git Client
-OpenSpace uses Git submodules, which are not supported on all clients. Xcode on Mac, for example, does not, so beware. Here are some suggestions for applications that have been used by members of the development team:
-  1. [Fork](https://git-fork.com) A pay-if-you-will Git client for both Windows and macOS
-  1. [SourceTree](http://www.sourcetreeapp.com) A free and powerful Git client usable on both Windows and macOS
-  1. [GitKraken](https://www.gitkraken.com) A free GUI for Windows, macOS, and Linux
-  1. [SmartGit](http://www.syntevo.com/smartgit/) Another GUI Git client which runs on Windows and Mac
-  1. XCode does not support recursive cloning or git submodule commands. However, installing Xcode makes Git available on the Terminal, which supports the `--recursive` flag
+OpenSpace uses Git submodules, which are not supported on all clients. Here are some suggestions for applications that have been used by members of the development team:
+  1. [Fork](https://git-fork.com) A pay-if-you-will Git client for Windows
+  1. [SourceTree](http://www.sourcetreeapp.com) A free and powerful Git client usable on Windows
+  1. [GitKraken](https://www.gitkraken.com) A free GUI for Windows and Linux
+  1. [SmartGit](http://www.syntevo.com/smartgit/) Another GUI Git client which runs on Windows
 
 Please ensure that, specifially on Windows, to enable automatic line-ending conversion when checking out a repository (see information [here](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings)) as some of the shader files in OpenSpace are sensitive to using the native line endings.
 
@@ -41,7 +39,7 @@ You might find it easier to [use SSH](https://help.github.com/articles/generatin
 
 
 ### CMake
-[CMake](http://www.cmake.org) is a multi-platform project-generation tool. OpenSpace uses CMake so that we can more easily configure and compile OpenSpace on various platforms. We require CMake version 3.25 or above.
+[CMake](http://www.cmake.org) is a multi-platform project-generation tool. OpenSpace uses CMake so that we can more easily configure and compile OpenSpace on various platforms. We require CMake version 4.0 or above.
 
 If you favor the commandline you can use the `cmake` command, but you might also like to know that you can use `ccmake`, which is CMake with an interactive curses interface.
   - Press `c` to configure your CMake files. Some configurations will require you to run the configure multiple times before you can generate.
@@ -55,9 +53,8 @@ If you favor the commandline you can use the `cmake` command, but you might also
 
 
 ### Compiler / IDE
-The platform specific pages found in the menu on the left contain more detailed information about the compilation platforms for each operating system. OpenSpace is written in C++20 and thus requires compiler versions that support a large portion of that standard. Thus we require the following versions of the compiler:
-  - Windows: MSVC 19.39 (Visual Studio 2022, from version 17.9)
-  - macOS: AppleClang 15.0.0 (Xcode 15.3)
+The platform specific pages found in the menu on the left contain more detailed information about the compilation platforms for each operating system. OpenSpace is written in C++20/C++23 and thus requires compiler versions that support a large portion of that standard. Thus we require the following versions of the compiler:
+  - Windows: MSVC 19.50 (Visual Studio 2026, from version 18.2)
   - Linux: GCC 13 or Clang 17
 
 
@@ -66,7 +63,7 @@ Almost all dependencies in OpenSpace are handled via [Git submodules](https://gi
 
 The one dependency that is not included via submodules and that needs to be installed manually due to licensing reasons is [Qt](https://www.qt.io/download), which is used for the Launcher and profile editor GUI. Qt version 6.9 or higher is required. The open-source version of Qt, if applicable to you from a licensing point of view, can be obtained here: https://www.qt.io/download-qt-installer. As of 2020, this installer unfortunately needs a valid Qt user account. Select the `Custom installation` and select the newest version and any optional additional packages. Only the core Qt installation (e.g. `Qt 6.9.0`) is needed to run OpenSpace -- no additional Qt packages are required.
 
-On Linux and macOS, the [GDAL](http://www.gdal.org/) library also requires a manual install, for Windows, this library is contained in the repository, otherwise you it is available via `apt-get` or `homebrew` or MacPorts. Suggested version: 2.4.1 or above
+On Linux the [GDAL](http://www.gdal.org/) library also requires a manual install, for Windows, this library is contained in the repository, otherwise it is available via `apt-get`. Suggested version: 2.4.1 or above
 
 
 ## 3. Compiling
@@ -95,7 +92,7 @@ The first window showing OpenSpace
   - The [Coding Style](../coding-style) describe the general coding guidelines that are applicable to the Ghoul, SGCT, and OpenSpace repository
   - See the [OpenSpace Layout](../folder-layout) page for more information about the structure of OpenSpace directories
   - See the [Deploy to a Windows Machine](../deploying-windows) page for additional information about what goes where on Windows (and how to copy from one machine to another).
-  - The source code is written in C++20 with the feature set supported by Visual Studio 2022. The available features are detailed [here](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
+  - The source code is written in C++20/C++23 with the feature set supported by Visual Studio 2026. The available features are detailed [here](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
   - Developers, before committing to the repository, read the post about [Structuring commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html). In general you can push to the feature branch you have been working on, but do not push directly to the `master` branch. For the `master` branch, a Pull Request should be used
   - Some useful information about C++ can be found in the form of [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) and [Exception Handling](https://isocpp.org/wiki/faq/exceptions)
 
