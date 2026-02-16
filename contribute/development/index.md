@@ -16,6 +16,8 @@ coding-style
 structure/index
 deploying-windows
 folder-layout
+opengl
+glsl
 pull-requests
 branches
 cpp-musings
