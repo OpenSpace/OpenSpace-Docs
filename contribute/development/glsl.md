@@ -90,7 +90,6 @@ in Data {
 Interface blocks can't be used to transfer data into a vertex shader or out of a fragment shader.  The naming convention is that data flowing into a shader is prefixed with `in_` and data flowing out of a shader is prefixed with `out_`
 
 - No underscores are allowed in variable names apart from the `in_` and `out_` prefixes to make it immediately obvious when we are manipulating such data.
-- For ternary operators, separating the expressions around `?` and `:` with a double space:   `vec3 a = v  ?  vec3(0.0)  :  vec3(1.0);`
 - The order in the top of a shader file is:
   1. Includes
   2. `in` variables
