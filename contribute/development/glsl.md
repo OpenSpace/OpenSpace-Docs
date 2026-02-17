@@ -1,4 +1,7 @@
 # GLSL Shader Coding Style
+- Indentation is 2 spaces
+- When functions are multiple lines, each argument does _not_ have to be on its own line
+
 - [Interface Blocks](https://wikis.khronos.org/opengl/Interface_Block_(GLSL)) should be used to pass data between shader stages. The interface blocks are matched based on the struct name instead of the variable name, which makes logical naming a lot easier. By using the name `Data` for all Interface blocks, we make sure that they always work and make it easy to remember.
 
 Old:
