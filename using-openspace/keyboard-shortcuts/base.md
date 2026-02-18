@@ -5,7 +5,7 @@ authors:
 ---
 
 
-# Base Keyboard Shortcuts
+# System Keyboard Shortcuts
 
 Shortcuts found in the base asset, found at `data/assets/base.asset`.
 
@@ -15,6 +15,10 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
 :stub-columns: 1
 * - Shortcut
   - Function
+* - {kbd}`F1`
+  - Toogle main user interface
+* - {kbd}`Shift` + {kbd}`F1`
+  - Toggle overlays (info text)
 * - {kbd}`F2`
   - Toggle the original User Interface (deprecated)
 * - {kbd}`Ctrl+Q`
@@ -24,7 +28,7 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
 * - {kbd}`Space`
   - Toggle time (pause and unpause)
 * - {kbd}`Shift` + {kbd}`Space`
-  - ?
+  - Toggle time (pause and unpause) immediately, without interpolation
 * - {kbd}`f`
   - Toggle Rotation Friction on and off
 * - {kbd}`Shift` + {kbd}`f`
@@ -33,20 +37,20 @@ Shortcuts found in the base asset, found at `data/assets/base.asset`.
   - Toggle Roll Friction on and off
 * - {kbd}`b`
   - Fade to black
-* - {kbd}`F1`
-  - Toogle main user interface
-* - {kbd}`Shift` + {kbd}`F1`
-  - Toggle overlays (info text)
-* - {kbd}`Alt` + {kbd}`r`
-  - Toggle master rendering (everything off)
+* - {kbd}`r`
+  - Toggle idle motion (rotate around current focus)
 * - {kbd}`→`
-  - Next time step interpolate ?
+  - Next delta time step
 * - {kbd}`Shift` + {kbd}`→`
-  - Next time step immediate ?
+  - Next delta time step, immediately (without interpolation)
 * - {kbd}`←`
-  - Previous time step interpolate ?
+  - Previous delta time step
 * - {kbd}`Shift` + {kbd}`←`
-  - Previous time step immediate ?
+  - Previous delta time step, immediately (without interpolation)
+* - {kbd}`↓`
+  - Set delta time to realtime (1 second/second)
+* - {kbd}`Shift` + {kbd}`↓`
+  - Set delta time to realtime (1 second/second) immediately, without interpolation
 * - {kbd}`F5`
   - Reload user interface
 :::
