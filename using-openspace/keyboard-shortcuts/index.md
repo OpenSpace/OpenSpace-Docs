@@ -9,22 +9,13 @@ authors:
 
 
 {.heading-toc}
-## [Base Shortcuts](./base.md)
+## [System Shortcuts](./base.md)
 A set of shortcuts that is always loaded in OpenSpace.
-
-{.heading-toc}
-## [Default Profile](./default.md)
-Keyboard shortcuts specific to the [](/profiles/default/index)
-
 
 :::{toctree}
 :maxdepth: 1
 :hidden:
 
 base
-bastilleday2000
-default
-jwst
-solarstorm2012
 :::
 
