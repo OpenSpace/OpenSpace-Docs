@@ -25,11 +25,11 @@ The simulation data throughout this visualization is colored red for positive va
 ### Solar Surfaces
 
 In total, there are six assets with time-varying textures on spheres. There are two different input data sources for the WSA simulation model, for three spheres each. The input sources are from GONG-Z and GONG ADAPT.
-The data for this profile is visualized mainly by the two renderables: [RenderableTimeVaryingFitsSphere](fitsfilereader_renderable_time_varying_fits_sphere) and [RenderableFieldLinesSequence](fieldlinessequence_renderablefieldlinessequence). They use data in the data formats .fits and .osfls, respectively. They both download these data sets dynamically during run-time from the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Flight Center and their Integrated Space Weather Analysis [(ISWA)](https://ccmc.gsfc.nasa.gov/tools/ISWA/) system, using the [Dynamic File Sequence Downloader](spaceweather_id).
+The data for this profile is visualized mainly by the two renderables: [RenderableTimeVaryingFitsSphere](fitsfilereader_renderable_timevaryingfitssphere) and [RenderableFieldLinesSequence](fieldlinessequence_renderable_fieldlinessequence). They use data in the data formats .fits and .osfls, respectively. They both download these data sets dynamically during run-time from the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Flight Center and their Integrated Space Weather Analysis [(ISWA)](https://ccmc.gsfc.nasa.gov/tools/ISWA/) system, using the [Dynamic File Sequence Downloader](spaceweather_id).
 
 ### Field Lines
 
-For the field lines [RenderableFieldLinesSequence](fieldlinessequence_renderablefieldlinessequence) is used to visualize them. There are four different sets of field lines in this profile. The main difference is where the start points are for tracing the magnetic vector field. The field lines can either be closed, meaning they loop back onto the surface of the Sun, or they are open, meaning only one end of the line is at the surface.
+For the field lines [RenderableFieldLinesSequence](fieldlinessequence_renderable_fieldlinessequence) is used to visualize them. There are four different sets of field lines in this profile. The main difference is where the start points are for tracing the magnetic vector field. The field lines can either be closed, meaning they loop back onto the surface of the Sun, or they are open, meaning only one end of the line is at the surface.
 Red field lines indicate that the direction of the field is pointing away from the Sun and blue that it is pointing inward toward the Sun.
 
 One set of field lines is the Corona SCS, out-to-in tracing. These are field lines traced from the outer boundary at 21.5 Solar Radii (Rs), to the source surface at 2.5 Rs using GONG-Z as input. These are open field lines per definition in the model.
@@ -60,7 +60,7 @@ No additional shortcuts provided.
 
 ## Data Sets
 
-The data for this profile is visualized mainly by the two renderables: [RenderableTimeVaryingFitsSphere](fitsfilereader_renderable_time_varying_fits_sphere) and [RenderableFieldLinesSequence](fieldlinessequence_renderablefieldlinessequence). They use data in the data formats .fits and .osfls, respectively. They both download these data sets dynamically during run-time from the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Flight Center and their Integrated Space Weather Analysis [(ISWA)](https://ccmc.gsfc.nasa.gov/tools/ISWA/) system, using the [Dynamic File Sequence Downloader](spaceweather_id).
+The data for this profile is visualized mainly by the two renderables: [RenderableTimeVaryingFitsSphere](fitsfilereader_renderable_timevaryingfitssphere) and [RenderableFieldLinesSequence](fieldlinessequence_renderable_fieldlinessequence). They use data in the data formats .fits and .osfls, respectively. They both download these data sets dynamically during run-time from the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Flight Center and their Integrated Space Weather Analysis [(ISWA)](https://ccmc.gsfc.nasa.gov/tools/ISWA/) system, using the [Dynamic File Sequence Downloader](spaceweather_id).
 
 The profile is exclusivly using simulation outputs from the space weather simulation model called [WSA](https://ccmc.gsfc.nasa.gov/models/WSA~5.4) (Wang-Sheeley-Arge) version 5.4.
 

@@ -1,7 +1,7 @@
 (fieldlines_id)=
 # Field Lines
 
-There are three publicly available profiles dedicated to showing space weather phenomena. They are all made by the collaborators at the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Flight Center. In all of these, field lines are a big part of the visualization and the story they tell. These are only examples. There are other usecases for field lines and used in other assets and profile accross OpenSpace. They are visualized using the renderable [Renderable Field Lines Sequence](fieldlinessequence_renderablefieldlinessequence)
+There are three publicly available profiles dedicated to showing space weather phenomena. They are all made by the collaborators at the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Flight Center. In all of these, field lines are a big part of the visualization and the story they tell. These are only examples. There are other usecases for field lines and used in other assets and profile accross OpenSpace. They are visualized using the renderable [Renderable Field Lines Sequence](fieldlinessequence_renderable_fieldlinessequence)
 
 Field lines are usually traced in simulation output volumes, but can be created in a variaty of ways. Regardless how they were created, to be visualized in OpenSpace they need to be in one of two file formats, JSON or OSFLS (OpenSpace Field Line Sequence). Each file in the sequence represent one time step. It is visualized until the next file's time step is the same as the time in OpenSpace. All files needs to be named on the format YYYY-MM-DDThh-mm-ss-nnn
 
