@@ -79,7 +79,7 @@ asset.export(ScreenSpace)
 There are two built-in mechanisms of resource synchronizations in OpenSpace: The `HttpSynchronization` and the `UrlSynchronization`. The `HttpSynchronization` is designed to fetch versioned data from the official OpenSpace server (data.openspaceproject.com), like this:
 
 ```lua
-local path = asset.syncedResource({
+local path = asset.resource({
   Type = "HttpSynchronization",
   Name = "Foo"
   Identifier = "foo",
@@ -90,7 +90,7 @@ local path = asset.syncedResource({
 The UrlSynchronization can be used to fetch arbitrary data from the web.
 
 ```lua
-local path = asset.syncedResource({
+local path = asset.resource({
   Type = "UrlSynchronization",
   Name = "Bar",
   Identifier = "bar",

@@ -24,9 +24,6 @@ This is used to change dataset during runtime.
 ### Render Option
 There are 3 different render modes; _Static_, _Color_ and _Motion_. _Static_ uses only the position of the stars and assume that they all have the same magnitude. _Color_ uses position, absolute magnitude (to calculate luminosity and apparent magnitude) and color. _Motion_ adds velocity to the mix. For a realistic rendering use _Color_. To be able to make the stars move use _Motion_.
 
-### Shader Option
-Sets which technique to use for the rendering. This will change what other options that will are available in the menu. Generally, _Points_ are faster than _Billboards_, especially for big datasets, and _SSBOs_ are faster than _VBOs_.
-
 ### Thresholds
 Used to filter the data in real-time. Sets min and maximum. If they are set to the same value only that value will be filtered away.
 
@@ -273,7 +270,6 @@ _BinaryOctree_ on the other hand reads the single file output from the _Construc
 Most of the other values are optional and can be switched from the default values during runtime. For full documentation please see documentation/Documentation.html#gaiamission_renderablegaiastars.
 
 However, other properties that might be of interest on startup (apart from **Type**, **File** and **FileReaderOption**) are:
-  - **PsfTexture**: Sets the point spread texture used when rendering billboards. Not optional.
   - **ColorTexture**: Colormap used as lookup table for the color of the stars. Not optional.
   - **AdditionalNodes**: Defines how many nodes around the camera that should be fetched when streaming from disk. The first value defines how many upper layers of parents that should be found around the camera and the second value defines how many layers of descendants that will be fetched from the found parents. Higher values will decrease performance. A recommended start would be "{3.0, 2.0}".
   - **MaxCpuMemoryPercent**: Defines the max percentage of the existing RAM budget that will be used for storing star data. This _cannot_ be changed during runtime.

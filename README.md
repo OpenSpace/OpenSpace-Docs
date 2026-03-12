@@ -93,7 +93,7 @@ Links to other pages are best done with their ID rather than their path. Paths c
 
 ✅ Great!
 ```md:
-[RenderablePointCloud](galaxy_renderablegalaxy)
+[RenderablePointCloud](galaxy_renderable_galaxy)
 ```
 
 🙅 Try to avoid this if possible:
@@ -103,14 +103,14 @@ Links to other pages are best done with their ID rather than their path. Paths c
 
 You find the ID of a page next to the title of the `.md` file, if you have the docs locally:
 ```md:
-(galaxy_renderablegalaxy)=
+(galaxy_renderable_galaxy)=
 # RenderableGalaxy
 ```
 
 For all the generated documentation, that is the `codegen` ID in the OpenSpace engine repository
 ```cpp:
 documentation::Documentation RenderableGalaxy::Documentation() {
-return codegen::doc<Parameters>("galaxy_renderablegalaxy");
+return codegen::doc<Parameters>("galaxy_renderable_galaxy");
 }
 ```
 

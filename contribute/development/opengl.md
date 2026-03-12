@@ -184,12 +184,12 @@ glEnableVertexArrayAttrib(vao, posAttribLocation);
 glVertexArrayAttribFormat(vao, posAttribLocation, 3, GL_FLOAT, GL_FALSE, 0);
 glVertexArrayAttribBinding(vao, posAttribLocation, 0);
 
-GLuint normalAttribLocation = 0;
+GLuint normalAttribLocation = 1;
 glEnableVertexArrayAttrib(vao, normalAttribLocation);
 glVertexArrayAttribFormat(vao, normalAttribLocation, 3, GL_FLOAT, GL_FALSE, offsetof(Vertex, nrm));
 glVertexArrayAttribBinding(vao, normalAttribLocation, 0);
 
-GLuint texAttribLocation = 0;
+GLuint texAttribLocation = 2;
 glEnableVertexArrayAttrib(vao, texAttribLocation);
 glVertexArrayAttribFormat(vao, texAttribLocation, 2, GL_FLOAT, GL_FALSE, offsetof(Vertex, tex));
 glVertexArrayAttribBinding(vao, texAttribLocation, 0);
