@@ -39,4 +39,5 @@ renderablestars
 satellites
 solar-video-overlay
 space-weather
+vector-field
 :::
