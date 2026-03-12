@@ -34,6 +34,7 @@ field-lines
 gaia
 globebrowsing/index
 point-data/index
+solarbrowsing/index
 profiles
 renderablestars
 satellites
