@@ -23,7 +23,7 @@ For the smoothest experience, use the time controls to play forward continuously
 :::
 
 ## RenderableSolarImagery
-This renderable loads time-sequenced solar observation images from a directory on disk and displays them as a 2D plane. The image plane is centred on the Sun and rotates to remain perpendicular to the direction towards the spacecraft. The displayed image updates automatically as the simulation time changes.
+This Renderable loads time-sequenced solar observation images from a directory on disk and displays them as a 2D plane. The image plane is centred on the Sun and rotates to remain perpendicular to the direction towards the spacecraft. The displayed image updates automatically as the simulation time changes.
 
 All instrument subdirectories under `ImageDirectory` are loaded automatically at startup. See the [Directory Structure](solarimagery_directory_structure_id) section on the data page for details on how the data should be organized on disk.
 
@@ -78,7 +78,7 @@ Renderable = {
 ...
 ```
 
-The active instrument can also be changed at runtime through the GUI in the node’s properties panel.
+The active instrument can also be changed at runtime through the GUI in the node's properties panel.
 
 ### Image Plane Rendering
 The `FaceMode` property controls which sides of the image plane are rendered:
@@ -111,7 +111,7 @@ Each resolution level is cached as a separate file. If many images have been loa
 :::
 
 ## RenderableSolarImageryProjection
-This renderable projects the images from one or more `RenderableSolarImagery` nodes onto a sphere slightly larger than the Sun, allowing the imagery to be viewed as if mapped onto the solar surface from any direction in the scene. Images from multiple spacecraft can be displayed simultaneously, up to a maximum of seven. Any part of the solar surface not covered by the projected imagery will appear gray, indicating that no data is available for that region.
+This Renderable projects the images from one or more `RenderableSolarImagery` nodes onto a sphere slightly larger than the Sun, allowing the imagery to be viewed as if mapped onto the solar surface from any direction in the scene. Images from multiple spacecraft can be displayed simultaneously, up to a maximum of seven. Any part of the solar surface not covered by the projected imagery will appear gray, indicating that no data is available for that region.
 
 A `RenderableSolarImageryProjection` asset and examples of `RenderableSolarImagery` assets for SDO and STEREO are available in `OpenSpace/data/assets/scene/solarsystem/heliosphere/solarbrowsing`.
 

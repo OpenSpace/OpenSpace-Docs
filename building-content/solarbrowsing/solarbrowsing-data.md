@@ -6,18 +6,18 @@ Downloaded images are stored as JPEG 2000 (`.jp2`) files on disk and loaded into
 ## Supported Spacecraft and Instruments
 The system currently supports images from three spacecraft. A full list of available instruments and their source identifiers can be found in the [Helioviewer API documentation](https://api.helioviewer.org/docs/v2/appendix/data_sources.html).
 
-| Spacecraft | Notes |
-| --- | --- |
-| SDO | Solar Dynamics Observatory |
-| SOHO | Solar and Heliospheric Observatory |
-| STEREO | STEREO-A and STEREO-B |
+| Spacecraft | Notes                              |
+| ---------- | ---------------------------------- |
+| SDO        | Solar Dynamics Observatory         |
+| SOHO       | Solar and Heliospheric Observatory |
+| STEREO     | STEREO-A and STEREO-B              |
 
 ## Downloading Data with the HelioviewerDownloadTask
 Data is downloaded using the `HelioviewerDownloadTask`, a pre-processing step run via the TaskRunner before starting OpenSpace. The task queries the Helioviewer API and downloads all available images within a specified time interval at a given cadence, storing the downloaded images on disk.
 
 See the [HelioviewerDownloadTask](/reference/asset-components/Task/solarbrowsing_helioviewerdownload_task) documentation for a full reference of available parameters.
 
-An example task file is available at `OpenSpace/data/tasks/solarbrowsing/download_from_helioviewer.task`. It downloads the color maps from the OpenSpace data servers and then runs the download for SDO AIA-171 and STEREO EUVI-A 171. The relevant portion of the task looks like this:
+An example task file is available at `data/tasks/solarbrowsing/download_from_helioviewer.task`. It downloads the color maps from the OpenSpace data servers and then runs the download for SDO AIA-171 and STEREO EUVI-A 171. The relevant portion of the task looks like this:
 
 ```lua
 return {
@@ -28,8 +28,8 @@ return {
     Instrument = "AIA-171",
     ColorMap = openspace.absPath("${SYNC}/http/solarbrowsing/AIA-171.txt"),
     StartTime = "2024-05-06T00:00:00.000Z",
-    EndTime   = "2024-05-14T00:00:00.000Z",
-    TimeStep  = 60 * 60, -- Download an image every hour
+    EndTime = "2024-05-14T00:00:00.000Z",
+    TimeStep = 60 * 60, -- Download an image every hour
     OutputFolder = "${SYNC_DYNAMIC}/solarbrowsing/sdo/aia-171"
   }
 }
@@ -57,8 +57,8 @@ return {
     SourceId = 10,
     ColorMap = openspace.absPath("${SYNC}/http/solarbrowsing/AIA-171.txt"),
     StartTime = "2024-05-08T00:00:00",
-    EndTime   = "2024-05-08T06:00:00",
-    TimeStep  = 60 * 60,
+    EndTime = "2024-05-08T06:00:00",
+    TimeStep = 60 * 60,
     OutputFolder = "${SYNC_DYNAMIC}/solarbrowsing/sdo/aia-171"
   },
   {
@@ -68,8 +68,8 @@ return {
     SourceId = 11,
     ColorMap = openspace.absPath("${SYNC}/http/solarbrowsing/AIA-193.txt"),
     StartTime = "2024-05-08T00:00:00",
-    EndTime   = "2024-05-08T06:00:00",
-    TimeStep  = 60 * 60,
+    EndTime = "2024-05-08T06:00:00",
+    TimeStep = 60 * 60,
     OutputFolder = "${SYNC_DYNAMIC}/solarbrowsing/sdo/aia-193"
   }
 }
@@ -94,7 +94,7 @@ ${SYNC_DYNAMIC}/solarbrowsing/sdo/
     ...
 ```
 
-The `ImageDirectory` property in the renderable asset should point to the root folder (e.g. `sdo/`), and the renderable will automatically discover all instrument subdirectories at startup.
+The `ImageDirectory` property in the Renderable asset should point to the root folder (e.g. `sdo/`), and the Renderable will automatically discover all instrument subdirectories at startup.
 
 :::{note}
 The filename format is handled entirely by the task and is required for OpenSpace to correctly parse timestamps and instrument names from the files. Downloaded files should not be renamed.
