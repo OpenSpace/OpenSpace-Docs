@@ -4,16 +4,17 @@ This page describes how to set up and configure the solar browsing renderables i
 :::{figure} solarbrowsing_example.png
 :align: center
 
-One example of the SDO AIA-171 instrument projected onto the solar surface using RenderableSolarImageryProjection, showing the Sun's corona in extreme ultraviolet light.
+One example of the SDO AIA-171 instrument projected onto the solar surface using `RenderableSolarImageryProjection`, showing the Sun's corona in extreme ultraviolet light.
 :::
 
 There are two renderables involved in displaying solar imagery:
 
-`RenderableSolarImagery` displays the images as a textured plane centred on the Sun and oriented perpendicular to the spacecraft's viewing direction. One node is created per spacecraft.
-
-`RenderableSolarImageryProjection` projects the images from one or more spacecraft onto a sphere centred on the Sun, allowing the imagery to be viewed from any direction in the scene. This renderable references the `RenderableSolarImagery` nodes.
+- [RenderableSolarImagery](#renderablesolarimagery) displays the images as a textured plane centred on the Sun and oriented perpendicular to the spacecraft's viewing direction. One node is created per spacecraft.
+- [RenderableSolarImageryProjection](#renderablesolarimageryprojection) projects the images from one or more spacecraft onto a sphere centred on the Sun, allowing the imagery to be viewed from any direction in the scene. This renderable references the `RenderableSolarImagery` nodes.
 
 ## Usage
+To use the solar browsing feature you first need to download image data using the `HelioviewerDownloadTask`, as described on the [Solar Browsing Data](./solarbrowsing-data.md) page. Once data has been downloaded, the renderables can be set up using the assets described below. Ready-to-use example assets for SDO and STEREO are available in `data/assets/scene/solarsystem/heliosphere/solarbrowsing`, and can be used as a starting point or as a reference for setting up your own.
+
 The solar browsing feature is designed for sequential playback of solar imagery over time. The system performs best when simulation time progresses continuously forward or backward, and has been tested at simulation speeds of around 12 to 14 hours per second. At this cadence, the frame prediction system has enough time to decode and cache upcoming images before they are needed.
 
 Jumping to an arbitrary point in time is supported, but the images at the new time will need to be decoded before they can be displayed. On the first visit, this means reading and decoding the JP2 files and writing them to the image cache, which can take a moment depending on the number of images and the hardware available. Subsequent visits to the same point in time will load images from the cache and are significantly faster.
@@ -46,7 +47,7 @@ local SolarImagery = {
 ```
 
 ### Limiting the Time Frame
-It is good practice to restrict when the node is rendered to the time range covered by the available data. This is done by adding a `TimeFrame` to the node:
+Since the downloaded data only covers a specific time interval, it is good practice to restrict when the node is rendered to match that range. Outside of this interval the renderable will have no images to show, so limiting the time frame avoids the node being active unnecessarily. This is done by adding a `TimeFrame` to the node:
 
 ```lua
 local SolarImagery = {
@@ -90,12 +91,12 @@ The `FaceMode` property controls which sides of the image plane are rendered:
 ### Downsampling
 The `DownsamplingLevel` property controls the resolution at which the JP2 images are decoded. A value of `0` decodes at full resolution, while each step halves the resolution in both dimensions (so `1` gives half resolution, `2` gives quarter resolution, and so on). The default value is `2`.
 
-Reducing the downsampling level (increasing resolution) has several consequences. Decoding each image takes longer,  which can affect how quickly new frames appear during playback. Decoded frames are also larger and take up more space in the image cache because each resolution level is stored as a separate cache file. In addition, overall memory usage increases. For most use cases, the default of `2` provides a good balance between visual quality and performance. Use `0` or `1` only when higher image detail is required and hardware allows for it.
+Reducing the downsampling level (increasing resolution) has several consequences. Decoding each image takes longer, which can affect how quickly new frames appear during playback. Decoded frames are also larger and take up more space in the image cache because each resolution level is stored as a separate cache file. In addition, overall memory usage increases. For most use cases, the default of `2` provides a good balance between visual quality and performance. Use `0` or `1` only when higher image detail is required and hardware allows for it.
 
 ### Frame Prediction and Image Caching
 Images are decoded asynchronously in the background to keep the simulation responsive. When the simulation time changes, the previous image remains visible until the new one is ready. To improve playback smoothness, the renderable pre-fetches a number of nearby frames based on the current playback direction. The number of frames pre-fetched before and after can be controlled via `PredictFramesAfter` and `PredictFramesBefore`.
 
-If images are taking too long to appear after a time change, it can help to increase these values so that more frames are prepared in advance. However, requesting too many frames at once, particularly when jumping to a new point in time can flood the decoding queue and temporarily reduce performance. The effect is most noticeable on the first visit to a time range, before any of the images have been written to cache.
+If images are taking too long to appear after a time change, it can help to increase these values so that more frames are prepared in advance. However, requesting too many frames at once, particularly when jumping to a new point in time, can flood the decoding queue and temporarily reduce performance. The effect is most noticeable on the first visit to a time range, before any of the images have been written to cache.
 
 The first time an image is displayed at a given resolution, it is decoded from the JP2 file and saved to a binary cache file. Subsequent loads of the same image use the cache, which is significantly faster. The cache is stored at:
 
@@ -113,7 +114,7 @@ Each resolution level is cached as a separate file. If many images have been loa
 ## RenderableSolarImageryProjection
 This Renderable projects the images from one or more `RenderableSolarImagery` nodes onto a sphere slightly larger than the Sun, allowing the imagery to be viewed as if mapped onto the solar surface from any direction in the scene. Images from multiple spacecraft can be displayed simultaneously, up to a maximum of seven. Any part of the solar surface not covered by the projected imagery will appear gray, indicating that no data is available for that region.
 
-A `RenderableSolarImageryProjection` asset and examples of `RenderableSolarImagery` assets for SDO and STEREO are available in `OpenSpace/data/assets/scene/solarsystem/heliosphere/solarbrowsing`.
+A `RenderableSolarImageryProjection` asset and examples of `RenderableSolarImagery` assets for SDO and STEREO are available in `data/assets/scene/solarsystem/heliosphere/solarbrowsing`.
 
 ### Asset
 The `RenderableSolarImageryProjection` node is parented to the Sun and lists the identifiers of the `RenderableSolarImagery` nodes whose imagery should be projected. Each identifier must correspond to a scene graph node using a `RenderableSolarImagery` renderable. If two images overlap in the projection, the last entry in `DependentNodes` takes precedence in the overlapping region. Since SDO typically has the highest image resolution it is recommended to add it last in the list.
