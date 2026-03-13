@@ -33,6 +33,7 @@ ephemeris/index
 field-lines
 gaia
 globebrowsing/index
+path-tokens
 point-data/index
 profiles
 renderablestars
