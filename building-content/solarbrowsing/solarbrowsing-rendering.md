@@ -55,7 +55,7 @@ local SolarImagery = {
   TimeFrame = {
     Type = "TimeFrameInterval",
     Start = "2024-05-08T00:00:00",
-    End   = "2024-05-08T06:00:00"
+    End = "2024-05-08T06:00:00"
   },
   Renderable = {
     Type = "RenderableSolarImagery",
@@ -88,7 +88,7 @@ The `FaceMode` property controls which sides of the image plane are rendered:
 - `"Double Sided"` - renders the image texture on both sides of the plane
 
 ### Downsampling
-The `DownsamplingLevel` property controls the resolution at which JP2 images are decoded. A value of `0` decodes at full resolution, while each step halves the resolution in both dimension (so `1` gives half resolution, `2` gives quarter resolution, and so on). The default value is `2`.
+The `DownsamplingLevel` property controls the resolution at which the JP2 images are decoded. A value of `0` decodes at full resolution, while each step halves the resolution in both dimensions (so `1` gives half resolution, `2` gives quarter resolution, and so on). The default value is `2`.
 
 Reducing the downsampling level (increasing resolution) has several consequences. Decoding each image takes longer,  which can affect how quickly new frames appear during playback. Decoded frames are also larger and take up more space in the image cache because each resolution level is stored as a separate cache file. In addition, overall memory usage increases. For most use cases, the default of `2` provides a good balance between visual quality and performance. Use `0` or `1` only when higher image detail is required and hardware allows for it.
 
