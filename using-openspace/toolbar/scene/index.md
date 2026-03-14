@@ -139,7 +139,7 @@ The Scene Panel's settings for the Open Star Clusters. \
 :::{important}
 **The Asset's Renderable Determines the Settings Shown**
 
-In this section we are showing the Scene Panel and settings for the [Open Star Clusters](/content/milky-way/star-clusters/open-clusters/index). The Renderable for the Open Clusters is [RenderablePolygonCloud](#base_renderablepolygoncloud), and that Rendedrable has a Sizing setting. The [Stars](/content/milky-way/stars/stars/index) data set, for example, uses [RenderableStars](#space_renderablestars), which has no Sizing setting.
+In this section we are showing the Scene Panel and settings for the [Open Star Clusters](/content/milky-way/star-clusters/open-clusters/index). The Renderable for the Open Clusters is [RenderablePolygonCloud](#base_renderable_polygoncloud), and that Rendedrable has a Sizing setting. The [Stars](/content/milky-way/stars/stars/index) data set, for example, uses [RenderableStars](#space_renderable_stars), which has no Sizing setting.
 
 We chose Open Clusters because a lot of data sets use the RenderablePolygonCloud renderable, but you will need to see a specific data set's renderable to understand its settings.
 :::
@@ -253,7 +253,7 @@ For the Stars, the size (brightness) is controlled with the Magnitude Exponent. 
 
 The Core and Glare properties set the look of the stars.
 
-More: [](#space_renderablestars)
+More: [](#space_renderable_stars)
 :::::
 ::::::
 
@@ -278,7 +278,7 @@ Planets have a different set of parameters to adjust. The most important one, pa
 
 Some planets have Labels too. These are for surface features like craters and mountains.
 
-More: [](#globebrowsing_renderableglobe)
+More: [](#globebrowsing_renderable_globe)
 
 :::::
 ::::::

@@ -1,7 +1,7 @@
 (fieldlines_id)=
 # Field Lines
 
-There are three publicly available profiles dedicated to showing space weather phenomena. They are all made by the collaborators at the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Flight Center. In all of these, field lines are a big part of the visualization and the story they tell. These are only examples. There are other usecases for field lines and used in other assets and profile accross OpenSpace. They are visualized using the renderable [Renderable Field Lines Sequence](fieldlinessequence_renderablefieldlinessequence)
+There are three publicly available profiles dedicated to showing space weather phenomena. They are all made by the collaborators at the [Community Coordinated Modeling Center](https://ccmc.gsfc.nasa.gov/) (CCMC) at NASA Goddard Space Flight Center. In all of these, field lines are a big part of the visualization and the story they tell. These are only examples. There are other usecases for field lines and used in other assets and profile accross OpenSpace. They are visualized using the renderable [Renderable Field Lines Sequence](#fieldlinessequence_renderable_fieldlinessequence)
 
 Field lines are usually traced in simulation output volumes, but can be created in a variaty of ways. Regardless how they were created, to be visualized in OpenSpace they need to be in one of two file formats, JSON or OSFLS (OpenSpace Field Line Sequence). Each file in the sequence represent one time step. It is visualized until the next file's time step is the same as the time in OpenSpace. All files needs to be named on the format YYYY-MM-DDThh-mm-ss-nnn
 
@@ -73,7 +73,7 @@ Example: A data file named 2025-07-14T11:00:00.000.json have only one field line
 ```
 ## Tracing and file format converting
 Field lines can be traced in OpenSpace using the Kameleon module, developed at CCMC, which is integrated in OpenSpace. Kameleon is no longer being developed but works well for a handful of simulation models.
-The tracing is done using the OpenSpace Task Manager, and using the [Kameleon Volume To Fieldlines Task](#fieldlinesequence_kameleon_volume_to_fieldlines_task).
+The tracing is done using the OpenSpace Task Manager, and using the [Kameleon Volume To Fieldlines Task](#fieldlinessequence_task_kameleonvolumetofieldlines).
 To use this, a .task file is created that specifies the input folder with CDF files (data volumes, read more in next chapter), a folder with corresponding files that include the seed points, from where the tracing will start from, what file format to save the traced field lines in, JSON or OSFLS, where the output folder is as well as which vector field to trace the lines in. There are additional optional inputs that can be useful. Read the full documentation of the Task.
 
 The models supported in Kameleon:
