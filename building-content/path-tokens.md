@@ -1,21 +1,21 @@
 # Path Tokens
 Path Tokens are a string-substitution system in OpenSpace that maps short, symbolic names to actual file-system locations. Instead of writing absolute paths that are tied to a specific machine or folder layout, you write a token such as `${SYNC}` or `${USER_ASSETS}`, and OpenSpace resolves it to the correct directory at runtime. This makes every path in your assets, profiles, and scripts portable across different machines, operating systems, and installation layouts.
 
-### Why Path Tokens Exist
+## Why Path Tokens Exist
 OpenSpace installations can vary significantly: the application might live in different directories on different computers, large data sets might be stored on a separate drive, and user-created content should survive application upgrades. Hard-coding absolute paths would break as soon as any of these conditions change. Path tokens solve this by introducing a layer of indirection — a token always points to the right place for the current installation, regardless of where that happens to be on disk.
 
-### Common Use Cases
+## Common Use Cases
 - **Keeping user content separate from the installation.** The `${USER}` tree (`${USER_ASSETS}`, `${USER_PROFILES}`, `${USER_CONFIG}`, …) is deliberately outside the core application folders. This means you can update or reinstall OpenSpace without losing your personal assets, profiles, recordings, or screenshots.
 - **Storing large data on a different drive.** The sync folder can grow very large. By setting the `OPENSPACE_SYNC` environment variable you can redirect `${SYNC}` to a spacious secondary disk while keeping the rest of the installation on a faster primary drive.
 - **Planetarium and multi-machine deployments.** In a dome or cluster environment, administrators often point `${SYNC}` or `${USER}` to a shared network location so that every rendering node resolves the same data without duplicating it locally.
 
-### Where Tokens Are Defined
+## Where Tokens Are Defined
 The default set of path tokens is defined in the `openspace.cfg` configuration file in the `Paths` table. This is the only place where tokens are declared as part of the static configuration. Tokens can also be added or overridden at runtime using the Lua function `openspace.setPathToken` (see [Registering Tokens at Runtime](#registering-tokens-at-runtime) below).
 
-### Path Separator Convention
+## Path Separator Convention
 Regardless of the operating system, path tokens and the paths they resolve to always use forward slashes (`/`). This keeps asset and script code consistent across Windows and Linux.
 
-### The `${BASE}` Token
+## The `${BASE}` Token
 `${BASE}` is the root anchor of the token system. It always points to the root directory of the OpenSpace installation folder. Most other tokens are defined relative to `${BASE}`, either directly or through intermediate tokens like `${DATA}` or `${USER}`.
 
 ## How to Use Path Tokens
