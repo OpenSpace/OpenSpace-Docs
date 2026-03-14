@@ -1,12 +1,12 @@
 # Use a fulldome image in OpenSpace
-Here, we walk through the steps needed to display a [fulldome](https://en.wikipedia.org/wiki/Fulldome) frame in OpenSpace. 
+Here, we walk through the steps needed to display a [fulldome](https://en.wikipedia.org/wiki/Fulldome) frame in OpenSpace.
 
 1. Convert the fulldome frame to a 360 image with [equirectangular projection](https://en.wikipedia.org/wiki/Equirectangular_projection)
-2. Use the 360 image as the texture for a [RenderableSphereImageLocal](/reference/asset-components/Renderable/RenderableSphereImageLocal)
+2. Use the 360 image as the texture for a [RenderableSphereImageLocal](#base_screenspace_image_local)
 3. Move the camera inside the rendered sphere, to the center of the sphere, and look towards the hemisphere which has the desired view.
 
 ## 1. Convert the fulldome frame to a 360 image
-This can be done with [Blender](https://www.blender.org/) with the use of this [blend file](https://informal.jpl.nasa.gov/museum/sites/default/files/ResourceLibrary/fulldome-to-equirectangular-converter_version3.zip) 
+This can be done with [Blender](https://www.blender.org/) with the use of this [blend file](https://informal.jpl.nasa.gov/museum/sites/default/files/ResourceLibrary/fulldome-to-equirectangular-converter_version3.zip)
 or using other tools like [OCVWarp](https://github.com/hn-88/OCVWarp/wiki/Transform-types)
 
 ## 2. Create a renderable sphere

@@ -2,11 +2,11 @@
 The objective is to show all the volume of the water on Earth as a little "moon" right next to Earth. 
 For this, we're going to create an asset. 
 We could create a [renderable globe](/building-content/globebrowsing/creation/creating-a-renderableglobe) to do this, 
-but we have a simpler way, using the [RenderableSphereImageLocal](/reference/asset-components/Renderable/RenderableSphereImageLocal) asset component
+but we have a simpler way, using the [RenderableSphereImageLocal](#base_screenspace_image_local) asset component
 introduced in version 0.20.
 
 asset component. To load the texture, if we save the texture image (many such water textures are available for free online) as "watertexture.jpg" in the same directory as the asset file created below, 
-In order to locate the newly created sphere at a chosen location near Earth, we can use the [GlobeTranslation](/reference/asset-components/Translation/GlobeTranslation)
+In order to locate the newly created sphere at a chosen location near Earth, we can use the [GlobeTranslation](#base_translation_globetranslation)
 we can use the [resource method](/building-content/asset-creation/resources) to render the texture on the sphere.
 
 The whole thing can be put together as an asset file called for example **sphereonglobe.asset**, and saved under the user/data/assets directory of our OpenSpace installation, since all assets in that folder show up 
