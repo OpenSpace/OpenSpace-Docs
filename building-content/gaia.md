@@ -267,7 +267,7 @@ The **FileReaderOption** defines in what format the dataset will be read. It can
 
 _BinaryOctree_ on the other hand reads the single file output from the _ConstructOctreeTask_ while _StreamOctree_ make use of the multi-file output of the same task.
 
-Most of the other values are optional and can be switched from the default values during runtime. For full documentation please see documentation/Documentation.html#gaiamission_renderablegaiastars.
+Most of the other values are optional and can be switched from the default values during runtime. For full documentation please see documentation/Documentation.html#gaia_renderablegaiastars.
 
 However, other properties that might be of interest on startup (apart from **Type**, **File** and **FileReaderOption**) are:
   - **ColorTexture**: Colormap used as lookup table for the color of the stars. Not optional.
