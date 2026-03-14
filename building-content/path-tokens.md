@@ -74,32 +74,33 @@ The following tokens are available by default:
 
 | Token | Default Mapping | Notes |
 |---|---|---|
-| `DATA`                       | `${BASE}/data`                                       | Core data directory   |
-| `ASSETS`                     | `${DATA}/assets`                                     | Built-in assets       |
-| `PROFILES`                   | `${DATA}/profiles`                                   | Built-in profiles     |
-| `USER`                       | `OPENSPACE_USER` or `${BASE}/user`                   | User root folder      |
-| `USER_ASSETS`                | `${USER}/data/assets`                                | User assets           |
-| `USER_PROFILES`              | `${USER}/data/profiles`                              | User profiles         |
-| `USER_CONFIG`                | `${USER}/config`                                     | User configuration    |
-| `USER_WEBPANELS`             | `${USER}/webpanels`                                  | User webpanels        |
-| `USER_SHOWCOMPOSER`          | `${USER}/showcomposer`                               | ShowComposer root     |
-| `USER_SHOWCOMPOSER_UPLOADS`  | `${USER}/showcomposer/uploads`                       | ShowComposer uploads  |
-| `USER_SHOWCOMPOSER_PROJECTS` | `${USER}/showcomposer/projects`                      | ShowComposer projects |
-| `FONTS`                      | `${DATA}/fonts`                                      | Fonts                 |
-| `TASKS`                      | `${DATA}/tasks`                                      | Tasks                 |
-| `SYNC`                       | `OPENSPACE_SYNC` or `${BASE}/sync`                   | Sync folder           |
-| `SCREENSHOTS`                | `${USER}/screenshots`                                | Screenshot output     |
-| `WEB`                        | `${DATA}/web`                                        | Web resources         |
-| `RECORDINGS`                 | `${USER}/recordings`                                 | Recording output      |
-| `CACHE`                      | `${BASE}/cache`                                      | Cache                 |
-| `CONFIG`                     | `${BASE}/config`                                     | Application config    |
-| `DOCUMENTATION`              | `${BASE}/documentation`                              | Local docs            |
-| `LOGS`                       | `${BASE}/logs`                                       | Log files             |
-| `MODULES`                    | `${BASE}/modules`                                    | Modules               |
-| `SCRIPTS`                    | `${BASE}/scripts`                                    | Scripts               |
-| `SHADERS`                    | `${BASE}/shaders`                                    | Shader files          |
-| `TEMPORARY`                  | `${BASE}/temp`                                       | Temporary files       |
-| `GLOBEBROWSING`              | `OPENSPACE_GLOBEBROWSING` or `${USER}/globebrowsing` | GlobeBrowsing data    |
+| `DATA`                       | `${BASE}/data`                                       | Core data directory                   |
+| `ASSETS`                     | `${DATA}/assets`                                     | Built-in assets                       |
+| `PROFILES`                   | `${DATA}/profiles`                                   | Built-in profiles                     |
+| `USER`                       | `OPENSPACE_USER` or `${BASE}/user`                   | User root folder                      |
+| `USER_ASSETS`                | `${USER}/data/assets`                                | User assets                           |
+| `USER_PROFILES`              | `${USER}/data/profiles`                              | User profiles                         |
+| `USER_CONFIG`                | `${USER}/config`                                     | User configuration                    |
+| `USER_WEBPANELS`             | `${USER}/webpanels`                                  | User webpanels                        |
+| `USER_SHOWCOMPOSER`          | `${USER}/showcomposer`                               | ShowComposer root                     |
+| `USER_SHOWCOMPOSER_UPLOADS`  | `${USER}/showcomposer/uploads`                       | ShowComposer uploads                  |
+| `USER_SHOWCOMPOSER_PROJECTS` | `${USER}/showcomposer/projects`                      | ShowComposer projects                 |
+| `FONTS`                      | `${DATA}/fonts`                                      | Fonts                                 |
+| `TASKS`                      | `${DATA}/tasks`                                      | Tasks                                 |
+| `SYNC`                       | `OPENSPACE_SYNC` or `${BASE}/sync`                   | Sync folder                           |
+| `SYNC_DYNAMIC`               | `${SYNC}/dynamically_downloaded`                     | Files downloaded as needed at runtime |
+| `SCREENSHOTS`                | `${USER}/screenshots`                                | Screenshot output                     |
+| `WEB`                        | `${DATA}/web`                                        | Web resources                         |
+| `RECORDINGS`                 | `${USER}/recordings`                                 | Recording output                      |
+| `CACHE`                      | `${BASE}/cache`                                      | Cache                                 |
+| `CONFIG`                     | `${BASE}/config`                                     | Application config                    |
+| `DOCUMENTATION`              | `${BASE}/documentation`                              | Local docs                            |
+| `LOGS`                       | `${BASE}/logs`                                       | Log files                             |
+| `MODULES`                    | `${BASE}/modules`                                    | Modules                               |
+| `SCRIPTS`                    | `${BASE}/scripts`                                    | Scripts                               |
+| `SHADERS`                    | `${BASE}/shaders`                                    | Shader files                          |
+| `TEMPORARY`                  | `${BASE}/temp`                                       | Temporary files                       |
+| `GLOBEBROWSING`              | `OPENSPACE_GLOBEBROWSING` or `${USER}/globebrowsing` | GlobeBrowsing data                    |
 
 
 ## Best Practices
