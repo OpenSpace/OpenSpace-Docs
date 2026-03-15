@@ -1,7 +1,7 @@
 # 0.20.1
   - Release Date: 2024-07-18
   - Commit: [b368116](https://github.com/OpenSpace/OpenSpace/commit/c26f9db7d427c9d72f339f745cb2e5fb243ca6aa)
-  - Full changelog: [link](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.1)
+  - [Full changelog](https://github.com/OpenSpace/OpenSpace/releases/tag/releases%2Fv0.20.1)
 
 Download version 0.20.1 on the OpenSpace website [installation page](https://openspaceproject.com/beta-version-0201). Below are notes that highlight new content and bug fixes that will be relevant for OpenSpace users.
 
@@ -12,43 +12,43 @@ Download version 0.20.1 on the OpenSpace website [installation page](https://ope
   - **Image Sequencing Performance**: Improved framerate during image sequencing.
 
 ## User Interface
-- Restructuring of the hierarchical menu groups in the Scene menu. [See details below](#updated-hierarchy-in-scene-menu).
+  - Restructuring of the hierarchical menu groups in the Scene menu. [See details below](#updated-hierarchy-in-scene-menu).
 
 ## Content
-- **2024 Digital Universe Data Update**
-  - **Updated Datasets For**: Stars & Labels, Constellations, Exoplanets, Globular Clusters, H2 Regions, Open Clusters, Planetary Nebulae, Pulsars, Quasars, Sloan Digital Sky Survey, and Supernova Remnants.
-  - **New Datasets**: Star Distance Uncertainty and White/Brown Dwarfs.
-  - Updated descriptions for some additional datasets.
-- **New Assets**
-  - Example asset to show the current in-game time in a screenspace object.
-  - An advanced example asset for the point cloud rendering, changing the orientation of the points.
-- **Updates to Existing Assets/Profiles**
-  - New keybinds to set the time to real time and current time using arrow keys Down and Up respectively.
-- **Content Creation**
-  - DashboardItems can now be added to ScreenSpaceDashboards from assets.
-  - Improved error messages for asset loading.
-  - Actions are no longer "local" by default.
+  - **2024 Digital Universe Data Update**
+    - **Updated Datasets For**: Stars & Labels, Constellations, Exoplanets, Globular Clusters, H2 Regions, Open Clusters, Planetary Nebulae, Pulsars, Quasars, Sloan Digital Sky Survey, and Supernova Remnants.
+    - **New Datasets**: Star Distance Uncertainty and White/Brown Dwarfs.
+    - Updated descriptions for some additional datasets.
+  - **New Assets**
+    - Example asset to show the current in-game time in a screenspace object.
+    - An advanced example asset for the point cloud rendering, changing the orientation of the points.
+  - **Updates to Existing Assets/Profiles**
+    - New keybinds to set the time to real time and current time using arrow keys Down and Up respectively.
+  - **Content Creation**
+    - DashboardItems can now be added to ScreenSpaceDashboards from assets.
+    - Improved error messages for asset loading.
+    - Actions are no longer "local" by default.
 
 ## Lua (Scripting)
-- A new Lua function to calculate the number of seconds between two dates: `openspace.time.duration(start, end)`.
-- A new Lua function to create debug coordinate axes for a scene graph node: `openspace.debugging.createCoordinateAxes()`.
+  - A new Lua function to calculate the number of seconds between two dates: `openspace.time.duration(start, end)`.
+  - A new Lua function to create debug coordinate axes for a scene graph node: `openspace.debugging.createCoordinateAxes()`.
 
 ## Bug Fixes
-- **Stability and Performance**: Several bug fixes addressing crashes, rendering issues, UI errors, and data handling problems.
+  - **Stability and Performance**: Several bug fixes addressing crashes, rendering issues, UI errors, and data handling problems.
 
 ## Breaking Changes
-- Actions that no dot specify `IsLocal` will now be not local per default. Before, it was the opposite.
-- The old Lua function for creating debug coordinate axes (`openspace.debugging.addCartesianAxes`) has been replaced with the new function ([see above](#lua-scripting)) and no longer exists.
-- RenderEngine properties `ShowStatistics`, `StatisticsScale` and `ShowFrameInformation` have been moved to the Debugging Module.
-- **Digital Universe Update**
-  - The star positions have been updated, so any custom content that is based on these positions (such as bookmarks) may require updating.
-  - Constellations (Extragalactic) are removed.
-  - The Dwarfs asset has been split up into White and Brown Dwarfs.
-  - The Oort Sphere has been moved into its own asset file.
-  - Separate assets for all-sky images:
-    - The Milky Way Sphere scene graph node and asset have been removed and replaced with the Visible Milky Way in All Sky Images. New Identifier: `MilkyWay` -> `AllSky_Visible`.
-    - H Alpha has been moved from the backgroundradiation.asset to its own asset. New Identifier: `HAlpha` -> `AllSky_HAlpha`.
-  - Cosmic Background Explorer has a new identifier and GUI name. New Identifier: `CBE` -> `COBE`. New name in GUI: 1990 COBE CMB.
+  - Actions that no dot specify `IsLocal` will now be not local per default. Before, it was the opposite.
+  - The old Lua function for creating debug coordinate axes (`openspace.debugging.addCartesianAxes`) has been replaced with the new function ([see above](#lua-scripting)) and no longer exists.
+  - RenderEngine properties `ShowStatistics`, `StatisticsScale` and `ShowFrameInformation` have been moved to the Debugging Module.
+  - **Digital Universe Update**
+    - The star positions have been updated, so any custom content that is based on these positions (such as bookmarks) may require updating.
+    - Constellations (Extragalactic) are removed.
+    - The Dwarfs asset has been split up into White and Brown Dwarfs.
+    - The Oort Sphere has been moved into its own asset file.
+    - Separate assets for all-sky images:
+      - The Milky Way Sphere scene graph node and asset have been removed and replaced with the Visible Milky Way in All Sky Images. New Identifier: `MilkyWay` -> `AllSky_Visible`.
+      - H Alpha has been moved from the backgroundradiation.asset to its own asset. New Identifier: `HAlpha` -> `AllSky_HAlpha`.
+    - Cosmic Background Explorer has a new identifier and GUI name. New Identifier: `CBE` -> `COBE`. New name in GUI: 1990 COBE CMB.
 
 ## Updated Hierarchy in Scene Menu
 As part of updating the Digital Universe datasets, there has also been a significant change to the hierarchical structure of the Scene menu in the user interface. The GUI paths have been updated to better reflect this.

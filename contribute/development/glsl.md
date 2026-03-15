@@ -1,8 +1,7 @@
 # GLSL Shader Coding Style
-- Indentation is 2 spaces
-- When functions are multiple lines, each argument does _not_ have to be on its own line
-
-- [Interface Blocks](https://wikis.khronos.org/opengl/Interface_Block_(GLSL)) should be used to pass data between shader stages. The interface blocks are matched based on the struct name instead of the variable name, which makes logical naming a lot easier. By using the name `Data` for all Interface blocks, we make sure that they always work and make it easy to remember.
+  - Indentation is 2 spaces
+  - When functions are multiple lines, each argument does _not_ have to be on its own line
+  - [Interface Blocks](https://wikis.khronos.org/opengl/Interface_Block_(GLSL)) should be used to pass data between shader stages. The interface blocks are matched based on the struct name instead of the variable name, which makes logical naming a lot easier. By using the name `Data` for all Interface blocks, we make sure that they always work and make it easy to remember.
 
 Old:
 ```glsl
@@ -89,14 +88,14 @@ in Data {
 
 Interface blocks can't be used to transfer data into a vertex shader or out of a fragment shader.  The naming convention is that data flowing into a shader is prefixed with `in_` and data flowing out of a shader is prefixed with `out_`
 
-- No underscores are allowed in variable names apart from the `in_` and `out_` prefixes to make it immediately obvious when we are manipulating such data.
-- The order in the top of a shader file is:
-  1. Includes
-  2. `in` variables
-  3. `out` variable
-  4. `uniform`s
-  5. `const`ants
-  6. Two empty lines
-  7. Other functions
-  8. Two empty lines (if there are no other functions, this step is skipped)
-  9. `main` or `getFragment` function
+  - No underscores are allowed in variable names apart from the `in_` and `out_` prefixes to make it immediately obvious when we are manipulating such data.
+  - The order in the top of a shader file is:
+    1. Includes
+    1. `in` variables
+    1. `out` variable
+    1. `uniform`s
+    1. `const`ants
+    1. Two empty lines
+    1. Other functions
+    1. Two empty lines (if there are no other functions, this step is skipped)
+    1. `main` or `getFragment` function

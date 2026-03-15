@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Stellar Remnants
-
 {menuselection}`Scene --> Milky Way --> Stellar Remnants`
-
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2

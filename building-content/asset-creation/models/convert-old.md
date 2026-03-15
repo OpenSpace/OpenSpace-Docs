@@ -79,7 +79,7 @@ It is possible to create your own material file and connect your model to the co
   1. In the model file there should be a long list of data, go to the line where the data shifts to `f`. A tip is to use the search function that most text editors have with Ctrl + f and search for `f`. Right before the first line of `f` insert the line: `usemtl materialName`. This tells the model that this part of the model should have this material.
   1. If there are several different lists of `f` you repeat step 4 until all lists of `f` has a material. You can use different materials (change materialName) if you would like the different parts of the model to have different materials or textures.
   1. Your model file should look something like this at this point (example with two materials):
-     ```
+     ```text
      # Header ..
      mtllib 0.mtl
      o 10_(ESP)_External_Stowage_Platform_1_z1_ext_01.000
@@ -104,7 +104,7 @@ It is possible to create your own material file and connect your model to the co
   1. Switch to the material file. Here is where you define your materials and the textures. Create a new material with `newmtl materialName`. Note that materialName should be the same as you specified in the model file in Step 4. Then connect the material to a texture using: `map_Kd textureName.png`. Note that the path to the texture should be given relative to the material file.
   1. If you specified several **different** materials in step 5 you will need to repeat step 7 for every new material.
   1. In the end your material file should look something like this (with two materials):
-     ```
+     ```text
      newmtl ISS_03_dull
          map_Kd 0.png
 

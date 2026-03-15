@@ -1,4 +1,3 @@
-
 # Creating data assets
 
 :::{toctree}

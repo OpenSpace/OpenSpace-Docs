@@ -1,30 +1,14 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
-
 # Default (Grand Tour)
 % This profile is enabled on default and provides the ability to look at detailed terrain models of the Earth, Moon, Mars, other planets, and the Digital Universe extrasolar catalog.
 
 % The view defaults on Earth at the current time with the ESRI VIIRS Combo enabled. This uses the Suomi VIIRS daily images when viewing the whole Earth, and switches to high-detail imagery from ESRI when zooming in.
 
-
-
 The default profile loads the basic data sets that enable a broad tour of the universe. It loads the base asset file, which includes an array of data from Earth out to the most distant objects we can see, along with many default keyboard shortcuts, and some actions as well.
 
-
-
-
 ::::::::{tab-set}
-
 :::::::{tab-item} Tour
 
 ## Tour
-
-
 ::::::{grid} 1 2 2 2
 
 :::::{grid-item}
@@ -37,12 +21,12 @@ In this tour, we will explore the Universe from Earth to the most distant object
 :::{important}
 
 {.no-bullet}
-- {octicon}`rocket;1.25em;profile-tour-action` : Flight instructions
-- {octicon}`diff-added;1.25em;profile-tour-action` : Turn on a data set
-- {octicon}`diff-removed;1.25em;profile-tour-action` : Turn off a data set
-- {octicon}`tools;1.25em;profile-tour-action`: Adjust a setting
-- {octicon}`telescope;1.25em;profile-tour-action` :  Target an object
-- {octicon}`stopwatch;1.25em;profile-tour-action` : Change the time settings
+  - {octicon}`rocket;1.25em;profile-tour-action` : Flight instructions
+  - {octicon}`diff-added;1.25em;profile-tour-action` : Turn on a data set
+  - {octicon}`diff-removed;1.25em;profile-tour-action` : Turn off a data set
+  - {octicon}`tools;1.25em;profile-tour-action`: Adjust a setting
+  - {octicon}`telescope;1.25em;profile-tour-action` :  Target an object
+  - {octicon}`stopwatch;1.25em;profile-tour-action` : Change the time settings
 
 :::
 :::::
@@ -54,9 +38,7 @@ In this tour, we will explore the Universe from Earth to the most distant object
 
 
 ### Earth & Moon
-
 #### Earth
-
 {octicon}`rocket;1.25em;profile-tour-action` Start a slow orbit around Earth.
 
 [![Earth](earth.png)](earth.png)
@@ -100,12 +82,11 @@ The Moon is the farthest humans have ventured into space. In fact, the record fo
 
 
 :::::{admonition} Light Travel Time
-We can also express distance in terms of light travel time. You may be familiar with the term {term}`light year`, which is the _distance_ over which light travels in one year. The Moon is so close, we need to talk about the light travel time in light seconds. Its average distance is equal to about 1.3 light seconds, so it takes 1.3 seconds for light to travel from Earth to the Moon. When the astronauts were walking on the Moon, it took 1.3 seconds for Houston to relay a message to them, and another 1.3 seconds for their response to reach Houston.
+We can also express distance in terms of light travel time. You may be familiar with the term {term}`light year`, which is the *distance* over which light travels in one year. The Moon is so close, we need to talk about the light travel time in light seconds. Its average distance is equal to about 1.3 light seconds, so it takes 1.3 seconds for light to travel from Earth to the Moon. When the astronauts were walking on the Moon, it took 1.3 seconds for Houston to relay a message to them, and another 1.3 seconds for their response to reach Houston.
 :::::
 
 
 #### Distance of the Sun
-
 {octicon}`rocket;1.25em;profile-tour-action` Pull out from Earth to see the planets of the inner Solar System.
 
 [![Inner planet orbits](sun_distance.png)](sun_distance.png)
@@ -114,12 +95,10 @@ The Sun, our host star, is, on average, 150 million km (93 million miles) from E
 
 
 
-***
+---
 
 ### Outer Solar System
-
 #### The Planets
-
 {octicon}`rocket;1.25em;profile-tour-action` Fly away from Earth so that the entire Solar System is in view,  continue orbiting.
 
 [![Planet orbits](solar_system_planets.png)](solar_system_planets.png)
@@ -132,7 +111,6 @@ The planets align very well within a common plane. Mercury is inclined about 7&d
 
 
 #### Pluto
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Solar System --> Dwarf Planets --> Pluto --> Pluto Keplarian Trail` \
 {octicon}`tools;1.25em;profile-tour-action` Uncheck {menuselection}`... --> Pluto Keplarian Trail --> Renderable --> Appearance --> Enable Line Fading of Old Points` to see the entire orbit.
 
@@ -164,12 +142,10 @@ The Solar System is composed of an exotic variety of objects that orbit the Sun.
 
 
 
-***
+---
 
 ### Constellations & Stars
-
 #### Constellation Lines
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines`
 
 [![Solar System orbits plus the constellation lines](solar_system_constellations.png)](solar_system_constellations.png)
@@ -193,7 +169,6 @@ You can see more historical information on [main constellation page](/content/mi
 :::
 
 #### Nearby Stars
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Solar System --> Sun --> Sun Label` \
 {octicon}`rocket;1.25em;profile-tour-action` Fly away from Earth until you begin to see the nearby stars move.
 
@@ -204,7 +179,6 @@ As you fly away from the Sun and Earth, you will begin to see some of the nearby
 
 
 #### Star Names
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Labels` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue orbiting.
 
@@ -226,7 +200,6 @@ Some of the nearby stars are easily distinguished. In particular, Sirius, the br
 
 
 #### A Variety of Stars
-
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Labels` \
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Solar System --> Sun --> Sun Label`
 
@@ -237,12 +210,10 @@ From this location, you may notice that the stars exhibit various brightnesses a
 
 
 
-***
+---
 
 ### Exoplanets
-
 #### Exoplanet Systems
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Systems` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue flying away to examine the exoplanet data.
 
@@ -263,7 +234,6 @@ Each exoplanet marker indicates a star with a confirmed planetary system. None o
 
 
 
-
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines`
 
 As you fly farther from the Sun, it quickly becomes clear that the constellations are only practical from our perspective in the Solar System. Once you're a few light years away, they begin to distort. Farther still, and they only serve to visually distract, so let's turn off the constellation lines to simplify the view.
@@ -276,7 +246,6 @@ As you fly farther from the Sun, it quickly becomes clear that the constellation
 
 
 #### The Radio Sphere
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Graphics --> Radio Sphere`
 
 [![Radio sphere with exoplanets](radio_sphere_exoplanets.png)](radio_sphere_exoplanets.png)
@@ -286,7 +255,7 @@ From this vantage point, turn on the Radio Sphere. The Radio Sphere is a hypothe
 Earth began broadcasting to the universe around 1940. Before that, signals did not escape the atmosphere. But, in 1940, stronger signals were able to pass through the atmosphere and travel into space at one light year per year---as all light does. This results in an ever-expanding bubble we call the Radio Sphere.
 
 At the boundary, roughly 80 light years away, are Earth's oldest
-signals, like the initial broadcast of [_I Love Lucy_](https://en.wikipedia.org/wiki/I_Love_Lucy). As we look closer to Earth, we will find more recent signals, until we arrive at Earth, where today's signals are being emitted.
+signals, like the initial broadcast of [*I Love Lucy*](https://en.wikipedia.org/wiki/I_Love_Lucy). As we look closer to Earth, we will find more recent signals, until we arrive at Earth, where today's signals are being emitted.
 
 ::::{grid} 1 2 3 3
 :gutter: 1 1 1 2
@@ -306,13 +275,12 @@ In reality, by the time our radio signals reach the outer Solar System, their st
 
 
 #### The Farthest Exoplanets
-
 {octicon}`rocket;1.25em;profile-tour-action` Zoom away from Earth a bit more \
 {octicon}`tools;1.25em;profile-tour-action` Increase the size of the exoplanets: {menuselection}`... --> Exoplanet Systems --> Renderable --> Sizing --> Scale Exponent`
 
 [![Exoplanet systems from outside the Galaxy](exoplanet_afar.png)](exoplanet_afar.png)
 
-As you pull away from the Sun even farther, you can see the exoplanets in the context of the Milky Way Galaxy. While the exoplanet systems seemed evenly distributed around the Sun when we were closer to it, now we see some peculiarities. You see a cone of exoplanet systems extending away from the Sun (above the Sun in this image). This is the Kepler Mission's field of view, which we'll discuss next. 
+As you pull away from the Sun even farther, you can see the exoplanets in the context of the Milky Way Galaxy. While the exoplanet systems seemed evenly distributed around the Sun when we were closer to it, now we see some peculiarities. You see a cone of exoplanet systems extending away from the Sun (above the Sun in this image). This is the Kepler Mission's field of view, which we'll discuss next.
 
 Imagine how many planets we'd see today if Kepler was able to look at the entire sky...
 
@@ -320,7 +288,6 @@ Imagine how many planets we'd see today if Kepler was able to look at the entire
 
 
 #### Exoplanet Candidates
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Candidates`
 
 [![Exoplanet candidate systems](exoplanet_candidates.png)](exoplanet_candidates.png)
@@ -340,24 +307,21 @@ The Exoplanet Candidates are stars, colored by mission, that are thought to be s
 
 
 ::::::{admonition} Exoplanet Candidate Colors
-- [**Yellow**]{.galaxy-survey-yellow}: Kepler mission candidates
-- [**Orange**]{.galaxy-survey-orange}: K2 misison candidates
-- [**Green**]{.galaxy-survey-green}: TESS mission candidates
+  - [**Yellow**]{.galaxy-survey-yellow}: Kepler mission candidates
+  - [**Orange**]{.galaxy-survey-orange}: K2 misison candidates
+  - [**Green**]{.galaxy-survey-green}: TESS mission candidates
 ::::::
 
 
-***
+---
 
 ### Milky Way Galaxy
-
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Candidates` \
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Systems` \
 {octicon}`rocket;1.25em;profile-tour-action` Zoom out so the entire Galaxy is visible.
 
 
 #### Our Place in the Galaxy
-
-
 [![Milky Way with a tiny radio sphere](radio_sphere_galaxy.png)](radio_sphere_galaxy.png)
 
 As you move farther away, keep your eye on the 160-light-year-diameter Radio Sphere as it becomes smaller and smaller. In this image, it's reduced to a tiny green dot and marks our location in the Milky Way Galaxy---about 26,000 light years from its center.
@@ -368,7 +332,6 @@ Just as we went from the two-dimensional sky into the three-dimensional stars, w
 
 
 #### Galactic Parts
-
 {octicon}`rocket;1.25em;profile-tour-action` Continue to orbit the Galaxy.
 
 [![Milky Way Galaxy](galaxy-face-on.png)](galaxy-face-on.png)
@@ -396,7 +359,6 @@ The Galaxy is about 100,000 light years across, but the disk is only about 1,000
 
 
 #### Extent of the Night-sky Stars
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue to orbit the Galaxy.
 
@@ -409,13 +371,11 @@ Given that the Milky Way has hundreds of billions of stars, it's compelling to w
 
 
 
-***
+---
 
 
 ### Star Orbits Around the Galaxy
-
 #### The Sun's Orbit
-
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines` \
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits --> Sun`
 
@@ -448,13 +408,13 @@ If Earth has been orbiting the Sun for 4.6 billion years, and the Sun orbits the
 | Dinosaurs exist | 230--66 million | 1--0.29 |
 | Homo erectus appear | 2 million | 0.009 |
 | Homo sapiens appear | 200,000 | 0.0009 |
+
 :::::
 
 
 
 
 #### A Variety of Orbits
-
 {octicon}`diff-added;1.25em;profile-tour-action` Turn on a variety of star orbits in {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits`
 
 [![A variety of star orbits around the Galaxy.](star_orbits.png)](star_orbits.png)
@@ -465,12 +425,10 @@ One remarkable star orbit is the star PM J13420-3415 (red in this image). This i
 
 
 
-***
+---
 
 ### Nearby Galaxies
-
 #### The Local Group
-
 Contemplating the Milky Way and its hundreds of billions of stars, we now turn to what lies outside the Galaxy and the multitude of worlds that lie beyond our home star system.
 
 ::::{tip}
@@ -483,7 +441,6 @@ By default, [Tully](/content/universe/nearby-surveys/tully-galaxies/index), [2Df
 
 
 #### Dwarf Galaxies
-
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits --> Sun` \
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Local Group` \
 {octicon}`rocket;1.25em;profile-tour-action` Fly away from the Milky Way to examine the Local Group.
@@ -511,15 +468,14 @@ At 2.5 million light years, the Andromeda Galaxy is the farthest object we can s
 
 ::::::{admonition} Local Group Colors
 The Local Group's galaxies are given these colors:
-- [**Aqua**]{.galaxy-survey-aqua}: Galaxies under the gravitational influence of the Milky Way
-- [**Yellow**]{.galaxy-survey-yellow}: Galaxies in Andromeda's sphere of influence
-- [**Green**]{.galaxy-survey-green}: Other Local Group members
-- **Gray**: Other nearby galaxies
+  - [**Aqua**]{.galaxy-survey-aqua}: Galaxies under the gravitational influence of the Milky Way
+  - [**Yellow**]{.galaxy-survey-yellow}: Galaxies in Andromeda's sphere of influence
+  - [**Green**]{.galaxy-survey-green}: Other Local Group members
+  - **Gray**: Other nearby galaxies
 ::::::
 
 
 #### Colliding Galaxies
-
 {octicon}`rocket;1.25em;profile-tour-action` Fly farther away to see the entire Local Group.
 
 [![Local Group of galaxies](local_group_afar.png)](local_group_afar.png)
@@ -535,7 +491,6 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 
 
 #### Tully Galaxies
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxies` \
 {octicon}`rocket;1.25em;profile-tour-action` Fly out a bit to see the galaxies that surround the Local Group.
 
@@ -560,24 +515,22 @@ As we pull away from the Local Group, we begin to see the local universe is popu
 
 ::::::{admonition} Galaxy Survey Colors
 Galaxy surveys all use the same color scheme based on local density. We count how many neighbors each galaxy has within 5 {term}`megaparsecs <parsec>` (16 million light years), and set the color based on how many neighbors it has within this bubble.
-- [**Orange**]{.galaxy-survey-orange}: Galaxy is in a very dense area
-- [**Yellow**]{.galaxy-survey-yellow}: Galaxy is a moderately dense area
-- [**Green**]{.galaxy-survey-green}: Galaxy is in a less dense area
-- [**Aqua**]{.galaxy-survey-aqua}: Galaxy is off on its own in a low density area
+  - [**Orange**]{.galaxy-survey-orange}: Galaxy is in a very dense area
+  - [**Yellow**]{.galaxy-survey-yellow}: Galaxy is a moderately dense area
+  - [**Green**]{.galaxy-survey-green}: Galaxy is in a less dense area
+  - [**Aqua**]{.galaxy-survey-aqua}: Galaxy is off on its own in a low density area
 ::::::
 
 
 
 
 #### Galaxy Groups
-
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Group Labels` \
 {octicon}`rocket;1.25em;profile-tour-action` Explore the Galaxy Groups.
 
 [![Galaxy group labels on](galaxy_groups.png)](galaxy_groups.png)
 
-With the Galaxy Group Labels on, you can see a number of groups that are akin to our Local Group. None of these other groups are as rich as the Local Group because we cannot see tiny dwarf galaxies from such great distances. From out here, we would likely only see Andromeda, Milky Way, and Triangulum---the large, luminous galaxies of the Local Group---and that type of galaxy is what represents the scant members of these far-off galaxy groups. 
+With the Galaxy Group Labels on, you can see a number of groups that are akin to our Local Group. None of these other groups are as rich as the Local Group because we cannot see tiny dwarf galaxies from such great distances. From out here, we would likely only see Andromeda, Milky Way, and Triangulum---the large, luminous galaxies of the Local Group---and that type of galaxy is what represents the scant members of these far-off galaxy groups.
 
 Many of the Messier galaxies are somewhat local, like M81, M101, M51. One can imagine a cadre of small dwarf galaxies around each of these groups.
 
@@ -598,7 +551,6 @@ The [Messier Catalog](https://en.wikipedia.org/wiki/Messier_object) is a compila
 
 
 #### Seeing Structure
-
 {octicon}`rocket;1.25em;profile-tour-action` Fly farther away to see the large cluster of orange points.
 
 [![Nearby galaxies with the Virgo Cluster in the foreground](tully_near_virgo.png)](tully_near_virgo.png)
@@ -606,7 +558,6 @@ The [Messier Catalog](https://en.wikipedia.org/wiki/Messier_object) is a compila
 A little farther out and we can see the galaxy clusters in orange. The Virgo Cluster is the nearest, large cluster to us. It's about 60 million light years away, and contains over 1,000 galaxies. This is the bustling center in our corner of the universe.
 
 We are beginning to see the web-like distribution of galaxies around us.
-
 
 % With the boundaries off, we now see the nearby galaxies more clearly. As you orbit more quickly, the web-like structure of the local universe becomes more apparent. We see clusters of galaxies connected by strands and filaments of galaxies. Between them, we see relatively empty areas, called Voids.
 
@@ -620,8 +571,6 @@ We are beginning to see the web-like distribution of galaxies around us.
 
 
 #### Galaxy Clusters
-
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Cluster Labels` \
 {octicon}`rocket;1.25em;profile-tour-action` Pull out to explore the galaxy groups.
 
@@ -647,23 +596,21 @@ From this vantage point, we clearly see the universe is structured. The sponge-l
 
 
 #### Zone of Avoidance
-
 {octicon}`rocket;1.25em;profile-tour-action` Fly completely outside the Tully Galaxies.
 
 [![The zone of avoidance, shadow of the Milky Way](zone_of_avoidance.png)](zone_of_avoidance.png)
 
 Once you're outside the 30,000 galaxies in Tully, you'll notice that it forms a cube. The universe, of course, is not cube shaped. This squared-off boundary ensures that these data remain consistent. In other words, including galaxies beyond this area would selectively include the brighter galaxies, but not the dimmer ones represented in Tully's data. These data would no longer be representative of the structure of the universe. This pertains to the {term}`completeness` of these data.
 
-You may also notice a cleft in the middle of the data set as you orbit around these data. This is what astronomers call the _zone of avoidance_, though we prefer to call it the _zone of obscuration_. Regardless of what we call it, it is an observational effect whereby the band of light in the night sky---the Milky Way---blocks our view of what lies beyond. We cannot see the galaxies that surely exist in these areas because we exist within the Milky Way Galaxy and when we look  toward its disk, what lies beyond is obscured from our view.
+You may also notice a cleft in the middle of the data set as you orbit around these data. This is what astronomers call the *zone of avoidance*, though we prefer to call it the *zone of obscuration*. Regardless of what we call it, it is an observational effect whereby the band of light in the night sky---the Milky Way---blocks our view of what lies beyond. We cannot see the galaxies that surely exist in these areas because we exist within the Milky Way Galaxy and when we look  toward its disk, what lies beyond is obscured from our view.
 
 
 
 
-***
+---
 
 
 ### Deep-sky Surveys
-
 The Tully Catalog is special because it's an all-sky survey---galaxies were observed in all directions. As we look to more distant objects, it becomes more difficult to achieve this because it takes far more time to peer deeper into the universe.
 
 Deep-sky galaxy surveys cover only part of the sky. If one viewed them from Earth, they form distinct patches on the sky, but in three dimensions, they fill out a conical shape, and galaxies lie across a range of distances for each line of sight. The dark areas outside these surveys is simply the areas astronomers have not yet pointed their telescopes.
@@ -671,7 +618,6 @@ Deep-sky galaxy surveys cover only part of the sky. If one viewed them from Eart
 
 
 #### Two-degree Field Survey
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> 2dF Galaxies` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue to pull out to see the bulk of the 2dF Galaxies.
 
@@ -679,7 +625,7 @@ Deep-sky galaxy surveys cover only part of the sky. If one viewed them from Eart
 
 The Two-Degree Field Survey (2dF) project was designed to observe along two strips of sky that are opposite one another, but in three dimensions they are narrow fins, shaped like a bow tie, if you will. We benefit, visually, from their narrowness because we can see the rich structure within these fins.
 
-The 2dF's 229,000 galaxies show the same sponge-like, large-scale structure, with clusters, filaments, and voids. We also see larger-scale structures like _sheets_ and so-called _walls_ of galaxies. Walls are a special type of galaxy filament.
+The 2dF's 229,000 galaxies show the same sponge-like, large-scale structure, with clusters, filaments, and voids. We also see larger-scale structures like *sheets* and so-called *walls* of galaxies. Walls are a special type of galaxy filament.
 
 ::::{grid} 1 2 3 3
 :gutter: 1 1 1 2
@@ -693,7 +639,6 @@ The 2dF's 229,000 galaxies show the same sponge-like, large-scale structure, wit
 
 
 #### Sloan DSS Galaxies
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan DSS Galaxies` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue zooming out to see the Sloan Galaxies.
 
@@ -717,7 +662,6 @@ These deep surveys remind us that we are only one small planet, orbiting an ordi
 
 
 #### Quasars
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Quasars` \
 {octicon}`rocket;1.25em;profile-tour-action` Fly out to examine the quasars.
 
@@ -740,7 +684,7 @@ This catalog consists of over 700,000 quasars, and you can see they extend to fa
 
 
 :::{admonition} The Farther We Look, the Younger the Universe Appears
-You may notice that there are no quasars near the Milky Way. We only see so called _normal_ galaxies around us, like our own. Why is this?
+You may notice that there are no quasars near the Milky Way. We only see so called *normal* galaxies around us, like our own. Why is this?
 
 As we look deeper into the universe, we are looking back in cosmic time. When we gaze upon the 2.5-million-light-year-distant Andromeda galaxy with our eyes or a telescope, we're seeing it as it was 2.5 million years ago. When we see one of these quasars, we're seeing light that left billions of years ago. So, we're looking at an earlier epoch in the universe. It's likely that these quasars have evolved into normal galaxies by now, but that light has not had enough time to reach our eyes. All the quasars that once dominated our neighborhood have now evolved into normal galaxies along with the Milky Way, so their light has had enough time to reach our eyes on Earth.
 
@@ -751,17 +695,15 @@ The farther out we look into the Universe, the further back in time we see.
 
 
 
-***
+---
 
 ### Cosmic Microwave Background
-
 :::{tip}
 The Cosmic Microwave Background demands a fair bit of explanation. It should not be squeezed into the last two minutes of a presentation. Without adequate time to discuss it, it can, and should, be skipped.
 :::
 
 
 #### Planck's Map
-
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Cosmic Microwave Background --> Planck`
 
 [![Cosmic microwave background](cmb_inside.png)](cmb_inside.png)
@@ -789,7 +731,6 @@ For more on the origin and meaning of the CMB, see our [main CMB page](/content/
 
 
 #### CMB Image Placement
-
 {octicon}`rocket;1.25em;profile-tour-action` Resist the temptation to fly outside the CMB.
 
 [![Outside the observable universe](cmb_outside.png)](cmb_outside.png)
@@ -801,10 +742,9 @@ And, what does it mean to fly outside the observable universe? It is not physica
 
 
 
-***
+---
 
 ### A Cosmic Perspective
-
 {octicon}`rocket;1.25em;profile-tour-action` From the outskirts of the observable universe, with friction off, start a nice orbital pace, and then start flying back to Earth. Try to achieve balance in this compound motion.
 
 :::{tip}
@@ -813,30 +753,25 @@ I usually use {kbd}`f` and zoom back to Earth on manual flight.
 :::
 
 #### The Observable Universe
-
 We've now covered the observable universe. Does that cover the
 entire universe? No. In a way, this defines a bubble that surrounds everything we can possibly see. Imagine if you lived on one of these far-off quasars, our bubble would be centered on that quasar, giving us a different perspective on the universe.
 
 
 #### Does the Universe Have a Center?
-
 These surveys might tempt us to think we're at the center of everything. This is merely an artifact of our perspective---everything you see in this atlas is observed data seen from our vantage point. And, every point in the universe has its own unique vantage point.
 
 In fact, the universe has no center. The best analogy to describe the fabric of spacetime that comprises the universe is to imagine inflating a balloon. As the balloon grows larger, the distance between any two points on its surface increases. And, more importantly, everything in the universe exists on the surface of the balloon. To go from point A to point B, one cannot go through the center of the balloon, one must travel along the surface of the balloon. The universe behaves in a similar manner, albeit with far greater complexity.
 
 
 #### Revising the Cosmic Scales
-
 As we return to Earth, we traverse the scales of the universe, from a view that encompass billions of light years, down to objects in the Milky Way that are tens to hundreds of light years in size, to the kilometer-scale continents on earth. Our ability to bridge all these scales allows us to see these data in one, consistent scene, all within the context of the scales that surround it.
 
 
 #### Potential for Life
-
 Upon returning to Earth, it's easy to see just how small we are and how insignificant Earth is, even in our own galaxy, let alone the rest of the universe. But, it also reveals the staggering probability that life (in some form or fashion) exists somewhere, in another far-off galaxy, or even within the Milky Way. The possibility is just too great to assume that life exists only on Earth.
 
 
 #### Final Thoughts
-
 That's the grand tour. Hopefully, you have an idea of the scale of the observable universe, and what surrounds us in the Solar System, the Milky Way galaxy, and outside the Galaxy. We are a tiny spec among many other specs in the universe, and we've come to understand so much about how the universe formed, our place within it, and its ultimate fate. The universe never fails to invoke a sense of wonder and, in its light, presents pieces to a puzzle that we yearn to solve.
 
 :::::::
@@ -850,7 +785,6 @@ That's the grand tour. Hopefully, you have an idea of the scale of the observabl
 :::::::{tab-item} Keyboard Shortcuts
 
 ## Keyboard Shortcuts
-
 ::::{include} /using-openspace/keyboard-shortcuts/default.md
 :heading-offset: 2
 ::::
@@ -870,9 +804,7 @@ That's the grand tour. Hopefully, you have an idea of the scale of the observabl
 :::::::{tab-item} Data Sets
 
 ## Data Sets
-
 ### Solar System
-
 :::{warning}
 This section is missing some data sets. Mostly planet moons and satellites whose documentation has not yet been written.
 :::
@@ -882,15 +814,15 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/sun/sun/index)
-[![](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
+[![Sun icon](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/sun-glare/index)
-[![](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
+[![Sun glare icon](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/habitable-zone/index)
-[![](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
+[![Sun Habitable Zone icon](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
 :::
 
 ::::
@@ -936,14 +868,13 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 #### Dwarf Planets
-
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/pluto/index)
 [![Pluto](/content/solar-system/dwarf-planets/pluto/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/pluto/index)
 :::
- 
+
 ::::
 
 
@@ -960,7 +891,6 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 ### Milky Way
-
 #### Stars
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
@@ -1142,7 +1072,6 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 ### Universe
-
 #### Nearby Surveys
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
@@ -1241,31 +1170,29 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :::::::{tab-item} Dossier
 
 ## Dossier
-
 :::{list-table}
 :header-rows: 0
 :stub-columns: 1
 :align: left
 :width: 90%
 
-* - Name:
-  - Default
-* - File:
-  - `data/profiles/default.profile`
-* - Anchor:
-  - [Earth](/content/solar-system/planets/earth/earth/index)
-* - Time:
-  - Yesterday, 24 hours ago
-* - Author:
-  - OpenSpace Team
-* - License:
-  - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
-* - Version:
-  - 1.0
+  - - Name:
+    - Default
+  - - File:
+    - `data/profiles/default.profile`
+  - - Anchor:
+    - [Earth](/content/solar-system/planets/earth/earth/index)
+  - - Time:
+    - Yesterday, 24 hours ago
+  - - Author:
+    - OpenSpace Team
+  - - License:
+    - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+  - - Version:
+    - 1.0
 :::
 
 :::::::
-
 ::::::::
 
 
@@ -1276,13 +1203,13 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 % Need to add these cards when we get them into /content/solar-system/...  documentation
 % [](/content/solar-system/planets/mars/moons/phobos/index)
 % [](/content/solar-system/planets/mars/moons/deimos/index)
-% 
+%
 % [](/content/solar-system/planets/jupiter/moons/major/index)
 %
 % [](/content/solar-system/planets/saturn/moons/major/index)
-% 
+%
 % [](/content/solar-system/planets/uranus/moons/major/index)
-% 
+%
 % [](/content/solar-system/planets/neptune/moons/major/index)
 
 % asset.require("./misc/brightest")

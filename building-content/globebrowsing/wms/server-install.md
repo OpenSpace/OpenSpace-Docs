@@ -76,7 +76,7 @@ From the base directory (in this case `~/wms_modules`), `cd mod_mrf/src/` and cr
 cp Makefile.lcl.example Makefile.lcl
 ```
 
-Edit `Makefile.lcl`, find the line that defines `EXTRA_INCLUDES`, and add the following lines _below_ that line:
+Edit `Makefile.lcl`, find the line that defines `EXTRA_INCLUDES`, and add the following lines *below* that line:
 
 ```makefile
 EXTRA_INCLUDES += -I../../libahtse/src
@@ -126,7 +126,7 @@ Run `make` to build the dependencies, then `make install` to automatically place
 To install `mod_mrf`, you need to create a new Apache module in `/etc/apache2/mods-available` called `mrf.load`.
 
 The contents of this file will consist of:
-```
+```text
 LoadFile /home/[user]/modules/libahtse.so
 LoadModule mrf_module /home/[user]/modules/mod_mrf.so
 ```
@@ -146,7 +146,7 @@ To verify if the module is loaded, run `sudo apachectl -M` and check if `mrf_mod
 To install `mod_convert`, you need to create a new Apache module in `/etc/apache2/mods-available` called `convert.load`.
 
 The contents of this file will consist of:
-```
+```text
 LoadFile /home/[user]/modules/libahtse.so
 LoadModule convert_module /home/[user]/modules/mod_convert.so
 ```
@@ -166,7 +166,7 @@ To verify if the module is loaded, run `sudo apachectl -M` and check if `convert
 To install `mod_receive`, you need to create a new Apache module in `/etc/apache2/mods-available` called `receive.load`.
 
 The contents of this file will consist of:
-```
+```text
 LoadModule receive_module /home/[user]/modules/mod_receive.so
 ```
 
@@ -181,7 +181,7 @@ You may need `sudo` to execute. Restart the Apache server with `sudo apachectl r
 To install `mod_retile`, you need to create a new Apache module in `/etc/apache2/mods-available` called `retile.load`.
 
 The contents of this file will consist of:
-```
+```text
 LoadModule retile_module /home/[user]/modules/mod_retile.so
 ```
 
@@ -196,7 +196,7 @@ You may need `sudo` to execute. Restart the Apache server with `sudo apachectl r
 To install `mod_sfim`, you need to create a new Apache module in `/etc/apache2/mods-available` called `sfim.load`.
 
 The contents of this file will consist of:
-```
+```text
 LoadModule sfim_module /home/[user]/modules/mod_sfim.so
 ```
 

@@ -2,7 +2,7 @@
 This page serves as a reference to the features supported by the MyST + Sphinx + Read The Docs stack that is used to create this wiki page. This page is probably best viewed in source which you can find with the "Edit on GitHub" link in the top right. If you are using Visual Studio Code, the [MyST-Markdown plugin](https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight) is recommended as it provides code snippets for the different directives that MyST adds to regular Markdown. In general, a block is surrounded by `:::` followed by the name of the directive inside `{ }`. Directives can have arguments, which are surrounded by `: :`.
 
 For example of this:
-```
+```text
 :::{directive} Parameter
 :argument:
 :second-argument: Foobar
@@ -11,32 +11,32 @@ For example of this:
 
 :::{seealso}
 Additional documentation:
- - [MyST](https://myst-parser.readthedocs.io/en/latest/index.html)
- - [Sphinx](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#code-examples)
- - [Sphinx Design](https://sphinx-design.readthedocs.io/en/furo-theme/)
+  - [MyST](https://myst-parser.readthedocs.io/en/latest/index.html)
+  - [Sphinx](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#code-examples)
+  - [Sphinx Design](https://sphinx-design.readthedocs.io/en/furo-theme/)
 :::
 
 
 ## Markup
 Standard Github-flavored Markdown is available as a basis. You can find more information about it [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). For completeness, here is a quick reference list:
 
-| Element        | Markdown Syntax      | Description                                   |
-| -------------- | -------------------- | --------------------------------------------- |
-| Header 1       | `# Header 1`         | Largest header, equivalent to `<h1>` in HTML. |
-| Header 2       | `## Header 2`        | Second largest header                         |
-| Header 3       | `### Header 3`       | Third largest header                          |
-| Header 4       | `#### Header 4`      | Fourth largest header                         |
-| Header 5       | `##### Header 5`     | Fifth largest header                          |
-| Bold Text      | `**Bold**`           | Makes text bold                               |
-| Italic Text    | `_Italic_` or `*Italic*` | Makes text italic                         |
-| Link           | `[Text](URL)`        | Creates a hyperlink with the provided text    |
-| Image          | `![Alt text](URL)`   | Embeds an image                               |
-| Unordered List | `- Item`             | Creates a bulleted list                       |
-| Ordered List   | `1. Item`            | Creates a numbered list                       |
-| Blockquote     | `> Quote`            | Creates a blockquote                          |
-| Code (Inline)  | `` `Code` ``         | Displays inline code                          |
-| Code (Block)   | <pre>```<br>Code<br>```</pre> | Displays a block of code             |
-| Table          | See source           | Creates a table                               |
+| Element | Markdown Syntax | Description |
+| ------- | --------------- | ----------- |
+| Header 1 | `# Header 1` | Largest header, equivalent to `<h1>` in HTML. |
+| Header 2 | `## Header 2` | Second largest header |
+| Header 3 | `### Header 3` | Third largest header |
+| Header 4 | `#### Header 4` | Fourth largest header |
+| Header 5 | `##### Header 5` | Fifth largest header |
+| Bold Text | `**Bold**` | Makes text bold |
+| Italic Text | `_Italic_` or `*Italic*` | Makes text italic |
+| Link | `[Text](URL)` | Creates a hyperlink with the provided text |
+| Image | `![Alt text](URL)` | Embeds an image |
+| Unordered List | `- Item` | Creates a bulleted list |
+| Ordered List | `1. Item` | Creates a numbered list |
+| Blockquote | `> Quote` | Creates a blockquote |
+| Code (Inline) | `` `Code` `` | Displays inline code |
+| Code (Block) | <pre>```<br>Code<br>```</pre> | Displays a block of code |
+| Table | See source | Creates a table |
 
 ### Heading without TOC entry
 :::{rubric} A heading that will not show up in the table of contents
@@ -78,17 +78,18 @@ We can also provide images directly into the text: {octicon}`heart-fill;1em;sd-t
 | foo | bar |
 | --- | --- |
 | baz | bim |
+
 :::
 
 ### Multi-column table
 :::{hlist}
 :columns: 2
 
- * A list of
- * short items
- * that should be
- * displayed
- * horizontally
+  - A list of
+  - short items
+  - that should be
+  - displayed
+  - horizontally
 :::
 
 
@@ -96,11 +97,11 @@ We can also provide images directly into the text: {octicon}`heart-fill;1em;sd-t
 A [link][1] that doesn't have the URL locally, but hidden away in the bottom of the file. The link here would be the same as [this](https://www.google.com) link. We can also add footnotes, either as a manually-numbered reference[^3], or an automatically-numbered reference[^myref]. Footnotes can also be a lot longer, too[^mylongdef]. The actual content behind the footnote can be placed anywhere in the source file, but will always be rendered at the bottom of the page.
 
 ### Footnotes
-[^mylongdef]: This is the _**footnote definition**_.
+[^mylongdef]: This is the ***footnote definition***.
 
     That continues for all indented lines
 
-    - even other block elements
+      - even other block elements
 
     Plus any preceding unindented lines,
 that are not separated by a blank line
@@ -115,7 +116,7 @@ The normal Markdown way:
 
 ### Centering images
 But MyST also added a second method that has way more options. See their [documentation](https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html#block-level-images) for more information.
-:::{image} https://source.unsplash.com/200x200/daily?cute+animals
+:::{image} <https://source.unsplash.com/200x200/daily?cute+animals>
 :alt: OpenSpace Logo
 :class: bg-primary
 :width: 200px
@@ -124,18 +125,18 @@ But MyST also added a second method that has way more options. See their [docume
 
 ### Captions
 Or with captions underneath
-:::{figure} https://source.unsplash.com/200x200/daily?cute+animals
+:::{figure} <https://source.unsplash.com/200x200/daily?cute+animals>
 We can also add captions to the images by using the `figure` environment
 :::
 
 ### Dark and Light theme
 We can use different images for light and dark themes
-:::{image} https://source.unsplash.com/200x200/daily?cute+dogs
+:::{image} <https://source.unsplash.com/200x200/daily?cute+dogs>
 :align: center
 :class: only-light
 :::
 
-:::{image} https://source.unsplash.com/200x200/daily?cute+cats
+:::{image} <https://source.unsplash.com/200x200/daily?cute+cats>
 :align: center
 :class: only-dark
 :::
@@ -204,11 +205,11 @@ Maaa! I made it look the same by setting the class.
 ## Sidebar
 :::{sidebar} Ch'ien / The Creative
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
-    .. image:: https://source.unsplash.com/200x200/daily?cute+puppy
+  .. image:: <https://source.unsplash.com/200x200/daily?cute+puppy>
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sunt voluptatum tenetur libero nulla esse veritatis accusantium earum commodi hic voluptatem officia culpa optio atque. Quaerat sed quibusdam ratione nam.
 :::
@@ -240,7 +241,7 @@ local abc = function()
 end
 :::
 
-```
+```text
 -- This is also true for standard Markdown code highlighting
 function(abc)
   return abc + abc
@@ -449,7 +450,7 @@ Content 2
 
 ::::{tab-set}
 :::{tab-item} Lua
-```
+```lua
 local openspace = ...
 openspace.globebrowsing.goToGeo(123.0, -40.0)
 ```
@@ -481,7 +482,6 @@ sequenceDiagram
     Bob--x Alice: I am good thanks!
     Bob-x John: I am good thanks!
     Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
     Bob-->Alice: Checking with John...
     Alice->John: Yes... John, how are you?
 :::

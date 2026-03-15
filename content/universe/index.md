@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Universe
-
 {menuselection}`Scene --> Universe`
-
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
@@ -37,7 +28,6 @@ Unlike the Milky Way that is organized by object type, here we divide data by ne
 
 
 ## Our Cosmic Perspective---Where Is the Center?
-
 When you look at the data sets in {menuselection}`Universe`, it's tempting to believe we are the center of everything. One of the consequences of showing real scientific data observed from telescopes on Earth, or in orbit around Earth, is that it appears as though the Milky Way, the Sun, and the Earth
 are at the center of the universe.
 

@@ -1,16 +1,7 @@
----
-authors:
-  - name: Brian Abbott, Micah Acinapura
-    affiliation: American Museum of Natural History
----
-
-
 # Profile Editor
-
 :::{warning}
 This section is in progress. Some sections remain incomplete.
 :::
-
 
 A profile is an assemblage of data assets and settings that, grouped together, allow you to tell a story. A crucial aspect of the Profile Editor is selecting which data sets are included and, therefore, loaded into OpenSpace.
 
@@ -26,7 +17,6 @@ The OpenSpace launcher window, with the profile chooser at top, and the New and 
 
 
 ## Create a Profile
-
 The easiest way to create a new profile is to find a profile that has many of the items you want and duplicate it. Select the profile that's closest to what you want, and bring up the profile editor by pressing the {menuselection}`Edit` Button in the Launcher Window. You will see the Profile Editor Window:
 
 :::{figure} profile_editor.png
@@ -53,7 +43,6 @@ The OpenSpace Profile Editor's Meta Editor.
 :::
 
 ## Adding or Removing Data Sets
-
 The most-used portion of the Profile Editor is the Assets section in the middle of the window. Click the {menuselection}`Edit` Button to the right of the Assets subwindow title, and the Assets Editor will appear. (Note, there are many {menuselection}`Edit` buttons in this window, to edit the assets included choose the one on the same line as the Assets title.)
 
 
@@ -80,9 +69,7 @@ Assets may also be added to a session temporarily (as opposed to saving it in a 
 
 
 
-
 ## Mark Interesting Nodes
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Mark Interesting Nodes section allows you to determine what appears in the Navigation Panel. Each asset that appears there is available for targeting, aiming toward, or flying to. See the [Navigation Panel](/using-openspace/toolbar/navigation/index) for more.
@@ -102,7 +89,6 @@ For this panel, you need to know the name of the asset, or node, you want to add
 
 
 ## Simulation Time Increments
-
 Simulation Time Increments allows you to edit the time increments that function within the [Time Panel](/using-openspace/toolbar/time/index). These increments are triggered by button on that panel, or more easily by keystrokes outlined in the Time Panel page.
 
 :::{figure} profile_editor_time_increments.png
@@ -113,13 +99,11 @@ Simulation Time Increments allows you to edit the time increments that function 
 
 
 ## Camera Settings
-
 You can set the default camera position for your new profile using the {menuselection}`Edit` Button under `Camera` in the Profile Editor.
 
 Here, you have three ways to set the initial campera position: Geo State, Navigation State, and Scene Graph Node.
 
 ### Geo State
-
 Use the Geo State tab to set a camera position. This is useful when a planet or moon is set as the target---which is often the case.
 
 :::{figure} profile_editor_camera_geo.png
@@ -136,9 +120,6 @@ Enter the anchor node (the object of focus), then the latitude, longitude, and a
 
 
 ### Navigation State
-
-
-
 :::{figure} profile_editor_camera_navigation.png
 :align: center
 :width: 540px
@@ -149,7 +130,6 @@ The Navigation State tab in the Profile Editor's camera settings.
 
 
 ### Scene Graph Node
-
 With this option, you can enter a scene graph node, or a known data object in OpenSpace---something you can click on and off in the Scene Panel---and use that data for determining an initial camera setting.
 
 :::{figure} profile_editor_camera_node.png
@@ -167,7 +147,6 @@ Trpically, though, you set a planet as the opening view upon launch. So, if you 
 
 
 ## Initial Time Settings
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 Pressing the {menuselection}`Edit` button in the Time section of the Profile Editor brings up a small window with a few time settings for the profile where you set the initial time for the profile.
@@ -193,7 +172,6 @@ The Relative Time section allows you to provide an offset to the selected time a
 {.advanced-topic}
 [Advanced]{.advanced}
 ## Properties
-
 :::{figure} profile_editor_properties.png
 :align: center
 :width: 700px
@@ -206,7 +184,6 @@ The OpenSpace Profile Editor's Properties section, where you can add or remove a
 {.advanced-topic}
 [Advanced]{.advanced}
 ## Actions & Keybindings
-
 At the bottom left, you'll see the Actions & Keybindings section. Press its {menuselection}`Edit` Button and you will see this window:
 
 :::{figure} profile_editor_keybindings.png
@@ -224,14 +201,9 @@ This section uses scripting expressions and functions that instruct OpenSpace wh
 
 
 
-
-
-
-
 {.advanced-topic}
 [Advanced]{.advanced}
 ## Modules
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 

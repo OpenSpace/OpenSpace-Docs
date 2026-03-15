@@ -81,7 +81,7 @@ class Dossier(SphinxDirective):
     self.content = output
     allow_headers = True
     return self.parse_content_to_nodes(allow_headers)
-  
+
 
 
 class Profile_Dossier(SphinxDirective):
@@ -134,7 +134,7 @@ class Profile_Dossier(SphinxDirective):
     license = self.options.get("license", notapplicable)
     version = self.options.get("version", notapplicable)
 
-    
+
     if (anchor != notapplicable):
       anchor = anchor.split(";")
       anchor = list(map(self.process_anchor, anchor))
@@ -156,14 +156,14 @@ class Profile_Dossier(SphinxDirective):
       time=time,
       author=author,
       license=license,
-      version=version      
+      version=version
     )
 
     self.content = output
     allow_headers = True
     return self.parse_content_to_nodes(allow_headers)
-  
-  ##########################################################################################
+
+##########################################################################################
 #                                         Sphinx setup                                   #
 ##########################################################################################
 def setup(app: Sphinx) -> ExtensionMetadata:

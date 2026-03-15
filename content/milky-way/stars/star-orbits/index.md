@@ -1,13 +1,4 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Star Orbits
-
-
 {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits --> Barnards Orbit` \
 {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits --> Kapteyns Orbit` \
 {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits --> Lacaille 9352 Orbit` \
@@ -16,15 +7,11 @@ authors:
 {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits --> PM_J13420-3415 Orbit` \
 {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits --> Sun Orbit`
 
-
-
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 Everything in the Universe moves. The Earth moves around the Sun, and the Sun and its family of planets move through the Milky Way galaxy at about 860,000 kilometers per hour (530,000 miles per hour) in a relatively stable orbit. One circuit around---our "galactic year"---takes about 225 million earth years. The last time the Sun was in the same spot in the Galaxy, dinosaurs ruled Earth. With these assets, we illustrate one-billion-year orbital trajectories for seven stars with varying speeds and directions.
-
 
 
 :::{figure} star_orbits_sun.png
@@ -37,16 +24,11 @@ The Sun's orbit superimposed on the Milky Way galaxy. This trajectory shows wher
 
 
 ### Sun's Orbit
-
 Currently, the Sun is heading in the direction of the constellation Cygnus and lies about 50 light years above the plane of the Galaxy. The Sun's position oscillates above and below the plane every 38 billion years, reaching a maximum of about 260 light years above or below the plane. Imagine how our night sky changes due to this periodic motion. When we are centered on the plane of the Galaxy, the band of light across the sky will be at its thinnest. Conversely, when we are 260 light years above or below the plane, the band of light will appear a little thicker.
 
 
-
 ### Barnard's Star
-
 Barnard's Star, the fourth-closest star to the Sun, has the highest proper motion of any star in the night sky. [E. E. Barnard](https://en.wikipedia.org/wiki/Edward_Emerson_Barnard) (1857--1923) discovered this motion in 1916, observing that it moves 10.3 arcseconds in the sky per year. While its path generally remains in the Galactic disk, its radius from the Galactic center varies greatly.
-
-
 
 
 :::{figure} star_orbits_panel.png
@@ -57,10 +39,7 @@ A panel of the remaining star orbits. Clockwise from the top left is the orbit o
 :::
 
 
-
-
 ### A Halo Star
-
 Not all stars' motion are as well behaved as the Sun. The halo star PM J13420-3415 moves perpendicular to the Galactic disk. The Milky Way Halo is a spherical component of the Galaxy populated by cool, dim stars and globular clusters. Let's imagine how our night sky will appear under these circumstances. If we were living on a planet with this star as our sun, when the star is high above the Galactic disk, we would have a magnificent, face-on view of the Galaxy filling half our night sky.
 :::::
 
@@ -68,7 +47,6 @@ Not all stars' motion are as well behaved as the Sun. The halo star PM J13420-34
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -93,7 +71,6 @@ Not all stars' motion are as well behaved as the Sun. The halo star PM J13420-34
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 7 star orbits
 :assetfile: data/assets/scene/digitaluniverse/starorbits.asset

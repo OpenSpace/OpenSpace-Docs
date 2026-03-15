@@ -1,23 +1,11 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
-
 # James Webb Space Telescope
 This profile visualizes the NASA-ESA-CAN James Webb Space Telescope, which launched on December 25, 2021. The profile includes two visualizations of the Webb trail: One plotted with respect to the Earth-Sun L2, where it will be stationed; and another with respect to the Sun, as we plot the orbits of the planets. The profile includes a dynamic model of Webb and a time lapse of its deployment and unfolding. The profile includes the capability to point the telescope with an associated view frustum to any celestial coordinates. The orientation can be controlled by entering Right Ascension (R.A.) and Declination (Dec.) on an [external webpage](http://ui.openspaceproject.com/jwst_scripts).
-
-
-
 
 ::::::::{tab-set}
 
 :::::::{tab-item} Tour
 
 ## Tour
-
 Nothing to see here...
 
 
@@ -35,8 +23,6 @@ orbits L2
 :::::::{tab-item} Keyboard Shortcuts
 
 ## Keyboard Shortcuts
-
-
 ::::{include} /using-openspace/keyboard-shortcuts/jwst.md
 :heading-offset: 2
 ::::
@@ -55,10 +41,7 @@ orbits L2
 
 ## Data Sets
 
-
-  
 %  "assets": [
-%    
 % "scene/solarsystem/planets/earth/earth",
 % "scene/solarsystem/planets/earth/layers/colorlayers/viirs_noaa20_temporal.asset",
 % "scene/solarsystem/planets/earth/satellites/satellites",
@@ -75,7 +58,6 @@ orbits L2
 
 
 ### Solar System
-
 :::{warning}
 This section is missing some data sets. Mostly planet moons and satellites whose documentation has not yet been written.
 :::
@@ -85,15 +67,15 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/sun/sun/index)
-[![](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
+[![Sun icon](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/sun-glare/index)
-[![](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
+[![Sun Glare icon](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/habitable-zone/index)
-[![](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
+[![Sun Habitable Zone icon](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
 :::
 
 ::::
@@ -139,14 +121,13 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 #### Dwarf Planets
-
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/pluto/index)
 [![Pluto](/content/solar-system/dwarf-planets/pluto/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/pluto/index)
 :::
- 
+
 ::::
 
 
@@ -163,7 +144,6 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 ### Milky Way
-
 #### Stars
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
@@ -345,7 +325,6 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 ### Universe
-
 #### Nearby Surveys
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
@@ -433,8 +412,7 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 [![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.png)](/content/universe/cosmic-microwave-background/planck/index)
 :::
 
-::::  
- 
+::::
 
 :::::::
 
@@ -451,20 +429,20 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :align: left
 :width: 90%
 
-* - Name:
-  - James Webb Space Telescope
-* - File:
-  - `data/profiles/jwst.profile`
-* - Anchor:
-  - JWST Model
-* - Time:
-  - 2021-12-25, 12:50:01
-* - Author:
-  - OpenSpace Team
-* - License:
-  - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
-* - Version:
-  - 1.2
+  - - Name:
+    - James Webb Space Telescope
+  - - File:
+    - `data/profiles/jwst.profile`
+  - - Anchor:
+    - JWST Model
+  - - Time:
+    - 2021-12-25, 12:50:01
+  - - Author:
+    - OpenSpace Team
+  - - License:
+    - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+  - - Version:
+    - 1.2
 :::
 
 :::::::

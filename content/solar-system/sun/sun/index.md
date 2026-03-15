@@ -1,26 +1,15 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Sun
-
 {menuselection}`Scene --> Solar System --> Sun --> Sun`
-
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 :::{note}
 See this section's [top page](../index) for some background on the Sun.
 :::
 
-Do stars have a surface? Not in the traditional sense of how we think of a surface---terra firma. The Sun is a ball of gas and plasma, so there is no hard surface for us to stand on. However, there is a layer we can see. That is the first layer that is opaque to us, under the transparent layers of the Sun's atmosphere. This layer of the Sun is called the photosphere, and this is the layer we show in this data set. 
+Do stars have a surface? Not in the traditional sense of how we think of a surface---terra firma. The Sun is a ball of gas and plasma, so there is no hard surface for us to stand on. However, there is a layer we can see. That is the first layer that is opaque to us, under the transparent layers of the Sun's atmosphere. This layer of the Sun is called the photosphere, and this is the layer we show in this data set.
 
 We see this when the cloud cover is just right to show the Sun as a "ball" of light in the sky. The clouds adequately filter the Sun so we can see the Sun as a round disk of light. Of course, it's never good to look directly at the Sun, but now and then mother nature allows us to peek.
 
@@ -50,7 +39,6 @@ The Sun image from afar within the context of the inner Solar System. Probably b
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -75,7 +63,6 @@ The Sun image from afar within the context of the inner Solar System. Probably b
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 1 image
 :assetfile: data/assets/scene/solarsystem/sun.asset

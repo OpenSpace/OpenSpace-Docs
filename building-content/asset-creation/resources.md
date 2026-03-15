@@ -99,6 +99,6 @@ local path = asset.resource({
 })
 ```
 
-While a synchronized asset can be required or requested from multiple locations, it can only declared in one location. For example, consider a synchronized asset that contains more than one file (e.g. `solarsystem/planets/jupiter/jupiter_labels.asset`). If the individual label files are used in different asset files, they must all reference the same source asset, and then append the label filename to the _jupiter_labels_ asset path. An error will occur if different synchronized assets are defined in order to request the individual label files.
+While a synchronized asset can be required or requested from multiple locations, it can only declared in one location. For example, consider a synchronized asset that contains more than one file (e.g. `solarsystem/planets/jupiter/jupiter_labels.asset`). If the individual label files are used in different asset files, they must all reference the same source asset, and then append the label filename to the *jupiter_labels* asset path. An error will occur if different synchronized assets are defined in order to request the individual label files.
 
 The `Override` parameter can be used to force a new download even if the file has already previously been downloaded.

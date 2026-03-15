@@ -7,7 +7,7 @@ This method differs from the JPL Small SolarSystem Body Database ([SBDB page](sb
 
 
 ## Downloading Ephemeris Data from JPL Horizons Site
-Browse to the Horizons page (https://ssd.jpl.nasa.gov/horizons.cgi). Follow the instructions for each input section below.
+Browse to the Horizons page (<https://ssd.jpl.nasa.gov/horizons.cgi>). Follow the instructions for each input section below.
 
 ### Ephemeris Type
 Click the box to the right of the text and select **Vector Table** or **Observer Table**. OpenSpace supports both of these options but we recommend you to use **Vector Table**.
@@ -26,7 +26,7 @@ Click *edit* on **Table Settings**.
 
 For the **Vector Table** format, the settings should be:
   - Select Output Quantities = 1. Position components {x, y, z} only
-  - (None of the options for the __Statistical Uncertainties__ should be checked)
+  - (None of the options for the **Statistical Uncertainties** should be checked)
 
 For the optional settings at the bottom, use the following:
   - Reference frame = ICRF
@@ -39,7 +39,7 @@ For the optional settings at the bottom, use the following:
   - Object summary = enabled
 
 For the **Observer Table** format, only the following checkboxes should be selected:
-```
+```text
 20. Observer range & range-rate
 33. Galactic longitude & latitude
 ```

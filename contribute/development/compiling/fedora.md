@@ -46,4 +46,4 @@ cmake -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE:S
 ```
 
 ### Planet images not loading
-The site `gibs.earthdata.nasa.gov` and possiby other data sources used by OpenSpace uses old TLS settings, see https://www.ssllabs.com/ssltest/analyze.html?d=gibs.earthdata.nasa.gov&s=198.118.199.5. The workaround is to run `sudo update-crypto-policies --set LEGACY` . See also https://fedoraproject.org/wiki/Changes/StrongCryptoSettings2
+The site `gibs.earthdata.nasa.gov` and possiby other data sources used by OpenSpace uses old TLS settings, see <https://www.ssllabs.com/ssltest/analyze.html?d=gibs.earthdata.nasa.gov&s=198.118.199.5>. The workaround is to run `sudo update-crypto-policies --set LEGACY` . See also <https://fedoraproject.org/wiki/Changes/StrongCryptoSettings2>

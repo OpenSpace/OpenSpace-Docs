@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Planck
-
 {menuselection}`Scene --> Universe --> Cosmic Microwave Background --> Planck`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
@@ -19,7 +10,7 @@ authors:
 :align: left
 :alt: A portion of the sky in microwave light from the Planck mission.
 
-One portion of the Planck cosmic microwave background radiation image. This is a mapping of temperature in the microwave sky where red areas are slightly warmer and blue spots are slightly cooler. The overall temperature of this light is 2.7 Kelvin, and the differences are in the one hundred thousandth of a degree. 
+One portion of the Planck cosmic microwave background radiation image. This is a mapping of temperature in the microwave sky where red areas are slightly warmer and blue spots are slightly cooler. The overall temperature of this light is 2.7 Kelvin, and the differences are in the one hundred thousandth of a degree.
 :::
 
 
@@ -38,7 +29,6 @@ The red areas represent the slightly hotter temperatures, and the blue areas are
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -62,7 +52,6 @@ The red areas represent the slightly hotter temperatures, and the blue areas are
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 1 all-sky image
 :assetfile: data/assets/scene/digitaluniverse/backgroundradiation.asset
@@ -70,7 +59,7 @@ The red areas represent the slightly hotter temperatures, and the blue areas are
 :preparedby: Brian Abbott (AMNH)
 :sourceversion: 2.03
 :license: amnh
-:reference: Planck 2015 results. XIII. Cosmological parameters=https://doi.org/10.1051/0004-6361/201525830
+:reference: Planck 2015 results. XIII. Cosmological parameters=<https://doi.org/10.1051/0004-6361/201525830>
 :::
 
 :::::

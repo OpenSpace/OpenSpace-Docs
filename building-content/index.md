@@ -1,10 +1,3 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Building Content
 
 {.heading-toc}

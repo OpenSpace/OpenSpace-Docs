@@ -9,7 +9,7 @@
   1. Create a new directory called `libmpv`. In `libmpv`, create another directory called `lib`. Copy the `dll` and the `def` there. 
   1. In `libmpv`, create a new directory called `include`. Copy the header files there.
   1. Edit the `mpv.def` file. Add these two lines to the top of the file:
-     ```
+     ```text
      LIBRARY MPV-2
      EXPORTS
      ```

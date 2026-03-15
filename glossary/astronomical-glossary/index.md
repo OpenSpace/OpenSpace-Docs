@@ -1,11 +1,9 @@
 # Astronomical Glossary
-
 ::::{glossary}
 
 
 All-sky Survey
     An all-sky image constructed from many small images of the night sky. Astronomers have these in visible light, which is the light we see with our eyes, but also have images in infrared, radio, X-Ray, and Gamma Ray areas of the electromagnetic spectrum. Also, the cosmic microwave background images are an example of a processed all-sky image. These images are two-dimensional in nature, so we wrap them onto a sphere that surrounds our vantage point.
-
 
 
 Astronomical Unit
@@ -60,7 +58,6 @@ Redshift/blueshift
     Redshift refers to the shifting of light as the source moves away from the observer. It is the light equivalent of the Doppler shift in sound when, for example, a train's sound changes as it approaches you and recedes from you. We use redshift in astronomy to calculate the distance to objects outside the Milky Way. Almost all objects outside the Galaxy are moving away from us as the universe expands, and we can measure the shift of light in the spectral lines of a galaxy, and once we know that shift in wavelength, we can compute its distance. If the object is moving away from us, the light is shifted toward the red in the electromagnetic spectrum, and if the object is moving toward us, the light is shifted toward the blue end of the spectrum.
 
 
-
 Spacetime
     Spacetime is a mathematical model that incorporates both space and time into one, unified continuum. It is not needed to describe the non-relativistic world, where Euclidean space and classical mechanics describes the universe accurately. But, in a relativistic universe the three-dimensional space cannot be separated from time. Gravity, and therefore matter, when moving close to the speed of light, slows time down for an outside observer. A massive object's gravity warps spacetime, creating valleys for the light to traverse, which takes slightly longer than it would in the absence of that mass.
 
@@ -72,8 +69,4 @@ Uncertainty
 Zone of avoidance
     This is a term invented by astronomers and describes the areas of the sky obscured by the Milky Way---that band of light across our sky. It is named as such because early galaxy maps showed areas where galaxies appeared to avoid. We prefer to use "zone of obscuration" because it has a more physical meaning and is inherently more clear.
 
-
-
-
 ::::
-

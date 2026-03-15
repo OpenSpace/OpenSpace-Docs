@@ -129,17 +129,17 @@
   --footer-color: #808080;
   /* Regular font */
   --system-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  /* Code font */ 
+  /* Code font */
   --monospace-font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace;;
 
-  /* Sidebars that are floating on the right hand side in a document */ 
+  /* Sidebars that are floating on the right hand side in a document */
   --sidebar-background-color: #f3f6f6;
-  --sidebar-border-color: #e1e4e5; 
+  --sidebar-border-color: #e1e4e5;
   --sidebar-title-background-color: #e1e4e5;
 
-  /* Refer to menu items in text (looks like a button) */ 
-  --menu-background-color: #e7f2fa; 
-  --menu-border-color: #7fbbe3; 
+  /* Refer to menu items in text (looks like a button) */
+  --menu-background-color: #e7f2fa;
+  --menu-border-color: #7fbbe3;
 
   /* Dropdown menus */
   --dropdown-border-color: #dddddd;
@@ -276,14 +276,14 @@
       --btn-neutral-hover-background-color: #505050;
       --footer-color: #aaa;
 
-      /* Sidebars that are floating on the right hand side in a document */ 
+      /* Sidebars that are floating on the right hand side in a document */
       --sidebar-background-color: #474d53;
-      --sidebar-border-color: #626262; 
+      --sidebar-border-color: #626262;
       --sidebar-title-background-color: #283d44;
 
-      /* Refer to menu items in text (looks like a button) */ 
-      --menu-background-color: #515355; 
-      --menu-border-color: #6d6d6d; 
+      /* Refer to menu items in text (looks like a button) */
+      --menu-background-color: #515355;
+      --menu-border-color: #6d6d6d;
 
       /* Dropdown menus */
       --dropdown-border-color: #595959;
@@ -698,7 +698,7 @@ footer {
   }
 }
 
-/* Tabs inline in markdown */ 
+/* Tabs inline in markdown */
 
 .sd-tab-set > input:checked + label {
   color: var(--tab-color);
@@ -1311,7 +1311,7 @@ p + .classref-constant {
   width: 100%;
 }
 
-/* Dropdown menus */ 
+/* Dropdown menus */
 
 .sd-card {
   border: 1.5px solid var(--dropdown-border-color);
@@ -1419,7 +1419,7 @@ details.sd-dropdown:not([open]) > .sd-card-header {
 }
 
 /* Make search bar square and make it as wide as the sidebar */
-.wy-side-nav-search input[type="text"] { 
+.wy-side-nav-search input[type="text"] {
   background: transparent;
   /* Avoid reflowing when toggling the focus state */
   border: 0.5px solid transparent;

@@ -1,16 +1,7 @@
----
-authors:
-  - name: Brian Abbott, Micah Acinapura
-    affiliation: American Museum of Natural History
----
-
-
 # Scene Panel
-
 ![Scene Toolbar Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
 
 {menuselection}`Windows --> Scene`
-
 
 We covered the Scene Panel basics in [Orientation](getting-statrted--orientation--scene-panel). Here, we are going to go deeper into the structure of the Scene Panel and its functionality.
 
@@ -25,12 +16,13 @@ Expanding a data set will display its properties and their adjustment tools. The
 :::{dropdown} Visual Transcript
 
 | Video time | Description |
-|:-------------|:------------------|
+| ---------- | ----------- |
 | 0:00 | Open the Scene Panel. The current focus will be at the top of the list. |
 | 0:09 | Open the scene hierarchy by clicking on one of the options. |
 | 0:15 | Search for data sets using the search bar. |
 | 0:21 | Turn on the data set by clicking the checkbox next to its name. |
 | 0:25 | Change the properties of a data set by clicking on its name to open its submenu. Under Renderable, change the color and size, and enable labels. |
+
 :::
 </div>
 
@@ -100,7 +92,6 @@ Many of these data sets are observationally based---so they are centered on the 
 
 
 ## Quick Access Menu
-
 :::{figure} scene_panel_context_menu.png
 :align: right
 :width: 100%
@@ -119,11 +110,9 @@ At the bottom, there is a {menuselection}`Delete` button that can be used to rem
 ## Asset Settings
 The Scene Panel has a hierarchial structure, expanding deeper and deeper depending on how many nested data sets you have. Under each data set, there is a hierarchical list of settings. At its most basic, each data set will have three settings tabbed subsections:
 
-- **Renderable**: where all of the settings for the data set's [renderable](/reference/asset-components/Renderable/index) can be changed---the look of the data set.
-
-- **Transform**: settings related to the position and size of the object. Two common subsections under this are: `Scale`, where you can scale the data up or down spatially, and `Translation`, where you can move the data set spatially in x, y, z.
-
-- **Info**: where you find information about the asset.
+  - **Renderable**: where all of the settings for the data set's [renderable](/reference/asset-components/Renderable/index) can be changed---the look of the data set.
+  - **Transform**: settings related to the position and size of the object. Two common subsections under this are: `Scale`, where you can scale the data up or down spatially, and `Translation`, where you can move the data set spatially in x, y, z.
+  - **Info**: where you find information about the asset.
 
 :::{figure} scene_panel_open_clusters.png
 :align: center
@@ -223,7 +212,7 @@ The Size is the most important slider here, but it is also exponential, so it ca
 :::{warning}
 Some data sets, for example [](/content/milky-way/stars/star-labels/index), [](/content/universe/nearby-surveys/galaxy-group-labels/index), [](/content/universe/nearby-surveys/voids/index), or [](/content/universe/deep-sky-surveys/supercluster-labels/index), only have labels.
 
-When you look at their settings in the Scene Panel, you will still see the Sizing setting. _This will not change the label size_. You still must change the label size under {menuselection}`... --> Renderable --> Labels --> Size`.
+When you look at their settings in the Scene Panel, you will still see the Sizing setting. *This will not change the label size*. You still must change the label size under {menuselection}`... --> Renderable --> Labels --> Size`.
 :::
 
 
@@ -233,8 +222,6 @@ We cannot delineate every setting for each [renderable](/reference/renderable-ov
 
 
 ### Stars: Magnitude Exponent
-
-
 ::::::{grid}
 :::::{grid-item}
 
@@ -259,7 +246,6 @@ More: [](#space_renderable_stars)
 
 
 ### Planets: Layers
-
 ::::::{grid}
 :::::{grid-item}
 
@@ -286,7 +272,6 @@ More: [](#globebrowsing_renderable_globe)
 
 
 ### Lines and Wire-frame Objects: Opacity
-
 ::::::{grid}
 :::::{grid-item}
 
