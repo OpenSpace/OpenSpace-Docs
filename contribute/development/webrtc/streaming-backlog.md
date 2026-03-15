@@ -9,7 +9,7 @@ These are the most important files that are new for this thesis in the frontend 
   - `src/utils/WebRTCStreaming.jsx`
     This file takes care of all WebRTC related functionality within the GUI.
   - `src/views/StreamingGui.jsx`
-    This is the GUI the streaming viewer should use, and is accessed by the _/streaming_ route in the URL as defined in _App.jsx_. Some new/modified components are used in the GUI: `NavigationLayer`, `StreamingBottomBar`, `StreamedVideo`, and `FlightSettings`.
+    This is the GUI the streaming viewer should use, and is accessed by the `/streaming` route in the URL as defined in `App.jsx`. Some new/modified components are used in the GUI: `NavigationLayer`, `StreamingBottomBar`, `StreamedVideo`, and `FlightSettings`.
   - `src/components/NavigationLayer`
     This component is the same as the "Control Area" div in the `FlightControlPanel` component, but is spanned over the entire screen.
   - `src/views/HostGui.jsx`
@@ -20,7 +20,7 @@ These are the most important files that are new for this thesis in the frontend 
 ## OpenSpace Application
 These are the most important files that are new for this thesis in the OpenSpace repo.
   - `gstreamerWebRTC.h`
-    This file contains all necessary functions needed for the GStreamer functionality. As is, a few of these functions are called in the _main.cpp_ OpenSpace file as part of the SGCT/render engine callbacks. All code in _main.cpp_ that we've added have the `#if SGCT_HAS_GSTREAMER `wrapper around it, so it should be easy to find.
+    This file contains all necessary functions needed for the GStreamer functionality. As is, a few of these functions are called in the `main.cpp` OpenSpace file as part of the SGCT/render engine callbacks. All code in `main.cpp` that we've added have the `#if SGCT_HAS_GSTREAMER` wrapper around it, so it should be easy to find.
   - `remote_gstreamer_output.json`
     This config file must be used in order for the streaming to work properly. It contains two windows, one for the host to use as normal, and one to be streamed (basically one with and one without the GUI rendered on top).
 
@@ -31,34 +31,34 @@ The linking of GStreamer libraries and copying of dll's to the .exe folder is do
 
 The GStreamer folder with all its code and files is in: `apps/OpenSpace/ext/sgct/ext/gstreamer`
 
-Errors regarding GStreamer do not always show up in the general CMD-window running OpenSpace. Run the OpenSpace.exe with` –gst-debug-level=3` (You can go to level 5 but that is like a scene from The Matrix, dodge this) to get better debug messages. (i.e `.\OpenSpace.exe –gst-debug-level=3`)
+Errors regarding GStreamer do not always show up in the general CMD-window running OpenSpace. Run the OpenSpace.exe with `–gst-debug-level=3` (You can go to level 5 but that is like a scene from The Matrix, dodge this) to get better debug messages. (i.e `.\OpenSpace.exe –gst-debug-level=3`)
 
 When adding/removing plugin dll's to GStreamer, they often have dependent dll's that have to be dealt with as well. We used the `dumpbin /dependents plugin.dll` command using Developer Command Prompt for VS to list these.
 
 ### GStreamer Pipeline
 The proposed GStreamer pipeline looks like this, and can be found in `gstreamerWebRTC.h`. The documentation for each element is linked to the GStreamer web page below:
   - [appsrc](https://gstreamer.freedesktop.org/documentation/app/appsrc.html)
-    ```
+    ```text
     stream-type=0 do-timestamp=1
     format=GST_FORMAT_TIME is-live=1 name=source
     caps=\"video/x-raw(memory:GLMemory), width=", pWidth, ",height=", pHeight, framerate=50/1, format=(string)RGBA, texture-target=(string)2D
     ```
   - [glvideoflip](https://gstreamer.freedesktop.org/documentation/opengl/glvideoflip.html?gi-language=c#glvideoflip-page)
-    ```
+    ```text
     method=vertical-flip
     ```
   - [glcolorconvert](https://gstreamer.freedesktop.org/documentation/opengl/glcolorconvert.html?gi-language=c#glcolorconvert-page)
   - [gldownload](https://gstreamer.freedesktop.org/documentation/opengl/gldownload.html#gldownload-page)
   - [nvh264enc](https://gstreamer.freedesktop.org/documentation/nvcodec/nvh264enc.html?gi-language=c#nvh264enc-page)
-    ```
+    ```text
     gop-size=-1 qp-const=5 preset=low-latency-hq rc-mode=cbr bitrate=6000
     ```
   - [rtph264pay](https://gstreamer.freedesktop.org/documentation/rtp/rtph264pay.html?gi-language=c#rtph264pay-page)
-    ```
+    ```text
     application/x-rtp, framerate=50/1, profile=main, media=video, encoding-name=H264, payload=96
     ```
   - [webrtcbin](https://gstreamer.freedesktop.org/documentation/webrtc/index.html#webrtcbin-page)
-    ```
+    ```text
     name=sendrecv
     ```
 

@@ -1,5 +1,5 @@
 # Touch Interface
-The touch module provides support for a touch-screen interface that uses the TUIO framework (https://www.tuio.org/), which is a common protocol/API for multitouch devices.
+The touch module provides support for a touch-screen interface that uses the TUIO framework (<https://www.tuio.org/>), which is a common protocol/API for multitouch devices.
 
 ## INSTALL
 Three main things are needed:
@@ -24,12 +24,12 @@ del Activate.vbs
 ## USAGE
 ### Gesture Legend
 | Gesture | Description |
-|---------|-------------|
-| 1 finger move | move the camera up/down or left/right along the 2D surface of an orbital shell around the focus node|
-| 2 finger rotate | rotate the camera clockwise or counter-clockwise while looking at focus node. This is done by pressing and holding one finger, then dragging the other finger around that point|
-| 2 finger pinch/expand | zooms the camera in or out with respect to the focus node|
-| 3 finger move | pan the camera around, away from the focus node (disabled by default; needs to be enabled in F3 menu in order to use)|
-| 1 finger double-tap (tap same spot twice within 0.5 seconds) |<ul><li>If tap is located on an object, it will be set as the camera's new focus node</li><li>If tap is in empty space, the camera will do a quick zoom-in action</li><li>If tap is in the lower-right corner of the screen, the camera will do a quick zoom-out action</li></ul>|
+| ------- | ----------- |
+| 1 finger move | move the camera up/down or left/right along the 2D surface of an orbital shell around the focus node |
+| 2 finger rotate | rotate the camera clockwise or counter-clockwise while looking at focus node. This is done by pressing and holding one finger, then dragging the other finger around that point |
+| 2 finger pinch/expand | zooms the camera in or out with respect to the focus node |
+| 3 finger move | pan the camera around, away from the focus node (disabled by default; needs to be enabled in F3 menu in order to use) |
+| 1 finger double-tap (tap same spot twice within 0.5 seconds) | <ul><li>If tap is located on an object, it will be set as the camera's new focus node</li><li>If tap is in empty space, the camera will do a quick zoom-in action</li><li>If tap is in the lower-right corner of the screen, the camera will do a quick zoom-out action</li></ul> |
 
 There are two main modes of touch interface control: Normal and Direct-Touch. Normal mode operates as described above, but Direct-Touch mode activates when the camera is brought close to the surface of the focus node object. In this mode, the gesture control is similar, but the movement or rotation of the planet is directly proportional to the actual movement of the finger, as if there was a direct connection between the fingertip and planet's surface. Double-tap does not work in direct-touch mode. Zooming out away from the planet will cause a switch back to normal touch mode.
 

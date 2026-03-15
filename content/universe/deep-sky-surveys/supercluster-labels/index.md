@@ -1,21 +1,11 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Supercluster Labels
-
 {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Supercluster Labels`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
-Galaxy clusters, like the nearby [Virgo Cluster](https://en.wikipedia.org/wiki/Virgo_Cluster), form into larger structures called _superclusters_. Many galaxy clusters can compose one supercluster. In this data set, we provide labels for the locations of these superclusters.
+Galaxy clusters, like the nearby [Virgo Cluster](https://en.wikipedia.org/wiki/Virgo_Cluster), form into larger structures called *superclusters*. Many galaxy clusters can compose one supercluster. In this data set, we provide labels for the locations of these superclusters.
 
 
 :::{figure} scl_nearby.png
@@ -32,12 +22,11 @@ The Supercluster Labels are intended to be viewed with the galaxy surveys ([Tull
 
 
 ### What Is a Supercluster?
-
 Superclusters are among the largest structural elements in the universe. They are composed of galaxy clusters, and the substructures around them. Astronomers estimate there are around 10 million superclusters in the {term}`observable universe`. The Milky Way belongs to the [Virgo Supercluster](https://en.wikipedia.org/wiki/Virgo_Supercluster), which is centered around the Virgo Cluster, and the Virgo Supercluster is, in turn, part of the [Laniakea Supercluster](https://en.wikipedia.org/wiki/Laniakea_Supercluster) which is part of the larger [Pisces–Cetus Supercluster Complex](https://en.wikipedia.org/wiki/Pisces%E2%80%93Cetus_Supercluster_Complex).
 
 Superclusters are typically not gravitationally bound to each other. They can also form higher-order structures like [walls](https://en.wikipedia.org/wiki/Galaxy_filament#Galaxy_walls) and [filaments](https://en.wikipedia.org/wiki/Galaxy_filament). These super structures are separated by vast [voids](../../nearby-surveys/voids/index) and create the weblike structure of the cosmos.
 
-Galaxy clusters are on the order of millions of light years across---the Virgo Cluster is about 15 million light years in diameter. Superclusters are on the order of tens to hundreds of millions of light years across---the Virgo Supercluster is 110 million light years across, while the Laniakea Supercluster is 520 million light years across. Walls and filaments can be upwards of billions of light years across---the Pisces–Cetus Supercluster Complex is believed to be about 1 billion light years in its longest dimension. 
+Galaxy clusters are on the order of millions of light years across---the Virgo Cluster is about 15 million light years in diameter. Superclusters are on the order of tens to hundreds of millions of light years across---the Virgo Supercluster is 110 million light years across, while the Laniakea Supercluster is 520 million light years across. Walls and filaments can be upwards of billions of light years across---the Pisces–Cetus Supercluster Complex is believed to be about 1 billion light years in its longest dimension.
 
 
 :::{figure} scl+galaxysurveys.png
@@ -60,7 +49,6 @@ Supercluster Labels with the multicolored Tully Galaxies at center and the Abell
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -85,7 +73,6 @@ Supercluster Labels with the multicolored Tully Galaxies at center and the Abell
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 33 supercluster labels
 :assetfile: data/assets/scene/digitaluniverse/superclusters.asset
@@ -93,7 +80,7 @@ Supercluster Labels with the multicolored Tully Galaxies at center and the Abell
 :preparedby: Brian Abbott (AMNH)
 :sourceversion: 1.03
 :license: amnh
-:reference: Optical and X-Ray Clusters as Tracers of the Supercluster-Void Network - I. Superclusters of Abell and X-Ray Clusters=https://doi.org/10.1086/323707
+:reference: Optical and X-Ray Clusters as Tracers of the Supercluster-Void Network - I. Superclusters of Abell and X-Ray Clusters=<https://doi.org/10.1086/323707>
 :::
 
 :::::

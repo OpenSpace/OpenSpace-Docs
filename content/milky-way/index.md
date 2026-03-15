@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Milky Way
-
 {menuselection}`Scene --> Milky Way`
-
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
@@ -65,9 +56,9 @@ The local stars that make up the night sky form a basis for these data sets, and
 
 
 :::{note}
-The term _Milky Way_ takes on two meanings in astronomy. Originally, it referred to that band of light we see in the night sky. Later, as we understood the nature of the universe, it referred to the galaxy that we live in. 
+The term *Milky Way* takes on two meanings in astronomy. Originally, it referred to that band of light we see in the night sky. Later, as we understood the nature of the universe, it referred to the galaxy that we live in.
 
-Here, we will refer to that band of light as the _Milky Way_, and the 3-D galaxy as the _Milky Way Galaxy_, or just _Galaxy_ (in uppercase).
+Here, we will refer to that band of light as the *Milky Way*, and the 3-D galaxy as the *Milky Way Galaxy*, or just *Galaxy* (in uppercase).
 :::
 
 

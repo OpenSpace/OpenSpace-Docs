@@ -1,15 +1,4 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Reference
-
-
-
-
 
 :::{toctree}
 :maxdepth: 1

@@ -61,12 +61,12 @@ Similarly, `qt6-base-dev` is not available but can be installed through other me
 
 You can install gcc-13 using the following commands in case it is not supported:
 The final commands configure Ubuntu's "update-alternatives", which allows a user to select among multiple installations of gcc:
-```
+```bash
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get autoclean && sudo apt-get autoremove
 ```
 reboot in case there are kernel changes
 
-```
+```bash
 sudo apt-get install build-essential software-properties-common
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
@@ -76,7 +76,7 @@ sudo update-alternatives --config gcc
 ```
 
 If you don't want to install GCC 13 globally, you can overwrite the CMake options instead:
-```
+```text
 CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++-13
 CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-13
 ```
@@ -86,14 +86,14 @@ If you do want to change the defaults you can find the information for it [here]
 
 ## Troubleshooting
 Make sure that you are using the correct version of gcc/g++
- - Double check `CMAKE_CXX_COMPILER` and `/usr/bin/c++ --version` to be sure. It should be at least 13.0
+  - Double check `CMAKE_CXX_COMPILER` and `/usr/bin/c++ --version` to be sure. It should be at least 13.0
 
 Error: libstdc++.so.6: could not read symbols: Missing DSO from command line
- - Try using g++ instead of gcc.
+  - Try using g++ instead of gcc.
 
 Error: GLSL 3.00 is not supported. Supported versions are: 1.10, 1.20, 1.30, 1.00 ES, and 3.00 ES
- - Enter the following line in the terminal before running, or add this to `~/.bashrc` or `~/.profile`:
+  - Enter the following line in the terminal before running, or add this to `~/.bashrc` or `~/.profile`:
  `export MESA_GL_VERSION_OVERRIDE=4.3`
 
 Set a number format on your system that uses the dot as decimal separator. Otherwise you might see errors like this from OpenGL complaining about invalid numbers, e.g. `error: syntax error, unexpected INTCONSTANT, expecting IDENTIFIER or TYPE_IDENTIFIER or NEW_IDENTIFIER`.
- - Before launching, set the system locale to `en_US` or similar: `export LC_NUMERIC="en_US.UTF-8"`
+  - Before launching, set the system locale to `en_US` or similar: `export LC_NUMERIC="en_US.UTF-8"`

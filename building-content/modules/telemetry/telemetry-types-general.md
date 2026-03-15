@@ -1,8 +1,3 @@
----
-authors:
-  - name: OpenSpace Team
----
-
 # General Telemetry Types
 The general telemetry types in the [Telemetry Module](index.md) monitor the general state of OpenSpace and send that information to the OSC receiver. There are several telemetry types that monitor different aspects of OpenSpace. Each type is explained in more detail in the sections below.
 
@@ -62,7 +57,7 @@ A message from this telemetry type can, for example, look like this:
 In the example above, the simulation time in OpenSpace progresses `30.0` minutes per real-life second, and the current time is `787312539.37412` seconds past the J2000 epoch.
 
 ## Angle Calculation Mode
-For some telemetry types, such as the [Customized Nodes Information](#customized-nodes-information) and the specialized [Planets Sonification](./telemetry-types-specialized.md#planets-sonification), part of the information that is sent are two angles that describe where the object is placed on the screen, a _horizontal_ angle and an optional _elevation_ angle. More information about these angles and their calculation can be found in [Angle Calculations](./angle-information.md). This telemetry type monitors which method has been used to calculate those angles. The OSC messages from this telemetry type go under the OSC label `/Mode` and contain two items:
+For some telemetry types, such as the [Customized Nodes Information](#customized-nodes-information) and the specialized [Planets Sonification](./telemetry-types-specialized.md#planets-sonification), part of the information that is sent are two angles that describe where the object is placed on the screen, a *horizontal* angle and an optional *elevation* angle. More information about these angles and their calculation can be found in [Angle Calculations](./angle-information.md). This telemetry type monitors which method has been used to calculate those angles. The OSC messages from this telemetry type go under the OSC label `/Mode` and contain two items:
 
   1. The first item is an integer value that specifies what method was used to calculate the angles. If the value is `0`, then the method used was the [Horizontal](./angle-information.md#horizontal) angle calculation mode. In the case where the value is `1`, then the [Circular](./angle-information.md#circular) angle calculation mode was used.
   1. The second value is an integer value of either `0` or `1` that determines if the additional elevation angle is used or not. If the value is `1`, the additional elevation angle is calculated. Otherwise, if `0`, the elevation angle is always set to `0.0`.
@@ -75,7 +70,7 @@ A message from this telemetry type can, for example, look like this:
 In the example above, the used angle calculation mode is Horizontal and the additional elevation angle is calculated.
 
 ## Customized Nodes Information
-This telemetry type requires the user to specify with an asset or script which nodes are of interest to monitor, which is what makes it customizable. There is an example file _nodes.asset_ located in _data\assets\examples\sonification_ that adds the ISS and Tiangong to the list of nodes to monitor with this telemetry type. The OSC messages from this telemetry type are split up for each of the nodes that have been added. Using the mentioned example file, the OSC messages would be sent under the OSC labels `/ISS` and `/Tiangong` respectively (i.e. the identifiers of the added nodes). The messages contain four items:
+This telemetry type requires the user to specify with an asset or script which nodes are of interest to monitor, which is what makes it customizable. There is an example file `nodes.asset` located in `data\assets\examples\sonification` that adds the ISS and Tiangong to the list of nodes to monitor with this telemetry type. The OSC messages from this telemetry type are split up for each of the nodes that have been added. Using the mentioned example file, the OSC messages would be sent under the OSC labels `/ISS` and `/Tiangong` respectively (i.e. the identifiers of the added nodes). The messages contain four items:
 
   1. The distance from the camera to the node, in the distance unit specified in the last item.
   1. The horizontal angle to the node, in radians, with the current angle calculation mode taken into account. For more information, see [Angle Calculations](./angle-information.md).

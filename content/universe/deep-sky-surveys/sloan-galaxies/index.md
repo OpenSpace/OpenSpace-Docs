@@ -24,7 +24,7 @@ Sloan DSS operates many investigations on all manner of objects. Here, we focus 
 :align: left
 :alt: A face-on view of the Sloan DSS Galaxies slices of galaxies.
 
-A face-on view of the Sloan DSS Galaxies. Similar to the 2dF Galaxies, Sloan observed in two general directions in the sky, and we see the resulting slices here. Sloan's slices are wider, covering more of the sky, but they are also thicker, particularly the one on the right side in this image. 
+A face-on view of the Sloan DSS Galaxies. Similar to the 2dF Galaxies, Sloan observed in two general directions in the sky, and we see the resulting slices here. Sloan's slices are wider, covering more of the sky, but they are also thicker, particularly the one on the right side in this image.
 :::
 
 
@@ -33,19 +33,17 @@ A face-on view of the Sloan DSS Galaxies. Similar to the 2dF Galaxies, Sloan obs
 :align: left
 :alt: An edge-on view of the Sloan DSS Galaxies that demonstrates the extent of the data slices and the those areas not yet observed.
 
-An edge-on view of the Sloan DSS Galaxies, revealing the wide swaths of data and the more concentrated trio of slices on the left.  
+An edge-on view of the Sloan DSS Galaxies, revealing the wide swaths of data and the more concentrated trio of slices on the left.
 :::
 
 
 ### The Project
-
 The SDSS telescope is located at Apache Point Observatory in south-central New Mexico (US) and began operating in June 1998. It is 2.5 meters (8.2 feet) in diameter and was designed specifically for this mapping project. The telescope takes images of the sky as well as spectra for individual objects.
 
 The spectral range for the SDSS is 380 to 920 nanometers, stretching from the blue end of the visible spectrum to the red end and barely into the infrared.
 
 
 ### The Distribution
-
 The SDSS galaxies are similar to the 2dF data in that they form triangular wedges, revealing those parts of the sky observed by the telescope. If the entire sky were covered, you would see a spherical distribution of galaxies surrounding the Milky Way. With only 35% of the entire sky observed, we see plenty of empty space---areas that have not been observed by SDSS.
 
 These galaxies extend beyond the 2dF survey to distances that exceed 5 billion light years. However, the weblike structure of clusters, filaments, and voids seems to fade by about 2 billion light years. Beyond this distance, the {term}`completeness` of the survey drops so that only the intrinsically bright galaxies are visible.
@@ -65,7 +63,6 @@ The Sloan DSS Galaxies from the outside. The large-scale structure we are used t
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -90,7 +87,6 @@ The Sloan DSS Galaxies from the outside. The large-scale structure we are used t
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 2,862,767 galaxies
 :assetfile: data/assets/scene/digitaluniverse/sdss.asset
@@ -98,7 +94,7 @@ The Sloan DSS Galaxies from the outside. The large-scale structure we are used t
 :preparedby: Brian Abbott, Zack Reeves (AMNH), Eric Gawiser (Rutgers)
 :sourceversion: 12.08
 :license: amnh
-:reference: The Eighteenth Data Release of the Sloan Digital Sky Surveys - Targeting and First Spectra from SDSS-V=https://iopscience.iop.org/article/10.3847/1538-4365/acda98
+:reference: The Eighteenth Data Release of the Sloan Digital Sky Surveys - Targeting and First Spectra from SDSS-V=<https://iopscience.iop.org/article/10.3847/1538-4365/acda98>
 :::
 
 :::::

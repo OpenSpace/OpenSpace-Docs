@@ -25,7 +25,7 @@ Navigation using an Xbox controller in OpenSpace is defined in the Xbox asset fi
 :::{table}
 :align: center
 | Button or joystick | Description |
-|--------------------|-------------|
+| ------------------ | ----------- |
 | A | Toggle rotation friction |
 | B | Toggle zoom friction |
 | Y | Toggle roll friction |
@@ -46,6 +46,7 @@ Navigation using an Xbox controller in OpenSpace is defined in the Xbox asset fi
 | Right joystick Press | Refocus the camera, look at the currently focused object |
 | Select | Reset time to yesterday |
 | Start | Pause time |
+
 :::
 
 
@@ -72,7 +73,7 @@ Navigation using a PS4 controller in OpenSpace is defined in the PS4 asset file 
 :::{table}
 :align: center
 | Button or joystick | Description |
-|--------------------|-------------|
+| ------------------ | ----------- |
 | Cross | Toggle rotation friction |
 | Circle | Toggle zoom friction |
 | Triangle | Toggle roll friction |
@@ -95,6 +96,7 @@ Navigation using a PS4 controller in OpenSpace is defined in the PS4 asset file 
 | Options | Reset time to yesterday |
 | Touch Pad | Pause time |
 | PS | NA |
+
 :::
 
 
@@ -111,15 +113,16 @@ The table below gives an overview of what each button or joystick on the SpaceMo
 :::{table}
 :align: center
 | Button or joystick | Description |
-|--------------------|-------------|
-| Push left/right    | Orbit around focus left/right |
-| Push back/forth    | Orbit around focus up/down |
-| Push up/down       | Zoom in/out |
-| Twist left/right   | Pan camera left/right |
-| Tilt left/right    | Roll camera |
-| Tilt up/down       | Pan camera up/down |
-| Left button        | Switch to local roll mode (Default) |
-| Right button       | Switch to global roll mode |
+| ------------------ | ----------- |
+| Push left/right | Orbit around focus left/right |
+| Push back/forth | Orbit around focus up/down |
+| Push up/down | Zoom in/out |
+| Twist left/right | Pan camera left/right |
+| Tilt left/right | Roll camera |
+| Tilt up/down | Pan camera up/down |
+| Left button | Switch to local roll mode (Default) |
+| Right button | Switch to global roll mode |
+
 :::
 
 The Left and Right buttons switch the roll mode to local or global respectively. The difference between these two is that the local roll mode rolls the camera around the center of the screen, while the global roll mode rolls the camera around the current focus.

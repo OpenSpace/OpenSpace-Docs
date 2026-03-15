@@ -1,16 +1,18 @@
+<!-- markdownlint-disable -->
+
 {% macro member_table(input_members, parent_name="", link_description=true) -%}
 {% if input_members|length > 0 %}
 :::{list-table}
 :width: 100%
 :widths: 3 16 1 4 1
 :header-rows: 1
-*   - Name
+  - - Name
     - Documentation
     - Type
     - Description
     - Optional
 {% for member in input_members %}
-*   - `{{ member.name }}`
+  - - `{{ member.name }}`
     - {{ member.documentation }}
     - `{{ member.type }}`
     {% if member.reference %}

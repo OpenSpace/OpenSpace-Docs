@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Missions
-
 {menuselection}`Scene --> Solar System --> Missions`
-
 
 :::{warning}
 This section is incomplete---nothing to see here, yet.
@@ -22,7 +13,7 @@ This section is incomplete---nothing to see here, yet.
 :::{grid-item-card} [](/content/solar-system/missions/jwst/index)
 [![Pluto](/content/solar-system/missions/jwst/jwst_icon.png)](/content/solar-system/missions/jwst/index)
 :::
- 
+
 ::::
 
 

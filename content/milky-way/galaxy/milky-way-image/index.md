@@ -1,21 +1,12 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Milky Way Image
-
 {menuselection}`Scene --> Milky Way --> Galaxy --> Milky Way Image`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
 
-The Milky Way Image provides a basis, albeit representational and two-dimensional, of Galactic structure that's typical of the Milky Way. It is an altered image of the galaxy [NGC 1232](https://en.wikipedia.org/wiki/NGC_1232), seen in the constellation Eridanus. 
+The Milky Way Image provides a basis, albeit representational and two-dimensional, of Galactic structure that's typical of the Milky Way. It is an altered image of the galaxy [NGC 1232](https://en.wikipedia.org/wiki/NGC_1232), seen in the constellation Eridanus.
 
 
 :::{figure} milky_way_image.png
@@ -42,7 +33,6 @@ The Milky Way Image shown with the [Milky Way Volume](../milky-way-volume/index)
 
 
 ### Image Modifications
-
 To prepare this image, some alterations were necessary. We "painted out" some areas, in particular an area where it's believed a companion galaxy was interacting with one of the outer spiral arms. Some work was also done on enhancing the image to highlight structure. And, of course, the foreground stars within the Milky Way were removed.
 :::::
 
@@ -50,7 +40,6 @@ To prepare this image, some alterations were necessary. We "painted out" some ar
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -75,7 +64,6 @@ To prepare this image, some alterations were necessary. We "painted out" some ar
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 1 image
 :assetfile: data/assets/scene/digitaluniverse/milkyway.asset

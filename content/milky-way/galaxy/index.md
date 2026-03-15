@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Galaxy
-
 {menuselection}`Scene --> Milky Way --> Galaxy`
-
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2

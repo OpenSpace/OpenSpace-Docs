@@ -82,15 +82,15 @@ Following is a table that summarizes the updated property names/URI:s, which can
 | `UseColorMap` | `Coloring.ColorMapping.Enabled` | Boolean | |
 | `ColorOption` | `Coloring.ColorMapping.Parameter` | Integer | |
 | `OptionColorRange` | `Coloring.ColorMapping.ValueRange` | Vec2 | |
-| `SetRangeFromData` | `Coloring.ColorMapping.SetRangeFromData` | `nil` (Trigger Property)  | |
-| `UseLinearFiltering` | (Removed) |  | |
+| `SetRangeFromData` | `Coloring.ColorMapping.SetRangeFromData` | `nil` (Trigger Property) | |
+| `UseLinearFiltering` | (Removed) | | |
 | `SizeOption` | `Sizing.SizeMapping.Parameter` | Integer | |
 | `FadeInDistances` | `Fading.FadeInDistances` | Vec2 | Should now be set based on the origin of the dataset, rather than the world-space origin |
 | `DisableFadeIn` | `Fading.Enabled` | Boolean | Inverted compared to the prevoius value |
-| `EnablePixelSizeControl` | `Sizing.EnableMaxSizeControl` | Boolean |  |
+| `EnablePixelSizeControl` | `Sizing.EnableMaxSizeControl` | Boolean | |
 | `BillboardMinMaxSize` | `Sizing.MaxSize` | Float | No longer a pixel value, so the value has to be updated |
-| `CorrectionSizeEndDistance` | (Removed) |  | |
-| `CorrectionSizeFactor` | (Removed) |  | |
+| `CorrectionSizeEndDistance` | (Removed) | | |
+| `CorrectionSizeFactor` | (Removed) | | |
 | `ScaleFactor` | `Sizing.ScaleExponent` | Float | Can be computed based on the previous value, as described in the [section above](#compute-scaleexponent-from-scalefactor) |
 
 Note that the full property URI would be of the form
@@ -131,21 +131,21 @@ return {Anchor="Earth",Position={11701166.502990872,3397820.0813846793,19951812.
 ```
 
 After step 1:
-```
+```lua
 {Anchor="Earth",Position={11701166.502990872,3397820.0813846793,19951812.217589088},Up={-0.8195835910478171,-0.23799315924271663,0.5211928562814687}}
 ```
 
 After step 2:
-```
+```lua
 {Anchor:"Earth",Position:{11701166.502990872,3397820.0813846793,19951812.217589088},Up:{-0.8195835910478171,-0.23799315924271663,0.5211928562814687}}
 ```
 
 After step 3:
-```
+```lua
 {"anchor":"Earth","position":{11701166.502990872,3397820.0813846793,19951812.217589088},"up":{-0.8195835910478171,-0.23799315924271663,0.5211928562814687}}
 ```
 
 After step 4:
-```
+```lua
 {"anchor":"Earth","position":{"x":11701166.502990872,"y":3397820.0813846793,"z":19951812.217589088},"up":{"x":-0.8195835910478171,"y":-0.23799315924271663,"z":0.5211928562814687}}
 ```

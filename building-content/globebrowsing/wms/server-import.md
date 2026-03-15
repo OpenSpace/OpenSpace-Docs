@@ -8,13 +8,13 @@ These instructions are specific to a Linux server.
 ## Modify AHTSE.conf File
 The AHTSE configuration file resides in the directory that contains the Apache web server config files (multiple .conf files), which may be `/etc/apache2/` or `/etc/httpd/conf.d/`, for example. Create the file **AHTSE.conf** here if it does not already exist.
 This text file has the header:
-```
+```text
 <Location "/server-info">
   SetHandler server-info
 </Location>
 ```
 and is followed by a 5-line block for every WMS dataset to be served, which has the following format:
-```
+```text
 <Directory /path/to/directory_tree/containing/wms_files>
   Options -Indexes -FollowSymLinks -ExecCGI
   MRF_RegExp .*/tile/.*
@@ -27,7 +27,7 @@ This directory exists in Apache's **DocumentRoot** location, where it stores web
 
 The other directory that needs to be modified from the above example is the **MRF_ConfigurationFile** path. Like the wms file & directory structure described above, this path contains a directory tree that matches that of the WMS datasets in the data directory. Also like the wms directories, there is usually only a single .webconf file exists for each dataset. This file contains information about the MRF file, which is needed by the **mod_mrf** module.
 Both the .wms and .webconf files are discussed in more detail below. Here is an example entry in the Utah server:
-```
+```text
 <Directory /srv/www/vhosts/openspace/Mars/MolaElevation>
   Options -Indexes -FollowSymLinks -ExecCGI
   MRF_RegExp .*/tile/.*
@@ -37,9 +37,9 @@ Both the .wms and .webconf files are discussed in more detail below. Here is an 
 For clarification, `/srv/www/vhosts/openspace` and `/home/openspace/AHTSE/conf` have the same sub-directory structure, with a single file for each WMS data set. The filenames are the same, but with a `.wms` extension in the former, and a `.webconf` extension in the latter. There is also a third location with this sub-directory structure, which is where the actual data is stored. The reason for the separate `.wms` and `.webconf` directories is to keep configuration and data files out of the Apache **DocumentRoot** directory.
 
 
-## Add a _.webconf_ File for the Data Set
+## Add a `.webconf` File for the Data Set
 A webconf file is required for, and provides a basic summary of, each MRF data set. The file contains 6 lines that provide the total raster size, overview size, path to data & index files, and regular expression syntax. The necessary information can be found by using the **gdalinfo** software tool (usage : `gdalinfo <path to your mrf file>`). [This readme](https://github.com/lucianpls/mod_mrf/blob/master/README.md) provides more detailed information about this format, which follows the outline below:
-```
+```text
 RegExp .*/tile/.*
 Size <total size of raster>
 PageSize <page size>
@@ -62,9 +62,9 @@ Line 5: Path to index (.idx) file
 Line 6: SkippedLevels can be used to serve the top level (lowest resolution) of the MRF data set. This can be used for some clients which might expect two blocks at the top level.
 
 
-## Add a _.wms_ File for the Data Set
+## Add a `.wms` File for the Data Set
 A single .wms file contains detailed information about the MRF data set. The following is the **MolaElevation.wms** file from the Mars data set:
-```
+```xml
 <GDAL_WMS>
   <Service name="TMS">
     <ServerUrl>http://openspace.sci.utah.edu/Mars/MolaElevation/tile/${z}/${y}/${x}</ServerUrl>
@@ -101,7 +101,7 @@ Next are tags for geo-locating the raster data to a globe. An upper-left and low
 
 **\<TileLevel\>** is the number of tiles or overviews in the MRF data.
 
-The **\<Projection\>** is a coordinate system projection used to geo-locate the raster data onto the globe. This is obtainable using `gdalinfo` as described above. Many coordinate system projections can be found at www.spatialreference.org. The OGC WKT or ESRI WKT formats have been verified to work here.
+The **\<Projection\>** is a coordinate system projection used to geo-locate the raster data onto the globe. This is obtainable using `gdalinfo` as described above. Many coordinate system projections can be found at <www.spatialreference.org>. The OGC WKT or ESRI WKT formats have been verified to work here.
 
 **\<BlockSize\*\>** are based on the block size for tiles/overviews.
 
@@ -121,7 +121,7 @@ If a data location does not already exist on the server, create one here. This d
 The Utah server uses `/data/AHTSE/` as its data path. To continue with the Mars MoleElevation example, this data set is located at `/data/AHTSE/Mars/MolaElevation`, and contains 3 **MolaElevation.*** files (with .mrf, .idx, .ppg extensions). The **DataFile** entry in the `/home/openspace/AHTSE/conf/Mars/MolaElevation.webconf` file is `/data/AHTSE/Mars/MolaElevation/MolaElevation.ppg`, and the **IndexFile** entry is `/data/AHTSE/Mars/MolaElevation/MolaElevation.idx`.
 
 
-## Summary of Overall File Layout ##
+## Summary of Overall File Layout
 Since the AHTSE server as described here has a very distributed layout, a summary is included here for clarification.
 
 The Apache web server runs in a standard or virtual host configuration with a specific URL request mapped to the `.wms` file in the URL's relative path (according to Apache's configuration file). On startup, Apache includes the AHTSE.conf file which maps specific locations in the web content location (matches URL) to the path of the .webconf file for that data set. This file lists links to the data path that contains the 3 MRF files for this particular data set. The MRF Apache module uses the x,y,z coordinates supplied in the URL (the format of which is defined in the `.wms` file), and accesses the raster file (`.ppg` or `.pjg`) based on the matching `.idx` file which provides pointers for specific tiles in the raster file.

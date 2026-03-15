@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Galaxy Group Labels
-
 {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Group Labels`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
@@ -17,13 +8,13 @@ authors:
 
 As we outlined in [Local Group](../local-group/index), a galaxy group is a small number of galaxies gravitationally interacting with one another. Often, it consists of a one or a few large galaxies, like the Milky Way, and a cadre of small, satellite galaxies that orbit them.
 
-The Galaxy Groups Labels is a set of labels that identifies the nearby groups in the Tully Galaxies. 
+The Galaxy Groups Labels is a set of labels that identifies the nearby groups in the Tully Galaxies.
 
 :::{figure} galaxy_groups_nearby.png
 :align: left
-:alt: 
+:alt:
 
-The nearby galaxy groups around the Milky Way, which lies at the center of the grid. Our home galaxy group is called the Local Group, seen labeled here. 
+The nearby galaxy groups around the Milky Way, which lies at the center of the grid. Our home galaxy group is called the Local Group, seen labeled here.
 :::
 
 
@@ -51,7 +42,6 @@ Galaxy groups around the Local Group showing a concentration of groups that incl
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -76,7 +66,6 @@ Galaxy groups around the Local Group showing a concentration of groups that incl
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 62 galaxy group labels
 :assetfile: data/assets/scene/digitaluniverse/galaxy_groups.asset

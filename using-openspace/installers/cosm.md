@@ -1,7 +1,6 @@
 # E&S Site Configuration
 
 ## Installing & Running OpenSpace in a COSM/E&S Digistar Dome
-
 This document contains details for getting OpenSpace to run in a COSM / Evans & Sutherland Digistar planetarium. Each planetarium has unique features, so this document is not guaranteed to contain all of the necessary instructions to run OpenSpace.
 
 ### Typical System Overview
@@ -13,47 +12,48 @@ The following installation and configuration steps will need to be done on the D
 
 #### Install Additional Software
 Before OpenSpace can be installed, the DSHOST and DSGPs need to have a few software utilities installed. These are listed below, along with a description of what they do and why they are necessary:
-1. **C-Troll** - A Windows-only application suite that provides the ability to control the OpenSpace application in the Digistar cluster (DSHOST + DSGPs). This software can be found [here](https://github.com/c-toolbox/C-Troll).
-2. **Microsoft Visual C++ Redistributable for Visual Studio 2017** - This is not required in all cases but should be installed anyway on all computers. It can be downloaded from [here](https://www.visualstudio.com/downloads/).
+  1. **C-Troll** - A Windows-only application suite that provides the ability to control the OpenSpace application in the Digistar cluster (DSHOST + DSGPs). This software can be found [here](https://github.com/c-toolbox/C-Troll).
+  1. **Microsoft Visual C++ Redistributable for Visual Studio 2017** - This is not required in all cases but should be installed anyway on all computers. It can be downloaded from [here](https://www.visualstudio.com/downloads/).
 
 #### Configure Windows Settings
-The following configuration settings are probably already done, but should still be checked on the DSHOST _and_ all DSGPs. 
-* Each computer needs to have file and print sharing enabled
-* Each computer needs to be able to see all others in the **Network** section of the File manager
-* The default **Admin$** share is defined
+The following configuration settings are probably already done, but should still be checked on the DSHOST *and* all DSGPs.
+  - Each computer needs to have file and print sharing enabled
+  - Each computer needs to be able to see all others in the **Network** section of the File manager
+  - The default **Admin$** share is defined
 
 #### Configure Windows Firewall
 All computers in the system must have firewall rules to allow TCP incoming & outgoing traffic for the ports specified in the SGCT config file (shown below). For this system, rules were set for ports 20400-20420. Follow these steps to set firewall rules:
   1. Open **Control Panel** and select **Windows Firewall** and then **Advanced Settings**
-  2. Select "Inbound Rules" and a new dialog box will appear
-  3. Select "New Rule"
-  4. Select "Port" then click Next
-  5. Select "TCP" and type ports 20400-20420 in the ports text box, then click Next
-  6. Select "Allow the Connection", then click Next
-  7. Ensure that the rule is accepted for all profiles (all checked), then click Next
-  8. Type "OpenSpace" for a rule name and click Exit to accept this new rule
-  9. Now back in the **Advanced Settings** window for the firewall, select "Outbound Rules", and go back to step 3 above to apply the TCP rule for the same ports
+  1. Select "Inbound Rules" and a new dialog box will appear
+  1. Select "New Rule"
+  1. Select "Port" then click Next
+  1. Select "TCP" and type ports 20400-20420 in the ports text box, then click Next
+  1. Select "Allow the Connection", then click Next
+  1. Ensure that the rule is accepted for all profiles (all checked), then click Next
+  1. Type "OpenSpace" for a rule name and click Exit to accept this new rule
+  1. Now back in the **Advanced Settings** window for the firewall, select "Outbound Rules", and go back to step 3 above to apply the TCP rule for the same ports
 
 #### Generate Configuration Files for the Dome
 Digistar software contains a CreateMPCDI.exe utility that will read the configuration/calibration files and generate an .mpcdi file for the dome. The utility is located somewhere in the Digistar installation directory. A Digistar version that contains updates from June 2024 or later will contain the necessary changes that fix the projection distortion.
 Running it on the system's main (DSHOST) computer will create a file (probably called SystemConfiguration.mpcdi) for the dome.
 
 The next steps will convert the .mpcdi file into an SGCT configuration file that OpenSpace can use.
-1. Rename the .mpcdi file with a .zip extension.
-2. Extract/unzip the contents
-3. Move the .pfm files to OpenSpace/config/mesh/.
-4. Use the [OpenSpace tools server](https://tools.openspaceproject.com/)'s COSM configuration file converter to upload & convert the extracted mpcdi.xml file.
-5. In order to make this translation work from the COSM/E&S MPCDI warping, OpenSpace needs to render an FOV from which a smaller area will be extracted and warped to fit the necessary dome distortion. This means that some of what OpenSpace renders will not be used. In some dome configurations, the warping required for each projector may be extreme enough that the resulting resolution is low quality due to a small portion of the rendered result being expanded to fit the projector's output resolution. A solution for this is to increase the resolution of the content that OpenSpace renders, so that when a smaller portion of this rendered window is expanded, the result will look good. This can be done by leaving the `size` entry to be the projector's default resolution, but adding a `res` entry with x and y values that are larger than the `size` values. The `res` values should have the same aspect ratio, but scaled up to compensate for the distortion. The amount of the scaling is up to the user, but it should be proportional to how much the image is warped, because while increased scaling improves the resolution quality, it also reduces the framerate.
-6. Move the resulting mpcdi.json file to OpenSpace/config/, and rename it if desired.
+  1. Rename the .mpcdi file with a .zip extension.
+  1. Extract/unzip the contents
+  1. Move the .pfm files to OpenSpace/config/mesh/.
+  1. Use the [OpenSpace tools server](https://tools.openspaceproject.com/)'s COSM configuration file converter to upload & convert the extracted mpcdi.xml file.
+  1. In order to make this translation work from the COSM/E&S MPCDI warping, OpenSpace needs to render an FOV from which a smaller area will be extracted and warped to fit the necessary dome distortion. This means that some of what OpenSpace renders will not be used. In some dome configurations, the warping required for each projector may be extreme enough that the resulting resolution is low quality due to a small portion of the rendered result being expanded to fit the projector's output resolution. A solution for this is to increase the resolution of the content that OpenSpace renders, so that when a smaller portion of this rendered window is expanded, the result will look good. This can be done by leaving the `size` entry to be the projector's default resolution, but adding a `res` entry with x and y values that are larger than the `size` values. The `res` values should have the same aspect ratio, but scaled up to compensate for the distortion. The amount of the scaling is up to the user, but it should be proportional to how much the image is warped, because while increased scaling improves the resolution quality, it also reduces the framerate.
+  1. Move the resulting mpcdi.json file to OpenSpace/config/, and rename it if desired.
 
 ### Create a Staging Directory for the OpenSpace installation
-The staging directory will contain all of the files necessary to constitute a working OpenSpace software install for each DSGP. It is best to start with a full version of OpenSpace (minimal install _plus_ the necessary download data). This staging area can be on the Digistar DSHOST computer, or on an external drive (e.g. USB drive) that will be used to copy to the computers at the time of installation. This directory will reside in C:\OpenSpace, and should contain:
-1. The OpenSpace software folder, which might be a release version or a custom-built version.
-2. The resulting .json configuration file obtained by converting the COSM MPCDI file via the tools conversion page.
-3. C-Troll software mentioned above. A release can be used without needing to compile a version.
+The staging directory will contain all of the files necessary to constitute a working OpenSpace software install for each DSGP. It is best to start with a full version of OpenSpace (minimal install *plus* the necessary download data). This staging area can be on the Digistar DSHOST computer, or on an external drive (e.g. USB drive) that will be used to copy to the computers at the time of installation. This directory will reside in C:\OpenSpace, and should contain:
+  1. The OpenSpace software folder, which might be a release version or a custom-built version.
+  1. The resulting .json configuration file obtained by converting the COSM MPCDI file via the tools conversion page.
+  1. C-Troll software mentioned above. A release can be used without needing to compile a version.
+
 Modify the C:\OpenSpace\openspace.cfg file in the following ways:
-1. Set it to use the converted configuration file discussed in the previous section: `SGCTConfig = ${CONFIG}/<config_from_conversion_tool>.json` 
-2. Set it to bypass the launcher using this line: `BypassLauncher = true`
+  1. Set it to use the converted configuration file discussed in the previous section: `SGCTConfig = ${CONFIG}/<config_from_conversion_tool>.json`
+  1. Set it to bypass the launcher using this line: `BypassLauncher = true`
 
 ### Configure C-Troll
 The details of configuring C-Troll can be found at [its repository](https://github.com/c-toolbox/C-Troll), so only the most relevant details are provided here.

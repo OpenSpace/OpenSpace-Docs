@@ -7,7 +7,7 @@ This page covers the more advanced topics of asteroid/comet visualization. OpenS
 The existing SBDB [wiki](sbdb) covers the steps for selecting and downloading the data. Once this procedure is complete and the data has been downloaded, copy the file to **data/assets/scene/solarsystem/sssb/**, and continue the steps below.
 
 ### Create an Asset File for the Data
-Create a new .asset file in **data/assets/scene/solarsystem/sssb/** using the following template. Provide information specific to the downloaded object(s) in the <bracketed> fields:
+Create a new .asset file in **data/assets/scene/solarsystem/sssb/** using the following template. Provide information specific to the downloaded object(s) in the `<bracketed>` fields:
 
 ```lua
 local assetHelper = asset.require('util/asset_helper')

@@ -44,14 +44,15 @@ Note that depending on your operating system, `${CONFIG}` might be already evalu
 :::{note}
 The complete list of command-line parameters available for OpenSpace can be retrieved by calling OpenSpace from the commandline with the `--help` paramameter. so executing `\[directorypath\]/OpenSpace.exe --help`. These parameters override the entries in `openspace.cfg`.
 
-| Short Name | Long Name            | Explanation    |
-| -----------|--------------------- | -------------- |
-| -f         | --file               | Provides the path to the OpenSpace configuration file |
-| -c         | --config             | Specifies the window configuration file |
-| -p         |--profile             | Specifies the profile that should be used to start OpenSpace |
-|            | --propertyVisibility | Values for this parameter are: `Developer`, `AdvancedUser`, `User`, and `NoviceUser` |
-| -t         |--task                | Specifies a task that will be run after OpenSpace has been initialized |
-| -b         |--bypassLauncher      | Specifies whether the Launcher should be shown at startup or not |
+| Short Name | Long Name | Explanation |
+| ---------- | --------- | ----------- |
+| -f | --file | Provides the path to the OpenSpace configuration file |
+| -c | --config | Specifies the window configuration file |
+| -p | --profile | Specifies the profile that should be used to start OpenSpace |
+| | --propertyVisibility | Values for this parameter are: `Developer`, `AdvancedUser`, `User`, and `NoviceUser` |
+| -t | --task | Specifies a task that will be run after OpenSpace has been initialized |
+| -b | --bypassLauncher | Specifies whether the Launcher should be shown at startup or not |
+
 :::
 
 Also, note that in case not already set up, some firewall and Windows settings would need to be done as mentioned in the [E&S Site Configuration page](cosm).

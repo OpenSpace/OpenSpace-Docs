@@ -1,17 +1,7 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
 # Night Sky Panel
-
 ![Tour Panel Button](/using-openspace/toolbar/night-sky/toolbar_button_nightsky.png)
 
 {menuselection}`Windows --> Night Sky`
-
-
-
 
 The Night Sky Panel provides a customized set of functions that simulate the night sky and add tools to understand the motions of the sun, moon, planets, and stars throughout the course of the day and year.
 
@@ -40,7 +30,6 @@ The panel is divided into six subpanels. Each tabbed subpanel offers functionali
 
 
 ## Markings Tab
-
 The Markings tab enables the display of lines, grids, labels, and other elements that lend themselves to understanding the sky as a map. These include the cardinal directions, various coordinate systems projected on the sky, and the mapping of the constellations in the night sky.
 
 :::{figure} night_sky_panel_markings.png
@@ -53,17 +42,14 @@ The Markings tab in OpenSpace's Night Sky Panel.
 :::
 
 ### Alt/Az
-
 Alt/Az is the shorthand for the Altitude-Azimuth coordinate system. Alt/Az is a local coordinate system based on your location on Earth. Altitude is measured from your horizon, with 0&deg; at the horizon and 90&deg; located at your zenith, the point directly above your head. Azimuth is measured as the angle from true north around the horizon. The {math}`(Alt, Az) = (0^\circ, 0^\circ)` point is on your horizon in the direction of true north. The meridian is the line that passes through due north and due south and, hence, your zenith point too.
 
 
 ### Ecliptic
-
 Ecliptic coordinates are based on Earth's orbital plane centered on the Sun. The "equator" is called the *ecliptic* and, from our point of view, is the path of the Sun in the sky. The 0&deg; longitude line, called the prime meridian on Earth, is defined by a line that crosses through the March equinox. A given object can be described by its ecliptic longitude and latitude in this system.
 
 
 ### Equatorial
-
 The equatorial coordinate system is a popular system to pinpoint objects in the sky. Latitude in equatorial coordinates is merely a projection of Earth's latitude in the sky, and is called *declination*. So, 90&deg; north declination is directly above the North Pole, and the Celestial Equator, 0&deg; declination, is above Earth's equator.
 
 Longitude in this system is a bit different and, given there are 24 hours in a day, is expressed in hours, minutes, and seconds. The lines of longitude in the equatorial system are called *right ascension,* and a typical location might be expressed {math}`RA = (14^h \; 23^m \; 56.2^s)`. The primary direction is toward the March equinox, so the {math}`(RA, Dec) = (0^h, 0^\circ)` point is where the celestial equator crosses that equinox point.
@@ -72,7 +58,6 @@ Astronomers use this coordinate system most often to describe the location of ob
 
 
 ### Constellations
-
 The constellations section provides buttons to toggle the constellation data on and off. {menuselection}`Lines` will bring up the [familiar lines](/content/milky-way/constellations/constellation-lines/index) that trace the constellation figures. {menuselection}`Art` turns on the [artwork for the constellations](/content/milky-way/constellations/constellation-art/index). {menuselection}`Grid` will show the [constellation boundaries](/content/milky-way/constellations/constellation-boundaries/index). And {menuselection}`Labels` show each constellation's label. These buttons provide a convenient place to control these functions which otherwise exist in the [Scene Panel](/using-openspace/toolbar/scene/index) or the [Actions Panel](/using-openspace/toolbar/actions/index).
 
 
@@ -91,10 +76,7 @@ Displys the cardinal points---north, south, east, west---on the horizon as N, S,
 
 
 
-
-
 ## Time Tab
-
 The Time tab has some preset buttons to conveniently change the simulation time.
 
 :::{admonition} Solar and Sidereal Time
@@ -136,7 +118,6 @@ Use the [Time Panel](/using-openspace/toolbar/time/index) for access to all the 
 
 
 ## Location / View Tab
-
 The Location / View tab shows your location status, and provides buttons for preset locations and views from that location.
 
 
@@ -157,7 +138,7 @@ The icon will move as you move across Earth. However, if you want total control 
 
 
 ### Jump to Position
-The Jump to Position section consists of buttons that take you instantaneously to the North Pole, South Pole, and Equator. These points are important positional extremes that show how the sky looks and moves from the poles or the equator. 
+The Jump to Position section consists of buttons that take you instantaneously to the North Pole, South Pole, and Equator. These points are important positional extremes that show how the sky looks and moves from the poles or the equator.
 
 At the poles, of course, the celestial north or south pole is directly above one's head and the equator is on the horizon. The sky moves in a circular fashion, like a slow-moving kaleidoscope as Earth spins on its axis. Here, the stars, except for the Sun, do not rise and set but, instead, form circlular paths on the sky.
 
@@ -176,7 +157,6 @@ Use the ![GeoLocaiton Panel Button](/using-openspace/toolbar/geolocation/toolbar
 :::
 
 ## Stars Tab
-
 The Stars tab handles the visibility properties of the [stars](/content/milky-way/stars/stars/index).
 
 :::{figure} night_sky_panel_stars.png
@@ -192,10 +172,10 @@ The Stars tab in OpenSpace's Night Sky Panel.
 Two buttons specify when the stars are visible. On by default, the {menuselection}`Show Stars` checkbox turns the stars on and off. The {menuselection}`Show During Day` checkbox keeps the stars visible after the sun rises in the sky, so you see the stars during daytime.
 
 ### Star Labels
-The stars have two sets of labels. The {menuselection}`Show Labels` checkbox turns on the [star names](/content/milky-way/stars/star-labels/index), like Sirius, Betelgeuse, and Vega. The {menuselection}`Show Alternate Labels` checkbox displays the more technical names for the stars, as in Alpha Canis Majoris, Alpha Orionis, or Alpha Lyrae, what we call [alternate star labels](/content/milky-way/stars/star-labels-alternate/index). 
+The stars have two sets of labels. The {menuselection}`Show Labels` checkbox turns on the [star names](/content/milky-way/stars/star-labels/index), like Sirius, Betelgeuse, and Vega. The {menuselection}`Show Alternate Labels` checkbox displays the more technical names for the stars, as in Alpha Canis Majoris, Alpha Orionis, or Alpha Lyrae, what we call [alternate star labels](/content/milky-way/stars/star-labels-alternate/index).
 
 ### Appearance
-The buttons in the Appearance section concern the look of the stars. 
+The buttons in the Appearance section concern the look of the stars.
 
 The default settings resemble those of the stars when you launch OpenSpace. These have two images that make up the look of the star, a core image and a glow image; the larger these are, the brighter the star. Restore this view using the {menuselection}`Default Settings` button.
 
@@ -217,7 +197,6 @@ Two renditions of the stars in the night sky, one the standard with a core-glow 
 
 
 ## Solar System Tab
-
 The Solar System tab controls how the Sun, Moon, and planets appear.
 
 :::{figure} night_sky_panel_solar_system.png
@@ -230,7 +209,7 @@ The Solar System tab in OpenSpace's Night Sky Panel.
 :::
 
 ### Trails
-Trails are the lines that trace out the paths of the planets. There are times you may want trails on, to see the path of a planet across the sky, and other times when those paths may clutter your view. 
+Trails are the lines that trace out the paths of the planets. There are times you may want trails on, to see the path of a planet across the sky, and other times when those paths may clutter your view.
 
 The paths do fade over the planet's orbit. To increase the visibility of the trail over time, adjust the planet's trail in Scene Panel to brighten them up over time. For example: \
 {menuselection}`Scene --> Solar System --> Venus --> Venus Trail --> Period`
@@ -246,7 +225,6 @@ We may want to see the Moon differently from the night sky. For one, it helps to
 
 
 ## Sun Tab
-
 The Sun tab controls the appearance of the Sun and can add trails that delineate the Sun's path in the sky.
 
 :::{figure} night_sky_panel_sun.png
@@ -267,6 +245,6 @@ In addition to the glare, it can be helpful to increase the size of the Sun as p
 ### Sun Trails
 You can add a trail for the Sun's path. Two preset trails are the {menuselection}`Add Trail for Simulation Date` and {menuselection}`Add Trail for Today`. The former adds a trail for the Sun's path in the sky on the date in OpenSpace, whatever time is displayed in the Toolbar, the latter will add a trail for today's calendar date in the real world that you live in.
 
-You can add a custom trail using the Choose Date window and the dropdown calendar to choose a date, then press the {menuselection}`Add Trail` button to see it in OpenSpace. 
+You can add a custom trail using the Choose Date window and the dropdown calendar to choose a date, then press the {menuselection}`Add Trail` button to see it in OpenSpace.
 
 Once you add a trail, it will appear in the Added Sun Trails list. From that list, you can navigate to them, and delete them from the list. Note, too, that you can access these trails in the Scene Panel under {menuselection}`Scene --> Night Sky --> Sun Trails`.
