@@ -1,26 +1,15 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Milky Way Volume
-
 {menuselection}`Scene --> Milky Way --> Galaxy --> Milky Way Volume`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 While a two-dimensional [Milky Way Image](../milky-way-image/index) of the Galaxy can be useful for seeing data sets within the context of the Galaxy, the Milky Way Galaxy is, of course, a massive, three-dimensional entity, so it would be nice to see its dimensionality here to compare its scale with other objects in the universe and have a more realistic depiction of the Galaxy.
 
 
 ### Perspective Problem
-
-We have one small problem in showing the Milky Way galaxy in 3-D. We---all of us Earthlings---are stuck _inside_ the Galaxy. For that reason, we cannot know exactly what the Galaxy looks like. Scientists continue to debate the structure of the Galaxy, what the arms look like, the shape of the central bar, and even how many arms the Galaxy has.
+We have one small problem in showing the Milky Way galaxy in 3-D. We---all of us Earthlings---are stuck *inside* the Galaxy. For that reason, we cannot know exactly what the Galaxy looks like. Scientists continue to debate the structure of the Galaxy, what the arms look like, the shape of the central bar, and even how many arms the Galaxy has.
 
 This presents problems, as you might imagine, when it comes time to construct a scientifically accurate model of the Milky Way.
 
@@ -34,10 +23,9 @@ The three-dimensional model of the Milky Way Galaxy. Looking toward the center, 
 
 
 ### Building a Model
+The model in OpenSpace was developed by Jon Parker for the American Museum of Natural History's [*Dark Universe*](https://www.amnh.org/global-business-development/planetarium-content/dark-universe) Space Show. This was a pre-rendered show (a video), so the model needed to be adapted for real-time use in OpenSpace. But, before that, we needed a scientific basis for modeling the Galaxy.
 
-The model in OpenSpace was developed by Jon Parker for the American Museum of Natural History's [_Dark Universe_](https://www.amnh.org/global-business-development/planetarium-content/dark-universe) Space Show. This was a pre-rendered show (a video), so the model needed to be adapted for real-time use in OpenSpace. But, before that, we needed a scientific basis for modeling the Galaxy.
-
-The team collaborated with scientists at the [National Astronomical Observatory of Japan](https://www.nao.ac.jp/en/) (NAOJ), who conduct research on the structure and dynamics of galaxies. Specifically, they modeled the gas dynamics of a 3-D galaxy using an [_N_-body](https://en.wikipedia.org/wiki/N-body_simulation#Direct_gravitational_N-body_simulations) plus [hydrodynamical](https://en.wikipedia.org/wiki/Fluid_dynamics) simulation with the hope of reproducing the overall structure of the Galaxy, as well as the clumpiness seen in the gas distribution within the Galaxy. Their model accounted for the gravitational potential, star formation, dark matter, and other factors that determine the nature of the Galaxy.
+The team collaborated with scientists at the [National Astronomical Observatory of Japan](https://www.nao.ac.jp/en/) (NAOJ), who conduct research on the structure and dynamics of galaxies. Specifically, they modeled the gas dynamics of a 3-D galaxy using an [*N*-body](https://en.wikipedia.org/wiki/N-body_simulation#Direct_gravitational_N-body_simulations) plus [hydrodynamical](https://en.wikipedia.org/wiki/Fluid_dynamics) simulation with the hope of reproducing the overall structure of the Galaxy, as well as the clumpiness seen in the gas distribution within the Galaxy. Their model accounted for the gravitational potential, star formation, dark matter, and other factors that determine the nature of the Galaxy.
 
 
 
@@ -50,12 +38,11 @@ The Milky Way Galaxy Volume in OpenSpace. The left panel shows only the volumetr
 
 
 ### Display Options
-
-The Milky Way Volume has specific options that can be accessed via its [renderable settings](/reference/asset-components/Renderable/RenderableGalaxy). These options, specified in its asset file (below), control the look and quality of the volumentric model rendering in OpenSpace. These can be adjusted if the model is too detailed for your system, or not detailed enough. There is also the option to enable or disable star rendering within the model.
+The Milky Way Volume has specific options that can be accessed via its [renderable settings](#galaxy_renderable_galaxy). These options, specified in its asset file (below), control the look and quality of the volumentric model rendering in OpenSpace. These can be adjusted if the model is too detailed for your system, or not detailed enough. There is also the option to enable or disable star rendering within the model.
 
 :::{dropdown} Asset File
 
-:::{code-block} lua
+```lua
 local transforms = asset.require("scene/solarsystem/sun/transforms")
 
 
@@ -129,7 +116,7 @@ asset.meta = {
   URL = "http://openspaceproject.com",
   License = "MIT License"
 }
-:::
+```
 
 :::
 :::::
@@ -171,7 +158,7 @@ asset.meta = {
 :preparedby: Jon Parker, Emil Axelsson, Carter Emmart, OpenSpace Team
 :sourceversion: 1.0
 :license: mit
-:reference: On the Interpretation of the _l_ − _v_ Features in the Milky Way Galaxy=https://doi.org/10.48550/arXiv.1009.3096
+:reference: On the Interpretation of the *l* − *v* Features in the Milky Way Galaxy=<https://doi.org/10.48550/arXiv.1009.3096>
 :::
 
 :::::

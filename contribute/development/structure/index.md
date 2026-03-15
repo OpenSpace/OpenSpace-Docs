@@ -2,7 +2,7 @@
 % Here is the link to describe the syntax used in this document
 
 ## Libraries
-Here is an incomplete list of libraries that are involved to build the _OpenSpace_ executable. 
+Here is an incomplete list of libraries that are involved to build the `OpenSpace` executable.
 :::{mermaid}
 :zoom:
 
@@ -33,12 +33,12 @@ classDiagram
   openspace-core --> OpenSpace
   openspace-module-collection --> OpenSpace
 :::
- - [Ghoul](https://github.com/OpenSpace/Ghoul) is a helper library that contains classes and functions that are useful beyond just OpenSpace
- - [SGCT](https://github.com/SGCT/SGCT) is a library that helps with cluster synchronization and window creation
- - `openspace-core` contains the core elements of the "game engine" part of OpenSpace, such as the handling of the scene graph, scripting, rendering, interaction methods, navigation, and others
- - Functionality is divided into _Modules_ that can that implement abstract classes defined in the `openspace-core`. Modules can depend on other modules and even other third-party libraries
- - _Modules_ are collected in the `openspace-module-collection` which in itself does not contain any additional code
- - The _OpenSpace_ application consists of SGCT, `openspace-core`, and the `openspace-module-collection`
+  - [Ghoul](https://github.com/OpenSpace/Ghoul) is a helper library that contains classes and functions that are useful beyond just OpenSpace
+  - [SGCT](https://github.com/SGCT/SGCT) is a library that helps with cluster synchronization and window creation
+  - `openspace-core` contains the core elements of the "game engine" part of OpenSpace, such as the handling of the scene graph, scripting, rendering, interaction methods, navigation, and others
+  - Functionality is divided into *Modules* that can that implement abstract classes defined in the `openspace-core`. Modules can depend on other modules and even other third-party libraries
+  - *Modules* are collected in the `openspace-module-collection` which in itself does not contain any additional code
+  - The *OpenSpace* application consists of SGCT, `openspace-core`, and the `openspace-module-collection`
 
 ## Classes
 The `openspace-core` project contains all of the fundamental classes that are needed for the engine part of OpenSpace. These include a `SceneGraphNode` which is collected into a `Scene`. The `Scene` has one special `SceneGraphNode` called the `Root`, which is the only scene graph node without a parent. A few of these are abstract base classes which are then derived from in other modules and thus filled with functionality.
@@ -49,6 +49,9 @@ Examples of these abstract classes are:
   - `Rotation`:  A class that describes some form of rotation relative to the scene graph node's parent
   - `Scale`:  A class that describes some form of scaling relative to the scene graph node's parent
   - `ScreenSpaceRenderable`:  A class that renders something on the screen but is not affected by the camera movement
+
+<!-- markdownlint-disable MD037 -->
+<!-- markdownlint-disable MD046 -->
 
 :::{mermaid}
 :zoom:
@@ -178,6 +181,9 @@ classDiagram
   Renderable <|-- RenderableGlobe
 :::
 
+<!-- markdownlint-enable MD037 -->
+<!-- markdownlint-enable MD046 -->
+
 ## Assets
 All content is controlled through the inclusion of assets. Assets are fundamentally Lua scripts that have access to a special variable `asset` which is injected by OpenSpace. This variable has a few functions that allow the asset to affect OpenSpace. A selection of these functions are:
   - `asset.require`: Causes this asset to load another asset file, the path of which is provided either as a relative or absolute path. This function returns a table that contains all of the symbols that were `asset.export`ed by the required asset (see below)
@@ -185,7 +191,7 @@ All content is controlled through the inclusion of assets. Assets are fundamenta
   - `asset.onDeinitialize`: Analogously to the `onInitialize`, the function passed as an argument into this function is called when the asset is to be unloaded
   - `asset.export`: Export a single element to anyone that `asset.require`s this asset.
 
-Through the user of the `asset.require` function, assets form a tree where a _Parent_ `require`s their _Children_.
+Through the user of the `asset.require` function, assets form a tree where a *Parent* `require`s their *Children*.
 
 ### Simple Example
 In this example, the child asset simply defines a variable that is then read by the parent asset and printed to the console.

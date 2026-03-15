@@ -22,7 +22,7 @@ Sync = {
   }
 },
 ```
-When requesting `general_spk` in file version `1`, OpenSpace will perform a web request to the provided repository and the request contains all information necessary to resolve the request. In this case, the complete URL would be: http://data.openspaceproject.com/request?identifier=general_spk&file_version=1&application_version1. This URL will contain a list of files that are associated with this identifier and version, and OpenSpace will download all files contained in this file.
+When requesting `general_spk` in file version `1`, OpenSpace will perform a web request to the provided repository and the request contains all information necessary to resolve the request. In this case, the complete URL would be: <http://data.openspaceproject.com/request?identifier=general_spk&file_version=1&application_version1>. This URL will contain a list of files that are associated with this identifier and version, and OpenSpace will download all files contained in this file.
 
 NB: The application version is used to future-proof this setup and currently no other value than 1 is supported
 
@@ -32,11 +32,11 @@ Each *BigBang* server has a local mapping of (identifier, version, application v
 
 
 ## Usage example
-![](data-servers.png)
+![Usage overview](data-servers.png)
 In this example, there are three different OpenSpace clients that each have a separate *BigBang* node as their endpoint. The three nodes in this example, `data.openspaceproject.com`, `data2.openspaceproject.com`, and `data3.openspaceproject.com` are configured asymmetrically. `data` knows about `data2` and `data3`, `data2` knows about `data` and `data3`, but `data3` is only aware of `data2`.
 
 Each color in this image corresponds to a single request call to the endpoint and the different colors represent different usage scenarios:
-  1. Green: OpenSpace requests an identifier and the endpoint _BigBang_ servers know about the identifier/version combination locally
+  1. Green: OpenSpace requests an identifier and the endpoint *BigBang* servers know about the identifier/version combination locally
   1. Purple: The same as green, but the location of the files might be different due to the proximity of the server to the requester. (NB: The servers are configured so that the **content** of the files is the same, even if they are provided at different URLs).
   1. Orange: The same as green and purple, but without much detail.
   1. Red: OpenSpace requests an identifier, but the endpoint server does not know about the identifier itself and has to get referrals from its known servers. One of these directly knows about the identifier/version and returns them

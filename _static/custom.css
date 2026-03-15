@@ -6,74 +6,83 @@
 
 
 
- /* Make all {kbd} items bolder */
+/*
+ * Make all {kbd} items bolder.
+ */
 kbd {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 
-/* Styles for the octicons used on the site, mostly in tours or tutorials. */
+/*
+ * Styles for the octicons used on the site, mostly in tours or tutorials.
+ */
 .profile-tour-action {
-    color: rgb(254, 85, 54);
+  color: rgb(254, 85, 54);
 }
 
-/* removes the bullet from a ul list */
+/*
+ * Removes the bullet from a ul list.
+ */
 .rst-content section ul.no-bullet li  {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 
 /* Color map colors */
 .galaxy-survey-orange {
-    color: rgb(255 128 0)
+  color: rgb(255 128 0)
 }
 .galaxy-survey-yellow {
-    color: rgb(200, 200, 0)
+  color: rgb(200, 200, 0)
 }
 .galaxy-survey-green {
-    color: rgb(0, 200, 0)
+  color: rgb(0, 200, 0)
 }
 .galaxy-survey-aqua {
-    color: rgb(0, 204, 204)
+  color: rgb(0, 204, 204)
 }
 
 
 
-/* For the glossary style that goes along with the "deflist" extension.
-   These stylings are for the top-level links of subsections
-*/
+/*
+ * For the glossary style that goes along with the "deflist" extension. These stylings are
+ * for the top-level links of subsections.
+ */
 .glossary.index-list dt {
-    font-size: 1.5em;
-    font-weight: 400;
-    margin-bottom: 4px;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 4px;
 }
 .glossary.index-list dd {
-    margin-left: 2px;
-    margin-bottom: 20px;
+  margin-left: 2px;
+  margin-bottom: 20px;
 }
 
 
 
-/* The "Advanced" box used on advanced sections. */
+/*
+ * The "Advanced" box used on advanced sections.
+ */
 .advanced-topic {
-    margin-bottom: 0.25em;
+  margin-bottom: 0.25em;
 }
 .advanced-topic .advanced {
-    padding: 0.3em 1em;
-    background-color: #ffb366;
-    border-radius: 6px;
-    border: 1px solid #ff8000;
-    font-size: 0.7em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+  padding: 0.3em 1em;
+  background-color: #ffb366;
+  border-radius: 6px;
+  border: 1px solid #ff8000;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .tutorial {
-    margin: 0 10%;
+  margin: 0 10%;
 }
 .tutorial li {
-    margin-bottom: 0.5rem;
-    margin-left: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
 }
 
 
@@ -81,5 +90,5 @@ kbd {
 h2.heading-toc,
 .heading-toc h3,
 h3.heading-toc {
-    margin-bottom: 0.25em;
+  margin-bottom: 0.25em;
 }

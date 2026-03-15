@@ -1,21 +1,10 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # OB Associations
-
-
 {menuselection}`Scene --> Milky Way --> Star Clusters --> OB Associations`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 OB associations are young groups of stars that were formed within a giant molecular cloud, but have dispersed after the original gas and dust from the cloud was blown away by the star's radiation pressure. Although an association's stars are no longer gravitationally bound to one another, they share a common motion in space because they were formed from the same cloud.
 
 
@@ -30,9 +19,9 @@ Local OB associations near the Sun seen from outside the Milky Way Galaxy. These
 Associations typically have anywhere from 10 to 100 massive stars (O and B stars), and hundreds or thousands of lower-mass stars. The short-lived O stars will explode via supernova in roughly a million years, so they do not move far from their birthplace. O and B stars are quite luminous, making OB associations visible to great distances. And because O and B stars are young stars, we know they form in the regions of the Galaxy where star formation occurs---the spiral arms. Therefore, OB associations are good tracers for spiral structure. We assign colors to these objects based on their spiral arm membership (see tip below).
 
 :::{tip}
-- Blue associations trace the Sagittarius Arm
-- Purple associations are in the local Orion Spur
-- Orange associations are in the Perseus Arm.
+  - Blue associations trace the Sagittarius Arm
+  - Purple associations are in the local Orion Spur
+  - Orange associations are in the Perseus Arm.
 :::
 
 Because O and B stars are relatively short lived, OB associations are generally young. Their member stars do not have much time to stray from their birthplace, so young associations tend to be fairly consolidated, although not as condensed as an [open star cluster](../open-clusters/index).
@@ -57,7 +46,6 @@ One of the few datasets that are sized according to their physical size. Most da
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -82,7 +70,6 @@ One of the few datasets that are sized according to their physical size. Most da
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 61 OB associations
 :assetfile: data/assets/scene/digitaluniverse/obassociations.asset

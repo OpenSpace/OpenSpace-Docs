@@ -1,7 +1,7 @@
 # Globebrowsing
 Information about Globebrowsing for users that only want to view the content.
 
-- [Working With Layers](working-with-layers) Description of handling layers for renderable globes.
+  - [Working With Layers](working-with-layers) Description of handling layers for renderable globes.
 
 Globes are commonly used within OpenSpace to represent planets and other celestial bodies. They include several special features related to globes in space, such as showing eclipses or displaying maps or other information on planetary surfaces.
 

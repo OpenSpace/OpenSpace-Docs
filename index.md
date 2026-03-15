@@ -8,14 +8,14 @@ OpenSpace is an open-source, interactive, data visualization software designed t
 
 :::{attention}
 This site is in the midst of an overhaul. Sections break down into:
-- {octicon}`check-circle-fill;1.25em` Completely overhauled,
-- {octicon}`check-circle;1.25em` Relatively complete, but perhaps some bits missing,
-- {octicon}`alert;1.25em` A hybrid of work in progress plus previous documentation pages,
-- {octicon}`x-circle;1.25em` Untouched from the previous documentation version.
+  - {octicon}`check-circle-fill;1.25em` Completely overhauled,
+  - {octicon}`check-circle;1.25em` Relatively complete, but perhaps some bits missing,
+  - {octicon}`alert;1.25em` A hybrid of work in progress plus previous documentation pages,
+  - {octicon}`x-circle;1.25em` Untouched from the previous documentation version.
 :::
 
 
-::::::{grid} 1 1 2 2 
+::::::{grid} 1 1 2 2
 :::::{grid-item}
 
 

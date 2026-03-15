@@ -1,8 +1,3 @@
----
-authors:
-  - name: OpenSpace Team
----
-
 # Specialized Telemetry Types
 The specialized telemetry types in the [Telemetry Module](index.md) monitor specific aspects of OpenSpace and send that information to the OSC receiver. In contrast to the general telemetry types, these telemetry types are designed to be used for a particular purpose, such as adding a specific type of sonification to the planets in the solar system. See [sonification](./sonification.md#sonification) for more information on how the sonification works.
 
@@ -14,10 +9,10 @@ The specialized telemetry types available in OpenSpace are:
   - [Planets Overview Sonification](#planets-overview-sonification)
 
 ## Planets Sonification
-This telemetry type requires an asset file or script to specify which planets and moons are of interest to monitor. The file _planets.asset_ located in _data\assets\modules\telemetry\sonification_ adds all the planets in the solar system and their major moons to the list of planets to monitor with this telemetry type.
+This telemetry type requires an asset file or script to specify which planets and moons are of interest to monitor. The file `planets.asset` located in `data\assets\modules\telemetry\sonification` adds all the planets in the solar system and their major moons to the list of planets to monitor with this telemetry type.
 
 :::{important}
-The _planets.asset_ file located in _data\assets\modules\telemetry\sonification_ should not be altered. The planet sonification in SuperCollider expects the file to remain unchanged. If any changes are made to the asset file, they must also be reflected in the SuperCollider sonification file. See [sonification](./sonification.md#sonification) for more information.
+The `planets.asset` file located in `data\assets\modules\telemetry\sonification` should not be altered. The planet sonification in SuperCollider expects the file to remain unchanged. If any changes are made to the asset file, they must also be reflected in the SuperCollider sonification file. See [sonification](./sonification.md#sonification) for more information.
 :::
 
 In this telemetry type, angle information is provided for both planets and their moons (if present). The method for calculating these angles varies based on the [Angle Calculation Mode](./angle-information.md) in use. However, the method differs when calculating the angle for the planet versus its moons. For planets, the angle is calculated from the camera to the planet. For moons, the angle is calculated from the planet to the moon while taking the camera's orientation into account. For further details, see {ref}`Moon Angle <moon-angle-horizontal>` for both the {ref}`Horizontal <moon-angle-horizontal>` and {ref}`Circular <moon-angle-circular>` angle calculation modes.
@@ -38,26 +33,27 @@ The OSC messages from this telemetry type are divided among the planets that hav
   1. (optional) The distance from the camera to the **second** moon in kilometers.
   1. (optional) The horizontal angle in radians to the second moon.
   1. (optional) The elevation angle in radians to the second moon.
-  1. The data then continues in the same pattern for each of the planet's moons, with three values per moon. The moons are given in order of distance from the planet (closest first, farthest last) as specified in the _planets.asset_ file in the _data\assets\modules\telemetry\sonification_ folder.
+  1. The data then continues in the same pattern for each of the planet's moons, with three values per moon. The moons are given in order of distance from the planet (closest first, farthest last) as specified in the `planets.asset` file in the `data\assets\modules\telemetry\sonification` folder.
 
 The table below lists the aspects of the planets that can be conveyed by the sonification. Each of the aspects can be turned on or off in the settings of the user interface.
 :::{table}
 :align: center
 | Index in settings list | Aspect of the planets sonification that the setting turns on/off |
-|------------------------|------------------------------------------------------------------|
-| 0                      | Size/day                                                         |
-| 1                      | Gravity                                                          |
-| 2                      | Temperature                                                      |
-| 3                      | Atmosphere                                                       |
-| 4                      | Moons                                                            |
-| 5                      | Rings                                                            |
+| ---------------------- | ---------------------------------------------------------------- |
+| 0 | Size/day |
+| 1 | Gravity |
+| 2 | Temperature |
+| 3 | Atmosphere |
+| 4 | Moons |
+| 5 | Rings |
+
 :::
 
 A message from this telemetry type can, for example, look like this:
-:::{code-block}
+```text
 [ /Mercury, 132973827.75397, 3.0632956233535, 2.4592313674705, Int8Array[ 1, 1, 0, 0, 0, 0 ] ]
 [ /Earth, 23378.137051742, -1.3549538910548, 0.0, Int8Array[ 1, 0, 0, 1, 0, 0 ], 393844.29544736, 1.1503961663306, 1.4013056448997 ]
-:::
+```
 
 In the example above, there are two messages. The first message is for Mercury, and the second is for Earth. In this example the angle calculation mode [Circular](./angle-information.md#circular) was used with the {ref}`elevation angle <additional-elevation-angle-circular>` included. The example messages above can be broken down into the following parts:
 
@@ -141,16 +137,17 @@ This telemetry type sends out information about the user interface settings rega
 :::{table}
 :align: right
 | Selected Planet Index | Selected Planet Name |
-|-----------------------|----------------------|
-| 0                     | None selected        |
-| 1                     | Mercury              |
-| 2                     | Venus                |
-| 3                     | Earth                |
-| 4                     | Mars                 |
-| 5                     | Jupiter              |
-| 6                     | Saturn               |
-| 7                     | Uranus               |
-| 8                     | Neptune              |
+| --------------------- | -------------------- |
+| 0 | None selected |
+| 1 | Mercury |
+| 2 | Venus |
+| 3 | Earth |
+| 4 | Mars |
+| 5 | Jupiter |
+| 6 | Saturn |
+| 7 | Uranus |
+| 8 | Neptune |
+
 :::
 ::::
 
@@ -158,13 +155,14 @@ This telemetry type sends out information about the user interface settings rega
 :::{table}
 :align: left
 | Index in settings list | Aspect of the compare sonification that the setting turns on/off |
-|------------------------|------------------------------------------------------------------|
-| 0                      | Size/day                                                         |
-| 1                      | Gravity                                                          |
-| 2                      | Temperature                                                      |
-| 3                      | Atmosphere                                                       |
-| 4                      | Moons                                                            |
-| 5                      | Rings                                                            |
+| ---------------------- | ---------------------------------------------------------------- |
+| 0 | Size/day |
+| 1 | Gravity |
+| 2 | Temperature |
+| 3 | Atmosphere |
+| 4 | Moons |
+| 5 | Rings |
+
 :::
 ::::
 
@@ -195,15 +193,16 @@ This telemetry type sends out information about the user interface settings rega
 :::{table}
 :align: center
 | Index in settings list | The planet that the setting turns on/off |
-|------------------------|-------------------------------------------|
-| 0                      | Mercury                                   |
-| 1                      | Venus                                     |
-| 2                      | Earth                                     |
-| 3                      | Mars                                      |
-| 4                      | Jupiter                                   |
-| 5                      | Saturn                                    |
-| 6                      | Uranus                                    |
-| 7                      | Neptune                                   |
+| ---------------------- | ---------------------------------------- |
+| 0 | Mercury |
+| 1 | Venus |
+| 2 | Earth |
+| 3 | Mars |
+| 4 | Jupiter |
+| 5 | Saturn |
+| 6 | Uranus |
+| 7 | Neptune |
+
 :::
 
 A  message from this telemetry type can, for example, look like this:

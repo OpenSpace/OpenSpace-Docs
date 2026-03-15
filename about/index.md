@@ -1,12 +1,4 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # About
-
 OpenSpace is an open-source, interactive data visualization software designed to visualize the entire known universe at all possible scales.
 
 OpenSpace brings the latest techniques from data visualization research to the general public. OpenSpace supports interactive presentations of dynamic data from observations, simulations, and space mission planning and operations. OpenSpace works on multiple operating systems, with an extensible architecture powering high resolution tiled displays and planetarium domes, and makes use of the latest graphic card technologies for rapid data throughput. In addition, OpenSpace enables simultaneous connections across the globe, creating opportunity for shared experiences among audiences worldwide.
@@ -31,9 +23,7 @@ OpenSpace is also funded by the Knut & Alice Wallenberg Foundation, the Swedish 
 :::{toctree}
 :maxdepth: 1
 
-
 releases/index
-
 
 academics
 links

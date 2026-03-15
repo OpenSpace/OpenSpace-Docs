@@ -1,30 +1,32 @@
+<!-- markdownlint-disable -->
+
 :::{list-table}
 :header-rows: 0
 :stub-columns: 1
 :align: left
 :width: 90%
 
-* - Name:
-  - {{ name }}
-* - File:
-  - {{ profilefile }}
-* - Anchor:
+  - - Name:
+    - {{ name }}
+  - - File:
+    - {{ profilefile }}
+  - - Anchor:
 {% if anchor is string %}
-  - {{ anchor }}
+    - {{ anchor }}
 {% else %}
 {% set colon = joiner(";") %}
-  - {% for r in anchor %}{{ colon() }}{% if r.link %} [{{ r.name }}]({{ r.link }}){% else %} {{ r.name }}{% endif %}{% endfor %}
+    - {% for r in anchor %}{{ colon() }}{% if r.link %} [{{ r.name }}]({{ r.link }}){% else %} {{ r.name }}{% endif %}{% endfor %}
 {% endif %}
-* - Time:
-  - {{ time }}
-* - Author:
-  - {{ author }}
-* - License:
+  - - Time:
+    - {{ time }}
+  - - Author:
+    - {{ author }}
+  - - License:
 {% if license.name %}
-  - [{{ license.name }}]({{ license.link }})
+    - [{{ license.name }}]({{ license.link }})
 {% else %}
-  - {{ license }}
+    - {{ license }}
 {% endif %}
-* - Version:
-  - {{ version }}
+  - - Version:
+    - {{ version }}
 :::

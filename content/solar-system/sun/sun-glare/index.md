@@ -1,20 +1,10 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Solar Glare
-
 {menuselection}`Scene --> Solar System --> Sun --> Solar Glare`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 :::{note}
 See this section's [top page](../index) for some background on the Sun.
 :::
@@ -39,7 +29,7 @@ This rendition allows us to see the Sun to great distances, and reminds us that 
 :align: left
 :alt: The Sun in the context of the inner planets
 
-The Sun from outside the inner Solar System. The glare image is visible throughout the Solar System in OpenSpace. 
+The Sun from outside the inner Solar System. The glare image is visible throughout the Solar System in OpenSpace.
 :::
 :::::
 
@@ -47,7 +37,6 @@ The Sun from outside the inner Solar System. The glare image is visible througho
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -72,7 +61,6 @@ The Sun from outside the inner Solar System. The glare image is visible througho
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 1 image
 :assetfile: data/assets/scene/solarsystem/sun/glare.asset

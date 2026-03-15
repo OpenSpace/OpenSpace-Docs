@@ -1,11 +1,13 @@
+# 0.21.2
+
 This patch release fixes an issue where planetary surfaces would disappear when the camera approaches them and high-resolution images were displayed.
 
-# Features
+## Features
   - Added the functionality to automatically choose a discrete graphics card over an integrated graphics card on laptops that have both
   - Improved the rendering of orbital trajectories, specifically for very large datasets (#3739)
   - Improved the visual fidelity of Saturn's rings and its shadow on the planet (#3749)
 
-## UI
+### UI
   - Moved the map of Earth from the night sky panel into the GeoLocation panel and add the ability to search for features on other planetary bodies (OpenSpace/OpenSpace-WebGui#184)
   - Added a confirmation dialog to some property settings that are irreversible, like disabling the mouse input (#3730)
   - Correctly reflect in the user interface when navigation and time controls are disabled during recording playbacks (OpenSpace/OpenSpace-WebGui#175)
@@ -14,12 +16,12 @@ This patch release fixes an issue where planetary surfaces would disappear when 
   - Improved the keybinds panel to show all keys bound to a specific key instead of needed to manually switch between Shift, Alt, and Ctrl keybindings (OpenSpace/OpenSpace-WebGui#182)
   - Improved the handling of text fields that are too long by displaying hover tooltips that show the full name of, for example, scene graph nodes (OpenSpace/OpenSpace-WebGui#188)
 
-# Content
-## New Assets
+## Content
+### New Assets
   - Added a new asset for 3I/ATLAS
   - Added a new asset with an action for locking temporal layers (#3760)
 
-## Updates to existing Assets/Profiles
+### Updates to existing Assets/Profiles
   - Updated the temporal night time layer on Earth as the previous was no longer working
   - Changed GUI naming and coloring for 1I/'Oumuamua and 2I/Borisov and added labels for both
   - Removed Plutos Keplerian trail as the new kernels are now reaching back to 1549 (#3726)
@@ -28,13 +30,13 @@ This patch release fixes an issue where planetary surfaces would disappear when 
   - Added missing absPath() in the slidedeck example
   - Fixed the Sun glare to use the correct billboarding for fisheye rendering
 
-## Content creation
+### Content creation
   - `ContiguousMode` in `RenderableOrbitalKepler` is now an AdvancedUser property
 
-## API
+### API
   - Added the camera view direction information to the camera topic (#3741)
 
-# Bug Fixes
+## Bug Fixes
   - Occasionally, the camera was moved outside the universe when rotating around Earth (#3497)
     - *Important*: If you are using the MRF cache, you need to delete the `mrf_cache/Earth/Height Layers/Terrain_tileset` folder
   - The JWST profile failed to load
