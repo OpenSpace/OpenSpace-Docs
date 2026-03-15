@@ -6,11 +6,11 @@ Downloaded images are stored as JPEG 2000 (`.jp2`) files on disk and loaded into
 ## Supported Spacecraft and Instruments
 The system currently supports images from three spacecraft. A full list of available instruments and their source identifiers can be found in the [Helioviewer API documentation](https://api.helioviewer.org/docs/v2/appendix/data_sources.html).
 
-| Spacecraft | Notes                              |
-| ---------- | ---------------------------------- |
-| SDO        | Solar Dynamics Observatory         |
-| SOHO       | Solar and Heliospheric Observatory |
-| STEREO     | STEREO-A and STEREO-B              |
+| Spacecraft | Notes |
+| ---------- | ----- |
+| SDO | Solar Dynamics Observatory |
+| SOHO | Solar and Heliospheric Observatory |
+| STEREO | STEREO-A and STEREO-B |
 
 ## Downloading Data with the HelioviewerDownloadTask
 Data is downloaded using the `HelioviewerDownloadTask`, a pre-processing step run via the TaskRunner before starting OpenSpace. The task queries the Helioviewer API and downloads all available images within a specified time interval at a given cadence, storing the downloaded images on disk.
@@ -81,7 +81,7 @@ After running the task, the `sdo/` root directory will contain one subdirectory 
 ## Directory Structure
 Images for each instrument must be stored in their own subdirectory. The `OutputFolder` in the task specifies this subdirectory. A typical layout for SDO with two instruments would look like:
 
-```
+```text
 ${SYNC_DYNAMIC}/solarbrowsing/sdo/
   aia-171/
     AIA-171.txt              <- colormap, copied here automatically by the task
@@ -105,7 +105,7 @@ Each instrument requires a color map file that defines how grayscale image data 
 
 The color map is a plain text file where each `mappingkey` entry maps a normalized intensity value in the range [0, 1] to an RGBA color, with each channel as an integer in the range [0, 255]:
 
-```
+```text
 width 256
 lower 0.0
 upper 1.0

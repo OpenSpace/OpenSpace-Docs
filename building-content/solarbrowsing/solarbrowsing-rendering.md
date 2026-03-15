@@ -9,8 +9,8 @@ One example of the SDO AIA-171 instrument projected onto the solar surface using
 
 There are two renderables involved in displaying solar imagery:
 
-- [RenderableSolarImagery](#renderablesolarimagery) displays the images as a textured plane centred on the Sun and oriented perpendicular to the spacecraft's viewing direction. One node is created per spacecraft.
-- [RenderableSolarImageryProjection](#renderablesolarimageryprojection) projects the images from one or more spacecraft onto a sphere centred on the Sun, allowing the imagery to be viewed from any direction in the scene. This renderable references the `RenderableSolarImagery` nodes.
+  - [RenderableSolarImagery](#renderablesolarimagery) displays the images as a textured plane centred on the Sun and oriented perpendicular to the spacecraft's viewing direction. One node is created per spacecraft.
+  - [RenderableSolarImageryProjection](#renderablesolarimageryprojection) projects the images from one or more spacecraft onto a sphere centred on the Sun, allowing the imagery to be viewed from any direction in the scene. This renderable references the `RenderableSolarImagery` nodes.
 
 ## Usage
 To use the solar browsing feature you first need to download image data using the `HelioviewerDownloadTask`, as described on the [Solar Browsing Data](./solarbrowsing-data.md) page. Once data has been downloaded, the renderables can be set up using the assets described below. Ready-to-use example assets for SDO and STEREO are available in `data/assets/scene/solarsystem/heliosphere/solarbrowsing`, and can be used as a starting point or as a reference for setting up your own.
@@ -84,9 +84,9 @@ The active instrument can also be changed at runtime through the GUI in the node
 ### Image Plane Rendering
 The `FaceMode` property controls which sides of the image plane are rendered:
 
-- `"Front Only"` - renders only the side facing the spacecraft camera
-- `"Solid Back"` (default) - the front side shows the image, the back side is rendered as a solid gray color
-- `"Double Sided"` - renders the image texture on both sides of the plane
+  - `"Front Only"` - renders only the side facing the spacecraft camera
+  - `"Solid Back"` (default) - the front side shows the image, the back side is rendered as a solid gray color
+  - `"Double Sided"` - renders the image texture on both sides of the plane
 
 ### Downsampling
 The `DownsamplingLevel` property controls the resolution at which the JP2 images are decoded. A value of `0` decodes at full resolution, while each step halves the resolution in both dimensions (so `1` gives half resolution, `2` gives quarter resolution, and so on). The default value is `2`.
@@ -100,7 +100,7 @@ If images are taking too long to appear after a time change, it can help to incr
 
 The first time an image is displayed at a given resolution, it is decoded from the JP2 file and saved to a binary cache file. Subsequent loads of the same image use the cache, which is significantly faster. The cache is stored at:
 
-```
+```text
 OpenSpace/sync/dynamically_downloaded/solarbrowsing/cache/
   2024_05_06__12_13_31_814__SDO_AIA-193.bin
   2024_05_06__12_24_55_814__SDO_AIA-193.bin
