@@ -1,14 +1,4 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
-  - name: Emma Broman, Karin Reidarman
-    affiliation: Universitty of Linköping
----
-
-
 # Exoplanet Systems Panel
-
 ![Exoplanet Systems Planel Button](toolbar_button_exoplanets.png)
 
 {menuselection}`Windows --> Exoplanets`
@@ -16,16 +6,12 @@ authors:
 The exoplanets module enables the visualization of exoplanetary systems in OpenSpace. While the main [exoplanets](/content/milky-way/exoplanets/exoplanet-systems/index) data displays all the stars that have exoplanets with a simple, blue ring, the exoplanets module depicts the system of planets around these stars. This includes the planetary orbits, at the proper inclination, a depiction of the {term}`habitable zone`, and, when available, the planets themselves.
 
 
-
 ## Adding Systems
-
 Unlike the main exoplanets data, where you see all the planetary systems from afar, with the exoplanets module you must add the systems you want to see. It would be too computationally expensive to load every planetary system, so you must load the ones you're interested in examining.
 
 
 ### 1. Bring Up the Exoplanets Module Panel
-
 To load a system, click on ![Exoplanets module icon](toolbar_button_exoplanets.png){height=24px} to bring up the panel.
-
 
 :::{figure} exoplanet_systems_panel.png
 :align: center
@@ -37,9 +23,7 @@ OpenSpace's Exoplanet Systems Panel.
 :::
 
 
-
 ### 2. Search for the Exoplanetary System
-
 Inside the panel, search for the system you want to add by typing the name of the system where it says "Star name." In the image below, we typed "Kepler-11" which brings up all the text matches. (The Kepler-11 system, discovered in 2010, has a total of six confirmed planets orbiting the host star Kepler-11.)
 
 
@@ -55,7 +39,6 @@ The exoplanets module panel with the results of a search for "Kepler-11," a mult
 
 
 ### 3. Add the System
-
 Click on the desired system and then click the "Add System" button to the right. The system will then appear in the list of added systems at the bottom of the panel, and will also appear in the scene menu: \
 {menuselection}`Scene -> Milky Way --> Exoplanets --> Exoplanet Systems`
 
@@ -90,7 +73,6 @@ This function may be used to add exoplanets to OpenSpace before start-up.
 
 
 ### 4. Target the System and Approach
-
 Use the target button beside the added system to center on the exoplanetary system. Once you center on it, you can fly forward to visit it. It will take longer than you expect to see the system---keep flying forward.
 
 Once you approach a system, it will appear similar to the image below for the Kepler-11 system. You see the host star at center, and the system of planetary orbits encircling it along with an visualization of the habitable zone.
@@ -106,7 +88,6 @@ The Kepler-11 system of six planets with the yellowish host star, Kepler-11, and
 
 
 ## Visualizing the Exoplanetary Systems
-
 The exoplanets module renders planetary systems based on the orbital characteristics of the planets and the host's stellar type. The planet's eccentricity, semi-major axis, and orbital period are used to visualize the system. The wider the orbital path of a planet, the less certain the semi-major axis value. When there is information available on the radius of a planet, we draw a diagrammatic globe with the proper radius.
 
 The host star is the the proper color, representing its stellar type, and it is necessary to dim the star as we pull into the system---just as we do in the Solar System. Dimming the star means it's no longer calibrated with the other stars. Once you pull away from the system, the star brightens up and is back on par with the other stars.

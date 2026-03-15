@@ -82,4 +82,4 @@ ModelScale = 0.01,
 ## Summary
 In short, if the model was developed in a unit other than Meters then use the `ModelScale` key to scale the model down with that unit. However, if the model was developed in Meters but intended to be interpreted as another unit then the scale needs to be inverted with the key `InvertModelScale`. Unfortunately, the process of finding the correct model scale value is a matter of trial and error. However, since release 0.19.0 the numeric value of the `ModelScale` property is included in the GUI and can be changed at runtime with a slider. Note that this property is an `AdvancedUser` property and you might need to change your visibility settings to see it in the GUI.
 
-![](iss-scale-gui.png)
+![ISS Scale](iss-scale-gui.png)

@@ -20,7 +20,7 @@ This section assumes that the input is a raster image file in GeoTIFF (GTiff) fo
 `gdalinfo dataset.tif`
 If the "**Coordinate System is:**" entry is blank, then skip the rest of this section and proceed to section 3.0 below in order to convert the file to GeoTIFF format, and then come back to section 2.1. Otherwise, section 3.0 will not be needed.
 
-### _Build VRT_ step
+### *Build VRT* step
 This step builds a .vrt (ViRTual dataset) file from the GeoTIFF file. Here is a simple usage example:
 `gdal_translate -of VRT dataset.tif dataset.vrt`
 where **dataset.tif** is the GeoTIFF input file, and **dataset.vrt** is the output file.
@@ -30,7 +30,7 @@ Here is an example of specifying the geo-referenced extents of the map:
 The **-a_ullr** flag is used to specify the x,y of the upper-left corner, and then the x,y of the lower-right corner. Here, **x** is the longitude angle and **y** the latitude angle in degrees. The +/- 180° and +/- 90° range, respectively, in this example covers the entire globe. It is probably best to leave the **-a_ullr** options out, unless specifying the map extents is necessary.
 Note that the previously-used method for this was the `gdalbuildvrt` tool, where "gdalbuildvrt" was used instead of "gdal_translate -of VRT", and "-te" flag was used instead of "-a_ullr" (the "-te" flag has different coordinates ordering). Apparently `gdal_translate` is the more reliable tool for this application.
 
-### _gdal\_translate_ step
+### `gdal\_translate` step
 This step creates a raster image using either PNG or JPEG compression, and a .mrf file for the data set. [This page](http://www.gdal.org/gdal_translate.html) provides a usage description for the **gdal\_translate** software tool. This is the usage for PNG:
 ```bash
 gdal_translate -of MRF -co COMPRESS=PNG -co BLOCKSIZE=512 -r bilinear dataset.vrt dataset.mrf
@@ -41,7 +41,7 @@ If JPEG compression is desired, this can be specified instead by **-co COMPRESS=
 
 Another option that is used in some conversions is **-co OPTIONS="V1:1"**. The documentation is not very clear on the function of this option, however.
 
-### _gdaladdo_ step
+### `gdaladdo` step
 This step creates overviews/tiles at a series of lower-resolution levels from the MRF data set base image. Provided as arguments are subsampling factors that increase by the power of 2, which will be used to divide the base image for each overview/tile level. This count increases up to the point where any further sub-sampling would produce an image with a horizontal resolution less than or equal to the block size (e.g. tile size) specified in the **gdal\_translate** step. [This page](http://www.gdal.org/gdaladdo.html) provides a usage description for the **gdal\_translate** software tool.
 Put another way, the number of overviews must satisfy:
 `(Horizontal_resolution / 2^n ) > block size (pixels)`
@@ -61,7 +61,7 @@ This section covers the case where a raw raster data file (e.g. image) does not 
 The **gdal\_translate** software tool is used to convert the source raster file. Here is a usage example:
 `gdal_translate -of GTiff -a_ullr -180 90 180 -90 -a_srs <SRS_Coordinates> main_COL_v007.png main_COL_v007.tif`
 First, note that the text <SRS_Coordinates> is a substitute for the following string:
-```
+```text
 GEOGCS["Mars 2000",DATUM["D_Mars_2000",SPHEROID["Mars_2000_IAU_IAG",3396190.0,169.89444722361179]],PRIMEM["Greenwich",0],UNIT["Decimal_Degree",0.0174532925199433]]
 ```
 which can be given directly in the **gdal\_translate** command, or can be put into a text file in which case the **-a\_srs** argument is that filename.
@@ -69,7 +69,7 @@ The **-of** specifies the GeoTIFF output format using the **GTiff** tag, and **-
 
 ### Example of Swapping East & West Hemispheres
 It is apparently a common situation for a map to be shifted to the east by 180 degrees, making it necessary to swap the east/west hemispheres of the map (left/right halves of the image). The following console commands can be used to create a `.vrt` file that performs this swap operation:
-```
+```bash
 gdal_translate -of VRT -srcwin ${halfX} 0 ${halfX} ${fullY} -a_ullr -180 90 0 -90 -a_srs "${PRJ}" ${SRC} west.vrt
 gdal_translate -of VRT -srcwin 0 0 ${halfX} ${fullY} -a_ullr 0 90 180 -90 -a_srs "${PRJ}" ${SRC} east.vrt
 ```

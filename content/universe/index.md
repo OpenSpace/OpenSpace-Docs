@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Universe
-
 {menuselection}`Scene --> Universe`
-
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
@@ -37,7 +28,6 @@ Unlike the Milky Way that is organized by object type, here we divide data by ne
 
 
 ## Our Cosmic Perspective---Where Is the Center?
-
 When you look at the data sets in {menuselection}`Universe`, it's tempting to believe we are the center of everything. One of the consequences of showing real scientific data observed from telescopes on Earth, or in orbit around Earth, is that it appears as though the Milky Way, the Sun, and the Earth
 are at the center of the universe.
 
@@ -57,7 +47,7 @@ The common analogy is to imagine an infinitely large raisin bread. As the bread 
 
 Another two-dimensional analogy is to imagine an infinitely large rubber sheet that's being stretched from all directions. No matter where you are, every other point will be moving farther away from you.
 
-That is the nature of the universe. There is no center and, except for very nearby galaxies where gravity remains influential, everything is receding from an observer at any location. 
+That is the nature of the universe. There is no center and, except for very nearby galaxies where gravity remains influential, everything is receding from an observer at any location.
 
 
 
@@ -67,7 +57,7 @@ That is the nature of the universe. There is no center and, except for very near
 
 % ### Lookback time
 
-% If we plotted objects according to their lookback time, then we'd expect everything to fit within the 13.8-billion-year age of the universe. The farthest quasars would be around 12 to 13 billion light years from Earth. The limit of our observable universe, the cosmic microwave background light, would stretch out to about 13.3 billion light years. 
+% If we plotted objects according to their lookback time, then we'd expect everything to fit within the 13.8-billion-year age of the universe. The farthest quasars would be around 12 to 13 billion light years from Earth. The limit of our observable universe, the cosmic microwave background light, would stretch out to about 13.3 billion light years.
 
 
 

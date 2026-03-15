@@ -1,28 +1,18 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Tully Galaxy Images
-
 {menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxy Images`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 We've grown accustomed to seeing galaxies as multicolored points. Typically, these colors represent density, where orange galaxies are in a dense, galaxy-rich part of the universe and aqua-colored galaxies are in a less dense, galaxy-poor part of the universe.
 
 The [Tully Galaxy Survey](../tully-galaxies/index) is rich for a number of reasons. For one, the galaxy positions are massaged---{term}`fingers of god <finger of god>` and systematic uncertainties are adjusted to yield a more scientifically accurate rendition of the structure. The Tully Galaxies also have an image attached to each galaxy in the data set.
 
 These images have several qualities:
-- They are accurately sized
-- They are inclined when the galaxy's inclination is known
-- And, they are representative of the galaxy's morphological type (spiral, elliptical, etc.)
+  - They are accurately sized
+  - They are inclined when the galaxy's inclination is known
+  - And, they are representative of the galaxy's morphological type (spiral, elliptical, etc.)
 
 
 
@@ -36,7 +26,6 @@ A view of the Virgo Cluster with the Tully Galaxy points off. Normally these wou
 
 
 ### Image Size and Visibility
-
 From a wide perspective, these images are impossible to see, hence the need for points. Galaxies are so small relative to our typical view in OpenSpace that one must be right beside them in order for their image to be visible. This is a consequence of having properly-sized images for each galaxy.
 
 While we would *never* do this in the public show, it is possible to exaggerate the image sizes. Using the menu item {menuselection}`Scene --> Tully Galaxies Images -> Renderable -> Sizing -> Scale Factor`, you can make the images larger, to the point that neighboring galaxies are overlapping. This is **completely unrealistic and inaccurate**, but it can be illustrative at times when used with restraint.
@@ -52,7 +41,6 @@ A view of the Virgo Cluster with the galaxy images exaggerated. The galaxy M61 i
 
 
 ### Image Sources
-
 Most of these images come from [The Galaxy Catalog](http://www.zsolt-frei.net/catalog.htm). This source has a small number of galaxy images and we use those images repeatedly for galaxies of a specific morphological type. In other words, elliptical galaxies may all be represented by the same image throughout the catalog.
 
 A handful of nearby galaxies are represented by their actual images, which come mostly from the [National Optical Astronomy Observatory](https://en.wikipedia.org/wiki/National_Optical_Astronomy_Observatory) (NOAO).
@@ -83,7 +71,6 @@ An outrageous exaggeration---the Tully Galaxy Images are so large we can see the
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -108,8 +95,6 @@ An outrageous exaggeration---the Tully Galaxy Images are so large we can see the
 :::::{tab-item} Dossier
 
 ## Dossier
-
-
 :::{dossier}
 :census: 122 images
 :assetfile: data/assets/scene/digitaluniverse/tully.asset
@@ -117,7 +102,7 @@ An outrageous exaggeration---the Tully Galaxy Images are so large we can see the
 :preparedby: Stuart Levy (NCSA)
 :sourceversion: 1.05
 :license: amnh
-:reference: The Galaxy Catalog=http://www.zsolt-frei.net/catalog.htm;National Optical Astronomy Observatory
+:reference: The Galaxy Catalog=<http://www.zsolt-frei.net/catalog.htm>;National Optical Astronomy Observatory
 :::
 
 :::::

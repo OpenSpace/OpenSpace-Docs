@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Oort Cloud
-
 {menuselection}`Scene --> Solar System --> Comets --> Oort Cloud`
-
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2

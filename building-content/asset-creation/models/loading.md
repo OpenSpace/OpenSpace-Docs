@@ -51,49 +51,49 @@ If this property is left out in the asset file and your model has invisible part
 ## List of formats
 Here is a list of supported formats in OpenSpace:
 
-| Extension     | Name                                     | Comment                     |
-| ------------- | ---------------------------------------- | --------------------------- |
-| 3d, uc        | Unreal Mesh                              |                             |
-| 3ds, prj      | 3ds Max 3DS                              | Limited support by Assimp   |
-| 3mf           | 3D Manufacturing Format                  |                             |
-| ac, acc, ac3d | AC3D                                     |                             |
-| amf           | Additive manufacturing file format       | Limited support by Assimp   |
-| ase, ask      | 3ds Max ASE                              |                             |
-| assbin        | Assimp Binary                            |                             |
-| b3d           | BlitzBasic 3D                            |                             |
-| blend         | Blender 3D                               | Limited support by Assimp   |
-| cob, scn      | TrueSpace                                | Limited support by Assimp   |
-| dae, zae      | Collada                                  |                             |
-| dxf           | AutoCAD DXF                              |                             |
-| fbx           | Autodesk                                 |                             |
-| gltf, glb     | glTF       | Export from Blender does not support specular texture maps |
-| ifc, ifczip   | Industry Foundation Classes (IFC / Step) |                             |
-| irr           | Irrlicht Scene                           |                             |
-| irrmesh       | Irrlicht Mesh                            |                             |
-| lwo           | LightWave                                |                             |
-| lws, mot      | LightWave Scene                          |                             |
-| lxo           | Modo                                     |                             |
-| m3d           | Model 3D                                 |                             |
-| md2           | Quake II Mesh                            |                             |
-| md3           | Quake III Mesh                           |                             |
-| md5anim, md5camera, md5mesh | Doom 3 / MD5 Mesh          |                             |
-| mdc           | Return To Castle Wolfenstein Mesh        |                             |
-| mdl           | Quake Mesh / 3D GameStudio Mesh          |                             |
-| mesh, mesh.xml | Ogre3D Mesh                             |                             |
-| ms3d          | Milkshape 3D                             |                             |
-| ndo           | Nendo Mesh                               |                             |
-| nff, enff     | Neutral File Format                      |                             |
-| obj           | Wavefront Object                         | Limited support by Assimp   |
-| off           | OFF                                      |                             |
-| ogex          | Open Game Engine Exchange                |                             |
-| osmodel       | OpenSpace binary model format            |                             |
-| pk3, bsp      | Quake III BSP                            |                             |
-| ply           | Stanford Polygon Library                 |                             |
-| q3o, q3s      | Quick3D                                  |                             |
-| raw           | Raw                                      |                             |
-| sib           | Silo SIB                                 | Limited support by Assimp   |
-| smd, vta      | Valve SMD                                |                             |
-| stl           | Stereolithography | Mostly used for 3D printing, might not support colors or textures |
-| x             | DirectX X                                |                             |
-| x3d, x3db     | Extensible 3D                            | Limited support by Assimp   |
-| xgl, zgl      | XGL                                      |                             |
+| Extension | Name | Comment |
+| --------- | ---- | ------- |
+| 3d, uc | Unreal Mesh | |
+| 3ds, prj | 3ds Max 3DS | Limited support by Assimp |
+| 3mf | 3D Manufacturing Format | |
+| ac, acc, ac3d | AC3D | |
+| amf | Additive manufacturing file format | Limited support by Assimp |
+| ase, ask | 3ds Max ASE | |
+| assbin | Assimp Binary | |
+| b3d | BlitzBasic 3D | |
+| blend | Blender 3D | Limited support by Assimp |
+| cob, scn | TrueSpace | Limited support by Assimp |
+| dae, zae | Collada | |
+| dxf | AutoCAD DXF | |
+| fbx | Autodesk | |
+| gltf, glb | glTF | Export from Blender does not support specular texture maps |
+| ifc, ifczip | Industry Foundation Classes (IFC / Step) | |
+| irr | Irrlicht Scene | |
+| irrmesh | Irrlicht Mesh | |
+| lwo | LightWave | |
+| lws, mot | LightWave Scene | |
+| lxo | Modo | |
+| m3d | Model 3D | |
+| md2 | Quake II Mesh | |
+| md3 | Quake III Mesh | |
+| md5anim, md5camera, md5mesh | Doom 3 / MD5 Mesh | |
+| mdc | Return To Castle Wolfenstein Mesh | |
+| mdl | Quake Mesh / 3D GameStudio Mesh | |
+| mesh, mesh.xml | Ogre3D Mesh | |
+| ms3d | Milkshape 3D | |
+| ndo | Nendo Mesh | |
+| nff, enff | Neutral File Format | |
+| obj | Wavefront Object | Limited support by Assimp |
+| off | OFF | |
+| ogex | Open Game Engine Exchange | |
+| osmodel | OpenSpace binary model format | |
+| pk3, bsp | Quake III BSP | |
+| ply | Stanford Polygon Library | |
+| q3o, q3s | Quick3D | |
+| raw | Raw | |
+| sib | Silo SIB | Limited support by Assimp |
+| smd, vta | Valve SMD | |
+| stl | Stereolithography | Mostly used for 3D printing, might not support colors or textures |
+| x | DirectX X | |
+| x3d, x3db | Extensible 3D | Limited support by Assimp |
+| xgl, zgl | XGL | |

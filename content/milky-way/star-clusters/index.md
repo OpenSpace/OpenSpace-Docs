@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Star Clusters
-
 {menuselection}`Scene --> Milky Way --> Star Clusters`
-
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
@@ -36,7 +27,7 @@ OB Associations are groupings of stars that have moved apart over time and are n
 % :::{figure} star_clusters.png
 % :align: left
 % :alt: A view from outside the Milky Way Galaxy with the star cluster data overlaid. Green points indicate the positions of the open clusters, the larger, multicolored points are the OB associations, and the yellow points are the location of the globular clusters.
-% 
+%
 % Looking at the Milky Way Galaxy we see the star cluster data sets overlaid. Green points are the open clusters, the larger, multicolored points are the OB associations, and the yellow points are the globular clusters.
 % :::
 

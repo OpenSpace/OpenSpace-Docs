@@ -20,11 +20,11 @@ CXXFLAGS=-std=gnu++20; export CXXFLAGS
 
 ## Dependencies
 Install the following libraries:
- - libGL (`sudo pkg install libGL`)
- - GLEW (`sudo pkg install glew`)
- - Freeimage (`sudo pkg install freeimage`)
- - libsysinfo (`sudo pkg install libsysinfo`)
- - libinotify (`sudo pkg install libinotify`)
- - GDAL (`sudo pkg install gdal`)
+  - libGL (`sudo pkg install libGL`)
+  - GLEW (`sudo pkg install glew`)
+  - Freeimage (`sudo pkg install freeimage`)
+  - libsysinfo (`sudo pkg install libsysinfo`)
+  - libinotify (`sudo pkg install libinotify`)
+  - GDAL (`sudo pkg install gdal`)
 
 Some other libraries will be needed....

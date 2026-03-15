@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Earth
-
 {menuselection}`Scene --> Solar System --> Planets --> Earth`
-
 
 :::{warning}
 This section is incomplete---nothing to see here, yet.

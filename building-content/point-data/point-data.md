@@ -3,7 +3,7 @@ A commonly used type of dataset is those containing a set of 3D positions. These
 
 This page describes how to load a point dataset and the options for controlling the visual of the points. It is also possible to add text labels to the points. See the separate [Labels page](./labels.md) for more details on labels.
 
-Also see [RenderablePointCloud](/reference/asset-components/Renderable/RenderablePointCloud.md) asset component documentation for more details, available settings and examples of how to load and render point datasets.
+Also see [RenderablePointCloud](#base_renderable_pointcloud) asset component documentation for more details, available settings and examples of how to load and render point datasets.
 
 :::{figure} sdss.png
 :align: center
@@ -52,7 +52,7 @@ Per default, the X, Y and Z positions of the points are interpreted in meters, b
   ...
 ```
 
-Other options are for example `"Mpc"` for Megaparsec, or `Km` for kilometers. See [RenderablePointCloud](/reference/asset-components/Renderable/RenderablePointCloud.md) documentation for a list of supported units.
+Other options are for example `"Mpc"` for Megaparsec, or `Km` for kilometers. See [RenderablePointCloud](#base_renderable_pointcloud) documentation for a list of supported units.
 
 ### Data Mapping
 
@@ -103,22 +103,22 @@ it is also possible to control the size and color of the labels by adding a `Lab
 The points can be colored either using a fixed color or by a color map ([see separate page](./data-formats.md#color-maps-cmap) for details about color map data formats). These are set by adding a `Coloring` component to the Renderable specification:
 
 ```lua
-  ...
-  Renderable = {
-    Type = "RenderablePointCloud",
-    File = asset.resource("path/to/dataset.csv"),
-    -- Add a component for controlling the coloring
-    Coloring = {
-      -- Specify a fixed color for all the points:
-      FixedColor = { 1.0, 0.0, 0.0 }, -- red
-      -- Or apply a color map:
-      ColorMapping = {
-        File = asset.resource("path/to/colormap.cmap"),
-        -- Any other settings...
-      }
+...
+Renderable = {
+  Type = "RenderablePointCloud",
+  File = asset.resource("path/to/dataset.csv"),
+  -- Add a component for controlling the coloring
+  Coloring = {
+    -- Specify a fixed color for all the points:
+    FixedColor = { 1.0, 0.0, 0.0 }, -- red
+    -- Or apply a color map:
+    ColorMapping = {
+      File = asset.resource("path/to/colormap.cmap"),
+      -- Any other settings...
     }
-  },
-  ...
+  }
+},
+...
 ```
 
 If a color map is added, it will be enabled by default. But it can also be disabled either in the asset or during runtime. If both a `FixedColor` and `ColorMapping` is specified, the color mapping will be used (as long as it is enabled).
@@ -126,7 +126,7 @@ If a color map is added, it will be enabled by default. But it can also be disab
 ### Color Mapping
 Alternatively, each point can be colored using a selected data variable and a color map. This is done by adding a `ColorMapping` table in the asset, as shown above. With that setup, the point cloud dataset can be interactively colored by any data value in the dataset, which is useful when exploring or creating a new visualization. However, it is also possible to prepare a set of parameters and data ranges to choose from (see below).
 
-The coloring is performed based on a _color map_, a choice of data _parameter_ and a _value range_. Points with values within the range will be colored based on the normalized value of their datapoint, where the minimum value corresponds to the first color in the color map and the max value corresponds to the last color. Any color in between will be determined in a nearest-neighbor fashion.
+The coloring is performed based on a *color map*, a choice of data *parameter* and a *value range*. Points with values within the range will be colored based on the normalized value of their datapoint, where the minimum value corresponds to the first color in the color map and the max value corresponds to the last color. Any color in between will be determined in a nearest-neighbor fashion.
 
 :::{admonition} Default behavior
 :class: note
@@ -136,7 +136,6 @@ The data parameter used for coloring at startup will be the last one that is loa
 :::
 
 #### Predefine color parameters and value ranges
-
 By default, all the variables in the dataset are loaded as possible options for color mapping, and the value range to use for the is generated. However, it is also possible to predefine a set of parameters that can be used for coloring, together with predefined value ranges that should be applied when selecting a parameter among the provided options.
 
 ```lua
@@ -182,7 +181,7 @@ Finally, it is also possible to color points outside the specified value range d
 
 We refer to our example assets for more details on how to customize these color map settings, but here follows a summary of the properties for controlling what happens outside the data range or for missing values. All of these are optional but can be added to the `ColorMapping` table in the asset.
 
-| Properties| Description | Type |
+| Properties | Description | Type |
 | :--- | :--- | :--- |
 | `NoDataColor`*, `ShowMissingData` | Show missing data points in a specific color | `vec4`, `bool` |
 | `HideValuesOutsideRange` | Hide any value that is outside the provided value range | `bool` |
@@ -260,7 +259,7 @@ The list of available path tokens and their corresponding locations are found in
 :::
 
 ### Other Texture Settings
-There are some additional settings that might be set related to the texture, like whether image compression should be allowed or if the alpha channel of images should be used (both these settings are enabled per default). For more details, see the documentation of the table parameters for the `Texture` table of `RenderablePointCloud` on the [reference page about that renderable](/reference/asset-components/Renderable/RenderablePointCloud.md).
+There are some additional settings that might be set related to the texture, like whether image compression should be allowed or if the alpha channel of images should be used (both these settings are enabled per default). For more details, see the documentation of the table parameters for the `Texture` table of `RenderablePointCloud` on the [reference page about that renderable](#base_renderable_pointcloud).
 
 ## Outlines
 :::{figure} outline_basic.png
@@ -274,18 +273,18 @@ When rendering points without additive blending, it might be difficult to distin
 To add an outline to your point cloud, set the `Coloring.EnableOutline` setting to `true`, and possibly add an outline color and/or width setting. See example:
 
 ```lua
- ...
-  Renderable = {
-    ...
-    Coloring = {
-      FixedColor = { 0.5, 0.8, 1.0 }, -- light blue
-      -- Outline settings
-      EnableOutline = true,
-      OutlineColor = { 1.0, 1.0, 1.0 }, -- white
-      OutlineWidth = 0.1
-    }
-  },
+...
+Renderable = {
   ...
+  Coloring = {
+    FixedColor = { 0.5, 0.8, 1.0 }, -- light blue
+    -- Outline settings
+    EnableOutline = true,
+    OutlineColor = { 1.0, 1.0, 1.0 }, -- white
+    OutlineWidth = 0.1
+  }
+},
+...
 ```
 
 ### Outline Style and Color From Color Map
@@ -299,23 +298,22 @@ Outlines on a textured point cloud in three different styles: Round (left), Squa
 :::
 
 ```lua
- ...
-  Renderable = {
-    ...
-    Coloring = {
-      ...
-      EnableOutline = true,
-      -- Set outline color to the one decided by the color map
-      ApplyColorMapToOutline = true,
-      -- Set the style of the outline. Will also affect the shape of the point
-      OutlineStyle = "Square" -- alternatively "Round" or "Bottom"
-    }
-  },
+...
+Renderable = {
   ...
+  Coloring = {
+    ...
+    EnableOutline = true,
+    -- Set outline color to the one decided by the color map
+    ApplyColorMapToOutline = true,
+    -- Set the style of the outline. Will also affect the shape of the point
+    OutlineStyle = "Square" -- alternatively "Round" or "Bottom"
+  }
+},
+...
 ```
 
 ## Controlling the Point Size
-
 At the core, the size of the points is computed based on one parameter: a logarithmic exponent that decides the absolute size of the point. The exponential component exists to allow creating point clouds over very different scales and distances and should be set to match the scale of the dataset. It is used to compute the actual world scale size of the points, at their position in the 3D scene. For example, an exponent of 3 will lead to points with a size in the order of 1000 meters, while an exponent of 10 will lead to points with a size of about 10^10 = 100'000'000 meters.
 
 If not included in the asset, a default exponent is computed based on the positional information in the dataset. However, this should be seen as a starting point and you will likely want to modify it so that the scale of the points looks good based on the density, number of points and the spread of your particular dataset, as well as the use case for which it is to be shown.
@@ -325,18 +323,18 @@ Secondly, a multiplicative factor that can be used to increase or decrease the *
 To update the scaling in the points, add a `SizeSettings` table to your asset specification. See example:
 
 ```lua
-  ...
-  Renderable = {
-    Type = "RenderablePointCloud",
-    File = asset.resource("path/to/dataset.csv"),
-    SizeSettings = {
-      -- Control the world-scale size of the points, here in the order of 10^15
-      ScaleExponent = 15.0,
-      -- Visually make all the points twice as large
-      ScaleFactor = 2.0
-    }
-  },
-  ...
+...
+Renderable = {
+  Type = "RenderablePointCloud",
+  File = asset.resource("path/to/dataset.csv"),
+  SizeSettings = {
+    -- Control the world-scale size of the points, here in the order of 10^15
+    ScaleExponent = 15.0,
+    -- Visually make all the points twice as large
+    ScaleFactor = 2.0
+  }
+},
+...
 ```
 
 :::{note}
@@ -377,27 +375,26 @@ The larger the `MaxSize` is, the larger the points are allowed to become when th
 At the core, the size of the points is still determined by the exponential scaling. That is, as long as the camera is far enough away so that the points do not exceed the specified max size, the size will still be determined by the provided scale exponent. Also, the multiplicative `ScaleFactor` is applied after the max size scaling. That is, if you specify a `MaxSize` and a `ScaleFactor` of 2, the max size of the points will be twice as large as with a `ScaleFactor` of 1.
 
 :::{dropdown} The `MaxSize` value
-When computing the maximum allowed size of the points, the `MaxSize` value is interpreted as __an angle (in degrees)__ that the point is allowed to take up of the view, from the perspective of the camera. In simplified terms, a value of 1 implies that the point is allowed to take up a maximum of 1 degree of the camera's field of view.
+When computing the maximum allowed size of the points, the `MaxSize` value is interpreted as **an angle (in degrees)** that the point is allowed to take up of the view, from the perspective of the camera. In simplified terms, a value of 1 implies that the point is allowed to take up a maximum of 1 degree of the camera's field of view.
 :::
 
 ### Scale Based on Data
-
 It is also possible to do some simple scaling based on data parameters. The size of the points is then scaled based on the value in the data column.
 
 Similarly to the color mapping, the size mapping is added by specifying a list of options that can be used for setting the size of the points:
 
 ```lua
-  ...
-  Renderable = {
-    Type = "RenderablePointCloud",
-    File = asset.resource("path/to/dataset.csv"),
-    SizeSettings = {
-      -- The options for the columns that the points can be scaled by. The first
-      -- alternative is chosen per default
-      SizeMapping = { "one parameter", "another parameter" }
-    }
-  },
-  ...
+...
+Renderable = {
+  Type = "RenderablePointCloud",
+  File = asset.resource("path/to/dataset.csv"),
+  SizeSettings = {
+    -- The options for the columns that the points can be scaled by. The first
+    -- alternative is chosen per default
+    SizeMapping = { "one parameter", "another parameter" }
+  }
+},
+...
 ```
 :::{attention}
 The size mapping is currently a bit of an experimental feature. For now, the point size if directly multiplied with the data value is directly multiplied by the data value of the chosen `SizeMapping` column. This is not always suitable though, depending on the range of the data values. The behavior may be subject to change in the future.
@@ -407,9 +404,9 @@ The size mapping is currently a bit of an experimental feature. For now, the poi
 
 In summary, the order in which the settings affect the size of the points is the following:
 
-1. 10 ^ `ScaleExponent` * Scale From Data => world scale size
-2. Limit point size to max size => prevent the points from growing larger than a certain size in view
-3. Finally, multiply with `ScaleFactor` to increase or decrease the size, onscreen
+  1. 10 ^ `ScaleExponent` * Scale From Data => world scale size
+  1. Limit point size to max size => prevent the points from growing larger than a certain size in view
+  1. Finally, multiply with `ScaleFactor` to increase or decrease the size, onscreen
 
 ## Fading
 
@@ -418,23 +415,22 @@ A point cloud can also be set up so that it fades in and out based on the distan
 To configure the fading for the point cloud, specify the distance over which the fading should occur in the asset file:
 
 ```lua
-  ...
-  Renderable = {
-    Type = "RenderablePointCloud",
-    File = asset.resource("path/to/dataset.csv"),
-    Fading = {
-      -- Control at what distance the points fade in. The points will be *invisible*
-      -- when the camera is closer than the first value, and fully visible when the
-      -- camera is further away then the last value. In-between they will linearly
-      -- fade in or out
-      FadeInDistances = { 100, 1000 },
-      -- Optionally, invert the fading. If invert is set to true, the fading is
-      -- inverted so that the points are *visible* when the camera is closer than
-      -- the first distance and invisble when further away than the second
-      Invert = false
-    }
-  },
-  ...
+...
+Renderable = {
+  Type = "RenderablePointCloud",
+  File = asset.resource("path/to/dataset.csv"),
+  Fading = {
+    -- Control at what distance the points fade in. The points will be *invisible* when
+    -- the camera is closer than the first value, and fully visible when the camera is
+    -- further away then the last value. In-between they will linearly fade in or out
+    FadeInDistances = { 100, 1000 },
+    -- Optionally, invert the fading. If invert is set to true, the fading is inverted so
+    -- that the points are *visible* when the camera is closer than the first distance and
+    -- invisble when further away than the second
+    Invert = false
+  }
+},
+...
 ```
 
 :::{note}
@@ -460,21 +456,21 @@ The schematic image below illustrates the resulting orientation for the first tw
 And this is how the orientation is set from an asset file:
 
 ```lua
+...
+Renderable = {
   ...
-  Renderable = {
-    ...
-    -- Set the orientation render option to face the camera position instead of the
-    -- view direction, which is default
-    Billboard = "Camera Position Normal"
-  },
-  ...
+  -- Set the orientation render option to face the camera position instead of the
+  -- view direction, which is default
+  Billboard = "Camera Position Normal"
+},
+...
 ```
 
 ## Specializations of RenderablePointCloud
 
-There are also other specializations of the [RenderablePointCloud](/reference/asset-components/Renderable/RenderablePointCloud.md) type, that add one or more specialized features for the points. The [RenderablePointCloud](/reference/asset-components/Renderable/RenderablePointCloud.md) type renderable should however be sufficient for most use cases.
+There are also other specializations of the [RenderablePointCloud](#base_renderable_pointcloud) type, that add one or more specialized features for the points. The [RenderablePointCloud](#base_renderable_pointcloud) type renderable should however be sufficient for most use cases.
 
 | Renderable type | Description |
 | :--- | :--- |
-| [RenderablePolygonCloud](/reference/asset-components/Renderable/RenderablePolygonCloud.md)             | A point cloud where each point is represented by a dynamically created uniform polygon (such as a triangle, hexagon, octagon, etc.). The number of sides of the polygon is configured in the asset. |
-| [RenderableInterpolatedPoints](/reference/asset-components/Renderable/RenderableInterpolatedPoints.md) | A point cloud that supports interpolation between a number of sets of positions.                                                                                                                    |
+| [RenderablePolygonCloud](#base_renderable_polygoncloud) | A point cloud where each point is represented by a dynamically created uniform polygon (such as a triangle, hexagon, octagon, etc.). The number of sides of the polygon is configured in the asset. |
+| [RenderableInterpolatedPoints](#base_renderable_interpolatedpoints) | A point cloud that supports interpolation between a number of sets of positions. |

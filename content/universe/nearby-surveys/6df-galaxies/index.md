@@ -1,26 +1,16 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # 6dF Galaxies
-
 {menuselection}`Scene --> Universe --> Nearby Surveys --> 6dF Galaxies`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 The Six-degree Field (6dF) Galaxy Survey mapped roughly half the sky from the Anglo-Australian Observatory. The survey used the 1.2-meter UK Schmidt Telescope at Siding Spring Observatory in New South Wales, Australia, and allowed for a six degree field of view per observation.
 
 
 :::{figure} 6df_galaxies.png
 :align: left
-:alt: A view of the 6dF galaxies as multicolored points. The large-scale structure, the weblike appearance of the nearby universe, is readily apparent. 
+:alt: A view of the 6dF galaxies as multicolored points. The large-scale structure, the weblike appearance of the nearby universe, is readily apparent.
 
 The 6dF galaxies resemble those of Tully, in scale and in color. We use the same color map for all galaxy surveys, where galaxies in more dense areas appear orange and yellow, and galaxies in less dense areas are green and aqua. The large-scale structure is clearly visible here, but not as consolidated as it is in the [Tully Galaxies](../tully-galaxies/index).
 :::
@@ -42,7 +32,6 @@ An "edge-on" view of the 6dF Galaxies, which observed only the southern sky, hen
 
 
 ### Completeness
-
 Unlike the Tully galaxies, these data show an incompleteness in the sample. Most of the rich structure is visible closer to the Milky Way, where we see more of the dimmer galaxies. Toward the edge of the data set we see galaxies by their lonesome. This is because these data are not as {term}`complete <completeness>`. We're only seeing the brighter galaxies to this distance, and therefore less complex structures are visible.
 
 
@@ -58,7 +47,6 @@ The 6dF Galaxies from the night sky perspective. We see the band of the Milky Wa
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -83,7 +71,6 @@ The 6dF Galaxies from the night sky perspective. We see the band of the Milky Wa
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 117,441 galaxies
 :assetfile: data/assets/scene/digitaluniverse/6dF.asset
@@ -91,7 +78,7 @@ The 6dF Galaxies from the night sky perspective. We see the band of the Milky Wa
 :preparedby: Brian Abbott, Sohum Udani (AMNH)
 :sourceversion: 1.05
 :license: amnh
-:reference: The 6dF Galaxy Survey - Final Redshift Release (DR3) and Southern Large-scale Structures=https://doi.org/10.1111/j.1365-2966.2009.15338.x
+:reference: The 6dF Galaxy Survey - Final Redshift Release (DR3) and Southern Large-scale Structures=<https://doi.org/10.1111/j.1365-2966.2009.15338.x>
 :::
 
 :::::

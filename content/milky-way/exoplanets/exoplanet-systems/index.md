@@ -1,20 +1,10 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Exoplanet Systems
-
 {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Systems`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 The discovery and study of exoplanets is a relatively new field within astrophysics. The first confirmed system was discovered in 1995, and since then it has been a burgeoning subfield of research.
 
 
@@ -33,7 +23,6 @@ A view of exoplanet systems in the night sky looking toward Cygnus, Lyra, and He
 
 
 ### Visualizing Exoplanet Systems
-
 The exoplanet systems are represented by a blue ring centered on each host star. The ring is not intended to signify an orbit; the various ring sizes reveal their distance from you. The labels list the host star name, and if there is more than one planet, will list the number of planets in parentheses. Note that not all objects here have a label, we omitted the longer labels to keep the view less cluttered.
 
 :::{note}
@@ -52,12 +41,11 @@ The night sky looking toward the constellations Orion and Taurus. The exoplaneta
 
 
 #### Seeing Individual Systems
-
 You can view individual exoplanetary systems using the [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index). To see an individual system of planets at their correct distance and inclination, along with a habitable zone, take the following steps:
-- Bring up the [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index).
-- Search for the system you want to see.
-- Add that system.
-- Target and fly to the system.
+  - Bring up the [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index).
+  - Search for the system you want to see.
+  - Add that system.
+  - Target and fly to the system.
 
 :::{figure} exoplanet_system_kepler11.png
 :align: left
@@ -71,7 +59,6 @@ Once you fly up to the system it will resemble the image for the Kepler-11 syste
 
 
 ### Distribution
-
 Exoplanet systems remain huddled around the Sun for the most part. This reflects our observational constraints. When viewed with the Radio Sphere, we can see that there are many systems within that theoretical boundary of our radio signals.
 
 
@@ -99,7 +86,6 @@ A view of the exoplanetary systems from outside the Milky Way galaxy. We are sti
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -124,7 +110,6 @@ A view of the exoplanetary systems from outside the Milky Way galaxy. We are sti
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 4,139 planets in 3,023 systems
 :assetfile: data/assets/scene/digitaluniverse/exoplanets.asset
@@ -132,7 +117,7 @@ A view of the exoplanetary systems from outside the Milky Way galaxy. We are sti
 :preparedby: Brian Abbott, Zack Reeves (AMNH)
 :sourceversion: 21.13
 :license: amnh
-:reference: NASA Exoplanet Archive=https://exoplanetarchive.ipac.caltech.edu/index.html;Gaia DR3=https://doi.org/10.5270/esa-qa4lep3;XHIP An Extended Hipparcos Compilation=https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971
+:reference: NASA Exoplanet Archive=<https://exoplanetarchive.ipac.caltech.edu/index.html>;Gaia DR3=<https://doi.org/10.5270/esa-qa4lep3>;XHIP An Extended Hipparcos Compilation=<https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971>
 :::
 
 :::::

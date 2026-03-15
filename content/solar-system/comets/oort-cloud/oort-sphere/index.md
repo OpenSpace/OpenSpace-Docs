@@ -37,9 +37,6 @@ years.
 :::::{tab-item} Profiles
 
 ## Profiles
-
-
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -64,7 +61,6 @@ years.
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 1 wire-framed sphere
 :assetfile: data/assets/scene/digitaluniverse/oort_cloud.asset

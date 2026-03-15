@@ -1,21 +1,11 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # White Dwarfs
-
 {menuselection}`Scene --> Milky Way --> Stellar Remnants --> White Dwarfs`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
-A white dwarf is a compact remnant---the final evolutionary state of over 95% of the stars in the Milky Way. This fate is determined by the mass of the star. Stars within the range of  0.08 to 8 solar masses become a red giant, shed their layers in a [planetary nebula](../../nebulae/planetary-nebulae/index), ultimately revealing a compact core called a white dwarf. Stars less massive than 0.08 solar masses have long lifetimes on the order of trillions of years. Stars more massive than 8 solar masses will result in either a [neutron star](../pulsars/index) or black hole. 
+A white dwarf is a compact remnant---the final evolutionary state of over 95% of the stars in the Milky Way. This fate is determined by the mass of the star. Stars within the range of  0.08 to 8 solar masses become a red giant, shed their layers in a [planetary nebula](../../nebulae/planetary-nebulae/index), ultimately revealing a compact core called a white dwarf. Stars less massive than 0.08 solar masses have long lifetimes on the order of trillions of years. Stars more massive than 8 solar masses will result in either a [neutron star](../pulsars/index) or black hole.
 
 :::{figure} Sirius_A_and_B_Hubble_photo.png
 :align: center
@@ -28,19 +18,16 @@ An Hubble Space Telescope image of the star Sirius, and it's faint companion whi
 
 
 ### Extraordinarily Dense
-
-The size of a white dwarf is approximately that of Earth, but its mass is on the order of the Sun's mass. So, they are extremely dense objects---one billion kilograms per cubic meter. Astronomers call the material that makes up a white dwarf _degenerate_ matter. Inside a normal star, gravitational forces pulling inward are balanced by the internal pressure produced from the release of energy. However, inside a white dwarf, there is no internal pressure to counter gravity, so the object is further compacted by the force of gravity until the electrons of neighboring atoms are smashed up against one another. The object cannot collapse further because, atomically, the electrons have nowhere to go.
+The size of a white dwarf is approximately that of Earth, but its mass is on the order of the Sun's mass. So, they are extremely dense objects---one billion kilograms per cubic meter. Astronomers call the material that makes up a white dwarf *degenerate* matter. Inside a normal star, gravitational forces pulling inward are balanced by the internal pressure produced from the release of energy. However, inside a white dwarf, there is no internal pressure to counter gravity, so the object is further compacted by the force of gravity until the electrons of neighboring atoms are smashed up against one another. The object cannot collapse further because, atomically, the electrons have nowhere to go.
 
 
 ### Ultimate Fate
-
 The Sun will become a white dwarf. It will transition into a red giant in about six billion years and will expand to envelope Earth in about 7.6 billion years. Within about 200 million years after that, the Sun will shed its outer layers into a [planetary nebula](../../nebulae/planetary-nebulae/index), and a white dwarf will emerge as the Sun's core remnant.
 
 Over time, a white dwarf will cool slowly and eventually fade from view, ultimately becoming what is known as a [black dwarf](https://en.wikipedia.org/wiki/Black_dwarf). The timeline for this gradual fade; however, is longer than the age of the universe. So, at this point in cosmic history, no black dwarfs yet exist.
 
 
 ### Representing White Dwarfs
-
 :::{note}
 We represent the white dwarfs with generic points with exaggerated brightness. Larger points indicate the object is closer to you.
 :::
@@ -68,8 +55,7 @@ A view of the night sky looking toward Scorpius and Sagittarius but, instead of 
 
 
 ### Distribution in the Galaxy
-
-Because white dwarfs gradually cool over many billions of years, we expect to see them wherever we see stars. They are spherically distributed around the Sun, not limited to more recent stellar activity in the disk of the Galaxy. 
+Because white dwarfs gradually cool over many billions of years, we expect to see them wherever we see stars. They are spherically distributed around the Sun, not limited to more recent stellar activity in the disk of the Galaxy.
 
 This spherical huddle around the Sun is, of course, limited by what we can see---these data, like all the data here, are a product of our observations and those observations happen from Earth (or low-Earth orbit, which is essentially the same).
 
@@ -86,7 +72,6 @@ The distribution of white dwarfs in the Milky Way. These objects are huddled clo
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -111,8 +96,6 @@ The distribution of white dwarfs in the Milky Way. These objects are huddled clo
 :::::{tab-item} Dossier
 
 ## Dossier
-
-
 :::{dossier}
 :census: 192,613 white dwarfs
 :assetfile: data/assets/scene/digitaluniverse/white_dwarfs.asset
@@ -120,7 +103,7 @@ The distribution of white dwarfs in the Milky Way. These objects are huddled clo
 :preparedby: Zack Reeves, Brian Abbott (AMNH)
 :sourceversion: 1.01
 :license: amnh
-:reference: Catalogue of white dwarfs in Gaia EDR3=https://doi.org/10.1093/mnras/stab2672
+:reference: Catalogue of white dwarfs in Gaia EDR3=<https://doi.org/10.1093/mnras/stab2672>
 :::
 
 :::::
