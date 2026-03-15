@@ -59,7 +59,7 @@ In `Sparse` mode, the data is a CSV file where each row corresponds to one vecto
 
 An example CSV file:
 
-```
+```text
 x,y,z,vx,vy,vz
 13428000,26239000,45870000,-377.27,-161.05,282.85
 10993567,30395576,-33872508,-2.15,217.11,-176.28
@@ -159,7 +159,7 @@ There are additional settings that control the appearance of the vector field. T
 | --- | --- | --- |
 | `VectorFieldScale` | `1.0` | Scales the arrow lengths using an exponential scale, ranging from meter scale (1) to approximately 3 Mpc scale (100). |
 | `LineWidth` | `1.0` | Width of the arrow lines in pixels. |
-| `Stride` | `1` | Render only every _n_-th vector. A stride of 1 renders all vectors, 2 renders every other vector, 3 renders every third, and so on. This is useful for reducing visual clutter in dense datasets. |
+| `Stride` | `1` | Render only every *n*-th vector. A stride of 1 renders all vectors, 2 renders every other vector, 3 renders every third, and so on. This is useful for reducing visual clutter in dense datasets. |
 
 ## Lua Filtering
 For advanced use cases, it is possible to filter which vectors are displayed by providing a custom Lua script. This is useful for, for example, only showing vectors above a certain speed threshold or within a specific spatial region.
