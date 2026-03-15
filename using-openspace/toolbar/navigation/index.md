@@ -30,9 +30,9 @@ The panel has an iconized submenu at the top that determines what you see in the
 
 ## Focus
 
-In OpenSpace, there must be an object that is set as the Focus. This can be any asset that you load in the profile, or it can be the _root_: {math}`(0, 0, 0)`. In most profiles, Earth is set as the Focus because most data sets and navigation takes place around Earth.
+In OpenSpace, there must be an object that is set as the Focus. This can be any asset that you load in the profile, or it can be the *root*: {math}`(0, 0, 0)`. In most profiles, Earth is set as the Focus because most data sets and navigation takes place around Earth.
 
-The Focus is important because it affects _how_ one flies through data. With Earth as the default Focus, you will orbit around Earth with the {menuselection}`left mouse button` and you will zoom in and out relative to Earth with the {menuselection}`right mouse button`.
+The Focus is important because it affects *how* one flies through data. With Earth as the default Focus, you will orbit around Earth with the {menuselection}`left mouse button` and you will zoom in and out relative to Earth with the {menuselection}`right mouse button`.
 
 :::{note}
 See [](/getting-started/navigation/index) in Getting Started for details about the Flight Modes and how the Focus affects each of them.
@@ -310,7 +310,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 ![Focus on Phobos](tutorial_phobos_focus_afar.png)
 
 {.tutorial}
-1. {octicon}`telescope;1.25em;profile-tour-action` Focus on Phobos using one of the following two ways: 
+1. {octicon}`telescope;1.25em;profile-tour-action` Focus on Phobos using one of the following two ways:
 
 {.tutorial}
   - Using the Scene Menu, set Mars' moon Phobos as the Focus. \
@@ -346,7 +346,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 
 
-### Focus on Mars
+### Focus on Mars again
 ![Mars as focus](tutorial_mars_focus.png)
 
 {.tutorial}

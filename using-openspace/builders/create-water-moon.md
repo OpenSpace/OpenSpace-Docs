@@ -1,22 +1,19 @@
 # Create and display a "Water Moon"
-The objective is to show all the volume of the water on Earth as a little "moon" right next to Earth. 
-For this, we're going to create an asset. 
-We could create a [renderable globe](/building-content/globebrowsing/creation/creating-a-renderableglobe) to do this, 
-but we have a simpler way, using the [RenderableSphereImageLocal](#base_screenspace_imagelocal) asset component
-introduced in version 0.20.
+The objective is to show all the volume of the water on Earth as a little "moon" right next to Earth. For this, we're going to create an asset.
 
-asset component. To load the texture, if we save the texture image (many such water textures are available for free online) as "watertexture.jpg" in the same directory as the asset file created below, 
+We could create a [RenderableGlobe](/building-content/globebrowsing/creation/creating-a-renderableglobe) to do this, but we have a simpler way, using the [RenderableSphereImageLocal](#base_screenspace_imagelocal) asset component introduced in version 0.20.
+
+asset component. To load the texture, if we save the texture image (many such water textures are available for free online) as "watertexture.jpg" in the same directory as the asset file created below.
 In order to locate the newly created sphere at a chosen location near Earth, we can use the [GlobeTranslation](#base_translation_globe)
 we can use the [resource method](/building-content/asset-creation/resources) to render the texture on the sphere.
 
-The whole thing can be put together as an asset file called for example **sphereonglobe.asset**, and saved under the user/data/assets directory of our OpenSpace installation, since all assets in that folder show up 
-automatically in the asset selection part of profile editor, as seen below.
-:::{figure} create-water-moon-asset-editor-screen.jpg 
+The whole thing can be put together as an asset file called for example **sphereonglobe.asset**, and saved under the user/data/assets directory of our OpenSpace installation, since all assets in that folder show up automatically in the asset selection part of profile editor, as seen below.
+:::{figure} create-water-moon-asset-editor-screen.jpg
 The user asset shows up like this in the Profile Editor under Assets -- Edit
 :::
 
 The complete asset file can be as below. Please note the comments which are preceded by two dashes, like `--`.
-```
+```lua
 local earth_asset = asset.require('scene/solarsystem/planets/earth/earth')
 
 local Sphere1 = {
@@ -57,8 +54,8 @@ end)
 asset.export(Sphere1)
 
 ```
-Next, we can create a new profile by editing an existing profile, and add this asset to that profile as described in a separate tutorial. 
+Next, we can create a new profile by editing an existing profile, and add this asset to that profile as described in a separate tutorial.
 Or, we can also just drag and drop the asset file into OpenSpace once it is up and running, and make this asset show up as seen in the image below.
-:::{figure} create-water-moon-openspace-screen.jpg 
+:::{figure} create-water-moon-openspace-screen.jpg
 After dragging and dropping the **sphereonglobe.asset** file into OpenSpace, the sphere is seen rendered
 :::

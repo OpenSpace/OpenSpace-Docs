@@ -44,7 +44,7 @@ asset.export(ScreenSpace)
 ### If your resource is not located in the same folder as the asset
 To load a file that is located somewhere else than where your asset file is, you need to specify the **absolute path**. An absolute path tells the location of the file and usually starts with the name of the disk the file is located on, most commonly `C:/` or `D:/`. This is the absolute path for the movie in the image above:
 
-```
+```text
 "C:/Users/yourname/Desktop/Documents/myVideo.mp4"
 ```
 

@@ -40,7 +40,7 @@ The [**Antila Cluster**](https://en.wikipedia.org/wiki/Antlia_Cluster) is the th
 
 The [**Centaurus Cluster**](https://en.wikipedia.org/wiki/Centaurus_Cluster) has hundreds of galaxies and is about 170 million light years away. It is dominated by one, large elliptical galaxy, [NGC 4696](https://en.wikipedia.org/wiki/NGC_4696), and, along with the IC4329 Cluster and the Hydra Cluster makes up the bulk of the Hydra-Centaurus Supercluster.
 
-Farther away, the [**Coma Cluster**](https://en.wikipedia.org/wiki/Coma_Cluster) and [**Leo Cluster**](https://en.wikipedia.org/wiki/Leo_Cluster) are the heart of the [Coma Supercluster](https://en.wikipedia.org/wiki/Coma_Supercluster). The Coma Cluster is massive, containing over 1,000 galaxies, and it's about 320 million light years away. It was the early example of observed gravitational anomalies, resulting in "unobserved mass," thereby introducing the dark matter theory. This was discovered by [Fritz Zwicky](https://en.wikipedia.org/wiki/Fritz_Zwicky) (1898--1974) in 1933, who found that galaxies were moving too fast to be bound by gravity from visible matter alone. It would be another fifty years before the [dark matter](https://en.wikipedia.org/wiki/Dark_matter) hypothesis was widely accepted. Today, we know 90% of the mass of the cluster is dark matter. 
+Farther away, the [**Coma Cluster**](https://en.wikipedia.org/wiki/Coma_Cluster) and [**Leo Cluster**](https://en.wikipedia.org/wiki/Leo_Cluster) are the heart of the [Coma Supercluster](https://en.wikipedia.org/wiki/Coma_Supercluster). The Coma Cluster is massive, containing over 1,000 galaxies, and it's about 320 million light years away. It was the early example of observed gravitational anomalies, resulting in "unobserved mass," thereby introducing the dark matter theory. This was discovered by [Fritz Zwicky](https://en.wikipedia.org/wiki/Fritz_Zwicky) (1898--1974) in 1933, who found that galaxies were moving too fast to be bound by gravity from visible matter alone. It would be another fifty years before the [dark matter](https://en.wikipedia.org/wiki/Dark_matter) hypothesis was widely accepted. Today, we know 90% of the mass of the cluster is dark matter.
 
 The [**Norma Cluster**](https://en.wikipedia.org/wiki/Norma_Cluster) is about 220 million light years away. It is near the center of the [Great Attractor](https://en.wikipedia.org/wiki/Great_Attractor), an area of gravitational attraction where much of our part of the universe is moving toward, including the Virgo Cluster and the Milky Way. Because it is located near that band of light in the night sky we call the Milky Way, this cluster is severely obscured by gas and dust, making it difficult to see in visible light.
 
@@ -50,7 +50,7 @@ The [**Norma Cluster**](https://en.wikipedia.org/wiki/Norma_Cluster) is about 22
 :align: left
 :alt: A view of the galaxies with clusters in orange and labeled. We see the Coma and Leo clusters in the foreground, and the Perseus Cluster and Norma clusters on the outskirts.
 
-A view of the more distant clusters, including the Coma, Leo, Norma, and Perseus clusters. 
+A view of the more distant clusters, including the Coma, Leo, Norma, and Perseus clusters.
 :::
 :::::
 

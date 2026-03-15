@@ -234,7 +234,7 @@ Now you should be ready to create and configure a Virtual Host from Apache.
 Create a new site config in `/etc/apache2/sites-available` in a format that is `XXX-[generic-name].conf` where `X` is a number and the `[generic-name]` can be any relevant name.
 
 Copy and paste the following configuration into the file:
-```
+```text
 <VirtualHost *:80>
   ServerName [domain]
   DocumentRoot /var/www/openspace

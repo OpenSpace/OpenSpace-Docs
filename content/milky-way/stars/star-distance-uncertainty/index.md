@@ -11,7 +11,7 @@ In this scene, we provide a visual representation of the {term}`uncertainty` in 
 
 :::{figure} star_distance_uncertainty.png
 :align: left
-:alt: Among a starfield, from a perspective about 1,500 light years from earth, we see lines on select stars that represent their uncertainty range in distance. 
+:alt: Among a starfield, from a perspective about 1,500 light years from earth, we see lines on select stars that represent their uncertainty range in distance.
 
 Lines that represent the range of distance uncertainty for a selection of stars. From this vantage point, 1,500 light years from Earth, these lines radially point back to the Earth, so it appears to form a vortex from this perspective. A few of the foreground stars are labeled with their star name and the length of distance uncertainty in light years. Aqua lines represent stars with Gaia geometric parallax distances, orange lines denote Gaia photogeometric parallax distances, and yellow lines represent uncertainties for Hipparcos distances.
 :::
@@ -19,7 +19,7 @@ Lines that represent the range of distance uncertainty for a selection of stars.
 
 
 ### Parallax Uncertainty
-Every object that we measure has some uncertainty associated with that measurement. For the stars, we measure something called _parallax_. Generally, parallax refers to the apparent motion of something relative to something else. If you hold your phone at arm's length to take a selfie, as you move your arm to set up the perfect shot, your phone will appear to move relative to those objects in the background. Similarly, as Earth traverses around the Sun each year, nearby stars appear to shift relative to the more distant background stars. This apparent motion is imperceptible to the eye---we need highly specialized telescopes to measure the motion created by this parallax.
+Every object that we measure has some uncertainty associated with that measurement. For the stars, we measure something called *parallax*. Generally, parallax refers to the apparent motion of something relative to something else. If you hold your phone at arm's length to take a selfie, as you move your arm to set up the perfect shot, your phone will appear to move relative to those objects in the background. Similarly, as Earth traverses around the Sun each year, nearby stars appear to shift relative to the more distant background stars. This apparent motion is imperceptible to the eye---we need highly specialized telescopes to measure the motion created by this parallax.
 
 :::{figure} Parallax_02.png
 :align: left

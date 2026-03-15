@@ -47,7 +47,7 @@ Most users are not expected to add new path tokens. However, several of the defa
 The supported environment variables are:
 
 | Environment Variable | Overrides Token | Typical Reason |
-| -------------------- | --------------- | ---------------|
+| -------------------- | --------------- | -------------- |
 | `OPENSPACE_USER` | `${USER}` | Move user content to a different location |
 | `OPENSPACE_SYNC` | `${SYNC}` | Store synced data on a larger or shared drive |
 | `OPENSPACE_GLOBEBROWSING` | `${GLOBEBROWSING}` | Redirect GlobeBrowsing data to a dedicated disk |

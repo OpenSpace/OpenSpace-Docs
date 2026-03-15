@@ -61,7 +61,7 @@ This section covers the case where a raw raster data file (e.g. image) does not 
 The **gdal\_translate** software tool is used to convert the source raster file. Here is a usage example:
 `gdal_translate -of GTiff -a_ullr -180 90 180 -90 -a_srs <SRS_Coordinates> main_COL_v007.png main_COL_v007.tif`
 First, note that the text <SRS_Coordinates> is a substitute for the following string:
-```
+```text
 GEOGCS["Mars 2000",DATUM["D_Mars_2000",SPHEROID["Mars_2000_IAU_IAG",3396190.0,169.89444722361179]],PRIMEM["Greenwich",0],UNIT["Decimal_Degree",0.0174532925199433]]
 ```
 which can be given directly in the **gdal\_translate** command, or can be put into a text file in which case the **-a\_srs** argument is that filename.
@@ -69,7 +69,7 @@ The **-of** specifies the GeoTIFF output format using the **GTiff** tag, and **-
 
 ### Example of Swapping East & West Hemispheres
 It is apparently a common situation for a map to be shifted to the east by 180 degrees, making it necessary to swap the east/west hemispheres of the map (left/right halves of the image). The following console commands can be used to create a `.vrt` file that performs this swap operation:
-```
+```bash
 gdal_translate -of VRT -srcwin ${halfX} 0 ${halfX} ${fullY} -a_ullr -180 90 0 -90 -a_srs "${PRJ}" ${SRC} west.vrt
 gdal_translate -of VRT -srcwin 0 0 ${halfX} ${fullY} -a_ullr 0 90 180 -90 -a_srs "${PRJ}" ${SRC} east.vrt
 ```

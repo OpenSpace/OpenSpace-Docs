@@ -1,6 +1,7 @@
 # Astronomical Glossary
-::::{glossary}
+<!-- markdownlint-disable MD046 -->
 
+::::{glossary}
 
 All-sky Survey
     An all-sky image constructed from many small images of the night sky. Astronomers have these in visible light, which is the light we see with our eyes, but also have images in infrared, radio, X-Ray, and Gamma Ray areas of the electromagnetic spectrum. Also, the cosmic microwave background images are an example of a processed all-sky image. These images are two-dimensional in nature, so we wrap them onto a sphere that surrounds our vantage point.

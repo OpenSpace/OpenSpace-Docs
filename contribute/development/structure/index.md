@@ -50,6 +50,9 @@ Examples of these abstract classes are:
   - `Scale`:  A class that describes some form of scaling relative to the scene graph node's parent
   - `ScreenSpaceRenderable`:  A class that renders something on the screen but is not affected by the camera movement
 
+<!-- markdownlint-disable MD037 -->
+<!-- markdownlint-disable MD046 -->
+
 :::{mermaid}
 :zoom:
 
@@ -178,6 +181,9 @@ classDiagram
   Renderable <|-- RenderableGlobe
 :::
 
+<!-- markdownlint-enable MD037 -->
+<!-- markdownlint-enable MD046 -->
+
 ## Assets
 All content is controlled through the inclusion of assets. Assets are fundamentally Lua scripts that have access to a special variable `asset` which is injected by OpenSpace. This variable has a few functions that allow the asset to affect OpenSpace. A selection of these functions are:
   - `asset.require`: Causes this asset to load another asset file, the path of which is provided either as a relative or absolute path. This function returns a table that contains all of the symbols that were `asset.export`ed by the required asset (see below)
@@ -185,7 +191,7 @@ All content is controlled through the inclusion of assets. Assets are fundamenta
   - `asset.onDeinitialize`: Analogously to the `onInitialize`, the function passed as an argument into this function is called when the asset is to be unloaded
   - `asset.export`: Export a single element to anyone that `asset.require`s this asset.
 
-Through the user of the `asset.require` function, assets form a tree where a _Parent_ `require`s their _Children_.
+Through the user of the `asset.require` function, assets form a tree where a *Parent* `require`s their *Children*.
 
 ### Simple Example
 In this example, the child asset simply defines a variable that is then read by the parent asset and printed to the console.

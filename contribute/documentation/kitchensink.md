@@ -287,7 +287,7 @@ std::string_view bar() { return "abc"; }
 // show line numbers and a caption
 int foo() {
   // But it can be changed to C++ as well
-  return 1 * 2 * 3 * 4;
+  return 4;
 }
 :::
 

@@ -22,14 +22,14 @@ The goal of the 2MASS redshift survey was to map out to roughly a {term}`redshif
 
 
 ### Tully Substitute?
-The 2MASS and Tully data overlay one another, so which one is better? You may notice more spread in the 2MASS galaxy positions. That is, what appears to be a smearing of the large-scale structure. Around clusters of galaxies, you will also see the _{term}`finger of god`_ effect.
+The 2MASS and Tully data overlay one another, so which one is better? You may notice more spread in the 2MASS galaxy positions. That is, what appears to be a smearing of the large-scale structure. Around clusters of galaxies, you will also see the *{term}`finger of god`* effect.
 
 The [Tully Galaxies](../tully-galaxies/index) have performed a scientifically informed "massaging" of the galaxy positions, so it remains the more accurate rendition of the local universe.
 
 
 (2mass-finger-of-god)=
 ### Fingers of God
-A "finger of god" is a line of galaxies that point radially back to the Milky Way. Early in the process of mapping the local universe, astronomers noticed that galaxies, when plotted, appeared on lines that pointed radially back to Earth. It turns out these lines, dubbed _fingers of god_, are a cluster of galaxies spread out radially (along the line of sight) because of the local motions within the cluster contaminate the {term}`redshift <Redshift/blueshift>` measurement, which we use to compute the distance.
+A "finger of god" is a line of galaxies that point radially back to the Milky Way. Early in the process of mapping the local universe, astronomers noticed that galaxies, when plotted, appeared on lines that pointed radially back to Earth. It turns out these lines, dubbed *fingers of god*, are a cluster of galaxies spread out radially (along the line of sight) because of the local motions within the cluster contaminate the {term}`redshift <Redshift/blueshift>` measurement, which we use to compute the distance.
 
 For example, the galaxies of the [Local Group](../local-group/index) are all moving in seemingly random directions as they gravitationally interact with one another---many are blueshifted (coming toward us) even as the universe expands. These local motions within clusters contaminate the overall redshift in the spectrum, causing the distances to be less accurate, and appearing to stretch these clusters along our line of sight.
 :::::

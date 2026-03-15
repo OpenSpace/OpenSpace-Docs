@@ -31,7 +31,7 @@ The Bayer names (which take precedence in this data set) are designated by a Gre
 
 
 ### Flamsteed Catalog (Numbered Names)
-The Flamsteed Catalog uses numbers as designations along with the constellation name. Originally they were sequenced according to their position in the sky; however, [precession](https://en.wikipedia.org/wiki/Precession#Axial_precession_(precession_of_the_equinoxes)) has created inconsistencies over the centuries. Flamsteed names take the form _58 Orionis_, which is Betelgeuse. Unlike the Bayer names, which are limited by the twenty-four letters of the Greek alphabet, Flamsteed numbers can exceed 100 for a particular constellation.
+The Flamsteed Catalog uses numbers as designations along with the constellation name. Originally they were sequenced according to their position in the sky; however, [precession](https://en.wikipedia.org/wiki/Precession#Axial_precession_(precession_of_the_equinoxes)) has created inconsistencies over the centuries. Flamsteed names take the form *58 Orionis*, which is Betelgeuse. Unlike the Bayer names, which are limited by the twenty-four letters of the Greek alphabet, Flamsteed numbers can exceed 100 for a particular constellation.
 
 
 

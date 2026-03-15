@@ -47,7 +47,7 @@ The common analogy is to imagine an infinitely large raisin bread. As the bread 
 
 Another two-dimensional analogy is to imagine an infinitely large rubber sheet that's being stretched from all directions. No matter where you are, every other point will be moving farther away from you.
 
-That is the nature of the universe. There is no center and, except for very nearby galaxies where gravity remains influential, everything is receding from an observer at any location. 
+That is the nature of the universe. There is no center and, except for very nearby galaxies where gravity remains influential, everything is receding from an observer at any location.
 
 
 
@@ -57,7 +57,7 @@ That is the nature of the universe. There is no center and, except for very near
 
 % ### Lookback time
 
-% If we plotted objects according to their lookback time, then we'd expect everything to fit within the 13.8-billion-year age of the universe. The farthest quasars would be around 12 to 13 billion light years from Earth. The limit of our observable universe, the cosmic microwave background light, would stretch out to about 13.3 billion light years. 
+% If we plotted objects according to their lookback time, then we'd expect everything to fit within the 13.8-billion-year age of the universe. The farthest quasars would be around 12 to 13 billion light years from Earth. The limit of our observable universe, the cosmic microwave background light, would stretch out to about 13.3 billion light years.
 
 
 
