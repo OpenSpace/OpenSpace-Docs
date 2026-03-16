@@ -762,7 +762,7 @@ footer {
   padding: 18px 16px;
 }
 
-/* Function headers */ 
+/* Function headers */
 html.writer-html4 .rst-content dl:not(.docutils) > dt, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.citation):not(.glossary):not(.simple) > dt {
   background-color: var(--function-header-background-color);
 }

@@ -6,7 +6,7 @@ This profile shows the Coronal Mass Ejection (CME) that occurred on Bastille Day
 :::::::{tab-item} Tour
 ## Tour
 
-This profile includes many different visuals, so to avoid cluttering the scene, it is recommended to use the provided keyboard shortcuts to toggle elements on and off.
+This profile includes many different visuals, so to avoid cluttering the scene, it is recommended to use the provided actions to toggle elements on and off.
 
 This CME event might be the most studied solar storm so far. The visualizations to highlight the CME include:
 
@@ -17,15 +17,6 @@ This CME event might be the most studied solar storm so far. The visualizations 
   - A speed of light indicator to compare the speed of the CME
   - Cut-plane sequences showing the proton intensity (flux values) of the CME, one equatorial cut plane and one meridiona,
   - Flux nodes that also show the proton intensity (flux values), which are accompanied by a legend describing the color scheme. Flux nodes are simulated points positioned along the magnetic fields where the flux values are calculated
-
-:::::::
-
-:::::::{tab-item} Keyboard Shortcuts
-
-## Keyboard Shortcuts
-::::{include} /using-openspace/keyboard-shortcuts/bastilleday2000.md
-:heading-offset: 2
-::::
 
 :::::::
 

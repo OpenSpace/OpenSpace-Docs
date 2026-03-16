@@ -9,16 +9,7 @@ This profile shows several coronal mass ejections (CMEs) during July 2012, where
 
 The event is visualized with outputs from the simulation model ENLIL, whose domain spans across the solar system, from the Sun to Earth. The magnetosphere of Earth in this profile is visualized using BATSRUS, which shows the interaction of the particle flow of the solar wind and Earth's magnetosphere. There is also one time step of the PFSS model showing the Sun's local magnetic structure.
 
-To best interact with these visualizations, it is recommended to use the keyboard shortcuts, especially the time loops.
-:::::::
-
-:::::::{tab-item} Keyboard Shortcuts
-## Keyboard Shortcuts
-
-::::{include} /using-openspace/keyboard-shortcuts/solarstorm2012.md
-:heading-offset: 2
-::::
-
+To best interact with these visualizations, it is recommended to use the provided actions, especially the time loops.
 :::::::
 
 :::::::{tab-item} Data Sets
