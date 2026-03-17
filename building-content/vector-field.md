@@ -9,12 +9,12 @@ An example of a vector field rendered in OpenSpace using the sparse mode with di
 ## Loading Vector Field Datasets
 There are two ways to load vector field data into OpenSpace. The renderable supports two input modes: a regular volumetric grid and a sparse point-cloud dataset. Both modes provide several options for coloring, scaling, and filtering the result.
 
-The `Mode` parameter controls how the vector field data is loaded and interpreted. There are two options: `Volume` and `Sparse`.
+The `Mode` parameter controls how the vector field data is loaded and interpreted. There are two options: [Volume](#volume-mode) and [Sparse](#sparse-mode).
 
 ### Volume Mode
 In `Volume` mode, the data is a regular 3D grid of velocity vectors stored in a raw binary file. The grid is mapped to a spatial domain defined by `MinDomain` and `MaxDomain`. Each voxel stores three floating-point values - the x, y, and z components of the velocity vector, packed tightly and written in little-endian format.
 
-The voxel order is x-fastest, z-slowest, meaning x is the innermost loop, followed by y, and z is the outermost. The example Python script below shows how to write the binary data:
+The voxel order is x-y-z meaning x is the innermost loop, followed by y, and z is the outermost. The example Python script below shows how to write the binary data:
 
 ```python
 import struct
