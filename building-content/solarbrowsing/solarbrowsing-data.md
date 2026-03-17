@@ -15,7 +15,7 @@ The system currently supports images from three spacecraft. A full list of avail
 ## Downloading Data with the HelioviewerDownloadTask
 Data is downloaded using the `HelioviewerDownloadTask`, a pre-processing step run via the TaskRunner before starting OpenSpace. The task queries the Helioviewer API and downloads all available images within a specified time interval at a given cadence, storing the downloaded images on disk.
 
-See the [HelioviewerDownloadTask](/reference/asset-components/Task/solarbrowsing_helioviewerdownload_task) documentation for a full reference of available parameters.
+See the [HelioviewerDownloadTask](#solarbrowsing_task_helioviewerdownload) documentation for a full reference of available parameters.
 
 An example task file is available at `data/tasks/solarbrowsing/download_from_helioviewer.task`. It downloads the color maps from the OpenSpace data servers and then runs the download for SDO AIA-171 and STEREO EUVI-A 171. The relevant portion of the task looks like this:
 
