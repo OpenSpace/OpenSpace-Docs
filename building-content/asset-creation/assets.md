@@ -7,9 +7,9 @@ If you are editing assets, you are most likely a more advanced user. By default,
 
 
 ## Asset lifecycle
-When OpenSpace loads, a _root-level asset_ will be loaded according to the `Asset` setting in `openspace.cfg`. Typically, the scene asset refers to several other assets, which in turn reference others. Additional root-level assets can be added while OpenSpace is running using the Lua command `openspace.asset.add(<path to asset>)`. Assets can be removed by calling `openspace.asset.remove(<path to asset>)`. Only root-level assets may be removed using this method, while assets that are dependencies of other root-level will be automatically deinitialized when the last referencing root-level asset is removed.
+When OpenSpace loads, a *root-level asset* will be loaded according to the `Asset` setting in `openspace.cfg`. Typically, the scene asset refers to several other assets, which in turn reference others. Additional root-level assets can be added while OpenSpace is running using the Lua command `openspace.asset.add(<path to asset>)`. Assets can be removed by calling `openspace.asset.remove(<path to asset>)`. Only root-level assets may be removed using this method, while assets that are dependencies of other root-level will be automatically deinitialized when the last referencing root-level asset is removed.
 
-An asset that is imported into OpenSpace goes through a sequence of states: _Loading_, _Synchronization_, _Initialization_ and _Deinitialization_.
+An asset that is imported into OpenSpace goes through a sequence of states: *Loading*, *Synchronization*, *Initialization*, and *Deinitialization*.
 
 ### Loading
 When an asset is loaded, the asset file's Lua code is executed. The method `asset.require` may be used to declare dependencies on other assets, stating that they should be loaded first.

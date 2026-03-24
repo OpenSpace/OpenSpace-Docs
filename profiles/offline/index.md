@@ -1,18 +1,8 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
  <!-- "assets": [
-   
     "nightsky/nightsky",
-    
     "scene/milkyway/constellations/constellation_keybinds",
     "
     "scene/solarsystem/dwarf_planets/pluto/pluto/system",
-    
     "scene/solarsystem/planets/earth/layers/colorlayers/blue_marble",
     "scene/solarsystem/planets/earth/layers/heightlayers/blue_marble_height",
     "scene/solarsystem/planets/earth/layers/nightlayers/earth_at_night_2012",
@@ -26,14 +16,12 @@ authors:
     "scene/solarsystem/planets/saturn/layers/colorlayers/saturn_texture",
     "scene/solarsystem/planets/uranus/layers/colorlayers/uranus_texture",
     "scene/solarsystem/planets/venus/layers/colorlayers/venus_texture",
-    
   ],
   -->
 
 
 
 # Offline
-
 This profile includes low resolution maps of planets that do not require internet connection. You can safely run this profile without a connection to the outside world.
 
 **However**, the first time you run this profile it may fetch planet maps from a remote server. Run this profile once with an internat connection, then these items should be cached.
@@ -44,7 +32,6 @@ This profile includes low resolution maps of planets that do not require interne
 :::::::{tab-item} Tour
 
 ## Tour
-
 Please see the [](/profiles/default/index) Profile's Tour.
 
 :::::::
@@ -55,7 +42,6 @@ Please see the [](/profiles/default/index) Profile's Tour.
 :::::::{tab-item} Keyboard Shortcuts
 
 ## Keyboard Shortcuts
-
 ::::{include} /using-openspace/keyboard-shortcuts/base.md
 :heading-offset: 2
 ::::
@@ -68,10 +54,7 @@ Please see the [](/profiles/default/index) Profile's Tour.
 :::::::{tab-item} Data Sets
 
 ## Data Sets
-
 ### Solar System
-
-
 :::{warning}
 This section is missing some data sets. Mostly planet moons and satellites whose documentation has not yet been written.
 :::
@@ -82,15 +65,15 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/sun/sun/index)
-[![](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
+[![Sun icon](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/sun-glare/index)
-[![](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
+[![Sun Glare icon](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/habitable-zone/index)
-[![](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
+[![Sun Habitable Zone icon](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
 :::
 
 ::::
@@ -136,14 +119,13 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 #### Dwarf Planets
-
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/pluto/index)
 [![Pluto](/content/solar-system/dwarf-planets/pluto/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/pluto/index)
 :::
- 
+
 ::::
 
 
@@ -160,7 +142,6 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 ### Milky Way
-
 #### Stars
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
@@ -342,7 +323,6 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 ### Universe
-
 #### Nearby Surveys
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
@@ -448,20 +428,20 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :align: left
 :width: 90%
 
-* - Name:
-  - Offline
-* - File:
-  - `data/profiles/offline.profile`
-* - Anchor:
-  - Earth
-* - Time:
-  - Current time, 24 hours ago
-* - Author:
-  - OpenSpace Team
-* - License:
-  - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
-* - Version:
-  - 1.4
+  - - Name:
+    - Offline
+  - - File:
+    - `data/profiles/offline.profile`
+  - - Anchor:
+    - Earth
+  - - Time:
+    - Current time, 24 hours ago
+  - - Author:
+    - OpenSpace Team
+  - - License:
+    - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+  - - Version:
+    - 1.4
 :::
 
 :::::::

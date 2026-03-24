@@ -1,11 +1,4 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
 # Tour Panel
-
 ![Tour Panel Button](/using-openspace/toolbar/tour-panel/toolbar_button_tour.png)
 
 {menuselection}`Windows --> Getting Started Tour`
@@ -55,7 +48,7 @@ As the tour progresses, it will ask you to use what you've learned with fewer hi
 
 <br>
 
-The final section of the tour takes you through some tasks that use the [Scene Panel](/using-openspace/toolbar/scene/index) to manipulate the look of the scene. 
+The final section of the tour takes you through some tasks that use the [Scene Panel](/using-openspace/toolbar/scene/index) to manipulate the look of the scene.
 
 :::{figure} tour_panel_scenes.png
 :align: center

@@ -1,9 +1,3 @@
----
-authors:
-  - name: Elon Olsson
-    affiliation: Community Coordinated Modeling Center
----
-
 (solarstorm2012_id)=
 
 # Solar Storm 2012
@@ -31,9 +25,9 @@ To best interact with these visualizations, it is recommended to use the keyboar
 ## Data Sets
 
 A few simulation models have been used in this profile:
-- ENLIL, for solar winds. Visualized with magnetic field lines.
-- BATSRUS, for magnetosphere. Also visualized with magnetic field lines, as well as velocity field lines.
-- PFSS, just one time step to highlight with field lines the comlex magnetic field in the Suns corona.
+  - ENLIL, for solar winds. Visualized with magnetic field lines.
+  - BATSRUS, for magnetosphere. Also visualized with magnetic field lines, as well as velocity field lines.
+  - PFSS, just one time step to highlight with field lines the comlex magnetic field in the Suns corona.
 
 :::::::
 
@@ -46,20 +40,20 @@ A few simulation models have been used in this profile:
 :align: left
 :width: 90%
 
-* - Name:
-  - Solar Storm 2012
-* - File:
-  - `data/profiles/spaceweather/solarstorm2012.profile`
-* - Anchor:
-  - [Sun](/content/solar-system/sun/sun/index)
-* - Time:
-  - 2012 07 14 at 07:00:00
-* - Author:
-  - CCMC
-* - License:
-  - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
-* - Version:
-  - 1.0
+  - - Name:
+    - Solar Storm 2012
+  - - File:
+    - `data/profiles/spaceweather/solarstorm2012.profile`
+  - - Anchor:
+    - [Sun](/content/solar-system/sun/sun/index)
+  - - Time:
+    - 2012 07 14 at 07:00:00
+  - - Author:
+    - CCMC
+  - - License:
+    - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+  - - Version:
+    - 1.0
 :::
 
 :::::::

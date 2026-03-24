@@ -1,20 +1,10 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Pulsars
-
 {menuselection}`Scene --> Milky Way --> Stellar Remnants --> Pulsars`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 A pulsar is a spinning neutron star that emits beams of light from its magnetic poles. These beams are akin to a lighthouse's beam that sweeps across our view as the neutron star spins.
 
 :::{figure} Chandra-crab.jpg
@@ -26,24 +16,18 @@ A pulsar is a spinning neutron star that emits beams of light from its magnetic 
 An optical (red) and X-Ray (blue) composite image of the pulsar at the center of the Crab Nebula. The winds of the central pulsar creates the surrounding nebula, with high-energy radiation causing the gas to glow. Credit: Optical -- NASA/HST/ASU/J. Hester et al.; X-Ray -- NASA/CXC/ASU/J. Hester et al.
 :::
 
-
-
 ### What is a Neutron Star?
-
 Upon death, stars leave behind one of three possible remnants: a [white dwarf](../white-dwarfs/index), a neutron star, or a black hole. Stars that are more massive than the sun will often become neutron stars in a violent explosion called a supernova. During a supernova, the core of the star collapses under such high pressure that the electrons, which normally remain outside the atomic nucleus, are forced to combine with the protons in the nucleus. Atomic nuclei break apart, producing what is called a degenerate state of matter. The collapse is halted when the material cannot be packed any tighter. At this point, the star has a radius of about 10 to 15 kilometers. The density of this material is so high that a teaspoonful would weigh about 100 million tons on Earth.
 
 Just as ice skaters spin faster as they pull their arms in, dying stars rotate faster as they collapse. If the Sun were to suddenly collapse to a radius of 10 km, its rotation period would increase from its current 25 days to 1,000 times per second. Similarly, after a supernova, the neutron star is spinning fast from the rapid collapse, but it slows over time as it converts rotational energy into radiation.
 
 
 ### "Pulsating" Neutron Stars
-
 Astronomers know that pulsars are not pulsing, in the literal sense, but are spinning neutron stars whose beams of radiation point toward Earth just as a lighthouse sweeps the horizon. Pulsars have strong magnetic fields that funnel beams of light from its magnetic poles. When these beams point to Earth, we see a strong radio signal.
 
 
-
 ### Location in the Milky Way
-
-Because pulsars are relatively young objects, we expect to see them where star formation takes place: the Milky Way's disk. 
+Because pulsars are relatively young objects, we expect to see them where star formation takes place: the Milky Way's disk.
 
 :::{figure} pulsars_nightsky_orion.png
 :align: left
@@ -61,11 +45,7 @@ Looking toward Scorpius and Sagittarius as viewed from Earth, we see red squares
 :::
 
 
-
-
-
 ### Pulsars and Supernova Remnants
-
 Many pulsars are found in the [supernova remnants](../../nebulae/supernova-remnants/index) data. Because supernova remnants have short lifetimes, we can assume that the pulsars seen in them are quite young. Once the supernova remnant disappears, the pulsar's rotation period continues to slow. After about 1 million years, the pulsar is no longer visible; therefore, all the pulsars we see today must be the remnants of stars that have died over the previous 100,000 to 1 million years.
 
 
@@ -85,9 +65,7 @@ An edge-on view of the Milky Way Galaxy, showing the vertical distribution off t
 :::
 
 
-
 ### Pulsars in Globular Clusters
-
 If pulsars are young objects, why do we see them in the relatively ancient [globular clusters](../../star-clusters/globular-clusters/index)? The answer seems to be that these pulsars are drawing in material from a nearby companion star. This matter causes the star to spin faster, re-energizing the system. These are called millisecond pulsars for their periods, which can be as short as 0.002 seconds (2 milliseconds). More than 30 of these have been found and are easily seen to line up with the globular clusters in the atlas. Often, the distance of the pulsar and the independently deduced distance to the globular cluster will not match, demonstrating that distances in astronomy are by no means an exact science (see {term}`uncertainty`).
 
 :::{figure} pulsars_galaxy_globular_clusters.png
@@ -102,7 +80,6 @@ The pulsars (red) and globular clusters (yellow) shown together as we view the M
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -127,7 +104,6 @@ The pulsars (red) and globular clusters (yellow) shown together as we view the M
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 3,221 pulsars
 :assetfile: data/assets/scene/digitaluniverse/pulsars.asset
@@ -135,7 +111,7 @@ The pulsars (red) and globular clusters (yellow) shown together as we view the M
 :preparedby: Brian Abbott, Zack Reeves (AMNH)
 :sourceversion: 7.07
 :license: amnh
-:reference: ATNF Pulsar Catalogue=http://www.atnf.csiro.au/research/pulsar/
+:reference: ATNF Pulsar Catalogue=<http://www.atnf.csiro.au/research/pulsar/>
 :::
 
 :::::

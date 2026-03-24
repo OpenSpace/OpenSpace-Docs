@@ -1,12 +1,4 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # OpenSpace Log
-
 :::{warning}
 This section is incomplete and more of a placeholder page at the moment.
 :::

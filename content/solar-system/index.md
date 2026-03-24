@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Solar System
-
 {menuselection}`Scene --> Solar System`
-
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2

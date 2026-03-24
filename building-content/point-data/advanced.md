@@ -65,7 +65,7 @@ The `openspace.absPath` call is needed if you want to use path tokens (like `${U
 ### Texture data - CSV
 When using a CSV file, the texture mapping is done in a separate [texture map (.tmap)](./data-formats.md#texture-map-tmap) file. Below is an example of a CSV data file and a texture map file. The final column in the CSV file contains the index of the data file, which should match the ones in the texture map.
 
-```
+```text
 x,y,z,a,b,texture
 13428000,26239000,45870000,-3.226548224,33.95773276,1
 14727000,45282000,10832000,45.05941924,-106.0395917,0

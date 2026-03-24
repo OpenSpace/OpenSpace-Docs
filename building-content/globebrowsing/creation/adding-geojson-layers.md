@@ -29,20 +29,20 @@ The visuals of the geometry features can be customized either through properties
 
 The following table summarizes the available keys and properties. Note that the property identifier is also always a valid key in the GeoJson file.
 
-| Property Identifier | Accepted keys (in .geojson file) | Value                                    | Description |
-| ------------------- |--------------------------------- | ---------------------------------------- | ----------- |
-| Name                | `name`                           | string                                   | This will be the name for the feature that shows in the "Features" menu in the UI |
-| Description         | `description`                    | string                                   | (Not used anywhere right now, but will be shown in the UI in the future) |
-| Opacity             | `opacity`                        | float, [0-1]                             | The opacity that will be used for drawing lines and points |
-| Color               | `color`, `stroke`                | RGB (vec3, [0-1]) or hex value (string)  | The color that will be used for drawing lines and points. For points, the color will be blended with the color of the point texture |
-| FillColor           | `fill`, `fill-color`             | RGB (vec3, [0-1]) or hex value (string)  | The color that will be used for drawing filled polygons and extruded geometry |
-| FillOpacity         | `fill-opacity`                   | float, [0-1]                             | The opacity that will be used for drawing filled polygons and extruded geometry |
-| Extrude             | `extrude`                        | boolean (`true`/`false`)                 | If true, extrude the geometry to intersect the globe. Lines/polygons will be extruded with polygons, and points with lines |
-| AltitudeMode        | `altitudeMode`                   | string (`"absolute"` or `"relativeToGround"`) | Decides how any height values of the geo coordinates should be interpreted. "Absolute" means that the height is interpreted as the height above the reference ellipsoid (sea level), while "RelativeToGround" takes the height map into account |
-| **Points Specific**          |                   |                              |  |
-| PointSize           | `point-size`                     | float (> 0)                              | A value that will be used to decide the size of rendered points. The size will be scaled based on the bounding sphere of the globe   |
-| PointTexture        | `texture`, `sprite`, `point-texture` | string (path to a texture)           | A texture to be used for rendering points |
-| PointTextureAnchor  | `point-anchor`, `anchor`         | string (`"bottom"` or `"center"`)        | Decides the placement of the point texture in relation to the position. Default is at the bottom of the texture, but it can also be put at the center |
+| Property Identifier | Accepted keys (in .geojson file) | Value | Description |
+| ------------------- | -------------------------------- | ----- | ----------- |
+| Name | `name` | string | This will be the name for the feature that shows in the "Features" menu in the UI |
+| Description | `description` | string | (Not used anywhere right now, but will be shown in the UI in the future) |
+| Opacity | `opacity` | float, [0-1] | The opacity that will be used for drawing lines and points |
+| Color | `color`, `stroke` | RGB (vec3, [0-1]) or hex value (string) | The color that will be used for drawing lines and points. For points, the color will be blended with the color of the point texture |
+| FillColor | `fill`, `fill-color` | RGB (vec3, [0-1]) or hex value (string) | The color that will be used for drawing filled polygons and extruded geometry |
+| FillOpacity | `fill-opacity` | float, [0-1] | The opacity that will be used for drawing filled polygons and extruded geometry |
+| Extrude | `extrude` | boolean (`true`/`false`) | If true, extrude the geometry to intersect the globe. Lines/polygons will be extruded with polygons, and points with lines |
+| AltitudeMode | `altitudeMode` | string (`"absolute"` or `"relativeToGround"`) | Decides how any height values of the geo coordinates should be interpreted. "Absolute" means that the height is interpreted as the height above the reference ellipsoid (sea level), while "RelativeToGround" takes the height map into account |
+| **Points Specific** | | | |
+| PointSize | `point-size` | float (> 0) | A value that will be used to decide the size of rendered points. The size will be scaled based on the bounding sphere of the globe |
+| PointTexture | `texture`, `sprite`, `point-texture` | string (path to a texture) | A texture to be used for rendering points |
+| PointTextureAnchor | `point-anchor`, `anchor` | string (`"bottom"` or `"center"`) | Decides the placement of the point texture in relation to the position. Default is at the bottom of the texture, but it can also be put at the center |
 
 ### Tessellation (advanced)
 Large geometry is split into smaller pieces and bent over the globe, to prevent the lines from intersecting the globe's surface. This "splitting" is known as tessellation, and does affect the performance of rendering the geometry. The more pieces the geometry is split into, the worse the performance.
@@ -66,20 +66,20 @@ In addition to the visual properties in the GeoJson files, some regular OpenSpac
 ### Height offset, opacity, and scale
 A few helper properties have been added to simplify changing some aspects of the visuals of the entire collection at once:
 
-- *Opacity* - change the opacity of all features in a collection
-- *Height Offset* - move the geometry up/down in relation to the reference surface (based on the height map or sea level, depending on chosen Altitude Mode)
-- *Point Size Scale* - increase/decrease the size of any points in the collection
-- *Line Width Scale* - increase/decrease the width of any rendered lines in the collection
+  - *Opacity* - change the opacity of all features in a collection
+  - *Height Offset* - move the geometry up/down in relation to the reference surface (based on the height map or sea level, depending on chosen Altitude Mode)
+  - *Point Size Scale* - increase/decrease the size of any points in the collection
+  - *Line Width Scale* - increase/decrease the width of any rendered lines in the collection
 
 ### Alignment of points
 For points, it is possible to change how the texture planes align against the globe surface. There are four different options:
 
-| Option           | Value | Description |
-| ---------------- | :---: | ----------- |
-| Camera Direction | 0     | Rotate the plane to face the camera view direction and align the up-driection with the camera's up. Suitable for planar displays |
-| Camera Position  | 1     | Use the camera's up direction, but rotate the plane to face the camera position instead of view direction. Suitable for spherical displays, such as domes or planetariums |
-| Globe Normal     | 2     | Use the out-driection of the globe as the up direction |
-| Globe Surface    | 3     | Align the plane flat along the globe surface |
+| Option | Value | Description |
+| ------ | :---: | ----------- |
+| Camera Direction | 0 | Rotate the plane to face the camera view direction and align the up-driection with the camera's up. Suitable for planar displays |
+| Camera Position | 1 | Use the camera's up direction, but rotate the plane to face the camera position instead of view direction. Suitable for spherical displays, such as domes or planetariums |
+| Globe Normal | 2 | Use the out-driection of the globe as the up direction |
+| Globe Surface | 3 | Align the plane flat along the globe surface |
 
 Here are examples of points aligned with the Camera Direction, Globe Normal and Globe Surface options, respectively. The points have been extruded with a line that intersects the globe surface
 ![point alignment examples](points_transparent.png)
@@ -93,7 +93,7 @@ Note that for the light source to make a visual difference, shading must be enab
 ## Example
 Here is an example of a simple GeoJson file, with one single feature that has some specified properties.
 
-*lines.geojson*
+`lines.geojson`:
 ```json
 {
   "type": "FeatureCollection",
@@ -116,7 +116,7 @@ Here is an example of a simple GeoJson file, with one single feature that has so
 
 And an asset that loads the files, adds it to Earth, as well as specifies some default properties, to use for the properties that were not specified in the .geojson file
 
-*lines.asset*
+`lines.asset`:
 ```lua
 local ExampleLines = {
   Identifier = "Lines-Example",
@@ -144,6 +144,6 @@ More examples are available in the OpenSpace/data/assets/examples/geojson folder
 ## Known issues
 The GeoJson support implemented in 0.19.0 is a first iteration and may be subject to changes in the future. It also includes some known issues that we intend to fix down the line. Here is a summary of those issues:
 
-* The performance of the rendering is suffering when a feature consists of a lot of triangles, or when loading files with lots of features
-* The motion generated by the "fly to" feature is currently a bit weird when flying between things on a planet surface. This will be improved in the future.
-* One remaining altitude mode to implement is "Clamp to ground", which will render the geometry as a texture on the surface and follow the height map exactly. Until that's implemented, we refer to our regular layer system (ColorLayers or Overlays) for such use cases.
+  - The performance of the rendering is suffering when a feature consists of a lot of triangles, or when loading files with lots of features
+  - The motion generated by the "fly to" feature is currently a bit weird when flying between things on a planet surface. This will be improved in the future.
+  - One remaining altitude mode to implement is "Clamp to ground", which will render the geometry as a texture on the surface and follow the height map exactly. Until that's implemented, we refer to our regular layer system (ColorLayers or Overlays) for such use cases.

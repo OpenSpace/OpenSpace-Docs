@@ -1,12 +1,4 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # All-sky Images
-
 {menuselection}`Scene --> Milky Way --> All-sky Images`
 
 

@@ -1,12 +1,7 @@
----
-authors:
-  - name: OpenSpace Team
----
-
 # The Telemetry Module
 The telemetry module in OpenSpace can be used to send information from OpenSpace to a remote receiver using the [Open Sound Control](https://ccrma.stanford.edu/groups/osc/index.html) (OSC) protocol. OSC is a real-time data transport messaging format used for communication between applications and even certain hardware. It is commonly used for music/sound-related applications, but can be used as a messaging protocol for a wide range of applications beyond that.
 
-To use the telemetry module, some settings have to be specified in the _openspace.cfg_ file located in the OpenSpace folder. Below is an example of how these settings can look like:
+To use the telemetry module, some settings have to be specified in the `openspace.cfg` file located in the OpenSpace folder. Below is an example of how these settings can look like:
 
 :::{code-block} lua
 :linenos:
@@ -30,16 +25,16 @@ ModuleConfigurations = {
 The first two settings in the example above are the IP address and port for the receiver of the OSC telemetry messages. The next setting is the angle calculation mode that is used, and the last setting is whether an elevation angle should be added in the angle calculation. For more information about the angle calculation modes and which is more suitable for your system, see [Angle Calculations](./angle-information.md). In the example above, the IP address used is `"127.0.0.1"`, which is the local computer, and the port `57120` is used, which is the port where the software [SuperCollider](https://supercollider.github.io/) receives OSC messages from by default. For more information about SuperCollider and how it can be used for sonification, see [Sonification](./sonification.md#sonification). Lastly, the angle calculation mode is set as `"Horizontal"`, and no elevation angle is added.  See [Angle Calculations](./angle-information.md) for more information about the calculation modes.
 
 :::{important}
-Note that the OSC receiver settings (IP address and port) cannot be changed while OpenSpace is running; those settings must be set in the _openspace.cfg_ file before startup. However, other settings related to the module can be changed while OpenSpace is running in the settings menu of the user interface.
+Note that the OSC receiver settings (IP address and port) cannot be changed while OpenSpace is running; those settings must be set in the `openspace.cfg` file before startup. However, other settings related to the module can be changed while OpenSpace is running in the settings menu of the user interface.
 :::
 
 ## How To Use It
 The telemetry module allows users to extract certain information from OpenSpace in real-time and send it to any software or hardware capable of receiving OSC messages for further use. What this information is used for depends entirely on the receiving application. For instance, OpenSpace provides examples where this data has been utilized for sonification, enabling users to "listen" to certain features within OpenSpace. For more details, see [Sonification](./sonification.md#sonification). Beyond sonification, there are numerous other possibilities for using this data.
 
 To use the telemetry module in OpenSpace, follow these steps:
-  1. Configure the telemetry settings, such as the receiver's IP address and port, in the _openspace.cfg_ file before starting OpenSpace. See an example of this above.
+  1. Configure the telemetry settings, such as the receiver's IP address and port, in the `openspace.cfg` file before starting OpenSpace. See an example of this above.
   1. Start OpenSpace and navigate to the settings menu in the user interface.
-  1. Under _Settings/Modules_ locate and enable the telemetry module.
+  1. Under `Settings/Modules` locate and enable the telemetry module.
   1. Select the desired telemetry types to use by checking the corresponding checkboxes. See the next section [Telemetry Types](#telemetry-types) for an overview of the different telemetry types.
   1. Now you can freely fly around in OpenSpace, and the telemetry data will be sent to the specified OSC receiver in real-time.
   1. For further instructions on how to use the telemetry module together with any of the sonifications that OpenSpace provides, see [Sonification](./sonification.md#sonification).
@@ -57,12 +52,13 @@ Below is a table of the available telemetry types and which category they belong
 :::{table}
 :align: center
 | **[General Telemetry Types](telemetry-types-general)** | **[Specialized Telemetry Types](telemetry-types-specialized)** |
-|----------------------------------------|------------------------------------------------|
+| ------------------------------------------------------ | -------------------------------------------------------------- |
 | [Camera Information](./telemetry-types-general.md#camera-information) | [Planets Sonification](./telemetry-types-specialized.md#planets-sonification) |
 | [Focus](./telemetry-types-general.md#focus) | [Planets Compare Sonification](./telemetry-types-specialized.md#planets-compare-sonification) |
 | [Time Information](./telemetry-types-general.md#time-information) | [Planets Overview Sonification](./telemetry-types-specialized.md#planets-overview-sonification) |
 | [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) | |
 | [Angle Calculation Mode](./telemetry-types-general.md#angle-calculation-mode) | |
+
 :::
 
 ## OSC Message Structure

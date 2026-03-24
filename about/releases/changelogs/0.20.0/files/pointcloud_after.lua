@@ -27,7 +27,7 @@ local TullyGalaxies = {
     Fading = {
       Enabled = true, -- Not required
       FadeInDistances = { 0.001, 1.0 }, -- Fade in value in the same unit as "Unit"
-    }
+    },
     -- Things related to the size of the points have been combined into one group
     SizeSettings = {
       ScaleExponent = 21.9, -- OBS! Recomputed based on previous ScaleFactor! See next section

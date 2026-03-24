@@ -1,11 +1,10 @@
 # Image Testing
 OpenSpace is using an image-based regression testing on the backend. Its two main goals are to (a) prevent code changes accidentally affecting the visualization and (b) generating screenshots for use in the documentation that keep up to date with the current OpenSpace version.
 
-
 ## Server
 The generated images are available at [https://regression.openspaceproject.com](https://regression.openspaceproject.com).
 
-Each test has a _Name_ and multiple tests are combined into a _Group_. The name of the group is unique and within a group, each test has a unique name. Each test has one _Reference Image_, which is the approved state of that rendering. Each time the tests are run, a new _Candidate Image_ is created which is compared against the _Reference Image_ to create a _Difference Image_. The _Difference Image_ shows the pixels that are different in red and the pixels that are the same in white. The perceptual change between the _Reference_ and _Candidate_ image is reported as an error percentage.
+Each test has a *Name* and multiple tests are combined into a *Group*. The name of the group is unique and within a group, each test has a unique name. Each test has one *Reference Image*, which is the approved state of that rendering. Each time the tests are run, a new *Candidate Image* is created which is compared against the *Reference Image* to create a *Difference Image*. The *Difference Image* shows the pixels that are different in red and the pixels that are the same in white. The perceptual change between the *Reference* and *Candidate* image is reported as an error percentage.
 
 Additionally, each test also reports how long it took to run the test, as well as the access to the OpenSpace log file that was generated when running the test.
 
@@ -31,13 +30,13 @@ The difference image for example test
 
 
 ## Local testing
-All image tests should be tested manually before committing them into the repository. See the [OpenSpace-VisualTesting](https://github.com/OpenSpace/OpenSpace-VisualTesting) repository's README for more information on how to use the _Runner_ application to run individual tests locally. The Runner will execute the test and save the rendered screenshot locally in a `test` folder. The screenshot should correspond to the result that the test is supposed to create.
+All image tests should be tested manually before committing them into the repository. See the [OpenSpace-VisualTesting](https://github.com/OpenSpace/OpenSpace-VisualTesting) repository's README for more information on how to use the *Runner* application to run individual tests locally. The Runner will execute the test and save the rendered screenshot locally in a `test` folder. The screenshot should correspond to the result that the test is supposed to create.
 
 
 ## Test Files
 The image test files are located in the `visualtests` folder in the main OpenSpace repository. The regression server will automatically run through all tests that are contained in this folder.
 
-The files are organized in folders, where the folder names are used as the _Group_ name for the tests within, and the filename of each test (without the `.ostest` extension) is used as the _Name_ of the test. Each folder can contain additional subfolders. The top-level folders are predetermined based on what the tests will be used for:
+The files are organized in folders, where the folder names are used as the *Group* name for the tests within, and the filename of each test (without the `.ostest` extension) is used as the *Name* of the test. Each folder can contain additional subfolders. The top-level folders are predetermined based on what the tests will be used for:
 
   - `documentation`: Files that generate images used for the documentation page
 

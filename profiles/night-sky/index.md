@@ -1,5 +1,4 @@
 # Night Sky
-
 :::{note}
 This profile page has not yet been written. It will be coming soon.
 

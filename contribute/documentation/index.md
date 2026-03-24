@@ -1,6 +1,5 @@
 # Documentation
-
-Contributions to our documentation are very welcome. 
+Contributions to our documentation are very welcome.
 
 :::{toctree}
 :caption: Guidelines

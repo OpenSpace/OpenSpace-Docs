@@ -1,8 +1,3 @@
----
-authors:
-  - name: OpenSpace Team
----
-
 # Sonification
 The [Telemetry Module](index.md) can be used together with [SuperCollider](#supercollider) to create a sonification. Sonification is the practice of conveying information using sound (in contrast to visualization, where information is conveyed using visuals). In addition to the telemetry module in OpenSpace, the sonification requires a separate program, for example [SuperCollider](https://supercollider.github.io/). However, any software can act as the receiver for the OSC messages from the telemetry module and use that information to generate sounds, creating a sonification.
 
@@ -14,7 +9,7 @@ Only one sonification can be listened to at a time in SuperCollider. Users need 
 [SuperCollider](https://supercollider.github.io/) is the software used to produce the sounds of the sonifications. The messages from the telemetry module are sent to SuperCollider, which then uses that information to create sounds that correspond to that information.
 To run a sonification file in SuperCollider, follow the following steps:
   1. Download and install [SuperCollider](https://supercollider.github.io/) (if not already installed).
-  1. Click any line within the outer parentheses `()` in the file and press <kbd>CTRL</kbd> + <kbd>ENTER</kbd>. For example, the line with the comment `// To run this example...` (should be around line 50) in the [_osc-example.scd_](#osc-example-sonification) file.
+  1. Click any line within the outer parentheses `()` in the file and press <kbd>CTRL</kbd> + <kbd>ENTER</kbd>. For example, the line with the comment `// To run this example...` (should be around line 50) in the [`osc-example.scd`](#osc-example-sonification) file.
   1. Wait a while for SuperCollider to boot.
   1. If SuperCollider raises an error regarding the **VST Plugin**, you will need to install some additional plugins. See [Ambisonics](#ambisonics) for more information and instructions.
   1. When you want to stop the sonification in SuperCollider, press <kbd>CTRL</kbd> + <kbd>.</kbd> and go back to the second step to start it up again.
@@ -32,7 +27,7 @@ To run the sonification with ambisonics, a few additional plugins must be instal
 
 1. Locate the Extensions folder of SuperCollider:
     - Run `Platform.userExtensionDir` in SuperCollider to find the path to the extensions folder. This command is included in all the example files provided by OpenSpace, located below the copyright header (around line 25).
-    - Click the line with this command and press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd>. The console will display a path similar to _C:\Users\user\AppData\Local\SuperCollider\Extensions_. This is the folder where the SuperCollider plugins will be placed.
+    - Click the line with this command and press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd>. The console will display a path similar to `C:\Users\user\AppData\Local\SuperCollider\Extensions`. This is the folder where the SuperCollider plugins will be placed.
 
 1. Install the Required Plugins:
    - **VST Plugin**:
@@ -61,10 +56,10 @@ OpenSpace currently provides five sonifications. The first is the {ref}`Planets 
 
 ### Planets Sonification
 (planets-sonification-details)=
-OpenSpace provides a sonification of the planets in the solar system. The files for this can be found in the folder _data\assets\modules\telemetry\sonification_ within the OpenSpace directory. The file _planets.asset_ is a regular OpenSpace asset that configures the [Planets Sonification](./telemetry-types-specialized.md#planets-sonification) in the telemetry module to monitor each of the planets in the solar system and their major moons. The sonification file itself is the _planets-sonification.scd_ file, which is a SuperCollider file and needs to be run separately in that program. The sonification will then be produced by SuperCollider using the information received from OpenSpace with the OSC messages from the telemetry module.
+OpenSpace provides a sonification of the planets in the solar system. The files for this can be found in the folder `data\assets\modules\telemetry\sonification` within the OpenSpace directory. The file `planets.asset` is a regular OpenSpace asset that configures the [Planets Sonification](./telemetry-types-specialized.md#planets-sonification) in the telemetry module to monitor each of the planets in the solar system and their major moons. The sonification file itself is the `planets-sonification.scd` file, which is a SuperCollider file and needs to be run separately in that program. The sonification will then be produced by SuperCollider using the information received from OpenSpace with the OSC messages from the telemetry module.
 
 :::{important}
-The _planets.asset_ file cannot be customized or altered since the sonification expects the data from the telemetry module to be in a certain format determined by this file. If this file is altered, then the sonification file needs to be updated to reflect the change as well. If you want to create your own sonification for objects in OpenSpace other than the planets, then the general [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type is likely a better fit for that purpose.
+The `planets.asset` file cannot be customized or altered since the sonification expects the data from the telemetry module to be in a certain format determined by this file. If this file is altered, then the sonification file needs to be updated to reflect the change as well. If you want to create your own sonification for objects in OpenSpace other than the planets, then the general [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type is likely a better fit for that purpose.
 :::
 
 The telemetry module contains several telemetry types that send different information to the OSC receiver. The planets' sonification only uses some of the available telemetry types, namely:
@@ -77,13 +72,13 @@ The telemetry module contains several telemetry types that send different inform
 
 The steps below explain how to run the planet sonification provided by OpenSpace:
   1. Download and install [SuperCollider](#supercollider) (if not already installed).
-  1. Run the sonification file _planets-sonification.scd_ located in _data\assets\modules\telemetry\sonification_ in SuperCollider.
+  1. Run the sonification file `planets-sonification.scd` located in `data\assets\modules\telemetry\sonification` in SuperCollider.
       - To run the file in SuperCollider, find the line with the comment `// To run this sonification...` (should be around line 50), click on that line and press <kbd>CTRL</kbd> + <kbd>ENTER</kbd>.
       - Wait for the sonification to boot up.
       - The SuperCollider console should display: `Sonification is ready` when it finishes booting.
   1. Run OpenSpace with any profile (make sure that the planets and their major moons are included).
-  1. Load the asset file _planets.asset_ (which is located in the same directory as the sonification file) either by dragging and dropping the file into OpenSpace while it is running, or by creating a new profile that loads that asset.
-  1. Turn on the Telemetry module in the user interface under _Settings/Modules_.
+  1. Load the asset file `planets.asset` (which is located in the same directory as the sonification file) either by dragging and dropping the file into OpenSpace while it is running, or by creating a new profile that loads that asset.
+  1. Turn on the Telemetry module in the user interface under `Settings/Modules`.
   1. Turn on the telemetry types that are of interest with the checkboxes in the telemetry module settings (refer to the list above).
   1. Fly around in OpenSpace and enjoy the sonification. When flying close to a planet, when its sonification is enabled in the Planets Sonification, you should be able to hear it.
 
@@ -94,72 +89,73 @@ The table below briefly describes what aspects of the planets are conveyed by th
 
 :::{table}
 :align: center
-| Planet Property      | Sonification Mapping      | Mapping Polarity                                            |
-|----------------------|---------------------------|-------------------------------------------------------------|
-| Mass                 | Pitch                     | Higher pitch = Lower mass                                   |
-| Length of Day        | Tempo of oscillation      | Faster tempo = Shorter day                                  |
-| Length of Year       | Surround position         | Uses [angle calculations](./angle-information.md) to place the planet in a surround sound configuration |
-| Gravity              | Bouncing ball analogy     | Faster bouncing ball = Stronger gravity                     |
-| Temperature          | Sizzling intensity        | More sizzling = Higher temperature                          |
-| Atmospheric Pressure | Depth of wind sound       | Deeper wind sound = Higher atmospheric pressure             |
-| Average Wind Speed   | Fluctuation of wind sound | More fluctuations in wind sound = Faster average wind speed |
+| Planet Property | Sonification Mapping | Mapping Polarity |
+| --------------- | -------------------- | ---------------- |
+| Mass | Pitch | Higher pitch = Lower mass |
+| Length of Day | Tempo of oscillation | Faster tempo = Shorter day |
+| Length of Year | Surround position | Uses [angle calculations](./angle-information.md) to place the planet in a surround sound configuration |
+| Gravity | Bouncing ball analogy | Faster bouncing ball = Stronger gravity |
+| Temperature | Sizzling intensity | More sizzling = Higher temperature |
+| Atmospheric Pressure | Depth of wind sound | Deeper wind sound = Higher atmospheric pressure |
+| Average Wind Speed | Fluctuation of wind sound | More fluctuations in wind sound = Faster average wind speed |
 | Distance to the Planet (From the Camera) | Loudness | Louder = Closer |
+
 :::
 
 :::{note}
-The planets sonification uses additional planetary data that is specified in the _planets-sonification.scd_ file and does not solely depend on the data from OpenSpace. This data comes from the [Nasa Planetary Fact Sheet](https://nssdc.gsfc.nasa.gov/planetary/factsheet/) and does not change.
+The planets sonification uses additional planetary data that is specified in the `planets-sonification.scd` file and does not solely depend on the data from OpenSpace. This data comes from the [Nasa Planetary Fact Sheet](https://nssdc.gsfc.nasa.gov/planetary/factsheet/) and does not change.
 :::
 
 :::{seealso}
-For more details about the sonification of the planets, see the paper **OpenSpace Sonification: Complementing Visualization of the Solar System with Sound** by Elias Elmquist, Malin Ejdbo, Alexander Bock, and Niklas Rönnberg, published in _International Community for Auditory Displays_ in 2021 [doi:10.21785/icad2021.018](http://dx.doi.org/10.21785/icad2021.018).
+For more details about the sonification of the planets, see the paper **OpenSpace Sonification: Complementing Visualization of the Solar System with Sound** by Elias Elmquist, Malin Ejdbo, Alexander Bock, and Niklas Rönnberg, published in *International Community for Auditory Displays* in 2021 [doi:10.21785/icad2021.018](http://dx.doi.org/10.21785/icad2021.018).
 :::
 
 ### Space Station Sonification
-This sonification is a smaller example using the [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type. It uses the file _space-station-sonification.scd_, which can be found in the folder _data\assets\examples\sonification_ within the OpenSpace directory. This sonification follows the two space stations ISS and Tiangong in OpenSpace and makes sounds when the camera is located close to either of them.
+This sonification is a smaller example using the [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type. It uses the file `space-station-sonification.scd`, which can be found in the folder `data\assets\examples\sonification` within the OpenSpace directory. This sonification follows the two space stations ISS and Tiangong in OpenSpace and makes sounds when the camera is located close to either of them.
 
 The steps below explain how to run the space station sonification provided by OpenSpace:
   1. Download and install [SuperCollider](#supercollider) (if not already installed).
-  1. Run the sonification file _space-station-sonification.scd_ located in _data\assets\examples\sonification_ in SuperCollider.
+  1. Run the sonification file `space-station-sonification.scd` located in `data\assets\examples\sonification` in SuperCollider.
       - To run the file in SuperCollider, find the line with the comment `// To run this example...` (should be around line 50), click on that line and press <kbd>CTRL</kbd> + <kbd>ENTER</kbd>.
       - Wait a while for the sonification to boot up.
       - The SuperCollider console should respond with: `Sonification is ready` when it is finished booting.
   1. Run OpenSpace with any profile (make sure that the ISS and Tiangong models are included).
-  1. Load the asset file _nodes-space-stations.asset_ (which is located in the same directory as the sonification file) either by dragging and dropping the file into OpenSpace while it is running, or by creating a new profile that loads that asset.
-  1. Turn on the Telemetry module in the user interface under _Settings/Modules_.
+  1. Load the asset file `nodes-space-stations.asset` (which is located in the same directory as the sonification file) either by dragging and dropping the file into OpenSpace while it is running, or by creating a new profile that loads that asset.
+  1. Turn on the Telemetry module in the user interface under `Settings/Modules`.
   1. Turn on the Customized Nodes Information telemetry (called Nodes Telemetry in the user interface) type with the checkbox in the telemetry module settings.
   1. Fly around in OpenSpace and enjoy the sonification. When flying close to ISS or Tiangong, when the sonification is enabled, you should be able to hear it.
 
 This example demonstrates using SuperCollider to create a simple parametric sonification based on OSC messages from OpenSpace's telemetry module. The sonification emits a impulse sound for both stations, with Tiangong having a higher pitch and ISS a lower pitch. The sound's loudness varies based on the distance to each station.
 
 ### Voyager Sonification
-This sonification is a smaller example using the [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type. It uses the file _voyager-sonification.scd_, which can be found in the folder _data\assets\examples\sonification_ within the OpenSpace directory. This sonification follows the Voyager 1 and 2 space probes in OpenSpace and plays the sonification when the camera is located close to either of them.
+This sonification is a smaller example using the [Customized Nodes Information](./telemetry-types-general.md#customized-nodes-information) telemetry type. It uses the file `voyager-sonification.scd`, which can be found in the folder `data\assets\examples\sonification` within the OpenSpace directory. This sonification follows the Voyager 1 and 2 space probes in OpenSpace and plays the sonification when the camera is located close to either of them.
 
 The steps below explain how to run the Voyager sonification provided by OpenSpace:
   1. Download and install [SuperCollider](#supercollider) (if not already installed).
-  1. Run the sonification file _voyager-sonification.scd_ located in _data\assets\examples\sonification_ in SuperCollider.
+  1. Run the sonification file `voyager-sonification.scd` located in `data\assets\examples\sonification` in SuperCollider.
       - To run the file in SuperCollider, find the line with the comment `// To run this example...` (should be around line 50), click on that line and press <kbd>CTRL</kbd> + <kbd>ENTER</kbd>.
       - Wait a while for the sonification to boot up.
       - The SuperCollider console should respond with: `Sonification is ready` when it is finished booting.
   1. Run OpenSpace with the missions/voyager profile (or any profile as long as the Voyager 1 and 2 space probes are included).
-  1. Load the asset file _nodes-voyager.asset_ (which is located in the same directory as the sonification file) either by dragging and dropping the file into OpenSpace while it is running, or by creating a new profile that loads that asset with the profile editor.
-  1. Turn on the Telemetry module in the user interface under _Settings/Modules_.
+  1. Load the asset file `nodes-voyager.asset` (which is located in the same directory as the sonification file) either by dragging and dropping the file into OpenSpace while it is running, or by creating a new profile that loads that asset with the profile editor.
+  1. Turn on the Telemetry module in the user interface under `Settings/Modules`.
   1. Turn on the Customized Nodes Information (called Nodes Telemetry in the user interface) telemetry type with the checkbox in the telemetry module settings.
   1. Fly around in OpenSpace and enjoy the sonification. When flying close to either Voyager 1 or 2 when the sonification is enabled, you should be able to hear it.
 
 This is an example of how to use SuperCollider to create a sonification using local sound files. When the camera is near Voyager 1 or 2, the sonification will play and loop the [Greetings to the Universe](https://science.nasa.gov/mission/voyager/golden-record-contents/greetings/) audio clip, one of the recordings included on the golden records aboard both probes.
 
 ### OSC Example Sonification
-This is an example sonification that does not produce any sounds but instead provides additional documentation for each telemetry type and provides basic examples of how the OSC messages can be received from OpenSpace. It uses the file _osc-example.scd_, which can be found in the folder _data\assets\examples\sonification_ within the OpenSpace directory.
+This is an example sonification that does not produce any sounds but instead provides additional documentation for each telemetry type and provides basic examples of how the OSC messages can be received from OpenSpace. It uses the file `osc-example.scd`, which can be found in the folder `data\assets\examples\sonification` within the OpenSpace directory.
 
 The steps below explain how to run the OSC example sonification provided by OpenSpace:
   1. Download and install [SuperCollider](#supercollider) (if not already installed).
-  1. Run the sonification file _osc-example.scd_ located in _data\assets\examples\sonification_ in SuperCollider.
+  1. Run the sonification file `osc-example.scd` located in `data\assets\examples\sonification` in SuperCollider.
       - To run the file in SuperCollider, find the line with the comment `// To run this example...` (should be around line 50), click on that line and press <kbd>CTRL</kbd> + <kbd>ENTER</kbd>.
       - Wait a while for the sonification to boot up.
       - The SuperCollider console should respond with: `-> OSCdef(Neptune, /Neptune, nil, nil, nil)` when it is finished booting.
   1. Run OpenSpace with any profile.
-  1. Load the asset file _nodes-space-stations.asset_ either by dragging and dropping the file into OpenSpace, or by creating a new profile that loads that asset.
-  1. Turn on the Telemetry module in the user interface under _Settings/Modules_.
+  1. Load the asset file `nodes-space-stations.asset` either by dragging and dropping the file into OpenSpace, or by creating a new profile that loads that asset.
+  1. Turn on the Telemetry module in the user interface under `Settings/Modules`.
   1. Turn on all telemetry types with the checkboxes in the telemetry module settings.
   1. Fly around in OpenSpace, and you should see messages being printed in the SuperCollider console window.
 
@@ -173,7 +169,7 @@ The surround sound aspect of the provided sonifications is designed for two spec
 :align: center
 :::
 
-The image above shows a **top-down** view of the surround sound setup for the Visualization Center Dome Theater in Norrköping, Sweden. The audience sits in rows inside the circle, facing the front center of the dome surface, which is marked as _Center_ at the top of the image. The arrow in the image represents the viewing direction of the audience. The circle represents the edge of the dome surface. This configuration uses the [Horizontal](./angle-information.md#horizontal) angle calculation mode without the elevation angle, as it only has one ring of speakers.
+The image above shows a **top-down** view of the surround sound setup for the Visualization Center Dome Theater in Norrköping, Sweden. The audience sits in rows inside the circle, facing the front center of the dome surface, which is marked as *Center* at the top of the image. The arrow in the image represents the viewing direction of the audience. The circle represents the edge of the dome surface. This configuration uses the [Horizontal](./angle-information.md#horizontal) angle calculation mode without the elevation angle, as it only has one ring of speakers.
 
 <!-- @TODO (malej) Generate a dark mode version of this image -->
 :::{image} images/amnh-dome.png
@@ -182,7 +178,7 @@ The image above shows a **top-down** view of the surround sound setup for the Vi
 :align: center
 :::
 
-The image above shows a **bottom-up** view of the surround sound setup for the Hayden Planetarium at the American Museum of Natural History in New York, USA. The audience sits in concentric rings inside the outermost circle, looking up toward the center of the dome surface, which is marked as _Center_ with a blue cross in the middle of the image. For a better understanding of the 3D structure, see the image below that shows the dome in 3D from a side view. In the image below, the arrow represents the viewing direction of the audience. The outermost ring represents the edge of the dome surface. This configuration uses the [Circular](./angle-information.md#circular) angle calculation mode with the elevation angle enabled, as it has multiple rings of speakers.
+The image above shows a **bottom-up** view of the surround sound setup for the Hayden Planetarium at the American Museum of Natural History in New York, USA. The audience sits in concentric rings inside the outermost circle, looking up toward the center of the dome surface, which is marked as *Center* with a blue cross in the middle of the image. For a better understanding of the 3D structure, see the image below that shows the dome in 3D from a side view. In the image below, the arrow represents the viewing direction of the audience. The outermost ring represents the edge of the dome surface. This configuration uses the [Circular](./angle-information.md#circular) angle calculation mode with the elevation angle enabled, as it has multiple rings of speakers.
 
 <!-- @TODO (malej) Generate a dark mode version of this image -->
 :::{image} images/amnh-dome-3d.png

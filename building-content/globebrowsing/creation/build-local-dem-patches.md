@@ -34,7 +34,7 @@ First, we download the **heightmap DTEEC_001918_1735_001984_1735_U01.IMG** toget
 ### Fix Incorrect Metadata (applies only to HiRISE DTMs)
 Unfortunately, many of the HiRISE DTMs downloaded from the site provided above have some errors in their metadata which essentially defines the longlat position and size of the patch on a globe. To see this problem, run the command `gdalinfo` on both the height map (IMG) and the texture (JP2). When looking at the output we can see that there is a slight miss match in the corner coordinates of each patch. If there is no miss match, this step is unnecessary.
 
-```
+```text
 gdalinfo DTEEC_001918_1735_001984_1735_U01.IMG
 ...
 Corner Coordinates:
@@ -48,7 +48,7 @@ Center      (     126.450, -383473.601) ( 76d55'40.29"W,  6d28'10.98"S)
 
 and
 
-```
+```text
 gdalinfo PSP_001918_1735_RED_A_01_ORTHO.JP2
 ...
 Corner Coordinates:
@@ -63,14 +63,14 @@ Center      (     127.841, -383474.739) ( 76d55'40.24"W, 11d28'10.02"S)
 This is a known issue, however, not properly addressed on the HiRISE website. Information about the problem and a solution can be found [here](https://isis.astrogeology.usgs.gov/IsisSupport/index.php?topic=3440.0), and [here](https://trac.osgeo.org/gdal/ticket/2706).
 The problem basically has to do with an incorrect radius set as part of the metadata in the JP2 (JPEG2000) files. We need to download the small program "fix_jp2", either an executable ([link](ftp://pdsimage2.wr.usgs.gov/pub/pigpen/c_FORTRAN_code/)) or the C++ code to compile it yourself (see the [link](https://trac.osgeo.org/gdal/ticket/2706) to the trac ticket above), and run it with the JP2 file of interest as argument:
 
-```
+```text
 fix_jp2 PSP_001918_1735_RED_A_01_ORTHO.JP2
 Success, file updated
 ```
 
 Now when running `gdalinfo` on the JP2 file again we get better results:
 
-```
+```text
 gdalinfo PSP_001918_1735_RED_A_01_ORTHO.JP2
 ...
 Corner Coordinates:
@@ -87,7 +87,7 @@ There is still some difference between the height map and the texture. This is m
 ### File Format Conversion
 When looking at the corner coordinates of the patch output when running `gdalinfo` on it,
 
-```
+```bash
 gdalinfo PSP_001918_1735_RED_A_01_ORTHO.TIFF
 ```
 
@@ -95,14 +95,14 @@ we notice that each corner (for example the upper left corner) has two coordinat
 
 We run the command gdalwarp to do a reprojection from the georeferenced space in meters to a georeferenced space in longlat. The program takes the arguments **-t_srs** where a target projection should be specified (we specify it using a so called proj4 string which tells GDAL to set the target georeferenced space to longlat). Run the program on both the height map **DTEEC_001918_1735_001984_1735_U01.IMG** and the texture **PSP_001918_1735_RED_A_01_ORTHO.TIFF**:
 
-```
+```bash
 gdalwarp -t_srs "+proj=longlat" DTEEC_001918_1735_001984_1735_U01.IMG DTEEC_001918_1735_001984_1735_U01_longlat.TIFF
 gdalwarp -t_srs "+proj=longlat" PSP_001918_1735_RED_A_01_ORTHO.TIFF PSP_001918_1735_RED_A_01_ORTHO_lonlat.TIFF
 ```
 
 Now we get two new files with georeferenced coordinates given in longlat space. We can check this by running gdalinfo on both of the new files:
 
-```
+```text
 gdalinfo.exe DTEEC_001918_1735_001984_1735_U01_longlat.TIFF
 ...
 Corner Coordinates:
@@ -116,7 +116,7 @@ Center      ( -76.9278584,  -6.4697145) ( 76d55'40.29"W,  6d28'10.97"S)
 
 and
 
-```
+```text
 gdalinfo PSP_001918_1735_RED_A_01_ORTHO_longlat.TIFF
 ...
 Corner Coordinates:
@@ -136,14 +136,14 @@ As mentioned earlier the datasets need to be global (longitude \[-180,180\] and 
 #### Building Virtual Datasets
 We can build a VRT (virtual dataset) by running the command gdalbuildvrt on the two latest files we have obtained. We need some specific arguments to get the results we want, using **-te** we can specify the georeferenced extent of the VRT file. **-addalpha** adds an alpha channel to the output VRT where there are no data. This is necessary for the texture dataset since we don't want the patch to hide underlying textures where there is no data. **-r** sets the resampling algorithm to use when reading the dataset. The default value is *nearest* which can cause significant *stair stepping* artifacts when used with height data, it can therefore be benefitial to change it to *bilinear* or any of the other algorithms listed [here](https://gdal.org/programs/gdalbuildvrt.html#cmdoption-gdalbuildvrt-r).
 
-```
+```bash
 gdalbuildvrt Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_Heightmap.vrt -te -180 -90 180 90 DTEEC_001918_1735_001984_1735_U01_longlat.TIFF
 gdalbuildvrt Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_Texture.vrt -te -180 -90 180 90 -addalpha PSP_001918_1735_RED_A_01_ORTHO_longlat.TIFF
 ```
 
 Now if we again run the command `gdalinfo` on our new VRT datasets we can see that they cover the whole longlat space (with some negligible precision errors):
 
-```
+```text
 gdalinfo Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_Heightmap.vrt
 ...
 Corner Coordinates:
@@ -157,7 +157,7 @@ Center      (   0.0000012,  -0.0000006) (  0d 0' 0.00"E,  0d 0' 0.00"S)
 
 and
 
-```
+```text
 gdalinfo.exe Layered_Rock_Outcrops_in_Southwest_Candor_Chasma_texture.vrt
 ...
 Corner Coordinates:
@@ -172,9 +172,7 @@ Center      (   0.0000007,   0.0000007) (  0d 0' 0.00"E,  0d 0' 0.00"N)
 ### Changing Configurations for Alpha Channel
 The **-addalpha** argument we used for the texture only made sure that alpha is set to 0 where there are no data. The patch however is often slightly tilted and also not necessarily rectangular so there might be some parts of the image file that have data even though it is not used in the patch, see image below:
 
-![](https://raw.githubusercontent.com/OpenSpace/OpenSpace-Wiki/master/images/globebrowsing/patch1.png?token=AD7-OPJHYH2zHrt7B1gRxFaYIE9_gQybks5Y0OgQwA%3D%3D)
-
-To get rid of the black border we need to fiddle with some constants defined in the `vrt` file for the texture dataset. The tag **<ScaleRatio>** defines a value that is used as a scale factor when creating an alpha channel from the grayscale raster. We want the alpha to be either 0 or 255. If we set the **ScaleRatio** to 255 we will make sure that every pixel that has a value of 1 will get an alpha value of 255. Every pixel with a higher value will get an even higher alpha value but since the data type used in the dataset is byte these values will just get clamped down to 255. We just remove the **<ScaleOffset>** tag since we still want the pixel values of 0 to generate alpha values of 0. Also, no data values need to be set to get correct transparency. We need both a no data value for the source and for the target. For the source, the tag is `<NODATA>` and for the target it is `<NoDataValue>`. In this case, both the source and the target no data values should be 0.
+To get rid of the black border we need to fiddle with some constants defined in the `vrt` file for the texture dataset. The tag `<ScaleRatio>` defines a value that is used as a scale factor when creating an alpha channel from the grayscale raster. We want the alpha to be either 0 or 255. If we set the `ScaleRatio` to 255 we will make sure that every pixel that has a value of 1 will get an alpha value of 255. Every pixel with a higher value will get an even higher alpha value but since the data type used in the dataset is byte these values will just get clamped down to 255. We just remove the `<ScaleOffset>` tag since we still want the pixel values of 0 to generate alpha values of 0. Also, no data values need to be set to get correct transparency. We need both a no data value for the source and for the target. For the source, the tag is `<NODATA>` and for the target it is `<NoDataValue>`. In this case, both the source and the target no data values should be 0.
 
 The result is the following VRT for the texture dataset:
 ```xml

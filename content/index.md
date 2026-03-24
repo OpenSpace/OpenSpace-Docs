@@ -1,12 +1,4 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Content
-
 Content is traditionally a data set with a reference.
 
 This whole chapter is designed to mirror the structure of the Scene Menu in OpenSpace. The Scene Menu path---{menuselection}`Scene --> Solar System` for example---is echoed at the top of each content page.

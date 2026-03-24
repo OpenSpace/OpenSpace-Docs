@@ -9,7 +9,7 @@ The `public_openspace` code ande the `public_gui` code are pretty similar, excep
 Both the `public_openspace` and the `public_gui` webpage features an iframe where the WorldWideTelescope app is loaded.
 
 ## Messages to and from WorldWideTelescope
-Since we need to communicate with the WWT app, we use the standard web Window API to post messages (https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage). This is done by posting messages to the iframe. In order to do that, we need to meet certain security standards. It is not possible to post messages to just about any iframe since that is a security hole. Therefore, you need to specify what website the iframe allows messages from. This is done with the url variable `origin`. A variable can be inserted into the url for use with php with the prefix `?`. If we insert `?origin="url"`, we can specify the origin of the iframe, i.e. the webpage we will allow messages to come from. For example, in the `public_openspace` folder we find this code:
+Since we need to communicate with the WWT app, we use the standard web Window API to post messages (<https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage>). This is done by posting messages to the iframe. In order to do that, we need to meet certain security standards. It is not possible to post messages to just about any iframe since that is a security hole. Therefore, you need to specify what website the iframe allows messages from. This is done with the url variable `origin`. A variable can be inserted into the url for use with php with the prefix `?`. If we insert `?origin="url"`, we can specify the origin of the iframe, i.e. the webpage we will allow messages to come from. For example, in the `public_openspace` folder we find this code:
 
 index.html
 ```html
@@ -46,6 +46,6 @@ functions.js
 frame.postMessage(message, "http://wwtapp.openspaceproject.com/");
 ```
 
-The WorldWideTelescope application is hosted on the url http://wwtapp.openspaceproject.com/1/. The messages that we post in the `functions.js` is set to have their `targetOrigin` set to the url that the iframe loads: http://wwtapp.openspaceproject.com. To accept the message, the iframe needs to specify its origin to the same url that is posting the messages. In this case, the `public_gui` and `public_openspace` webpages are hosted on the url `http://wwt.openspaceproject.com`. Because of the `?origin=http://wwt.openspaceproject.com` parameter sent to the WWT application, WWT can accept the incoming messages from that domain.
+The WorldWideTelescope application is hosted on the url <http://wwtapp.openspaceproject.com/1/>. The messages that we post in the `functions.js` is set to have their `targetOrigin` set to the url that the iframe loads: <http://wwtapp.openspaceproject.com>. To accept the message, the iframe needs to specify its origin to the same url that is posting the messages. In this case, the `public_gui` and `public_openspace` webpages are hosted on the url `http://wwt.openspaceproject.com`. Because of the `?origin=http://wwt.openspaceproject.com` parameter sent to the WWT application, WWT can accept the incoming messages from that domain.
 
 ***Note: only the domain needs to be specified - it doesn't have to be the exact same url***

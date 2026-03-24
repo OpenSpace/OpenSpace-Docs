@@ -1,12 +1,4 @@
----
-authors:
-  - name: Brian Abbott, Alex Bock
-    affiliation: American Museum of Natural History
----
-
-
 # Record Panel
-
 ![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
 
 {menuselection}`Windows --> Session Recording`
@@ -77,7 +69,7 @@ Each field in this line is defined as:
 
 | Column | Description | units |
 | --- | --- | --- |
-| 1 | [`camera` or `script`] denotes that this row represents a camera keyframe or script action. |  |
+| 1 | [`camera` or `script`] denotes that this row represents a camera keyframe or script action. | |
 | 2 | Time since OpenSpace launch | seconds |
 | 3 | Time since the start of the recording session | seconds |
 | 4 | A time stamp for the simulation time in OpenSpace | J2000 seconds |
@@ -88,9 +80,10 @@ Each field in this line is defined as:
 | 9 | Y value of the camera's rotation vector | unitless |
 | 10 | Z value of the camera's rotation vector | unitless |
 | 11 | W value of the camera's rotation vector | unitless |
-| 12 | A scale value realted to camera's zoom (smaller = zoomed out) |  |
+| 12 | A scale value realted to camera's zoom (smaller = zoomed out) | |
 | 13 | [`T` or `F`] Is the camera following the the rotation of the focus mode (e.g., rotating along with a planet to remain fixed over a position on that planet) | True or False |
-| 14 | OpenSpace identifier of the camera's focus node |  |
+| 14 | OpenSpace identifier of the camera's focus node | |
+
 :::
 
 If you wish to comment out a line, you can use the `#` character.
@@ -119,7 +112,6 @@ If you wish to comment out a line, you can use the `#` character.
 
 
 ## Playback a Session
-
 Playing back a previously recorded session will abruptly move you to the starting point of the recoded session, then play the session. The time in OpenSpace will shift to the time settings when the session was recorded. Navigation control is disabled during playback.
 
 Choose a file to be played back using the dropdown menu. The files that appear here are located in your `user/recordings` directory. Choose the desired file, then press the {menuselection}`Play` Button. Once you play a recording back, the blue Pause and Stop Playback buttons appear in the Toolbar.
@@ -142,13 +134,11 @@ Portion of the Record Panel showing a playback in progress.
 
 
 ### Option: Loop Playback
-
 When the `Loop Playback` option is checked, the session will repeat itself, going directly to the beginning of the recorded session once it has reached the end. Time will revert back to the beginning of the session as well.
 
 Playback will run continuously until you use the {menuselection}`Stop Playback` or {menuselection}`Pause` buttons.
 
 ### Option: Output Frames
-
 The `Output Frames` option determines whether screen shots are generated for the recoded session during playback. Once you check this option, you can specify the desired framerate. Pressing {menuselection}`Play` will then play the session, and take a snapshot at each frame---this will cause the playback to be a bit slower. Outputting frames will create a series of `.png` image files in `user.screenshots/[timestamp]`, for example, `user/screenshots/2024-10-27-14-30-00` if you began recording frames on 27 October 2024 at 2:30pm.
 
 The resulting images may be imported into a program that can render them into a movie file.

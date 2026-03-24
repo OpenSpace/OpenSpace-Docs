@@ -11,21 +11,18 @@ To bind a camera movement to an axis of the controller you will need the functio
   1. The index of which axis on the controller you want to bind the camera movement to. This is distinct for the type of controller you will use and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
   1. The type of camera movement you want this axis to do. This defines how the camera will move in OpenSpace when you move the specified axis of the controller. Must be one of the identifiers in the following list:
 
-     :::{table}
-     :align: center
-     | Identifier   | Description                                                             |
-     |--------------|-------------------------------------------------------------------------|
-     | "None"       | Unbinds the axis, no camera movement is applied. Default value from the start. |
-     | "Orbit X"    | Move the camera in the left/right direction in relation to the focus, while still keeping the same distance. The camera will move as if it was orbiting the focus. |
-     | "Orbit Y"    | Move the camera in the up/down direction in relation to the focus, while still keeping the same distance. The camera will move as if it was orbiting the focus. |
-     | "Zoom"       | Move the camera closer or further away from the focus                   |
-     | "Zoom In"    | Move the camera closer to the focus                                     |
-     | "Zoom Out"   | Move the camera further away from the focus                             |
-     | "LocalRoll"  | Roll the camera (clockwise) in relation to the middle of the view       |
-     | "GlobalRoll" | Roll the camera (clockwise) in relation to the focus                    |
-     | "Pan X"      | Turn the camera left/right in relation to the view                      |
-     | "Pan Y"      | Turn the camera up/down in relation to the view                         |
-     :::
+     | Identifier | Description |
+     | ---------- | ----------- |
+     | "None" | Unbinds the axis, no camera movement is applied. Default value from the start. |
+     | "Orbit X" | Move the camera in the left/right direction in relation to the focus, while still keeping the same distance. The camera will move as if it was orbiting the focus. |
+     | "Orbit Y" | Move the camera in the up/down direction in relation to the focus, while still keeping the same distance. The camera will move as if it was orbiting the focus. |
+     | "Zoom" | Move the camera closer or further away from the focus |
+     | "Zoom In" | Move the camera closer to the focus |
+     | "Zoom Out" | Move the camera further away from the focus |
+     | "LocalRoll" | Roll the camera (clockwise) in relation to the middle of the view |
+     | "GlobalRoll" | Roll the camera (clockwise) in relation to the focus |
+     | "Pan X" | Turn the camera left/right in relation to the view |
+     | "Pan Y" | Turn the camera up/down in relation to the view |
 
   1. (Optional) Whether or not this axis should be inverted. This is a common setting in video games. Defaults to `false`.
   1. (Optional) The type of joystick that this axis represents on the controller. The options are either `"JoystickLike"` or `"TriggerLike"`. A joystick is `"TriggerLike"` if it can only be pressed or pushed in one direction. A `"JoystickLike"` axis can be pushed in two directions, for example, left **and** right, or up **and** down. Defaults to `"JoystickLike"`.
@@ -127,15 +124,14 @@ Binding a custom script to a controller button is done with the function `opensp
   1. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](/using-openspace/scripting/console/index.md#the-script-log).
   1. Description of the script that the button will execute when the button is activated.
   1. (Optional) When the button should be interpreted as activated, defaults to `"Press"`. This must be one of the identifiers in the following list:
-     :::{table}
-     :align: center
-     | Identifier | Description                                     |
-     | ---------- | ----------------------------------------------- |
-     | "Idle"     | When the button is **not** pressed              |
-     | "Press"    | When the button is pressed                      |
-     | "Repeat"   | When the button is held pressed                 |
-     | "Release"  | When the button was pressed and is now released |
-     :::
+
+     | Identifier | Description |
+     | ---------- | ----------- |
+     | "Idle" | When the button is **not** pressed |
+     | "Press" | When the button is pressed |
+     | "Repeat" | When the button is held pressed |
+     | "Release" | When the button was pressed and is now released |
+
   1. (Optional) Whether or not the script should be forwarded to other connected nodes or sessions. This is similar to the `"isLocal"` parameter for actions. Defaults to `true`.
 
 Here is an example asset that switches focus when pressing the trigger buttons on an Xbox controller:

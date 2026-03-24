@@ -1,26 +1,15 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # WMAP
-
 {menuselection}`Scene --> Universe --> Cosmic Microwave Background --> WMAP`
-
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 :::{figure} wmap_cmb.png
 :align: left
 :alt: The WMAP image of the cosmic microwave background, with red areas slightly hotter and blue areas slightly cooler.
 
-The WMAP image of a portion of the sky. Tiny differences in temperature are mapped, with red areas slightly warmer than average and blue areas slightly cooler than average. 
+The WMAP image of a portion of the sky. Tiny differences in temperature are mapped, with red areas slightly warmer than average and blue areas slightly cooler than average.
 :::
 
 
@@ -42,7 +31,6 @@ As we [mentioned](../index), these differences are used to understand the nature
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -67,7 +55,6 @@ As we [mentioned](../index), these differences are used to understand the nature
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 1 all-sky image
 :assetfile: data/assets/scene/digitaluniverse/backgroundradiation.asset
@@ -75,7 +62,7 @@ As we [mentioned](../index), these differences are used to understand the nature
 :preparedby: Brian Abbott (AMNH)
 :sourceversion: 4.02
 :license: amnh
-:reference: Nine-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations - Final Maps and Results=https://doi.org/10.1093/mnras/stab1475
+:reference: Nine-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations - Final Maps and Results=<https://doi.org/10.1093/mnras/stab1475>
 :::
 
 :::::

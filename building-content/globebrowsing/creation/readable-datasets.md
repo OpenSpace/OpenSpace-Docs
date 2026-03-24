@@ -14,8 +14,7 @@ The main source of map datasets we can use within OpenSpace is provided through 
 GDAL wms configurations are described on this page: [http://www.gdal.org/frmt_wms.html](http://www.gdal.org/frmt_wms.html). **FilePath** can either be set to a file or to the complete GDAL wms config itself in string format.
 
 ### NASA GIBS WMS Datasets
-NASA GIBS provides several datasets accessible through a web map service interface which OpenSpace can read using GDAL. Information about the XML configs for reading these datasets using GDAL can be found on this site: https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+API+for+Developers. Depending on resolution, number of channels, image formats etc, different settings need to be set in the GDAL WMS config files to read. Information and available datasets can be found on this site:
-https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+Available+Imagery+Products.
+NASA GIBS provides several datasets accessible through a web map service interface which OpenSpace can read using GDAL. Information about the XML configs for reading these datasets using GDAL can be found on [this site](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+API+for+Developers). Depending on resolution, number of channels, image formats etc, different settings need to be set in the GDAL WMS config files to read. Information and available datasets can be found on [this site](https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+Available+Imagery+Products).
 
 As described in [Creating a Renderable Globe](creating-a-renderableglobe), scripting can be used to create definitions for these datasets.
 

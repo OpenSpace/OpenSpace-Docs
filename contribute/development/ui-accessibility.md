@@ -1,5 +1,4 @@
 # UI Accessibility Guidelines
-
 This page covers guidelines for accessibility when it comes to developing user interfaces or webpages for OpenSpace or related services. Below are some key points to think of from an accessiblity point of view when designing UI components or webpages. The list is not exclusive, and may be extended in the future.
 
 :::{note}

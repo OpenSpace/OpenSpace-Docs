@@ -1,20 +1,10 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Open Clusters
-
 {menuselection}`Scene --> Milky Way --> Star Clusters --> Open Clusters`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 An open star cluster is a loose assemblage of stars numbering from hundreds to thousands that are bound by their mutual gravitation. Astronomers know from their spectra that stars in open clusters are typically younger, so open clusters are relative newcomers in the scope of the Galaxy.
 
 
@@ -38,20 +28,18 @@ A night sky view of the open star clusters looking toward Orion, with Cancer, Ge
 
 
 ### Formation
+Open clusters form from giant clouds of hydrogen gas. Something triggers the cloud to become unstable and begin collapsing. That trigger could be a shockwave from a nearby supernova, or another passing cloud that disrupts the gas. This collapse results in hundreds or thousands of stars forming.
 
-Open clusters form from giant clouds of hydrogen gas. Something triggers the cloud to become unstable and begin collapsing. That trigger could be a shockwave from a nearby supernova, or another passing cloud that disrupts the gas. This collapse results in hundreds or thousands of stars forming. 
-
-Protostars begin to form, still enshrouded inside the cloud of gas. Massive, bright stars, like O and B stars, will excite the gas around them, creating a glowing HII region. 
+Protostars begin to form, still enshrouded inside the cloud of gas. Massive, bright stars, like O and B stars, will excite the gas around them, creating a glowing HII region.
 
 Soon these stars will sweep away their surrounding gas and emerge as an open cluster. A few million years later the first supernova will drive out the remaining gas, and within 10 million years the gas is generally gone, halting star formation within the cluster.
 
-Over time some cluster members are ejected and join the general population of stars in the Galaxy. This slow dispersion results in the disappearance of the cluster in a few hundred million years, or up to a billion years for the more massive clusters. 
+Over time some cluster members are ejected and join the general population of stars in the Galaxy. This slow dispersion results in the disappearance of the cluster in a few hundred million years, or up to a billion years for the more massive clusters.
 
 
 
 ### Location
-
-Because these are young stars, we expect to see them in the star-forming regions of our Galaxy, namely in the spiral arms. For this reason, open clusters exist, for the most part, in the disk of the Galaxy. As we look to the sky, we view the spiral arms edge-on as that band of light that sweeps across the sky that the ancients called the Milky Way. Because of this, open clusters were originally known as _Galactic clusters_, but this term fell out of favor once astronomers began to understand that the Galaxy includes objects beyond the Milky Way's disk.
+Because these are young stars, we expect to see them in the star-forming regions of our Galaxy, namely in the spiral arms. For this reason, open clusters exist, for the most part, in the disk of the Galaxy. As we look to the sky, we view the spiral arms edge-on as that band of light that sweeps across the sky that the ancients called the Milky Way. Because of this, open clusters were originally known as *Galactic clusters*, but this term fell out of favor once astronomers began to understand that the Galaxy includes objects beyond the Milky Way's disk.
 
 If we look from above the Milky Way, the open clusters are huddled around the Sun in our region of the Galaxy. Because these clusters are in the disk of the Galaxy, it's easier for us to see those clusters in our galactic backyard than it is on the other side of the Milky Way where the gas and dust prevents us from seeing objects deep into the disk.
 
@@ -78,7 +66,6 @@ Looking at the Milky Way Galaxy edge-on, we can see the open clusters are tightl
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -103,7 +90,6 @@ Looking at the Milky Way Galaxy edge-on, we can see the open clusters are tightl
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 1,867 clusters
 :assetfile: data/assets/scene/digitaluniverse/openclusters.asset
@@ -111,7 +97,7 @@ Looking at the Milky Way Galaxy edge-on, we can see the open clusters are tightl
 :preparedby: Brian Abbott, Zack Reeves (AMNH)
 :sourceversion: 8.09
 :license: amnh
-:reference: Galactic spiral structure revealed by Gaia EDR3=https://doi.org/10.1051/0004-6361/202140687
+:reference: Galactic spiral structure revealed by Gaia EDR3=<https://doi.org/10.1051/0004-6361/202140687>
 :::
 
 :::::

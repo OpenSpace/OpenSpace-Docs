@@ -8,7 +8,7 @@ The console is opened using the \` backtick character (the key to the left of {k
 :::{figure} console.png
 :align: center
 :width: 100%
-The _Console Window_ appearing after pressing the \` character with a script already entered.,
+The *Console Window* appearing after pressing the \` character with a script already entered.,
 :::
 
 On startup, OpenSpace auto-generates documentation files in HTML format inside the `documentation/` folder. The documentation of the commands that can be entered in the console can be found in the generated documentation, by selecting `Scripting API` in the menu to the left.

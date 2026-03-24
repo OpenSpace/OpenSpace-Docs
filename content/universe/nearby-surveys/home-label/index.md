@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Home Label
-
 {menuselection}`Scene --> Universe --> Nearby Surveys --> Home Label`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
@@ -17,9 +8,9 @@ authors:
 
 :::{figure} home_label.png
 :align: left
-:alt: The Home label marks the location of the Milky Way Galaxy, which is located at the center of the image alongside some neighboring galaxies which are also labeled. 
+:alt: The Home label marks the location of the Milky Way Galaxy, which is located at the center of the image alongside some neighboring galaxies which are also labeled.
 
-The Home label, at center, marks the location of the Milky Way Galaxy. Here, we see "Home" alongside some of its neighboring galaxies, also labeled.  
+The Home label, at center, marks the location of the Milky Way Galaxy. Here, we see "Home" alongside some of its neighboring galaxies, also labeled.
 :::
 
 
@@ -32,7 +23,6 @@ In the image above, we can see the Milky Way (Home) alongside some of its neighb
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -57,7 +47,6 @@ In the image above, we can see the Milky Way (Home) alongside some of its neighb
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 1 label
 :assetfile: data/assets/scene/digitaluniverse/milkyway_label.asset

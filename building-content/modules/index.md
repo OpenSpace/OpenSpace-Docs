@@ -1,8 +1,3 @@
----
-authors:
-  - name: OpenSpace Team
----
-
 # Modules
 
 :::{toctree}

@@ -11,7 +11,7 @@ openspace.bindKey(
   "Disable stations visibility"
 )
 ```
-The **\*** wildcard will apply the command to all renderables that meet the `stations_*` criteria in this case. Regular expression syntax can also be used. When running OpenSpace, press _p_ to make all station satellites invisible. Specific commands can also be entered in the terminal at runtime, without pre-configuring a scene file. Press **\`** to get a terminal at the top of the window, and type: `openspace.setPropertyValue('stations_*.renderable.Enabled', true)`, and then all satellites from the `stations.txt` TLE file will become visible again.
+The **\*** wildcard will apply the command to all renderables that meet the `stations_*` criteria in this case. Regular expression syntax can also be used. When running OpenSpace, press <kbd>p</kbd> to make all station satellites invisible. Specific commands can also be entered in the terminal at runtime, without pre-configuring a scene file. Press **\`** to get a terminal at the top of the window, and type: `openspace.setPropertyValue('stations_*.renderable.Enabled', true)`, and then all satellites from the `stations.txt` TLE file will become visible again.
 
 
 ## Customizing the Satellites Module

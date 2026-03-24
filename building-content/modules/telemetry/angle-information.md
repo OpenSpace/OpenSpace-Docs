@@ -1,14 +1,9 @@
----
-authors:
-  - name: OpenSpace Team
----
-
 # Angle Calculations
 The telemetry types in the [Telemetry Module](index.md) sometimes include information about angles from the camera to one or more tracked objects in the scene. The angles provide information about the objects' location in relation to the camera. This page covers the details of how those angles are computed.
 
 As briefly mentioned in the [Angle Calculation Mode](./telemetry-types-general.md#angle-calculation-mode) telemetry type on the general telemetry types page, there are two different angle calculation modes: [Horizontal](#horizontal) and [Circular](#circular). The mode can be set in the OpenSpace user interface, and which mode to use depends on the type of display and/or sound environment used, as well as the use case. For example, in the [sonification](./sonification.md#sonification), the angles map sounds to positions in a surround sound system. Depending on the setup of the speakers in a surround sound system, the angle may need to be computed differently. This is why there are two modes. The Horizontal mode is tailored for display environments with a forward-facing direction, such as the Visualization Center dome theater in Norrköping, Sweden, while the Circular mode is designed for omnidirectional planetariums, such as the Hayden Planetarium at the American Museum of Natural History in New York, USA. For an overview of these surround sound configurations, see [Surround Sound Configurations](./sonification.md#surround-sound-configurations). Each angle calculation mode and its respective use case are explained in more detail below.
 
-Both angle calculation modes will always compute an angle from the camera to the object within a horizontal plane of reference in relation to the camera. However, both modes may also include an optional _elevation angle_ that provides information about the objects' vertical height in relation to the horizontal reference plane.
+Both angle calculation modes will always compute an angle from the camera to the object within a horizontal plane of reference in relation to the camera. However, both modes may also include an optional *elevation angle* that provides information about the objects' vertical height in relation to the horizontal reference plane.
 
 :::{important}
 In a multiple-node display system, where several computers work together to create an immersive display (such as a dome theater or a planetarium), the angles are only calculated on the main display (often the display used by the pilot). Therefore, to ensure that the angles match the surround sound system, it is important that the main display is configured to align with the surround system. For example, if the immersive display has a forward direction at the center of the entire display, then the main display should also have its center as the forward direction. This ensures that the angles calculated for the main display correspond to the object's position in the larger immersive environment, aligning with the surround sound configuration.

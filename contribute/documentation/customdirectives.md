@@ -1,5 +1,4 @@
 # Custom directives
-
 We have created custom Sphinx directives for the documentation.
 
 :::{dossier}
@@ -9,12 +8,12 @@ We have created custom Sphinx directives for the documentation.
 :preparedby: Doug Finkbeiner (Princeton), Brian Abbott (AMNH)
 :sourceversion: 2.01
 :license: cc-by
-:reference: A Composite H-alpha Template for Microwave Foreground Prediction=https://doi.org/10.1086/374411;Bar=https://example.org/bar;John Doe
+:reference: A Composite H-alpha Template for Microwave Foreground Prediction=<https://doi.org/10.1086/374411>;Bar=<https://example.org/bar>;John Doe
 :::
 
 To use this, you need a Sphinx version of at least [7.4](https://www.sphinx-doc.org/en/master/changes/7.4.html). To upgrade, run
 
-```
+```bash
 pip install -r "requirements.txt"
 ```
 
@@ -28,7 +27,7 @@ The example above was created with the following code:
 :preparedby: Doug Finkbeiner (Princeton), Brian Abbott (AMNH)
 :sourceversion: 2.01
 :license: cc-by
-:reference: A Composite H-alpha Template for Microwave Foreground Prediction=https://doi.org/10.1086/374411;Bar=https://example.org/bar;John Doe
+:reference: A Composite H-alpha Template for Microwave Foreground Prediction=<https://doi.org/10.1086/374411>;Bar=<https://example.org/bar>;John Doe
 :::
 ```
 

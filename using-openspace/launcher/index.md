@@ -1,5 +1,4 @@
 # Launcher
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The OpenSpace Launcher is where you choose which content (profile) to load and which window configuration to use.

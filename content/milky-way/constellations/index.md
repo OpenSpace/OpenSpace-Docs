@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Constellations
-
 {menuselection}`Scene --> Milky Way --> Constellations`
-
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
@@ -27,13 +18,11 @@ authors:
 
 ::::
 
-
 Constellations are the objects, animals, and people conjured up from star patterns the ancients perceived in the night sky. Passed down through the millennia, eventually astronomers adopted eighty-eight official constellations located over the entire sky.
 
 
 (constellation-history)=
 ## History
-
 Constellations originate from prehistoric times---before humans had a system of writing. Ancients used star patterns, and often the shape of the Milky Way's light itself, as a form of storytelling about their beliefs, mythology, and creation. Different cultures developed their own constellations in isolation, but scientists have adopted "official" constellations that act to standardize the night sky for modern times.
 
 The earliest accepted evidence for constellations dates back to roughly 3000 BCE as seen in writing tablets from Mesopotamia (modern Iraq). Many of their constellations appear to be adopted by the Greeks around that time. As we invented symbols and language, information passed freely among our social species. Several constellations are mentioned in the Bible as well.
@@ -58,9 +47,9 @@ The list of eighty-eight constellations now adopted by astronomers was produced 
 (celestial-sphere)=
 ## The Celestial Sphere
 
-Relevant to the constellations, and a [few other data sets](../all-sky-images/index), is the concept of the _celestial sphere_. The celestial sphere is a phenomenon of our perspective as we look toward the sky. While we understand the remote distance of astrophysical objects, from our perspective on Earth, everything we see---the Sun, planets, and stars---all appear to be projected on a sphere at some arbitrary distance.
+Relevant to the constellations, and a [few other data sets](../all-sky-images/index), is the concept of the *celestial sphere*. The celestial sphere is a phenomenon of our perspective as we look toward the sky. While we understand the remote distance of astrophysical objects, from our perspective on Earth, everything we see---the Sun, planets, and stars---all appear to be projected on a sphere at some arbitrary distance.
 
-This is especially pertinent to the constellations because they are built from lines that connect two stars. To the ancients, who had no concept of the vast distances of the stars, these lines were devised as one would paint a line on canvas. Now, we understand the stars, and while thery may be near one another in the sky, we know now that they may be no where near one another in space. 
+This is especially pertinent to the constellations because they are built from lines that connect two stars. To the ancients, who had no concept of the vast distances of the stars, these lines were devised as one would paint a line on canvas. Now, we understand the stars, and while thery may be near one another in the sky, we know now that they may be no where near one another in space.
 
 For this reason, the constellations only work from Earth's perspective. Once you fly away from Earth, the figures begin to distort and become unrecognizable. Visually, this has utility, particularly as one flies away from the Solar System and into the neighboring stars where the true dimensionality of the Galaxy is highlighted by the distorted constellation lines.
 

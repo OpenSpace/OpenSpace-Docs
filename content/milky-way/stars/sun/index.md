@@ -1,20 +1,10 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Sun
-
 {menuselection}`Scene --> Milky Way --> Stars --> Sun`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
 
 ## Overview
-
 This asset controls how the Sun is represented within the Milky Way. We have two views of the Sun, one within the Solar System and one from outside the Solar System. When we view the sun among the planets, we need to see it at a certain size that allows us to also see the planets. However, when we're among the neighboring stars, we need the Sun the be properly calibrated in brightness with these stars. As it is in astronomy, from afar the glare of the Sun overshadows its planets, and this is what happens with the Sun in OpenSpace as we transition from the Solar System to the Milky Way.
 
 
@@ -30,7 +20,6 @@ An animations showing the transition between the sun we see in the Solar System 
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -55,7 +44,6 @@ An animations showing the transition between the sun we see in the Solar System 
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 1 star
 :assetfile: data/assets/scene/digitaluniverse/stars.asset

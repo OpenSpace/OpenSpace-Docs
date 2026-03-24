@@ -1,12 +1,4 @@
----
-authors:
-  - name: Brian Abbott, Micah Acinapura
-    affiliation: American Museum of Natural History
----
-
-
 # Orientation
-
 OpenSpace's user interface is unconventional, but straightforward and easy to learn. Here, we will touch on the elements of the interface and discuss the details of each item later.
 
 :::{figure} user_interface_orientation.png
@@ -28,7 +20,6 @@ The main parts of the OpenSpace user interface.
 
 
 ## Top Menu Bar
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Top Bar is similar to that of other applications, and includes four submenus: File, Windows, View, and Help.
@@ -59,9 +50,9 @@ The File Menu lists the currently loaded profile and offers options for getting 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 ### Windows Menu
-The Windows Menu includes a list of all available panels and indicates which are currently open. 
+The Windows Menu includes a list of all available panels and indicates which are currently open.
 
-Click a button in the list to open that particular panel; use the `X` to close the panel. 
+Click a button in the list to open that particular panel; use the `X` to close the panel.
 
 We discuss each panel in the [Toolbar section below](#toolbar).
 ::::
@@ -132,7 +123,6 @@ About
 
 
 ## Dashboard
-
 The Dashboard reports information in realtime about your status and location in OpenSpace.
 
 :::{figure} dashboard_default.png
@@ -143,15 +133,14 @@ The default Dashboard display.
 :::
 
 It reports on:
-- Current date and time in Universal Time (UT).
-- The simulation increment.
-- Your distance to the current focus.
-- Average frames per second (FPS)---useful for seeing how well OpenSpace is performing on your system.
-- Position, in latitude and longitude, and altitude from the object set to Focus.
+  - Current date and time in Universal Time (UT).
+  - The simulation increment.
+  - Your distance to the current focus.
+  - Average frames per second (FPS)---useful for seeing how well OpenSpace is performing on your system.
+  - Position, in latitude and longitude, and altitude from the object set to Focus.
 
 
 ### Set What is Shown
-
 In Settings Panel, under Dashboard, you can set what appears in the Dashboard, or turn it off completely by unchecking the `Enabled` option.
 
 :::{figure} settings_menu_dashboard.png
@@ -175,7 +164,6 @@ The Dashboard with all items displayed.
 
 
 ## Flight Friction Status
-
 An important aspect of gracefully navigating in OpenSpace is friction. When friction is on and you let off the gas (either let go of the mouse button or your controller), your flight will gradually come to a halt. This is friction, and there is a toggle for each type of flight: Rotation, Zoom, and Roll.
 
 When you start OpenSpace, friction for each of these types of flight is on. This is indicated by check marks and green buttons in the Friction Status, like this:
@@ -189,20 +177,12 @@ Friction status is "on".
 :::
 
 You can toggle the friction modes on and off using keyboard shortcuts (recommended) or click on the green buttons. To toggle friction on and off using the keyboard, use these keys:
-:::{list-table}
-:header-rows: 1
-:stub-columns: 1
-:align: center
-* - Shortcut
-  - Function
-* - {kbd}`f`
-  - Toggle rotational friction on and off
-* - {kbd}`Shift` + {kbd}`f`
-  - Toggle zoom friction on and off
-* - {kbd}`Ctrl` + {kbd}`f`
-  - Toggle roll friction on and off
 
-:::
+| Shortcut | Function |
+| -------- | -------- |
+| {kbd}`f` | Toggle rotational friction on and off |
+| {kbd}`Shift` + {kbd}`f` | Toggle zoom friction on and off |
+| {kbd}`Ctrl` + {kbd}`f` | Toggle roll friction on and off |
 
 If we turn the rotational friction off, when we orbit it will continue at a constant speed once we let go of the controller, and the Friction Status will look like this:
 
@@ -218,7 +198,6 @@ Friction status is "off" for rotational flight (orbiting).
 
 
 ## Toolbar
-
 The Toolbar consists of panels that you use to control aspects of OpenSpace. Each Toolbar Button opens a panel. These panels collect specific functionality to alter time, record your session, access actions, and so on. Clicking on each button will bring up a panel that is attached to its corresponding icon, but may also be detached to float the panel.
 
 <!-- Only add the figure text to the last image, because otherwise it shows up twice -->
@@ -278,12 +257,11 @@ OpenSpace Scene Panel
 
 
 ### ![Settings Panel button](toolbar_button_settings.png){h=45px} Settings Panel
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Settings Panel is rarely used, but has a number of useful items that alter some behaviors or change what's displayed. It is not shown in the Toolbar by default.
 
-Open the Settings Panel from the Top Bar using {menuselection}`Windows --> Settings`. 
+Open the Settings Panel from the Top Bar using {menuselection}`Windows --> Settings`.
 
 Use {menuselection}`View --> Task Bar --> Settings` to add the Settings Panel button to the Toolbar.
 
@@ -309,7 +287,6 @@ OpenSpace Settings Panel.
 
 
 ### ![Navigation Panel button](toolbar_button_navigation.png){h=45px} Navigation Panel
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Navigation Panel is where you choose a target to act as your Focus and fly to that target.
@@ -317,8 +294,8 @@ The Navigation Panel is where you choose a target to act as your Focus and fly t
 We will refer to this panel as {menuselection}`Navigation` throughout this guide.
 
 The Navigation Panel has two modes, accessed through an iconized menu at the top:
-- ![Focus](navigation_panel_mode_focus.png){h=20px} Focus: In every OpenSpace session, *something* needs to be set as Focus. This is an object around which navigation is centered. With this chosen in the top menu, simply pick an object in the list, or search for an object, to set as Focus. See [Navigation and Focus](/getting-started/navigation/index.md#navigation-and-focus) for more on this.
-- ![Anchor/Aim](navigation_panel_mode_anchoraim.png){h=20px} Anchor & Aim: This more complex navigation mode uses two objects: an *Anchor* that acts similarly to Focus in that the camera navigates around it, and an *Aim* that the view will be set to point towards. See [Navigation](/using-openspace/toolbar/navigation/index) for more on using Anchor & Aim.
+  - ![Focus](navigation_panel_mode_focus.png){h=20px} Focus: In every OpenSpace session, *something* needs to be set as Focus. This is an object around which navigation is centered. With this chosen in the top menu, simply pick an object in the list, or search for an object, to set as Focus. See [Navigation and Focus](/getting-started/navigation/index.md#navigation-and-focus) for more on this.
+  - ![Anchor/Aim](navigation_panel_mode_anchoraim.png){h=20px} Anchor & Aim: This more complex navigation mode uses two objects: an *Anchor* that acts similarly to Focus in that the camera navigates around it, and an *Aim* that the view will be set to point towards. See [Navigation](/using-openspace/toolbar/navigation/index) for more on using Anchor & Aim.
 ::::
 ::::{grid-item}
 
@@ -333,10 +310,10 @@ The Navigation Panel has two modes, accessed through an iconized menu at the top
 :::::
 
 Focus Mode is most commonly used. For each object in the entry list there are three items for navigation:
-- ![Pan & Fly](navigation_panel_panfly.png){h=2em} Pan & Fly To: Flight moves along a straight line, and gracefully pans until the object is in view.
-- ![Focus](navigation_panel_focus_button.png){h=2em} Focus: Rotates to look at the object and sets it as the focus for navigation.
-- ![Fly to](navigation_panel_fly.png){h=2em} Fly To: Automatically flies to the object using a curved path.
-- ![Jump to](navigation_panel_jump_button.png){h=2em} Jump To: Fades to black, then jumps directly to the object.
+  - ![Pan & Fly](navigation_panel_panfly.png){h=2em} Pan & Fly To: Flight moves along a straight line, and gracefully pans until the object is in view.
+  - ![Focus](navigation_panel_focus_button.png){h=2em} Focus: Rotates to look at the object and sets it as the focus for navigation.
+  - ![Fly to](navigation_panel_fly.png){h=2em} Fly To: Automatically flies to the object using a curved path.
+  - ![Jump to](navigation_panel_jump_button.png){h=2em} Jump To: Fades to black, then jumps directly to the object.
 
 
 
@@ -344,7 +321,6 @@ Focus Mode is most commonly used. For each object in the entry list there are th
 
 
 ### ![Time Panel button](toolbar_button_time.png){h=45px} Time Panel
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Time Panel is where you set your date and time. We refer to this panel in the guide as {menuselection}`Time`.
@@ -373,12 +349,11 @@ The `Realtime` button sets you back to 1 second per second, and the `Now` button
 
 
 ### ![Record Menu button](toolbar_button_record.png){h=45px} Record Panel
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Record Panel enables session recording. After entering a name for your recording, press the `Record` button and begin flying. Feel free to turn data sets on and off or make adjustments. To end your recording, hit `Stop`. This will save a file that may then be read in for playback.
 
-Reading in this file for playback will not only loop you through the sequence in OpenSpace, but it can also output frames if you check the Output Frames box on. These frames, a set of images at each point along the path, can then be used to create video content outside OpenSpace. It will save a _lot_ of files, so ensure you have adequate space before outputting frames.
+Reading in this file for playback will not only loop you through the sequence in OpenSpace, but it can also output frames if you check the Output Frames box on. These frames, a set of images at each point along the path, can then be used to create video content outside OpenSpace. It will save a *lot* of files, so ensure you have adequate space before outputting frames.
 ::::
 
 ::::{grid-item}
@@ -397,7 +372,6 @@ Reading in this file for playback will not only loop you through the sequence in
 
 
 ### ![GeoLocation Panel button](toolbar_button_geolocation.png){h=45px} GeoLocation Panel
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The GeoLocation panel takes you to any place on Earth. Enter a place in the search box, choose a result and how you want to get there: Fly To (![Fly to](navigation_panel_fly.png){h=2em}), Jump To (![Fly to](navigation_panel_jump_button.png){h=2em}), or add it as the Focus.
@@ -448,7 +422,6 @@ We will discuss this more in [](/using-openspace/index) [coming soon!].
 
 
 ### ![Exoplanet Systems Panel button](toolbar_button_exoplanet_systems.png){h=45px} Exoplanet Systems Panel
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Exoplanet Systems Panel is used to visualize individual exoplanetary systems. You choose the system you want, or search by host star name, and add the system.
@@ -501,7 +474,6 @@ We will discuss these in future sections.
 
 
 ### ![Actions Panel button](toolbar_button_actions.png){h=45px} Actions Panel
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Actions Panel is a powerful set of buttons that can execute OpenSpace commands. For example, you can turn all the planet, moon, and satellite trails off with the press of one button.
@@ -528,7 +500,6 @@ In this guide, {menuselection}`Actions` refers to the Actions Panel.
 
 
 ### ![SkyBrowser Panel button](toolbar_button_skybrowser.png){h=45px} SkyBrowser Panel
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The SkyBrowser Panel offers a telescopic view of the night sky. Powered by AAS's Worldwide Telescope, it allows you to point anywhere on the sky and see a high-resolution image of that area.
@@ -551,7 +522,6 @@ This enables you to see a patch of sky wherever you point the crosshair. There a
 
 
 ### ![Mission Panel button](toolbar_button_mission.png){h=45px} Mission Panel
-
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Mission Panel loads when there is an asset that calls for it. It is a special panel that displays information on a specific space mission. For example, if you load the JWST Profile, it will load the Mission Panel.
@@ -581,7 +551,6 @@ Buttons on the bottom allow you to go to the beginning or end of the mission.
 
 
 ## Version
-
 In the bottom-right of the Graphics Window is the version number you are running. This cryptic string reflects the current build you are using, and can be useful for troubleshooting.
 
 The string is the branch and commit you are running, for those who speak [Git](https://github.com/OpenSpace).
@@ -601,8 +570,7 @@ To turn off only the version, use {menuselection}`Settings --> Render Engine -->
 
 
 ## Quitting OpenSpace
-
 To quit OpenSpace you have three options:
-1. Use your Operating System's quit button in the top of the window.
-2. Use the File Menu in the Top Bar: {menuselection}`File --> Quit OpenSpace`. This will prompt you to confirm that you want to quit. Once confirmed, you will see a three-second timer. At the end of that three seconds, OpenSpace will close and quit. During those three seconds you may press anywhere to abort the quitting.
-3. Press {kbd}`CTRL` + {kbd}`Q`. This will also trigger the three-second timer, during which you can abort the quitting by clicking any key or press anywhere with the mouse.
+  1. Use your Operating System's quit button in the top of the window.
+  1. Use the File Menu in the Top Bar: {menuselection}`File --> Quit OpenSpace`. This will prompt you to confirm that you want to quit. Once confirmed, you will see a three-second timer. At the end of that three seconds, OpenSpace will close and quit. During those three seconds you may press anywhere to abort the quitting.
+  1. Press {kbd}`CTRL` + {kbd}`Q`. This will also trigger the three-second timer, during which you can abort the quitting by clicking any key or press anywhere with the mouse.

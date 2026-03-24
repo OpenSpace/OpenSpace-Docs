@@ -28,19 +28,19 @@ For the "refocus" button, a linear path is used. The camera will then fly in a s
 ## Settings
 The `PathNavigator` settings are found under `NavigationHandler` in the settings menu and include some other properties to control how a path is being played/created. Some properties that are good to know about are:
 
-| Property    | Description |
-| ----------- | ----------- |
-| DefaultPathType | The type of path that is going to be created when generating a path (see next table)|
-| SpeedScale   | Can be used to increase or decrease the traversal speed |
-| ArrivalDistanceFactor   | Decides how far away from a target object the camera should stop. The factor will be multiplied with the bounding sphere of the node and the resulting distance is used to compute the target position when a path is created. |
-| ApplyIdleBehaviorOnFinish   | If checked, the currently chosen [Idle Behavior](idle-behavior) is triggered when the path is finished. Can be used to automatically start a rotation around the target when arriving. |
-| RelevantNodeTags   | A list of tags of nodes that is relevant for the path generation. Used for example when computing collisions. |
-| IncludeRoll   | If false, any rolling rotation is removed from the rotation interpolation. Useful in situations where rolling motions can be uncomfortable for the user. OBS! Disabled per default, and we do not recommend turning it on for any paths apart from the `AvoidCollision` and `Linear`, since it might cause uncomfortable rotations. |
+| Property | Description |
+| -------- | ----------- |
+| DefaultPathType | The type of path that is going to be created when generating a path (see next table) |
+| SpeedScale | Can be used to increase or decrease the traversal speed |
+| ArrivalDistanceFactor | Decides how far away from a target object the camera should stop. The factor will be multiplied with the bounding sphere of the node and the resulting distance is used to compute the target position when a path is created. |
+| ApplyIdleBehaviorOnFinish | If checked, the currently chosen [Idle Behavior](idle-behavior) is triggered when the path is finished. Can be used to automatically start a rotation around the target when arriving. |
+| RelevantNodeTags | A list of tags of nodes that is relevant for the path generation. Used for example when computing collisions. |
+| IncludeRoll | If false, any rolling rotation is removed from the rotation interpolation. Useful in situations where rolling motions can be uncomfortable for the user. OBS! Disabled per default, and we do not recommend turning it on for any paths apart from the `AvoidCollision` and `Linear`, since it might cause uncomfortable rotations. |
 
 Short description of the different available path types (as of version 0.18.0):
 
-| Path type      | Description |
-| ----------- | ----------- |
+| Path type | Description |
+| --------- | ----------- |
 | AvoidCollision (default) | Does some simple collision avoidance with close scene graph nodes, but otherwise goes reasonably straightly to the target. Linear interpolation (SLERP) of the rotation. That is, does not try to look at the targeted objects. Works well when flying between objects in the scene, as long as the objects are centered in view at the start and end. |
 | ZoomOutOverview | First moves the camera out to a point where both targets are in view, before approaching the desired targets. Provides a better sense of how far away the objects are in relation to each other. Tries to look at either of the targets for as long as possible. However, no collision detection is done. |
 | Linear | Just a linear path from the start to end point |

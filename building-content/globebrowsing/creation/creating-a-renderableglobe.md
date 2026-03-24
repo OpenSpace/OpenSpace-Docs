@@ -30,10 +30,10 @@ Renderable = {
 Let's look closer in to what properties can be set for each layer. In the above example, we created a simple layer and put it in the **ColorLayers** layer group. A layer is defined by a Lua table such as the mentioned example:
 ```lua
 {
-Name = "SimpleTexture", -- Unique name
-Type = "DefaultTileLayer", -- Defaults to DefaultTileLayer if not set
-FilePath = "path/to/texture.jpg",
-Enabled = true, -- Defaults to false if not set
+  Name = "SimpleTexture", -- Unique name
+  Type = "DefaultTileLayer", -- Defaults to DefaultTileLayer if not set
+  FilePath = "path/to/texture.jpg",
+  Enabled = true, -- Defaults to false if not set
 },
 ```
 These layers can be put in to any of the layer groups, they will be interpreted differently for the rendering. Depending on the **Type** of the layer, some properties are different. First, let's look at the properties that are used for all layer types.

@@ -1,5 +1,4 @@
 # Glossary
-
 We provide a series of glossaries divided by subject.
 
 {.heading-toc}

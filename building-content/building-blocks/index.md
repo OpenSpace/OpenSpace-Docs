@@ -1,10 +1,3 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # The Building Blocks of OpenSpace
 
 OpenSpace, like any program, is made up of components that build upon themselves to deliver complex scenes to the user. These elements are apparent to the user, but perhaps not intimately understood. Here, we will broadly describe these elements so that in the following sections we can discuss how these elements are visible to you and how you can work with them.
@@ -15,7 +8,7 @@ When you launch OpenSpace, you choose a profile and then press Start. You can [c
 
 %%%% LINK ABOVE
 
-When you create or edit a profile, you are adding components called _assets_.
+When you create or edit a profile, you are adding components called *assets*.
 
 
 ## Assets: Profile Building Blocks

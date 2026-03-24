@@ -1,12 +1,3 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
-
-
 % Add these to the data tab when we have pages for them:
 % "scene/milkyway/objects/orionnebula/orionnebula",
 % "scene/solarsystem/dwarf_planets/ceres/ceres",
@@ -35,7 +26,6 @@ authors:
 
 
 # Default-Full
-
 The Default-Full Profile extends on the [Default](/profiles/default/index) Profile by adding  more items---mostly moons in the outer solar system---which tend to slow down performance (i.e., reduce frame rates).
 
 
@@ -44,7 +34,6 @@ The Default-Full Profile extends on the [Default](/profiles/default/index) Profi
 :::::::{tab-item} Tour
 
 ## Tour
-
 Please see the [](/profiles/default/index) Profile's Tour. We will add a specific tour for this profile that includes these additional data in the future.
 
 :::::::
@@ -55,7 +44,6 @@ Please see the [](/profiles/default/index) Profile's Tour. We will add a specifi
 :::::::{tab-item} Keyboard Shortcuts
 
 ## Keyboard Shortcuts
-
 ::::{include} /using-openspace/keyboard-shortcuts/default.md
 :heading-offset: 2
 ::::
@@ -72,10 +60,7 @@ Please see the [](/profiles/default/index) Profile's Tour. We will add a specifi
 :::::::{tab-item} Data Sets
 
 ## Data Sets
-
 ### Solar System
-
-
 :::{warning}
 This section is missing some data sets. Mostly planet moons and satellites whose documentation has not yet been written.
 :::
@@ -86,15 +71,15 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/sun/sun/index)
-[![](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
+[![Sun icon](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/sun-glare/index)
-[![](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
+[![Sun Glare icon](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/habitable-zone/index)
-[![](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
+[![Sun Habitable Zone icon](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
 :::
 
 ::::
@@ -140,14 +125,13 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 #### Dwarf Planets
-
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/pluto/index)
 [![Pluto](/content/solar-system/dwarf-planets/pluto/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/pluto/index)
 :::
- 
+
 ::::
 
 
@@ -164,7 +148,6 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 ### Milky Way
-
 #### Stars
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
@@ -346,7 +329,6 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 
 ### Universe
-
 #### Nearby Surveys
 ::::{grid} 1 2 3 4
 :gutter: 1 1 1 2
@@ -444,27 +426,26 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :::::::{tab-item} Dossier
 
 ## Dossier
-
 :::{list-table}
 :header-rows: 0
 :stub-columns: 1
 :align: left
 :width: 90%
 
-* - Name:
-  - Default_full
-* - File:
-  - `data/profiles/default_full.profile`
-* - Anchor:
-  - Earth
-* - Time:
-  - Current time, 24 hours ago.
-* - Author:
-  - OpenSpace Team
-* - License:
-  - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
-* - Version:
-  - 1.2
+  - - Name:
+    - Default_full
+  - - File:
+    - `data/profiles/default_full.profile`
+  - - Anchor:
+    - Earth
+  - - Time:
+    - Current time, 24 hours ago.
+  - - Author:
+    - OpenSpace Team
+  - - License:
+    - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
+  - - Version:
+    - 1.2
 :::
 
 :::::::

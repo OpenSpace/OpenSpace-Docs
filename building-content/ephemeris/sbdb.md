@@ -5,15 +5,15 @@ This method differs from the JPL Horizons [page](horizons-web) in that it provid
 
 
 ## Downloading Orbital Data from the JPL Small-Body Database (SBDB)
-Browse to the JPL SBDB query page [here](https://ssd.jpl.nasa.gov/tools/sbdb_query.html) and follow the instructions for each input section below.
+Browse to the [JPL SBDB query page](https://ssd.jpl.nasa.gov/tools/sbdb_query.html) and follow the instructions for each input section below.
 
 ### Search Constraints
 There are currently just under one million Small SolarSystem Bodies (SSSB) listed in this database. Attempting to render all of them at once would cause low rendering performance and result in "visualization overload," so some level of filtering is necessary.
 
-Click the **Limit by Orbit Class** header to expand its contents. Sub-groups of asteroids and/or comets (e.g. main asteroid belt) can be selected. If desired, additional filtering can be applied using object characteristics such as size, orbital period, or inclination. Filters can be selected and combined with a logical AND/OR operation. This _advanced_ option is available under the **Custom Object/Orbit Constraints** header.
+Click the **Limit by Orbit Class** header to expand its contents. Sub-groups of asteroids and/or comets (e.g. main asteroid belt) can be selected. If desired, additional filtering can be applied using object characteristics such as size, orbital period, or inclination. Filters can be selected and combined with a logical AND/OR operation. This *advanced* option is available under the **Custom Object/Orbit Constraints** header.
 
 ### Output Selection
-Click the **Output Selection Controls** header to expand this section. Do not select "Output Field Preset Selector". In the "Available Fields" box, click each of the following options to select _only_ these:
+Click the **Output Selection Controls** header to expand this section. Do not select "Output Field Preset Selector". In the "Available Fields" box, click each of the following options to select *only* these:
   - **[object fullname]**
   - **[epoch_cal]**  epoch of osculation in Julian day form (TDB)
   - **[e]** eccentricity

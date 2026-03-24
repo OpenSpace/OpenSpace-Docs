@@ -1,5 +1,5 @@
 # Events
-Events are signals that are emitted by the OpenSpace engine in response to specific _events_ that happen. The event system is build to be as low overhead as possible to provide a minimal impact on the overall rendering performance, however events should be considered to be relatively seldom activities. Events are signalled to connected instances via the socket connection as a seperate `Topic` or they can trigger `Action`s in the main system.
+Events are signals that are emitted by the OpenSpace engine in response to specific *events* that happen. The event system is build to be as low overhead as possible to provide a minimal impact on the overall rendering performance, however events should be considered to be relatively seldom activities. Events are signalled to connected instances via the socket connection as a seperate `Topic` or they can trigger `Action`s in the main system.
 
 
 ## Action Trigger
@@ -48,7 +48,7 @@ This event is created when a screenspace renderable has been removed from the sy
 
 ### CameraFocusTransition
 This event is created when the camera transitions between different interaction sphere distances. Right now, only movement relative to camera's focus node is considered. Each scene graph node has an interaction sphere radius that serves as the reference distance for all spheres.
-```
+```text
 Diagram of events for a camera moving from right-to-left. Interaction sphere is 'O' in middle, and ')' are spherical boundaries. The approach factor, reach factor, and interaction sphere radius are all taken from the current focus node.
 
 |<------------------->|  Approach factor * Interaction sphere

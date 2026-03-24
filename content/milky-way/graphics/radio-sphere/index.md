@@ -1,14 +1,5 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Radio Sphere
-
 {menuselection}`Scene --> Milky Way --> Graphics --> Radio Sphere`
-
 
 ::::::{tab-set}
 :::::{tab-item} Overview
@@ -22,7 +13,6 @@ authors:
 :::::{tab-item} Profiles
 
 ## Profiles
-
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
 
@@ -47,7 +37,6 @@ authors:
 :::::{tab-item} Dossier
 
 ## Dossier
-
 :::{dossier}
 :census: 1 wire-frame sphere
 :assetfile: data/assets/scene/digitaluniverse/????.asset

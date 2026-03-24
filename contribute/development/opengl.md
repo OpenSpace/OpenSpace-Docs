@@ -1,5 +1,5 @@
 # OpenGL Transition Guide
-Based on https://github.com/fendevel/Guide-to-Modern-OpenGL-Functions.  Many of the functions use the new _Direct State Access_ (DSA) which doesn't require so many functions to have the target bound to a specific location, but instead work directly on the object instead. The table on the OpenGL wiki describes the naming scheme for DSA-style functions: https://wikis.khronos.org/opengl/Direct_State_Access
+Based on <https://github.com/fendevel/Guide-to-Modern-OpenGL-Functions>.  Many of the functions use the new *Direct State Access* (DSA) which doesn't require so many functions to have the target bound to a specific location, but instead work directly on the object instead. The table on the OpenGL wiki describes the naming scheme for DSA-style functions: <https://wikis.khronos.org/opengl/Direct_State_Access>
 
 ## Textures
 Old:
@@ -45,7 +45,7 @@ glTextureSubImage2D(name, 0, 0, 0, width, height, GL_RGBA, GL_UNSIGNED_BYTE, pix
 ```
 
 
-New function [`glTextureStorage`](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexStorage2D.xhtml) (non-DSA version: `glTexStorage` allocates memory for a texture and makes the texture _immutable_, which means only the contents of the texture can be changed, but not the data type, sizes, etc. This results in a more efficient handling and enables other OpenGL 4.6 features like [texture views](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTextureView.xhtml). It is also more robust as the driver can immediately check whether a texture is well-defined.
+New function [`glTextureStorage`](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTexStorage2D.xhtml) (non-DSA version: `glTexStorage` allocates memory for a texture and makes the texture *immutable*, which means only the contents of the texture can be changed, but not the data type, sizes, etc. This results in a more efficient handling and enables other OpenGL 4.6 features like [texture views](https://registry.khronos.org/OpenGL-Refpages/gl4/html/glTextureView.xhtml). It is also more robust as the driver can immediately check whether a texture is well-defined.
 
 ## Texture Units
 Old:
@@ -209,4 +209,4 @@ glNamedBufferData(
 );
 ```
 
-_Important_: Forgetting to call the new function `glVertexArrayAttribBinding` to match up the attribute with the buffer object that has the data will cause a null pointer access deep in the Nvidia driver without a callstack.  So if that happens, it's most likely the cause.
+**Important**: Forgetting to call the new function `glVertexArrayAttribBinding` to match up the attribute with the buffer object that has the data will cause a null pointer access deep in the Nvidia driver without a callstack.  So if that happens, it's most likely the cause.

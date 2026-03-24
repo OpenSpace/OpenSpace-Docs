@@ -1,7 +1,7 @@
 # Folder Layout
 This page describes the layout of the source code inside the OpenSpace repository.
 
-```
+```text
 ├── apps                  <-- Source for applications built on the core libraries
 │   ├── DocsWriter        <-- Application to update the current documentation
 │   ├── OpenSpace         <-- The main OpenSpace application

@@ -1,10 +1,7 @@
 # Coding Style
-
 This document provides the general coding guidelines for C++ code in the OpenSpace project. The guidelines are based on [these](http://geosoft.no/development/cppstyle.html) guides, but were adapted and modified. Following this document ensures a common coding style for the project. Each developer using their own guidelines will quickly lead to fragmented code and decrease readability and maintainability. Please note rule #1; if, in a specific situation, the application of a rule would make the source code less readable it is advised to not follow the rule.
 
 Sections [General](#general), [Naming](#naming), and [Structure](#structure) contain the coding style rules. Section [Best Practices](#best-practices) contains broader best practices for coding in general, and Section [File Formatting](#file-formatting) contains rules and examples on how to format the files in order to be consistent with the rest of the code base.
-
-
 
 ## General
 ### 0. "Boy Scouts" rule

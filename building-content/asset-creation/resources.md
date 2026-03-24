@@ -44,7 +44,7 @@ asset.export(ScreenSpace)
 ### If your resource is not located in the same folder as the asset
 To load a file that is located somewhere else than where your asset file is, you need to specify the **absolute path**. An absolute path tells the location of the file and usually starts with the name of the disk the file is located on, most commonly `C:/` or `D:/`. This is the absolute path for the movie in the image above:
 
-```
+```text
 "C:/Users/yourname/Desktop/Documents/myVideo.mp4"
 ```
 
@@ -79,7 +79,7 @@ asset.export(ScreenSpace)
 There are two built-in mechanisms of resource synchronizations in OpenSpace: The `HttpSynchronization` and the `UrlSynchronization`. The `HttpSynchronization` is designed to fetch versioned data from the official OpenSpace server (data.openspaceproject.com), like this:
 
 ```lua
-local path = asset.syncedResource({
+local path = asset.resource({
   Type = "HttpSynchronization",
   Name = "Foo"
   Identifier = "foo",
@@ -90,7 +90,7 @@ local path = asset.syncedResource({
 The UrlSynchronization can be used to fetch arbitrary data from the web.
 
 ```lua
-local path = asset.syncedResource({
+local path = asset.resource({
   Type = "UrlSynchronization",
   Name = "Bar",
   Identifier = "bar",
@@ -99,6 +99,6 @@ local path = asset.syncedResource({
 })
 ```
 
-While a synchronized asset can be required or requested from multiple locations, it can only declared in one location. For example, consider a synchronized asset that contains more than one file (e.g. `solarsystem/planets/jupiter/jupiter_labels.asset`). If the individual label files are used in different asset files, they must all reference the same source asset, and then append the label filename to the _jupiter_labels_ asset path. An error will occur if different synchronized assets are defined in order to request the individual label files.
+While a synchronized asset can be required or requested from multiple locations, it can only declared in one location. For example, consider a synchronized asset that contains more than one file (e.g. `solarsystem/planets/jupiter/jupiter_labels.asset`). If the individual label files are used in different asset files, they must all reference the same source asset, and then append the label filename to the *jupiter_labels* asset path. An error will occur if different synchronized assets are defined in order to request the individual label files.
 
 The `Override` parameter can be used to force a new download even if the file has already previously been downloaded.

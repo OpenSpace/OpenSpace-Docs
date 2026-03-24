@@ -1,16 +1,9 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
 # Keybinds Panel
-
 ![Tour Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.png)
 
 {menuselection}`Windows --> Keybinds`
 
-The Keybinds Panel shows all the active keyboard bindings for the current profile loaded upon startup. These are so called keyboard shortcuts that perform tasks, often in lieu of the mouse acting on the user interface. For example, you can click on the Flight Friction buttons in the top-right corner of the window, but you can also use the keyboard to toggle the friction on and off (more on thnis below).
+The Keybinds Panel shows all the active keyboard bindings for the current profile loaded upon startup. These are so called keyboard shortcuts that perform tasks, often in lieu of the mouse acting on the user interface. For example, you can click on the Flight Friction buttons in the top-right corner of the window, but you can also use the keyboard to toggle the friction on and off (more on this below).
 
 :::{note}
 The keybinds panel images here reflect these set in the [Default Profile](/profiles/default/index). Keybind settings are profile-dependent.
@@ -58,9 +51,9 @@ You can also see only the active keys for the modifier keys, {kbd}`Shift`, {kbd}
 
 
 Once you select a key on the panel using your mouse, information for the keybinding will appear in the panel. For example, if we examine the {kbd}`f` key, we can see there are three separate keybindings assigned to it, and they each affect the flight friction:
-- {kbd}`f` toggles the rotational friction on and off.
-- {kbd}`Shift` + {kbd}`f` toggles the zoom friction.
-- {kbd}`Ctrl` + {kbd}`f` toggles the roll friction.
+  - {kbd}`f` toggles the rotational friction on and off.
+  - {kbd}`Shift` + {kbd}`f` toggles the zoom friction.
+  - {kbd}`Ctrl` + {kbd}`f` toggles the roll friction.
 
 :::{figure} keybinds_panel_f_key.png
 :align: center

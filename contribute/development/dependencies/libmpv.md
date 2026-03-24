@@ -1,15 +1,15 @@
 # LibMPV
-  1. `git clone` the media-autobuild-suite https://github.com/m-ab-s/media-autobuild_suite
+  1. `git clone` the media-autobuild-suite <https://github.com/m-ab-s/media-autobuild_suite>
   1. Run the bat script `media-autobuild_suite.bat`
   1. Press `2` to say no to all of the packages, except for ffmpeg. When ffmpeg comes around choose option `4) shared`
   1. Let it finish building. It will take a good while.
   1. Locate the file `mpv-2.dll`. It should be located in `local64/bin-video`
   1. Locate the file  `mpv.def`. It should be in `C:/a/media-autobuild_suite/build/mpv-git/libmpv` or in `C:/a/media-autobuild_suite/build/mpv-git/build`.
   1. Locate the folder  `include/mpv` with the header files for mpv. It should be in `local64`
-  1. Create a new directory called `libmpv`. In `libmpv`, create another directory called `lib`. Copy the `dll` and the `def` there. 
+  1. Create a new directory called `libmpv`. In `libmpv`, create another directory called `lib`. Copy the `dll` and the `def` there.
   1. In `libmpv`, create a new directory called `include`. Copy the header files there.
   1. Edit the `mpv.def` file. Add these two lines to the top of the file:
-     ```
+     ```text
      LIBRARY MPV-2
      EXPORTS
      ```

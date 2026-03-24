@@ -1,10 +1,3 @@
----
-authors:
-  - name: Brian Abbott
-    affiliation: American Museum of Natural History
----
-
-
 # Building Content
 
 {.heading-toc}
@@ -33,7 +26,9 @@ ephemeris/index
 field-lines
 gaia
 globebrowsing/index
+path-tokens
 point-data/index
+solarbrowsing/index
 profiles
 renderablestars
 satellites

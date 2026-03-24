@@ -1,3 +1,5 @@
+<!-- markdownlint-disable -->
+
 # `{{ library.fullName }}`
 ## Functions overview
 
@@ -5,11 +7,11 @@
 :header-rows: 1
 :widths: 2 10
 :width: 100%
-*   - Name
+  - - Name
     - Documentation
 {% for function in library.functions %}
 {% set shortText = function.help.split('.') %}
-*   - [`{{ function.name }}`](#{{ library.name }}{{ function.name }}-target)
+  - - [`{{ function.name }}`](#{{ library.name }}{{ function.name }}-target)
     - [{{ shortText[0]|default(shortText) }}]{{ '{#' }}{{ library.name }}{{ function.name }}{{ '-list}' }}
 {% endfor %}
 :::
@@ -24,19 +26,19 @@
 :::{card} Parameters
 {% for argument in function.arguments %}
 {% if argument.name == "" %}
-* Unnamed parameter of type {{ argument.type|default(unknown) }}
+  - Unnamed parameter of type {{ argument.type|default(unknown) }}
 {% else %}
-* {{ argument.name }} `{{ argument.type }}`{% if argument.defaultValue != "" %} - Default value: `{{ argument.defaultValue }}`{% endif %} 
+  - {{ argument.name }} `{{ argument.type }}`{% if argument.defaultValue != "" %} - Default value: `{{ argument.defaultValue }}`{% endif %}
 {% endif %}
 {% if argument.description %}
-    * {{ argument.description }}{% endif %}{% endfor %}
+    - {{ argument.description }}{% endif %}{% endfor %}
 :::
 {% endif %}
-Return type: `{{ function.returnType|default('void', true) }}` {{ function.returnDescription|default('') }}
+Return type: `{{ function.returnType|default('void', true) }}`{{ function.returnDescription|default('') }}
 
 :::{code-block} lua
 :caption: Signature
 {{ library.fullName }}.{{ function.name }}({% for argument in function.arguments %}{{ argument.name }}{{ ", " if not loop.last }}{% endfor %})
 :::
-{{ "___" if not loop.last else "" }}
+{{ "---" if not loop.last else "" }}
 {% endfor %}
