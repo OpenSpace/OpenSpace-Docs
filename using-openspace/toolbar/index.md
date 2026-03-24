@@ -57,6 +57,10 @@ The toolbar above shows all the possible panel options, set via the Top Bar's Vi
 ![Exoplanet Systems Panel Button](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.png)
 
 {.heading-toc}
+### [Screenspace Renderables Panel](/using-openspace/toolbar/screenspace-renderables/index)
+![Screenspace Renderables Panel Button](/using-openspace/toolbar/screenspace-renderables/toolbar_button_screenspace_renderables.png)
+
+{.heading-toc}
 ### [Keybinds Panel](/using-openspace/toolbar/keybinds/index)
 ![Keybinds Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.png)
 
@@ -67,7 +71,6 @@ The toolbar above shows all the possible panel options, set via the Top Bar's Vi
 {.heading-toc}
 ### [User Panels](/using-openspace/toolbar/user-panels/index)
 ![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.png)
-
 
 {.heading-toc}
 ### [Tour Panel](/using-openspace/toolbar/tour-panel/index)
@@ -106,17 +109,10 @@ geolocation/index
 night-sky/index
 skybrowser/index
 exoplanet-systems/index
+screenspace-renderables/index
 keybinds/index
 record/index
 user-panels/index
 tour-panel/index
-
-:::
-
-:::{toctree}
-:maxdepth: 1
-:caption: Using OpenSpace (Unrenovated)
-
-screenspace-renderables/index
 
 :::
