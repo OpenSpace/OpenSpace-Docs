@@ -7,76 +7,61 @@ The Toolbar appears at the bottom of the OpenSpace window and gives you quick ac
 :::{note}
 The toolbar above shows all the possible panel options, set via the Top Bar's View menu. When you start OpenSpace, the default Toolbar is abbreviated:
 ![Toolbar Panels Default](/using-openspace/toolbar/toolbar_default.png)
+
+Add other panels using the {menuselection}`View --> Toolbar` Menu.
 :::
 
 
 
 ## Toolbar Panels
-<style>
-    .column_container {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .column_container > * {
-        margin: 1rem 2rem;
-    }
-</style>
-<div class="column_container">
+
+:::{list-table}
+:widths: 15 25 60
+:header-rows: 0
+:class: toolbar-table
+
+*   - ![Scene Panel Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
+    - ### [Scene Panel](/using-openspace/toolbar/scene/index)
+    - A hierarchial listing of all the data sets in your OpenSpace session.
+*   - ![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png)
+    - ### [Navigation Panel](/using-openspace/toolbar/navigation/index)
+    - Target and navigate to objects.
+*   - ![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time_cropped.png)
+    - ### [Time Panel](/using-openspace/toolbar/time/index)
+    - Change the date and time, and alter the rate of time.
+*   - ![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png)
+    - ### [Actions Panel](/using-openspace/toolbar/actions/index)
+    - A library of buttons, or marcos, that perform one or many OpenSpace tasks.
+*   - ![GeoLocation Panel Button](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
+    - ### [GeoLocation Panel](/using-openspace/toolbar/geolocation/index)
+    - Locate places on Earth, navigate to them, and save them as scenes.
+*   - ![SkyBrowser Panel Button](/using-openspace/toolbar/skybrowser/toolbar_button_skybrowser.png)
+    - ### [SkyBrowser Panel](/using-openspace/toolbar/skybrowser/index)
+    -  A tool that interactively connects OpenSpace to night sky imagery, including all-sky images and images from space telescopes.
+*   - ![Exoplanet Systems Panel Button](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.png)
+    - ### [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index)
+    - Visualize the planets and habitable zones in exoplanetary systems.
+*   - ![Night Sky Panel Button](/using-openspace/toolbar/night-sky/toolbar_button_nightsky.png)
+    - ### [Night Sky Panel](/using-openspace/toolbar/night-sky/index)
+    - Night sky simulator with tools to understand the motions of the sun, moon, planets, and stars throughout the course of the day and year.
+*   - ![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
+    - ### [Record Panel](/using-openspace/toolbar/record/index)
+    - Record a session's flightpath and playback or render the flight.
+*   - ![Screenspace Renderables Panel Button](/using-openspace/toolbar/screenspace-renderables/toolbar_button_screenspace_renderables.png)
+    - ### [Screenspace Renderables Panel](/using-openspace/toolbar/screenspace-renderables/index)
+    - Add images, video, or webpages that exists as a slide overlay in OpenSpace,
+*   - ![Keybinds Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.png)
+    - ### [Keybinds Panel](/using-openspace/toolbar/keybinds/index)
+    - Shows all the active keyboard bindings for the currently loaded profile.
+*   - ![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.png)
+    - ### [User Panels](/using-openspace/toolbar/user-panels/index)
+    - Custom panels that are developed by users which allow custom functionality within OpenSpace. 
+*   - ![Tour Panel Button](/using-openspace/toolbar/tour-panel/toolbar_button_tour.png)
+    - ### [Tour Panel](/using-openspace/toolbar/tour-panel/index)
+    - Displays an interactive, getting started tour of OpenSpace.
+:::
 
 
-{.heading-toc}
-### [Scene Panel](/using-openspace/toolbar/scene/index)
-![Scene Panel Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
-
-{.heading-toc}
-### [Navigation Panel](/using-openspace/toolbar/navigation/index)
-![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png)
-
-{.heading-toc}
-### [Time Panel](/using-openspace/toolbar/time/index)
-![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=40px}
-
-{.heading-toc}
-### [Actions Panel](/using-openspace/toolbar/actions/index)
-![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png)
-
-{.heading-toc}
-### [GeoLocation Panel](/using-openspace/toolbar/geolocation/index)
-![GeoLocation Panel Button](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
-
-{.heading-toc}
-### [Night Sky Panel](/using-openspace/toolbar/night-sky/index)
-![Night Sky Panel Button](/using-openspace/toolbar/night-sky/toolbar_button_nightsky.png)
-
-{.heading-toc}
-### [SkyBrowser Panel](/using-openspace/toolbar/skybrowser/index)
-![SkyBrowser Panel Button](/using-openspace/toolbar/skybrowser/toolbar_button_skybrowser.png)
-
-{.heading-toc}
-### [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index)
-![Exoplanet Systems Panel Button](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.png)
-
-{.heading-toc}
-### [Screenspace Renderables Panel](/using-openspace/toolbar/screenspace-renderables/index)
-![Screenspace Renderables Panel Button](/using-openspace/toolbar/screenspace-renderables/toolbar_button_screenspace_renderables.png)
-
-{.heading-toc}
-### [Keybinds Panel](/using-openspace/toolbar/keybinds/index)
-![Keybinds Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.png)
-
-{.heading-toc}
-### [Record Panel](/using-openspace/toolbar/record/index)
-![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
-
-{.heading-toc}
-### [User Panels](/using-openspace/toolbar/user-panels/index)
-![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.png)
-
-{.heading-toc}
-### [Tour Panel](/using-openspace/toolbar/tour-panel/index)
-![Tour Panel Button](/using-openspace/toolbar/tour-panel/toolbar_button_tour.png)
-
-</div>
 
 
 ## Customizing the Toolbar

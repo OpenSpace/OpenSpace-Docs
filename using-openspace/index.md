@@ -6,7 +6,7 @@ For this chapter, we need to understand a bit more what goes on under the hood w
 
 {.heading-toc}
 ## [The Toolbar](/using-openspace/toolbar/index)
-[![Toolbar Panels](/using-openspace/toolbar/toolbar_full.png)](/using-openspace/toolbar/index)
+[![Toolbar Panels](/using-openspace/toolbar/toolbar_default.png)](/using-openspace/toolbar/index)
 
 {.heading-toc}
 ## [Profile Editor](/using-openspace/launcher/profile-editor/index)
