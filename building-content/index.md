@@ -26,6 +26,7 @@ ephemeris/index
 field-lines
 gaia
 globebrowsing/index
+keyboard
 path-tokens
 point-data/index
 solarbrowsing/index
