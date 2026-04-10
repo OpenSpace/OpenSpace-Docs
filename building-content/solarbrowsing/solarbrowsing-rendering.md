@@ -111,6 +111,13 @@ OpenSpace/sync/dynamically_downloaded/solarbrowsing/cache/
 Each resolution level is cached as a separate file. If many images have been loaded at multiple downsampling levels, the cache folder can grow large. It is safe to delete the cache folder entirely as the files will be regenerated on next use.
 :::
 
+### Runtime Properties
+The following additional properties are available in the GUI during runtime to help with navigating the data:
+
+`TimelineDataRange` displays the earliest and latest available image timestamps for the currently active instrument. Note that data may not be continuously available across the entire displayed range, for example if images were downloaded for two separate periods with a gap in between.
+
+`JumpToStart` performs a time jump to the earliest available image for the currently active instrument, which is a convenient way to begin playback from the beginning of the downloaded data.
+
 ## RenderableSolarImageryProjection
 This Renderable projects the images from one or more `RenderableSolarImagery` nodes onto a sphere slightly larger than the Sun, allowing the imagery to be viewed as if mapped onto the solar surface from any direction in the scene. Images from multiple spacecraft can be displayed simultaneously, up to a maximum of seven. Any part of the solar surface not covered by the projected imagery will appear gray, indicating that no data is available for that region.
 
