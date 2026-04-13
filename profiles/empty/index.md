@@ -16,18 +16,6 @@ Nothing to see here...
 
 
 
-:::::::{tab-item} Keyboard Shortcuts
-
-## Keyboard Shortcuts
-::::{include} /using-openspace/keyboard-shortcuts/base.md
-:heading-offset: 2
-::::
-
-:::::::
-
-
-
-
 :::::::{tab-item} Data Sets
 
 ## Data Sets

@@ -1,4 +1,4 @@
-# Base Keyboard Shortcuts
+# System Keyboard Shortcuts
 Shortcuts found in the base asset, found at `data/assets/base.asset`.
 
 (base-shortcuts)=

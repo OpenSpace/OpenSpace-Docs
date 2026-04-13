@@ -34,16 +34,6 @@ The profile also includes a few guiding lines to help navigate around the Sun an
 :::::::
 
 
-
-
-:::::::{tab-item} Keyboard Shortcuts
-
-## Keyboard Shortcuts
-No additional shortcuts provided.
-
-:::::::
-
-
 :::::::{tab-item} Data Sets
 
 ## Data Sets

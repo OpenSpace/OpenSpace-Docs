@@ -778,29 +778,6 @@ That's the grand tour. Hopefully, you have an idea of the scale of the observabl
 
 
 
-
-
-
-
-:::::::{tab-item} Keyboard Shortcuts
-
-## Keyboard Shortcuts
-::::{include} /using-openspace/keyboard-shortcuts/default.md
-:heading-offset: 2
-::::
-
-::::{include} /using-openspace/keyboard-shortcuts/base.md
-:heading-offset: 2
-::::
-
-:::::::
-
-
-
-
-
-
-
 :::::::{tab-item} Data Sets
 
 ## Data Sets
