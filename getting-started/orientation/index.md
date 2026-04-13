@@ -34,7 +34,7 @@ The Top Bar is similar to that of other applications, and includes four submenus
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 ### File Menu
-The File Menu lists the currently loaded profile and offers options for getting more detail on the profile, displying the [Console](/using-openspace/scripting/console/index) (an advanced topic we discuss later), and quitting the software.
+The File Menu lists the currently loaded profile and offers options for getting more detail on the profile, displaying the [Console](/using-openspace/scripting/console/index) (an advanced topic we discuss later), and quitting the software.
 ::::
 ::::{grid-item}
 :::{figure} topbar_menu_file.png
@@ -122,6 +122,8 @@ About
 :::::
 
 
+
+(getting-started--orientation--dashboard)=
 ## Dashboard
 The Dashboard reports information in realtime about your status and location in OpenSpace.
 
