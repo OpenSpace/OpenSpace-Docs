@@ -1,5 +1,7 @@
 # Academics
 ## Papers
+  - A Cosmic View of Life on Earth: Hierarchical Visualization of Biological Data using Astronomical Software. *W. Duchemin, T. Fujiwara, H. Herhold, E. Elmquist, D. Thaler, W. Harcourt-Smith, E. Broman, E., Bock, A., Abbott, B., and Faherty, J*, IEEE Computer Graphics & Applications, **2025**, [doi](https://doi.org/10.1109/MCG.2025.35917138)
+  - In space, no one (but AI) can hear you scream. *M. Brossier, A. Bock, K. Schönborn, T. Isenberg, A. Ynnerman, and L. Besançon*, IEEE Visualization, **2024**
   - ExoplanetExplorer: Contextual Visualization of Exoplanet Systems. *E. Broman, J. Faherty, L. Kreidberg, S. Zieba, C. Hansen, A. Ynnerman, and A. Bock*, IEEE Visualization, **2023**, [doi](https://doi.org/10.1109/VIS54172.2023.00025)
   - Moliverse: Contextually Embedding the Microcosm into the Universe. *M. Brossier, R. Skånberg, L. Besançon, M. Linares, T. Isenberg, A. Ynnerman, and A. Bock*, Computers & Graphics, **2022**, [doi](http://doi.org/10.1016/j.cag.2023.02.006)
   - OpenSpace Sonification: Complementing Visualization of the Solar System with Sound. *E. Elmquist, M. Ejdbo, A. Bock, and N. Rönnberg*, International Community for Auditory Displays, **2021**, [doi](http://doi.org/10.21785/icad2021.018)
