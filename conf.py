@@ -45,7 +45,6 @@ assets_local_openspace_folder = ""
 if (os.environ.get("READTHEDOCS")):
   generate_reference = True
   assets_examples_use_github = True
-  assets_release_tag_or_branch = os.environ.get("READTHEDOCS_VERSION")
   print(f"Read the docs will look for the OpenSpace tag: {assets_release_tag_or_branch}")
 
 
