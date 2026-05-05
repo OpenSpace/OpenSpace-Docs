@@ -28,7 +28,7 @@ assets_examples_use_github = True
 
 # If using github for the examples, specify the release tag name or the branch name here.
 # If empty, will use origin/master
-assets_release_tag_or_branch = ""
+assets_release_tag_or_branch = "releases/v0.21.4"
 
 # If using a local OpenSpace version for the examples, specify the path here
 assets_local_openspace_folder = ""
