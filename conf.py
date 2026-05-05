@@ -18,7 +18,7 @@ sys.path.append(str(Path('_ext').resolve()))
 
 # If true, always generate new files for the reference. If false, only generate if the
 # generated files do not already exist, to speed up the build process
-generate_reference = False
+generate_reference = True
 
 # If true, use github for getting the asset example files. The GitHub tag or branch
 # is specified with assets_release_tag_or_branch
@@ -39,8 +39,9 @@ assets_local_openspace_folder = ""
 # Settings for Web Build
 ###
 
-# If we are on Read the Docs, get the name of the current OpenSpace-Docs branch and try to find a
-# OS release tag that matches. Also, always generate the reference and use GitHub for the asset files.
+# If we are on Read the Docs, get the name of the current OpenSpace-Docs branch and try to
+# find a OS release tag that matches. Also, always generate the reference and use GitHub
+# for the asset files
 if (os.environ.get("READTHEDOCS")):
   generate_reference = True
   assets_examples_use_github = True
