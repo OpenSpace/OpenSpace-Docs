@@ -1,11 +1,14 @@
-from git import Repo # git for downloading assets
-from jinja2 import Environment, FileSystemLoader # template magic
-import json # reading the input file
-import os # file paths
-import re # regex for searching for assets files
-import shutil # copytree, rmtree
-from tqdm import tqdm # progress bar
+from __future__ import annotations
+from git import Repo
+from jinja2 import Environment, FileSystemLoader
+import json
+from typing import Any
+import os
+import re
+import shutil
+from tqdm import tqdm
 from sphinx.application import Sphinx
+from sphinx.config import Config
 from sphinx.util.typing import ExtensionMetadata
 
 DATA_ASSETS_PATH = "data/assets"
@@ -13,7 +16,7 @@ DATA_ASSETS_PATH = "data/assets"
 ##########################################################################################
 #                           ASSET COMPONENTS HELPER FUNCTIONS                            #
 ##########################################################################################
-def copy_local_folder(asset_examples_output, local_openspace_folder):
+def copy_local_folder(asset_examples_output: str, local_openspace_folder: str) -> str:
   print(f"Using local OpenSpace folder {local_openspace_folder}")
   print(f"Copying {DATA_ASSETS_PATH} to {asset_examples_output}...")
 
@@ -29,15 +32,13 @@ def copy_local_folder(asset_examples_output, local_openspace_folder):
 
   return os.path.abspath(destination_path)
 
-def clone_github_release(asset_examples_output, tag_or_branch):
+
+def clone_github_release(asset_examples_output: str, tag_or_branch: str) -> str:
   """
   Clones asset directory from OpenSpace git repository
   Can check out a release tag or branch. Default is latest master.
   Returns absolute path to the asset folder
   """
-
-  def print_progress(op_code, cur_count, max_count=None, message=""):
-    print(message)
 
   # Initialize the git repo of OpenSpace repo in the output folder
   repo = Repo.init(asset_examples_output)
@@ -48,20 +49,17 @@ def clone_github_release(asset_examples_output, tag_or_branch):
     origin = repo.create_remote("origin", "https://github.com/OpenSpace/OpenSpace")
 
   print(f"Fetching OpenSpace... this might take a while")
-  origin.fetch(progress=print_progress, depth=1, tags=True)
+  origin.fetch(depth=1, tags=True)
 
   # See if the tag or branch exists. Else, default to origin/master
 
   # Get all tags on remote
-  ref = None
-  # Check if the release tag exists first in the repository
-  if repo.tag(tag_or_branch) in repo.tags:
-    ref = repo.tag(tag_or_branch)
-  # If no release exists, check for branch name in the repository
-  elif tag_or_branch in repo.references:
+  ref: str = ""
+  if (repo.tag(tag_or_branch) in repo.tags) or (tag_or_branch in repo.references):
+    # Check if the release tag or branch exists first in the repository
     ref = tag_or_branch
-  # Neither branch nor release exists: default to origin/master
   else:
+    # Neither branch nor release exists: default to origin/master
     print(f"Could not find tag {tag_or_branch}. Defaulting to origin/master")
     ref = "origin/master"
 
@@ -73,22 +71,23 @@ def clone_github_release(asset_examples_output, tag_or_branch):
   git.checkout(ref, "--", DATA_ASSETS_PATH)
   print("Done cloning assets folder from OpenSpace repository")
 
-  assets_folder_path = os.path.abspath(os.path.join(asset_examples_output, DATA_ASSETS_PATH))
-  return assets_folder_path
+  return os.path.abspath(os.path.join(asset_examples_output, DATA_ASSETS_PATH))
 
-def assets_in_path_recursive(root):
+
+def assets_in_path_recursive(root: str) -> list[str]:
   """
   Find all .asset files in the root dir and subdirs
   """
-  filenames = []
+  filenames: list[str] = []
 
-  for path, subdirs, files in os.walk(root):
+  for path, _, files in os.walk(root):
     for file in files:
       if file.endswith(".asset"):
         filenames.append(os.path.join(path, file))
   return filenames
 
-def assets_in_path(path):
+
+def assets_in_path(path: str) -> list[str]:
   """
   Find all .assets in directory - no subdirs
   """
@@ -96,13 +95,14 @@ def assets_in_path(path):
   # Prepend the path to the filename
   return list(map(lambda filename: os.path.join(path, filename), filenames))
 
-def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
+
+def get_lines_and_content_from_file(asset_file: str, regex: str, look_for_header: bool = False) -> dict[str, Any] | None:
   """
   Matches an asset component name with the words in a file
   Returns the content of the file and the lines where the
   matches occured, as well as the header if specified
   """
-  lines = []
+  lines: list[int] = []
   is_header_comment = True
   header = ""
   content = ""
@@ -112,7 +112,7 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
   header_finished = 0
   with open(asset_file, "r", encoding="utf8") as file:
     if not file.readable():
-      return None
+      raise Exception(f"Could not open file {asset_file}")
 
     # Read file line by line
     for l_no, line in enumerate(file, 1):
@@ -171,7 +171,8 @@ def get_lines_and_content_from_file(asset_file, regex, look_for_header = False):
   else:
     return None
 
-def find_shortest_asset_in_path(asset_files, name):
+
+def find_shortest_asset_in_path(asset_files: list[str], name: str) -> dict[str, Any] | None:
   """
   Takes an asset component name and matches it to all provided files and then return the
   shortest asset with matches.
@@ -186,9 +187,10 @@ def find_shortest_asset_in_path(asset_files, name):
   # If nothing found, return None
   return None
 
+
 # Returns the list of examples and as a second argument whether there are hand-written
 # dedicated examples
-def find_asset_examples(assets_folder, category, name, folder_asset_files, example_asset_files):
+def find_asset_examples(assets_folder: str, category: str, name: str, folder_asset_files: list[str], example_asset_files: list[str]) -> tuple[list[dict[str, Any]], bool]:
   """
   Search through all example assets for the component name
   Returns file content and line numbers for where the name occurs
@@ -201,12 +203,13 @@ def find_asset_examples(assets_folder, category, name, folder_asset_files, examp
   asset_directory = os.path.join(examples_folder, os.path.join(category, name).lower())
   if os.path.exists(asset_directory):
     filenames = assets_in_path(asset_directory)
-    examples = []
+    examples: list[dict[str, Any]] = []
     for filename in filenames:
       # We search for the asset component <name> or "<name>"
       regex = r"\b" + name + r"\b|\b\"" + name + r"\"\b"
       example = get_lines_and_content_from_file(filename, regex, True)
-      examples.append(example)
+      if example:
+        examples.append(example)
     return examples, True
 
   # Search pass 2
@@ -224,12 +227,13 @@ def find_asset_examples(assets_folder, category, name, folder_asset_files, examp
   # If nothing found, return empty array
   return [], False
 
-def group_members_by_optionality(members):
+
+def group_members_by_optionality(members: list[dict[str, Any]]) -> list[dict[str, Any]]:
   """
   Group members by optionality while preserving the alphabetical order
   """
-  non_optional_indices = []
-  optional_indices = []
+  non_optional_indices: list[int] = []
+  optional_indices: list[int] = []
   for i, member in enumerate(members):
     if member["optional"]:
       optional_indices.append(i)
@@ -238,7 +242,8 @@ def group_members_by_optionality(members):
   indices = non_optional_indices + optional_indices
   return [ members[i] for i in indices ]
 
-def find_asset_screenshot(name):
+
+def find_asset_screenshot(name: str) -> str | None:
   """
   Find a screenshot in the images folder with the exact same name as the component
   """
@@ -249,14 +254,14 @@ def find_asset_screenshot(name):
 #                              SCRIPTING API HELPER FUNCTIONS                            #
 ##########################################################################################
 
-def parse_doxygen_comments(library):
+def parse_doxygen_comments(library: dict[str, Any]) -> dict[str, Any]:
   """
   This function modifies the scripting library so that the doxygen comments are added to
   the arguments.
   Supported doxygen parameters: \\param \\return \\code
   """
   for function in library["functions"]:
-    [help_text, p, return_description] = function["help"].partition("\\\\return")
+    [help_text, _, return_description] = function["help"].partition("\\\\return")
 
     # Parse code blocks
     help_text = help_text.replace("\\\\code", "\n:::{code-block} lua\n")
@@ -270,10 +275,10 @@ def parse_doxygen_comments(library):
     function["help"] = description
     # Collect the params, everything after the 1st
     params = help_text[1:]
-    identifiers = []
-    argument_descriptions = []
+    identifiers: list[str] = []
+    argument_descriptions: list[str] = []
     for param in params:
-      [identifier, ws, params_description] = param.partition(" ")
+      [identifier, _, params_description] = param.partition(" ")
       identifiers.append(identifier)
       argument_descriptions.append(params_description)
 
@@ -292,7 +297,7 @@ def parse_doxygen_comments(library):
 #                                 CREATE ASSET COMPONENTS                                #
 ##########################################################################################
 
-def generate_asset_components(environment, assets_folder, output_folder, folder_name_assets, json_location):
+def generate_asset_components(environment: Environment, assets_folder: str, output_folder: str, folder_name_assets: str, json_location: str) -> None:
   """
   Creates the Markdown files for the asset components, as well as an index file which
   links to them
@@ -308,9 +313,11 @@ def generate_asset_components(environment, assets_folder, output_folder, folder_
   folder_asset_files.sort(key=lambda file: os.stat(file).st_size)
 
 
-  # Create target folder
+  # Create target folder, removing any stale content from previous runs first
   assets_output_path = os.path.join(output_folder, folder_name_assets)
-  os.makedirs(assets_output_path, exist_ok=True)
+  if os.path.exists(assets_output_path):
+    shutil.rmtree(assets_output_path)
+  os.makedirs(assets_output_path)
 
   f = open(os.path.join(json_location, "assetComponents.json"))
   asset_categories = json.load(f)
@@ -320,7 +327,7 @@ def generate_asset_components(environment, assets_folder, output_folder, folder_
   asset_component_category_index_template = environment.get_template("asset_component_category_index.html.jinja")
 
   # Missing and found asset files
-  components_info = []
+  components_info: list[dict[str, Any]] = []
   print("Handle individual components")
   for category in asset_categories:
     # Create a folder for the category
@@ -334,23 +341,21 @@ def generate_asset_components(environment, assets_folder, output_folder, folder_
 
     # Find base class to add its members to each derived class
     base_class_name = category["name"]
-    base_class = None
-    has_base_class = False
+    base_class: dict[str, Any] | None = None
     for asset_component in category["classes"]:
       if asset_component["name"] == base_class_name:
         base_class = asset_component
-        has_base_class = True
         break
 
     # Go through all the components in that category and print out a md file
     for asset_component in tqdm(category["classes"], desc=category["name"]):
-      is_base_class = has_base_class and asset_component["name"] == base_class["name"]
-      base_class_name = base_class["name"] if has_base_class and not is_base_class else ""
-      base_class_identifier = base_class["identifier"] if has_base_class and not is_base_class else ""
+      is_base_class = base_class is not None and asset_component["name"] == base_class["name"]
+      base_class_name = base_class["name"] if base_class is not None and not is_base_class else ""
+      base_class_identifier = base_class["identifier"] if base_class is not None and not is_base_class else ""
 
       # Add the base class members to each derived class
       # If the component is the base class
-      base_class_members = group_members_by_optionality(base_class["members"]) if has_base_class and not is_base_class else []
+      base_class_members = group_members_by_optionality(base_class["members"]) if base_class is not None and not is_base_class else []
 
       grouped_members = group_members_by_optionality(asset_component["members"])
 
@@ -413,7 +418,7 @@ https://internal.openspaceproject.com/e/en/documentation-writing
 #                                 CREATE SCRIPTING API                                   #
 ##########################################################################################
 
-def generate_scripting_api(environment, output_folder, folder_name_scripting, json_location):
+def generate_scripting_api(environment: Environment, output_folder: str, folder_name_scripting: str, json_location: str) -> None:
   """
   Creates the Markdown files for the scripting libraries, as well as an index file that
   links to them
@@ -445,7 +450,7 @@ def generate_scripting_api(environment, output_folder, folder_name_scripting, js
 #                              CREATE RENDERABLE OVERVIEW                                #
 ##########################################################################################
 
-def generate_renderable_overview(environment, output_folder, json_location):
+def generate_renderable_overview(environment: Environment, output_folder: str, json_location: str) -> None:
   """
   Creates a Markdown file with a grid of pictures of the renderables and
   ScreenSpaceRenderables in OpenSpace
@@ -453,8 +458,8 @@ def generate_renderable_overview(environment, output_folder, json_location):
   f = open(os.path.join(json_location, "assetComponents.json"))
   asset_categories = json.load(f)
 
-  images = {}
-  renderables = []
+  images: dict[str, str | None] = {}
+  renderables: list[dict[str, Any]] = []
   for category in asset_categories:
     if category["name"] == "Renderable" or category["name"] == "ScreenSpaceRenderable":
       for asset_component in category["classes"]:
@@ -478,7 +483,7 @@ def generate_renderable_overview(environment, output_folder, json_location):
 #                                         MAIN                                           #
 ##########################################################################################
 
-def generate_docs(app, config):
+def generate_docs(app: Sphinx, config: Config) -> None:
   # Name variables
   json_location = "json"
   output_folder = "reference"
@@ -532,16 +537,16 @@ def generate_docs(app, config):
 #                                         Sphinx setup                                   #
 ##########################################################################################
 def setup(app: Sphinx) -> ExtensionMetadata:
-    app.add_config_value('generate_reference', True, 'bool')
-    app.add_config_value('assets_examples_use_github', True, "bool")
-    app.add_config_value('assets_release_tag_or_branch', "", 'string')
-    app.add_config_value('assets_local_openspace_folder', "", 'string')
+  app.add_config_value('generate_reference', True, 'html', type(True))
+  app.add_config_value('assets_examples_use_github', True, 'html',type(True))
+  app.add_config_value('assets_release_tag_or_branch', "",'html', type(""))
+  app.add_config_value('assets_local_openspace_folder', "", 'html', type(""))
 
-    app.connect('config-inited', generate_docs)
+  app.connect('config-inited', generate_docs)
 
-    return {
-        'version': '1.0',
-        'env_version': 1,
-        'parallel_read_safe': True,
-        'parallel_write_safe': True,
-    }
+  return {
+    'version': '1.0',
+    'env_version': 1,
+    'parallel_read_safe': True,
+    'parallel_write_safe': True
+  }
