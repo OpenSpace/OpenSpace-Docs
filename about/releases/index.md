@@ -4,6 +4,7 @@ OpenSpace versions are labeled by a version number of the form `MM.mm.rr`,  wher
 | *Version* | *Date* | *Description* |
 | --------- | ------ | ------------- |
 | [0.22.0](changelogs/0.22.0/index) | 2026-06-09 | The next upcoming release. |
+| [0.21.4](changelogs/0.21.4/index) | 2026-05-01 | This is a patch release for the fourteenth release, which primarily fixes a bug with satellite trails. |
 | [0.21.3](changelogs/0.21.3/index) | 2025-11-26 | This is a patch release for the fourteenth release, which primarily includes bug fixes. |
 | [0.21.2](changelogs/0.21.2/index) | 2025-07-30 | This is a patch release for the fourteenth release, which primarily includes bug fixes. |
 | [0.21.1](changelogs/0.21.1/index) | 2025-07-27 | This is a patch release for the fourteenth release, which primarily includes bug fixes. |
@@ -53,6 +54,7 @@ OpenSpace versions are labeled by a version number of the form `MM.mm.rr`,  wher
 :hidden:
 
 changelogs/0.22.0/index
+changelogs/0.21.4/index
 changelogs/0.21.3/index
 changelogs/0.21.2/index
 changelogs/0.21.1/index
