@@ -71,7 +71,7 @@ It is also possible to add an identifier for each label, that can be utilized to
 41.1 -544.2 50.8 id Label3 text And Point 3
 ...
 ``` -->
-
+(colormaps_cmap_id)=
 ## Color Maps (.cmap)
 
 For color maps, we use a specific format that is similar to that of the .label and .speck files, but every line defines a color rather than a position.
