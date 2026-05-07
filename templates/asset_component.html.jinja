@@ -1,6 +1,6 @@
 <!-- markdownlint-disable -->
 
-{% macro member_table(input_members, parent_name="", link_description=true) -%}
+{% macro member_table(input_members, base_class_members = [], parent_name="", link_description=true) -%}
 {% if input_members|length > 0 %}
 :::{list-table}
 :width: 100%
@@ -11,7 +11,7 @@
     - Type
     - Description
     - Optional
-{% for member in input_members %}
+{% for member in input_members if member.name not in (base_class_members | map(attribute='name') | list) %}
   - - `{{ member.name }}`
     - {{ member.documentation }}
     - `{{ member.type }}`
@@ -36,7 +36,7 @@
 {% endif %}
 * Optional: {{ "Yes" if member.optional == 1 else "{bdg-info}`No`" }}
 
-{{ member_table(member.members, member.name) }}
+{{ member_table(member.members, base_class_members, member.name) }}
 
 {% for nested_member in member.members if nested_member.members %}
 ({{ data.name }}{{ member.name }}{{ nested_member.name }}-target)=
