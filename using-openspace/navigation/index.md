@@ -9,5 +9,5 @@ joystick
 joystick-customization
 camera-paths
 idle-behavior
-touch-interface
+touch-interaction
 :::
