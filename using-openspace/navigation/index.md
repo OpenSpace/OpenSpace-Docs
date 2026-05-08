@@ -8,6 +8,6 @@ To get started with navigation, have a look at the following pages:
 joystick
 joystick-customization
 camera-paths
-idle-behavior
+idle-motion
 touch-interaction
 :::
