@@ -62,7 +62,7 @@ While Kepler gave us a taste of the number of exoplanets out there, TESS will fu
 :align: left
 :alt: The exoplanet candidate stars as seen from afar. Green, yellow, and orange stars are huddled around the Sun, each candidate stars from different missions.
 
-As seen from afar, the exoplanet candidate stars are huddled around the Sun. Green stars are from TESS, yellow stars extend to the left of the Sun in this image and are from Kepler, and orange stars, from Kepler's K2 mission, extend in all directions along the ecliptic, though they look like a flat disk here, they more resemble a pinwheel from a different vantage point.
+As seen from afar, the exoplanet candidate stars are huddled around the Sun. Green stars are from TESS, yellow stars extend to the left of the Sun in this image and are from Kepler, and orange stars, from Kepler's K2 mission, extend in all directions along the ecliptic, though they look like a flat disk here, they more resemble a pinwheel from a different vantage point. The lines protruding are constellation connectivity lines.
 :::
 :::::
 
@@ -95,11 +95,11 @@ As seen from afar, the exoplanet candidate stars are huddled around the Sun. Gre
 
 ## Dossier
 :::{dossier}
-:census: 8,589 stars
+:census: 9,122 stars
 :assetfile: data/assets/scene/digitaluniverse/exoplanets_candidates.asset
-:openspaceversion: 2
-:preparedby: Brian Abbott, Zack Reeves, Emily Rice, Jason No (AMNH)
-:sourceversion: 12.09
+:openspaceversion: 4
+:preparedby: Brian Abbott, Zack Reeves, Ally Baldelli, Emily Rice, Jason No (AMNH)
+:sourceversion: 13.10
 :license: amnh
 :reference: NASA Exoplanet Archive=<https://exoplanetarchive.ipac.caltech.edu/index.html>
 :::

@@ -12,7 +12,7 @@ An open star cluster is a loose assemblage of stars numbering from hundreds to t
 :align: left
 :alt: A view of the night sky looking toward the constellation Orion. Shown are constellation lines for Orion, Cancer, Gemini, and Taurus and some peripheral constellations. Solid, green circles indicate the locations nof open star clusters.
 
-A night sky view of the open star clusters looking toward Orion, with Cancer, Gemini, and Taurus in view. Green indicators mark each open cluster and the size of the indicator reveals the distance of the cluster from your view. The Hyades is relatively close to Earth, and the Pleiades is somewhat close too, while others are more distant.
+A night sky view of the open star clusters looking toward Orion (lower left), with Taurus, Auriga, and Perseus in view. Green indicators mark each open cluster and the size of the indicator reveals the distance of the cluster from your view. The Hyades is relatively close to Earth, and the Pleiades is somewhat close too, while others are more distant.
 :::
 
 
@@ -91,13 +91,13 @@ Looking at the Milky Way Galaxy edge-on, we can see the open clusters are tightl
 
 ## Dossier
 :::{dossier}
-:census: 1,867 clusters
+:census: 3,647 clusters
 :assetfile: data/assets/scene/digitaluniverse/openclusters.asset
-:openspaceversion: 4
-:preparedby: Brian Abbott, Zack Reeves (AMNH)
-:sourceversion: 8.09
+:openspaceversion: 5
+:preparedby: Brian Abbott (AMNH), Cade Mohrhardt (AMNH), Zack Reeves (AMNH), Ally Baldelli (AMNH)
+:sourceversion: 9.11
 :license: amnh
-:reference: Galactic spiral structure revealed by Gaia EDR3=<https://doi.org/10.1051/0004-6361/202140687>
+:reference: The Unified Cluster Catalogue=<https://zenodo.org/records/19712053>
 :::
 
 :::::

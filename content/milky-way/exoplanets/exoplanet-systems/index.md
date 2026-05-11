@@ -5,7 +5,7 @@
 :::::{tab-item} Overview
 
 ## Overview
-The discovery and study of exoplanets is a relatively new field within astrophysics. The first confirmed system was discovered in 1995, and since then it has been a burgeoning subfield of research.
+The discovery and study of exoplanets is a relatively new field within astrophysics. The first confirmed system was discovered in 1995, though the first evidence appeared in 1992, and since then it has been a burgeoning subfield of research.
 
 
 :::{note}
@@ -111,11 +111,11 @@ A view of the exoplanetary systems from outside the Milky Way galaxy. We are sti
 
 ## Dossier
 :::{dossier}
-:census: 4,139 planets in 3,023 systems
+:census: 6,284 planets in 4,680 systems
 :assetfile: data/assets/scene/digitaluniverse/exoplanets.asset
-:openspaceversion: 4
-:preparedby: Brian Abbott, Zack Reeves (AMNH)
-:sourceversion: 21.13
+:openspaceversion: 6
+:preparedby: Brian Abbott, Zack Reeves, Ally Baldelli (AMNH)
+:sourceversion: 22.14
 :license: amnh
 :reference: NASA Exoplanet Archive=<https://exoplanetarchive.ipac.caltech.edu/index.html>;Gaia DR3=<https://doi.org/10.5270/esa-qa4lep3>;XHIP An Extended Hipparcos Compilation=<https://ui.adsabs.harvard.edu/link_gateway/2012AstL...38..331A/doi:10.48550/arXiv.1108.4971>
 :::
