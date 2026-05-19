@@ -1,7 +1,7 @@
 # Night Sky Panel
 ![Tour Panel Button](/using-openspace/toolbar/night-sky/toolbar_button_nightsky.png)
 
-{menuselection}`Windows --> Night Sky`
+{menuselection}`Windows --> Content --> Night Sky`
 
 The Night Sky Panel provides a customized set of functions that simulate the night sky and add tools to understand the motions of the sun, moon, planets, and stars throughout the course of the day and year.
 

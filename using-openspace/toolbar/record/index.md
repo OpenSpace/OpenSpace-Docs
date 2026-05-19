@@ -1,7 +1,7 @@
 # Record Panel
 ![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
 
-{menuselection}`Windows --> Session Recording`
+{menuselection}`Windows --> Other --> Session Recording`
 
 The Record Panel enables the recording of a session. A recorded session includes the flightpath, the assets used, and the time settings. Once a session is recorded and saved, you can play it back later using the same panel.
 

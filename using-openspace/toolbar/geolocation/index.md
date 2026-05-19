@@ -1,7 +1,7 @@
 # GeoLocation Panel
 ![Geolocation Panel](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
 
-{menuselection}`Windows --> Geo Location`
+{menuselection}`Windows --> Content --> Geo Location`
 
 ::::::::{tab-set}
 :::::::{tab-item} Overview

@@ -1,7 +1,7 @@
 # SkyBrowser Panel
 ![SkyBrowser Panel Button](toolbar_button_skybrowser.png)
 
-{menuselection}`Windows --> SkyBrowser`
+{menuselection}`Windows --> Content --> SkyBrowser`
 
 The Sky Browser is an overlay window---a virtual telescope, if you will---that interactively connects OpenSpace to the night sky. Powered by [WorldWide Telescope](http://worldwidetelescope.org/webclient/), the SkyBrowser displays images in an overlay window that connects to the night sky via a target.
 

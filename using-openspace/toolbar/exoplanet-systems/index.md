@@ -1,7 +1,7 @@
 # Exoplanet Systems Panel
 ![Exoplanet Systems Planel Button](toolbar_button_exoplanets.png)
 
-{menuselection}`Windows --> Exoplanets`
+{menuselection}`Windows --> Content --> Exoplanets`
 
 The exoplanets module enables the visualization of exoplanetary systems in OpenSpace. While the main [exoplanets](/content/milky-way/exoplanets/exoplanet-systems/index) data displays all the stars that have exoplanets with a simple, blue ring, the exoplanets module depicts the system of planets around these stars. This includes the planetary orbits, at the proper inclination, a depiction of the {term}`habitable zone`, and, when available, the planets themselves.
 

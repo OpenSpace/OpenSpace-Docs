@@ -1,7 +1,7 @@
 # Keybinds Panel
 ![Tour Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.png)
 
-{menuselection}`Windows --> Keybinds`
+{menuselection}`Windows --> Help --> Keybinds`
 
 The Keybinds Panel shows all the active keyboard bindings for the current profile loaded upon startup. These are so called keyboard shortcuts that perform tasks, often in lieu of the mouse acting on the user interface. For example, you can click on the Flight Friction buttons in the top-right corner of the window, but you can also use the keyboard to toggle the friction on and off (more on this below).
 
