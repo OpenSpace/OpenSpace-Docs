@@ -1,8 +1,6 @@
 # Update API
 This guide outlines the required changes when upgrading to the latest version of the OpenSpace API. These include breaking changes, so existing integrations will need to be updated.
 
----
-
 ## Migration Summary
   - Replace `singleReturnLibrary()` and `multiReturnLibrary()` with `library()`
   - Remove any usage of `library(boolean)`
@@ -10,7 +8,6 @@ This guide outlines the required changes when upgrading to the latest version of
   - Replace `topic.iterator().next()` with `topic.next()`
   - Remove `[1]` when accessing Lua return values
 
----
 
 ## Installation
 ### npm
@@ -23,8 +20,6 @@ If you are including the API via a script tag, replace your existing file with t
 ```html
 <script type="text/javascript" src="openspace-api.js"></script>
 ```
-
----
 
 ## API Changes
 ### `singleReturnLibrary` and `multiReturnLibrary` - removed
