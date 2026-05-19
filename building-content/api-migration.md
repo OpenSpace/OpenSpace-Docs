@@ -1,5 +1,5 @@
 # Update API
-This guide outlines the required changes when upgrading from the old (unversioned) OpenSpace JavaScript API to the latest version (1.0.0). These include breaking changes, so existing integrations will need to be updated.
+This guide outlines the required changes when upgrading from the old (unversioned) OpenSpace JavaScript API to the latest version (1.0.0), introduced in OpenSpace version 0.22.0. These include breaking changes, so existing integrations of the API will need to be updated.
 
 ## Migration Summary
   - Replace `singleReturnLibrary()` and `multiReturnLibrary()` with `library()`
