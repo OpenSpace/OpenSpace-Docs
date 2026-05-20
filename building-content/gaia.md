@@ -1,19 +1,5 @@
 # Gaia
-This guide will explain how to render stars released by ESA's Gaia mission as their second data release (DR2) without having to create any subsets yourself.
-
-
-## Define which profile to run
-OpenSpace has several different profiles depending on what you want to show. To change profile, open openspace.cfg in a text editor and make sure that `Profile = "gaia"` is the only `Profile` line that is not commented out.
-
-To change anything in the scene go to data/profiles/gaia.profile. Any of the following Gaia content can be enabled/disabled by adding `--` in front of the corresponding line.
-```lua
-asset.require('scene/milkyway/gaia/gaiastars')
-asset.require('scene/milkyway/gaia/apogee')
-asset.require('scene/milkyway/gaia/galah')
-asset.require('scene/solarsystem/missions/gaia/gaia')
-asset.require('scene/solarsystem/missions/gaia/trail')
-```
-
+This guide will explain how to render stars released by ESA's Gaia mission as their second data release (DR2) without having to create any subsets yourself. To show the gaia stars, start OpenSpace with the "missins/gaia" profile from the launcher.
 
 ## Run OpenSpace
 When running OpenSpace there are several properties that you can change during runtime. In the GUI menu, expand {menuselection}`Milky Way --> Gaia Stars`. The most important menu items are the following:
@@ -256,7 +242,7 @@ A smaller value for `MaxStarsPerNode` is better for data uploads to the GPU whil
 ### Run in OpenSpace
 To render Gaia stars in OpenSpace first make sure that you start the program using the gaia profile. By default, this profile also includes the full digital Universe catalog, as well as the Sun, Earth, Moon, a model of the Gaia spacecraft and its trail.
 
-Which stars to render can be changed in `data/assets/scene/milkyway/gaia/gaiamission.asset`. By default, the official radial velocity dataset will be downloaded and rendered. That dataset consists of the 7.2 million stars that were released with any radial velocity in DR2. Its size is 335 MB and it is stored in ~3k files.
+Which stars to render can be changed in `data/assets/scene/milkyway/gaia/gaiastars.asset`. By default, the official radial velocity dataset will be downloaded and rendered. That dataset consists of the 7.2 million stars that were released with any radial velocity in DR2. Its size is 335 MB and it is stored in ~3k files.
 
 If you instead want to render your own dataset or a newly created subset change the `localStars` variable to point to the path to the data folder. It is preferably to store the stars on an SSD if possible. Then point the **File** variable (in **RenderableGaiaStars**) to either the single file or the folder with the dataset.
 
