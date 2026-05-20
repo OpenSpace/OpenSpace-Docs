@@ -1,5 +1,5 @@
 # Renderable Stars
-The `RenderableStars` class requires a few different data variables in the SPECK file. The mapping between the internal name and the name of the variable in the SPECK file can be specified in the `.asset` file. The combination of selected rendering parameter determines which values are necessary:
+The [RenderableStars](#space_renderable_stars) class requires a few different data variables in the SPECK file. The mapping between the internal name and the name of the variable in the SPECK file can be specified in the `.asset` file. The combination of selected rendering parameter determines which values are necessary:
 
 | Size Composition | Color Option | Required Data Value |
 | ---------------- | ------------ | ------------------- |
@@ -34,4 +34,4 @@ The `RenderableStars` class requires a few different data variables in the SPECK
 | App Magnitude | Fixed Color | absoluteMagnitude |
 | Distance Modulus | Fixed Color | absoluteMagnitude |
 
-The **bold** values denote the default value for the stars.asset distributed with OpenSpace
+The **bold** values denote the default value for the stars.asset distributed with OpenSpace.
