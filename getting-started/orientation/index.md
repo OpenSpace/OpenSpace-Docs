@@ -120,7 +120,7 @@ About
 ::::{grid-item}
 :::{figure} topbar_menu_help.png
 :align: center
-:width: 80%
+:width: 256px
 :alt: Top Bar Help Menu
 :::
 ::::
@@ -153,7 +153,7 @@ In Settings Panel, under Dashboard, you can set what appears in the Dashboard, o
 
 :::{figure} settings_menu_dashboard.png
 :align: center
-:width: 40%
+:width: 400px
 :alt: The Dashboard settings
 
 The {menuselection}`Settings --> Dashboard` submenu.
@@ -204,6 +204,26 @@ Friction status is "off" for rotational flight (orbiting).
 
 
 
+## Idle Motion Toggle
+Next to the friction controls in the top bar is a button for toggling the [Idle Motion](/using-openspace/navigation/idle-motion) feature. Clicking this button starts an automatic rotation around the current focus object that remains active until interrupted by manual navigation.
+
+You will find more detailed information about this feature and available settings on the [Idle Motion](/using-openspace/navigation/idle-motion) page.
+
+:::{figure} idlemotion_on.png
+:align: center
+:height: 50px
+:alt: Idle motion is on
+
+Idle motion is "on". The button will be blinking.
+:::
+
+:::{figure} idlemotion_off.png
+:align: center
+:height: 50px
+:alt: Idle motion is off
+
+Idle motion is "off".
+:::
 
 ## Toolbar
 The Toolbar consists of panels that you use to control aspects of OpenSpace. Each Toolbar Button opens a panel. These panels collect specific functionality to alter time, record your session, access actions, and so on. Clicking on each button will bring up a panel that is attached to its corresponding icon, but may also be detached to float the panel.
