@@ -50,7 +50,7 @@ The File Menu lists the currently loaded profile and offers options for getting 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 ### Windows Menu
-The Windows Menu includes a list of all available panels and indicates which are currently open.
+The Windows Menu includes a list of all available panels and indicates which are currently open. Some panels are organized into subgroupings, such as "Content," which contains panels with content-related features not available through the Scene Panel, such as adding exoplanet systems or navigating to specific locations on a globe.
 
 Click a button in the list to open that particular panel; use the `X` to close the panel.
 
@@ -94,17 +94,23 @@ The Help Menu offers a getting started tour, resources for help and sending feed
 Open Web Tutorials
 : Opens our YouTube page in your browser.
 
-Open Getting Started Tour
-: Launches a wizard panel that will guide you through the basics of OpenSpace.
-
 Open Routes Page
 : Opens a menu where you can navigate to alternative user interfaces, such as the ShowComposer.
+
+Getting Started Tour
+: Launches a wizard panel that will guide you through the basics of OpenSpace.
+
+Keybinds
+: Opens a menu where you can overview the loaded keybinds and which action is bound to what key on the keyboard.
 
 Send Feedback
 : Opens a web form to send feedback.
 
 Open GUI in Browser
 : Opens the user interface in a separate browser window.
+
+Mobile QR Code
+: Opens a window with a QR code that can be scanned to open the user interface on a mobile device, and information about settings to make this work. By default, diveces other than the local computer are blocked.
 
 About
 : Version information and a short description about OpenSpace.
@@ -114,7 +120,7 @@ About
 ::::{grid-item}
 :::{figure} topbar_menu_help.png
 :align: center
-:width: 80%
+:width: 256px
 :alt: Top Bar Help Menu
 :::
 ::::
@@ -147,7 +153,7 @@ In Settings Panel, under Dashboard, you can set what appears in the Dashboard, o
 
 :::{figure} settings_menu_dashboard.png
 :align: center
-:width: 40%
+:width: 400px
 :alt: The Dashboard settings
 
 The {menuselection}`Settings --> Dashboard` submenu.
@@ -198,6 +204,26 @@ Friction status is "off" for rotational flight (orbiting).
 
 
 
+## Idle Motion Toggle
+Next to the friction controls in the top bar is a button for toggling the [Idle Motion](/using-openspace/navigation/idle-motion) feature. Clicking this button starts an automatic rotation around the current focus object that remains active until interrupted by manual navigation.
+
+You will find more detailed information about this feature and available settings on the [Idle Motion](/using-openspace/navigation/idle-motion) page.
+
+:::{figure} idlemotion_on.png
+:align: center
+:height: 50px
+:alt: Idle motion is on
+
+Idle motion is "on". The button will be blinking.
+:::
+
+:::{figure} idlemotion_off.png
+:align: center
+:height: 50px
+:alt: Idle motion is off
+
+Idle motion is "off".
+:::
 
 ## Toolbar
 The Toolbar consists of panels that you use to control aspects of OpenSpace. Each Toolbar Button opens a panel. These panels collect specific functionality to alter time, record your session, access actions, and so on. Clicking on each button will bring up a panel that is attached to its corresponding icon, but may also be detached to float the panel.
@@ -276,7 +302,7 @@ We do not have time here to discuss each item in the Settings Panel---most are t
 ::::{grid-item}
 :::{figure} panel_settings.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: OpenSpace Setting Panel
 
 OpenSpace Settings Panel.
@@ -303,7 +329,7 @@ The Navigation Panel has two modes, accessed through an iconized menu at the top
 
 :::{figure} panel_navigation.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: OpenSpace Navigation Panel
 :::
 
@@ -338,7 +364,7 @@ The `Realtime` button sets you back to 1 second per second, and the `Now` button
 
 :::{figure} panel_time.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: Time Panel
 :::
 
@@ -362,7 +388,7 @@ Reading in this file for playback will not only loop you through the sequence in
 
 :::{figure} panel_record.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: Record Panel
 :::
 
@@ -376,16 +402,16 @@ Reading in this file for playback will not only loop you through the sequence in
 ### ![GeoLocation Panel button](toolbar_button_geolocation.png){h=45px} GeoLocation Panel
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-The GeoLocation panel takes you to any place on Earth. Enter a place in the search box, choose a result and how you want to get there: Fly To (![Fly to](navigation_panel_fly.png){h=2em}), Jump To (![Fly to](navigation_panel_jump_button.png){h=2em}), or add it as the Focus.
+The GeoLocation panel takes you to any place on Earth. Click a position on the map or enter a place in the search box, choose a result and how you want to get there: Fly To (![Fly to](navigation_panel_fly.png){h=2em}), Jump To (![Fly to](navigation_panel_jump_button.png){h=2em}), or add it as the Focus.
 
-You may also save custom latitude, longitude and altitude coordinates in the Custom Coordinates tab.
+You may also save custom locations by manually entering the latitude, longitude and altitude coordinates.
 ::::
 
 ::::{grid-item}
 
 :::{figure} panel_geolocation.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: GeoLocation Panel
 :::
 
@@ -402,17 +428,16 @@ You may also save custom latitude, longitude and altitude coordinates in the Cus
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-The Screenspace Renderable Panel places an image or video in a floating window. You can place a URL of an image, give it a name, then add it. Once it's in the list, you have many options to adjust where it is, how large it is, and so forth.
+The Screenspace Renderable Panel places an image, video or website in a floating window. You can place a URL of an image, give it a name, then add it. Once it's in the list, you have many options to adjust where it is, how large it is, and so forth. From the website tab you can add the URL of a webpage to be shown rather than an image.
 
-We will discuss this more in [](/using-openspace/index) [coming soon!].
-%%%% LINK
+See [](/using-openspace/toolbar/screenspace-renderables/index) for more on using this panel.
 ::::
 
 ::::{grid-item}
 
 :::{figure} panel_screenspace_renderables.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: Screenspace Renderables Panel
 :::
 
@@ -439,7 +464,7 @@ See [](/using-openspace/toolbar/exoplanet-systems/index) for more on using this 
 
 :::{figure} panel_exoplanet_systems.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: Exoplanet Systems Panel
 :::
 
@@ -465,7 +490,7 @@ We will discuss these in future sections.
 
 :::{figure} panel_user_panels.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: User Panels  Panel
 :::
 
@@ -491,7 +516,7 @@ In this guide, {menuselection}`Actions` refers to the Actions Panel.
 
 :::{figure} panel_actions.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: Actions Panel
 :::
 
@@ -513,7 +538,7 @@ This enables you to see a patch of sky wherever you point the crosshair. There a
 
 :::{figure} panel_skybrowser.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: SkyBrowser Panel
 :::
 
@@ -537,7 +562,7 @@ Buttons on the bottom allow you to go to the beginning or end of the mission.
 
 :::{figure} panel_mission.png
 :align: center
-:width: 70%
+:width: 300px
 :alt: Mission Panel
 :::
 
