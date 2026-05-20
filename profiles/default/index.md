@@ -118,7 +118,7 @@ The planets align very well within a common plane. Mercury is inclined about 7&d
 
 In contrast to the eight planets, Pluto is inclined 17&deg; to this plane, clearly demonstrating it's different. When viewed from above the plane, you can see that the trajectory of Pluto is interior to Neptune's orbit for a portion of its 248-year journey around the Sun.
 
-Once we discovered Kuiper Belt objects in 1992---small, rock-ice worlds beyond Neptune---astronomers understood that Pluto resembles these objects, and belongs with its Kuiper Belt brethren. Pluto is now one of a many [dwarf planets](/content/solar-system/dwarf-planets/index) in the Solar System, and one of over 2,000 known objects orbiting in the Kuiper Belt.
+Once we discovered Kuiper Belt objects in 1992---small, rock-ice worlds beyond Neptune---astronomers understood that Pluto resembles these objects, and belongs with its Kuiper Belt brethren. Pluto is now one of a many [dwarf planets](/content/solar-system/dwarf-planets/index) in the Solar System, and one of thousands of known objects orbiting in the Kuiper Belt.
 
 ::::{grid} 1 2 3 3
 :gutter: 1 1 1 2
@@ -221,7 +221,7 @@ From this location, you may notice that the stars exhibit various brightnesses a
 
 It appears we are now lost in a sea of stars and the constellation lines connecting some of them, but we can now explore objects on larger scales beyond the solar neighborhood.
 
-Each exoplanet marker indicates a star with a confirmed planetary system. None of these were known before 1995, so this is a relatively new branch of astrophysics, and a burgeoning one at that. We now know of over 5,000 planets outside our Solar System, and some of these systems have multiple planets, indicated by the parenthetical number in their label (no number signifies only one known planet).
+Each exoplanet marker indicates a star with a confirmed planetary system. None of these were known before 1995, so this is a relatively new branch of astrophysics, and a burgeoning one at that. We now know of over 6,000 planets outside our Solar System, and some of these systems have multiple planets, indicated by the parenthetical number in their label (no number signifies only one known planet).
 
 ::::{grid} 1 2 3 3
 :gutter: 1 1 1 2
@@ -1166,7 +1166,7 @@ This section is missing some data sets. Mostly planet moons and satellites whose
   - - License:
     - [MIT](https://github.com/OpenSpace/OpenSpace/blob/master/LICENSE.md)
   - - Version:
-    - 1.0
+    - 1.5
 :::
 
 :::::::
