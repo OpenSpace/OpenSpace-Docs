@@ -18,6 +18,7 @@ building-blocks/index
 :caption: Building Content (Unrenovated)
 
 asset-creation/index
+api/index
 custom-web-ui/index
 modules/index
 
