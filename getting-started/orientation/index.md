@@ -50,7 +50,7 @@ The File Menu lists the currently loaded profile and offers options for getting 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 ### Windows Menu
-The Windows Menu includes a list of all available panels and indicates which are currently open. Some panels are found other subgrouping, such as "Content" for panels with content-realted features not avaiable through the Scene Panel, such as adding exoplanet systems or navigating to specific locations on a globe.
+The Windows Menu includes a list of all available panels and indicates which are currently open. Some panels are organized into subgroupings, such as "Content," which contains panels with content-related features not available through the Scene Panel, such as adding exoplanet systems or navigating to specific locations on a globe.
 
 Click a button in the list to open that particular panel; use the `X` to close the panel.
 
