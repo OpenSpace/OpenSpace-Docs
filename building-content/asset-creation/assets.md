@@ -14,10 +14,10 @@ An asset that is imported into OpenSpace goes through a sequence of states: *Loa
 ### Loading
 When an asset is loaded, the asset file's Lua code is executed. The method `asset.require` may be used to declare dependencies on other assets, stating that they should be loaded first.
 
-The asset may register resource synchronizations using `asset.syncedResource` and provide functions to be executed upon asset initialization (`asset.onInitialize`) and deinitialization (`asset.onDeinitialize`). The loading step itself should not manipulate the OpenSpace scene in any way. Instead, it should register any such logic with the `asset.onInitialize` and `asset.onDeinitialize` methods. If an asset is loaded successfully it will transition to the `Synchronizing` state.
+The asset may register resource synchronizations using `asset.resource` and provide functions to be executed upon asset initialization (`asset.onInitialize`) and deinitialization (`asset.onDeinitialize`). The loading step itself should not manipulate the OpenSpace scene in any way. Instead, it should register any such logic with the `asset.onInitialize` and `asset.onDeinitialize` methods. If an asset is loaded successfully it will transition to the `Synchronizing` state.
 
 ### Synchronization
-OpenSpace will asynchronously download resources from the internet based on specifications passed into `asset.syncedResource`. If the synchronization succeeds for the asset and all its dependencies, it will be marked as ready to transition to the Initialization phase. See the page [Resources](./resources) for examples using `syncedResource`.
+OpenSpace will asynchronously download resources from the internet based on specifications passed into `asset.resource`. If the synchronization succeeds for the asset and all its dependencies, it will be marked as ready to transition to the Initialization phase. See the page [Resources](./resources) for examples using `asset.resource`.
 
 ### Initialization
 Once an asset's synchronization is done the asset can be initialized. This involves calling all functions passed into `asset.onInitialize`, in the order they were registered. OpenSpace guarantees that all required child assets are initialized before the parent asset starts initializing. Typically the initialization includes adding scene graph nodes to the scene, adding dashboard components, binding keyboard shortcuts, etc.
@@ -33,7 +33,7 @@ The following asset file instructs OpenSpace to create a sphere with [NASA's Blu
 -- example_sphere.asset
 
 -- Define a synchronized resource to be downloaded before the asset can be initialized
-local blueMarbleFolder = asset.syncedResource({
+local blueMarbleFolder = asset.resource({
   Type = "UrlSynchronization",
   Name = "Blue Marble July Texture",
   Identifier = "blueMarbleJulyTexture",
@@ -120,7 +120,7 @@ Asset files have access to a special `asset` object that represents the current 
 
     Registers a lua function to be executed when the asset is deinitialized. This method may be called several times to register several callbacks. The functions will be called in the reverse order as they were registered.
 
-  - `string asset.syncedResource(table syncSpecification)`
+  - `string asset.resource(table syncSpecification)`
 
     Declares a data resource to be synchronized before the asset can be initialized. This includes downloading data from the official OpenSpace server (data.openspaceproject.com), but can also be used to make arbitrary HTTP requests. The data is downloaded to the sync folder (typically `${BASE}/sync` but can be changed in `openspace.cfg`). The method returns the absolute path to the folder of the downloaded resource. Valid inputs are tables representing `ResourceSynchronization`s documented in more detail on the [Resources](./resources) page.
 

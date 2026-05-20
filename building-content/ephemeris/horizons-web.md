@@ -79,7 +79,7 @@ The following is an example asset file of the interstellar object 'Oumuamua. Thi
 ```lua
 local sunTransforms = asset.require("scene/solarsystem/sun/transforms")
 
-local trajectory = asset.syncedResource({
+local trajectory = asset.resource({
   Name = "'Oumuamua Trajectory",
   Type = "HttpSynchronization",
   Identifier = "oumuamua_horizons",
