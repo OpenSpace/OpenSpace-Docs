@@ -7,6 +7,7 @@ This guide outlines the required changes when upgrading from the old (unversione
   - Replace `topic.iterator()` with direct iteration over `topic` [details](#topic-iteration---simplified)
   - Replace `topic.iterator().next()` with `topic.next()` [details](#topic-iteration---simplified)
   - Remove `[1]` when accessing Lua return values [details](#lua-return-values---simplified)
+  - Manually handle empty `host` when port is specified for `window.openspaceApi(host, port)` [details](#manual-handling-of-empty-host-ip-to-window-openspaceapi-host-port)
 
 
 ## Installation
@@ -120,4 +121,34 @@ const time = await openspace.time.currentTime()[1];
 // After
 const openspace = api.library();
 const time = await openspace.time.currentTime();
+```
+
+### Manual handling of empty host IP to `window.openspaceApi(host, port)`
+
+The host now needs to be a valid value when calling `window.openspaceApi(host, port)`. Before, empty or falsey values led to `'localhost'` being used as default. Now you need to handle this manually.
+
+```js
+// Before - this worked even if the ipaddress field was empty. Host would be 'localhost'
+let host = document.getElementById('ipaddress').value;
+let api = window.openspaceApi(host, 4682);
+```
+
+```js
+// After - openspaceApi no longer accepts an empty value => handle the 'localhost' case somehow
+let host = document.getElementById('ipaddress').value;
+if (!host) {
+  host = 'localhost';
+}
+let api = window.openspaceApi(host, 4682);
+
+// Or a shorter alternative
+let host = document.getElementById('ipaddress').value;
+let api = window.openspaceApi(host ?? 'localhost', 4682);
+```
+
+Note that `'localhost'` and `4682` are the default values for the the `window.openspaceApi` function, so this would also work if no custom IP is needed:
+
+```js
+// Specifying no host port defaults to 'localhost' and 4682
+let api = window.openspaceApi();
 ```
