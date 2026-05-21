@@ -10,8 +10,7 @@ While OpenSpace was designed to be an interactive tool to explore data, there ar
 
 :::{figure} record_panel.png
 :align: center
-:width: 60%
-:figwidth: 80%
+:figwidth: 400px
 :alt: OpenSpace's Record Panel
 
 The Record Panel in OpenSpace.
