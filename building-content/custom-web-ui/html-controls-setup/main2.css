@@ -79,17 +79,17 @@ h2 {
 button:hover {
 	border-radius: 20px;
 	cursor:pointer;
-}  
+}
 
 button:active {
   background-color: #fef;
-}  
+}
 .ButtonRed {
   background-color: #500;
   color: white;
 }
 
 .ButtonGreen {
-  background-color: FFBF00;
+  background-color: #FFBF00;
   color: black;
 }
