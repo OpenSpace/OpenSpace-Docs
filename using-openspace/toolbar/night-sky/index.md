@@ -36,7 +36,7 @@ The Markings tab enables the display of lines, grids, labels, and other elements
 :align: right
 :width: 100%
 :figwidth: 40%
-:alt: OpenSpace's Night Sky Panel's Markings tab
+:alt: OpenSpace's Night Sky Panel's Markings tab, with the Ecliptic line enabled
 
 The Markings tab in OpenSpace's Night Sky Panel.
 :::
