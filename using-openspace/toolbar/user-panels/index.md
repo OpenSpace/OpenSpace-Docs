@@ -5,12 +5,11 @@
 
 User Panels in OpenSpace are custom panels that are developed by users outside of the OpenSpace development team. They allow custom functionality within OpenSpace. By default, OpenSpace does not ship with any such panels, but panels may be available on the [OpenSpace Hub](https://hub.openspaceproject.com/).
 
-The User Panels button provides shortcuts to user-created web panels, which are html pages using the OpenSpace javascript API. The "Open Local panels" section needs html pages to be saved as `index.html` inside individual folders created inside the `user/webpanels` folder. The "Open from URL" section allows you to create shortcuts to html pages served from elsewhere. The [HTML Controls Setup Guide](/building-content/custom-web-ui/html-controls-setup/index) explains the process of creating such html control pages.
+The User Panels button provides shortcuts to user-created web panels, which are HTML pages using the [OpenSpace Javascript API](/building-content/api/index). The "Add Local Panel" tab needs HTML pages to be saved as `index.html` inside individual folders created inside the `user/webpanels` folder. The "Add From URL" tab allows you to create shortcuts to HTML pages served from elsewhere. The [HTML Controls Setup Guide](/building-content/custom-web-ui/html-controls-setup/index) explains the process of creating such HTML control pages.
 
 :::{figure} user-panels.png
 :align: center
-:width: 60%
-:figwidth: 80%
+:figwidth: 400px
 :alt: OpenSpace's User Panels Panel
 
 The User Panels Panel in OpenSpace.
@@ -28,10 +27,10 @@ Whether you develop one yourself or download one from the Hub, they appear in th
 
 
 ## Open a User Panel
-If you have a user panel in that folder, you can access it within OpenSpace's User Panels Panel via the dropdown under Open Local Panel. With a panel selected, open is via the {octicon}`link-external;1em` button.
+If you have a user panel in that folder, you can access it within OpenSpace's User Panels Panel via the dropdown under Open Local Panel. With a panel selected, open it either in a separate window in the OpenSpace application or in the browser using the buttons below the dropdown.
 
 ## Open From a URL
-You can also open a panel from a URL. A user panel is merely an HTML page, so it is possible to host these on the web and access them via a URL. Adding the URL and a title, then hitting the open button {octicon}`link-external;1em` will also open the panel alongside the User Panels.
+You can also open a panel from a web URL. A user panel is merely an HTML page, so it is possible to host these on the web and access them via a URL. Add the URL and a title, then hit one of the buttons beneath the inputs to open the website either in a separate window or in the browser.
 
 ## Links
 We include two links in this panel: one for the [OpenSpace Hub](https://hub.openspaceproject.com/) and one for the [Show Composer](http://localhost:4680/showcomposer/). These will open in a new panel and will benefit from expanding the width of the panel.

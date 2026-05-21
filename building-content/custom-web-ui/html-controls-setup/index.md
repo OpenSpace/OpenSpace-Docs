@@ -1,4 +1,4 @@
-# Creating a Button Page
+# HTML Controls Setup Guide
 :::{sidebar}
 Many thanks to Dylan Salas from the [California Academy of Sciences](https://calacademy.org/) for providing this guide
 :::
