@@ -3,7 +3,7 @@
 Many thanks to Dylan Salas from the [California Academy of Sciences](https://calacademy.org/) for providing this guide
 :::
 
-This guide provides an overview over the usage of the JavaScript API to create an external webpage that can be used to create a custom show flow that interacts with OpenSpace.
+This guide provides an overview over the usage of the [JavaScript API](/building-content/api/index) to create an external webpage that can be used to create a custom show flow that interacts with OpenSpace.
 
 More examples of button pages are available at [ui.openspaceproject.com](https://ui.openspaceproject.com/). The code for these pages are found in this [GitHub repository](https://github.com/OpenSpace/ui.openspaceproject.com).
 
