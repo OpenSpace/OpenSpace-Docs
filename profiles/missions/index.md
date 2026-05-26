@@ -45,7 +45,9 @@ We use the following symbols in profile pages to indicate actions:
 
 apollo
 artemis
+bepicolombo
 dawn
+euclid
 gaia
 juice
 juno
