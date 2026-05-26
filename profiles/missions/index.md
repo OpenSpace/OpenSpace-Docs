@@ -42,8 +42,18 @@ We use the following symbols in profile pages to indicate actions:
 
 :::{toctree}
 :maxdepth: 1
-:hidden:
 
-
+apollo
+artemis
+dawn
+gaia
+juice
+juno
 jwst/index
+mars
+messenger
+newhorizons
+osirisrex
+rosetta
+voyager
 :::

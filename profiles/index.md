@@ -62,42 +62,25 @@ We will discuss profile authoring in a forthcoming page. For the time being, a [
 
 ::::
 
+## Profiles (Unrenovated)
+  - [Eclipse](/profiles/eclipse)
+  - [Night Sky](/profiles/night-sky/index)
+  - [Mission Profiles](/profiles/missions/index)
+  - [Space Weather Profiles](/profiles/spaceweather/index)
+
+## Addons
+  - [Addons](/profiles/addons/index)
 
 :::{toctree}
 :maxdepth: 1
 :hidden:
 
 default/index
+offline/index
+eclipse
+empty/index
 missions/index
 spaceweather/index
-offline/index
-empty/index
-addons/index
-:::
-
-
-
-
-:::{toctree}
-:maxdepth: 1
-:caption: Profiles (Unrenovated)
-
-apollo
-artemis
-dawn
-
-eclipse
-
-gaia
-juice
-juno
-
-mars
-messenger
-newhorizons
 night-sky/index
-
-osirisrex
-rosetta
-voyager
+addons/index
 :::
