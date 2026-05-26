@@ -72,6 +72,7 @@ missions/index
 spaceweather/index
 offline/index
 empty/index
+addons/index
 :::
 
 
@@ -83,7 +84,6 @@ empty/index
 
 apollo
 artemis
-asteroids
 dawn
 
 eclipse
@@ -99,6 +99,5 @@ night-sky/index
 
 osirisrex
 rosetta
-touch
 voyager
 :::
