@@ -77,10 +77,10 @@ We will discuss profile authoring in a forthcoming page. For the time being, a [
 
 default/index
 offline/index
-eclipse
 empty/index
 missions/index
 spaceweather/index
+eclipse
 night-sky/index
 addons/index
 :::
