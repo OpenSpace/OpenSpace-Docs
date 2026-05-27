@@ -1,5 +1,5 @@
 # Asteroids
-This profile addon shows the trails ofapproximately 936,000 asteroids from the JPL Horizons [Small-Body Database (SBDB)](https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/).
+This profile addon shows the trails of approximately 936,000 asteroids from the JPL Horizons [Small-Body Database (SBDB)](https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/).
 
 The asteroids are grouped into a number of categories. The [table below](#asteroid-content-categories) lists the categories of asteroids included in this addon, together with a description of each category.
 
@@ -8,10 +8,10 @@ The asteroids are grouped into a number of categories. The [table below](#astero
 The individual asteroid groups can be enabled/disabled using the {menuselection}`Scene --> Solar System --> Small Bodies` menu.
 
 :::{note}
-Some of the asteroid categories contain a very high number of objects, which will affect frame rate and program responsiveness. If performance slows too much, then un-click the offending category to prevent it from being rendered.
+Some of the asteroid categories contain a very high number of objects, which will affect frame rate and program responsiveness. If performance slows too much, then deselect the offending category to prevent it from being rendered.
 :::
 
-Each asteroids trail is rendered as a line with a color corresponding to its group. It is possible to modify the length of the orbital trail by adjusting the "Trail fade" value in {menuselection}`Renderable --> Appearance` in the menu for asteroid/comet group. A higher fade value shows more of the periodic orbital trails. The line color and width can also be changed here (transparency is accessible underneath 'Renderable').
+Each asteroid trail is rendered as a line with a color corresponding to its group. It is possible to modify the length of the orbital trail by adjusting the "Trail fade" value in {menuselection}`Renderable --> Appearance` in the menu for asteroid/comet group. A higher fade value shows more of the periodic orbital trails. The trail color and width can also be changed here (opacity is accessible underneath 'Renderable').
 
 
 ## Asteroid Content Categories

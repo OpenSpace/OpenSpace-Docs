@@ -12,7 +12,7 @@ Below are examples of available addons, typically recommended for the Default pr
   - [Asteroids](asteroids): Adds a collection of asteroids in the Solar System, including the asteroid belt, near-Earth objects, and more.
   - Dwarf Planets: Adds a collection of dwarf planets in the Solar System.
   - Interstellar Objects: Adds a collection of interstellar objects that have been observed passing through the Solar System.
-  - Minor Moons: Adds the discovered minor moons for the outer planets in the Solar System. Per default, just the major moons are included in the Solar System content.
+  - Minor Moons: Adds the discovered minor moons for the outer planets in the Solar System. By default, just the major moons are included in the Solar System content.
 
 
 :::{toctree}
