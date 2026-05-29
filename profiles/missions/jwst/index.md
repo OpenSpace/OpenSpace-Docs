@@ -6,14 +6,9 @@ This profile visualizes the NASA-ESA-CAN James Webb Space Telescope, which launc
 :::::::{tab-item} Tour
 
 ## Tour
-Nothing to see here...
-
-
-would take 10 minutes to unfurl
-
-What are lagrange points
-
-orbits L2
+:::{note}
+This profile tour has not yet been written. It will be coming soon.
+:::
 
 :::::::
 

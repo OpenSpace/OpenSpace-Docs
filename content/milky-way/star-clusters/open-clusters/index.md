@@ -74,11 +74,6 @@ Looking at the Milky Way Galaxy edge-on, we can see the open clusters are tightl
 :::
 
 
-:::{grid-item-card} [](/profiles/default-full/index)
-[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
-:::
-
-
 :::{grid-item-card} [](/profiles/offline/index)
 [![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
 :::

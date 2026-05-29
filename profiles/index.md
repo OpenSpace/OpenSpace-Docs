@@ -49,11 +49,6 @@ We will discuss profile authoring in a forthcoming page. For the time being, a [
 :::
 
 
-:::{grid-item-card} [](/profiles/default-full/index)
-[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
-:::
-
-
 :::{grid-item-card} [](/profiles/offline/index)
 [![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
 :::
@@ -67,44 +62,25 @@ We will discuss profile authoring in a forthcoming page. For the time being, a [
 
 ::::
 
+## Profiles (Unrenovated)
+  - [Eclipse](/profiles/eclipse)
+  - [Night Sky](/profiles/night-sky/index)
+  - [Mission Profiles](/profiles/missions/index)
+  - [Space Weather Profiles](/profiles/spaceweather/index)
+
+## Addons
+  - [Addons](/profiles/addons/index)
 
 :::{toctree}
 :maxdepth: 1
 :hidden:
 
 default/index
-default-full/index
-missions/index
-spaceweather/index
 offline/index
 empty/index
-:::
-
-
-
-
-:::{toctree}
-:maxdepth: 1
-:caption: Profiles (Unrenovated)
-
-apollo
-artemis
-asteroids
-dawn
-
+missions/index
+spaceweather/index
 eclipse
-
-gaia
-juice
-juno
-
-mars
-messenger
-newhorizons
 night-sky/index
-
-osirisrex
-rosetta
-touch
-voyager
+addons/index
 :::

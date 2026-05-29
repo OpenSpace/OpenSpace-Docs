@@ -22,7 +22,6 @@ api/index
 custom-web-ui/index
 modules/index
 
-asteroids
 ephemeris/index
 field-lines
 gaia

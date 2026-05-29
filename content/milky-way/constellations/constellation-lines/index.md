@@ -72,12 +72,6 @@ The bulk of the constellations are represented by a subtle pink hue. The twelve 
 [![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
 :::
 
-
-:::{grid-item-card} [](/profiles/default-full/index)
-[![default-full profile](/profiles/default-full/profile_default_full_icon.png)](/profiles/default-full/index)
-:::
-
-
 :::{grid-item-card} [](/profiles/offline/index)
 [![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
 :::
