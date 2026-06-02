@@ -41,7 +41,7 @@ Each of these require different observing techniques. The bright galaxy survey a
 :align: left
 :alt: Comparison of DESI and Sloan DSS Galaxies
 
-**DESI-Sloan Comparison.** In the top two panels, we see the DESI galaxies edge on (left) and face on (right). In the bottom two panels we see the same views but with the Sloan Digital Sky Survey galaxies. We can see the increased coverage of galaxies in the DESI data, and, more importantly, the amplification of the large-scale structure.
+**DESI-Sloan Comparison.** In the top two panels, we see the DESI galaxies edge-on (left) and face-on (right). In the bottom two panels we see the same views but with the Sloan Digital Sky Survey galaxies. We can see the increased coverage of galaxies in the DESI data, and, more importantly, the amplification of the large-scale structure.
 :::
 
 
