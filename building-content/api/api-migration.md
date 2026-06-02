@@ -7,7 +7,7 @@ This guide outlines the required changes when upgrading from the old (unversione
   - Replace `topic.iterator()` with direct iteration over `topic` [details](#topic-iteration---simplified)
   - Replace `topic.iterator().next()` with `topic.next()` [details](#topic-iteration---simplified)
   - Remove `[1]` when accessing Lua return values [details](#lua-return-values---simplified)
-  - Manually handle empty `host` when port is specified for `window.openspaceApi(host, port)` [details](#manual-handling-of-empty-host-ip-to-window-openspaceapi-host-port)
+  - Manually handle empty `host` when port is specified for `window.openspaceApi(host, port)` [details](#handling-of-empty-ip)
 
 
 ## Installation
@@ -123,6 +123,7 @@ const openspace = api.library();
 const time = await openspace.time.currentTime();
 ```
 
+(handling-of-empty-ip)=
 ### Manual handling of empty host IP to `window.openspaceApi(host, port)`
 
 The host now needs to be a valid value when calling `window.openspaceApi(host, port)`. Before, empty or falsey values led to `'localhost'` being used as default. Now you need to handle this manually.
