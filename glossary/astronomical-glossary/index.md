@@ -23,6 +23,10 @@ Completeness
     Data completeness is an attribute of a data set that relates to its overall quality. One might be tempted to think of this as gaps in observations, just as the Sloan DSS Galaxies did not look at the entire sky, so there are gaps in the data. But, this is not the gist of completeness. Completeness tells you the quality of a data set. For example, for the Hipparcos catalog of stars, we know the catalog has a completeness down to a magnitude of +7.5 magnitude. That means for stars brighter than 7.5, the catalog is complete and we can treat as such when examining it. This complete subset of stars numbers about 25,000. But, Hipparcos has over 100,000 stars. This means that for stars dimmer than 7.5 magnitude, Hipparcos didn't capture them all in its data. The data set is incomplete for these dimmer stars.
 
 
+Dark energy
+    Dark energy is the name given to the unknown force that's driving the accelerating expansion of the universe. It also has the effect of slowing the rate of structure formation. First evidence came from measuring the light from Type 1a supernovae, whihc have a known brightness. When the distances calcuated from their standard brightness versus that of their redshift is compared, there is a discrepancy, showing that the expansion of the universe is accelerating.
+
+
 Ecliptic
     The ecliptic is the imaginary line in the sky on which the Sun travels throughout the year. Because it is defined by the annual path of Sun, it traverses the zodiacal constellations. Extrapolated to three dimensions, the ecliptic, then, defines the plane shared by the Sun and Earth.
 

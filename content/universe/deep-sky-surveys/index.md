@@ -12,6 +12,10 @@
 [![Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
 :::
 
+:::{grid-item-card} [](/content/universe/deep-sky-surveys/desi-galaxies/index)
+[![DESI Galaxies](/content/universe/deep-sky-surveys/desi-galaxies/desi_galaxies_icon.png)](/content/universe/deep-sky-surveys/desi-galaxies/index)
+:::
+
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
 [![Abell Clusters](/content/universe/deep-sky-surveys/abell-galaxy-clusters/abell_icon.png)](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
 :::
@@ -22,6 +26,10 @@
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/quasars/index)
 [![Quasars](/content/universe/deep-sky-surveys/quasars/quasars_icon.png)](/content/universe/deep-sky-surveys/quasars/index)
+:::
+
+:::{grid-item-card} [](/content/universe/deep-sky-surveys/desi-quasars/index)
+[![DESI Quasars](/content/universe/deep-sky-surveys/desi-quasars/desi_quasars_icon.png)](/content/universe/deep-sky-surveys/desi-quasars/index)
 :::
 
 ::::
@@ -47,8 +55,10 @@ Deep Sky Surveys refer to large surveys that probe deeper into the observable un
 
 2df-galaxies/index
 sloan-galaxies/index
+desi-galaxies/index
 abell-galaxy-clusters/index
 supercluster-labels/index
 quasars/index
+desi-quasars/index
 :::
 
