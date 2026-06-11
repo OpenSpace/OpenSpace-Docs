@@ -19,11 +19,11 @@ Data is downloaded using the `HelioviewerDownloadTask`, a pre-processing step ru
 
 See the [HelioviewerDownloadTask](#solarbrowsing_task_helioviewerdownload) documentation for a full reference of available parameters.
 
-An example task file is available at `data/tasks/solarbrowsing/download_from_helioviewer.task`. It downloads imagery for both SDO AIA-171 and STEREO EUVI-A 171. To run the task, pass the file to the TaskRunner executable via drag-and-drop.
+An example task file is available at `data/tasks/solarbrowsing/download_from_helioviewer.task`. It automatically downloads imagery for all supported SDO AIA and STEREO-A EUVI instruments across all configured date ranges. To run the task, pass the file to the TaskRunner executable via drag-and-drop.
 
-The three parameters most commonly edited are `StartTime`, `EndTime`, and `TimeStep`:
-  - `StartTime` and `EndTime` define the time interval to download, in ISO 8601 format
-  - `TimeStep` sets the desired cadence in seconds between downloaded images. The actual spacing depends on data availability from Helioviewer, but will never be shorter than this value
+The two parameters most commonly edited are `dateRanges` and `timeStep`:
+  - `dateRanges` is a list of time intervals to download, each with a `startTime` and `endTime` in ISO 8601 format. Multiple ranges can be added to build up a dataset without issuing a single large request
+  - `timeStep` sets the desired cadence in seconds between downloaded images. The actual spacing depends on data availability from Helioviewer, but will never be shorter than this value
 
 :::{note}
 The task downloads images in parallel and skips files that already exist on disk, making it safe to rerun if a download was interrupted.
@@ -36,7 +36,7 @@ It is recommended to store downloaded images in `${SYNC_DYNAMIC}/solarbrowsing/`
 ## Common Tasks
 
 ### Getting Data for a Specific Time Range
-To download data for a specific period, update the `StartTime` and `EndTime` fields in the task file using ISO 8601 format. These define the time range of the data you want to retrieve. For example, to download the last 10 days of data, set `EndTime` to the current time and `StartTime` to 10 days earlier:
+To download data for a specific period, update the `dateRanges` table in the task file. Each entry has a `startTime` and `endTime` in ISO 8601 format. For example, to download the last 10 days of data, set `endTime` to the current time and `startTime` to 10 days earlier:
 
 ```lua
 StartTime = "2026-04-01T00:00:00.000Z",
