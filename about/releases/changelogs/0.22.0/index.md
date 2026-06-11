@@ -114,6 +114,9 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
   - The rendering in the window is now disabled if the window is iconified unless the `render-while-hidden` setting is enabled in the Window Configuration
   - Add the ability for the Window Configuration to further customize the values loaded from Scalable meshes files
   - Add the ability to leave out the window size parameter in a Window Configuration which will cause the window size to be automatically set to 2/3s the size of the primary monitors   resolution
+  - Accelerated rendering of the user interface is now disabled by default without loss in performance
+  - It is not possible to drag and drop 3D model files which will then be added in front of the camera (#4112)
+  - The default value for the Stereoscopic Depth of Focus Surface is now 40 to prevent excessive atmosphere rendering issues when approaching models
   - Update external dependencies:
     - Tracy 0.10 -> 0.13.1
     - date master -> v3.0.4
@@ -179,6 +182,15 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
   - When popping out scene graph nodes, they will be added to the right side of the screen instead of a floating window (OpenSpace/OpenSpace-WebUI#224)
   - Improving the layout of the time controls in the Night Sky panel to prevent fast time progression from making the elements jump around (OpenSpace/OpenSpace-WebUI#217)
   - Change the default height of targets in the GeoLocation panel to 10 km (OpenSpace/OpenSpace-WebUI#226)
+  - The "Open GUI in Browser" menu item now opens the routes page in the browser
+  - The menus will now stay open for an additional 200ms after removing the mouse cursor for easier control using touchpads
+  - When loading multiple mission files, the last mission will now be opened by default (#4105)
+  - Do not display the Flyto/JumpTo/Frame buttons in the kebab menu for SceneGraphNodes that are not focussable (OpenSpace/OpenSpace-WebUI#227)
+
+### ShowComposer
+  - Add the ability to add a ScriptComponent to the MultiComponent (#3795)
+  - Add a scroll area for long scripts in the ScriptComponent (#3809)
+
 
 
 ## Content
@@ -285,6 +297,9 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
   - Add Artemis 2 assets and include them in the artemis profile (#4099)
   - **Breaking Change** Move existing Artemis 1 assets into a new `artemis` subfolder
   - The `offline` profile now includes the maps for Pluto and Charon
+  - All of the `TimeFrame`s in the Apollo 11 assets are now the same time to prevent an issue where the lunar module would not show up even though it is indicated as active
+  - Add a new asset with actions to toggle the multi-phase SPICE-based trails of Voyager 1 and 2
+
 
 
 ## Content creation
@@ -334,7 +349,8 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
   - Add an additional parameter to the `downloadFile` function to determine if the download should be skipped if the destination file path already exists
   - Add new Lua function `openspace.imageSize` to query size of an image
   - Add new function `loadNavigationStatefromFile` to return the state rather than setting it.
-  - Deprecate  `loadNavigationState` in favor of `openspace.navigation.setNavigationState(openspace.navigation.loadNavigationState("<path>"))`  (#3955)
+  - Deprecate `loadNavigationState` in favor of `openspace.navigation.setNavigationState(openspace.navigation.loadNavigationState("<path>"))`  (#3955)
+  - Add a new function `removeFromListProperty` to remove a single item from a list-based property, mirroring the `appendToListProperty` function
 
 
 ### API
@@ -447,6 +463,10 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
   - Fix errors when loading the Euclid, JWST, and Messenger profiles
   - Fix an issue where the info box in the user interface was not scrollable, leading to long texts breaking the layouting (OpenSpace/OpenSpace-WebUI#225)
   - Fix an issue where the CEF cache was left in an unusable state, preventing the application from starting again. The CEF cache is now deleted at every startup
+  - Fix a crash when no color map is set on a `RenderableSphere` (#4111)
+  - Fix an issue where the menu title items could not be translated (OpenSpace/OpenSpace-WebUI#222)
+  - Fix an issue in the ShowComposer where the camera altitude was using the wrong unit (#3838)
+  - Fix an issue in the ShowComposer where loaded time components would not function after serialization
 
 
 ## Breaking Changes
