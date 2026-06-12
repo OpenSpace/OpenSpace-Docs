@@ -2,7 +2,7 @@
 
 ## Highlights
 
-OpenSpace 0.22.0 is a major release bringing significant performance improvements, new rendering capabilities, and important platform changes marking a large step towards a future 1.0 release.
+OpenSpace 0.22.0 is a major release bringing significant performance improvements, new rendering capabilities, and important platform changes marking a significant step toward a future 1.0 release.
 
 **Content & Workflow:** A new **AssetBuilder** application simplifies scene graph node creation without manually editing `.asset` files. **Profile Add-ons** provide opt-in curated asset collections (interstellar objects, DESI, dwarf planets, minor moons, asteroids). Asset files have been extensively reorganized into composable parts.
 
@@ -12,7 +12,7 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
 
 **Performance:** This release delivers significant speed improvements across the entire application. The update to OpenGL 4.6 brings with it many small optimizations that add up to the default profile running about **3-4x faster** than in 0.21.4. Asteroid and orbital rendering via `RenderableOrbitalKepler` is up to **8x faster** thanks to multithreading and CPU-side vertex computation, and Kepler data loading (e.g. Minor Planet Center) is up to **20x faster**. Additional gains come from fewer texture binds and triple-buffered NDI streaming.
 
-**Platform:** macOS support has been removed due to Apple's long-standing failure to advance their OpenGL support. OpenSpace now targets **OpenGL 4.6**, delivering improved rendering performance across the entire application.
+**Platform:** macOS support has been removed as Apple's OpenGL support does not meet OpenSpace's current requirements. OpenSpace now targets OpenGL 4.6, delivering improved rendering performance across the entire application.
 
 **Infrastructure:** Default servers have migrated from Utah-based to New York-based servers. Satellite data is now relayed through OpenSpace's own proxy to reduce load on Celestrak.
 
@@ -31,7 +31,7 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
     - Better documentation for the `SGCTConfig` and `Profile` options in the `openspace.cfg` configuration file
     - Many small improvements
   - Add Profile add-ons (#3947)
-    - Add-ons represent opt-in features consisting of a list of curated assets. A profile can recommend add-ons that would be suitable for the specific profile, but it should always be possible to include any add-on into any profile
+    - Add-ons represent opt-in features consisting of a list of curated assets. Profiles can recommend suitable add-ons, but any add-on can be included in any profile
     - Add add-on "Interstellar Objects" to display the paths of the known interstellar objects
     - Add add-on "desi" to show the results of the DESI instrument
     - Add add-on "dwarf_planets" to show the positions, trails, and globes of the various known Dwarf planets
@@ -42,7 +42,7 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
     - Add multithreading for loading of data decreasing the loading time. For example the Minor Planet Center data loading time was reduced by 20x
     - Add support for "Camera View Direction" in addition to existing "Camera Position Normal"
   - Add button camera controls to the Mouse4 and Mouse5 buttons to mimic (CTRL and CTRL+Shift) in order to be able to land on planets using only the mouse (#3850)
-  - Remove the `configuration_helper` script. Instead a new `default.json` Window layout is now being used to create a window 2/3 the size of the primary monitor (#3986)
+  - Remove the `configuration_helper` script. A new `default.json` window layout is now being used to create a window 2/3 the size of the primary monitor (#3986)
   - Change the default value for the "Stereoscopic Depth of Focus Surface" to 40. This prevents excessive atmosphere rendering issues when approaching other objects
   - Add the ability to render dynamical molecular systems using the ViaMD rendering library. This includes rendering of full dynamical systems using, for example, GROMACS, but also rendering of individual atoms or proteins from the Protein Data Bank (PDB) (#3889)
   - Improve the behavior of playing back videos in clustered environments (#4032)
@@ -53,7 +53,7 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
     - Add a mode to render a model only as a wireframe
     - Add the ability to overwrite the textured color of the rendered model
   - Add the SolarBrowsing feature (#3926)
-    - This new feature includes two new renderables: `RenderableSolarImagery`, which renders images from a specific spacecraft. The `SolarImagery` supports multiple instruments so you can load multiple folders of images and switch between them at runtime. `RenderableSolarImageryProjection` takes a list of `RenderableSolarImagery` `Identifiers` and projects them onto a sphere centered on the Sun. Images from multiple sources that overlap will blend color. Any area that is not projected onto will be some default gray-ish value to indicate no data. There is currently a limitation to assume we're projecting onto the Sun in our solar system.
+    - This new feature includes two new renderables: `RenderableSolarImagery`, which renders images from a specific spacecraft. The `SolarImagery` supports multiple instruments so you can load multiple folders of images and switch between them at runtime. `RenderableSolarImageryProjection` takes a list of `RenderableSolarImagery` `Identifiers` and projects them onto a sphere centered on the Sun. Images from multiple sources that overlap will blend color. Any area without projection data will render as a neutral gray to indicate no coverage. There is currently a limitation that projection is assumed to target the Sun in our solar system.
     - More documentation is available [on the Docs page](https://docs.openspaceproject.com/latest/building-content/solarbrowsing/index.html)
   - Add a new Renderable type `RenderableVectorField` that takes a 3D volume containing vector data and renders that data using arrows (#3897)
   - Improve touch gestures and touch interaction (#4005)
@@ -66,12 +66,11 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
   - Update the code to use OpenGL 4.6 (#3903)
     - This update brings with it many small performance improvements that sum up to the default profile running about 3-4x faster than in 0.21.4
     - All graphics cards that do not support OpenGL 4.6 also have been declared End-of-Life by Nvidia/AMD/Intel, so no graphics card currently running OpenSpace should be affected, but some very old drivers need to be updated
-  - Add a new interpolation method to the properties that will cause the value to bounce back and forth between the current value and the selected value (#4013)
+  - Add a new bounce interpolation method for propertiy values, causing them to oscillate between the current value and the selected value (#4013)
     - To use this, add a `true` as the last argument of the `setPropertyValue` or `setPropertyValueSingle` functions: `openspace.setPropertyValueSingle("Scene.Earth.Renderable.Opacity", 0.0, 3, "Linear", "", true);` will cause the opacity of Earth to bounce between its current value and 0 over 3 seconds
     - The `stopPropertyBouncing` function can stop the bouncing
   - Remove support for macOS (#3919)
-    - Unfortunately Apple has not managed to update their support of OpenGL in the last 16 years, which is impacting all non-macOS users since we are unable to maintain a dual rendering path just for macOS
-    - Similarly, the C++ standard on macOS compilers is lagging the support offered by compilers on Windows and Linux
+    - OpenSpace now requires OpenGL 4.6, which is not supported on macOS. Maintaining a separate rendering path for macOS is no longer feasible alongside continued development for Windows and Linux. Similarly, macOS C++ compiler support has lagged behind what is available on other platforms.
   - As the Utah-based servers are no longer available, they have been replaced as the default with the New York-based ones for map layers and data synchronization (#3847)
   - Add various improvements for the rendering of planetary globes
     - Add support for relative paths in GeoJSON's SpriteTexture (#3761)
@@ -86,7 +85,7 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
     - Add toggle that limits forced trail to only be visible between the start time and one orbital period after the end time
     - Add three new properties called `StartTime`, `EndTime` and `LimitToTimeRange`
   - It is now possible to drag and drop 3D model files which will then be added in front of the camera (#4112)
-  - Add triple-buffering to the NDI streaming to prevent some blocking and thus increase transfer speeds
+  - Add triple-buffering to the NDI streaming to reduce blocking and thus increase transfer speeds
   - Add properties to the `ScreenSpaceBrowser` that allow the sending of keyboard inputs to the displayed browser (#3980)
   - Add the ability to not specify the window size in a Window Configuration which will cause the window size to be automatically set to 2/3 the size of the primary monitor's resolution
   - Add the ability to render a visual indicator for the mouse interaction (#3781)
@@ -166,7 +165,7 @@ OpenSpace 0.22.0 is a major release bringing significant performance improvement
 
 ### New Maps
 
-  - Add a new higher resolution Jupiter texture and made it the default (#3851)
+  - Add a new higher resolution Jupiter texture as the default layer (#3851)
   - Use new temporal night time layer on Earth as the previous one was no longer working
   - Apply the existing New Horizons map as a layer to Pluto and Charon
 
