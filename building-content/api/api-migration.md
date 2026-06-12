@@ -14,7 +14,7 @@ This guide outlines the required changes when upgrading from the old (unversione
 ### npm
 If you are using npm, update to the latest version:
 ```sh
-npm install openspace-api-js@0.9.11
+npm install openspace-api-js@latest
 ```
 
 ### Script tag
