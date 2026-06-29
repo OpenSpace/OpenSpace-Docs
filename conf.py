@@ -57,7 +57,7 @@ needs_sphinx = "7.4.6"
 
 project = "OpenSpace"
 author = "OpenSpace community"
-project_copyright = "2014-2024, OpenSpace community"
+project_copyright = "2014-2026, OpenSpace community"
 
 # Update with every new release
 version = release = os.getenv("READTHEDOCS_VERSION", "0.20.0")
