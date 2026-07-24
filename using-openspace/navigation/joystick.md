@@ -9,9 +9,9 @@ If your controller is not supported by a provided asset, you can create your own
 
 
 ## Xbox and PS4/PS5 Controllers
-Navigation using an Xbox, PS4/PS5 controller in OpenSpace is defined in the respective asset files (`xbox.asset`, `ps4.asset`, `ps5.asset`). These all define the same functionality, but the buttons and joysticks are mapped to the respective controller.
+Navigation using an Xbox or PS4/PS5 controller in OpenSpace is defined in the respective asset files (`xbox.asset`, `ps4.asset`, `ps5.asset`). These all define the same functionality, but the buttons and joysticks are mapped to the respective controller.
 
-The schematics and table below show the buttons and joysticks on each controller and their assigned functions in the provided assets. N/A indicates that no function is assigned by default. Read more about how to add or customize functionality in [Joystick Customization](joystick-customization).
+The schematics and table below show the controller inputs and their assigned functions in the provided assets. N/A indicates that no function is assigned by default. Read more about how to add or customize functionality in [Joystick Customization](joystick-customization).
 
 
 ::::::{container} only-light
