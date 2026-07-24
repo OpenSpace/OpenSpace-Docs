@@ -129,7 +129,9 @@ It is possible to customize the joystick navigation to your own liking. However,
 ## Issues and Solutions
 Here is a list of some issues you can encounter related to the controllers and some tips on how to fix them.
 
-### OpenSpace Does Not React to the Controller Input
+:::{dropdown} OpenSpace Does Not React to Controller Input  ([Link](#joystick-issue-noinput))
+(joystick-issue-noinput)=
+
 First, check that the controller is connected, the correct asset file is included in the profile, and the correct profile is running. If OpenSpace still does not detect the controller, the controller name may not match the expected name.
 
 To find the controller name, press *F2* while OpenSpace is running to open the "old" (legacy) OpenSpace GUI. In the window called **OpenSpace GUI**, enable the **Joysticks Information** window to view connected controllers. Find your controller in the list and note its name (ignore the number at the end). The items in the list called *3Dconnexion KMJ Emulator* or *Summed contributions* can be ignored.
@@ -163,8 +165,12 @@ local function bindInputs(name)
   local deadzoneTriggers = 0.05
   ...
 ```
+:::
 
-### OpenSpace Keeps Spinning Even When the Joysticks Are Not Touched
+
+:::{dropdown} Camera Keeps Spinning Without Input ([Link](#joystick-issue-nodeadzone))
+(joystick-issue-nodeadzone)=
+
 This issue is caused by a joystick or trigger deadzone that is too small. To fix it, open the asset file for your controller in a text editor and increase the deadzone values. The file contains one or two lines defining the deadzone size for the joysticks and triggers, respectively. An example for the PS4 controller is shown below (other joystick assets follow a similar structure).
 
 ```lua
@@ -177,6 +183,7 @@ asset.onInitialize(function()
 ```
 
 Adjust these values until the spinning stops and the feel of the navigation is good. Every time you change the values you need to restart OpenSpace. If the value is too small then the spinning might still occur on some occasions, if the value is too large then OpenSpace reaction to the input might feel delayed.
+:::
 
-### Have an Issue That Is Not Included in This List?
+**Do you have an issue that is not included in this list?**
 Have a look at our [GitHub](https://github.com/OpenSpace/OpenSpace) for more information and potential solutions, or open a [new issue](https://github.com/OpenSpace/OpenSpace/issues/new). You can also reach us on our [Slack](https://openspacesupport.slack.com).
