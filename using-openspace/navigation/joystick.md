@@ -130,30 +130,49 @@ It is possible to customize the joystick navigation to your own liking. However,
 Here is a list of some issues you can encounter related to the controllers and some tips on how to fix them.
 
 ### OpenSpace Does Not React to the Controller Input
-The first thing to check here is that the controller is connected correctly to the computer, that the correct asset file has been included in the profile, and that the right profile is run. If OpenSpace still does not react to the controller then it is possible that your controller has a different name than what OpenSpace expects. You can check the name of your controller when OpenSpace is running in any profile. Press the *F1* button on the keyboard and you will see the old GUI interface of OpenSpace pop up. In the window called **OpenSpace GUI**, press the empty checkbox next to **Joysticks Information**. This will open a new window and here all the connected controllers will be listed. In this list you can search for your controller and note down what name it has in the list, ignoring the number in the end. The items in the list called *3Dconnexion KMJ Emulator* or *Summed contributions* can be ignored. The next step is to change the name of the controller in the asset file. Start by opening the asset file corresponding to your controller in a text editor. You will need to change one line of code that specifies the controller name, you can see an example for the Xbox controller below (all other joystick assets look similar).
+First, check that the controller is connected, the correct asset file is included in the profile, and the correct profile is running. If OpenSpace still does not detect the controller, the controller name may not match the expected name.
+
+To find the controller name, press *F2* while OpenSpace is running to open the "old" (legacy) OpenSpace GUI. In the window called **OpenSpace GUI**, enable the **Joysticks Information** window to view connected controllers. Find your controller in the list and note its name (ignore the number at the end). The items in the list called *3Dconnexion KMJ Emulator* or *Summed contributions* can be ignored.
+
+Next, open the controller's asset file in a text editor and update the line specifying the controller name. An example for the PS4 controller is shown below (other joystick assets have a similar structure).
 
 ```lua
+local name = "Wireless Controller"; -- Change this to the name of your controller
+
 asset.onInitialize(function()
-  local controller = XBoxController;
-  local name = "Xbox Controller"; -- Change this to the name of your controller
+  local controller = PS4Controller;
 
   local deadzoneJoysticks = 0.2
   local deadzoneTriggers = 0.05
+  ...
+```
 
+Some assets loads mappings for multiple controllers, for example the `xbox.asset` which loads both a wired and wireless version. In this case, you will instead need to make sure your controller name is included in the list of supported names, as shown below.
+
+```lua
+local names = {
+  "Xbox Controller",
+  "Wireless Xbox Controller"
+} -- Add the name of your controller to this list
+
+
+local function bindInputs(name)
+  local controller = XBoxController
+
+  local deadzoneJoysticks = 0.2
+  local deadzoneTriggers = 0.05
   ...
 ```
 
 ### OpenSpace Keeps Spinning Even When the Joysticks Are Not Touched
-This issue is caused by the deadzone being too small for the joysticks or the triggers on the controller. To fix it you can increase the size of the deadzone by editing one or two lines in the asset file. Start by opening the asset file corresponding to your controller in a text editor. You will need to change one or two lines of code that specify the deadzone size for the joysticks and triggers respectively, you can see an example for the PS4 controller below (all other joystick assets look similar).
+This issue is caused by a joystick or trigger deadzone that is too small. To fix it, open the asset file for your controller in a text editor and increase the deadzone values. The file contains one or two lines defining the deadzone size for the joysticks and triggers, respectively. An example for the PS4 controller is shown below (other joystick assets follow a similar structure).
 
 ```lua
 asset.onInitialize(function()
   local controller = PS4Controller;
-  local name = "Wireless Controller";
 
   local deadzoneJoysticks = 0.2 -- Increase this number to increase the deadzone for the joysticks
   local deadzoneTriggers = 0.05 -- Increase this number to increase the deadzone for the triggers
-
   ...
 ```
 
