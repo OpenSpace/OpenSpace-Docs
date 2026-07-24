@@ -1,117 +1,113 @@
 # Joystick Navigation
-In addition to the normal navigation using the keyboard and mouse, it is also possible to navigate using a controller, such as an Xbox controller, PS4/PS5 controller, or a SpaceMouse. If you want to use any of these supported controllers you need to include their corresponding `.asset` file in a profile. See the manual on [Profiles](/profiles/index) for further information about this. All of the joystick assets are located in the sub-folder `data/assets/util/joysticks` inside the OpenSpace folder. It is important to include the right asset file for the type of controller you are using. For example, the wireless Xbox asset will not work with a non-wireless Xbox controller and vice versa. If you are unsure about what type of controller you are using, you could instead try to include the `any-joystick` asset. This asset will try to auto-detect what type of controller is connected to the computer and add the corresponding asset file automatically. If you want to use a controller that does not have an already provided asset file in OpenSpace, you can create your own asset file for it, see [Joystick Customization](joystick-customization) for an in-depth guide. The same page also includes information on how to customize the asset files to enable new functionality.
+In addition to keyboard and mouse controls, OpenSpace also supports game controllers (such as Xbox controllers) and SpaceMouse devices. To use one of these controllers, simply connect it and make sure to include its corresponding `.asset` file in your profile, or simply drag-and-drop the asset file into OpenSpace when it is running.
+
+The joystick assets are located in the `data/assets/util/joysticks` folder inside the OpenSpace folder. Make sure to include the asset that matches your controller. If you are unsure which controller type you have, you could instead try to include the `any-joystick` asset. This asset checks what type of controller is connected to the computer and adds the corresponding asset file automatically, if available.
+
+We have prepared assets for some common gamepad controllers (Xbox, PS4/PS5) and for the SpaceMouse. The following sections describe how to use these controllers in OpenSpace and what each button or joystick does.
+
+If your controller is not supported by a provided asset, you can create your own. See [Joystick Customization](joystick-customization) for instructions on creating and customizing joystick assets.
 
 
-## Xbox Controller
-The image below shows a map of the buttons and joysticks on an Xbox controller.
+## Xbox and PS4/PS5 Controllers
+Navigation using an Xbox, PS4/PS5 controller in OpenSpace is defined in the respective asset files (`xbox.asset`, `ps4.asset`, `ps5.asset`). These all define the same functionality, but the buttons and joysticks are mapped to the respective controller.
 
-:::{image} xbox.png
+The schematics and table below show the buttons and joysticks on each controller and their assigned functions in the provided assets. N/A indicates that no function is assigned by default. Read more about how to add or customize functionality in [Joystick Customization](joystick-customization).
+
+
+::::::{container} only-light
+:::::{grid} 1 1 1 2
+::::{grid-item}
+:::{figure} xbox.png
 :alt: "Xbox Controller Schematic"
-:width: 80%
+:width: 100%
 :align: center
-:class: only-light
+Xbox controller
 :::
+::::
+::::{grid-item}
+:::{figure} ps4.png
+:alt: "PS4 Controller Schematic"
+:width: 100%
+:align: center
+PS4 controller (PS5 has same layout)
+:::
+::::
+:::::
+::::::
 
-:::{image} xbox_dark.png
+::::::{container} only-dark
+:::::{grid} 1 1 1 2
+::::{grid-item}
+:::{figure} xbox_dark.png
 :alt: "Xbox Controller Schematic"
-:width: 80%
+:width: 100%
 :align: center
-:class: only-dark
+Xbox controller
 :::
-
-
-Navigation using an Xbox controller in OpenSpace is defined in the Xbox asset file (`xbox.asset`) or the Xbox wireless asset file (`xbox-wireless.asset`). The table below shows the function for each button or joystick on the Xbox controller. NA in the table specifies that this button or joystick has no functionality per default, read more about how to add or customize functionality in [Joystick Customization](joystick-customization).
+::::
+::::{grid-item}
+:::{figure} ps4_dark.png
+:alt: "PS4 Controller Schematic"
+:width: 100%
+:align: center
+PS4 controller (PS5 has same layout)
+:::
+::::
+:::::
+::::::
 
 :::{table}
 :align: center
-| Button or joystick | Description |
-| ------------------ | ----------- |
-| A | Toggle rotation friction |
-| B | Toggle zoom friction |
-| Y | Toggle roll friction |
-| X | NA |
-| LB | Focus on the previous object in the interesting objects list |
-| RB | Focus on the next object in the interesting objects list |
-| LT | Zoom out |
-| RT | Zoom in |
-| Up | Pressed: Enable local roll for right joystick left/right <br/>Released: Disable local roll for right joystick left/right |
-| Right | Make time go faster forward, press several times for faster |
-| Left | Make time go faster backward, press several times for faster |
-| Down | Reset time speed to real-time |
-| Left joystick up/down | Orbit around focus up/down |
-| Left joystick left/right | Orbit around focus left/right |
-| Left joystick Press | NA |
-| Right joystick up/down | Pan camera up/down |
-| Right joystick left/right | Pan camera left/right <br/>If Up is pressed: Roll camera |
-| Right joystick Press | Refocus the camera, look at the currently focused object |
-| Select | Reset time to yesterday |
-| Start | Pause time |
-
-:::
-
-
-## PS4/PS5 Controller
-The navigation using an Xbox or PS4/PS5 controller is very similar, the only difference is the layout of the controllers. Otherwise, the functionality is the same. The image below shows a map of the buttons and joysticks on a PS4 controller (a PS5 controller is very similar).
-
-:::{image} ps4.png
-:alt: "PS4 Controller Schematic"
-:width: 80%
-:align: center
-:class: only-light
-:::
-
-:::{image} ps4_dark.png
-:alt: "PS4 Controller Schematic"
-:width: 80%
-:align: center
-:class: only-dark
-:::
-
-
-Navigation using a PS4 controller in OpenSpace is defined in the PS4 asset file (`ps4.asset`), and the PS5 controller in `ps5.asset`. The table below gives an overview of what each button or joystick on the PS4 controller does in OpenSpace (a PS5 controller is very similar). NA in the table specifies that this button or joystick has no functionality per default, read more about how to add or customize functionality in [Joystick Customization](joystick-customization).
-
-:::{table}
-:align: center
-| Button or joystick | Description |
-| ------------------ | ----------- |
-| Cross | Toggle rotation friction |
-| Circle | Toggle zoom friction |
-| Triangle | Toggle roll friction |
-| Square | NA |
-| L1 | Focus on the previous object in the interesting objects list |
-| R1 | Focus on the next object in the interesting objects list |
-| L2 | Zoom out |
-| R2 | Zoom in |
-| Up | Pressed: Enable local roll for right joystick left/right <br/> Released: Disable local roll for right joystick left/right |
-| Right | Make time go faster forward, press several times for faster |
-| Left | Make time go faster backward, press several times for faster |
-| Down | Reset time speed to real-time |
-| Left joystick up/down | Orbit around focus up/down |
-| Left joystick left/right | Orbit around focus left/right |
-| Left joystick Press | NA |
-| Right joystick up/down | Pan camera up/down |
-| Right joystick left/right | Pan camera left/right <br/>If Up is pressed: Roll camera |
-| Right joystick Press | Refocus the camera, look at the currently focused object |
-| Share | NA |
-| Options | Reset time to yesterday |
-| Touch Pad | Pause time |
-| PS | NA |
-
+| XBOX | PS4/PS5 | Description |
+| ---- | ------- | ----------- |
+| A | Cross | Toggle rotation friction |
+| B | Circle | Toggle zoom friction |
+| Y | Triangle | N/A |
+| X | Square | Reset time to yesterday (and real-time speed) |
+| LB | L1 | Roll left |
+| RB | R1 | Roll right |
+| LT | L2 | Zoom out |
+| RT | R2 | Zoom in |
+| Up | Up | Pause/Unpause time |
+| Right | Right | Make time go faster forward, press several times for faster |
+| Left | Left | Make time go faster backward, press several times for faster |
+| Down | Down | Reset time speed to real-time |
+| Left joystick up/down | Left joystick up/down | Orbit around focus up/down |
+| Left joystick left/right | Left joystick left/right | Orbit around focus left/right |
+| Left joystick Press | Left joystick Press | Jump to the current anchor node |
+| Right joystick up/down | Right joystick up/down | Pan camera up/down |
+| Right joystick left/right | Right joystick left/right | Pan camera left/right |
+| Right joystick Press | Right joystick Press | Refocus the camera, look at the currently focused object |
+| Back | Share | Focus on the previous object in the interesting objects list |
+| Start | Options | Focus on the next object in the interesting objects list |
+| | Touch Pad | N/A |
+| | PS | N/A |
 :::
 
 
 ## SpaceMouse
-The SpaceMouse is a controller that has a joystick with 6 degrees of freedom that is sold by the company [3Dconnexion](https://3dconnexion.com/uk/spacemouse/). There are a few different versions of it and therefore there are a few different versions of the asset files that specify the navigation. The versions that are currently supported (since release 0.18.0) are the SpaceMouse Compact (`space-mouse-compact.asset`) and the SpaceMouse Enterprise (`space-mouse-enterprise.asset`). Both of these can be in wireless mode `space-mouse-compact-wireless.asset` and `space-mouse-enterprise-wireless.asset` respectively. The image below is a map of the different movements of the SpaceMouse and a translation of the terminology used by 3Dconnexion (3D) and the terminology used by OpenSpace (OS).
+The SpaceMouse is a controller that has a joystick with 6 degrees of freedom that is sold by the company [3Dconnexion](https://3dconnexion.com/uk/spacemouse/). There are a few different versions of it and therefore there are a few different versions of the asset files that specify the navigation. The versions that are currently supported (since release 0.18.0) are the SpaceMouse Compact (`space-mouse-compact.asset`) and the SpaceMouse Enterprise (`space-mouse-enterprise.asset`).
 
-:::{image} spacemouse-map.png
+The image below is a map of the different movements of the SpaceMouse and a translation of the terminology used by 3Dconnexion (3D) and the terminology used by OpenSpace (OS).
+
+:::{figure} spacemouse-map.png
 :alt: "Spacemouse Mapping Schematic"
 :align: center
+Space Mouse mapping schematic, showing the different movements and their corresponding terminology in OpenSpace and 3Dconnexion.
 :::
 
-The table below gives an overview of what each button or joystick on the SpaceMouse does in OpenSpace. The `Left` and `Right` buttons are only supported for the Compact version of the SpaceMouse. However, if you are using the Enterprise version you can bind some of the buttons to a regular key on the keyboard and bind actions to them.
+:::::{grid} 1 1 1 2
+
+::::{grid-item}
+The table to the right summarizes the SpaceMouse buttons and joystick controls in OpenSpace. The `Left` and `Right` buttons are only available on the Compact version. On the Enterprise version, these buttons can instead be mapped to keyboard keys and assigned actions.
+
+The `Left` and `Right` buttons switch between local and global roll modes. Local roll rotates the camera around the screen center, while global roll rotates it around the current focus.
+::::
+
+::::{grid-item}
 
 :::{table}
-:align: center
+:align: right
 | Button or joystick | Description |
 | ------------------ | ----------- |
 | Push left/right | Orbit around focus left/right |
@@ -122,11 +118,10 @@ The table below gives an overview of what each button or joystick on the SpaceMo
 | Tilt up/down | Pan camera up/down |
 | Left button | Switch to local roll mode (Default) |
 | Right button | Switch to global roll mode |
-
 :::
 
-The Left and Right buttons switch the roll mode to local or global respectively. The difference between these two is that the local roll mode rolls the camera around the center of the screen, while the global roll mode rolls the camera around the current focus.
-
+::::
+:::::
 
 ## Customizing the Joystick Navigation
 It is possible to customize the joystick navigation to your own liking. However, this will require some editing in the asset files, for an in-depth guide on how to do this see [Joystick Customization](joystick-customization). There you can also read more about how to define your own asset for a controller that OpenSpace does not yet provide an asset.
