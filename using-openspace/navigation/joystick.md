@@ -149,7 +149,7 @@ asset.onInitialize(function()
   ...
 ```
 
-Some assets loads mappings for multiple controllers, for example the `xbox.asset` which loads both a wired and wireless version. In this case, you will instead need to make sure your controller name is included in the list of supported names, as shown below.
+Some assets load mappings for multiple controllers, for example the `xbox.asset` which loads both a wired and wireless version. In this case, you will instead need to make sure your controller name is included in the list of supported names, as shown below.
 
 ```lua
 local names = {
