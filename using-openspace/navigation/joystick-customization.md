@@ -7,7 +7,7 @@ To start, you will need an asset file to edit. If you are using a controller tha
 ## Bind a Camera Navigation to a Joystick Axis
 To bind a camera movement to an axis of the controller you will need the function `openspace.navigation.bindJoystickAxis` that takes eight arguments. Below is a list that describes each argument in detail. If you are customizing an already existing asset then you probably do not want to add a new camera movement binding, instead, you might want to alter the pre-existing ones. To customize a camera movement it is most likely only necessary to change a few of the input values in the pre-existing function call to the function `openspace.navigation.bindJoystickAxis`.
 
-  1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation Issues](./joystick.md#joystick-issue-noinput)). It is important that this name matches the name that OpenSpace detects for the controller.
+  1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation Issues](joystick-issue-noinput)). It is important that this name matches the name that OpenSpace detects for the controller.
   1. The index of which axis on the controller you want to bind the camera movement to. This is distinct for the type of controller you will use and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
   1. The type of camera movement you want this axis to do. This defines how the camera will move in OpenSpace when you move the specified axis of the controller. Must be one of the identifiers in the following list:
 
@@ -65,7 +65,7 @@ end)
 
 ## Bind a Property to a Joystick Axis
 To control an OpenSpace property using an axis on a controller you will need the function `openspace.navigation.bindJoystickAxisProperty` that takes seven arguments. Below is a list that describes each argument in detail.
-  1. The name of the controller you want to use (for more info on how to find this name, see  [Joystick Navigation Issues](./joystick.md#joystick-issue-noinput)). It is important that this name matches the name that OpenSpace detects for the controller.
+  1. The name of the controller you want to use (for more info on how to find this name, see  [Joystick Navigation Issues](joystick-issue-noinput)). It is important that this name matches the name that OpenSpace detects for the controller.
   1. The index of which axis on the controller you want to bind the property to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup New Joystick Type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
   1. The full identifier for the property you want to control with this axis on the controller. A tip to find this identifier is to first run OpenSpace normally and change the property with the normal GUI, then you can look at the Script Log and see the full name of the property you just changed, for more information about the Script Log see [The Script Log](/using-openspace/scripting/console/index.md#the-script-log).
   1. (Optional) The minimum value allowed to be set for this property using the axis. Defaults to `0.0`.
@@ -119,7 +119,7 @@ end)
 
 ## Bind a Script to a Joystick Button
 Binding a custom script to a controller button is done with the function `openspace.navigation.bindJoystickButton` that takes six arguments. Below is a list that describes each argument in detail:
-  1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation Issues](./joystick.md#joystick-issue-noinput)). It is important that this name matches the name that OpenSpace detects for the controller.
+  1. The name of the controller you want to use (for more info on how to find this name, see [Joystick Navigation Issues](joystick-issue-noinput)). It is important that this name matches the name that OpenSpace detects for the controller.
   1. The index of which button on the controller you want to bind the script to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup new joystick type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.A` or `controller.DPad.Left`.
   1. The script that should be executed when the button is activated. A tip to find this script is to use the Script Log, for more information see [The Script Log](/using-openspace/scripting/console/index.md#the-script-log).
   1. Description of the script that the button will execute when the button is activated.

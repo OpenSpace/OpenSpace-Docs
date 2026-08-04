@@ -129,7 +129,7 @@ It is possible to customize the joystick navigation to your own liking. However,
 ## Issues and Solutions
 Here is a list of some issues you can encounter related to the controllers and some tips on how to fix them.
 
-:::{dropdown} OpenSpace Does Not React to Controller Input  ([Link](#joystick-issue-noinput))
+:::{dropdown} OpenSpace Does Not React to Controller Input ([Link](#joystick-issue-noinput))
 (joystick-issue-noinput)=
 
 First, check that the controller is connected, the correct asset file is included in the profile, and the correct profile is running. If OpenSpace still does not detect the controller, the controller name may not match the expected name.
