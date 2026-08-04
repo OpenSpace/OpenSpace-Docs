@@ -93,7 +93,7 @@ The image below is a map of the different movements of the SpaceMouse and a tran
 :::{figure} spacemouse-map.png
 :alt: "Spacemouse Mapping Schematic"
 :align: center
-Space Mouse mapping schematic, showing the different movements and their corresponding terminology in OpenSpace and 3Dconnexion.
+SpaceMouse mapping schematic, showing the different movements and their corresponding terminology in OpenSpace and 3Dconnexion.
 :::
 
 :::::{grid} 1 1 1 2
