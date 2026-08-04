@@ -1,5 +1,5 @@
 # Joystick Navigation
-In addition to keyboard and mouse controls, OpenSpace also supports game controllers (such as Xbox controllers) and SpaceMouse devices. To use one of these controllers, connect it and make sure to include its corresponding `.asset` file in your profile, or either drag-and-drop the asset file into OpenSpace when it is running or pick it from the Asset window.
+In addition to keyboard and mouse controls, OpenSpace also supports game controllers (such as Xbox controllers) and SpaceMouse devices. To use one of these controllers, connect it and make sure to include its corresponding `.asset` file in your profile. Alternatively, drag-and-drop the asset file into OpenSpace while it is running or select it from the Asset window.
 
 The joystick assets are located in the `data/assets/util/joysticks` folder inside the OpenSpace folder. Make sure to include the asset that matches your controller. If you are unsure which controller type you have, you could instead try to include the `any-joystick` asset. This asset checks what type of controller is connected to the computer and adds the corresponding asset file automatically, if available.
 
