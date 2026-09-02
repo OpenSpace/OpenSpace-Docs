@@ -1,4 +1,4 @@
-# PathNavigation - Simplifying navigation in OpenSpace
+# Automatic Flight Paths
 As of version 0.18.0, OpenSpace includes a system that simplifies navigation by automatically steering the camera to a desired target. Note that the system is *experimental* and will be subject to change in the future, but it is still useful to reduce the amount of manual navigation needed to control OpenSpace.
 
 The system is based on a thesis work by Ingela Rossing and Emma Broman, done in 2020.
