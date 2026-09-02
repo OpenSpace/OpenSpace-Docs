@@ -137,3 +137,18 @@ openspace.pathnavigation.createPath({
     Duration = 5.0 -- Other options, such as duration, can also be specified
 })
 ```
+
+## Utility Functions
+The scripting API also includes some utility functions for working with camera paths when scripting. These can be used to check if a path is currently playing, to cancel a path, or to get the current path progress.
+
+The most commonly used function lives in the [`openspace.navigation`](/reference/scripting-api/openspace.navigation) sublibrary, and is called [`openspace.navigation.isFlying()`](#navigationisflying-target). It can be used to check if a path is currently playing.
+
+A number of other functions can be found in the [`openspace.pathnavigation`](/reference/scripting-api/openspace.pathnavigation) sublibrary, including functions for aborting a path or pausing it during playback, for example.
+
+## The Camera Paths are Under Development
+
+The camera path system is still under development, and the available functions and their behavior may change in future releases. If you interested in the camera path system and plans for the development, feel free to check the [currently open issues related to camera paths](https://github.com/OpenSpace/OpenSpace/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Feature%3A%20Camera%20Paths%22) on Github.
+
+:::{important}
+Many of the features described here are also considered experimental, and may not work as expected in all situations. If you encounter any issues, or have ideas for improvement, please report them on Github or contact the OpenSpace team.
+:::

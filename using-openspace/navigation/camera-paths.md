@@ -75,3 +75,11 @@ The path system can also be controlled using the scripting API, which also allow
 
 camera-paths-scripting
 :::
+
+## The Camera Paths are Under Development
+
+The camera path system is still under development, and the available functions and their behavior may change in future releases. If you interested in the camera path system and plans for the development, feel free to check the [currently open issues related to camera paths](https://github.com/OpenSpace/OpenSpace/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Feature%3A%20Camera%20Paths%22) on Github.
+
+:::{important}
+Many of the features described here are also considered experimental, and may not work as expected in all situations. If you encounter any issues, or have ideas for improvement, please report them on Github or contact the OpenSpace team.
+:::
