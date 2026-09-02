@@ -6,6 +6,7 @@ For navigation basics, see the Getting Started page below to learn how to move a
 :::{toctree}
 :maxdepth: 1
 :hidden:
+
 basic-navigation
 :::
 
