@@ -1,0 +1,116 @@
+# Creating Camera Paths Using Scripting
+
+The Scripting API includes functions for creating camera paths to specific positions and for providing more detailed fly-to behavior. This page gives an overview of the available functions and som tips on how to use them.
+
+Before reading this page, we recommend to first read the [Settings](#camera-paths-settings) part of the [Camera Paths](camera-paths) page, which explains the different available path types and settings.
+
+For the most up-to-date information on available functions and how they work, see the `openspace.navigation` and `openspace.pathnavigation` parts of the [Scripting API Reference](/reference/scripting-api/index).
+
+## Fly to a Target
+To fly to a target using the scripting API, you can use the `openspace.navigation.flyTo` function. This function takes a single parameter, which is the name of the target node in the scene graph. The target node must have a valid bounding sphere for the fly-to to work correctly.
+
+```lua
+openspace.navigation.flyTo("Earth")
+```
+
+## Flying to a Specific Position or Height
+
+There are a few available functions for flying to a specific position or height in relation to a scene graph node.
+
+| Function | Description |
+| -------- | ----------- |
+| [`openspace.navigation.flyToHeight`](#navigationflytoheight-target) | Fly to a specific height above a scene graph node. |
+| [`openspace.navigation.flyToGeo`](#navigationflytogeo-target) | Fly to a latitude/longitude/altitude target relative to a scene graph node. The node is often a globe (for example Earth), but it can also be any other node. |
+| [`openspace.navigation.flyToNavigationState`](#navigationflytonavigationstate-target) | Fly to a specific [NavigationState](#core-navigation-state). Note that the timestamp will not be used in the fly-to operation, and you need to make sure that the simulation time is set correctly for the behavior you expect. |
+
+For all of these, it is also possible to some specify additional parameters such as the duration of the path and the up-direction of the target node. See code examples using Lua below.
+
+```lua
+-- Fly to a specific height above a scene graph node
+openspace.navigation.flyToHeight("Earth", 100000)
+
+-- Fly to a specific height above a scene graph node using the up-direction of the reference node and parameters
+openspace.navigation.flyToHeight("Earth", 100000, true)
+
+-- Fly to a specific height above a scene graph node with a specified duration (5 seconds   )
+openspace.navigation.flyToHeight("Earth", 100000, 5.0)
+```
+
+```lua
+-- Fly to a latitude, longitude, altitude position relative to Earth
+openspace.navigation.flyToGeo("Earth", 45.0, -120.0, 10000)
+
+-- Fly to a latitude, longitude, altitude position relative to Earth, using the
+-- up-direction of the reference node and a specified duration (5 seconds)
+openspace.navigation.flyToGeo("Earth", 45.0, -120.0, 10000, true, 5.0)
+```
+
+```lua
+-- Fly to a specific navigation state
+-- Note that the timestamp will not be used in the fly-to, but is included here for context
+openspace.navigation.flyToNavigationState({
+    Up = { -0.3381334006389302, 0.8719917989296857, 0.35397189997473527 },
+    Position = { -1205410.4887627328,  941781.8267593941, -3471506.006929062 },
+    Anchor = "Mars",
+    Timestamp = "2026 SEP 01 14:57:06"
+})
+```
+
+:::{admonition} Enable roll for correct up-direction
+For the up-direction to be correct when using the up-direction of the target or a navigation state, the {menuselection}`Navigation handler -> Path Navigator -> Include roll` setting must be enabled. Otherwise, the camera will not have the correct orientation when reaching the target state.
+:::
+
+## Instant Flight (Jump)
+There are also "jump-to" versions for some of the navigation functions. These move the camera instantly, using a fading transition, rather than a continuous motion. Examples are [`openspace.navigation.jumpTo`](#navigationjumpto-target), [`openspace.navigation.jumpToGeo`](#navigationjumptogeo-target), and [`openspace.navigation.jumpToNavigationState`](#navigationjumptonavigationstate-target).
+
+## More Customized Camera Paths
+
+The most flexible way to create a camera path is to use the [`openspace.pathnavigation.createPath`](#pathnavigationcreatepath-target) function, which lets you create some paths that the other functions cannot be used for. For context, the other functions are convenience wrappers around `createPath` that use default parameter values.
+
+In a single call, you can define the target position (with varying level of detail), the desired [path type](#about-path-types), and the duration. You can also provide an optional start position and orientation using a [NavigationState](#core-navigation-state), which can be used to create a path from a specific point in space instead of the current camera position.
+
+The `createPath` function takes a table of parameters that can be used to customize the path, called a [PathInstruction](#core-path-instruction). This lets you create two different types of paths: a path to a position in relation to a scene graph node, or a path to a specific navigation state. For the node option, the target position can be specified in different ways, depending on the level of detail you want to provide. See the [PathInstruction](#core-path-instruction) docuemtnation for more details.
+
+### Node Target
+
+Below are some examples of a path to a position in relation to a scene graph node is shown below:
+
+```lua
+-- Create a path to the Earth node, with a duration of 5 seconds
+openspace.pathnavigation.createPath({
+    TargetType = "Node",
+    Target = "Earth",
+    Duration = 5.0
+})
+
+-- Create a path to a position 1,000,000 meters above the Earth node, with North
+-- as the up-direction
+openspace.pathnavigation.createPath({
+    TargetType = "Node",
+    Target = "Earth",
+    Height = 1000000,
+    UseTargetUpDirection = true
+})
+
+-- Create a path from a given start position, to Earth, using a zoom-out effect, over 5 seconds
+openspace.pathnavigation.createPath({
+    TargetType = "Node",
+    Target = "Earth",
+    StartState = { ... }, -- The navigation state to start from
+    PathType = "ZoomOutOverview",
+    Duration = 5.0
+})
+```
+
+### Navigation State Target
+
+When it comes to creating a path to a specific navigation state, most of the functionality is available through `openspace.navigation.flyToNavigationState` function.  However, the `createPath` function can for example be used to include a specific start position and orientation, which is not possible with `flyToNavigationState`. An example of this is shown below:
+
+```lua
+openspace.pathnavigation.createPath({
+    TargetType = "NavigationState",
+    NavigationState = { ... }, -- The navigation state to fly to
+    StartState = { ... }, -- The navigation state to start from
+    Duration = 5.0 -- Other options, such as duration, can also be specified
+})
+```
