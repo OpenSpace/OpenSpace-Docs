@@ -81,5 +81,9 @@ camera-paths-scripting
 The camera path system is still under development, and the available functions and their behavior may change in future releases. If you interested in the camera path system and plans for the development, feel free to check the [currently open issues related to camera paths](https://github.com/OpenSpace/OpenSpace/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Feature%3A%20Camera%20Paths%22) on Github.
 
 :::{important}
-Many of the features described here are also considered experimental, and may not work as expected in all situations. If you encounter any issues, or have ideas for improvement, please report them on Github or contact the OpenSpace team.
+The generated camera paths are considered experimental and may not work as expected in all situations. They have primarily been calibrated to create nice flights between different scene graph nodes, and may not work as well for more complex camera scenarios, such as close to planetary surfaces or for flying between certain navigation states.
+
+If you are relying on camera paths for a specific use case, we recommend testing them thoroughly to ensure that they work as expected. In sensitive situations, it may be better to use the session recording system to create a recorded path that is guaranteed to work as expected.
+
+If you encounter any issues, or have ideas for improvement, please report them on Github or contact the OpenSpace team.
 :::
