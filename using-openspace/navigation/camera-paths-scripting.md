@@ -5,7 +5,7 @@ The Scripting API includes functions for creating camera paths to specific posit
 For the most up-to-date information on available functions and how they work, see the `openspace.navigation` and `openspace.pathnavigation` parts of the [Scripting API Reference](/reference/scripting-api/index).
 
 :::{note}
-Before reading this page, you should first have a look at the [Settings](#camera-paths-settings) part of the [Camera Paths](camera-paths) page, which explains the different available path types and settings.
+Before reading this page, you should first have a look at the [Settings](camera-paths.md#settings) part of the [Camera Paths](camera-paths) page, which explains the different available path types and settings.
 :::
 
 ## Fly to a Target

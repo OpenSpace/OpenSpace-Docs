@@ -33,7 +33,6 @@ The path system has some limitations that are good to be aware of:
   - If the distance traveled is very far, or if the camera starts inside the target's bounding sphere, a linear path is often used instead of the default type. An info message is shown in the log when this happens.
   - The system assumes that all fly-to targets have a valid bounding sphere. Missing bounding sphere data can lead to unexpected behavior.
 
-(camera-paths-settings)=
 ## Settings
 The settings for the gerenated camera paths can be found in the settings menu under {menuselection}`Navigation handler --> Path Navigator`. Some useful settings are:
 
