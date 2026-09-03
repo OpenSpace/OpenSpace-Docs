@@ -1,6 +1,6 @@
 # Creating Camera Paths Using Scripting
 
-The Scripting API includes functions for creating camera paths to specific positions and for providing more detailed fly-to behavior. This page gives an overview of the available functions and som tips on how to use them.
+The Scripting API includes functions for creating camera paths to specific positions and for providing more detailed fly-to behavior. This page gives an overview of the available functions and some tips on how to use them.
 
 For the most up-to-date information on available functions and how they work, see the `openspace.navigation` and `openspace.pathnavigation` parts of the [Scripting API Reference](/reference/scripting-api/index).
 
@@ -92,11 +92,11 @@ The most flexible way to create a camera path is to use the [`openspace.pathnavi
 
 In a single call, you can define the target position (with varying level of detail), the desired [path type](./camera-paths.md#about-path-types), and the duration. You can also provide an optional start position and orientation using a [NavigationState](#core_navigationstate), which can be used to create a path from a specific point in space instead of the current camera position.
 
-The `createPath` function takes a table of parameters that can be used to customize the path, called a [PathInstruction](#core_path_instruction). This lets you create two different types of paths: a path to a position in relation to a scene graph node, or a path to a specific navigation state. For the node option, the target position can be specified in different ways, depending on the level of detail you want to provide. See the [PathInstruction](#core_path_instruction) docuemtnation for more details.
+The `createPath` function takes a table of parameters that can be used to customize the path, called a [PathInstruction](#core_path_instruction). This lets you create two different types of paths: a path to a position in relation to a scene graph node, or a path to a specific navigation state. For the node option, the target position can be specified in different ways, depending on the level of detail you want to provide. See the [PathInstruction](#core_path_instruction) documentation for more details.
 
 ### Node Target
 
-Below are some examples of a path to a position in relation to a scene graph node is shown below:
+Below are some examples of paths to positions in relation to a scene graph node:
 
 ```lua
 -- Create a path to the Earth node, with a duration of 5 seconds
@@ -147,7 +147,7 @@ A number of other functions can be found in the [`openspace.pathnavigation`](/re
 
 ## The Camera Paths are Under Development
 
-The camera path system is still under development, and the available functions and their behavior may change in future releases. If you interested in the camera path system and plans for the development, feel free to check the [currently open issues related to camera paths](https://github.com/OpenSpace/OpenSpace/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Feature%3A%20Camera%20Paths%22) on Github.
+The camera path system is still under development, and the available functions and their behavior may change in future releases. If you are interested in the camera path system and plans for its development, feel free to check the [currently open issues related to camera paths](https://github.com/OpenSpace/OpenSpace/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Feature%3A%20Camera%20Paths%22) on GitHub.
 
 :::{important}
 The generated camera paths are considered experimental and may not work as expected in all situations. They have primarily been calibrated to create nice flights between different scene graph nodes, and may not work as well for more complex camera scenarios such as navigation states, for example.

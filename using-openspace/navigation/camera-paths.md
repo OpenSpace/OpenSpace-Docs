@@ -5,7 +5,7 @@ The system is based on a thesis work by Ingela Rossing and Emma Broman, done in 
 
 
 ## Flying to a Target
-The Navigation menu includes a fly-to action for targets in the list. Click one of the icons listed below to start an automatic camera path to that target. The same options are also avialble in the context menu for focusable nodes in the Scene menu.
+The Navigation menu includes a fly-to action for targets in the list. Click one of the icons listed below to start an automatic camera path to that target. The same options are also available in the context menu for focusable nodes in the Scene menu.
 
 | Icon | Name | Description |
 | ---- | ------ | ----------- |
@@ -25,7 +25,7 @@ The path system determines the route based on the current situation and the sele
 :align: right
 :::
 
-A camera path can be aborted at any time by clicking the cancel button in the toolbar menu, which appears when a path is playing. This button also shows the current anchor node, which becomes the focus if a path if the path is aborted.
+A camera path can be aborted at any time by clicking the cancel button in the toolbar menu, which appears when a path is playing. This button also shows the current anchor node, which becomes the focus if a path is aborted.
 
 ## Caveats
 The path system has some limitations that are good to be aware of:
@@ -78,7 +78,7 @@ camera-paths-scripting
 
 ## The Camera Paths are Under Development
 
-The camera path system is still under development, and the available functions and their behavior may change in future releases. If you interested in the camera path system and plans for the development, feel free to check the [currently open issues related to camera paths](https://github.com/OpenSpace/OpenSpace/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Feature%3A%20Camera%20Paths%22) on Github.
+The camera path system is still under development, and the available functions and their behavior may change in future releases. If you are interested in the camera path system and plans for its development, feel free to check the [currently open issues related to camera paths](https://github.com/OpenSpace/OpenSpace/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Feature%3A%20Camera%20Paths%22) on GitHub.
 
 :::{important}
 The generated camera paths are considered experimental and may not work as expected in all situations. They have primarily been calibrated to create nice flights between different scene graph nodes, and may not work as well for more complex camera scenarios, such as close to planetary surfaces or for flying between certain navigation states.
