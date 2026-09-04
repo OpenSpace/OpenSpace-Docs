@@ -77,8 +77,8 @@ Add other panels using the {menuselection}`View --> Toolbar` Menu.
     - Displays an interactive, getting started tour of OpenSpace.
 
 *   - ![Settings Panel Button](/using-openspace/toolbar/settings/toolbar_button_settings.png)
-    - ### Settings Panel
-    - *Page coming soon...*
+    - ### [Settings Panel](/using-openspace/toolbar/settings/index)
+    - A general description of the settings panel items.
 
 *   - ![Flight Control Panel Button](/using-openspace/toolbar/flight-control/toolbar_button_flight_control.png)
     - ### Flight Control Panel
@@ -131,5 +131,6 @@ keybinds/index
 record/index
 user-panels/index
 tour-panel/index
-
+settings/index
+flight-control/index
 :::
