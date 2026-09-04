@@ -29,6 +29,7 @@ A camera path can be aborted at any time by clicking the cancel button in the to
 
 ## Caveats
 The path system has some limitations that are good to be aware of:
+
   - Simulation time is paused when a path starts and resumed when it finishes. For best results, pause time manually or use a slow simulation speed before starting a path.
   - If the distance traveled is very far, or if the camera starts inside the target's bounding sphere, a linear path is often used instead of the default type. An info message is shown in the log when this happens.
   - The system assumes that all fly-to targets have a valid bounding sphere. Missing bounding sphere data can lead to unexpected behavior.
@@ -54,7 +55,7 @@ Here is a short description of the different available path type options:
 
 | Path type | Description |
 | --------- | ----------- |
-| `AvoidCollision` (default) | Avoids nearby scene graph nodes and follows a mostly direct path to the target. Uses spherical interpolation of rotation and does not actively keep the target centered. Works well when both the start and end views are already reasonable. |
+| `AvoidCollision` (default) | Avoids nearby scene graph nodes and follows a mostly direct path to the target. Uses spherical interpolation of rotation and does not actively keep the target centered. Works well when both the start and end views are already valid camera positions. |
 | `ZoomOutOverview` | Moves the camera out to a point where the relevant targets are visible, then approaches the destination. Gives a better overview of the spatial relation between objects. No collision detection is performed. |
 | `Linear` | A straight-line path from the start point to the end point. |
 | `AvoidCollisionWithLookAt` | A temporary type that avoids collisions while trying to keep the target in view as much as possible. It can produce fast rotations in some situations. |
