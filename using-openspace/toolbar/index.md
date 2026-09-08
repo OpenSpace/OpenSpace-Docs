@@ -81,8 +81,8 @@ Add other panels using the {menuselection}`View --> Toolbar` Menu.
     - A general description of the settings panel items.
 
 *   - ![Flight Control Panel Button](/using-openspace/toolbar/flight-control/toolbar_button_flight_control.png)
-    - ### Flight Control Panel
-    - *Page coming soon...*
+    - ### [Flight Control Panel](/using-openspace/toolbar/flight-control/index)
+    - Enables flight controls in an external web browser window.
 
 *   - ![Assets Panel Button](/using-openspace/toolbar/assets/toolbar_button_assets.png)
     - ### Assets Panel
