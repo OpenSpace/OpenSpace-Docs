@@ -1,14 +1,11 @@
 # Testing and Publishing `openspace-api-js` Changes
-
-This guide covers how to try out local changes to [`openspace-api-js`](https://github.com/OpenSpace/openspace-api-js) — such as newly generated types — in a consuming repository, and how to publish those changes as a prerelease or stable release. It applies to any change to the package (new Topics, updated Lua library functions, bug fixes, etc.), not just Topic creation.
+This guide covers how to try out local changes to [`openspace-api-js`](https://github.com/OpenSpace/openspace-api-js), such as newly generated types, in a consuming repository, and how to publish those changes as a prerelease or stable release. It applies to any change to the package (new Topics, updated Lua library functions, bug fixes, etc.), not just Topic creation.
 
 ## 1. Try the new types in a consuming repository
-
 1. In the `openspace-api-js` repository, run `npm pack`. This creates a tarball, e.g. `openspace-api-js-x.x.x.tgz`.
 1. In the consuming repository, run `npm install <path-to-openspace-api-js-x.x.x.tgz>` to install it as a local dependency pointing at your build.
 
 ## 2. Publish the updated package
-
 1. Bump to a prerelease version:
    - For a new prerelease, set an explicit version:
      ```sh
