@@ -12,4 +12,4 @@ Write a schema for the new Topic (see [Writing a JSON Schema](https://github.com
 1. Add the schema to `registerCoreSchemas` in `core_registration.cpp`.
 
 ## Using the Topic
-The Topic is used via the [JavaScript](https://github.com/OpenSpace/openspace-api-js) or [Python](https://github.com/OpenSpace/openspace-api-python), use the same ID registered in step #2 to start the Topic.
+The Topic is used via the [JavaScript](https://github.com/OpenSpace/openspace-api-js) or [Python](https://github.com/OpenSpace/openspace-api-python) APIs. Use the same ID registered in step #2 to start the Topic.

@@ -4,8 +4,8 @@ The [JavaScript API](https://github.com/OpenSpace/openspace-api-js) supports Typ
 This guide walks through generating the corresponding TypeScript types in `openspace-api-js` from an OpenSpace build, and trying them out in a consuming repository (for example, the [WebGui](https://github.com/OpenSpace/OpenSpace-WebGui)).
 
 ## 1. Generate the updated JSON schemas
-If a Topic's schema has changed, it needs to be regenerated. Run OpenSpace's `DocsWriter`. This writes all JSON schemas into `<OpenSpace>/support/types`
-:::(Note)
+If a Topic's schema has changed, it needs to be regenerated. Run OpenSpace's `DocsWriter`. This writes all JSON schemas into `<OpenSpace>/support/types`.
+:::{note}
 Skip this step unless you've changed a Topic's schema.
 :::
 
