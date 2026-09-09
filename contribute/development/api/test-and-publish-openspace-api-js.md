@@ -1,5 +1,7 @@
 # Testing and Publishing Changes to `openspace-api-js`
-This guide covers how to try out local changes to [`openspace-api-js`](https://github.com/OpenSpace/openspace-api-js), such as newly generated types, in a consuming repository (for example, the [WebGui](https://github.com/OpenSpace/OpenSpace-WebGui)), and how to publish those changes as a prerelease or stable release. It applies to any change to the package, for example, new Topics, updated Lua library functions, bug fixes, and other API changes.
+This guide explains how to test local changes to [`openspace-api-js`](https://github.com/OpenSpace/openspace-api-js) in a consuming repository, such as the [WebGui](https://github.com/OpenSpace/OpenSpace-WebGui). It also explains how to publish those changes as prereleases or stable releases using `npm`.
+
+These steps apply to any package change, including newly generated types, new Topics, updated Lua library functions, and bug fixes.
 
 ## 1. Test local changes in a consuming repository
 1. In the `openspace-api-js` repository, run `npm pack`. This creates a tarball, e.g., `openspace-api-js-x.x.x.tgz`.
@@ -38,7 +40,7 @@ npm dist-tag add openspace-api-js@1.0.3 latest
 Note that this only changes what `npm install openspace-api-js` resolves to. It does not turn a prerelease into a stable release.
 
 :::{note}
-**Versioning:** version numbers follow [semantic versioning](https://semver.org/), `major.minor.patch` (e.g., `1.0.3`). Use `npm version patch`, `npm version minor`, or `npm version major` for stable releases depending on the scope of the change, and the prerelease commands above for `-dev` builds. This bumps the corresponding version number by 1.
+**Versioning:** version numbers follow [semantic versioning](https://semver.org/), `major.minor.patch` (e.g., `1.0.3`). Use `npm version patch`, `npm version minor`, or `npm version major` for stable releases depending on the scope of the change. This bumps the corresponding version number by 1. For `-dev` builds, use the prerelease commands above.
 
 Again use `--no-git-tag-version` to avoid automatically committing the change.
 :::

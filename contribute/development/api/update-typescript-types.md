@@ -1,5 +1,5 @@
 # Update TypeScript types from OpenSpace build
-The [JavaScript API](https://github.com/OpenSpace/openspace-api-js) supports TypeScript types which are generated from JSON schemas. The npm package [`openspace-api-js`](https://github.com/OpenSpace/openspace-api-js) ships with pre-generated types targeting a specific OpenSpace version. These types need to be updated regularly, for example, whenever a Topic's schema is changed, adding a new Topic, or updating the Lua API.
+The [JavaScript API](https://github.com/OpenSpace/openspace-api-js) supports TypeScript types that are generated from JSON schemas. The npm package [`openspace-api-js`](https://github.com/OpenSpace/openspace-api-js) ships with pre-generated types targeting a specific OpenSpace version. These types need to be updated regularly, for example, when a Topic's schema changes, a new Topic is added, or the Lua API is updated.
 
 This guide walks through generating the corresponding TypeScript types in `openspace-api-js` from an OpenSpace build, and trying them out in a consuming repository (for example, the [WebGui](https://github.com/OpenSpace/OpenSpace-WebGui)).
 
@@ -10,7 +10,12 @@ Skip this step unless you've changed a Topic's schema.
 :::
 
 ## 2. Generate the TypeScript types
-There are two types that can be generated for the API: [Topic types](https://github.com/OpenSpace/openspace-api-js#topic-types-generate-topic-types) from updated JSON schemas and [Lua API types](https://github.com/OpenSpace/openspace-api-js#lua-library-types-generate-lua-library) from new or updated Lua functions. See `openspace-api-js`'s [Generating types from your OpenSpace build](https://github.com/OpenSpace/openspace-api-js#generating-types-from-your-openspace-build) section for the exact command and prerequisites.
+There are two kinds of types that can be generated for the API:
+
+  - [Topic types](https://github.com/OpenSpace/openspace-api-js#topic-types-generate-topic-types), based on the JSON schemas generated in step 1.
+  - [Lua API types](https://github.com/OpenSpace/openspace-api-js#lua-library-types-generate-lua-library), based on the Lua functions available in the OpenSpace build.
+
+See the `openspace-api-js` guide's [Generating types from your OpenSpace build](https://github.com/OpenSpace/openspace-api-js#generating-types-from-your-openspace-build) section for detailed information about the required prerequisites and exact commands for the generation of both Topic and Lua API types. The generated types are written into the `openspace-api-js` repository.
 
 ## 3. Test local changes in a consuming repository
 1. In the `openspace-api-js` repository, run `npm pack`. This creates a tarball, e.g. `openspace-api-js-x.x.x.tgz`.
