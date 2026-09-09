@@ -5,6 +5,7 @@ OpenSpace provides APIs for interacting with a running OpenSpace instance from e
 :maxdepth: 1
 :caption: JavaScript API
 
-creating-a-new-topic
+topic
+update-typescript-types
 test-and-publish-openspace-api-js
 :::
