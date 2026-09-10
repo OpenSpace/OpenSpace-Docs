@@ -8,7 +8,7 @@ Before reading this page, you should first have a look at the [Settings](camera-
 :::
 
 ## Fly to a Target
-To fly to a target using the scripting API, you can use the `openspace.navigation.flyTo` function. This function takes a single parameter, which is the name of the target node in the scene graph. The target node must have a valid bounding sphere for the fly-to to work correctly.
+To fly to a target using the scripting API, you can use the `openspace.navigation.flyTo` function. This function takes a single parameter, which is the name of the target node in the scene graph. For the fly-to to work correctly, the target node must have a valid size; if an object is focussable in the user interface is a good indicator whether that size has been set.
 
 ```lua
 openspace.navigation.flyTo("Earth")
