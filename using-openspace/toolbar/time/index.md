@@ -159,7 +159,7 @@ Inside the {menuselection}`Settings --> Time Manager` menu, you will find these 
 
 
 ### Fast-forward & Rewind Buttons
-The fast-forward and rewind buttons change the simulation speed according to preset increments defined in a profile. Appearing under each button is the increment it will implement and it will change as you progressively select adjacent increments.
+The ![rewind button](/using-openspace/toolbar/time/time_panel_rewind_button.png){h=18px} and ![fast-forward button](/using-openspace/toolbar/time/time_panel_fast_forward_button.png){h=18px} buttons change the simulation speed according to preset increments defined in a profile. Appearing under each button is the increment it will implement and it will change as you progressively select adjacent increments.
 
 Alternatively, you can use the keyboard shortcuts {kbd}`→` to increase and {kbd}`←` to decrease the simulation time by the increments specified in the profile. For example, in the [](/profiles/default/index.md) Profile, the second time increment is 5.0 (see the *Default Profile Time Increments* dropdown below), and this value is shown under the fast-forward button. If you press the {kbd}`→` key, the simulated time will increase to 5 seconds per second. Press the {kbd}`←` key and it will return to 1 second per second.
 
