@@ -13,6 +13,7 @@ tools/index
 dependencies/index
 coding-style
 structure/index
+api/index
 deploying-windows
 folder-layout
 opengl
