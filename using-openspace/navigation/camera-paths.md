@@ -1,61 +1,88 @@
 # Automatic Flight Paths
-As of version 0.18.0, OpenSpace includes a system that simplifies navigation by automatically steering the camera to a desired target. Note that the system is *experimental* and will be subject to change in the future, but it is still useful to reduce the amount of manual navigation needed to control OpenSpace.
+OpenSpace includes a system that automatically steers the camera to a target object or position. It reduces the amount of manual navigation needed when moving between objects in the scene.
 
-The system is based on a thesis work by Ingela Rossing and Emma Broman, done in 2020.
-
-
-## Flying to a target
-The navigation menu in OpenSpace now includes the possibility to fly to a target, by clicking the airplane button that appears when hovering over an item in the list. The camera will move in a smooth motion to a position where the selected target is focused in view. If the Sun is included in the scene, the system will try to find a sunlit position on the object. It will also try to reduce the risk of collisions with other objects in the scene.
-
-In addition to the fly-to button, the current focus node also has "refocus" button. This triggers a linear motion and rotation to center the object in view.
-
-![Refocus icon](refocus_icon.png) - Refocus (linear motion to center the target in view)
-
-![Refocus icon](flyto_icon.png) - Fly-to (fly using current default path type, see below)
-
-When a path is playing, the Focus menu button changes to a button that can be used to cancel the path. The button also indicates which the current anchor node is. This will be the focus if a path is aborted.
+The system is based on a thesis work by Ingela Rossing and Emma Broman, done in 2020, and has continued to evolve in later OpenSpace releases.
 
 
-## Path types
-The shape of the resulting path depends on the currently selected *path type*. The default type, called `AvoidCollision`, avoids collisions with objects in the scene and tries to rotate the camera as little as possible to avoid creating disorienting rotations. It works well when flying between two targets, like planets, where both of the objects are centered in view. However, since it does not rotate the camera more than necessary it does not work very well when the object we're departing from is not centered in view; for example, from a position on a surface where we are looking a the horizon. In these cases, the `ZoomOutOverview` path type might give a better result. That path type tries to keep targetted nodes in view when leaving/approaching the node. As a consequece it gives a better understanding of the spatial relation, but might introduce fast rotations if not used with care
+## Flying to a Target
+The Navigation menu includes a fly-to action for targets in the list. Click one of the icons listed below to start an automatic camera path to that target. The same options are also available in the context menu for focusable nodes in the Scene menu.
 
-See Settings section for more details on path types and how to change the default choice.
+| Icon | Name | Description |
+| ---- | ------ | ----------- |
+| ![Fly-to icon](flyto_icon.png) | Fly-to | Fly to the target using the current default *path type*, see [below](#about-path-types) |
+| ![Refocus icon](refocus_icon.png) | Zoom-to / Frame | Linear motion to center the target in view |
 
-### Linear paths
-For the "refocus" button, a linear path is used. The camera will then fly in a straight line to the targeted object. This is also the case for any situation that the camera path system might find "troublesome", for example when the path is very long or when the camera starts from a position inside the bounding sphere of the target object.
+The path system determines the route based on the current situation and the selected path type (see below). By default, it tries to:
 
+  - Move the camera smoothly to a useful viewing position, approaching the target from a reasonable direction
+  - Avoid collisions with scene objects when relevant
+  - Prefer a sunlit position if the Sun is part of the scene
+
+## Aborting a Path
+
+:::{image} cancel-flight-button.png
+:alt: Cancel button in the toolbar menu
+:align: right
+:::
+
+A camera path can be aborted at any time by clicking the cancel button in the toolbar menu, which appears when a path is playing. This button also shows the current anchor node, which becomes the focus if a path is aborted.
+
+## Caveats
+The path system has some limitations that are good to be aware of:
+
+  - Simulation time is paused when a path starts and resumed when it finishes. For best results, pause time manually or use a slow simulation speed before starting a path.
+  - If the distance traveled is very far, or if the camera starts inside the target's bounding sphere, a linear path is often used instead of the default type. An info message is shown in the log when this happens.
+  - The system assumes that all fly-to targets have a valid bounding sphere. Missing bounding sphere data can lead to unexpected behavior.
 
 ## Settings
-The `PathNavigator` settings are found under `NavigationHandler` in the settings menu and include some other properties to control how a path is being played/created. Some properties that are good to know about are:
+The settings for the gerenated camera paths can be found in the settings menu under {menuselection}`Navigation handler --> Path Navigator`. Some useful settings are:
 
 | Property | Description |
 | -------- | ----------- |
-| `DefaultPathType` | The type of path that is going to be created when generating a path (see next table) |
-| `SpeedScale` | Can be used to increase or decrease the traversal speed |
-| `ArrivalDistanceFactor` | Decides how far away from a target object the camera should stop. The factor will be multiplied with the bounding sphere of the node and the resulting distance is used to compute the target position when a path is created. |
-| `ApplyIdleMotionOnFinish` | If checked, the currently chosen [Idle Motion](idle-motion) is triggered when the path is finished. Can be used to automatically start a rotation around the target when arriving. |
-| `RelevantNodeTags` | A list of tags of nodes that is relevant for the path generation. Used for example when computing collisions. |
-| `IncludeRoll` | If false, any rolling rotation is removed from the rotation interpolation. Useful in situations where rolling motions can be uncomfortable for the user. OBS! Disabled per default, and we do not recommend turning it on for any paths apart from the `AvoidCollision` and `Linear`, since it might cause uncomfortable rotations. |
+| {menuselection}`Default path type` | The path type that is used when generating a new fly-to path. |
+| {menuselection}`Speed scale` | Can be used to increase or decrease the traversal speed. |
+| {menuselection}`Arrival distance factor` | Determines how far from the target the camera should stop. The factor is multiplied by the target's bounding sphere to compute the final arrival distance. |
+| {menuselection}`Apply idle motion on finish` | If enabled, the selected [Idle Motion](idle-motion) starts when the path finishes. This can be used to begin a rotation around the target automatically. |
+| {menuselection}`Relevant node tags` | Tags used to identify nodes that are relevant for path generation and collision handling. Try changing this if the camera is colliding with objects in your scene. |
+| {menuselection}`Include roll` | If false, any roll is removed from the rotation interpolation. This is disabled by default as it might introduce fast rotations that are unconfortable for a viewer. You might however want to enable this if you need the camera to have a specific orientation at the end of the path, such as when flying to a navigation state. |
 
-Short description of the different available path types (as of version 0.18.0):
+### About Path Types
+The resulting path depends on the selected *path type*. The default type, `AvoidCollision`, avoids nearby objects and rotates the camera as little as possible. It works well when moving between targets that are already centered in view.
+
+If the starting view is not centered on the object being left, `ZoomOutOverview` can be a better choice. It tries to keep the relevant target in view for as long as possible and gives a better sense of the spatial relation between objects, but it may introduce stronger rotations.
+
+Here is a short description of the different available path type options:
 
 | Path type | Description |
 | --------- | ----------- |
-| AvoidCollision (default) | Does some simple collision avoidance with close scene graph nodes, but otherwise goes reasonably straightly to the target. Linear interpolation (SLERP) of the rotation. That is, does not try to look at the targeted objects. Works well when flying between objects in the scene, as long as the objects are centered in view at the start and end. |
-| ZoomOutOverview | First moves the camera out to a point where both targets are in view, before approaching the desired targets. Provides a better sense of how far away the objects are in relation to each other. Tries to look at either of the targets for as long as possible. However, no collision detection is done. |
-| Linear | Just a linear path from the start to end point |
-| AvoidCollisionWithLookAt | *Temporary* type that is useful when moving to objects on the same surface, but sometimes leads to fast undesired rotations when traveling between objects. Avoids collision, and looks at the targets as much as possible. |
+| `AvoidCollision` (default) | Avoids nearby scene graph nodes and follows a mostly direct path to the target. Uses spherical interpolation of rotation and does not actively keep the target centered. Works well when both the start and end views are already valid camera positions. |
+| `ZoomOutOverview` | Moves the camera out to a point where the relevant targets are visible, then approaches the destination. Gives a better overview of the spatial relation between objects. No collision detection is performed. |
+| `Linear` | A straight-line path from the start point to the end point. |
+| `AvoidCollisionWithLookAt` | A temporary type that avoids collisions while trying to keep the target in view as much as possible. It can produce fast rotations in some situations. |
 
-For now, the desired path type must be chosen using the `PathNavigator.DefaultPathType` property. Down the line, the system should be able to determine what type to use based on the current situation. Please note that the path types will likely change in future releases of the software.
+For now, the desired path type must be chosen using the {menuselection}`Path Navigator -> Default path type` setting. In the future, the system may choose the path type automatically based on the current situation. The available path types may still change in later releases.
 
+:::{note}
+The linear path type is also used as a fallback when the system cannot find a suitable path using the other types. This can happen if the path is very long or if the camera starts inside the target's bounding sphere. In these cases, a linear path is used to ensure that the camera reaches the target without issues related to risks of numerical instability or other issues.
+:::
 
-## Caveats
-  - If the distance traveled is very far (such as outside of the solar system), or if the camera starts within the bounding sphere on an object, a linear path will often be used instead of the default type. An info message is shown in the log when this happens.
-  - The simulation time will be paused when a path is started, and unpaused again when it is finished. This can lead to some weird/unexpected behavior for larger simulation speeds and we recommend to pause the time before starting the path (or at least using a slow simulation speed).
-  - The system assumes that all objects that we fly to have a valid bounding sphere. If a target does not, it can lead to some weird behavior.
+## Scripting
+The path system can also be controlled using the scripting API, which also allows for more complex and customized camera movements such as flying to specific positions. The available functions are described in the [Camera Paths Using Scripting](camera-paths-scripting) page.
 
+:::{toctree}
+:maxdepth: 1
+:hidden:
 
-## Creating paths through Lua Scripting
-The Lua API now also includes functions to create camera paths to specific positions, and to provide more details when flying to a target.
+camera-paths-scripting
+:::
 
-More info on this is coming to another wiki page, soon! (Emma Broman, 2022-04-13)
+## The Camera Paths are Under Development
+The camera path system is still under development, and the available functions and their behavior may change in future releases. If you are interested in the camera path system and plans for its development, feel free to check the [currently open issues related to camera paths](https://github.com/OpenSpace/OpenSpace/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Feature%3A%20Camera%20Paths%22) on GitHub.
+
+:::{important}
+The generated camera paths are considered experimental and may not work as expected in all situations. They have primarily been calibrated to create nice flights between different scene graph nodes, and may not work as well for more complex camera scenarios, such as close to planetary surfaces or for flying between certain navigation states.
+
+If you are relying on camera paths for a specific use case, we recommend testing them thoroughly to ensure that they work as expected. In sensitive situations, it may be better to use the session recording system to create a recorded path that is guaranteed to work as expected.
+
+If you encounter any issues, or have ideas for improvement, please report them on Github or contact the OpenSpace team.
+:::
