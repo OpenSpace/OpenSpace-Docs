@@ -85,8 +85,8 @@ Add other panels using the {menuselection}`View --> Toolbar` Menu.
     - Enables flight controls in an external web browser window.
 
 *   - ![Assets Panel Button](/using-openspace/toolbar/assets/toolbar_button_assets.png)
-    - ### Assets Panel
-    - *Page coming soon...*
+    - ### [Assets Panel](/using-openspace/toolbar/assets/index)
+    - Browse, load, and remove assets.
 
 *   - ![Globe Imagery Browser Panel Button](/using-openspace/toolbar/globe-imagery-browser/toolbar_button_globe_imagery_browser.png)
     - ### Globe Imagery Browser Panel
@@ -133,4 +133,5 @@ user-panels/index
 tour-panel/index
 settings/index
 flight-control/index
+assets/index
 :::
