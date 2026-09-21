@@ -71,6 +71,10 @@ Uncertainty
     In science, uncertainty refers to doubt in a measurement value. These doubts arise from several things, but often derive from the limitations of the instrument doing the measurement. For example, a ruler has lines for each millimeter, but if the object being measured is somewhere between 2 mm and 3 mm, you have to estimate what the final value. We know 2 mm is too low, and 3 mm is too high, so the value will be some guess, with a "give or take" range, for example, maybe we estimate it to be 2.5 mm plus or minus 0.5 mm. In astrophysics, these limitations derive from limitations of telescopes, observational conditions, and the nature of the object we're measuring.
 
 
+Variable star
+    A variable star is a star whose brightness changes over time. Variations may be caused by processes inherent to the star itself, such as starspots or a change in a star's equilibrium. Or, variations in brightness may be due to another body passing in front of the star from our perspective, like an eclipsing binary star system.
+
+
 Zone of avoidance
     This is a term invented by astronomers and describes the areas of the sky obscured by the Milky Way---that band of light across our sky. It is named as such because early galaxy maps showed areas where galaxies appeared to avoid. We prefer to use "zone of obscuration" because it has a more physical meaning and is inherently more clear.
 
