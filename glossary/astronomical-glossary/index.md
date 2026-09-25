@@ -49,6 +49,10 @@ Lookback time
     Lookback time is the difference between when we detect the light from an object here on Earth versus when the light was emitted by the object. Because the universe is expanding, and spacetime can expand faster than the speed of light (matter cannot, but the intervening fabric of spacetime can), it produces a discrepancy between how far an object was when its light left versus how far it actually is at this moment. The lookback time tells us when the light left the object.
 
 
+Main sequence
+    Main sequence refers to a region on a plot of stars' color versus brightness. Physically, it is a phase in a star's lifetime when it is stable and hydrogen burning is dominant. Stars on the main sequence maintain hydrostatic equilibrium, where the force of gravitational collapse is countered by the outward pressure generated from the energy byproduct of the fusion of hydrogen into helium.
+
+
 Observable universe
     That part of the universe visible to us. Our sightline is limited because the early universe was opaque---light was constantly scattering off free electrons. About 380,000 years after the Big Bang, the universe expanded and cooled to the point where electrons combined with protons to make neutral hydrogen. At that time, light was able to travel across the universe, and this is the oldest light we can see.
 

@@ -12,23 +12,35 @@ A variable star is a star whose brightness changes over time. Variations may be 
 
 Cepheid stars are variable stars that provide an important benchmark for determining cosmic distances. The name *Cepheid* is a reference to the constellation Cepheus, where the Cephied variable star Delta Cephei is located. Delta Cephei was one of the first of these variable stars to be discovered in the 1780s. 
 
-By the end of the nineteenth century, a few dozen Cepheid stars were known to astronomers. 
-
+By the end of the nineteenth century, a few dozen Cepheid stars were known to astronomers. These stars are giants and supergiants, so they are not in static equilibrium and have expanded off the {term}`main sequence`. They are more massive than the Sun, and far more luminous.
 
 
 
 
 :::{figure} stars_scorpius+constellations.png
 :align: left
-:alt: A starry sky looking toward the constellation Scorpius and Sagittarius. Lines connect the stars of the constellations in view, and the band of light crossing the image is the Milky Way.
+:alt: 
 
-A view of the night sky toward Scorpius and Sagittarius, shown with the constellations lines connecting the main stars within each constellation. The band of light, called the Milky Way, is prominent in this part of the sky.
+
 :::
 
 
-## 
 
-, but it was their use as a so-called *standard candle* that 
+
+## Cepheids as Standard Candles
+
+In astrophysics, the term *standard candle* refers to an object with a known intrinsic brightness. This brightness can be used to determine the object's distance. Cepheids played a critical role in our understanding of the cosmic distance ladder, once we discovered the underlying mechanism that makes them standard candles.
+
+This discovery came in 1908 by Henrietta Swan Leavitt at the Harvard College Observartory. Working as a "human computer," she discovered a relationship between the star's luminosity and its period of variability. She was looking at Cepheid stars in the Small Magellanic Cloud (SMC) from photographic plates taken at a Harvard Observatory in Peru. She identified Cepheids in the SMC and noticed that the brighter variables had longer periods. This resulted in a relationship between the period of the variable star's brightness (dim to bright to dim cycle) and its luminosity. This period-luminosity relation is now called Leavitt's Law.
+
+She approximated the distance to the Cepheids as the same, since they are all within the SMC, though she did not know the actual distance. She also understood that the apparent magnitude of each star, the brightness as we see the star in the sky, was equivalent to the star's absolute magnitude, its intrinsic brightness, with an offset related to the, as yet unknown, distance to the star.
+
+One year after her work, a parallax to a Cepheid star was obtained by Ejnar Hertzsprung, so the distances to all Cepheids could be calibrated. This was the last key to making Cepheids the first standard candles in astronomy. He then calculated the distance to Leavett's Cepheids in the SMC and determined the distance to dwarf galaxy to me about 30,000 light years. This was an enormous underestimation---we now know the true distance to be roughly 200,000 light years---but it remained a technique that, upon refinement, was used to determine that our galaxy was not alone. Edwin Hubble measured Cepheids in what was then known as the Andromeda Nebula to establish that, in fact, it was not a member of the Milky Way. This led to our understanding that the Milky Way was not the entirety of the universe, and that Andromeda was, indeed, an entire galaxy unto itself.
+
+
+
+
+
 
 
 
