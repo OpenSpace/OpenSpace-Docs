@@ -17,7 +17,7 @@ By the end of the nineteenth century, a few dozen Cepheid stars were known to as
 
 
 
-
+(content--milky-way--stars--cepheid-stars)=
 ## Why Some Stars Vary in Brightness
 
 Cepheid stars, RR Lyrae stars, and other variable stars attribute their variability in brightness to a pulsation mechanism that occurs in their stellar atmosphere. The opacity of the atmosphere---that is, how transparent the atmosphere is to electromagnetic radiation, or how much light can escape---drives this pulsation cycle.
