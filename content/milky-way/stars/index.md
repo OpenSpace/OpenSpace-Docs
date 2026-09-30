@@ -68,6 +68,8 @@ Before 1997, we had good distances for about 3,800 stars via the [Gliese](https:
 
 Hipparcos remained the gold standard until the [Gaia](https://en.wikipedia.org/wiki/Gaia_(spacecraft)) space telescope returned its catalog of roughly 2 billion objects. Gaia was operational from 2014--2019, but the massive amount of data continues to be analyzed and released. Data Release 4 is due in December 2026.
 
+Gaia provides distances, space motions, brightnesses, and other characteristics of stars in our galaxy and 
+
 
 
 This was surpassed by the [Gaia](https://en.wikipedia.org/wiki/Gaia_(spacecraft)) mission, which provides highly accurate data for about two billion stars around the Sun. For reference, we can see roughly 9,000 stars in the night sky with our eye, and around 6,500 stars on any given night.
