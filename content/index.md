@@ -32,4 +32,5 @@ This whole chapter is designed to mirror the structure of the Scene Menu in Open
 solar-system/index
 milky-way/index
 universe/index
+molecules/index
 :::
