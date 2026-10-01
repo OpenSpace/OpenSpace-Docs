@@ -66,27 +66,11 @@ Before 1997, we had good distances for about 3,800 stars via the [Gliese](https:
 
 (content--milky-way--stars--gaia)=
 
-Hipparcos remained the gold standard until the [Gaia](https://en.wikipedia.org/wiki/Gaia_(spacecraft)) space telescope returned its catalog of roughly 2 billion objects. Gaia was operational from 2014--2019, but the massive amount of data continues to be analyzed and released. Data Release 4 is due in December 2026.
+Hipparcos remained the gold standard until the [Gaia](https://en.wikipedia.org/wiki/Gaia_(spacecraft)) space telescope returned its catalog of roughly 2 billion objects. Gaia was operational from 2014--2020, but the massive amount of data continues to be analyzed and released. Data Release 4 is due in December 2026.
 
-Gaia provides distances, space motions, brightnesses, and other characteristics of stars in our galaxy and 
+Gaia provides distances, space motions, brightnesses, and other characteristics of stars in our galaxy and even outside the galaxy. Its measurements will yield information on stellar evolution, star formation, and will refine our theories about the formation and evolution of our Galaxy.
 
-
-
-This was surpassed by the [Gaia](https://en.wikipedia.org/wiki/Gaia_(spacecraft)) mission, which provides highly accurate data for about two billion stars around the Sun. For reference, we can see roughly 9,000 stars in the night sky with our eye, and around 6,500 stars on any given night.
-
-
-### Source Catalogs
-For this {menuselection}`Stars` data set, we base our data on the Hipparcos catalog. Hipparcos provides the colors we see with our eye, and the brightnesses we're accustomed to seeing. However, when we have Gaia data for the distance or velocity of the star, we use that information, which will be far more accurate than Hipparcos. We continue to rely on Hipparcos for most of the bright stars in the night sky because these are not yet in the Gaia catalog.
-
-:::{figure} stars_orion+taurus.png
-:align: left
-:alt: A starry sky looking toward the constellation Orion and Taurus.
-
-A view of the night sky toward Orion and Taurus. Orion, the hunter, is conspicuous in the northern and southern sky, with its distinctive three-star belt. The Hyades and Pleiades, two [open star clusters](../../star-clusters/open-clusters/index) in Taurus, are easily seen in the night sky.
-:::
-
-
-
+Gaia Data Release 4 will number about 2.8 billion sources. About 2 billion of these have high quality astrometry (positions) and photometry (brightnesses). In addition, 35 million stars will have velocity information, along with chemical abundances. Beyond stars, Gaia will return information on asteroids, exoplanets, galaxies, and lensing events.
 
 
 
