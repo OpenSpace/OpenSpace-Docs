@@ -73,7 +73,7 @@ pacman -Syu --noconfirm --needed base-devel cmake git ninja curl zip unzip tar a
 
 
 ## 3. Compiling
-1. Clone the Git repository (`git clone https://github.com/OpenSpace/OpenSpace`)
+1. Clone the Git repository (`git clone https://github.com/OpenSpace/OpenSpace`). **Note**: Due to some dependencies, the folder in which you check out the repository must not contain any spaces
 1. CMake Configure & Generate
    - Option A (commandline)
      1. `cmake --list-presets` to list all of the available presets (for example `windows-msvc` on Windows)
