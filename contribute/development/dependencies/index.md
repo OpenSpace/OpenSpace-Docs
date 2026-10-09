@@ -9,7 +9,7 @@ Check [https://vcpkg.io/en/packages?query=](https://vcpkg.io/en/packages?query=)
 ### Dependency does not exist in vcpkg repository
 If a required dependency is not part of the vcpkg repository, there are two alternatives. The more common variant is to provide an *overlay port*. In OpenSpace, these are located in `support/vcpkg/ports`. Each folder defines a new dependency with its own `vcpkg.json` file to define local dependencies as well as a `portfile.cmake` that does all of the work of including the port. The [vcpkg documentation](https://learn.microsoft.com/en-us/vcpkg/) contains information on how these port files should be written.
 
-The less commonly used option is for very large dependencies that we don't want to recompile as often. Right now, only [CEF](cef) and [libMPV]([libmpv) fall into that category and it should stay the exception to include libraries directly. For CEF and libMPV the reason is that these are dependencies that each take hours to compile from scratch and involve many dependencies on their own.
+The less commonly used option is for very large dependencies that we don't want to recompile as often. Right now, only [CEF](cef.md) and [libMPV](libmpv.md) fall into that category and it should stay the exception to include libraries directly. For CEF and libMPV the reason is that these are dependencies that each take hours to compile from scratch and involve many dependencies on their own.
 
 ### Updating dependencies
 Depending on whether a dependency comes from the vcpkg repository or from a local port file, the process for updating it differs.
