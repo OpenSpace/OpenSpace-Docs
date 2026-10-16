@@ -63,11 +63,11 @@ However, we know of many standalone RR Lyrae stars that are not in crowded globu
 You will see several alignments of RR Lyrae stars that point back toward the Sun. These are stars in [globular star clusters](/content/milky-way/star-clusters/globular-clusters/index). They appear streched out because of the ???. In reality, these would be tightened up to resemble the spherical shape of these clusters, removing the artifacts that cause them to be stretched in this manner.
 
 
-:::{figure} rr_lyrae_globulars.png
+:::{figure} rr_lyrae_globular_clusters.png
 :align: left
 :alt: RR Lyrae stars with globular star clusters
 
-RR Lyrae stars shown with the [globular star clusters](/content/milky-way/star-clusters/globular-clusters/index). RR Lyrae stars were famously used to determine the distance to some of these clusters, and for a few we can see a stretched out line of member stars. Omega Cen, M4, and NGC 3201 each have these radial distributions of stars, which itself is an observational artifact and uncorrected in this data set.
+RR Lyrae stars shown with the [globular star clusters](/content/milky-way/star-clusters/globular-clusters/index). RR Lyrae stars were famously used to determine the distance to some of these clusters, and for a few we can see a stretched out line of member stars. RR Lyrae stars and globuolar star clusters are part of the same spherical halo structure around the disk of the Milky Way Galaxy. 
 :::
 
 
