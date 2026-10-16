@@ -23,7 +23,7 @@ The DESI Quasars are not included in any OpenSpace profile. You can add these to
 
 The DESI quasars are distributed on the same footprint as the DESI galaxies since they are the same survey. We color the quasars red because they show no inherent structure akin to the galaxy surveys.
 
-:::{figure} desi_quasars_faceon.png
+:::{figure} desi_quasars_faceon.webp
 :align: left
 :alt: Face-on view of the DESI Quasar Survey
 
@@ -32,9 +32,9 @@ A face-on view of the DESI galaxies and the quasars. The galaxies are yellow, gr
 
 
 
-:::{figure} desi_quasars_edgeon.png
+:::{figure} desi_quasars_edgeon.webp
 :align: left
-:alt: 
+:alt:
 
 An edge-on view of the DESI galaxies and quasars. The quasars, colored red, show some overdensities where more observations were made.
 :::
@@ -43,7 +43,7 @@ An edge-on view of the DESI galaxies and quasars. The quasars, colored red, show
 Relative to the main quasar survey, the DESI quasars cover less volume, but they are much higher in density.
 
 
-:::{figure} quasars_comparison.png
+:::{figure} quasars_comparison.webp
 :align: left
 :alt: Comparing the DESI and main quasar catalogs
 
@@ -63,7 +63,7 @@ With the quasar survey, there is an obvious overdensity toward the edge of the d
 
 
 
-:::{figure} desi_quasars_redshift_grid.png
+:::{figure} desi_quasars_redshift_grid.webp
 :align: left
 :alt: DESI quasars against a redshift grid
 

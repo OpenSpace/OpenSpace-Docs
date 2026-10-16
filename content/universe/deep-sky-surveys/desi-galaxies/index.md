@@ -37,7 +37,7 @@ DESI subdivides its survey into several overlapping regions based on {term}`reds
 Each of these require different observing techniques. The bright galaxy survey are galaxies observed in bright-sky conditions. These include galaxies that are close to the Milky Way. Luminous red galaxies emit much of their energy in the infrared, and are massive, bright galaxies composed of older, redder stars. They act as a probe for large-scale structure because of their tendancy to be in clusters. Emission-line galaxies trace systems with increased rates of star formation. These are important because they are relatively easy to observe by measuring certain emission lines in their light, rather than requiring fidelity throughout the spectrum. Finally, quasars, which we will discuss in [DESI Quasars](/content/universe/deep-sky-surveys/desi-quasars/index), display emission lines driven by the active galactic nuclei (that is, the massive black hole at its center).
 
 
-:::{figure} desi_sdss_comparison.png
+:::{figure} desi_sdss_comparison.webp
 :align: left
 :alt: Comparison of DESI and Sloan DSS Galaxies
 
@@ -54,7 +54,7 @@ The Reduced version contains about 8 million galaxies. For each galaxy, as in al
 
 
 
-:::{figure} desi_version_comparison.png
+:::{figure} desi_version_comparison.webp
 :align: left
 :alt: An edge-on view of the Sloan DSS Galaxies that demonstrates the extent of the data slices and the those areas not yet observed.
 

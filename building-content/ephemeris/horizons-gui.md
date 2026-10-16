@@ -6,7 +6,7 @@ Since version 0.18.0 of OpenSpace there is a new feature that allows our users t
   1. Finally press the *Generate Horizons File* button
   1. At this point you should see the window shown in the image below
 
-:::{figure} gui.png
+:::{figure} gui.webp
 :alt: "Horizons GUI"
 :align: center
 :::

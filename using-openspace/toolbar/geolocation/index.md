@@ -1,5 +1,5 @@
 # GeoLocation Panel
-![Geolocation Panel](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
+![Geolocation Panel](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.webp)
 
 {menuselection}`Windows --> Content --> Geo Location`
 
@@ -9,7 +9,7 @@
 ## Overview
 Use the GeoLocation Panel to locate places on Earth, navigate to them, and save them as scenes. The panel is straightforward with only few sections: the map, the search area, and a list of any added nodes (locations) to the scene.
 
-:::{figure} geolocation_panel.png
+:::{figure} geolocation_panel.webp
 :align: center
 :width: 60%
 :figwidth: 80%
@@ -23,7 +23,7 @@ The GeoLocation Panel in OpenSpace.
 ### Search
 The most precise way to target a place on Earth is to use the search box to enter a place. Once you hit {kbd}`Enter` or the {octicon}`search;1em` button, results will appear below the box. Select the desired place from the list.
 
-:::{figure} geolocation_panel_search.png
+:::{figure} geolocation_panel_search.webp
 :align: center
 :width: 100%
 :alt: OpenSpace's GeoLocation panel searching for Grand Canyon
@@ -86,17 +86,17 @@ As a quick exercise, we will fly to the Grand Canyon in the US using the GeoLoca
 
 
 ### Search for the Location
-![OpenSpace GeoLocation Panel Search](geolocation_panel_search.png)
+![OpenSpace GeoLocation Panel Search](geolocation_panel_search.webp)
 
 {.tutorial}
-  1. Bring up the GeoLocation Panel by clicking the ![Toolbar GeoLocation](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png){h=20px} button in the Toolbar.
+  1. Bring up the GeoLocation Panel by clicking the ![Toolbar GeoLocation](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.webp){h=20px} button in the Toolbar.
   1. Enter "Grand Canyon" in the search box, and press {kbd}`Enter`, or press the search button beside the box. You will see numerous matching search results.
 
 
 
 
 ### Choose the Location
-![GeoLocation Search restults](geolocation_panel_location.png)
+![GeoLocation Search restults](geolocation_panel_location.webp)
 
 {.tutorial}
   1. Choose "Grand Canyon, AZ, USA" from the results.
@@ -106,7 +106,7 @@ As a quick exercise, we will fly to the Grand Canyon in the US using the GeoLoca
 
 
 ### Fly to the Location
-![Grand Canyon in OpenSpace](geolocation_panel_flyto.png)
+![Grand Canyon in OpenSpace](geolocation_panel_flyto.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Use the {menuselection}`Jump To` button to have OpenSpace take you to the location directly.
@@ -115,7 +115,7 @@ As a quick exercise, we will fly to the Grand Canyon in the US using the GeoLoca
 
 
 ### Fly Away for Context
-![Geolocation Context](geolocation_panel_context.png)
+![Geolocation Context](geolocation_panel_context.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Fly away using the {menuselection}`right mouse button` from this close-up view to gain more context on the location.
@@ -123,7 +123,7 @@ As a quick exercise, we will fly to the Grand Canyon in the US using the GeoLoca
 
 
 ### Fly to a Different Location
-![GeoLocation Add Node](geolocation_panel_addnode.png)
+![GeoLocation Add Node](geolocation_panel_addnode.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Fly to any other locaiton on Earth---here we chose the island of Hawaii.

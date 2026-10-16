@@ -85,7 +85,8 @@ source_encoding = "utf-8"
 exclude_patterns = [
   "README.md",
   ".venv",
-  "build"
+  "build",
+  "node_modules"
 ]
 root_doc = "index"
 primary_domain = "lua"
@@ -124,12 +125,12 @@ html_context = {
 # Add a transparent image as the logo
 # Instead we add the logo later in the css
 # This enables different logos in dark and light mode
-html_logo = "_static/transparent.png"
+html_logo = "_static/transparent.webp"
 
 html_title = f"OpenSpace documentation ({version})"
 html_short_title = "OpenSpace"
 
-html_favicon = "_static/icon.png"
+html_favicon = "_static/icon.webp"
 
 # JavaScript files that are added into the generated documentation
 html_js_files = [

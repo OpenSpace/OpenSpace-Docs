@@ -14,7 +14,7 @@
 Everything in the Universe moves. The Earth moves around the Sun, and the Sun and its family of planets move through the Milky Way galaxy at about 860,000 kilometers per hour (530,000 miles per hour) in a relatively stable orbit. One circuit around---our "galactic year"---takes about 225 million earth years. The last time the Sun was in the same spot in the Galaxy, dinosaurs ruled Earth. With these assets, we illustrate one-billion-year orbital trajectories for seven stars with varying speeds and directions.
 
 
-:::{figure} star_orbits_sun.png
+:::{figure} star_orbits_sun.webp
 :align: left
 :alt: A view from outside the Milky Way Galaxy looking back toward the galactic disk and spiral arms. The Sun's orbit is shown indicating where the Sun will travel in the next billion years. It forms a fairly regular circle around the Galaxy.
 
@@ -31,7 +31,7 @@ Currently, the Sun is heading in the direction of the constellation Cygnus and l
 Barnard's Star, the fourth-closest star to the Sun, has the highest proper motion of any star in the night sky. [E. E. Barnard](https://en.wikipedia.org/wiki/Edward_Emerson_Barnard) (1857--1923) discovered this motion in 1916, observing that it moves 10.3 arcseconds in the sky per year. While its path generally remains in the Galactic disk, its radius from the Galactic center varies greatly.
 
 
-:::{figure} star_orbits_panel.png
+:::{figure} star_orbits_panel.webp
 :align: left
 :alt: A panel of six images of the Milky Way Galaxy showing one stellar orbit per image.
 
@@ -51,12 +51,12 @@ Not all stars' motion are as well behaved as the Sun. The halo star PM J13420-34
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

@@ -1,7 +1,7 @@
 # Solar Browsing Rendering
 This page describes how to set up and configure the solar browsing renderables in OpenSpace. For instructions on how to download and prepare the image data, see the [Solar Browsing Data](./solarbrowsing-data.md) page.
 
-:::{figure} solarbrowsing_example.png
+:::{figure} solarbrowsing_example.webp
 :align: center
 
 One example of the SDO AIA-171 instrument projected onto the solar surface using `RenderableSolarImageryProjection`, showing the Sun's corona in extreme ultraviolet light.

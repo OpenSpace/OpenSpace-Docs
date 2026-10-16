@@ -5,15 +5,15 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/index)
-[![Nearby surveys](/content/universe/nearby-surveys/local-group/local_group_icon.png)](/content/universe/nearby-surveys/index)
+[![Nearby surveys](/content/universe/nearby-surveys/local-group/local_group_icon.webp)](/content/universe/nearby-surveys/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/index)
-[![Deep sky surveys](/content/universe/deep-sky-surveys/quasars/quasars_icon.png)](/content/universe/deep-sky-surveys/index)
+[![Deep sky surveys](/content/universe/deep-sky-surveys/quasars/quasars_icon.webp)](/content/universe/deep-sky-surveys/index)
 :::
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/index)
-[![Cosmic microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.png)](/content/universe/cosmic-microwave-background/index)
+[![Cosmic microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.webp)](/content/universe/cosmic-microwave-background/index)
 :::
 
 ::::
@@ -33,7 +33,7 @@ are at the center of the universe.
 
 Nothing could be further from the truth.
 
-:::{figure} universe.png
+:::{figure} universe.webp
 :align: left
 :alt: A two-lobed sea of red points represent quasars while the blue and green points are the locations of galaxies. The Milky Way Galaxy is at the center of the image where these data appear to converge.
 

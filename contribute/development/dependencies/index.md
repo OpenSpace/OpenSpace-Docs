@@ -33,7 +33,7 @@ vcpkg_from_github(
 
 To update that to a new commit, change the `REF` value to the commit hash of the commit that we want to use in the repo ([https://github.com/OpenSpace/Spice](https://github.com/OpenSpace/Spice) in this example) and change the SHA512 to 0. Then run the CMake Configure step which will fail with an error:
 
-```
+```console
 error: failing download because the expected SHA512 was all zeros, please change the expected SHA512 to: 76f3d354e5589ceb901ab87241f33101ae80fc69447f21e1ff9b49400b89966ca2177f60c1455e2c6d6d19db3d987602301d3088e9d9828ee944f427203748ca
 ```
 

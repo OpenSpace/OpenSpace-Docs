@@ -21,7 +21,7 @@ This angle calculation mode is suitable for flat displays or forward-facing imme
 The angle {math}`\theta` is here defined as the angle from the camera to the object within a horizontal plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{View}` vector and the left direction of the camera (i.e. the negative {math}`Camera_{Right}` vector), with the {math}`Camera_{Up}` vector as the normal. The image below shows a figure of these objects and the computations.
 
 <!-- @TODO Generate a dark mode version of this image -->
-:::{image} images/horizontal.png
+:::{image} images/horizontal.webp
 :alt: "Horizontal Angle Calculation Schematic"
 :width: 100%
 :align: center
@@ -42,7 +42,7 @@ This angle is optional and is only calculated if a setting in the [Telemetry Mod
 The elevation angle {math}`\phi` is here defined as the angle from the camera to the object within a vertical plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{View}` vector and the {math}`Camera_{Up}` vector, with the {math}`Camera_{Right}` vector as the normal. The image below shows a figure of these objects and the computations.
 
 <!-- @TODO Generate a dark mode version of this image -->
-:::{image} images/horizontal-vertical.png
+:::{image} images/horizontal-vertical.webp
 :alt: "Elevation Angle Calculation (Horizontal) Schematic"
 :width: 100%
 :align: center
@@ -63,7 +63,7 @@ This angle is only calculated for the specialized [Planets Sonification](./telem
 The angle {math}`\theta` is here defined as the angle from object {math}`A` (the planet) to object {math}`B` (the moon) within a horizontal plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{View}` vector and the left direction of the camera (i.e. the negative {math}`Camera_{Right}` vector), with the {math}`Camera_{Up}` vector as the normal. The image below shows a figure of these objects and the computations.
 
 <!-- @TODO Generate a dark mode version of this image -->
-:::{image} images/horizontal-moon.png
+:::{image} images/horizontal-moon.webp
 :alt: "Moon Angle Calculation (Horizontal) Schematic"
 :width: 100%
 :align: center
@@ -80,7 +80,7 @@ This angle is only calculated for the specialized [Planets Sonification](./telem
 The elevation angle {math}`\phi` is here defined as the angle from object {math}`A` (the planet) to object {math}`B` (the moon) within a vertical plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{View}` vector and the {math}`Camera_{Up}` vector, with the {math}`Camera_{Right}` vector as the normal. The image below shows a figure of these objects and the computations.
 
 <!-- @TODO Generate a dark mode version of this image -->
-:::{image} images/horizontal-moon-vertical.png
+:::{image} images/horizontal-moon-vertical.webp
 :alt: "Moon Elevation Angle Calculation (Horizontal) Schematic"
 :width: 100%
 :align: center
@@ -99,7 +99,7 @@ This angle calculation mode is suitable for centered fisheye displays or omnidir
 The angle {math}`\theta` is here defined as the angle to the object in a circular space around the center of the screen within a plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{Up}` vector and the left direction of the camera (i.e. the negative {math}`Camera_{Right}` vector), with the negative {math}`Camera_{View}` vector as the normal. The image below shows a figure of these objects and the computations.
 
 <!-- @TODO Generate a dark mode version of this image -->
-:::{image} images/circular.png
+:::{image} images/circular.webp
 :alt: "Circular Angle Calculation Schematic"
 :width: 100%
 :align: center
@@ -120,7 +120,7 @@ This angle determines how far away from the center of the screen the object is l
 The elevation angle, {math}`\phi`, is in this case defined as the angle from the camera to the object within a vertical plane of reference, {math}`R`. The reference plane {math}`R` is the plane spanned by {math}`Camera_{View}` and {math}`Camera_{Up}` with {math}`Camera_{Right}` as the normal. The plane {math}`A` is also gonna be needed and is the plane spanned by {math}`Camera_{Up}` and {math}`Camera_{Right}` with {math}`Camera_{View}` as the normal. The image below shows a figure of these objects and the computations.
 
 <!-- @TODO Generate a dark mode version of this image -->
-:::{image} images/circular-vertical.png
+:::{image} images/circular-vertical.webp
 :alt: "Elevation Angle Calculation (Circular) Schematic"
 :width: 100%
 :align: center
@@ -143,7 +143,7 @@ This angle is only calculated for the specialized [Planets Sonification](./telem
 The angle {math}`\theta` is here defined as the angle from object {math}`A` (the planet) to object {math}`B` (the moon) within a plane of reference, {math}`R`, with respect to a direction in relation to the camera. The reference plane {math}`R` is the plane spanned by the {math}`Camera_{Up}` vector and {math}`Camera_{Right}` vector, with the {math}`Camera_{View}` vector as the normal. The image below shows a figure of these objects and the computations.
 
 <!-- @TODO Generate a dark mode version of this image -->
-:::{image} images/circular-moon.png
+:::{image} images/circular-moon.webp
 :alt: "Moon Angle Calculation (Circular) Schematic"
 :width: 100%
 :align: center
@@ -164,7 +164,7 @@ This angle is only calculated for the specialized [Planets Sonification](./telem
 The elevation angle, {math}`\phi`, is here defined as the angle from object {math}`A` (the planet) to object {math}`B` (the moon) within a plane of reference, {math}`R`, spanned by the {math}`Camera_{View}` vector and the {math}`Camera_{Up}` vector, with the {math}`Camera_{Right}` vector as the normal. Specifically, for this computation, the position for the moon (which is orbiting point {math}`A`) used is the one which is parallel to the reference plane {math}`R`, no matter the current position of object {math}`B`. This transformation requires information about what is here called plane {math}`C`, which is the plane spanned by the {math}`Camera_{Up}` vector and the {math}`Camera_{Right}` vector, with the {math}`Camera_{View}` vector as the normal. The image below shows a figure of these objects and the computations.
 
 <!-- @TODO Generate a dark mode version of this image -->
-:::{image} images/circular-moon-vertical.png
+:::{image} images/circular-moon-vertical.webp
 :alt: "Moon Elevation Angle Calculation (Circular) Schematic"
 :width: 100%
 :align: center

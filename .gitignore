@@ -3,6 +3,7 @@
 .vscode
 .venv
 build
+node_modules
 reference/asset_examples
 reference/asset-components
 reference/scripting-api

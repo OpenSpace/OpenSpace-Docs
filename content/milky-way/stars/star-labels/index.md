@@ -8,7 +8,7 @@
 The {menuselection}`Star Labels` show the common names of the stars. Of course, only the prominent stars have such a name, and we have 335 stars included in this asset.
 
 
-:::{figure} star_names.png
+:::{figure} star_names.webp
 :align: left
 :alt: A view of the night sky looking toward Orion with constellation lines connecting stars and the stars with common names labeled.
 
@@ -33,12 +33,12 @@ A list of star names and their meanings may be found on the Wikipedia's [List of
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

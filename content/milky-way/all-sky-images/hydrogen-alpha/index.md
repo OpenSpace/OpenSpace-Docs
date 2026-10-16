@@ -9,7 +9,7 @@
 The hydrogen-alpha all-sky image is light from a narrow band in the red end of the visible spectrum. We see this light in the composite of visible light, but here we can probe this specific wavelength to see only this small part of red light. It reveals where the glowing hydrogen gas is in the sky.
 
 
-:::{figure} halpha_scorpius.png
+:::{figure} halpha_scorpius.webp
 :align: left
 :alt: An image of the night sky in hydrogen-alpha light. The light is orange in color and shows where there is glowing hydrogen gas.
 
@@ -30,7 +30,7 @@ The most prominent feature of this image is the ever-present band of the Milky W
 
 
 
-:::{figure} halpha_orion.png
+:::{figure} halpha_orion.webp
 :align: left
 :alt: Looking toward Orion from Earth, we see the bright, glowing areas of hydrogen-alpha light---wispy, orange gas with bright concentrations and areas of thinner gas.
 
@@ -53,12 +53,12 @@ We can also see that galaxies emit Hα light. The Large and Small Magellanic Clo
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

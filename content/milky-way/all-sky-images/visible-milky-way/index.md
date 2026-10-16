@@ -6,7 +6,7 @@
 :::::{tab-item} Overview
 
 ## Overview
-:::{figure} visible_scorpius.png
+:::{figure} visible_scorpius.webp
 :align: left
 :alt: A night sky view of the Milky Way as seen with our eyes looking toward the constellation Scorpius.
 
@@ -31,7 +31,7 @@ Along the band of light in this image you will see dark areas that appear to obs
 
 
 
-:::{figure} visible_orion.png
+:::{figure} visible_orion.webp
 :align: left
 :alt: The diffuse band of light of the Milky Way as it passes by Orion.
 
@@ -52,11 +52,11 @@ This all-sky image was assembled from 3,000 individual frames over two years by 
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

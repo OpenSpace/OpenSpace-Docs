@@ -19,7 +19,7 @@ When making a new build of the documentation, e.g. for a new OpenSpace version, 
 
 To use the `DocsWriter`, you first need to open your OpenSpace project in CMake and enable the `OPENSPACE_APPLICATION_DOCSWRITER` checkbox. Then, re-generate the project.
 
-![Enable the Cmake checkbox for the DocWriter](./cmake_docswriter.png)
+![Enable the Cmake checkbox for the DocWriter](./cmake_docswriter.webp)
 
 ### Asset examples
 The documentation uses the assets folder in OpenSpace to create examples for the `Asset Components` reference section. Per default, the script `make html` will download a partial clone of the OpenSpace repository (only the assets folder) from the *latest master* and then generate the documentation.

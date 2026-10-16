@@ -30,7 +30,7 @@ The Kepler mission was designed to stare at one spot, roughly twelve degrees acr
 These slight differences in brightness signify the transit of the star's planet, so we must view the planetary orbit edge-on for Kepler to detect a planet. In order to be considered a candidate for exoplanets, the observations must pass several tests to rule out other factors that could affect the brightness.
 
 
-:::{figure} exoplanet_candidates_nightsky_cygnus.png
+:::{figure} exoplanet_candidates_nightsky_cygnus.webp
 :align: left
 :alt: The night sky view toward the constellation Cygnus. Dominating the view are green and yellow stars, falsely colored by their mission. These are exoplanet candidate stars, yellow for the Kepler Mission and green for the TESS Mission.
 
@@ -42,7 +42,7 @@ The exoplanet candidate stars looking toward the constellations Cygnus and Hercu
 In July 2012, Kepler lost control of four of its reaction wheels that provide attitude control of the spacecraft. And, less than one year later, one of the two remaining reaction wheels failed, threatening the entire mission. In response to this, the K2 mission was proposed as an extension of the original mission. The spacecraft was limited to searching along the {term}`ecliptic`, the plane containing Earth's orbit around the Sun (or the annual path of the Sun in the sky). This is roughly the plane of the solar system, which is tipped about 62 degrees to the Milky Way Galaxy.
 
 
-:::{figure} exoplanet_candidates_nightsky_leo.png
+:::{figure} exoplanet_candidates_nightsky_leo.webp
 :align: left
 :alt: Looking at the green and orange exoplanet candidate stars as seen from Earth and looking toward the constellation Leo. Green stars are candidates from the TESS Mission while orange stars are from the K2 Mission.
 
@@ -58,7 +58,7 @@ While Kepler gave us a taste of the number of exoplanets out there, TESS will fu
 
 
 
-:::{figure} exoplanet_candidates_galaxy.png
+:::{figure} exoplanet_candidates_galaxy.webp
 :align: left
 :alt: The exoplanet candidate stars as seen from afar. Green, yellow, and orange stars are huddled around the Sun, each candidate stars from different missions.
 
@@ -74,11 +74,11 @@ As seen from afar, the exoplanet candidate stars are huddled around the Sun. Gre
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

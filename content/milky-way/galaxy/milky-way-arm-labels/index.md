@@ -12,7 +12,7 @@ As we previously mentioned, we cannot know exactly what the Milky Way looks like
 Overlaying spiral arm labels on top of this model is a further departure from reality, but these named spiral arms are known to astronomers, and we can use the spiral arms in our model to fit these labels given the Sun's position.
 
 
-:::{figure} milkyway_arms_labels.png
+:::{figure} milkyway_arms_labels.webp
 :align: left
 :alt: A view of the Milky Way Galaxy from above with the spiral arms labeled.
 
@@ -26,7 +26,7 @@ There remains some debate about the positions and names of some of these arms. I
 ### Limitations
 One severe limitation of this asset is that it is merely a flat, two-dimensional image with words on it. So, there is a right side and a wrong side to view it from. These are not dynamic, interactive labels as used for other data in OpenSpace. These are baked into an image that is superimposed on the Milky Way. So, if you view it from underneath, the words will be backwards, as seen in the image below.
 
-:::{figure} milkyway_arms_labels_backwards.png
+:::{figure} milkyway_arms_labels_backwards.webp
 :align: center
 :figwidth: 90%
 :width: 70%
@@ -44,12 +44,12 @@ The Milky Way Arms Labels seen from the "wrong" side of the Galaxy, where they r
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

@@ -9,7 +9,7 @@ If you see any errors or pop-up windows you're unsure about, please refer back t
 ## Terminal Window
 The first item that pops up is a terminal with output streaming by at a rapid pace. The output to this window is basically all the commands OpenSpace is executing to get itself up and running. You can generally ignore this window; however, it can be useful for troubleshooting, though we recommend using the [OpenSpace Log](/using-openspace/log/index) to trace errors.
 
-:::{figure} console.png
+:::{figure} console.webp
 :align: center
 :width: 70%
 :alt: OpenSpace's Terminal Window
@@ -36,7 +36,7 @@ Click the `START` button to bring up the Graphics Window with the chosen profile
 
 
 ::::{grid-item}
-:::{figure} launcher.png
+:::{figure} launcher.webp
 :align: center
 :width: 100%
 :alt: OpenSpace's Launcher Window
@@ -55,7 +55,7 @@ Most assets load instantaneously, but some take some time to download then load.
 
 Once you download the data once, it will be cached and the launch will progress more quickly next time.
 
-:::{figure} loading-screen.png
+:::{figure} loading-screen.webp
 :align: center
 :width: 100%
 :alt: OpenSpace's profile loading screen
@@ -66,7 +66,7 @@ The profile loading screen showing the status of loading each data set.
 ### The Cosmos
 Once the profile and all its assets have loaded, you will now have a view of Earth along with the user interface. Next, we will explore the [interface basics](/getting-started/orientation/index).
 
-:::{figure} openspace.png
+:::{figure} openspace.webp
 :align: center
 :width: 100%
 :alt: Earth as seen in OpenSpace

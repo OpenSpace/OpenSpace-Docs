@@ -5,7 +5,7 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/substellar-objects/brown-dwarfs/index)
-[![brown dwarfs](/content/milky-way/substellar-objects/brown-dwarfs/brown_dwarfs_icon.png)](/content/milky-way/substellar-objects/brown-dwarfs/index)
+[![brown dwarfs](/content/milky-way/substellar-objects/brown-dwarfs/brown_dwarfs_icon.webp)](/content/milky-way/substellar-objects/brown-dwarfs/index)
 :::
 
 ::::

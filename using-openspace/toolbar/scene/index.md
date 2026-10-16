@@ -1,5 +1,5 @@
 # Scene Panel
-![Scene Toolbar Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
+![Scene Toolbar Button](/using-openspace/toolbar/scene/toolbar_button_scene.webp)
 
 {menuselection}`Windows --> Scene`
 
@@ -27,7 +27,7 @@ Expanding a data set will display its properties and their adjustment tools. The
 </div>
 
 
-:::{figure} scene_panel.png
+:::{figure} scene_panel.webp
 :align: right
 :width: 90%
 :figwidth: 50%
@@ -82,24 +82,24 @@ Some data sets have a Fade setting applied to them based on your distance from t
 
 
 <!-- ## Targeting a Data Set
-To the right of the data set is the target icon ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png){h=2em}. You can press this button to activate that data set as the Focus.
+To the right of the data set is the target icon ![Focus button](/getting-started/orientation/navigation_panel_focus_button.webp){h=2em}. You can press this button to activate that data set as the Focus.
 
 :::{note}
-Many of these data sets are observationally based---so they are centered on the Sun. If you were to press ![Focus button](/getting-started/orientation/navigation_panel_focus_button.png){h=2em} for the Open Clusters, the Sun would remain the Focus. This button is more critical when you want to visit an object like a  planet, moon, exoplanet system, or a spacecraft.
+Many of these data sets are observationally based---so they are centered on the Sun. If you were to press ![Focus button](/getting-started/orientation/navigation_panel_focus_button.webp){h=2em} for the Open Clusters, the Sun would remain the Focus. This button is more critical when you want to visit an object like a  planet, moon, exoplanet system, or a spacecraft.
 ::: -->
 
 
 
 
 ## Quick Access Menu
-:::{figure} scene_panel_context_menu.png
+:::{figure} scene_panel_context_menu.webp
 :align: right
 :width: 100%
 :figwidth: 30%
 :alt: OpenSpace's Scene Panel Context Menu
 :::
 
-Beside each data set is a context menu ![Context menu](scene_panel_context_menu_button.png){h=24px}. This opens up a subpanel that has the navigation options to {menuselection}`Fly To`, {menuselection}`Jump To`, or {menuselection}`Zoom To/Frame`. There is also a button to pop out the settings for this object in a separate window.
+Beside each data set is a context menu ![Context menu](scene_panel_context_menu_button.webp){h=24px}. This opens up a subpanel that has the navigation options to {menuselection}`Fly To`, {menuselection}`Jump To`, or {menuselection}`Zoom To/Frame`. There is also a button to pop out the settings for this object in a separate window.
 
 At the bottom, there is a {menuselection}`Delete` button that can be used to remove the object from the scene. Note that this action is irreversible and that any objects that may depend on this object will also be deleted.
 
@@ -114,7 +114,7 @@ The Scene Panel has a hierarchial structure, expanding deeper and deeper dependi
   - **Transform**: settings related to the position and size of the object. Two common subsections under this are: `Scale`, where you can scale the data up or down spatially, and `Translation`, where you can move the data set spatially in x, y, z.
   - **Info**: where you find information about the asset.
 
-:::{figure} scene_panel_open_clusters.png
+:::{figure} scene_panel_open_clusters.webp
 :align: center
 :width: 70%
 :figwidth: 70%
@@ -139,7 +139,7 @@ The most important setting under each data set is {menuselection}`... --> Render
 
 To remedy this, you can use the Sizing sliders. Bring the value up to increase the size, making it more visible form farther away.
 
-:::{figure} scene_panel_sizing.png
+:::{figure} scene_panel_sizing.webp
 :align: center
 :width: 70%
 :figwidth: 70%
@@ -181,7 +181,7 @@ The tricky thing with these sliders is that, natively, everything is in meters i
 ### Coloring
 Changing color in OpenSpace is fairly straightforward. Under the Coloring section is a color chooser, a three-parameter red-green-blue color input, and settings for outlines.
 
-:::{figure} scene_panel_coloring.png
+:::{figure} scene_panel_coloring.webp
 :align: center
 :width: 70%
 :figwidth: 70%
@@ -196,7 +196,7 @@ The color chooser is the easiest method here to change a color interactively in 
 ### Labels
 Label settings are controlled in the Labels dropdown. Here, you can set an opacity, color, size, and font size. But, most importantly, you turn them on and off with the checkbox.
 
-:::{figure} scene_panel_labels.png
+:::{figure} scene_panel_labels.webp
 :align: center
 :width: 70%
 :figwidth: 70%
@@ -225,7 +225,7 @@ We cannot delineate every setting for each [renderable](/reference/renderable-ov
 ::::::{grid}
 :::::{grid-item}
 
-:::{figure} scene_panel_stars.png
+:::{figure} scene_panel_stars.webp
 :align: center
 :width: 90%
 :figwidth: 100%
@@ -249,7 +249,7 @@ More: [](#space_renderable_stars)
 ::::::{grid}
 :::::{grid-item}
 
-:::{figure} scene_panel_mars.png
+:::{figure} scene_panel_mars.webp
 :align: center
 :width: 90%
 :figwidth: 100%
@@ -275,7 +275,7 @@ More: [](#globebrowsing_renderable_globe)
 ::::::{grid}
 :::::{grid-item}
 
-:::{figure} scene_panel_constellation_lines.png
+:::{figure} scene_panel_constellation_lines.webp
 :align: center
 :width: 90%
 :figwidth: 100%

@@ -3,7 +3,7 @@ As of version 0.19.0, OpenSpace includes support for drawing geometry features o
 
 Some examples of features are shown below (polygons, points with textures, and lines).
 
-![geojson examples](creation/geojson_examples.jpg)
+![geojson examples](creation/geojson_examples.webp)
 
 It is also possible to change the appearance of the resulting features based on some predefined available properties, either in the GeoJson file itself or in OpenSpace. See the builder page [Adding Geometry with GeoJson](creation/adding-geojson-layers) for more details on available settings and properties.
 

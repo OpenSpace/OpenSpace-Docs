@@ -10,7 +10,7 @@ As we outlined in [Local Group](../local-group/index), a galaxy group is a small
 
 The Galaxy Groups Labels is a set of labels that identifies the nearby groups in the Tully Galaxies.
 
-:::{figure} galaxy_groups_nearby.png
+:::{figure} galaxy_groups_nearby.webp
 :align: left
 :alt:
 
@@ -30,7 +30,7 @@ While the Local Group is fairly fleshed out---we see many dwarf galaxies orbitin
 Some of the closest groups include the [M81 Group](https://en.wikipedia.org/wiki/M81_Group), the [Sculptor Group](https://en.wikipedia.org/wiki/Sculptor_Group), the [Cen A/M83 Group](https://en.wikipedia.org/wiki/Centaurus_A/M83_Group), and the [NGC 2403 Group](https://en.wikipedia.org/wiki/NGC_2403). Each of these contain one or more large galaxies. Historically, the term *cloud* was used to describe groups of groups, but this term has fallen from favor given it's physically ambiguous.
 
 
-:::{figure} galaxy_groups_outside.png
+:::{figure} galaxy_groups_outside.webp
 :align: left
 :alt: Galaxy groups around the Local Group marked in green labels.
 
@@ -46,12 +46,12 @@ Galaxy groups around the Local Group showing a concentration of groups that incl
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

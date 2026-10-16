@@ -18,7 +18,7 @@ authors:
 The Oort Sphere is a diagrammatic representation of the Oort Cloud where it is most dense. The Oort Cloud is a diffuse distribution of icy planetesimals, so one sphere cannot represent it accurately. However, this sphere has utility in that it shows the scale of the outer reaches of the Solar System---the extent of our star system within the Milky Way.
 
 
-:::{figure} oort_cloud.png
+:::{figure} oort_cloud.webp
 :alt: A wire-framed sphere surrounding the Sun representing the Oort Cloud.
 
 A diagrammatic representation of the Oort Cloud. This wire-framed sphere is located at one of the concentrations of mass, about 50,000 {term}`Astronomical Units <Astronomical unit>` from the Sun. The cloud is diffuse and could extend out to 100,000 AU or more.
@@ -41,12 +41,12 @@ years.
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

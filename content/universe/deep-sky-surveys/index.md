@@ -5,31 +5,31 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/2df-galaxies/index)
-[![2dF Galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.png)](/content/universe/deep-sky-surveys/2df-galaxies/index)
+[![2dF Galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.webp)](/content/universe/deep-sky-surveys/2df-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/sloan-galaxies/index)
-[![Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
+[![Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.webp)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/desi-galaxies/index)
-[![DESI Galaxies](/content/universe/deep-sky-surveys/desi-galaxies/desi_galaxies_icon.png)](/content/universe/deep-sky-surveys/desi-galaxies/index)
+[![DESI Galaxies](/content/universe/deep-sky-surveys/desi-galaxies/desi_galaxies_icon.webp)](/content/universe/deep-sky-surveys/desi-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
-[![Abell Clusters](/content/universe/deep-sky-surveys/abell-galaxy-clusters/abell_icon.png)](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
+[![Abell Clusters](/content/universe/deep-sky-surveys/abell-galaxy-clusters/abell_icon.webp)](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/supercluster-labels/index)
-[![Supercluster Labels](/content/universe/deep-sky-surveys/supercluster-labels/scl_icon.png)](/content/universe/deep-sky-surveys/supercluster-labels/index)
+[![Supercluster Labels](/content/universe/deep-sky-surveys/supercluster-labels/scl_icon.webp)](/content/universe/deep-sky-surveys/supercluster-labels/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/quasars/index)
-[![Quasars](/content/universe/deep-sky-surveys/quasars/quasars_icon.png)](/content/universe/deep-sky-surveys/quasars/index)
+[![Quasars](/content/universe/deep-sky-surveys/quasars/quasars_icon.webp)](/content/universe/deep-sky-surveys/quasars/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/desi-quasars/index)
-[![DESI Quasars](/content/universe/deep-sky-surveys/desi-quasars/desi_quasars_icon.png)](/content/universe/deep-sky-surveys/desi-quasars/index)
+[![DESI Quasars](/content/universe/deep-sky-surveys/desi-quasars/desi_quasars_icon.webp)](/content/universe/deep-sky-surveys/desi-quasars/index)
 :::
 
 ::::
@@ -38,7 +38,7 @@
 
 Deep Sky Surveys refer to large surveys that probe deeper into the observable universe. These galaxy surveys see deeper, but are far less {term}`complete <completeness>`. Typically, only portions of the sky are observed, leaving whole swaths of the universe unseen.
 
-% :::{figure} deep_sky_surveys.png
+% :::{figure} deep_sky_surveys.webp
 % :align: left
 % :alt: The two-lobed 2dF galaxies are shown with the Abell galaxy clusters and the supercluster labels.
 %

@@ -9,7 +9,7 @@ A small number of more prominent stars have proper names like Sirius, Betelgeuse
 
 
 
-:::{figure} stars_label_alternate.png
+:::{figure} stars_label_alternate.webp
 :align: left
 :alt: A view of the night sky looking toward Orion with lines forming the constellations, and labels on the nearby stars.
 
@@ -74,12 +74,12 @@ The Flamsteed Catalog uses numbers as designations along with the constellation 
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

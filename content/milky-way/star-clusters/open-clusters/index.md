@@ -8,7 +8,7 @@
 An open star cluster is a loose assemblage of stars numbering from hundreds to thousands that are bound by their mutual gravitation. Astronomers know from their spectra that stars in open clusters are typically younger, so open clusters are relative newcomers in the scope of the Galaxy.
 
 
-:::{figure} open_clusters_nightsky.png
+:::{figure} open_clusters_nightsky.webp
 :align: left
 :alt: A view of the night sky looking toward the constellation Orion. Shown are constellation lines for Orion, Cancer, Gemini, and Taurus and some peripheral constellations. Solid, green circles indicate the locations nof open star clusters.
 
@@ -17,7 +17,7 @@ A night sky view of the open star clusters looking toward Orion (lower left), wi
 
 
 
-:::{figure} Star_cluster_NGC_3766.jpg
+:::{figure} Star_cluster_NGC_3766.webp
 :align: center
 :figwidth: 60%
 :alt: A zoomed-in image of the sky centered on the open star cluster NGC 3766, a loose grouping of stars amongst a backdrop of more distant stars.
@@ -44,7 +44,7 @@ Because these are young stars, we expect to see them in the star-forming regions
 If we look from above the Milky Way, the open clusters are huddled around the Sun in our region of the Galaxy. Because these clusters are in the disk of the Galaxy, it's easier for us to see those clusters in our galactic backyard than it is on the other side of the Milky Way where the gas and dust prevents us from seeing objects deep into the disk.
 
 
-:::{figure} open_clusters_above.png
+:::{figure} open_clusters_above.webp
 :align: left
 :alt: A view from above the Milky Way Galaxy looking down on its disk and spiral arms. Open clusters are indicated by green points.
 
@@ -54,7 +54,7 @@ Open star clusters, in green, seen from a perspective above the Milky Way Galaxy
 
 When we look at the Milky Way Galaxy edge-on, like looking at a record from the side, we see the open clusters are correlated with the disk, where star formation is happening in the Milky Way.
 
-:::{figure} open_clusters_edgeon.png
+:::{figure} open_clusters_edgeon.webp
 :align: left
 :alt: The Milky Way from the side, where we see the disk edge-on and the open clusters on one side of the disk where the Sun is located.
 
@@ -70,12 +70,12 @@ Looking at the Milky Way Galaxy edge-on, we can see the open clusters are tightl
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

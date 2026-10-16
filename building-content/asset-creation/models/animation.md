@@ -46,15 +46,15 @@ AnimationTimeScale = "Millisecond",
 The animation can be played in a few different ways using different modes. The default animation mode is `"Once"`, which is to play the animation once starting from the given start time. Other options are: `"LoopFromStart"`, `"LoopInfinitely"`, `"BounceFromStart"`, and `"BounceInfinitely"`.
 
   - **Once**, the animation is played once starting from the given start time. When the animation is finished it will remain in its last state.
-    ![Loop once](once.png)
+    ![Loop once](once.webp)
   - **LoopFromStart**, starts looping the animation from the start time. At any time before the start, the model rests in its initial state.
-    ![Loop from start](loopStart.png)
+    ![Loop from start](loopStart.webp)
   - **LoopInfinitely**, loops the animation both before and after the start time, where the animation is in its initial state at the start time.
-    ![Loop infinitely](loopInf.png)
+    ![Loop infinitely](loopInf.webp)
   - **BounceFromStart**, bounces the animation from the start time. At any time before the start, the model rests in its initial state. Bouncing the animation means that the animation is played once and then played again but backward, ensuring that the animation goes back to its initial state before it starts over. This avoids a potentially visible jump from the last state of the animation to the first state that you can get from looping it.
-    ![Bounce start](bounceStart.png)
+    ![Bounce start](bounceStart.webp)
   - **BounceInfinitely**, bounces the animation both before and after the start time, where the animation is in its initial state at the start time.
-    ![Bounce infinitely](bounceInf.png)
+    ![Bounce infinitely](bounceInf.webp)
 
 ```lua
 GeometryFile = models .. "BoxAnimated.glb",

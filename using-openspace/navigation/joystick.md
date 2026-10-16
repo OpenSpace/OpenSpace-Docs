@@ -17,7 +17,7 @@ The schematics and table below show the controller inputs and their assigned fun
 ::::::{container} only-light
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-:::{figure} xbox.png
+:::{figure} xbox.webp
 :alt: "Xbox Controller Schematic"
 :width: 100%
 :align: center
@@ -25,7 +25,7 @@ Xbox controller
 :::
 ::::
 ::::{grid-item}
-:::{figure} ps4.png
+:::{figure} ps4.webp
 :alt: "PS4 Controller Schematic"
 :width: 100%
 :align: center
@@ -38,7 +38,7 @@ PS4 controller (PS5 has same layout)
 ::::::{container} only-dark
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-:::{figure} xbox_dark.png
+:::{figure} xbox_dark.webp
 :alt: "Xbox Controller Schematic"
 :width: 100%
 :align: center
@@ -46,7 +46,7 @@ Xbox controller
 :::
 ::::
 ::::{grid-item}
-:::{figure} ps4_dark.png
+:::{figure} ps4_dark.webp
 :alt: "PS4 Controller Schematic"
 :width: 100%
 :align: center
@@ -56,6 +56,7 @@ PS4 controller (PS5 has same layout)
 :::::
 ::::::
 
+<!-- markdownlint-disable MD055 MD056 -->
 :::{table}
 :align: center
 | XBOX | PS4/PS5 | Description |
@@ -83,6 +84,7 @@ PS4 controller (PS5 has same layout)
 | | Touch Pad | N/A |
 | | PS | N/A |
 :::
+<!-- markdownlint-enable MD055 MD056 -->
 
 
 ## SpaceMouse
@@ -90,7 +92,7 @@ The SpaceMouse is a controller that has a joystick with 6 degrees of freedom tha
 
 The image below is a map of the different movements of the SpaceMouse and a translation of the terminology used by 3Dconnexion (3D) and the terminology used by OpenSpace (OS).
 
-:::{figure} spacemouse-map.png
+:::{figure} spacemouse-map.webp
 :alt: "Spacemouse Mapping Schematic"
 :align: center
 SpaceMouse mapping schematic, showing the different movements and their corresponding terminology in OpenSpace and 3Dconnexion.
@@ -106,6 +108,7 @@ The `Left` and `Right` buttons switch between local and global roll modes. Local
 
 ::::{grid-item}
 
+<!-- markdownlint-disable MD055 MD056 -->
 :::{table}
 :align: right
 | Button or joystick | Description |
@@ -119,6 +122,7 @@ The `Left` and `Right` buttons switch between local and global roll modes. Local
 | Left button | Switch to local roll mode (Default) |
 | Right button | Switch to global roll mode |
 :::
+<!-- markdownlint-enable MD055 MD056 -->
 
 ::::
 :::::

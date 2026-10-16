@@ -1,5 +1,5 @@
 # Keybinds Panel
-![Tour Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.png)
+![Tour Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.webp)
 
 {menuselection}`Windows --> Help --> Keybinds`
 
@@ -11,7 +11,7 @@ The keybinds panel images here reflect these set in the [Default Profile](/profi
 
 The Keybinds Panel is informative and interactive. It shows the active keybindings on a virtual keybnoard. You can click on any active key to see a description of its binding.
 
-:::{figure} keybinds_panel.png
+:::{figure} keybinds_panel.webp
 :align: center
 :width: 100%
 :alt: OpenSpace's Getting Started Keybinds Panel
@@ -22,7 +22,7 @@ OpenSpace's Keybinds Panel for the Default Profile.
 
 You can also see only the active keys for the modifier keys, {kbd}`Shift`, {kbd}`Ctrl`, and {kbd}`Alt`, by pressing on those keys in the panel with your mouse. For the Default Profile, these keybindings are:
 
-:::{figure} keybinds_panel_shift.png
+:::{figure} keybinds_panel_shift.webp
 :align: center
 :width: 100%
 :alt: OpenSpace's Keybinds Panel for the shift key
@@ -31,7 +31,7 @@ You can also see only the active keys for the modifier keys, {kbd}`Shift`, {kbd}
 <br>
 
 
-:::{figure} keybinds_panel_ctrl.png
+:::{figure} keybinds_panel_ctrl.webp
 :align: center
 :width: 100%
 :alt: OpenSpace's Keybinds Panel for the ctrl key
@@ -40,7 +40,7 @@ You can also see only the active keys for the modifier keys, {kbd}`Shift`, {kbd}
 <br>
 
 
-:::{figure} keybinds_panel_alt.png
+:::{figure} keybinds_panel_alt.webp
 :align: center
 :width: 100%
 :alt: OpenSpace's Keybinds Panel for the alt key
@@ -55,7 +55,7 @@ Once you select a key on the panel using your mouse, information for the keybind
   - {kbd}`Shift` + {kbd}`f` toggles the zoom friction.
   - {kbd}`Ctrl` + {kbd}`f` toggles the roll friction.
 
-:::{figure} keybinds_panel_f_key.png
+:::{figure} keybinds_panel_f_key.webp
 :align: center
 :width: 100%
 :alt: OpenSpace's Getting Started Keybinds Panel

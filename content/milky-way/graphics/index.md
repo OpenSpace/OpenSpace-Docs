@@ -5,7 +5,7 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/graphics/radio-sphere/index)
-[![HII regions](/content/milky-way/graphics/radio-sphere/radio_sphere_icon.png)](/content/milky-way/graphics/radio-sphere/index)
+[![HII regions](/content/milky-way/graphics/radio-sphere/radio_sphere_icon.webp)](/content/milky-way/graphics/radio-sphere/index)
 :::
 
 

@@ -1,5 +1,5 @@
 # User Panels
-![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.png)
+![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.webp)
 
 {menuselection}`Windows --> Other --> User Panels`
 
@@ -7,7 +7,7 @@ User Panels in OpenSpace are custom panels that are developed by users outside o
 
 The User Panels button provides shortcuts to user-created web panels, which are HTML pages using the [OpenSpace Javascript API](/building-content/api/index). The "Add Local Panel" tab needs HTML pages to be saved as `index.html` inside individual folders created inside the `user/webpanels` folder. The "Add From URL" tab allows you to create shortcuts to HTML pages served from elsewhere. The [HTML Controls Setup Guide](/building-content/custom-web-ui/html-controls-setup/index) explains the process of creating such HTML control pages.
 
-:::{figure} user-panels.png
+:::{figure} user-panels.webp
 :align: center
 :figwidth: 400px
 :alt: OpenSpace's User Panels Panel

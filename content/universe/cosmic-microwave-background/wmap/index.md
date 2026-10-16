@@ -5,7 +5,7 @@
 :::::{tab-item} Overview
 
 ## Overview
-:::{figure} wmap_cmb.png
+:::{figure} wmap_cmb.webp
 :align: left
 :alt: The WMAP image of the cosmic microwave background, with red areas slightly hotter and blue areas slightly cooler.
 
@@ -35,12 +35,12 @@ As we [mentioned](../index), these differences are used to understand the nature
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

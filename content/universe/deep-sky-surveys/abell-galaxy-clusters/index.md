@@ -9,7 +9,7 @@ The Abell Galaxy Clusters are rich clusters of galaxies akin to the [Virgo Clust
 
 
 
-:::{figure} abell_labels.png
+:::{figure} abell_labels.webp
 :align: left
 :alt: A close-up of the Abell Clusters as a distribution of orange points with select labels.
 
@@ -27,7 +27,7 @@ Labels with the prefix "ACO" (for Abell, Corwin, Olowin) are present on each poi
 
 
 
-:::{figure} abell+tully.png
+:::{figure} abell+tully.webp
 :align: left
 :alt: The Abell Clusters plotted with the Tully galaxies.
 
@@ -44,7 +44,7 @@ Galaxy clusters themselves form superclusters---groupings of galaxy clusters and
 
 
 
-:::{figure} abell_supercluster_labels.png
+:::{figure} abell_supercluster_labels.webp
 :align: left
 :alt: The Tully Galaxies at center, surrounded by the Abell Galaxy Clusters in orange, and the Supercluster Labels.
 
@@ -60,12 +60,12 @@ The Abell Galaxy Clusters shown with the [Supercluster Labels](../supercluster-l
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 :::::

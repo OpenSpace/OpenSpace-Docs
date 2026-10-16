@@ -199,7 +199,7 @@ end)
 ## Setup New Joystick Type
 When connecting a new controller to OpenSpace, the first step is to get a good mapping of what buttons and axes the controller has and what indices they are connected to. To get an overview of the joysticks and its axes and buttons you can use the connected joysticks list in OpenSpace. You can access this list by pressing the *F2* button on the keyboard and you will see the old GUI interface of OpenSpace pop up. In the window called **OpenSpace GUI**, press the empty checkbox next to **Joysticks Information**. This will open a new window and here all the connected controllers will be listed. In this list, you can search for your controller. The items in the list called *3Dconnexion KMJ Emulator* or *Summed contributions* can be ignored. Once you have found your controller you will see two numbered lists of axes and buttons with a slider and button respectively. See the image below:
 
-:::{image} joysticks-list.png
+:::{image} joysticks-list.webp
 :alt: "Where to find a joystick entry in the GUI list"
 :align: center
 :::
@@ -208,14 +208,14 @@ Now we can begin to explore the controller. What we want to have in the end is a
 
 Now that we have a clear image of what the controller is capable of, we need to figure out how it is connected to OpenSpace. Let's start with the axes, we want to identify which index in the OpenSpace list corresponds to each axes on the controller. Choose one axis and move it around a little bit on the controller, you should see one or more sliders reacting to your movement in the list in OpenSpace. If you see several sliders reacting to your movement, try to isolate your movement to only one direction such as up/down or left/right. When you are certain of which index reacted to your input to the axis you can note that down and move on to the next axis. Below is an image to show how it can look like when one of the axes has been moved:
 
-:::{image} joystick-axis.png
+:::{image} joystick-axis.webp
 :alt: "Where to find the axes in the joystick entry"
 :align: center
 :::
 
 For the buttons, we will use the same strategy, push one button a few times and see which of the buttons in OpenSpace reacts, note down that number, and move on to the next. Now that we have a clear image of how each button and axis relate to the list in OpenSpace, we could build a map in our asset. Below is an image to show how it can look like when one of the buttons is pressed:
 
-:::{image} joystick-button.png
+:::{image} joystick-button.webp
 :alt: "Where to find the buttons in the joystick entry"
 :align: center
 :::

@@ -1,5 +1,5 @@
 # Exoplanet Systems Panel
-![Exoplanet Systems Planel Button](toolbar_button_exoplanets.png)
+![Exoplanet Systems Planel Button](toolbar_button_exoplanets.webp)
 
 {menuselection}`Windows --> Content --> Exoplanets`
 
@@ -11,9 +11,9 @@ Unlike the main exoplanets data, where you see all the planetary systems from af
 
 
 ### 1. Bring Up the Exoplanets Module Panel
-To load a system, click on ![Exoplanets module icon](toolbar_button_exoplanets.png){height=24px} to bring up the panel.
+To load a system, click on ![Exoplanets module icon](toolbar_button_exoplanets.webp){height=24px} to bring up the panel.
 
-:::{figure} exoplanet_systems_panel.png
+:::{figure} exoplanet_systems_panel.webp
 :align: center
 :width: 60%
 :figwidth: 90%
@@ -27,7 +27,7 @@ OpenSpace's Exoplanet Systems Panel.
 Inside the panel, search for the system you want to add by typing the name of the system where it says "Star name." In the image below, we typed "Kepler-11" which brings up all the text matches. (The Kepler-11 system, discovered in 2010, has a total of six confirmed planets orbiting the host star Kepler-11.)
 
 
-:::{figure} exoplanet_systems_panel_search.png
+:::{figure} exoplanet_systems_panel_search.webp
 :align: center
 :width: 60%
 :figwidth: 90%
@@ -42,7 +42,7 @@ The exoplanets module panel with the results of a search for "Kepler-11," a mult
 Click on the desired system and then click the "Add System" button to the right. The system will then appear in the list of added systems at the bottom of the panel, and will also appear in the scene menu: \
 {menuselection}`Scene -> Milky Way --> Exoplanets --> Exoplanet Systems`
 
-:::{figure} exoplanet_systems_panel_added.png
+:::{figure} exoplanet_systems_panel_added.webp
 :align: center
 :width: 60%
 :figwidth: 90%
@@ -77,7 +77,7 @@ Use the target button beside the added system to center on the exoplanetary syst
 
 Once you approach a system, it will appear similar to the image below for the Kepler-11 system. You see the host star at center, and the system of planetary orbits encircling it along with an visualization of the habitable zone.
 
-:::{figure} exoplanet_system_kepler11.png
+:::{figure} exoplanet_system_kepler11.webp
 :align: center
 :width: 1000px
 :alt: The Kepler-11 system with its six planets, and the habitable zone in green.

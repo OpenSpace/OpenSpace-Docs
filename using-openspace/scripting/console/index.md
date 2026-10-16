@@ -5,7 +5,7 @@ This page covers the use of the OpenSpace in-game console, which allows precise 
 ## Basic Use
 The console is opened using the \` backtick character (the key to the left of {kbd}`1` on most keyboards). A **>** prompt will appear, where commands can be entered. Pressing \` again hides the console. Just as in a normal terminal window, a command is typed and executed using the {kbd}`Enter` key. If there is a problem with the command, an error message will appear at the bottom of the screen.
 
-:::{figure} console.png
+:::{figure} console.webp
 :align: center
 :width: 100%
 The *Console Window* appearing after pressing the \` character with a script already entered.,

@@ -6,7 +6,7 @@
 
 ## Overview
 
-:::{figure} home_label.png
+:::{figure} home_label.webp
 :align: left
 :alt: The Home label marks the location of the Milky Way Galaxy, which is located at the center of the image alongside some neighboring galaxies which are also labeled.
 
@@ -27,12 +27,12 @@ In the image above, we can see the Milky Way (Home) alongside some of its neighb
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

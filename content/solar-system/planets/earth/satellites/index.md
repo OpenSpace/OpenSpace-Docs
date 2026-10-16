@@ -10,7 +10,7 @@ This section is incomplete---nothing to see here, yet.
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./iss/index)
-[![International Space Station](./iss/iss_icon.png)](./iss/index)
+[![International Space Station](./iss/iss_icon.webp)](./iss/index)
 :::
 
 ::::

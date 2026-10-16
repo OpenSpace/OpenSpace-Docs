@@ -11,7 +11,7 @@ This section is incomplete.
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/comets/oort-cloud/index)
-[![Oort sphere](/content/solar-system/comets/oort-cloud/oort-sphere/oort_cloud_icon.png)](/content/solar-system/comets/oort-cloud/index)
+[![Oort sphere](/content/solar-system/comets/oort-cloud/oort-sphere/oort_cloud_icon.webp)](/content/solar-system/comets/oort-cloud/index)
 :::
 
 
@@ -21,7 +21,7 @@ This section is incomplete.
 Comets are small, icy bodies that orbit the Sun. As they approach the Sun, they warm and begin releasing gases, often from melting ice. This produces an extended cloud of gas surrounding the small body. The gas forms into a tail that points away from the Sun, driven by the solar wind, which emanates radially from the Sun in all directions.
 
 
-:::{figure} 20200716_CometNeowise_JW1-scaled.jpg
+:::{figure} 20200716_CometNeowise_JW1-scaled.webp
 :align: center
 :figwidth: 90%
 :width: 80%
@@ -36,7 +36,7 @@ Comet C/2020 F3 NEOWISE as seen in the sky. This is enhanced slightly through ph
 The nucleus of a comet is characterized by the "dirty snowball" model. Rock, water, ice, {term}`astrophysical dust`, frozen carbon dioxide, methane, and other compounds and molecules. The nucleus can be up to about 60 kilometers (35 miles) in diameter to under one kilometer in diameter.
 
 
-:::{figure} Comet_Hartley_2.jpg
+:::{figure} Comet_Hartley_2.webp
 :align: center
 :figwidth: 80%
 :width: 60%
@@ -54,7 +54,7 @@ A comet can only encounter the Sun so many times before it disintegrates. Each p
 The tail of a comet only appears when materials inside the nucleus begin to vaporize as it approaches the Sun. The tail has two main streams: a dust tail and a gas tail. The dust tail, made of material from the comet, spews off in a curved fashion like the steam from a locomotive when it's moving down the tracks. The gas tail, composed of gases ionized by the Sun's ultraviolet light, always points directly away from the Sun.
 
 
-:::{figure} Structure_of_a_comet.jpg
+:::{figure} Structure_of_a_comet.webp
 :align: center
 :figwidth: 90%
 :width: 80%

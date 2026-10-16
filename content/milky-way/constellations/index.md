@@ -5,15 +5,15 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [Lines](/content/milky-way/constellations/constellation-lines/index)
-[![constellation lines](/content/milky-way/constellations/constellation-lines/constellation_lines_icon.png)](/content/milky-way/constellations/constellation-lines/index)
+[![constellation lines](/content/milky-way/constellations/constellation-lines/constellation_lines_icon.webp)](/content/milky-way/constellations/constellation-lines/index)
 :::
 
 :::{grid-item-card} [Art](/content/milky-way/constellations/constellation-art/index)
-[![constellation art](/content/milky-way/constellations/constellation-art/constellation_art_icon.png)](/content/milky-way/constellations/constellation-art/index)
+[![constellation art](/content/milky-way/constellations/constellation-art/constellation_art_icon.webp)](/content/milky-way/constellations/constellation-art/index)
 :::
 
 :::{grid-item-card} [Boundaries](/content/milky-way/constellations/constellation-boundaries/index)
-[![constellation boundaries](/content/milky-way/constellations/constellation-boundaries/constellation_boundaries_icon.png)](/content/milky-way/constellations/constellation-boundaries/index)
+[![constellation boundaries](/content/milky-way/constellations/constellation-boundaries/constellation_boundaries_icon.webp)](/content/milky-way/constellations/constellation-boundaries/index)
 :::
 
 ::::
@@ -32,7 +32,7 @@ The earliest accepted evidence for constellations dates back to roughly 3000 BCE
 For almost 2,000 years these figures were passed down on star charts. Most of the northern-hemisphere constellations date from antiquity and adopt the names of ancient Greek legends and lore. Many southern-hemisphere constellations are more modern in origin.
 
 
-:::{image} ./constellation-art/Ioannis_Bayeri_Rhainani_Vranometria_1661_(84129163).png
+:::{image} ./constellation-art/Ioannis_Bayeri_Rhainani_Vranometria_1661_(84129163).webp
 :align: left
 :width: 40%
 :::
@@ -61,15 +61,15 @@ For this reason, the constellations only work from Earth's perspective. Once you
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/constellations/constellation-lines/index)
-[![constellation lines](/content/milky-way/constellations/constellation-lines/constellation_lines_icon.png)](/content/milky-way/constellations/constellation-lines/index)
+[![constellation lines](/content/milky-way/constellations/constellation-lines/constellation_lines_icon.webp)](/content/milky-way/constellations/constellation-lines/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/constellations/constellation-art/index)
-[![constellation art](/content/milky-way/constellations/constellation-art/constellation_art_icon.png)](/content/milky-way/constellations/constellation-art/index)
+[![constellation art](/content/milky-way/constellations/constellation-art/constellation_art_icon.webp)](/content/milky-way/constellations/constellation-art/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/constellations/constellation-boundaries/index)
-[![constellation boundaries](/content/milky-way/constellations/constellation-boundaries/constellation_boundaries_icon.png)](/content/milky-way/constellations/constellation-boundaries/index)
+[![constellation boundaries](/content/milky-way/constellations/constellation-boundaries/constellation_boundaries_icon.webp)](/content/milky-way/constellations/constellation-boundaries/index)
 :::
 
 ::::

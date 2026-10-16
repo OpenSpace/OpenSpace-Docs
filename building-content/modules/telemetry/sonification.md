@@ -163,7 +163,7 @@ The steps below explain how to run the OSC example sonification provided by Open
 The surround sound aspect of the provided sonifications is designed for two specific configurations, as shown in the images below. In both images, black dots represent speakers, and the subwoofer is positioned outside the circle because it is not considered a directional sound source.
 
 <!-- @TODO (malej) Generate a dark mode version of this image -->
-:::{image} images/nkpg-dome.png
+:::{image} images/nkpg-dome.webp
 :alt: "Surround Sound Configuration Schematic for the Visualization Center Dome Theater in Norrköping, Sweden"
 :width: 70%
 :align: center
@@ -172,7 +172,7 @@ The surround sound aspect of the provided sonifications is designed for two spec
 The image above shows a **top-down** view of the surround sound setup for the Visualization Center Dome Theater in Norrköping, Sweden. The audience sits in rows inside the circle, facing the front center of the dome surface, which is marked as *Center* at the top of the image. The arrow in the image represents the viewing direction of the audience. The circle represents the edge of the dome surface. This configuration uses the [Horizontal](./angle-information.md#horizontal) angle calculation mode without the elevation angle, as it only has one ring of speakers.
 
 <!-- @TODO (malej) Generate a dark mode version of this image -->
-:::{image} images/amnh-dome.png
+:::{image} images/amnh-dome.webp
 :alt: "Surround Sound Configuration Schematic for the Hayden Planetarium at the American Museum of Natural History in New York, USA"
 :width: 70%
 :align: center
@@ -181,7 +181,7 @@ The image above shows a **top-down** view of the surround sound setup for the Vi
 The image above shows a **bottom-up** view of the surround sound setup for the Hayden Planetarium at the American Museum of Natural History in New York, USA. The audience sits in concentric rings inside the outermost circle, looking up toward the center of the dome surface, which is marked as *Center* with a blue cross in the middle of the image. For a better understanding of the 3D structure, see the image below that shows the dome in 3D from a side view. In the image below, the arrow represents the viewing direction of the audience. The outermost ring represents the edge of the dome surface. This configuration uses the [Circular](./angle-information.md#circular) angle calculation mode with the elevation angle enabled, as it has multiple rings of speakers.
 
 <!-- @TODO (malej) Generate a dark mode version of this image -->
-:::{image} images/amnh-dome-3d.png
+:::{image} images/amnh-dome-3d.webp
 :alt: "Surround Sound Configuration Schematic in 3D from the side for the Hayden Planetarium at the American Museum of Natural History in New York, USA"
 :width: 70%
 :align: center

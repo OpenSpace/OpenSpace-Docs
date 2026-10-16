@@ -11,7 +11,7 @@ This section is incomplete---nothing to see here, yet.
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/missions/jwst/index)
-[![Pluto](/content/solar-system/missions/jwst/jwst_icon.png)](/content/solar-system/missions/jwst/index)
+[![Pluto](/content/solar-system/missions/jwst/jwst_icon.webp)](/content/solar-system/missions/jwst/index)
 :::
 
 ::::

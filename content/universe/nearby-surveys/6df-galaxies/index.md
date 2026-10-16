@@ -8,7 +8,7 @@
 The Six-degree Field (6dF) Galaxy Survey mapped roughly half the sky from the Anglo-Australian Observatory. The survey used the 1.2-meter UK Schmidt Telescope at Siding Spring Observatory in New South Wales, Australia, and allowed for a six degree field of view per observation.
 
 
-:::{figure} 6df_galaxies.png
+:::{figure} 6df_galaxies.webp
 :align: left
 :alt: A view of the 6dF galaxies as multicolored points. The large-scale structure, the weblike appearance of the nearby universe, is readily apparent.
 
@@ -22,7 +22,7 @@ This catalog overlaps with the [Tully Galaxies](../tully-galaxies/index), and th
 
 In addition, the 6dF Galaxies cover only the southern sky. It will only overlap with half of the Tully or 2MASS galaxy surveys.
 
-:::{figure} 6df_cutoff.png
+:::{figure} 6df_cutoff.webp
 :align: left
 :alt: Two wedges of galaxies with multicolored points, with the bottom void of data and the V-shaped wedge blocked from view by our own Milky Way.
 
@@ -35,7 +35,7 @@ An "edge-on" view of the 6dF Galaxies, which observed only the southern sky, hen
 Unlike the Tully galaxies, these data show an incompleteness in the sample. Most of the rich structure is visible closer to the Milky Way, where we see more of the dimmer galaxies. Toward the edge of the data set we see galaxies by their lonesome. This is because these data are not as {term}`complete <completeness>`. We're only seeing the brighter galaxies to this distance, and therefore less complex structures are visible.
 
 
-:::{figure} 6df_nightsky_cutoff.png
+:::{figure} 6df_nightsky_cutoff.webp
 :align: left
 :alt: A night sky view with the stars, constellation lines, and the band of the Milky Way, along with the 6dF Galaxies seen in the southern sky.
 
@@ -51,12 +51,12 @@ The 6dF Galaxies from the night sky perspective. We see the band of the Milky Wa
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

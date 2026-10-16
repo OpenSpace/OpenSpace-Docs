@@ -11,7 +11,7 @@ This section is incomplete---nothing to see here, yet.
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/planets/neptune/neptune/index)
-[![Neptune](/content/solar-system/planets/neptune/neptune/neptune_icon.png)](/content/solar-system/planets/neptune/neptune/index)
+[![Neptune](/content/solar-system/planets/neptune/neptune/neptune_icon.webp)](/content/solar-system/planets/neptune/neptune/index)
 :::
 
 ::::

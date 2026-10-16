@@ -6,7 +6,7 @@
 
 ## Overview
 
-:::{figure} planck_cmb.png
+:::{figure} planck_cmb.webp
 :align: left
 :alt: A portion of the sky in microwave light from the Planck mission.
 
@@ -33,12 +33,12 @@ The red areas represent the slightly hotter temperatures, and the blue areas are
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

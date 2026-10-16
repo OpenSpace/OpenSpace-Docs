@@ -10,19 +10,19 @@ Additionally, each test also reports how long it took to run the test, as well a
 
 Here are examples of how the three image types look like:
 
-:::{figure} example_candidate.png
+:::{figure} example_candidate.webp
 :align: center
 :width: 540px
 The candidate image for example test
 :::
 
-:::{figure} example_reference.png
+:::{figure} example_reference.webp
 :align: center
 :width: 540px
 The reference image for example test
 :::
 
-:::{figure} example_difference.png
+:::{figure} example_difference.webp
 :align: center
 :width: 540px
 The difference image for example test

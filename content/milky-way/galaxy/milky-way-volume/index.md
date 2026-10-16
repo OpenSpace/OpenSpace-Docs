@@ -14,7 +14,7 @@ We have one small problem in showing the Milky Way galaxy in 3-D. We---all of us
 This presents problems, as you might imagine, when it comes time to construct a scientifically accurate model of the Milky Way.
 
 
-:::{figure} milky_way_model_edgeon.png
+:::{figure} milky_way_model_edgeon.webp
 :align: left
 :alt: The three-dimensional Milky Way Galaxy model
 
@@ -29,7 +29,7 @@ The team collaborated with scientists at the [National Astronomical Observatory 
 
 
 
-:::{figure} milky_way_model_faceon_composite.png
+:::{figure} milky_way_model_faceon_composite.webp
 :align: left
 :alt: A two-panel image of the Milky Way Galaxy in OpenSpace. On the left is the Milky Way Volume model and on the right is the volumetric model and the Milky Way Image.
 
@@ -130,12 +130,12 @@ asset.meta = {
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

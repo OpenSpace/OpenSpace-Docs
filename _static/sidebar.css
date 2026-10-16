@@ -9,7 +9,7 @@
   --content-wrap-background-color: #efefef;
   --content-background-color: #fcfcfc;
   --logo-opacity: 0.9;
-  --logo: url('logo-inverted.png');
+  --logo: url('logo-inverted.webp');
 
   --navbar-background-color: #f8f9fb;
   --navbar-background-color-hover: #f1f2f3;
@@ -156,7 +156,7 @@
       --content-background-color: #2e3236;
       /* Decrease the logo opacity when using the dark theme to be less distracting */
       --logo-opacity: 0.85;
-      --logo: url("logo.png");
+      --logo: url("logo.webp");
 
       --navbar-background-color: #25282b;
       --navbar-background-color-hover: #333639;

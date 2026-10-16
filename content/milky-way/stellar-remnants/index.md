@@ -5,11 +5,11 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/stellar-remnants/white-dwarfs/index)
-[![white dwarfs](/content/milky-way/stellar-remnants/white-dwarfs/white_dwarfs_icon.png)](/content/milky-way/stellar-remnants/white-dwarfs/index)
+[![white dwarfs](/content/milky-way/stellar-remnants/white-dwarfs/white_dwarfs_icon.webp)](/content/milky-way/stellar-remnants/white-dwarfs/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/stellar-remnants/pulsars/index)
-[![pulsars](/content/milky-way/stellar-remnants/pulsars/pulsars_icon.png)](/content/milky-way/stellar-remnants/pulsars/index)
+[![pulsars](/content/milky-way/stellar-remnants/pulsars/pulsars_icon.webp)](/content/milky-way/stellar-remnants/pulsars/index)
 :::
 
 ::::

@@ -15,7 +15,7 @@ A habitable zone is the region around a star where liquid water could exist on t
 Defining these zones requires a lot of assumptions about the planet's host star and the planet itself. For one, we are assuming a terrestrial-like planet. One with an favorable atmosphere for life. It factors in greenhouse effects, intensity of light from the star, atmospheric composition, and other parameters.
 
 
-:::{figure} habitable_zone.png
+:::{figure} habitable_zone.webp
 :align: left
 :alt: The Sun's habitable zone, a green band overlaying the planetary orbits of the inner Solar System
 
@@ -39,7 +39,7 @@ Mars is closer to the outer edge, and has a lower atmospheric pressure and tempe
 ### Water Beyond the Habitable Zone
 Astronomers have discovered liquid water beyond this zone, notably in Jupiter's moons Europa and Ganymede and Saturn's moons Titan and Enceladus---all well outside this habitable zone for the Sun. These favorable conditions may result from tidal heating (when a body is being stretched or squeezed by a larger, nearby body) or radioactive decay (unstable elements decay and produce energy in the form of heat).
 
-:::{figure} habitable_zone_afar.png
+:::{figure} habitable_zone_afar.webp
 :align: left
 :alt: The habitable zone seen from outside the Solar System
 
@@ -55,12 +55,12 @@ The habitable zone in the context of the inner and outer planets. While some bod
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

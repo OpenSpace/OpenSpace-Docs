@@ -1,5 +1,5 @@
 # Navigation Panel
-![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png)
+![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.webp)
 
 {menuselection}`Windows --> Navigation`
 
@@ -12,7 +12,7 @@ The Navigation Panel is primarily used to target objects and navigate to those o
 
 The name of the object that is set as Focus will appear in the toolbar button, in this case Earth is set to Focus as seen in the above image. If you focus on the James Webb Space Telescope, then the button would expand to accommodate that name in the Toolbar.
 
-:::{figure} /getting-started/orientation/panel_navigation.png
+:::{figure} /getting-started/orientation/panel_navigation.webp
 :align: center
 :width: 70%
 :figwidth: 70%
@@ -25,8 +25,8 @@ The Navigation Panel, with its top, iconized menu that determines which menu is 
 
 
 The panel has an iconized submenu at the top that determines what you see in the panel:
-  - ![focus button](/getting-started/orientation/navigation_panel_mode_focus.png){h=2em} The target button shows the list of objects that you can quickly designate as Focus, and includes a search box to choose other data sets that don't appear in the menu.
-  - ![Anchor/Aim](/getting-started/orientation/navigation_panel_mode_anchoraim.png){h=2em} The achor and aim button brings up a menu where you can choose one object to anchor to and another one to aim toward.
+  - ![focus button](/getting-started/orientation/navigation_panel_mode_focus.webp){h=2em} The target button shows the list of objects that you can quickly designate as Focus, and includes a search box to choose other data sets that don't appear in the menu.
+  - ![Anchor/Aim](/getting-started/orientation/navigation_panel_mode_anchoraim.webp){h=2em} The achor and aim button brings up a menu where you can choose one object to anchor to and another one to aim toward.
 
 ## Focus
 
@@ -53,7 +53,7 @@ All of the large data sets in OpenSpace are observed from telescopes on Earth, o
 There is no need to change focus unless you're planning to visit an individual object.
 :::
 
-To change the focus, make sure ![focus button](/getting-started/orientation/navigation_panel_focus_button.png){w=25px} is selected in the panel's top menu, then you can do one of three things:
+To change the focus, make sure ![focus button](/getting-started/orientation/navigation_panel_focus_button.webp){w=25px} is selected in the panel's top menu, then you can do one of three things:
   - Click on an object in the list, or
   - If the object you're looking for is not in the list, you can search for it, or
   - If you don't know the name of the object you're looking for, hit the {menuselection}`More` button and an alphabetical list of all loaded assets will appear.
@@ -81,9 +81,9 @@ Once you select an object, OpenSpace will center that object up for you, but it 
 ## Flying to an Object
 Once you change your target, there are several ways to fly to that object.
   - Because OpenSpace has centered the object up, you can use the Zoom Flight Mode and fly directly to it yourself at your own pace.
-  - ![refocus button](/getting-started/orientation/navigation_panel_panfly.png){w=25px} You can use the Refocus Button to have OpenSpace fly there by taking a straight line to the object but panning your view for a graceful tansition.
-  - ![fly to button](/getting-started/orientation/navigation_panel_fly.png){w=25px} You can use the Fly To Button to have OpenSpace fly to the object using a curved path to the target.
-  - ![jump to button](/getting-started/orientation/navigation_panel_jump_button.png){w=25px} Or, you can use the Jump To Button which fades your view to black, then fades back up beside the object.
+  - ![refocus button](/getting-started/orientation/navigation_panel_panfly.webp){w=25px} You can use the Refocus Button to have OpenSpace fly there by taking a straight line to the object but panning your view for a graceful tansition.
+  - ![fly to button](/getting-started/orientation/navigation_panel_fly.webp){w=25px} You can use the Fly To Button to have OpenSpace fly to the object using a curved path to the target.
+  - ![jump to button](/getting-started/orientation/navigation_panel_jump_button.webp){w=25px} Or, you can use the Jump To Button which fades your view to black, then fades back up beside the object.
 
 
 :::{dropdown} Changing the Flight Transition Time
@@ -99,11 +99,11 @@ While Focus chooses an object to center and navigate around, Anchor & Aim allows
 
 
 ### Anchor an Object
-![anchor button](/getting-started/orientation/navigation_panel_anchor_button.png){h=2em} The Anchor panel menu reveals the list of possible objects to set as your anchor. Once you choose an object from the list, or search for an existing asset, it sets that object to the Focus. So, like Focus Mode, it will center the object up in the Graphics Window, and your navigation will revolve around that object.
+![anchor button](/getting-started/orientation/navigation_panel_anchor_button.webp){h=2em} The Anchor panel menu reveals the list of possible objects to set as your anchor. Once you choose an object from the list, or search for an existing asset, it sets that object to the Focus. So, like Focus Mode, it will center the object up in the Graphics Window, and your navigation will revolve around that object.
 
 
 ### Aim Toward an Object
-![aim to button](/getting-started/orientation/navigation_panel_aim_button.png){h=2em} Once an object is set to Anchor, you can then set a different object to aim toward. This allows you to keep one object as your focus while looking toward another object. This is useful when, for example, you want to follow the space station as it orbits Earth, but keep Earth in view as time moves forward.
+![aim to button](/getting-started/orientation/navigation_panel_aim_button.webp){h=2em} Once an object is set to Anchor, you can then set a different object to aim toward. This allows you to keep one object as your focus while looking toward another object. This is useful when, for example, you want to follow the space station as it orbits Earth, but keep Earth in view as time moves forward.
 
 
 
@@ -159,7 +159,7 @@ We will also use the Time Panel, which we will [cover in more detail](/using-ope
 
 
 ### Begin at Earth
-![Earth](tutorial_earth.png)
+![Earth](tutorial_earth.webp)
 
 {.tutorial}
   1. Bring up the Navigation Panel by clicking its button in the Toolbar.
@@ -171,7 +171,7 @@ We will also use the Time Panel, which we will [cover in more detail](/using-ope
 
 
 ### Zoom Out to the Moon's Orbit
-![Earth & Moon](tutorial_earth_and_moon.png)
+![Earth & Moon](tutorial_earth_and_moon.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Zoom away from Earth until you see the Moon's orbit.
@@ -182,7 +182,7 @@ We will also use the Time Panel, which we will [cover in more detail](/using-ope
 
 
 ### Focus on the Moon
-![Moon targeted](tutorial_target_moon.png)
+![Moon targeted](tutorial_target_moon.webp)
 
 {.tutorial}
   1. {octicon}`telescope;1.25em;profile-tour-action` Choose Moon in the Focus Panel. This will set the Focus to the Moon and center it.
@@ -194,7 +194,7 @@ We will also use the Time Panel, which we will [cover in more detail](/using-ope
 
 
 ### Fly to the Moon
-![Approaching Moon](tutorial_approach_moon.png)
+![Approaching Moon](tutorial_approach_moon.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Fly to the Moon manually by holding down the {kbd}`right mouse button`.
@@ -205,7 +205,7 @@ We will also use the Time Panel, which we will [cover in more detail](/using-ope
 
 
 ### Anchor the Moon, Aim to Earth
-![Moon targeted, aiming to Earth](tutorial_target_moon_aim_earth.png)
+![Moon targeted, aiming to Earth](tutorial_target_moon_aim_earth.webp)
 
 {.tutorial}
   1. Open the Anchor & Aim submenu of the panel, confirm that the Moon is set to Anchor.
@@ -223,15 +223,15 @@ We will also use the Time Panel, which we will [cover in more detail](/using-ope
 ### Practice Automated Flight
 {.tutorial}
   1. {octicon}`telescope;1.25em;profile-tour-action` In the Focus submenu, set Earth as the Focus.
-  1. {octicon}`rocket;1.25em;profile-tour-action` Fly to Earth using the Pan & Fly Button ![Pan & Fly](/getting-started/orientation/navigation_panel_panfly.png){h=2em}.
+  1. {octicon}`rocket;1.25em;profile-tour-action` Fly to Earth using the Pan & Fly Button ![Pan & Fly](/getting-started/orientation/navigation_panel_panfly.webp){h=2em}.
   1. {octicon}`rocket;1.25em;profile-tour-action` Fly back out to the Moon manually using the {kbd}`right mouse button`.
-  1. {octicon}`rocket;1.25em;profile-tour-action` Revisit Earth using the Fly To button ![Fly to](/getting-started/orientation/navigation_panel_fly.png){h=2em}. Notice this is a curved path.
+  1. {octicon}`rocket;1.25em;profile-tour-action` Revisit Earth using the Fly To button ![Fly to](/getting-started/orientation/navigation_panel_fly.webp){h=2em}. Notice this is a curved path.
 
 
 
 
 ### Focus on ISS and Jump to It
-![ISS over Earth](tutorial_ISS_focus.png)
+![ISS over Earth](tutorial_ISS_focus.webp)
 
 {.tutorial}
   1. {octicon}`diff-added;1.25em;profile-tour-action` Turn on the International Space Station (ISS) if it's not already on: \
@@ -252,7 +252,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 ### Turn off Trails with Action Panel
 
-![Turn off trails](tutorial_hide_trails.png)
+![Turn off trails](tutorial_hide_trails.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Rotate around ISS to see Earth's horizon.
@@ -269,7 +269,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 
 ### Aim to Earth
-![ISS over Earth](tutorial_ISS_aim_earth.png)
+![ISS over Earth](tutorial_ISS_aim_earth.webp)
 
 {.tutorial}
   1. {octicon}`telescope;1.25em;profile-tour-action` In the Navigation Panel, use the Aim submenu to set the Aim to Earth. This will move you so you're directly looking down on the ISS and Earth.
@@ -284,7 +284,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 
 ### Use Home key to Focus on Earth Again
-![Earth with trails](tutorial_earth_pull_away.png)
+![Earth with trails](tutorial_earth_pull_away.webp)
 
 {.tutorial}
   1. {octicon}`telescope;1.25em;profile-tour-action` Use the {kbd}`Home` key to return Earth to Focus.
@@ -296,7 +296,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 
 ### Focus on Mars
-![Focus on Mars](tutorial_inner_ss_mars_focus.png)
+![Focus on Mars](tutorial_inner_ss_mars_focus.webp)
 
 {.tutorial}
   1. {octicon}`telescope;1.25em;profile-tour-action` Using the Navigation Panel, select Mars from the Focus submenu.
@@ -307,7 +307,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 
 ### Focus on Phobos
-![Focus on Phobos](tutorial_phobos_focus_afar.png)
+![Focus on Phobos](tutorial_phobos_focus_afar.webp)
 
 {.tutorial}
 1. {octicon}`telescope;1.25em;profile-tour-action` Focus on Phobos using one of the following two ways:
@@ -320,12 +320,12 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 {.tutorial}
 1. {octicon}`rocket;1.25em;profile-tour-action` Approach Phobos so it's in the foreground.
 
-![Phobos](tutorial_phobos.png)
+![Phobos](tutorial_phobos.webp)
 
 
 
 ### Aim to Mars
-![Aim to Mars](tutorial_phobos_aim_to_mars.png)
+![Aim to Mars](tutorial_phobos_aim_to_mars.webp)
 
 {.tutorial}
   1. {octicon}`telescope;1.25em;profile-tour-action` Aim to Mars in the Navigation Panel's Aim submenu.
@@ -335,7 +335,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 
 ### Follow Phobos
-![Mars and moons](tutorial_mars_and_moons.png)
+![Mars and moons](tutorial_mars_and_moons.webp)
 
 {.tutorial}
   1. {octicon}`stopwatch;1.25em;profile-tour-action` Set the Simulation Time to 5 minutes / second by clicking inside the input box and typing `5`.
@@ -347,7 +347,7 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 
 ### Focus on Mars again
-![Mars as focus](tutorial_mars_focus.png)
+![Mars as focus](tutorial_mars_focus.webp)
 
 {.tutorial}
   1. {octicon}`telescope;1.25em;profile-tour-action` Set Mars back to the Focus.
@@ -360,10 +360,10 @@ You can see where the ISS is by the shading on its orbital path. If the ISS is o
 
 
 ### Phases of the Moon
-![Scale up Moon](tutorial_scale_up_moon.png)
+![Scale up Moon](tutorial_scale_up_moon.webp)
 
 {.tutorial}
-  1. Jump To Earth by pressing the Jump To button ![Jump to](/getting-started/orientation/navigation_panel_jump_button.png){h=2em} in the Focus Panel. This takes you directly to Earth and sets it as Focus.
+  1. Jump To Earth by pressing the Jump To button ![Jump to](/getting-started/orientation/navigation_panel_jump_button.webp){h=2em} in the Focus Panel. This takes you directly to Earth and sets it as Focus.
   1. {octicon}`stopwatch;1.25em;profile-tour-action` Pause time.
   1. {octicon}`rocket;1.25em;profile-tour-action` Orbit to locate the Moon.
   1. {octicon}`tools;1.25em;profile-tour-action` Increase the Moon's Scale to 25: \

@@ -10,7 +10,7 @@
 2MASS produced a catalog with over 300 million objects, including minor planets, brown dwarfs, nebulae, and galaxies. The Canis Major Dwarf Galaxy, a dwarf galaxy interacting with the Milky Way's disk, was discovered using 2MASS data in 2003.
 
 
-:::{figure} 2mass_galaxies.png
+:::{figure} 2mass_galaxies.webp
 :align: left
 :alt: A map of the 2MASS galaxies as multicolored points with galaxy cluster labels.
 
@@ -42,12 +42,12 @@ For example, the galaxies of the [Local Group](../local-group/index) are all mov
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

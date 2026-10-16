@@ -42,12 +42,12 @@ ModelScale = "Centimeter",
 
 This will make OpenSpace interpret every unit in the model as Centimeters instead of Meters. If this scale would **not** be applied then every Centimeter in the model would be interpreted as Meters, and this would make the model look 100 times bigger than intended. So with the `ModelScale` the model is scaled down with the specified unit.
 
-:::{image} downscaling.png
+:::{image} downscaling.webp
 :align: center
 :class: only-light
 :::
 
-:::{image} downscaling_dark.png
+:::{image} downscaling_dark.webp
 :align: center
 :class: only-dark
 :::
@@ -61,12 +61,12 @@ ModelScale = "Foot",
 InvertModelScale = true,
 ```
 
-:::{image} upscaling.png
+:::{image} upscaling.webp
 :align: center
 :class: only-light
 :::
 
-:::{image} upscaling_dark.png
+:::{image} upscaling_dark.webp
 :align: center
 :class: only-dark
 :::
@@ -82,4 +82,4 @@ ModelScale = 0.01,
 ## Summary
 In short, if the model was developed in a unit other than Meters then use the `ModelScale` key to scale the model down with that unit. However, if the model was developed in Meters but intended to be interpreted as another unit then the scale needs to be inverted with the key `InvertModelScale`. Unfortunately, the process of finding the correct model scale value is a matter of trial and error. However, since release 0.19.0 the numeric value of the `ModelScale` property is included in the GUI and can be changed at runtime with a slider. Note that this property is an `AdvancedUser` property and you might need to change your visibility settings to see it in the GUI.
 
-![ISS Scale](iss-scale-gui.png)
+![ISS Scale](iss-scale-gui.webp)

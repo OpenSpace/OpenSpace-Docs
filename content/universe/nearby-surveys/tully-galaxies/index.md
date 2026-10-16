@@ -8,7 +8,7 @@
 The Tully Catalog is the most polished, accurate catalog of nearby galaxies. It includes over 30,000 galaxies in the local universe that surround the Milky Way. This catalog demonstrates the large-scale structure of the universe exceptionally well. And, each galaxy has a representative image reflecting its morphological type, and is properly sized and inclined. These data have also been "massaged" a bit, correcting and smoothing some of the observational artifacts and data contamination to produce a more realistic view of the structure.
 
 
-:::{figure} tully_outside.png
+:::{figure} tully_outside.webp
 :align: left
 :alt: The Tully Nearby Galaxy Catalog represented as points of orange, green, and aqua points.
 
@@ -30,7 +30,7 @@ The strength of these data are not visiting individual galaxies, but seeing the 
 Large-scale structure is reflective of the primordial universe and tells us about the fluctuations in the early universe, how galaxies form, the distribution of dark matter, and the rate of expansion of the universe. However, it is fleeting---because the universe is expanding and accelerating in its expansion, these superstructures will fly apart over time as they recede from us.
 
 
-:::{figure} tully_virgo_cluster_nightsky.png
+:::{figure} tully_virgo_cluster_nightsky.webp
 :align: left
 :alt: A view of the night sky with the Tully galaxies turned on, seen as multicolored points among the stars and constellation lines of the night sky.
 
@@ -38,7 +38,7 @@ The Virgo Cluster, the group of orange points at center, as seen from Earth. Her
 :::
 
 
-:::{figure} tully_virgo_cluster_within.png
+:::{figure} tully_virgo_cluster_within.webp
 :align: left
 :alt: Multicolored points represent galaxies. The nearest have labels and are located inside the Virgo Cluster. We look from this vantage point back toward the Milky Way, which is roughly 55 million light years away from the Virgo Cluster.
 
@@ -47,7 +47,7 @@ A 55-million-light-year view back toward the Milky Way (Home) from inside the Vi
 
 
 
-:::{figure} tully_virgo_cluster_nearby.png
+:::{figure} tully_virgo_cluster_nearby.webp
 :align: left
 :alt: A view of the galaxies from outside the Virgo Cluster, with the milky Way in the distance.
 
@@ -62,7 +62,7 @@ The Tully data forms a cube, which is a cutoff based on the {term}`completeness`
 The size of the cube is roughly 700 million light years on a side, or about 1 billion light years on the diagonal.
 
 
-:::{figure} tully_cube.png
+:::{figure} tully_cube.webp
 :align: left
 :alt: A cube of points, each representing a galaxy, form a cube-shaped distribution because of the completeness cut-off.
 
@@ -113,12 +113,12 @@ The integers assigned to these types are decoded in the table below. In this num
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

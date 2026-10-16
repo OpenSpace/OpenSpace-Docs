@@ -1,5 +1,5 @@
 # Record Panel
-![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
+![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.webp)
 
 {menuselection}`Windows --> Other --> Session Recording`
 
@@ -8,7 +8,7 @@ The Record Panel enables the recording of a session. A recorded session includes
 While OpenSpace was designed to be an interactive tool to explore data, there are times when you'll want to record a session to playback for an audience so you do not have to recreate all the camera moves and scene settings. Or, you may want to render frames from a recording session into a movie. We will discuss how to do these things below.
 
 
-:::{figure} record_panel.png
+:::{figure} record_panel.webp
 :align: center
 :figwidth: 400px
 :alt: OpenSpace's Record Panel
@@ -24,7 +24,7 @@ Once you're ready, proceed to your starting point. Enter a filename, without an 
 
 Once the recording begins, you will see a red indicator on the Toolbar as well as in the Record Panel.
 
-:::{figure} record_panel_recording.png
+:::{figure} record_panel_recording.webp
 :align: center
 :width: 70%
 :alt: OpenSpace's Stop Recording button
@@ -32,7 +32,7 @@ Once the recording begins, you will see a red indicator on the Toolbar as well a
 Portion of the OpenSpace Toolbar showing a recording in progress.
 :::
 
-:::{figure} record_panel_recording_2.png
+:::{figure} record_panel_recording_2.webp
 :align: center
 :width: 40%
 :alt: OpenSpace's Stop Recording button, in the record panel
@@ -115,7 +115,7 @@ Playing back a previously recorded session will abruptly move you to the startin
 
 Choose a file to be played back using the dropdown menu. The files that appear here are located in your `user/recordings` directory. Choose the desired file, then press the {menuselection}`Play` Button. Once you play a recording back, the blue Pause and Stop Playback buttons appear in the Toolbar.
 
-:::{figure} record_panel_playback.png
+:::{figure} record_panel_playback.webp
 :align: center
 :width: 70%
 :alt: OpenSpace's playback butttons
@@ -123,7 +123,7 @@ Choose a file to be played back using the dropdown menu. The files that appear h
 Portion of the OpenSpace Toolbar showing a playback in progress.
 :::
 
-:::{figure} record_panel_playback_2.png
+:::{figure} record_panel_playback_2.webp
 :align: center
 :width: 40%
 :alt: OpenSpace's playback buttons, in the record panel

@@ -7,7 +7,7 @@
 ## Overview
 A pulsar is a spinning neutron star that emits beams of light from its magnetic poles. These beams are akin to a lighthouse's beam that sweeps across our view as the neutron star spins.
 
-:::{figure} Chandra-crab.jpg
+:::{figure} Chandra-crab.webp
 :align: center
 :figwidth: 80%
 :width: 70%
@@ -29,7 +29,7 @@ Astronomers know that pulsars are not pulsing, in the literal sense, but are spi
 ### Location in the Milky Way
 Because pulsars are relatively young objects, we expect to see them where star formation takes place: the Milky Way's disk.
 
-:::{figure} pulsars_nightsky_orion.png
+:::{figure} pulsars_nightsky_orion.webp
 :align: left
 :alt: A view of the night sky toward the constellation Orion. Red squares indicate the position of pulsars.
 
@@ -37,7 +37,7 @@ Pulsars, in red, as we look toward Orion in the night sky. Each red square is a 
 :::
 
 
-:::{figure} pulsars_nightsky_scorpius.png
+:::{figure} pulsars_nightsky_scorpius.webp
 :align: left
 :alt: Looking at the night sky toward Scorpius and Sagittarius with the constellation lines on and red squares indicating the locations of pulsars.
 
@@ -49,7 +49,7 @@ Looking toward Scorpius and Sagittarius as viewed from Earth, we see red squares
 Many pulsars are found in the [supernova remnants](../../nebulae/supernova-remnants/index) data. Because supernova remnants have short lifetimes, we can assume that the pulsars seen in them are quite young. Once the supernova remnant disappears, the pulsar's rotation period continues to slow. After about 1 million years, the pulsar is no longer visible; therefore, all the pulsars we see today must be the remnants of stars that have died over the previous 100,000 to 1 million years.
 
 
-:::{figure} pulsars_milkyway_faceon.png
+:::{figure} pulsars_milkyway_faceon.webp
 :align: left
 :alt: A view looking down on the Milky Way Galaxy showing the locations of pulsars in red.
 
@@ -57,7 +57,7 @@ Looking down on the Milky Way Galaxy, we see the pulsars in red. These are more 
 :::
 
 
-:::{figure} pulsars_milkyway_edgeon.png
+:::{figure} pulsars_milkyway_edgeon.webp
 :align: left
 :alt: An edge-on view of the Milky Way Galaxy, showing the locations of the pulsars as red points above and below the Galactic disk.
 
@@ -68,7 +68,7 @@ An edge-on view of the Milky Way Galaxy, showing the vertical distribution off t
 ### Pulsars in Globular Clusters
 If pulsars are young objects, why do we see them in the relatively ancient [globular clusters](../../star-clusters/globular-clusters/index)? The answer seems to be that these pulsars are drawing in material from a nearby companion star. This matter causes the star to spin faster, re-energizing the system. These are called millisecond pulsars for their periods, which can be as short as 0.002 seconds (2 milliseconds). More than 30 of these have been found and are easily seen to line up with the globular clusters in the atlas. Often, the distance of the pulsar and the independently deduced distance to the globular cluster will not match, demonstrating that distances in astronomy are by no means an exact science (see {term}`uncertainty`).
 
-:::{figure} pulsars_galaxy_globular_clusters.png
+:::{figure} pulsars_galaxy_globular_clusters.webp
 :align: left
 :alt: A view of the Milky Way Galaxy looking edge-on with the positions of pulsars, in red, and globular clusters, in yellow, shown in concert with one another.
 
@@ -84,12 +84,12 @@ The pulsars (red) and globular clusters (yellow) shown together as we view the M
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

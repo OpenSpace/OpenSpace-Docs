@@ -29,7 +29,7 @@
           "viewports": [
             {
               "tracked": true,
-              "blendmask": "mask.png",
+              "blendmask": "mask.webp",
               "pos": { "x": 0, "y": 0 },
               "size": { "x": 1, "y": 1 },
               "projection": {

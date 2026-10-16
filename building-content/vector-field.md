@@ -1,7 +1,7 @@
 # Vector Field
 `RenderableVectorField` renders a 3D vector field as a collection of arrows. Each arrow represents the direction and magnitude of a vector at a specific point in space. This page describes how to load a vector field dataset and the options for controlling the appearance of the vector arrows.
 
-:::{figure} vectorfield_example.png
+:::{figure} vectorfield_example.webp
 :align: center
 An example of a vector field rendered in OpenSpace using the sparse mode with direction-based coloring.
 :::

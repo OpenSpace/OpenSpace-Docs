@@ -12,7 +12,7 @@ As language and the printed word became more common, illustrated star catalogs w
 
 Bayer was also the first to assign designations to the stars. Names for the brightest stars existed since antiquity, but he cataloged the stars giving them Greek names, Alpha for the brightest star in the constellation, Beta for the second brightest, and so on.
 
-:::{figure} Ioannis_Bayeri_Rhainani_Vranometria_1661_(84129163).png
+:::{figure} Ioannis_Bayeri_Rhainani_Vranometria_1661_(84129163).webp
 :align: left
 :alt: A page from Bayer's star atlas showing an illustrated star field, the stars of Orion and surrounding constellations and a drawing of Orion, the hunter, who wolds a sword, shield, and club.
 
@@ -25,7 +25,7 @@ A page showing the constellation Orion from Johann Bayer's *Uranometria* from 16
 The art appearing here was drawn by [James Hedberg](http://jameshedberg.com) from the City College of New York. He has updated the art from traditional depictions to something more modern.
 
 
-:::{figure} constellation_art_orion.png
+:::{figure} constellation_art_orion.webp
 :align: left
 :alt: A night sky view toward Orion showing the constellation lines with their art overlayed. We see Orion, Taurus, and the big and little dogs.
 
@@ -54,7 +54,7 @@ The Actions Panel has several convenient items to control the constellations. Th
 Use `Show zodiac` and `Hide zodiac` buttons turn only the zodiacal constellations on and off.
 
 
-:::{figure} constellation_art_actions_menu.png
+:::{figure} constellation_art_actions_menu.webp
 :align: left
 :alt: A view of OpenSpace and its interface, with the Constellations Art action menu activated. On the panel we see buttons to turn all the artwork on or off, or to see only the zodiacal constellations.
 
@@ -70,11 +70,11 @@ The Constellations Art action menu. Here you can turn on each constellation's ar
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

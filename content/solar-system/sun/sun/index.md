@@ -14,7 +14,7 @@ Do stars have a surface? Not in the traditional sense of how we think of a surfa
 We see this when the cloud cover is just right to show the Sun as a "ball" of light in the sky. The clouds adequately filter the Sun so we can see the Sun as a round disk of light. Of course, it's never good to look directly at the Sun, but now and then mother nature allows us to peek.
 
 
-:::{figure} sun.png
+:::{figure} sun.webp
 :align: left
 :alt: An image of the Sun with some planetary orbits above
 
@@ -27,7 +27,7 @@ This rendition is properly sized for the radius of the Sun, which is 695,700 kil
 The temperature of the Sun at the photosphere is about 5,800 Kelvin (5,500&deg;C or 9,900&deg;F). Its varying surface suggests areas of activity. We know there are sunspots, flares, and other outbursts characterizing an active surface. This activity occurs over regular eleven-year periods.
 
 
-:::{figure} sun_afar.png
+:::{figure} sun_afar.webp
 :align: left
 :alt: The Sun from afar, within the context of the inner Solar System.
 
@@ -43,12 +43,12 @@ The Sun image from afar within the context of the inner Solar System. Probably b
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

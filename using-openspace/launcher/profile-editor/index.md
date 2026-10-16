@@ -7,7 +7,7 @@ A profile is an assemblage of data assets and settings that, grouped together, a
 
 OpenSpace provides access to the profile editor via the Launcher Window:
 
-:::{figure} /getting-started/launch/launcher.png
+:::{figure} /getting-started/launch/launcher.webp
 :align: center
 :width: 400px
 :alt: OpenSpace launcher window
@@ -19,7 +19,7 @@ The OpenSpace launcher window, with the profile chooser at top, and the New and 
 ## Create a Profile
 The easiest way to create a new profile is to find a profile that has many of the items you want and duplicate it. Select the profile that's closest to what you want, and bring up the profile editor by pressing the {menuselection}`Edit` Button in the Launcher Window. You will see the Profile Editor Window:
 
-:::{figure} profile_editor.png
+:::{figure} profile_editor.webp
 :align: center
 :width: 540px
 :alt: OpenSpace Profile Editor
@@ -34,7 +34,7 @@ This new, unsaved profile will adopt all the settings of the default profile, in
 
 Once you have a new profile, you can change its meta-information: the name, description, author, version, and so on. Use the {menuselection}`Edit` Button under `Meta` in the top-right of the Profile Editor.
 
-:::{figure} profile_editor_meta.png
+:::{figure} profile_editor_meta.webp
 :align: center
 :width: 540px
 :alt: OpenSpace Profile Editor metadata editor
@@ -46,7 +46,7 @@ The OpenSpace Profile Editor's Meta Editor.
 The most-used portion of the Profile Editor is the Assets section in the middle of the window. Click the {menuselection}`Edit` Button to the right of the Assets subwindow title, and the Assets Editor will appear. (Note, there are many {menuselection}`Edit` buttons in this window, to edit the assets included choose the one on the same line as the Assets title.)
 
 
-:::{figure} profile_editor_assets.png
+:::{figure} profile_editor_assets.webp
 :align: center
 :width: 540px
 :alt: OpenSpace Profile Editor's Asset Section
@@ -78,7 +78,7 @@ For this panel, you need to know the name of the asset, or node, you want to add
 ::::
 
 ::::{grid-item}
-:::{image} profile_editor_nodes.png
+:::{image} profile_editor_nodes.webp
 :align: center
 :width: 70%
 :alt: OpenSpace Profile Editor's add nodes
@@ -91,7 +91,7 @@ For this panel, you need to know the name of the asset, or node, you want to add
 ## Simulation Time Increments
 Simulation Time Increments allows you to edit the time increments that function within the [Time Panel](/using-openspace/toolbar/time/index). These increments are triggered by button on that panel, or more easily by keystrokes outlined in the Time Panel page.
 
-:::{figure} profile_editor_time_increments.png
+:::{figure} profile_editor_time_increments.webp
 :align: center
 :width: 540px
 :alt: OpenSpace Profile Editor's Simulation Time Increments section.
@@ -106,7 +106,7 @@ Here, you have three ways to set the initial campera position: Geo State, Naviga
 ### Geo State
 Use the Geo State tab to set a camera position. This is useful when a planet or moon is set as the target---which is often the case.
 
-:::{figure} profile_editor_camera_geo.png
+:::{figure} profile_editor_camera_geo.webp
 :align: center
 :width: 540px
 :alt: Geo State tab in the Profile Editor's camera settings
@@ -120,7 +120,7 @@ Enter the anchor node (the object of focus), then the latitude, longitude, and a
 
 
 ### Navigation State
-:::{figure} profile_editor_camera_navigation.png
+:::{figure} profile_editor_camera_navigation.webp
 :align: center
 :width: 540px
 :alt: Navigation State tab in the Profile Editor's camera settings
@@ -132,7 +132,7 @@ The Navigation State tab in the Profile Editor's camera settings.
 ### Scene Graph Node
 With this option, you can enter a scene graph node, or a known data object in OpenSpace---something you can click on and off in the Scene Panel---and use that data for determining an initial camera setting.
 
-:::{figure} profile_editor_camera_node.png
+:::{figure} profile_editor_camera_node.webp
 :align: center
 :width: 540px
 :alt: Scene Graph Node tab in the Profile Editor's camera settings
@@ -157,7 +157,7 @@ The Relative Time section allows you to provide an offset to the selected time a
 ::::
 
 ::::{grid-item}
-:::{figure} profile_editor_time.png
+:::{figure} profile_editor_time.webp
 :align: center
 :width: 50%
 :alt: OpenSpace Profile Editor's Actions and Keybindings section
@@ -172,7 +172,7 @@ The Relative Time section allows you to provide an offset to the selected time a
 {.advanced-topic}
 [Advanced]{.advanced}
 ## Properties
-:::{figure} profile_editor_properties.png
+:::{figure} profile_editor_properties.webp
 :align: center
 :width: 700px
 :alt: OpenSpace Profile Editor's Properties settings
@@ -186,7 +186,7 @@ The OpenSpace Profile Editor's Properties section, where you can add or remove a
 ## Actions & Keybindings
 At the bottom left, you'll see the Actions & Keybindings section. Press its {menuselection}`Edit` Button and you will see this window:
 
-:::{figure} profile_editor_keybindings.png
+:::{figure} profile_editor_keybindings.webp
 :align: center
 :width: 900px
 :alt: OpenSpace Profile Editor's Actions and Keybindings section
@@ -210,7 +210,7 @@ This section uses scripting expressions and functions that instruct OpenSpace wh
 ::::
 
 ::::{grid-item}
-:::{figure} profile_editor_modules.png
+:::{figure} profile_editor_modules.webp
 :align: center
 :width: 70%
 :alt: OpenSpace Profile Editor's Modules section

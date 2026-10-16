@@ -78,7 +78,7 @@ You can set which graphics OpenSpace uses via the following procedure:
 
 In Windows 11, these setting are found in Window's Settings App under {menuselection}`System --> Display --> Graphics`.
 
-:::{figure} windows_graphics_panel.png
+:::{figure} windows_graphics_panel.webp
 :width: 50%
 :align: center
 :alt: Windows graphics settings
@@ -86,7 +86,7 @@ In Windows 11, these setting are found in Window's Settings App under {menuselec
 :::
   1. Under `Add an app`, browse to choose the `OpenSpace.exe` file in the `OpenSpace/bin/` folder in your main OpenSpace folder.
   1. Click on the resulting OpenSpace entry in the list of apps, and click the `Options` button.
-     :::{figure} windows_graphics_panel_options.png
+     :::{figure} windows_graphics_panel_options.webp
      :width: 50%
      :align: center
      :alt: Windows graphics settings options
@@ -98,7 +98,7 @@ In Windows 11, these setting are found in Window's Settings App under {menuselec
 In Windows 10, assuming you have an NVIDIA card, you must use the NVIDIA Control Panel to set which application explicitly uses the NVIDIA card. Access the NVIDIA Control Panel through these steps:
 
   1. Right click on the desktop to bring up the contextual menu.
-     :::{figure} context-menu.png
+     :::{figure} context-menu.webp
      :width: 50%
      :align: center
      :alt: Windows context menu
@@ -106,7 +106,7 @@ In Windows 10, assuming you have an NVIDIA card, you must use the NVIDIA Control
      Windows Desktop contextural menu.
      :::
   1. Select `NVIDIA Control Panel`.
-     :::{figure} control-panel.png
+     :::{figure} control-panel.webp
      :width: 80%
      :align: center
      :alt: NVIDIA control panel

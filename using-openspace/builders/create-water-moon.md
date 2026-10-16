@@ -8,7 +8,7 @@ In order to locate the newly created sphere at a chosen location near Earth, we 
 we can use the [resource method](/building-content/asset-creation/resources) to render the texture on the sphere.
 
 The whole thing can be put together as an asset file called for example **sphereonglobe.asset**, and saved under the user/data/assets directory of our OpenSpace installation, since all assets in that folder show up automatically in the asset selection part of profile editor, as seen below.
-:::{figure} create-water-moon-asset-editor-screen.jpg
+:::{figure} create-water-moon-asset-editor-screen.webp
 The user asset shows up like this in the Profile Editor under Assets -- Edit
 :::
 
@@ -56,6 +56,6 @@ asset.export(Sphere1)
 ```
 Next, we can create a new profile by editing an existing profile, and add this asset to that profile as described in a separate tutorial.
 Or, we can also just drag and drop the asset file into OpenSpace once it is up and running, and make this asset show up as seen in the image below.
-:::{figure} create-water-moon-openspace-screen.jpg
+:::{figure} create-water-moon-openspace-screen.webp
 After dragging and dropping the **sphereonglobe.asset** file into OpenSpace, the sphere is seen rendered
 :::

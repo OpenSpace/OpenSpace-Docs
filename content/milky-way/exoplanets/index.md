@@ -6,11 +6,11 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/exoplanets/exoplanet-systems/index)
-[![Exoplanet systems](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](/content/milky-way/exoplanets/exoplanet-systems/index)
+[![Exoplanet systems](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.webp)](/content/milky-way/exoplanets/exoplanet-systems/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/exoplanets/exoplanet-candidates/index)
-[![Exoplanet candidates](/content/milky-way/exoplanets/exoplanet-candidates/exoplanet_candidates_icon.png)](/content/milky-way/exoplanets/exoplanet-candidates/index)
+[![Exoplanet candidates](/content/milky-way/exoplanets/exoplanet-candidates/exoplanet_candidates_icon.webp)](/content/milky-way/exoplanets/exoplanet-candidates/index)
 :::
 
 ::::
@@ -66,11 +66,11 @@ Less than one percent of the known systems were discovered using other methods, 
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/exoplanets/exoplanet-systems/index)
-[![Exoplanet systems](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](/content/milky-way/exoplanets/exoplanet-systems/index)
+[![Exoplanet systems](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.webp)](/content/milky-way/exoplanets/exoplanet-systems/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/exoplanets/exoplanet-candidates/index)
-[![Exoplanet candidates](/content/milky-way/exoplanets/exoplanet-candidates/exoplanet_candidates_icon.png)](/content/milky-way/exoplanets/exoplanet-candidates/index)
+[![Exoplanet candidates](/content/milky-way/exoplanets/exoplanet-candidates/exoplanet_candidates_icon.webp)](/content/milky-way/exoplanets/exoplanet-candidates/index)
 :::
 
 ::::

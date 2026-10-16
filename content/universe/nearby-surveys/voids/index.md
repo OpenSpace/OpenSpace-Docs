@@ -8,7 +8,7 @@
 Cosmic voids are immense areas with little or no galaxies. These exist between filaments of galaxies and are typically tens of millions or hundreds of millions of light years in diameter. They are the negative space in the large-scale structure of the universe.
 
 
-:::{figure} voids_nearby.png
+:::{figure} voids_nearby.webp
 :align: left
 :alt: Multicolored Tully galaxy points fill the frame with labels marking where the voids are located.
 
@@ -31,7 +31,7 @@ Voids are often roughly spherical, partly shaped by the expansion of the univers
 
 
 
-:::{figure} voids_outside.png
+:::{figure} voids_outside.webp
 :align: left
 :alt: The Tully Galaxies from outside, looking at the void labels throughout the galaxies.
 
@@ -47,12 +47,12 @@ A view of the void labels from outside the Tully Galaxies. Again, it's a lot eas
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

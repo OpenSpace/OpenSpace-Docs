@@ -20,7 +20,7 @@ The multifaceted [Sloan Digital Sky Survey](https://en.wikipedia.org/wiki/Sloan_
 Sloan DSS operates many investigations on all manner of objects. Here, we focus on the {term}`redshift <redshift/blueshift>` survey which yields galaxies and quasars (discussed in [Quasars](../quasars/index)).
 
 
-:::{figure} sloan_faceon.png
+:::{figure} sloan_faceon.webp
 :align: left
 :alt: A face-on view of the Sloan DSS Galaxies slices of galaxies.
 
@@ -29,7 +29,7 @@ A face-on view of the Sloan DSS Galaxies. Similar to the 2dF Galaxies, Sloan obs
 
 
 
-:::{figure} sloan_edgeon.png
+:::{figure} sloan_edgeon.webp
 :align: left
 :alt: An edge-on view of the Sloan DSS Galaxies that demonstrates the extent of the data slices and the those areas not yet observed.
 
@@ -51,7 +51,7 @@ These galaxies extend beyond the 2dF survey to distances that exceed 5 billion l
 The weblike cosmic large-scale structure is echoed in these data, with orange clusters standing out among the less dense areas filled with green and aqua galaxies.
 
 
-:::{figure} sloan_afar.png
+:::{figure} sloan_afar.webp
 :align: left
 :alt: A view of the Sloan DSS Galaxies from the outside, showing the large-scale structure huddled near the sun and a more homogenous view farther out.
 
@@ -67,12 +67,12 @@ The Sloan DSS Galaxies from the outside. The large-scale structure we are used t
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

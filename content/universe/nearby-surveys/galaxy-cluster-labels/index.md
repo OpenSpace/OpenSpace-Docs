@@ -8,7 +8,7 @@
 The Galaxy Cluster Labels dataset is a series of labels that mark where the large clusters of galaxies are in the nearby universe. These labels must be used in conjunction with the [Tully Galaxies](../tully-galaxies/index).
 
 
-:::{figure} galaxy_clusters_nearby.png
+:::{figure} galaxy_clusters_nearby.webp
 :align: left
 :alt: The colored points of galaxies in the nearby universe. We have labels on the large clusters of galaxies, including the dominant Virgo Cluster. These are above the Milky Way, seen at the bottom as "Home" and centered on a grid.
 
@@ -46,7 +46,7 @@ The [**Norma Cluster**](https://en.wikipedia.org/wiki/Norma_Cluster) is about 22
 
 
 
-:::{figure} galaxy_clusters_outside.png
+:::{figure} galaxy_clusters_outside.webp
 :align: left
 :alt: A view of the galaxies with clusters in orange and labeled. We see the Coma and Leo clusters in the foreground, and the Perseus Cluster and Norma clusters on the outskirts.
 
@@ -62,12 +62,12 @@ A view of the more distant clusters, including the Coma, Leo, Norma, and Perseus
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

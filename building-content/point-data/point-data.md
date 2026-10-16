@@ -5,7 +5,7 @@ This page describes how to load a point dataset and the options for controlling 
 
 Also see [RenderablePointCloud](#base_renderable_pointcloud) asset component documentation for more details, available settings and examples of how to load and render point datasets.
 
-:::{figure} sdss.png
+:::{figure} sdss.webp
 :align: center
 
 One example of a point cloud dataset is the [Sloan Digital Sky Survey Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/index) in the [Default](/profiles/default/index) profile.
@@ -169,7 +169,7 @@ By default, all the variables in the dataset are loaded as possible options for 
   ...
 ```
 
-:::{figure} colormap_ui_annotated.png
+:::{figure} colormap_ui_annotated.webp
 :align: center
 :width: 50em
 *The chosen set of parameters will be available in the user interface. Here we see the chosen parameter (A), which can be changed through a drop-down menu, and the currently selected value range (B). The value range (B) will automatically update when a parameter (A) is chosen, but it is also possible to set it explicitly. There is also a button for setting the range to the min and max value in the dataset (C).*
@@ -208,7 +208,7 @@ Per default, the colors of points that overlap are blended additively, resulting
 
 This means that the point will be rendered without any blending and the point that is closest to the camera will be rendered on top.
 
-:::{figure} blending.png
+:::{figure} blending.webp
 :align: center
 :width: 50em
 *Example of points with (right) and without (left) additive blending enabled. Note how the points to the right appear brighter in the overlapping areas, while the left set of points preserve their actual color. In the overlaps, the point that is closer to the camera will be the visible one.*
@@ -237,7 +237,7 @@ A sprite texture (i.e. an image) can be used to decide the shape of the points. 
 
 The points will look the best with textures that have a transparent background, i.e. with an alpha value of zero. Below is an example of a point cloud with a filled star shape. However, shapes that are transparent in the center (for example, a ring), or have more than one color would work as well. Note however that if you want to apply a color to your point using a color map or fixed color, we recommend using texture in white or bright grayscale.
 
-:::{figure} texture_star.png
+:::{figure} texture_star.webp
 :align: center
 :width: 50em
 :::
@@ -245,7 +245,7 @@ The points will look the best with textures that have a transparent background, 
 ### Textures and Colors
 Textures also work with color maps. In that case, the color of the texture is multiplied by that of the color. The same goes if a fixed color is applied to the points. See example below. Note that here we have also disabled the additive blending by setting the `UseAdditiveBlending` property to `false`, so that the color of overlapping points is not added and blended.
 
-:::{figure} textures.png
+:::{figure} textures.webp
 :align: center
 :width: 50em
 
@@ -262,7 +262,7 @@ The list of available path tokens and their corresponding locations are found in
 There are some additional settings that might be set related to the texture, like whether image compression should be allowed or if the alpha channel of images should be used (both these settings are enabled per default). For more details, see the documentation of the table parameters for the `Texture` table of `RenderablePointCloud` on the [reference page about that renderable](#base_renderable_pointcloud).
 
 ## Outlines
-:::{figure} outline_basic.png
+:::{figure} outline_basic.webp
 :align: right
 :width: 20em
 Blue points with white outline.
@@ -292,7 +292,7 @@ By default, setting the outline will enforce a round shape for the rendered poin
 
 It is also possible to set the color of the outline from the color map. In this case, the color map will not be applied to the texture, but only to the outline. See an example in the figure below.
 
-:::{figure} outline_cmap_styles.png
+:::{figure} outline_cmap_styles.webp
 :width: 80em
 Outlines on a textured point cloud in three different styles: Round (left), Square (center), Bottom (right). The color of the outline is set from a color map.
 :::
@@ -344,11 +344,11 @@ Since the exponent affects the physical, world-scale, size of the points, this m
 ### Limit to a Max Size
 In addition to the world-size scale, it is also possible to limit the maximum size the points are allowed to take up of the view. This prevents the points from growing larger than a specified size when the camera is approaching the dataset. An example is shown in the images below.
 
-:::{figure} pointsize_close.png
+:::{figure} pointsize_close.webp
 :align: center
 :width: 50em
 :::
-:::{figure} pointsize_far.png
+:::{figure} pointsize_far.webp
 :align: center
 :width: 50em
 *Example of the point size scaling in action. The green points (left) use regular sizing and the blue points (right) have a limited max size. Note how the green points (left) appear larger up close and smaller at a large distance, while the blue points (right) are scaled to have the same size at both distances.*

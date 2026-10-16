@@ -8,7 +8,7 @@
 Globular star clusters are gravitationally bound groups of roughly 100,000 to a few million stars. They are compact---stars near their centers are within a light year of one another---roughly spherical clusters that range from 30 to 100 light years in diameter.
 
 
-:::{figure} globular_clusters_skyview.png
+:::{figure} globular_clusters_skyview.webp
 :align: left
 :alt: Looking at the night sky with Scorpius and Sagittarius in view, we note the locations of globular clusters with yellow markers, which are concentrated in this part of the sky.
 
@@ -19,7 +19,7 @@ Globular clusters are marked with yellow indicators. In reality, the cluster is 
 Globular clusters are not thought to be fertile environments for planet formation. However, imagine being on a planet located inside one of these clusters---its sky would be illuminated by an abundance of stars brighter than the Sun.
 
 
-:::{figure} Globular_Cluster_M2_1024.jpg
+:::{figure} Globular_Cluster_M2_1024.webp
 :align: center
 :figwidth: 60%
 :alt: A globular cluster---a tightly-packed star cluster.
@@ -35,7 +35,7 @@ Globular clusters were instrumental in our understanding of the size and nature 
 In 1918, the astronomer [Harlow Shapley](https://en.wikipedia.org/wiki/Harlow_Shapley) (1885–1972) noted that the open clusters were mainly in the plane of the Milky Way, while more than half the globular clusters were in or near the constellation Sagittarius. He deduced the center of our star system must be far off in the direction of Sagittarius.
 
 
-:::{figure} globular_clusters_galaxy_view.png
+:::{figure} globular_clusters_galaxy_view.webp
 :align: left
 :alt: A view from outside the Milky Way Galaxy showing the distribution of globular clusters in yellow. The clusters are distributed around the center of the Milky Way Galaxy.
 
@@ -50,7 +50,7 @@ The line between globular cluster and dwarf galaxy is not always clear. Dwarf ga
 For more on dwarf galaxies, see [Local Group](../../../universe/nearby-surveys/local-group/index).
 
 
-:::{figure} globular_clusters_local_group.png
+:::{figure} globular_clusters_local_group.webp
 :align: left
 :alt: Looking back toward the Milky Way Galaxy from a distant vantage point, we see yellow points huddled around the Galaxy showing the locations of the globular clusters, and more distant aqua points demonstrating where the nearby dwarf galaxies are located.
 
@@ -76,12 +76,12 @@ The globular clusters form one of the most {term}`complete <completeness>` data 
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

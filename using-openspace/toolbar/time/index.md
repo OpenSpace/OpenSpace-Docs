@@ -1,5 +1,5 @@
 # Time Panel
-![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.png){h=50px}
+![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time.webp){h=50px}
 
 {menuselection}`Windows --> Time Panel`
 
@@ -9,7 +9,7 @@
 :::::::{tab-item} Overview
 
 ## Panel Overview
-:::{figure} time_panel.png
+:::{figure} time_panel.webp
 :align: right
 :width: 90%
 :figwidth: 40%
@@ -82,7 +82,7 @@ There are several ways to specify the date and time in OpenSpace. You can type o
 ### Use the Date and Time Fields
 The six fields at the top of the panel---year, month, day, hours, minutes, seconds---may be used to alter the date and time. You can type directly in these fields or use the arrows above or below the fields.
 
-:::{figure} time_panel_fields.png
+:::{figure} time_panel_fields.webp
 :align: center
 :width: 55%
 :alt: OpenSpace's Time Panel
@@ -99,7 +99,7 @@ The date and time fields.
 
 
 ### Locking the Simulation Speed
-:::{figure} time_panel_lock.png
+:::{figure} time_panel_lock.webp
 :align: center
 :width: 55%
 :alt: OpenSpace's Time Panel
@@ -107,7 +107,7 @@ The date and time fields.
 Pressing the Lock Button displays the Interpolate, Set, and Cancel buttons.
 :::
 
-The ![Lock Button](time_panel_lock_button.png){h=2em} button allows you to alter the date and time without altering the view. Normally, if you set a new date the view will change to the date specified, either instantaneously or by interpolating to it as we discussed above. When you use the Lock Button, you can change the date and the view won't change until you press either the Interpolate Button or the Set Button.
+The ![Lock Button](time_panel_lock_button.webp){h=2em} button allows you to alter the date and time without altering the view. Normally, if you set a new date the view will change to the date specified, either instantaneously or by interpolating to it as we discussed above. When you use the Lock Button, you can change the date and the view won't change until you press either the Interpolate Button or the Set Button.
 
 The {menuselection}`Interpolate` Button results in an interpolated transition, while the {menuselection}`Set` Button will bring up the view for the new date using an instantaneous transition.
 
@@ -118,7 +118,7 @@ The {menuselection}`Interpolate` Button results in an interpolated transition, w
 The Simulation Speed alters the **rate** of time in OpenSpace. There will be many reasons for changing the speed of the simulation: to see the planets revolve around the Sun, to spin one side of a planet into sunlight, examine a mission and its spacecraft over time, or to watch the stars move over millennia.
 
 ### Display Unit Menu
-:::{figure} time_panel_simulation_units.png
+:::{figure} time_panel_simulation_units.webp
 :align: right
 :width: 90%
 :figwidth: 40%
@@ -135,7 +135,7 @@ Change the time increment in the input next to the display unit menu. Enter a nu
 The unit on the rate of time is displayed above the input. By default, the rate of time is seconds per second. Of course, when the value is 1 and the unit is seconds/second, we're running in real time. If you change the unit to hours, then the input will show "hours/second", and if the value is 10, then time will move at 10 hours for every second on your watch.
 
 ### Quick Adjust
-:::{figure} time_panel.png
+:::{figure} time_panel.webp
 :align: right
 :width: 90%
 :figwidth: 40%
@@ -159,7 +159,7 @@ Inside the {menuselection}`Settings --> Time Manager` menu, you will find these 
 
 
 ### Fast-forward & Rewind Buttons
-The ![rewind button](/using-openspace/toolbar/time/time_panel_rewind_button.png){h=18px} and ![fast-forward button](/using-openspace/toolbar/time/time_panel_fast_forward_button.png){h=18px} buttons change the simulation speed according to preset increments defined in a profile. Appearing under each button is the increment it will implement and it will change as you progressively select adjacent increments.
+The ![rewind button](/using-openspace/toolbar/time/time_panel_rewind_button.webp){h=18px} and ![fast-forward button](/using-openspace/toolbar/time/time_panel_fast_forward_button.webp){h=18px} buttons change the simulation speed according to preset increments defined in a profile. Appearing under each button is the increment it will implement and it will change as you progressively select adjacent increments.
 
 Alternatively, you can use the keyboard shortcuts {kbd}`→` to increase and {kbd}`←` to decrease the simulation time by the increments specified in the profile. For example, in the [](/profiles/default/index.md) Profile, the second time increment is 5.0 (see the *Default Profile Time Increments* dropdown below), and this value is shown under the fast-forward button. If you press the {kbd}`→` key, the simulated time will increase to 5 seconds per second. Press the {kbd}`←` key and it will return to 1 second per second.
 

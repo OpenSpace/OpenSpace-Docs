@@ -11,7 +11,7 @@ While the constellations have been around since antiquity, it is only in the las
 By the late 19th century, there was an effort to standardize the constellations. Once Johann Bayer (in the 17th century) assigned stars to a constellation by giving them Greek names like Alpha Orionis, it became necessary to remove the ambiguity in the celestial sphere and define boundaries for each constellation. Once completed and adopted in 1928, every object seen in the sky, by eye or by powerful telescopes, would now belong in one constellation.
 
 
-:::{figure} constellation-boundaries-orion.png
+:::{figure} constellation-boundaries-orion.webp
 :align: left
 :alt: Looking toward Orion in the night sky we see the constellation lines along with the constellation boundaries in yellow.
 
@@ -22,7 +22,7 @@ Constellations and their boundaries in yellow looking toward Orion.
 The constellation boundaries follow lines of right ascension and declination, so they form squared-off, boxy shapes. In a sense, you can think of these eighty-eight regions as countries, each with its territory. The result was a division of the night sky into eighty-eight contiguous areas, which allowed astronomers to be more precise with their observations and discoveries.
 
 
-:::{figure} constellation-boundaries-andromeda.png
+:::{figure} constellation-boundaries-andromeda.webp
 :align: left
 :alt: A night sky view toward Aries and Pisces with Andromeda and Pegasus, with constellation lines drawn and each constellation's boundary in yellow.
 
@@ -38,12 +38,12 @@ The night sky looking toward the constellations Aries, Pisces, and Andromeda. Th
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

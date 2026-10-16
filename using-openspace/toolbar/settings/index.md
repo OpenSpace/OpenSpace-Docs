@@ -1,5 +1,7 @@
+<!-- The list-tables in this file use RST `*` row markers, which markdownlint misreads as asterisk list items (MD004) -->
+<!-- markdownlint-disable MD004 -->
 # Settings Panel
-![Settings Panel Button](/using-openspace/toolbar/settings/toolbar_button_settings.png)
+![Settings Panel Button](/using-openspace/toolbar/settings/toolbar_button_settings.webp)
 
 {menuselection}`Windows --> Settings`
 
@@ -10,7 +12,7 @@ Each setting in the Settings Panel will be discussed in detail elsewhere in this
 :::
 
 
-:::{figure} settings_panel.png
+:::{figure} settings_panel.webp
 :align: center
 :width: 60%
 :figwidth: 70%
@@ -27,15 +29,15 @@ OpenSpace's Settings Panel.
 :header-rows: 0
 :class: toolbar-table
 
-*   - **GlobeBrowsing**
+  * - **GlobeBrowsing**
     - Path to the image used for GeoJSON locations on the globe.
-*   - **CefWebGui**
+  * - **CefWebGui**
     - These options control the graphical user interface, including its visibility and scale.
-*   - **Exoplanets**
+  * - **Exoplanets**
     - Settings for the [Exploplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index).
-*   - **Molecule**
+  * - **Molecule**
     - Options that control the molecule module. See [RenderableMolecule](/reference/asset-components/Renderable/RenderableMolecule) for more information.
-*   - **SkyBrowser**
+  * - **SkyBrowser**
     - Settings for the [SkyBrowser Panel](/using-openspace/toolbar/skybrowser/index), mainly controlling the speed of animations when slewing on the sky.
 :::
 
@@ -45,11 +47,11 @@ OpenSpace's Settings Panel.
 :header-rows: 0
 :class: toolbar-table
 
-*   - **Orbital Navigator**
+  * - **Orbital Navigator**
     - Settings for orbital navigation including anchor and aim parameters and controller sensitivities.
-*   - **Path Navigator**
+  * - **Path Navigator**
     - Set speeds for the camera as it traverses a recorded path.
-*   - **Jump to fade duration**
+  * - **Jump to fade duration**
     - The fade duration between a jump transition.
 :::
 
@@ -59,15 +61,15 @@ OpenSpace's Settings Panel.
 :header-rows: 0
 :class: toolbar-table
 
-*   - **Mouse Interaction Visualizer**
+  * - **Mouse Interaction Visualizer**
     - Shows a visual cue for the distance the mouse has moved since being pressed.
-*   - **Touch markers**
+  * - **Touch markers**
     - Displays markers that respond to touch interactions.
-*   - **Invert left and right mouse buttons**
+  * - **Invert left and right mouse buttons**
     - If checked, the right mounse button is considered the primary button.
-*   - **Disable all joystick inputs**
+  * - **Disable all joystick inputs**
     - Prevent joystick inputs from affecting the camera.
-*   - **Disable all touch inputs**
+  * - **Disable all touch inputs**
     - Prevent touch inputs from affecting the camera.
 :::
 
@@ -77,13 +79,13 @@ OpenSpace's Settings Panel.
 :header-rows: 0
 :class: toolbar-table
 
-*   - **Default time interpolation duration**
+  * - **Default time interpolation duration**
     - Duration it takes to interpolate between two times.
-*   - **Default delta time interpolation duration**
-    - Set the time between the timesteps specified in the profile and controlled via the ![rewind button](/using-openspace/toolbar/time/time_panel_rewind_button.png){h=18px} and ![fast-forward button](/using-openspace/toolbar/time/time_panel_fast_forward_button.png){h=18px} buttons.
-*   - **Default pause interpolation duration**
+  * - **Default delta time interpolation duration**
+    - Set the time between the timesteps specified in the profile and controlled via the ![rewind button](/using-openspace/toolbar/time/time_panel_rewind_button.webp){h=18px} and ![fast-forward button](/using-openspace/toolbar/time/time_panel_fast_forward_button.webp){h=18px} buttons.
+  * - **Default pause interpolation duration**
     - Sets the length of time between the simulated time and a pause of time.
-*   - **Default unpause interpolation duration**
+  * - **Default unpause interpolation duration**
     - Sets the length of time over which the simulation goes from zero to the set time.
 :::
 
@@ -96,23 +98,23 @@ Enables or disables the ScriptScheduler. No scheduled scripts are executed if di
 :header-rows: 0
 :class: toolbar-table
 
-*   - **Global Blackout**
+  * - **Global Blackout**
     - Fade the graphics to and from black, or fade to an image of your choice.
-*   - **Windowing**
+  * - **Windowing**
     - Controls the horizontal field of view.
-*   - **Show the on-screen log**
+  * - **Show the on-screen log**
     - Sets whether the on-screen log is shown at startup.
-*   - **Shows the version on-screen information**
+  * - **Shows the version on-screen information**
     - Toggles the on-scereen version in the lower-right corner of the applicaiton.
-*   - **Shows camera information**
+  * - **Shows camera information**
     - The current camera information is displayed in the upper-right of the application window.
-*   - **Hue**
+  * - **Hue**
     - Alters the hue of the graphics.
-*   - **Saturation**
+  * - **Saturation**
     - Sets the saturation of colors in the graphics window.
-*   - **Value**
+  * - **Value**
     - Sets a brightness value for the graphics.
-*   - **Framerate Limit**
+  * - **Framerate Limit**
     - Set a limiting framerate. A value of zero (0) indicates an unlimited framerate.
 :::
 
@@ -125,21 +127,21 @@ Each of these options adjust the [Dashboard](getting-started--orientation--dashb
 :::{list-table}
 :header-rows: 0
 :class: toolbar-table
-*   - **Date**
+  * - **Date**
     - Show the date, and set the date format.
-*   - **Simulation Increment**
+  * - **Simulation Increment**
     - Show the simulation time increment, "5.0 Minutes / second" for example.
-*   - **Distance**
+  * - **Distance**
     - Show the distance from your position (the camera's position) to the focus, and change the source and destination objects for the distance measurement.
-*   - **Framerate**
+  * - **Framerate**
     - Displays the framerate in frames per second (FPS). By default, shows the average framerate, but you can set what it shows here.
-*   - **Parallel Connection**
+  * - **Parallel Connection**
     - Displays only if OpenSpace is directly connected to other OpenSpace instances. Once connected, this shows how many connections are present and who controls the session.
-*   - **Globe Location**
+  * - **Globe Location**
     - Lists the position of the target.
-*   - **Enabled**
+  * - **Enabled**
     - Determines whether the Dashboard is displayed.
-*   - **Start position offset**
+  * - **Start position offset**
     - Sets the position of the Dashboard on the screen.
 :::
 
@@ -148,8 +150,8 @@ Each of these options adjust the [Dashboard](getting-started--orientation--dashb
 :::{list-table}
 :header-rows: 0
 :class: toolbar-table
-*   - **Property visibility**
+  * - **Property visibility**
     - This determines which properties are visible in the Scene Panel according to which user role in the menu is chosen. The more expertise a user role possesses, the more properties are visible in the Scene Panel.
-*   - **Disable all mouse inputs**
+  * - **Disable all mouse inputs**
     - Disables the mouse as an input device.
 :::

@@ -5,7 +5,7 @@
 :::::{tab-item} Overview
 
 ## Overview
-:::{figure} cobe_cmb.png
+:::{figure} cobe_cmb.webp
 :align: left
 :alt: A portion of the sky in microwave light from the COBE mission. We see areas of red and blue, showing tiny differences in temperature.
 
@@ -37,11 +37,11 @@ While the COBE map yielded the first all-sky image of the CMB, and netted two of
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

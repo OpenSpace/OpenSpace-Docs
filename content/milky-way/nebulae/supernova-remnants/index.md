@@ -7,7 +7,7 @@
 ## Overview
 A supernova remnant is a nebulous structure that forms from a supernova. The exploding star sends out ejected material and sweeps up the interstellar gas to form these nebulous, glowing clouds of gas.
 
-:::{figure} Crab_Nebula.jpg
+:::{figure} Crab_Nebula.webp
 :align: center
 :figwidth: 60%
 :alt: The Crab Nebula
@@ -23,7 +23,7 @@ In the case of a massive star, once hydrogen is exhausted in its core, it will b
 
 
 
-:::{figure} supernova_remnants_solar_neighborhood.png
+:::{figure} supernova_remnants_solar_neighborhood.webp
 :align: left
 :alt: A view of the Milky Way Galaxy with a white ring around the Sun and orange points marking the locations of supernova remnants.
 
@@ -46,7 +46,7 @@ Supernovae are a relatively rare occurrence. Only a tiny fraction of stars or bi
 Furthermore, it is difficult to obtain accurate distances for these objects. Fewer than half the catalog's objects have reliable distances.
 
 
-:::{figure} SNR_Orion.png
+:::{figure} SNR_Orion.webp
 :align: left
 :alt: A view of the night sky looking toward the constellation Orion with orange points representing the supernova remnants.
 
@@ -62,7 +62,7 @@ Similar to all objects that depend on, or are the product of star formation, sup
 There are a handful of notable supernova remnants. We mentioned the [Crab Nebula](https://en.wikipedia.org/wiki/Crab_Nebula) from 1054 and the [Tycho remnant](https://en.wikipedia.org/wiki/SN_1572), named for the astronomer Tycho Brahe who observed the supernova of 1572. Similarly, there is a [Kepler remnant](https://en.wikipedia.org/wiki/Kepler%27s_Supernova) from the 1604 supernova. Visible in the southern hemisphere is the [Vela remnant](https://en.wikipedia.org/wiki/Vela_Supernova_Remnant). It originated about 11,000 years ago from a supernova about 900 light years away. It is one of the closest to Earth and one of the brightest X-ray sources in the night sky.
 
 
-:::{figure} SNR_near_sun.png
+:::{figure} SNR_near_sun.webp
 :align: left
 :alt: A view of the Milky Way Galaxy with the Sun in the foreground. Orange points mark the supernova remnants and are accompanied by their names.
 
@@ -78,12 +78,12 @@ Some notable supernova remnants around the Sun.
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

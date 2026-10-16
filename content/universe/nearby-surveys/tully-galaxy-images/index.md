@@ -16,7 +16,7 @@ These images have several qualities:
 
 
 
-:::{figure} images_virgo_cluster_normal.png
+:::{figure} images_virgo_cluster_normal.webp
 :align: left
 :alt: A view of  galaxies inside the Virgo Cluster.
 
@@ -31,7 +31,7 @@ From a wide perspective, these images are impossible to see, hence the need for 
 While we would *never* do this in the public show, it is possible to exaggerate the image sizes. Using the menu item {menuselection}`Scene --> Tully Galaxies Images -> Renderable -> Sizing -> Scale Factor`, you can make the images larger, to the point that neighboring galaxies are overlapping. This is **completely unrealistic and inaccurate**, but it can be illustrative at times when used with restraint.
 
 
-:::{figure} images_virgo_cluster_large.png
+:::{figure} images_virgo_cluster_large.webp
 :align: left
 :alt: A view of the Virgo Cluster with exaggerated image sizes and galaxy labels turned on.
 
@@ -49,7 +49,7 @@ Each of these images has been altered from its original state. These images were
 
 
 
-:::{figure} images_local_univerese_labels.png
+:::{figure} images_local_univerese_labels.webp
 :align: left
 :alt: A view of the nearby galaxies with only their exaggerated images. Green labels note the positions of galaxy groups and orange labels mark the galaxy clusters.
 
@@ -59,7 +59,7 @@ A view of the nearby universe with grossly exaggerated images and labels for gal
 
 
 
-:::{figure} images_gross_exaggeration.png
+:::{figure} images_gross_exaggeration.webp
 :align: left
 :alt: The Tully Galaxies as seen with highly exaggerated images.
 
@@ -75,12 +75,12 @@ An outrageous exaggeration---the Tully Galaxy Images are so large we can see the
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

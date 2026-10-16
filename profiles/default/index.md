@@ -41,7 +41,7 @@ In this tour, we will explore the Universe from Earth to the most distant object
 #### Earth
 {octicon}`rocket;1.25em;profile-tour-action` Start a slow orbit around Earth.
 
-[![Earth](earth.png)](earth.png)
+[![Earth](earth.webp)](earth.webp)
 
 Earth is, of course, home to everyone you know, and we're mostly huddled on those parts of the planet that are above present sea level---about 30% of the planet's surface. Earth remains a dynamic planet, with plate tectonics, active volcanoes, and crust formation.
 
@@ -51,7 +51,7 @@ Earth formed about 4.6 billion years ago, but our modern species appeared only a
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/planets/earth/earth/index)
-[![Earth](/content/solar-system/planets/earth/earth/earth_icon.png)](/content/solar-system/planets/earth/earth/index)
+[![Earth](/content/solar-system/planets/earth/earth/earth_icon.webp)](/content/solar-system/planets/earth/earth/index)
 :::
 ::::
 
@@ -65,7 +65,7 @@ Use the {kbd}`f` key to turn friction on and off for orbital motion. If you orbi
 #### Distance of the Moon
 {octicon}`rocket;1.25em;profile-tour-action` Pull away from Earth so that the Moon's orbit is in full view, and continue orbiting Earth.
 
-[![Moon's orbit](moon_orbit.png)](moon_orbit.png)
+[![Moon's orbit](moon_orbit.webp)](moon_orbit.webp)
 
 The Moon is Earth's only natural satellite. Its average distance is 384,400 km (almost 239,000 miles), but it ranges from 362,000 km at its nearest to 405,000 km at its most distant (that's 225,000 miles to 251,600 miles).
 
@@ -75,7 +75,7 @@ The Moon is the farthest humans have ventured into space. In fact, the record fo
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/planets/earth/moon/index)
-[![Moon](/content/solar-system/planets/earth/moon/moon_icon.png)](/content/solar-system/planets/earth/moon/index)
+[![Moon](/content/solar-system/planets/earth/moon/moon_icon.webp)](/content/solar-system/planets/earth/moon/index)
 :::
 ::::
 
@@ -89,7 +89,7 @@ We can also express distance in terms of light travel time. You may be familiar 
 #### Distance of the Sun
 {octicon}`rocket;1.25em;profile-tour-action` Pull out from Earth to see the planets of the inner Solar System.
 
-[![Inner planet orbits](sun_distance.png)](sun_distance.png)
+[![Inner planet orbits](sun_distance.webp)](sun_distance.webp)
 
 The Sun, our host star, is, on average, 150 million km (93 million miles) from Earth, which we can also state as 8 light minutes---it takes 8 minutes for the Sun's light to reach your eyes on Earth. When you look at the Sun (which you should never do directly), you're seeing it as it was 8 minutes ago. In this way, we're looking back in time as we look out into the universe.
 
@@ -101,7 +101,7 @@ The Sun, our host star, is, on average, 150 million km (93 million miles) from E
 #### The Planets
 {octicon}`rocket;1.25em;profile-tour-action` Fly away from Earth so that the entire Solar System is in view,  continue orbiting.
 
-[![Planet orbits](solar_system_planets.png)](solar_system_planets.png)
+[![Planet orbits](solar_system_planets.webp)](solar_system_planets.webp)
 
 From outside the orbit of Neptune, we see the eight planets of the Solar System. The inner, rocky planets are huddled near the Sun. The outer, gaseous planets are far larger and each harbor a complex system of moons.
 
@@ -114,7 +114,7 @@ The planets align very well within a common plane. Mercury is inclined about 7&d
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Solar System --> Dwarf Planets --> Pluto --> Pluto Keplarian Trail` \
 {octicon}`tools;1.25em;profile-tour-action` Uncheck {menuselection}`... --> Pluto Keplarian Trail --> Renderable --> Appearance --> Enable Line Fading of Old Points` to see the entire orbit.
 
-[![Pluto's orbit](pluto_orbit.png)](pluto_orbit.png)
+[![Pluto's orbit](pluto_orbit.webp)](pluto_orbit.webp)
 
 In contrast to the eight planets, Pluto is inclined 17&deg; to this plane, clearly demonstrating it's different. When viewed from above the plane, you can see that the trajectory of Pluto is interior to Neptune's orbit for a portion of its 248-year journey around the Sun.
 
@@ -124,7 +124,7 @@ Once we discovered Kuiper Belt objects in 1992---small, rock-ice worlds beyond N
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/pluto/index)
-[![Pluto](/content/solar-system/dwarf-planets/pluto/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/pluto/index)
+[![Pluto](/content/solar-system/dwarf-planets/pluto/pluto/pluto_icon.webp)](/content/solar-system/dwarf-planets/pluto/pluto/index)
 :::
 ::::
 
@@ -148,7 +148,7 @@ The Solar System is composed of an exotic variety of objects that orbit the Sun.
 #### Constellation Lines
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines`
 
-[![Solar System orbits plus the constellation lines](solar_system_constellations.png)](solar_system_constellations.png)
+[![Solar System orbits plus the constellation lines](solar_system_constellations.webp)](solar_system_constellations.webp)
 
 Even from this great distance, with the constellation lines on, we still see the same star patterns traced in the starry sky. The familiar Ursa Major ("Big Dipper"), Orion, Scorpius, and the other constellations remain the same from this perspective because the stars are very far away. We also see the band of light we call the Milky Way.
 
@@ -158,7 +158,7 @@ The constellation lines connect stars that trace the figures outlined in the nig
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/constellations/constellation-lines/index)
-[![constellation lines](/content/milky-way/constellations/constellation-lines/constellation_lines_icon.png)](/content/milky-way/constellations/constellation-lines/index)
+[![constellation lines](/content/milky-way/constellations/constellation-lines/constellation_lines_icon.webp)](/content/milky-way/constellations/constellation-lines/index)
 :::
 ::::
 
@@ -172,7 +172,7 @@ You can see more historical information on [main constellation page](/content/mi
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Solar System --> Sun --> Sun Label` \
 {octicon}`rocket;1.25em;profile-tour-action` Fly away from Earth until you begin to see the nearby stars move.
 
-[![The constellation lines reveal some of the nearby stars to the Sun](nearby_stars.png)](nearby_stars.png)
+[![The constellation lines reveal some of the nearby stars to the Sun](nearby_stars.webp)](nearby_stars.webp)
 
 As you fly away from the Sun and Earth, you will begin to see some of the nearby stars move. The constellation lines will become distorted as the two-dimensional sky transforms into three-dimensional space.
 
@@ -182,7 +182,7 @@ As you fly away from the Sun and Earth, you will begin to see some of the nearby
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Labels` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue orbiting.
 
-[![Star labels](star_names.png)](star_names.png)
+[![Star labels](star_names.webp)](star_names.webp)
 
 Some of the nearby stars are easily distinguished. In particular, Sirius, the brightest star in the sky (due to its intrinsic brightness and its distance), is about 9 light years from the Sun. Nearby is Procyon, about 11.5 light years from us. Opposite the Sun is Vega, 25 light years away, and Altair, around 16 light years from Earth. Several dimmer stars also populate the solar neighborhood.
 
@@ -190,7 +190,7 @@ Some of the nearby stars are easily distinguished. In particular, Sirius, the br
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/stars/star-labels/index)
-[![star labels](/content/milky-way/stars/star-labels/star_names_icon.png)](/content/milky-way/stars/star-labels/index)
+[![star labels](/content/milky-way/stars/star-labels/star_names_icon.webp)](/content/milky-way/stars/star-labels/index)
 :::
 ::::
 
@@ -203,7 +203,7 @@ Some of the nearby stars are easily distinguished. In particular, Sirius, the br
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Labels` \
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Solar System --> Sun --> Sun Label`
 
-[![star colors](star_colors.png)](star_colors.png)
+[![star colors](star_colors.webp)](star_colors.webp)
 
 From this location, you may notice that the stars exhibit various brightnesses and colors, as they do in the night sky. Stars come in a variety of masses, which determine their temperatures, colors, and luminosities. Bluer stars are more massive and hotter. These stars have short lifetimes and there are far fewer of them in the Galaxy. Redder stars, on the other hand, are less massive and cooler, and are abundant throughout the Milky Way. The Sun is generally average in terms of brightness and will remain a star for another five billion years.
 
@@ -217,7 +217,7 @@ From this location, you may notice that the stars exhibit various brightnesses a
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Systems` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue flying away to examine the exoplanet data.
 
-[![The exoplanetary systems with the constellation lines.](exoplanets_constellations.png)](exoplanets_constellations.png)
+[![The exoplanetary systems with the constellation lines.](exoplanets_constellations.webp)](exoplanets_constellations.webp)
 
 It appears we are now lost in a sea of stars and the constellation lines connecting some of them, but we can now explore objects on larger scales beyond the solar neighborhood.
 
@@ -227,7 +227,7 @@ Each exoplanet marker indicates a star with a confirmed planetary system. None o
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/exoplanets/exoplanet-systems/index)
-[![Exoplanet systems](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](/content/milky-way/exoplanets/exoplanet-systems/index)
+[![Exoplanet systems](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.webp)](/content/milky-way/exoplanets/exoplanet-systems/index)
 :::
 ::::
 
@@ -248,7 +248,7 @@ As you fly farther from the Sun, it quickly becomes clear that the constellation
 #### The Radio Sphere
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Graphics --> Radio Sphere`
 
-[![Radio sphere with exoplanets](radio_sphere_exoplanets.png)](radio_sphere_exoplanets.png)
+[![Radio sphere with exoplanets](radio_sphere_exoplanets.webp)](radio_sphere_exoplanets.webp)
 
 From this vantage point, turn on the Radio Sphere. The Radio Sphere is a hypothetical boundary that traces the extent of Earth's radio signals.
 
@@ -261,7 +261,7 @@ signals, like the initial broadcast of [*I Love Lucy*](https://en.wikipedia.org/
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/graphics/radio-sphere/index)
-[![HII regions](/content/milky-way/graphics/radio-sphere/radio_sphere_icon.png)](/content/milky-way/graphics/radio-sphere/index)
+[![HII regions](/content/milky-way/graphics/radio-sphere/radio_sphere_icon.webp)](/content/milky-way/graphics/radio-sphere/index)
 :::
 ::::
 
@@ -278,7 +278,7 @@ In reality, by the time our radio signals reach the outer Solar System, their st
 {octicon}`rocket;1.25em;profile-tour-action` Zoom away from Earth a bit more \
 {octicon}`tools;1.25em;profile-tour-action` Increase the size of the exoplanets: {menuselection}`... --> Exoplanet Systems --> Renderable --> Sizing --> Scale Exponent`
 
-[![Exoplanet systems from outside the Galaxy](exoplanet_afar.png)](exoplanet_afar.png)
+[![Exoplanet systems from outside the Galaxy](exoplanet_afar.webp)](exoplanet_afar.webp)
 
 As you pull away from the Sun even farther, you can see the exoplanets in the context of the Milky Way Galaxy. While the exoplanet systems seemed evenly distributed around the Sun when we were closer to it, now we see some peculiarities. You see a cone of exoplanet systems extending away from the Sun (above the Sun in this image). This is the Kepler Mission's field of view, which we'll discuss next.
 
@@ -290,7 +290,7 @@ Imagine how many planets we'd see today if Kepler was able to look at the entire
 #### Exoplanet Candidates
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Candidates`
 
-[![Exoplanet candidate systems](exoplanet_candidates.png)](exoplanet_candidates.png)
+[![Exoplanet candidate systems](exoplanet_candidates.webp)](exoplanet_candidates.webp)
 
 Initially, we observed large planets in nearby stars---all the known planets were relatively close to the Sun. In 2009, the Kepler Telescope was launched into space. Its mission was to stare at one patch of sky near the constellation Cygnus, and find planets in that patch of sky using one [detection method](/content/milky-way/exoplanets/index). Later, in 2018, TESS was launched and is scanning the entire sky for planets.
 
@@ -300,7 +300,7 @@ The Exoplanet Candidates are stars, colored by mission, that are thought to be s
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/exoplanets/exoplanet-candidates/index)
-[![Exoplanet candidates](/content/milky-way/exoplanets/exoplanet-candidates/exoplanet_candidates_icon.png)](/content/milky-way/exoplanets/exoplanet-candidates/index)
+[![Exoplanet candidates](/content/milky-way/exoplanets/exoplanet-candidates/exoplanet_candidates_icon.webp)](/content/milky-way/exoplanets/exoplanet-candidates/index)
 :::
 ::::
 
@@ -322,7 +322,7 @@ The Exoplanet Candidates are stars, colored by mission, that are thought to be s
 
 
 #### Our Place in the Galaxy
-[![Milky Way with a tiny radio sphere](radio_sphere_galaxy.png)](radio_sphere_galaxy.png)
+[![Milky Way with a tiny radio sphere](radio_sphere_galaxy.webp)](radio_sphere_galaxy.webp)
 
 As you move farther away, keep your eye on the 160-light-year-diameter Radio Sphere as it becomes smaller and smaller. In this image, it's reduced to a tiny green dot and marks our location in the Milky Way Galaxy---about 26,000 light years from its center.
 
@@ -334,7 +334,7 @@ Just as we went from the two-dimensional sky into the three-dimensional stars, w
 #### Galactic Parts
 {octicon}`rocket;1.25em;profile-tour-action` Continue to orbit the Galaxy.
 
-[![Milky Way Galaxy](galaxy-face-on.png)](galaxy-face-on.png)
+[![Milky Way Galaxy](galaxy-face-on.webp)](galaxy-face-on.webp)
 
 The Galaxy is composed of over 100 billion stars, gas, and {term}`dust <astrophysical dust>`. This gas and dust is arranged in spiral arms that emanate from the center of the Galaxy and are confined to a relatively thin disk. Its bright center is rife with stars and a supermassive black hole. The black hole is considered inactive, with a low rate of accretion.
 
@@ -346,11 +346,11 @@ The Galaxy is about 100,000 light years across, but the disk is only about 1,000
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [Image](/content/milky-way/galaxy/milky-way-image/index)
-[![Galaxy image](/content/milky-way/galaxy/milky-way-image/galaxy_image_icon.png)](/content/milky-way/galaxy/milky-way-image/index)
+[![Galaxy image](/content/milky-way/galaxy/milky-way-image/galaxy_image_icon.webp)](/content/milky-way/galaxy/milky-way-image/index)
 :::
 
 :::{grid-item-card} [Volume](/content/milky-way/galaxy/milky-way-volume/index)
-[![Galaxy volume](/content/milky-way/galaxy/milky-way-volume/milky_way_model_icon.png)](/content/milky-way/galaxy/milky-way-volume/index)
+[![Galaxy volume](/content/milky-way/galaxy/milky-way-volume/milky_way_model_icon.webp)](/content/milky-way/galaxy/milky-way-volume/index)
 :::
 ::::
 
@@ -362,7 +362,7 @@ The Galaxy is about 100,000 light years across, but the disk is only about 1,000
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue to orbit the Galaxy.
 
-[![Constellation lines in the Milky Way Galaxy](/content/milky-way/constellations/constellation-lines/constellation_lines_outside_galaxy.png)](/content/milky-way/constellations/constellation-lines/constellation_lines_outside_galaxy.png)
+[![Constellation lines in the Milky Way Galaxy](/content/milky-way/constellations/constellation-lines/constellation_lines_outside_galaxy.webp)](/content/milky-way/constellations/constellation-lines/constellation_lines_outside_galaxy.webp)
 
 All of the stars we see in the night sky with our eye (about 9,000 total---6,000 over the course of one night) are very close to the Sun. We cannot see stars this far away from the Sun without sophisticated telescopes. We can use the constellation lines to delineate the extent of those stars from this vantage point.
 
@@ -379,7 +379,7 @@ Given that the Milky Way has hundreds of billions of stars, it's compelling to w
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Constellations --> Constellation Lines` \
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits --> Sun`
 
-[![Orbit of the Sun in the Milky Way Galaxy](sun_orbit.png)](sun_orbit.png)
+[![Orbit of the Sun in the Milky Way Galaxy](sun_orbit.webp)](sun_orbit.webp)
 
 Everything moves in and around the Galaxy. We can see the trajectory of the Sun over the next billion years by turning on the Sun's orbit. The Sun, and its accompanying planets, orbit about the center of the Milky Way about once every 225 million years. This makes us about 20 galactic years old, in other words, we've made about 20 revolutions around the Galaxy since the Sun was born.
 
@@ -389,7 +389,7 @@ The Sun has only moved about 145 light years in the time since humans have walke
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/stars/star-orbits/index)
-[![star orbits](/content/milky-way/stars/star-orbits/star_orbits_icon.png)](/content/milky-way/stars/star-orbits/index)
+[![star orbits](/content/milky-way/stars/star-orbits/star_orbits_icon.webp)](/content/milky-way/stars/star-orbits/index)
 :::
 ::::
 
@@ -417,7 +417,7 @@ If Earth has been orbiting the Sun for 4.6 billion years, and the Sun orbits the
 #### A Variety of Orbits
 {octicon}`diff-added;1.25em;profile-tour-action` Turn on a variety of star orbits in {menuselection}`Scene --> Milky Way --> Stars --> Star Orbits`
 
-[![A variety of star orbits around the Galaxy.](star_orbits.png)](star_orbits.png)
+[![A variety of star orbits around the Galaxy.](star_orbits.webp)](star_orbits.webp)
 
 The Sun's orbit is remarkably stable, in contrast to other stars that orbit the Galaxy in irregular, unstable orbits, inside and outside the Galactic disk. Turn on some of the other star orbits to see just how unstable they are.
 
@@ -445,7 +445,7 @@ By default, [Tully](/content/universe/nearby-surveys/tully-galaxies/index), [2Df
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Local Group` \
 {octicon}`rocket;1.25em;profile-tour-action` Fly away from the Milky Way to examine the Local Group.
 
-[![Local Group of galaxies near the Milky Way](local_group_milky_way.png)](local_group_milky_way.png)
+[![Local Group of galaxies near the Milky Way](local_group_milky_way.webp)](local_group_milky_way.webp)
 
 The Milky Way is surrounded by many smaller objects called dwarf galaxies. Dwarf galaxies are small systems with up to several billion stars. They often orbit and interact with larger galaxies, which play a part in their evolution. The Milky Way has many such dwarfs in its sphere of influence. These include the Large and Small Magellanic Clouds (LMC and SMC, if you have the labels on), and many other small star systems, a few of which are colliding with the Milky Way right now.
 
@@ -459,7 +459,7 @@ At 2.5 million light years, the Andromeda Galaxy is the farthest object we can s
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/local-group/index)
-[![Local group](/content/universe/nearby-surveys/local-group/local_group_icon.png)](/content/universe/nearby-surveys/local-group/index)
+[![Local group](/content/universe/nearby-surveys/local-group/local_group_icon.webp)](/content/universe/nearby-surveys/local-group/index)
 :::
 ::::
 
@@ -478,7 +478,7 @@ The Local Group's galaxies are given these colors:
 #### Colliding Galaxies
 {octicon}`rocket;1.25em;profile-tour-action` Fly farther away to see the entire Local Group.
 
-[![Local Group of galaxies](local_group_afar.png)](local_group_afar.png)
+[![Local Group of galaxies](local_group_afar.webp)](local_group_afar.webp)
 
 All of these galaxies are influencing one another gravitationally. In fact, the Milky Way (center of the aqua points) and Andromeda (center of the yellow points) are on a collision course toward one another. In about four billion years, the two mammoth galaxies will begin their dance, ramming directly into one another.
 
@@ -494,7 +494,7 @@ Far off in the future, circa 150 billion years from now, all the galaxies of the
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Tully Galaxies` \
 {octicon}`rocket;1.25em;profile-tour-action` Fly out a bit to see the galaxies that surround the Local Group.
 
-[![Nearby galaxies to the Milky Way](tully_near_home.png)](tully_near_home.png)
+[![Nearby galaxies to the Milky Way](tully_near_home.webp)](tully_near_home.webp)
 
 As we pull away from the Local Group, we begin to see the local universe is populated with many galaxies. These galaxies are in the Tully Catalog compiled by Brent Tully, and is one of the earliest three-dimensional catalogs of the nearby universe. Beginning in the 1980s and completed in the 1990s, its roughly 30,000 galaxies remain one of the richest galaxy atlases, with properly scaled and inclined images.
 
@@ -502,11 +502,11 @@ As we pull away from the Local Group, we begin to see the local universe is popu
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/home-label/index)
-[![Home (Milky Way) label](/content/universe/nearby-surveys/home-label/home_label_icon.png)](/content/universe/nearby-surveys/home-label/index)
+[![Home (Milky Way) label](/content/universe/nearby-surveys/home-label/home_label_icon.webp)](/content/universe/nearby-surveys/home-label/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/tully-galaxies/index)
-[![Tully galaxies](/content/universe/nearby-surveys/tully-galaxies/tully_icon.png)](/content/universe/nearby-surveys/tully-galaxies/index)
+[![Tully galaxies](/content/universe/nearby-surveys/tully-galaxies/tully_icon.webp)](/content/universe/nearby-surveys/tully-galaxies/index)
 :::
 ::::
 
@@ -528,7 +528,7 @@ Galaxy surveys all use the same color scheme based on local density. We count ho
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Group Labels` \
 {octicon}`rocket;1.25em;profile-tour-action` Explore the Galaxy Groups.
 
-[![Galaxy group labels on](galaxy_groups.png)](galaxy_groups.png)
+[![Galaxy group labels on](galaxy_groups.webp)](galaxy_groups.webp)
 
 With the Galaxy Group Labels on, you can see a number of groups that are akin to our Local Group. None of these other groups are as rich as the Local Group because we cannot see tiny dwarf galaxies from such great distances. From out here, we would likely only see Andromeda, Milky Way, and Triangulum---the large, luminous galaxies of the Local Group---and that type of galaxy is what represents the scant members of these far-off galaxy groups.
 
@@ -538,7 +538,7 @@ Many of the Messier galaxies are somewhat local, like M81, M101, M51. One can im
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/galaxy-group-labels/index)
-[![Galaxy group labels](/content/universe/nearby-surveys/galaxy-group-labels/galaxy_groups_icon.png)](/content/universe/nearby-surveys/galaxy-group-labels/index)
+[![Galaxy group labels](/content/universe/nearby-surveys/galaxy-group-labels/galaxy_groups_icon.webp)](/content/universe/nearby-surveys/galaxy-group-labels/index)
 :::
 ::::
 
@@ -553,7 +553,7 @@ The [Messier Catalog](https://en.wikipedia.org/wiki/Messier_object) is a compila
 #### Seeing Structure
 {octicon}`rocket;1.25em;profile-tour-action` Fly farther away to see the large cluster of orange points.
 
-[![Nearby galaxies with the Virgo Cluster in the foreground](tully_near_virgo.png)](tully_near_virgo.png)
+[![Nearby galaxies with the Virgo Cluster in the foreground](tully_near_virgo.webp)](tully_near_virgo.webp)
 
 A little farther out and we can see the galaxy clusters in orange. The Virgo Cluster is the nearest, large cluster to us. It's about 60 million light years away, and contains over 1,000 galaxies. This is the bustling center in our corner of the universe.
 
@@ -574,7 +574,7 @@ We are beginning to see the web-like distribution of galaxies around us.
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Nearby Surveys --> Galaxy Cluster Labels` \
 {octicon}`rocket;1.25em;profile-tour-action` Pull out to explore the galaxy groups.
 
-[![Galaxy cluster labels on](galaxy_clusters.png)](galaxy_clusters.png)
+[![Galaxy cluster labels on](galaxy_clusters.webp)](galaxy_clusters.webp)
 
 The galaxy Cluster Labels reveal the location of the major clusters in our corner of the universe. Like the Virgo Cluster, these clusters contain hundreds and sometimes over a thousand galaxies.
 
@@ -588,7 +588,7 @@ From this vantage point, we clearly see the universe is structured. The sponge-l
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/galaxy-cluster-labels/index)
-[![Galaxy cluster labels](/content/universe/nearby-surveys/galaxy-cluster-labels/galaxy_clusters_icon.png)](/content/universe/nearby-surveys/galaxy-cluster-labels/index)
+[![Galaxy cluster labels](/content/universe/nearby-surveys/galaxy-cluster-labels/galaxy_clusters_icon.webp)](/content/universe/nearby-surveys/galaxy-cluster-labels/index)
 :::
 ::::
 
@@ -598,7 +598,7 @@ From this vantage point, we clearly see the universe is structured. The sponge-l
 #### Zone of Avoidance
 {octicon}`rocket;1.25em;profile-tour-action` Fly completely outside the Tully Galaxies.
 
-[![The zone of avoidance, shadow of the Milky Way](zone_of_avoidance.png)](zone_of_avoidance.png)
+[![The zone of avoidance, shadow of the Milky Way](zone_of_avoidance.webp)](zone_of_avoidance.webp)
 
 Once you're outside the 30,000 galaxies in Tully, you'll notice that it forms a cube. The universe, of course, is not cube shaped. This squared-off boundary ensures that these data remain consistent. In other words, including galaxies beyond this area would selectively include the brighter galaxies, but not the dimmer ones represented in Tully's data. These data would no longer be representative of the structure of the universe. This pertains to the {term}`completeness` of these data.
 
@@ -621,7 +621,7 @@ Deep-sky galaxy surveys cover only part of the sky. If one viewed them from Eart
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> 2dF Galaxies` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue to pull out to see the bulk of the 2dF Galaxies.
 
-[![Two-degree Field galaxy survey](two_degree_field.png)](two_degree_field.png)
+[![Two-degree Field galaxy survey](two_degree_field.webp)](two_degree_field.webp)
 
 The Two-Degree Field Survey (2dF) project was designed to observe along two strips of sky that are opposite one another, but in three dimensions they are narrow fins, shaped like a bow tie, if you will. We benefit, visually, from their narrowness because we can see the rich structure within these fins.
 
@@ -631,7 +631,7 @@ The 2dF's 229,000 galaxies show the same sponge-like, large-scale structure, wit
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/2df-galaxies/index)
-[![2dF galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.png)](/content/universe/deep-sky-surveys/2df-galaxies/index)
+[![2dF galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.webp)](/content/universe/deep-sky-surveys/2df-galaxies/index)
 :::
 ::::
 
@@ -642,7 +642,7 @@ The 2dF's 229,000 galaxies show the same sponge-like, large-scale structure, wit
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Sloan DSS Galaxies` \
 {octicon}`rocket;1.25em;profile-tour-action` Continue zooming out to see the Sloan Galaxies.
 
-[![Sloan DSS Galaxies](sloan_galaxies.png)](sloan_galaxies.png)
+[![Sloan DSS Galaxies](sloan_galaxies.webp)](sloan_galaxies.webp)
 
 Peering even deeper, the Sloan Digital Sky Survey covers more of the sky. It contains over 2.8 million galaxies, and also echoes the large-scale structure we observe in other surveys.
 
@@ -654,7 +654,7 @@ These deep surveys remind us that we are only one small planet, orbiting an ordi
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/sloan-galaxies/index)
-[![Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
+[![Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.webp)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
 :::
 ::::
 
@@ -665,7 +665,7 @@ These deep surveys remind us that we are only one small planet, orbiting an ordi
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Deep Sky Surveys --> Quasars` \
 {octicon}`rocket;1.25em;profile-tour-action` Fly out to examine the quasars.
 
-[![Quasar survey](quasars.png)](quasars.png)
+[![Quasar survey](quasars.webp)](quasars.webp)
 
 Beyond the galaxy surveys are quasars---the farthest objects we see. Quasar is just another name for an active galaxy. An active galaxy is one where the central black hole is gobbling up material at a rapid rate. This process causes immense amounts of energy to be released just outside the black hole, as the material accretes into it, making these objects extremely luminous. The Milky Way is no longer this active, but may have been earlier in its evolution.
 
@@ -677,7 +677,7 @@ This catalog consists of over 700,000 quasars, and you can see they extend to fa
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/quasars/index)
-[![Quasars](/content/universe/deep-sky-surveys/quasars/quasars_icon.png)](/content/universe/deep-sky-surveys/quasars/index)
+[![Quasars](/content/universe/deep-sky-surveys/quasars/quasars_icon.webp)](/content/universe/deep-sky-surveys/quasars/index)
 :::
 ::::
 
@@ -706,7 +706,7 @@ The Cosmic Microwave Background demands a fair bit of explanation. It should not
 #### Planck's Map
 {octicon}`diff-added;1.25em;profile-tour-action` {menuselection}`Scene --> Universe --> Cosmic Microwave Background --> Planck`
 
-[![Cosmic microwave background](cmb_inside.png)](cmb_inside.png)
+[![Cosmic microwave background](cmb_inside.webp)](cmb_inside.webp)
 
 Quasars may be the most distant objects we see, but there is light from an earlier epoch of the universe that remains visible to us. The so called "baby picture of the universe" is the cosmic microwave background (CMB). It is light we observe in microwave wavelengths, and marks an important transition in the young universe.
 
@@ -718,7 +718,7 @@ We can also think about this light as tiny density differences in the early univ
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/planck/index)
-[![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.png)](/content/universe/cosmic-microwave-background/planck/index)
+[![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.webp)](/content/universe/cosmic-microwave-background/planck/index)
 :::
 ::::
 
@@ -733,7 +733,7 @@ For more on the origin and meaning of the CMB, see our [main CMB page](/content/
 #### CMB Image Placement
 {octicon}`rocket;1.25em;profile-tour-action` Resist the temptation to fly outside the CMB.
 
-[![Outside the observable universe](cmb_outside.png)](cmb_outside.png)
+[![Outside the observable universe](cmb_outside.webp)](cmb_outside.webp)
 
 We place the CMB on a sphere that signifies the boundary of our observable universe. **This is misleading.** While this is the earliest light we can see, it is ubiquitous throughout the universe, even in the Solar System.
 
@@ -791,15 +791,15 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/sun/sun/index)
-[![Sun icon](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
+[![Sun icon](/content/solar-system/sun/sun/sun_icon.webp)](/content/solar-system/sun/sun/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/sun-glare/index)
-[![Sun glare icon](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
+[![Sun glare icon](/content/solar-system/sun/sun-glare/sun_glare_icon.webp)](/content/solar-system/sun/sun-glare/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/habitable-zone/index)
-[![Sun Habitable Zone icon](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
+[![Sun Habitable Zone icon](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.webp)](/content/solar-system/sun/habitable-zone/index)
 :::
 
 ::::
@@ -810,35 +810,35 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/planets/mercury/mercury/index)
-[![Mercury](/content/solar-system/planets/mercury/mercury/mercury_icon.png)](/content/solar-system/planets/mercury/mercury/index)
+[![Mercury](/content/solar-system/planets/mercury/mercury/mercury_icon.webp)](/content/solar-system/planets/mercury/mercury/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/planets/venus/venus/index)
-[![Venus](/content/solar-system/planets/venus/venus/venus_icon.png)](/content/solar-system/planets/venus/venus/index)
+[![Venus](/content/solar-system/planets/venus/venus/venus_icon.webp)](/content/solar-system/planets/venus/venus/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/planets/earth/earth/index)
-[![Earth](/content/solar-system/planets/earth/earth/earth_icon.png)](/content/solar-system/planets/earth/earth/index)
+[![Earth](/content/solar-system/planets/earth/earth/earth_icon.webp)](/content/solar-system/planets/earth/earth/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/planets/mars/mars/index)
-[![Mars](/content/solar-system/planets/mars/mars/mars_icon.png)](/content/solar-system/planets/mars/mars/index)
+[![Mars](/content/solar-system/planets/mars/mars/mars_icon.webp)](/content/solar-system/planets/mars/mars/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/planets/jupiter/jupiter/index)
-[![Jupiter](/content/solar-system/planets/jupiter/jupiter/jupiter_icon.png)](/content/solar-system/planets/jupiter/jupiter/index)
+[![Jupiter](/content/solar-system/planets/jupiter/jupiter/jupiter_icon.webp)](/content/solar-system/planets/jupiter/jupiter/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/planets/saturn/saturn/index)
-[![Saturn](/content/solar-system/planets/saturn/saturn/saturn_icon.png)](/content/solar-system/planets/saturn/saturn/index)
+[![Saturn](/content/solar-system/planets/saturn/saturn/saturn_icon.webp)](/content/solar-system/planets/saturn/saturn/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/planets/uranus/uranus/index)
-[![Uranus](/content/solar-system/planets/uranus/uranus/uranus_icon.png)](/content/solar-system/planets/uranus/uranus/index)
+[![Uranus](/content/solar-system/planets/uranus/uranus/uranus_icon.webp)](/content/solar-system/planets/uranus/uranus/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/planets/neptune/neptune/index)
-[![Neptune](/content/solar-system/planets/neptune/neptune/neptune_icon.png)](/content/solar-system/planets/neptune/neptune/index)
+[![Neptune](/content/solar-system/planets/neptune/neptune/neptune_icon.webp)](/content/solar-system/planets/neptune/neptune/index)
 :::
 
 ::::
@@ -849,7 +849,7 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/dwarf-planets/pluto/pluto/index)
-[![Pluto](/content/solar-system/dwarf-planets/pluto/pluto/pluto_icon.png)](/content/solar-system/dwarf-planets/pluto/pluto/index)
+[![Pluto](/content/solar-system/dwarf-planets/pluto/pluto/pluto_icon.webp)](/content/solar-system/dwarf-planets/pluto/pluto/index)
 :::
 
 ::::
@@ -860,7 +860,7 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/comets/oort-cloud/oort-sphere/index)
-[![Oort sphere](/content/solar-system/comets/oort-cloud/oort-sphere/oort_cloud_icon.png)](/content/solar-system/comets/oort-cloud/oort-sphere/index)
+[![Oort sphere](/content/solar-system/comets/oort-cloud/oort-sphere/oort_cloud_icon.webp)](/content/solar-system/comets/oort-cloud/oort-sphere/index)
 :::
 
 ::::
@@ -873,27 +873,27 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/stars/stars/index)
-[![stars](/content/milky-way/stars/stars/stars_icon.png)](/content/milky-way/stars/stars/index)
+[![stars](/content/milky-way/stars/stars/stars_icon.webp)](/content/milky-way/stars/stars/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/stars/star-labels/index)
-[![star labels](/content/milky-way/stars/star-labels/star_names_icon.png)](/content/milky-way/stars/star-labels/index)
+[![star labels](/content/milky-way/stars/star-labels/star_names_icon.webp)](/content/milky-way/stars/star-labels/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/stars/star-labels-alternate/index)
-[![alternate star labels](/content/milky-way/stars/star-labels-alternate/alternate_star_labels_icon.png)](/content/milky-way/stars/star-labels-alternate/index)
+[![alternate star labels](/content/milky-way/stars/star-labels-alternate/alternate_star_labels_icon.webp)](/content/milky-way/stars/star-labels-alternate/index)
 :::
 
 :::{grid-item-card} [Distance Uncertainty](/content/milky-way/stars/star-distance-uncertainty/index)
-[![star distance uncertainty](/content/milky-way/stars/star-distance-uncertainty/star_distance_uncertainty_icon.png)](/content/milky-way/stars/star-distance-uncertainty/index)
+[![star distance uncertainty](/content/milky-way/stars/star-distance-uncertainty/star_distance_uncertainty_icon.webp)](/content/milky-way/stars/star-distance-uncertainty/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/stars/star-orbits/index)
-[![star orbits](/content/milky-way/stars/star-orbits/star_orbits_icon.png)](/content/milky-way/stars/star-orbits/index)
+[![star orbits](/content/milky-way/stars/star-orbits/star_orbits_icon.webp)](/content/milky-way/stars/star-orbits/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/stars/sun/index)
-[![sun](/content/milky-way/stars/sun/sun_icon.png)](/content/milky-way/stars/sun/index)
+[![sun](/content/milky-way/stars/sun/sun_icon.webp)](/content/milky-way/stars/sun/index)
 :::
 
 ::::
@@ -905,15 +905,15 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [Lines](/content/milky-way/constellations/constellation-lines/index)
-[![constellation lines](/content/milky-way/constellations/constellation-lines/constellation_lines_icon.png)](/content/milky-way/constellations/constellation-lines/index)
+[![constellation lines](/content/milky-way/constellations/constellation-lines/constellation_lines_icon.webp)](/content/milky-way/constellations/constellation-lines/index)
 :::
 
 :::{grid-item-card} [Art](/content/milky-way/constellations/constellation-art/index)
-[![constellation art](/content/milky-way/constellations/constellation-art/constellation_art_icon.png)](/content/milky-way/constellations/constellation-art/index)
+[![constellation art](/content/milky-way/constellations/constellation-art/constellation_art_icon.webp)](/content/milky-way/constellations/constellation-art/index)
 :::
 
 :::{grid-item-card} [Boundaries](/content/milky-way/constellations/constellation-boundaries/index)
-[![constellation boundaries](/content/milky-way/constellations/constellation-boundaries/constellation_boundaries_icon.png)](/content/milky-way/constellations/constellation-boundaries/index)
+[![constellation boundaries](/content/milky-way/constellations/constellation-boundaries/constellation_boundaries_icon.webp)](/content/milky-way/constellations/constellation-boundaries/index)
 :::
 
 ::::
@@ -925,11 +925,11 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [Hydrogen-alpha](/content/milky-way/all-sky-images/hydrogen-alpha/index)
-[![hydrogen-alpha sky](/content/milky-way/all-sky-images/hydrogen-alpha/halpha_icon.png)](/content/milky-way/all-sky-images/hydrogen-alpha/index)
+[![hydrogen-alpha sky](/content/milky-way/all-sky-images/hydrogen-alpha/halpha_icon.webp)](/content/milky-way/all-sky-images/hydrogen-alpha/index)
 :::
 
 :::{grid-item-card} [Visible](/content/milky-way/all-sky-images/visible-milky-way/index)
-[![visible all-sky image](/content/milky-way/all-sky-images/visible-milky-way/visible_icon.png)](/content/milky-way/all-sky-images/visible-milky-way/index)
+[![visible all-sky image](/content/milky-way/all-sky-images/visible-milky-way/visible_icon.webp)](/content/milky-way/all-sky-images/visible-milky-way/index)
 :::
 
 ::::
@@ -940,7 +940,7 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/substellar-objects/brown-dwarfs/index)
-[![brown dwarfs](/content/milky-way/substellar-objects/brown-dwarfs/brown_dwarfs_icon.png)](/content/milky-way/substellar-objects/brown-dwarfs/index)
+[![brown dwarfs](/content/milky-way/substellar-objects/brown-dwarfs/brown_dwarfs_icon.webp)](/content/milky-way/substellar-objects/brown-dwarfs/index)
 :::
 
 ::::
@@ -952,11 +952,11 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/exoplanets/exoplanet-systems/index)
-[![Exoplanet systems](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](/content/milky-way/exoplanets/exoplanet-systems/index)
+[![Exoplanet systems](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.webp)](/content/milky-way/exoplanets/exoplanet-systems/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/exoplanets/exoplanet-candidates/index)
-[![Exoplanet candidates](/content/milky-way/exoplanets/exoplanet-candidates/exoplanet_candidates_icon.png)](/content/milky-way/exoplanets/exoplanet-candidates/index)
+[![Exoplanet candidates](/content/milky-way/exoplanets/exoplanet-candidates/exoplanet_candidates_icon.webp)](/content/milky-way/exoplanets/exoplanet-candidates/index)
 :::
 
 ::::
@@ -968,15 +968,15 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/star-clusters/open-clusters/index)
-[![Open star clusters](/content/milky-way/star-clusters/open-clusters/open_clusters_icon.png)](/content/milky-way/star-clusters/open-clusters/index)
+[![Open star clusters](/content/milky-way/star-clusters/open-clusters/open_clusters_icon.webp)](/content/milky-way/star-clusters/open-clusters/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/star-clusters/ob-associations/index)
-[![OB associations](/content/milky-way/star-clusters/ob-associations/ob_associations_icon.png)](/content/milky-way/star-clusters/ob-associations/index)
+[![OB associations](/content/milky-way/star-clusters/ob-associations/ob_associations_icon.webp)](/content/milky-way/star-clusters/ob-associations/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/star-clusters/globular-clusters/index)
-[![Globular star clusters](/content/milky-way/star-clusters/globular-clusters/globular_clusters_icon.png)](/content/milky-way/star-clusters/globular-clusters/index)
+[![Globular star clusters](/content/milky-way/star-clusters/globular-clusters/globular_clusters_icon.webp)](/content/milky-way/star-clusters/globular-clusters/index)
 :::
 
 ::::
@@ -987,15 +987,15 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/nebulae/HII-regions/index)
-[![HII regions](/content/milky-way/nebulae/HII-regions/HII_regions_icon.png)](/content/milky-way/nebulae/HII-regions/index)
+[![HII regions](/content/milky-way/nebulae/HII-regions/HII_regions_icon.webp)](/content/milky-way/nebulae/HII-regions/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/nebulae/planetary-nebulae/index)
-[![Planetary nebulae](/content/milky-way/nebulae/planetary-nebulae/PN_icon.png)](/content/milky-way/nebulae/planetary-nebulae/index)
+[![Planetary nebulae](/content/milky-way/nebulae/planetary-nebulae/PN_icon.webp)](/content/milky-way/nebulae/planetary-nebulae/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/nebulae/supernova-remnants/index)
-[![Supernova remnants](/content/milky-way/nebulae/supernova-remnants/SNR_icon.png)](/content/milky-way/nebulae/supernova-remnants/index)
+[![Supernova remnants](/content/milky-way/nebulae/supernova-remnants/SNR_icon.webp)](/content/milky-way/nebulae/supernova-remnants/index)
 :::
 
 ::::
@@ -1007,11 +1007,11 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/stellar-remnants/white-dwarfs/index)
-[![white dwarfs](/content/milky-way/stellar-remnants/white-dwarfs/white_dwarfs_icon.png)](/content/milky-way/stellar-remnants/white-dwarfs/index)
+[![white dwarfs](/content/milky-way/stellar-remnants/white-dwarfs/white_dwarfs_icon.webp)](/content/milky-way/stellar-remnants/white-dwarfs/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/stellar-remnants/pulsars/index)
-[![pulsars](/content/milky-way/stellar-remnants/pulsars/pulsars_icon.png)](/content/milky-way/stellar-remnants/pulsars/index)
+[![pulsars](/content/milky-way/stellar-remnants/pulsars/pulsars_icon.webp)](/content/milky-way/stellar-remnants/pulsars/index)
 :::
 
 ::::
@@ -1023,15 +1023,15 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [Image](/content/milky-way/galaxy/milky-way-image/index)
-[![Galaxy image](/content/milky-way/galaxy/milky-way-image/galaxy_image_icon.png)](/content/milky-way/galaxy/milky-way-image/index)
+[![Galaxy image](/content/milky-way/galaxy/milky-way-image/galaxy_image_icon.webp)](/content/milky-way/galaxy/milky-way-image/index)
 :::
 
 :::{grid-item-card} [Volume](/content/milky-way/galaxy/milky-way-volume/index)
-[![Galaxy volume](/content/milky-way/galaxy/milky-way-volume/milky_way_model_icon.png)](/content/milky-way/galaxy/milky-way-volume/index)
+[![Galaxy volume](/content/milky-way/galaxy/milky-way-volume/milky_way_model_icon.webp)](/content/milky-way/galaxy/milky-way-volume/index)
 :::
 
 :::{grid-item-card} [Arm Labels](/content/milky-way/galaxy/milky-way-arm-labels/index)
-[![Galaxy arm labels](/content/milky-way/galaxy/milky-way-arm-labels/milkyway_arms_labels_icon.png)](/content/milky-way/galaxy/milky-way-arm-labels/index)
+[![Galaxy arm labels](/content/milky-way/galaxy/milky-way-arm-labels/milkyway_arms_labels_icon.webp)](/content/milky-way/galaxy/milky-way-arm-labels/index)
 :::
 
 ::::
@@ -1042,7 +1042,7 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/graphics/radio-sphere/index)
-[![HII regions](/content/milky-way/graphics/radio-sphere/radio_sphere_icon.png)](/content/milky-way/graphics/radio-sphere/index)
+[![HII regions](/content/milky-way/graphics/radio-sphere/radio_sphere_icon.webp)](/content/milky-way/graphics/radio-sphere/index)
 :::
 
 ::::
@@ -1054,39 +1054,39 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/home-label/index)
-[![Home (Milky Way) label](/content/universe/nearby-surveys/home-label/home_label_icon.png)](/content/universe/nearby-surveys/home-label/index)
+[![Home (Milky Way) label](/content/universe/nearby-surveys/home-label/home_label_icon.webp)](/content/universe/nearby-surveys/home-label/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/local-group/index)
-[![Local group](/content/universe/nearby-surveys/local-group/local_group_icon.png)](/content/universe/nearby-surveys/local-group/index)
+[![Local group](/content/universe/nearby-surveys/local-group/local_group_icon.webp)](/content/universe/nearby-surveys/local-group/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/tully-galaxies/index)
-[![Tully galaxies](/content/universe/nearby-surveys/tully-galaxies/tully_icon.png)](/content/universe/nearby-surveys/tully-galaxies/index)
+[![Tully galaxies](/content/universe/nearby-surveys/tully-galaxies/tully_icon.webp)](/content/universe/nearby-surveys/tully-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/tully-galaxy-images/index)
-[![Tully galaxies images](/content/universe/nearby-surveys/tully-galaxy-images/tully_images_icon.png)](/content/universe/nearby-surveys/tully-galaxy-images/index)
+[![Tully galaxies images](/content/universe/nearby-surveys/tully-galaxy-images/tully_images_icon.webp)](/content/universe/nearby-surveys/tully-galaxy-images/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/galaxy-group-labels/index)
-[![Galaxy group labels](/content/universe/nearby-surveys/galaxy-group-labels/galaxy_groups_icon.png)](/content/universe/nearby-surveys/galaxy-group-labels/index)
+[![Galaxy group labels](/content/universe/nearby-surveys/galaxy-group-labels/galaxy_groups_icon.webp)](/content/universe/nearby-surveys/galaxy-group-labels/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/galaxy-cluster-labels/index)
-[![Galaxy cluster labels](/content/universe/nearby-surveys/galaxy-cluster-labels/galaxy_clusters_icon.png)](/content/universe/nearby-surveys/galaxy-cluster-labels/index)
+[![Galaxy cluster labels](/content/universe/nearby-surveys/galaxy-cluster-labels/galaxy_clusters_icon.webp)](/content/universe/nearby-surveys/galaxy-cluster-labels/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/2MASS-galaxies/index)
-[![2MASS galaxies](/content/universe/nearby-surveys/2MASS-galaxies/2mass_galaxies_icon.png)](/content/universe/nearby-surveys/2MASS-galaxies/index)
+[![2MASS galaxies](/content/universe/nearby-surveys/2MASS-galaxies/2mass_galaxies_icon.webp)](/content/universe/nearby-surveys/2MASS-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/6df-galaxies/index)
-[![6dF galaxies](/content/universe/nearby-surveys/6df-galaxies/6df_icon.png)](/content/universe/nearby-surveys/6df-galaxies/index)
+[![6dF galaxies](/content/universe/nearby-surveys/6df-galaxies/6df_icon.webp)](/content/universe/nearby-surveys/6df-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/nearby-surveys/voids/index)
-[![Voids](/content/universe/nearby-surveys/voids/voids_icon.png)](/content/universe/nearby-surveys/voids/index)
+[![Voids](/content/universe/nearby-surveys/voids/voids_icon.webp)](/content/universe/nearby-surveys/voids/index)
 :::
 
 ::::
@@ -1098,23 +1098,23 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/2df-galaxies/index)
-[![2dF Galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.png)](/content/universe/deep-sky-surveys/2df-galaxies/index)
+[![2dF Galaxies](/content/universe/deep-sky-surveys/2df-galaxies/2df_icon.webp)](/content/universe/deep-sky-surveys/2df-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/sloan-galaxies/index)
-[![Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.png)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
+[![Sloan DSS Galaxies](/content/universe/deep-sky-surveys/sloan-galaxies/sloan_icon.webp)](/content/universe/deep-sky-surveys/sloan-galaxies/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
-[![Abell Clusters](/content/universe/deep-sky-surveys/abell-galaxy-clusters/abell_icon.png)](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
+[![Abell Clusters](/content/universe/deep-sky-surveys/abell-galaxy-clusters/abell_icon.webp)](/content/universe/deep-sky-surveys/abell-galaxy-clusters/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/supercluster-labels/index)
-[![Supercluster Labels](/content/universe/deep-sky-surveys/supercluster-labels/scl_icon.png)](/content/universe/deep-sky-surveys/supercluster-labels/index)
+[![Supercluster Labels](/content/universe/deep-sky-surveys/supercluster-labels/scl_icon.webp)](/content/universe/deep-sky-surveys/supercluster-labels/index)
 :::
 
 :::{grid-item-card} [](/content/universe/deep-sky-surveys/quasars/index)
-[![Quasars](/content/universe/deep-sky-surveys/quasars/quasars_icon.png)](/content/universe/deep-sky-surveys/quasars/index)
+[![Quasars](/content/universe/deep-sky-surveys/quasars/quasars_icon.webp)](/content/universe/deep-sky-surveys/quasars/index)
 :::
 
 ::::
@@ -1125,15 +1125,15 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/cobe/index)
-[![COBE microwave background](/content/universe/cosmic-microwave-background/cobe/cobe_cmb_icon.png)](/content/universe/cosmic-microwave-background/cobe/index)
+[![COBE microwave background](/content/universe/cosmic-microwave-background/cobe/cobe_cmb_icon.webp)](/content/universe/cosmic-microwave-background/cobe/index)
 :::
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/wmap/index)
-[![WMAP microwave background](/content/universe/cosmic-microwave-background/wmap/wmap_cmb_icon.png)](/content/universe/cosmic-microwave-background/wmap/index)
+[![WMAP microwave background](/content/universe/cosmic-microwave-background/wmap/wmap_cmb_icon.webp)](/content/universe/cosmic-microwave-background/wmap/index)
 :::
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/planck/index)
-[![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.png)](/content/universe/cosmic-microwave-background/planck/index)
+[![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.webp)](/content/universe/cosmic-microwave-background/planck/index)
 :::
 
 ::::

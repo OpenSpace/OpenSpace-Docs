@@ -9,7 +9,7 @@ In this scene, we provide a visual representation of the {term}`uncertainty` in 
 
 
 
-:::{figure} star_distance_uncertainty.png
+:::{figure} star_distance_uncertainty.webp
 :align: left
 :alt: Among a starfield, from a perspective about 1,500 light years from earth, we see lines on select stars that represent their uncertainty range in distance.
 
@@ -21,7 +21,7 @@ Lines that represent the range of distance uncertainty for a selection of stars.
 ### Parallax Uncertainty
 Every object that we measure has some uncertainty associated with that measurement. For the stars, we measure something called *parallax*. Generally, parallax refers to the apparent motion of something relative to something else. If you hold your phone at arm's length to take a selfie, as you move your arm to set up the perfect shot, your phone will appear to move relative to those objects in the background. Similarly, as Earth traverses around the Sun each year, nearby stars appear to shift relative to the more distant background stars. This apparent motion is imperceptible to the eye---we need highly specialized telescopes to measure the motion created by this parallax.
 
-:::{figure} Parallax_02.png
+:::{figure} Parallax_02.webp
 :align: left
 :alt: A two-panel diagram showing how parallax works. In panel A, we see the earth to the left of the sun in its orbit, a line is drawn to a foreground star, and extended to background stars, showing the star appears to be beside those background stars in January. A similar diagram in July, when the Sun is on the opposite side of the Sun, shows the foreground star appears to be beside different stars because of the parallax effect.
 
@@ -60,12 +60,12 @@ We've chosen to illustrate the distance uncertainty on a small number of stars--
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

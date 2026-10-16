@@ -5,19 +5,19 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](./sun/index)
-[![Dwarf planets](./sun/sun/sun_icon.png)](./sun/index)
+[![Dwarf planets](./sun/sun/sun_icon.webp)](./sun/index)
 :::
 
 :::{grid-item-card} [](./planets/index)
-[![Planets](./planets/saturn/saturn/saturn_icon.png)](./planets/index)
+[![Planets](./planets/saturn/saturn/saturn_icon.webp)](./planets/index)
 :::
 
 :::{grid-item-card} [](./dwarf-planets/index)
-[![Dwarf planets](./dwarf-planets/pluto/pluto/pluto_icon.png)](./dwarf-planets/index)
+[![Dwarf planets](./dwarf-planets/pluto/pluto/pluto_icon.webp)](./dwarf-planets/index)
 :::
 
 :::{grid-item-card} [](./comets/index)
-[![Dwarf planets](./comets/oort-cloud/oort-sphere/oort_cloud_icon.png)](./comets/index)
+[![Dwarf planets](./comets/oort-cloud/oort-sphere/oort_cloud_icon.webp)](./comets/index)
 :::
 
 ::::

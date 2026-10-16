@@ -5,12 +5,12 @@ OpenSpace has been verified to compile on Windows 11, Ubuntu 26.04, Fedora 44, a
 
 
 ## 0. Hardware requirements
-- Dedicated graphics card that supports OpenGL 4.6. All new graphics cards have this capability, but you might need to update your drivers. The intention is to support all graphics card vendors equally, but currently Nvidia graphics cards work best, followed by AMD cards (see the open [issues](https://github.com/OpenSpace/OpenSpace/labels/GPU%3A%20AMD)), followed by Intel Arc cards (see the open [issues](https://github.com/OpenSpace/OpenSpace/issues?q=state%3Aopen%20label%3A%22GPU%3A%20Intel%22))
-- A mouse makes navigation easier than using a trackpad, since you need left, right, and middle mouse buttons. Mice with a fourth and fifth mouse button are optimal
-- Enough disk space (all numbers approximate):
-  - 2 GB of disk space to clone the GitHub repository
-  - A minimum of 15 GB of additional disk space to build OpenSpace
-  - 10+ GB of disk space to hold the current OpenSpace datasets. Expect that to grow as time goes on
+  - Dedicated graphics card that supports OpenGL 4.6. All new graphics cards have this capability, but you might need to update your drivers. The intention is to support all graphics card vendors equally, but currently Nvidia graphics cards work best, followed by AMD cards (see the open [issues](https://github.com/OpenSpace/OpenSpace/labels/GPU%3A%20AMD)), followed by Intel Arc cards (see the open [issues](https://github.com/OpenSpace/OpenSpace/issues?q=state%3Aopen%20label%3A%22GPU%3A%20Intel%22))
+  - A mouse makes navigation easier than using a trackpad, since you need left, right, and middle mouse buttons. Mice with a fourth and fifth mouse button are optimal
+  - Enough disk space (all numbers approximate):
+    - 2 GB of disk space to clone the GitHub repository
+    - A minimum of 15 GB of additional disk space to build OpenSpace
+    - 10+ GB of disk space to hold the current OpenSpace datasets. Expect that to grow as time goes on
 
 
 ## 1. Development Tools
@@ -96,19 +96,19 @@ If there are any elements of these instructions that are unclear, feel free to s
 ## 4. After compiling
 The OpenSpace executable will be build in the `bin` folder (or `bin/Debug`/`bin/RelWithDebInfo` on Windows) and can be started from there. If everything succeeded you should see the Launcher window appearing:
 
-:::{figure} launcher.png
+:::{figure} launcher.webp
 :align: center
 :width: 50%
 The first window showing OpenSpace
 :::
 
-- See [Getting Started](/getting-started/index) page for how to get started with running and using OpenSpace
-- The [Coding Style](../coding-style) describe the general coding guidelines that are applicable to the Ghoul, SGCT, and OpenSpace repository
-- See the [OpenSpace Layout](../folder-layout) page for more information about the structure of OpenSpace directories
-- See the [Deploy to a Windows Machine](../deploying-windows) page for additional information about what goes where on Windows (and how to copy from one machine to another).
-- The source code is written in C++20/C++23 with the feature set supported by Visual Studio 2026. The available features are detailed [here](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
-- Developers, before committing to the repository, read the post about [Structuring commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html). In general you can push to the feature branch you have been working on, but do not push directly to the `master` branch. For the `master` branch, a Pull Request should be used
-- Some useful information about C++ can be found in the form of [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) and [Exception Handling](https://isocpp.org/wiki/faq/exceptions)
+  - See [Getting Started](/getting-started/index) page for how to get started with running and using OpenSpace
+  - The [Coding Style](../coding-style) describe the general coding guidelines that are applicable to the Ghoul, SGCT, and OpenSpace repository
+  - See the [OpenSpace Layout](../folder-layout) page for more information about the structure of OpenSpace directories
+  - See the [Deploy to a Windows Machine](../deploying-windows) page for additional information about what goes where on Windows (and how to copy from one machine to another).
+  - The source code is written in C++20/C++23 with the feature set supported by Visual Studio 2026. The available features are detailed [here](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
+  - Developers, before committing to the repository, read the post about [Structuring commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html). In general you can push to the feature branch you have been working on, but do not push directly to the `master` branch. For the `master` branch, a Pull Request should be used
+  - Some useful information about C++ can be found in the form of [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) and [Exception Handling](https://isocpp.org/wiki/faq/exceptions)
 
 
 ## FAQ

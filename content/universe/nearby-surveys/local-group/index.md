@@ -10,7 +10,7 @@
 A *group* of galaxies is a small number of large galaxies that are typically surrounded by a larger number of small galaxies. These galaxies are gravitationally bound to one another. In the case of the Local Group, there are roughly two substructures, each centered around large, spiral galaxies, with a few other assorted galaxies that interact more loosely with the group.
 
 
-:::{figure} local_group_outside.png
+:::{figure} local_group_outside.webp
 :align: left
 :alt: A view of the Local Group from outside with aqua points representing the Milky Way and its satellite galaxies, yellow points representing the Andromeda Galaxy and its satellite galaxies, green points are other Local Group galaxies, and gray points are neighboring galaxies.
 
@@ -23,7 +23,7 @@ The Milky Way belongs to the Local Group, a term coined by [Edwin Hubble](https:
 
 
 
-:::{figure} local_group_nearby.png
+:::{figure} local_group_nearby.webp
 :align: left
 :alt: The Milky Way Galaxy and its satellite dwarf galaxies.
 
@@ -49,7 +49,7 @@ As these dwarf galaxies orbit and interact with their parent galaxy, the Milky W
 Over the next tens of billions of years, the galaxies of the Local Group will coalesce  into one giant elliptical galaxy, driven by the merging of the Milky Way and the Andromeda galaxies.
 
 
-:::{figure} local_group_andromeda.png
+:::{figure} local_group_andromeda.webp
 :align: left
 :alt: The Local Group from outside the Andromeda Galaxy, showing its satellite dwarf galaxies in yellow, and the Milky Way and its satellites in aqua.
 
@@ -70,10 +70,10 @@ The [Galaxy Group Labels](../galaxy-group-labels/index) identify many other near
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![Stars](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.png)](/profiles/default/index)
+[![Stars](/content/milky-way/exoplanets/exoplanet-systems/exoplanets_icon.webp)](/profiles/default/index)
 :::
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

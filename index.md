@@ -90,7 +90,7 @@ This site is in the midst of an overhaul. Sections break down into:
 
 :::::{grid-item}
 
-![Inside Candor Chasma on Mars](_static/images/index_mars_terrain.png)
+![Inside Candor Chasma on Mars](_static/images/index_mars_terrain.webp)
 
 :::::
 ::::::

@@ -60,6 +60,6 @@ As part of updating the Digital Universe datasets, there has also been a signifi
 
 Below is a comparison of the hierarchy in the Scene menu before and after this update. The image shows what's under each of the top categories, one level into the menu tree.
 
-:::{figure} SceneMenu_duUpdate_restructure.png
+:::{figure} SceneMenu_duUpdate_restructure.webp
 :width: 50em
 :::

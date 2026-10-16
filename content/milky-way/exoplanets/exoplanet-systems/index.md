@@ -13,7 +13,7 @@ See this section's [top page](../index) page for some background on exoplanets.
 :::
 
 
-:::{figure} exoplanets_nightsky_cygnus.png
+:::{figure} exoplanets_nightsky_cygnus.webp
 :align: left
 :alt: A night sky view looking toward the constellations Cygnus, Lyra, and Hercules. Blue rings note the locations of stars with planetary systems. Larger rings are closer to us.
 
@@ -32,7 +32,7 @@ To see the individual systems of planets with planetary orbits and a rendition o
 :::
 
 
-:::{figure} exoplanets_nightsky_orion.png
+:::{figure} exoplanets_nightsky_orion.webp
 :align: left
 :alt: A view of the night sky as seen from Earth looking toward the constellations Orion and Taurus. Blue rings indicate the positions of exoplanetary systems.
 
@@ -47,7 +47,7 @@ You can view individual exoplanetary systems using the [Exoplanet Systems Panel]
   - Add that system.
   - Target and fly to the system.
 
-:::{figure} exoplanet_system_kepler11.png
+:::{figure} exoplanet_system_kepler11.webp
 :align: left
 :alt: The Kepler-11 system with its six planets, and the habitable zone in green.
 
@@ -62,7 +62,7 @@ Once you fly up to the system it will resemble the image for the Kepler-11 syste
 Exoplanet systems remain huddled around the Sun for the most part. This reflects our observational constraints. When viewed with the Radio Sphere, we can see that there are many systems within that theoretical boundary of our radio signals.
 
 
-:::{figure} exoplanets_radio_sphere.png
+:::{figure} exoplanets_radio_sphere.webp
 :align: left
 :alt: Blue rings mark the locations of exoplanetary systems. We are looking back toward the Sun from hundreds of light years away, and the green, wire-frame sphere, centered on the Sun, shows the extent of our radio signals. The sphere is 160 light years in diameter.
 
@@ -74,7 +74,7 @@ Blue rings mark stars that have a known exoplanetary system. The 80-light-year-r
 Exceptions include the conical swath of systems in the Kepler mission's footprint, which stretches out into the Galaxy in the direction of the constellation Cygnus. We also see in the image below the abundance of systems from the K2 mission that appear perpendicular to the Kepler portion.
 
 
-:::{figure} exoplanets_milky_way.png
+:::{figure} exoplanets_milky_way.webp
 :align: left
 :alt: A view of the Milky Way Galaxy with the exoplanet systems shown as blue rings. Most systems are clustered around the SUn, but Kepler's data extends deeper into the Galaxy toward the left in this image.
 
@@ -90,12 +90,12 @@ A view of the exoplanetary systems from outside the Milky Way galaxy. We are sti
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

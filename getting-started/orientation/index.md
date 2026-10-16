@@ -1,7 +1,7 @@
 # Orientation
 OpenSpace's user interface is unconventional, but straightforward and easy to learn. Here, we will touch on the elements of the interface and discuss the details of each item later.
 
-:::{figure} user_interface_orientation.png
+:::{figure} user_interface_orientation.webp
 :align: center
 :width: 800px
 :alt: OpenSpace user interface annotated
@@ -25,7 +25,7 @@ The main parts of the OpenSpace user interface.
 The Top Bar is similar to that of other applications, and includes four submenus: File, Windows, View, and Help.
 ::::
 ::::{grid-item}
-![Top Bar Menu](topbar.png)
+![Top Bar Menu](topbar.webp)
 ::::
 :::::
 
@@ -37,7 +37,7 @@ The Top Bar is similar to that of other applications, and includes four submenus
 The File Menu lists the currently loaded profile and offers options for getting more detail on the profile, displaying the [Console](/using-openspace/scripting/console/index) (an advanced topic we discuss later), and quitting the software.
 ::::
 ::::{grid-item}
-:::{figure} topbar_menu_file.png
+:::{figure} topbar_menu_file.webp
 :align: center
 :width: 70%
 :alt: Top Bar File Menu
@@ -57,7 +57,7 @@ Click a button in the list to open that particular panel; use the `X` to close t
 We discuss each panel in the [Toolbar section below](#toolbar).
 ::::
 ::::{grid-item}
-:::{figure} topbar_menu_windows.png
+:::{figure} topbar_menu_windows.webp
 :align: center
 :figwidth: 90%
 :width: 60%
@@ -80,7 +80,7 @@ While you may be tempted to choose `Everything`, the downside is it clutters the
 At the bottom of this subpanel is a Scale magnifier, which allows you to adjust the size of the interface elements.
 ::::
 ::::{grid-item}
-:::{figure} topbar_menu_view.png
+:::{figure} topbar_menu_view.webp
 :align: center
 :width: 70%
 :alt: Top Bar View Menu and Visibility Level Setting
@@ -118,7 +118,7 @@ About
 
 ::::
 ::::{grid-item}
-:::{figure} topbar_menu_help.png
+:::{figure} topbar_menu_help.webp
 :align: center
 :width: 256px
 :alt: Top Bar Help Menu
@@ -133,7 +133,7 @@ About
 ## Dashboard
 The Dashboard reports information in realtime about your status and location in OpenSpace.
 
-:::{figure} dashboard_default.png
+:::{figure} dashboard_default.webp
 :align: center
 :width: 60%
 :alt: Default Dashboard display.
@@ -151,7 +151,7 @@ It reports on:
 ### Set What is Shown
 In Settings Panel, under Dashboard, you can set what appears in the Dashboard, or turn it off completely by unchecking the `Enabled` option.
 
-:::{figure} settings_menu_dashboard.png
+:::{figure} settings_menu_dashboard.webp
 :align: center
 :width: 400px
 :alt: The Dashboard settings
@@ -161,7 +161,7 @@ The {menuselection}`Settings --> Dashboard` submenu.
 
 The full-on Dashboard with all items on looks like this:
 
-:::{figure} dashboard_full.png
+:::{figure} dashboard_full.webp
 :align: center
 :width: 50%
 :alt: The Dashboard with all items on
@@ -176,7 +176,7 @@ An important aspect of gracefully navigating in OpenSpace is friction. When fric
 
 When you start OpenSpace, friction for each of these types of flight is on. This is indicated by check marks and green buttons in the Friction Status, like this:
 
-:::{figure} friction_status_default.png
+:::{figure} friction_status_default.webp
 :align: center
 :width: 256px
 :alt: Friction status is on
@@ -194,7 +194,7 @@ You can toggle the friction modes on and off using keyboard shortcuts (recommend
 
 If we turn the rotational friction off, when we orbit it will continue at a constant speed once we let go of the controller, and the Friction Status will look like this:
 
-:::{figure} friction_status_on.png
+:::{figure} friction_status_on.webp
 :align: center
 :width: 256px
 :alt: Friction status is off for rotational flight (orbiting)
@@ -209,7 +209,7 @@ Next to the friction controls in the top bar is a button for toggling the [Idle 
 
 You will find more detailed information about this feature and available settings on the [Idle Motion](/using-openspace/navigation/idle-motion) page.
 
-:::{figure} idlemotion_on.png
+:::{figure} idlemotion_on.webp
 :align: center
 :height: 50px
 :alt: Idle motion is on
@@ -217,7 +217,7 @@ You will find more detailed information about this feature and available setting
 Idle motion is "on". The button will be blinking.
 :::
 
-:::{figure} idlemotion_off.png
+:::{figure} idlemotion_off.webp
 :align: center
 :height: 50px
 :alt: Idle motion is off
@@ -229,14 +229,14 @@ Idle motion is "off".
 The Toolbar consists of panels that you use to control aspects of OpenSpace. Each Toolbar Button opens a panel. These panels collect specific functionality to alter time, record your session, access actions, and so on. Clicking on each button will bring up a panel that is attached to its corresponding icon, but may also be detached to float the panel.
 
 <!-- Only add the figure text to the last image, because otherwise it shows up twice -->
-:::{figure} panels_orientation.png
+:::{figure} panels_orientation.webp
 :align: center
 :width: 100%
 :class: only-light
 :alt: OpenSpace Toolbar annotated.
 :::
 
-:::{figure} panels_orientation_dark.png
+:::{figure} panels_orientation_dark.webp
 :align: center
 :width: 100%
 :class: only-dark
@@ -250,7 +250,7 @@ We discuss details of each of these panels in the [Using OpenSpace](/using-opens
 
 
 (getting-statrted--orientation--scene-panel)=
-### ![Scene Panel button](toolbar_button_scene.png){h=45px} Scene Panel
+### ![Scene Panel button](toolbar_button_scene.webp){h=45px} Scene Panel
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
@@ -271,7 +271,7 @@ Under each data set you will find adjustments. You can brighten objects, change 
 ::::
 
 ::::{grid-item}
-:::{figure} panel_scene.png
+:::{figure} panel_scene.webp
 :align: center
 :width: 70%
 :alt: OpenSpace Scene Panel
@@ -284,7 +284,7 @@ OpenSpace Scene Panel
 
 
 
-### ![Settings Panel button](toolbar_button_settings.png){h=45px} Settings Panel
+### ![Settings Panel button](toolbar_button_settings.webp){h=45px} Settings Panel
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Settings Panel is rarely used, but has a number of useful items that alter some behaviors or change what's displayed. It is not shown in the Toolbar by default.
@@ -300,7 +300,7 @@ We do not have time here to discuss each item in the Settings Panel---most are t
 ::::
 
 ::::{grid-item}
-:::{figure} panel_settings.png
+:::{figure} panel_settings.webp
 :align: center
 :width: 300px
 :alt: OpenSpace Setting Panel
@@ -314,7 +314,7 @@ OpenSpace Settings Panel.
 
 
 
-### ![Navigation Panel button](toolbar_button_navigation.png){h=45px} Navigation Panel
+### ![Navigation Panel button](toolbar_button_navigation.webp){h=45px} Navigation Panel
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Navigation Panel is where you choose a target to act as your Focus and fly to that target.
@@ -322,12 +322,12 @@ The Navigation Panel is where you choose a target to act as your Focus and fly t
 We will refer to this panel as {menuselection}`Navigation` throughout this guide.
 
 The Navigation Panel has two modes, accessed through an iconized menu at the top:
-  - ![Focus](navigation_panel_mode_focus.png){h=20px} Focus: In every OpenSpace session, *something* needs to be set as Focus. This is an object around which navigation is centered. With this chosen in the top menu, simply pick an object in the list, or search for an object, to set as Focus. See [Navigation and Focus](/getting-started/navigation/index.md#navigation-and-focus) for more on this.
-  - ![Anchor/Aim](navigation_panel_mode_anchoraim.png){h=20px} Anchor & Aim: This more complex navigation mode uses two objects: an *Anchor* that acts similarly to Focus in that the camera navigates around it, and an *Aim* that the view will be set to point towards. See [Navigation](/using-openspace/toolbar/navigation/index) for more on using Anchor & Aim.
+  - ![Focus](navigation_panel_mode_focus.webp){h=20px} Focus: In every OpenSpace session, *something* needs to be set as Focus. This is an object around which navigation is centered. With this chosen in the top menu, simply pick an object in the list, or search for an object, to set as Focus. See [Navigation and Focus](/getting-started/navigation/index.md#navigation-and-focus) for more on this.
+  - ![Anchor/Aim](navigation_panel_mode_anchoraim.webp){h=20px} Anchor & Aim: This more complex navigation mode uses two objects: an *Anchor* that acts similarly to Focus in that the camera navigates around it, and an *Aim* that the view will be set to point towards. See [Navigation](/using-openspace/toolbar/navigation/index) for more on using Anchor & Aim.
 ::::
 ::::{grid-item}
 
-:::{figure} panel_navigation.png
+:::{figure} panel_navigation.webp
 :align: center
 :width: 300px
 :alt: OpenSpace Navigation Panel
@@ -338,17 +338,17 @@ The Navigation Panel has two modes, accessed through an iconized menu at the top
 :::::
 
 Focus Mode is most commonly used. For each object in the entry list there are three items for navigation:
-  - ![Pan & Fly](navigation_panel_panfly.png){h=2em} Pan & Fly To: Flight moves along a straight line, and gracefully pans until the object is in view.
-  - ![Focus](navigation_panel_focus_button.png){h=2em} Focus: Rotates to look at the object and sets it as the focus for navigation.
-  - ![Fly to](navigation_panel_fly.png){h=2em} Fly To: Automatically flies to the object using a curved path.
-  - ![Jump to](navigation_panel_jump_button.png){h=2em} Jump To: Fades to black, then jumps directly to the object.
+  - ![Pan & Fly](navigation_panel_panfly.webp){h=2em} Pan & Fly To: Flight moves along a straight line, and gracefully pans until the object is in view.
+  - ![Focus](navigation_panel_focus_button.webp){h=2em} Focus: Rotates to look at the object and sets it as the focus for navigation.
+  - ![Fly to](navigation_panel_fly.webp){h=2em} Fly To: Automatically flies to the object using a curved path.
+  - ![Jump to](navigation_panel_jump_button.webp){h=2em} Jump To: Fades to black, then jumps directly to the object.
 
 
 
 
 
 
-### ![Time Panel button](toolbar_button_time.png){h=45px} Time Panel
+### ![Time Panel button](toolbar_button_time.webp){h=45px} Time Panel
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Time Panel is where you set your date and time. We refer to this panel in the guide as {menuselection}`Time`.
@@ -362,7 +362,7 @@ The `Realtime` button sets you back to 1 second per second, and the `Now` button
 
 ::::{grid-item}
 
-:::{figure} panel_time.png
+:::{figure} panel_time.webp
 :align: center
 :width: 300px
 :alt: Time Panel
@@ -376,7 +376,7 @@ The `Realtime` button sets you back to 1 second per second, and the `Now` button
 
 
 
-### ![Record Menu button](toolbar_button_record.png){h=45px} Record Panel
+### ![Record Menu button](toolbar_button_record.webp){h=45px} Record Panel
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Record Panel enables session recording. After entering a name for your recording, press the `Record` button and begin flying. Feel free to turn data sets on and off or make adjustments. To end your recording, hit `Stop`. This will save a file that may then be read in for playback.
@@ -386,7 +386,7 @@ Reading in this file for playback will not only loop you through the sequence in
 
 ::::{grid-item}
 
-:::{figure} panel_record.png
+:::{figure} panel_record.webp
 :align: center
 :width: 300px
 :alt: Record Panel
@@ -399,17 +399,17 @@ Reading in this file for playback will not only loop you through the sequence in
 
 
 
-### ![GeoLocation Panel button](toolbar_button_geolocation.png){h=45px} GeoLocation Panel
+### ![GeoLocation Panel button](toolbar_button_geolocation.webp){h=45px} GeoLocation Panel
 :::::{grid} 1 1 1 2
 ::::{grid-item}
-The GeoLocation panel takes you to any place on Earth. Click a position on the map or enter a place in the search box, choose a result and how you want to get there: Fly To (![Fly to](navigation_panel_fly.png){h=2em}), Jump To (![Fly to](navigation_panel_jump_button.png){h=2em}), or add it as the Focus.
+The GeoLocation panel takes you to any place on Earth. Click a position on the map or enter a place in the search box, choose a result and how you want to get there: Fly To (![Fly to](navigation_panel_fly.webp){h=2em}), Jump To (![Fly to](navigation_panel_jump_button.webp){h=2em}), or add it as the Focus.
 
 You may also save custom locations by manually entering the latitude, longitude and altitude coordinates.
 ::::
 
 ::::{grid-item}
 
-:::{figure} panel_geolocation.png
+:::{figure} panel_geolocation.webp
 :align: center
 :width: 300px
 :alt: GeoLocation Panel
@@ -423,7 +423,7 @@ You may also save custom locations by manually entering the latitude, longitude 
 
 {.advanced-topic}
 [Advanced]{.advanced}
-### ![Screenspace Renderables Panel button](toolbar_button_screenspace_renderables.png){h=45px} Screenspace Renderables Panel
+### ![Screenspace Renderables Panel button](toolbar_button_screenspace_renderables.webp){h=45px} Screenspace Renderables Panel
 
 
 :::::{grid} 1 1 1 2
@@ -435,7 +435,7 @@ See [](/using-openspace/toolbar/screenspace-renderables/index) for more on using
 
 ::::{grid-item}
 
-:::{figure} panel_screenspace_renderables.png
+:::{figure} panel_screenspace_renderables.webp
 :align: center
 :width: 300px
 :alt: Screenspace Renderables Panel
@@ -448,7 +448,7 @@ See [](/using-openspace/toolbar/screenspace-renderables/index) for more on using
 
 
 
-### ![Exoplanet Systems Panel button](toolbar_button_exoplanet_systems.png){h=45px} Exoplanet Systems Panel
+### ![Exoplanet Systems Panel button](toolbar_button_exoplanet_systems.webp){h=45px} Exoplanet Systems Panel
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Exoplanet Systems Panel is used to visualize individual exoplanetary systems. You choose the system you want, or search by host star name, and add the system.
@@ -462,7 +462,7 @@ See [](/using-openspace/toolbar/exoplanet-systems/index) for more on using this 
 
 ::::{grid-item}
 
-:::{figure} panel_exoplanet_systems.png
+:::{figure} panel_exoplanet_systems.webp
 :align: center
 :width: 300px
 :alt: Exoplanet Systems Panel
@@ -477,7 +477,7 @@ See [](/using-openspace/toolbar/exoplanet-systems/index) for more on using this 
 
 {.advanced-topic}
 [Advanced]{.advanced}
-### ![User Panel button](toolbar_button_user_panels.png){h=45px} User Panels
+### ![User Panel button](toolbar_button_user_panels.webp){h=45px} User Panels
 
 :::::{grid} 1 1 1 2
 ::::{grid-item}
@@ -488,7 +488,7 @@ We will discuss these in future sections.
 
 ::::{grid-item}
 
-:::{figure} panel_user_panels.png
+:::{figure} panel_user_panels.webp
 :align: center
 :width: 300px
 :alt: User Panels  Panel
@@ -500,7 +500,7 @@ We will discuss these in future sections.
 
 
 
-### ![Actions Panel button](toolbar_button_actions.png){h=45px} Actions Panel
+### ![Actions Panel button](toolbar_button_actions.webp){h=45px} Actions Panel
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Actions Panel is a powerful set of buttons that can execute OpenSpace commands. For example, you can turn all the planet, moon, and satellite trails off with the press of one button.
@@ -514,7 +514,7 @@ In this guide, {menuselection}`Actions` refers to the Actions Panel.
 
 ::::{grid-item}
 
-:::{figure} panel_actions.png
+:::{figure} panel_actions.webp
 :align: center
 :width: 300px
 :alt: Actions Panel
@@ -526,7 +526,7 @@ In this guide, {menuselection}`Actions` refers to the Actions Panel.
 
 
 
-### ![SkyBrowser Panel button](toolbar_button_skybrowser.png){h=45px} SkyBrowser Panel
+### ![SkyBrowser Panel button](toolbar_button_skybrowser.webp){h=45px} SkyBrowser Panel
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The SkyBrowser Panel offers a telescopic view of the night sky. Powered by AAS's Worldwide Telescope, it allows you to point anywhere on the sky and see a high-resolution image of that area.
@@ -536,7 +536,7 @@ This enables you to see a patch of sky wherever you point the crosshair. There a
 
 ::::{grid-item}
 
-:::{figure} panel_skybrowser.png
+:::{figure} panel_skybrowser.webp
 :align: center
 :width: 300px
 :alt: SkyBrowser Panel
@@ -548,7 +548,7 @@ This enables you to see a patch of sky wherever you point the crosshair. There a
 
 
 
-### ![Mission Panel button](toolbar_button_mission.png){h=45px} Mission Panel
+### ![Mission Panel button](toolbar_button_mission.webp){h=45px} Mission Panel
 :::::{grid} 1 1 1 2
 ::::{grid-item}
 The Mission Panel loads when there is an asset that calls for it. It is a special panel that displays information on a specific space mission. For example, if you load the JWST Profile, it will load the Mission Panel.
@@ -560,7 +560,7 @@ Buttons on the bottom allow you to go to the beginning or end of the mission.
 
 ::::{grid-item}
 
-:::{figure} panel_mission.png
+:::{figure} panel_mission.webp
 :align: center
 :width: 300px
 :alt: Mission Panel

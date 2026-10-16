@@ -10,7 +10,7 @@ Stars form from large clouds of hydrogen gas. A typical gas cloud's density in t
 The hotter, more massive stars (like O stars) give off higher-energy light, and this light excites the atoms in the cloud, causing the area around the stars to glow. An O5 star (a mid-range O star) can excite hydrogen gas up to 65 light years from the star. This is what we refer to as an HII region, or star forming region.
 
 
-:::{figure} Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg
+:::{figure} Orion_Nebula_-_Hubble_2006_mosaic_18000.webp
 :align: center
 :figwidth: 90%
 :width: 60%
@@ -21,7 +21,7 @@ The Orion Nebula, at around 1,350 light years, is the most prominent HII region 
 
 
 
-:::{figure} HII_nightsky_orion.png
+:::{figure} HII_nightsky_orion.webp
 :align: left
 :alt: A view of the night sky with the constellations Orion and some surrounding constellations. Aqua hexagons mark the location of HII regions.
 
@@ -42,7 +42,7 @@ Another factor in the lifetime of an HII region is the radiation pressure from t
 ### Location Within the Galaxy
 Because HII regions are a byproduct of star formation, we will see them where stars form in the Milky Way Galaxy---namely, in the Galactic disk. This is why they are so tightly correlated with the Milky Way in the night sky.
 
-:::{figure} HII_nightsky_sagittarius.png
+:::{figure} HII_nightsky_sagittarius.webp
 :align: left
 :alt: A night sky view showing the constellations Scorpius and Sagittarius and the band of light we call the Milky Way. Aqua hexagons mark where the HII regions are located. They form a line that is aligned with the Milky Way.
 
@@ -56,7 +56,7 @@ HII regions are among the brightest objects in the Galaxy, so we can see them cl
 The HII regions are good tracers of the spiral arms---where star formation happens in the Galaxy. So, not only are they constrained to the Galactic disk, they give us a good approximation of the location of spiral arms in the Milky Way Galaxy. We can see this in the image below, where the HII regions appear spiderlike as they trace the arms they reside in.
 
 
-:::{figure} HII_milkyway.png
+:::{figure} HII_milkyway.webp
 :align: left
 :alt:
 
@@ -72,12 +72,12 @@ Looking at the HII regions from above the Milky Way Galaxy. The panel on the lef
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

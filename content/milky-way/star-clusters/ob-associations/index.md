@@ -8,7 +8,7 @@
 OB associations are young groups of stars that were formed within a giant molecular cloud, but have dispersed after the original gas and dust from the cloud was blown away by the star's radiation pressure. Although an association's stars are no longer gravitationally bound to one another, they share a common motion in space because they were formed from the same cloud.
 
 
-:::{figure} ob_associations_above.png
+:::{figure} ob_associations_above.webp
 :align: left
 :alt: Looking down on the Milky Way from above with the multicolored points marking the location of our neighboring OB associations.
 
@@ -28,7 +28,7 @@ Because O and B stars are relatively short lived, OB associations are generally 
 
 
 
-:::{figure} ob_associations_labels.png
+:::{figure} ob_associations_labels.webp
 :align: left
 :alt: Looking at the spiral arms near the Sun with the multicolored OB associations and their labels displayed.
 
@@ -50,12 +50,12 @@ One of the few datasets that are sized according to their physical size. Most da
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

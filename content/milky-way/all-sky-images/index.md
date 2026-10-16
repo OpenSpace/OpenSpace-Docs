@@ -6,11 +6,11 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/all-sky-images/hydrogen-alpha/index)
-[![hydrogen-alpha sky](/content/milky-way/all-sky-images/hydrogen-alpha/halpha_icon.png)](/content/milky-way/all-sky-images/hydrogen-alpha/index)
+[![hydrogen-alpha sky](/content/milky-way/all-sky-images/hydrogen-alpha/halpha_icon.webp)](/content/milky-way/all-sky-images/hydrogen-alpha/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/all-sky-images/visible-milky-way/index)
-[![visible all-sky image](/content/milky-way/all-sky-images/visible-milky-way/visible_icon.png)](/content/milky-way/all-sky-images/visible-milky-way/index)
+[![visible all-sky image](/content/milky-way/all-sky-images/visible-milky-way/visible_icon.webp)](/content/milky-way/all-sky-images/visible-milky-way/index)
 :::
 
 ::::

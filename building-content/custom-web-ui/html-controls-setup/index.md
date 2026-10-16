@@ -169,7 +169,7 @@ We can then close out the document and define more elements to enter an IP addre
 
 Here we are also creating an empty div with id=main in which the `mapButtons` function will populate the generated buttons. Once opened in a browser (and with OpenSpace running on the same machine) it should look something like this:
 
-![nocolor.png](nocolor.png)
+![nocolor.webp](nocolor.webp)
 
 This will of course also depend on the CSS, the file we are using is linked at the top of this document.
 
@@ -307,7 +307,7 @@ To achieve this we add a new block of JavaScript code toward the end of our docu
 
 With all these additions the control page now looks like this:
 
-![withcolor.png](withcolor.png)
+![withcolor.webp](withcolor.webp)
 
 Here the two buttons are highlighted based on the property they change, to be more color-blind friendly we have set it to orange for ON and red for OFF.
 

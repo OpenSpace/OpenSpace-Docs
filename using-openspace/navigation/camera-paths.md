@@ -9,8 +9,8 @@ The Navigation menu includes a fly-to action for targets in the list. Click one 
 
 | Icon | Name | Description |
 | ---- | ------ | ----------- |
-| ![Fly-to icon](flyto_icon.png) | Fly-to | Fly to the target using the current default *path type*, see [below](#about-path-types) |
-| ![Refocus icon](refocus_icon.png) | Zoom-to / Frame | Linear motion to center the target in view |
+| ![Fly-to icon](flyto_icon.webp) | Fly-to | Fly to the target using the current default *path type*, see [below](#about-path-types) |
+| ![Refocus icon](refocus_icon.webp) | Zoom-to / Frame | Linear motion to center the target in view |
 
 The path system determines the route based on the current situation and the selected path type (see below). By default, it tries to:
 
@@ -20,7 +20,7 @@ The path system determines the route based on the current situation and the sele
 
 ## Aborting a Path
 
-:::{image} cancel-flight-button.png
+:::{image} cancel-flight-button.webp
 :alt: Cancel button in the toolbar menu
 :align: right
 :::

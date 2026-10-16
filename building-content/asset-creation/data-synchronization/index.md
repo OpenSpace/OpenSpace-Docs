@@ -32,7 +32,7 @@ Each *BigBang* server has a local mapping of (identifier, version, application v
 
 
 ## Usage example
-![Usage overview](data-servers.png)
+![Usage overview](data-servers.webp)
 In this example, there are three different OpenSpace clients that each have a separate *BigBang* node as their endpoint. The three nodes in this example, `data.openspaceproject.com`, `data2.openspaceproject.com`, and `data3.openspaceproject.com` are configured asymmetrically. `data` knows about `data2` and `data3`, `data2` knows about `data` and `data3`, but `data3` is only aware of `data2`.
 
 Each color in this image corresponds to a single request call to the endpoint and the different colors represent different usage scenarios:

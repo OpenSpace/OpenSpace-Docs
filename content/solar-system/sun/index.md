@@ -5,15 +5,15 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/solar-system/sun/sun/index)
-[![Sun surface](/content/solar-system/sun/sun/sun_icon.png)](/content/solar-system/sun/sun/index)
+[![Sun surface](/content/solar-system/sun/sun/sun_icon.webp)](/content/solar-system/sun/sun/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/sun-glare/index)
-[![Sun glare](/content/solar-system/sun/sun-glare/sun_glare_icon.png)](/content/solar-system/sun/sun-glare/index)
+[![Sun glare](/content/solar-system/sun/sun-glare/sun_glare_icon.webp)](/content/solar-system/sun/sun-glare/index)
 :::
 
 :::{grid-item-card} [](/content/solar-system/sun/habitable-zone/index)
-[![Habitable zone](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.png)](/content/solar-system/sun/habitable-zone/index)
+[![Habitable zone](/content/solar-system/sun/habitable-zone/sun_habitable_zone_icon.webp)](/content/solar-system/sun/habitable-zone/index)
 :::
 
 ::::
@@ -28,7 +28,7 @@ Stars are light factories. The Sun fuses hydrogen into helium and, as a byproduc
 The Sun is a ball of mostly hydrogen and helium in the form of gas and hot plasma. Its chemical composition was inherited from the conditions in which it formed. It has a core that extends about 25% of the Sun's radius and is over 15 million Kelvin. All the thermal energy produced here is via nuclear fusion.
 
 
-:::{figure} Sun_poster.png
+:::{figure} Sun_poster.webp
 :align: left
 :alt: A cut-out diagram of the Sun's layers, labeled.
 
@@ -58,7 +58,7 @@ After more stages of fits---expanding and contracting---the Sun will ultimately 
 We are accustomed to seeing the plane of the Solar System---the plane that the planets exist in---oriented horizontally with the Sun at the center. However, there really is no up, down, east, or west in the universe. It helps to see the Solar System in this manner when examining it, but it's all relative to what we're viewing. Relative to the plane of the Milky Way Galaxy, the orbits of the planets are tipped 62 degrees to the Milky Way Galaxy.
 
 
-:::{figure} solar_system_angle.png
+:::{figure} solar_system_angle.webp
 :align: left
 :alt: A view in OpenSpace from outside the orbits of the planets, showing the relative orientation of the plane of the Solar System to the plane of the Milky Way Galaxy.
 
@@ -70,7 +70,7 @@ A diagram in OpenSpace from just outside the orbits of the planets, seen in the 
 The Sun is about two-thirds the way out from the center of the Milky Way Galaxy, roughly 26,000 light years from the Galactic center---in the Galactic suburbs. We are located between two major arms of the Milky Way.
 
 
-:::{figure} suns_place_galaxy.png
+:::{figure} suns_place_galaxy.webp
 :align: left
 :alt: The constellation lines indicate the location of the sun in the Milky Way Galaxy.
 
@@ -82,7 +82,7 @@ The position of the Sun in the Milky Way Galaxy. Here, we use the constellation 
 The Sun is moving through the Galaxy as it revolves around its center. It has a relatively stable [orbit around the Galaxy](../../milky-way/stars/star-orbits/index), moving at 828,000 kilometers per hour (514,000 miles per hour). Its bevy of planets are along for ride, tipped 62 degrees. At this speed, it takes about 225 million years to complete one orbit around the Galaxy. Given the Sun has been around for about 4.6 billion years, we've only made about 22 revolutions around the Galaxy. Compare that to Earth, which has made 4.6 billion revolutions around the Sun in that time.
 
 
-:::{figure} ../../milky-way/stars/star-orbits/star_orbits_sun.png
+:::{figure} ../../milky-way/stars/star-orbits/star_orbits_sun.webp
 :align: left
 :alt: The orbit of the Sun in the Milky Way Galaxy
 

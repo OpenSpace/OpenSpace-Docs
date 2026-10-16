@@ -8,7 +8,7 @@
 In many ways, stars form the foundation of our astronomical knowledge and are incremental toward our understanding of the universe itself. We base much of what we know about the universe on the characteristics and evolution of stars, and they are an important rung on the so-called distance ladder that other distance-determination methods rely upon.
 
 
-:::{figure} stars_scorpius+constellations.png
+:::{figure} stars_scorpius+constellations.webp
 :align: left
 :alt: A starry sky looking toward the constellation Scorpius and Sagittarius. Lines connect the stars of the constellations in view, and the band of light crossing the image is the Milky Way.
 
@@ -30,7 +30,7 @@ Before 1997, we had good distances for about 3,800 stars via the [Gliese](https:
 ### Source Catalogs
 For this {menuselection}`Stars` data set, we base our data on the Hipparcos catalog. Hipparcos provides the colors we see with our eye, and the brightnesses we're accustomed to seeing. However, when we have Gaia data for the distance or velocity of the star, we use that information, which will be far more accurate than Hipparcos. We continue to rely on Hipparcos for most of the bright stars in the night sky because these are not yet in the Gaia catalog.
 
-:::{figure} stars_orion+taurus.png
+:::{figure} stars_orion+taurus.webp
 :align: left
 :alt: A starry sky looking toward the constellation Orion and Taurus.
 
@@ -46,7 +46,7 @@ The most common operation on the stars is to brighten them. By default, the star
 This will allow you to see the stars as you fly away from them, yielding the view in the figure below. This is, of course, wildly exaggerated.
 
 
-:::{figure} stars_from_afar.png
+:::{figure} stars_from_afar.webp
 :align: left
 :alt: A view of the spiral structure of the Milky Way Galaxy with the local stars near the sun in the foreground, brightened up to see them as a "ball" of stars located in our region of the galaxy.
 
@@ -62,12 +62,12 @@ Exaggerating the brightness of the stars allows you to see even the dimmest amon
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

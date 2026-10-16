@@ -1,5 +1,5 @@
 # Actions Panel
-![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png)
+![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.webp)
 
 {menuselection}`Windows --> Actions`
 
@@ -14,7 +14,7 @@ Authoring actions is too advanced for this section. We will discuss authoring ac
 The idea with an action is to automate one or many adjustments that you would otherwise have to enact via checking something on or off, adjusting a slider, or changing a color. With one button, you can accomplish many adjustments to many datasets to craft a scene to your liking.
 
 
-:::{figure} actions_panel.png
+:::{figure} actions_panel.webp
 :align: center
 :width: 50%
 :figwidth: 90%
@@ -32,7 +32,7 @@ The panel has three main sections: your location, a search box, and the folder a
 ### Your location
 At the top of the panel is the current location. This is denoted by a house icon, which represents the top, or root. When you navigate into subfolders, for example if you press the {menuselection}`Trails` action button (which is a folder denoted by its icon), the location will appear as {octicon}`home-fill;1em` / `Trails`. Click the parts of the location path, or use the arrow button, to go up in the folder hierarchy.
 
-:::{figure} actions_panel_trails.png
+:::{figure} actions_panel_trails.webp
 :align: center
 :width: 50%
 :figwidth: 90%

@@ -11,7 +11,7 @@ This section is incomplete---nothing to see here, yet.
 
 
 :::{grid-item-card} [](/content/solar-system/planets/mars/mars/index)
-[![Mars](/content/solar-system/planets/mars/mars/mars_icon.png)](/content/solar-system/planets/mars/mars/index)
+[![Mars](/content/solar-system/planets/mars/mars/mars_icon.webp)](/content/solar-system/planets/mars/mars/index)
 :::
 ::::
 

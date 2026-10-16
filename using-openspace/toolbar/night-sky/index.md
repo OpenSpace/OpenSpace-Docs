@@ -1,5 +1,5 @@
 # Night Sky Panel
-![Tour Panel Button](/using-openspace/toolbar/night-sky/toolbar_button_nightsky.png)
+![Tour Panel Button](/using-openspace/toolbar/night-sky/toolbar_button_nightsky.webp)
 
 {menuselection}`Windows --> Content --> Night Sky`
 
@@ -13,7 +13,7 @@ A [nightsky profile](/profiles/night-sky/index) exists that is tailored toward u
 The Night Sky Panel offers functionality that is inherently optimized for a planetarium setting. It can be used in OpenSpace's default rectangular mode that launches on your desktop computer, but offers more insight when used in a fish-eye mode on the desktop. A fish-eye view will replicate a planetarium view on your desktop.
 
 
-:::{figure} night_sky_two_panel_view.png
+:::{figure} night_sky_two_panel_view.webp
 :align: left
 :width: 100%
 :alt: Night Sky rectangular view
@@ -32,7 +32,7 @@ The panel is divided into six subpanels. Each tabbed subpanel offers functionali
 ## Markings Tab
 The Markings tab enables the display of lines, grids, labels, and other elements that lend themselves to understanding the sky as a map. These include the cardinal directions, various coordinate systems projected on the sky, and the mapping of the constellations in the night sky.
 
-:::{figure} night_sky_panel_markings.png
+:::{figure} night_sky_panel_markings.webp
 :align: right
 :width: 100%
 :figwidth: 40%
@@ -61,7 +61,7 @@ Astronomers use this coordinate system most often to describe the location of ob
 The constellations section provides buttons to toggle the constellation data on and off. {menuselection}`Lines` will bring up the [familiar lines](/content/milky-way/constellations/constellation-lines/index) that trace the constellation figures. {menuselection}`Art` turns on the [artwork for the constellations](/content/milky-way/constellations/constellation-art/index). {menuselection}`Grid` will show the [constellation boundaries](/content/milky-way/constellations/constellation-boundaries/index). And {menuselection}`Labels` show each constellation's label. These buttons provide a convenient place to control these functions which otherwise exist in the [Scene Panel](/using-openspace/toolbar/scene/index) or the [Actions Panel](/using-openspace/toolbar/actions/index).
 
 
-:::{figure} constellation_anatomy.png
+:::{figure} constellation_anatomy.webp
 :align: left
 :width: 100%
 :alt: Constellations in OpenSpace
@@ -90,7 +90,7 @@ In OpenSpace, the practical meaning of these two systems of time is if you advan
 :::
 
 
-:::{figure} night_sky_panel_time.png
+:::{figure} night_sky_panel_time.webp
 :align: right
 :width: 100%
 :figwidth: 40%
@@ -121,7 +121,7 @@ Use the [Time Panel](/using-openspace/toolbar/time/index) for access to all the 
 The Location / View tab shows your location status, and provides buttons for preset locations and views from that location.
 
 
-:::{figure} night_sky_panel_location.png
+:::{figure} night_sky_panel_location.webp
 :align: right
 :width: 100%
 :figwidth: 40%
@@ -134,7 +134,7 @@ The Location / View tab in OpenSpace's Night Sky Panel.
 ### Globe Location
 This section shows your location status. The map displays where you are, indicated by the OpenSpace icon, along with the day/night portions of Earth. The precise latitude and longitude (and altitude, though that is less relevant when night sky viewing) are also listed.
 
-The icon will move as you move across Earth. However, if you want total control of your location or to move to a specific place, use the ![GeoLocation Panel Button](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png){height=20px} [GeoLocation Panel](/using-openspace/toolbar/geolocation/index).
+The icon will move as you move across Earth. However, if you want total control of your location or to move to a specific place, use the ![GeoLocation Panel Button](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.webp){height=20px} [GeoLocation Panel](/using-openspace/toolbar/geolocation/index).
 
 
 ### Jump to Position
@@ -153,13 +153,13 @@ These buttons reorient you relative to the horizon. {menuselection}`Look at Hori
 
 
 :::{tip}
-Use the ![GeoLocaiton Panel Button](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png){h=20px} [GeoLocation Panel](/using-openspace/toolbar/geolocation/index) to fine-tune the control of your location on Earth.
+Use the ![GeoLocaiton Panel Button](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.webp){h=20px} [GeoLocation Panel](/using-openspace/toolbar/geolocation/index) to fine-tune the control of your location on Earth.
 :::
 
 ## Stars Tab
 The Stars tab handles the visibility properties of the [stars](/content/milky-way/stars/stars/index).
 
-:::{figure} night_sky_panel_stars.png
+:::{figure} night_sky_panel_stars.webp
 :align: right
 :width: 100%
 :figwidth: 40%
@@ -185,7 +185,7 @@ Many paper star atlases use a more primative system of discrete dots to represen
 The Appearance section of the Stars tab only appears when the [nightsky profile](/profiles/night-sky/index) is loaded.
 :::
 
-:::{figure} nightsky_stars_types.png
+:::{figure} nightsky_stars_types.webp
 :align: left
 :width: 100%
 :figwidth: 100%
@@ -199,7 +199,7 @@ Two renditions of the stars in the night sky, one the standard with a core-glow 
 ## Solar System Tab
 The Solar System tab controls how the Sun, Moon, and planets appear.
 
-:::{figure} night_sky_panel_solar_system.png
+:::{figure} night_sky_panel_solar_system.webp
 :align: right
 :width: 100%
 :figwidth: 40%
@@ -227,7 +227,7 @@ We may want to see the Moon differently from the night sky. For one, it helps to
 ## Sun Tab
 The Sun tab controls the appearance of the Sun and can add trails that delineate the Sun's path in the sky.
 
-:::{figure} night_sky_panel_sun.png
+:::{figure} night_sky_panel_sun.webp
 :align: right
 :width: 100%
 :figwidth: 40%

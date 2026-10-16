@@ -5,15 +5,15 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/milky-way/galaxy/milky-way-image/index)
-[![Galaxy image](/content/milky-way/galaxy/milky-way-image/galaxy_image_icon.png)](/content/milky-way/galaxy/milky-way-image/index)
+[![Galaxy image](/content/milky-way/galaxy/milky-way-image/galaxy_image_icon.webp)](/content/milky-way/galaxy/milky-way-image/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/galaxy/milky-way-volume/index)
-[![Galaxy volume](/content/milky-way/galaxy/milky-way-volume/milky_way_model_icon.png)](/content/milky-way/galaxy/milky-way-volume/index)
+[![Galaxy volume](/content/milky-way/galaxy/milky-way-volume/milky_way_model_icon.webp)](/content/milky-way/galaxy/milky-way-volume/index)
 :::
 
 :::{grid-item-card} [](/content/milky-way/galaxy/milky-way-arm-labels/index)
-[![Galaxy arm labels](/content/milky-way/galaxy/milky-way-arm-labels/milkyway_arms_labels_icon.png)](/content/milky-way/galaxy/milky-way-arm-labels/index)
+[![Galaxy arm labels](/content/milky-way/galaxy/milky-way-arm-labels/milkyway_arms_labels_icon.webp)](/content/milky-way/galaxy/milky-way-arm-labels/index)
 :::
 
 ::::

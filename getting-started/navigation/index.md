@@ -53,7 +53,7 @@ As discussed in [](/getting-started/orientation/index.md#flight-friction-status)
 
 The Rotation, Zoom, and Roll Flight Modes are subject to friction by default when you launch OpenSpace. Their status is in the upper-right corner of the Graphics Window and looks like this:
 
-:::{figure} /getting-started/orientation/friction_status_default.png
+:::{figure} /getting-started/orientation/friction_status_default.webp
 :align: center
 :width: 300px
 :alt: Friction status is on
@@ -108,7 +108,7 @@ For most flying, particularly through large, dispersed data in space, it is typi
 
 Suppose you want to land on the surface of Mars and explore the great canyon [Valles Marineris](https://en.wikipedia.org/wiki/Valles_Marineris), you'd first target Mars so it is the Focus, fly up to the planet, then orbit Mars until the canyon is in front of you on Mars's surface.
 
-:::{figure} mars_approaching.png
+:::{figure} mars_approaching.webp
 :align: center
 :width: 100%
 :alt: Approaching Mars with its moon's orbits
@@ -129,7 +129,7 @@ If a surface feature is on the dark side of a planet, you can do one of two thin
 Next you'd zoom in toward it. But, zooming in will eventually crash you into Mars head-first. What you need to do is fly up toward the surface with the canyon directly in front of you as you fly toward it.
 
 
-:::{figure} mars_500km.png
+:::{figure} mars_500km.webp
 :align: center
 :width: 100%
 :alt: Mars's Valles Marineris from 500 km up
@@ -144,7 +144,7 @@ The default layer for Mars is not high resolution. Once we fly toward the surfac
 You will find it in the Scene Menu: \
 {menuselection}`Scene --> Solar System --> Planets --> Mars --> Mars --> Renderable --> Layers --> Color Layers --> CTX Blended`.
 
-:::{figure} mars_500km_layer_ctx_blended.png
+:::{figure} mars_500km_layer_ctx_blended.webp
 :align: center
 :width: 100%
 :alt: Mars's Valles Marineris from 500 km up in hi-res
@@ -163,7 +163,7 @@ Now, "tip" Mars a bit with the Pan Flight Mode using {kbd}`Ctrl` + {kbd}`left mo
 If Mars comes in tilted, you can level the horizon by using the {kbd}`Ctrl` + {kbd}`Shift` + {kbd}`left mouse button`.
 
 
-:::{figure} mars_hover.png
+:::{figure} mars_hover.webp
 :align: center
 :width: 100%
 :alt: Hovering 15 km above the canyon
@@ -174,7 +174,7 @@ About 15 km above Mars' Valles Marineris. The orbits of Mars's two moons, Phobos
 
 From this position and view, Zoom, using the {kbd}`right mouse button`, will now move you toward or away from Mars's surface. So, let's zoom down closer to the surface and inside the canyon.
 
-:::{figure} mars_inside_valles.png
+:::{figure} mars_inside_valles.webp
 :align: center
 :width: 100%
 :alt: Inside Valles Marineris
@@ -277,7 +277,7 @@ We use the following symbols in tutorials to indicate actions:
 
 ### Rotation Flight Mode
 
-[![Earth in OpenSpace](earth_upon_launch.png)](earth_upon_launch.png)
+[![Earth in OpenSpace](earth_upon_launch.webp)](earth_upon_launch.webp)
 
 {.tutorial}
   1. Launch OpenSpace.
@@ -289,7 +289,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Zoom Flight Mode
-[![Earth and Moon with orbits on](earth_moon.png)](earth_moon.png)
+[![Earth and Moon with orbits on](earth_moon.webp)](earth_moon.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Press the {kbd}`right mouse button` and begin moving the mouse down slowly to move away from Earth in the Zoom Flight Mode.
@@ -300,7 +300,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Change Focus
-[![Earth and Moon](moon_focus.png)](moon_focus.png)
+[![Earth and Moon](moon_focus.webp)](moon_focus.webp)
 
 {.tutorial}
   1. {octicon}`telescope;1.25em;profile-tour-action` In the Focus Menu, choose "Moon" from the preloaded list. You will see the Moon move to the center of your view---it is now the Focus and all motion will revolve around it.
@@ -311,7 +311,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### To the Moon
-[![Above the Moon](above_moon.png)](above_moon.png)
+[![Above the Moon](above_moon.webp)](above_moon.webp)
 
 {.tutorial}
   1. Click on the plane symbol in the Focus Menu to approach the Moon. This will automatically take you to the Moon.
@@ -322,7 +322,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Roll Motion
-[![Above the Moon](moon_roll.png)](moon_roll.png)
+[![Above the Moon](moon_roll.webp)](moon_roll.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Use the Roll Flight Mode and "twist" your view. We've not moved positions here, only rotated the view.
@@ -331,7 +331,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Change the Focus Back to Earth
-[![Target Earth in OpenSpace](earth_target.png)](earth_target.png)
+[![Target Earth in OpenSpace](earth_target.webp)](earth_target.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Zoom away from the Moon so Earth is in view.
@@ -345,7 +345,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Find a Place to Land On Earth
-[![Grand Canyon from 400 km up](grand_canyon.png)](grand_canyon.png)
+[![Grand Canyon from 400 km up](grand_canyon.webp)](grand_canyon.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Zoom up to Earth and toward the surface.
@@ -359,7 +359,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Pan Flight Mode---Tilt Earth Down
-[![Five kilometers over the Grand Canyon](grand_canyon_flying_over.png)](grand_canyon_flying_over.png)
+[![Five kilometers over the Grand Canyon](grand_canyon_flying_over.webp)](grand_canyon_flying_over.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Use the {kbd}`Ctrl` + {kbd}`left mouse button` and move the mouse up to bring Earth down.
@@ -371,7 +371,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Get Closer to the Surface
-[![Two kilometers over the Grand Canyon](grand_canyon_two_km.png)](grand_canyon_two_km.png)
+[![Two kilometers over the Grand Canyon](grand_canyon_two_km.webp)](grand_canyon_two_km.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Use the {kbd}`right mouse button` while pushing the mouse up to bring you closer to Earth's surface.
@@ -383,7 +383,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Exploring the Surface
-[![One kilometer above the Grand Canyon](grand_canyon_one_km.png)](grand_canyon_one_km.png)
+[![One kilometer above the Grand Canyon](grand_canyon_one_km.webp)](grand_canyon_one_km.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Fly even closer to the surface using the Zoom Flight Mode: {kbd}`right mouse button` while pushing the mouse up.
@@ -397,7 +397,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Fly Away From Earth---Back to Normal Flight
-[![Earth](back_away_earth.png)](back_away_earth.png)
+[![Earth](back_away_earth.webp)](back_away_earth.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Fly away from the surface using the {kbd}`right mouse button` and pull the mouse down.
@@ -410,7 +410,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Turn on the Constellation Lines
-[![Constellation Lines with Earth](constellations_on.png)](constellations_on.png)
+[![Constellation Lines with Earth](constellations_on.webp)](constellations_on.webp)
 
 {.tutorial}
   1. {octicon}`diff-added;1.25em;profile-tour-action` Turn on the [Constellation Lines](/content/milky-way/constellations/constellation-lines/index) using the Scene Menu.
@@ -419,7 +419,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Leave the Solar System
-[![Looking back toward the Sun with constellation lines on](nearby_stars_constellations.png)](nearby_stars_constellations.png)
+[![Looking back toward the Sun with constellation lines on](nearby_stars_constellations.webp)](nearby_stars_constellations.webp)
 
 {.tutorial}
   1. {octicon}`rocket;1.25em;profile-tour-action` Use Zoom Flight to move away from Earth and the Solar System. Use the {kbd}`z` key to increase your speed, but watch out, it can take you right out of the universe.
@@ -431,7 +431,7 @@ We use the following symbols in tutorials to indicate actions:
 
 
 ### Spiral Flight Back Home
-[![Earth](home.png)](home.png)
+[![Earth](home.webp)](home.webp)
 
 {.tutorial}
   1. Continue your orbital motion with friction off.

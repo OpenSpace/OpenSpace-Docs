@@ -1,12 +1,14 @@
+<!-- The list-tables in this file use RST `*` row markers, which markdownlint misreads as asterisk list items (MD004) -->
+<!-- markdownlint-disable MD004 -->
 # Toolbar
-![Toolbar Panels](/using-openspace/toolbar/toolbar_full.png)
+![Toolbar Panels](/using-openspace/toolbar/toolbar_full.webp)
 
 The Toolbar appears at the bottom of the OpenSpace window and gives you quick access to the panels that enable data manipulation, navigation, time control, and many other OpenSpace functions.
 
 
 :::{note}
 The toolbar above shows all the possible panel options, set via the Top Bar's View menu. When you start OpenSpace, the default Toolbar is abbreviated:
-![Toolbar Panels Default](/using-openspace/toolbar/toolbar_default.png)
+![Toolbar Panels Default](/using-openspace/toolbar/toolbar_default.webp)
 
 Add other panels using the {menuselection}`View --> Toolbar` Menu.
 :::
@@ -20,75 +22,75 @@ Add other panels using the {menuselection}`View --> Toolbar` Menu.
 :header-rows: 0
 :class: toolbar-table
 
-*   - ![Scene Panel Button](/using-openspace/toolbar/scene/toolbar_button_scene.png)
+  * - ![Scene Panel Button](/using-openspace/toolbar/scene/toolbar_button_scene.webp)
     - ### [Scene Panel](/using-openspace/toolbar/scene/index)
     - A hierarchial listing of all the data sets in your OpenSpace session.
 
-*   - ![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.png)
+  * - ![Navigation Panel Button](/using-openspace/toolbar/navigation/toolbar_button_navigation.webp)
     - ### [Navigation Panel](/using-openspace/toolbar/navigation/index)
     - Target and navigate to objects.
 
-*   - ![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time_cropped.png)
+  * - ![Time Panel Button](/using-openspace/toolbar/time/toolbar_button_time_cropped.webp)
     - ### [Time Panel](/using-openspace/toolbar/time/index)
     - Change the date and time, and alter the rate of time.
 
-*   - ![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.png)
+  * - ![Action Panel Button](/using-openspace/toolbar/actions/toolbar_button_actions.webp)
     - ### [Actions Panel](/using-openspace/toolbar/actions/index)
     - A library of buttons, or marcos, that perform one or many OpenSpace tasks.
 
-*   - ![GeoLocation Panel Button](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.png)
+  * - ![GeoLocation Panel Button](/using-openspace/toolbar/geolocation/toolbar_button_geolocation.webp)
     - ### [GeoLocation Panel](/using-openspace/toolbar/geolocation/index)
     - Locate places on Earth, navigate to them, and save them as scenes.
 
-*   - ![SkyBrowser Panel Button](/using-openspace/toolbar/skybrowser/toolbar_button_skybrowser.png)
+  * - ![SkyBrowser Panel Button](/using-openspace/toolbar/skybrowser/toolbar_button_skybrowser.webp)
     - ### [SkyBrowser Panel](/using-openspace/toolbar/skybrowser/index)
-    -  A tool that interactively connects OpenSpace to night sky imagery, including all-sky images and images from space telescopes.
+    - A tool that interactively connects OpenSpace to night sky imagery, including all-sky images and images from space telescopes.
 
-*   - ![Exoplanet Systems Panel Button](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.png)
+  * - ![Exoplanet Systems Panel Button](/using-openspace/toolbar/exoplanet-systems/toolbar_button_exoplanets.webp)
     - ### [Exoplanet Systems Panel](/using-openspace/toolbar/exoplanet-systems/index)
     - Visualize the planets and habitable zones in exoplanetary systems.
 
-*   - ![Night Sky Panel Button](/using-openspace/toolbar/night-sky/toolbar_button_nightsky.png)
+  * - ![Night Sky Panel Button](/using-openspace/toolbar/night-sky/toolbar_button_nightsky.webp)
     - ### [Night Sky Panel](/using-openspace/toolbar/night-sky/index)
     - Night sky simulator with tools to understand the motions of the sun, moon, planets, and stars throughout the course of the day and year.
 
-*   - ![Mission Panel Button](/using-openspace/toolbar/mission/toolbar_button_mission.png)
+  * - ![Mission Panel Button](/using-openspace/toolbar/mission/toolbar_button_mission.webp)
     - ### Mission Panel
     - *Page coming soon...*
 
-*   - ![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.png)
+  * - ![Record Panel Button](/using-openspace/toolbar/record/toolbar_button_recording.webp)
     - ### [Record Panel](/using-openspace/toolbar/record/index)
     - Record a session's flightpath and playback or render the flight.
 
-*   - ![Screenspace Renderables Panel Button](/using-openspace/toolbar/screenspace-renderables/toolbar_button_screenspace_renderables.png)
+  * - ![Screenspace Renderables Panel Button](/using-openspace/toolbar/screenspace-renderables/toolbar_button_screenspace_renderables.webp)
     - ### [Screenspace Renderables Panel](/using-openspace/toolbar/screenspace-renderables/index)
     - Add images, video, or webpages that exists as a slide overlay in OpenSpace,
 
-*   - ![Keybinds Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.png)
+  * - ![Keybinds Panel Button](/using-openspace/toolbar/keybinds/toolbar_button_keybinds.webp)
     - ### [Keybinds Panel](/using-openspace/toolbar/keybinds/index)
     - Shows all the active keyboard bindings for the currently loaded profile.
 
-*   - ![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.png)
+  * - ![User Panels Button](/using-openspace/toolbar/user-panels/toolbar_button_user_panels.webp)
     - ### [User Panels](/using-openspace/toolbar/user-panels/index)
-    - Custom panels that are developed by users which allow custom functionality within OpenSpace. 
+    - Custom panels that are developed by users which allow custom functionality within OpenSpace.
 
-*   - ![Tour Panel Button](/using-openspace/toolbar/tour-panel/toolbar_button_tour.png)
+  * - ![Tour Panel Button](/using-openspace/toolbar/tour-panel/toolbar_button_tour.webp)
     - ### [Tour Panel](/using-openspace/toolbar/tour-panel/index)
     - Displays an interactive, getting started tour of OpenSpace.
 
-*   - ![Settings Panel Button](/using-openspace/toolbar/settings/toolbar_button_settings.png)
+  * - ![Settings Panel Button](/using-openspace/toolbar/settings/toolbar_button_settings.webp)
     - ### [Settings Panel](/using-openspace/toolbar/settings/index)
     - A general description of the settings panel items.
 
-*   - ![Flight Control Panel Button](/using-openspace/toolbar/flight-control/toolbar_button_flight_control.png)
+  * - ![Flight Control Panel Button](/using-openspace/toolbar/flight-control/toolbar_button_flight_control.webp)
     - ### [Flight Control Panel](/using-openspace/toolbar/flight-control/index)
     - Enables flight controls in an external web browser window.
 
-*   - ![Assets Panel Button](/using-openspace/toolbar/assets/toolbar_button_assets.png)
+  * - ![Assets Panel Button](/using-openspace/toolbar/assets/toolbar_button_assets.webp)
     - ### [Assets Panel](/using-openspace/toolbar/assets/index)
     - Browse, load, and remove assets.
 
-*   - ![Globe Imagery Browser Panel Button](/using-openspace/toolbar/globe-imagery-browser/toolbar_button_globe_imagery_browser.png)
+  * - ![Globe Imagery Browser Panel Button](/using-openspace/toolbar/globe-imagery-browser/toolbar_button_globe_imagery_browser.webp)
     - ### Globe Imagery Browser Panel
     - *Page coming soon...*
 :::
@@ -97,7 +99,7 @@ Add other panels using the {menuselection}`View --> Toolbar` Menu.
 
 
 ## Customizing the Toolbar
-:::{figure} menu_view_toolbar.png
+:::{figure} menu_view_toolbar.webp
 :align: right
 :width: 100%
 :figwidth: 50%
@@ -108,7 +110,7 @@ The {menuselection}`View --> Toolbar` Menu in OpenSpace, displying options for c
 
 Use the {menuselection}`View --> Toolbar` Menu to add, subtract, or reorder panel buttons on the Toolbar.
 
-Check the item on and off to add or subtract the panel from the Toolbar. Use the reorder button, ![Reorder button](/using-openspace/toolbar/reorder_button.png){height=20px}, to rearrange the panel buttons on the Toolbar. The {menuselection}`Reset` Button returns the Toolbar to its default state.
+Check the item on and off to add or subtract the panel from the Toolbar. Use the reorder button, ![Reorder button](/using-openspace/toolbar/reorder_button.webp){height=20px}, to rearrange the panel buttons on the Toolbar. The {menuselection}`Reset` Button returns the Toolbar to its default state.
 
 
 

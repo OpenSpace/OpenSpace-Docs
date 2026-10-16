@@ -5,15 +5,15 @@
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/cobe/index)
-[![COBE microwave background](/content/universe/cosmic-microwave-background/cobe/cobe_cmb_icon.png)](/content/universe/cosmic-microwave-background/cobe/index)
+[![COBE microwave background](/content/universe/cosmic-microwave-background/cobe/cobe_cmb_icon.webp)](/content/universe/cosmic-microwave-background/cobe/index)
 :::
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/wmap/index)
-[![WMAP microwave background](/content/universe/cosmic-microwave-background/wmap/wmap_cmb_icon.png)](/content/universe/cosmic-microwave-background/wmap/index)
+[![WMAP microwave background](/content/universe/cosmic-microwave-background/wmap/wmap_cmb_icon.webp)](/content/universe/cosmic-microwave-background/wmap/index)
 :::
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/planck/index)
-[![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.png)](/content/universe/cosmic-microwave-background/planck/index)
+[![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.webp)](/content/universe/cosmic-microwave-background/planck/index)
 :::
 
 ::::
@@ -26,7 +26,7 @@ The cosmic microwave background (CMB) radiation is our baby picture of the unive
 The CMB is light that pervades the universe. We see the light in microwave wavelengths. In the image above, we see a mottled structure. This is a mapping of temperature taken directly by the telescope. However, the difference in temperature between the red spots and blue spots is in the hundreds of thousandths of a degree. The telescope can pick up temperature differences on the order of millionths of degrees. So, to all other unsophisticated instruments, this light appears to be one temperature: 2.7 Kelvin (equivalent to -270&deg;C or -455&deg;F).
 
 
-:::{figure} cmb_planck.png
+:::{figure} cmb_planck.webp
 :align: left
 :alt: The Planck all-sky CMB image, showing temperature at microwave wavelengths.
 
@@ -69,7 +69,7 @@ COBE operated between 1989 and 1993 and returned the first detailed all-sky imag
 Each successive mission increased the quality of the maps and refined our understanding of the universe. COBE's effective resolution in this map is 10&deg; while the Planck map has 5-arcminute resolution.
 
 
-:::{figure} cmb_composite.png
+:::{figure} cmb_composite.webp
 :align: center
 :figwidth: 90%
 :width: 60%
@@ -87,7 +87,7 @@ Each CMB all-sky image is placed on a sphere, like all other all-sky images. How
 
 
 
-:::{figure} outside_cmb.png
+:::{figure} outside_cmb.webp
 :align: left
 :alt: A sphere with the CMB all-sky image mapped onto it. In the center are the quasars.
 
@@ -101,7 +101,7 @@ In 1948, astronomers [Ralph Alpher](https://en.wikipedia.org/wiki/Ralph_Alpher) 
 Alpher searched for this cool gas, but it would be another sixteen years before it was discovered, not by astronomers but by two physicists working at [Bell Telephone Laboratories](https://en.wikipedia.org/wiki/Bell_Labs) in New Jersey. In 1964, [Arno Penzias](https://en.wikipedia.org/wiki/Arno_Allan_Penzias) (1933--2024) and [Robert Wilson](https://en.wikipedia.org/wiki/Robert_Woodrow_Wilson) (b. 1936) were trying to communicate with a recently launched communications satellite and could not remove "noise" from their transmissions. This weak hiss was a constant nuisance that was present during the day, the night, and throughout the year. This fact ruled out possibilities such as equipment interference, atmospheric effects, or even bird droppings on the radio telescope built to communicate with their satellite.
 
 
-:::{figure} 20231104-DSC_6268-lg.jpg
+:::{figure} 20231104-DSC_6268-lg.webp
 :align: left
 :alt: The Horn Antenna that discovered the cosmic microwave background.
 
@@ -129,15 +129,15 @@ Penzias and Wilson were awarded the Nobel Prize in 1978 for their discovery. The
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/cobe/index)
-[![COBE microwave background](/content/universe/cosmic-microwave-background/cobe/cobe_cmb_icon.png)](/content/universe/cosmic-microwave-background/cobe/index)
+[![COBE microwave background](/content/universe/cosmic-microwave-background/cobe/cobe_cmb_icon.webp)](/content/universe/cosmic-microwave-background/cobe/index)
 :::
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/wmap/index)
-[![WMAP microwave background](/content/universe/cosmic-microwave-background/wmap/wmap_cmb_icon.png)](/content/universe/cosmic-microwave-background/wmap/index)
+[![WMAP microwave background](/content/universe/cosmic-microwave-background/wmap/wmap_cmb_icon.webp)](/content/universe/cosmic-microwave-background/wmap/index)
 :::
 
 :::{grid-item-card} [](/content/universe/cosmic-microwave-background/planck/index)
-[![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.png)](/content/universe/cosmic-microwave-background/planck/index)
+[![Planck microwave background](/content/universe/cosmic-microwave-background/planck/planck_cmb_icon.webp)](/content/universe/cosmic-microwave-background/planck/index)
 :::
 
 ::::

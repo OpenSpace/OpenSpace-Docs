@@ -16,7 +16,7 @@ profile-editor/index
 
 ::::{grid-item}
 
-:::{figure} /getting-started/launch/launcher.png
+:::{figure} /getting-started/launch/launcher.webp
 :align: center
 :width: 400px
 :alt: OpenSpace launcher window

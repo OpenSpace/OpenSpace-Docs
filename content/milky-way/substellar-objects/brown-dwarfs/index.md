@@ -29,7 +29,7 @@ We represent these data by oversized points colored according to their spectral 
   - Y type: violet
 
 
-:::{figure} brown_dwarfs_orion.png
+:::{figure} brown_dwarfs_orion.webp
 :align: left
 :alt: A view toward Orion with the constellations in view along with the multicolored brown dwarfs.
 
@@ -37,7 +37,7 @@ Brown dwarfs as seen from the night sky looking toward the constellation Orion. 
 :::
 
 
-:::{figure} brown_dwarfs_scorpius.png
+:::{figure} brown_dwarfs_scorpius.webp
 :align: left
 :alt: A night sky view of the constellations Scorpius and Sagittarius, along with the brown dwarfs, designated with different color points depending on their spectral type.
 
@@ -49,7 +49,7 @@ Brown dwarfs in the nighttime sky. Here, we're looking toward the constellations
 Because brown dwarfs are extremely dim objects, we cannot detect these objects to great distances. In many ways, it is still a research frontier where new objects are being discovered and new telescopes tailored to detect these objects are coming online.
 
 Because these objects are difficult to detect, we only see them very close to the sun.
-:::{figure} brown_dwarfs_around_sun.png
+:::{figure} brown_dwarfs_around_sun.webp
 :align: left
 :alt: An image looking back on the Sun, which lies at the center of a green sphere whose diameter is 160 light years. Brown dwarfs are distributed around the Sun, with more appearing above and below the plane of the Milky Way Galaxy.
 
@@ -65,12 +65,12 @@ Brown dwarfs, in red, distributed around the Sun. The green object is a 160-ligh
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

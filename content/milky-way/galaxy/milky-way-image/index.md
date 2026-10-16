@@ -9,7 +9,7 @@
 The Milky Way Image provides a basis, albeit representational and two-dimensional, of Galactic structure that's typical of the Milky Way. It is an altered image of the galaxy [NGC 1232](https://en.wikipedia.org/wiki/NGC_1232), seen in the constellation Eridanus.
 
 
-:::{figure} milky_way_image.png
+:::{figure} milky_way_image.webp
 :align: left
 :alt: A top-down, face-on view of the Milky Way Image, the galaxy NGC 1232, showing the bright galactic core, spiral arms, and bright star-forming regions.
 
@@ -23,7 +23,7 @@ We chose this galaxy because it resembles the overall structure of the Milky Way
 
 
 
-:::{figure} milky_way_image+model.png
+:::{figure} milky_way_image+model.webp
 :align: left
 :alt: The Milky Way image shown with the Milky Way Volume. We are looking down on the galactic disk, showing the bright core and spiral arms.
 
@@ -44,12 +44,12 @@ To prepare this image, some alterations were necessary. We "painted out" some ar
 :gutter: 1 1 1 2
 
 :::{grid-item-card} [](/profiles/default/index)
-[![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)
+[![default profile](/profiles/default/profile_default_icon.webp)](/profiles/default/index)
 :::
 
 
 :::{grid-item-card} [](/profiles/offline/index)
-[![offline profile](/profiles/offline/profile_offline_icon.png)](/profiles/offline/index)
+[![offline profile](/profiles/offline/profile_offline_icon.webp)](/profiles/offline/index)
 :::
 ::::
 

@@ -1,5 +1,5 @@
 # SkyBrowser Panel
-![SkyBrowser Panel Button](toolbar_button_skybrowser.png)
+![SkyBrowser Panel Button](toolbar_button_skybrowser.webp)
 
 {menuselection}`Windows --> Content --> SkyBrowser`
 
@@ -10,9 +10,9 @@ The SkyBrowser enables you to view the famous, and not-so-famous, images from th
 
 
 ## Add a SkyBrowser
-When you press ![SkyBrowser Panel Button](toolbar_button_skybrowser.png){h=30px} on the Toolbar, the panel will appear ready for you to add a browser.
+When you press ![SkyBrowser Panel Button](toolbar_button_skybrowser.webp){h=30px} on the Toolbar, the panel will appear ready for you to add a browser.
 
-:::{figure} skybrowser_panel_addbrowser.png
+:::{figure} skybrowser_panel_addbrowser.webp
 :align: center
 :width: 50%
 :figwidth: 100%
@@ -23,7 +23,7 @@ The SkyBrowser Panel appearance when opening the panel for the first time. First
 
 Press the {menuselection}`Add Browser` Button to add a new browser. When you add a browser, the SkyBrowser will transform and you will see a target and overlay window:
 
-![New Browser](skybrowser_newbrowser.png)
+![New Browser](skybrowser_newbrowser.webp)
 
 The main elements of the SkyBrowser are:
   - The target on the sky (the large cross). The box around the cross shows your field of view.
@@ -42,7 +42,7 @@ In this example figure, I chose a wide-field image of the Orion Nebula from the 
 
 Now that I've selected an image, you can see it's now in the list of images in my SkyBrowser in the bottom half of the panel. This is now a layer that can be manipulated.
 
-![Search](skybrowser_search.png)
+![Search](skybrowser_search.webp)
 
 
 
@@ -52,16 +52,16 @@ We can choose images that give us a more detailed view of the Orion Nebula. We c
 
 First, add an image that overlays the center of the nebula. Now that you've added it, you can see it's now in the list of images. You can change the opacity of the images individually to see the image below it for reference, you can also reorder the images to set the order of the layers to your liking---generally smaller images should be on top of larger ones.
 
-![Layer 2](skybrowser_layer2.png)
+![Layer 2](skybrowser_layer2.webp)
 
 Next, we add a Hubble Space Telescope image of the nebula, which is smaller still, and shows far more detail.
 
-![Layer 3](skybrowser_layer3.png)
+![Layer 3](skybrowser_layer3.webp)
 
 
 Each image added has some built-in functionality on its list item. You can get information on the image itself, you can fade the image up and down by adjusting its opacity, you can center the target on the image, and you can remove the image from the SkyBrowser.
 
-:::{figure} skybrowser_layer_closeup.png
+:::{figure} skybrowser_layer_closeup.webp
 :align: center
 :width: 60%
 :alt: OpenSpace's SkyBrowser image list item.
@@ -89,11 +89,11 @@ There are two motions to control the SkyBrowser, each mimic the motions of a tel
 
 Using the mouse's scroll wheel to zoom into the Hubble image of the Orion Nebula to see its details:
 
-![Zoom](skybrowser_zoom.png)
+![Zoom](skybrowser_zoom.webp)
 
 A close-up of the browser overlay window shows the individual proplyds in the nebula.
 
-:::{figure} skybrowser_zoom_closeup.png
+:::{figure} skybrowser_zoom_closeup.webp
 :align: center
 :width: 60%
 :alt: OpenSpace's SkyBrowser window showing the Orion Nebula.
@@ -110,14 +110,14 @@ You can have multiple browsers to show different parts of the sky simultaneously
 
 The new browser will appear somewhere in your view, but you'll likely want to move it somewhere specific. Let's point this one to the Horsehead Nebula, just beside the southernmost belt star in Orion. Alternatively, you can search for it in the image list. You may need to increase your magnification, too, by using your scroll wheel to effectively zoom into that part of the sky.
 
-![Second Browser](skybrowser_second_browser.png)
+![Second Browser](skybrowser_second_browser.webp)
 
 It will likely be helpful to change the image list filter from "All Images" to "Images Within View" so we only see the images within the browser's view. Now, you can choose images of the Horsehead and overlay them, all without altering your first browser's images of the Orion Nebula. Each browser is independent of one another.
 
-![Add Layer](skybrowser_second_addlayer.png)
+![Add Layer](skybrowser_second_addlayer.webp)
 
 
-:::{figure} skybrowser_second_addlayer_closeup.png
+:::{figure} skybrowser_second_addlayer_closeup.webp
 :align: center
 :width: 60%
 :alt: OpenSpace's SkyBrowser window showing the Horsehead Nebula.
@@ -129,7 +129,7 @@ A close-up of the SkyBrowser window, looking at the Horsehead Nebula in Orion.
 ## The SkyBrowser Tab Buttons
 The SkyBrowser Panel has a series of functions that operate on each SkyBrowser loaded. These are the SkyBrowser Tab Buttons:
 
-:::{figure} skybrowser_menu.png
+:::{figure} skybrowser_menu.webp
 :align: center
 :width: 60%
 :alt: OpenSpace's SkyBrowser Tab Buttons.
@@ -144,28 +144,28 @@ The SkyBrowser tab's buttons.
 :stub-columns: 1
 :widths: 10 25 65
 
-  - - ![Look at target SkyBrowser button](skybrowser_buttons_look.png)
+  - - ![Look at target SkyBrowser button](skybrowser_buttons_look.webp)
     - Look at Target
     - Moves the *camera* so that the target is placed in the center of the view.
-  - - ![Center target SkyBrowser button](skybrowser_buttons_center_target.png)
+  - - ![Center target SkyBrowser button](skybrowser_buttons_center_target.webp)
     - Move Target to Center of View
     - Moves the *target* so that it is placed in the current center of the view.
-  - - ![Zoom in SkyBrowser button](skybrowser_buttons_zoom_in.png)
+  - - ![Zoom in SkyBrowser button](skybrowser_buttons_zoom_in.webp)
     - Zoom In
     - Zooms into the current view, a la increasing your magnification. Each click decreases the vertical field of view by 10&deg;.
-  - - ![Zoom out SkyBrowser button](skybrowser_buttons_zoom_out.png)
+  - - ![Zoom out SkyBrowser button](skybrowser_buttons_zoom_out.webp)
     - Zoom Out
     - Zooms out of the current view as if you were reducing your telescopic magnification. This will increase your vertical field of view by 10&deg; with each click of the button.
-  - - ![Delete Images SkyBrowser button](skybrowser_buttons_delete_images.png)
+  - - ![Delete Images SkyBrowser button](skybrowser_buttons_delete_images.webp)
     - Remove All Images
     - Removes all the images added to the selected browser. (Individual images can be removed using the trash button that accompanies each image in the list of added images.)
-  - - ![Telescope View SkyBrowser button](skybrowser_buttons_telescope_view.png)
+  - - ![Telescope View SkyBrowser button](skybrowser_buttons_telescope_view.webp)
     - Open Telescope View
     - Use this to reopen any closed browsers.
-  - - ![Settings SkyBrowser button](skybrowser_buttons_settings.png)
+  - - ![Settings SkyBrowser button](skybrowser_buttons_settings.webp)
     - SkyBrowser Settings
     - Opens a few panels that allow you customize the active SkyBrowser.
-  - - ![Delete Browser SkyBrowser button](skybrowser_buttons_delete_browser.png)
+  - - ![Delete Browser SkyBrowser button](skybrowser_buttons_delete_browser.webp)
     - Delete SkyBrowser
     - Removes the active SkyBrowser.
 ::::
@@ -179,7 +179,7 @@ The SkyBrowser tab's buttons.
 ### Browser Settings
 These settings apply to each browser individually. Most are straightforward, like customizing the color of the browser, the thickness of the border, and setting its position and size.
 
-:::{figure} skybrowser_settings_browser.png
+:::{figure} skybrowser_settings_browser.webp
 :align: center
 :width: 60%
 :alt: OpenSpace's SkyBrowser settings.
@@ -195,7 +195,7 @@ The SkyBrowser's browser settings.
 ### Display Copy Settings
 Sometimes it is necessary to show the browser outside of the graphical user interface, for example, if you are in a dome or are using a display wall. To display the sky browser there, you can simply add Display Copies. The Display Copies are rendered in the 3D environment in OpenSpace and will be visible even if the GUI is not shown. If you are in a dome environment, you can add many Display Copies at once in order to spread them out on the Azimuth so that the browser window is visible from all parts of the theater.
 
-:::{figure} skybrowser_settings_display_copy.png
+:::{figure} skybrowser_settings_display_copy.webp
 :align: center
 :width: 60%
 :alt: OpenSpace's SkyBrowser Display Copy settings.
@@ -220,7 +220,7 @@ Add or remove copies using the {menuselection}`Add` or {menuselection}`Remove` b
 ### General SkyBrowser Settings
 These settings apply to all browsers.
 
-:::{figure} skybrowser_settings_general.png
+:::{figure} skybrowser_settings_general.webp
 :align: center
 :width: 60%
 :alt: OpenSpace's SkyBrowser general settings.

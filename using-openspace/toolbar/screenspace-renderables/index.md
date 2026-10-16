@@ -6,14 +6,14 @@ authors:
 
 # Screenspace Renderables Panel
 
-![Tour Panel Button](/using-openspace/toolbar/screenspace-renderables/toolbar_button_screenspace_renderables.png)
+![Tour Panel Button](/using-openspace/toolbar/screenspace-renderables/toolbar_button_screenspace_renderables.webp)
 
 {menuselection}`Windows --> Screenspace Renderables`
 
 The technically named *Screenspace Renderables* enables the addition of media that overlays the scene in OpenSpace. The media---images, video, or a webpage---exists as a slide on top of the view in OpenSpace, and its size and location can be manipulated to enhance a story within OpenSpace.
 
 
-:::{figure} 20130722_annotated_earth-moon_from_saturn_1920x1080.png
+:::{figure} 20130722_annotated_earth-moon_from_saturn_1920x1080.webp
 :align: right
 :width: 100%
 :figwidth: 60%
@@ -25,7 +25,7 @@ A close-up of Saturn showing the location of Earth in the background. This is a 
 
 We will demonstrate adding slides using the famous image of Earth beside Saturn's rings. This image was taken by Cassini on July 19, 2013, and also shows Venus and Mars on the opposite side of Saturn.
 
-Let's use Screenspace Renderables to add the uncropped version of this image, then see how OpenSpace's planets line up relative to their position in the image. 
+Let's use Screenspace Renderables to add the uncropped version of this image, then see how OpenSpace's planets line up relative to their position in the image.
 
 
 
@@ -35,7 +35,7 @@ Once you bring up the Screenspace Renderables panel, you will see two tabs: Imag
 
 Both tabs work in a similar fashion. There is a field for a display name, and a field to enter the path or URL to the image or website. The Display Name is the name OpenSpace assigns to the slide, and will appear in the list of loaded slides. The Path or URL tells OpenSpace how to find the resource. Note for images, you can use an image you have locally on your computer by entering the path to that image, or you can enter a URL to an image on a website.
 
-:::{figure} screenspace_renderables_blank.png
+:::{figure} screenspace_renderables_blank.webp
 :align: center
 :width: 100%
 :alt: OpenSpace's Screenspace Renderables panel
@@ -45,7 +45,7 @@ The initial Screenspace Renderables panel in OpenSpace.
 
 Once you enter a Display Name and a path or URL to the image or website, press the Add button and the slide will appear in the list below.
 
-:::{figure} screenspace_renderables_values.png
+:::{figure} screenspace_renderables_values.webp
 :align: center
 :width: 50%
 :figwidth: 80%
@@ -63,7 +63,7 @@ Once the slide is added, it will appear in the OpenSpace scene, and in the panel
 
 In this example, the Cassini image of Saturn we linked to appears in the OpenSpace scene. We altered the coordinates and scale of the image to center it on top of OpenSpace's native, 3-D Saturn.  
 
-:::{figure} screenspace_renderables_image.png
+:::{figure} screenspace_renderables_image.webp
 :align: center
 :width: 100%
 :alt: OpenSpace with an image of Saturn overlaid
@@ -77,7 +77,7 @@ Next, we turned off the orbital trails of the outer planets and decreased the op
 
 
 
-:::{figure} screenspace_renderables_faded.png
+:::{figure} screenspace_renderables_faded.webp
 :align: center
 :width: 100%
 :alt: Recreating Cassini's Saturn + Earth image
@@ -89,7 +89,7 @@ Adjustments showing the position of Earth, Mars, and Venus, recreating the famou
 
 ## Slide Adjustments
 
-:::{figure} screenspace_renderables_options.png
+:::{figure} screenspace_renderables_options.webp
 :align: right
 :width: 100%
 :figwidth: 40%
@@ -104,12 +104,12 @@ These adjustments affect where the slide appears on the screen.
 
 #### Coordinates
 
-There are two coordinate systems in which positional adjustments can be made. The end result of these adjustments sets where the slide appears on the screen, but in reality you're defining the plane in which the slide appears relative to the screen. 
+There are two coordinate systems in which positional adjustments can be made. The end result of these adjustments sets where the slide appears on the screen, but in reality you're defining the plane in which the slide appears relative to the screen.
 
 If you're running in a flat-screen environment, then use **Cartesian coordinates** to  adjustment the position of the slide relative to the screen. The trio of adjustors control the {math}`X` (horizontal), {math}`Y` (vertical), and {math}`Z` (depth from screen) position of the slide. A {math}`Z` of zero is at the screen level, a negative value brings the image into view. The smaller the {math}`Z` value, the more distant the slide's plane descends from the screen plane and, hence, the image appears smaller.
 
 In a domed or fisheye environment, use the **Radius, Azimuth, and Elevation** coordinate system. This treats the image plane as a sphere. Now, the three imputs are radius, which increases from the viewer's screen, azimuth, the angle around the {math}`Z`-axis, and elevation, the angle from the {math}`Z`-axis. More simply, use these three adjustors to move the slide where you want it, and use **Local rotation** if necessary to align it correctly.
- 
+
 
 #### Scale
 
@@ -142,5 +142,5 @@ You can place a border around a slide using the border properties. Set a **Borde
 If you use the Web tab to add a slide, you can alter the dimensions of the browser within the slide. The default is 1920 by 1080 pixels. And, because some websites update often, you can use the **Reload** button to refresh the browser within the slide.
 
 
-### Delete 
+### Delete
 If you want to delete the slide, use the **Delete** button.
