@@ -21,10 +21,36 @@ For an explanation of the pulsation mechanism that causes variability in these s
 :::
 
 
+:::{figure} rr_lyrae_constellations.png
+:align: left
+:alt: RR Lyrae stars around the Sun
+
+RR Lyrae stars, exaggerated in brightness, surrounding the Sun. The constellation lines mark the Sun's position, with the center of the Milky Way in the background.
+:::
+
+
+
 
 ## Distribution of RR Lyrae Stars
 
-RR Lyrae stars are dimmer, older stars, so they tend to be found in the Galactic halo, the spherical distrubution of stars that encompass the disk of the Milky Way. This is consistent with their correlation with globular clusters, which are clusters of old stars distributed spherically around the Milky Way.
+RR Lyrae stars are dimmer, older stars, so they tend to be found in the Galactic halo, the spherical distribution of stars that encompass the disk of the Milky Way. This is consistent with their correlation with globular clusters, which are clusters of old stars distributed spherically around the Milky Way.
+
+:::{figure} rr_lyrae_edge_on.png
+:align: left
+:alt: RR Lyrae stars relative to the disk of the Milky Way.
+
+RR Lyrae stars and their distribution above and below the Galactic disk. RR Lyrae stars are older and exist with the older populations in the Milky Way's halo---the spherical component of the Galaxy.
+:::
+
+Contrasting the RR Lyrae stars with [open star clusters](/content/milky-way/star-clusters/open-clusters/index), which are areas of more recent star formation, we can see the open clusters are tightly correlated with the disk of the Milky Way while the RR Lyrae stars extend well above and below the clusters. 
+
+:::{figure} rr_lyrae_open_clusters.png
+:align: left
+:alt: RR Lyrae stars with the open star clusters
+
+RR Lyrae stars shown with the green [open star clusters](/content/milky-way/star-clusters/open-clusters/index), which largely exist in the Galactic disk with younger star populations.
+:::
+
 
 
 
@@ -34,24 +60,15 @@ RR Lyrae stars are not as simple as Cepheid stars in their period-luminosity rel
 
 However, we know of many standalone RR Lyrae stars that are not in crowded globular clusters. In the past few decades, astronomers have used powerful telescopes, including Hubble, Kepler, Gaia, and others, to measure accurate brightnesses and, therefore, get accurate distances to these stars. Their place among the distance ladder, upon which rests our understanding of cosmic distances, is secure.
 
+You will see several alignments of RR Lyrae stars that point back toward the Sun. These are stars in [globular star clusters](/content/milky-way/star-clusters/globular-clusters/index). They appear streched out because of the ???. In reality, these would be tightened up to resemble the spherical shape of these clusters, removing the artifacts that cause them to be stretched in this manner.
 
 
-
-
-
-
-
-
-
-
-:::{figure} stars_scorpius+constellations.png
+:::{figure} rr_lyrae_globulars.png
 :align: left
-:alt: 
+:alt: RR Lyrae stars with globular star clusters
 
-future image.
+RR Lyrae stars shown with the [globular star clusters](/content/milky-way/star-clusters/globular-clusters/index). RR Lyrae stars were famously used to determine the distance to some of these clusters, and for a few we can see a stretched out line of member stars. Omega Cen, M4, and NGC 3201 each have these radial distributions of stars, which itself is an observational artifact and uncorrected in this data set.
 :::
-
-
 
 
 
@@ -84,8 +101,8 @@ future image.
 
 ## Dossier
 :::{dossier}
-:census: 14,992 stars
-:assetfile: data/assets/scene/digitaluniverse/stars_cepheids.asset
+:census: 266,395 stars
+:assetfile: data/assets/scene/digitaluniverse/stars_rr_lyrae.asset
 :openspaceversion: 1
 :preparedby: Jackie Faherty, Brian Abbott, Zack Reeves, & Cade Mohrhardt (AMNH)
 :sourceversion: 1.03

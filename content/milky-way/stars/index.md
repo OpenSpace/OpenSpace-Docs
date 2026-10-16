@@ -20,6 +20,19 @@
 [![star distance uncertainty](/content/milky-way/stars/star-distance-uncertainty/star_distance_uncertainty_icon.png)](/content/milky-way/stars/star-distance-uncertainty/index)
 :::
 
+:::{grid-item-card} [](/content/milky-way/stars/nearby-stars/index)
+[![nearby stars](/content/milky-way/stars/nearby-stars/nearby_stars_icon.png)](/content/milky-way/stars/nearby-stars/index)
+:::
+
+:::{grid-item-card} [](/content/milky-way/stars/cepheid-stars/index)
+[![cepheid stars](/content/milky-way/stars/cepheid-stars/cepheid_stars_icon.png)](/content/milky-way/stars/cepheid-stars/index)
+:::
+
+:::{grid-item-card} [](/content/milky-way/stars/rr-lyrae-stars/index)
+[![RR Lyrae stars](/content/milky-way/stars/rr-lyrae-stars/rr_lyrae_stars_icon.png)](/content/milky-way/stars/rr-lyrae-stars/index)
+:::
+
+
 :::{grid-item-card} [](/content/milky-way/stars/star-orbits/index)
 [![star orbits](/content/milky-way/stars/star-orbits/star_orbits_icon.png)](/content/milky-way/stars/star-orbits/index)
 :::
@@ -51,9 +64,21 @@ A view of the night sky toward Scorpius and Sagittarius, shown with the constell
 
 ## What Is a Star?
 
-Stars are, in a literal sense, light factories. Their light is a product of the nuclear processes that naturally occur in stars and define the lifespan of a star. Stars are born, live a stable life, then transform into a [stellar remnant](../../stellar-remnants/index). They condense from clouds of hydrogen, exist in equilibrium throughout their life as a [*main sequence*](https://simple.wikipedia.org/wiki/Main_sequence) star, and evolve into a post stellar object like a [white dwarf](../../stellar-remnants/white-dwarfs/index), [neutron star](../../stellar-remnants/pulsars/index), or a black hole.
+Stars are, in a literal sense, light factories. Their light is a product of the nuclear processes that naturally occur in stars and define the lifespan of a star. Stars are born, live a stable life, then transform into a [stellar remnant](/content/milky-way/stellar-remnants/index). They condense from clouds of hydrogen, exist in equilibrium throughout their life as a {term}`main sequence` star, and evolve into a post stellar object like a [white dwarf](/content/milky-way/stellar-remnants/white-dwarfs/index), [neutron star](/content/milky-way/stellar-remnants/pulsars/index), or a black hole.
 
-How massive the star is at birth determines its characteristics and longevity. Stars spend most of their time in a stable state, called the main sequence because of its placement on the [Hertzsprung–Russell diagram](https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram). During this phase, inward force of gravity is balanced by the outward radiation pressure within the star---the star is in equilibrium. The Sun is on the main sequence, and will remain there for a few billion years. In general, the initial mass of the object results in different types of stars---some are cooler, redder, and live a long time, while others are hotter, bluer, and cycle off the main sequence more quickly toward their ultimate fate.
+We plot the evolution of stars on the [Hertzsprung–Russell diagram](https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram). This is a plot of the color and brightness of stars and yields a structure that reveals the evolution path for various types of stars. For example, the Sun will exist on the main sequence for about 10 billion years. Its outer envelope will expand transforming it to a red giant star, then helium will begin to burn moving the sun to horizontal branch phase, then the outer layers will be shed to become a planetary nebula. Finally, its fuel is exhausted, the core cools, and it becomes a white dwarf.
+
+
+:::{figure} HR-diag-instability-strip.png
+:width: 60%
+:align: center
+:alt: 
+
+The Hertzsprung–Russell (HR) diagram. If you take all the stars and plot them by color and absolute magnitude, you will see they fall somewhere on this graph. Plotting stars in this way reveals various stages of their evolution. From pre-main sequence, to main sequernce, to a giant phase, to their ultimate fate, which is often a white dwarf. Credit: [Rursus, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HR-diag-instability-strip.svg#Licensing)
+:::
+
+
+How massive the star is at birth determines its characteristics and longevity. Stars spend most of their time in their stable, main sequence state. During this phase, the inward force of gravity is balanced by the outward radiation pressure within the star---the star is in equilibrium. The Sun is on the main sequence, and will remain there for a few billion years. In general, the initial mass of the object results in different types of stars---some are cooler, redder, and live a long time, while others are hotter, bluer, and cycle off the main sequence more quickly toward their ultimate fate.
 
 
 
@@ -74,6 +99,60 @@ Gaia Data Release 4 will number about 2.8 billion sources. About 2 billion of th
 
 
 
+(content--milky-way--stars--moving-stars)=
+## Moving Stars
+
+Gaia DR3 provided velocities for roughly 33 million stars. Gaia DR4 will provide 10 times that number. But, it's important to understand the limitations of this motion. As stars move around the Milky Way Galaxy, they are subject to forces near and far. Near could be a close encounter, far is the overall gravitational potential of the Galaxy itself. Over a long period of time, stars are subject to the gravity of the Milky Way, which keeps them in [orbit](/content/milky-way/stars/star-orbits/index) around the Galaxy.
+
+For our purposes, when we move the stars in OpenSpace, we can safely assume their velocities are accurate for roughly 12 million years around the present (so, 6 million years in the past and 6 million years in the future). So, advancing time in OpenSpace millions of years into the past or future is scientifically permissible. Beyond these limits, the path of the star would be subject to the gravity of the Galaxy, which will affect its trajectory through space.
+
+:::{tip}
+A good speed for the stars' motion in OpenSpace is a Simulation Time of thousands to tens of thousands of years per second, depending on your vantage point.
+:::
+
+
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} [](/content/milky-way/stars/stars/index)
+[![stars](/content/milky-way/stars/stars/stars_icon.png)](/content/milky-way/stars/stars/index)
+:::
+
+:::{grid-item-card} [](/content/milky-way/stars/star-labels/index)
+[![star labels](/content/milky-way/stars/star-labels/star_names_icon.png)](/content/milky-way/stars/star-labels/index)
+:::
+
+:::{grid-item-card} [](/content/milky-way/stars/star-labels-alternate/index)
+[![alternate star labels](/content/milky-way/stars/star-labels-alternate/alternate_star_labels_icon.png)](/content/milky-way/stars/star-labels-alternate/index)
+:::
+
+:::{grid-item-card} [](/content/milky-way/stars/star-distance-uncertainty/index)
+[![star distance uncertainty](/content/milky-way/stars/star-distance-uncertainty/star_distance_uncertainty_icon.png)](/content/milky-way/stars/star-distance-uncertainty/index)
+:::
+
+:::{grid-item-card} [](/content/milky-way/stars/nearby-stars/index)
+[![nearby stars](/content/milky-way/stars/nearby-stars/nearby_stars_icon.png)](/content/milky-way/stars/nearby-stars/index)
+:::
+
+:::{grid-item-card} [](/content/milky-way/stars/cepheid-stars/index)
+[![cepheid stars](/content/milky-way/stars/cepheid-stars/cepheid_stars_icon.png)](/content/milky-way/stars/cepheid-stars/index)
+:::
+
+:::{grid-item-card} [](/content/milky-way/stars/rr-lyrae-stars/index)
+[![RR Lyrae stars](/content/milky-way/stars/rr-lyrae-stars/rr_lyrae_stars_icon.png)](/content/milky-way/stars/rr-lyrae-stars/index)
+:::
+
+
+:::{grid-item-card} [](/content/milky-way/stars/star-orbits/index)
+[![star orbits](/content/milky-way/stars/star-orbits/star_orbits_icon.png)](/content/milky-way/stars/star-orbits/index)
+:::
+
+:::{grid-item-card} [](/content/milky-way/stars/sun/index)
+[![sun](/content/milky-way/stars/sun/sun_icon.png)](/content/milky-way/stars/sun/index)
+:::
+
+::::
 
 
 
@@ -85,6 +164,9 @@ stars/index
 star-labels/index
 star-labels-alternate/index
 star-distance-uncertainty/index
+nearby-stars/index
+cepheid-stars/index
+rr-lyrae-stars/index
 star-orbits/index
 sun/index
 :::
