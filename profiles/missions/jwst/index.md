@@ -1,16 +1,94 @@
 # James Webb Space Telescope
-This profile visualizes the NASA-ESA-CAN James Webb Space Telescope, which launched on December 25, 2021. The profile includes two visualizations of the Webb trail: One plotted with respect to the Earth-Sun L2, where it will be stationed; and another with respect to the Sun, as we plot the orbits of the planets. The profile includes a dynamic model of Webb and a time lapse of its deployment and unfolding. The profile includes the capability to point the telescope with an associated view frustum to any celestial coordinates. The orientation can be controlled by entering Right Ascension (R.A.) and Declination (Dec.) on an [external webpage](http://ui.openspaceproject.com/jwst_scripts).
+
+
+:::{attention}
+This profile and its tours are currently being written. \
+These pages are a work in progress and will be completed soon. \
+---Eds., October 2026
+:::
+
 
 ::::::::{tab-set}
 
-:::::::{tab-item} Tour
+:::::::{tab-item} Tours
 
-## Tour
-:::{note}
-This profile tour has not yet been written. It will be coming soon.
+## Tours
+
+
+
+::::{grid} 1 2 2 3
+:gutter: 1 1 1 2
+
+:::{grid-item-card} JWST Deployment
+
+![JWST above Earth](./tour-deployment/tour_deployment_icon.png)
+Trace the path of JWST from launch to its destination in space as the telescope is deployed for first light.
+
++++
+[Take Tour »](./tour-deployment/index)
 :::
 
+
+:::{grid-item-card} JWST Orbit and Location
+
+![JWST Orbits](./tour-orbit/tour_orbit_icon.png)
+JWST is 1.5 million kilometers from Earth. Explore the location and orbit of JWST, and why it's so far from Earth.
+
++++
+[Take Tour »](./tour-orbit/index)
+:::
+
+
+:::{grid-item-card} JWST Images with SkyBrowser
+
+Direct the JWST telescope to point at the images it's taken using the SkyBrowser.
+
++++
+[Take Tour »](https://example.org)
+:::
+
+::::
+
+
+This profile visualizes the NASA-ESA-CAN James Webb Space Telescope, which launched on December 25, 2021. The profile includes two visualizations of the Webb trail: One plotted with respect to the Earth-Sun L2, where it will be stationed; and another with respect to the Sun, as we plot the orbits of the planets. The profile includes a dynamic model of Webb and a time lapse of its deployment and unfolding. The profile includes the capability to point the telescope with an associated view frustum to any celestial coordinates. The orientation can be controlled by entering Right Ascension (R.A.) and Declination (Dec.) on an [external webpage](http://ui.openspaceproject.com/jwst_scripts).
+
+
 :::::::
+
+
+
+:::::::{tab-item} Mission Overview
+
+
+
+
+
+(profiles--missions--jwst--lagrange-points)=
+
+::::{admonition} Lagrange Points
+Lagrange points are five points in a two-body system (Sun and Earth) where an object will remain relatively stable in space. These points of equilibrium for a small body relative to the Sun and Earth allow spacecraft to use less fuel to operate. There are five points in the Sun-Earth system, numbered L{sub}`1`--L{sub}`5`.
+
+:::{figure} lagrange_points.png
+:align: center
+:width: 80%
+:figwidth: 70%
+:alt: Lagrange points diagram
+
+The five Lagrange points of the Sun-Earth system. JWST is located 1.5 million km (1 million miles) from Earth at L{sub}`2`, always on the side of Earth opposite the Sun. This image is not to scale, to see these at the proper scale, look at them in OpenSpace.
+:::
+
+
+
+Points L{sub}`1`, L{sub}`2`, and L{sub}`3` lie along a line connecting the Sun and Earth and were discovered by Leonhard Euler (1707--1783) around 1750. L{sub}`4` and L{sub}`5` were discovered by Joseph-Louis Lagrange (1736--1813) about a decade later. Lagrange wrote about the three-body problem delineating these five points in a famous 1770s paper.
+
+Objects located at L{sub}`1`, L{sub}`2`, and L{sub}`3` are unstable, so they need to be constantly course correcting every few weeks to remain in orbit around these points. L{sub}`4` and L{sub}`5` are truly stable and lie about 60&deg; away along Earth's orbital trajectory. These harbor a couple Trojan asteroids, balanced by the gravity of the two bodies and their orbital motion.
+
+JWST is located at L{sub}`2`, on the opposite side of Earth than the Sun. Here, Earth's gravity drags on objects located here, giving them the same orbital period around the Sun even though the orbit is a million miles farther than Earth's orbit. In addition to JWST, the Roman telescope is located at L{sub}`2` along with [WMAP](/content/universe/cosmic-microwave-background/wmap/index) and [Planck](/content/universe/cosmic-microwave-background/planck/index).
+
+::::
+
+:::::::
+
 
 
 :::::::{tab-item} Data Sets
@@ -422,3 +500,18 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 :::
 
 :::::::
+
+
+::::::::
+
+
+
+
+
+:::{toctree}
+:maxdepth: 1
+:hidden:
+
+tour-deployment/index
+tour-orbit/index
+:::
