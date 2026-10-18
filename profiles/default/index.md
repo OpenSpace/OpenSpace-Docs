@@ -95,7 +95,7 @@ The Sun, our host star, is, on average, 150 million km (93 million miles) from E
 
 
 
----
+<hr>
 
 ### Outer Solar System
 #### The Planets
@@ -142,7 +142,7 @@ The Solar System is composed of an exotic variety of objects that orbit the Sun.
 
 
 
----
+<hr>
 
 ### Constellations & Stars
 #### Constellation Lines
@@ -210,7 +210,7 @@ From this location, you may notice that the stars exhibit various brightnesses a
 
 
 
----
+<hr>
 
 ### Exoplanets
 #### Exoplanet Systems
@@ -313,7 +313,7 @@ The Exoplanet Candidates are stars, colored by mission, that are thought to be s
 ::::::
 
 
----
+<hr>
 
 ### Milky Way Galaxy
 {octicon}`diff-removed;1.25em;profile-tour-action` {menuselection}`Scene --> Milky Way --> Exoplanets --> Exoplanet Candidates` \
@@ -371,7 +371,7 @@ Given that the Milky Way has hundreds of billions of stars, it's compelling to w
 
 
 
----
+<hr>
 
 
 ### Star Orbits Around the Galaxy
@@ -425,7 +425,7 @@ One remarkable star orbit is the star PM J13420-3415 (red in this image). This i
 
 
 
----
+<hr>
 
 ### Nearby Galaxies
 #### The Local Group
@@ -607,7 +607,7 @@ You may also notice a cleft in the middle of the data set as you orbit around th
 
 
 
----
+<hr>
 
 
 ### Deep-sky Surveys
@@ -695,7 +695,7 @@ The farther out we look into the Universe, the further back in time we see.
 
 
 
----
+<hr>
 
 ### Cosmic Microwave Background
 :::{tip}
@@ -742,7 +742,7 @@ And, what does it mean to fly outside the observable universe? It is not physica
 
 
 
----
+<hr>
 
 ### A Cosmic Perspective
 {octicon}`rocket;1.25em;profile-tour-action` From the outskirts of the observable universe, with friction off, start a nice orbital pace, and then start flying back to Earth. Try to achieve balance in this compound motion.

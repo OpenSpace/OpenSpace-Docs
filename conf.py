@@ -53,14 +53,14 @@ if (os.environ.get("READTHEDOCS")):
 ###
 # Global Settings
 ###
-needs_sphinx = "7.4.6"
+needs_sphinx = "9.1.0"
 
 project = "OpenSpace"
 author = "OpenSpace community"
 project_copyright = "2014-2026, OpenSpace community"
 
 # Update with every new release
-version = release = os.getenv("READTHEDOCS_VERSION", "0.20.0")
+version = release = os.getenv("READTHEDOCS_VERSION", "0.22.0")
 
 extensions = [
   "myst_parser",
@@ -76,22 +76,21 @@ extensions = [
   "custom_directives" # Custom extension, lives in _ext
 ]
 
-keep_warnings = True
-
 
 
 ###
 # Content
 ###
-source_encoding = "utf-8-sig"
+source_encoding = "utf-8"
 exclude_patterns = [
   "README.md",
-  ".venv"
+  ".venv",
+  "build"
 ]
 root_doc = "index"
 primary_domain = "lua"
 autosectionlabel_prefix_document = True
-pygments_style = "default"
+pygments_style = "friendly"
 pygments_dark_style = "monokai"
 
 myst_enable_extensions = {
@@ -111,7 +110,7 @@ myst_heading_anchors = 4
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
   "logo_only": True,
-  "display_version": False,
+  "version_selector": False,
   "collapse_navigation": False,
   "titles_only": True,
 }
@@ -152,7 +151,7 @@ html_css_files = [
 # These folders are copied to the documentation's HTML output
 html_static_path = [ "_static" ]
 
-templates_path = [ "_templates" ]
+# templates_path = [ "_templates" ]
 
 # html_extra_path = ["robots.txt"]
 
