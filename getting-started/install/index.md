@@ -36,9 +36,9 @@ To install OpenSpace, follow these steps:
   1. Download OpenSpace according to the instructions on the [OpenSpace website](https://openspaceproject.com) for your operating system.
   1. Unzip or extract the resulting file.
   1. Place the resulting unzipped folder anywhere you like. OpenSpace is self-contained. We recommend a location inside your user folder or home directory.
-    :::{tip}
-    Multiple versions of OpenSpace may be installed beside one another without conflict.
-    :::
+     :::{tip}
+     Multiple versions of OpenSpace may be installed beside one another without conflict.
+     :::
   1. Continue below for your particular operating system:
 
 ::::::::{tab-set}
