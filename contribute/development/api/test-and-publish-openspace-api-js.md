@@ -8,6 +8,8 @@ These steps apply to any package change, including newly generated types, new To
 1. In the consuming repository, run `npm install <path-to-openspace-api-js-x.x.x.tgz>` to install it as a local dependency pointing at your build.
 
 ## 2. Publish a prerelease package for testing
+1. Ensure login for npm:
+   - `npm login`
 1. Bump to a prerelease version:
    - For a new prerelease, set an explicit version:
      ```sh
