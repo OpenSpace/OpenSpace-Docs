@@ -13,12 +13,12 @@ Mission profiles are accompanied by the Mission Panel which displays an interact
 We use the following symbols in profile pages to indicate actions:
 
 {.no-bullet}
-  - {octicon}`rocket;1.25em;profile-tour-action`: Flight instructions
-  - {octicon}`diff-added;1.25em;profile-tour-action`: Turn on a data set
-  - {octicon}`diff-removed;1.25em;profile-tour-action`: Turn off a data set
-  - {octicon}`tools;1.25em;profile-tour-action`: Adjust a setting for a data set
-  - {octicon}`telescope;1.25em;profile-tour-action`: Target an object
-  - {octicon}`stopwatch;1.25em;profile-tour-action`: Change the time settings
+  - {octicon}`rocket;1.25em;profile-tour-action` : Flight instructions
+  - {octicon}`diff-added;1.25em;profile-tour-action` : Turn on a data set
+  - {octicon}`diff-removed;1.25em;profile-tour-action` : Turn off a data set
+  - {octicon}`tools;1.25em;profile-tour-action` : Adjust a setting for a data set
+  - {octicon}`telescope;1.25em;profile-tour-action` : Target an object
+  - {octicon}`stopwatch;1.25em;profile-tour-action` : Change the time settings
 :::
 ::::
 
@@ -37,11 +37,27 @@ We use the following symbols in profile pages to indicate actions:
 ::::
 
 
+## Profiles (Unrenovated)
+  - [Apollo](/profiles/missions/apollo)
+  - [Artemis](/profiles/missions/artemis)
+  - [BepiColombpo](/profiles/missions/bepicolombo)
+  - [Dawn](/profiles/missions/dawn)
+  - [Euclid](/profiles/missions/euclid)
+  - [Gaia](/profiles/missions/gaia)
+  - [Juice](/profiles/missions/juice)
+  - [Juno](/profiles/missions/juno)
+  - [Mars](/profiles/missions/mars)
+  - [Messenger](/profiles/missions/messenger)
+  - [New Horizons](/profiles/missions/newhorizons)
+  - [OSIRIS-REx](/profiles/missions/osirisrex)
+  - [Rosetta](/profiles/missions/rosetta)
+  - [Voyager](/profiles/missions/voyager)
 
 
 
 :::{toctree}
 :maxdepth: 1
+:hidden:
 
 apollo
 artemis

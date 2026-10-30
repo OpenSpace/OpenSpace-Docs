@@ -19,7 +19,7 @@ We use the following symbols in profile pages to indicate actions:
   - {octicon}`rocket;1.25em;profile-tour-action` : Flight instructions
   - {octicon}`diff-added;1.25em;profile-tour-action` : Turn on a data set
   - {octicon}`diff-removed;1.25em;profile-tour-action` : Turn off a data set
-  - {octicon}`tools;1.25em;profile-tour-action`: Adjust a setting for a data set
+  - {octicon}`tools;1.25em;profile-tour-action` : Adjust a setting for a data set
   - {octicon}`telescope;1.25em;profile-tour-action` :  Target an object
   - {octicon}`stopwatch;1.25em;profile-tour-action` : Change the time settings
 % {octicon}`globe`:
@@ -43,6 +43,10 @@ We will discuss profile authoring in a forthcoming page. For the time being, a [
 
 ::::{grid} 1 2 2 3
 :gutter: 1 1 1 2
+
+:::{grid-item-card} [](/profiles/missions/jwst/index)
+[![JWST profile](/profiles/missions/jwst/jwst_icon.png)](/profiles/missions/jwst/index)
+:::
 
 :::{grid-item-card} [](/profiles/default/index)
 [![default profile](/profiles/default/profile_default_icon.png)](/profiles/default/index)

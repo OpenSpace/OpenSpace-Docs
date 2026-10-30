@@ -1,17 +1,7 @@
 # James Webb Space Telescope
 
 
-:::{attention}
-This profile and its tours are currently being written. \
-These pages are a work in progress and will be completed soon. \
----Eds., October 2026
-:::
-
-
 ::::::::{tab-set}
-
-
-
 
 
 :::::::{tab-item} Overview
