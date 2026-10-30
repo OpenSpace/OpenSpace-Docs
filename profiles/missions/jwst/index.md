@@ -32,19 +32,20 @@ Trace the path of JWST from launch to its destination in space as the telescope 
 :::{grid-item-card} JWST Orbit and Location
 
 ![JWST Orbits](./tour-orbit/tour_orbit_icon.png)
-JWST is 1.5 million kilometers from Earth. Explore the location and orbit of JWST, and why it's so far from Earth.
+JWST is 1.5 million kilometers from Earth. Explore the location and orbit of JWST, and see why it's so far from Earth.
 
 +++
 [Take Tour »](./tour-orbit/index)
 :::
 
 
-:::{grid-item-card} JWST Images with SkyBrowser
+:::{grid-item-card} JWST Image Tour
 
-Direct the JWST telescope to point at the images it's taken using the SkyBrowser.
+![JWST Skybrowser Images Tour](./tour-images/tour_images_icon.png)
+Point the JWST telescope at the images it's taken using the SkyBrowser and Worldwide Telescope's image library.
 
 +++
-[Take Tour »](https://example.org)
+[Take Tour »](./tour-images/index)
 :::
 
 ::::
@@ -514,4 +515,5 @@ This section is missing some data sets. Mostly planet moons and satellites whose
 
 tour-deployment/index
 tour-orbit/index
+tour-images/index
 :::
