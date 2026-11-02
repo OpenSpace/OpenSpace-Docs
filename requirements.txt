@@ -8,7 +8,6 @@ sphinx-copybutton==0.5.2
 sphinx-design==0.7.0
 sphinx-notfound-page==1.1.0
 sphinxcontrib-jquery==4.1
-sphinxcontrib-luadomain==1.2.0
 sphinxcontrib-mermaid==2.1.1
 
 # Markdown support

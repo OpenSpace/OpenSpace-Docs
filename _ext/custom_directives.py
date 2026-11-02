@@ -1,5 +1,6 @@
 from docutils.parsers.rst.directives import unchanged, choice
 from jinja2 import Environment, FileSystemLoader
+from pygments.lexers.special import TextLexer
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.typing import ExtensionMetadata
 from sphinx.application import Sphinx
@@ -169,6 +170,9 @@ class Profile_Dossier(SphinxDirective):
 def setup(app: Sphinx) -> ExtensionMetadata:
     app.add_directive("dossier", Dossier)
     app.add_directive("profile_dossier", Profile_Dossier)
+    # Pygments has no CSV lexer, but some asset examples use `:language: csv`. 
+    # We just display it as plain text.
+    app.add_lexer("csv", TextLexer)
 
     return {
         'version': '1.0',

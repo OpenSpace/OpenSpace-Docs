@@ -70,7 +70,6 @@ extensions = [
   "sphinx.ext.autosectionlabel",
   "sphinx.ext.duration",
   "sphinxcontrib.jquery",
-  "sphinxcontrib.luadomain",
   "sphinxcontrib.mermaid",
   "generate_docs", # Custom extension, lives in _ext
   "custom_directives" # Custom extension, lives in _ext
@@ -88,7 +87,6 @@ exclude_patterns = [
   "build"
 ]
 root_doc = "index"
-primary_domain = "lua"
 autosectionlabel_prefix_document = True
 pygments_style = "friendly"
 pygments_dark_style = "monokai"
