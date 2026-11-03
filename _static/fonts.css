@@ -7,9 +7,10 @@
  * the bundled file, so the page still renders with the fallback stack from
  * theme-layout.css if a file is missing.
  *
- * The files are the latin subsets from the @fontsource packages (@fontsource/ibm-plex-sans,
- * @fontsource/ibm-plex-mono and @fontsource/roboto on npm). All three families are
- * licensed under the SIL Open Font License 1.1, which allows bundling and redistribution.
+ * The files are the latin subsets from the @fontsource packages (@fontsource/ibm-plex-sans
+ * and @fontsource/ibm-plex-mono on npm, and @fontsource-variable/roboto for Roboto). All
+ * three families are licensed under the SIL Open Font License 1.1 (Roboto: Apache 2.0),
+ * which allows bundling and redistribution.
  */
 
 /* IBM Plex Sans */
@@ -46,22 +47,15 @@
     url("fonts/ibm-plex-sans-latin-700-normal.woff2") format("woff2");
 }
 
-/* Roboto, used for headings */
+/* Roboto, used for headings. One variable font covers every weight from 100 to 900, which
+   the website also uses. There is no local() source because an installed static Roboto
+   would not have the weights in between */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 100 900;
   font-display: swap;
-  src: local("Roboto Medium"), local("Roboto-Medium"),
-    url("fonts/roboto-latin-500-normal.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Roboto Bold"), local("Roboto-Bold"),
-    url("fonts/roboto-latin-700-normal.woff2") format("woff2");
+  src: url("fonts/roboto-latin-wght-normal.woff2") format("woff2");
 }
 
 /* IBM Plex Mono */

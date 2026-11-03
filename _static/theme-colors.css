@@ -76,16 +76,16 @@ body[data-theme="dark"] {
   --os-item: rgba(184, 200, 202, 0.3);
 
   --os-text: #b8c8ca;
-  --os-text-strong: #eaf1f2;
+  --os-text-strong: #f2f5f6;
   --os-text-secondary: #96a4a6;
   --os-text-muted: #6d7a7c;
   --os-text-border: rgba(184, 200, 202, 0.4);
 
-  --os-accent: #eaf1f2;
+  --os-accent: #f2f5f6;
   --os-accent-hover: #ffffff;
   --os-link: #3dbdee;
   --os-link-hover: #8fdcf7;
-  --os-h2: #eaf1f2;
+  --os-h2: #f2f5f6;
   --os-inline-code: #e57f58;
   --os-target: rgba(208, 248, 132, 0.12);
 
@@ -111,16 +111,16 @@ body[data-theme="dark"] {
     --os-item: rgba(184, 200, 202, 0.3);
 
     --os-text: #b8c8ca;
-    --os-text-strong: #eaf1f2;
+    --os-text-strong: #f2f5f6;
     --os-text-secondary: #96a4a6;
     --os-text-muted: #6d7a7c;
     --os-text-border: rgba(184, 200, 202, 0.4);
 
-    --os-accent: #eaf1f2;
+    --os-accent: #f2f5f6;
     --os-accent-hover: #ffffff;
     --os-link: #3dbdee;
     --os-link-hover: #8fdcf7;
-    --os-h2: #eaf1f2;
+    --os-h2: #f2f5f6;
     --os-inline-code: #e57f58;
     --os-target: rgba(208, 248, 132, 0.12);
 
