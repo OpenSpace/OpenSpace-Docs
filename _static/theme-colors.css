@@ -1,0 +1,224 @@
+/*
+ * OpenSpace colors for the Furo theme.
+ *
+ * The dark palette is taken from the OpenSpace website (assets/style/_tokens.scss in
+ * the www.openspaceproject.com repository). The light palette is derived from the same
+ * brand colors, darkened where needed so that text and links keep enough contrast on a
+ * white background.
+ *
+ * The file is split in two parts:
+ *   1. The palette, as --os-* variables, once for light mode and once for dark mode.
+ *   2. A single mapping from those variables onto the --color-* variables that Furo
+ *      uses, so the roles only have to be written down once.
+ *
+ * Furo switches themes with the data-theme attribute on <body>: "light", "dark", or
+ * "auto" (which follows the visitor's system setting). The dark values therefore have
+ * to be listed twice, once for an explicit "dark" and once for "auto" on a dark system.
+ * Keep the two dark blocks identical.
+ */
+
+/*
+ * 1. Palette
+ */
+body {
+  /* Surfaces */
+  --os-bg: #ffffff;
+  --os-bg-raised: #f4f8f9;
+  --os-bg-sunken: #eef4f6;
+  --os-hover: rgba(10, 118, 161, 0.07);
+  --os-hover-transparent: rgba(10, 118, 161, 0);
+
+  /* Borders */
+  --os-border: #d5e3e8;
+  --os-border-strong: rgba(10, 118, 161, 0.35);
+  --os-item: #c4d4d9;
+
+  /* Text */
+  --os-text: #23363b;
+  --os-text-strong: #0a1417;
+  --os-text-secondary: #4a5e63;
+  --os-text-muted: #66777c;
+  --os-text-border: #9db0b5;
+
+  /* Accent and headings */
+  --os-accent: #0a1417;
+  --os-accent-hover: #000000;
+  --os-link: #0a76a1;
+  --os-link-hover: #065574;
+  --os-h2: #0a1417;
+  --os-inline-code: #b3441a;
+  --os-target: rgba(208, 248, 132, 0.45);
+
+  /* Buttons are the same in both modes: website flare yellow with dark text */
+  --os-button-bg: #d0f884;
+  --os-button-bg-hover: #dcfb9f;
+  --os-button-text: #0a0a0a;
+
+  /* Admonitions */
+  --os-note: #0a76a1;
+  --os-tip: #1b8f4c;
+  --os-warning: #c4561f;
+  --os-danger: #c43030;
+  --os-important: #5b8a0a;
+  --os-seealso: #0e7c91;
+  --os-todo: #5f7075;
+}
+
+body[data-theme="dark"] {
+  --os-bg: #0a0a0a;
+  --os-bg-raised: #0d1014;
+  --os-bg-sunken: #11140e;
+  --os-hover: rgba(61, 189, 238, 0.08);
+  --os-hover-transparent: rgba(61, 189, 238, 0);
+
+  --os-border: rgba(61, 189, 238, 0.14);
+  --os-border-strong: rgba(61, 189, 238, 0.35);
+  --os-item: rgba(184, 200, 202, 0.3);
+
+  --os-text: #b8c8ca;
+  --os-text-strong: #eaf1f2;
+  --os-text-secondary: #96a4a6;
+  --os-text-muted: #6d7a7c;
+  --os-text-border: rgba(184, 200, 202, 0.4);
+
+  --os-accent: #eaf1f2;
+  --os-accent-hover: #ffffff;
+  --os-link: #3dbdee;
+  --os-link-hover: #8fdcf7;
+  --os-h2: #eaf1f2;
+  --os-inline-code: #e57f58;
+  --os-target: rgba(208, 248, 132, 0.12);
+
+  --os-note: #3dbdee;
+  --os-tip: #5cdd8b;
+  --os-warning: #e57f58;
+  --os-danger: #de4e4e;
+  --os-important: #d0f884;
+  --os-seealso: #a2e7fb;
+  --os-todo: #96a4a6;
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme="light"]) {
+    --os-bg: #0a0a0a;
+    --os-bg-raised: #0d1014;
+    --os-bg-sunken: #11140e;
+    --os-hover: rgba(61, 189, 238, 0.08);
+    --os-hover-transparent: rgba(61, 189, 238, 0);
+
+    --os-border: rgba(61, 189, 238, 0.14);
+    --os-border-strong: rgba(61, 189, 238, 0.35);
+    --os-item: rgba(184, 200, 202, 0.3);
+
+    --os-text: #b8c8ca;
+    --os-text-strong: #eaf1f2;
+    --os-text-secondary: #96a4a6;
+    --os-text-muted: #6d7a7c;
+    --os-text-border: rgba(184, 200, 202, 0.4);
+
+    --os-accent: #eaf1f2;
+    --os-accent-hover: #ffffff;
+    --os-link: #3dbdee;
+    --os-link-hover: #8fdcf7;
+    --os-h2: #eaf1f2;
+    --os-inline-code: #e57f58;
+    --os-target: rgba(208, 248, 132, 0.12);
+
+    --os-note: #3dbdee;
+    --os-tip: #5cdd8b;
+    --os-warning: #e57f58;
+    --os-danger: #de4e4e;
+    --os-important: #d0f884;
+    --os-seealso: #a2e7fb;
+    --os-todo: #96a4a6;
+  }
+}
+
+/*
+ * 2. Mapping onto Furo's variables
+ *
+ * The selector list matches every case that Furo's own palette rules match, with the same
+ * specificity. This file is loaded later, so these values win.
+ */
+body[data-theme],
+body:not([data-theme="light"]) {
+  /* Brand and links. The accent (white in dark mode) is used by the sidebar and the table
+     of contents. Links in the text use the link color; theme-layout.css turns links
+     inside headings back to the heading color. Visited links keep the link color, the
+     website does not tint them */
+  --color-brand-primary: var(--os-accent);
+  --color-brand-content: var(--os-link);
+  --color-brand-visited: var(--os-link);
+  --color-link: var(--os-link);
+  --color-link--hover: var(--os-link-hover);
+  --color-link--visited: var(--os-link);
+  --color-link--visited--hover: var(--os-link-hover);
+  --color-link-underline: transparent;
+  --color-link-underline--hover: currentColor;
+  --color-link-underline--visited: transparent;
+  --color-link-underline--visited--hover: currentColor;
+
+  /* Backgrounds and borders */
+  --color-background-primary: var(--os-bg);
+  --color-background-secondary: var(--os-bg-raised);
+  --color-background-hover: var(--os-hover);
+  --color-background-hover--transparent: var(--os-hover-transparent);
+  --color-background-border: var(--os-border);
+  --color-background-item: var(--os-item);
+
+  /* Text */
+  --color-foreground-primary: var(--os-text);
+  --color-foreground-secondary: var(--os-text-secondary);
+  --color-foreground-muted: var(--os-text-muted);
+  --color-foreground-border: var(--os-text-border);
+
+  /* Code */
+  --color-code-background: var(--os-bg-sunken);
+  --color-code-foreground: var(--os-text);
+  --color-inline-code-background: var(--os-bg-sunken);
+
+  /* Sidebar */
+  --color-sidebar-background: var(--os-bg-raised);
+  --color-sidebar-link-text--top-level: var(--os-accent);
+  --color-sidebar-search-background: var(--os-bg);
+  --color-sidebar-search-background--focus: var(--os-bg);
+  --color-sidebar-search-border: var(--os-border);
+
+  /* Tables, cards, highlights */
+  --color-table-header-background: var(--os-bg-raised);
+  --color-card-background: var(--os-bg-raised);
+  --color-card-border: var(--os-border);
+  --color-card-marginals-background: var(--os-hover);
+  --color-highlight-on-target: var(--os-target);
+  --color-highlighted-background: var(--os-hover);
+  --color-guilabel-background: var(--os-hover);
+  --color-guilabel-border: var(--os-border-strong);
+
+  /* Admonitions */
+  --color-admonition-background: var(--os-bg-raised);
+  --color-admonition-title: var(--os-note);
+  --color-admonition-title-background: color-mix(in srgb, var(--os-note) 16%, transparent);
+
+  --color-admonition-title--note: var(--os-note);
+  --color-admonition-title-background--note: color-mix(in srgb, var(--os-note) 16%, transparent);
+  --color-admonition-title--seealso: var(--os-seealso);
+  --color-admonition-title-background--seealso: color-mix(in srgb, var(--os-seealso) 16%, transparent);
+  --color-admonition-title--important: var(--os-important);
+  --color-admonition-title-background--important: color-mix(in srgb, var(--os-important) 16%, transparent);
+  --color-admonition-title--tip: var(--os-tip);
+  --color-admonition-title-background--tip: color-mix(in srgb, var(--os-tip) 16%, transparent);
+  --color-admonition-title--hint: var(--os-tip);
+  --color-admonition-title-background--hint: color-mix(in srgb, var(--os-tip) 16%, transparent);
+  --color-admonition-title--warning: var(--os-warning);
+  --color-admonition-title-background--warning: color-mix(in srgb, var(--os-warning) 16%, transparent);
+  --color-admonition-title--caution: var(--os-warning);
+  --color-admonition-title-background--caution: color-mix(in srgb, var(--os-warning) 16%, transparent);
+  --color-admonition-title--attention: var(--os-warning);
+  --color-admonition-title-background--attention: color-mix(in srgb, var(--os-warning) 16%, transparent);
+  --color-admonition-title--danger: var(--os-danger);
+  --color-admonition-title-background--danger: color-mix(in srgb, var(--os-danger) 16%, transparent);
+  --color-admonition-title--error: var(--os-danger);
+  --color-admonition-title-background--error: color-mix(in srgb, var(--os-danger) 16%, transparent);
+  --color-admonition-title--admonition-todo: var(--os-todo);
+  --color-admonition-title-background--admonition-todo: color-mix(in srgb, var(--os-todo) 16%, transparent);
+}

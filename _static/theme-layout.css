@@ -1,0 +1,315 @@
+/*
+ * OpenSpace layout and component styling for the Furo theme.
+ *
+ * Sections:
+ *   1. Fonts
+ *   2. Page layout: a centered content column, a bit wider than Furo's default
+ *   3. Typography and headings
+ *   4. Components: code, admonitions, tables, images, sidebar, sphinx-design widgets
+ *
+ * Colors live in theme-colors.css. Shapes follow the website: 12px radius for large
+ * surfaces such as cards and code blocks, 6px for small controls such as buttons and
+ * inputs, and faint blue-tinted 1px borders.
+ */
+
+/*
+ * 1. Fonts
+ */
+body {
+  --font-stack: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-stack--monospace: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, Monaco,
+    "Liberation Mono", "Lucida Console", monospace;
+  --font-stack--headings: "Roboto", var(--font-stack);
+
+  --os-radius: 12px;
+  --os-radius-small: 6px;
+}
+
+/*
+ * 2. Page layout
+ *
+ * Furo lays the page out as [sidebar][content][table of contents] and centers the
+ * content with the width of the sidebar, calc(50% - 26em), where 26em is half the
+ * content width (46em) plus its 3em of padding on each side. Its responsive breakpoints
+ * are also derived from that width. With C as the content width in em (Furo: 46):
+ *
+ *   Furo    this file   formula   what happens below it
+ *   82em    98em        C + 36    the table of contents moves off-canvas
+ *   67em    83em        C + 21    the content column stops being centered by the sidebar
+ *   63em    79em        C + 17    the sidebar moves off-canvas and the mobile header appears
+ *   48em    64em        C + 2     the content column takes the full width
+ *
+ * The sidebar width is 50% - (C / 2 + 3)em, and 7.5em more when the table of contents is
+ * off-canvas. This file uses C = 62 (992px of text, Furo's default is 736px). To change
+ * the width, change C and recompute the numbers above, here and in the rules below.
+ * The rules repeat Furo's own rules at the shifted breakpoints. They must come after
+ * Furo's stylesheet, which html_css_files guarantees. If Furo is upgraded and the layout
+ * breaks, compare these blocks with the media queries in
+ * furo/theme/furo/static/styles/furo.css.
+ */
+.content {
+  width: 62em;
+}
+
+.sidebar-drawer {
+  width: calc(50% - 34em);
+}
+
+@media (max-width: 98em) {
+  .toc-content-icon {
+    display: flex;
+  }
+
+  .toc-drawer {
+    border-left: 1px solid var(--color-background-muted);
+    height: 100vh;
+    position: fixed;
+    right: -15em;
+    top: 0;
+  }
+
+  .toc-tree {
+    border-left: none;
+    font-size: var(--toc-font-size--mobile);
+  }
+
+  .sidebar-drawer {
+    width: calc(50% - 26.5em);
+  }
+}
+
+@media (max-width: 83em) {
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 79em) {
+  .nav-overlay-icon {
+    display: flex;
+  }
+
+  .sidebar-drawer {
+    height: 100vh;
+    left: -15em;
+    position: fixed;
+    top: 0;
+    width: 15em;
+  }
+
+  .theme-toggle-header,
+  .toc-header-icon {
+    display: flex;
+  }
+
+  .theme-toggle-content,
+  .toc-content-icon {
+    display: none;
+  }
+
+  .mobile-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+
+  .mobile-header .header-left,
+  .mobile-header .header-right {
+    display: flex;
+    height: var(--header-height);
+    padding: 0 var(--header-padding);
+  }
+
+  .mobile-header .header-left label,
+  .mobile-header .header-right label {
+    height: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100%;
+  }
+
+  .nav-overlay-icon .icon,
+  .theme-toggle svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  :target {
+    scroll-margin-top: calc(var(--header-height) + 2.5rem);
+  }
+
+  section > span:target {
+    scroll-margin-top: calc(2.8rem + var(--header-height));
+  }
+
+  .back-to-top {
+    top: calc(var(--header-height) + 0.5rem);
+  }
+
+  .page {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 64em) {
+  .content {
+    overflow-x: auto;
+    width: 100%;
+  }
+}
+
+/*
+ * 3. Typography and headings
+ *
+ * Roboto for headings, in light text like the website. h2 also gets a faint rule.
+ */
+article h1 {
+  color: var(--os-text-strong);
+  font-weight: 700;
+}
+
+article h2 {
+  color: var(--os-h2);
+  font-weight: 500;
+  border-bottom: 1px solid var(--color-background-border);
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0.4rem;
+}
+
+article h3,
+article h4 {
+  color: var(--os-text-strong);
+  font-weight: 500;
+}
+
+article h5,
+article h6 {
+  font-weight: 500;
+}
+
+article strong {
+  color: var(--os-text-strong);
+}
+
+/* Links are plain until hovered, like on the website */
+article a.reference {
+  text-decoration: none;
+}
+article a.reference:hover {
+  text-decoration: underline;
+}
+
+/* Links inside headings, such as the section titles on the front page, keep the heading
+   color. Links in paragraphs, lists, tables and boxes use the link color */
+article :is(h1, h2, h3, h4, h5, h6) a.reference {
+  color: var(--os-text-strong);
+}
+article :is(h1, h2, h3, h4, h5, h6) a.reference:hover {
+  color: var(--os-accent-hover);
+}
+
+/*
+ * 4. Components
+ */
+
+/* Inline code: orange text like on the website */
+article code.literal {
+  color: var(--os-inline-code);
+  border: 1px solid var(--color-background-border);
+  border-radius: 4px;
+}
+
+/* Code blocks. The background is set explicitly because Furo's pygments.css gives
+   .highlight a fixed background from the Pygments style instead of using
+   --color-code-background. The selectors match the specificity of those rules */
+.highlight,
+body:not([data-theme="light"]) .highlight,
+body[data-theme="dark"] .highlight {
+  background: var(--os-bg-sunken);
+  border: 1px solid var(--color-background-border);
+  border-radius: var(--os-radius);
+}
+
+/* Admonitions: keep Furo's colored left edge, add a faint outline on the other sides */
+.admonition,
+.topic {
+  border-top: 1px solid var(--color-background-border);
+  border-right: 1px solid var(--color-background-border);
+  border-bottom: 1px solid var(--color-background-border);
+  border-radius: var(--os-radius-small);
+  box-shadow: none;
+}
+
+/* Tables: small uppercase column headers and faint rules, like the website tables */
+article table.docutils {
+  border-radius: var(--os-radius-small);
+}
+article table.docutils th {
+  color: var(--color-foreground-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Images that are figures get the same rounded corners as the website photos. Inline
+   icons and toolbar button images are left alone */
+article figure img {
+  border-radius: var(--os-radius);
+}
+
+/* Sidebar */
+.sidebar-logo {
+  max-width: 92%;
+  margin: 0 auto;
+}
+.sidebar-search-container {
+  border-radius: var(--os-radius-small);
+}
+.sidebar-search {
+  border-radius: var(--os-radius-small);
+}
+
+/* sphinx-design: buttons, cards and tabs use the website colors. The primary button is
+   the website's yellow with dark text in both light and dark mode */
+body {
+  --sd-color-primary: var(--os-button-bg);
+  --sd-color-primary-text: var(--os-button-text);
+  --sd-color-primary-highlight: var(--os-button-bg-hover);
+  --sd-color-card-border: var(--os-border);
+  --sd-color-card-background: var(--os-bg-raised);
+  --sd-color-card-text: var(--os-text);
+  --sd-color-card-header: var(--os-bg-raised);
+  --sd-color-shadow: rgba(0, 0, 0, 0.2);
+  --sd-color-tabs-label-active: var(--os-accent);
+  --sd-color-tabs-label-hover: var(--os-accent-hover);
+  --sd-color-tabs-label-inactive: var(--os-text-secondary);
+  --sd-color-tabs-underline-active: var(--os-accent);
+  --sd-color-tabs-underline-hover: var(--os-border-strong);
+  --sd-color-tabs-underline: var(--os-border);
+  --sd-color-tabs-overline: var(--os-border);
+}
+
+.sd-card {
+  border-radius: var(--os-radius);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.sd-card.sd-card-hover:hover {
+  border-color: var(--os-border-strong);
+  transform: translateY(-2px);
+}
+
+.sd-btn {
+  border-radius: var(--os-radius-small);
+  font-weight: 600;
+}

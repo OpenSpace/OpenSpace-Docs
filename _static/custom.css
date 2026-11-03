@@ -24,7 +24,7 @@ kbd {
 /*
  * Removes the bullet from a ul list.
  */
-.rst-content section ul.no-bullet li  {
+article ul.no-bullet li {
   list-style-type: none;
 }
 
