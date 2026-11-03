@@ -222,6 +222,53 @@ article :is(h1, h2, h3, h4, h5, h6) a.reference:hover {
  * 4. Components
  */
 
+/* Breadcrumbs above the page title (_templates/page.html), styled like the website's
+   .crumbs: small monospace text, muted parents and a brighter current page */
+.crumbs {
+  font-family: var(--font-stack--monospace);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--color-foreground-secondary);
+  /* The top margin lines the crumbs up with Furo's view/edit and theme icons */
+  margin: 1.1rem 0 0.25rem;
+}
+.crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.crumbs li {
+  margin: 0;
+  padding: 0;
+}
+.crumbs li:not(:last-child)::after {
+  content: "/";
+  padding: 0 0.6em;
+  color: var(--color-foreground-muted);
+}
+.crumbs a.crumbs__parent {
+  color: var(--color-foreground-secondary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.crumbs a.crumbs__parent:hover,
+.crumbs a.crumbs__parent:focus-visible {
+  color: var(--os-link);
+  text-decoration: none;
+}
+.crumbs__current {
+  color: var(--color-foreground-primary);
+}
+.crumbs__icon {
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.45em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+}
+
 /* Inline code: orange text like on the website */
 article code.literal {
   color: var(--os-inline-code);
