@@ -109,6 +109,7 @@ html_theme = "sphinx_rtd_theme"
 html_theme_options = {
   "logo_only": True,
   "version_selector": False,
+  "language_selector": False,
   "collapse_navigation": False,
   "titles_only": True,
 }
