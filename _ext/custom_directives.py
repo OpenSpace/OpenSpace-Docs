@@ -1,3 +1,4 @@
+from docutils import nodes
 from docutils.parsers.rst.directives import unchanged, choice
 from jinja2 import Environment, FileSystemLoader
 from pygments.lexers.special import TextLexer
@@ -165,11 +166,33 @@ class Profile_Dossier(SphinxDirective):
     return self.parse_content_to_nodes(allow_headers)
 
 ##########################################################################################
+#                                     Rubric rendering                                   #
+##########################################################################################
+# Headings inside a directive, such as a tab-item, cannot be sections, so MyST turns them
+# into rubric nodes that carry their heading level. docutils renders all rubrics as <p>
+# and ignores the level, so we output the matching <hN> element instead. This is the same
+# override that myst-parser had until it was removed in a later version
+def visit_rubric_html(self, node: nodes.rubric) -> None:
+  if "level" in node:
+    self.body.append(self.starttag(node, f'h{node["level"]}', "", CLASS="rubric"))
+  else:
+    self.body.append(self.starttag(node, "p", "", CLASS="rubric"))
+
+
+def depart_rubric_html(self, node: nodes.rubric) -> None:
+  if "level" in node:
+    self.body.append(f'</h{node["level"]}>\n')
+  else:
+    self.body.append("</p>\n")
+
+
+##########################################################################################
 #                                         Sphinx setup                                   #
 ##########################################################################################
 def setup(app: Sphinx) -> ExtensionMetadata:
     app.add_directive("dossier", Dossier)
     app.add_directive("profile_dossier", Profile_Dossier)
+    app.add_node(nodes.rubric, override=True, html=(visit_rubric_html, depart_rubric_html))
     # Pygments has no CSV lexer, but some asset examples use `:language: csv`. 
     # We just display it as plain text.
     app.add_lexer("csv", TextLexer)
