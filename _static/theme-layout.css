@@ -178,7 +178,7 @@ article h1 {
 article h2 {
   color: var(--os-h2);
   font-weight: 600;
-  border-bottom: 1px solid var(--color-background-border);
+  border-bottom: 1px solid var(--os-border-strong);
   border-radius: 0;
   margin-left: 0;
   margin-right: 0;
@@ -294,20 +294,40 @@ body[data-theme="dark"] .highlight {
   border-top: 1px solid var(--color-background-border);
   border-right: 1px solid var(--color-background-border);
   border-bottom: 1px solid var(--color-background-border);
+  /* Furo draws the colored edge 0.2rem wide, which is heavy next to the faint outline */
+  border-left-width: 0.125rem;
   border-radius: var(--os-radius-small);
   box-shadow: none;
 }
 
-/* Tables: small uppercase column headers and faint rules, like the website tables */
+/* Tables: small uppercase column headers, no lines, and every other row slightly lighter
+   than the page */
 article table.docutils {
   border-radius: var(--os-radius-small);
+  box-shadow: none;
+}
+article table.docutils th,
+article table.docutils td {
+  border: none;
+}
+article table.docutils tbody tr:nth-child(even) {
+  background: var(--os-stripe);
+}
+/* Keep the text away from the edge of a striped row. Furo gives cells only 4px */
+article table.docutils td {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 article table.docutils th {
-  color: var(--color-foreground-secondary);
+  color: var(--os-text-strong);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  /* Furo gives header cells only 4px of side padding and none above or below. The side
+     padding matches the body cells below, so the titles line up with the text */
+  padding: 0.5rem 0.75rem;
+  text-align: left;
 }
 
 /* Images that are figures get the same rounded corners as the website photos. Inline
@@ -321,19 +341,17 @@ article figure img {
   max-width: 92%;
   margin: 0 auto;
 }
-.sidebar-search-container {
-  border-radius: var(--os-radius-small);
-}
-.sidebar-search {
-  border-radius: var(--os-radius-small);
-}
-
 /* sphinx-design: buttons, cards and tabs use the website colors. The primary button is
    the website's yellow with dark text in both light and dark mode */
 body {
   --sd-color-primary: var(--os-button-bg);
   --sd-color-primary-text: var(--os-button-text);
   --sd-color-primary-highlight: var(--os-button-bg-hover);
+  /* The "No" badges in the reference tables ({bdg-info}) use the link blue, with the text
+     color that has the best contrast on it in the current mode */
+  --sd-color-info: var(--os-link);
+  --sd-color-info-text: var(--os-on-link);
+  --sd-color-info-highlight: var(--os-link-hover);
   --sd-color-card-border: var(--os-border);
   --sd-color-card-background: var(--os-bg-raised);
   --sd-color-card-text: var(--os-text);

@@ -30,6 +30,9 @@ body {
 
   /* Borders */
   --os-border: #d5e3e8;
+  /* Every other table row, the same color as the table header. A white page cannot get
+     lighter, so in light mode this is a faint tint instead */
+  --os-stripe: var(--os-bg-raised);
   --os-border-strong: rgba(10, 118, 161, 0.35);
   --os-item: #c4d4d9;
 
@@ -45,6 +48,9 @@ body {
   --os-accent-hover: #000000;
   --os-link: #0a76a1;
   --os-link-hover: #065574;
+  /* Text on a link-colored background, such as the "No" badges. Chosen for contrast:
+     white on this darker blue is 5.1:1, dark text would only be 3.9:1 */
+  --os-on-link: #ffffff;
   --os-h2: #0a1417;
   --os-inline-code: #b3441a;
   --os-target: rgba(208, 248, 132, 0.45);
@@ -71,7 +77,10 @@ body[data-theme="dark"] {
   --os-hover: rgba(61, 189, 238, 0.08);
   --os-hover-transparent: rgba(61, 189, 238, 0);
 
-  --os-border: rgba(61, 189, 238, 0.14);
+  /* Neutral grey, like the website's "bw" border tokens, so dividers do not glow blue */
+  --os-border: rgba(184, 200, 202, 0.12);
+  /* The same color as the table header and the sidebar */
+  --os-stripe: var(--os-bg-raised);
   --os-border-strong: rgba(61, 189, 238, 0.35);
   --os-item: rgba(184, 200, 202, 0.3);
 
@@ -85,6 +94,8 @@ body[data-theme="dark"] {
   --os-accent-hover: #ffffff;
   --os-link: #3dbdee;
   --os-link-hover: #8fdcf7;
+  /* Dark text on this bright blue is 9.2:1, white would only be 2.2:1 */
+  --os-on-link: #0a0a0a;
   --os-h2: #f2f5f6;
   --os-inline-code: #e57f58;
   --os-target: rgba(208, 248, 132, 0.12);
@@ -106,7 +117,8 @@ body[data-theme="dark"] {
     --os-hover: rgba(61, 189, 238, 0.08);
     --os-hover-transparent: rgba(61, 189, 238, 0);
 
-    --os-border: rgba(61, 189, 238, 0.14);
+    --os-border: rgba(184, 200, 202, 0.12);
+    --os-stripe: var(--os-bg-raised);
     --os-border-strong: rgba(61, 189, 238, 0.35);
     --os-item: rgba(184, 200, 202, 0.3);
 
@@ -120,6 +132,7 @@ body[data-theme="dark"] {
     --os-accent-hover: #ffffff;
     --os-link: #3dbdee;
     --os-link-hover: #8fdcf7;
+    --os-on-link: #0a0a0a;
     --os-h2: #f2f5f6;
     --os-inline-code: #e57f58;
     --os-target: rgba(208, 248, 132, 0.12);
@@ -180,9 +193,6 @@ body:not([data-theme="light"]) {
   /* Sidebar */
   --color-sidebar-background: var(--os-bg-raised);
   --color-sidebar-link-text--top-level: var(--os-accent);
-  --color-sidebar-search-background: var(--os-bg);
-  --color-sidebar-search-background--focus: var(--os-bg);
-  --color-sidebar-search-border: var(--os-border);
 
   /* Tables, cards, highlights */
   --color-table-header-background: var(--os-bg-raised);
