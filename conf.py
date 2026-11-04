@@ -145,6 +145,13 @@ html_css_files = [
   "custom.css"
 ]
 
+# JavaScript files that are added into the generated documentation. instant.page loads a
+# page in the background when the visitor hovers a link to it, which makes navigating the
+# documentation feel faster. It is a module so that it runs after the page has been parsed
+html_js_files = [
+  ("instantpage.js", { "type": "module" })
+]
+
 # These folders are copied to the documentation's HTML output
 html_static_path = [ "_static" ]
 
