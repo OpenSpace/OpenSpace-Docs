@@ -359,10 +359,14 @@ article table.docutils th {
   text-align: left;
 }
 
-/* Images that are figures get the same rounded corners as the website photos. Inline
-   icons and toolbar button images are left alone */
-article figure img {
+/* Every image gets the same rounded corners as the website photos, small button icons
+   included. Images in cards are the exception, they follow the card's corners (its radius
+   minus the 1px border) */
+article img {
   border-radius: var(--os-radius);
+}
+article img.sd-card-img {
+  border-radius: calc(var(--os-radius) - 1px);
 }
 
 /* Sidebar */
