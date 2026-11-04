@@ -285,6 +285,29 @@ article code.literal {
   border-radius: var(--os-radius);
 }
 
+/* With line numbers, the numbers start at the left edge of the block. Otherwise the
+   highlighted-line band shows in the padding to the left of the numbers, because the
+   numbers have their own background */
+.highlight pre:has(.linenos) {
+  padding-left: 0;
+}
+.highlight pre:has(.linenos) .hll {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Highlighted lines (emphasize-lines). The github-dark style uses a solid grey that hides
+   the text, so in dark mode they get a translucent tint instead. The selectors repeat the
+   ones in pygments.css, which has the same two cases for dark mode */
+body[data-theme="dark"] .highlight .hll {
+  background-color: rgba(56, 139, 253, 0.18);
+}
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme="light"]) .highlight .hll {
+    background-color: rgba(56, 139, 253, 0.18);
+  }
+}
+
 /* Admonitions: keep Furo's colored left edge, add a faint outline on the other sides */
 .admonition,
 .topic {
