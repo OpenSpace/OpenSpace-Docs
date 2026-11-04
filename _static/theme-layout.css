@@ -285,6 +285,15 @@ article code.literal {
   border-radius: var(--os-radius);
 }
 
+/* A captioned code block, such as the "Signature" blocks in the scripting API, is a caption
+   on top of a .highlight. The caption gets the same corners and outline as the code part so
+   that the two look like one box */
+.code-block-caption {
+  border: 1px solid var(--color-background-border);
+  border-bottom-width: 0;
+  border-radius: var(--os-radius) var(--os-radius) 0 0;
+}
+
 /* With line numbers, the numbers start at the left edge of the block. Otherwise the
    highlighted-line band shows in the padding to the left of the numbers, because the
    numbers have their own background */
@@ -388,7 +397,23 @@ body {
 
 .sd-card {
   border-radius: var(--os-radius);
+}
+/* The transition is only for cards with a hover effect. On a dropdown it made the outline
+   flash when opening: sphinx-design removes a closed dropdown's border, which resets its
+   color to the bright text color, and the transition then faded it to the faint one */
+.sd-card.sd-card-hover {
   transition: transform 0.25s ease, border-color 0.25s ease;
+}
+/* The header of a card, which is also the summary of a dropdown, sits inside the card's
+   1px border, so its corners are the card radius minus that border. Without this it keeps
+   sphinx-design's small corners, which stick out past the card's rounded outline. A closed
+   dropdown has no card border, the summary draws its own, so it gets the full radius on
+   all four corners */
+.sd-card > .sd-card-header {
+  border-radius: calc(var(--os-radius) - 1px) calc(var(--os-radius) - 1px) 0 0;
+}
+details.sd-dropdown:not([open]) > .sd-card-header {
+  border-radius: var(--os-radius);
 }
 .sd-card.sd-card-hover:hover {
   border-color: var(--os-border-strong);
