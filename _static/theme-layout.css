@@ -277,13 +277,10 @@ article code.literal {
   border-radius: 4px;
 }
 
-/* Code blocks. The background is set explicitly because Furo's pygments.css gives
-   .highlight a fixed background from the Pygments style instead of using
-   --color-code-background. The selectors match the specificity of those rules */
-.highlight,
-body:not([data-theme="light"]) .highlight,
-body[data-theme="dark"] .highlight {
-  background: var(--os-bg-sunken);
+/* Code blocks get a border and rounded corners. The background color is not set here on
+   purpose: it comes from the code theme chosen in conf.py (pygments_style and
+   pygments_dark_style) */
+.highlight {
   border: 1px solid var(--color-background-border);
   border-radius: var(--os-radius);
 }

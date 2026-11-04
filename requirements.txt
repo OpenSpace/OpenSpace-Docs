@@ -1,5 +1,5 @@
 # Syntax highlighting
-pygments==2.18
+pygments==2.21.0
 
 # Sphinx and theme
 sphinx==9.1.0

@@ -87,8 +87,8 @@ exclude_patterns = [
 ]
 root_doc = "index"
 autosectionlabel_prefix_document = True
-pygments_style = "friendly"
-pygments_dark_style = "monokai"
+pygments_style = "emacs"
+pygments_dark_style = "github-dark"
 
 myst_enable_extensions = {
   "attrs_inline",
