@@ -98,6 +98,9 @@ body[data-theme="dark"] {
   --os-h2: #f2f5f6;
   --os-inline-code: #e57f58;
   --os-target: rgba(208, 248, 132, 0.12);
+  /* Highlighted lines in code blocks (emphasize-lines). Only dark mode needs its own, the
+     light code theme has a readable one. See theme-layout.css */
+  --os-code-highlight: rgba(56, 139, 253, 0.18);
 
   --os-note: #3dbdee;
   --os-tip: #5cdd8b;
@@ -135,6 +138,7 @@ body[data-theme="dark"] {
     --os-h2: #f2f5f6;
     --os-inline-code: #e57f58;
     --os-target: rgba(208, 248, 132, 0.12);
+    --os-code-highlight: rgba(56, 139, 253, 0.18);
 
     --os-note: #3dbdee;
     --os-tip: #5cdd8b;

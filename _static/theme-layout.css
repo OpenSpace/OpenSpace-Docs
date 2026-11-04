@@ -316,13 +316,14 @@ article code.literal {
 
 /* Highlighted lines (emphasize-lines). The github-dark style uses a solid grey that hides
    the text, so in dark mode they get a translucent tint instead. The selectors repeat the
-   ones in pygments.css, which has the same two cases for dark mode */
+   ones in pygments.css, which has the same two cases for dark mode. The color is
+   --os-code-highlight from theme-colors.css */
 body[data-theme="dark"] .highlight .hll {
-  background-color: rgba(56, 139, 253, 0.18);
+  background-color: var(--os-code-highlight);
 }
 @media (prefers-color-scheme: dark) {
   body:not([data-theme="light"]) .highlight .hll {
-    background-color: rgba(56, 139, 253, 0.18);
+    background-color: var(--os-code-highlight);
   }
 }
 
