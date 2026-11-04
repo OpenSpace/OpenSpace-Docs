@@ -13,6 +13,11 @@ from sphinx.util.typing import ExtensionMetadata
 
 DATA_ASSETS_PATH = "data/assets"
 
+# Where the generated reference pages are written. The folders are listed in .gitignore
+OUTPUT_FOLDER = "reference"
+FOLDER_NAME_ASSETS = "asset-components"
+FOLDER_NAME_SCRIPTING = "scripting-api"
+
 ##########################################################################################
 #                           ASSET COMPONENTS HELPER FUNCTIONS                            #
 ##########################################################################################
@@ -486,10 +491,7 @@ def generate_renderable_overview(environment: Environment, output_folder: str, j
 def generate_docs(app: Sphinx, config: Config) -> None:
   # Name variables
   json_location = "json"
-  output_folder = "reference"
-  folder_name_assets = "asset-components"
-  folder_name_scripting = "scripting-api"
-  asset_examples_output = os.path.join(output_folder, "asset_examples")
+  asset_examples_output = os.path.join(OUTPUT_FOLDER, "asset_examples")
 
   # Check if the reference has already been generated. Note that we assume that this is
   # the case if the asset examples folder exists
@@ -525,12 +527,25 @@ def generate_docs(app: Sphinx, config: Config) -> None:
   generate_asset_components(
     environment,
     assets_folder,
-    output_folder,
-    folder_name_assets,
+    OUTPUT_FOLDER,
+    FOLDER_NAME_ASSETS,
     json_location
   )
-  generate_scripting_api(environment, output_folder, folder_name_scripting, json_location)
-  generate_renderable_overview(environment, output_folder, json_location)
+  generate_scripting_api(environment, OUTPUT_FOLDER, FOLDER_NAME_SCRIPTING, json_location)
+  generate_renderable_overview(environment, OUTPUT_FOLDER, json_location)
+
+
+def hide_source_buttons(app: Sphinx, pagename: str, templatename: str,
+                        context: dict[str, Any], doctree: Any) -> None:
+  # The generated pages do not exist in the repository, so the theme's view and edit
+  # buttons would link to a missing file on GitHub
+  generated = (
+    pagename == f"{OUTPUT_FOLDER}/renderable-overview" or
+    pagename.startswith(f"{OUTPUT_FOLDER}/{FOLDER_NAME_ASSETS}/") or
+    pagename.startswith(f"{OUTPUT_FOLDER}/{FOLDER_NAME_SCRIPTING}/")
+  )
+  if generated:
+    context["theme_top_of_page_buttons"] = []
 
 
 ##########################################################################################
@@ -543,6 +558,7 @@ def setup(app: Sphinx) -> ExtensionMetadata:
   app.add_config_value('assets_local_openspace_folder', "", 'html', type(""))
 
   app.connect('config-inited', generate_docs)
+  app.connect('html-page-context', hide_source_buttons)
 
   return {
     'version': '1.0',

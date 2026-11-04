@@ -69,7 +69,6 @@ extensions = [
   "sphinx_design",
   "sphinx.ext.autosectionlabel",
   "sphinx.ext.duration",
-  "sphinxcontrib.jquery",
   "sphinxcontrib.mermaid",
   "generate_docs", # Custom extension, lives in _ext
   "custom_directives" # Custom extension, lives in _ext
@@ -88,8 +87,8 @@ exclude_patterns = [
 ]
 root_doc = "index"
 autosectionlabel_prefix_document = True
-pygments_style = "friendly"
-pygments_dark_style = "monokai"
+pygments_style = "emacs"
+pygments_dark_style = "github-dark"
 
 myst_enable_extensions = {
   "attrs_inline",
@@ -105,52 +104,59 @@ myst_heading_anchors = 4
 ###
 # HTML output
 ###
-html_theme = "sphinx_rtd_theme"
+html_theme = "furo"
 html_theme_options = {
-  "logo_only": True,
-  "version_selector": False,
-  "language_selector": False,
-  "collapse_navigation": False,
-  "titles_only": True,
+  # The logo carries the name, so there is no need to repeat it as text. The colors,
+  # fonts and layout of the theme live in the CSS files listed in html_css_files
+  "light_logo": "logo-light.webp",
+  "dark_logo": "logo-dark.webp",
+  "sidebar_hide_name": True,
+  "navigation_with_keys": True,
+  "source_repository": "https://github.com/OpenSpace/OpenSpace-Docs/",
+  "source_branch": "master",
+  "source_directory": "",
+  "top_of_page_buttons": ["view", "edit"],
+  "footer_icons": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/OpenSpace/OpenSpace-Docs",
+      "html": """
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+      """,
+      "class": "",
+    },
+  ],
 }
-
-html_context = {
-  "display_github": True,  # Integrate GitHub
-  "github_user": "OpenSpace",  # Username
-  "github_repo": "OpenSpace-Docs",  # Repo name
-}
-
-# Add a transparent image as the logo
-# Instead we add the logo later in the css
-# This enables different logos in dark and light mode
-html_logo = "_static/transparent.png"
 
 html_title = f"OpenSpace documentation ({version})"
 html_short_title = "OpenSpace"
 
 html_favicon = "_static/icon.png"
 
-# JavaScript files that are added into the generated documentation
-html_js_files = [
-  "custom.js"
+# CSS files that are added into the generated documentation. The order matters: later
+# files override earlier ones
+html_css_files = [
+  "fonts.css",
+  "theme-colors.css",
+  "theme-layout.css",
+  "required-reading.css",
+  "custom.css"
 ]
 
-# CSS files that are added into the generated documentation
-html_css_files = [
-  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
-  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
-  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
-
-  "required-reading.css",
-  "sidebar.css",
-  "custom.css",
-  "dark-mode-images.css"
+# JavaScript files that are added into the generated documentation. instant.page loads a
+# page in the background when the visitor hovers a link to it, which makes navigating the
+# documentation feel faster. It is a module so that it runs after the page has been parsed
+html_js_files = [
+  ("instantpage.js", { "type": "module" })
 ]
 
 # These folders are copied to the documentation's HTML output
 html_static_path = [ "_static" ]
 
-# templates_path = [ "_templates" ]
+# Template overrides for the theme, currently the breadcrumbs in _templates/page.html
+templates_path = [ "_templates" ]
 
 # html_extra_path = ["robots.txt"]
 
