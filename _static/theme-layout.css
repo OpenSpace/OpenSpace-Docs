@@ -202,16 +202,25 @@ article strong {
   color: var(--os-text-strong);
 }
 
-/* Links are plain until hovered, like on the website */
-article a.reference {
-  text-decoration: none;
-}
-article a.reference:hover {
+/* Links in the text are underlined. The link color alone is too close to the text color
+   to tell them apart (WCAG 1.4.1 wants 3:1 or something other than color). Buttons are
+   links too, and they keep their own look */
+article a.reference:not(.sd-btn) {
   text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+article a.reference:not(.sd-btn):hover {
+  text-decoration-thickness: 2px;
 }
 
 /* Links inside headings, such as the section titles on the front page, keep the heading
-   color. Links in paragraphs, lists, tables and boxes use the link color */
+   color and are plain until hovered. Links in paragraphs, lists, tables and boxes use the
+   link color */
+article :is(h1, h2, h3, h4, h5, h6) a.reference:not(:hover) {
+  text-decoration: none;
+}
 article :is(h1, h2, h3, h4, h5, h6) a.reference {
   color: var(--os-text-strong);
 }
