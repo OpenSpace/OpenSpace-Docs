@@ -30,8 +30,8 @@ body {
 
   /* Borders */
   --os-border: #d5e3e8;
-  /* Every other table row, the same color as the table header. A white page cannot get
-     lighter, so in light mode this is a faint tint instead */
+  /* Every other table row, the same color as the table header and the sidebar. A white
+     page cannot get lighter, so in light mode this is a faint tint instead */
   --os-stripe: var(--os-bg-raised);
   --os-border-strong: rgba(10, 118, 161, 0.35);
   --os-item: #c4d4d9;
@@ -79,7 +79,6 @@ body[data-theme="dark"] {
 
   /* Neutral grey, like the website's "bw" border tokens, so dividers do not glow blue */
   --os-border: rgba(184, 200, 202, 0.12);
-  /* The same color as the table header and the sidebar */
   --os-stripe: var(--os-bg-raised);
   --os-border-strong: rgba(61, 189, 238, 0.35);
   --os-item: rgba(184, 200, 202, 0.3);
