@@ -54,8 +54,12 @@ body {
   width: 62em;
 }
 
+.main {
+  background: var(--color-content-background);
+}
+
 .sidebar-drawer {
-  background: transparent;
+  background: var(--color-content-background);
   border-right: 0;
   justify-content: flex-start;
   width: calc(50% - 34em);
@@ -192,17 +196,23 @@ span:target ~ :is(h1, h2, h3, h4, h5, h6):first-of-type {
 /*
  * 3. Typography and headings
  *
- * Roboto for headings, in light text with the same weights as the website: 700 for h1,
- * h3 and h4, 600 for h2. h2 also gets a faint rule.
+ * Roboto for headings, with light weights. h2 also gets a faint rule.
  */
+article :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--os-heading);
+}
+article .toctree-wrapper.compound .caption-text {
+  color: var(--os-heading);
+}
+
 article h1 {
-  color: var(--os-text-strong);
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 400;
 }
 
 article h2 {
-  color: var(--os-h2);
-  font-weight: 600;
+  font-size: 1.6em;
+  font-weight: 400;
   border-bottom: 1px solid var(--os-border-strong);
   border-radius: 0;
   margin-left: 0;
@@ -214,13 +224,47 @@ article h2 {
 
 article h3,
 article h4 {
-  color: var(--os-text-strong);
-  font-weight: 700;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+article h4 {
+  font-size: 1em;
 }
 
 article h5,
 article h6 {
+  font-weight: 400;
+}
+article h5 {
+  font-size: 0.9em;
+}
+article h6 {
+  font-size: 0.8em;
+}
+
+article .toctree-wrapper.compound > p.caption {
+  border: 0;
+  color: var(--os-heading);
+  font-family: var(--font-stack--headings);
+  font-size: 1em;
   font-weight: 500;
+  padding-bottom: 0.75rem;
+  text-decoration: none;
+  text-transform: none;
+}
+article .toctree-wrapper.compound > ul > li + li {
+  margin-top: 0.4rem;
+}
+
+.toc-title {
+  color: var(--os-heading);
+  font-family: var(--font-stack--headings);
+  font-size: 1.05em;
+  font-weight: 500;
+  text-transform: none;
+}
+.toc-title-container {
+  padding-bottom: 1.5rem;
 }
 
 @font-face {
@@ -241,7 +285,7 @@ article :is(h1, h2, h3, h4, h5, h6) > .headerlink {
 }
 
 article strong {
-  color: var(--os-text-strong);
+  color: var(--os-heading);
 }
 
 /* Links in the text are underlined. The link color alone is too close to the text color
@@ -264,7 +308,7 @@ article :is(h1, h2, h3, h4, h5, h6) a.reference:not(:hover) {
   text-decoration: none;
 }
 article :is(h1, h2, h3, h4, h5, h6) a.reference {
-  color: var(--os-text-strong);
+  color: var(--os-heading);
 }
 article :is(h1, h2, h3, h4, h5, h6) a.reference:hover {
   color: var(--os-accent-hover);
@@ -362,6 +406,10 @@ article code.literal {
    --os-code-highlight from theme-colors.css */
 body[data-theme="dark"] .highlight .hll {
   background-color: var(--os-code-highlight);
+}
+/* Keep syntax tokens at regular weight regardless of the Pygments style. */
+body[data-theme] .highlight span[class] {
+  font-weight: 400;
 }
 @media (prefers-color-scheme: dark) {
   body:not([data-theme="light"]) .highlight .hll {

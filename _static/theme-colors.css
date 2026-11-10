@@ -40,6 +40,7 @@ body {
   /* Text */
   --os-text: #23363b;
   --os-text-strong: #0a1417;
+  --os-heading: #2f4247;
   --os-text-secondary: #4a5e63;
   --os-text-muted: #66777c;
   --os-text-border: #9db0b5;
@@ -88,6 +89,7 @@ body[data-theme="dark"] {
 
   --os-text: #b8c8ca;
   --os-text-strong: #f2f5f6;
+  --os-heading: #d3dfe1;
   --os-text-secondary: #96a4a6;
   --os-text-muted: #6d7a7c;
   --os-text-border: rgba(184, 200, 202, 0.4);
@@ -131,6 +133,7 @@ body[data-theme="dark"] {
 
     --os-text: #b8c8ca;
     --os-text-strong: #f2f5f6;
+    --os-heading: #d3dfe1;
     --os-text-secondary: #96a4a6;
     --os-text-muted: #6d7a7c;
     --os-text-border: rgba(184, 200, 202, 0.4);
@@ -182,6 +185,7 @@ body:not([data-theme="light"]) {
   /* Backgrounds and borders */
   --color-background-primary: var(--os-bg);
   --color-background-secondary: var(--os-bg-raised);
+  --color-content-background: transparent;
   --color-background-hover: var(--os-hover);
   --color-background-hover--transparent: var(--os-hover-transparent);
   --color-background-border: var(--os-border);
@@ -200,7 +204,7 @@ body:not([data-theme="light"]) {
 
   /* Sidebar */
   --color-sidebar-background: var(--os-bg-raised);
-  --color-sidebar-link-text--top-level: var(--os-accent);
+  --color-sidebar-link-text--top-level: var(--os-heading);
 
   /* Tables, cards, highlights */
   --color-table-header-background: var(--os-bg-raised);
@@ -287,4 +291,21 @@ body:not([data-theme="light"]) {
     var(--os-todo) 16%,
     transparent
   );
+}
+
+body[data-theme="dark"] {
+  --color-content-background: var(--os-bg-raised);
+  --color-sidebar-background: var(--os-bg);
+  --color-sidebar-search-background: var(--os-bg);
+  --color-sidebar-search-background--focus: var(--os-bg-raised);
+  --color-toc-background: var(--os-bg-raised);
+}
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme="light"]) {
+    --color-content-background: var(--os-bg-raised);
+    --color-sidebar-background: var(--os-bg);
+    --color-sidebar-search-background: var(--os-bg);
+    --color-sidebar-search-background--focus: var(--os-bg-raised);
+    --color-toc-background: var(--os-bg-raised);
+  }
 }
