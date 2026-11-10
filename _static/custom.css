@@ -4,15 +4,12 @@
  * November 2024
  */
 
-
-
 /*
  * Make all {kbd} items bolder.
  */
 kbd {
   font-weight: bold;
 }
-
 
 /*
  * Styles for the octicons used on the site, mostly in tours or tutorials.
@@ -28,22 +25,19 @@ article ul.no-bullet li {
   list-style-type: none;
 }
 
-
 /* Color map colors */
 .galaxy-survey-orange {
-  color: rgb(255 128 0)
+  color: rgb(255 128 0);
 }
 .galaxy-survey-yellow {
-  color: rgb(200, 200, 0)
+  color: rgb(200, 200, 0);
 }
 .galaxy-survey-green {
-  color: rgb(0, 200, 0)
+  color: rgb(0, 200, 0);
 }
 .galaxy-survey-aqua {
-  color: rgb(0, 204, 204)
+  color: rgb(0, 204, 204);
 }
-
-
 
 /*
  * For the glossary style that goes along with the "deflist" extension. These stylings are
@@ -59,8 +53,6 @@ article ul.no-bullet li {
   margin-bottom: 20px;
 }
 
-
-
 /*
  * The "Advanced" box used on advanced sections.
  */
@@ -70,6 +62,7 @@ article ul.no-bullet li {
 .advanced-topic .advanced {
   padding: 0.3em 1em;
   background-color: #ffb366;
+  color: var(--os-button-text);
   border-radius: 6px;
   border: 1px solid #ff8000;
   font-size: 0.7em;
@@ -84,7 +77,6 @@ article ul.no-bullet li {
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
-
 
 .heading-toc h2,
 h2.heading-toc,

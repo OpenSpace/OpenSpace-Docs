@@ -30,9 +30,10 @@ body {
 
   /* Borders */
   --os-border: #d5e3e8;
-  /* Every other table row, the same color as the table header and the sidebar. A white
-     page cannot get lighter, so in light mode this is a faint tint instead */
-  --os-stripe: var(--os-bg-raised);
+  --os-table-border: var(--os-border-strong);
+  --os-table-surface: var(--os-bg-raised);
+  /* A subdued tint keeps alternating rows visible without competing with the content. */
+  --os-stripe: #edf3f5;
   --os-border-strong: rgba(10, 118, 161, 0.35);
   --os-item: #c4d4d9;
 
@@ -52,7 +53,7 @@ body {
      white on this darker blue is 5.1:1, dark text would only be 3.9:1 */
   --os-on-link: #ffffff;
   --os-h2: #0a1417;
-  --os-inline-code: #b3441a;
+  --os-inline-code: #167e16;
   --os-target: rgba(208, 248, 132, 0.45);
 
   /* Buttons are the same in both modes: website flare yellow with dark text */
@@ -79,7 +80,9 @@ body[data-theme="dark"] {
 
   /* Neutral grey, like the website's "bw" border tokens, so dividers do not glow blue */
   --os-border: rgba(184, 200, 202, 0.12);
-  --os-stripe: var(--os-bg-raised);
+  --os-table-border: #1b4859;
+  --os-table-surface: #0e191d;
+  --os-stripe: var(--os-table-surface);
   --os-border-strong: rgba(61, 189, 238, 0.35);
   --os-item: rgba(184, 200, 202, 0.3);
 
@@ -96,7 +99,7 @@ body[data-theme="dark"] {
   /* Dark text on this bright blue is 9.2:1, white would only be 2.2:1 */
   --os-on-link: #0a0a0a;
   --os-h2: #f2f5f6;
-  --os-inline-code: #e57f58;
+  --os-inline-code: #daefb4;
   --os-target: rgba(208, 248, 132, 0.12);
   /* Highlighted lines in code blocks (emphasize-lines). Only dark mode needs its own, the
      light code theme has a readable one. See theme-layout.css */
@@ -120,7 +123,9 @@ body[data-theme="dark"] {
     --os-hover-transparent: rgba(61, 189, 238, 0);
 
     --os-border: rgba(184, 200, 202, 0.12);
-    --os-stripe: var(--os-bg-raised);
+    --os-table-border: #1b4859;
+    --os-table-surface: #0e191d;
+    --os-stripe: var(--os-table-surface);
     --os-border-strong: rgba(61, 189, 238, 0.35);
     --os-item: rgba(184, 200, 202, 0.3);
 
@@ -136,7 +141,7 @@ body[data-theme="dark"] {
     --os-link-hover: #8fdcf7;
     --os-on-link: #0a0a0a;
     --os-h2: #f2f5f6;
-    --os-inline-code: #e57f58;
+    --os-inline-code: #daefb4;
     --os-target: rgba(208, 248, 132, 0.12);
     --os-code-highlight: rgba(56, 139, 253, 0.18);
 
@@ -191,7 +196,7 @@ body:not([data-theme="light"]) {
   /* Code */
   --color-code-background: var(--os-bg-sunken);
   --color-code-foreground: var(--os-text);
-  --color-inline-code-background: var(--os-bg-sunken);
+  --color-inline-code-background: var(--color-code-background);
 
   /* Sidebar */
   --color-sidebar-background: var(--os-bg-raised);
@@ -210,28 +215,76 @@ body:not([data-theme="light"]) {
   /* Admonitions */
   --color-admonition-background: var(--os-bg-raised);
   --color-admonition-title: var(--os-note);
-  --color-admonition-title-background: color-mix(in srgb, var(--os-note) 16%, transparent);
+  --color-admonition-title-background: color-mix(
+    in srgb,
+    var(--os-note) 16%,
+    transparent
+  );
 
   --color-admonition-title--note: var(--os-note);
-  --color-admonition-title-background--note: color-mix(in srgb, var(--os-note) 16%, transparent);
+  --color-admonition-title-background--note: color-mix(
+    in srgb,
+    var(--os-note) 16%,
+    transparent
+  );
   --color-admonition-title--seealso: var(--os-seealso);
-  --color-admonition-title-background--seealso: color-mix(in srgb, var(--os-seealso) 16%, transparent);
+  --color-admonition-title-background--seealso: color-mix(
+    in srgb,
+    var(--os-seealso) 16%,
+    transparent
+  );
   --color-admonition-title--important: var(--os-important);
-  --color-admonition-title-background--important: color-mix(in srgb, var(--os-important) 16%, transparent);
+  --color-admonition-title-background--important: color-mix(
+    in srgb,
+    var(--os-important) 16%,
+    transparent
+  );
   --color-admonition-title--tip: var(--os-tip);
-  --color-admonition-title-background--tip: color-mix(in srgb, var(--os-tip) 16%, transparent);
+  --color-admonition-title-background--tip: color-mix(
+    in srgb,
+    var(--os-tip) 16%,
+    transparent
+  );
   --color-admonition-title--hint: var(--os-tip);
-  --color-admonition-title-background--hint: color-mix(in srgb, var(--os-tip) 16%, transparent);
+  --color-admonition-title-background--hint: color-mix(
+    in srgb,
+    var(--os-tip) 16%,
+    transparent
+  );
   --color-admonition-title--warning: var(--os-warning);
-  --color-admonition-title-background--warning: color-mix(in srgb, var(--os-warning) 16%, transparent);
+  --color-admonition-title-background--warning: color-mix(
+    in srgb,
+    var(--os-warning) 16%,
+    transparent
+  );
   --color-admonition-title--caution: var(--os-warning);
-  --color-admonition-title-background--caution: color-mix(in srgb, var(--os-warning) 16%, transparent);
+  --color-admonition-title-background--caution: color-mix(
+    in srgb,
+    var(--os-warning) 16%,
+    transparent
+  );
   --color-admonition-title--attention: var(--os-warning);
-  --color-admonition-title-background--attention: color-mix(in srgb, var(--os-warning) 16%, transparent);
+  --color-admonition-title-background--attention: color-mix(
+    in srgb,
+    var(--os-warning) 16%,
+    transparent
+  );
   --color-admonition-title--danger: var(--os-danger);
-  --color-admonition-title-background--danger: color-mix(in srgb, var(--os-danger) 16%, transparent);
+  --color-admonition-title-background--danger: color-mix(
+    in srgb,
+    var(--os-danger) 16%,
+    transparent
+  );
   --color-admonition-title--error: var(--os-danger);
-  --color-admonition-title-background--error: color-mix(in srgb, var(--os-danger) 16%, transparent);
+  --color-admonition-title-background--error: color-mix(
+    in srgb,
+    var(--os-danger) 16%,
+    transparent
+  );
   --color-admonition-title--admonition-todo: var(--os-todo);
-  --color-admonition-title-background--admonition-todo: color-mix(in srgb, var(--os-todo) 16%, transparent);
+  --color-admonition-title-background--admonition-todo: color-mix(
+    in srgb,
+    var(--os-todo) 16%,
+    transparent
+  );
 }

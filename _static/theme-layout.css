@@ -16,9 +16,11 @@
  * 1. Fonts
  */
 body {
-  --font-stack: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+  --font-stack:
+    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-stack--monospace: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, Monaco,
+  --font-stack--monospace:
+    "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, Monaco,
     "Liberation Mono", "Lucida Console", monospace;
   --font-stack--headings: "Roboto", var(--font-stack);
 
@@ -53,7 +55,16 @@ body {
 }
 
 .sidebar-drawer {
+  background: transparent;
+  border-right: 0;
+  justify-content: flex-start;
   width: calc(50% - 34em);
+}
+
+.sidebar-container {
+  background: var(--color-sidebar-background);
+  border-right: 1px solid var(--color-sidebar-background-border);
+  width: min(16em, 100%);
 }
 
 @media (max-width: 98em) {
@@ -94,10 +105,10 @@ body {
 
   .sidebar-drawer {
     height: 100vh;
-    left: -15em;
+    left: -16em;
     position: fixed;
     top: 0;
-    width: 15em;
+    width: 16em;
   }
 
   .theme-toggle-header,
@@ -164,6 +175,20 @@ body {
   }
 }
 
+:target > :is(h1, h2, h3, h4, h5, h6):first-of-type,
+span:target ~ :is(h1, h2, h3, h4, h5, h6):first-of-type {
+  animation: target-heading-highlight-fade 0.75s ease 1s both;
+}
+
+@keyframes target-heading-highlight-fade {
+  from {
+    background-color: var(--color-highlight-on-target);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
 /*
  * 3. Typography and headings
  *
@@ -196,6 +221,23 @@ article h4 {
 article h5,
 article h6 {
   font-weight: 500;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2")
+    format("woff2");
+}
+
+.headerlink {
+  font-family: "FontAwesome";
+}
+
+article :is(h1, h2, h3, h4, h5, h6) > .headerlink {
+  color: var(--os-link);
+  font-size: 0.65em;
 }
 
 article strong {
@@ -279,7 +321,7 @@ article :is(h1, h2, h3, h4, h5, h6) a.reference:hover {
   fill: currentColor;
 }
 
-/* Inline code: orange text like on the website */
+/* Inline code uses the brand green, darkened in light mode for contrast. */
 article code.literal {
   color: var(--os-inline-code);
   border: 1px solid var(--color-background-border);
@@ -339,11 +381,35 @@ body[data-theme="dark"] .highlight .hll {
   box-shadow: none;
 }
 
-/* Tables: small uppercase column headers, no lines, and every other row slightly lighter
-   than the page */
+/* Tables: small uppercase column headers, no lines, and every other row tinted */
 article table.docutils {
+  border: 1px solid var(--os-table-border);
+  border-collapse: separate;
+  border-spacing: 0;
   border-radius: var(--os-radius-small);
   box-shadow: none;
+  overflow: hidden;
+}
+article .sd-badge.sd-bg-info {
+  --sd-color-info: color-mix(in srgb, var(--os-bg-raised) 70%, var(--os-link));
+  --sd-color-info-text: var(--os-text);
+  --sd-color-info-highlight: color-mix(
+    in srgb,
+    var(--os-bg-raised) 70%,
+    var(--os-link)
+  );
+}
+body[data-theme="dark"] article .sd-badge.sd-bg-info {
+  --sd-color-info: #748a92;
+  --sd-color-info-text: #0a0a0a;
+  --sd-color-info-highlight: #748a92;
+}
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme="light"]) article .sd-badge.sd-bg-info {
+    --sd-color-info: #748a92;
+    --sd-color-info-text: #0a0a0a;
+    --sd-color-info-highlight: #748a92;
+  }
 }
 article table.docutils th,
 article table.docutils td {
@@ -357,7 +423,11 @@ article table.docutils td {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+article table.docutils tbody tr:last-child td {
+  padding-bottom: 0.75rem;
+}
 article table.docutils th {
+  background: var(--os-table-surface);
   color: var(--os-text-strong);
   font-size: 0.75rem;
   font-weight: 600;
@@ -439,7 +509,9 @@ body {
    flash when opening: sphinx-design removes a closed dropdown's border, which resets its
    color to the bright text color, and the transition then faded it to the faint one */
 .sd-card.sd-card-hover {
-  transition: transform 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
 }
 /* The header of a card, which is also the summary of a dropdown, sits inside the card's
    1px border, so its corners are the card radius minus that border. Without this it keeps
