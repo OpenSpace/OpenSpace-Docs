@@ -87,8 +87,8 @@ exclude_patterns = [
 ]
 root_doc = "index"
 autosectionlabel_prefix_document = True
-pygments_style = "emacs"
-pygments_dark_style = "github-dark"
+pygments_style = "xcode"
+pygments_dark_style = "lightbulb"
 
 myst_enable_extensions = {
   "attrs_inline",
