@@ -215,6 +215,9 @@ article h2 {
   font-weight: 400;
   border-bottom: 1px solid var(--os-border-strong);
   border-radius: 0;
+  /* A new formatting context makes the heading, and its rule, stop beside a floated figure
+     instead of running underneath it */
+  display: flow-root;
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
@@ -371,7 +374,19 @@ article code.literal {
   border: 1px solid var(--color-background-border);
   border-radius: 4px;
 }
+article a.reference code.literal {
+  color: inherit;
+}
 
+/* {menuselection} looks like inline code, but keeps the text color of the page */
+article .menuselection {
+  background: var(--color-inline-code-background);
+  border: 1px solid var(--color-background-border);
+  border-radius: 4px;
+  font-family: var(--font-stack--monospace);
+  font-size: var(--font-size--small--2);
+  padding: 0.1em 0.3em;
+}
 /* Code blocks get a border and rounded corners. The background color is not set here on
    purpose: it comes from the code theme chosen in conf.py (pygments_style and
    pygments_dark_style) */
@@ -418,6 +433,30 @@ body[data-theme] .highlight span[class] {
 }
 
 /* Admonitions: keep Furo's colored left edge, add a faint outline on the other sides */
+body {
+  --admonition-font-size: 0.9rem;
+  --admonition-title-font-size: 0.9rem;
+}
+/* The body is a faint tint of the admonition's own color. The required/recommended
+   reading boxes keep their own background from required-reading.css */
+.admonition:not(.requiredreading):not(.recommendedreading) {
+  background: color-mix(
+    in srgb,
+    var(--os-admonition-accent, var(--os-note)) 8%,
+    var(--os-bg-raised)
+  );
+}
+.admonition.note { --os-admonition-accent: var(--os-note); }
+.admonition.seealso { --os-admonition-accent: var(--os-seealso); }
+.admonition.important { --os-admonition-accent: var(--os-important); }
+.admonition.tip,
+.admonition.hint { --os-admonition-accent: var(--os-tip); }
+.admonition.warning,
+.admonition.caution,
+.admonition.attention { --os-admonition-accent: var(--os-warning); }
+.admonition.danger,
+.admonition.error { --os-admonition-accent: var(--os-danger); }
+.admonition.admonition-todo { --os-admonition-accent: var(--os-todo); }
 .admonition,
 .topic {
   border-top: 1px solid var(--color-background-border);
@@ -524,6 +563,21 @@ article img.sd-card-img {
 }
 .toctree-checkbox:checked ~ label .icon svg {
   transform: rotate(90deg);
+}
+/* The selected page has a stronger tint than a hovered entry, and brighter text */
+.sidebar-tree .current-page > .reference {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--os-link) 16%, transparent) var(--sidebar-item-spacing-horizontal),
+    color-mix(in srgb, var(--os-link) 16%, transparent) 100%
+  );
+  color: var(--os-accent);
+}
+/* Level 3 and deeper entries are long in the reference section, so they get a smaller font */
+.sidebar-tree li.toctree-l3 > .reference,
+.sidebar-tree li.toctree-l4 > .reference {
+  font-size: 0.85em;
 }
 /* sphinx-design: buttons, cards and tabs use the website colors. The primary button is
    the website's yellow with dark text in both light and dark mode */
