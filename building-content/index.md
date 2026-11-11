@@ -13,9 +13,9 @@ building-blocks/index
 :::
 
 
+## Building Content (Unrenovated)
 :::{toctree}
 :maxdepth: 1
-:caption: Building Content (Unrenovated)
 
 asset-creation/index
 api/index

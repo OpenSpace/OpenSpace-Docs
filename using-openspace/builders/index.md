@@ -3,7 +3,7 @@ Tutorials about adding new things into OpenSpace. For anyone who wants to add th
 
 :::{toctree}
 :maxdepth: 1
-:caption: Howto
+:caption: How-to
 
 create-water-moon
 add-fulldome-image

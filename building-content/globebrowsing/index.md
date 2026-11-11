@@ -17,7 +17,6 @@ This page goes through everything that should be known about the globe browsing 
 
 :::{toctree}
 :maxdepth: 2
-:caption: GlobeBrowsing
 :hidden:
 
 working-with-layers

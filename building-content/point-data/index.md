@@ -5,7 +5,7 @@ This section includes information pages that are relevant to the loading of poin
 
 :::{toctree}
 :maxdepth: 1
-:caption: Point Data
+:caption: Topics
 
 point-data
 labels
