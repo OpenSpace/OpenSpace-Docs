@@ -8,7 +8,6 @@ Contributions to our documentation are very welcome.
 
 build-locally
 kitchensink
-field-list-example
 customdirectives
 
 :::
