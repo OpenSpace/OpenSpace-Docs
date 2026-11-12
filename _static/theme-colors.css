@@ -42,7 +42,7 @@ body {
   --os-text-strong: #0a1417;
   --os-heading: #2f4247;
   --os-text-secondary: #4a5e63;
-  --os-text-muted: #66777c;
+  --os-text-muted: #5f7075;
   --os-text-border: #9db0b5;
 
   /* Accent and headings */
@@ -61,6 +61,17 @@ body {
   --os-button-bg: #d0f884;
   --os-button-bg-hover: #dcfb9f;
   --os-button-text: #0a0a0a;
+
+  /* The "Advanced" badge is the same in both modes */
+  --os-advanced-bg: #ffb366;
+  --os-advanced-border: #ff8000;
+
+  /* The "No" badges in the reference tables */
+  --os-badge-info-bg: color-mix(
+    in srgb,
+    var(--os-bg-raised) 70%,
+    var(--os-link)
+  );
 
   /* Admonitions */
   --os-note: #0a76a1;
@@ -91,7 +102,7 @@ body[data-theme="dark"] {
   --os-text-strong: #f2f5f6;
   --os-heading: #d3dfe1;
   --os-text-secondary: #96a4a6;
-  --os-text-muted: #6d7a7c;
+  --os-text-muted: #788587;
   --os-text-border: rgba(184, 200, 202, 0.4);
 
   --os-accent: #f2f5f6;
@@ -106,6 +117,8 @@ body[data-theme="dark"] {
   /* Highlighted lines in code blocks (emphasize-lines). Only dark mode needs its own, the
      light code theme has a readable one. See theme-layout.css */
   --os-code-highlight: rgba(56, 139, 253, 0.18);
+  /* A translucent turquoise, so the text keeps the color of the table */
+  --os-badge-info-bg: rgba(30, 150, 180, 0.28);
 
   --os-note: #3dbdee;
   --os-tip: #5cdd8b;
@@ -135,7 +148,7 @@ body[data-theme="dark"] {
     --os-text-strong: #f2f5f6;
     --os-heading: #d3dfe1;
     --os-text-secondary: #96a4a6;
-    --os-text-muted: #6d7a7c;
+    --os-text-muted: #788587;
     --os-text-border: rgba(184, 200, 202, 0.4);
 
     --os-accent: #f2f5f6;
@@ -147,6 +160,7 @@ body[data-theme="dark"] {
     --os-inline-code: #daefb4;
     --os-target: rgba(208, 248, 132, 0.12);
     --os-code-highlight: rgba(56, 139, 253, 0.18);
+    --os-badge-info-bg: rgba(30, 150, 180, 0.28);
 
     --os-note: #3dbdee;
     --os-tip: #5cdd8b;

@@ -68,6 +68,8 @@ class Dossier(SphinxDirective):
     license = self.licenses[license] if self.licenses.__contains__(license) else license
     assetfile = f'`{assetfile}`' if assetfile != notapplicable else assetfile
     template = environment.get_template("dossier.html.jinja")
+    # Without this, editing the template does not rebuild the pages that use it
+    self.env.note_dependency(template.filename)
 
     # Render component page with jinja
     output = template.render(
@@ -149,6 +151,7 @@ class Profile_Dossier(SphinxDirective):
     license = self.licenses[license] if self.licenses.__contains__(license) else license
     profilefile = f'`{profilefile}`' if profilefile != notapplicable else profilefile
     template = environment.get_template("dossier_profile.html.jinja")
+    self.env.note_dependency(template.filename)
 
     # Render component page with jinja
     output = template.render(

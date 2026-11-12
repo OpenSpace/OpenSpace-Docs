@@ -37,10 +37,14 @@ body {
  * are also derived from that width. With C as the content width in em (Furo: 46):
  *
  *   Furo    this file   formula   what happens below it
- *   82em    98em        C + 36    the table of contents moves off-canvas
+ *   82em    108em       (C + 36) * 1.1  the table of contents moves off-canvas
  *   67em    83em        C + 21    the content column stops being centered by the sidebar
  *   63em    79em        C + 17    the sidebar moves off-canvas and the mobile header appears
  *   48em    64em        C + 2     the content column takes the full width
+ *
+ * Furo raises the root font size to 110% from 97em, so the em widths in the page are 10%
+ * wider than the em in a media query. That is why the table of contents needs the factor
+ * 1.1: at 98em the three columns already add up to more than the window.
  *
  * The sidebar width is 50% - (C / 2 + 3)em, and 7.5em more when the table of contents is
  * off-canvas. This file uses C = 62 (992px of text, Furo's default is 736px). To change
@@ -71,7 +75,7 @@ body {
   width: min(16em, 100%);
 }
 
-@media (max-width: 98em) {
+@media (max-width: 108em) {
   .toc-content-icon {
     display: flex;
   }
@@ -270,21 +274,15 @@ article .toctree-wrapper.compound > ul > li + li {
   padding-bottom: 1.5rem;
 }
 
-@font-face {
-  font-family: "FontAwesome";
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2")
-    format("woff2");
-}
-
-.headerlink {
-  font-family: "FontAwesome";
-}
-
 article :is(h1, h2, h3, h4, h5, h6) > .headerlink {
   color: var(--os-link);
   font-size: 0.65em;
+}
+.headerlink-icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.1em;
 }
 
 article strong {
@@ -415,7 +413,7 @@ article .menuselection {
   padding-left: 0;
 }
 
-/* Highlighted lines (emphasize-lines). The github-dark style uses a solid grey that hides
+/* Highlighted lines (emphasize-lines). The dark Pygments style uses a solid grey that hides
    the text, so in dark mode they get a translucent tint instead. The selectors repeat the
    ones in pygments.css, which has the same two cases for dark mode. The color is
    --os-code-highlight from theme-colors.css */
@@ -437,26 +435,39 @@ body {
   --admonition-font-size: 0.9rem;
   --admonition-title-font-size: 0.9rem;
 }
-/* The body is a faint tint of the admonition's own color. The required/recommended
-   reading boxes keep their own background from required-reading.css */
-.admonition:not(.requiredreading):not(.recommendedreading) {
+/* The body is a faint tint of the admonition's own color */
+.admonition {
   background: color-mix(
     in srgb,
     var(--os-admonition-accent, var(--os-note)) 8%,
     var(--os-bg-raised)
   );
 }
-.admonition.note { --os-admonition-accent: var(--os-note); }
-.admonition.seealso { --os-admonition-accent: var(--os-seealso); }
-.admonition.important { --os-admonition-accent: var(--os-important); }
+.admonition.note {
+  --os-admonition-accent: var(--os-note);
+}
+.admonition.seealso {
+  --os-admonition-accent: var(--os-seealso);
+}
+.admonition.important {
+  --os-admonition-accent: var(--os-important);
+}
 .admonition.tip,
-.admonition.hint { --os-admonition-accent: var(--os-tip); }
+.admonition.hint {
+  --os-admonition-accent: var(--os-tip);
+}
 .admonition.warning,
 .admonition.caution,
-.admonition.attention { --os-admonition-accent: var(--os-warning); }
+.admonition.attention {
+  --os-admonition-accent: var(--os-warning);
+}
 .admonition.danger,
-.admonition.error { --os-admonition-accent: var(--os-danger); }
-.admonition.admonition-todo { --os-admonition-accent: var(--os-todo); }
+.admonition.error {
+  --os-admonition-accent: var(--os-danger);
+}
+.admonition.admonition-todo {
+  --os-admonition-accent: var(--os-todo);
+}
 .admonition,
 .topic {
   border-top: 1px solid var(--color-background-border);
@@ -477,26 +488,28 @@ article table.docutils {
   box-shadow: none;
   overflow: hidden;
 }
+/* The generated reference tables (class set in the templates) fit the page: long words wrap
+   inside their cells instead of widening the table. On screens too narrow for that, the
+   table wrapper scrolls, as in Furo. The column widths that list-table writes into the HTML
+   are ignored, because with wrapping allowed they shrink short columns to one character.
+   The browser sizes the columns from their content instead */
+article table.reference-table th,
+article table.reference-table td {
+  overflow-wrap: break-word;
+}
+/* The documentation column can hold unbreakable text, such as an unresolved
+   [codegen::verbatim(...)] placeholder, so it may break anywhere. The other columns keep
+   their words whole, or short ones like "Yes" would be split */
+article table.reference-table td:nth-child(2) {
+  overflow-wrap: anywhere;
+}
+article table.reference-table col {
+  width: auto !important;
+}
 article .sd-badge.sd-bg-info {
-  --sd-color-info: color-mix(in srgb, var(--os-bg-raised) 70%, var(--os-link));
+  --sd-color-info: var(--os-badge-info-bg);
   --sd-color-info-text: var(--os-text);
-  --sd-color-info-highlight: color-mix(
-    in srgb,
-    var(--os-bg-raised) 70%,
-    var(--os-link)
-  );
-}
-body[data-theme="dark"] article .sd-badge.sd-bg-info {
-  --sd-color-info: #748a92;
-  --sd-color-info-text: #0a0a0a;
-  --sd-color-info-highlight: #748a92;
-}
-@media (prefers-color-scheme: dark) {
-  body:not([data-theme="light"]) article .sd-badge.sd-bg-info {
-    --sd-color-info: #748a92;
-    --sd-color-info-text: #0a0a0a;
-    --sd-color-info-highlight: #748a92;
-  }
+  --sd-color-info-highlight: var(--os-badge-info-bg);
 }
 article table.docutils th,
 article table.docutils td {
@@ -505,13 +518,22 @@ article table.docutils td {
 article table.docutils tbody tr:nth-child(even) {
   background: var(--os-stripe);
 }
-/* Keep the text away from the edge of a striped row. Furo gives cells only 4px */
-article table.docutils td {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+/* The header column of a dossier is separated from the values like the table's outline */
+article table.dossier th.stub {
+  border-right: 1px solid var(--os-table-border);
 }
-article table.docutils tbody tr:last-child td {
-  padding-bottom: 0.75rem;
+/* Furo gives cells only 4px of side padding and none above or below */
+article table.docutils td {
+  padding: 0.3rem 0.35rem;
+}
+/* The first column gets more room on the left, header included so the titles line up */
+article table.docutils td:first-child,
+article table.docutils th:first-child {
+  padding-left: 0.75rem;
+}
+article table.docutils td p,
+article table.docutils th p {
+  margin: 0.15rem;
 }
 article table.docutils th {
   background: var(--os-table-surface);
@@ -522,7 +544,7 @@ article table.docutils th {
   text-transform: uppercase;
   /* Furo gives header cells only 4px of side padding and none above or below. The side
      padding matches the body cells below, so the titles line up with the text */
-  padding: 0.5rem 0.75rem;
+  padding: 0.4rem 0.35rem;
   text-align: left;
 }
 
@@ -569,7 +591,8 @@ article img.sd-card-img {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    color-mix(in srgb, var(--os-link) 16%, transparent) var(--sidebar-item-spacing-horizontal),
+    color-mix(in srgb, var(--os-link) 16%, transparent)
+      var(--sidebar-item-spacing-horizontal),
     color-mix(in srgb, var(--os-link) 16%, transparent) 100%
   );
   color: var(--os-accent);
@@ -577,7 +600,7 @@ article img.sd-card-img {
 /* Level 3 and deeper entries are long in the reference section, so they get a smaller font */
 .sidebar-tree li.toctree-l3 > .reference,
 .sidebar-tree li.toctree-l4 > .reference {
-  font-size: 0.85em;
+  font-size: 0.9em;
 }
 /* sphinx-design: buttons, cards and tabs use the website colors. The primary button is
    the website's yellow with dark text in both light and dark mode */
@@ -634,4 +657,19 @@ details.sd-dropdown:not([open]) > .sd-card-header {
 .sd-btn {
   border-radius: var(--os-radius-small);
   font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :target > :is(h1, h2, h3, h4, h5, h6):first-of-type,
+  span:target ~ :is(h1, h2, h3, h4, h5, h6):first-of-type {
+    animation: none;
+    background-color: var(--color-highlight-on-target);
+  }
+  .sd-card.sd-card-hover,
+  .crumbs a.crumbs__parent {
+    transition: none;
+  }
+  .sd-card.sd-card-hover:hover {
+    transform: none;
+  }
 }

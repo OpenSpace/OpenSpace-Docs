@@ -61,10 +61,10 @@ article ul.no-bullet li {
 }
 .advanced-topic .advanced {
   padding: 0.3em 1em;
-  background-color: #ffb366;
+  background-color: var(--os-advanced-bg);
   color: var(--os-button-text);
   border-radius: 6px;
-  border: 1px solid #ff8000;
+  border: 1px solid var(--os-advanced-border);
   font-size: 0.7em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
