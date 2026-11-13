@@ -2,7 +2,6 @@
 
 :::{toctree}
 :maxdepth: 1
-:caption: Ephemeris
 
 horizons-gui
 horizons-web

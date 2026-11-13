@@ -2,7 +2,7 @@
 
 :::{toctree}
 :maxdepth: 1
-:caption: Creation
+:caption: Topics
 
 creating-a-renderableglobe
 readable-datasets

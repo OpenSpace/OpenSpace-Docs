@@ -5,7 +5,7 @@ This section covers how to download and prepare the image data and how to set up
 
 :::{toctree}
 :maxdepth: 1
-:caption: Solar Browsing
+:caption: Topics
 
 solarbrowsing-data
 solarbrowsing-rendering

@@ -39,10 +39,9 @@ error: failing download because the expected SHA512 was all zeros, please change
 
 Then, copy and paste the new SHA512 hash into the SHA512 and configure again to finalize the update.
 
-
+## Compiling
 :::{toctree}
 :maxdepth: 1
-:caption: Compiling
 
 cef
 libmpv

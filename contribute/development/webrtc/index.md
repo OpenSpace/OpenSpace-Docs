@@ -1,9 +1,9 @@
 # WebRTC
-These pages collect information about the WebRTC project that is current still in the development
+These pages collect information about the WebRTC project that is current still in the development.
 
 :::{toctree}
 :maxdepth: 1
-:caption: WebRTC
+:caption: Topics
 
 streaming-user-guide
 streaming-backlog

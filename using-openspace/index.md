@@ -31,9 +31,10 @@ launcher/index
 
 :::
 
+## Using OpenSpace (Unrenovated)
+
 :::{toctree}
 :maxdepth: 1
-:caption: Using OpenSpace (Unrenovated)
 
 navigation/index
 properties/index
