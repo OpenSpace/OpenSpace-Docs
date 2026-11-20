@@ -69,7 +69,7 @@ To control an OpenSpace property using an axis on a controller you will need the
   1. The index of which axis on the controller you want to bind the property to. This is distinct for the type of controller you are using and to find these values for a new controller see [Setup New Joystick Type](#setup-new-joystick-type). If you are using an already supported controller, you can use the "map" at the top of the asset to find the indices. Either you can put in the indices directly or you can use the map with the descriptive name such as `controller.RightTrigger` or `controller.LeftThumbStick.LeftRight`.
   1. The full identifier for the property you want to control with this axis on the controller. A tip to find this identifier is to first run OpenSpace normally and change the property with the normal GUI, then you can look at the Script Log and see the full name of the property you just changed, for more information about the Script Log see [The Script Log](/using-openspace/scripting/console/index.md#the-script-log).
   1. (Optional) The minimum value allowed to be set for this property using the axis. Defaults to `0.0`.
-  1. (Optional) The maximum value allowed to be set for this property using the axis. Defaults to `100.0`.
+  1. (Optional) The maximum value allowed to be set for this property using the axis. Defaults to `1.0`.
   1. (Optional) Whether or not this axis should be inverted. This is a common setting in video games. Defaults to `false`.
   1. (Optional) Whether or not the property change should be forwarded to other connected nodes or sessions. This is similar to the `"isLocal"` parameter for actions. Defaults to `true`.
 

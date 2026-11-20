@@ -42,7 +42,7 @@ These layers can be put in to any of the layer groups, they will be interpreted 
   - **Name** -- A **string** defining the name of the layer. For each layer group and each layer, this must be unique.
   - **Type** -- A **string** defining the layer type, must be any of the following: **DefaultTileLayer**, **SingleImageTileLayer**, **SizeReferenceTileLayer**, **TemporalTileLayer**, **TileIndexTileLayer**, **ByIndexTileLayer**, **ByLevelTileLayer**, **SolidColor**.
   - **Enabled** (optional) -- A **boolean** value, **true** or **false**, determining if the layer is enabled or not.
-  - **TilePixelSize** (optional) -- An **integer** value specifying the size in pixels for each tile of the layer. Defaults to 64 for **HeightLayers** and 512 for all other layers.
+  - **TilePixelSize** (optional) -- An **integer** value specifying the size in pixels for each tile of the layer. Defaults to 512.
   - **Settings** (optional) -- A **lua table** specifying the render settings for the layer using settings for **Opacity**, **Gamma**, **Multiplier**, and **Offset**. As an example:
 ```lua
 Settings = {

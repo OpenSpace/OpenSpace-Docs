@@ -18,16 +18,6 @@ This event is created whenever a new scene graph node is added to the system. By
 
 `Node`: The identifier of the node that was added
 
-### SceneGraphNodeRemoved
-This event is created whenever a scene graph node was removed. By the time this event is signalled, the scene graph node has already been removed.
-
-`Node`: The identifier of that node that was removed
-
-### ParallelConnection
-This event is created whenever something in the parallel connection subsystem changes. The new state is sent as an argument with this event.
-
-`State`: The new state of the parallel connection system; is one of `Established`, `Lost`, `HostshipGained`, or `HostshipLost`
-
 ### ProfileLoadingFinished
 This event is created when the loading of a profile is finished. This is emitted regardless of whether it is the initial profile, or any subsequent profile is loaded.
 
@@ -35,16 +25,6 @@ This event is created when the loading of a profile is finished. This is emitted
 This event is created whenever some information about the application shutdown sequence changes. This can either be that the seqeuence started, was aborted, or is finished, which means that OpenSpace is just about the shutdown.
 
 `State`: The next state of the application shutdown sequence; is one of `Started`, `Aborted`,  or `Finished`
-
-### ScreenSpaceRenderableAdded
-This event is created when a new screenspace renderable has been created. By the time this event is craeted, the screenspace renderable is already registered and available.
-
-`Renderable`: The identifier of the new screenspace renderable that was just added to the system
-
-### ScreenSpaceRenderableRemoved
-This event is created when a screenspace renderable has been removed from the system. When this event is created, the screenspace renderable has already been removed and is no longer available
-
-`Renderable`: The identifier of the screenspace renderable that was removed
 
 ### CameraFocusTransition
 This event is created when the camera transitions between different interaction sphere distances. Right now, only movement relative to camera's focus node is considered. Each scene graph node has an interaction sphere radius that serves as the reference distance for all spheres.
@@ -89,24 +69,6 @@ This event is created when the camera changes focus nodes. Even if the camera po
 `OldNode`: The identifier of the scene graph node which was the old focus node
 
 `NewNode`: The identifier of the scene graph node that is the new focus node
-
-### LayerAdded
-This event is created when a layer is added to to a globe.
-
-`Globe`: The identifier of the globe to which the layer is added
-
-`Group`: The identifier of the layer group to which the layer is added
-
-`Layer`: The identifier of the layer that was added
-
-### LayerRemoved
-This event is created when a layer is removed from a globe.
-
-`Globe`: The identifier of the globe from which the layer is removed
-
-`Group`: The identifier of the layer group from which the layer is removed
-
-`Layer`: The identifier of the layer that was removed
 
 ### SessionRecordingPlayback
 This event is created when something regarding a session recording playback changes. The event contains information about the new state of the session recording subsystem.

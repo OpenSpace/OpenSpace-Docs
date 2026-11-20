@@ -8,16 +8,18 @@ The web interface can be made accessible to other devices by modifying the setti
 to apply to all users of the installation. In the `.cfg` file, both the ip addresses, of the remote client as well as of the machine running OpenSpace,
 need to be entered, (for example, if OpenSpace is running on a computer with IP address of 10.0.0.3 and the remote client's IP address is 10.0.0.7)
 ```lua
-    Server = {
-        AllowAddresses = { "127.0.0.1", "localhost", "10.0.0.3", "10.0.0.7" },
-        ...
+  Server = {
+    Interfaces = {
+      ...
+      AllowAddresses = { "127.0.0.1", "localhost", "10.0.0.3", "10.0.0.7" },
     },
     ...
-    WebGui = {
-        Address = "10.0.0.3",
-        ...
-    },
-
+  },
+  ...
+  WebGui = {
+    Address = "10.0.0.3",
+    ...
+  },
 ```
 
 OR temporary changes can be made through the UI by first changing the "Property Visibility" setting in the UI from "User" to "Advanced User" under {menuselection}`Settings --> OpenSpace Engine`. Once that is done, change the allowed addresses at {menuselection}`Settings --> Server --> Interfaces --> DefaultWebSocketInterface` to include both the client and the server addresses along with localhost,

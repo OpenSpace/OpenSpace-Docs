@@ -440,6 +440,6 @@ We use the following symbols in tutorials to indicate actions:
   1. Once you reach Earth so you can see the whole planet, take your finger off the mouse. Now you're only orbiting.
   1. Stop your orbital motion by hitting the {kbd}`f` key. This will bring you to a stop.
   1. This is the end of the tour, please exit through the gift shop.
-  1. To quit OpenSpace, either press {kbd}`Esc` for the grace period quit, or press your operating system's close button on the window to quit instantaneously.
+  1. To quit OpenSpace, either press {kbd}`Ctrl+Q` for the grace period quit, or press your operating system's close button on the window to quit instantaneously.
 
 ::::::::

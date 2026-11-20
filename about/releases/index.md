@@ -3,12 +3,13 @@ OpenSpace versions are labeled by a version number of the form `MM.mm.rr`,  wher
 
 | *Version* | *Date* |
 | --------- | ------ |
-| [0.22.0](changelogs/0.22.0/index) | 2026-06-09 |
-| [0.21.4](changelogs/0.21.4/index) | 2026-05-01 |
-| [0.21.3](changelogs/0.21.3/index) | 2025-11-26 |
-| [0.21.2](changelogs/0.21.2/index) | 2025-07-30 |
-| [0.21.1](changelogs/0.21.1/index) | 2025-07-27 |
-| [0.21.0](changelogs/0.21.0/index) | 2025-06-19 |
+| [0.22.1](changelogs/0.22.1) | 2026-11-05 |
+| [0.22.0](changelogs/0.22.0) | 2026-06-09 |
+| [0.21.4](changelogs/0.21.4) | 2026-05-01 |
+| [0.21.3](changelogs/0.21.3) | 2025-11-26 |
+| [0.21.2](changelogs/0.21.2) | 2025-07-30 |
+| [0.21.1](changelogs/0.21.1) | 2025-07-27 |
+| [0.21.0](changelogs/0.21.0) | 2025-06-19 |
 | [0.20.1](changelogs/0.20.1/index) | 2024-07-18 |
 | [0.20.0](changelogs/0.20.0/index) | 2024-06-17 |
 | [0.19.2](changelogs/0.19.2) | 2023-10-23 |
