@@ -34,7 +34,7 @@ A face-on view of the DESI galaxies and the quasars. The galaxies are yellow, gr
 
 :::{figure} desi_quasars_edgeon.png
 :align: left
-:alt: 
+:alt:
 
 An edge-on view of the DESI galaxies and quasars. The quasars, colored red, show some overdensities where more observations were made.
 :::

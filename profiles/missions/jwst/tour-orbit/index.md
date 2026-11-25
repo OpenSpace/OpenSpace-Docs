@@ -34,11 +34,11 @@ This tour uses combinations of buttons and settings in the Scene Panel (below, l
 ::::::{grid} 1 2 2 2
 
 :::::{grid-item}
-[![](panel_scene_jwst.png)](panel_scene_jwst.png)
+[![JWST in the Scene panel](panel_scene_jwst.png)](panel_scene_jwst.png)
 :::::
 
 :::::{grid-item}
-[![](panel_actions_jwst.png)](panel_actions_jwst.png)
+[![JWST actions in the Actions panel](panel_actions_jwst.png)](panel_actions_jwst.png)
 :::::
 ::::::
 
@@ -51,12 +51,12 @@ Toggle buttons in the Actions Panel will turn objects on and off, but they do no
 
 
 :::{admonition} Pretour Checklist
-- **Start the tour** by launching OpenSpace with the {menuselection}`JWST` profile.
-- {octicon}`tools;1.25em;profile-tour-action` Press the January 23, 2022 milestone *Arrival at L2 Orbit* on the Mission Panel timeline. 
-- {octicon}`stopwatch;1.25em;profile-tour-action` Press the {menuselection}`Set Time` button at the bottom of the milestone's description to set OpenSpace to that date and time.
-- {octicon}`tools;1.25em;profile-tour-action` Close the Mission Panel
+  - **Start the tour** by launching OpenSpace with the {menuselection}`JWST` profile.
+  - {octicon}`tools;1.25em;profile-tour-action` Press the January 23, 2022 milestone *Arrival at L2 Orbit* on the Mission Panel timeline.
+  - {octicon}`stopwatch;1.25em;profile-tour-action` Press the {menuselection}`Set Time` button at the bottom of the milestone's description to set OpenSpace to that date and time.
+  - {octicon}`tools;1.25em;profile-tour-action` Close the Mission Panel
   
-[![](entering_l2_orbit.png)](entering_l2_orbit.png)
+[![JWST entering its orbit around L2](entering_l2_orbit.png)](entering_l2_orbit.png)
 :::
 
 
@@ -64,19 +64,19 @@ Toggle buttons in the Actions Panel will turn objects on and off, but they do no
 ## Arrival at L{sub}`2` Orbit Insertion
 
 {.tutorial}
-- {octicon}`diff-added;1.25em;profile-tour-action` Turn on the Earth and Moon's orbits {menuselection}`Actions --> JWST --> Earth and Moon Trails (toggle)`
-- {octicon}`rocket;1.25em;profile-tour-action` Fly away from JWST to see the Earth and lunar orbit. Remember, JWST's mirror side will always be on the opposite side of the observatory than the Sun and Earth.
-- {octicon}`diff-added;1.25em;profile-tour-action` Turn on the Sun to L{sub}`2` Line {menuselection}`Actions --> JWST --> L2 Line and Small L2 Label (toggle)`
-- {octicon}`diff-added;1.25em;profile-tour-action` Turn on JWST's Cruise Trail {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST Cruise Trail`
+  - {octicon}`diff-added;1.25em;profile-tour-action` Turn on the Earth and Moon's orbits {menuselection}`Actions --> JWST --> Earth and Moon Trails (toggle)`
+  - {octicon}`rocket;1.25em;profile-tour-action` Fly away from JWST to see the Earth and lunar orbit. Remember, JWST's mirror side will always be on the opposite side of the observatory than the Sun and Earth.
+  - {octicon}`diff-added;1.25em;profile-tour-action` Turn on the Sun to L{sub}`2` Line {menuselection}`Actions --> JWST --> L2 Line and Small L2 Label (toggle)`
+  - {octicon}`diff-added;1.25em;profile-tour-action` Turn on JWST's Cruise Trail {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST Cruise Trail`
 
 
 % - {octicon}`tools;1.25em;profile-tour-action` Turn on the entire trail by turning off line fading for the trail using {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST Cruise Trail --> Renderable --> Appearance --> Enable line fading of old points`
 
-[![](earth-sun_l2_line.png)](earth-sun_l2_line.png)
+[![JWST trail with the Earth-Sun L2 line](earth-sun_l2_line.png)](earth-sun_l2_line.png)
 
 On January 23, 2022, JWST performed its last burn to position it into orbit around the L{sub}`2` point. L{sub}`2` is about 1.5 million km (1 million miles) from Earth, and it took one month to reach this point. (See the [deployment tour](../tour-deployment/index) to see what the observatory was doing over that month.)
 
-Turning on the Sun-Earth-L{sub}`2` line shows us where the L{sub}`2` point is relative to Earth. Around four times farther than the orbit of the Moon, L{sub}`2` is a stable [Lagrange point](profiles--missions--jwst--lagrange-points) where several telescopes exist, including Roman, [WMAP](/content/universe/cosmic-microwave-background/wmap/index), and [Planck](/content/universe/cosmic-microwave-background/planck/index). 
+Turning on the Sun-Earth-L{sub}`2` line shows us where the L{sub}`2` point is relative to Earth. Around four times farther than the orbit of the Moon, L{sub}`2` is a stable [Lagrange point](profiles--missions--jwst--lagrange-points) where several telescopes exist, including Roman, [WMAP](/content/universe/cosmic-microwave-background/wmap/index), and [Planck](/content/universe/cosmic-microwave-background/planck/index).
 
 
 
@@ -84,12 +84,12 @@ Turning on the Sun-Earth-L{sub}`2` line shows us where the L{sub}`2` point is re
 ## Orbit from the Sun's Perspective
 
 {.tutorial}
-- {octicon}`diff-removed;1.25em;profile-tour-action` Turn off Earth's orbit {menuselection}`Scene --> Solar System --> Planets --> Earth --> Earth Trail`
-- {octicon}`stopwatch;1.25em;profile-tour-action` Advance time one month using the Time Panel. Press the up arrow button above the month.
-- {octicon}`diff-added;1.25em;profile-tour-action` Turn on JWST's orbit around the Sun {menuselection}`Actions --> JWST --> JWST Sun Trail (toggle)`
+  - {octicon}`diff-removed;1.25em;profile-tour-action` Turn off Earth's orbit {menuselection}`Scene --> Solar System --> Planets --> Earth --> Earth Trail`
+  - {octicon}`stopwatch;1.25em;profile-tour-action` Advance time one month using the Time Panel. Press the up arrow button above the month.
+  - {octicon}`diff-added;1.25em;profile-tour-action` Turn on JWST's orbit around the Sun {menuselection}`Actions --> JWST --> JWST Sun Trail (toggle)`
 
 
-[![](sun_orbit.png)](sun_orbit.png)
+[![JWST orbit around the Sun](sun_orbit.png)](sun_orbit.png)
 
 The orbit of JWST from the Sun's perspective is essentially the same as Earth's orbit around the Sun. Because JWST is at the L{sub}`2` point, it will always remain around that point with some minor, periodic corrections, though it will never be exactly *on* that point.
 
@@ -97,9 +97,9 @@ L{sub}`2` is on the opposite side of Earth from the Sun, and so it's always abov
 
 
 {.tutorial}
-- {octicon}`rocket;1.25em;profile-tour-action` Fly away to see the extent of the orbit encircling the Sun.
+  - {octicon}`rocket;1.25em;profile-tour-action` Fly away to see the extent of the orbit encircling the Sun.
 
-[![](sun_orbit_afar.png)](sun_orbit_afar.png)
+[![JWST orbit around the Sun seen from far away](sun_orbit_afar.png)](sun_orbit_afar.png)
 
 
 As JWST orbits around L{sub}`2`, it essentially keeps up with Earth as it revolves around the Sun. You might expect an object 1.5 million km farther from the Sun to orbit marginally slower than Earth's 365.25-day orbit. But, this is what makes the L{sub}`2` point so special. JWST essentially revolves around the sun every 365 days, just like Earth.
@@ -108,9 +108,9 @@ As JWST orbits around L{sub}`2`, it essentially keeps up with Earth as it revolv
 ## Orbit Relative to the Earth-L{sub}`2` System
 
 {.tutorial}
-- {octicon}`diff-removed;1.25em;profile-tour-action` Turn off JWST's orbit around the Sun {menuselection}`Actions --> JWST --> JWST Sun Trail (toggle)`
-- {octicon}`stopwatch;1.25em;profile-tour-action` Advance time by one year to 2023.
-- {octicon}`tools;1.25em;profile-tour-action` Turn on one year's travel time by unchecking the line fade box using {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST L2 Co-revolving Orbit Trail --> Renderable --> Appearance --> Enable line fading of old points`
+  - {octicon}`diff-removed;1.25em;profile-tour-action` Turn off JWST's orbit around the Sun {menuselection}`Actions --> JWST --> JWST Sun Trail (toggle)`
+  - {octicon}`stopwatch;1.25em;profile-tour-action` Advance time by one year to 2023.
+  - {octicon}`tools;1.25em;profile-tour-action` Turn on one year's travel time by unchecking the line fade box using {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST L2 Co-revolving Orbit Trail --> Renderable --> Appearance --> Enable line fading of old points`
 
 From the point of view of the Earth-L{sub}`2` system, the orbit of JWST makes sense as a body that is in orbit around the L{sub}`2` point. However, it is not at all an orderly orbit. We mentioned earlier, bodies located at L{sub}`2` are not in stable orbits, they must make course corrections every few weeks to maintain their position. This means firing JWST's thrusters about every 23 days to nudge it so that it doesn't fall out of its position around L{sub}`2`. In fact, the telescope is really in orbit around the Sun, it is merely drifting and maintaining its position around L{sub}`2`.
 
@@ -118,39 +118,39 @@ While not a traditional orbit like the Moon, which appears almost circular and l
 
 The orbit from the Sun-L{sub}`2` line, or face-on, shows this variation in its motion.
 
-[![](earth_l2_orbit_face_on.png)](earth_l2_orbit_face_on.png)
+[![JWST orbit around L2 seen face-on](earth_l2_orbit_face_on.png)](earth_l2_orbit_face_on.png)
 
 If we situate ourselves to see the orbit edge-on, we can see the non-planar aspects of the orbit as well.
 
-[![](earth_l2_orbit_edge_on.png)](earth_l2_orbit_edge_on.png)
+[![JWST orbit around L2 seen edge-on](earth_l2_orbit_edge_on.png)](earth_l2_orbit_edge_on.png)
 
 
 ## Orbit Relative to L{sub}`2`
 
 {.tutorial}
-- {octicon}`stopwatch;1.25em;profile-tour-action` Advance time by 2 days per second
-- {octicon}`rocket;1.25em;profile-tour-action` Fly back in toward JWST to see the trail grow as time passes
-- {octicon}`diff-added;1.25em;profile-tour-action` Turn on the the JWST Orbit Trail {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST Orbit Trail`
+  - {octicon}`stopwatch;1.25em;profile-tour-action` Advance time by 2 days per second
+  - {octicon}`rocket;1.25em;profile-tour-action` Fly back in toward JWST to see the trail grow as time passes
+  - {octicon}`diff-added;1.25em;profile-tour-action` Turn on the the JWST Orbit Trail {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST Orbit Trail`
 
-[![](corevolving_and_l2_orbits.png)](corevolving_and_l2_orbits.png)
+[![JWST co-revolving and L2 orbit trails](corevolving_and_l2_orbits.png)](corevolving_and_l2_orbits.png)
 
-The magenta trail is JWST's orbital path from the perspective of someone at L{sub}`2`. As time passes at 2 days every second, you can see how the two orbital paths evolve. 
+The magenta trail is JWST's orbital path from the perspective of someone at L{sub}`2`. As time passes at 2 days every second, you can see how the two orbital paths evolve.
 
 {.tutorial}
-- {octicon}`diff-removed;1.25em;profile-tour-action` Turn off JWST's Earth-L{sub}`2` Co-revolving orbit trail using {menuselection}`Actions --> JWST --> JWST Trail (toggle)` 
+  - {octicon}`diff-removed;1.25em;profile-tour-action` Turn off JWST's Earth-L{sub}`2` Co-revolving orbit trail using {menuselection}`Actions --> JWST --> JWST Trail (toggle)`
 
 Now, we're left with the magenta trail---JWST's orbit as seen from L{sub}`2`. Let's get a better look at this trail by changing some of its settings so that we can see one full year of travel by JWST.
 
-[![](l2_orbit_side.png)](l2_orbit_side.png)
+[![JWST orbit trail around L2 seen from the side](l2_orbit_side.png)](l2_orbit_side.png)
 
 
 {.tutorial}
-- {octicon}`stopwatch;1.25em;profile-tour-action` In the Time Panel, press the {menuselection}`Now` button
-- {octicon}`tools;1.25em;profile-tour-action` Select the JWST Orbit Trail {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> JWST Orbit Trail`
-- {octicon}`tools;1.25em;profile-tour-action` In its settings, set the Period to 365 {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST Orbit Trail --> Period`
-- {octicon}`tools;1.25em;profile-tour-action` Under Appearance Tab, set the Line Fade Amount to zero {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST Orbit Trail --> Appearance --> Line Fade Amount`
+  - {octicon}`stopwatch;1.25em;profile-tour-action` In the Time Panel, press the {menuselection}`Now` button
+  - {octicon}`tools;1.25em;profile-tour-action` Select the JWST Orbit Trail {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> JWST Orbit Trail`
+  - {octicon}`tools;1.25em;profile-tour-action` In its settings, set the Period to 365 {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST Orbit Trail --> Period`
+  - {octicon}`tools;1.25em;profile-tour-action` Under Appearance Tab, set the Line Fade Amount to zero {menuselection}`Scene --> Solar System --> Telescopes --> JWST --> Trails --> JWST Orbit Trail --> Appearance --> Line Fade Amount`
 
-[![](l2_orbit_top.png)](l2_orbit_top.png)
+[![One year of JWST orbit around L2 seen from above](l2_orbit_top.png)](l2_orbit_top.png)
 
 
 You can also see here that its motion around L{sub}`2` itself it quite extensive. From L{sub}`2`, it varies in radius from roughly 250,000 km (160,000 mi) to 832,000 km (517,000 mi). Recall the average distance to the Moon is about 385,000 km (240,000 miles), so JWST is much farther from its central point than the Moon is from Earth (the Moon's central point).

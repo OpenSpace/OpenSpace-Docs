@@ -82,6 +82,7 @@ PS4 controller (PS5 has same layout)
 | Start | Options | Focus on the next object in the interesting objects list |
 | | Touch Pad | N/A |
 | | PS | N/A |
+
 :::
 
 
@@ -118,6 +119,7 @@ The `Left` and `Right` buttons switch between local and global roll modes. Local
 | Tilt up/down | Pan camera up/down |
 | Left button | Switch to local roll mode (Default) |
 | Right button | Switch to global roll mode |
+
 :::
 
 ::::

@@ -21,7 +21,7 @@ JWST as rendered in OpenSpace.
 
 The mission originated from discussions as far back as 1989, and construction began in 2004. The project grew into one of the most ambitious astronomical observatories ever built. Its 6.5-meter-diameter primary mirror is made up of 18 individual hexagonal segments. It is roughly 2.5 times wider than Hubble's mirror and collects more than 6 times as much light. JWST's instruments required decades of scientific planning, engineering, testing, and international collaboration.
 
-### Components of the JWST 
+### Components of the JWST
 
 Besides the obvious mirrors and detectors, JWST carries many different components that perform specific roles to make the observatory work. In a sense, we can divide the telescope into a cold side and a hot side.
 
@@ -39,14 +39,14 @@ The cold side is behind the sunshield and contains all the instrumentation that 
 
 :::::{grid-item}
 
-- Primary mirror: 18 hexagonal segments made of gold-coated beryllium. Each segment is mounted on a hexapod with actuators, which allow fine adjustments to the segment's orientation and to the radius of curvature of the overall mirror.
-- Secondary mirror: A movable mirror that adjusts the focus of the light collected by the primary mirror and directs it toward the instruments.
-- Tertiary and fine-steering mirrors: Additional mirrors that guide and stabilize the light on its way to the instruments.
-- Integrated Science Instrument Module (ISIM): The housing for JWST's four scientific instruments:
-  - Near-Infrared Camera (NIRCam)
-  - Near-Infrared Spectrograph (NIRSpec)
-  - Mid-Infrared Instrument (MIRI)
-  - Near-Infrared Imager and Slitless Spectrograph (NIRISS)
+  - Primary mirror: 18 hexagonal segments made of gold-coated beryllium. Each segment is mounted on a hexapod with actuators, which allow fine adjustments to the segment's orientation and to the radius of curvature of the overall mirror.
+  - Secondary mirror: A movable mirror that adjusts the focus of the light collected by the primary mirror and directs it toward the instruments.
+  - Tertiary and fine-steering mirrors: Additional mirrors that guide and stabilize the light on its way to the instruments.
+  - Integrated Science Instrument Module (ISIM): The housing for JWST's four scientific instruments:
+    - Near-Infrared Camera (NIRCam)
+    - Near-Infrared Spectrograph (NIRSpec)
+    - Mid-Infrared Instrument (MIRI)
+    - Near-Infrared Imager and Slitless Spectrograph (NIRISS)
 :::::
 
 :::::{grid-item}
@@ -63,9 +63,9 @@ JWST's primary mirror assembled in 2016. Credit: NASA
 
 
 The hot side holds the components that power and protect the telescope.
-- Sunshield: Blocks sunlight from reaching the mirrors and instruments, keeping them cold.
-- Solar panels: Power the telescope.
-- Momentum trim tab: Sits at one end of the telescope and balances the radiation pressure (the pressure exerted by sunlight) on the sunshield.
+  - Sunshield: Blocks sunlight from reaching the mirrors and instruments, keeping them cold.
+  - Solar panels: Power the telescope.
+  - Momentum trim tab: Sits at one end of the telescope and balances the radiation pressure (the pressure exerted by sunlight) on the sunshield.
 
 :::{figure} James_Webb_telescope_sunshield.jpg
 :align: center
@@ -78,7 +78,7 @@ JWST's sunshield, roughly the size of a tennis court, taken in 2014. Credit: NAS
 
 ### JWST's Location in Space
 
-JWST operates in a halo orbit around the Sun–Earth second Lagrange point, or L{sub}`2`. L{sub}`2` is approximately 1.5 million kilometers (1 million miles) from Earth, in the direction opposite the Sun. A Lagrange point is a location where the gravitational forces of two large bodies balance, creating a stable point to orbit around. At L{sub}`2`, the telescope stays aligned behind Earth as both Earth and JWST orbit the Sun while the sunshield remains facing the Sun. 
+JWST operates in a halo orbit around the Sun–Earth second Lagrange point, or L{sub}`2`. L{sub}`2` is approximately 1.5 million kilometers (1 million miles) from Earth, in the direction opposite the Sun. A Lagrange point is a location where the gravitational forces of two large bodies balance, creating a stable point to orbit around. At L{sub}`2`, the telescope stays aligned behind Earth as both Earth and JWST orbit the Sun while the sunshield remains facing the Sun.
 
 
 (profiles--missions--jwst--lagrange-points)=

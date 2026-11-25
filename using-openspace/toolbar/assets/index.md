@@ -27,7 +27,7 @@ If we click on the `Built-in assets` folder, we will see that reflected in the b
 OpenSpace's Assets Panel showing the built-in assets in your OpenSpace folder.
 :::
 
-Most of the assets in `Built-in assets` are organized in subfolders. However, there are several assets located in this folder, namely, the `base` and `base_blank` assets and the `default_keybindings` and `base_keybindings` assets. Notice these appear blue, meaning they are files not folders. 
+Most of the assets in `Built-in assets` are organized in subfolders. However, there are several assets located in this folder, namely, the `base` and `base_blank` assets and the `default_keybindings` and `base_keybindings` assets. Notice these appear blue, meaning they are files not folders.
 
 There are several actions you can take on an asset. The green checkmark signifies the asset is loaded, and there is a trashcan if you want to unload the asset from the current run. The three dots open a menu for further actions, which include copying the asset's path and reloading the asset. (Reloading the asset can be useful if you're editing an asset and want to reload a new version, mostly in the development phase of an asset.)
 
@@ -47,7 +47,7 @@ To load one of these assets, we can simply click on the asset file name, and Ope
 
 
 :::{warning}
-Using the Assets Panel can temporarily hamper your computer if you're trying to load a large data set. Initializing the asset will freeze OpenSpace. If you're flying, flight will freeze until the data set is initialized and the data are locally cached. If you're loading a small data set, then this won't affect the graphics too much---maybe a small hiccup. However, if you're loading a large data set, particularly if you've not loaded it before and it needs to cache, then it could hamper performance noticeably. 
+Using the Assets Panel can temporarily hamper your computer if you're trying to load a large data set. Initializing the asset will freeze OpenSpace. If you're flying, flight will freeze until the data set is initialized and the data are locally cached. If you're loading a small data set, then this won't affect the graphics too much---maybe a small hiccup. However, if you're loading a large data set, particularly if you've not loaded it before and it needs to cache, then it could hamper performance noticeably.
 
 It's best to use this panel when you are familiar with the data, and when you're working on developing an asset and not giving a demonstration to an audience.
 :::

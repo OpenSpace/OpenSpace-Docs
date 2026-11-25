@@ -83,7 +83,8 @@ source_encoding = "utf-8"
 exclude_patterns = [
   "README.md",
   ".venv",
-  "build"
+  "build",
+  "node_modules"
 ]
 root_doc = "index"
 autosectionlabel_prefix_document = True
