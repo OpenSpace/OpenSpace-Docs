@@ -1,5 +1,13 @@
 {
+  "scripts": {
+    "lint": "markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.venv\" \"#build\" && prettier --check .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
   "devDependencies": {
-    "markdownlint": "^0.40.0"
-  }
+    "@openspace/shared-configs": "github:OpenSpace/shared-configs#v1.0.0",
+    "markdownlint-cli2": "^0.24.2",
+    "prettier": "^3.10.1"
+  },
+  "prettier": "@openspace/shared-configs/prettier"
 }

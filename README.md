@@ -29,6 +29,13 @@ Before committing to the repository it can also be beneficial to run `./make.bat
 - `make clean` will clean out the build folder and remove everything built previously.
 - `make linkcheck` will check so that all links are correct.
 
+### Linting
+
+The Markdown files are checked with [markdownlint](https://github.com/DavidAnson/markdownlint-cli2) and the stylesheets and configuration files are formatted with [Prettier](https://prettier.io). Both use the shared configurations from [OpenSpace/shared-configs](https://github.com/OpenSpace/shared-configs). Run `npm install` once to install them, then:
+
+  - `npm run lint` checks the Markdown files and the formatting of the other files.
+  - `npm run format` fixes the formatting of the files that Prettier checks.
+
 ### Generate OpenSpace reference (optional)
 
 If you have updated documentation for the Scripting API or the Asset Components (including example files) in the engine, you might want to view these changes in the documentation. The following steps describe how to do this.

@@ -67,11 +67,7 @@ body {
   --os-advanced-border: #ff8000;
 
   /* The "No" badges in the reference tables */
-  --os-badge-info-bg: color-mix(
-    in srgb,
-    var(--os-bg-raised) 70%,
-    var(--os-link)
-  );
+  --os-badge-info-bg: color-mix(in srgb, var(--os-bg-raised) 70%, var(--os-link));
 
   /* Admonitions */
   --os-note: #0a76a1;
@@ -83,7 +79,7 @@ body {
   --os-todo: #5f7075;
 }
 
-body[data-theme="dark"] {
+body[data-theme='dark'] {
   --os-bg: #0a0a0a;
   --os-bg-raised: #0d1014;
   --os-bg-sunken: #11140e;
@@ -130,7 +126,7 @@ body[data-theme="dark"] {
 }
 
 @media (prefers-color-scheme: dark) {
-  body:not([data-theme="light"]) {
+  body:not([data-theme='light']) {
     --os-bg: #0a0a0a;
     --os-bg-raised: #0d1014;
     --os-bg-sunken: #11140e;
@@ -179,7 +175,7 @@ body[data-theme="dark"] {
  * specificity. This file is loaded later, so these values win.
  */
 body[data-theme],
-body:not([data-theme="light"]) {
+body:not([data-theme='light']) {
   /* Brand and links. The accent (white in dark mode) is used by the sidebar and the table
      of contents. Links in the text use the link color; theme-layout.css turns links
      inside headings back to the heading color. Visited links keep the link color, the
@@ -307,7 +303,7 @@ body:not([data-theme="light"]) {
   );
 }
 
-body[data-theme="dark"] {
+body[data-theme='dark'] {
   --color-content-background: var(--os-bg-raised);
   --color-sidebar-background: var(--os-bg);
   --color-sidebar-search-background: var(--os-bg);
@@ -315,7 +311,7 @@ body[data-theme="dark"] {
   --color-toc-background: var(--os-bg-raised);
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-theme="light"]) {
+  body:not([data-theme='light']) {
     --color-content-background: var(--os-bg-raised);
     --color-sidebar-background: var(--os-bg);
     --color-sidebar-search-background: var(--os-bg);

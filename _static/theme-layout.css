@@ -17,12 +17,12 @@
  */
 body {
   --font-stack:
-    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   --font-stack--monospace:
-    "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, Monaco,
-    "Liberation Mono", "Lucida Console", monospace;
-  --font-stack--headings: "Roboto", var(--font-stack);
+    'IBM Plex Mono', 'SFMono-Regular', Menlo, Consolas, Monaco, 'Liberation Mono',
+    'Lucida Console', monospace;
+  --font-stack--headings: 'Roboto', var(--font-stack);
 
   --os-radius: 12px;
   --os-radius-small: 6px;
@@ -341,7 +341,7 @@ article :is(h1, h2, h3, h4, h5, h6) a.reference:hover {
   padding: 0;
 }
 .crumbs li:not(:last-child)::after {
-  content: "/";
+  content: '/';
   padding: 0 0.6em;
   color: var(--color-foreground-muted);
 }
@@ -417,7 +417,7 @@ article .menuselection {
    the text, so in dark mode they get a translucent tint instead. The selectors repeat the
    ones in pygments.css, which has the same two cases for dark mode. The color is
    --os-code-highlight from theme-colors.css */
-body[data-theme="dark"] .highlight .hll {
+body[data-theme='dark'] .highlight .hll {
   background-color: var(--os-code-highlight);
 }
 /* Keep syntax tokens at regular weight regardless of the Pygments style. */
@@ -425,7 +425,7 @@ body[data-theme] .highlight span[class] {
   font-weight: 400;
 }
 @media (prefers-color-scheme: dark) {
-  body:not([data-theme="light"]) .highlight .hll {
+  body:not([data-theme='light']) .highlight .hll {
     background-color: var(--os-code-highlight);
   }
 }

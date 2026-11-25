@@ -1,0 +1,23 @@
+# Build output and dependencies
+build
+node_modules
+package-lock.json
+
+# Files generated from the OpenSpace documentation
+json
+reference
+
+# Third-party code
+_static/instantpage.js
+
+# Example files that are included in pages, partially by line numbers
+about/releases/changelogs
+building-content/custom-web-ui
+contribute
+
+# Sphinx and Jinja templates, which Prettier does not understand
+*.html
+*.jinja
+
+# Markdown is checked by markdownlint, whose list indentation differs from Prettier's
+*.md
